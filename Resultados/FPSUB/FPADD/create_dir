@@ -1,0 +1,3 @@
+mkdir behav synth
+cd synth
+mkdir func timing

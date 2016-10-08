@@ -1,0 +1,5 @@
+mkdir singl doubl
+cp 1create_dir singl
+cp 1create_dir doubl
+cd singl && ./1create_dir && cd ..
+cd doubl && ./1create_dir && cd ..

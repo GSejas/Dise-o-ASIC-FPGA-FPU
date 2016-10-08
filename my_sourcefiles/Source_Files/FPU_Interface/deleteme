@@ -1,0 +1,15 @@
+#!/bin/bash
+#IFS=$'\r\n' GLOBIGNORE='*' command eval  'XYZ=($(cat copy_sources.sh))'
+#echo "${XYZ[5]}"
+
+#for i in "${IFS[@]}"
+#do
+#  cp $i -
+#done
+
+dir_list = (ASIC_cordic_Arch2 ASIC_cordic_Arch3 ASIC_fpaddsub_arch2 ASIC_fpaddsub_arch3 ASIC_fpmult_arch2 ASIC_fpmult_arch3 ASIC_KOA ASIC_RKOA)
+mkdir $dirlist($)
+
+crear una por uno los directoreos
+crear los archivos de las contantes
+hacer el enlace con los archivos fuente

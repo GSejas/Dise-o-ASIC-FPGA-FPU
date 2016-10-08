@@ -1,0 +1,33 @@
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk];
+
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports {Data_X[*]}]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports {Data_X[*]}]
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports {Data_Y[*]}]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports {Data_Y[*]}]
+#set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports {Data_MX[*]}]
+#set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports {Data_MX[*]}]
+#set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports {Data_MY[*]}]
+#set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports {Data_MY[*]}];
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports {r_mode[*]}]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports {r_mode[*]}]
+#set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports {round_mode[*]}]
+#set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports {round_mode[*]}];
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports add_subt]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports add_subt]
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports beg_FSM]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports beg_FSM]
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports rst]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports rst]
+set_input_delay -clock [get_clocks clk] -min -add_delay 2.000 [get_ports ack_FSM]
+set_input_delay -clock [get_clocks clk] -max -add_delay 3.000 [get_ports ack_FSM]
+set_output_delay -clock [get_clocks clk] -min -add_delay 0.000 [get_ports {final_result_ieee[*]}]
+set_output_delay -clock [get_clocks clk] -max -add_delay -3.000 [get_ports {final_result_ieee[*]}]
+set_output_delay -clock [get_clocks clk] -min -add_delay 0.000 [get_ports overflow_flag]
+set_output_delay -clock [get_clocks clk] -max -add_delay -3.000 [get_ports overflow_flag]
+set_output_delay -clock [get_clocks clk] -min -add_delay 0.000 [get_ports ready]
+set_output_delay -clock [get_clocks clk] -max -add_delay -3.000 [get_ports ready]
+set_output_delay -clock [get_clocks clk] -min -add_delay 0.000 [get_ports underflow_flag]
+set_output_delay -clock [get_clocks clk] -max -add_delay -3.000 [get_ports underflow_flag]
+
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+set_property CFGBVS VCCO [current_design]
