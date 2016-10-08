@@ -10,9 +10,12 @@
 dir_list=(ASIC_cordic_Arch2 ASIC_cordic_Arch3 ASIC_fpaddsub_arch2 ASIC_fpaddsub_arch3 ASIC_fpmult_arch2 ASIC_fpmult_arch3 ASIC_KOA ASIC_RKOA)
 for i in "${dir_list[@]}"
 do
+  #si hay un archivo de esos, borrarlo
+  rm    $i/integracion_fisica/front_end/scripts/file_list.sh
   touch $i/integracion_fisica/front_end/scripts/file_list.sh
+  chmod 777 $i/integracion_fisica/front_end/scripts/file_list.sh
   echo "#!/bin/bash"                                                 >> $i/integracion_fisica/front_end/scripts/file_list.sh
-  echo "find ../source/FPU_Interface/${i:5} -name '*' -type f >file_list" >> $i/integracion_fisica/front_end/scripts/file_list.sh
+  echo "find ../source/FPU_Interface/${i:5} -name '*' -type f -maxdepth 1 >file_list" >> $i/integracion_fisica/front_end/scripts/file_list.sh
 done
 
 #find $PWD -type d -name "source" -exec cp -Rp temp '{}' \;
