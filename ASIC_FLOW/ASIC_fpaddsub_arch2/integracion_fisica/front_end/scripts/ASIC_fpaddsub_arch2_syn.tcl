@@ -43,7 +43,7 @@ write -hierarchy -format ddc -output \
 ./db/fpaddsub_arch2_$PRECISION($x)_syn_unmapped.ddc
 
 #Aplicar especificaciones de diseño (constraints)
-#source fpaddsub_arch2_$precision($x)syn_constraints.tcl
+source ASIC_fpaddsub_arch2_syn_constraints.tcl
 propagate_constraints
 
 #Revisar el diseño
@@ -63,11 +63,11 @@ write -hierarchy -format verilog -output \
 #Generar los reportes
 
 report_power -analysis_effort high > reports/fpaddsub_arch2_$PRECISION($x)_syn_power.txt
-report_area > reports/fpaddsub_arch2_$PRECISION($x)_syn_area.txt
-report_cell > reports/fpaddsub_arch2_$PRECISION($x)_syn_cell.txt
-report_qor > reports/fpaddsub_arch2_$PRECISION($x)_syn_qor.txt
+report_area >   reports/fpaddsub_arch2_$PRECISION($x)_syn_area.txt
+report_cell >   reports/fpaddsub_arch2_$PRECISION($x)_syn_cell.txt
+report_qor >    reports/fpaddsub_arch2_$PRECISION($x)_syn_qor.txt
 report_timing > reports/fpaddsub_arch2_$PRECISION($x)_syn_timing.txt
-report_port > reports/fpaddsub_arch2_$PRECISION($x)_syn_port.txt
+report_port >   reports/fpaddsub_arch2_$PRECISION($x)_syn_port.txt
 
 #Escribir el archivo *.ddc (base de datos sintetizada)
 write -hierarchy -format ddc -output \

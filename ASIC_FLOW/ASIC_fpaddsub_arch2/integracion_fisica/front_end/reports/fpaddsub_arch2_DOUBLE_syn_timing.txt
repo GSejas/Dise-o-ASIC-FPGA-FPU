@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Oct  9 16:07:15 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FS_Module_state_reg_reg_0_
+              (rising edge-triggered flip-flop)
+  Endpoint: ready (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  FS_Module_state_reg_reg_0_/CK (DFFRXLTS)                0.00       0.00 r
+  FS_Module_state_reg_reg_0_/Q (DFFRXLTS)                 1.11       1.11 r
+  U2419/Y (NOR4XLTS)                                      0.32       1.43 f
+  ready (out)                                             0.00       1.43 f
+  data arrival time                                                  1.43
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
