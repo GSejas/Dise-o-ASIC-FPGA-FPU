@@ -1,2 +1,2 @@
 #!/bin/bash
-find ../source -name '*' -type f -maxdepth 1 >file_list
+ls -A ../source >file_list

@@ -15,7 +15,9 @@ do
   touch $i/integracion_fisica/front_end/scripts/file_list.sh
   chmod 777 $i/integracion_fisica/front_end/scripts/file_list.sh
   echo "#!/bin/bash"                                                 >> $i/integracion_fisica/front_end/scripts/file_list.sh
-  echo "find ../source -name '*' -type f -maxdepth 1 >file_list" >> $i/integracion_fisica/front_end/scripts/file_list.sh
+ # echo "find ../source -name '*' -type f -maxdepth 1 >file_list" >> $i/integracion_fisica/front_end/scripts/file_list.sh
+  echo "ls -A ../source >file_list" >> $i/integracion_fisica/front_end/scripts/file_list.sh
+
 done
 
 #find $PWD -type d -name "source" -exec cp -Rp temp '{}' \;

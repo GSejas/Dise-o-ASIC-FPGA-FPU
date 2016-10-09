@@ -15,16 +15,19 @@ set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 remove_design -designs
 
 #WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
-set fp [open "file_list" r]
+set fp [open "scripts/file_list" r]
 set file_sources [read $fp]
 close $fp
 
-set data [split $file_data "\n"]
-foreach line $data {
-     # do some line processing here
-}
+set data [split $file_sources "\n"]
+#set data "{$data}"
 # Primero se analiza el módulo principal
-analyze -library WORK -format verilog file_list
+set formatted_string "{"
+foreach line $data {
+  set formatted_string "$formatted_string $line \\ \n "
+}
+
+set formatted_string "$formatted_string }"
 
 set x 0;
 while {$x < 2} {
