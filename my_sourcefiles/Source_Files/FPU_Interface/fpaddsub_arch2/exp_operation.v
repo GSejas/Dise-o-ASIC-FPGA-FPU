@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 03/10/2016 04:46:19 PM
-// Design Name: 
+// Design Name:
 // Module Name: exp_operation
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -39,7 +39,7 @@ module Exp_Operation
 
 
 //wire [EW-1:0] Data_B;
-wire [EW:0] Data_S; 
+wire [EW:0] Data_S;
 /////////////////////////////////////////7
 //genvar j;
 //for (j=0; j<EW; j=j+1)begin
@@ -72,7 +72,7 @@ RegisterAdd #(.W(EW)) exp_result(
     .D (Data_S[EW-1:0]),
     .Q (Data_Result_o)
     );
-    
+
 RegisterAdd #(.W(1)) Overflow (
     .clk(clk),
     .rst(rst),
@@ -80,7 +80,7 @@ RegisterAdd #(.W(1)) Overflow (
     .D(Overflow_flag),
     .Q(Overflow_flag_o)
     );
-    
+
 RegisterAdd #(.W(1)) Underflow (
         .clk(clk),
         .rst(rst),

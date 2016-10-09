@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 03/11/2016 02:09:05 PM
-// Design Name: 
+// Design Name:
 // Module Name: Rotate_Mux_Array
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -29,7 +29,7 @@ module Rotate_Mux_Array
     );
 
 genvar j;//Create a variable for the loop FOR
-generate for (j=0; j <= SWR-1; j=j+1) begin // generate enough Multiplexers modules for each bit
+generate for (j=0; j <= SWR-1; j=j+1) begin : MUX_ARRAY
 
 	case (j)
 

@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 03/12/2016 06:26:54 PM
-// Design Name: 
+// Design Name:
 // Module Name: shift_mux_array
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -30,7 +30,7 @@ module shift_mux_array
     );
 
 genvar j;
-generate for (j=0; j<=SWR-1 ; j=j+1) begin
+generate for (j=0; j<=SWR-1 ; j=j+1) begin : MUX_ODDNORM
 
 	localparam sh=(2**LEVEL)+j; //value for second mux input. It changes in exponentation by 2 for each level
 
