@@ -14,6 +14,15 @@ set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 # Eliminar diseños previos
 remove_design -designs
 
+#WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
+set fp [open "file_list" r]
+set file_sources [read $fp]
+close $fp
+
+set data [split $file_data "\n"]
+foreach line $data {
+     # do some line processing here
+}
 # Primero se analiza el módulo principal
 analyze -library WORK -format verilog file_list
 
