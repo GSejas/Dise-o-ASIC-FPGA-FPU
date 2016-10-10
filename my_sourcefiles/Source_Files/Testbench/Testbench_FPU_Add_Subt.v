@@ -1,57 +1,60 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 03/29/2016 05:57:16 AM
-// Design Name: 
+// Design Name:
 // Module Name: Testbench_FPU_Add_Subt
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
-
+`include "Hexadecimal_A.txt"
+`include "Hexadecimal_B.txt"
 
 module Testbench_FPU_Add_Subt();
 
 parameter PERIOD = 10;
 
-//
-parameter W = 32;
-parameter EW = 8;
-parameter SW = 23;
-parameter SWR = 26;
-parameter EWR = 5;// 
-/*
-parameter W = 64;
-parameter EW = 11;
-parameter SW = 52;
-parameter SWR = 55;
-parameter EWR = 6;/*/ 
+    `ifdef SINGLE
+    parameter W = 32;
+    parameter EW = 8;
+    parameter SW = 23;
+    parameter SWR = 26;
+    parameter EWR = 5;//
+    `endif
 
+    `ifdef DOUBLE
+    parameter W = 64;
+    parameter EW = 11;
+    parameter SW = 52;
+    parameter SWR = 55;
+    parameter EWR = 6;
+    `endif
         reg clk;
 
         //INPUT signals
 		reg rst;
 		reg beg_FSM;
 		reg ack_FSM;
-		
+
 		//Oper_Start_in signals
 		reg [W-1:0] Data_X;
 		reg [W-1:0] Data_Y;
 		reg add_subt;
-		 
+
 		//Round signals signals
 		reg [1:0] r_mode;
-		
+
 		//OUTPUT SIGNALS
 		wire overflow_flag;
 		wire underflow_flag;
@@ -80,8 +83,8 @@ parameter EWR = 6;/*/
         integer FileSaveData;
         integer Cont_CLK;
         integer Recept;
-            
-                
+
+
                 initial begin
                     // Initialize Inputs
                     clk = 0;
@@ -92,40 +95,40 @@ parameter EWR = 6;/*/
                     Data_Y = 0;
                     r_mode = 2'b00;
                     add_subt = 0;
-            
+
             //        // Wait 100 ns for global reset to finish
             //        #100 rst = 0;
-            
+
                     //Abre el archivo testbench
                   FileSaveData = $fopen("ResultadoXilinxFLM.txt","w");
-                    
+
                     //Inicializa las variables del testbench
                     contador = 0;
                     Cont_CLK = 0;
                     Recept = 1;
-                    
+
                     // Wait 100 ns for global reset to finish
-                    
+
                     #100 rst = 0;
-                    
+
                     //Add stimulus here
                 end
-                
+
                    //**************************** Se lee el archivo txt y se almacena en un arrays***************************************************//
-                    
+
                     initial begin
                         $readmemh("Hexadecimal_A.txt", Array_IN);
                         $readmemh("Hexadecimal_B.txt", Array_IN_2);
                     end
-                    
+
                      //**************************** Transmision de datos de forma paralela ************************************************************//
-                     
-                    
-                    
+
+
+
                 always @(posedge clk) begin
                     if(rst) begin
                         contador = 0;
-                        Cont_CLK = 0; 
+                        Cont_CLK = 0;
                     end
                     else begin
                         if (contador == (2**PERIOD)) begin
@@ -142,33 +145,33 @@ parameter EWR = 6;/*/
                                 ack_FSM = 0;
                             end
                             else if(Cont_CLK ==2) begin
-                                  
+
                                 ack_FSM = 0;
                                 beg_FSM = 1;
                                 Cont_CLK = Cont_CLK +1 ;
-                            end 
+                            end
                             else begin
                                 ack_FSM = 0;
                                 Cont_CLK = Cont_CLK + 1;
                                 beg_FSM = 0;
                             end
                             if(ready==1) begin
-                                
+
                                 ack_FSM = 1;
-            
+
                                 Cont_CLK = 0;
                             end
-                            
+
                             if(ready==1 && ack_FSM) begin
-                                                          
-                                
-                                
+
+
+
                                 Cont_CLK = 0;
                             end
                         end
                     end
                 end
-             
+
                 // Recepción de datos y almacenamiento en archivo*************
                 always @(posedge clk) begin
                     if(ready) begin
@@ -178,14 +181,14 @@ parameter EWR = 6;/*/
                         end
                     end
                     else begin
-                        Recept = 1; 
-                    end    
-                end 
-            
-            
+                        Recept = 1;
+                    end
+                end
+
+
              //******************************* Se ejecuta el CLK ************************
-            
+
                 initial forever #5 clk = ~clk;
-            
-            
+
+
             endmodule
