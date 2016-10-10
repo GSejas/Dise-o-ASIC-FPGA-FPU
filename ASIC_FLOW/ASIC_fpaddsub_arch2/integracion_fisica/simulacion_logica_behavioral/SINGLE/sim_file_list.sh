@@ -1,3 +1,3 @@
 #!/bin/bash
-ls ../../front_end/source >> file_list
+find "../../front_end/source" -name "*" >> file_list
 
