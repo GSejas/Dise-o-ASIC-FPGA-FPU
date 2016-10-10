@@ -8,29 +8,48 @@
 
 ####################################################################################################################################
 
+####################################################################################################################################
+set PRECISION(0) "SINGLE";
+set PRECISION(1) "DOUBLE";
+set PREC_PARAM(0) "W=32,SW=23,EW=8,SWR=26,EWR=5";
+set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 # Eliminar diseños previos
+set DESIGN_NAME  "fpaddsub_arch3"
+set TOP_NAME     "FPU_PIPELINED_FPADDSUB"
+set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
 remove_design -designs
 
-# Primero se analiza el módulo principal
-analyze -library WORK -format verilog {counter.v}
+#WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
+set fp [open "scripts/file_list" r]
+set file_sources [read $fp]
+close $fp
 
-#Luego se analiza los otros módulos
-#analyze -format verilog {divisor_frecuencia.v \
-#secuenciaFSM.v}
+set data [split $file_sources "\n"]
+#set data "{$data}"
+# Primero se analiza el módulo principal
+set formatted_string "{"
+foreach line $data {
+  set formatted_string "$formatted_string $line \\ \n "
+}
+
+set formatted_string "$formatted_string }"
+
+set x 0;
+while {$x < 2} {
 
 #Elaboramos el módulo principal
-elaborate counter -architecture verilog -library WORK
+elaborate -update $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
 
 #Enlazar los demás módulos al módulo principal
 link
 
 #Escribir el archivo *.ddc (base de datos sin sintetizar)
 write -hierarchy -format ddc -output \
-./db/counter_syn_unmapped.ddc
+./db/$DESIGN_NAME_$PRECISION($x)_syn_unmapped.ddc
 
 #Aplicar especificaciones de diseño (constraints)
-#source counter_syn_constraints.tcl
-#propagate_constraints
+source $CONTRAINTS_FILE_NAME
+propagate_constraints
 
 #Revisar el diseño
 check_design
@@ -44,24 +63,28 @@ compile_ultra
 set verilogout_no_tri true
 change_names -hierarchy -rules verilog
 write -hierarchy -format verilog -output \
-./db/counter_syn.v
+./db/$DESIGN_NAME_$PRECISION($x)_syn.v
 
 #Generar los reportes
 
-report_power -analysis_effort high > reports/counter_syn_power.txt
-report_area > reports/counter_syn_area.txt
-report_cell > reports/counter_syn_cell.txt
-report_qor > reports/counter_syn_qor.txt
-report_timing > reports/counter_syn_timing.txt
-report_port > reports/counter_syn_port.txt
+report_power -analysis_effort high > reports/$DESIGN_NAME_$PRECISION($x)_syn_power.txt
+report_area >   reports/$DESIGN_NAME_$PRECISION($x)_syn_area.txt
+report_cell >   reports/$DESIGN_NAME_$PRECISION($x)_syn_cell.txt
+report_qor >    reports/$DESIGN_NAME_$PRECISION($x)_syn_qor.txt
+report_timing > reports/$DESIGN_NAME_$PRECISION($x)_syn_timing.txt
+report_port >   reports/$DESIGN_NAME_$PRECISION($x)_syn_port.txt
 
 #Escribir el archivo *.ddc (base de datos sintetizada)
 write -hierarchy -format ddc -output \
-./db/counter_syn_mapped.ddc
+./db/$DESIGN_NAME_$PRECISION($x)_syn_mapped.ddc
 
 #Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
 #para el sintetizador físico (IC Compiler)
-write_sdc ./db/counter_syn.sdc
+write_sdc ./db/$DESIGN_NAME_$PRECISION($x)_syn.sdc
 
 #Revisar la configuración de temporizado
 check_timing
+
+#FINALIZAMOS EL LOOP
+set x [expr {$x + 1}]
+}
