@@ -1,0 +1,207 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
+-timescale=1ns/1ps
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Sun Oct  9 22:20:10 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../front_end/source/MultiplexTxT.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/MultiplexTxT.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_mux.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_mux.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/LZD.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/LZD.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Add_Subtract_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Add_Subtract_Function.v, 167
+  No type is specified for wire 'zero_flag'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/RegisterAdd.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/exp_operation.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/exp_operation.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/exp_operation.v, 63
+  No type is specified for wire 'Overflow_flag'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/exp_operation.v, 64
+  No type is specified for wire 'Underflow_flag'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/Round_Sgf_Dec.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_Sgf_Dec.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Multiplexer_AC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Multiplexer_AC.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Greater_Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Greater_Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/add_sub_carry_out.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/add_sub_carry_out.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FSM_Add_Subtract.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_Add_Subtract.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/sgn_result.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sgn_result.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Oper_Start_In.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/Oper_Start_In.v, 110
+  No type is specified for wire 'sign_result'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/Priority_Codec_64.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_64.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Less.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Less.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Rotate_Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Rotate_Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Add_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Add_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_32.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_32.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../front_end/source/Tenth_Phase.v, 92
+  The specified width is '11' bits, actually got '12' bits.
+  The offending number is : 'fff'.
+
+Parsing design file '../../front_end/source/Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Barrel_shifter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Barrel_shifter.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparators.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparators.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Error-[SFCOR] Source file cannot be opened
+  Source file "Tesbench_FPU_Add_Subt.v" cannot be opened for reading due to 
+  'No such file or directory'.
+  Please fix above issue and compile again.
+  
+  
+
+1 warning
+1 error
+CPU time: .096 seconds to compile
