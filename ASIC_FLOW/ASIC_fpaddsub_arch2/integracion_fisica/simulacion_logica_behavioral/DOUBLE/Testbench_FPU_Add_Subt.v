@@ -18,8 +18,6 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-`include "Hexadecimal_A.txt"
-`include "Hexadecimal_B.txt"
 
 module Testbench_FPU_Add_Subt();
 
