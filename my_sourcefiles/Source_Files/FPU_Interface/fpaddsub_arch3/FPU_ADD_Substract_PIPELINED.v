@@ -689,9 +689,6 @@ FORMATTER #(.EW(EW+1)) array_comparators(
           1'b1  : begin
                       {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR - DmP_mant_SFG_SWR;
                    end
-          default: begin
-                      {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR + DmP_mant_SFG_SWR;
-                   end
        endcase
   end
 	assign ADD_OVRFLW_SGF = Carry_out_SGF&(~OP_FLAG_SFG);
@@ -829,7 +826,7 @@ assign busy = SHT1_ACTIVE;
   RegisterAdd #(.W(1)) Ready_reg (
   .clk(clk),
   .rst(rst),
-  .load(1),
+  .load(1'b1),
   .D(NRM2_ACTIVE),
   .Q(ready));
 
