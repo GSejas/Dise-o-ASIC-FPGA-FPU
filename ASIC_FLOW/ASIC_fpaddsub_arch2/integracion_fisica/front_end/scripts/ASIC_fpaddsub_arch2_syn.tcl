@@ -25,12 +25,10 @@ close $fp
 set data [split $file_sources "\n"]
 #set data "{$data}"
 # Primero se analiza el módulo principal
-set formatted_string "{"
-foreach line $data {
-  set formatted_string "$formatted_string $line \\ \n "
-}
 
-set formatted_string "$formatted_string }"
+foreach line $data {
+  analyze -library WORK -format verilog {$line}
+}
 
 set x 0;
 while {$x < 2} {
