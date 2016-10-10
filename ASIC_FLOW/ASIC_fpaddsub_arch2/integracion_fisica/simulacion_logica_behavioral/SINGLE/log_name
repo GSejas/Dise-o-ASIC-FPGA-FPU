@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
 -timescale=1ns/1ps
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Sun Oct  9 22:46:49 2016
+      Version K-2015.09-SP2-3_Full64 -- Mon Oct 10 00:28:42 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -170,12 +170,6 @@ Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/Tenth_Phase.v, 1
   Verilog compiler directive encountered "`timescale".
 
-
-Warning-[TMBIN] Too many bits in Based Number
-../../front_end/source/Tenth_Phase.v, 92
-  The specified width is '11' bits, actually got '12' bits.
-  The offending number is : 'fff'.
-
 Parsing design file '../../front_end/source/Comparator.v'
 
 Lint-[VCDE] Compiler directive encountered
@@ -192,6 +186,12 @@ Parsing design file '../../front_end/source/Comparators.v'
 
 Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/Comparators.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/xor_tri.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/xor_tri.v, 1
   Verilog compiler directive encountered "`timescale".
 
 Parsing design file 'Testbench_FPU_Add_Subt.v'
@@ -231,11 +231,44 @@ Lint-[IWU] Implicit wire is used
 
 TimeScale is 1 ns / 1 ps
 
-Error-[URMI] Unresolved modules
-../../front_end/source/Oper_Start_In.v, 97
-"xor_tri #(.W(W)) Op_verification( .A_i (intDX[(W - 1)]),  .B_i (intDY[(W - 1)]),  .C_i (intAS),  .Z_o (real_op_o));"
-  Module definition of above instance is not found in the design.
+Lint-[UI] Unused input
+../../front_end/source/Mux_Array.v, 28
+  Following is an unused input.
+  Source info: load_i
 
-1 warning
-1 error
-CPU time: .128 seconds to compile
+Starting vcs inline pass...
+4 modules and 0 UDP read.
+recompiling module shift_mux_array
+recompiling module Multiplexer_AC
+recompiling module Rotate_Mux_Array
+recompiling module Testbench_FPU_Add_Subt
+All of 4 modules done
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
+_21498_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so \
+-Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so \
+-Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+Command: ./simv -gui +v2k +lint=all -a log_name +define+SINGLE -ucli
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 10 00:28 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
+$finish at simulation time            174035000
+Simulation complete, time is 174035000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 174035000 ps
+CPU Time:      1.330 seconds;       Data structure size:   0.1Mb
+Mon Oct 10 00:53:59 2016
+CPU time: .372 seconds to compile + .489 seconds to elab + .130 seconds to link + 74.070 seconds in simulation

@@ -89,7 +89,7 @@ if(W == 32) begin
 end
 else begin
 
-    assign exp_mux_D1 =11'h7ff;
+    assign exp_mux_D1 =11'hfff;
     assign sgf_mux_D1 =52'd0;
 
 end

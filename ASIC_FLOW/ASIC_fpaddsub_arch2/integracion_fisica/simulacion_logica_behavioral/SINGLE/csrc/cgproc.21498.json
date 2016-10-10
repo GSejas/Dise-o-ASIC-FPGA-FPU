@@ -1,0 +1,87 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "shift_mux_array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer_AC_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Testbench_FPU_Add_Subt": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7109,
+            "checksum": 4294967295
+        },
+        "qaeRY_d": {
+            "mode": 4,
+            "mod": "shift_mux_array_0000",
+            "out": "qaeRY_d.o",
+            "archive": "archive.0/_21498_archive_1.a",
+            "bytes": 12747,
+            "checksum": 4294967295
+        },
+        "GBFFm_d": {
+            "mode": 4,
+            "mod": "Rotate_Mux_Array_0000",
+            "out": "GBFFm_d.o",
+            "archive": "archive.0/_21498_archive_1.a",
+            "bytes": 12587,
+            "checksum": 4294967295
+        },
+        "UDPPh_d": {
+            "mode": 4,
+            "mod": "Multiplexer_AC_0001",
+            "out": "UDPPh_d.o",
+            "archive": "archive.0/_21498_archive_1.a",
+            "bytes": 7792,
+            "checksum": 4294967295
+        },
+        "kar0c_d": {
+            "mode": 4,
+            "mod": "Testbench_FPU_Add_Subt",
+            "out": "kar0c_d.o",
+            "archive": "archive.0/_21498_archive_1.a",
+            "bytes": 110303,
+            "checksum": 4294967295
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 143429,
+            "archive": "archive.0/_21498_archive_1.a",
+            "objects": [
+                [
+                    "qaeRY_d.o",
+                    12747
+                ],
+                [
+                    "UDPPh_d.o",
+                    7792
+                ],
+                [
+                    "GBFFm_d.o",
+                    12587
+                ],
+                [
+                    "kar0c_d.o",
+                    110303
+                ]
+            ]
+        }
+    ]
+}

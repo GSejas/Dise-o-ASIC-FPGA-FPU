@@ -22,4 +22,5 @@
 ../../front_end/source/Comparator.v
 ../../front_end/source/Barrel_shifter.v
 ../../front_end/source/Comparators.v
+../../front_end/source/xor_tri.v
 Testbench_FPU_Add_Subt.v

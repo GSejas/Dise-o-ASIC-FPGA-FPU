@@ -32,7 +32,7 @@ module shift_mux_array
 genvar j;
 generate for (j=0; j<=SWR-1 ; j=j+1) begin : MUX_ODDNORM
 
-	localparam integer sh=(2**LEVEL)+j; //value for second mux input. It changes in exponentation by 2 for each level
+	localparam sh=(2**LEVEL)+j; //value for second mux input. It changes in exponentation by 2 for each level
 
 	case (sh>SWR-1)
 

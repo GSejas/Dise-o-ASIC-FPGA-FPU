@@ -1,0 +1,30 @@
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 10 00:28 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
+gui/dve/libraries/syn/generic.sdb'
+gui/dve/libraries/syn/vcs.sdb'
+gui/dve/libraries/syn/vcs.sdb'
+gui/dve/libraries/syn/vcs.sdb'
+gui/dve/libraries/syn/generic.sdb'
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
+$finish at simulation time            174035000
+Simulation complete, time is 174035000 ps.
+Warning: [DVAP008] 
+The source file '' cannot be found.
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/ok
+dve> 
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 174035000 ps
+CPU Time:      1.330 seconds;       Data structure size:   0.1Mb
+Mon Oct 10 00:53:59 2016
+.tcl
