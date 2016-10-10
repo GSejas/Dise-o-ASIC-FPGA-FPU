@@ -13,25 +13,32 @@
 
 set LIB_NAME scx3_cmos8rf_lpvt_tt_1p2v_25c.db
 
-set CLK_PERIOD 20000
+set CLK_PERIOD 10
 set CLK_NAME clk
 
 #set CLK_2_NAME divisor_frecuencia/clk_2
 
-set CLK_UNCERTAINTY_SETUP 30
-set CLK_UNCERTAINTY_HOLD 30
-set CLK_TRANSITION 30
-set CLK_LATENCY_SOURCE 200
-set CLK_LATENCY 200
+set CLK_UNCERTAINTY_SETUP 0.5
+set CLK_UNCERTAINTY_HOLD 0
+set CLK_TRANSITION 0.5
+set CLK_LATENCY_SOURCE 0.5
+set CLK_LATENCY 0.5
 
-set INPUT_DELAY_MAX 200
-set INPUT_DELAY_MIN 100
-set OUTPUT_DELAY_MAX 400
-set OUTPUT_DELAY_MIN 200
+# set the "input valid" delay to 4.0nS
+set INPUT_DELAY_MAX 3
+#set the fastest input data arrival time to check for hold time changes to 1000pS
+set INPUT_DELAY_MIN 2
+
+
+# set the setup time requirements for the next block to 2nS
+set OUTPUT_DELAY_MAX 0
+# set the hold time requirements for the next block to 150pS
+set OUTPUT_DELAY_MIN -3
 
 set MAX_AREA 0
 set FANOUT 10
 
+set ALL_OUT_NAME [all_outputs]
 set ALL_IN_EX_CLK_NAME [remove_from_collection [all_inputs] [get_ports $CLK_NAME]]
 set INPUT_CELL TBUFX20TS
 
@@ -72,8 +79,8 @@ set_input_delay -max $INPUT_DELAY_MAX -clock $CLK_NAME $ALL_IN_EX_CLK_NAME
 set_input_delay -min $INPUT_DELAY_MIN -clock $CLK_NAME $ALL_IN_EX_CLK_NAME
 
 #Configuración del retardo en las señales de salida				         -> page 5-26, 7-18
-set_output_delay -max $OUTPUT_DELAY_MAX -clock $CLK_NAME [get_ports "state* carry_out*"]
-set_output_delay -min $OUTPUT_DELAY_MIN -clock $CLK_NAME [get_ports "state* carry_out*"]
+set_output_delay -max $OUTPUT_DELAY_MAX -clock $CLK_NAME $ALL_OUT_NAME
+set_output_delay -min $OUTPUT_DELAY_MIN -clock $CLK_NAME $ALL_OUT_NAME
 
 #Configuración del fanout
 set_max_fanout $FANOUT $current_design

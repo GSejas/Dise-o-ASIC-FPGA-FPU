@@ -13,7 +13,7 @@ set cache_write ""
 # Modificacion del serch path: las "" definen una lista y permiten variable substitution
 # $nombre_variable -> valor. 
 # El comando siguente concatena al search path los directorios listados
-set home_base {/home/local/ESTUDIANTES/rcastro/dcilab/laboratorios_synopsys_ibm/Laboratorio_3/Counter/integracion_fisica/front_end} 
+set home_base {$PWD} 
 set search_path "$home_base"
 set search_path [concat $search_path ./libs ./db ./source ./scripts]
 set search_path    "$search_path /media/datos/IBM/TECH/ibm130_lp/digital"

@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "LUT_sincos_32.txt"
 
 module LUT_ROM_32bits #(parameter W=32,N=3)
 (

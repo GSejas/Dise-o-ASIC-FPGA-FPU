@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+`include "LUT_sincos_64.txt"
 module LUT_ROM_64bits  #(parameter W=64,N=3)
 (
 //Input Signals

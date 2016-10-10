@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : CORDIC_Arch3.v
 //  Created On    : 2016-09-28 14:58:46
-//  Last Modified : 2016-10-04 21:14:36
+//  Last Modified : 2016-10-09 20:48:26
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -379,10 +379,10 @@ endgenerate
 
     Mux_3x1_bv2 #(.W(W)) mux_3x1_var2
     (
-        .select(cont_var_out),
-        .ch_0(d_ff3_sh_y_out),
-        .ch_1(d_ff3_sh_x_out),
-        .ch_2(d_ff3_LUT_out),
+        .select  (cont_var_out),
+        .ch_0    (d_ff3_sh_y_out),
+        .ch_1    (d_ff3_sh_x_out),
+        .ch_2    (d_ff3_LUT_out),
         .data_out(add_subt_dataB)
     );
 
@@ -394,8 +394,8 @@ endgenerate
 
     Op_Select   op_select_mod
     (
-        .variable(~cont_var_out[0]),
-        .sign(d_ff3_sign_out),
+        .variable (~cont_var_out[0]),
+        .sign     (d_ff3_sign_out),
         .operation(op_add_subt)
     );
 
@@ -431,29 +431,29 @@ endgenerate
 
     d_ff_en #(.W(W)) d_ff4_Xn
     (
-    .clk(clk),
-    .rst(reset_reg_cordic),
+    .clk   (clk),
+    .rst   (reset_reg_cordic),
     .enable(enab_d_ff4_Xn),
-    .D(result_add_subt),
-    .Q(d_ff_Xn)
+    .D     (result_add_subt),
+    .Q     (d_ff_Xn)
     );
 
     d_ff_en #(.W(W)) d_ff4_Yn
     (
-    .clk(clk),
-    .rst(reset_reg_cordic),
+    .clk   (clk),
+    .rst   (reset_reg_cordic),
     .enable(enab_d_ff4_Yn),
-    .D(result_add_subt),
-    .Q(d_ff_Yn)
+    .D     (result_add_subt),
+    .Q     (d_ff_Yn)
     );
 
     d_ff_en #(.W(W)) d_ff4_Zn
     (
-    .clk(clk),
-    .rst(reset_reg_cordic),
+    .clk   (clk),
+    .rst   (reset_reg_cordic),
     .enable(enab_d_ff4_Zn),
-    .D(result_add_subt),
-    .Q(d_ff_Zn)
+    .D     (result_add_subt),
+    .Q     (d_ff_Zn)
     );
 
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -484,11 +484,11 @@ endgenerate
 
     d_ff_en #(.W(W)) d_ff5_data_out
     (
-    .clk(clk),
-    .rst(reset_reg_cordic),
+    .clk   (clk),
+    .rst   (reset_reg_cordic),
     .enable(enab_d_ff5_data_out),
-    .D(fmtted_Result),
-    .Q(data_output)
+    .D     (fmtted_Result),
+    .Q     (data_output)
     );
 
 endmodule
