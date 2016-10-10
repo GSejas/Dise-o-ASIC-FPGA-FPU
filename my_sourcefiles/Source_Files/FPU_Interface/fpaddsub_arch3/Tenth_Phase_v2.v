@@ -3,7 +3,7 @@
 //==================================================================================================
 //  Filename      : Tenth_Phase_v2.v
 //  Created On    : 2016-09-21 17:42:42
-//  Last Modified : 2016-09-22 00:16:41
+//  Last Modified : 2016-10-10 14:44:33
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -103,13 +103,13 @@ Multiplexer_AC #(.W(SW)) Sgf_Mux (
         );
 /////////////////////////////////////////////////////////
 generate
-if(W == 32) begin
+if(W == 32) begin : Assign_exp_sgf1
     assign exp_mux_D1 =8'hff;
     assign sgf_mux_D1 =23'd0;
 end
-else begin
+else begin : Assign_exp_sgf2
 
-    assign exp_mux_D1 =11'hfff;
+    assign exp_mux_D1 =11'h7ff;
     assign sgf_mux_D1 =52'd0;
 
 end

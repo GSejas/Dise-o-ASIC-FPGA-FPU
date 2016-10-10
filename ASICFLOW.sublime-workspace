@@ -260,7 +260,7 @@
 	"buffers":
 	[
 		{
-			"file": "ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
 			"settings":
 			{
 				"buffer_size": 2931,
@@ -269,7 +269,7 @@
 			}
 		},
 		{
-			"file": "ASIC_fpaddsub_arch3/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_syn.tcl",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_syn.tcl",
 			"settings":
 			{
 				"buffer_size": 3138,
@@ -338,6 +338,26 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/scripts",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/scripts",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/source",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/source/FPU_Interface",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3"
+	],
 	"file_history":
 	[
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/FPU_all",
@@ -763,7 +783,7 @@
 			[
 				{
 					"buffer": 0,
-					"file": "ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
 					"semi_transient": false,
 					"settings":
 					{
@@ -791,7 +811,7 @@
 				},
 				{
 					"buffer": 1,
-					"file": "ASIC_fpaddsub_arch3/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_syn.tcl",
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_syn.tcl",
 					"semi_transient": true,
 					"settings":
 					{
@@ -864,7 +884,7 @@
 		"height": 24.0
 	},
 	"pinned_build_system": "",
-	"project": "FPU_all",
+	"project": "ASICFLOW.sublime-project",
 	"replace":
 	{
 		"height": 72.0
