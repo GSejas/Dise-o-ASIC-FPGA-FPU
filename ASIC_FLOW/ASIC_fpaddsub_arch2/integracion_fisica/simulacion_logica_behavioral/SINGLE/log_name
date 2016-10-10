@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
 -timescale=1ns/1ps
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Sun Oct  9 22:20:10 2016
+      Version K-2015.09-SP2-3_Full64 -- Sun Oct  9 22:24:58 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -194,14 +194,24 @@ Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/Comparators.v, 1
   Verilog compiler directive encountered "`timescale".
 
+Parsing design file 'Testbench_FPU_Add_Subt.v'
 
-Error-[SFCOR] Source file cannot be opened
-  Source file "Tesbench_FPU_Add_Subt.v" cannot be opened for reading due to 
-  'No such file or directory'.
-  Please fix above issue and compile again.
-  
-  
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 21
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'Hexadecimal_A.txt'.
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "Hexadecimal_A.txt", 2: token is ''
+  bfd8e24bba12b5e5
 
 1 warning
 1 error
-CPU time: .096 seconds to compile
+CPU time: .105 seconds to compile
