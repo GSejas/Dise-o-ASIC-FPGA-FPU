@@ -1,12 +1,12 @@
 {
-    "shift_mux_array_0000": [
-        "shift_mux_array_0000",
-        "qaeRY",
-        "module"
-    ],
     "Multiplexer_AC_0001": [
         "Multiplexer_AC_0001",
         "UDPPh",
+        "module"
+    ],
+    "shift_mux_array_0000": [
+        "shift_mux_array_0000",
+        "qaeRY",
         "module"
     ],
     "Rotate_Mux_Array_0000": [
@@ -14,14 +14,14 @@
         "GBFFm",
         "module"
     ],
-    "Testbench_FPU_Add_Subt": [
-        "Testbench_FPU_Add_Subt",
-        "kar0c",
-        "module"
-    ],
     "...MASTER...": [
         "SIM",
         "amcQw",
+        "module"
+    ],
+    "Testbench_FPU_Add_Subt": [
+        "Testbench_FPU_Add_Subt",
+        "kar0c",
         "module"
     ]
 }

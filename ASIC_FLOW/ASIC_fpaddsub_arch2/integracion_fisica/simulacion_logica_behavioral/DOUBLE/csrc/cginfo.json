@@ -1,0 +1,106 @@
+{
+    "CompileStatus": "Successful",
+    "NameTable": {
+        "shift_mux_array_0000": [
+            "shift_mux_array_0000",
+            "qaeRY",
+            "module"
+        ],
+        "Multiplexer_AC_0001": [
+            "Multiplexer_AC_0001",
+            "UDPPh",
+            "module"
+        ],
+        "Rotate_Mux_Array_0000": [
+            "Rotate_Mux_Array_0000",
+            "GBFFm",
+            "module"
+        ],
+        "Testbench_FPU_Add_Subt": [
+            "Testbench_FPU_Add_Subt",
+            "kar0c",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "Frontend(%)": 69.999909076857335,
+        "quadSpeed": 41137.546092842356,
+        "ru_self_cgstart": {
+            "ru_nivcsw": 26,
+            "ru_utime_sec": 0.230964,
+            "ru_stime_sec": 0.150977,
+            "ru_maxrss_kb": 58884,
+            "ru_minflt": 15913,
+            "ru_majflt": 0,
+            "ru_nvcsw": 52
+        },
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 2,
+            "ru_utime_sec": 0.0009990000000000001,
+            "ru_stime_sec": 0.0019989999999999999,
+            "ru_maxrss_kb": 21272,
+            "ru_minflt": 460,
+            "ru_majflt": 0,
+            "ru_nvcsw": 1
+        },
+        "nMops": 9305,
+        "nQuads": 4072,
+        "totalObjSize": 266783,
+        "mopSpeed": 94004.142041723506,
+        "ru_self_end": {
+            "ru_nivcsw": 30,
+            "ru_utime_sec": 0.32994899999999999,
+            "ru_stime_sec": 0.16197500000000001,
+            "ru_maxrss_kb": 67780,
+            "ru_minflt": 19460,
+            "ru_majflt": 0,
+            "ru_nvcsw": 52
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 2,
+            "ru_utime_sec": 0.0009990000000000001,
+            "ru_stime_sec": 0.0019989999999999999,
+            "ru_maxrss_kb": 21272,
+            "ru_minflt": 460,
+            "ru_majflt": 0,
+            "ru_nvcsw": 1
+        },
+        "mop/quad": 2.2851178781925343,
+        "outputSizePerQuad": 65.0,
+        "CodeGen(%)": 30.000090923142665
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 92301
+    },
+    "PEModules": [],
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "shift_mux_array_0000",
+        "Multiplexer_AC_0001",
+        "Rotate_Mux_Array_0000",
+        "Testbench_FPU_Add_Subt"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.7174.json"
+    ],
+    "Misc": {
+        "daidir": "simv.daidir",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE",
+        "csrc": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/csrc",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.0"
+    }
+}

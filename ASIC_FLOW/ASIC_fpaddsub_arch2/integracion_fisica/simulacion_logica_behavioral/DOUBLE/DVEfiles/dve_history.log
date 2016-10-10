@@ -1,0 +1,88 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1019
+gui_set_state_value -category Layout -key child_console_size_y -value 171
+gui_set_state_value -category Layout -key child_data_colvariable -value 173
+gui_set_state_value -category Layout -key child_data_size_x -value 243
+gui_set_state_value -category Layout -key child_data_size_y -value 393
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 185
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 67
+gui_set_state_value -category Layout -key child_hier_size_x -value 231
+gui_set_state_value -category Layout -key child_hier_size_y -value 393
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 548
+gui_set_state_value -category Layout -key child_schematic_size_y -value 388
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 548
+gui_set_state_value -category Layout -key child_source_size_y -value 388
+gui_set_state_value -category Layout -key child_wave_colname -value 155
+gui_set_state_value -category Layout -key child_wave_colvalue -value 137
+gui_set_state_value -category Layout -key child_wave_left -value 296
+gui_set_state_value -category Layout -key child_wave_right -value 722
+gui_set_state_value -category Layout -key main_pos_x -value 2
+gui_set_state_value -category Layout -key main_pos_y -value 51
+gui_set_state_value -category Layout -key main_size_x -value 1021
+gui_set_state_value -category Layout -key main_size_y -value 738
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1028
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 563
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 58
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 51
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1081
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 742
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value /home/local/ESTUDIANTES/jsequeira/detector/integracion_fisica/simulacion_logica_sintesis
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value simv
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+DOUBLE} -dir .
+gui_list_select -id Data.1 -selected  { {Testbench_FPU_Add_Subt.Cont_CLK[31:0]}   }
+gui_list_select_all -id Data.1
+gui_list_select -id Data.1 { {Testbench_FPU_Add_Subt.W[31:0]}   }
+gui_list_select -id Data.1 { {Testbench_FPU_Add_Subt.EW[31:0]}   }
+gui_list_select -id Data.1 { {Testbench_FPU_Add_Subt.SW[31:0]}   }
+gui_list_select -id Data.1 { {Testbench_FPU_Add_Subt.SWR[31:0]}   }
+gui_list_select -id Data.1 { {Testbench_FPU_Add_Subt.EWR[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {Testbench_FPU_Add_Subt.contador[31:0]} {Testbench_FPU_Add_Subt.FileSaveData[31:0]} {Testbench_FPU_Add_Subt.Cont_CLK[31:0]} {Testbench_FPU_Add_Subt.Recept[31:0]} Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.underflow_flag Testbench_FPU_Add_Subt.ready {Testbench_FPU_Add_Subt.final_result_ieee[63:0]} Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.rst Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.ack_FSM {Testbench_FPU_Add_Subt.Data_X[63:0]} {Testbench_FPU_Add_Subt.Data_Y[63:0]} Testbench_FPU_Add_Subt.add_subt {Testbench_FPU_Add_Subt.r_mode[1:0]} {Testbench_FPU_Add_Subt.Array_IN[0:1023][63:0]} {Testbench_FPU_Add_Subt.Array_IN_2[0:1023][63:0]} {Testbench_FPU_Add_Subt.PERIOD[31:0]} } -insertionbar
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.final_result_ieee[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.final_result_ieee[63:0]}  {Testbench_FPU_Add_Subt.Data_X[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.final_result_ieee[63:0]}  {Testbench_FPU_Add_Subt.Data_X[63:0]}  {Testbench_FPU_Add_Subt.Data_Y[63:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix Hex2Float_BigEndian
+gui_marker_move -id  Wave.1 C1 14725000
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 14865000
+gui_close_window -window TopLevel.2

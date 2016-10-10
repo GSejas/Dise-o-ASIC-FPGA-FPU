@@ -1,0 +1,37 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpyfB30z
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.7622}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.7622}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {Testbench_FPU_Add_Subt.Array_IN} -aggregates  -fid VPD0
+ucliGUI::vpdAddHierarchy -scope Testbench_FPU_Add_Subt -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd; synopsys::dump -flush VPD0
+synopsys::dump -add {Testbench_FPU_Add_Subt.Array_IN_2} -aggregates  -fid VPD0
+synopsys::dump -add {Testbench_FPU_Add_Subt.Cont_CLK Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.FileSaveData Testbench_FPU_Add_Subt.PERIOD Testbench_FPU_Add_Subt.Recept Testbench_FPU_Add_Subt.ack_FSM Testbench_FPU_Add_Subt.add_subt Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.contador Testbench_FPU_Add_Subt.final_result_ieee Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.r_mode Testbench_FPU_Add_Subt.ready Testbench_FPU_Add_Subt.rst Testbench_FPU_Add_Subt.underflow_flag } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt -radix {hexadecimal } -list {{final_result_ieee[63:0]} }
+ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt -radix {hexadecimal } -list {{Data_X[63:0]} }
+ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt -radix {hexadecimal } -list {{Data_Y[63:0]} }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

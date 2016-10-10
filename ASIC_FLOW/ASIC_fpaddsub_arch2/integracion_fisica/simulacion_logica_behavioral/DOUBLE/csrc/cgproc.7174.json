@@ -1,0 +1,87 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_7174_archive_1.a",
+            "objects": [
+                [
+                    "qaeRY_d.o",
+                    19839
+                ],
+                [
+                    "UDPPh_d.o",
+                    7792
+                ],
+                [
+                    "GBFFm_d.o",
+                    23403
+                ],
+                [
+                    "kar0c_d.o",
+                    116339
+                ]
+            ],
+            "size": 167373
+        }
+    ],
+    "CompUnits": {
+        "GBFFm_d": {
+            "mod": "Rotate_Mux_Array_0000",
+            "out": "GBFFm_d.o",
+            "bytes": 23403,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_7174_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7109,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "qaeRY_d": {
+            "mod": "shift_mux_array_0000",
+            "out": "qaeRY_d.o",
+            "bytes": 19839,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_7174_archive_1.a"
+        },
+        "UDPPh_d": {
+            "mod": "Multiplexer_AC_0001",
+            "out": "UDPPh_d.o",
+            "bytes": 7792,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_7174_archive_1.a"
+        },
+        "kar0c_d": {
+            "mod": "Testbench_FPU_Add_Subt",
+            "out": "kar0c_d.o",
+            "bytes": 116339,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_7174_archive_1.a"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {},
+        "shift_mux_array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer_AC_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Testbench_FPU_Add_Subt": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {}
+}
