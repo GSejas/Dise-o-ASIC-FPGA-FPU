@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v
 //  Created On    : 2016-09-27 18:38:13
-//  Last Modified : 2016-09-27 20:00:38
+//  Last Modified : 2016-10-10 15:31:39
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -58,18 +58,21 @@ module tb_FPU_PIPELINED_FPADDSUB2_vector_testing (); /* this is automatically ge
 
   localparam PERIOD = 10;
 
-  // (*NOTE*) replace reset, clock
+`ifdef SINGLE
    parameter W = 32;
    parameter EW = 8;
    parameter SW = 23;
    parameter SWR=26;
    parameter EWR = 5;  //Single Precision */
+`endif
 
-  // parameter W   = 64;
-  // parameter EW  = 11;
-  // parameter SW  = 52;
-  // parameter SWR = 55;
-  // parameter EWR = 6;
+`ifdef DOUBLE
+   parameter W   = 64;
+   parameter EW  = 11;
+   parameter SW  = 52;
+   parameter SWR = 55;
+   parameter EWR = 6;
+`endif
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -198,7 +201,7 @@ end
 
    initial begin
     FileSaveData = $fopen("ResultadoXilinxFLM.txt","w");
-    logVectorReference = $fopen("output_log.py","w");
+ //   logVectorReference = $fopen("output_log.py","w");
 
     rst = 1;
 
@@ -382,7 +385,7 @@ task FPADD_FPSUB;
       end
       else begin
 
-          assign exp_mux_D1 =11'hfff;
+          assign exp_mux_D1 =11'h7ff;
           assign sgf_mux_D1 =52'd0;
 
       end

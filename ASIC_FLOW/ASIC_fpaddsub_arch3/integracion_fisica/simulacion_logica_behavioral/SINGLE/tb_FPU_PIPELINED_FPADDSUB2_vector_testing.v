@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v
 //  Created On    : 2016-09-27 18:38:13
-//  Last Modified : 2016-12-12 20:01:24
+//  Last Modified : 2016-10-10 15:30:54
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -66,7 +66,7 @@ module tb_FPU_PIPELINED_FPADDSUB2_vector_testing (); /* this is automatically ge
    parameter EWR = 5;  //Single Precision */
 `endif
 
-`ifdef
+`ifdef DOUBLE
    parameter W   = 64;
    parameter EW  = 11;
    parameter SW  = 52;
@@ -385,7 +385,7 @@ task FPADD_FPSUB;
       end
       else begin
 
-          assign exp_mux_D1 =11'hfff;
+          assign exp_mux_D1 =11'h7ff;
           assign sgf_mux_D1 =52'd0;
 
       end
