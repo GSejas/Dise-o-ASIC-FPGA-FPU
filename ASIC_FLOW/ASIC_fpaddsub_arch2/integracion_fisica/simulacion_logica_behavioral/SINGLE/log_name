@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
 -timescale=1ns/1ps
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Sun Oct  9 22:43:47 2016
+      Version K-2015.09-SP2-3_Full64 -- Sun Oct  9 22:46:49 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -238,4 +238,4 @@ Error-[URMI] Unresolved modules
 
 1 warning
 1 error
-CPU time: .146 seconds to compile
+CPU time: .128 seconds to compile
