@@ -36,7 +36,8 @@ generate for (j=0; j<=SWR-1 ; j=j+1) begin : MUX_ODDNORM
 
 	case (sh>SWR-1)
 
-		1'b1:begin
+		1'b1:begin : MUX_ODDNORM1
+
 			Multiplexer_AC #(.W(1)) rotate_mux(
 			    .ctrl(select_i),
 			    .D0 (Data_i[j]),
@@ -44,7 +45,7 @@ generate for (j=0; j<=SWR-1 ; j=j+1) begin : MUX_ODDNORM
 			    .S (Data_o[j])
 			    );
 			end
-		1'b0:begin
+		1'b0:begin : MUX_ODDNORM2
 			Multiplexer_AC #(.W(1)) rotate_mux(
 			    .ctrl(select_i),
 			    .D0 (Data_i[j]),

@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 05/26/2016 07:28:40 AM
-// Design Name: 
+// Design Name:
 // Module Name: LZD
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -33,26 +33,26 @@ module LZD#(parameter SWR=26, parameter EWR=5)(
 
 
 	wire [EWR-1:0] Codec_to_Reg;
-	
+
 	generate
 		case (SWR)
-			26:begin
+			26:begin : LZD_SINGLEBLK
 				Priority_Codec_32 Codec_32(
 					.Data_Dec_i(Add_subt_result_i),
 					.Data_Bin_o(Codec_to_Reg)
 					);
-			   
+
 				end
-			55:begin
+			55:begin : LZD_DOUBLEBLK
 				Priority_Codec_64 Codec_64(
 					.Data_Dec_i(Add_subt_result_i),
 					.Data_Bin_o(Codec_to_Reg)
 					);
-			       
+
 				end
 			endcase
-	endgenerate		
-	
+	endgenerate
+
 	RegisterAdd #(.W(EWR)) Output_Reg(
 		        .clk(clk),
 		        .rst(rst),

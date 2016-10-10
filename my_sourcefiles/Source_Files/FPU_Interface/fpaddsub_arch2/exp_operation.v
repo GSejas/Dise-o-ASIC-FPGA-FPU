@@ -37,7 +37,8 @@ module Exp_Operation
         output wire Underflow_flag_o
     );
 
-
+wire Overflow_flag;
+wire Underflow_flag;
 //wire [EW-1:0] Data_B;
 wire [EW:0] Data_S;
 /////////////////////////////////////////7

@@ -1,45 +1,45 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    22:06:01 08/27/2015 
-// Design Name: 
-// Module Name:    FPU_Add_Subtract_Function 
-// Project Name: 
-// Target Devices:   
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies:  
+// Create Date:    22:06:01 08/27/2015
+// Design Name:
+// Module Name:    FPU_Add_Subtract_Function
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
-// Revision 0.01 - File Created 
-// Additional Comments: 
+// Dependencies:
+//
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 
 module FPU_Add_Subtract_Function
 //Add/Subtract Function Parameters
-	
+
    #(parameter W = 32, parameter EW = 8, parameter SW = 23, parameter SWR=26, parameter EWR = 5)  //Single Precision */
-		
+
 	//#(parameter W = 64, parameter EW = 11, parameter SW = 52, parameter SWR = 55, parameter EWR = 6) //-- Double Precision */
-	( 
-		//FSM Signals 
+	(
+		//FSM Signals
 		input wire clk,
 		input wire rst,
 		input wire beg_FSM,
 		input wire ack_FSM,
-		
+
 		//Oper_Start_in signals
 		input wire [W-1:0] Data_X,
 		input wire [W-1:0] Data_Y,
 		input wire add_subt,
-		 
+
 		//Round signals signals
 		input wire [1:0] r_mode,
-		
+
 		//OUTPUT SIGNALS
 		output wire overflow_flag,
 		output wire underflow_flag,
@@ -50,14 +50,14 @@ module FPU_Add_Subtract_Function
 
 
 ////////////op_start_in///////////////
-wire FSM_op_start_in_load_a,FSM_op_start_in_load_b; 
+wire FSM_op_start_in_load_a,FSM_op_start_in_load_b;
 wire [W-2:0] DMP, DmP;
 wire real_op;
 wire sign_final_result;
 ///////////Mux S-> exp_operation OPER_A_i//////////
 
 wire FSM_selector_A;
-//D0=DMP_o[W-2:W-EW-1] 
+//D0=DMP_o[W-2:W-EW-1]
 //D1=exp_oper_result
 wire [EW-1:0] S_Oper_A_exp;
 
@@ -157,6 +157,9 @@ wire load_b;
 wire selector_C;
 wire selector_D;
 
+wire zero_flag;
+
+
 ///////////////////////////////////////FSM/////////////////////////////////////////
 
 FSM_Add_Subtract FS_Module(
@@ -164,7 +167,7 @@ FSM_Add_Subtract FS_Module(
     .rst(rst),                                                       //
     .rst_FSM(ack_FSM),                                               //
     .beg_FSM(beg_FSM),                                               //
-	.zero_flag_i(zero_flag),                                         // 
+	.zero_flag_i(zero_flag),                                         //
     .norm_iteration_i(FSM_selector_C),                               //
     .add_overflow_i(add_overflow_flag),                              //
     .round_i(round_flag),                                            //
@@ -178,7 +181,7 @@ FSM_Add_Subtract FS_Module(
     .bit_shift_o(FSM_barrel_shifter_B_S),                            //
     .load_5_o(FSM_Add_Subt_Sgf_load),                                  //
     .load_6_o(FSM_LZA_load),                                           //
-    .load_7_o(FSM_Final_Result_load),                                  // 
+    .load_7_o(FSM_Final_Result_load),                                  //
     .ctrl_a_o(selector_A),                                         //
     .ctrl_b_o(selector_B),                                         //
     .ctrl_b_load_o(load_b),
@@ -187,46 +190,46 @@ FSM_Add_Subtract FS_Module(
 	.rst_int(rst_int),                                               //
 	.ready(ready)                                                    //
     );
-	 
+
 
 
 
 /////////////////////////////Selector's registers//////////////////////////////
 
 RegisterAdd #(.W(1)) Sel_A ( //Selector_A register
-    .clk(clk), 
-    .rst(rst_int), 
-    .load(selector_A), 
-    .D(1'b1), 
+    .clk(clk),
+    .rst(rst_int),
+    .load(selector_A),
+    .D(1'b1),
     .Q(FSM_selector_A)
     );
 
 RegisterAdd #(.W(1)) Sel_C ( //Selector_C register
-    .clk(clk), 
-    .rst(rst_int), 
-    .load(selector_C), 
-    .D(1'b1), 
+    .clk(clk),
+    .rst(rst_int),
+    .load(selector_C),
+    .D(1'b1),
     .Q(FSM_selector_C)
     );
-    
+
 RegisterAdd #(.W(1)) Sel_D ( //Selector_D register
-        .clk(clk), 
-        .rst(rst_int), 
-        .load(selector_D), 
-        .D(1'b1), 
+        .clk(clk),
+        .rst(rst_int),
+        .load(selector_D),
+        .D(1'b1),
         .Q(FSM_selector_D)
         );
-        
+
 RegisterAdd #(.W(2)) Sel_B ( //Selector_B register
-                .clk(clk), 
-                .rst(rst_int), 
-                .load(load_b), 
-                .D(selector_B), 
+                .clk(clk),
+                .rst(rst_int),
+                .load(load_b),
+                .D(selector_B),
                 .Q(FSM_selector_B)
                 );
-                            
+
 ////////////////////////////////////////////////////////
-	 
+
 //MODULES///////////////////////////
 
 ////////////////////Oper_Start_in//////////////////7
@@ -236,7 +239,7 @@ RegisterAdd #(.W(2)) Sel_B ( //Selector_B register
 //operation for the execution///////////////////////////////
 
 Oper_Start_In #(.W(W)) Oper_Start_in_module (
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_a_i(FSM_op_start_in_load_a),
     .load_b_i(FSM_op_start_in_load_b),
@@ -273,15 +276,15 @@ Mux_3x1 #(.W(EW)) Exp_Oper_B_mux(
                 .D2 (Exp_oper_B_D2),
                 .S(S_Oper_B_exp)
             );
-            
+
 
 generate
     case(EW)
-        8:begin
+        8:begin : ASSIGN_FULL_BLK1
             assign Exp_oper_B_D1 =3'd0;
             assign Exp_oper_B_D2 = 8'd1;
         end
-        default:begin
+        default:begin  : ASSIGN_FULL_BLK2
             assign Exp_oper_B_D1 =5'd0;
              assign Exp_oper_B_D2 = 11'd1;
         end
@@ -291,7 +294,7 @@ endgenerate
 ///////////exp_operation///////////////////////////
 
 Exp_Operation #(.EW(EW)) Exp_Operation_Module(
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_a_i(FSM_exp_operation_load_diff),
     .load_b_i(FSM_exp_operation_load_OU),
@@ -318,12 +321,12 @@ Mux_3x1 #(.W(EWR)) Barrel_Shifter_S_V_mux(
 
 generate
     case(EW)
-        8:begin
+        8:begin  : ASSIGN_SHIFT_BLK1
             assign Barrel_Shifter_S_V_D2 = 5'd1;
         end
-        default:begin
+        default:begin  : ASSIGN_SHIFT_BLK2
             assign Barrel_Shifter_S_V_D2 = 6'd1;
-        end 
+        end
     endcase
 endgenerate
 
@@ -339,7 +342,7 @@ Multiplexer_AC #(.W(SWR)) Barrel_Shifter_D_I_mux(
 ///////////Barrel_Shifter//////////////////////////
 
 Barrel_Shifter #(.SWR(SWR),.EWR(EWR)) Barrel_Shifter_module (
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_i(FSM_barrel_shifter_load),
     .Shift_Value_i(S_Shift_Value),
@@ -380,10 +383,10 @@ Multiplexer_AC #(.W(SWR)) Add_Sub_Sgf_Oper_B_mux(
                 );
 generate
     case (W)
-        32:begin
+        32:begin   : ASSIGN_SGF_BLK1
             assign Add_Sub_Sgf_Oper_A_D1 = 26'd4;
             end
-        default:begin
+        default:begin   : ASSIGN_SGF_BLK2
              assign Add_Sub_Sgf_Oper_A_D1 =55'd4;
             end
        endcase
@@ -392,7 +395,7 @@ endgenerate
 /////////ADD_Subt_sgf///////////////////////////////////
 
 Add_Subt #(.SWR(SWR)) Add_Subt_Sgf_module(
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_i(FSM_Add_Subt_Sgf_load),
     .Add_Sub_op_i(S_A_S_op),
@@ -421,7 +424,7 @@ Test_comb_LZA #(.SWR(SWR)) comb(
 //////////LZA///////////////////////////////////////////
 
 LZA #(.SWR(SWR),.EWR(EWR)) Leading_Zero_Anticipator_Module (
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_i(FSM_LZA_load),
     .P_i(A_S_P),
@@ -434,7 +437,7 @@ wire [SWR-1:0] Add_Subt_LZD;
 assign Add_Subt_LZD = ~Add_Subt_result;
 
 LZD #(.SWR(SWR),.EWR(EWR)) Leading_Zero_Detector_Module (
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_i(FSM_LZA_load),
     .Add_subt_result_i(Add_Subt_LZD),
@@ -444,7 +447,7 @@ LZD #(.SWR(SWR),.EWR(EWR)) Leading_Zero_Detector_Module (
 /////////Deco_round///////////////////////////////////////
 
 Round_Sgf_Dec Rounding_Decoder(
-   
+
     .Data_i(Sgf_normalized_result[1:0]),
     .Round_Type_i(r_mode),
     .Sign_Result_i(sign_final_result),
@@ -454,7 +457,7 @@ Round_Sgf_Dec Rounding_Decoder(
 ////////Final_result//////////////////////////////////////
 
 Tenth_Phase #(.W(W),.EW(EW),.SW(SW)) final_result_ieee_Module(
-    .clk(clk), 
+    .clk(clk),
     .rst(rst_int),
     .load_i(FSM_Final_Result_load),
     .sel_a_i(overflow_flag),

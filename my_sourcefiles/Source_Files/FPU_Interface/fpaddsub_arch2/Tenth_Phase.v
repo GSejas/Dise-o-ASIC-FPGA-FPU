@@ -1,38 +1,38 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    15:15:08 08/27/2015 
-// Design Name: 
-// Module Name:    Tenth_Phase 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    15:15:08 08/27/2015
+// Design Name:
+// Module Name:    Tenth_Phase
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Tenth_Phase 
+module Tenth_Phase
 //Module Parameters
 /***SINGLE PRECISION***/
-// W = 32 
+// W = 32
 // EW = 8
-// SW = 23 
+// SW = 23
 
 /***DOUBLE PRECISION***/
-// W = 64 
+// W = 64
 // EW = 11
 // SW = 52
-	
+
 	# (parameter W = 32, parameter EW = 8, parameter SW = 23)
 //	# (parameter W = 64, parameter EW = 11, parameter SW = 52)
-	
+
 	(
 		//INPUTS
 		input wire clk, //Clock Signal
@@ -69,25 +69,25 @@ Mux_3x1 #(.W(1)) Sign_Mux (
     );
 
 Multiplexer_AC #(.W(EW)) Exp_Mux (
-    .ctrl(overunder), 
-    .D0(exp_ieee_i), 
-    .D1(exp_mux_D1), 
+    .ctrl(overunder),
+    .D0(exp_ieee_i),
+    .D1(exp_mux_D1),
     .S(Exp_S_mux)
     );
-    
+
 Multiplexer_AC #(.W(SW)) Sgf_Mux (
-        .ctrl(overunder), 
-        .D0(sgf_ieee_i), 
-        .D1(sgf_mux_D1), 
+        .ctrl(overunder),
+        .D0(sgf_ieee_i),
+        .D1(sgf_mux_D1),
         .S(Sgf_S_mux)
         );
 /////////////////////////////////////////////////////////
 generate
-if(W == 32) begin
+if(W == 32) begin : ASSIGN_EXP_SGF_BLK1
     assign exp_mux_D1 =8'hff;
     assign sgf_mux_D1 =23'd0;
 end
-else begin
+else begin : ASSIGN_EXP_SGF_BLK2
 
     assign exp_mux_D1 =11'h7ff;
     assign sgf_mux_D1 =52'd0;
@@ -100,12 +100,12 @@ endgenerate
 
 ////////////////////////////////////////////////////////
 RegisterAdd #(.W(W)) Final_Result_IEEE (
-    .clk(clk), 
-    .rst(rst), 
-    .load(load_i), 
-    .D({Sign_S_mux,Exp_S_mux,Sgf_S_mux}), 
+    .clk(clk),
+    .rst(rst),
+    .load(load_i),
+    .D({Sign_S_mux,Exp_S_mux,Sgf_S_mux}),
     .Q(final_result_ieee_o)
-    );	 
+    );
 
 
 endmodule

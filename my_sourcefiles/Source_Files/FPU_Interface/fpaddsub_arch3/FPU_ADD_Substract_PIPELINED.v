@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : FPU_ADD_Substract_PIPELINED.v
 //  Created On    : 2016-09-27 20:11:48
-//  Last Modified : 2016-10-10 14:41:45
+//  Last Modified : 2016-10-10 14:49:15
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -439,7 +439,7 @@ generate
         8:begin : LZD_Filler1
             assign b_shifter_one_SWR = 5'd1;
         end
-        default:begin
+        default:begin : LZD_Filler3
             assign b_shifter_one_SWR = 6'd1;
         end
     endcase
@@ -451,7 +451,7 @@ generate
             assign LZD_ZFiller =3'd0;
             assign Exp_oper_1_EW = 8'd1;
         end
-        default:begin
+        default:begin : LZD_Filler4
             assign LZD_ZFiller =5'd0;
              assign Exp_oper_1_EW = 11'd1;
         end

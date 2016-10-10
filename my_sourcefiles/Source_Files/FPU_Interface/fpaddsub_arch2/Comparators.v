@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    14:11:30 08/20/2015 
-// Design Name: 
-// Module Name:    Sixth_Phase 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    14:11:30 08/20/2015
+// Design Name:
+// Module Name:    Sixth_Phase
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Comparators
@@ -29,7 +29,7 @@ module Comparators
 		input wire [W_Exp-1:0] exp, //exponent of the fifth phase
 		output wire overflow, //overflow flag
 		output wire underflow //underflow flag
-		
+
     );
 
 wire [W_Exp-1:0] U_limit; //Max Normal value of the standar ieee 754
@@ -38,35 +38,35 @@ wire [W_Exp-1:0] L_limit; //Min Normal value of the standar ieee 754
 
 //Compares the exponent with the Max Normal Value, if the exponent is
 //larger than U_limit then exist overflow
-Greater_Comparator #(.W(W_Exp)) GTComparator ( 
-    .Data_A(exp), 
-    .Data_B(U_limit), 
+Greater_Comparator #(.W(W_Exp)) GTComparator (
+    .Data_A(exp),
+    .Data_B(U_limit),
     .gthan(overflow)
     );
 
 //Compares the exponent with the Min Normal Value, if the exponent is
-//smaller than L_limit then exist underflow	 
+//smaller than L_limit then exist underflow
 Comparator_Less #(.W(W_Exp)) LTComparator (
-    .Data_A(exp),  
-    .Data_B(L_limit), 
+    .Data_A(exp),
+    .Data_B(L_limit),
     .less(underflow)
     );
 
 
 
-//This generate sentence creates the limit values based on the 
+//This generate sentence creates the limit values based on the
 //precision format
 
 generate
-	if(W_Exp == 9) begin
+	if(W_Exp == 9) begin  : LIMASSIGN_EXP_SGF_BLK1
 		assign U_limit = 9'hfe;
 		assign L_limit = 9'h01;
 	end
-	else begin
+	else begin : LIMASSIGN_EXP_SGF_BLK2
 		assign U_limit = 12'b111111111110;
 		assign L_limit = 12'b000000000001;
 	end
 endgenerate
 
 endmodule
- 
+

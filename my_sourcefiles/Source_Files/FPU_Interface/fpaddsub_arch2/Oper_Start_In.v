@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 03/10/2016 11:52:43 AM
-// Design Name: 
+// Design Name:
 // Module Name: Oper_Start_In
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -36,14 +36,14 @@ module Oper_Start_In
 		input wire [W-1:0] Data_X_i, //Data_X and Data_y are both operands of the module
 		//they are expected in ieee 754 format
 		input wire [W-1:0] Data_Y_i,
-		
+
 		//////////////////////////////////////////////////////////////////////
 		output wire [W-2:0] DMP_o, //Because the algorithm these outputs contain the largest and smallest operand
         output wire [W-2:0] DmP_o,
         output wire zero_flag_o, //Flag for FSM when the subt result is zero
         output wire real_op_o, //bit for real add/subt operation in case for -DataY
         output wire sign_final_result_o //bit for sign result
-		
+
     );
 
 
@@ -57,33 +57,33 @@ wire gtXY; //Output for magntiude_comparator (X>Y)
 wire eqXY; //Output for magntiude_comparator (X=Y)
 wire [W-2:0] intM; //Output of MuxXY for bigger value
 wire [W-2:0] intm;  //Output of MuxXY for small value
-
+wire sign_result;
 
 
 
 ///////////////////////////////////////////////////////////////////
 
 RegisterAdd #(.W(W)) XRegister ( //Data X input register
-    .clk(clk), 
-    .rst(rst), 
-    .load(load_a_i), 
-    .D(Data_X_i), 
+    .clk(clk),
+    .rst(rst),
+    .load(load_a_i),
+    .D(Data_X_i),
     .Q(intDX)
     );
-	 
+
 RegisterAdd #(.W(W)) YRegister ( //Data Y input register
-    .clk(clk), 
-    .rst(rst), 
-    .load(load_a_i), 
-    .D(Data_Y_i), 
+    .clk(clk),
+    .rst(rst),
+    .load(load_a_i),
+    .D(Data_Y_i),
     .Q(intDY)
     );
 
 RegisterAdd #(.W(1)) ASRegister ( //Data Add_Subtract input register
-    .clk(clk), 
-    .rst(rst), 
-    .load(load_a_i), 
-    .D(add_subt_i), 
+    .clk(clk),
+    .rst(rst),
+    .load(load_a_i),
+    .D(add_subt_i),
     .Q(intAS)
     );
 
@@ -119,21 +119,21 @@ MultiplexTxT #(.W(W-1)) MuxXY (//Classify in the registers the bigger value (M) 
     );
 
 RegisterAdd #(.W(W-1)) MRegister ( //Data_M register
-    .clk(clk), 
-    .rst(rst), 
-    .load(load_b_i), 
-    .D(intM), 
+    .clk(clk),
+    .rst(rst),
+    .load(load_b_i),
+    .D(intM),
     .Q(DMP_o)
     );
 
 RegisterAdd #(.W(W-1)) mRegister ( //Data_m register
-    .clk(clk), 
-    .rst(rst), 
-    .load(load_b_i), 
-    .D(intm), 
+    .clk(clk),
+    .rst(rst),
+    .load(load_b_i),
+    .D(intm),
     .Q(DmP_o)
     );
-    
+
 RegisterAdd #(.W(1)) SignRegister (
     .clk(clk),
     .rst(rst),
