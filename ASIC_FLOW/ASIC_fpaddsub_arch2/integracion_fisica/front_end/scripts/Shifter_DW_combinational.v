@@ -129,7 +129,7 @@ Rotate_Mux_Array #(.SWR(SWR+1)) first_rotate(
       .Data_o        (Data_array [3][SWR:0])
     );
 
-Rotate_Mux_Array #(.SWR(SWR+1) last_rotate(
+Rotate_Mux_Array #(.SWR(SWR+1))last_rotate(
 	.Data_i(Data_array [4][SWR:0]),
 	.select_i(FSM_left_right_i),
 	.Data_o(Data_o)
