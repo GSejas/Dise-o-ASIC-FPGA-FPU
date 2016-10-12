@@ -1,0 +1,171 @@
+{
+    "PrevCompiledModules": {
+        "shift_mux_array_0000": {
+            "qaeRY_d": {
+                "bytes": 40331,
+                "checksum": 4294967295,
+                "mod": "shift_mux_array_0000",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
+                "out": "qaeRY_d.o"
+            }
+        },
+        "Testbench_Barrel_Shifter": {
+            "VHunS_d": {
+                "bytes": 24295,
+                "checksum": 4294967295,
+                "mod": "Testbench_Barrel_Shifter",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
+                "out": "VHunS_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 8572,
+                "checksum": 4294967295,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4
+            }
+        },
+        "Rotate_Mux_Array_0000": {
+            "GBFFm_d": {
+                "bytes": 12875,
+                "checksum": 4294967295,
+                "mod": "Rotate_Mux_Array_0000",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
+                "out": "GBFFm_d.o"
+            }
+        },
+        "Multiplexer_AC_0001": {
+            "UDPPh_d": {
+                "bytes": 7792,
+                "checksum": 4294967295,
+                "mod": "Multiplexer_AC_0001",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
+                "out": "UDPPh_d.o"
+            }
+        },
+        "FPU_Add_Subtract_Function": {
+            "CJHB3_d": {
+                "bytes": 101560,
+                "checksum": 4294967295,
+                "mod": "FPU_Add_Subtract_Function",
+                "mode": 4,
+                "archive": "archive.8/_prev_archive_1.a",
+                "out": "CJHB3_d.o"
+            }
+        }
+    },
+    "Misc": {
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/csrc",
+        "daidir": "simv.daidir",
+        "archive_dir": "archive.8",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/simv.daidir"
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "MlibObjs": {},
+    "CompileStatus": "Successful",
+    "stat": {
+        "CodeGen(%)": 2.5905581178421535,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.187971,
+            "ru_minflt": 13940,
+            "ru_maxrss_kb": 59472,
+            "ru_stime_sec": 0.032994000000000002,
+            "ru_majflt": 0,
+            "ru_nvcsw": 51,
+            "ru_nivcsw": 34
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "nQuads": 16,
+        "Frontend(%)": 97.40944188215785,
+        "nMops": 19,
+        "totalObjSize": 100540,
+        "outputSizePerQuad": 6283.0,
+        "ru_self_end": {
+            "ru_utime_sec": 0.19297,
+            "ru_minflt": 15481,
+            "ru_maxrss_kb": 64496,
+            "ru_stime_sec": 0.038994000000000001,
+            "ru_majflt": 0,
+            "ru_nvcsw": 51,
+            "ru_nivcsw": 39
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        }
+    },
+    "NameTable": {
+        "shift_mux_array_0000": [
+            "shift_mux_array_0000",
+            "qaeRY",
+            "module"
+        ],
+        "FPU_Add_Subtract_Function": [
+            "FPU_Add_Subtract_Function",
+            "CJHB3",
+            "module"
+        ],
+        "Multiplexer_AC_0001": [
+            "Multiplexer_AC_0001",
+            "UDPPh",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "Rotate_Mux_Array_0000": [
+            "Rotate_Mux_Array_0000",
+            "GBFFm",
+            "module"
+        ],
+        "Testbench_Barrel_Shifter": [
+            "Testbench_Barrel_Shifter",
+            "VHunS",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 91968
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "shift_mux_array_0000",
+        "FPU_Add_Subtract_Function",
+        "Multiplexer_AC_0001",
+        "Rotate_Mux_Array_0000",
+        "Testbench_Barrel_Shifter"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.3231.json"
+    ]
+}

@@ -1,0 +1,748 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -design V1}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
+gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_console_size_x -value 343
+gui_set_state_value -category Layout -key child_console_size_y -value 179
+gui_set_state_value -category Layout -key child_data_coltype -value 86
+gui_set_state_value -category Layout -key child_data_colvalue -value 72
+gui_set_state_value -category Layout -key child_data_colvariable -value 240
+gui_set_state_value -category Layout -key child_data_docknewline -value false
+gui_set_state_value -category Layout -key child_data_dockstate -value undocked
+gui_set_state_value -category Layout -key child_data_pos_x -value 1
+gui_set_state_value -category Layout -key child_data_size_x -value 423
+gui_set_state_value -category Layout -key child_data_size_y -value 319
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 496
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 69
+gui_set_state_value -category Layout -key child_hier_size_x -value 591
+gui_set_state_value -category Layout -key child_hier_size_y -value 438
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1364
+gui_set_state_value -category Layout -key child_schematic_size_y -value 613
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_source_size_x -value 772
+gui_set_state_value -category Layout -key child_source_size_y -value 407
+gui_set_state_value -category Layout -key child_wave_colname -value 194
+gui_set_state_value -category Layout -key child_wave_colvalue -value 195
+gui_set_state_value -category Layout -key child_wave_left -value 393
+gui_set_state_value -category Layout -key child_wave_right -value 960
+gui_set_state_value -category Layout -key main_pos_x -value 0
+gui_set_state_value -category Layout -key main_pos_y -value 24
+gui_set_state_value -category Layout -key main_size_x -value 1359
+gui_set_state_value -category Layout -key main_size_y -value 767
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-20}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1363
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 526
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 52
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1358
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 739
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui +v2k +lint=all -l log_name +define+SINGLE}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER /home/local/ESTUDIANTES/jsequeira/detector/integracion_fisica/simulacion_logica_sintesis}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/simv simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SINGLE} -dir .
+gui_list_select -id Hier.1 -current_item_name Testbench_Barrel_Shifter -current_item_type Scope  -selected  { Testbench_Barrel_Shifter   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { Testbench_Barrel_Shifter } -insertionbar
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 40000
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window  Wave.1  -full
+gui_wv_zoom_timerange -id  Wave.1 948754 2671778
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 220000
+gui_marker_move -id  Wave.1 C1 50000
+gui_marker_move -id  Wave.1 C1 60000
+gui_marker_select -id  Wave.1 { C1 }
+gui_list_select -id Wave.1 -selected  { {Testbench_Barrel_Shifter.N_mant_o[25:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_Barrel_Shifter.N_mant_o[25:0]}  {Testbench_Barrel_Shifter.Shift_Data_i[25:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix binary
+gui_marker_move -id  Wave.1 C1 50000
+gui_marker_move -id  Wave.1 C1 60000
+gui_marker_move -id  Wave.1 C1 50000
+gui_marker_move -id  Wave.1 C1 60000
+gui_marker_move -id  Wave.1 C1 120000
+gui_marker_move -id  Wave.1 C1 56884
+gui_marker_move -id  Wave.1 C1 67893
+gui_marker_move -id  Wave.1 C1 212855
+gui_marker_move -id  Wave.1 C1 220000
+gui_marker_move -id  Wave.1 C1 55000
+gui_marker_move -id  Wave.1 C1 60000
+gui_marker_move -id  Wave.1 C1 50000
+gui_wv_zoom_timerange -id  Wave.1 0 1723024
+gui_wv_zoom_timerange -id  Wave.1 0 1724859
+gui_marker_move -id  Wave.1 C1 143127
+gui_marker_move -id  Wave.1 C1 170651
+gui_marker_move -id  Wave.1 C1 220000
+gui_marker_move -id  Wave.1 C1 176156
+gui_marker_move -id  Wave.1 C1 455069
+gui_marker_move -id  Wave.1 C1 380000
+gui_marker_move -id  Wave.1 C1 220000
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_list_select -id Wave.1 -selected  { {Testbench_Barrel_Shifter.Shift_Value_i[4:0]}   }
+gui_use_schematics 
+gui_path_schematic_dlg -signal {Testbench_Barrel_Shifter.Shift_Value_i[4:0]}
+gui_use_schematics 
+gui_path_show -objects {{Testbench_Barrel_Shifter.Shift_Value_i[4:0]}}
+gui_zoom -window Schematic.1 -rect { {-14153 -4154} {24204 14204} }
+gui_zoom -window Schematic.1 -rect { {-18426 -22658} {37897 4299} }
+gui_zoom -window Schematic.1 -rect { {-18426 -22658} {37897 4299} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {-19861 -23383} {39427 4993} }
+gui_zoom -window Schematic.1 -rect { {-21480 -24101} {40929 5769} }
+gui_zoom -window Schematic.1 -rect { {-23126 -24891} {42567 6550} }
+gui_zoom -window Schematic.1 -rect { {-21533 -24189} {41032 5756} }
+gui_zoom -window Schematic.1 -rect { {-18682 -22812} {38196 4410} }
+gui_zoom -window Schematic.1 -rect { {-15015 -20581} {34443 3091} }
+gui_zoom -window Schematic.1 -rect { {-13806 -19598} {33297 2946} }
+gui_zoom -window Schematic.1 -rect { {-12679 -18654} {32182 2817} }
+gui_zoom -window Schematic.1 -rect { {-11628 -17748} {31097 2700} }
+gui_zoom -window Schematic.1 -rect { {-10594 -16883} {30096 2591} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.*p@66}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-588380 -584475} {655067 10650} }
+gui_zoom -window Schematic.1 -rect { {-10621 -16886} {30070 2589} }
+gui_zoom -window Schematic.1 -rect { {-598713 -589609} {663002 14260} }
+gui_zoom -window Schematic.1 -rect { {-632004 -604346} {696117 31306} }
+gui_zoom -window Schematic.1 -rect { {-667142 -622475} {730880 46632} }
+gui_zoom -window Schematic.1 -rect { {-702260 -638509} {769343 65814} }
+gui_zoom -window Schematic.1 -rect { {-668814 -622583} {732712 48201} }
+gui_zoom -window Schematic.1 -rect { {-576677 -587635} {642041 -4344} }
+gui_zoom -window Schematic.1 -rect { {-521281 -567639} {586645 -37375} }
+gui_zoom -window Schematic.1 -rect { {-495043 -559739} {560125 -54726} }
+gui_zoom -window Schematic.1 -rect { {-447465 -542298} {511778 -83195} }
+gui_zoom -window Schematic.1 -rect { {-423710 -535520} {489855 -98279} }
+gui_zoom -window Schematic.1 -rect { {-402366 -529471} {467696 -113051} }
+gui_zoom -window Schematic.1 -rect { {-382093 -524098} {446537 -127508} }
+gui_zoom -window Schematic.1 -rect { {-361784 -518296} {427388 -140590} }
+gui_zoom -window Schematic.1 -rect { {-296195 -490689} {361448 -175934} }
+gui_zoom -window Schematic.1 -rect { {-280411 -486544} {345916 -186778} }
+gui_zoom -window Schematic.1 -rect { {-265459 -481400} {331043 -195909} }
+gui_zoom -window Schematic.1 -rect { {-205968 -455084} {271233 -226691} }
+gui_zoom -window Schematic.1 -rect { {-194941 -451286} {259537 -233769} }
+gui_zoom -window Schematic.1 -rect { {-149614 -431236} {213968 -257222} }
+gui_zoom -window Schematic.1 -rect { {-140634 -428111} {205635 -262384} }
+gui_zoom -window Schematic.1 -rect { {-132609 -425179} {197170 -267344} }
+gui_zoom -window Schematic.1 -rect { {-94524 -408561} {159153 -287149} }
+gui_zoom -window Schematic.1 -rect { {-88403 -406688} {153193 -291058} }
+gui_zoom -window Schematic.1 -rect { {-57085 -392871} {121875 -307219} }
+gui_zoom -window Schematic.1 -rect { {-52995 -391504} {117444 -309931} }
+gui_zoom -window Schematic.1 -rect { {-38640 -385428} {103392 -317450} }
+gui_zoom -window Schematic.1 -rect { {-35349 -384361} {99920 -319620} }
+gui_zoom -window Schematic.1 -rect { {-32111 -383319} {96717 -321661} }
+gui_zoom -window Schematic.1 -rect { {-29101 -382327} {93592 -323605} }
+gui_zoom -window Schematic.1 -rect { {-26148 -381405} {90702 -325479} }
+gui_zoom -window Schematic.1 -rect { {-26148 -364690} {90702 -308764} }
+gui_zoom -window Schematic.1 -rect { {-26148 -347974} {90702 -292049} }
+gui_zoom -window Schematic.1 -rect { {-26148 -331259} {90702 -275334} }
+gui_zoom -window Schematic.1 -rect { {-26148 -314544} {90702 -258618} }
+gui_zoom -window Schematic.1 -rect { {-26148 -297829} {90702 -241903} }
+gui_zoom -window Schematic.1 -rect { {-26148 -281114} {90702 -225188} }
+gui_zoom -window Schematic.1 -rect { {-26148 -264398} {90702 -208473} }
+gui_zoom -window Schematic.1 -rect { {-26148 -247683} {90702 -191757} }
+gui_zoom -window Schematic.1 -rect { {-26148 -230968} {90702 -175042} }
+gui_zoom -window Schematic.1 -rect { {-26148 -214253} {90702 -158327} }
+gui_zoom -window Schematic.1 -rect { {-26148 -197537} {90702 -141612} }
+gui_zoom -window Schematic.1 -rect { {-26148 -180822} {90702 -124897} }
+gui_zoom -window Schematic.1 -rect { {-26148 -164107} {90702 -108181} }
+gui_zoom -window Schematic.1 -rect { {-26148 -147392} {90702 -91466} }
+gui_zoom -window Schematic.1 -rect { {-26148 -130677} {90702 -74751} }
+gui_zoom -window Schematic.1 -rect { {-26148 -113961} {90702 -58036} }
+gui_zoom -window Schematic.1 -rect { {-26148 -97246} {90702 -41320} }
+gui_zoom -window Schematic.1 -rect { {-26148 -80531} {90702 -24605} }
+gui_zoom -window Schematic.1 -rect { {-26148 -63816} {90702 -7890} }
+gui_zoom -window Schematic.1 -rect { {-26148 -51475} {90702 4451} }
+gui_zoom -window Schematic.1 -rect { {-23411 -45226} {87875 8037} }
+gui_zoom -window Schematic.1 -rect { {-20733 -39636} {85254 11090} }
+gui_zoom -window Schematic.1 -rect { {-23470 -37026} {88095 16370} }
+gui_zoom -window Schematic.1 -rect { {-26437 -34380} {91000 21826} }
+gui_zoom -window Schematic.1 -rect { {-29486 -31637} {94131 27528} }
+gui_zoom -window Schematic.1 -rect { {-32783 -28723} {97341 33555} }
+gui_zoom -window Schematic.1 -rect { {-29726 -22477} {94201 36836} }
+gui_zoom -window Schematic.1 -rect { {-26728 -16497} {91298 39992} }
+gui_zoom -window Schematic.1 -rect { {-23948 -10846} {88458 42952} }
+gui_zoom -window Schematic.1 -rect { {-21229 -5436} {85824 45800} }
+gui_zoom -window Schematic.1 -rect { {-21229 -20750} {85824 30486} }
+gui_zoom -window Schematic.1 -rect { {-21229 -36064} {85824 15173} }
+gui_zoom -window Schematic.1 -rect { {-21229 -51378} {85824 -141} }
+gui_zoom -window Schematic.1 -rect { {-21229 -36064} {85824 15173} }
+gui_zoom -window Schematic.1 -rect { {-21229 -20750} {85824 30486} }
+gui_zoom -window Schematic.1 -rect { {-21229 -36064} {85824 15173} }
+gui_zoom -window Schematic.1 -rect { {-21229 -51378} {85824 -141} }
+gui_zoom -window Schematic.1 -rect { {-21229 -36064} {85824 15173} }
+gui_zoom -window Schematic.1 -rect { {-18714 -32772} {83242 16025} }
+gui_zoom -window Schematic.1 -rect { {-16260 -29728} {80840 16745} }
+gui_zoom -window Schematic.1 -rect { {-13998 -26854} {78479 17407} }
+gui_zoom -window Schematic.1 -rect { {-11796 -25264} {76277 16889} }
+gui_zoom -window Schematic.1 -rect { {-9660 -25079} {74219 15066} }
+gui_zoom -window Schematic.1 -rect { {-7700 -25848} {72185 12386} }
+gui_zoom -window Schematic.1 -rect { {-5803 -26682} {70277 9731} }
+gui_zoom -window Schematic.1 -rect { {-3972 -27820} {68485 6859} }
+gui_zoom -window Schematic.1 -rect { {-2210 -27244} {66797 5784} }
+gui_zoom -window Schematic.1 -rect { {-607 -26479} {65115 4976} }
+gui_zoom -window Schematic.1 -rect { {4113 -25701} {66704 4256} }
+gui_zoom -window Schematic.1 -rect { {9101 -23222} {68713 5308} }
+gui_zoom -window Schematic.1 -rect { {15165 -20324} {69358 5612} }
+gui_schematic_select -id Schematic.1 -type {pin pin cell cell pin pin pin pin pin cell pin pin cell cell cell net net net net net net} -parent {Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 . . Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} . {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 . . . . . . . . .} {Testbench_Barrel_Shifter.uut.Output_Reg.D Testbench_Barrel_Shifter.uut.Output_Reg.clk Testbench_Barrel_Shifter.uut.Output_Reg.clk {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[24].MUX_ARRAY12.rotate_mux.ctrl} Testbench_Barrel_Shifter.uut.Output_Reg.Q {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.S} Testbench_Barrel_Shifter.uut.Output_Reg.load {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.D0} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.D1} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.ctrl} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.ctrl} Testbench_Barrel_Shifter.uut.Output_Reg.rst Testbench_Barrel_Shifter.uut.Output_Reg.rst Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} Testbench_Barrel_Shifter.uut.Output_Reg.rst Testbench_Barrel_Shifter.uut.rst Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.select_i {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.ctrl} Testbench_Barrel_Shifter.uut.Output_Reg.clk Testbench_Barrel_Shifter.uut.clk}
+gui_schematic_select -id Schematic.1 -type {cell pin pin pin cell pin pin pin cell pin pin cell net net net net net net} -parent {. Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} . {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.*p@32} . Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 . . . . . . .} {Testbench_Barrel_Shifter.uut.Output_Reg.rst Testbench_Barrel_Shifter.uut.Output_Reg.rst Testbench_Barrel_Shifter.uut.Output_Reg.Q {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.S} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.ctrl} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.ctrl} Testbench_Barrel_Shifter.uut.Output_Reg.load {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.D1} Testbench_Barrel_Shifter.uut.Output_Reg.clk Testbench_Barrel_Shifter.uut.Output_Reg.clk Testbench_Barrel_Shifter.uut.Output_Reg.D Testbench_Barrel_Shifter.uut.Output_Reg.*p@31 Testbench_Barrel_Shifter.uut.rst Testbench_Barrel_Shifter.uut.Output_Reg.rst Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.select_i {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[25].MUX_ARRAY12.rotate_mux.ctrl} Testbench_Barrel_Shifter.uut.Output_Reg.clk Testbench_Barrel_Shifter.uut.clk}
+gui_schematic_clear_selection -id Schematic.1
+gui_zoom -window Schematic.1 -rect { {15425 -20408} {72469 6894} }
+gui_zoom -window Schematic.1 -rect { {15750 -20525} {75796 8214} }
+gui_zoom -window Schematic.1 -rect { {19133 -19160} {76320 8210} }
+gui_zoom -window Schematic.1 -rect { {22377 -17882} {76841 8185} }
+gui_zoom -window Schematic.1 -rect { {25407 -16679} {77278 8147} }
+gui_zoom -window Schematic.1 -rect { {28297 -15477} {77697 8167} }
+gui_zoom -window Schematic.1 -rect { {31042 -14345} {78090 8173} }
+gui_zoom -window Schematic.1 -rect { {29218 -14345} {76266 8173} }
+gui_zoom -window Schematic.1 -rect { {29218 -21075} {76266 1443} }
+gui_zoom -window Schematic.1 -rect { {29218 -27805} {76266 -5287} }
+gui_zoom -window Schematic.1 -rect { {29218 -34535} {76266 -12017} }
+gui_zoom -window Schematic.1 -rect { {29218 -41265} {76266 -18748} }
+gui_zoom -window Schematic.1 -rect { {29218 -47995} {76266 -25478} }
+gui_zoom -window Schematic.1 -rect { {29218 -54725} {76266 -32208} }
+gui_zoom -window Schematic.1 -rect { {29218 -61456} {76266 -38938} }
+gui_zoom -window Schematic.1 -rect { {29218 -68186} {76266 -45668} }
+gui_zoom -window Schematic.1 -rect { {29218 -74916} {76266 -52398} }
+gui_zoom -window Schematic.1 -rect { {29218 -81646} {76266 -59128} }
+gui_zoom -window Schematic.1 -rect { {29218 -88376} {76266 -65859} }
+gui_zoom -window Schematic.1 -rect { {29218 -579677} {76266 -557159} }
+gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_Barrel_Shifter.*p@86} {Testbench_Barrel_Shifter.clk}
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.clk}
+gui_zoom -window Schematic.1 -rect { {29218 -446458} {76266 -423940} }
+gui_zoom -window Schematic.1 -rect { {28550 -445963} {73358 -424518} }
+gui_zoom -window Schematic.1 -rect { {27823 -445476} {70497 -425051} }
+gui_zoom -window Schematic.1 -rect { {28919 -444203} {66027 -426443} }
+gui_zoom -window Schematic.1 -rect { {28303 -443747} {63643 -426833} }
+gui_zoom -window Schematic.1 -rect { {26007 -444162} {63208 -426358} }
+gui_zoom -window Schematic.1 -rect { {22476 -445152} {63810 -425369} }
+gui_zoom -window Schematic.1 -rect { {19757 -445643} {63267 -424819} }
+gui_zoom -window Schematic.1 -rect { {16934 -446191} {62734 -424271} }
+gui_zoom -window Schematic.1 -rect { {13953 -446716} {62164 -423642} }
+gui_zoom -window Schematic.1 -rect { {10815 -447327} {61563 -423039} }
+gui_zoom -window Schematic.1 -rect { {5976 -448699} {62362 -421712} }
+gui_zoom -window Schematic.1 -rect { {-880 -451071} {65457 -419322} }
+gui_zoom -window Schematic.1 -rect { {-2611 -451781} {67217 -418360} }
+gui_zoom -window Schematic.1 -rect { {-4424 -452528} {69079 -417348} }
+gui_zoom -window Schematic.1 -rect { {-6421 -453293} {70951 -416262} }
+gui_zoom -window Schematic.1 -rect { {-8397 -454164} {73047 -415184} }
+gui_zoom -window Schematic.1 -rect { {-12970 -456209} {77524 -412898} }
+gui_zoom -window Schematic.1 -rect { {-15313 -457361} {79943 -411771} }
+gui_zoom -window Schematic.1 -rect { {-23726 -461429} {88341 -407793} }
+gui_zoom -window Schematic.1 -rect { {-26714 -462785} {91250 -406326} }
+gui_zoom -window Schematic.1 -rect { {-29785 -464279} {94388 -404849} }
+gui_zoom -window Schematic.1 -rect { {-33105 -465730} {97603 -403171} }
+gui_zoom -window Schematic.1 -rect { {-30027 -464157} {94458 -404577} }
+gui_zoom -window Schematic.1 -rect { {-24262 -461479} {88905 -407316} }
+gui_zoom -window Schematic.1 -rect { {-21661 -460182} {86117 -408598} }
+gui_zoom -window Schematic.1 -rect { {-18979 -458865} {83668 -409737} }
+gui_zoom -window Schematic.1 -rect { {-14375 -456607} {78940 -411945} }
+gui_zoom -window Schematic.1 -rect { {-12142 -455448} {76730 -412914} }
+gui_zoom -window Schematic.1 -rect { {-12142 -468161} {76730 -425626} }
+gui_zoom -window Schematic.1 -rect { {-12142 -480874} {76730 -438339} }
+gui_zoom -window Schematic.1 -rect { {-12142 -493587} {76730 -451052} }
+gui_zoom -window Schematic.1 -rect { {-12142 -506300} {76730 -463765} }
+gui_zoom -window Schematic.1 -rect { {-12142 -519013} {76730 -476478} }
+gui_zoom -window Schematic.1 -rect { {-12142 -531726} {76730 -489191} }
+gui_zoom -window Schematic.1 -rect { {-12142 -544438} {76730 -501904} }
+gui_zoom -window Schematic.1 -rect { {-12142 -531726} {76730 -489191} }
+gui_zoom -window Schematic.1 -rect { {-12142 -519013} {76730 -476478} }
+gui_zoom -window Schematic.1 -rect { {-12142 -531726} {76730 -489191} }
+gui_zoom -window Schematic.1 -rect { {-12142 -544438} {76730 -501904} }
+gui_zoom -window Schematic.1 -rect { {-12142 -557151} {76730 -514617} }
+gui_zoom -window Schematic.1 -rect { {-12142 -569864} {76730 -527330} }
+gui_zoom -window Schematic.1 -rect { {-12142 -579844} {76730 -537310} }
+gui_zoom -window Schematic.1 -rect { {-10088 -579601} {74552 -539092} }
+gui_zoom -window Schematic.1 -rect { {-7986 -579380} {72622 -540800} }
+gui_zoom -window Schematic.1 -rect { {-6062 -579180} {70708 -542437} }
+gui_zoom -window Schematic.1 -rect { {-4303 -578706} {68812 -543713} }
+gui_zoom -window Schematic.1 -rect { {-2511 -576695} {67122 -543368} }
+gui_zoom -window Schematic.1 -rect { {-879 -574700} {65438 -542960} }
+gui_zoom -window Schematic.1 -rect { {2122 -572817} {65282 -542589} }
+gui_zoom -window Schematic.1 -rect { {2122 -563783} {65282 -533554} }
+gui_zoom -window Schematic.1 -rect { {2122 -554748} {65282 -524519} }
+gui_zoom -window Schematic.1 -rect { {2122 -545713} {65282 -515484} }
+gui_zoom -window Schematic.1 -rect { {2122 -536678} {65282 -506450} }
+gui_zoom -window Schematic.1 -rect { {2122 -545713} {65282 -515484} }
+gui_zoom -window Schematic.1 -rect { {2122 -554748} {65282 -524519} }
+gui_zoom -window Schematic.1 -rect { {2122 -563783} {65282 -533554} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Mid_Reg.*p@31}
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Mid_Reg.*p@31}
+gui_zoom -window Schematic.1 -rect { {2122 -572817} {65282 -542589} }
+gui_zoom -window Schematic.1 -rect { {2122 -579741} {65282 -549513} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Load_reg.*p@31}
+gui_schematic_clear_selection -id Schematic.1
+gui_zoom -window Schematic.1 -rect { {2122 -570707} {65282 -540478} }
+gui_zoom -window Schematic.1 -rect { {2122 -561672} {65282 -531443} }
+gui_zoom -window Schematic.1 -rect { {2122 -552637} {65282 -522408} }
+gui_zoom -window Schematic.1 -rect { {2122 -543602} {65282 -513373} }
+gui_zoom -window Schematic.1 -rect { {2122 -534567} {65282 -504339} }
+gui_zoom -window Schematic.1 -rect { {2122 -525532} {65282 -495304} }
+gui_zoom -window Schematic.1 -rect { {2122 -516498} {65282 -486269} }
+gui_zoom -window Schematic.1 -rect { {2122 -507463} {65282 -477234} }
+gui_zoom -window Schematic.1 -rect { {2122 -498428} {65282 -468199} }
+gui_zoom -window Schematic.1 -rect { {2122 -489393} {65282 -459165} }
+gui_zoom -window Schematic.1 -rect { {2122 -480358} {65282 -450130} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.first_rotate.Data_i[((SWR - 1) - 8)]}
+gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_Barrel_Shifter.uut.Mux_Array.first_rotate.Data_i[((SWR - 1) - 8)]} {Testbench_Barrel_Shifter.uut.Mux_Array.first_rotate.Data_i[((SWR - 1) - 8)].b0}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {2123 -480367} {65284 -450138} }
+gui_zoom -window Schematic.1 -rect { {11242 -294004} {74404 -263774} }
+gui_zoom -window Schematic.1 -rect { {13848 -292608} {74002 -263818} }
+gui_zoom -window Schematic.1 -rect { {17569 -290707} {72255 -264534} }
+gui_zoom -window Schematic.1 -rect { {19731 -289468} {71813 -264541} }
+gui_zoom -window Schematic.1 -rect { {19152 -289541} {73975 -263303} }
+gui_zoom -window Schematic.1 -rect { {16953 -290437} {77868 -261283} }
+gui_zoom -window Schematic.1 -rect { {16212 -290514} {80332 -259826} }
+gui_zoom -window Schematic.1 -rect { {15436 -290591} {82931 -258287} }
+gui_zoom -window Schematic.1 -rect { {14628 -290719} {85676 -256715} }
+gui_zoom -window Schematic.1 -rect { {-4 -290864} {74783 -255070} }
+gui_zoom -window Schematic.1 -rect { {-2009 -290985} {76714 -253308} }
+gui_zoom -window Schematic.1 -rect { {-4003 -291146} {78863 -251485} }
+gui_zoom -window Schematic.1 -rect { {-6201 -291309} {81026 -249561} }
+gui_zoom -window Schematic.1 -rect { {-8497 -291432} {83322 -247487} }
+gui_zoom -window Schematic.1 -rect { {-10887 -291593} {85764 -245335} }
+gui_zoom -window Schematic.1 -rect { {-13505 -291757} {88233 -243064} }
+gui_zoom -window Schematic.1 -rect { {-19097 -293374} {93945 -239270} }
+gui_zoom -window Schematic.1 -rect { {-19097 -309544} {93945 -255441} }
+gui_zoom -window Schematic.1 -rect { {-19097 -325715} {93945 -271611} }
+gui_zoom -window Schematic.1 -rect { {-19097 -341885} {93945 -287782} }
+gui_zoom -window Schematic.1 -rect { {-19097 -358055} {93945 -303952} }
+gui_zoom -window Schematic.1 -rect { {-19097 -374226} {93945 -320123} }
+gui_zoom -window Schematic.1 -rect { {-19097 -390396} {93945 -336293} }
+gui_zoom -window Schematic.1 -rect { {-19097 -374226} {93945 -320123} }
+gui_zoom -window Schematic.1 -rect { {-19097 -358055} {93945 -303952} }
+gui_zoom -window Schematic.1 -rect { {-19097 -341885} {93945 -287782} }
+gui_zoom -window Schematic.1 -rect { {-22016 -342052} {96976 -285101} }
+gui_zoom -window Schematic.1 -rect { {-25189 -342228} {100065 -282280} }
+gui_zoom -window Schematic.1 -rect { {-28459 -342378} {103388 -279274} }
+gui_zoom -window Schematic.1 -rect { {-32003 -342647} {106783 -276222} }
+gui_zoom -window Schematic.1 -rect { {-35645 -342822} {110445 -272902} }
+gui_zoom -window Schematic.1 -rect { {-39377 -343059} {114403 -269458} }
+gui_zoom -window Schematic.1 -rect { {-39377 -321061} {114403 -247461} }
+gui_zoom -window Schematic.1 -rect { {-39377 -299063} {114403 -225463} }
+gui_zoom -window Schematic.1 -rect { {-39377 -277065} {114403 -203465} }
+gui_zoom -window Schematic.1 -rect { {-39377 -255067} {114403 -181467} }
+gui_zoom -window Schematic.1 -rect { {-39377 -277065} {114403 -203465} }
+gui_zoom -window Schematic.1 -rect { {-39377 -299063} {114403 -225463} }
+gui_zoom -window Schematic.1 -rect { {-35735 -303263} {110722 -233167} }
+gui_zoom -window Schematic.1 -rect { {-32351 -307142} {107132 -240384} }
+gui_zoom -window Schematic.1 -rect { {-29030 -310924} {103811 -247345} }
+gui_zoom -window Schematic.1 -rect { {-22991 -313152} {97773 -255353} }
+gui_zoom -window Schematic.1 -rect { {-20047 -310354} {94967 -255307} }
+gui_zoom -window Schematic.1 -rect { {-14861 -306678} {89697 -256635} }
+gui_zoom -window Schematic.1 -rect { {-10070 -303234} {84983 -257741} }
+gui_zoom -window Schematic.1 -rect { {-7892 -301915} {82635 -258588} }
+gui_zoom -window Schematic.1 -rect { {-3755 -299846} {78542 -260458} }
+gui_zoom -window Schematic.1 -rect { {-4 -297956} {74811 -262149} }
+gui_zoom -window Schematic.1 -rect { {-1523 -296932} {69729 -262830} }
+gui_zoom -window Schematic.1 -rect { {-2989 -296011} {64871 -263533} }
+gui_zoom -window Schematic.1 -rect { {-1561 -293834} {57448 -265592} }
+gui_zoom -window Schematic.1 -rect { {-2759 -293060} {53439 -266163} }
+gui_zoom -window Schematic.1 -rect { {-3911 -292294} {49611 -266678} }
+gui_zoom -window Schematic.1 -rect { {-4879 -291572} {46095 -267175} }
+gui_zoom -window Schematic.1 -rect { {-5810 -290923} {42736 -267688} }
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {-5810 -297867} {42736 -274633} }
+gui_zoom -window Schematic.1 -rect { {-5810 -304812} {42736 -281577} }
+gui_zoom -window Schematic.1 -rect { {-5810 -311756} {42736 -288521} }
+gui_zoom -window Schematic.1 -rect { {-5810 -318701} {42736 -295466} }
+gui_zoom -window Schematic.1 -rect { {-5810 -325645} {42736 -302410} }
+gui_zoom -window Schematic.1 -rect { {-5810 -332590} {42736 -309355} }
+gui_zoom -window Schematic.1 -rect { {-5810 -339534} {42736 -316299} }
+gui_zoom -window Schematic.1 -rect { {-5810 -346478} {42736 -323244} }
+gui_zoom -window Schematic.1 -rect { {-4540 -346497} {41695 -324369} }
+gui_zoom -window Schematic.1 -rect { {-1409 -345632} {38795 -326390} }
+gui_zoom -window Schematic.1 -rect { {-314 -345657} {37976 -327331} }
+gui_zoom -window Schematic.1 -rect { {730 -345677} {37196 -328224} }
+gui_zoom -window Schematic.1 -rect { {-161 -346557} {38225 -328185} }
+gui_zoom -window Schematic.1 -rect { {-3466 -348679} {41693 -327065} }
+gui_zoom -window Schematic.1 -rect { {-4543 -349759} {42993 -327008} }
+gui_zoom -window Schematic.1 -rect { {-5657 -350927} {44381 -326978} }
+gui_zoom -window Schematic.1 -rect { {-6875 -352152} {45796 -326943} }
+gui_zoom -window Schematic.1 -rect { {-13283 -355972} {52556 -324461} }
+gui_zoom -window Schematic.1 -rect { {-14821 -357589} {54484 -324419} }
+gui_zoom -window Schematic.1 -rect { {-16484 -359217} {56468 -324302} }
+gui_zoom -window Schematic.1 -rect { {-3155 -362046} {77903 -323251} }
+gui_zoom -window Schematic.1 -rect { {-5265 -364008} {80059 -323171} }
+::Schematic::pathSchematicAddFanInOut  -windowName Schematic.1 -silent 
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {-5265 -364003} {80061 -323165} }
+gui_zoom -window Schematic.1 -rect { {-3272 -364644} {77991 -325751} }
+gui_zoom -window Schematic.1 -rect { {-1249 -365301} {76144 -328260} }
+gui_zoom -window Schematic.1 -rect { {-3280 -367915} {78187 -328924} }
+gui_zoom -window Schematic.1 -rect { {-5522 -370598} {80233 -329555} }
+gui_zoom -window Schematic.1 -rect { {-7748 -373428} {82520 -330225} }
+gui_zoom -window Schematic.1 -rect { {-12776 -377772} {87521 -329769} }
+gui_zoom -window Schematic.1 -rect { {-15430 -381075} {90147 -330545} }
+gui_zoom -window Schematic.1 -rect { {-18179 -384841} {92955 -331652} }
+gui_zoom -window Schematic.1 -rect { {-24336 -390504} {99145 -331404} }
+gui_zoom -window Schematic.1 -rect { {-31270 -396722} {105932 -331056} }
+gui_zoom -window Schematic.1 -rect { {-34851 -401722} {109571 -332600} }
+gui_zoom -window Schematic.1 -rect { {-38520 -406946} {113504 -334186} }
+gui_zoom -window Schematic.1 -rect { {-47101 -414759} {121814 -333915} }
+gui_zoom -window Schematic.1 -rect { {-51487 -420773} {126319 -335674} }
+gui_zoom -window Schematic.1 -rect { {-51487 -446208} {126319 -361108} }
+gui_zoom -window Schematic.1 -rect { {-51487 -471643} {126319 -386543} }
+gui_zoom -window Schematic.1 -rect { {-51487 -497077} {126319 -411978} }
+gui_zoom -window Schematic.1 -rect { {-51487 -522512} {126319 -437413} }
+gui_zoom -window Schematic.1 -rect { {-51487 -547947} {126319 -462847} }
+gui_zoom -window Schematic.1 -rect { {-51487 -573382} {126319 -488282} }
+gui_zoom -window Schematic.1 -rect { {-47219 -567382} {122120 -486335} }
+gui_zoom -window Schematic.1 -rect { {-43241 -561755} {118034 -484567} }
+gui_zoom -window Schematic.1 -rect { {-39330 -556283} {114266 -482771} }
+gui_zoom -window Schematic.1 -rect { {-35692 -551179} {110589 -481167} }
+gui_zoom -window Schematic.1 -rect { {-26263 -543611} {100939 -482731} }
+gui_zoom -window Schematic.1 -rect { {-23226 -540024} {97918 -482043} }
+gui_zoom -window Schematic.1 -rect { {-20264 -539021} {95111 -483801} }
+gui_zoom -window Schematic.1 -rect { {-15048 -537044} {89838 -486844} }
+gui_zoom -window Schematic.1 -rect { {-12591 -536176} {87301 -488367} }
+gui_zoom -window Schematic.1 -rect { {-10206 -535489} {84929 -489957} }
+gui_zoom -window Schematic.1 -rect { {-2236 -532182} {77044 -494238} }
+gui_zoom -window Schematic.1 -rect { {-308 -531556} {75196 -495420} }
+gui_zoom -window Schematic.1 -rect { {2980 -529658} {74889 -495242} }
+gui_zoom -window Schematic.1 -rect { {10350 -525796} {70274 -497116} }
+gui_zoom -window Schematic.1 -rect { {12990 -524282} {70061 -496967} }
+gui_zoom -window Schematic.1 -rect { {15210 -523326} {69563 -497313} }
+gui_zoom -window Schematic.1 -rect { {17259 -522382} {69023 -497607} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {19473 -521789} {68773 -498193} }
+gui_zoom -window Schematic.1 -rect { {21563 -521195} {68515 -498724} }
+gui_zoom -window Schematic.1 -rect { {23590 -520613} {68306 -499211} }
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {26855 -520220} {69442 -499837} }
+gui_zoom -window Schematic.1 -rect { {29973 -519837} {70532 -500426} }
+gui_path_show -window Schematic.1 -objects {{Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[4:0]}}
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {net} -parent {Testbench_Barrel_Shifter.uut.Mux_Array} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {-616935 -601548} {694256 26000} }
+gui_zoom -window Schematic.1 -rect { {-691337 -636996} {765541 60280} }
+gui_zoom -window Schematic.1 -rect { {-729778 -654321} {803778 79654} }
+gui_zoom -window Schematic.1 -rect { {-768193 -673312} {846077 99293} }
+gui_zoom -window Schematic.1 -rect { {-731608 -656561} {805792 79254} }
+gui_zoom -window Schematic.1 -rect { {-553267 -626363} {629349 -60352} }
+gui_zoom -window Schematic.1 -rect { {-525410 -655800} {600890 -116742} }
+gui_zoom -window Schematic.1 -rect { {-498952 -683764} {573715 -170376} }
+gui_zoom -window Schematic.1 -rect { {-360009 -658058} {434559 -277770} }
+gui_zoom -window Schematic.1 -rect { {-340838 -664482} {415894 -302303} }
+gui_zoom -window Schematic.1 -rect { {-242706 -632970} {317836 -364689} }
+gui_zoom -window Schematic.1 -rect { {-229716 -624763} {304133 -369257} }
+gui_zoom -window Schematic.1 -rect { {-167899 -594238} {242755 -397695} }
+gui_zoom -window Schematic.1 -rect { {-157807 -590447} {233291 -403264} }
+gui_zoom -window Schematic.1 -rect { {-112922 -570056} {187923 -426068} }
+gui_zoom -window Schematic.1 -rect { {-105625 -570554} {180894 -433423} }
+gui_zoom -window Schematic.1 -rect { {-72683 -558709} {147716 -453224} }
+gui_zoom -window Schematic.1 -rect { {-67534 -559186} {142371 -458724} }
+gui_zoom -window Schematic.1 -rect { {-43292 -550724} {118172 -473445} }
+gui_zoom -window Schematic.1 -rect { {-39376 -549881} {114400 -476283} }
+gui_zoom -window Schematic.1 -rect { {-24081 -543344} {98940 -484465} }
+gui_zoom -window Schematic.1 -rect { {-21206 -539945} {95956 -483870} }
+gui_zoom -window Schematic.1 -rect { {-13524 -534476} {88356 -485715} }
+gui_zoom -window Schematic.1 -rect { {-11060 -531609} {85969 -485170} }
+gui_zoom -window Schematic.1 -rect { {-8799 -528873} {83610 -484645} }
+gui_zoom -window Schematic.1 -rect { {-6611 -526273} {81398 -484151} }
+gui_zoom -window Schematic.1 -rect { {3822 -521292} {77162 -486190} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[0]}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[0]}
+gui_path_show -window Schematic.1 -objects {{Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[0]}}
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {net} -parent {Testbench_Barrel_Shifter.uut.Mux_Array} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[0]}
+gui_zoom -window Schematic.1 -rect { {-586466 -587574} {663529 10685} }
+gui_zoom -window Schematic.1 -rect { {-555351 -573012} {635120 -3240} }
+gui_zoom -window Schematic.1 -rect { {-527386 -537088} {606397 5551} }
+gui_zoom -window Schematic.1 -rect { {-500824 -500277} {578969 16522} }
+gui_zoom -window Schematic.1 -rect { {-392556 -427810} {471278 -14370} }
+gui_zoom -window Schematic.1 -rect { {-371659 -399983} {451041 -6231} }
+gui_zoom -window Schematic.1 -rect { {-352909 -374110} {430615 892} }
+gui_zoom -window Schematic.1 -rect { {-262583 -315854} {340128 -27391} }
+gui_zoom -window Schematic.1 -rect { {-247772 -296323} {326238 -21597} }
+gui_zoom -window Schematic.1 -rect { {-190831 -257186} {268377 -37405} }
+gui_zoom -window Schematic.1 -rect { {-179401 -242277} {257940 -32961} }
+gui_zoom -window Schematic.1 -rect { {-143151 -216161} {221300 -41732} }
+gui_zoom -window Schematic.1 -rect { {-134473 -204839} {212623 -38715} }
+gui_zoom -window Schematic.1 -rect { {-126297 -194100} {204270 -35887} }
+gui_zoom -window Schematic.1 -rect { {-93241 -172092} {171213 -45521} }
+gui_zoom -window Schematic.1 -rect { {-86776 -164364} {165085 -43821} }
+gui_zoom -window Schematic.1 -rect { {-65844 -149885} {144041 -49433} }
+gui_zoom -window Schematic.1 -rect { {-61100 -143766} {138790 -48097} }
+gui_zoom -window Schematic.1 -rect { {-56150 -137937} {134221 -46824} }
+gui_zoom -window Schematic.1 -rect { {-37164 -125467} {115133 -52576} }
+gui_zoom -window Schematic.1 -rect { {-33644 -119310} {111400 -49890} }
+gui_zoom -window Schematic.1 -rect { {-24185 -110769} {101941 -50404} }
+gui_zoom -window Schematic.1 -rect { {-21102 -105775} {99018 -48285} }
+gui_zoom -window Schematic.1 -rect { {-18257 -101103} {96143 -46350} }
+gui_zoom -window Schematic.1 -rect { {-8698 -93405} {86635 -47777} }
+gui_zoom -window Schematic.1 -rect { {-6459 -89751} {84335 -46297} }
+gui_zoom -window Schematic.1 -rect { {-4297 -86283} {82173 -44898} }
+gui_zoom -window Schematic.1 -rect { {-2216 -82942} {80136 -43527} }
+gui_zoom -window Schematic.1 -rect { {-323 -79786} {78107 -42248} }
+gui_zoom -window Schematic.1 -rect { {4590 -76765} {79286 -41014} }
+gui_zoom -window Schematic.1 -rect { {9226 -73840} {80365 -39792} }
+gui_zoom -window Schematic.1 -rect { {13592 -70982} {81344 -38556} }
+gui_zoom -window Schematic.1 -rect { {19199 -67590} {80792 -38111} }
+gui_zoom -window Schematic.1 -rect { {22995 -65135} {81654 -37060} }
+gui_zoom -window Schematic.1 -rect { {26610 -62813} {82476 -36074} }
+gui_zoom -window Schematic.1 -rect { {30042 -60604} {83248 -35139} }
+gui_zoom -window Schematic.1 -rect { {33290 -58497} {83962 -34245} }
+gui_zoom -window Schematic.1 -rect { {37478 -56009} {83544 -33962} }
+gui_zoom -window Schematic.1 -rect { {40332 -54161} {84204 -33164} }
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.select_i}
+gui_backtrace_signal -view Schematic.1 Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.select_i
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {net} -parent {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.select_i}
+gui_zoom -window Schematic.2 -rect { {-40556 -4152} {50555 14202} }
+gui_zoom -window Schematic.2 -rect { {-40556 -4152} {50555 14202} }
+gui_zoom -window Schematic.2 -rect { {-305017 -110515} {319554 4876} }
+gui_zoom -window Schematic.2 -rect { {-860334 -122645} {896704 7397} }
+gui_zoom -window Schematic.2 -rect { {-305072 -110675} {319514 -64448} }
+gui_zoom -window Schematic.2 -rect { {-294651 -120755} {329948 -74527} }
+gui_wv_zoom_timerange -id  Wave.2 0 310
+gui_wv_zoom_timerange -id  Wave.2 0 308
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[20].MUX_ARRAY12.rotate_mux.*p@32}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[21].MUX_ARRAY12.rotate_mux.*p@32}
+gui_schematic_clear_selection -id Schematic.1
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[20].MUX_ARRAY12.rotate_mux.ctrl}
+package require snpsMisc ; Misc::exec_method -method popCmd 
+::Schematic::pop_netlists Schematic.1
+gui_zoom -window Schematic.1 -rect { {3822 -521289} {77166 -486186} }
+gui_zoom -window Schematic.1 -rect { {3822 -531781} {77166 -496678} }
+gui_zoom -window Schematic.1 -rect { {3822 -542272} {77166 -507169} }
+gui_zoom -window Schematic.1 -rect { {3822 -552764} {77166 -517661} }
+gui_zoom -window Schematic.1 -rect { {3822 -563256} {77166 -528153} }
+gui_zoom -window Schematic.1 -rect { {3822 -573747} {77166 -538644} }
+gui_zoom -window Schematic.1 -rect { {3822 -580807} {77166 -545704} }
+gui_zoom -window Schematic.1 -rect { {3822 -570315} {77166 -535212} }
+gui_zoom -window Schematic.1 -rect { {3822 -559824} {77166 -524721} }
+gui_zoom -window Schematic.1 -rect { {3822 -549332} {77166 -514229} }
+gui_zoom -window Schematic.1 -rect { {3822 -538840} {77166 -503737} }
+gui_zoom -window Schematic.1 -rect { {3822 -528349} {77166 -493246} }
+gui_zoom -window Schematic.1 -rect { {3822 -517857} {77166 -482754} }
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.Shift_Value_i}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.*p@50}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {3822 -517855} {77168 -482751} }
+gui_zoom -window Schematic.1 -rect { {-730 -521267} {76476 -484315} }
+gui_zoom -window Schematic.1 -rect { {-2729 -524450} {78541 -485554} }
+gui_zoom -window Schematic.1 -rect { {-7268 -528965} {83032 -485747} }
+gui_zoom -window Schematic.1 -rect { {-5078 -530385} {80922 -489225} }
+gui_zoom -window Schematic.1 -rect { {-3079 -531786} {78825 -492586} }
+gui_zoom -window Schematic.1 -rect { {-1051 -533064} {76953 -495730} }
+gui_zoom -window Schematic.1 -rect { {-3 -534330} {74286 -498775} }
+gui_zoom -window Schematic.1 -rect { {947 -535489} {71699 -501626} }
+gui_zoom -window Schematic.1 -rect { {1988 -536552} {69371 -504302} }
+gui_zoom -window Schematic.1 -rect { {3356 -535128} {67530 -504413} }
+gui_zoom -window Schematic.1 -rect { {4672 -533612} {65790 -504360} }
+gui_zoom -window Schematic.1 -rect { {4672 -524869} {65790 -495617} }
+gui_zoom -window Schematic.1 -rect { {4672 -516126} {65790 -486875} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.*p@23}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4672 -516126} {65791 -486873} }
+gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_Barrel_Shifter.*p@23} {Testbench_Barrel_Shifter.Contador_shiftvalue}
+gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_Barrel_Shifter.*p@23} {Testbench_Barrel_Shifter.Contador_shiftvalue}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4672 -516042} {65793 -486789} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.*p@23}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4672 -516040} {65795 -486786} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.*p@50}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4672 -516038} {65797 -486783} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.*p@50}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4672 -515954} {65799 -486698} }
+gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_Barrel_Shifter.*p@50} {Testbench_Barrel_Shifter.Shift_Value_i}
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {4672 -507128} {65799 -477872} }
+gui_zoom -window Schematic.1 -rect { {4672 -498384} {65799 -469128} }
+gui_zoom -window Schematic.1 -rect { {4672 -489640} {65799 -460384} }
+gui_zoom -window Schematic.1 -rect { {4672 -480896} {65799 -451640} }
+gui_zoom -window Schematic.1 -rect { {4672 -472151} {65799 -442895} }
+gui_zoom -window Schematic.1 -rect { {4672 -463407} {65799 -434151} }
+gui_zoom -window Schematic.1 -rect { {4672 -454663} {65799 -425407} }
+gui_zoom -window Schematic.1 -rect { {4672 -521592} {65799 -492336} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+::Schematic::pathSchematicAddFanInOut  -windowName Schematic.1 -silent 
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4673 -521590} {65802 -492333} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Shift_Value_i}
+::Schematic::pathSchematicAddFanInOut  -windowName Schematic.1 -silent 
+gui_zoom -window Schematic.1 -rect { {-584418 -585509} {661213 10662} }
+gui_zoom -window Schematic.1 -rect { {4673 -521588} {65804 -492330} }
+gui_zoom -window Schematic.1 -rect { {14807 -521588} {75938 -492330} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[0]}
+::Schematic::pathSchematicAddFanInOut  -windowName Schematic.1 -silent 
+gui_zoom -window Schematic.1 -rect { {-742223 -740421} {830736 12413} }
+gui_zoom -window Schematic.1 -rect { {14807 -521616} {75941 -492357} }
+gui_zoom -window Schematic.1 -rect { {-135235 -701479} {223728 -529676} }
+gui_zoom -window Schematic.1 -rect { {-135235 -735552} {223728 -563749} }
+gui_zoom -window Schematic.1 -rect { {-144378 -751287} {233477 -570442} }
+gui_zoom -window Schematic.1 -rect { {-154109 -768143} {243634 -577780} }
+gui_zoom -window Schematic.1 -rect { {-164464 -785607} {254212 -585224} }
+gui_zoom -window Schematic.1 -rect { {-175482 -804225} {265230 -593296} }
+gui_zoom -window Schematic.1 -rect { {-165438 -813231} {254288 -612347} }
+gui_zoom -window Schematic.1 -rect { {-137991 -813646} {226988 -638964} }
+gui_zoom -window Schematic.1 -rect { {-129092 -821012} {218507 -654648} }
+gui_zoom -window Schematic.1 -rect { {-113545 -824941} {202454 -673700} }
+gui_zoom -window Schematic.1 -rect { {-113545 -779738} {202454 -628497} }
+gui_zoom -window Schematic.1 -rect { {-113545 -734534} {202454 -583294} }
+gui_zoom -window Schematic.1 -rect { {-113545 -689331} {202454 -538091} }
+gui_zoom -window Schematic.1 -rect { {-105720 -690659} {195232 -546621} }
+gui_zoom -window Schematic.1 -rect { {-92077 -689123} {181515 -558179} }
+gui_zoom -window Schematic.1 -rect { {-85598 -690220} {174967 -565512} }
+gui_zoom -window Schematic.1 -rect { {-79526 -691315} {168630 -572545} }
+gui_zoom -window Schematic.1 -rect { {-73523 -693037} {162816 -579923} }
+gui_zoom -window Schematic.1 -rect { {-58151 -690152} {147362 -591792} }
+gui_zoom -window Schematic.1 -rect { {-53284 -691460} {142442 -597784} }
+gui_zoom -window Schematic.1 -rect { {-48499 -692744} {137907 -603528} }
+gui_zoom -window Schematic.1 -rect { {-44049 -694239} {133480 -609272} }
+gui_zoom -window Schematic.1 -rect { {-32512 -692423} {121861 -618538} }
+gui_zoom -window Schematic.1 -rect { {-28994 -693622} {118028 -623256} }
+gui_zoom -window Schematic.1 -rect { {-25362 -695550} {114659 -628534} }
+gui_zoom -window Schematic.1 -rect { {-16345 -694883} {105413 -636608} }
+gui_zoom -window Schematic.1 -rect { {-13391 -696441} {102568 -640941} }
+gui_zoom -window Schematic.1 -rect { {-10682 -698234} {99756 -645378} }
+gui_zoom -window Schematic.1 -rect { {-3499 -697907} {92534 -651945} }
+gui_zoom -window Schematic.1 -rect { {-1127 -699509} {90333 -655735} }
+gui_zoom -window Schematic.1 -rect { {4754 -700924} {91859 -659235} }
+gui_zoom -window Schematic.1 -rect { {10188 -702282} {93145 -662578} }
+gui_zoom -window Schematic.1 -rect { {15411 -703587} {94418 -665774} }
+gui_zoom -window Schematic.1 -rect { {20416 -704839} {95660 -668827} }
+gui_zoom -window Schematic.1 -rect { {20416 -694076} {95660 -658063} }
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[0]}
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.SHIFT_1LVLS[0].shift_mux_array.select_i}
+gui_zoom -window Schematic.1 -rect { {20416 -695987} {95660 -659974} }
+gui_zoom -window Schematic.1 -rect { {24718 -696461} {96379 -662163} }
+gui_zoom -window Schematic.1 -rect { {28837 -696977} {97086 -664312} }
+gui_zoom -window Schematic.1 -rect { {32769 -697442} {97768 -666332} }
+gui_zoom -window Schematic.1 -rect { {36510 -697864} {98414 -668236} }
+gui_zoom -window Schematic.1 -rect { {40057 -698250} {99013 -670033} }
+gui_zoom -window Schematic.1 -rect { {43408 -698681} {99557 -671808} }
+gui_zoom -window Schematic.1 -rect { {46136 -699010} {99610 -673417} }
+gui_zoom -window Schematic.1 -rect { {49879 -698822} {98493 -675555} }
+gui_zoom -window Schematic.1 -rect { {52213 -699079} {98511 -676920} }
+gui_zoom -window Schematic.1 -rect { {54211 -699273} {98305 -678170} }
+gui_zoom -window Schematic.1 -rect { {55957 -699416} {97951 -679318} }
+gui_zoom -window Schematic.1 -rect { {35072 -699416} {77066 -679318} }
+gui_zoom -window Schematic.1 -rect { {35072 -693409} {77066 -673310} }
+gui_zoom -window Schematic.1 -rect { {35072 -687402} {77066 -667303} }
+gui_zoom -window Schematic.1 -rect { {35072 -681395} {77066 -661296} }
+gui_zoom -window Schematic.1 -rect { {35072 -675388} {77066 -655289} }
+gui_zoom -window Schematic.1 -rect { {35072 -669381} {77066 -649282} }
+gui_zoom -window Schematic.1 -rect { {35072 -663373} {77066 -643275} }
+gui_zoom -window Schematic.1 -rect { {36080 -662464} {76075 -643323} }
+gui_zoom -window Schematic.1 -rect { {39395 -660504} {72724 -644552} }
+gui_zoom -window Schematic.1 -rect { {40197 -659808} {71939 -644616} }
+gui_zoom -window Schematic.1 -rect { {39360 -659873} {72772 -643881} }
+gui_zoom -window Schematic.1 -rect { {37469 -660458} {74593 -642690} }
+gui_zoom -window Schematic.1 -rect { {35390 -661098} {76639 -641356} }
+gui_zoom -window Schematic.1 -rect { {34287 -661203} {77707 -640421} }
+gui_zoom -window Schematic.1 -rect { {33153 -661337} {78859 -639462} }
+gui_zoom -window Schematic.1 -rect { {27516 -663689} {84649 -636345} }
+gui_zoom -window Schematic.1 -rect { {26065 -664003} {86205 -635220} }
+gui_zoom -window Schematic.1 -rect { {24639 -664460} {87944 -634162} }
+gui_zoom -window Schematic.1 -rect { {16917 -667993} {96047 -630121} }
+gui_zoom -window Schematic.1 -rect { {16917 -656674} {96047 -618801} }
+gui_zoom -window Schematic.1 -rect { {16917 -645354} {96047 -607482} }
+gui_zoom -window Schematic.1 -rect { {16917 -634035} {96047 -596162} }
+gui_zoom -window Schematic.1 -rect { {16917 -622715} {96047 -584843} }
+gui_zoom -window Schematic.1 -rect { {16917 -611396} {96047 -573523} }
+gui_zoom -window Schematic.1 -rect { {16917 -705020} {96047 -667147} }
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i}
+gui_zoom -window Schematic.1 -rect { {16917 -693700} {96047 -655828} }
+gui_zoom -window Schematic.1 -rect { {16917 -682381} {96047 -644508} }
+gui_zoom -window Schematic.1 -rect { {16917 -671061} {96047 -633189} }
+gui_zoom -window Schematic.1 -rect { {16917 -659742} {96047 -621869} }
+gui_zoom -window Schematic.1 -rect { {16917 -648422} {96047 -610550} }
+gui_zoom -window Schematic.1 -rect { {16917 -637103} {96047 -599230} }
+gui_zoom -window Schematic.1 -rect { {16917 -625783} {96047 -587911} }
+gui_zoom -window Schematic.1 -rect { {16917 -614464} {96047 -576591} }
+gui_zoom -window Schematic.1 -rect { {16917 -603144} {96047 -565272} }
+gui_zoom -window Schematic.1 -rect { {16917 -591825} {96047 -553952} }
+gui_zoom -window Schematic.1 -rect { {16917 -580505} {96047 -542633} }
+gui_zoom -window Schematic.1 -rect { {16917 -521898} {96047 -484025} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[4]}
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i[1]}
+gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_Barrel_Shifter.uut.Mux_Array.Shift_Value_i}
+gui_close_window -window TopLevel.3
+gui_marker_move -id  Wave.1 C1 380000
+gui_marker_move -id  Wave.1 C1 427545
+gui_marker_move -id  Wave.1 C1 337632
+gui_marker_move -id  Wave.1 C1 300000
+gui_marker_move -id  Wave.1 C1 300000
+gui_marker_move -id  Wave.1 C1 300000
+gui_marker_move -id  Wave.1 C1 280000
+gui_marker_move -id  Wave.1 C1 360000
+gui_marker_move -id  Wave.1 C1 280000
+gui_marker_move -id  Wave.1 C1 200000
+gui_marker_move -id  Wave.1 C1 124777
+gui_marker_move -id  Wave.1 C1 155000
+gui_marker_move -id  Wave.1 C1 95000
+gui_marker_move -id  Wave.1 C1 163311
+gui_marker_move -id  Wave.1 C1 120000
+gui_marker_move -id  Wave.1 C1 220000
+gui_marker_move -id  Wave.1 C1 144962
+gui_save_session -savedb none -view {Wave.1 }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session.inter.vpd.tcl
+gui_wv_zoom_timerange -id  Wave.1 0 1724859
+gui_wv_zoom_timerange -id  Wave.1 0 1724859
+gui_set_env SIMSETUP::SIMCURRENTDIR /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER
+gui_sim_restart -build /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/simv.daidir/vcs_rebuild
+gui_zoom -window Schematic.1 -rect { {-14153 -4154} {24204 14204} }
+gui_zoom -window Schematic.1 -rect { {-14153 -4154} {24204 14204} }
+gui_zoom -window Schematic.1 -rect { {-14153 -4154} {24204 14204} }
+gui_zoom -window Schematic.1 -rect { {-14153 -4154} {24204 14204} }
+gui_zoom -window Schematic.1 -rect { {16918 -521888} {95943 -484066} }
+gui_zoom -window Schematic.1 -rect { {16918 -521888} {95943 -484066} }
+gui_close_window -window TopLevel.1

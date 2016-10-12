@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Barrel_Shifter_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Oct 11 16:04:14 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Output_Reg_Q_reg_25_
+              (rising edge-triggered flip-flop)
+  Endpoint: N_mant_o[25]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Output_Reg_Q_reg_25_/CK (DFFRXLTS)       0.00       0.00 r
+  Output_Reg_Q_reg_25_/Q (DFFRXLTS)        0.75       0.75 f
+  N_mant_o[25] (out)                       0.00       0.75 f
+  data arrival time                                   0.75
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

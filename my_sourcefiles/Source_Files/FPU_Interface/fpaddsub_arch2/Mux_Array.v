@@ -19,7 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
+// synopsys dc_script_begin
+// 
+// synopsys dc_script_end
 module Mux_Array
     #(parameter SWR=26, parameter EWR=5)
     (
@@ -30,7 +32,8 @@ module Mux_Array
     input wire FSM_left_right_i,
     input wire [EWR-1:0] Shift_Value_i,
     input wire bit_shift_i,
-    output wire [SWR-1:0] Data_o
+    output wire [SWR-1:0] Data_o,
+    output wire load_o
     );
 ////ge
 wire [SWR-1:0] Data_array[EWR+1:0];
@@ -56,11 +59,19 @@ endgenerate
 RegisterAdd #(.W(SWR)) Mid_Reg(
         .clk(clk),
         .rst(rst),
-        .load(1'b1),
+        .load(load_i),
         .D(Data_array[3]),
         .Q(Data_array[4])
         );
 
+RegisterAdd #(.W(1)) Load_reg(
+        .clk(clk),
+        .rst(rst),
+        .load(load_i),
+        .D(load_i),
+        .Q(load_o)
+        );
+        
 generate for (k=3; k < EWR; k=k+1) begin : SHIFT_2LVLS
 	shift_mux_array #(.SWR(SWR), .LEVEL(k)) shift_mux_array(
 		.Data_i(Data_array[k+1]),

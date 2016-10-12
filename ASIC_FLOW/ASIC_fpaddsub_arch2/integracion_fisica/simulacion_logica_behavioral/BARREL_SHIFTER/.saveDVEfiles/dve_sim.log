@@ -1,0 +1,100 @@
+14:34:29    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE -pid 22225 -toolin /tmp/vcs_20161011203425_22224_jsequeira..stdin -toolout /tmp/vcs_20161011203425_22224_jsequeira..stdout  
+14:34:29    17 -->                                                                 [tcl] set ucliGUI::state
+14:34:29    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
+14:34:29    19 -->                                                                         [tcl] gui_update_simulator_buttons
+14:34:30    20 -->                                                                             [tcl] set ucliGUI::state
+14:34:30    21 -->                                                                                 [tcl] ucliCore::getToolPID
+14:34:30    22 -->                                                                                     [tcl] synopsys::env hasTB
+14:34:30    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
+14:34:30    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
+14:34:30    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
+14:34:30    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd -locking
+14:34:30    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
+14:34:30    28 --> ...              [tcl] set ::dve_fid VPD0
+14:34:30    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
+14:34:30    30 --> ...                      [tcl] ucliCore::getToolPID
+14:34:30    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnppfNfTi
+14:34:30    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.22225}
+14:34:30    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.22225}
+14:34:30    34 --> ...                                      [tcl] dveMisc::vbusExpand FPU_Add_Subtract_Function
+14:34:31    35 --> ...                                          [tcl] config endofsim noexit
+14:34:31    36 --> ...                                              [tcl] config onfail enable all
+14:34:31    37 --> ...                                                  [tcl] config syscaddplainmembers
+14:34:31    38 --> ...                                                      [tcl] config syscaddsourcenames
+14:34:31    39 --> ...                                                          [tcl] config syscaddstructtypes
+14:34:31    40 --> ...                                                              [tcl] synopsys::listing -disable
+14:34:32    41 --> ...                                                                  [tcl] dveMisc::vbusExpand Testbench_Barrel_Shifter
+14:34:35    42 --> ...                                                                      [tcl] synopsys::dump -add {Testbench_Barrel_Shifter} -scope "." -depth 1 -fid VPD0
+14:34:37    43 --> ...                                                                          [tcl] synopsys::run
+14:34:37    44 --> ...                                                                              [tcl] set ucliGUI::state
+14:34:37    45 --> ...                                                                                  [tcl] set ucliGUI::state
+14:34:37    46 --> ...                                                                                      [tcl] set ucliGUI::state
+14:34:37    47 --> ...                                                                                          [tcl] set ucliGUI::state
+14:34:37    48 --> ...                                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+14:34:37    49 --> ...                                                                                                  [tcl] set dveMisc::result
+14:34:37    50 --> ...  [tcl] gui_update_simulator_buttons
+14:49:36    51 --> ...      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/schematic.tcl
+14:49:36    52 --> ...          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/base.tcl
+14:49:36    53 --> ...              [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/enable.tcl
+14:49:36    54 --> ...                  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/netlist.tcl
+14:49:36    55 --> ...                      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/method.tcl
+14:49:36    56 --> ...                          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+14:49:36    57 --> ...                              [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+14:49:36    58 --> ...                                  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+14:49:36    59 --> ...                                      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/driversloads.tcl
+14:52:20    60 --> ...                                          [tcl] ucliGUI::vpdAddHierarchy -scope Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd; synopsys::dump -flush VPD0
+14:52:20    61 --> ...                                              [tcl] ucliGUI::vpdAddHierarchy -scope {Testbench_Barrel_Shifter.uut.Mux_Array.last_rotate.MUX_ARRAY[0].MUX_ARRAY12.rotate_mux} -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd; synopsys::dump -flush VPD0
+14:52:20    62 --> ...                                                  [tcl] ucliGUI::vpdAddHierarchy -scope Testbench_Barrel_Shifter.uut.Mux_Array -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd; synopsys::dump -flush VPD0
+14:52:20    63 --> ...                                                      [tcl] ucliGUI::vpdAddHierarchy -scope Testbench_Barrel_Shifter.uut -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd; synopsys::dump -flush VPD0
+15:03:20    64 --> ...                                                          [tcl] # DVE Simulation Rebuild/Restart Options
+15:03:20    65 --> ...                                                              [tcl] # Saved on Tue Oct 11 14:34:23 2016
+15:03:20    66 --> ...                                                                  [tcl] set SIMSETUP::REBUILDOPTION 0
+15:03:20    67 --> ...                                                                      [tcl] set SIMSETUP::REBUILDCMD {}
+15:03:20    68 --> ...                                                                          [tcl] set SIMSETUP::REBUILDDIR {}
+15:03:20    69 --> ...                                                                              [tcl] set SIMSETUP::RESTOREBP 1
+15:03:20    70 --> ...                                                                                  [tcl] set SIMSETUP::RESTOREDUMP 1
+15:03:20    71 --> ...                                                                                      [tcl] set SIMSETUP::RESTOREFORCE 1
+15:03:20    72 --> ...                                                                                          [tcl] set SIMSETUP::RESTORESPECMAN 0
+15:03:20    73 --> ...                                                                                              [tcl] # DVE Simulation Rebuild/Restart Options
+15:03:20    74 --> ...                                                                                                  [tcl] # Saved on Tue Oct 11 14:34:23 2016
+15:03:20    75 --> ...  [tcl] set SIMSETUP::REBUILDOPTION 0
+15:03:20    76 --> ...      [tcl] set SIMSETUP::REBUILDCMD {}
+15:03:20    77 --> ...          [tcl] set SIMSETUP::REBUILDDIR {}
+15:03:20    78 --> ...              [tcl] set SIMSETUP::RESTOREBP 1
+15:03:20    79 --> ...                  [tcl] set SIMSETUP::RESTOREDUMP 1
+15:03:20    80 --> ...                      [tcl] set SIMSETUP::RESTOREFORCE 1
+15:03:20    81 --> ...                          [tcl] set SIMSETUP::RESTORESPECMAN 0
+15:03:21    82 --> ...                              [tcl] # DVE Simulation Rebuild/Restart Options
+15:03:21    83 --> ...                                  [tcl] # Saved on Tue Oct 11 15:03:21 2016
+15:03:21    84 --> ...                                      [tcl] set SIMSETUP::REBUILDOPTION 0
+15:03:21    85 --> ...                                          [tcl] set SIMSETUP::REBUILDCMD {}
+15:03:21    86 --> ...                                              [tcl] set SIMSETUP::REBUILDDIR {}
+15:03:21    87 --> ...                                                  [tcl] set SIMSETUP::RESTOREBP 1
+15:03:21    88 --> ...                                                      [tcl] set SIMSETUP::RESTOREDUMP 1
+15:03:21    89 --> ...                                                          [tcl] set SIMSETUP::RESTOREFORCE 1
+15:03:21    90 --> ...                                                              [tcl] set SIMSETUP::RESTORESPECMAN 0
+15:03:21    91 --> ...                                                                  [tcl] # DVE Simulation Rebuild/Restart Options
+15:03:21    92 --> ...                                                                      [tcl] # Saved on Tue Oct 11 15:03:21 2016
+15:03:21    93 --> ...                                                                          [tcl] set SIMSETUP::REBUILDOPTION 0
+15:03:21    94 --> ...                                                                              [tcl] set SIMSETUP::REBUILDCMD {}
+15:03:21    95 --> ...                                                                                  [tcl] set SIMSETUP::REBUILDDIR {}
+15:03:21    96 --> ...                                                                                      [tcl] set SIMSETUP::RESTOREBP 1
+15:03:21    97 --> ...                                                                                          [tcl] set SIMSETUP::RESTOREDUMP 1
+15:03:21    98 --> ...                                                                                              [tcl] set SIMSETUP::RESTOREFORCE 1
+15:03:21    99 --> ...                                                                                                  [tcl] set SIMSETUP::RESTORESPECMAN 0
+15:03:21    100 --> ...  [tcl] synopsys::finish
+15:03:21    101 --> ...      [tcl] set ucliGUI::state
+15:03:21    102 --> ...          [tcl] set ucliGUI::state
+15:03:21    103 --> ...              [tcl] catch {senv activeDomain} dveMisc::result 
+15:03:21    104 --> ...                  [tcl] set dveMisc::result
+15:03:21    105 --> ...                      [tcl] gui_update_simulator_buttons
+15:03:22    106 --> ...                          [tcl] # DVE Simulation Rebuild/Restart Options
+15:03:22    107 --> ...                              [tcl] # Saved on Tue Oct 11 15:03:21 2016
+15:03:22    108 --> ...                                  [tcl] set SIMSETUP::REBUILDOPTION 0
+15:03:22    109 --> ...                                      [tcl] set SIMSETUP::REBUILDCMD {}
+15:03:22    110 --> ...                                          [tcl] set SIMSETUP::REBUILDDIR {}
+15:03:22    111 --> ...                                              [tcl] set SIMSETUP::RESTOREBP 1
+15:03:22    112 --> ...                                                  [tcl] set SIMSETUP::RESTOREDUMP 1
+15:03:22    113 --> ...                                                      [tcl] set SIMSETUP::RESTOREFORCE 1
+15:03:22    114 --> ...                                                          [tcl] set SIMSETUP::RESTORESPECMAN 0
+15:23:48    115 --> ...                                                              [tcl] ucliCore::getToolPID

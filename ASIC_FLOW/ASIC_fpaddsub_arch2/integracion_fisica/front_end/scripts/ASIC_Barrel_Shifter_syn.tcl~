@@ -1,0 +1,86 @@
+####################################################################################################################################
+#Institución:                          Instituto Tecnológico de Costa Rica
+#Autor: Jorge Sequeira Rojas          jsequeira03@gmail.com
+
+#Herramienta:        Design Compiler
+
+#Fecha de creación:
+
+####################################################################################################################################
+set PRECISION(0) "SINGLE";
+set PRECISION(1) "DOUBLE";
+set PREC_PARAM(0) "SWR=26,EWR=5";
+set PREC_PARAM(1) "SWR=55,EWR=6";
+# Eliminar diseños previos
+set DESIGN_NAME  "Barrel_Shifter"
+set TOP_NAME     "Barrel_Shifter"
+#set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
+remove_design -designs
+
+#WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
+set fp [open "scripts/file_list" r]
+set file_sources [read $fp]
+close $fp
+
+set data [split $file_sources "\n"]
+#set data "{$data}"
+# Primero se analiza el módulo principal
+
+foreach line $data {
+  analyze -library WORK -format verilog {$line}
+}
+
+set x 0;
+while {$x < 2} {
+
+#Elaboramos el módulo principal
+elaborate -update $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
+
+#Enlazar los demás módulos al módulo principal
+link
+
+#Escribir el archivo *.ddc (base de datos sin sintetizar)
+write -hierarchy -format ddc -output \
+./db/$DESIGN_NAME\_$PRECISION($x)_syn_unmapped.ddc
+
+#Aplicar especificaciones de diseño (constraints)
+#source $CONTRAINTS_FILE_NAME
+#propagate_constraints
+
+#Revisar el diseño
+check_design
+
+#Compilar el diseño
+compile_ultra
+
+#Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
+#- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
+#- Como una de las entradas para el sintetizador físico (IC Compiler).
+set verilogout_no_tri true
+change_names -hierarchy -rules verilog
+write -hierarchy -format verilog -output \
+./db/$DESIGN_NAME\_$PRECISION($x)_syn.v
+
+#Generar los reportes
+
+report_power -analysis_effort high > reports/$DESIGN_NAME\_$PRECISION($x)_syn_power.txt
+report_area >   reports/$DESIGN_NAME\_$PRECISION($x)_syn_area.txt
+report_cell >   reports/$DESIGN_NAME\_$PRECISION($x)_syn_cell.txt
+report_qor >    reports/$DESIGN_NAME\_$PRECISION($x)_syn_qor.txt
+report_timing > reports/$DESIGN_NAME\_$PRECISION($x)_syn_timing.txt
+report_port >   reports/$DESIGN_NAME\_$PRECISION($x)_syn_port.txt
+
+#Escribir el archivo *.ddc (base de datos sintetizada)
+write -hierarchy -format ddc -output \
+./db/$DESIGN_NAME\_$PRECISION($x)_syn_mapped.ddc
+
+#Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
+#para el sintetizador físico (IC Compiler)
+write_sdc ./db/$DESIGN_NAME\_$PRECISION($x)_syn.sdc
+
+#Revisar la configuración de temporizado
+check_timing
+
+#FINALIZAMOS EL LOOP
+set x [expr {$x + 1}]
+}

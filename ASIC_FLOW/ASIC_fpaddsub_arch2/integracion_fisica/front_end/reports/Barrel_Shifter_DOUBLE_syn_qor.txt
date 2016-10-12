@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : Barrel_Shifter_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Oct 11 16:04:32 2016
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.75
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                778
+  Buf/Inv Cell Count:              73
+  Buf Cell Count:                  13
+  Inv Cell Count:                  60
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       668
+  Sequential Cell Count:          110
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     5204.160168
+  Noncombinational Area:  3643.199883
+  Buf/Inv Area:            334.080013
+  Total Buffer Area:            74.88
+  Total Inverter Area:         259.20
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              8847.360050
+  Design Area:            8847.360050
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           854
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: zener
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.95
+  Logic Optimization:                  0.25
+  Mapping Optimization:                3.15
+  -----------------------------------------
+  Overall Compile Time:               16.15
+  Overall Compile Wall Clock Time:    16.55
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

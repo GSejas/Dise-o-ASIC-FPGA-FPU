@@ -1,0 +1,118 @@
+{
+    "NameTable": {
+        "Rotate_Mux_Array_0000": [
+            "Rotate_Mux_Array_0000",
+            "GBFFm",
+            "module"
+        ],
+        "shift_mux_array_0000": [
+            "shift_mux_array_0000",
+            "qaeRY",
+            "module"
+        ],
+        "Priority_Codec_32": [
+            "Priority_Codec_32",
+            "Y4GEV",
+            "module"
+        ],
+        "FPU_Add_Subtract_Function": [
+            "FPU_Add_Subtract_Function",
+            "CJHB3",
+            "module"
+        ],
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
+            "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+            "vberv",
+            "module"
+        ],
+        "Multiplexer_AC_0001": [
+            "Multiplexer_AC_0001",
+            "UDPPh",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileProcesses": [
+        "cgproc.32420.json"
+    ],
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nvcsw": 61,
+            "ru_utime_sec": 0.23796300000000001,
+            "ru_stime_sec": 0.059990000000000002,
+            "ru_maxrss_kb": 58108,
+            "ru_minflt": 16340,
+            "ru_majflt": 8,
+            "ru_nivcsw": 90
+        },
+        "ru_self_end": {
+            "ru_nvcsw": 66,
+            "ru_utime_sec": 0.41693599999999997,
+            "ru_stime_sec": 0.081987000000000004,
+            "ru_maxrss_kb": 66720,
+            "ru_minflt": 19885,
+            "ru_majflt": 13,
+            "ru_nivcsw": 198
+        },
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 1,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0029989999999999999,
+            "ru_maxrss_kb": 19444,
+            "ru_minflt": 461,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2
+        },
+        "nMops": 18292,
+        "nQuads": 8100,
+        "Frontend(%)": 57.074227219525305,
+        "mopSpeed": 102205.36058511621,
+        "outputSizePerQuad": 62.0,
+        "totalObjSize": 507327,
+        "ru_childs_end": {
+            "ru_nvcsw": 1,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0029989999999999999,
+            "ru_maxrss_kb": 19444,
+            "ru_minflt": 461,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2
+        },
+        "quadSpeed": 45258.223307426269,
+        "mop/quad": 2.2582716049382716,
+        "CodeGen(%)": 42.925772780474702
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 108374
+    },
+    "CompileStatus": "Successful",
+    "CurCompileModules": [
+        "...MASTER...",
+        "shift_mux_array_0000",
+        "FPU_Add_Subtract_Function",
+        "Multiplexer_AC_0001",
+        "Rotate_Mux_Array_0000",
+        "Priority_Codec_32",
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing"
+    ],
+    "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
+    "Misc": {
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/csrc",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "archive_dir": "archive.0",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir",
+        "default_output_dir": "csrc"
+    }
+}

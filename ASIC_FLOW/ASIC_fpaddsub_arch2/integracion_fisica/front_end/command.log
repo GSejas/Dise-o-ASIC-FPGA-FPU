@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP3 for linux64 -- Jul 18, 2016
-#@ # Date:   Mon Oct 10 13:44:52 2016
+#@ # Date:   Tue Oct 11 16:03:49 2016
 #@ # Run by: jsequeir@zener
 #@ 
 
@@ -41873,8 +41873,8 @@ gui_start
 #@ 
 #@ # -- End source /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
-uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl
-#@ # -- Starting source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl
+uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_Barrel_Shifter_syn.tcl
+#@ # -- Starting source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_Barrel_Shifter_syn.tcl
 
 #@ ####################################################################################################################################
 #@ #Institución:                          Instituto Tecnológico de Costa Rica
@@ -41887,12 +41887,12 @@ uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-F
 #@ ####################################################################################################################################
 #@ set PRECISION(0) "SINGLE";
 #@ set PRECISION(1) "DOUBLE";
-#@ set PREC_PARAM(0) "W=32,SW=23,EW=8,SWR=26,EWR=5";
-#@ set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
+#@ set PREC_PARAM(0) "SWR=26,EWR=5";
+#@ set PREC_PARAM(1) "SWR=55,EWR=6";
 #@ # Eliminar diseños previos
-#@ set DESIGN_NAME  "fpaddsub_arch2"
-#@ set TOP_NAME     "FPU_Add_Subtract_Function"
-#@ set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
+#@ set DESIGN_NAME  "Barrel_Shifter"
+#@ set TOP_NAME     "Barrel_Shifter"
+#@ #set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
 #@ remove_design -designs
 #@ 
 #@ #WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
@@ -41903,12 +41903,10 @@ uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-F
 #@ set data [split $file_sources "\n"]
 #@ #set data "{$data}"
 #@ # Primero se analiza el módulo principal
-#@ set formatted_string "{"
-#@ foreach line $data {
-#@   set formatted_string "$formatted_string $line \\ \n "
-#@ }
 #@ 
-#@ set formatted_string "$formatted_string }"
+#@ foreach line $data {
+#@   analyze -library WORK -format verilog {$line}
+#@ }
 #@ 
 #@ set x 0;
 #@ while {$x < 2} {
@@ -41920,11 +41918,11 @@ uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-F
 #@ link
 #@ 
 #@ #Escribir el archivo *.ddc (base de datos sin sintetizar)
-#@ write -hierarchy -format ddc -output ./db/$DESIGN_NAME_$PRECISION($x)_syn_unmapped.ddc
+#@ write -hierarchy -format ddc -output ./db/$DESIGN_NAME\_$PRECISION($x)_syn_unmapped.ddc
 #@ 
 #@ #Aplicar especificaciones de diseño (constraints)
-#@ source $CONTRAINTS_FILE_NAME
-#@ propagate_constraints
+#@ #source $CONTRAINTS_FILE_NAME
+#@ #propagate_constraints
 #@ 
 #@ #Revisar el diseño
 #@ check_design
@@ -41937,23 +41935,23 @@ uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-F
 #@ #- Como una de las entradas para el sintetizador físico (IC Compiler).
 #@ set verilogout_no_tri true
 #@ change_names -hierarchy -rules verilog
-#@ write -hierarchy -format verilog -output ./db/$DESIGN_NAME_$PRECISION($x)_syn.v
+#@ write -hierarchy -format verilog -output ./db/$DESIGN_NAME\_$PRECISION($x)_syn.v
 #@ 
 #@ #Generar los reportes
 #@ 
-#@ report_power -analysis_effort high > reports/$DESIGN_NAME_$PRECISION($x)_syn_power.txt
-#@ report_area >   reports/$DESIGN_NAME_$PRECISION($x)_syn_area.txt
-#@ report_cell >   reports/$DESIGN_NAME_$PRECISION($x)_syn_cell.txt
-#@ report_qor >    reports/$DESIGN_NAME_$PRECISION($x)_syn_qor.txt
-#@ report_timing > reports/$DESIGN_NAME_$PRECISION($x)_syn_timing.txt
-#@ report_port >   reports/$DESIGN_NAME_$PRECISION($x)_syn_port.txt
+#@ report_power -analysis_effort high > reports/$DESIGN_NAME\_$PRECISION($x)_syn_power.txt
+#@ report_area >   reports/$DESIGN_NAME\_$PRECISION($x)_syn_area.txt
+#@ report_cell >   reports/$DESIGN_NAME\_$PRECISION($x)_syn_cell.txt
+#@ report_qor >    reports/$DESIGN_NAME\_$PRECISION($x)_syn_qor.txt
+#@ report_timing > reports/$DESIGN_NAME\_$PRECISION($x)_syn_timing.txt
+#@ report_port >   reports/$DESIGN_NAME\_$PRECISION($x)_syn_port.txt
 #@ 
 #@ #Escribir el archivo *.ddc (base de datos sintetizada)
-#@ write -hierarchy -format ddc -output ./db/$DESIGN_NAME_$PRECISION($x)_syn_mapped.ddc
+#@ write -hierarchy -format ddc -output ./db/$DESIGN_NAME\_$PRECISION($x)_syn_mapped.ddc
 #@ 
 #@ #Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
 #@ #para el sintetizador físico (IC Compiler)
-#@ write_sdc ./db/$DESIGN_NAME_$PRECISION($x)_syn.sdc
+#@ write_sdc ./db/$DESIGN_NAME\_$PRECISION($x)_syn.sdc
 #@ 
 #@ #Revisar la configuración de temporizado
 #@ check_timing
@@ -41961,30 +41959,29 @@ uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-F
 #@ #FINALIZAMOS EL LOOP
 #@ set x [expr {$x + 1}]
 #@ }
-#@ # -- End source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl
+#@ # -- End source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_Barrel_Shifter_syn.tcl
 
-change_selection [get_s Rounding_Decoder]
-change_selection [get_s Leading_Zero_Detector_Module/genblk1.Codec_32]
-change_selection [get_s Oper_Start_in_module/MRegister]
-change_selection 
-change_selection [get_s Oper_Start_in_module/MRegister]
-change_selection [get_s Oper_Start_in_module/MRegister]
-change_selection 
-elaborate Barrel_Shifter -architecture verilog -library WORK
-compile_ultra
-report_area -nosplit -hierarchy
-elaborate FPU_Add_Subtract_Function -architecture verilog -library WORK
-compile_ultra
-report_area -nosplit -hierarchy
+start_gui
+change_selection [get_s Barrel_Shifter_SWR55_EWR6]
+change_selection [get_s Barrel_Shifter_SWR55_EWR6]
+change_selection [get_s n1222]
+change_selection [get_s Barrel_Shifter_SWR55_EWR6]
+change_selection [get_s Barrel_Shifter_SWR55_EWR6]
+change_selection [get_s n981]
+change_selection [get_s Barrel_Shifter_SWR55_EWR6]
+change_selection [get_s Barrel_Shifter_SWR55_EWR6]
+change_selection [get_s U1185]
+change_selection [get_s U1186]
+analyse -library WORK -format verilog DW.v
+analyze -library WORK -format verilog DW.v
+analyze -library WORK -format verilog DW.v
 compile
-report_area -nosplit -hierarchy
-report_cell
-report_cell -hierarchy
-man report_cell
-get_cells
-man report_cell
-report_cell -verbose
-report_cell -verbose -connections
-report_cell -verbose -physical
-report_cell -verbose -physical
-report_cell -connections
+elaborate DW_fp_add_inst
+compile
+analyze -library WORK -format DW_rbsh_inst.v
+analyze -library WORK -format verilog DW_rbsh_inst.v
+analyze -library WORK -format verilog DW_rbsh_inst.v
+analyze -library WORK -format verilog DW_rbsh_inst.v
+elaborate DW_rbsh_inst
+compile_ultra
+write -hierarchy -format verilog -output ./db/DW_rbsh_inst_syn.v
