@@ -316,8 +316,8 @@ gui_set_window_attributes -window Wave.1 -dock_state undocked
 gui_pane_maximize -id Wave.1
 gui_wv_zoom_timerange -id  Wave.1 0 1908833
 gui_arrange_windows -window TopLevel.1 -arrange_children vertical
-gui_wv_zoom_timerange -id  Wave.1 0 1908833
-gui_marker_move -id  Wave.1 C1 225000
+gui_wv_zoom_timerange -id  Wave.1 0 190883gui_close_window -window TopLevel.1
+000
 gui_marker_move -id  Wave.1 C1 185000
 gui_marker_move -id  Wave.1 C1 265000
 gui_marker_move -id  Wave.1 C1 225000

@@ -101,9 +101,12 @@ set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# Restore toplevel window zorder
-# The toplevel window could be closed if it has no view/pane
+if { $groupExD if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit
+ew/pane
 if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${DLPane.1} }
 #</Session>
 synopsys::run

@@ -195,11 +195,17 @@
 11:36:20    1187 --> ...                                                  [tcl] set dveMisc::result
 11:36:20    1188 --> ...                                                      [tcl] gui_update_simulator_buttons
 11:51:15    1189 --> ...                                                          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/schematic.tcl
-11:51:15    1190 --> ...                                                              [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/base.tcl
-11:51:15    1191 --> ...                                                                  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/enable.tcl
-11:51:15    1192 --> ...                                                                      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/netlist.tcl
-11:51:15    1193 --> ...                                                                          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/method.tcl
-11:51:15    1194 --> ...                                                                              [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+11:51:15    11901:17:30    773 --> ...                                                                                              [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+01:17:30    774 --> ...                                                                                                  [tcl] synopsys::finish
+01:17:30    775 --> ...  [tcl] set ucliGUI::state
+01:17:30    776 --> ...      [tcl] set ucliGUI::state
+01:17:30    777 --> ...          [tcl] catch {senv activeDomain} dveMisc::result 
+01:17:30    778 --> ...              [tcl] set dveMisc::result
+01:17:30    779 --> ...                  [tcl] gui_update_simulator_buttons
+01:17:30    780 --> ...                      [tcl] catch {senv activeDomain} dveMisc::result 
+01:17:30    781 --> ...                          [tcl] set dveMisc::result
+01:17:30    782 --> ...                              [tcl] ucli_exit
+                                                               [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
 11:51:15    1195 --> ...                                                                                  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
 11:51:15    1196 --> ...                                                                                      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
 11:51:15    1197 --> ...                                                                                          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/driversloads.tcl

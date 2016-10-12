@@ -7,6 +7,7 @@ $finish at simulation time            174035000
 Simulation complete, time is 174035000 ps.
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 174035000 ps
-CPU Time:      0.640 seconds;       Data structure size:   0.1Mb
-Tue Oct 11 15:24:51 2016
+CPU Time:      0.480 seconds;       Data structure size:   0.1Mb
+Wed Oct 12 01:17:30 2016
 CPU time: .263 seconds to compile + .362 seconds to elab + .147 seconds to link + 414.465 seconds in simulation
+CPU time: .286 seconds to compile + .374 seconds to elab + .134 seconds to link + 1046.253 seconds in simulation
