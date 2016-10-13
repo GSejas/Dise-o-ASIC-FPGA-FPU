@@ -3,21 +3,21 @@
 Report : qor
 Design : Barrel_Shifter_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Tue Oct 11 16:04:14 2016
+Date   : Wed Oct 12 18:12:37 2016
 ****************************************
 
 
-  Timing Path Group (none)
+  Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:               0.00
-  Critical Path Length:          0.75
-  Critical Path Slack:         uninit
-  Critical Path Clk Period:       n/a
+  Levels of Logic:               9.00
+  Critical Path Length:          1.99
+  Critical Path Slack:           4.19
+  Critical Path Clk Period:     10.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
-  Worst Hold Violation:          0.00
-  Total Hold Violation:          0.00
-  No. of Hold Violations:        0.00
+  Worst Hold Violation:         -2.14
+  Total Hold Violation:        -55.52
+  No. of Hold Violations:       26.00
   -----------------------------------
 
 
@@ -25,34 +25,34 @@ Date   : Tue Oct 11 16:04:14 2016
   -----------------------------------
   Hierarchical Cell Count:          0
   Hierarchical Port Count:          0
-  Leaf Cell Count:                339
-  Buf/Inv Cell Count:              29
-  Buf Cell Count:                   3
-  Inv Cell Count:                  26
+  Leaf Cell Count:                368
+  Buf/Inv Cell Count:              52
+  Buf Cell Count:                  14
+  Inv Cell Count:                  38
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:       287
-  Sequential Cell Count:           52
+  Combinational Cell Count:       315
+  Sequential Cell Count:           53
   Macro Count:                      0
   -----------------------------------
 
 
   Area
   -----------------------------------
-  Combinational Area:     2243.520064
-  Noncombinational Area:  1722.239944
-  Buf/Inv Area:            129.600005
-  Total Buffer Area:            17.28
-  Total Inverter Area:         112.32
+  Combinational Area:     2381.760071
+  Noncombinational Area:  1755.359943
+  Buf/Inv Area:            244.800010
+  Total Buffer Area:            80.64
+  Total Inverter Area:         164.16
   Macro/Black Box Area:      0.000000
   Net Area:                  0.000000
   -----------------------------------
-  Cell Area:              3965.760009
-  Design Area:            3965.760009
+  Cell Area:              4137.120014
+  Design Area:            4137.120014
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:           375
+  Total Number of Nets:           405
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -63,19 +63,19 @@ Date   : Tue Oct 11 16:04:14 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.37
-  Logic Optimization:                  0.18
-  Mapping Optimization:                2.35
+  Resource Sharing:                    0.18
+  Logic Optimization:                  0.30
+  Mapping Optimization:                1.97
   -----------------------------------------
-  Overall Compile Time:               13.49
-  Overall Compile Wall Clock Time:    14.80
+  Overall Compile Time:               12.30
+  Overall Compile Wall Clock Time:    12.59
 
   --------------------------------------------------------------------
 
   Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
 
 
-  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+  Design (Hold)  WNS: 2.14  TNS: 55.52  Number of Violating Paths: 26
 
   --------------------------------------------------------------------
 

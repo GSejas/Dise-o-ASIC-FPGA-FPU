@@ -38,23 +38,27 @@
 -ucli
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
 log_name
-42
+53
 sysc_uni_pwd=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE
+binpath=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/linux64/bin
 VMR_MODE_FLAG=64
+VCS_PATHMAP_PRELOAD_DONE=1
 VCS_MX_HOME_INTERNAL=1
 VCS_MODE_FLAG=64
 VCS_LOG_FILE=log_name
 VCS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/
-VCS_DEPTH=0
+VCS_DEPTH=1
 VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64
+TCLLIBPATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/auxx/tcllib/lib/tcl8.4 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/auxx/tcllib/snps_tcl
 SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/
-SSH_TTY=/dev/pts/57
-SSH_CONNECTION=172.21.8.215 55216 172.21.16.5 22
-SSH_CLIENT=172.21.8.215 55216 22
+SSH_TTY=/dev/pts/54
+SSH_CONNECTION=172.21.8.215 33438 172.21.16.5 22
+SSH_CLIENT=172.21.8.215 33438 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECMAN_OUTPUT_TO_TTY=1
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -65,6 +69,8 @@ QTINC=/usr/lib64/qt-3.3/include
 QTDIR=/usr/lib64/qt-3.3
 OVA_UUM=0
 ORBIT_SOCKETDIR=/tmp/orbit-jsequeira
+MDB_SIM_ARGS=-simwarn
+MARCH=linux64
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_TIME=es_CR.UTF-8
 LC_TELEPHONE=es_CR.UTF-8
@@ -79,24 +85,29 @@ LC_ADDRESS=es_CR.UTF-8
 KDEDIRS=/usr
 HISTCONTROL=ignoredups
 G_BROKEN_FILENAMES=1
+DVE_SIM_SELECT_LOOP=on
+DVE_PSTACK=/usr/bin/gstack
+DVE_AUXX_GUI=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/auxx/gui
+DVE=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
+CMD=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/linux64/bin/dve.exe
 0
 28
 1476074623 Testbench_FPU_Add_Subt.v
 1476078455 ../../front_end/source/xor_tri.v
 1476133519 ../../front_end/source/Comparators.v
-1475945806 ../../front_end/source/Barrel_shifter.v
+1476223320 ../../front_end/source/Barrel_shifter.v
 1475945806 ../../front_end/source/Comparator.v
 1476133519 ../../front_end/source/Tenth_Phase.v
 1475945806 ../../front_end/source/Priority_Codec_32.v
 1475945806 ../../front_end/source/Add_Subt.v
-1476133519 ../../front_end/source/Rotate_Mux_Array.v
+1476223306 ../../front_end/source/Rotate_Mux_Array.v
 1475945806 ../../front_end/source/Comparator_Less.v
 1475945806 ../../front_end/source/Priority_Codec_64.v
 1476133519 ../../front_end/source/Oper_Start_In.v
 1476050516 ../../front_end/source/sgn_result.v
-1476050516 ../../front_end/source/Mux_Array.v
+1476319973 ../../front_end/source/Mux_Array.v
 1475945806 ../../front_end/source/FSM_Add_Subtract.v
 1475945806 ../../front_end/source/Mux_3x1.v
 1475945806 ../../front_end/source/add_sub_carry_out.v
@@ -107,7 +118,7 @@ COLORTERM=gnome-terminal
 1475945806 ../../front_end/source/RegisterAdd.v
 1476133519 ../../front_end/source/FPU_Add_Subtract_Function.v
 1476133519 ../../front_end/source/LZD.v
-1476133519 ../../front_end/source/shift_mux.v
+1476316426 ../../front_end/source/shift_mux.v
 1475945806 ../../front_end/source/MultiplexTxT.v
 1476078490 file_list
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab

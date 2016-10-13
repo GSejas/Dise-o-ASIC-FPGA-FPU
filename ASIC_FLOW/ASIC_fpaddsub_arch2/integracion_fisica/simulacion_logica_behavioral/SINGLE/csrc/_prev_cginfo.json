@@ -1,68 +1,47 @@
 {
-    "MlibObjs": {},
-    "SIMBData": {
-        "bytes": 91890,
-        "out": "amcQwB.o"
-    },
     "PrevCompiledModules": {
         "Testbench_FPU_Add_Subt": {
             "kar0c_d": {
-                "out": "kar0c_d.o",
-                "bytes": 110311,
+                "bytes": 260050,
                 "mod": "Testbench_FPU_Add_Subt",
-                "mode": 4,
                 "checksum": 4294967295,
-                "archive": "archive.3/_prev_archive_1.a"
-            }
-        },
-        "shift_mux_array_0000": {
-            "qaeRY_d": {
-                "out": "qaeRY_d.o",
-                "bytes": 12955,
-                "mod": "shift_mux_array_0000",
+                "out": "kar0c_d.o",
                 "mode": 4,
-                "checksum": 4294967295,
-                "archive": "archive.3/_prev_archive_1.a"
+                "archive": "archive.6/_prev_archive_1.a"
             }
         },
         "Rotate_Mux_Array_0000": {
             "GBFFm_d": {
-                "out": "GBFFm_d.o",
                 "bytes": 12875,
                 "mod": "Rotate_Mux_Array_0000",
                 "mode": 4,
+                "out": "GBFFm_d.o",
                 "checksum": 4294967295,
-                "archive": "archive.3/_prev_archive_1.a"
+                "archive": "archive.6/_prev_archive_1.a"
             }
         },
         "Multiplexer_AC_0001": {
             "UDPPh_d": {
-                "out": "UDPPh_d.o",
                 "bytes": 7792,
                 "mod": "Multiplexer_AC_0001",
-                "mode": 4,
                 "checksum": 4294967295,
-                "archive": "archive.3/_prev_archive_1.a"
+                "out": "UDPPh_d.o",
+                "mode": 4,
+                "archive": "archive.6/_prev_archive_1.a"
             }
         },
         "...MASTER...": {
             "amcQw_d": {
-                "out": "objs/amcQw_d.o",
                 "bytes": 7109,
                 "mod": "...MASTER...",
-                "mode": 4,
-                "checksum": 4294967295
+                "checksum": 4294967295,
+                "out": "objs/amcQw_d.o",
+                "mode": 4
             }
         }
     },
-    "CurCompileUdps": {},
-    "CompileStatus": "Successful",
+    "MlibObjs": {},
     "NameTable": {
-        "shift_mux_array_0000": [
-            "shift_mux_array_0000",
-            "qaeRY",
-            "module"
-        ],
         "Multiplexer_AC_0001": [
             "Multiplexer_AC_0001",
             "UDPPh",
@@ -84,71 +63,76 @@
             "module"
         ]
     },
-    "LVLData": [
-        "SIM"
-    ],
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_nivcsw": 36,
+            "ru_maxrss_kb": 59512,
+            "ru_stime_sec": 0.037994,
+            "ru_utime_sec": 0.25396099999999999,
+            "ru_minflt": 14459,
+            "ru_majflt": 0,
+            "ru_nvcsw": 51
+        },
+        "Frontend(%)": 98.832892278953921,
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0
+        },
+        "nMops": 0,
+        "nQuads": 0,
+        "totalObjSize": 99258,
+        "ru_self_end": {
+            "ru_nivcsw": 41,
+            "ru_maxrss_kb": 64212,
+            "ru_stime_sec": 0.043992999999999997,
+            "ru_utime_sec": 0.25696000000000002,
+            "ru_minflt": 15920,
+            "ru_majflt": 0,
+            "ru_nvcsw": 51
+        },
+        "CodeGen(%)": 1.1671077210460885
+    },
+    "CurCompileUdps": {},
     "CurCompileModules": [
         "...MASTER...",
-        "shift_mux_array_0000",
         "Multiplexer_AC_0001",
         "Rotate_Mux_Array_0000",
         "Testbench_FPU_Add_Subt"
     ],
     "CompileStrategy": "fullobj",
-    "stat": {
-        "ru_self_cgstart": {
-            "ru_utime_sec": 0.19597000000000001,
-            "ru_nivcsw": 28,
-            "ru_stime_sec": 0.045992999999999999,
-            "ru_maxrss_kb": 59364,
-            "ru_nvcsw": 51,
-            "ru_majflt": 0,
-            "ru_minflt": 13911
-        },
-        "ru_childs_end": {
-            "ru_utime_sec": 0.0,
-            "ru_nivcsw": 0,
-            "ru_stime_sec": 0.0,
-            "ru_maxrss_kb": 0,
-            "ru_nvcsw": 0,
-            "ru_majflt": 0,
-            "ru_minflt": 0
-        },
-        "CodeGen(%)": 2.9702578118424134,
-        "ru_childs_cgstart": {
-            "ru_utime_sec": 0.0,
-            "ru_nivcsw": 0,
-            "ru_stime_sec": 0.0,
-            "ru_maxrss_kb": 0,
-            "ru_nvcsw": 0,
-            "ru_majflt": 0,
-            "ru_minflt": 0
-        },
-        "nMops": 0,
-        "nQuads": 0,
-        "ru_self_end": {
-            "ru_utime_sec": 0.20196900000000001,
-            "ru_nivcsw": 32,
-            "ru_stime_sec": 0.051991999999999997,
-            "ru_maxrss_kb": 63976,
-            "ru_nvcsw": 51,
-            "ru_majflt": 0,
-            "ru_minflt": 15350
-        },
-        "totalObjSize": 98999,
-        "Frontend(%)": 97.029742188157584
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 92149
     },
+    "LVLData": [
+        "SIM"
+    ],
     "PEModules": [],
     "CompileProcesses": [
-        "cgproc.31916.json"
+        "cgproc.11285.json"
     ],
     "Misc": {
+        "daidir": "simv.daidir",
         "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir",
         "csrc": "csrc",
         "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/csrc",
-        "daidir": "simv.daidir",
         "default_output_dir": "csrc",
-        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir",
-        "archive_dir": "archive.3"
-    }
+        "archive_dir": "archive.6"
+    },
+    "CompileStatus": "Successful"
 }

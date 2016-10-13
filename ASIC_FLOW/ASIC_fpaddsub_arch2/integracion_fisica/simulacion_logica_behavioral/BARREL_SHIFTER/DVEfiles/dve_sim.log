@@ -1,117 +1,89 @@
-15:26:42    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE -pid 3638 -toolin /tmp/vcs_20161011212638_3637_jsequeira..stdin -toolout /tmp/vcs_20161011212638_3637_jsequeira..stdout  
-15:26:42    17 -->                                                                 [tcl] set ucliGUI::state
-15:26:42    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
-15:26:42    19 -->                                                                         [tcl] gui_update_simulator_buttons
-15:26:43    20 -->                                                                             [tcl] set ucliGUI::state
-15:26:43    21 -->                                                                                 [tcl] ucliCore::getToolPID
-15:26:43    22 -->                                                                                     [tcl] synopsys::env hasTB
-15:26:43    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
-15:26:43    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
-15:26:43    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
-15:26:43    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd -locking
-15:26:43    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
-15:26:43    28 --> ...              [tcl] set ::dve_fid VPD0
-15:26:43    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
-15:26:43    30 --> ...                      [tcl] ucliCore::getToolPID
-15:26:43    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpiVWRUQ
-15:26:43    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.3638}
-15:26:43    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.3638}
-15:26:43    34 --> ...                                      [tcl] dveMisc::vbusExpand FPU_Add_Subtract_Function
-15:26:43    35 --> ...                                          [tcl] config endofsim noexit
-15:26:43    36 --> ...                                              [tcl] config onfail enable all
-15:26:43    37 --> ...                                                  [tcl] config syscaddplainmembers
-15:26:43    38 --> ...                                                      [tcl] config syscaddsourcenames
-15:26:43    39 --> ...                                                          [tcl] config syscaddstructtypes
-15:26:43    40 --> ...                                                              [tcl] synopsys::listing -disable
-15:26:55    41 --> ...                                                                  [tcl] dveMisc::vbusExpand Testbench_Barrel_Shifter
-15:27:03    42 --> ...                                                                      [tcl] uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session.inter.vpd.tcl
-15:27:03    43 --> ...                                                                          [tcl] # Begin_DVE_Session_Save_Info
-15:27:03    44 --> ...                                                                              [tcl] # DVE view(Wave.1 ) session
-15:27:03    45 --> ...                                                                                  [tcl] # Saved on Tue Oct 11 15:03:16 2016
-15:27:03    46 --> ...                                                                                      [tcl] # Toplevel windows open: 2
-15:27:03    47 --> ...                                                                                          [tcl] # 	TopLevel.1
-15:27:03    48 --> ...                                                                                              [tcl] # 	TopLevel.2
-15:27:03    49 --> ...                                                                                                  [tcl] #   Wave.1: 12 signals
-15:27:03    50 --> ...  [tcl] # End_DVE_Session_Save_Info
-15:27:03    51 --> ...      [tcl] # DVE version: K-2015.09-SP2-3_Full64
-15:27:03    52 --> ...          [tcl] # DVE build date: Jun 15 2016 22:18:13
-15:27:03    53 --> ...              [tcl] #<Session mode="View" path="/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session.inter.vpd.tcl" type="Debug">
-15:27:03    54 --> ...                  [tcl] #<Database>
-15:27:03    55 --> ...                      [tcl] gui_set_time_units 1ps
-15:27:03    56 --> ...                          [tcl] #</Database>
-15:27:03    57 --> ...                              [tcl] # DVE View/pane content session:
-15:27:03    58 --> ...                                  [tcl] # Begin_DVE_Session_Save_Info (Wave.1)
-15:27:03    59 --> ...                                      [tcl] # DVE wave signals session
-15:27:03    60 --> ...                                          [tcl] # Saved on Tue Oct 11 15:03:16 2016
-15:27:03    61 --> ...                                              [tcl] # 12 signals
-15:27:03    62 --> ...                                                  [tcl] # End_DVE_Session_Save_Info
-15:27:03    63 --> ...                                                      [tcl] # DVE version: K-2015.09-SP2-3_Full64
-15:27:03    64 --> ...                                                          [tcl] # DVE build date: Jun 15 2016 22:18:13
-15:27:03    65 --> ...                                                              [tcl] #Add ncecessay scopes
-15:27:03    66 --> ...                                                                  [tcl] gui_load_child_values {Testbench_Barrel_Shifter}
-15:27:03    67 --> ...                                                                      [tcl] synopsys::dump -add {Testbench_Barrel_Shifter} -scope "." -depth 1 -fid VPD0
-15:27:03    68 --> ...                                                                          [tcl] gui_set_time_units 1ps
-15:27:03    69 --> ...                                                                              [tcl] set _wave_session_group_1 Testbench_Barrel_Shifter
-15:27:03    70 --> ...                                                                                  [tcl] if {[gui_sg_is_group -name "$_wave_session_group_1"]} {     set _wave_session_group_1 [gui_sg_generate_new_name] }
-15:27:03    71 --> ...                                                                                      [tcl] set Group1 "$_wave_session_group_1"
-15:27:03    72 --> ...                                                                                          [tcl] gui_sg_addsignal -group "$_wave_session_group_1" { {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue} {Sim:Testbench_Barrel_Shifter.load_i} {Sim:Testbench_Barrel_Shifter.Shift_Data_i} {Sim:Testbench_Barrel_Shifter.Shift_Value_i} {Sim:Testbench_Barrel_Shifter.SWR} {Sim:Testbench_Barrel_Shifter.PERIOD} {Sim:Testbench_Barrel_Shifter.Left_Right_i} {Sim:Testbench_Barrel_Shifter.EWR} {Sim:Testbench_Barrel_Shifter.clk} {Sim:Testbench_Barrel_Shifter.N_mant_o} {Sim:Testbench_Barrel_Shifter.rst} {Sim:Testbench_Barrel_Shifter.Bit_Shift_i} }
-15:27:03    73 --> ...                                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue}
-15:27:03    74 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {symbolic } -list {{Contador_shiftvalue[31:0]} }
-15:27:03    75 --> ...  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue}
-15:27:03    76 --> ...      [tcl] ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {symbolic } -list {{Contador_shiftvalue[31:0]} }
-15:27:03    77 --> ...          [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.Shift_Data_i}
-15:27:03    78 --> ...              [tcl] ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {binary } -list {{Shift_Data_i[25:0]} }
-15:27:03    79 --> ...                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.Shift_Data_i}
-15:27:03    80 --> ...                      [tcl] ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {binary } -list {{Shift_Data_i[25:0]} }
-15:27:03    81 --> ...                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.SWR}
-15:27:03    82 --> ...                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.SWR}
-15:27:03    83 --> ...                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.PERIOD}
-15:27:03    84 --> ...                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.PERIOD}
-15:27:03    85 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.EWR}
-15:27:03    86 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.EWR}
-15:27:03    87 --> ...                                                  [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.N_mant_o}
-15:27:03    88 --> ...                                                      [tcl] ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {binary } -list {{N_mant_o[25:0]} }
-15:27:03    89 --> ...                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.N_mant_o}
-15:27:03    90 --> ...                                                              [tcl] ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {binary } -list {{N_mant_o[25:0]} }
-15:27:03    91 --> ...                                                                  [tcl] if {![info exists useOldWindow]} {  	set useOldWindow true }
-15:27:03    92 --> ...                                                                      [tcl] if {$useOldWindow && [string first "Wave" [gui_get_current_window -view]]==0} {  	set Wave.1 [gui_get_current_window -view]  } else { 	set Wave.1 [lindex [gui_get_window_ids -type Wave] 0] if {[string first "Wave" ${Wave.1}]!=0} { gui_open_window Wave set Wave.1 [ gui_get_current_window -view ] } }
-15:27:03    93 --> ...                                                                          [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-15:27:03    94 --> ...                                                                              [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
-15:27:03    95 --> ...                                                                                  [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-15:27:03    96 --> ...                                                                                      [tcl] gui_list_set_height -id Wave -height 25
-15:27:03    97 --> ...                                                                                          [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
-15:27:03    98 --> ...                                                                                              [tcl] gui_list_create_group_when_add -wave -disable
-15:27:03    99 --> ...                                                                                                  [tcl] gui_marker_set_ref -id ${Wave.1}  C1
-15:27:03    100 --> ...  [tcl] gui_wv_zoom_timerange -id ${Wave.1} 0 1724859
-15:27:03    101 --> ...      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} [list ${Group1}]
-15:27:03    102 --> ...          [tcl] gui_list_select -id ${Wave.1} {Testbench_Barrel_Shifter.Shift_Value_i }
-15:27:03    103 --> ...              [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
-15:27:03    104 --> ...                  [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
-15:27:03    105 --> ...                      [tcl] gui_list_set_height -id Wave -height $origWaveHeight
-15:27:03    106 --> ...                          [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-15:27:03    107 --> ...                              [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
-15:27:03    108 --> ...                                  [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-15:27:03    109 --> ...                                      [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
-15:27:03    110 --> ...                                          [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group ${Group1}  -position in
-15:27:03    111 --> ...                                              [tcl] gui_marker_move -id ${Wave.1} {C1} 144962
-15:27:03    112 --> ...                                                  [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
-15:27:03    113 --> ...                                                      [tcl] gui_show_grid -id ${Wave.1} -enable false
-15:27:03    114 --> ...                                                          [tcl] #</Session>
-15:27:06    115 --> ...                                                              [tcl] synopsys::run
-15:27:06    116 --> ...                                                                  [tcl] set ucliGUI::state
-15:27:06    117 --> ...                                                                      [tcl] set ucliGUI::state
-15:27:06    118 --> ...                                                                          [tcl] set ucliGUI::state
-15:27:06    119 --> ...                                                                              [tcl] set ucliGUI::state
-15:27:06    120 --> ...                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
-15:27:06    121 --> ...                                                                                      [tcl] set dveMisc::result
-15:27:06    122 --> ...                                                                                          [tcl] gui_update_simulator_buttons
-15:31:15    123 --> ...                                                                                              [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
-15:31:15    124 --> ...                                                                                                  [tcl] synopsys::finish
-15:31:15    125 --> ...  [tcl] set ucliGUI::state
-15:31:15    126 --> ...      [tcl] set ucliGUI::state
-15:31:15    127 --> ...          [tcl] catch {senv activeDomain} dveMisc::result 
-15:31:15    128 --> ...              [tcl] set dveMisc::result
-15:31:15    129 --> ...                  [tcl] gui_update_simulator_buttons
-15:31:15    130 --> ...                      [tcl] catch {senv activeDomain} dveMisc::result 
-15:31:15    131 --> ...                          [tcl] set dveMisc::result
-15:31:15    132 --> ...                              [tcl] ucli_exit
+19:00:21    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE -pid 31447 -toolin /tmp/vcs_20161013010017_31446_jsequeira..stdin -toolout /tmp/vcs_20161013010017_31446_jsequeira..stdout  
+19:00:21    17 -->                                                                 [tcl] set ucliGUI::state
+19:00:21    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
+19:00:21    19 -->                                                                         [tcl] gui_update_simulator_buttons
+19:00:22    20 -->                                                                             [tcl] set ucliGUI::state
+19:00:22    21 -->                                                                                 [tcl] ucliCore::getToolPID
+19:00:22    22 -->                                                                                     [tcl] synopsys::env hasTB
+19:00:22    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
+19:00:22    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
+19:00:22    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
+19:00:22    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd -locking
+19:00:22    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
+19:00:22    28 --> ...              [tcl] set ::dve_fid VPD0
+19:00:22    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
+19:00:22    30 --> ...                      [tcl] ucliCore::getToolPID
+19:00:22    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpE1ZhsK
+19:00:22    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.31447}
+19:00:22    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.31447}
+19:00:22    34 --> ...                                      [tcl] dveMisc::vbusExpand FPU_Add_Subtract_Function
+19:00:22    35 --> ...                                          [tcl] config endofsim noexit
+19:00:22    36 --> ...                                              [tcl] config onfail enable all
+19:00:22    37 --> ...                                                  [tcl] config syscaddplainmembers
+19:00:22    38 --> ...                                                      [tcl] config syscaddsourcenames
+19:00:22    39 --> ...                                                          [tcl] config syscaddstructtypes
+19:00:22    40 --> ...                                                              [tcl] synopsys::listing -disable
+19:58:26    41 --> ...                                                                  [tcl] ucliCore::getToolPID
+19:58:31    42 --> ...                                                                      [tcl] uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session3.inter.vpd.tcl
+19:58:31    43 --> ...                                                                          [tcl] # Begin_DVE_Session_Save_Info
+19:58:31    44 --> ...                                                                              [tcl] # DVE view(Wave.1 ) session
+19:58:31    45 --> ...                                                                                  [tcl] # Saved on Wed Oct 12 17:30:08 2016
+19:58:31    46 --> ...                                                                                      [tcl] # Toplevel windows open: 1
+19:58:31    47 --> ...                                                                                          [tcl] # 	TopLevel.1
+19:58:31    48 --> ...                                                                                              [tcl] #   Wave.1: 434 signals
+19:58:31    49 --> ...                                                                                                  [tcl] # End_DVE_Session_Save_Info
+19:58:31    50 --> ...  [tcl] # DVE version: K-2015.09-SP2-3_Full64
+19:58:31    51 --> ...      [tcl] # DVE build date: Jun 15 2016 22:18:13
+19:58:31    52 --> ...          [tcl] #<Session mode="View" path="/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session3.inter.vpd.tcl" type="Debug">
+19:58:31    53 --> ...              [tcl] #<Database>
+19:58:31    54 --> ...                  [tcl] gui_set_time_units 1ps
+19:58:31    55 --> ...                      [tcl] #</Database>
+19:58:31    56 --> ...                          [tcl] # DVE View/pane content session:
+19:58:31    57 --> ...                              [tcl] # Begin_DVE_Session_Save_Info (Wave.1)
+19:58:31    58 --> ...                                  [tcl] # DVE wave signals session
+19:58:31    59 --> ...                                      [tcl] # Saved on Wed Oct 12 17:30:08 2016
+19:58:31    60 --> ...                                          [tcl] # 434 signals
+19:58:31    61 --> ...                                              [tcl] # End_DVE_Session_Save_Info
+19:58:31    62 --> ...                                                  [tcl] # DVE version: K-2015.09-SP2-3_Full64
+19:58:31    63 --> ...                                                      [tcl] # DVE build date: Jun 15 2016 22:18:13
+19:58:31    64 --> ...                                                          [tcl] #Add ncecessay scopes
+19:58:31    65 --> ...                                                              [tcl] gui_load_child_values {Testbench_Barrel_Shifter.shift_mux_array1}
+19:58:31    66 --> ...                                                                  [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.shift_mux_array1} -scope "." -depth 1 -fid VPD0
+19:58:31    67 --> ...                                                                      [tcl] gui_load_child_values {Testbench_Barrel_Shifter.shift_mux_array2}
+19:58:31    68 --> ...                                                                          [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.shift_mux_array2} -scope "." -depth 1 -fid VPD0
+19:58:31    69 --> ...                                                                              [tcl] gui_load_child_values {Testbench_Barrel_Shifter.shift_mux_array3}
+19:58:31    70 --> ...                                                                                  [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.shift_mux_array3} -scope "." -depth 1 -fid VPD0
+19:58:31    71 --> ...                                                                                      [tcl] gui_load_child_values {Testbench_Barrel_Shifter.shift_mux_array4}
+19:58:31    72 --> ...                                                                                          [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.shift_mux_array4} -scope "." -depth 1 -fid VPD0
+19:58:31    73 --> ...                                                                                              [tcl] gui_load_child_values {Testbench_Barrel_Shifter.shift_mux_array5}
+19:58:31    74 --> ...                                                                                                  [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.shift_mux_array5} -scope "." -depth 1 -fid VPD0
+19:58:31    75 --> ...  [tcl] gui_load_child_values {Testbench_Barrel_Shifter}
+19:58:31    76 --> ...      [tcl] synopsys::dump -add {Testbench_Barrel_Shifter} -scope "." -depth 1 -fid VPD0
+19:58:31    77 --> ...          [tcl] gui_set_time_units 1ps
+19:58:31    78 --> ...              [tcl] set _wave_session_group_7 Testbench_Barrel_Shifter
+19:58:31    79 --> ...                  [tcl] if {[gui_sg_is_group -name "$_wave_session_group_7"]} {     set _wave_session_group_7 [gui_sg_generate_new_name] }
+19:58:31    80 --> ...                      [tcl] set Group1 "$_wave_session_group_7"
+19:58:31    81 --> ...                          [tcl] gui_sg_addsignal -group "$_wave_session_group_7" { {Sim:Testbench_Barrel_Shifter.Bit_Shift_i} {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue} {Sim:Testbench_Barrel_Shifter.Data_arrayHW} {Sim:Testbench_Barrel_Shifter.Data_array} {Sim:Testbench_Barrel_Shifter.Shift_Value_i} {Sim:Testbench_Barrel_Shifter.EWR} {Sim:Testbench_Barrel_Shifter.Left_Right_i} {Sim:Testbench_Barrel_Shifter.N_mant_o} {Sim:Testbench_Barrel_Shifter.PERIOD} {Sim:Testbench_Barrel_Shifter.SWR} {Sim:Testbench_Barrel_Shifter.Shift_Data_i} {Sim:Testbench_Barrel_Shifter.clk} {Sim:Testbench_Barrel_Shifter.load_i} {Sim:Testbench_Barrel_Shifter.rst} }
+19:58:31    82 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue}
+19:58:31    83 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue}
+19:58:31    84 --> ...                                      [tcl] gui_set_radix -radix enum -signals {Sim:Testbench_Barrel_Shifter.Data_arrayHW}
+19:58:31    85 --> ...                                          [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.Data_arrayHW} -aggregates  -fid VPD0
+19:58:31    86 --> ...                                              [tcl] gui_set_radix -radix enum -signals {Sim:Testbench_Barrel_Shifter.Data_array}
+19:58:31    87 --> ...                                                  [tcl] synopsys::dump -add {Testbench_Barrel_Shifter.Data_array} -aggregates  -fid VPD0
+19:58:31    88 --> ...                                                      [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.Shift_Value_i}
+19:58:31    89 --> ...                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.Shift_Value_i}
+19:58:31    90 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.EWR}
+19:58:31    91 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.EWR}
+19:58:31    92 --> ...                                                                      [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.N_mant_o}
+19:58:31    93 --> ...                                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.N_mant_o}
+19:58:31    94 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.PERIOD}
+19:58:31    95 --> ...                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.PERIOD}
+19:58:31    96 --> ...                                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.SWR}
+19:58:31    97 --> ...                                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.SWR}
+19:58:31    98 --> ...                                                                                              [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.Shift_Data_i}
+19:58:31    99 --> ...                                                                                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.Shift_Data_i}
+19:58:31    100 --> ...  [tcl] set _wave_session_group_8 shift_mux_array1
+19:58:31    101 --> ...      [tcl] if {[gui_sg_is_group -name "$_wave_session_group_8"]} {     set _wave_session_group_8 [gui_sg_generate_new_name] }
+19:58:31    102 --> ...          [tcl] set Group2 "$_wave_session_group_8"
+19:58:31    103 --> ...              [tcl] gui_sg_addsignal -group "$_wave_session_group_8" { {Sim:Testbench_Barrel_Shifter.shift_mux_array1.Data_i} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.Data_o} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.LEVEL} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[19].lvl} }
+19:58:31    104 --> ...                  [tcl] error_info

@@ -27,8 +27,8 @@ set data [split $file_sources "\n"]
 # Primero se analiza el módulo principal
 
 foreach line $data {
-  analyze -library WORK -format verilog {$line}
-}
+  analyze -library WORK -format verilog "$line"
+
 
 set x 0;
 while {$x < 2} {

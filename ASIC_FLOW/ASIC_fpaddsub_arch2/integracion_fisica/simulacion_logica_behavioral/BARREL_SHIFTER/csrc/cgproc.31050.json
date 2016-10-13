@@ -1,0 +1,25 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "FPU_Add_Subtract_Function": {},
+        "shift_mux_array_0003": {},
+        "Multiplexer_AC_0001": {},
+        "Rotate_Mux_Array_0000": {},
+        "shift_mux_array_0000": {},
+        "shift_mux_array_0001": {},
+        "shift_mux_array_0002": {},
+        "shift_mux_array_0004": {},
+        "Testbench_Barrel_Shifter": {}
+    },
+    "ObjArchives": [],
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 8572,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {}
+}

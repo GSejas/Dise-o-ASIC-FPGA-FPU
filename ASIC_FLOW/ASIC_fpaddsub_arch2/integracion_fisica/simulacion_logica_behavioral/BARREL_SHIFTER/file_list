@@ -1,5 +1,5 @@
 ../../front_end/source/MultiplexTxT.v
-../../front_end/source/shift_mux.v
+#../../front_end/source/shift_mux.v
 ../../front_end/source/LZD.v
 ../../front_end/source/FPU_Add_Subtract_Function.v
 ../../front_end/source/RegisterAdd.v

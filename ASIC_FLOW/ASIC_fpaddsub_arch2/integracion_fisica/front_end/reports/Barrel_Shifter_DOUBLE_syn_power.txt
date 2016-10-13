@@ -1,6 +1,5 @@
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
-Warning: There is no defined clock in the design. (PWR-80)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
@@ -9,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : Barrel_Shifter_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Tue Oct 11 16:04:32 2016
+Date   : Wed Oct 12 18:12:55 2016
 ****************************************
 
 
@@ -31,14 +30,13 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 447.9554 uW   (58%)
-  Net Switching Power  = 321.1085 uW   (42%)
+  Cell Internal Power  = 271.0897 uW   (88%)
+  Net Switching Power  =  37.9162 uW   (12%)
                          ---------
-Total Dynamic Power    = 769.0639 uW  (100%)
+Total Dynamic Power    = 309.0058 uW  (100%)
 
-Cell Leakage Power     =   8.1773 nW
+Cell Leakage Power     =   8.7755 nW
 
-Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
@@ -47,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
-sequential         0.2361        5.1034e-03        4.0081e+03            0.2412  (  31.36%)
-combinational      0.2119            0.3160        4.1691e+03            0.5279  (  68.64%)
+register           0.2432        4.3873e-03        4.1218e+03            0.2476  (  80.12%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.7904e-02        3.3529e-02        4.6537e+03        6.1438e-02  (  19.88%)
 --------------------------------------------------------------------------------------------------
-Total              0.4480 mW         0.3211 mW     8.1773e+03 pW         0.7691 mW
+Total              0.2711 mW     3.7916e-02 mW     8.7755e+03 pW         0.3090 mW
 1

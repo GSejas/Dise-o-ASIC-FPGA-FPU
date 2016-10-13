@@ -1,16 +1,16 @@
 ../../front_end/source/MultiplexTxT.v
-../../front_end/source/shift_mux.v
+
 ../../front_end/source/LZD.v
 ../../front_end/source/FPU_Add_Subtract_Function.v
 ../../front_end/source/RegisterAdd.v
 ../../front_end/source/exp_operation.v
 ../../front_end/source/Round_Sgf_Dec.v
-../../front_end/source/Multiplexer_AC.v
+
 ../../front_end/source/Greater_Comparator.v
 ../../front_end/source/add_sub_carry_out.v
 ../../front_end/source/Mux_3x1.v
 ../../front_end/source/FSM_Add_Subtract.v
-../../front_end/source/Mux_Array.v
+
 ../../front_end/source/sgn_result.v
 ../../front_end/source/Oper_Start_In.v
 ../../front_end/source/Priority_Codec_64.v
@@ -23,4 +23,4 @@
 ../../front_end/source/Barrel_shifter.v
 ../../front_end/source/Comparators.v
 ../../front_end/source/xor_tri.v
-Testbench_FPU_Add_Subt.v
+Testbench_Barrel_Shifter.v

@@ -9,9 +9,9 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpTQU68W
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.12411}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.12411}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpuDDkY1
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.13603}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.13603}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -24,3 +24,10 @@ set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
+ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {binary } -list {{Shift_Data_i[25:0]} }
+ucliGUI::getSignalValues -scope Testbench_Barrel_Shifter -radix {binary } -list {{N_mant_o[25:0]} }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

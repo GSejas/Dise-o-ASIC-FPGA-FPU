@@ -1,0 +1,41 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "Multiplexer_AC_0001": {},
+        "Rotate_Mux_Array_0000": {},
+        "Testbench_FPU_Add_Subt": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 7109,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "kar0c_d": {
+            "archive": "archive.7/_28651_archive_1.a",
+            "out": "kar0c_d.o",
+            "mod": "Testbench_FPU_Add_Subt",
+            "bytes": 260490,
+            "mode": 4,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.7/_28651_archive_1.a",
+            "objects": [
+                [
+                    "kar0c_d.o",
+                    260490
+                ]
+            ],
+            "size": 260490
+        }
+    ]
+}

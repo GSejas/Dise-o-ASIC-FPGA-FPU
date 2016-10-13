@@ -1,156 +1,26 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 30 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 09:33 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 12 18:53 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
-$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
-$finish at simulation time            174035000
-Simulation complete, time is 174035000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.060 seconds;       Data structure size:   0.1Mb
+Wed Oct 12 18:53:59 2016
+Warning: [DVAP001] 
+File will not be opened during closing database.
+Please contact vcs_support@synopsys.com or call 1-800-VERILOG.
+Warning : License for product VCSRuntime_Net(725) will expire within 30 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 09:39 2016
-VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
-$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
-$finish at simulation time            174035000
-Simulation complete, time is 174035000 ps.
-Chronologic VCS simulator copyright 1991-2015
-Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 09:43 2016
-VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
-$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
-$finish at simulation time            174035000
-Simulation complete, time is 174035000 ps.
-Chronologic VCS simulator copyright 1991-2015
-Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 09:49 2016
-VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
-$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
-$finish at simulation time            174035000
-Simulation complete, time is 174035000 ps.
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-Chronologic VCS simulator copyright 1991-2015
-Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 10:26 2016
-VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
-$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
-$finish at simulation time            174035000
-Simulation complete, time is 174035000 ps.
-With selected criteria, DVE has found 'results at time 174005000
-    Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_Result_o[25:0]'.
-With selected criteria, DVE has found 'results at time 173935000
-    Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_Result_o[25:0]'.
-With selected criteria, DVE has found 'results at time 173835000
-    Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_Result_o[25:0]'.
-With selected criteria, DVE has found 'results at time 173765000
-    Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_Result_o[25:0]'.
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-Chronologic VCS simulator copyright 1991-2015
-Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 11:36 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 12 18:54 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
 $finish called from file "Testbench_FPU_Add_Subt.v", line 134.
@@ -164,18 +34,6 @@ ok
 
 ok
 
-0
-0
-
-0
-0
-
-0
-0
-
-0
-0
-
 ok
 
 ok
@@ -199,56 +57,12 @@ ok
 ok
 
 ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-0
-0
-
-0
-0
-
-0
-0
 
 gui/dve/libraries/syn/generic.sdb'
 gui/dve/libraries/syn/vcs.sdb'
 gui/dve/libraries/syn/vcs.sdb'
 gui/dve/libraries/syn/vcs.sdb'
 gui/dve/libraries/syn/generic.sdb'
-ok
-
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-Warning: [DVSC013] 
-Cannot open path schematic for EMPTY object.
-Please select a valid object.
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-Warning: No connection needs to be expanded.
 dve> 
 dve> 
 dve> 
@@ -265,6 +79,33 @@ dve>
 dve> 
 dve> 
 dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+Warning: [DVAP404] 
+Usage of LCA feature "DVE Back Trace" detected.
+Use the command line option "-lca" to suppress this warning.
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
 ok
 
 ok
@@ -293,6 +134,33 @@ ok
 
 ok
 
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/0
+0
+
+0
+0
+
+0
+0
+
+0
+0
+
+0
+0
+
+Warning : License for product VCSRuntime_Net(725) will expire within 30 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 12 20:12 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
+$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
+$finish at simulation time            174035000
+Simulation complete, time is 174035000 ps.
 ok
 
 ok
@@ -311,45 +179,3 @@ ok
 
 ok
 
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-ok
-
-           V C S   S i m u l a t i o n   R e p o r t 
-Time: 174035000 ps
-CPU Time:      0.640 seconds;       Data structure size:   0.1Mb
-Tue Oct 11 15:24:51 2016
-           V C S   S i m u l a t i o n   R e p o r t 
-Time: 174035000 ps
-CPU Time:      0.480 seconds;       Data structure size:   0.1Mb
-Wed Oct 12 01:17:30 2016

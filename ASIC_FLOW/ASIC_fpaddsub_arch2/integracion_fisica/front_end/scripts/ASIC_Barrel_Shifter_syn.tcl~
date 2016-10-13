@@ -14,7 +14,7 @@ set PREC_PARAM(1) "SWR=55,EWR=6";
 # Eliminar diseños previos
 set DESIGN_NAME  "Barrel_Shifter"
 set TOP_NAME     "Barrel_Shifter"
-#set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
+set CONTRAINTS_FILE_NAME "ASIC_BShifter_syn_constraints.tcl"
 remove_design -designs
 
 #WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
@@ -27,7 +27,7 @@ set data [split $file_sources "\n"]
 # Primero se analiza el módulo principal
 
 foreach line $data {
-  analyze -library WORK -format verilog {$line}
+  analyze -library WORK -format verilog "$line"
 }
 
 set x 0;
@@ -44,7 +44,7 @@ write -hierarchy -format ddc -output \
 ./db/$DESIGN_NAME\_$PRECISION($x)_syn_unmapped.ddc
 
 #Aplicar especificaciones de diseño (constraints)
-#source $CONTRAINTS_FILE_NAME
+source $CONTRAINTS_FILE_NAME
 #propagate_constraints
 
 #Revisar el diseño

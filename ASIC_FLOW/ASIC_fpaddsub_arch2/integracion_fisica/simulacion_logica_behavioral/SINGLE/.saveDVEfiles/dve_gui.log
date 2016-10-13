@@ -1,0 +1,412 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 30 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 12 18:26 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
+$finish called from file "Testbench_FPU_Add_Subt.v", line 134.
+$finish at simulation time            174035000
+Simulation complete, time is 174035000 ps.
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 174035000 ps
+CPU Time:      0.520 seconds;       Data structure size:   0.1Mb
+Wed Oct 12 18:53:45 2016
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+*** Using vcs compiler /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1 instead of /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1...
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Wed Oct 12 18:53:46 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Warning : License for product VCSCompiler_Net(723) will expire within 30 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Parsing design file '../../front_end/source/MultiplexTxT.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/MultiplexTxT.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_mux.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_mux.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/LZD.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/LZD.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Add_Subtract_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RegisterAdd.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/exp_operation.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/exp_operation.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Round_Sgf_Dec.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_Sgf_Dec.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Multiplexer_AC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Multiplexer_AC.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Greater_Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Greater_Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/add_sub_carry_out.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/add_sub_carry_out.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FSM_Add_Subtract.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_Add_Subtract.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/sgn_result.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sgn_result.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Oper_Start_In.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_64.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_64.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Less.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Less.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Rotate_Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Rotate_Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Add_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Add_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_32.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_32.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Barrel_shifter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Barrel_shifter.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparators.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparators.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/xor_tri.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/xor_tri.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file 'Testbench_FPU_Add_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 26
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 32
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 34
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_Add_Subt.v, 40
+  Verilog compiler directive encountered "`endif".
+
+Top Level Modules:
+       Testbench_FPU_Add_Subt
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module Testbench_FPU_Add_Subt because:
+	This module or some inlined child module(s) has/have been modified.
+Warning : License for product VCSCompiler_Net(723) will expire within 30 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _28651_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so    /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so   -Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+
+Warning-[DVEENVDIRNFND] DVE warning
+  Environment variable DVE is set. Please unset it.
+
+Warning : License for product VT_Visual(790) will expire within 30 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).

@@ -6,27 +6,46 @@ Report : timing
         -max_paths 1
 Design : Barrel_Shifter_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Tue Oct 11 16:04:32 2016
+Date   : Wed Oct 12 18:12:55 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Output_Reg_Q_reg_54_
-              (rising edge-triggered flip-flop)
-  Endpoint: N_mant_o[54]
-            (output port)
-  Path Group: (none)
+  Startpoint: load_i (input port clocked by clk)
+  Endpoint: Mux_Array_Mid_Reg_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
   Path Type: max
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  Output_Reg_Q_reg_54_/CK (DFFRXLTS)       0.00       0.00 r
-  Output_Reg_Q_reg_54_/Q (DFFRXLTS)        0.75       0.75 f
-  N_mant_o[54] (out)                       0.00       0.75 f
-  data arrival time                                   0.75
-  -----------------------------------------------------------
-  (Path is unconstrained)
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 r
+  load_i (in)                                             0.01       4.01 r
+  U903/Y (INVX2TS)                                        0.06       4.07 f
+  U962/Y (CLKBUFX2TS)                                     0.32       4.39 f
+  U963/Y (CLKBUFX2TS)                                     0.41       4.79 f
+  U989/Y (NOR3BX1TS)                                      0.73       5.53 r
+  U1000/Y (CLKBUFX2TS)                                    0.55       6.07 r
+  U1001/Y (CLKBUFX2TS)                                    0.34       6.42 r
+  U1002/Y (INVX2TS)                                       0.18       6.60 f
+  U802/Y (OAI211XLTS)                                     0.29       6.89 r
+  Mux_Array_Mid_Reg_Q_reg_0_/D (DFFRXLTS)                 0.00       6.89 r
+  data arrival time                                                  6.89
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Mux_Array_Mid_Reg_Q_reg_0_/CK (DFFRXLTS)                0.00      10.50 r
+  library setup time                                     -0.32      10.18
+  data required time                                                10.18
+  --------------------------------------------------------------------------
+  data required time                                                10.18
+  data arrival time                                                 -6.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.29
 
 
 1

@@ -41,11 +41,13 @@ wire [SWR-1:0] Data_array[EWR+1:0];
 //////////////////7
 genvar k;//Level
 ///////////////////77777
+
 Rotate_Mux_Array #(.SWR(SWR)) first_rotate(
 	.Data_i(Data_i),
 	.select_i(FSM_left_right_i),
 	.Data_o(Data_array [0][SWR-1:0])
 	);
+	
 generate for (k=0; k < 3; k=k+1) begin : SHIFT_1LVLS
 	shift_mux_array #(.SWR(SWR), .LEVEL(k)) shift_mux_array(
 		.Data_i(Data_array[k]),
@@ -64,14 +66,6 @@ RegisterAdd #(.W(SWR)) Mid_Reg(
         .Q(Data_array[4])
         );
 
-RegisterAdd #(.W(1)) Load_reg(
-        .clk(clk),
-        .rst(rst),
-        .load(load_i),
-        .D(load_i),
-        .Q(load_o)
-        );
-        
 generate for (k=3; k < EWR; k=k+1) begin : SHIFT_2LVLS
 	shift_mux_array #(.SWR(SWR), .LEVEL(k)) shift_mux_array(
 		.Data_i(Data_array[k+1]),
@@ -88,6 +82,12 @@ Rotate_Mux_Array #(.SWR(SWR)) last_rotate(
 	.Data_o(Data_o)
 	);
 
-
+RegisterAdd #(.W(1)) Load_reg(
+        .clk(clk),
+        .rst(rst),
+        .load(load_i),
+        .D(load_i|load_o),
+        .Q(load_o)
+        );
 
 endmodule

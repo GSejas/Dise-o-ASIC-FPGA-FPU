@@ -30,28 +30,24 @@ module shift_mux_array
     );
 
 genvar j;
+localparam integer lvl = 2**(LEVEL);
+localparam integer x = (SWR - 1);
 generate for (j=0; j<=SWR-1 ; j=j+1) begin : MUX_ODDNORM
 
 	localparam integer sh=(2**LEVEL)+j; //value for second mux input. It changes in exponentation by 2 for each level
 
-	case (sh>SWR-1)
+	case ((lvl+j)>(x))
 
-		1'b1:begin : MUX_ODDNORM1
-
-			Multiplexer_AC #(.W(1)) rotate_mux(
-			    .ctrl(select_i),
-			    .D0 (Data_i[j]),
-			    .D1 (bit_shift_i),
-			    .S (Data_o[j])
-			    );
+		1'b1: begin :BSHITMUX
+		//assign mux_out = (sel) ? din_1 : din_0;
+			assign Data_o[j] = (select_i) ? bit_shift_i : Data_i[j];
+			
 			end
-		1'b0:begin : MUX_ODDNORM2
-			Multiplexer_AC #(.W(1)) rotate_mux(
-			    .ctrl(select_i),
-			    .D0 (Data_i[j]),
-			    .D1 (Data_i[sh]),
-			    .S (Data_o[j])
-			    );
+			
+		1'b0: begin : FSHITMUX
+		
+			assign Data_o[j] = (select_i) ? Data_i[lvl+j] : Data_i[j];
+			
 			end
 		endcase
 	end

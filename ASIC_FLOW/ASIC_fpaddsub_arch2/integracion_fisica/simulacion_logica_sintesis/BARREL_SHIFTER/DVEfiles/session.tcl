@@ -1,12 +1,14 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Tue Oct 11 20:23:39 2016
+# Saved on Wed Oct 12 18:17:34 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/BARREL_SHIFTER/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: Testbench_Barrel_Shifter
-#   Group count = 0
+#   Wave.1: 12 signals
+#   Group count = 1
+#   Group Testbench_Barrel_Shifter signal count = 12
 # End_DVE_Session_Save_Info
 
 # DVE version: K-2015.09-SP2-3_Full64
@@ -65,7 +67,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{2 79} {1016 761}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{1 53} {1354 763}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -112,17 +114,17 @@ gui_show_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 195]
-catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
-gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 195
-gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value 364
-gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 194} {height 364} {dock_state left} {dock_on_new_line true} {child_hier_colhier 185} {child_hier_coltype 67} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 162]
-gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1015
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 162
+set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 426]
+catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
+gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 426
+gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 416
+gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 425} {height 416} {dock_state left} {dock_on_new_line true} {child_data_colvariable 260} {child_data_colvalue 51} {child_data_coltype 111} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 169]
+gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1354
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 169
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1014} {height 161} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1353} {height 168} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -144,25 +146,28 @@ foreach dockArea $dockAreaList {
 gui_sync_global -id ${TopLevel.1} -option true
 
 # MDI window settings
-set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
-if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
-        set Data.1 [gui_share_window -id ${DLPane.1} -type Data]
+set HSPane.1 [gui_create_window -type {HSPane}  -parent ${TopLevel.1}]
+if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {
+        set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier]
 } else {
-        set Data.1  [gui_get_shared_view -id ${DLPane.1} -type Data]
+        set Hier.1  [gui_get_shared_view -id ${HSPane.1} -type Hier]
 }
 
-gui_show_window -window ${DLPane.1} -show_state normal -rect {{0 0} {375 305}}
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 380} {height 335} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 188} {child_data_colvalue 114} {child_data_coltype 54} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_show_window -window ${HSPane.1} -show_state maximized
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 611} {child_hier_coltype 313} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
-gui_show_window -window ${Source.1} -show_state minimized -rect {{0 0} {359 269}}
-gui_update_layout -id ${Source.1} {{left 379} {top 0} {width 364} {height 299} {show_state minimized} {dock_state undocked} {dock_on_new_line false}}
+gui_show_window -window ${Source.1} -show_state maximized
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
+gui_show_window -window ${Wave.1} -show_state maximized
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 380} {child_wave_right 542} {child_wave_colname 176} {child_wave_colvalue 200} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
 gui_set_env TOPLEVELS::TARGET_FRAME(Source) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(Schematic) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(PathSchematic) ${TopLevel.1}
-gui_set_env TOPLEVELS::TARGET_FRAME(Wave) none
+gui_set_env TOPLEVELS::TARGET_FRAME(Wave) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(List) none
 gui_set_env TOPLEVELS::TARGET_FRAME(Memory) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(DriverLoad) none
@@ -201,7 +206,28 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
+gui_load_child_values {Testbench_Barrel_Shifter}
 
+
+set _session_group_1 Testbench_Barrel_Shifter
+gui_sg_create "$_session_group_1"
+set Testbench_Barrel_Shifter "$_session_group_1"
+
+gui_sg_addsignal -group "$_session_group_1" { Testbench_Barrel_Shifter.Contador_shiftvalue Testbench_Barrel_Shifter.load_i Testbench_Barrel_Shifter.Shift_Data_i Testbench_Barrel_Shifter.Shift_Value_i Testbench_Barrel_Shifter.SWR Testbench_Barrel_Shifter.PERIOD Testbench_Barrel_Shifter.Left_Right_i Testbench_Barrel_Shifter.EWR Testbench_Barrel_Shifter.clk Testbench_Barrel_Shifter.N_mant_o Testbench_Barrel_Shifter.rst Testbench_Barrel_Shifter.Bit_Shift_i }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.Contador_shiftvalue}
+gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.Shift_Data_i}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.Shift_Data_i}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.Shift_Value_i}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.Shift_Value_i}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.SWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.SWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.PERIOD}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.PERIOD}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_Barrel_Shifter.EWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_Barrel_Shifter.EWR}
+gui_set_radix -radix {binary} -signals {Sim:Testbench_Barrel_Shifter.N_mant_o}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_Barrel_Shifter.N_mant_o}
 
 # Global: Highlighting
 
@@ -211,7 +237,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 0
+gui_set_time -C1_only 625000
 
 
 
@@ -252,13 +278,47 @@ gui_view_scroll -id ${Hier.1} -horizontal -set 0
 # Source 'Source.1'
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active Testbench_Barrel_Shifter /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/BARREL_SHIFTER/Testbench_DW_Barrel.v
+gui_open_source -id ${Source.1}  -replace -active Testbench_Barrel_Shifter /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/BARREL_SHIFTER/Testbench_Barrel_Shifter.v
+gui_view_scroll -id ${Source.1} -vertical -set 280
 gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_marker_set_ref -id ${Wave.1}  C1
+gui_wv_zoom_timerange -id ${Wave.1} 558080 691712
+gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_Barrel_Shifter}
+gui_list_select -id ${Wave.1} {Testbench_Barrel_Shifter.Shift_Value_i }
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_Barrel_Shifter  -position in
+
+gui_marker_move -id ${Wave.1} {C1} 625000
+gui_view_scroll -id ${Wave.1} -vertical -set 66
+gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
-	gui_set_active_window -window ${Source.1}
+	gui_set_active_window -window ${Wave.1}
 }
 #</Session>
 

@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 // synopsys dc_script_begin
-//
+
 // synopsys dc_script_end
 
 module Multiplexer_AC
@@ -75,32 +75,27 @@ module Rotate_Mux_Array
 
 endmodule
 
+module DW01_bsh_inst( inst_A, inst_SH, B_inst );
 
-module DW_rbsh_inst #(parameter SWR = 8, parameter EWR = 3) ( Data_i, Shift_Value_i, inst_SH_TC, Data_o );
-//Barrel Shifter with Preferred Right Direction
+  parameter A_width = 8;
+  parameter SH_width = 3;
 
-  input [SWR-1 : 0] Data_i;
-  input [EWR-1 : 0] Shift_Value_i;
-  input inst_SH_TC;
-  output [SWR-1 : 0] Data_o;
+  input [A_width-1 : 0] inst_A;
+  input [SH_width-1 : 0] inst_SH;
+  output [A_width-1 : 0] B_inst;
 
-      // Instance of DW_rbsh
-      DW_rbsh #(SWR, EWR) U1 (
-        .A(Data_i),
-        .SH(Shift_Value_i),
-        .SH_TC(inst_SH_TC),
-        .B(Data_o) );
+    // Instance of DW01_bsh
+  DW01_bsh #(A_width, SH_width)
+    U1 ( .A(inst_A), .SH(inst_SH), .B(B_inst) );
 
 endmodule
-
-
-
 
 module Mux_Array_DW
     #(parameter SWR=26, parameter EWR=5)
     (
     input wire clk,
     input wire rst,
+    input wire load_i,
     input wire [SWR-1:0] Data_i,
     input wire FSM_left_right_i,
     input wire [EWR-1:0] Shift_Value_i,
@@ -108,33 +103,49 @@ module Mux_Array_DW
     output wire [SWR-1:0] Data_o
     );
 ////ge
-wire [SWR:0] Data_array[EWR+1:0];
-assign Data_array [0] = {Data_i, bit_shift_i};
+//wire [SWR:0] Data_array[EWR+1:0];
+
+wire [SWR:0] Data_array1;
+wire [SWR:0] Data_array2;
+wire [SWR:0] Data_array3;
+wire [SWR:0] Data_array4;
+
 //////////////////7
 genvar k;//Level
 ///////////////////77777
 Rotate_Mux_Array #(.SWR(SWR+1)) first_rotate(
-	.Data_i(Data_array [0] ),
+	.Data_i({Data_i, bit_shift_i}),
 	.select_i(FSM_left_right_i),
-	.Data_o(Data_array [1][SWR:0])
+	.Data_o(Data_array1)
 	);
-
-  DW_rbsh_inst #(
-      .SWR(SWR+1),
-      .EWR(EWR)
-    ) inst_DW_rbsh_inst (
-      .Data_i        (Data_array [2][SWR:0]),
-      .Shift_Value_i (Shift_Value_i),
-      .inst_SH_TC    (FSM_left_right_i),
-      .Data_o        (Data_array [3][SWR:0])
-    );
-
+wire [EWR-1:0] SValue;
+assign SValue = Shift_Value_i+1;
+DW01_bsh_inst #(.A_width(SWR+1), .SH_width(EWR)) DW_BSHIFT (
+	.inst_A(Data_array1), 
+	.inst_SH(SValue), 
+	.B_inst(Data_array2));
+	
+RegisterAdd #(.W(SWR)) Output_Reg(
+	  .clk(clk),
+	  .rst(rst),
+	  .load(load_i),
+	  .D(Data_array2),
+	  .Q(Data_array3)
+  );
+  
 Rotate_Mux_Array #(.SWR(SWR+1))last_rotate(
-	.Data_i(Data_array [4][SWR:0]),
+	.Data_i(Data_array3),
 	.select_i(FSM_left_right_i),
-	.Data_o(Data_o)
+	.Data_o(Data_array4)
 	);
 
+RegisterAdd #(.W(SWR)) Output_Reg(
+	  .clk(clk),
+	  .rst(rst),
+	  .load(load_i),
+	  .D(Data_array4[SWR:1]),
+	  .Q(Data_o)
+  );
 
 
 endmodule

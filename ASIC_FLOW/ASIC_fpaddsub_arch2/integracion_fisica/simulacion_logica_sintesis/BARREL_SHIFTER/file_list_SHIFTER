@@ -1,3 +1,4 @@
-Testbench_DW_Barrel.v
-../../front_end/db/DW_rbsh_inst_syn.v
+Testbench_DW_Barrel2.v
+../../front_end/db/Mux_Array_DW_syn.v
 -v ibm13rflpvt.v
+#../../front_end/db/DW_rbsh_inst_syn.v

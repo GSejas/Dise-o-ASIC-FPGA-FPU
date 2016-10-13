@@ -1,8 +1,23 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 30 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 14:34 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 12 17:43 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd' was opened successfully.
+Error: gui_sg_addsignal -group "$_wave_session_group_8" { {Sim:Testbench_Barrel_Shifter.shift_mux_array1.Data_i} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.Data_o} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.LEVEL} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].lvl} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].sh} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].x} {Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[19].lvl} }
+Error: [DVSG007] 
+Signal ' "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[19].lvl"' cannot be found.
+Error: [EK-CMD-081]
+script '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session3.inter.vpd.tcl' stopped at line 72 due to error.
+
+[DVSG007] 
+Signal ' "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[0].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[1].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[2].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[3].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[4].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[5].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[6].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[7].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[8].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[9].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[10].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[11].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[12].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[13].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[14].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[15].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[16].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[17].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].lvl" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].sh" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[18].x" "Sim:Testbench_Barrel_Shifter.shift_mux_array1.MUX_ODDNORM[19].lvl"' cannot be found.
+    while executing
+"gui_sg_addsignal -group "$_wave_session_group_8" { {Sim:Testbench_Barrel_Shifter.shift_mux_array1.Data_i} {Sim:Testbench_Barrel_Shifter.shift_mux_arra..."
+ -- End Extended Error Info
                    0TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                    0REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                   40REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
@@ -11,368 +26,488 @@ The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_
                   60TEO Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                   60REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                  120REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
-                 200REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                 140TEO Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                 140REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                 200REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
                  220TEO Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                 220REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                 280REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                 220REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                 280REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
                  300TEO Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                 300REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                 360REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                 300REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                 360REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
                  380TEO Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                 380REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                 440REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
-                 520REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                 380REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                 440REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                 460TEO Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                 460REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                 520REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
                  540TEO Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                 540REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                 600REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                 540REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                 600REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                  610TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                 610REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                 610REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                  620TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                 620REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                 680REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                 620REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                 680REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
                  700TEO Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                 700REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                 760REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
-                 840REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                 700REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                 760REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                 780TEO Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                 780REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                 840REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
                  860TEO Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                 860REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                 920REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                 860REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                 920REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
                  940TEO Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                 940REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                1000REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                 940REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                1000REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
                 1020TEO Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                1020REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                1080REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
-                1160REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                1020REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                1080REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                1100TEO Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                1100REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                1160REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
                 1180TEO Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                1180REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                1240REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                1180REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                1240REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                1250TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                1250REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
                 1260TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                1260REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                1320REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                1260REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                1320REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
                 1340TEO Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                1340REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                1400REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
-                1480REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                1340REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                1400REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                1420TEO Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                1420REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                1480REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
                 1500TEO Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                1500REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                1560REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                1500REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                1560REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
                 1580TEO Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                1580REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                1640REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                1580REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                1640REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
                 1660TEO Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                1660REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                1720REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
-                1800REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                1660REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                1720REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                1740TEO Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                1740REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                1800REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
                 1820TEO Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                1820REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                1880REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                1820REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                1880REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 1890TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                1890REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                1890REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 1900TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                1900REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                1960REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                1900REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                1960REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
                 1980TEO Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                1980REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                2040REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
-                2120REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                2140TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                2140REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                2200REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                2220TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                2220REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                2280REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                2300TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                2300REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                2360REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
-                2440REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                2460TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                2460REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                2520REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                1980REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                2040REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                2060TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                2060REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                2120REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
+                2200REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
+                2280REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
+                2360REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
+                2440REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
+                2520REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 2530TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
-                2530REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                2530REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 2540TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 2540REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 2600REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 2620TEO Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 2620REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 2680REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
-                2760REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                2700TEO Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                2700REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                2760REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
                 2780TEO Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                2780REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                2840REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                2780REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                2840REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
                 2860TEO Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                2860REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                2920REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                2860REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                2920REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
                 2940TEO Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                2940REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                3000REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
-                3080REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                2940REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                3000REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                3020TEO Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                3020REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                3080REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
                 3100TEO Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                3100REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                3160REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                3100REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                3160REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                 3170TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                3170REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                3170REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                 3180TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                3180REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                3240REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                3180REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                3240REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
                 3260TEO Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                3260REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                3320REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
-                3400REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                3260REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                3320REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                3340TEO Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                3340REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                3400REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
                 3420TEO Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                3420REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                3480REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                3420REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                3480REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
                 3500TEO Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                3500REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                3560REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                3500REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                3560REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
                 3580TEO Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                3580REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                3640REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
-                3720REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                3580REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                3640REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                3660TEO Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                3660REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                3720REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
                 3740TEO Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                3740REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                3800REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                3740REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                3800REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                3810TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                3810REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
                 3820TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                3820REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                3880REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                3820REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                3880REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
                 3900TEO Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                3900REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                3960REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
-                4040REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                3900REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                3960REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                3980TEO Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                3980REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                4040REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
                 4060TEO Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                4060REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                4120REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                4060REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                4120REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
                 4140TEO Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                4140REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                4200REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                4140REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                4200REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
                 4220TEO Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                4220REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                4280REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
-                4360REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                4220REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                4280REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                4300TEO Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                4300REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                4360REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
                 4380TEO Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                4380REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                4440REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                4380REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                4440REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 4450TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                4450REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                4450REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 4460TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                4460REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                4520REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                4460REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                4520REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
                 4540TEO Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                4540REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                4600REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
-                4680REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                4700TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                4700REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                4760REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                4780TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                4780REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                4840REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                4860TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                4860REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                4920REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
-                5000REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                5020TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                5020REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                5080REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                4540REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                4600REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                4620TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                4620REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                4680REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
+                4760REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
+                4840REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
+                4920REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
+                5000REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
+                5080REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 5090TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
-                5090REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                5090REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 5100TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 5100REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 5160REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 5180TEO Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 5180REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 5240REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
-                5320REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                5260TEO Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                5260REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                5320REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
                 5340TEO Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                5340REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                5400REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                5340REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                5400REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
                 5420TEO Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                5420REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                5480REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                5420REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                5480REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
                 5500TEO Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                5500REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                5560REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
-                5640REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                5500REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                5560REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                5580TEO Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                5580REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                5640REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
                 5660TEO Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                5660REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                5720REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                5660REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                5720REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                 5730TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                5730REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                5730REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                 5740TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                5740REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                5800REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                5740REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                5800REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
                 5820TEO Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                5820REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                5880REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
-                5960REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                5820REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                5880REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                5900TEO Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                5900REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                5960REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
                 5980TEO Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                5980REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                6040REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                5980REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                6040REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
                 6060TEO Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                6060REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                6120REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                6060REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                6120REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
                 6140TEO Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                6140REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                6200REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
-                6280REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                6140REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                6200REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                6220TEO Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                6220REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                6280REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
                 6300TEO Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                6300REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                6360REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                6300REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                6360REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                6370TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                6370REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
                 6380TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                6380REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                6440REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                6380REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                6440REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
                 6460TEO Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                6460REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                6520REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
-                6600REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                6460REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                6520REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                6540TEO Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                6540REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                6600REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
                 6620TEO Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                6620REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                6680REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                6620REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                6680REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
                 6700TEO Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                6700REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                6760REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                6700REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                6760REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
                 6780TEO Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                6780REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                6840REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
-                6920REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                6780REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                6840REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                6860TEO Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                6860REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                6920REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
                 6940TEO Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                6940REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                7000REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                6940REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                7000REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 7010TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                7010REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                7010REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 7020TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                7020REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                7080REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                7020REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                7080REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
                 7100TEO Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                7100REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                7160REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
-                7240REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                7260TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                7260REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                7320REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                7340TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                7340REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                7400REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                7420TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                7420REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                7480REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
-                7560REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                7580TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                7580REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-                7640REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                7100REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                7160REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                7180TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                7180REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                7240REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
+                7320REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
+                7400REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
+                7480REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
+                7560REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
+                7640REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 7650TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
-                7650REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                7650REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 7660TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 7660REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                 7720REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 7740TEO Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 7740REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  1
                 7800REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
-                7880REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                7820TEO Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                7820REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  2
+                7880REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
                 7900TEO Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                7900REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
-                7960REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                7900REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  3
+                7960REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
                 7980TEO Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                7980REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
-                8040REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                7980REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  4
+                8040REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
                 8060TEO Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                8060REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
-                8120REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
-                8200REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                8060REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  5
+                8120REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                8140TEO Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                8140REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  6
+                8200REA Salida = 00000010000101010011010100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
                 8220TEO Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                8220REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
-                8280REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                8220REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  7
+                8280REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                 8290TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                8290REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                8290REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
                 8300TEO Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                8300REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
-                8360REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                8300REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  8
+                8360REA Salida = 00000000100001010100110101 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
                 8380TEO Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                8380REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
-                8440REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
-                8520REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                8380REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  9
+                8440REA Salida = 00000000010000101010011010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                8460TEO Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                8460REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 10
+                8520REA Salida = 00000000001000010101001101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
                 8540TEO Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                8540REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
-                8600REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                8540REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 11
+                8600REA Salida = 00000000000100001010100110 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
                 8620TEO Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                8620REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
-                8680REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                8620REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 12
+                8680REA Salida = 00000000000010000101010011 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
                 8700TEO Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                8700REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
-                8760REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
-                8840REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                8700REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 13
+                8760REA Salida = 00000000000001000010101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                8780TEO Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                8780REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 14
+                8840REA Salida = 00000000000000100001010100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
                 8860TEO Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                8860REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
-                8920REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                8860REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 15
+                8920REA Salida = 00000000000000010000101010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                8930TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                8930REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
                 8940TEO Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                8940REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
-                9000REA Salida = 01000010101001101010010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                8940REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 16
+                9000REA Salida = 00000000000000001000010101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
                 9020TEO Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                9020REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
-                9080REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
-                9160REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                9020REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 17
+                9080REA Salida = 00000000000000000100001010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                9100TEO Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                9100REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 18
+                9160REA Salida = 00000000000000000010000101 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
                 9180TEO Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                9180REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
-                9240REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                9180REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 19
+                9240REA Salida = 00000000000000000001000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
                 9260TEO Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                9260REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
-                9320REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                9260REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 20
+                9320REA Salida = 00000000000000000000100001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
                 9340TEO Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                9340REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
-                9400REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
-                9480REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                9340REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 21
+                9400REA Salida = 00000000000000000000010000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                9420TEO Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                9420REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 22
+                9480REA Salida = 00000000000000000000001000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
                 9500TEO Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                9500REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
-                9560REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                9500REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 23
+                9560REA Salida = 00000000000000000000000100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 9570TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                9570REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                9570REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
                 9580TEO Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                9580REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
-                9640REA Salida = 00100001010100110101001001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                9580REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 24
+                9640REA Salida = 00000000000000000000000010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
                 9660TEO Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                9660REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
-                9720REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
-                9800REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                9820TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                9820REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
-                9880REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                9900TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                9900REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
-                9960REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                9980TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-                9980REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
-               10040REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
-               10120REA Salida = 00001000010101001101010010 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-               10140TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-               10140REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
-               10200REA Salida = 00000100001010100110101001 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+                9660REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 25
+                9720REA Salida = 00000000000000000000000001 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                9740TEO Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                9740REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 26
+                9800REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 27
+                9880REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 28
+                9960REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 29
+               10040REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 30
+               10120REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento: 31
+               10200REA Salida = 00000000000000000000000000 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                10210TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
-               10210REA Salida = 00010000101010011010100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
+               10210REA Salida = 00000001000010101001101010 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                10220TEO Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
                10220REA Salida = 10000101010011010100100100 Entrada = 10000101010011010100100100 Numero de Corrimiento:  0
-$finish called from file "Testbench_Barrel_Shifter.v", line 83.
+$finish called from file "Testbench_Barrel_Shifter.v", line 188.
 $finish at simulation time             10240000
 Simulation complete, time is 10240000 ps.
+With selected criteria, DVE has found 'results at time 40000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 120000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 200000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 280000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 360000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 440000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 520000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 600000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 680000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 760000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 840000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 920000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1000000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1080000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1160000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1240000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1320000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1400000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1480000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1560000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1640000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1720000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1800000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1880000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 1960000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2040000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2120000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2200000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2280000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2360000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2440000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2520000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2600000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2680000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2760000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2680000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2600000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2520000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2440000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2360000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2280000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2360000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2440000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2360000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2440000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2360000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2440000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2520000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 2600000
+    Testbench_Barrel_Shifter.Data_arrayHW[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 140000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 220000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
 With selected criteria, DVE has found 'results at time 300000
     Testbench_Barrel_Shifter.N_mant_o[25:0]'.
 With selected criteria, DVE has found 'results at time 380000
     Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 540000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 610000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 620000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 610000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 620000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 610000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 620000
-    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-With selected criteria, DVE has found 'results at time 610000
+With selected criteria, DVE has found 'results at time 460000
     Testbench_Barrel_Shifter.N_mant_o[25:0]'.
 With selected criteria, DVE has found 'results at time 540000
     Testbench_Barrel_Shifter.N_mant_o[25:0]'.
@@ -380,67 +515,44 @@ With selected criteria, DVE has found 'results at time 610000
     Testbench_Barrel_Shifter.N_mant_o[25:0]'.
 With selected criteria, DVE has found 'results at time 620000
     Testbench_Barrel_Shifter.N_mant_o[25:0]'.
-gui/dve/libraries/syn/generic.sdb'
-gui/dve/libraries/syn/vcs.sdb'
-gui/dve/libraries/syn/vcs.sdb'
-gui/dve/libraries/syn/vcs.sdb'
-gui/dve/libraries/syn/generic.sdb'
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-Warning: [DVAP404] 
-Usage of LCA feature "DVE Back Trace" detected.
-Use the command line option "-lca" to suppress this warning.
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
-dve> 
+With selected criteria, DVE has found 'results at time 610000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 620000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 610000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 540000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 610000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 520000
+    Testbench_Barrel_Shifter.Data_array[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 600000
+    Testbench_Barrel_Shifter.Data_array[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 680000
+    Testbench_Barrel_Shifter.Data_array[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 600000
+    Testbench_Barrel_Shifter.Data_array[6:0][25:0]'.
+With selected criteria, DVE has found 'results at time 460000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 540000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 610000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 540000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 610000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 540000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 460000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
+With selected criteria, DVE has found 'results at time 540000
+    Testbench_Barrel_Shifter.N_mant_o[25:0]'.
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 10240000 ps
-CPU Time:      3.070 seconds;       Data structure size:   0.1Mb
-Tue Oct 11 15:03:21 2016
+CPU Time:      0.220 seconds;       Data structure size:   0.1Mb
+Wed Oct 12 17:47:25 2016
 
 Warning-[LNX_OS_VERUN] Unsupported Linux version
   Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
@@ -450,7 +562,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 
 *** Using vcs compiler /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1 instead of /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1...
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Tue Oct 11 15:03:22 2016
+      Version K-2015.09-SP2-3_Full64 -- Wed Oct 12 17:47:26 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -458,16 +570,15 @@ This program is proprietary and confidential information of Synopsys Inc.
 and may be used and disclosed only as authorized in a license agreement
 controlling such use and disclosure.
 
+Warning : License for product VCSCompiler_Net(723) will expire within 30 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
 Parsing design file '../../front_end/source/MultiplexTxT.v'
 
 Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/MultiplexTxT.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '../../front_end/source/shift_mux.v'
-
-Lint-[VCDE] Compiler directive encountered
-../../front_end/source/shift_mux.v, 1
   Verilog compiler directive encountered "`timescale".
 
 Parsing design file '../../front_end/source/LZD.v'
@@ -615,20 +726,25 @@ Testbench_Barrel_Shifter.v, 1
   Verilog compiler directive encountered "`timescale".
 
 
+Lint-[VCDE] Compiler directive encountered
+Testbench_Barrel_Shifter.v, 21
+  Verilog compiler directive encountered "`timescale".
+
+
 Lint-[NS] Null statement
-Testbench_Barrel_Shifter.v, 54
+Testbench_Barrel_Shifter.v, 157
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-Testbench_Barrel_Shifter.v, 82
+Testbench_Barrel_Shifter.v, 187
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-Testbench_Barrel_Shifter.v, 88
+Testbench_Barrel_Shifter.v, 193
   Null statement is used in following verilog source.
   
 
@@ -638,43 +754,42 @@ Top Level Modules:
 TimeScale is 1 ns / 1 ps
 Starting vcs inline pass...
 5 modules and 0 UDP read.
-	However, due to incremental compilation, only 3 modules need to be compiled.
-recompiling module shift_mux_array because:
-	This module or some inlined child module(s) has/have been modified.
-recompiling module FPU_Add_Subtract_Function because:
-	This module or some inlined child module(s) has/have been modified.
-recompiling module Testbench_Barrel_Shifter because:
-	This module or some inlined child module(s) has/have been modified.
-All of 3 modules done
+	However, due to incremental compilation, no re-compilation is necessary.
+Warning : License for product VCSCompiler_Net(723) will expire within 30 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
 rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
-g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _24844_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so    /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so   -Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so    /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so   -Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
 
 Warning-[DVEENVDIRNFND] DVE warning
   Environment variable DVE is set. Please unset it.
 
-CPU time: .400 seconds to compile + .487 seconds to elab + .153 seconds to link + 34.688 seconds in simulation
+Warning : License for product VT_Visual(790) will expire within 30 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+CPU time: .315 seconds to compile + .576 seconds to elab + .132 seconds to link + 50.793 seconds in simulation
 Warning: [DVIT101] 
 Rename of DVE log directory failed: Directory not empty.
   From path: '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/.saveDVEfiles'.
   To path: '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/DVEfiles'.
 Please ensure you have write permission in the directory.
 Finished rebuilding the design.
+Warning : License for product VCSRuntime_Net(725) will expire within 30 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 11 15:23 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 12 18:17 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/inter.vpd' was opened successfully.
-Warning: [DVSC014] 
-Unable to open path schematic: no path info for the object (Testbench_Barrel_Shifter.uut.Mux_Array.first_rotate.MUX_ARRAY[6].MUX_ARRAY12.rotate_mux.*p@32).
-Error: [DVAP037] 
-Errors while sourcing the file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/.restartSimSession.tcl':
-
- Line 217: Error: [DVSC144] 
-Object 'Testbench_Barrel_Shifter.uut.Mux_Array.SHIFT_1LVLS[0].shift_mux_array.MUX_ODDNORM[9].MUX_ODDNORM2.rotate_mux.*p@32' was not found.
-.
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 0 ps
-CPU Time:      0.130 seconds;       Data structure size:   0.1Mb
-Tue Oct 11 15:23:54 2016
+CPU Time:      0.060 seconds;       Data structure size:   0.1Mb
+Wed Oct 12 18:18:02 2016

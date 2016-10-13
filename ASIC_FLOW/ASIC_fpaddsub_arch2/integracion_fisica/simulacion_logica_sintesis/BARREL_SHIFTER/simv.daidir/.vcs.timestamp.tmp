@@ -28,7 +28,7 @@
 -Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/include
 -Xvcs_run_simv=1
 -debug=3
--f file_list_SHIFTER
+-f file_list
 -full64
 -gen_obj
 -gui
@@ -51,9 +51,9 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64
 SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/
-SSH_TTY=/dev/pts/57
-SSH_CONNECTION=172.21.8.215 55216 172.21.16.5 22
-SSH_CLIENT=172.21.8.215 55216 22
+SSH_TTY=/dev/pts/54
+SSH_CONNECTION=172.21.8.215 33438 172.21.16.5 22
+SSH_CLIENT=172.21.8.215 33438 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
@@ -85,9 +85,9 @@ COLORTERM=gnome-terminal
 6
 1476069623 ibm13rflpvt.v
 1476069623 ibm13rflpvt.v
-1476232619 ../../front_end/db/DW_rbsh_inst_syn.v
-1476239016 Testbench_DW_Barrel.v
-1476238787 file_list_SHIFTER
+1476216896 Testbench_Barrel_Shifter.v
+1476317557 ../../front_end/db/Barrel_Shifter_SINGLE_syn.v
+1476216578 file_list
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 4
 0 

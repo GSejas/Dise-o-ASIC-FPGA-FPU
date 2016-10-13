@@ -1,0 +1,50 @@
+=======================DVE Context and Call Stack=========================
+Command line: /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE  -pid 12411" -toolin /tmp/vcs_20161012022344_12410_jsequeira..stdin -toolout /tmp/vcs_20161012022344_12410_jsequeira..stdout
+
+--- Stack trace follows:
+[New LWP 13264]
+[New LWP 12986]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00000039086ac7fd in waitpid () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fa6d8adb700 (LWP 12986)):
+#0  0x0000003908e0ba5e in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000028c517b in ?? ()
+#2  0x00000000028c560e in QThread::msleep(unsigned long) ()
+#3  0x00000000010dcf76 in ag::dveXThread::run() ()
+#4  0x00000000028c530a in QThreadInstance::start(void*) ()
+#5  0x0000003908e07aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00000039086e8aad in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fa6d4ada700 (LWP 13264)):
+#0  0x0000003908e0f06d in open64 () from /lib64/libpthread.so.0
+#1  0x00000000011f57e3 in ag::dveSmlSocket::run() ()
+#2  0x00000000028c530a in QThreadInstance::start(void*) ()
+#3  0x0000003908e07aa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00000039086e8aad in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7fa6d986e800 (LWP 12425)):
+#0  0x00000039086ac7fd in waitpid () from /lib64/libc.so.6
+#1  0x000000390863e5c9 in do_system () from /lib64/libc.so.6
+#2  0x000000390863e900 in system () from /lib64/libc.so.6
+#3  0x00007fa6db3b2318 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e639d2928478c79b3f673f99203bcf8be64600612100082236bffb2007f1e0ef9 () from /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//linux64/lib/liberrorinf.so
+#4  0x00007fa6db3b28ad in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e81c34e9ac4c8988ef4a6e067b3aa9271e9f15440f9e8f69ebc77e2fd65860faa () from /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//linux64/lib/liberrorinf.so
+#5  0x00007fa6db3b3bbb in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313efba706aab251478fa49e66610e453774633a6c152e7ef778f2202cda681f3d4e () from /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//linux64/lib/liberrorinf.so
+#6  0x00007fa6db3ac9a5 in SNPSle_d35ca1ff70d465c2b9b1a72eee90a506fdd009d3de3db1de () from /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//linux64/lib/liberrorinf.so
+#7  0x0000000001f9d175 in ag::logErrorMessage(ag::errorType, QString const&, bool) ()
+#8  0x0000000001f9d923 in ?? ()
+#9  0x0000003908635aba in exit () from /lib64/libc.so.6
+#10 0x000000000111fc96 in VCS_EXIT ()
+#11 0x00000000011df4b2 in SigHandler ()
+#12 <signal handler called>
+#13 0x00000039086e1523 in select () from /lib64/libc.so.6
+#14 0x000000000288e28c in QEventLoop::processEvents(unsigned int) ()
+#15 0x000000000111e9f1 in ag::ovaEventLoop::processEvents(unsigned int) ()
+#16 0x00000000028dbab9 in QEventLoop::enterLoop() ()
+#17 0x00000000028dba1a in QEventLoop::exec() ()
+#18 0x000000000111e35f in run_cci_event_loop ()
+#19 0x00000000010ddb44 in ag::ovaAppInst::enterEventLoop(int, char**) ()
+#20 0x0000000000de6a69 in main ()
+No context available
+==========================================================================
