@@ -8,45 +8,61 @@ gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {str
 gui_state_default_create -off -ini
 gui_set_state_value -category Globals -key open_wave_inside -value true
 gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -design V1}}
-gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session3.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session2.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
-gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session2.inter.vpd.tcl}}
-gui_set_state_value -category Layout -key child_console_size_x -value 1359
-gui_set_state_value -category Layout -key child_console_size_y -value 178
-gui_set_state_value -category Layout -key child_data_coltype -value 13
-gui_set_state_value -category Layout -key child_data_colvalue -value 12
-gui_set_state_value -category Layout -key child_data_colvariable -value 138
-gui_set_state_value -category Layout -key child_data_size_x -value 188
-gui_set_state_value -category Layout -key child_data_size_y -value 438
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session3.inter.vpd.tcl}}
+gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session2.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_console_docknewline -value false
+gui_set_state_value -category Layout -key child_console_dockstate -value undocked
+gui_set_state_value -category Layout -key child_console_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_console_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_console_showstate -value maximized
+gui_set_state_value -category Layout -key child_console_size_x -value 1010
+gui_set_state_value -category Layout -key child_console_size_y -value 612
+gui_set_state_value -category Layout -key child_data_coltype -value 436
+gui_set_state_value -category Layout -key child_data_colvalue -value 367
+gui_set_state_value -category Layout -key child_data_colvariable -value 552
+gui_set_state_value -category Layout -key child_data_docknewline -value false
+gui_set_state_value -category Layout -key child_data_dockstate -value undocked
+gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_data_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_data_showstate -value maximized
+gui_set_state_value -category Layout -key child_data_size_x -value 1364
+gui_set_state_value -category Layout -key child_data_size_y -value 613
+gui_set_state_value -category Layout -key child_driver_size_x -value 1359
+gui_set_state_value -category Layout -key child_driver_size_y -value 127
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
-gui_set_state_value -category Layout -key child_hier_colhier -value 177
+gui_set_state_value -category Layout -key child_hier_colhier -value 838
 gui_set_state_value -category Layout -key child_hier_colpd -value 0
-gui_set_state_value -category Layout -key child_hier_coltype -value 10
+gui_set_state_value -category Layout -key child_hier_coltype -value 518
+gui_set_state_value -category Layout -key child_hier_docknewline -value false
+gui_set_state_value -category Layout -key child_hier_dockstate -value undocked
+gui_set_state_value -category Layout -key child_hier_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_hier_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_hier_showstate -value maximized
-gui_set_state_value -category Layout -key child_hier_size_x -value 188
-gui_set_state_value -category Layout -key child_hier_size_y -value 438
+gui_set_state_value -category Layout -key child_hier_size_x -value 1364
+gui_set_state_value -category Layout -key child_hier_size_y -value 613
 gui_set_state_value -category Layout -key child_list_down -value 134
 gui_set_state_value -category Layout -key child_list_right -value 444
 gui_set_state_value -category Layout -key child_schematic_docknewline -value false
 gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_schematic_pos_y -value {-20}
-gui_set_state_value -category Layout -key child_schematic_size_x -value 1019
-gui_set_state_value -category Layout -key child_schematic_size_y -value 381
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1009
+gui_set_state_value -category Layout -key child_schematic_size_y -value 485
 gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_source_pos_y -value {-20}
-gui_set_state_value -category Layout -key child_source_size_x -value 383
-gui_set_state_value -category Layout -key child_source_size_y -value 298
+gui_set_state_value -category Layout -key child_source_size_x -value 1009
+gui_set_state_value -category Layout -key child_source_size_y -value 584
 gui_set_state_value -category Layout -key child_watch_size_x -value 746
 gui_set_state_value -category Layout -key child_watch_size_y -value 166
-gui_set_state_value -category Layout -key child_wave_colname -value 315
-gui_set_state_value -category Layout -key child_wave_colvalue -value 248
+gui_set_state_value -category Layout -key child_wave_colname -value 320
+gui_set_state_value -category Layout -key child_wave_colvalue -value 162
 gui_set_state_value -category Layout -key child_wave_docknewline -value false
-gui_set_state_value -category Layout -key child_wave_left -value 567
+gui_set_state_value -category Layout -key child_wave_left -value 486
 gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_wave_pos_y -value {-20}
-gui_set_state_value -category Layout -key child_wave_right -value 409
-gui_set_state_value -category Layout -key child_wave_size_x -value 986
-gui_set_state_value -category Layout -key child_wave_size_y -value 434
+gui_set_state_value -category Layout -key child_wave_right -value 868
+gui_set_state_value -category Layout -key child_wave_size_x -value 1364
+gui_set_state_value -category Layout -key child_wave_size_y -value 613
 gui_set_state_value -category Layout -key main_pos_x -value 0
 gui_set_state_value -category Layout -key main_pos_y -value 24
 gui_set_state_value -category Layout -key main_size_x -value 1359
@@ -59,6 +75,15 @@ gui_set_state_value -category Layout -key stand_list_child_size_y -value 284
 gui_set_state_value -category Layout -key stand_list_top_pos_y -value 52
 gui_set_state_value -category Layout -key stand_list_top_size_x -value 1099
 gui_set_state_value -category Layout -key stand_list_top_size_y -value 551
+gui_set_state_value -category Layout -key stand_schematic_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_schematic_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_schematic_child_pos_y -value {-20}
+gui_set_state_value -category Layout -key stand_schematic_child_size_x -value 1364
+gui_set_state_value -category Layout -key stand_schematic_child_size_y -value 381
+gui_set_state_value -category Layout -key stand_schematic_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_schematic_top_pos_y -value 52
+gui_set_state_value -category Layout -key stand_schematic_top_size_x -value 1359
+gui_set_state_value -category Layout -key stand_schematic_top_size_y -value 563
 gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
 gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
 gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
@@ -68,7 +93,7 @@ gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 4
 gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 52
 gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1027
 gui_set_state_value -category Layout -key stand_wave_top_size_y -value 743
-gui_set_state_value -category Data -key data_show_mode -value list
+gui_set_state_value -category Driver -key driver_add_to_wave -value true
 gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
 gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
 gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
@@ -81,565 +106,122 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SINGLE} -dir .
-set DIALOGS::LOADFILEDIR [file dirname /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl]; gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl
-gui_sim_continue  
-gui_view_port_history -window Wave.1 -previous
-gui_marker_move -id  Wave.1 C1 195000
-gui_marker_move -id  Wave.1 C1 215000
-gui_marker_move -id  Wave.1 C1 215000
-gui_marker_move -id  Wave.1 C1 205000
-gui_marker_move -id  Wave.1 C1 195000
-gui_marker_move -id  Wave.1 C1 205472
-gui_marker_move -id  Wave.1 C1 215000
-gui_marker_move -id  Wave.1 C1 186592
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_list_set_filter -id Data.1 -text {*}
-gui_data_switch_mode -id  Data.1  -mode  detail
-gui_data_toggle_value_annotate -id  Data.1   {Testbench_FPU_Add_Subt.Array_IN_2[0:1023][31:0]}
-gui_list_select -id Data.1 -selected  { {Testbench_FPU_Add_Subt.Array_IN_2[0:1023][31:0]}   }
+gui_default_layout -window TopLevel.1
+gui_window_maximized -clear
 gui_list_expand -id  Hier.1   Testbench_FPU_Add_Subt
 gui_list_expand -id  Hier.1   Testbench_FPU_Add_Subt.uut
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Rounding_Decoder -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Rounding_Decoder   }
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Oper_Start_in_module -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Oper_Start_in_module   }
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Leading_Zero_Detector_Module -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Leading_Zero_Detector_Module   }
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { Testbench_FPU_Add_Subt } -insertionbar
+gui_list_collapse -id  Wave.1   Testbench_FPU_Add_Subt
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_A_mux -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_A_mux   }
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux   }
+gui_sg_create Add_Sub_Sgf_Oper_B_mux
+gui_list_add_group -id  Wave.1   {Add_Sub_Sgf_Oper_B_mux} 
+gui_list_add  -id  Wave.1   -after Add_Sub_Sgf_Oper_B_mux {{Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux}}
 gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module   }
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_marker_move -id  Wave.1 C1 195000
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_wv_zoom_timerange -id  Wave.1 110130 369408
-gui_marker_move -id  Wave.1 C1 215000
-gui_wv_zoom_timerange -id  Wave.1 110130 380736
-gui_wv_zoom_timerange -id  Wave.1 110130 380421
-gui_wv_zoom_timerange -id  Wave.1 110130 380421
-gui_wv_zoom_timerange -id  Wave.1 110130 241657
-gui_wv_zoom_timerange -id  Wave.1 110130 241972
-gui_wv_zoom_timerange -id  Wave.1 110130 349899
-gui_wv_zoom_timerange -id  Wave.1 110130 498103
-gui_wv_zoom_timerange -id  Wave.1 110130 606031
-gui_wv_zoom_timerange -id  Wave.1 110130 633406
-gui_wv_zoom_timerange -id  Wave.1 110130 636238
-gui_wv_zoom_timerange -id  Wave.1 110130 637182
-gui_wv_zoom_timerange -id  Wave.1 110130 638126
-gui_wv_zoom_timerange -id  Wave.1 110130 657005
-gui_wv_zoom_timerange -id  Wave.1 110130 660152
-gui_wv_zoom_timerange -id  Wave.1 110130 881671
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 288541
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 490866
-gui_wv_zoom_timerange -id  Wave.1 110130 491181
-gui_use_schematics 
-gui_path_show -objects Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_load
-gui_zoom -window Schematic.1 -rect { {-16635 -4097} {26666 14128} }
-gui_zoom -window Schematic.1 -rect { {-6146 -7644} {20485 3565} }
-gui_zoom -window Schematic.1 -rect { {-6146 -7644} {20485 3565} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.FS_Module.load_4_o}
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.FS_Module.load_4_o}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-34417 -40072} {69305 3584} }
-gui_zoom -window Schematic.1 -rect { {-6147 -7641} {20487 3569} }
-gui_zoom -window Schematic.1 -rect { {-26533 -36696} {61230 243} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_i}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-27899 -43161} {83213 3606} }
-gui_zoom -window Schematic.1 -rect { {-26534 -36690} {61232 250} }
-gui_zoom -window Schematic.1 -rect { {-35207 -39838} {58415 -433} }
-gui_zoom -window [gui_get_current_window -view] -full
-gui_zoom -window Schematic.1 -rect { {-27899 -43161} {83213 3606} }
-gui_view_port_history -window Schematic.1 -next
-gui_view_port_history -window Schematic.1 -previous
-gui_zoom -window Schematic.1 -rect { {-35208 -39838} {58416 -432} }
-gui_view_port_history -window Schematic.1 -next
-gui_zoom -window Schematic.1 -rect { {-27900 -43161} {83216 3607} }
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {-27901 -43190} {83217 3579} }
-gui_zoom -window Schematic.1 -rect { {-25867 -44809} {91099 4422} }
-gui_zoom -window Schematic.1 -rect { {-28963 -46141} {94159 5680} }
-gui_zoom -window Schematic.1 -rect { {-32121 -47515} {97481 7034} }
-gui_zoom -window Schematic.1 -rect { {-35532 -48925} {100892 8495} }
-gui_zoom -window Schematic.1 -rect { {-29358 -46342} {94663 5858} }
-gui_zoom -window Schematic.1 -rect { {-21290 -44338} {86555 1053} }
-gui_zoom -window Schematic.1 -rect { {-16373 -43424} {81667 -2159} }
-gui_zoom -window Schematic.1 -rect { {-14070 -43588} {79302 -4288} }
-gui_zoom -window Schematic.1 -rect { {-4719 -40591} {69978 -9151} }
-gui_zoom -window Schematic.1 -rect { {-2965 -40432} {68176 -10489} }
-gui_zoom -window Schematic.1 -rect { {-1266 -40245} {66487 -11728} }
-gui_zoom -window Schematic.1 -rect { {1915 -39506} {66441 -12347} }
-gui_zoom -window Schematic.1 -rect { {6319 -38157} {64979 -13468} }
-gui_zoom -window Schematic.1 -rect { {9093 -37515} {64961 -14001} }
-gui_zoom -window Schematic.1 -rect { {11708 -36908} {64915 -14513} }
-gui_view_port_history -window Schematic.1 -next
-gui_zoom -window [gui_get_current_window -view]  -factor 0.223529
-gui_zoom -window Schematic.1 -rect { {-86357 -70226} {151674 29960} }
-gui_zoom -window [gui_get_current_window -view]  -rect {{12763 -53884} {72449 5802}}
-gui_zoom -window Schematic.1 -rect { {-28248 -53884} {113561 5803} }
-gui_view_port_history -window Schematic.1 -next
-gui_view_port_history -window Schematic.1 -previous
-gui_zoom -window Schematic.1 -rect { {-86358 -70226} {151675 29961} }
-gui_view_port_history -window Schematic.1 -next
-gui_zoom -window Schematic.1 -rect { {-28249 -53884} {113563 5804} }
-gui_view_port_history -window Schematic.1 -next
-gui_view_port_history -window Schematic.1 -next
-gui_zoom -window Schematic.1 -rect { {-41979 -51623} {107297 11207} }
-gui_zoom -window Schematic.1 -rect { {-45937 -53317} {111196 12819} }
-gui_zoom -window Schematic.1 -rect { {-50072 -55045} {115331 14572} }
-gui_zoom -window Schematic.1 -rect { {-54385 -56799} {119723 16482} }
-gui_zoom -window Schematic.1 -rect { {-50320 -55073} {115497 14719} }
-gui_zoom -window Schematic.1 -rect { {-39479 -50500} {104709 10189} }
-gui_zoom -window Schematic.1 -rect { {-30052 -46556} {95329 6217} }
-gui_zoom -window Schematic.1 -rect { {-27027 -45362} {92384 4898} }
-gui_zoom -window Schematic.1 -rect { {-19266 -42929} {84569 775} }
-gui_zoom -window Schematic.1 -rect { {-14575 -41682} {79821 -1951} }
-gui_zoom -window Schematic.1 -rect { {-12347 -41454} {77554 -3615} }
-gui_zoom -window Schematic.1 -rect { {-10172 -41380} {75448 -5343} }
-gui_zoom -window Schematic.1 -rect { {-6303 -40509} {71533 -7748} }
-gui_zoom -window Schematic.1 -rect { {-1214 -39037} {66470 -10549} }
-gui_zoom -window Schematic.1 -rect { {1672 -38981} {66133 -11850} }
-gui_zoom -window Schematic.1 -rect { {4744 -38942} {66135 -13103} }
-gui_zoom -window Schematic.1 -rect { {7694 -38787} {66161 -14179} }
-gui_zoom -window Schematic.1 -rect { {10434 -38659} {66118 -15222} }
-gui_zoom -window Schematic.1 -rect { {13054 -38356} {66086 -16035} }
-gui_schematic_clear_selection -id Schematic.1
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_zoom -window Schematic.1 -rect { {13054 -31667} {66086 -9346} }
-gui_zoom -window Schematic.1 -rect { {13054 -24979} {66086 -2658} }
-gui_zoom -window Schematic.1 -rect { {13054 -18726} {66086 3595} }
-gui_zoom -window Schematic.1 -rect { {13054 -25414} {66086 -3093} }
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.load}
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.rst}
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.Q}
-gui_zoom -window Schematic.1 -rect { {13054 -18726} {66086 3595} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.load}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {13055 -18725} {66089 3597} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.load}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {13016 -18724} {66053 3599} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {12977 -18762} {66016 3562} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {12938 -18761} {65979 3564} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {12899 -18760} {65943 3566} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_zoom -window Schematic.1 -rect { {12860 -18759} {65906 3568} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load}
-gui_path_show -window Schematic.1 -objects Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load
-gui_schematic_clear_selection -id Schematic.1
-gui_schematic_select -id Schematic.1 -type {net} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.load}
-gui_zoom -window Schematic.1 -rect { {-24383 -44191} {89702 3827} }
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.Q}
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.Q}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-40563 -58605} {108011 3930} }
-gui_zoom -window Schematic.1 -rect { {-24384 -44224} {89704 3795} }
-gui_zoom -window Schematic.1 -rect { {-23363 -47289} {90727 731} }
-gui_zoom -window Schematic.1 -rect { {-23363 -44309} {90727 3711} }
-gui_zoom -window Schematic.1 -rect { {-26374 -45994} {93721 4554} }
-gui_zoom -window Schematic.1 -rect { {-29544 -47895} {96872 5313} }
-gui_zoom -window Schematic.1 -rect { {-26529 -47221} {93866 3453} }
-gui_zoom -window Schematic.1 -rect { {-23650 -46463} {91013 1798} }
-gui_zoom -window Schematic.1 -rect { {-20904 -45803} {88299 160} }
-gui_zoom -window Schematic.1 -rect { {-18366 -45155} {85637 -1381} }
-gui_zoom -window Schematic.1 -rect { {-15875 -44523} {83175 -2834} }
-gui_zoom -window Schematic.1 -rect { {-13509 -43911} {80824 -4206} }
-gui_zoom -window Schematic.1 -rect { {-9228 -42400} {76530 -6305} }
-gui_zoom -window Schematic.1 -rect { {-9228 -32417} {76530 3678} }
-gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Output_Reg.load}
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Output_Reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Output_Reg.D}
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Output_Reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Output_Reg.D}
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Output_Reg.*p@31}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-183300 -187297} {274441 5364} }
-gui_zoom -window Schematic.1 -rect { {-9228 -32416} {76532 3680} }
-gui_zoom -window Schematic.1 -rect { {-182216 -186951} {272814 4569} }
-gui_zoom -window Schematic.1 -rect { {-182216 -186272} {272814 5248} }
-gui_zoom -window Schematic.1 -rect { {-193940 -191991} {285039 9609} }
-gui_zoom -window Schematic.1 -rect { {-206771 -197184} {297418 15027} }
-gui_zoom -window Schematic.1 -rect { {-220019 -202907} {310705 20473} }
-gui_zoom -window Schematic.1 -rect { {-233673 -208785} {324985 26351} }
-gui_zoom -window Schematic.1 -rect { {-220570 -202948} {311485 20991} }
-gui_zoom -window Schematic.1 -rect { {-207807 -197616} {298911 15659} }
-gui_zoom -window Schematic.1 -rect { {-195761 -192755} {286829 10365} }
-gui_zoom -window Schematic.1 -rect { {-173727 -166955} {264991 17699} }
-gui_zoom -window Schematic.1 -rect { {-163281 -147607} {254545 28254} }
-gui_zoom -window Schematic.1 -rect { {-153437 -129255} {244493 38232} }
-gui_zoom -window Schematic.1 -rect { {-135457 -107982} {226297 44279} }
-gui_zoom -window Schematic.1 -rect { {-126702 -92170} {217826 52841} }
-gui_zoom -window Schematic.1 -rect { {-118475 -76816} {209647 61289} }
-gui_zoom -window Schematic.1 -rect { {-110744 -62206} {201753 69323} }
-gui_zoom -window Schematic.1 -rect { {-103259 -54122} {194357 71144} }
-gui_zoom -window Schematic.1 -rect { {-96237 -46877} {187207 72424} }
-gui_zoom -window Schematic.1 -rect { {-89448 -41025} {180499 72595} }
-gui_zoom -window Schematic.1 -rect { {-83087 -47557} {174005 60652} }
-gui_zoom -window Schematic.1 -rect { {-61599 -47174} {152644 43000} }
-gui_zoom -window Schematic.1 -rect { {-56544 -52122} {147498 33758} }
-gui_zoom -window Schematic.1 -rect { {-51686 -56480} {142639 25310} }
-gui_zoom -window Schematic.1 -rect { {-47024 -60313} {138047 17583} }
-gui_zoom -window Schematic.1 -rect { {-42690 -63549} {133568 10638} }
-gui_zoom -window Schematic.1 -rect { {-38537 -66386} {129328 4268} }
-gui_zoom -window Schematic.1 -rect { {-34445 -67919} {125427 -630} }
-gui_zoom -window Schematic.1 -rect { {-30656 -69237} {121603 -5152} }
-gui_zoom -window Schematic.1 -rect { {-27041 -70049} {117967 -9015} }
-gui_zoom -window Schematic.1 -rect { {-14993 -67145} {105847 -16284} }
-gui_zoom -window Schematic.1 -rect { {-12142 -67579} {102944 -19140} }
-gui_zoom -window Schematic.1 -rect { {-9365 -67996} {100241 -21863} }
-gui_zoom -window Schematic.1 -rect { {-4368 -67371} {95273 -25433} }
-gui_zoom -window Schematic.1 -rect { {-2045 -67722} {92851 -27780} }
-gui_zoom -window Schematic.1 -rect { {1145 -68106} {91523 -30067} }
-gui_zoom -window Schematic.1 -rect { {4100 -68466} {90174 -32238} }
-gui_zoom -window Schematic.1 -rect { {4100 -79322} {90174 -43093} }
-gui_zoom -window Schematic.1 -rect { {4100 -90177} {90174 -53949} }
-gui_zoom -window Schematic.1 -rect { {4100 -101033} {90174 -64805} }
-gui_zoom -window Schematic.1 -rect { {4100 -111889} {90174 -75660} }
-gui_zoom -window Schematic.1 -rect { {4100 -122744} {90174 -86516} }
-gui_zoom -window Schematic.1 -rect { {4100 -133600} {90174 -97372} }
-gui_zoom -window Schematic.1 -rect { {4100 -144455} {90174 -108227} }
-gui_zoom -window Schematic.1 -rect { {4100 -155311} {90174 -119083} }
-gui_zoom -window Schematic.1 -rect { {4100 -166167} {90174 -129938} }
-gui_zoom -window Schematic.1 -rect { {4100 -177022} {90174 -140794} }
-gui_zoom -window Schematic.1 -rect { {4100 -186465} {90174 -150236} }
-gui_zoom -window Schematic.1 -rect { {4100 -175609} {90174 -139381} }
-gui_zoom -window Schematic.1 -rect { {4100 -164753} {90174 -128525} }
-gui_zoom -window Schematic.1 -rect { {4100 -175609} {90174 -139381} }
-gui_zoom -window Schematic.1 -rect { {4100 -186465} {90174 -150236} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.D}
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.D}
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.D}
-::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
-gui_zoom -window Schematic.1 -rect { {-183300 -187297} {274441 5364} }
-gui_zoom -window Schematic.1 -rect { {4100 -186465} {90178 -150235} }
-gui_zoom -window Schematic.1 -rect { {4100 -175544} {90178 -139314} }
-gui_zoom -window Schematic.1 -rect { {4100 -164688} {90178 -128458} }
-gui_schematic_select -id Schematic.1 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.*p@31} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Mid_Reg.rst}
-gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.D}
-gui_zoom -window Schematic.1 -rect { {4100 -175544} {90178 -139314} }
-gui_zoom -window Schematic.1 -rect { {4100 -186400} {90178 -150170} }
-gui_zoom -window Schematic.1 -rect { {4100 -175544} {90178 -139314} }
-gui_schematic_select -id Schematic.1 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_o}
-gui_zoom -window Schematic.1 -rect { {4100 -164688} {90178 -128458} }
-gui_zoom -window Schematic.1 -rect { {4100 -153832} {90178 -117602} }
-gui_zoom -window Schematic.1 -rect { {4100 -142976} {90178 -106746} }
-gui_zoom -window Schematic.1 -rect { {4100 -132120} {90178 -95890} }
-gui_zoom -window Schematic.1 -rect { {4100 -121264} {90178 -85034} }
-gui_zoom -window Schematic.1 -rect { {4100 -110407} {90178 -74177} }
-gui_zoom -window Schematic.1 -rect { {4100 -99551} {90178 -63321} }
-gui_zoom -window Schematic.1 -rect { {4100 -88695} {90178 -52465} }
-gui_zoom -window Schematic.1 -rect { {4100 -77839} {90178 -41609} }
-gui_zoom -window Schematic.1 -rect { {4100 -66983} {90178 -30753} }
-gui_zoom -window Schematic.1 -rect { {4100 -56127} {90178 -19897} }
-gui_zoom -window Schematic.1 -rect { {4100 -45270} {90178 -9040} }
-gui_zoom -window Schematic.1 -rect { {4100 -34414} {90178 1816} }
-gui_zoom -window Schematic.1 -rect { {4100 -32038} {90178 4192} }
-gui_zoom -window Schematic.1 -rect { {4100 -42894} {90178 -6664} }
-gui_zoom -window Schematic.1 -rect { {4100 -53750} {90178 -17520} }
-gui_zoom -window Schematic.1 -rect { {4100 -64606} {90178 -28376} }
-gui_zoom -window Schematic.1 -rect { {4100 -75462} {90178 -39232} }
-gui_zoom -window Schematic.1 -rect { {4100 -86318} {90178 -50088} }
-gui_zoom -window Schematic.1 -rect { {4100 -97174} {90178 -60944} }
-gui_zoom -window Schematic.1 -rect { {4100 -108031} {90178 -71801} }
-gui_zoom -window Schematic.1 -rect { {4100 -118887} {90178 -82657} }
-gui_zoom -window Schematic.1 -rect { {4100 -129743} {90178 -93513} }
-gui_zoom -window Schematic.1 -rect { {4100 -140599} {90178 -104369} }
-gui_zoom -window Schematic.1 -rect { {4100 -151455} {90178 -115225} }
-gui_zoom -window Schematic.1 -rect { {4100 -162311} {90178 -126081} }
-gui_zoom -window Schematic.1 -rect { {4100 -173168} {90178 -136938} }
-gui_zoom -window Schematic.1 -rect { {4100 -184024} {90178 -147794} }
-gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_backtrace_signal -view Schematic.1 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)
-gui_schematic_clear_selection -id Schematic.1
-gui_schematic_select -id Schematic.1 -type {net} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_zoom -window Schematic.2 -rect { {-40556 -4152} {50555 14202} }
-gui_zoom -window Schematic.2 -rect { {-20883 -8198} {40336 4134} }
-gui_zoom -window Schematic.2 -rect { {-13082 -8198} {32569 4134} }
-gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.D}
-gui_schematic_select -id Schematic.2 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_o}
-gui_schematic_select -id Schematic.2 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_o}
-gui_backtrace_signal -view Schematic.2 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_o
-gui_zoom -window Schematic.2 -rect { {-27685 -19577} {68626 4285} }
-gui_zoom -window Schematic.2 -rect { {-13086 -8186} {32567 3125} }
-gui_zoom -window Schematic.2 -rect { {-412 -15749} {45244 -4437} }
-gui_schematic_select -id Schematic.2 -type {pin} -parent {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_i}
-gui_backtrace_signal -view Schematic.2 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_i
-gui_zoom -window Schematic.2 -rect { {-68333 -46445} {137746 4613} }
-gui_zoom -window Schematic.2 -rect { {-408 -15759} {45252 -4446} }
-gui_zoom -window Schematic.2 -rect { {-40096 -42864} {109221 -5869} }
-gui_zoom -window Schematic.2 -rect { {-43838 -45632} {113338 -6690} }
-gui_zoom -window Schematic.2 -rect { {-47986 -48577} {117462 -7585} }
-gui_zoom -window Schematic.2 -rect { {-52321 -51703} {121835 -8553} }
-gui_zoom -window Schematic.2 -rect { {-56979 -55013} {126343 -9593} }
-gui_zoom -window Schematic.2 -rect { {-52582 -56147} {122011 -12890} }
-gui_zoom -window Schematic.2 -rect { {-44622 -56171} {114099 -16846} }
-gui_zoom -window Schematic.2 -rect { {-40928 -56926} {110235 -19474} }
-gui_zoom -window Schematic.2 -rect { {-34046 -56342} {103374 -22294} }
-gui_zoom -window Schematic.2 -rect { {-30774 -55556} {100102 -23129} }
-gui_zoom -window Schematic.2 -rect { {-22201 -53373} {91605 -25176} }
-gui_zoom -window Schematic.2 -rect { {-19536 -52536} {88851 -25682} }
-gui_zoom -window Schematic.2 -rect { {-8681 -49672} {78028 -28189} }
-gui_zoom -window Schematic.2 -rect { {-6613 -49004} {75967 -28544} }
-gui_zoom -window Schematic.2 -rect { {-2837 -47945} {72236 -29345} }
-gui_zoom -window Schematic.2 -rect { {-1058 -47371} {70440 -29657} }
-gui_zoom -window Schematic.2 -rect { {965 -46797} {69058 -29926} }
-gui_zoom -window Schematic.2 -rect { {2893 -46226} {67744 -30158} }
-gui_zoom -window Schematic.2 -rect { {5327 -44601} {67090 -29299} }
-gui_zoom -window Schematic.2 -rect { {10177 -42257} {63883 -28950} }
-gui_zoom -window Schematic.2 -rect { {12125 -40411} {63274 -27738} }
-gui_zoom -window Schematic.2 -rect { {14010 -38641} {62724 -26571} }
-gui_zoom -window Schematic.2 -rect { {15791 -37017} {62185 -25522} }
-gui_schematic_select -id Schematic.2 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_schematic_select -id Schematic.2 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.Load_reg.D}
-gui_zoom -window Schematic.2 -rect { {15791 -33589} {62185 -22095} }
-gui_zoom -window Schematic.2 -rect { {15791 -30162} {62185 -18667} }
-gui_zoom -window Schematic.2 -rect { {15791 -26734} {62185 -15239} }
-gui_zoom -window Schematic.2 -rect { {15791 -23306} {62185 -11812} }
-gui_zoom -window Schematic.2 -rect { {15791 -19879} {62185 -8384} }
-gui_zoom -window Schematic.2 -rect { {15791 -16451} {62185 -4957} }
-gui_zoom -window Schematic.2 -rect { {15791 -19879} {62185 -8384} }
-gui_zoom -window Schematic.2 -rect { {15791 -23306} {62185 -11812} }
-gui_zoom -window Schematic.2 -rect { {15791 -26734} {62185 -15239} }
-gui_zoom -window Schematic.2 -rect { {15791 -30162} {62185 -18667} }
-gui_zoom -window Schematic.2 -rect { {15791 -33589} {62185 -22095} }
-gui_zoom -window Schematic.2 -rect { {15791 -30162} {62185 -18667} }
-gui_zoom -window Schematic.2 -rect { {23235 -30162} {69629 -18667} }
-gui_zoom -window Schematic.2 -rect { {23235 -26734} {69629 -15239} }
-gui_zoom -window Schematic.2 -rect { {23235 -23306} {69629 -11812} }
-gui_zoom -window Schematic.2 -rect { {23235 -26734} {69629 -15239} }
-gui_zoom -window Schematic.2 -rect { {23235 -30162} {69629 -18667} }
-gui_zoom -window Schematic.2 -rect { {23235 -33589} {69629 -22095} }
-gui_zoom -window Schematic.2 -rect { {23235 -37017} {69629 -25522} }
-gui_zoom -window Schematic.2 -rect { {23235 -40444} {69629 -28950} }
-gui_zoom -window Schematic.2 -rect { {23235 -37017} {69629 -25522} }
-gui_schematic_select -id Schematic.2 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.*expr@(Load_reg,D)}
-gui_schematic_select -id Schematic.2 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_i}
-gui_zoom -window Schematic.2 -rect { {23235 -33589} {69629 -22095} }
-gui_zoom -window Schematic.2 -rect { {23235 -37017} {69629 -25522} }
-gui_schematic_select -id Schematic.2 -type {net} -parent {.} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Mux_Array.load_o}
-gui_zoom -window Schematic.2 -rect { {23235 -33589} {69629 -22095} }
-gui_zoom -window Schematic.2 -rect { {23235 -30162} {69629 -18667} }
-gui_zoom -window Schematic.2 -rect { {23235 -33589} {69629 -22095} }
-gui_zoom -window Schematic.2 -rect { {23235 -37017} {69629 -25522} }
-gui_zoom -window Schematic.2 -rect { {23235 -33589} {69629 -22095} }
-gui_zoom -window Schematic.2 -rect { {23235 -30162} {69629 -18667} }
-gui_zoom -window Schematic.2 -rect { {23235 -26734} {69629 -15239} }
-gui_zoom -window Schematic.2 -rect { {23235 -23306} {69629 -11812} }
-gui_zoom -window Schematic.2 -rect { {23235 -19879} {69629 -8384} }
-gui_zoom -window Schematic.2 -rect { {23235 -16451} {69629 -4957} }
-gui_zoom -window Schematic.2 -rect { {23235 -13024} {69629 -1529} }
-gui_zoom -window Schematic.2 -rect { {23235 -9596} {69629 1899} }
-gui_zoom -window Schematic.2 -rect { {23235 -7380} {69629 4114} }
-gui_zoom -window Schematic.2 -rect { {23235 -10808} {69629 687} }
-gui_zoom -window Schematic.2 -rect { {23235 -14235} {69629 -2741} }
-gui_zoom -window Schematic.2 -rect { {23235 -17663} {69629 -6168} }
-gui_zoom -window Schematic.2 -rect { {23235 -21091} {69629 -9596} }
-gui_zoom -window Schematic.2 -rect { {23235 -24518} {69629 -13024} }
-gui_zoom -window Schematic.2 -rect { {23235 -27946} {69629 -16451} }
-gui_zoom -window Schematic.2 -rect { {23235 -31373} {69629 -19879} }
-gui_zoom -window Schematic.2 -rect { {23235 -34801} {69629 -23306} }
-gui_zoom -window Schematic.2 -rect { {23235 -38229} {69629 -26734} }
-gui_close_window -window Schematic.2
-gui_close_window -window  Schematic.1
-gui_marker_move -id  Wave.1 C1 195000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 215000
-gui_wv_zoom_timerange -id  Wave.1 0 342977
-gui_wv_zoom_timerange -id  Wave.1 0 319693
-gui_marker_move -id  Wave.1 C1 175000
-gui_marker_move -id  Wave.1 C1 185000
-gui_arrange_windows -window TopLevel.1 -arrange_children vertical
-gui_close_window -window Source.1
-gui_list_set_filter -id Wave.1 -text {*}
-gui_wv_zoom_timerange -id  Wave.1 0 70483
-gui_wv_zoom_timerange -id  Wave.1 0 70798
-gui_wv_zoom_timerange -id  Wave.1 0 71427
-gui_wv_zoom_timerange -id  Wave.1 0 72371
-gui_wv_zoom_timerange -id  Wave.1 0 73945
-gui_wv_zoom_timerange -id  Wave.1 0 77721
-gui_wv_zoom_timerange -id  Wave.1 0 78665
-gui_wv_zoom_timerange -id  Wave.1 0 79923
-gui_wv_zoom_timerange -id  Wave.1 0 82126
-gui_wv_zoom_timerange -id  Wave.1 0 83070
-gui_wv_zoom_timerange -id  Wave.1 0 84014
-gui_wv_zoom_timerange -id  Wave.1 0 84643
-gui_wv_zoom_timerange -id  Wave.1 0 86531
-gui_wv_zoom_timerange -id  Wave.1 0 87475
-gui_wv_zoom_timerange -id  Wave.1 0 89048
-gui_wv_zoom_timerange -id  Wave.1 0 89678
-gui_wv_zoom_timerange -id  Wave.1 0 91566
-gui_wv_zoom_timerange -id  Wave.1 0 92509
-gui_wv_zoom_timerange -id  Wave.1 0 93453
-gui_wv_zoom_timerange -id  Wave.1 0 95656
-gui_wv_zoom_timerange -id  Wave.1 0 97859
-gui_wv_zoom_timerange -id  Wave.1 0 99747
-gui_wv_zoom_timerange -id  Wave.1 0 104467
-gui_wv_zoom_timerange -id  Wave.1 0 106669
-gui_wv_zoom_timerange -id  Wave.1 0 114536
-gui_wv_zoom_timerange -id  Wave.1 0 117367
-gui_wv_zoom_timerange -id  Wave.1 0 123031
-gui_wv_zoom_timerange -id  Wave.1 0 128381
-gui_wv_zoom_timerange -id  Wave.1 0 129639
-gui_wv_zoom_timerange -id  Wave.1 0 130268
-gui_wv_zoom_timerange -id  Wave.1 0 130583
-gui_wv_zoom_timerange -id  Wave.1 0 131527
-gui_wv_zoom_timerange -id  Wave.1 0 132786
-gui_wv_zoom_timerange -id  Wave.1 0 134674
-gui_wv_zoom_timerange -id  Wave.1 0 136247
-gui_wv_zoom_timerange -id  Wave.1 0 137820
-gui_wv_zoom_timerange -id  Wave.1 0 138450
-gui_wv_zoom_timerange -id  Wave.1 0 139708
-gui_wv_zoom_timerange -id  Wave.1 0 140338
-gui_wv_zoom_timerange -id  Wave.1 0 140652
-gui_wv_zoom_timerange -id  Wave.1 0 140967
-gui_wv_zoom_timerange -id  Wave.1 0 141282
-gui_wv_zoom_timerange -id  Wave.1 0 142855
-gui_wv_zoom_timerange -id  Wave.1 0 143169
-gui_wv_zoom_timerange -id  Wave.1 0 144743
-gui_wv_zoom_timerange -id  Wave.1 0 145687
-gui_wv_zoom_timerange -id  Wave.1 0 146001
-gui_wv_zoom_timerange -id  Wave.1 0 146316
-gui_wv_zoom_timerange -id  Wave.1 0 147575
-gui_wv_zoom_timerange -id  Wave.1 0 148519
-gui_wv_zoom_timerange -id  Wave.1 0 148833
-gui_wv_zoom_timerange -id  Wave.1 0 149148
-gui_wv_zoom_timerange -id  Wave.1 0 149463
-gui_wv_zoom_timerange -id  Wave.1 0 149777
-gui_wv_zoom_timerange -id  Wave.1 0 151036
-gui_wv_zoom_timerange -id  Wave.1 0 151980
-gui_wv_zoom_timerange -id  Wave.1 0 152924
-gui_wv_zoom_timerange -id  Wave.1 0 154182
-gui_wv_zoom_timerange -id  Wave.1 0 154497
-gui_wv_zoom_timerange -id  Wave.1 0 155756
-gui_wv_zoom_timerange -id  Wave.1 0 156070
-gui_wv_zoom_timerange -id  Wave.1 0 156385
-gui_wv_zoom_timerange -id  Wave.1 0 156700
-gui_wv_zoom_timerange -id  Wave.1 0 130268
-gui_list_sort -id  Wave.1   {Value}
-gui_list_sort -id  Wave.1   -descending  {Value}
-gui_list_sort -id  Wave.1   -by decl
-gui_list_sort -id  Wave.1   {Name}
-gui_list_sort -id  Wave.1   -descending  {Name}
-gui_list_expand -id  Hier.1   Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module
 gui_sg_create Barrel_Shifter_module
 gui_list_add_group -id  Wave.1   {Barrel_Shifter_module} 
 gui_list_add  -id  Wave.1   -after Barrel_Shifter_module {{Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}}
+gui_list_collapse -id  Wave.1   Add_Sub_Sgf_Oper_B_mux
+gui_list_collapse -id  Wave.1   Barrel_Shifter_module
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux   }
+gui_sg_create Barrel_Shifter_S_V_mux
+gui_list_add_group -id  Wave.1   {Barrel_Shifter_S_V_mux} 
+gui_list_add  -id  Wave.1   -after Barrel_Shifter_S_V_mux {{Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux}}
+gui_list_collapse -id  Wave.1   Barrel_Shifter_S_V_mux
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux   }
+gui_sg_create Barrel_Shifter_D_I_mux
+gui_list_add_group -id  Wave.1   {Barrel_Shifter_D_I_mux} 
+gui_list_add  -id  Wave.1   -after Barrel_Shifter_D_I_mux {{Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux}}
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.FS_Module -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.FS_Module   }
+gui_sg_create FS_Module
+gui_list_add_group -id  Wave.1   {FS_Module} 
+gui_list_add  -id  Wave.1   -after FS_Module {{Testbench_FPU_Add_Subt.uut.FS_Module}}
+gui_list_collapse -id  Wave.1   FS_Module
+gui_list_collapse -id  Wave.1   Barrel_Shifter_D_I_mux
+gui_sim_continue  
+gui_list_expand -id  Wave.1   Add_Sub_Sgf_Oper_B_mux
+gui_list_collapse -id  Wave.1   Add_Sub_Sgf_Oper_B_mux
+gui_list_expand -id  Wave.1   Add_Sub_Sgf_Oper_B_mux
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 97
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 185000
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 225000
+gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module -current_item_type Scope  -selected  { Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module   }
+gui_sg_create Add_Subt_Sgf_module
+gui_list_add_group -id  Wave.1   {Add_Subt_Sgf_module} 
+gui_list_add  -id  Wave.1   -after Add_Subt_Sgf_module {{Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}}
+gui_list_collapse -id  Wave.1   Add_Subt_Sgf_module
+gui_list_expand -id  Wave.1   Add_Subt_Sgf_module
+gui_list_collapse -id  Wave.1   Add_Subt_Sgf_module
+gui_list_select -id Wave.1 -selected  { Add_Subt_Sgf_module   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.ctrl { {Add_Subt_Sgf_module} } 
 gui_sim_restart
 gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_zoom_timerange -id  Wave.1 0 266829
-gui_zoom -window Wave.1 -full
-gui_marker_move -id  Wave.1 C1 2005000
+gui_view_port_history -window Wave.1 -previous
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_list_expand -id  Wave.1   Add_Subt_Sgf_module
+gui_marker_move -id  Wave.1 C1 155000
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 205000
-gui_marker_move -id  Wave.1 C1 175000
 gui_marker_move -id  Wave.1 C1 185000
-gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Data_i[25:0]}   }
-gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Value_i[4:0]}   }
-gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Data_i[25:0]}   }
-gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Value_i[4:0]}   }
-gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Data_Reg[25:0]}   }
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
 gui_marker_move -id  Wave.1 C1 195000
-gui_list_select -id Wave.1 -selected  { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_o   }
 gui_marker_move -id  Wave.1 C1 185000
-gui_save_session -savedb relative -global { Breakpoint Bus Radix Expression TimeShift Compare SignalGroup Highlight Stack }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl
-gui_marker_move -id  Wave.1 C1 143501
-gui_marker_move -id  Wave.1 C1 171160
-gui_marker_move -id  Wave.1 C1 164345
-gui_wv_zoom_timerange -id  Wave.1 0 341517
-gui_wv_zoom_timerange -id  Wave.1 0 341517
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.C_to_D[25:1]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.C_to_D[25:1]}  {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.P_to_D[25:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.C_to_D[25:1]}  {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.P_to_D[25:0]}  {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_B[25:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.S_to_D[26:0]}   }
+gui_marker_move -id  Wave.1 C1 185000
+gui_marker_move -id  Wave.1 C1 185000
+gui_marker_move -id  Wave.1 C1 155000
+gui_list_collapse -id  Wave.1   Add_Sub_Sgf_Oper_B_mux
+gui_list_collapse -id  Wave.1   Add_Subt_Sgf_module
+gui_list_expand -id  Wave.1   Testbench_FPU_Add_Subt
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.Data_X[31:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {Testbench_FPU_Add_Subt.r_mode[1:0]} {{Testbench_FPU_Add_Subt.Data_X[31:0]}} 
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.final_result_ieee[31:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {Testbench_FPU_Add_Subt.Data_Y[31:0]} {{Testbench_FPU_Add_Subt.final_result_ieee[31:0]}} 
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.final_result_ieee[31:0]}  {Testbench_FPU_Add_Subt.Data_Y[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Add_Subt.final_result_ieee[31:0]}  {Testbench_FPU_Add_Subt.Data_Y[31:0]}  {Testbench_FPU_Add_Subt.Data_X[31:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix Hex2Float_BigEndian
+gui_marker_move -id  Wave.1 C1 245000
+gui_marker_move -id  Wave.1 C1 265000
+gui_marker_move -id  Wave.1 C1 245000
+gui_wv_zoom_timerange -id  Wave.1 54495 369885
+gui_wv_zoom_timerange -id  Wave.1 54495 352856
+gui_wv_zoom_timerange -id  Wave.1 54495 329014

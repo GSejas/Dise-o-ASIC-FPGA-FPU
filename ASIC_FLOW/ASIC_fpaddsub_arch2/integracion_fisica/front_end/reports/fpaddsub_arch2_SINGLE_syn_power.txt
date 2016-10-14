@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Mon Oct 10 01:11:33 2016
+Date   : Thu Oct 13 20:12:55 2016
 ****************************************
 
 
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 511.0885 uW   (95%)
-  Net Switching Power  =  27.8553 uW    (5%)
+  Cell Internal Power  = 571.5085 uW   (92%)
+  Net Switching Power  =  46.3499 uW    (8%)
                          ---------
-Total Dynamic Power    = 538.9438 uW  (100%)
+Total Dynamic Power    = 617.8585 uW  (100%)
 
-Cell Leakage Power     =  20.5355 nW
+Cell Leakage Power     =  36.5160 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.4889        6.1628e-03        9.5195e+03            0.4950  (  91.85%)
+register           0.4992        1.0720e-02        1.0027e+04            0.5099  (  82.52%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  2.2214e-02        2.1692e-02        1.1016e+04        4.3917e-02  (   8.15%)
+combinational  7.2353e-02        3.5630e-02        2.6489e+04            0.1080  (  17.48%)
 --------------------------------------------------------------------------------------------------
-Total              0.5111 mW     2.7855e-02 mW     2.0535e+04 pW         0.5390 mW
+Total              0.5715 mW     4.6350e-02 mW     3.6516e+04 pW         0.6179 mW
 1

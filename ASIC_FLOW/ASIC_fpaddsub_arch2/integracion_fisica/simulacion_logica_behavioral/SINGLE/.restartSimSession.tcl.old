@@ -1,23 +1,20 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Wed Oct 12 20:12:59 2016
+# Saved on Thu Oct 13 19:26:48 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
-# Toplevel windows open: 2
+# Toplevel windows open: 1
 # 	TopLevel.1
-# 	TopLevel.2
-#   Wave.1: 86 signals
-#   Group count = 10
-#   Group Testbench_FPU_Add_Subt signal count = 0
-#   Group Group1 signal count = 0
-#   Group Group2 signal count = 0
-#   Group Group3 signal count = 0
-#   Group Group4 signal count = 0
-#   Group Group5 signal count = 0
-#   Group Group6 signal count = 0
-#   Group Group7 signal count = 0
-#   Group Group8 signal count = 76
-#   Group Barrel_Shifter_module signal count = 12
+#   Source.1: Testbench_FPU_Add_Subt
+#   Wave.1: 108 signals
+#   Group count = 7
+#   Group Testbench_FPU_Add_Subt signal count = 24
+#   Group Add_Sub_Sgf_Oper_B_mux signal count = 5
+#   Group Add_Subt_Sgf_module signal count = 14
+#   Group Barrel_Shifter_module signal count = 11
+#   Group Barrel_Shifter_S_V_mux signal count = 6
+#   Group Barrel_Shifter_D_I_mux signal count = 5
+#   Group FS_Module signal count = 43
 # End_DVE_Session_Save_Info
 
 # DVE version: K-2015.09-SP2-3_Full64
@@ -44,27 +41,20 @@ gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
 set TopLevel.1 TopLevel.1
 
 # Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
 gui_sync_global -id ${TopLevel.1} -option true
 
 # MDI window settings
-set HSPane.1 HSPane.1
-set Hier.1 Hier.1
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 340} {height 590} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 296} {child_hier_coltype 20} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 DLPane.1
-set Data.1 Data.1
-gui_update_layout -id ${DLPane.1} {{left 340} {top 0} {width 340} {height 590} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 211} {child_data_colvalue 26} {child_data_coltype 95} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set Wave.1 Wave.1
-gui_update_layout -id ${Wave.1} {{left 673} {top 0} {width 687} {height 590} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_wave_left 243} {child_wave_right 434} {child_wave_colname 138} {child_wave_colvalue 101} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 290} {child_wave_right 519} {child_wave_colname 222} {child_wave_colvalue 64} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
-
-
-# Create and position top-level window: TopLevel.2
-
-set TopLevel.2 TopLevel.2
-
-# Docked window settings
-gui_sync_global -id ${TopLevel.2} -option true
 
 
 #</WindowLayout>
@@ -89,88 +79,114 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
+gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux}
 gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}
-gui_load_child_values {Testbench_FPU_Add_Subt.uut}
+gui_load_child_values {Testbench_FPU_Add_Subt}
+gui_load_child_values {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}
+gui_load_child_values {Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux}
+gui_load_child_values {Testbench_FPU_Add_Subt.uut.FS_Module}
+gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux}
 
 
 set _session_group_1 Testbench_FPU_Add_Subt
 gui_sg_create "$_session_group_1"
 set Testbench_FPU_Add_Subt "$_session_group_1"
 
+gui_sg_addsignal -group "$_session_group_1" { Testbench_FPU_Add_Subt.EW Testbench_FPU_Add_Subt.contador Testbench_FPU_Add_Subt.Array_IN_2 Testbench_FPU_Add_Subt.SW Testbench_FPU_Add_Subt.underflow_flag Testbench_FPU_Add_Subt.FileSaveData Testbench_FPU_Add_Subt.ready Testbench_FPU_Add_Subt.SWR Testbench_FPU_Add_Subt.ack_FSM Testbench_FPU_Add_Subt.PERIOD Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.add_subt Testbench_FPU_Add_Subt.EWR Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.final_result_ieee Testbench_FPU_Add_Subt.W Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.r_mode Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.Recept Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.Cont_CLK Testbench_FPU_Add_Subt.rst }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.contador}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.contador}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.W}
 
-set _session_group_2 Group1
+set _session_group_2 Add_Sub_Sgf_Oper_B_mux
 gui_sg_create "$_session_group_2"
-set Group1 "$_session_group_2"
+set Add_Sub_Sgf_Oper_B_mux "$_session_group_2"
 
+gui_sg_addsignal -group "$_session_group_2" { Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.S Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.W Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.D0 Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.D1 Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.ctrl }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.W}
 
-set _session_group_3 Group2
+set _session_group_3 Add_Subt_Sgf_module
 gui_sg_create "$_session_group_3"
-set Group2 "$_session_group_3"
+set Add_Subt_Sgf_module "$_session_group_3"
 
+gui_sg_addsignal -group "$_session_group_3" { Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Add_Sub_op_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_A_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_Result_o Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.C_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.load_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_B Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.PreData_B_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.clk Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Co_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.S_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.P_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.FSM_C_o Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.rst }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR}
 
-set _session_group_4 Group3
+set _session_group_4 Barrel_Shifter_module
 gui_sg_create "$_session_group_4"
-set Group3 "$_session_group_4"
+set Barrel_Shifter_module "$_session_group_4"
 
-
-set _session_group_5 Group4
-gui_sg_create "$_session_group_5"
-set Group4 "$_session_group_5"
-
-
-set _session_group_6 Group5
-gui_sg_create "$_session_group_6"
-set Group5 "$_session_group_6"
-
-
-set _session_group_7 Group6
-gui_sg_create "$_session_group_7"
-set Group6 "$_session_group_7"
-
-
-set _session_group_8 Group7
-gui_sg_create "$_session_group_8"
-set Group7 "$_session_group_8"
-
-
-set _session_group_9 Group8
-gui_sg_create "$_session_group_9"
-set Group8 "$_session_group_9"
-
-gui_sg_addsignal -group "$_session_group_9" { Testbench_FPU_Add_Subt.uut.zero_flag Testbench_FPU_Add_Subt.uut.underflow_flag Testbench_FPU_Add_Subt.uut.sign_final_result Testbench_FPU_Add_Subt.uut.selector_D Testbench_FPU_Add_Subt.uut.selector_C Testbench_FPU_Add_Subt.uut.selector_B Testbench_FPU_Add_Subt.uut.selector_A Testbench_FPU_Add_Subt.uut.rst_int Testbench_FPU_Add_Subt.uut.rst Testbench_FPU_Add_Subt.uut.round_flag Testbench_FPU_Add_Subt.uut.real_op Testbench_FPU_Add_Subt.uut.ready Testbench_FPU_Add_Subt.uut.r_mode Testbench_FPU_Add_Subt.uut.overflow_flag Testbench_FPU_Add_Subt.uut.load_b Testbench_FPU_Add_Subt.uut.final_result_ieee Testbench_FPU_Add_Subt.uut.exp_oper_result Testbench_FPU_Add_Subt.uut.clk Testbench_FPU_Add_Subt.uut.clk Testbench_FPU_Add_Subt.uut.clk Testbench_FPU_Add_Subt.uut.beg_FSM Testbench_FPU_Add_Subt.uut.add_subt Testbench_FPU_Add_Subt.uut.add_overflow_flag Testbench_FPU_Add_Subt.uut.ack_FSM Testbench_FPU_Add_Subt.uut.W Testbench_FPU_Add_Subt.uut.Sgf_normalized_result Testbench_FPU_Add_Subt.uut.Sgf_normalized_result Testbench_FPU_Add_Subt.uut.S_Shift_Value Testbench_FPU_Add_Subt.uut.S_Shift_Value Testbench_FPU_Add_Subt.uut.S_Oper_B_exp Testbench_FPU_Add_Subt.uut.S_Oper_A_exp Testbench_FPU_Add_Subt.uut.S_Data_Shift Testbench_FPU_Add_Subt.uut.S_Data_Shift Testbench_FPU_Add_Subt.uut.S_Data_Shift Testbench_FPU_Add_Subt.uut.S_A_S_op Testbench_FPU_Add_Subt.uut.S_A_S_Oper_B Testbench_FPU_Add_Subt.uut.S_A_S_Oper_B Testbench_FPU_Add_Subt.uut.S_A_S_Oper_A Testbench_FPU_Add_Subt.uut.S_A_S_Oper_A Testbench_FPU_Add_Subt.uut.LZA_output Testbench_FPU_Add_Subt.uut.FSM_selector_D Testbench_FPU_Add_Subt.uut.FSM_selector_D Testbench_FPU_Add_Subt.uut.FSM_selector_C Testbench_FPU_Add_Subt.uut.FSM_selector_C Testbench_FPU_Add_Subt.uut.FSM_selector_B Testbench_FPU_Add_Subt.uut.FSM_selector_A Testbench_FPU_Add_Subt.uut.FSM_op_start_in_load_b Testbench_FPU_Add_Subt.uut.FSM_op_start_in_load_a Testbench_FPU_Add_Subt.uut.FSM_exp_operation_load_diff Testbench_FPU_Add_Subt.uut.FSM_exp_operation_load_OU Testbench_FPU_Add_Subt.uut.FSM_exp_operation_A_S Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_load Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_L_R Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_B_S Testbench_FPU_Add_Subt.uut.FSM_LZA_load Testbench_FPU_Add_Subt.uut.FSM_Final_Result_load Testbench_FPU_Add_Subt.uut.FSM_Add_Subt_Sgf_load Testbench_FPU_Add_Subt.uut.Exp_oper_B_D2 Testbench_FPU_Add_Subt.uut.Exp_oper_B_D1 Testbench_FPU_Add_Subt.uut.EW Testbench_FPU_Add_Subt.uut.EWR Testbench_FPU_Add_Subt.uut.DmP Testbench_FPU_Add_Subt.uut.DmP }
-gui_sg_addsignal -group "$_session_group_9" { Divider } -divider
-gui_sg_addsignal -group "$_session_group_9" { }
-gui_sg_addsignal -group "$_session_group_9" { Divider } -divider
-gui_sg_addsignal -group "$_session_group_9" { Testbench_FPU_Add_Subt.uut.Data_Y Testbench_FPU_Add_Subt.uut.Data_X Testbench_FPU_Add_Subt.uut.DMP Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_D2 Testbench_FPU_Add_Subt.uut.Add_Subt_result Testbench_FPU_Add_Subt.uut.Add_Subt_result Testbench_FPU_Add_Subt.uut.Add_Subt_result Testbench_FPU_Add_Subt.uut.Add_Subt_LZD Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_A_D1 Testbench_FPU_Add_Subt.uut.A_S_P Testbench_FPU_Add_Subt.uut.A_S_C }
-gui_set_display_scheme -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-gui_set_display_scheme -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-gui_set_display_scheme -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.W}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.W}
-gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.EW}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.EW}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.EWR}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.EWR}
-
-set _session_group_10 Barrel_Shifter_module
-gui_sg_create "$_session_group_10"
-set Barrel_Shifter_module "$_session_group_10"
-
-gui_sg_addsignal -group "$_session_group_10" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Data_Reg Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Data_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Value_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_o Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Left_Right_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.clk Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.N_mant_o Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.rst Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Bit_Shift_i }
+gui_sg_addsignal -group "$_session_group_4" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Data_Reg Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Data_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Value_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Left_Right_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.clk Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.N_mant_o Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.rst Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Bit_Shift_i }
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR}
 gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR}
 gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR}
+
+set _session_group_5 Barrel_Shifter_S_V_mux
+gui_sg_create "$_session_group_5"
+set Barrel_Shifter_S_V_mux "$_session_group_5"
+
+gui_sg_addsignal -group "$_session_group_5" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.S Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.W Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.D0 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.D1 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.D2 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.ctrl }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.W}
+
+set _session_group_6 Barrel_Shifter_D_I_mux
+gui_sg_create "$_session_group_6"
+set Barrel_Shifter_D_I_mux "$_session_group_6"
+
+gui_sg_addsignal -group "$_session_group_6" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.S Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.W Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.D0 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.D1 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.ctrl }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.W}
+
+set _session_group_7 FS_Module
+gui_sg_create "$_session_group_7"
+set FS_Module "$_session_group_7"
+
+gui_sg_addsignal -group "$_session_group_7" { Testbench_FPU_Add_Subt.uut.FS_Module.A_S_op_o Testbench_FPU_Add_Subt.uut.FS_Module.load_2_o Testbench_FPU_Add_Subt.uut.FS_Module.bit_shift_o Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add Testbench_FPU_Add_Subt.uut.FS_Module.state_next Testbench_FPU_Add_Subt.uut.FS_Module.load_3_o Testbench_FPU_Add_Subt.uut.FS_Module.round_sgf Testbench_FPU_Add_Subt.uut.FS_Module.zero_info_state Testbench_FPU_Add_Subt.uut.FS_Module.add_overflow_i Testbench_FPU_Add_Subt.uut.FS_Module.extra1_64 Testbench_FPU_Add_Subt.uut.FS_Module.load_4_o Testbench_FPU_Add_Subt.uut.FS_Module.extra2_64 Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add_r Testbench_FPU_Add_Subt.uut.FS_Module.load_final_result Testbench_FPU_Add_Subt.uut.FS_Module.ready Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_a_o Testbench_FPU_Add_Subt.uut.FS_Module.rst_FSM Testbench_FPU_Add_Subt.uut.FS_Module.ready_flag Testbench_FPU_Add_Subt.uut.FS_Module.load_5_o Testbench_FPU_Add_Subt.uut.FS_Module.load_oper Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_b_o Testbench_FPU_Add_Subt.uut.FS_Module.add_subt Testbench_FPU_Add_Subt.uut.FS_Module.load_6_o Testbench_FPU_Add_Subt.uut.FS_Module.beg_FSM Testbench_FPU_Add_Subt.uut.FS_Module.left_right_o Testbench_FPU_Add_Subt.uut.FS_Module.norm_iteration_i Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_c_o Testbench_FPU_Add_Subt.uut.FS_Module.zero_flag_i Testbench_FPU_Add_Subt.uut.FS_Module.load_7_o Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_r Testbench_FPU_Add_Subt.uut.FS_Module.round_i Testbench_FPU_Add_Subt.uut.FS_Module.clk Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_d_o Testbench_FPU_Add_Subt.uut.FS_Module.state_reg Testbench_FPU_Add_Subt.uut.FS_Module.start Testbench_FPU_Add_Subt.uut.FS_Module.load_8_o Testbench_FPU_Add_Subt.uut.FS_Module.add_subt_r Testbench_FPU_Add_Subt.uut.FS_Module.load_diff_exp Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_b_load_o Testbench_FPU_Add_Subt.uut.FS_Module.load_1_o Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_first Testbench_FPU_Add_Subt.uut.FS_Module.rst_int Testbench_FPU_Add_Subt.uut.FS_Module.rst }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.round_sgf}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.round_sgf}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.zero_info_state}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.zero_info_state}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra1_64}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra1_64}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra2_64}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra2_64}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add_r}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add_r}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_final_result}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_final_result}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.ready_flag}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.ready_flag}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_oper}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_oper}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_r}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_r}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.start}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.start}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt_r}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt_r}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_diff_exp}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_diff_exp}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_first}
+gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_first}
 
 # Global: Highlighting
 
@@ -201,18 +217,25 @@ gui_list_set_filter -id ${Hier.1} -text {*}
 gui_change_design -id ${Hier.1} -design Sim
 catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt}
 catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt.uut}
-catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}}
-gui_view_scroll -id ${Hier.1} -vertical -set 24
+catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}}
+gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}
+gui_list_show_data -id ${Data.1} {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
-gui_view_scroll -id ${Hier.1} -vertical -set 24
+gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active Testbench_FPU_Add_Subt /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/Testbench_FPU_Add_Subt.v
+gui_view_scroll -id ${Source.1} -vertical -set 294
+gui_src_set_reusable -id ${Source.1}
 
 # View 'Wave.1'
 gui_wv_sync -id ${Wave.1} -switch false
@@ -222,23 +245,22 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 0 130268
+gui_wv_zoom_timerange -id ${Wave.1} 138962 478875
 gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Add_Subt}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group1}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group2}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group3}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group4}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group5}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group6}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group7}
-gui_list_add_group -id ${Wave.1} -after {New Group} {Group8}
+gui_list_add_group -id ${Wave.1} -after {New Group} {Add_Sub_Sgf_Oper_B_mux}
+gui_list_add_group -id ${Wave.1} -after {New Group} {Add_Subt_Sgf_module}
 gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_module}
-gui_list_select -id ${Wave.1} {Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_load }
+gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_S_V_mux}
+gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_D_I_mux}
+gui_list_add_group -id ${Wave.1} -after {New Group} {FS_Module}
+gui_list_collapse -id ${Wave.1} Testbench_FPU_Add_Subt
+gui_list_collapse -id ${Wave.1} Add_Subt_Sgf_module
+gui_list_collapse -id ${Wave.1} Barrel_Shifter_module
+gui_list_collapse -id ${Wave.1} Barrel_Shifter_S_V_mux
+gui_list_collapse -id ${Wave.1} Barrel_Shifter_D_I_mux
+gui_list_collapse -id ${Wave.1} FS_Module
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
-gui_set_display_scheme -id ${Wave.1} -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-gui_set_display_scheme -id ${Wave.1} -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-gui_set_display_scheme -id ${Wave.1} -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
 
 
 gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
@@ -252,18 +274,15 @@ if { $groupExD } {
 }
 gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Wave.1} -text {*}
-gui_list_set_insertion_bar  -id ${Wave.1} -group Barrel_Shifter_module  -position in
+gui_list_set_insertion_bar  -id ${Wave.1} -group Add_Sub_Sgf_Oper_B_mux  -item Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.ctrl -position below
 
-gui_view_scroll -id ${Wave.1} -vertical -set 1688
+gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.2}]} {
-	gui_set_active_window -window ${TopLevel.2}
-}
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
-	gui_set_active_window -window ${HSPane.1}
+	gui_set_active_window -window ${Wave.1}
 }
 #</Session>
 

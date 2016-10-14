@@ -32,8 +32,7 @@ module Mux_Array
     input wire FSM_left_right_i,
     input wire [EWR-1:0] Shift_Value_i,
     input wire bit_shift_i,
-    output wire [SWR-1:0] Data_o,
-    output wire load_o
+    output wire [SWR-1:0] Data_o
     );
 ////ge
 wire [SWR-1:0] Data_array[EWR+1:0];
@@ -61,7 +60,7 @@ endgenerate
 RegisterAdd #(.W(SWR)) Mid_Reg(
         .clk(clk),
         .rst(rst),
-        .load(load_i),
+        .load(1'b1),
         .D(Data_array[3]),
         .Q(Data_array[4])
         );
@@ -82,12 +81,5 @@ Rotate_Mux_Array #(.SWR(SWR)) last_rotate(
 	.Data_o(Data_o)
 	);
 
-RegisterAdd #(.W(1)) Load_reg(
-        .clk(clk),
-        .rst(rst),
-        .load(load_i),
-        .D(load_i),
-        .Q(load_o)
-        );
 
 endmodule

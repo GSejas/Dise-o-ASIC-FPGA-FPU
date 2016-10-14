@@ -1,228 +1,275 @@
-20:12:59    384 --> ...                                      [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv  +v2k +lint=all -l log_name +define+SINGLE -ucligui
-20:12:59    385 --> ...                                          [tcl] set ucliGUI::state
-20:12:59    386 --> ...                                              [tcl] set dveMisc::dve_log_file 1
-20:12:59    387 --> ...                                                  [tcl] gui_update_simulator_buttons
-20:13:01    388 --> ...                                                      [tcl] set ucliGUI::state
-20:13:01    389 --> ...                                                          [tcl] ucliCore::getToolPID
-20:13:01    390 --> ...                                                              [tcl] synopsys::env hasTB
-20:13:01    391 --> ...                                                                  [tcl] trigger_hier_stack_context_switch 0
-20:13:01    392 --> ...                                                                      [tcl] synUtils::setDVEInitPhase 1
-20:13:01    393 --> ...                                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
-20:13:01    394 --> ...                                                                              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
-20:13:01    395 --> ...                                                                                  [tcl] synopsys::dump -autoflush on -fid VPD2
-20:13:01    396 --> ...                                                                                      [tcl] set ::dve_fid VPD2
-20:13:01    397 --> ...                                                                                          [tcl] synUtils::setDVEInitPhase 0
-20:13:01    398 --> ...                                                                                              [tcl] ucliCore::getToolPID
-20:13:01    399 --> ...                                                                                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpWaELoY
-20:13:01    400 --> ...  [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.27060}
-20:13:01    401 --> ...      [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.27060}
-20:13:01    402 --> ...          [tcl] config endofsim noexit
-20:13:01    403 --> ...              [tcl] config onfail enable all
-20:13:01    404 --> ...                  [tcl] config syscaddplainmembers
-20:13:01    405 --> ...                      [tcl] config syscaddsourcenames
-20:13:01    406 --> ...                          [tcl] config syscaddstructtypes
-20:13:01    407 --> ...                              [tcl] synopsys::listing -disable
-20:13:01    408 --> ...                                  [tcl] # Begin_DVE_Session_Save_Info
-20:13:01    409 --> ...                                      [tcl] # DVE restart session
-20:13:01    410 --> ...                                          [tcl] # Saved on Wed Oct 12 20:12:59 2016
-20:13:01    411 --> ...                                              [tcl] # Designs open: 1
-20:13:01    412 --> ...                                                  [tcl] #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
-20:13:01    413 --> ...                                                      [tcl] # Toplevel windows open: 2
-20:13:01    414 --> ...                                                          [tcl] # 	TopLevel.1
-20:13:01    415 --> ...                                                              [tcl] # 	TopLevel.2
-20:13:01    416 --> ...                                                                  [tcl] #   Wave.1: 86 signals
-20:13:01    417 --> ...                                                                      [tcl] #   Group count = 10
-20:13:01    418 --> ...                                                                          [tcl] #   Group Testbench_FPU_Add_Subt signal count = 0
-20:13:01    419 --> ...                                                                              [tcl] #   Group Group1 signal count = 0
-20:13:01    420 --> ...                                                                                  [tcl] #   Group Group2 signal count = 0
-20:13:01    421 --> ...                                                                                      [tcl] #   Group Group3 signal count = 0
-20:13:01    422 --> ...                                                                                          [tcl] #   Group Group4 signal count = 0
-20:13:01    423 --> ...                                                                                              [tcl] #   Group Group5 signal count = 0
-20:13:01    424 --> ...                                                                                                  [tcl] #   Group Group6 signal count = 0
-20:13:01    425 --> ...  [tcl] #   Group Group7 signal count = 0
-20:13:01    426 --> ...      [tcl] #   Group Group8 signal count = 76
-20:13:01    427 --> ...          [tcl] #   Group Barrel_Shifter_module signal count = 12
-20:13:01    428 --> ...              [tcl] # End_DVE_Session_Save_Info
-20:13:01    429 --> ...                  [tcl] # DVE version: K-2015.09-SP2-3_Full64
-20:13:01    430 --> ...                      [tcl] # DVE build date: Jun 15 2016 22:18:13
-20:13:01    431 --> ...                          [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
-20:13:01    432 --> ...                              [tcl] gui_set_loading_session_type Restart
-20:13:01    433 --> ...                                  [tcl] gui_continuetime_set
-20:13:01    434 --> ...                                      [tcl] gui_clear_window -type Wave
-20:13:01    435 --> ...                                          [tcl] gui_clear_window -type List
-20:13:01    436 --> ...                                              [tcl] # Application preferences
-20:13:01    437 --> ...                                                  [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
-20:13:01    438 --> ...                                                      [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
-20:13:01    439 --> ...                                                          [tcl] #<WindowLayout>
-20:13:01    440 --> ...                                                              [tcl] # DVE top-level session
-20:13:01    441 --> ...                                                                  [tcl] # Create and position top-level window: TopLevel.1
-20:13:01    442 --> ...                                                                      [tcl] set TopLevel.1 TopLevel.1
-20:13:01    443 --> ...                                                                          [tcl] # Docked window settings
-20:13:01    444 --> ...                                                                              [tcl] gui_sync_global -id ${TopLevel.1} -option true
-20:13:01    445 --> ...                                                                                  [tcl] # MDI window settings
-20:13:01    446 --> ...                                                                                      [tcl] set HSPane.1 HSPane.1
-20:13:01    447 --> ...                                                                                          [tcl] set Hier.1 Hier.1
-20:13:01    448 --> ...                                                                                              [tcl] gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 340} {height 590} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 296} {child_hier_coltype 20} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-20:13:01    449 --> ...                                                                                                  [tcl] set DLPane.1 DLPane.1
-20:13:01    450 --> ...  [tcl] set Data.1 Data.1
-20:13:01    451 --> ...      [tcl] gui_update_layout -id ${DLPane.1} {{left 340} {top 0} {width 340} {height 590} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 211} {child_data_colvalue 26} {child_data_coltype 95} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-20:13:01    452 --> ...          [tcl] set Wave.1 Wave.1
-20:13:01    453 --> ...              [tcl] gui_update_layout -id ${Wave.1} {{left 673} {top 0} {width 687} {height 590} {show_state normal} {dock_state undocked} {dock_on_new_line false} {child_wave_left 243} {child_wave_right 434} {child_wave_colname 138} {child_wave_colvalue 101} {child_wave_col1 0} {child_wave_col2 1}}
-20:13:01    454 --> ...                  [tcl] # End MDI window settings
-20:13:01    455 --> ...                      [tcl] # Create and position top-level window: TopLevel.2
-20:13:01    456 --> ...                          [tcl] set TopLevel.2 TopLevel.2
-20:13:01    457 --> ...                              [tcl] # Docked window settings
-20:13:01    458 --> ...                                  [tcl] gui_sync_global -id ${TopLevel.2} -option true
-20:13:01    459 --> ...                                      [tcl] #</WindowLayout>
-20:13:01    460 --> ...                                          [tcl] #<Database>
-20:13:01    461 --> ...                                              [tcl] gui_set_precision 1ps
-20:13:01    462 --> ...                                                  [tcl] gui_set_time_units 1ps
-20:13:01    463 --> ...                                                      [tcl] #</Database>
-20:13:01    464 --> ...                                                          [tcl] # DVE Global setting session:
-20:13:01    465 --> ...                                                              [tcl] # Global: Breakpoints
-20:13:01    466 --> ...                                                                  [tcl] # Global: Bus
-20:13:01    467 --> ...                                                                      [tcl] # Global: Expressions
-20:13:01    468 --> ...                                                                          [tcl] # Global: Signal Time Shift
-20:13:01    469 --> ...                                                                              [tcl] # Global: Signal Compare
-20:13:01    470 --> ...                                                                                  [tcl] # Global: Signal Groups
-20:13:01    471 --> ...                                                                                      [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}
-20:13:01    472 --> ...                                                                                          [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module} -scope "." -depth 1 -fid VPD2
-20:13:01    473 --> ...                                                                                              [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut}
-20:13:01    474 --> ...                                                                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut} -scope "." -depth 1 -fid VPD2
-20:13:01    475 --> ...  [tcl] set _session_group_1 Testbench_FPU_Add_Subt
-20:13:01    476 --> ...      [tcl] gui_sg_create "$_session_group_1"
-20:13:01    477 --> ...          [tcl] set Testbench_FPU_Add_Subt "$_session_group_1"
-20:13:01    478 --> ...              [tcl] set _session_group_2 Group1
-20:13:01    479 --> ...                  [tcl] gui_sg_create "$_session_group_2"
-20:13:01    480 --> ...                      [tcl] set Group1 "$_session_group_2"
-20:13:01    481 --> ...                          [tcl] set _session_group_3 Group2
-20:13:01    482 --> ...                              [tcl] gui_sg_create "$_session_group_3"
-20:13:01    483 --> ...                                  [tcl] set Group2 "$_session_group_3"
-20:13:01    484 --> ...                                      [tcl] set _session_group_4 Group3
-20:13:01    485 --> ...                                          [tcl] gui_sg_create "$_session_group_4"
-20:13:01    486 --> ...                                              [tcl] set Group3 "$_session_group_4"
-20:13:01    487 --> ...                                                  [tcl] set _session_group_5 Group4
-20:13:01    488 --> ...                                                      [tcl] gui_sg_create "$_session_group_5"
-20:13:01    489 --> ...                                                          [tcl] set Group4 "$_session_group_5"
-20:13:01    490 --> ...                                                              [tcl] set _session_group_6 Group5
-20:13:01    491 --> ...                                                                  [tcl] gui_sg_create "$_session_group_6"
-20:13:01    492 --> ...                                                                      [tcl] set Group5 "$_session_group_6"
-20:13:01    493 --> ...                                                                          [tcl] set _session_group_7 Group6
-20:13:01    494 --> ...                                                                              [tcl] gui_sg_create "$_session_group_7"
-20:13:01    495 --> ...                                                                                  [tcl] set Group6 "$_session_group_7"
-20:13:01    496 --> ...                                                                                      [tcl] set _session_group_8 Group7
-20:13:01    497 --> ...                                                                                          [tcl] gui_sg_create "$_session_group_8"
-20:13:01    498 --> ...                                                                                              [tcl] set Group7 "$_session_group_8"
-20:13:01    499 --> ...                                                                                                  [tcl] set _session_group_9 Group8
-20:13:01    500 --> ...  [tcl] gui_sg_create "$_session_group_9"
-20:13:01    501 --> ...      [tcl] set Group8 "$_session_group_9"
-20:13:01    502 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_9" { Testbench_FPU_Add_Subt.uut.zero_flag Testbench_FPU_Add_Subt.uut.underflow_flag Testbench_FPU_Add_Subt.uut.sign_final_result Testbench_FPU_Add_Subt.uut.selector_D Testbench_FPU_Add_Subt.uut.selector_C Testbench_FPU_Add_Subt.uut.selector_B Testbench_FPU_Add_Subt.uut.selector_A Testbench_FPU_Add_Subt.uut.rst_int Testbench_FPU_Add_Subt.uut.rst Testbench_FPU_Add_Subt.uut.round_flag Testbench_FPU_Add_Subt.uut.real_op Testbench_FPU_Add_Subt.uut.ready Testbench_FPU_Add_Subt.uut.r_mode Testbench_FPU_Add_Subt.uut.overflow_flag Testbench_FPU_Add_Subt.uut.load_b Testbench_FPU_Add_Subt.uut.final_result_ieee Testbench_FPU_Add_Subt.uut.exp_oper_result Testbench_FPU_Add_Subt.uut.clk Testbench_FPU_Add_Subt.uut.clk Testbench_FPU_Add_Subt.uut.clk Testbench_FPU_Add_Subt.uut.beg_FSM Testbench_FPU_Add_Subt.uut.add_subt Testbench_FPU_Add_Subt.uut.add_overflow_flag Testbench_FPU_Add_Subt.uut.ack_FSM Testbench_FPU_Add_Subt.uut.W Testbench_FPU_Add_Subt.uut.Sgf_normalized_result Testbench_FPU_Add_Subt.uut.Sgf_normalized_result Testbench_FPU_Add_Subt.uut.S_Shift_Value Testbench_FPU_Add_Subt.uut.S_Shift_Value Testbench_FPU_Add_Subt.uut.S_Oper_B_exp Testbench_FPU_Add_Subt.uut.S_Oper_A_exp Testbench_FPU_Add_Subt.uut.S_Data_Shift Testbench_FPU_Add_Subt.uut.S_Data_Shift Testbench_FPU_Add_Subt.uut.S_Data_Shift Testbench_FPU_Add_Subt.uut.S_A_S_op Testbench_FPU_Add_Subt.uut.S_A_S_Oper_B Testbench_FPU_Add_Subt.uut.S_A_S_Oper_B Testbench_FPU_Add_Subt.uut.S_A_S_Oper_A Testbench_FPU_Add_Subt.uut.S_A_S_Oper_A Testbench_FPU_Add_Subt.uut.LZA_output Testbench_FPU_Add_Subt.uut.FSM_selector_D Testbench_FPU_Add_Subt.uut.FSM_selector_D Testbench_FPU_Add_Subt.uut.FSM_selector_C Testbench_FPU_Add_Subt.uut.FSM_selector_C Testbench_FPU_Add_Subt.uut.FSM_selector_B Testbench_FPU_Add_Subt.uut.FSM_selector_A Testbench_FPU_Add_Subt.uut.FSM_op_start_in_load_b Testbench_FPU_Add_Subt.uut.FSM_op_start_in_load_a Testbench_FPU_Add_Subt.uut.FSM_exp_operation_load_diff Testbench_FPU_Add_Subt.uut.FSM_exp_operation_load_OU Testbench_FPU_Add_Subt.uut.FSM_exp_operation_A_S Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_load Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_L_R Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_B_S Testbench_FPU_Add_Subt.uut.FSM_LZA_load Testbench_FPU_Add_Subt.uut.FSM_Final_Result_load Testbench_FPU_Add_Subt.uut.FSM_Add_Subt_Sgf_load Testbench_FPU_Add_Subt.uut.Exp_oper_B_D2 Testbench_FPU_Add_Subt.uut.Exp_oper_B_D1 Testbench_FPU_Add_Subt.uut.EW Testbench_FPU_Add_Subt.uut.EWR Testbench_FPU_Add_Subt.uut.DmP Testbench_FPU_Add_Subt.uut.DmP }
-20:13:01    503 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_9" { Divider } -divider
-20:13:01    504 --> ...                  [tcl] gui_sg_addsignal -group "$_session_group_9" { }
-20:13:01    505 --> ...                      [tcl] gui_sg_addsignal -group "$_session_group_9" { Divider } -divider
-20:13:01    506 --> ...                          [tcl] gui_sg_addsignal -group "$_session_group_9" { Testbench_FPU_Add_Subt.uut.Data_Y Testbench_FPU_Add_Subt.uut.Data_X Testbench_FPU_Add_Subt.uut.DMP Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_D2 Testbench_FPU_Add_Subt.uut.Add_Subt_result Testbench_FPU_Add_Subt.uut.Add_Subt_result Testbench_FPU_Add_Subt.uut.Add_Subt_result Testbench_FPU_Add_Subt.uut.Add_Subt_LZD Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_A_D1 Testbench_FPU_Add_Subt.uut.A_S_P Testbench_FPU_Add_Subt.uut.A_S_C }
-20:13:01    507 --> ...                              [tcl] gui_set_display_scheme -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-20:13:01    508 --> ...                                  [tcl] gui_set_display_scheme -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-20:13:01    509 --> ...                                      [tcl] gui_set_display_scheme -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-20:13:01    510 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.W}
-20:13:01    511 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.W}
-20:13:01    512 --> ...                                                  [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-20:13:01    513 --> ...                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-20:13:01    514 --> ...                                                          [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-20:13:01    515 --> ...                                                              [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.Sgf_normalized_result}
-20:13:01    516 --> ...                                                                  [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-20:13:01    517 --> ...                                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-20:13:01    518 --> ...                                                                          [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-20:13:01    519 --> ...                                                                              [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-20:13:01    520 --> ...                                                                                  [tcl] gui_set_radix -radix {binary} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-20:13:01    521 --> ...                                                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.S_Data_Shift}
-20:13:01    522 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.EW}
-20:13:01    523 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.EW}
-20:13:01    524 --> ...                                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.EWR}
-20:13:01    525 --> ...  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.EWR}
-20:13:01    526 --> ...      [tcl] set _session_group_10 Barrel_Shifter_module
-20:13:01    527 --> ...          [tcl] gui_sg_create "$_session_group_10"
-20:13:01    528 --> ...              [tcl] set Barrel_Shifter_module "$_session_group_10"
-20:13:01    529 --> ...                  [tcl] gui_sg_addsignal -group "$_session_group_10" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Data_Reg Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Data_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Value_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_o Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Left_Right_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.clk Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.N_mant_o Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.rst Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Bit_Shift_i }
-20:13:01    530 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR}
-20:13:01    531 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR}
-20:13:01    532 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR}
-20:13:01    533 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR}
-20:13:01    534 --> ...                                      [tcl] # Global: Highlighting
-20:13:01    535 --> ...                                          [tcl] # Global: Stack
-20:13:01    536 --> ...                                              [tcl] gui_change_stack_mode -mode list
-20:13:01    537 --> ...                                                  [tcl] # Post database loading setting...
-20:13:01    538 --> ...                                                      [tcl] # Save global setting...
-20:13:01    539 --> ...                                                          [tcl] # Wave/List view global setting
-20:13:01    540 --> ...                                                              [tcl] gui_cov_show_value -switch false
-20:13:01    541 --> ...                                                                  [tcl] # Close all empty TopLevel windows
-20:13:01    542 --> ...                                                                      [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
-20:13:01    543 --> ...                                                                          [tcl] gui_set_loading_session_type noSession
-20:13:01    544 --> ...                                                                              [tcl] # DVE View/pane content session:
-20:13:01    545 --> ...                                                                                  [tcl] # Hier 'Hier.1'
-20:13:01    546 --> ...                                                                                      [tcl] gui_show_window -window ${Hier.1}
-20:13:01    547 --> ...                                                                                          [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
-20:13:01    548 --> ...                                                                                              [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
-20:13:01    549 --> ...                                                                                                  [tcl] gui_change_design -id ${Hier.1} -design Sim
-20:13:01    550 --> ...  [tcl] catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt}
-20:13:01    551 --> ...      [tcl] catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt.uut}
-20:13:01    552 --> ...          [tcl] catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}}
-20:13:01    553 --> ...              [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module
-20:13:01    554 --> ...                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 24
-20:13:01    555 --> ...                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
-20:13:01    556 --> ...                          [tcl] # Data 'Data.1'
-20:13:01    557 --> ...                              [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-20:13:01    558 --> ...                                  [tcl] gui_list_set_filter -id ${Data.1} -text {*}
-20:13:01    559 --> ...                                      [tcl] gui_list_show_data -id ${Data.1} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}
-20:13:01    560 --> ...                                          [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
-20:13:01    561 --> ...                                              [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
-20:13:01    562 --> ...                                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 24
-20:13:01    563 --> ...                                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
-20:13:01    564 --> ...                                                          [tcl] # View 'Wave.1'
-20:13:01    565 --> ...                                                              [tcl] gui_wv_sync -id ${Wave.1} -switch false
-20:13:01    566 --> ...                                                                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-20:13:01    567 --> ...                                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
-20:13:01    568 --> ...                                                                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-20:13:01    569 --> ...                                                                              [tcl] gui_list_set_height -id Wave -height 25
-20:13:01    570 --> ...                                                                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
-20:13:01    571 --> ...                                                                                      [tcl] gui_list_create_group_when_add -wave -disable
-20:13:01    572 --> ...                                                                                          [tcl] gui_wv_zoom_timerange -id ${Wave.1} 0 130268
-20:13:01    573 --> ...                                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Add_Subt}
-20:13:01    574 --> ...                                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group1}
-20:13:01    575 --> ...  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group2}
-20:13:01    576 --> ...      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group3}
-20:13:01    577 --> ...          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group4}
-20:13:01    578 --> ...              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group5}
-20:13:01    579 --> ...                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group6}
-20:13:01    580 --> ...                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group7}
-20:13:01    581 --> ...                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group8}
-20:13:01    582 --> ...                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_module}
-20:13:01    583 --> ...                                  [tcl] gui_list_select -id ${Wave.1} {Testbench_FPU_Add_Subt.uut.FSM_barrel_shifter_load }
-20:13:01    584 --> ...                                      [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
-20:13:01    585 --> ...                                          [tcl] gui_set_display_scheme -id ${Wave.1} -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-20:13:01    586 --> ...                                              [tcl] gui_set_display_scheme -id ${Wave.1} -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-20:13:01    587 --> ...                                                  [tcl] gui_set_display_scheme -id ${Wave.1} -scheme scalarStrength -signal {Sim:Testbench_FPU_Add_Subt.uut.clk}
-20:13:01    588 --> ...                                                      [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
-20:13:01    589 --> ...                                                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
-20:13:01    590 --> ...                                                              [tcl] gui_list_set_height -id Wave -height $origWaveHeight
-20:13:01    591 --> ...                                                                  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-20:13:01    592 --> ...                                                                      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
-20:13:01    593 --> ...                                                                          [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-20:13:01    594 --> ...                                                                              [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
-20:13:01    595 --> ...                                                                                  [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group Barrel_Shifter_module  -position in
-20:13:01    596 --> ...                                                                                      [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 1688
-20:13:01    597 --> ...                                                                                          [tcl] gui_show_grid -id ${Wave.1} -enable false
-20:13:01    598 --> ...                                                                                              [tcl] # Restore toplevel window zorder
-20:13:01    599 --> ...                                                                                                  [tcl] # The toplevel window could be closed if it has no view/pane
-20:13:01    600 --> ...  [tcl] if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} }
-20:13:01    601 --> ...      [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${HSPane.1} }
-20:13:01    602 --> ...          [tcl] #</Session>
-20:13:02    603 --> ...              [tcl] synopsys::run
-20:13:02    604 --> ...                  [tcl] set ucliGUI::state
-20:13:02    605 --> ...                      [tcl] set ucliGUI::state
-20:13:02    606 --> ...                          [tcl] gui_update_simulator_buttons
-20:13:02    607 --> ...                              [tcl] set ucliGUI::state
-20:13:02    608 --> ...                                  [tcl] set ucliGUI::state
-20:13:02    609 --> ...                                      [tcl] catch {senv activeDomain} dveMisc::result 
-20:13:02    610 --> ...                                          [tcl] set dveMisc::result
-20:13:02    611 --> ...                                              [tcl] gui_update_simulator_buttons
+19:26:48    84 --> ...                                      [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE
+19:26:48    85 --> ...                                          [tcl] set ucliGUI::state
+19:26:48    86 --> ...                                              [tcl] set dveMisc::dve_log_file 1
+19:26:48    87 --> ...                                                  [tcl] gui_update_simulator_buttons
+19:26:50    88 --> ...                                                      [tcl] set ucliGUI::state
+19:26:50    89 --> ...                                                          [tcl] ucliCore::getToolPID
+19:26:50    90 --> ...                                                              [tcl] synopsys::env hasTB
+19:26:50    91 --> ...                                                                  [tcl] trigger_hier_stack_context_switch 0
+19:26:50    92 --> ...                                                                      [tcl] synUtils::setDVEInitPhase 1
+19:26:50    93 --> ...                                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
+19:26:50    94 --> ...                                                                              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
+19:26:50    95 --> ...                                                                                  [tcl] synopsys::dump -autoflush on -fid VPD1
+19:26:50    96 --> ...                                                                                      [tcl] set ::dve_fid VPD1
+19:26:50    97 --> ...                                                                                          [tcl] synUtils::setDVEInitPhase 0
+19:26:50    98 --> ...                                                                                              [tcl] ucliCore::getToolPID
+19:26:50    99 --> ...                                                                                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpA7idpW
+19:26:50    100 --> ...  [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.7840}
+19:26:50    101 --> ...      [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.7840}
+19:26:50    102 --> ...          [tcl] config endofsim noexit
+19:26:50    103 --> ...              [tcl] config onfail enable all
+19:26:50    104 --> ...                  [tcl] config syscaddplainmembers
+19:26:50    105 --> ...                      [tcl] config syscaddsourcenames
+19:26:50    106 --> ...                          [tcl] config syscaddstructtypes
+19:26:50    107 --> ...                              [tcl] synopsys::listing -disable
+19:26:50    108 --> ...                                  [tcl] # Begin_DVE_Session_Save_Info
+19:26:50    109 --> ...                                      [tcl] # DVE restart session
+19:26:50    110 --> ...                                          [tcl] # Saved on Thu Oct 13 19:26:48 2016
+19:26:50    111 --> ...                                              [tcl] # Designs open: 1
+19:26:50    112 --> ...                                                  [tcl] #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
+19:26:50    113 --> ...                                                      [tcl] # Toplevel windows open: 1
+19:26:50    114 --> ...                                                          [tcl] # 	TopLevel.1
+19:26:50    115 --> ...                                                              [tcl] #   Source.1: Testbench_FPU_Add_Subt
+19:26:50    116 --> ...                                                                  [tcl] #   Wave.1: 108 signals
+19:26:50    117 --> ...                                                                      [tcl] #   Group count = 7
+19:26:50    118 --> ...                                                                          [tcl] #   Group Testbench_FPU_Add_Subt signal count = 24
+19:26:50    119 --> ...                                                                              [tcl] #   Group Add_Sub_Sgf_Oper_B_mux signal count = 5
+19:26:50    120 --> ...                                                                                  [tcl] #   Group Add_Subt_Sgf_module signal count = 14
+19:26:50    121 --> ...                                                                                      [tcl] #   Group Barrel_Shifter_module signal count = 11
+19:26:50    122 --> ...                                                                                          [tcl] #   Group Barrel_Shifter_S_V_mux signal count = 6
+19:26:50    123 --> ...                                                                                              [tcl] #   Group Barrel_Shifter_D_I_mux signal count = 5
+19:26:50    124 --> ...                                                                                                  [tcl] #   Group FS_Module signal count = 43
+19:26:50    125 --> ...  [tcl] # End_DVE_Session_Save_Info
+19:26:50    126 --> ...      [tcl] # DVE version: K-2015.09-SP2-3_Full64
+19:26:50    127 --> ...          [tcl] # DVE build date: Jun 15 2016 22:18:13
+19:26:50    128 --> ...              [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+19:26:50    129 --> ...                  [tcl] gui_set_loading_session_type Restart
+19:26:50    130 --> ...                      [tcl] gui_continuetime_set
+19:26:50    131 --> ...                          [tcl] gui_clear_window -type Wave
+19:26:50    132 --> ...                              [tcl] gui_clear_window -type List
+19:26:50    133 --> ...                                  [tcl] # Application preferences
+19:26:50    134 --> ...                                      [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+19:26:50    135 --> ...                                          [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+19:26:50    136 --> ...                                              [tcl] #<WindowLayout>
+19:26:50    137 --> ...                                                  [tcl] # DVE top-level session
+19:26:50    138 --> ...                                                      [tcl] # Create and position top-level window: TopLevel.1
+19:26:50    139 --> ...                                                          [tcl] set TopLevel.1 TopLevel.1
+19:26:50    140 --> ...                                                              [tcl] # Docked window settings
+19:26:50    141 --> ...                                                                  [tcl] set HSPane.1 HSPane.1
+19:26:50    142 --> ...                                                                      [tcl] set Hier.1 Hier.1
+19:26:50    143 --> ...                                                                          [tcl] set DLPane.1 DLPane.1
+19:26:50    144 --> ...                                                                              [tcl] set Data.1 Data.1
+19:26:50    145 --> ...                                                                                  [tcl] set Console.1 Console.1
+19:26:50    146 --> ...                                                                                      [tcl] gui_sync_global -id ${TopLevel.1} -option true
+19:26:50    147 --> ...                                                                                          [tcl] # MDI window settings
+19:26:50    148 --> ...                                                                                              [tcl] set Source.1 Source.1
+19:26:50    149 --> ...                                                                                                  [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+19:26:50    150 --> ...  [tcl] set Wave.1 Wave.1
+19:26:50    151 --> ...      [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 290} {child_wave_right 519} {child_wave_colname 222} {child_wave_colvalue 64} {child_wave_col1 0} {child_wave_col2 1}}
+19:26:50    152 --> ...          [tcl] # End MDI window settings
+19:26:50    153 --> ...              [tcl] #</WindowLayout>
+19:26:50    154 --> ...                  [tcl] #<Database>
+19:26:50    155 --> ...                      [tcl] gui_set_precision 1ps
+19:26:50    156 --> ...                          [tcl] gui_set_time_units 1ps
+19:26:50    157 --> ...                              [tcl] #</Database>
+19:26:50    158 --> ...                                  [tcl] # DVE Global setting session:
+19:26:50    159 --> ...                                      [tcl] # Global: Breakpoints
+19:26:50    160 --> ...                                          [tcl] # Global: Bus
+19:26:50    161 --> ...                                              [tcl] # Global: Expressions
+19:26:50    162 --> ...                                                  [tcl] # Global: Signal Time Shift
+19:26:50    163 --> ...                                                      [tcl] # Global: Signal Compare
+19:26:50    164 --> ...                                                          [tcl] # Global: Signal Groups
+19:26:50    165 --> ...                                                              [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux}
+19:26:50    166 --> ...                                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux} -scope "." -depth 1 -fid VPD1
+19:26:50    167 --> ...                                                                      [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}
+19:26:50    168 --> ...                                                                          [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module} -scope "." -depth 1 -fid VPD1
+19:26:50    169 --> ...                                                                              [tcl] gui_load_child_values {Testbench_FPU_Add_Subt}
+19:26:50    170 --> ...                                                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt} -scope "." -depth 1 -fid VPD1
+19:26:50    171 --> ...                                                                                      [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}
+19:26:50    172 --> ...                                                                                          [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module} -scope "." -depth 1 -fid VPD1
+19:26:50    173 --> ...                                                                                              [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux}
+19:26:50    174 --> ...                                                                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux} -scope "." -depth 1 -fid VPD1
+19:26:50    175 --> ...  [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.FS_Module}
+19:26:50    176 --> ...      [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.FS_Module} -scope "." -depth 1 -fid VPD1
+19:26:50    177 --> ...          [tcl] gui_load_child_values {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux}
+19:26:50    178 --> ...              [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux} -scope "." -depth 1 -fid VPD1
+19:26:50    179 --> ...                  [tcl] set _session_group_1 Testbench_FPU_Add_Subt
+19:26:50    180 --> ...                      [tcl] gui_sg_create "$_session_group_1"
+19:26:50    181 --> ...                          [tcl] set Testbench_FPU_Add_Subt "$_session_group_1"
+19:26:50    182 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_1" { Testbench_FPU_Add_Subt.EW Testbench_FPU_Add_Subt.contador Testbench_FPU_Add_Subt.Array_IN_2 Testbench_FPU_Add_Subt.SW Testbench_FPU_Add_Subt.underflow_flag Testbench_FPU_Add_Subt.FileSaveData Testbench_FPU_Add_Subt.ready Testbench_FPU_Add_Subt.SWR Testbench_FPU_Add_Subt.ack_FSM Testbench_FPU_Add_Subt.PERIOD Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.add_subt Testbench_FPU_Add_Subt.EWR Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.final_result_ieee Testbench_FPU_Add_Subt.W Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.r_mode Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.Recept Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.Cont_CLK Testbench_FPU_Add_Subt.rst }
+19:26:50    183 --> ...                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+19:26:50    184 --> ...                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+19:26:50    185 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.contador}
+19:26:50    186 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.contador}
+19:26:50    187 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+19:26:50    188 --> ...                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+19:26:50    189 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
+19:26:50    190 --> ...                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
+19:26:50    191 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+19:26:50    192 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+19:26:50    193 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+19:26:50    194 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+19:26:50    195 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+19:26:50    196 --> ...                                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+19:26:50    197 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.W}
+19:26:50    198 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.W}
+19:26:50    199 --> ...                                                                                                  [tcl] set _session_group_2 Add_Sub_Sgf_Oper_B_mux
+19:26:50    200 --> ...  [tcl] gui_sg_create "$_session_group_2"
+19:26:50    201 --> ...      [tcl] set Add_Sub_Sgf_Oper_B_mux "$_session_group_2"
+19:26:50    202 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_2" { Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.S Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.W Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.D0 Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.D1 Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.ctrl }
+19:26:50    203 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.W}
+19:26:50    204 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.W}
+19:26:50    205 --> ...                      [tcl] set _session_group_3 Add_Subt_Sgf_module
+19:26:50    206 --> ...                          [tcl] gui_sg_create "$_session_group_3"
+19:26:50    207 --> ...                              [tcl] set Add_Subt_Sgf_module "$_session_group_3"
+19:26:50    208 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_3" { Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Add_Sub_op_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_A_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_Result_o Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.C_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.load_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Data_B Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.PreData_B_i Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.clk Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.Co_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.S_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.P_to_D Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.FSM_C_o Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.rst }
+19:26:50    209 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR}
+19:26:50    210 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module.SWR}
+19:26:50    211 --> ...                                              [tcl] set _session_group_4 Barrel_Shifter_module
+19:26:50    212 --> ...                                                  [tcl] gui_sg_create "$_session_group_4"
+19:26:50    213 --> ...                                                      [tcl] set Barrel_Shifter_module "$_session_group_4"
+19:26:50    214 --> ...                                                          [tcl] gui_sg_addsignal -group "$_session_group_4" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Data_Reg Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.load_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Data_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Shift_Value_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Left_Right_i Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.clk Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.N_mant_o Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.rst Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.Bit_Shift_i }
+19:26:50    215 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR}
+19:26:50    216 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.SWR}
+19:26:50    217 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR}
+19:26:50    218 --> ...                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module.EWR}
+19:26:50    219 --> ...                                                                              [tcl] set _session_group_5 Barrel_Shifter_S_V_mux
+19:26:50    220 --> ...                                                                                  [tcl] gui_sg_create "$_session_group_5"
+19:26:50    221 --> ...                                                                                      [tcl] set Barrel_Shifter_S_V_mux "$_session_group_5"
+19:26:50    222 --> ...                                                                                          [tcl] gui_sg_addsignal -group "$_session_group_5" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.S Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.W Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.D0 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.D1 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.D2 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.ctrl }
+19:26:50    223 --> ...                                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.W}
+19:26:50    224 --> ...                                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux.W}
+19:26:50    225 --> ...  [tcl] set _session_group_6 Barrel_Shifter_D_I_mux
+19:26:50    226 --> ...      [tcl] gui_sg_create "$_session_group_6"
+19:26:50    227 --> ...          [tcl] set Barrel_Shifter_D_I_mux "$_session_group_6"
+19:26:50    228 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_6" { Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.S Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.W Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.D0 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.D1 Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.ctrl }
+19:26:50    229 --> ...                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.W}
+19:26:50    230 --> ...                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux.W}
+19:26:50    231 --> ...                          [tcl] set _session_group_7 FS_Module
+19:26:50    232 --> ...                              [tcl] gui_sg_create "$_session_group_7"
+19:26:50    233 --> ...                                  [tcl] set FS_Module "$_session_group_7"
+19:26:50    234 --> ...                                      [tcl] gui_sg_addsignal -group "$_session_group_7" { Testbench_FPU_Add_Subt.uut.FS_Module.A_S_op_o Testbench_FPU_Add_Subt.uut.FS_Module.load_2_o Testbench_FPU_Add_Subt.uut.FS_Module.bit_shift_o Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add Testbench_FPU_Add_Subt.uut.FS_Module.state_next Testbench_FPU_Add_Subt.uut.FS_Module.load_3_o Testbench_FPU_Add_Subt.uut.FS_Module.round_sgf Testbench_FPU_Add_Subt.uut.FS_Module.zero_info_state Testbench_FPU_Add_Subt.uut.FS_Module.add_overflow_i Testbench_FPU_Add_Subt.uut.FS_Module.extra1_64 Testbench_FPU_Add_Subt.uut.FS_Module.load_4_o Testbench_FPU_Add_Subt.uut.FS_Module.extra2_64 Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add_r Testbench_FPU_Add_Subt.uut.FS_Module.load_final_result Testbench_FPU_Add_Subt.uut.FS_Module.ready Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_a_o Testbench_FPU_Add_Subt.uut.FS_Module.rst_FSM Testbench_FPU_Add_Subt.uut.FS_Module.ready_flag Testbench_FPU_Add_Subt.uut.FS_Module.load_5_o Testbench_FPU_Add_Subt.uut.FS_Module.load_oper Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_b_o Testbench_FPU_Add_Subt.uut.FS_Module.add_subt Testbench_FPU_Add_Subt.uut.FS_Module.load_6_o Testbench_FPU_Add_Subt.uut.FS_Module.beg_FSM Testbench_FPU_Add_Subt.uut.FS_Module.left_right_o Testbench_FPU_Add_Subt.uut.FS_Module.norm_iteration_i Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_c_o Testbench_FPU_Add_Subt.uut.FS_Module.zero_flag_i Testbench_FPU_Add_Subt.uut.FS_Module.load_7_o Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_r Testbench_FPU_Add_Subt.uut.FS_Module.round_i Testbench_FPU_Add_Subt.uut.FS_Module.clk Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_d_o Testbench_FPU_Add_Subt.uut.FS_Module.state_reg Testbench_FPU_Add_Subt.uut.FS_Module.start Testbench_FPU_Add_Subt.uut.FS_Module.load_8_o Testbench_FPU_Add_Subt.uut.FS_Module.add_subt_r Testbench_FPU_Add_Subt.uut.FS_Module.load_diff_exp Testbench_FPU_Add_Subt.uut.FS_Module.ctrl_b_load_o Testbench_FPU_Add_Subt.uut.FS_Module.load_1_o Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_first Testbench_FPU_Add_Subt.uut.FS_Module.rst_int Testbench_FPU_Add_Subt.uut.FS_Module.rst }
+19:26:50    235 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add}
+19:26:50    236 --> ...                                              [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add}
+19:26:50    237 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.round_sgf}
+19:26:50    238 --> ...                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.round_sgf}
+19:26:50    239 --> ...                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.zero_info_state}
+19:26:50    240 --> ...                                                              [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.zero_info_state}
+19:26:50    241 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra1_64}
+19:26:50    242 --> ...                                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra1_64}
+19:26:50    243 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra2_64}
+19:26:50    244 --> ...                                                                              [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.extra2_64}
+19:26:50    245 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add_r}
+19:26:50    246 --> ...                                                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.overflow_add_r}
+19:26:50    247 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_final_result}
+19:26:50    248 --> ...                                                                                              [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_final_result}
+19:26:50    249 --> ...                                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.ready_flag}
+19:26:50    250 --> ...  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.ready_flag}
+19:26:50    251 --> ...      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_oper}
+19:26:50    252 --> ...          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_oper}
+19:26:50    253 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt}
+19:26:50    254 --> ...                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt}
+19:26:50    255 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_r}
+19:26:50    256 --> ...                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_r}
+19:26:50    257 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.start}
+19:26:50    258 --> ...                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.start}
+19:26:50    259 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt_r}
+19:26:50    260 --> ...                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.add_subt_r}
+19:26:50    261 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_diff_exp}
+19:26:50    262 --> ...                                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.load_diff_exp}
+19:26:50    263 --> ...                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_first}
+19:26:50    264 --> ...                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Add_Subt.uut.FS_Module.norm_sgf_first}
+19:26:50    265 --> ...                                                              [tcl] # Global: Highlighting
+19:26:50    266 --> ...                                                                  [tcl] # Global: Stack
+19:26:50    267 --> ...                                                                      [tcl] gui_change_stack_mode -mode list
+19:26:50    268 --> ...                                                                          [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+19:26:50    269 --> ...                                                                              [tcl] # Post database loading setting...
+19:26:50    270 --> ...                                                                                  [tcl] # Save global setting...
+19:26:50    271 --> ...                                                                                      [tcl] # Wave/List view global setting
+19:26:50    272 --> ...                                                                                          [tcl] gui_cov_show_value -switch false
+19:26:50    273 --> ...                                                                                              [tcl] # Close all empty TopLevel windows
+19:26:50    274 --> ...                                                                                                  [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+19:26:50    275 --> ...  [tcl] gui_set_loading_session_type noSession
+19:26:50    276 --> ...      [tcl] # DVE View/pane content session:
+19:26:50    277 --> ...          [tcl] # Hier 'Hier.1'
+19:26:50    278 --> ...              [tcl] gui_show_window -window ${Hier.1}
+19:26:50    279 --> ...                  [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+19:26:50    280 --> ...                      [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+19:26:50    281 --> ...                          [tcl] gui_change_design -id ${Hier.1} -design Sim
+19:26:50    282 --> ...                              [tcl] catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt}
+19:26:50    283 --> ...                                  [tcl] catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt.uut}
+19:26:50    284 --> ...                                      [tcl] catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}}
+19:26:50    285 --> ...                                          [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module
+19:26:50    286 --> ...                                              [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+19:26:50    287 --> ...                                                  [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+19:26:50    288 --> ...                                                      [tcl] # Data 'Data.1'
+19:26:50    289 --> ...                                                          [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+19:26:50    290 --> ...                                                              [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+19:26:50    291 --> ...                                                                  [tcl] gui_list_show_data -id ${Data.1} {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}
+19:26:50    292 --> ...                                                                      [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+19:26:50    293 --> ...                                                                          [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+19:26:50    294 --> ...                                                                              [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+19:26:50    295 --> ...                                                                                  [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+19:26:50    296 --> ...                                                                                      [tcl] # Source 'Source.1'
+19:26:50    297 --> ...                                                                                          [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+19:26:50    298 --> ...                                                                                              [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+19:26:50    299 --> ...                                                                                                  [tcl] gui_open_source -id ${Source.1}  -replace -active Testbench_FPU_Add_Subt /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/Testbench_FPU_Add_Subt.v
+19:26:50    300 --> ...  [tcl] gui_view_scroll -id ${Source.1} -vertical -set 294
+19:26:50    301 --> ...      [tcl] gui_src_set_reusable -id ${Source.1}
+19:26:50    302 --> ...          [tcl] # View 'Wave.1'
+19:26:50    303 --> ...              [tcl] gui_wv_sync -id ${Wave.1} -switch false
+19:26:50    304 --> ...                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+19:26:50    305 --> ...                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+19:26:50    306 --> ...                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+19:26:50    307 --> ...                              [tcl] gui_list_set_height -id Wave -height 25
+19:26:50    308 --> ...                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+19:26:50    309 --> ...                                      [tcl] gui_list_create_group_when_add -wave -disable
+19:26:50    310 --> ...                                          [tcl] gui_wv_zoom_timerange -id ${Wave.1} 138962 478875
+19:26:50    311 --> ...                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Add_Subt}
+19:26:50    312 --> ...                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.Array_IN_2 } -aggregates  -fid VPD1
+19:26:50    313 --> ...                                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Add_Sub_Sgf_Oper_B_mux}
+19:26:50    314 --> ...                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Add_Subt_Sgf_module}
+19:26:50    315 --> ...                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_module}
+19:26:50    316 --> ...                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_S_V_mux}
+19:26:50    317 --> ...                                                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Barrel_Shifter_D_I_mux}
+19:26:50    318 --> ...                                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {FS_Module}
+19:26:50    319 --> ...                                                                              [tcl] gui_list_collapse -id ${Wave.1} Testbench_FPU_Add_Subt
+19:26:50    320 --> ...                                                                                  [tcl] gui_list_collapse -id ${Wave.1} Add_Subt_Sgf_module
+19:26:50    321 --> ...                                                                                      [tcl] gui_list_collapse -id ${Wave.1} Barrel_Shifter_module
+19:26:50    322 --> ...                                                                                          [tcl] gui_list_collapse -id ${Wave.1} Barrel_Shifter_S_V_mux
+19:26:50    323 --> ...                                                                                              [tcl] gui_list_collapse -id ${Wave.1} Barrel_Shifter_D_I_mux
+19:26:50    324 --> ...                                                                                                  [tcl] gui_list_collapse -id ${Wave.1} FS_Module
+19:26:51    325 --> ...  [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+19:26:51    326 --> ...      [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+19:26:51    327 --> ...          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+19:26:51    328 --> ...              [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+19:26:51    329 --> ...                  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+19:26:51    330 --> ...                      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+19:26:51    331 --> ...                          [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+19:26:51    332 --> ...                              [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+19:26:51    333 --> ...                                  [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group Add_Sub_Sgf_Oper_B_mux  -item Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux.ctrl -position below
+19:26:51    334 --> ...                                      [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
+19:26:51    335 --> ...                                          [tcl] gui_show_grid -id ${Wave.1} -enable false
+19:26:51    336 --> ...                                              [tcl] # Restore toplevel window zorder
+19:26:51    337 --> ...                                                  [tcl] # The toplevel window could be closed if it has no view/pane
+19:26:51    338 --> ...                                                      [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} }
+19:26:51    339 --> ...                                                          [tcl] #</Session>
+19:26:51    340 --> ...                                                              [tcl] synopsys::run
+19:26:51    341 --> ...                                                                  [tcl] set ucliGUI::state
+19:26:51    342 --> ...                                                                      [tcl] set ucliGUI::state
+19:26:51    343 --> ...                                                                          [tcl] gui_update_simulator_buttons
+19:26:51    344 --> ...                                                                              [tcl] set ucliGUI::state
+19:26:51    345 --> ...                                                                                  [tcl] set ucliGUI::state
+19:26:51    346 --> ...                                                                                      [tcl] catch {senv activeDomain} dveMisc::result 
+19:26:51    347 --> ...                                                                                          [tcl] set dveMisc::result
+19:26:51    348 --> ...                                                                                              [tcl] gui_update_simulator_buttons
+19:31:49    349 --> ...                                                                                                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+19:31:49    350 --> ...  [tcl] synopsys::finish
+19:31:49    351 --> ...      [tcl] set ucliGUI::state
+19:31:49    352 --> ...          [tcl] set ucliGUI::state
+19:31:49    353 --> ...              [tcl] catch {senv activeDomain} dveMisc::result 
+19:31:49    354 --> ...                  [tcl] set dveMisc::result
+19:31:49    355 --> ...                      [tcl] gui_update_simulator_buttons
+19:31:49    356 --> ...                          [tcl] catch {senv activeDomain} dveMisc::result 
+19:31:49    357 --> ...                              [tcl] set dveMisc::result
+19:31:49    358 --> ...                                  [tcl] ucli_exit

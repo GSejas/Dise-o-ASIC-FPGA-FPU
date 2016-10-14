@@ -1,4 +1,4 @@
-ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv  +v2k +lint=all -l log_name +define+SINGLE -ucligui
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
@@ -6,13 +6,13 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD2
-set ::dve_fid VPD2
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpWaELoY
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.27060}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.27060}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpA7idpW
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.7840}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.7840}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -21,24 +21,21 @@ config syscaddstructtypes
 synopsys::listing -disable
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Wed Oct 12 20:12:59 2016
+# Saved on Thu Oct 13 19:26:48 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
-# Toplevel windows open: 2
+# Toplevel windows open: 1
 # 	TopLevel.1
-# 	TopLevel.2
-#   Wave.1: 86 signals
-#   Group count = 10
-#   Group Testbench_FPU_Add_Subt signal count = 0
-#   Group Group1 signal count = 0
-#   Group Group2 signal count = 0
-#   Group Group3 signal count = 0
-#   Group Group4 signal count = 0
-#   Group Group5 signal count = 0
-#   Group Group6 signal count = 0
-#   Group Group7 signal count = 0
-#   Group Group8 signal count = 76
-#   Group Barrel_Shifter_module signal count = 12
+#   Source.1: Testbench_FPU_Add_Subt
+#   Wave.1: 108 signals
+#   Group count = 7
+#   Group Testbench_FPU_Add_Subt signal count = 24
+#   Group Add_Sub_Sgf_Oper_B_mux signal count = 5
+#   Group Add_Subt_Sgf_module signal count = 14
+#   Group Barrel_Shifter_module signal count = 11
+#   Group Barrel_Shifter_S_V_mux signal count = 6
+#   Group Barrel_Shifter_D_I_mux signal count = 5
+#   Group FS_Module signal count = 43
 # End_DVE_Session_Save_Info
 # DVE version: K-2015.09-SP2-3_Full64
 # DVE build date: Jun 15 2016 22:18:13
@@ -49,16 +46,15 @@ synopsys::listing -disable
 # Create and position top-level window: TopLevel.1
 set TopLevel.1 TopLevel.1
 # Docked window settings
-# MDI window settings
 set HSPane.1 HSPane.1
 set Hier.1 Hier.1
 set DLPane.1 DLPane.1
 set Data.1 Data.1
+set Console.1 Console.1
+# MDI window settings
+set Source.1 Source.1
 set Wave.1 Wave.1
 # End MDI window settings
-# Create and position top-level window: TopLevel.2
-set TopLevel.2 TopLevel.2
-# Docked window settings
 #</WindowLayout>
 #<Database>
 #</Database>
@@ -69,30 +65,30 @@ set TopLevel.2 TopLevel.2
 # Global: Signal Time Shift
 # Global: Signal Compare
 # Global: Signal Groups
-synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module} -scope "." -depth 1 -fid VPD2
-synopsys::dump -add {Testbench_FPU_Add_Subt.uut} -scope "." -depth 1 -fid VPD2
+synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_S_V_mux} -scope "." -depth 1 -fid VPD1
+synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module} -scope "." -depth 1 -fid VPD1
+synopsys::dump -add {Testbench_FPU_Add_Subt} -scope "." -depth 1 -fid VPD1
+synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module} -scope "." -depth 1 -fid VPD1
+synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Add_Sub_Sgf_Oper_B_mux} -scope "." -depth 1 -fid VPD1
+synopsys::dump -add {Testbench_FPU_Add_Subt.uut.FS_Module} -scope "." -depth 1 -fid VPD1
+synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_D_I_mux} -scope "." -depth 1 -fid VPD1
 set _session_group_1 Testbench_FPU_Add_Subt
 set Testbench_FPU_Add_Subt "$_session_group_1"
-set _session_group_2 Group1
-set Group1 "$_session_group_2"
-set _session_group_3 Group2
-set Group2 "$_session_group_3"
-set _session_group_4 Group3
-set Group3 "$_session_group_4"
-set _session_group_5 Group4
-set Group4 "$_session_group_5"
-set _session_group_6 Group5
-set Group5 "$_session_group_6"
-set _session_group_7 Group6
-set Group6 "$_session_group_7"
-set _session_group_8 Group7
-set Group7 "$_session_group_8"
-set _session_group_9 Group8
-set Group8 "$_session_group_9"
-set _session_group_10 Barrel_Shifter_module
-set Barrel_Shifter_module "$_session_group_10"
+set _session_group_2 Add_Sub_Sgf_Oper_B_mux
+set Add_Sub_Sgf_Oper_B_mux "$_session_group_2"
+set _session_group_3 Add_Subt_Sgf_module
+set Add_Subt_Sgf_module "$_session_group_3"
+set _session_group_4 Barrel_Shifter_module
+set Barrel_Shifter_module "$_session_group_4"
+set _session_group_5 Barrel_Shifter_S_V_mux
+set Barrel_Shifter_S_V_mux "$_session_group_5"
+set _session_group_6 Barrel_Shifter_D_I_mux
+set Barrel_Shifter_D_I_mux "$_session_group_6"
+set _session_group_7 FS_Module
+set FS_Module "$_session_group_7"
 # Global: Highlighting
 # Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
 # Post database loading setting...
 # Save global setting...
 # Wave/List view global setting
@@ -102,21 +98,27 @@ foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_
 # Hier 'Hier.1'
 catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt}
 catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt.uut}
-catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Barrel_Shifter_module}}
+catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module}}
 # Data 'Data.1'
+# Source 'Source.1'
 # View 'Wave.1'
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 set origGroupCreationState [gui_list_create_group_when_add -wave]
+synopsys::dump -add {Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.Array_IN_2 } -aggregates  -fid VPD1
 if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
 if { $groupExD } {  gui_msg_report -code DVWW028 }
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} }
-if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${HSPane.1} }
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} }
 #</Session>
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

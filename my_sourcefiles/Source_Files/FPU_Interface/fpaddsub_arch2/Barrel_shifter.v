@@ -36,7 +36,7 @@ module Barrel_Shifter
     output wire [SWR-1:0] N_mant_o
     );
     wire [SWR-1:0] Data_Reg;
-    wire load_o;
+
 
     ////////////////////////////////////////////////////7
 
@@ -49,14 +49,13 @@ module Barrel_Shifter
         .FSM_left_right_i(Left_Right_i),
         .Shift_Value_i(Shift_Value_i),
         .bit_shift_i(Bit_Shift_i),
-        .Data_o(Data_Reg),
-        .load_o(load_o)
+        .Data_o(Data_Reg)
         );
 
     RegisterAdd #(.W(SWR)) Output_Reg(
         .clk(clk),
         .rst(rst),
-        .load(load_o),
+        .load(load_i),
         .D(Data_Reg),
         .Q(N_mant_o)
         );

@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Mon Oct 10 01:12:14 2016
+Date   : Thu Oct 13 20:13:10 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Oper_Start_in_module_ASRegister_Q_reg_0_
+  Startpoint: Sel_D_Q_reg_0_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_
+  Endpoint: Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_54_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -23,63 +23,140 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  Oper_Start_in_module_ASRegister_Q_reg_0_/CK (DFFRX2TS)
-                                                          0.00       1.00 r
-  Oper_Start_in_module_ASRegister_Q_reg_0_/Q (DFFRX2TS)
-                                                          1.01       2.01 f
-  U2524/Y (XNOR2X4TS)                                     0.24       2.25 r
-  U1901/Y (XOR2X4TS)                                      0.22       2.46 f
-  U2525/Y (NOR2X4TS)                                      0.14       2.60 r
-  U2589/Y (BUFX3TS)                                       0.23       2.83 r
-  U2011/Y (XOR2XLTS)                                      0.28       3.11 r
-  U2013/Y (NOR2XLTS)                                      0.27       3.38 f
-  U1896/Y (OAI21XLTS)                                     0.38       3.76 r
-  U2629/Y (AOI21X1TS)                                     0.29       4.04 f
-  U2035/Y (OAI21XLTS)                                     0.28       4.33 r
-  U2635/Y (AOI21X1TS)                                     0.17       4.50 f
-  U2636/Y (OAI21X2TS)                                     0.13       4.62 r
-  U2640/Y (AOI21X2TS)                                     0.15       4.78 f
-  U3571/CO (AFHCINX2TS)                                   0.21       4.98 r
-  U3576/CON (AFHCONX2TS)                                  0.20       5.18 f
-  U2642/CO (ACHCINX4TS)                                   0.27       5.45 r
-  U3720/CON (AFHCONX2TS)                                  0.22       5.66 f
-  U2436/CO (AFHCINX4TS)                                   0.28       5.94 r
-  U3718/CON (AFHCONX2TS)                                  0.21       6.16 f
-  U1902/CO (AFHCINX4TS)                                   0.28       6.44 r
-  U3719/CON (AFHCONX2TS)                                  0.21       6.65 f
-  U3717/CO (AFHCINX4TS)                                   0.28       6.93 r
-  U3716/CON (AFHCONX2TS)                                  0.18       7.11 f
-  U1906/CO (AFHCINX2TS)                                   0.32       7.43 r
-  U3715/CON (AFHCONX2TS)                                  0.22       7.66 f
-  U1900/CO (AFHCINX4TS)                                   0.28       7.94 r
-  U2643/Y (OAI22X2TS)                                     0.17       8.10 f
-  U1899/CO (AFHCINX2TS)                                   0.21       8.31 r
-  U2644/Y (OAI22X2TS)                                     0.17       8.48 f
-  U2129/CO (AFHCINX2TS)                                   0.21       8.69 r
-  U2646/Y (OAI22X2TS)                                     0.17       8.86 f
-  U1905/CO (AFHCINX2TS)                                   0.21       9.06 r
-  U3714/CON (AFHCONX2TS)                                  0.18       9.25 f
-  U1801/CO (ACHCINX2TS)                                   0.30       9.55 r
-  U1892/Y (NAND2BX2TS)                                    0.15       9.70 f
-  U1908/Y (NAND2BX2TS)                                    0.11       9.82 r
-  U1903/Y (XOR2X4TS)                                      0.14       9.96 r
-  U1800/Y (CLKMX2X2TS)                                    0.28      10.24 r
-  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRXLTS)
-                                                          0.00      10.24 r
-  data arrival time                                                 10.24
+  Sel_D_Q_reg_0_/CK (DFFRX4TS)                            0.00       1.00 r
+  Sel_D_Q_reg_0_/Q (DFFRX4TS)                             0.99       1.99 r
+  Add_Sub_Sgf_Oper_B_mux_U56/Y (CLKINVX1TS)              10.30      12.29 f
+  U5/Y (NAND2X8TS)                                        5.33      17.63 r
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/B[2] (add_sub_carry_out_W55_DW01_sub_0)
+                                                          0.00      17.63 r
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U1_2/Y (INVX12TS)     0.84      18.47 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_2/CO (ADDFHX4TS)
+                                                          0.52      18.99 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_3/CO (ADDFHX4TS)
+                                                          0.28      19.27 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_4/CO (ADDFHX4TS)
+                                                          0.28      19.55 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_5/CO (ADDFHX4TS)
+                                                          0.28      19.83 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_6/CO (ADDFHX4TS)
+                                                          0.28      20.11 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_7/CO (ADDFHX4TS)
+                                                          0.28      20.39 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_8/CO (ADDFHX4TS)
+                                                          0.28      20.67 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_9/CO (ADDFHX4TS)
+                                                          0.28      20.95 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_10/CO (ADDFHX4TS)
+                                                          0.28      21.23 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_11/CO (ADDFHX4TS)
+                                                          0.28      21.51 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_12/CO (ADDFHX4TS)
+                                                          0.28      21.79 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_13/CO (ADDFHX4TS)
+                                                          0.28      22.07 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_14/CO (ADDFHX4TS)
+                                                          0.28      22.35 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_15/CO (ADDFHX4TS)
+                                                          0.28      22.63 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_16/CO (ADDFHX4TS)
+                                                          0.28      22.91 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_17/CO (ADDFHX4TS)
+                                                          0.28      23.19 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_18/CO (ADDFHX4TS)
+                                                          0.28      23.47 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_19/CO (ADDFHX4TS)
+                                                          0.28      23.75 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_20/CO (ADDFHX4TS)
+                                                          0.28      24.03 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_21/CO (ADDFHX4TS)
+                                                          0.28      24.31 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_22/CO (ADDFHX4TS)
+                                                          0.28      24.59 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_23/CO (ADDFHX4TS)
+                                                          0.28      24.87 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_24/CO (ADDFHX4TS)
+                                                          0.28      25.15 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_25/CO (ADDFHX4TS)
+                                                          0.28      25.43 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_26/CO (ADDFHX4TS)
+                                                          0.28      25.71 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_27/CO (ADDFHX4TS)
+                                                          0.28      25.99 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_28/CO (ADDFHX4TS)
+                                                          0.28      26.27 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_29/CO (ADDFHX4TS)
+                                                          0.28      26.55 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_30/CO (ADDFHX4TS)
+                                                          0.28      26.83 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_31/CO (ADDFHX4TS)
+                                                          0.28      27.11 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_32/CO (ADDFHX4TS)
+                                                          0.28      27.39 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_33/CO (ADDFHX4TS)
+                                                          0.28      27.67 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_34/CO (ADDFHX4TS)
+                                                          0.28      27.95 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_35/CO (ADDFHX4TS)
+                                                          0.28      28.23 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_36/CO (ADDFHX4TS)
+                                                          0.28      28.51 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_37/CO (ADDFHX4TS)
+                                                          0.28      28.79 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_38/CO (ADDFHX4TS)
+                                                          0.28      29.07 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_39/CO (ADDFHX4TS)
+                                                          0.28      29.35 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_40/CO (ADDFHX4TS)
+                                                          0.28      29.63 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_41/CO (ADDFHX4TS)
+                                                          0.28      29.91 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_42/CO (ADDFHX4TS)
+                                                          0.28      30.19 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_43/CO (ADDFHX4TS)
+                                                          0.28      30.47 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_44/CO (ADDFHX4TS)
+                                                          0.28      30.75 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_45/CO (ADDFHX4TS)
+                                                          0.28      31.03 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_46/CO (ADDFHX4TS)
+                                                          0.28      31.31 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_47/CO (ADDFHX4TS)
+                                                          0.28      31.59 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_48/CO (ADDFHX4TS)
+                                                          0.28      31.87 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_49/CO (ADDFHX4TS)
+                                                          0.28      32.15 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_50/CO (ADDFHX4TS)
+                                                          0.28      32.43 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_51/CO (ADDFHX4TS)
+                                                          0.28      32.71 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_52/CO (ADDFHX4TS)
+                                                          0.28      32.99 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_53/CO (ADDFHX4TS)
+                                                          0.28      33.27 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_54/S (ADDFHX4TS)
+                                                          0.35      33.62 f
+  Add_Subt_Sgf_module_Sgf_AS_sub_34/DIFF[54] (add_sub_carry_out_W55_DW01_sub_0)
+                                                          0.00      33.62 f
+  Add_Subt_Sgf_module_Sgf_AS_U11/Y (AO22X1TS)             0.39      34.01 f
+  Add_Subt_Sgf_module_Add_Subt_Result_U56/Y (OAI2BB2XLTS)
+                                                          0.29      34.30 f
+  Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_54_/D (DFFRX1TS)
+                                                          0.00      34.30 f
+  data arrival time                                                 34.30
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/CK (DFFRXLTS)
+  Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_54_/CK (DFFRX1TS)
                                                           0.00      10.50 r
-  library setup time                                     -0.25      10.25
-  data required time                                                10.25
+  library setup time                                     -0.27      10.23
+  data required time                                                10.23
   --------------------------------------------------------------------------
-  data required time                                                10.25
-  data arrival time                                                -10.24
+  data required time                                                10.23
+  data arrival time                                                -34.30
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.01
+  slack (VIOLATED)                                                 -24.07
 
 
 1
