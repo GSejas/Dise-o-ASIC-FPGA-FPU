@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : cell
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6_FSM_Add_Subtract
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 14:04:55 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+FS_Module                 FSM_Add_Subtract                570.240003
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 1 cells                                             570.240003
+1

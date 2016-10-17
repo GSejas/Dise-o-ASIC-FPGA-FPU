@@ -39,13 +39,6 @@ while {$x < 2} {
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK -ref
 link
-
-#  foreach module $SUBMODULE_NAME
-#  {
-#    write -hierarchy -format ddc -output \
-#    ./db/$PRECISION($x)/$module\_syn_unmapped.ddc
-#  }
-
 #Enlazar los demás módulos al módulo principal
 uniquify
 

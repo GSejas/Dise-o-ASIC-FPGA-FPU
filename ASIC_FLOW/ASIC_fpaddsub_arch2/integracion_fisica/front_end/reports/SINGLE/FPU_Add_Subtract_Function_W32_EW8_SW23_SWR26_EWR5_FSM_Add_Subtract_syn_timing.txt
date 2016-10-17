@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5_FSM_Add_Subtract
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 14:04:52 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: ack_FSM (input port clocked by clk)
+  Endpoint: FS_Module/state_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.50       4.50 f
+  ack_FSM (in)                                            0.00       4.50 f
+  FS_Module/rst_FSM (FSM_Add_Subtract)                    0.00       4.50 f
+  FS_Module/U37/Y (OAI22X1TS)                             0.31       4.81 r
+  FS_Module/U43/Y (AOI221X1TS)                            0.29       5.10 f
+  FS_Module/U42/Y (NAND4X1TS)                             0.16       5.26 r
+  FS_Module/state_reg_reg[1]/D (DFFRX2TS)                 0.00       5.26 r
+  data arrival time                                                  5.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FS_Module/state_reg_reg[1]/CK (DFFRX2TS)                0.00      10.50 r
+  library setup time                                     -0.29      10.21
+  data required time                                                10.21
+  --------------------------------------------------------------------------
+  data required time                                                10.21
+  data arrival time                                                 -5.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.95
+
+
+1
