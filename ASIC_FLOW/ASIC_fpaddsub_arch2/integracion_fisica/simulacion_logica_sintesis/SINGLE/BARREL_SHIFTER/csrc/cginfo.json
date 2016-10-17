@@ -1,0 +1,191 @@
+{
+    "NameTable": {
+        "CLKBUFX2TS": [
+            "CLKBUFX2TS",
+            "EKMET",
+            "module"
+        ],
+        "shift_mux_array_SWR26_LEVEL3": [
+            "shift_mux_array_SWR26_LEVEL3",
+            "aEuvJ",
+            "module"
+        ],
+        "Rotate_Mux_Array_SWR26_1": [
+            "Rotate_Mux_Array_SWR26_1",
+            "HHA8S",
+            "module"
+        ],
+        "AO22X1TS": [
+            "AO22X1TS",
+            "mnYhr",
+            "module"
+        ],
+        "RegisterAdd_W26_1": [
+            "RegisterAdd_W26_1",
+            "QxAuw",
+            "module"
+        ],
+        "shift_mux_array_SWR26_LEVEL0": [
+            "shift_mux_array_SWR26_LEVEL0",
+            "SudgA",
+            "module"
+        ],
+        "shift_mux_array_SWR26_LEVEL1": [
+            "shift_mux_array_SWR26_LEVEL1",
+            "JeuSF",
+            "module"
+        ],
+        "Testbench_Barrel_Shifter": [
+            "Testbench_Barrel_Shifter",
+            "VHunS",
+            "module"
+        ],
+        "OAI2BB2XLTS": [
+            "OAI2BB2XLTS",
+            "HG8j1",
+            "module"
+        ],
+        "shift_mux_array_SWR26_LEVEL2": [
+            "shift_mux_array_SWR26_LEVEL2",
+            "ej4pt",
+            "module"
+        ],
+        "OAI2BB1X1TS": [
+            "OAI2BB1X1TS",
+            "qnwuA",
+            "module"
+        ],
+        "shift_mux_array_SWR26_LEVEL4": [
+            "shift_mux_array_SWR26_LEVEL4",
+            "W1His",
+            "module"
+        ],
+        "Multiplexer_AC_W1_9": [
+            "Multiplexer_AC_W1_9",
+            "D1Frg",
+            "module"
+        ],
+        "Rotate_Mux_Array_SWR26_0": [
+            "Rotate_Mux_Array_SWR26_0",
+            "Q5PGr",
+            "module"
+        ],
+        "INVX2TS": [
+            "INVX2TS",
+            "vphTK",
+            "module"
+        ],
+        "OAI21X1TS": [
+            "OAI21X1TS",
+            "dezJx",
+            "module"
+        ],
+        "OAI22X1TS": [
+            "OAI22X1TS",
+            "bqZmw",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "udp_dff": [
+            "udp_dff",
+            "exIG1",
+            "udp"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "mopSpeed": 160630.85377566272,
+        "outputSizePerQuad": 44.0,
+        "ru_self_cgstart": {
+            "ru_nivcsw": 115,
+            "ru_utime_sec": 0.27795700000000001,
+            "ru_stime_sec": 0.086985999999999994,
+            "ru_maxrss_kb": 53336,
+            "ru_majflt": 0,
+            "ru_minflt": 13982,
+            "ru_nvcsw": 55
+        },
+        "nMops": 44488,
+        "ru_childs_cgstart": {
+            "ru_nivcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0
+        },
+        "Frontend(%)": 50.090013785895131,
+        "nQuads": 19051,
+        "ru_self_end": {
+            "ru_nivcsw": 134,
+            "ru_utime_sec": 0.55491500000000005,
+            "ru_stime_sec": 0.110983,
+            "ru_maxrss_kb": 66300,
+            "ru_majflt": 0,
+            "ru_minflt": 17708,
+            "ru_nvcsw": 55
+        },
+        "totalObjSize": 841260,
+        "ru_childs_end": {
+            "ru_nivcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0
+        },
+        "quadSpeed": 68786.603022840995,
+        "mop/quad": 2.3352055010235682,
+        "CodeGen(%)": 49.909986214104869
+    },
+    "CurCompileUdps": {
+        "udp_dff": "objs/udps/exIG1.o"
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 91850
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "Rotate_Mux_Array_SWR26_1",
+        "shift_mux_array_SWR26_LEVEL0",
+        "shift_mux_array_SWR26_LEVEL1",
+        "shift_mux_array_SWR26_LEVEL2",
+        "shift_mux_array_SWR26_LEVEL3",
+        "shift_mux_array_SWR26_LEVEL4",
+        "Multiplexer_AC_W1_9",
+        "Rotate_Mux_Array_SWR26_0",
+        "RegisterAdd_W26_1",
+        "Testbench_Barrel_Shifter",
+        "INVX2TS",
+        "AO22X1TS",
+        "OAI21X1TS",
+        "OAI22X1TS",
+        "OAI2BB1X1TS",
+        "OAI2BB2XLTS",
+        "CLKBUFX2TS"
+    ],
+    "Misc": {
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/BARREL_SHIFTER",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/BARREL_SHIFTER/simv.daidir",
+        "daidir": "simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/BARREL_SHIFTER/csrc",
+        "archive_dir": "archive.0",
+        "default_output_dir": "csrc"
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.26383.json"
+    ],
+    "CompileStatus": "Successful"
+}

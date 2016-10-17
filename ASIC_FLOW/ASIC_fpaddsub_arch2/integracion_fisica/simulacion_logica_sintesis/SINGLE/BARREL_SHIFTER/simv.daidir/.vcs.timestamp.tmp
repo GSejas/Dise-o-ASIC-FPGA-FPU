@@ -1,0 +1,97 @@
+0 
+38
++cli+4
++define+SYN_SINGLE
++itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
++lint=all
++memcbk
++v2k
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/include
+-Xvcs_run_simv=1
+-debug=3
+-f file_list
+-full64
+-gen_obj
+-gui
+-l
+-picarchive
+-timescale=1ns/1ps
+-ucli
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
+log_name
+43
+sysc_uni_pwd=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/BARREL_SHIFTER
+XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1473191807.138297-433824659
+VNCDESKTOP=zener:21 (jsequeira)
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=log_name
+VCS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64
+SYSFONT=latarcyrheb-sun16
+SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/
+SSH_TTY=/dev/pts/27
+SSH_CONNECTION=172.21.16.52 56536 172.21.16.5 22
+SSH_CLIENT=172.21.16.52 56536 22
+SSH_AUTH_SOCK=/tmp/keyring-A5EQMz/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=20259
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/20257,unix/unix:/tmp/.ICE-unix/20257
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-jsequeira
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/jsequeira/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-A5EQMz/socket
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-CDItn4lBcc,guid=841458e6fa3ecdc8dbee3e8e000ac06f
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+0
+6
+1476069623 ibm13rflpvt.v
+1476069623 ibm13rflpvt.v
+1476737721 Testbench_Barrel_Shifter.v
+1476737496 ../../../front_end/db/SINGLE/Barrel_Shifter_syn.v
+1476737813 file_list
+1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
+4
+0 
+1466053571 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so
+1466053201 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so
+1466053168 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so

@@ -3,7 +3,7 @@
 Report : qor
 Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6_FSM_Add_Subtract
 Version: L-2016.03-SP3
-Date   : Mon Oct 17 14:04:55 2016
+Date   : Mon Oct 17 14:34:20 2016
 ****************************************
 
 
@@ -67,8 +67,8 @@ Date   : Mon Oct 17 14:04:55 2016
   Logic Optimization:                  0.22
   Mapping Optimization:                0.52
   -----------------------------------------
-  Overall Compile Time:                2.77
-  Overall Compile Wall Clock Time:     3.02
+  Overall Compile Time:                2.76
+  Overall Compile Wall Clock Time:     3.00
 
   --------------------------------------------------------------------
 

@@ -38,15 +38,31 @@ while {$x < 2} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK -ref
-
-
-  foreach module $SUBMODULE_NAME
-  {
-    list_designs
-    write -hierarchy -format ddc -output \
-    ./db/$PRECISION($x)/$module\_syn_unmapped.ddc
-  }
 link
+
+  foreach module $SUBMODULE_NAME {
+	elaborate $module 
+	write -hierarchy -format ddc -output \
+	./db/$PRECISION($x)/$module\_syn_unmapped.ddc
+	uniquify
+	source $CONTRAINTS_FILE_NAME
+	propagate_constraints
+	check_design
+	compile
+	write -hierarchy -format verilog -output \
+	./db/$PRECISION($x)/$module\_syn.v 
+	report_power -analysis_effort high > reports/$TOP_NAME\_$PRECISION($x)_syn_power.txt
+	report_area >   reports/$PRECISION($x)/$TOP_NAME\_syn_area.txt
+	report_cell >   reports/$PRECISION($x)/$TOP_NAME\_syn_cell.txt
+	report_qor >    reports/$PRECISION($x)/$TOP_NAME\_syn_qor.txt
+	report_timing > reports/$PRECISION($x)/$TOP_NAME\_syn_timing.txt
+	report_port >   reports/$PRECISION($x)/$TOP_NAME\_syn_port.txt
+
+	#Escribir el archivo *.ddc (base de datos sintetizada)
+	write -hierarchy -format ddc -output \
+	./db/$PRECISION($x)/$TOP_NAME\_syn_mapped.ddc
+  }
+
 #  foreach module $SUBMODULE_NAME
 #  {
 #    write -hierarchy -format ddc -output \
@@ -59,7 +75,7 @@ uniquify
 
 #Escribir el archivo *.ddc (base de datos sin sintetizar)
 write -hierarchy -format ddc -output \
-./db/$PRECISION($x)/$current_design\_syn_unmapped.ddc
+./db/$PRECISION($x)/$TOP_NAME\_syn_unmapped.ddc
 
 #Aplicar especificaciones de diseño (constraints)
 source $CONTRAINTS_FILE_NAME
@@ -78,7 +94,7 @@ set verilogout_no_tri true
 #change_names -hierarchy -rules verilog
 
 write -hierarchy -format verilog -output \
-./db/$PRECISION($x)/$current_design\_syn.v
+./db/$PRECISION($x)/$TOP_NAME\_syn.v
 
 #  foreach module $SUBMODULE_NAME
 #  {
@@ -88,20 +104,20 @@ write -hierarchy -format verilog -output \
 
 #Generar los reportes
 
-report_power -analysis_effort high > reports/$current_design\_$PRECISION($x)_syn_power.txt
-report_area >   reports/$PRECISION($x)/$current_design\_syn_area.txt
-report_cell >   reports/$PRECISION($x)/$current_design\_syn_cell.txt
-report_qor >    reports/$PRECISION($x)/$current_design\_syn_qor.txt
-report_timing > reports/$PRECISION($x)/$current_design\_syn_timing.txt
-report_port >   reports/$PRECISION($x)/$current_design\_syn_port.txt
+report_power -analysis_effort high > reports/$TOP_NAME\_$PRECISION($x)_syn_power.txt
+report_area >   reports/$PRECISION($x)/$TOP_NAME\_syn_area.txt
+report_cell >   reports/$PRECISION($x)/$TOP_NAME\_syn_cell.txt
+report_qor >    reports/$PRECISION($x)/$TOP_NAME\_syn_qor.txt
+report_timing > reports/$PRECISION($x)/$TOP_NAME\_syn_timing.txt
+report_port >   reports/$PRECISION($x)/$TOP_NAME\_syn_port.txt
 
 #Escribir el archivo *.ddc (base de datos sintetizada)
 write -hierarchy -format ddc -output \
-./db/$PRECISION($x)/$current_design\_syn_mapped.ddc
+./db/$PRECISION($x)/$TOP_NAME\_syn_mapped.ddc
 
 #Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
 #para el sintetizador físico (IC Compiler)
-write_sdc ./db/$PRECISION($x)/$current_design\_syn.sdc
+write_sdc ./db/$PRECISION($x)/$TOP_NAME\_syn.sdc
 
 #Revisar la configuración de temporizado
 check_timing

@@ -1,0 +1,295 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "CLKBUFX2TS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_SWR26_LEVEL3": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_SWR26_1": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "AO22X1TS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "RegisterAdd_W26_1": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_SWR26_LEVEL0": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "OAI2BB2XLTS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_SWR26_LEVEL1": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Testbench_Barrel_Shifter": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_SWR26_LEVEL2": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "OAI2BB1X1TS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_SWR26_LEVEL4": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer_AC_W1_9": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_SWR26_0": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "INVX2TS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "OAI21X1TS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "OAI22X1TS": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "VHunS_d": {
+            "mod": "Testbench_Barrel_Shifter",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "VHunS_d.o",
+            "bytes": 311564
+        },
+        "ej4pt_d": {
+            "mod": "shift_mux_array_SWR26_LEVEL2",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "ej4pt_d.o",
+            "bytes": 12866
+        },
+        "qnwuA_d": {
+            "mod": "OAI2BB1X1TS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "qnwuA_d.o",
+            "bytes": 8763
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7117
+        },
+        "dezJx_d": {
+            "mod": "OAI21X1TS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "dezJx_d.o",
+            "bytes": 8650
+        },
+        "SudgA_d": {
+            "mod": "shift_mux_array_SWR26_LEVEL0",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "SudgA_d.o",
+            "bytes": 10390
+        },
+        "HHA8S_d": {
+            "mod": "Rotate_Mux_Array_SWR26_1",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "HHA8S_d.o",
+            "bytes": 11198
+        },
+        "Q5PGr_d": {
+            "mod": "Rotate_Mux_Array_SWR26_0",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "Q5PGr_d.o",
+            "bytes": 10942
+        },
+        "JeuSF_d": {
+            "mod": "shift_mux_array_SWR26_LEVEL1",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "JeuSF_d.o",
+            "bytes": 12450
+        },
+        "aEuvJ_d": {
+            "mod": "shift_mux_array_SWR26_LEVEL3",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "aEuvJ_d.o",
+            "bytes": 12150
+        },
+        "W1His_d": {
+            "mod": "shift_mux_array_SWR26_LEVEL4",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "W1His_d.o",
+            "bytes": 12150
+        },
+        "D1Frg_d": {
+            "mod": "Multiplexer_AC_W1_9",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "D1Frg_d.o",
+            "bytes": 6714
+        },
+        "HG8j1_d": {
+            "mod": "OAI2BB2XLTS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "HG8j1_d.o",
+            "bytes": 11301
+        },
+        "QxAuw_d": {
+            "mod": "RegisterAdd_W26_1",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "QxAuw_d.o",
+            "bytes": 278775
+        },
+        "vphTK_d": {
+            "mod": "INVX2TS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "vphTK_d.o",
+            "bytes": 6032
+        },
+        "mnYhr_d": {
+            "mod": "AO22X1TS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "mnYhr_d.o",
+            "bytes": 11083
+        },
+        "EKMET_d": {
+            "mod": "CLKBUFX2TS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "EKMET_d.o",
+            "bytes": 6064
+        },
+        "bqZmw_d": {
+            "mod": "OAI22X1TS",
+            "archive": "archive.0/_26383_archive_1.a",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "bqZmw_d.o",
+            "bytes": 11201
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "HHA8S_d.o",
+                    11198
+                ],
+                [
+                    "SudgA_d.o",
+                    10390
+                ],
+                [
+                    "JeuSF_d.o",
+                    12450
+                ],
+                [
+                    "ej4pt_d.o",
+                    12866
+                ],
+                [
+                    "aEuvJ_d.o",
+                    12150
+                ],
+                [
+                    "W1His_d.o",
+                    12150
+                ],
+                [
+                    "D1Frg_d.o",
+                    6714
+                ],
+                [
+                    "Q5PGr_d.o",
+                    10942
+                ],
+                [
+                    "QxAuw_d.o",
+                    278775
+                ],
+                [
+                    "VHunS_d.o",
+                    311564
+                ],
+                [
+                    "vphTK_d.o",
+                    6032
+                ],
+                [
+                    "mnYhr_d.o",
+                    11083
+                ],
+                [
+                    "dezJx_d.o",
+                    8650
+                ],
+                [
+                    "bqZmw_d.o",
+                    11201
+                ],
+                [
+                    "qnwuA_d.o",
+                    8763
+                ],
+                [
+                    "HG8j1_d.o",
+                    11301
+                ],
+                [
+                    "EKMET_d.o",
+                    6064
+                ]
+            ],
+            "archive": "archive.0/_26383_archive_1.a",
+            "size": 742293
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "CLKBUFX2TS": [
+        "CLKBUFX2TS",
+        "EKMET",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL3": [
+        "shift_mux_array_SWR26_LEVEL3",
+        "aEuvJ",
+        "module"
+    ],
+    "Rotate_Mux_Array_SWR26_1": [
+        "Rotate_Mux_Array_SWR26_1",
+        "HHA8S",
+        "module"
+    ],
+    "AO22X1TS": [
+        "AO22X1TS",
+        "mnYhr",
+        "module"
+    ],
+    "RegisterAdd_W26_1": [
+        "RegisterAdd_W26_1",
+        "QxAuw",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL0": [
+        "shift_mux_array_SWR26_LEVEL0",
+        "SudgA",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL1": [
+        "shift_mux_array_SWR26_LEVEL1",
+        "JeuSF",
+        "module"
+    ],
+    "Testbench_Barrel_Shifter": [
+        "Testbench_Barrel_Shifter",
+        "VHunS",
+        "module"
+    ],
+    "OAI2BB2XLTS": [
+        "OAI2BB2XLTS",
+        "HG8j1",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL2": [
+        "shift_mux_array_SWR26_LEVEL2",
+        "ej4pt",
+        "module"
+    ],
+    "OAI2BB1X1TS": [
+        "OAI2BB1X1TS",
+        "qnwuA",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL4": [
+        "shift_mux_array_SWR26_LEVEL4",
+        "W1His",
+        "module"
+    ],
+    "Multiplexer_AC_W1_9": [
+        "Multiplexer_AC_W1_9",
+        "D1Frg",
+        "module"
+    ],
+    "Rotate_Mux_Array_SWR26_0": [
+        "Rotate_Mux_Array_SWR26_0",
+        "Q5PGr",
+        "module"
+    ],
+    "INVX2TS": [
+        "INVX2TS",
+        "vphTK",
+        "module"
+    ],
+    "OAI21X1TS": [
+        "OAI21X1TS",
+        "dezJx",
+        "module"
+    ],
+    "OAI22X1TS": [
+        "OAI22X1TS",
+        "bqZmw",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "udp_dff": [
+        "udp_dff",
+        "exIG1",
+        "udp"
+    ]
+}
