@@ -38,8 +38,15 @@ while {$x < 2} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK -ref
-link
 
+
+  foreach module $SUBMODULE_NAME
+  {
+    list_designs
+    write -hierarchy -format ddc -output \
+    ./db/$PRECISION($x)/$module\_syn_unmapped.ddc
+  }
+link
 #  foreach module $SUBMODULE_NAME
 #  {
 #    write -hierarchy -format ddc -output \
