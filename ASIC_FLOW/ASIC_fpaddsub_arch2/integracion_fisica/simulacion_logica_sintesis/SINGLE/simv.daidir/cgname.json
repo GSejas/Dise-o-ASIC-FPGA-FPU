@@ -1,0 +1,337 @@
+{
+    "FSM_Add_Subtract": [
+        "FSM_Add_Subtract",
+        "tsP6I",
+        "module"
+    ],
+    "RegisterAdd_W1_0": [
+        "RegisterAdd_W1_0",
+        "DFhLq",
+        "module"
+    ],
+    "Tenth_Phase_W32_EW8_SW23": [
+        "Tenth_Phase_W32_EW8_SW23",
+        "msKkD",
+        "module"
+    ],
+    "Mux_3x1_W8": [
+        "Mux_3x1_W8",
+        "ZBqQY",
+        "module"
+    ],
+    "xor_tri_W32": [
+        "xor_tri_W32",
+        "vZBze",
+        "module"
+    ],
+    "ADDFHX4TS": [
+        "ADDFHX4TS",
+        "JFQ4S",
+        "module"
+    ],
+    "RegisterAdd_W31_1": [
+        "RegisterAdd_W31_1",
+        "UVEp8",
+        "module"
+    ],
+    "AND2X8TS": [
+        "AND2X8TS",
+        "mnxLv",
+        "module"
+    ],
+    "AOI211X1TS": [
+        "AOI211X1TS",
+        "UcgRe",
+        "module"
+    ],
+    "RegisterAdd_W1_7": [
+        "RegisterAdd_W1_7",
+        "YKNbB",
+        "module"
+    ],
+    "AOI22X1TS": [
+        "AOI22X1TS",
+        "qwLJd",
+        "module"
+    ],
+    "NOR4BBX1TS": [
+        "NOR4BBX1TS",
+        "ZwEHk",
+        "module"
+    ],
+    "Comparator_W31": [
+        "Comparator_W31",
+        "LFpm5",
+        "module"
+    ],
+    "RegisterAdd_W2": [
+        "RegisterAdd_W2",
+        "ZFFWk",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL2": [
+        "shift_mux_array_SWR26_LEVEL2",
+        "ej4pt",
+        "module"
+    ],
+    "NAND3BX1TS": [
+        "NAND3BX1TS",
+        "ukewC",
+        "module"
+    ],
+    "LZD_SWR26_EWR5": [
+        "LZD_SWR26_EWR5",
+        "qz2nS",
+        "module"
+    ],
+    "RegisterAdd_W32_2": [
+        "RegisterAdd_W32_2",
+        "fJ9yB",
+        "module"
+    ],
+    "MX2X6TS": [
+        "MX2X6TS",
+        "jbpWu",
+        "module"
+    ],
+    "sgn_result": [
+        "sgn_result",
+        "M9GPN",
+        "module"
+    ],
+    "OAI2BB2XLTS": [
+        "OAI2BB2XLTS",
+        "HG8j1",
+        "module"
+    ],
+    "Multiplexer_AC_W23": [
+        "Multiplexer_AC_W23",
+        "tCQx2",
+        "module"
+    ],
+    "MultiplexTxT_W31": [
+        "MultiplexTxT_W31",
+        "yUbAc",
+        "module"
+    ],
+    "OAI32X1TS": [
+        "OAI32X1TS",
+        "f3qvy",
+        "module"
+    ],
+    "Multiplexer_AC_W8_0": [
+        "Multiplexer_AC_W8_0",
+        "pstvN",
+        "module"
+    ],
+    "RegisterAdd_W31_0": [
+        "RegisterAdd_W31_0",
+        "NWdV9",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL3": [
+        "shift_mux_array_SWR26_LEVEL3",
+        "aEuvJ",
+        "module"
+    ],
+    "Exp_Operation_EW8": [
+        "Exp_Operation_EW8",
+        "U9fnC",
+        "module"
+    ],
+    "Testbench_FPU_Add_Subt": [
+        "Testbench_FPU_Add_Subt",
+        "kar0c",
+        "module"
+    ],
+    "Multiplexer_AC_W26_0": [
+        "Multiplexer_AC_W26_0",
+        "c1D09",
+        "module"
+    ],
+    "Mux_3x1_W5": [
+        "Mux_3x1_W5",
+        "qpDxk",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL4": [
+        "shift_mux_array_SWR26_LEVEL4",
+        "W1His",
+        "module"
+    ],
+    "Mux_3x1_W1": [
+        "Mux_3x1_W1",
+        "ss21q",
+        "module"
+    ],
+    "Multiplexer_AC_W8_1": [
+        "Multiplexer_AC_W8_1",
+        "c8j3J",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL0": [
+        "shift_mux_array_SWR26_LEVEL0",
+        "SudgA",
+        "module"
+    ],
+    "shift_mux_array_SWR26_LEVEL1": [
+        "shift_mux_array_SWR26_LEVEL1",
+        "JeuSF",
+        "module"
+    ],
+    "Multiplexer_AC_W1_9": [
+        "Multiplexer_AC_W1_9",
+        "D1Frg",
+        "module"
+    ],
+    "NAND2X8TS": [
+        "NAND2X8TS",
+        "sTuar",
+        "module"
+    ],
+    "Rotate_Mux_Array_SWR26_1": [
+        "Rotate_Mux_Array_SWR26_1",
+        "HHA8S",
+        "module"
+    ],
+    "NOR3X1TS": [
+        "NOR3X1TS",
+        "TwzRn",
+        "module"
+    ],
+    "Mux_Array_SWR26_EWR5": [
+        "Mux_Array_SWR26_EWR5",
+        "yUR81",
+        "module"
+    ],
+    "INVX2TS": [
+        "INVX2TS",
+        "vphTK",
+        "module"
+    ],
+    "add_sub_carry_out_W26_DW01_sub_0": [
+        "add_sub_carry_out_W26_DW01_sub_0",
+        "fHDGD",
+        "module"
+    ],
+    "add_sub_carry_out_W26_DW01_add_0": [
+        "add_sub_carry_out_W26_DW01_add_0",
+        "jIZvR",
+        "module"
+    ],
+    "XOR2X1TS": [
+        "XOR2X1TS",
+        "sxiVF",
+        "module"
+    ],
+    "NOR3BX1TS": [
+        "NOR3BX1TS",
+        "qi0gZ",
+        "module"
+    ],
+    "AND3X1TS": [
+        "AND3X1TS",
+        "RGi2M",
+        "module"
+    ],
+    "AOI221X1TS": [
+        "AOI221X1TS",
+        "ff9t5",
+        "module"
+    ],
+    "AOI31X1TS": [
+        "AOI31X1TS",
+        "VtVU1",
+        "module"
+    ],
+    "OR4X1TS": [
+        "OR4X1TS",
+        "HQEjF",
+        "module"
+    ],
+    "AOI32X1TS": [
+        "AOI32X1TS",
+        "bYNep",
+        "module"
+    ],
+    "AO22X1TS": [
+        "AO22X1TS",
+        "mnYhr",
+        "module"
+    ],
+    "NAND4X1TS": [
+        "NAND4X1TS",
+        "uqUWe",
+        "module"
+    ],
+    "NAND2BX1TS": [
+        "NAND2BX1TS",
+        "HWWrq",
+        "module"
+    ],
+    "DFFRXLTS": [
+        "DFFRXLTS",
+        "GPEPC",
+        "module"
+    ],
+    "NOR2BX1TS": [
+        "NOR2BX1TS",
+        "S4pTH",
+        "module"
+    ],
+    "OR2X8TS": [
+        "OR2X8TS",
+        "Jv6sP",
+        "module"
+    ],
+    "OAI2BB1X1TS": [
+        "OAI2BB1X1TS",
+        "qnwuA",
+        "module"
+    ],
+    "OR3X1TS": [
+        "OR3X1TS",
+        "ikx7B",
+        "module"
+    ],
+    "OAI21X1TS": [
+        "OAI21X1TS",
+        "dezJx",
+        "module"
+    ],
+    "OAI211X1TS": [
+        "OAI211X1TS",
+        "Dyqva",
+        "module"
+    ],
+    "OAI22X1TS": [
+        "OAI22X1TS",
+        "bqZmw",
+        "module"
+    ],
+    "XNOR2X4TS": [
+        "XNOR2X4TS",
+        "GL4iV",
+        "module"
+    ],
+    "CLKBUFX20TS": [
+        "CLKBUFX20TS",
+        "gjL4H",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "udp_mux2": [
+        "udp_mux2",
+        "U7Vwg",
+        "udp"
+    ],
+    "udp_dff": [
+        "udp_dff",
+        "exIG1",
+        "udp"
+    ]
+}

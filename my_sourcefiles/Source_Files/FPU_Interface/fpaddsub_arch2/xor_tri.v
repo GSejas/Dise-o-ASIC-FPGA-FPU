@@ -21,7 +21,7 @@
 
 
 module xor_tri
-	# (parameter W = 0)
+	# (parameter W = 1)
 	(
         input wire A_i,
         input wire B_i,

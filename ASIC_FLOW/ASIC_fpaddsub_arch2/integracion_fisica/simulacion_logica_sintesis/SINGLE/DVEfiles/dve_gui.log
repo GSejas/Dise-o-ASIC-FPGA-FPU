@@ -1,0 +1,122 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 28 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 14 02:40 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd' was opened successfully.
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_11_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_13_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_14_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_15_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_17_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_1_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_22_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_23_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_24_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_26_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_27_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_28_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_29_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_2_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_4_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_7_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_9_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_19_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_20_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_21_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_22_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_23_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_25_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_26_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_27_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_28_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_29_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_3_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_5_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_6_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_8_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+"ibm13rflpvt.v", 23508: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q_reg_9_
+    $hold( posedge CK &&& (flag == 1'b1):155000, negedge D:155000, limit: 500 );
+
+
+"ibm13rflpvt.v", 23589: Timing violation in Testbench_FPU_Add_Subt.uut.FS_Module.state_reg_reg_2_
+    $hold( posedge CK &&& (flag == 1'b1):175000, posedge D:175000, limit: 500 );
+
+
+"ibm13rflpvt.v", 23590: Timing violation in Testbench_FPU_Add_Subt.uut.FS_Module.state_reg_reg_2_
+    $hold( posedge CK &&& (flag == 1'b1):185000, negedge D:185000, limit: 500 );
+
+ok
+
+ok
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 275236985000 ps
+CPU Time:     28.030 seconds;       Data structure size:   1.1Mb
+Fri Oct 14 02:57:33 2016

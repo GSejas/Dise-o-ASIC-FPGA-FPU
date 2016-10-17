@@ -21,12 +21,12 @@
 
 
 module xor_tri
-	# (parameter W = 6)
+	# (parameter W = 0)
 	(
-        input [W-1:0] wire A_i,
-        input [W-1:0] wire B_i,
-        input [W-1:0] wire C_i,
-        output [W-1:0] wire Z_o
+        input wire A_i,
+        input wire B_i,
+        input wire C_i,
+        output wire Z_o
     );
     
     assign Z_o = A_i ^ B_i ^C_i;

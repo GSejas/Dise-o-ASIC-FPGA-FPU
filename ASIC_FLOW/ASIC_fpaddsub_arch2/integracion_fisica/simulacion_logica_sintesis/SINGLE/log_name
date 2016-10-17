@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
 -timescale=1ns/1ps
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Thu Oct 13 20:25:56 2016
+      Version K-2015.09-SP2-3_Full64 -- Fri Oct 14 02:40:38 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -8484,137 +8484,77 @@ ibm13rflpvt.v, 23556
 
 Starting vcs inline pass...
 64 modules and 2 UDPs read.
-	However, due to incremental compilation, only 60 modules need to be compiled.
-recompiling module FSM_Add_Subtract because:
-	Generated file (tsP6I) not found, or not incremental.
-recompiling module RegisterAdd_W1_0 because:
-	Generated file (DFhLq) not found, or not incremental.
-recompiling module RegisterAdd_W1_7 because:
-	Generated file (YKNbB) not found, or not incremental.
-recompiling module RegisterAdd_W2 because:
-	Generated file (ZFFWk) not found, or not incremental.
-recompiling module RegisterAdd_W32_2 because:
-	Generated file (fJ9yB) not found, or not incremental.
-recompiling module Comparator_W31 because:
-	Generated file (LFpm5) not found, or not incremental.
-recompiling module xor_tri_W32 because:
-	Generated file (vZBze) not found, or not incremental.
-recompiling module sgn_result because:
-	Generated file (M9GPN) not found, or not incremental.
-recompiling module MultiplexTxT_W31 because:
-	Generated file (yUbAc) not found, or not incremental.
-recompiling module RegisterAdd_W31_0 because:
-	Generated file (NWdV9) not found, or not incremental.
-recompiling module RegisterAdd_W31_1 because:
-	Generated file (UVEp8) not found, or not incremental.
-recompiling module Multiplexer_AC_W8_0 because:
-	Generated file (pstvN) not found, or not incremental.
-recompiling module Mux_3x1_W8 because:
-	Generated file (ZBqQY) not found, or not incremental.
-recompiling module Exp_Operation_EW8 because:
-	Generated file (U9fnC) not found, or not incremental.
-recompiling module Mux_3x1_W5 because:
-	Generated file (qpDxk) not found, or not incremental.
-recompiling module Multiplexer_AC_W26_0 because:
-	Generated file (c1D09) not found, or not incremental.
-recompiling module LZD_SWR26_EWR5 because:
-	Generated file (qz2nS) not found, or not incremental.
-recompiling module Mux_3x1_W1 because:
-	Generated file (ss21q) not found, or not incremental.
-recompiling module Multiplexer_AC_W8_1 because:
-	Generated file (c8j3J) not found, or not incremental.
-recompiling module Multiplexer_AC_W23 because:
-	Generated file (tCQx2) not found, or not incremental.
-recompiling module Tenth_Phase_W32_EW8_SW23 because:
-	Generated file (msKkD) not found, or not incremental.
-recompiling module shift_mux_array_SWR26_LEVEL0 because:
-	Generated file (SudgA) not found, or not incremental.
-recompiling module shift_mux_array_SWR26_LEVEL1 because:
-	Generated file (JeuSF) not found, or not incremental.
-recompiling module shift_mux_array_SWR26_LEVEL2 because:
-	Generated file (ej4pt) not found, or not incremental.
-recompiling module shift_mux_array_SWR26_LEVEL3 because:
-	Generated file (aEuvJ) not found, or not incremental.
-recompiling module shift_mux_array_SWR26_LEVEL4 because:
-	Generated file (W1His) not found, or not incremental.
-recompiling module Multiplexer_AC_W1_9 because:
-	Generated file (D1Frg) not found, or not incremental.
-recompiling module Rotate_Mux_Array_SWR26_1 because:
-	Generated file (HHA8S) not found, or not incremental.
-recompiling module Mux_Array_SWR26_EWR5 because:
-	Generated file (yUR81) not found, or not incremental.
-recompiling module add_sub_carry_out_W26_DW01_sub_0 because:
-	Generated file (fHDGD) not found, or not incremental.
-recompiling module add_sub_carry_out_W26_DW01_add_0 because:
-	Generated file (jIZvR) not found, or not incremental.
-recompiling module Testbench_FPU_Add_Subt because:
-	This module or some inlined child module(s) has/have been modified.
-recompiling module INVX2TS because:
-	Signal dependencies have changed
-recompiling module AND2X8TS because:
-	Generated file (mnxLv) not found, or not incremental.
-recompiling module AND3X1TS because:
-	Generated file (RGi2M) not found, or not incremental.
-recompiling module AOI211X1TS because:
-	Generated file (UcgRe) not found, or not incremental.
-recompiling module AOI22X1TS because:
-	This module or some inlined child module(s) has/have been modified.
-recompiling module AOI221X1TS because:
-	Generated file (ff9t5) not found, or not incremental.
-recompiling module AOI31X1TS because:
-	Generated file (VtVU1) not found, or not incremental.
-recompiling module AOI32X1TS because:
-	Signal dependencies have changed
-recompiling module AO22X1TS because:
-	Generated file (mnYhr) not found, or not incremental.
-recompiling module MX2X6TS because:
-	Generated file (jbpWu) not found, or not incremental.
-recompiling module NAND2X8TS because:
-	Generated file (sTuar) not found, or not incremental.
-recompiling module NAND4X1TS because:
-	Generated file (uqUWe) not found, or not incremental.
-recompiling module NAND2BX1TS because:
-	Generated file (HWWrq) not found, or not incremental.
-recompiling module NAND3BX1TS because:
-	Generated file (ukewC) not found, or not incremental.
-recompiling module NOR3X1TS because:
-	Generated file (TwzRn) not found, or not incremental.
-recompiling module NOR3BX1TS because:
-	Generated file (qi0gZ) not found, or not incremental.
-recompiling module NOR4BBX1TS because:
-	Generated file (ZwEHk) not found, or not incremental.
-recompiling module OR2X8TS because:
-	Generated file (Jv6sP) not found, or not incremental.
-50 of 60 modules done
-recompiling module OR4X1TS because:
-	Generated file (HQEjF) not found, or not incremental.
-recompiling module OAI21X1TS because:
-	Generated file (dezJx) not found, or not incremental.
-recompiling module OAI211X1TS because:
-	Generated file (Dyqva) not found, or not incremental.
-recompiling module OAI22X1TS because:
-	Generated file (bqZmw) not found, or not incremental.
-recompiling module OAI2BB1X1TS because:
-	Signal dependencies have changed
-recompiling module XOR2X1TS because:
-	Generated file (sxiVF) not found, or not incremental.
-recompiling module XNOR2X4TS because:
-	Generated file (GL4iV) not found, or not incremental.
-recompiling module CLKBUFX20TS because:
-	Generated file (gjL4H) not found, or not incremental.
-recompiling module ADDFHX4TS because:
-	Generated file (JFQ4S) not found, or not incremental.
-recompiling module DFFRXLTS because:
-	Signal dependencies have changed
-All of 60 modules done
+recompiling module FSM_Add_Subtract
+recompiling module RegisterAdd_W1_0
+recompiling module RegisterAdd_W1_7
+recompiling module RegisterAdd_W2
+recompiling module RegisterAdd_W32_2
+recompiling module Comparator_W31
+recompiling module xor_tri_W32
+recompiling module sgn_result
+recompiling module MultiplexTxT_W31
+recompiling module RegisterAdd_W31_0
+recompiling module RegisterAdd_W31_1
+recompiling module Multiplexer_AC_W8_0
+recompiling module Mux_3x1_W8
+recompiling module Exp_Operation_EW8
+recompiling module Mux_3x1_W5
+recompiling module Multiplexer_AC_W26_0
+recompiling module LZD_SWR26_EWR5
+recompiling module Mux_3x1_W1
+recompiling module Multiplexer_AC_W8_1
+recompiling module Multiplexer_AC_W23
+recompiling module Tenth_Phase_W32_EW8_SW23
+recompiling module shift_mux_array_SWR26_LEVEL0
+recompiling module shift_mux_array_SWR26_LEVEL1
+recompiling module shift_mux_array_SWR26_LEVEL2
+recompiling module shift_mux_array_SWR26_LEVEL3
+recompiling module shift_mux_array_SWR26_LEVEL4
+recompiling module Multiplexer_AC_W1_9
+recompiling module Rotate_Mux_Array_SWR26_1
+recompiling module Mux_Array_SWR26_EWR5
+recompiling module add_sub_carry_out_W26_DW01_sub_0
+recompiling module add_sub_carry_out_W26_DW01_add_0
+recompiling module Testbench_FPU_Add_Subt
+recompiling module INVX2TS
+recompiling module AND2X8TS
+recompiling module AND3X1TS
+recompiling module AOI211X1TS
+recompiling module AOI22X1TS
+recompiling module AOI221X1TS
+recompiling module AOI31X1TS
+recompiling module AOI32X1TS
+recompiling module AO22X1TS
+recompiling module MX2X6TS
+recompiling module NAND2X8TS
+recompiling module NAND4X1TS
+recompiling module NAND2BX1TS
+recompiling module NAND3BX1TS
+recompiling module NOR3X1TS
+recompiling module NOR2BX1TS
+recompiling module NOR3BX1TS
+recompiling module NOR4BBX1TS
+50 of 64 modules done
+recompiling module OR2X8TS
+recompiling module OR3X1TS
+recompiling module OR4X1TS
+recompiling module OAI21X1TS
+recompiling module OAI211X1TS
+recompiling module OAI22X1TS
+recompiling module OAI32X1TS
+recompiling module OAI2BB1X1TS
+recompiling module OAI2BB2XLTS
+recompiling module XOR2X1TS
+recompiling module XNOR2X4TS
+recompiling module CLKBUFX20TS
+recompiling module ADDFHX4TS
+recompiling module DFFRXLTS
+All of 64 modules done
 rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
-ld -shared  -o .//../simv.daidir//_csrc0.so objs/udps/exIG1.o objs/udps/U7Vwg.o  \
-
-rm -f _csrc0.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
-_8456_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o \
+_20981_archive_1.so objs/udps/U7Vwg.o objs/udps/exIG1.o  SIM_l.o       rmapats_mop.o \
 rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
@@ -8627,13 +8567,13 @@ rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/to
 -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
 Command: ./simv -gui +v2k +lint=all -a log_name +define+SINGLE -ucli
-Warning : License for product VCSRuntime_Net(725) will expire within 29 days, on: 10-nov-2016.
+Warning : License for product VCSRuntime_Net(725) will expire within 28 days, on: 10-nov-2016.
 If you would like to temporarily disable this message, set 
  the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
 before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 13 20:25 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 14 02:40 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 
 "ibm13rflpvt.v", 23344: Timing violation in Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.MRegister.Q_reg_11_
@@ -8740,24 +8680,8 @@ VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 "ibm13rflpvt.v", 23590: Timing violation in Testbench_FPU_Add_Subt.uut.FS_Module.state_reg_reg_2_
     $hold( posedge CK &&& (flag == 1'b1):185000, negedge D:185000, limit: 500 );
 
-*** FATAL: Simulation stopped due to an error (please see above in the log for more details)
-The simulation cannot be continued. The current simulation state can be observed in DVE/UCLI.
-
-Error-[VPD-ERR_FILE_WRITE_DISK_FULL] VPD file write failed. File system full.
-  Errno condition: "No space left on device".  A file I/O error occurred when 
-  attempting to write data to the VPD file causing this application to abort. 
-  The OS is indicating the file system where this VPD file is being written is
-  full and no more data can be written to it.  Please reduce the amount of 
-  data currently in this file system or redirect the VPD file to another file 
-  system with more space.
-
-
-Error-[VPD-ERR_FILE_WRITE_DISK_FULL] VPD file write failed. File system full.
-  Errno condition: "No space left on device".  A file I/O error occurred when 
-  attempting to write data to the VPD file causing this application to abort. 
-  The OS is indicating the file system where this VPD file is being written is
-  full and no more data can be written to it.  Please reduce the amount of 
-  data currently in this file system or redirect the VPD file to another file 
-  system with more space.
-
-CPU time: .916 seconds to compile + .543 seconds to elab + .139 seconds to link + 98.918 seconds in simulation
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 275236985000 ps
+CPU Time:     28.030 seconds;       Data structure size:   1.1Mb
+Fri Oct 14 02:57:33 2016
+CPU time: .990 seconds to compile + .549 seconds to elab + .146 seconds to link + 132.283 seconds in simulation
