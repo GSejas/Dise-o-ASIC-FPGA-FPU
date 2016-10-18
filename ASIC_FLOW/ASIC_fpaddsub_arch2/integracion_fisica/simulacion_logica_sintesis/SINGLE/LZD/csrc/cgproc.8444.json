@@ -1,0 +1,23 @@
+{
+    "ObjArchives": [],
+    "Modules": {
+        "NOR4BX1TS": {},
+        "tb_LZD": {},
+        "...MASTER...": {},
+        "INVX2TS": {},
+        "AOI31X1TS": {},
+        "NAND4BX1TS": {},
+        "NOR3X1TS": {},
+        "OAI2BB2XLTS": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "checksum": 4294967295,
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 7093,
+            "mode": 4
+        }
+    },
+    "reusePaths": {}
+}

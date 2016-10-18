@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Barrel_Shifter
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:02 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Left_Right_i
+              (input port clocked by clk)
+  Endpoint: Mux_Array/Mid_Reg/Q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.50       4.50 f
+  Left_Right_i (in)                                       0.01       4.51 f
+  Mux_Array/FSM_left_right_i (Mux_Array_SWR26_EWR5)       0.00       4.51 f
+  Mux_Array/first_rotate/select_i (Rotate_Mux_Array_SWR26_1)
+                                                          0.00       4.51 f
+  Mux_Array/first_rotate/U5/Y (CLKBUFX2TS)                0.26       4.77 f
+  Mux_Array/first_rotate/U4/Y (CLKBUFX2TS)                0.39       5.15 f
+  Mux_Array/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/ctrl (Multiplexer_AC_W1_49)
+                                                          0.00       5.15 f
+  Mux_Array/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/U1/Y (AO22X1TS)
+                                                          0.57       5.72 f
+  Mux_Array/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/S[0] (Multiplexer_AC_W1_49)
+                                                          0.00       5.72 f
+  Mux_Array/first_rotate/Data_o[2] (Rotate_Mux_Array_SWR26_1)
+                                                          0.00       5.72 f
+  Mux_Array/SHIFT_1LVLS[0].shift_mux_array/Data_i[2] (shift_mux_array_SWR26_LEVEL0)
+                                                          0.00       5.72 f
+  Mux_Array/SHIFT_1LVLS[0].shift_mux_array/U7/Y (AO22X1TS)
+                                                          0.51       6.24 f
+  Mux_Array/SHIFT_1LVLS[0].shift_mux_array/Data_o[2] (shift_mux_array_SWR26_LEVEL0)
+                                                          0.00       6.24 f
+  Mux_Array/SHIFT_1LVLS[1].shift_mux_array/Data_i[2] (shift_mux_array_SWR26_LEVEL1)
+                                                          0.00       6.24 f
+  Mux_Array/SHIFT_1LVLS[1].shift_mux_array/U52/Y (AO22X1TS)
+                                                          0.50       6.73 f
+  Mux_Array/SHIFT_1LVLS[1].shift_mux_array/Data_o[2] (shift_mux_array_SWR26_LEVEL1)
+                                                          0.00       6.73 f
+  Mux_Array/SHIFT_1LVLS[2].shift_mux_array/Data_i[2] (shift_mux_array_SWR26_LEVEL2)
+                                                          0.00       6.73 f
+  Mux_Array/SHIFT_1LVLS[2].shift_mux_array/U27/Y (AO22X1TS)
+                                                          0.47       7.21 f
+  Mux_Array/SHIFT_1LVLS[2].shift_mux_array/Data_o[2] (shift_mux_array_SWR26_LEVEL2)
+                                                          0.00       7.21 f
+  Mux_Array/Mid_Reg/D[2] (RegisterAdd_W26_0)              0.00       7.21 f
+  Mux_Array/Mid_Reg/U4/Y (OAI2BB2XLTS)                    0.29       7.49 f
+  Mux_Array/Mid_Reg/Q_reg[2]/D (DFFRX2TS)                 0.00       7.49 f
+  data arrival time                                                  7.49
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Mux_Array/Mid_Reg/Q_reg[2]/CK (DFFRX2TS)                0.00      10.50 r
+  library setup time                                     -0.22      10.28
+  data required time                                                10.28
+  --------------------------------------------------------------------------
+  data required time                                                10.28
+  data arrival time                                                 -7.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.79
+
+
+1

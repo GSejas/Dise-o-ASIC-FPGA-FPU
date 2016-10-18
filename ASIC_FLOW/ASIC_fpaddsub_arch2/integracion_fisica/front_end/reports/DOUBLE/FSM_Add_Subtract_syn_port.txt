@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : port
+Design : FSM_Add_Subtract
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:41 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+add_overflow_i in      0.0000   0.0000    1.02    1.71   --         
+beg_FSM        in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+norm_iteration_i
+               in      0.0000   0.0000    1.02    1.71   --         
+round_i        in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
+rst_FSM        in      0.0000   0.0000    1.02    1.71   --         
+zero_flag_i    in      0.0000   0.0000    1.02    1.71   --         
+A_S_op_o       out     0.0000   0.0000   --      --      --         
+bit_shift_o    out     0.0000   0.0000   --      --      --         
+ctrl_a_o       out     0.0000   0.0000   --      --      --         
+ctrl_b_load_o  out     0.0000   0.0000   --      --      --         
+ctrl_b_o[0]    out     0.0000   0.0000   --      --      --         
+ctrl_b_o[1]    out     0.0000   0.0000   --      --      --         
+ctrl_c_o       out     0.0000   0.0000   --      --      --         
+ctrl_d_o       out     0.0000   0.0000   --      --      --         
+left_right_o   out     0.0000   0.0000   --      --      --         
+load_1_o       out     0.0000   0.0000   --      --      --         
+load_2_o       out     0.0000   0.0000   --      --      --         
+load_3_o       out     0.0000   0.0000   --      --      --         
+load_4_o       out     0.0000   0.0000   --      --      --         
+load_5_o       out     0.0000   0.0000   --      --      --         
+load_6_o       out     0.0000   0.0000   --      --      --         
+load_7_o       out     0.0000   0.0000   --      --      --         
+load_8_o       out     0.0000   0.0000   --      --      --         
+ready          out     0.0000   0.0000   --      --      --         
+rst_int        out     0.0000   0.0000   --      --      --         
+
+1

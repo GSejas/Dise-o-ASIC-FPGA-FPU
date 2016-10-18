@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : cell
+Design : Oper_Start_In
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:35 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+ASRegister                RegisterAdd_W1_1                47.519999 h, n, p
+MRegister                 RegisterAdd_W31_1               1401.119967
+                                                                    h, n, p
+Magnitude_Comparator      Comparator_W31                  879.840025
+                                                                    h, p
+MuxXY                     MultiplexTxT_W31                875.520035
+                                                                    h, p
+Op_verification           xor_tri_W32                     23.040001 h, p
+SignRegister              RegisterAdd_W1_0                47.519999 h, n, p
+U2                        AND2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+XRegister                 RegisterAdd_W32_1               1444.319966
+                                                                    h, n, p
+YRegister                 RegisterAdd_W32_0               1444.319966
+                                                                    h, n, p
+mRegister                 RegisterAdd_W31_0               1401.119967
+                                                                    h, n, p
+result_sign_bit           sgn_result                      31.680001 h
+--------------------------------------------------------------------------------
+Total 11 cells                                            7603.199925
+1

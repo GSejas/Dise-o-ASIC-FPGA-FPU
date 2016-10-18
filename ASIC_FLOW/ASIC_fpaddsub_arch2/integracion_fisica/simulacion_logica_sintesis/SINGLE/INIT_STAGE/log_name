@@ -1,0 +1,13 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 25 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 17 16:08 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.100 seconds;       Data structure size:   0.4Mb
+Mon Oct 17 16:08:12 2016
+CPU time: .495 seconds to compile + .384 seconds to elab + .124 seconds to link + 48.323 seconds in simulation

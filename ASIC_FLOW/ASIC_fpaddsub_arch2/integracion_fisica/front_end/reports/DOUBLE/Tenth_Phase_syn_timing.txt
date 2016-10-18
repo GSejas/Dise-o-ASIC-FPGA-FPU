@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Tenth_Phase
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:29 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: sel_b_i (input port clocked by clk)
+  Endpoint: Final_Result_IEEE/Q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.50       4.50 f
+  sel_b_i (in)                                            0.01       4.51 f
+  U4/Y (OR2X2TS)                                          0.35       4.86 f
+  Sgf_Mux/ctrl (Multiplexer_AC_W23)                       0.00       4.86 f
+  Sgf_Mux/U5/Y (CLKBUFX2TS)                               0.27       5.13 f
+  Sgf_Mux/U4/Y (INVX2TS)                                  0.14       5.27 r
+  Sgf_Mux/U2/Y (CLKBUFX2TS)                               0.22       5.49 r
+  Sgf_Mux/U7/Y (AO22X1TS)                                 0.29       5.77 r
+  Sgf_Mux/S[1] (Multiplexer_AC_W23)                       0.00       5.77 r
+  Final_Result_IEEE/D[1] (RegisterAdd_W32)                0.00       5.77 r
+  Final_Result_IEEE/U11/Y (OAI2BB2XLTS)                   0.24       6.01 r
+  Final_Result_IEEE/Q_reg[1]/D (DFFRX2TS)                 0.00       6.01 r
+  data arrival time                                                  6.01
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Final_Result_IEEE/Q_reg[1]/CK (DFFRX2TS)                0.00      10.50 r
+  library setup time                                     -0.32      10.18
+  data required time                                                10.18
+  --------------------------------------------------------------------------
+  data required time                                                10.18
+  data arrival time                                                 -6.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.17
+
+
+1

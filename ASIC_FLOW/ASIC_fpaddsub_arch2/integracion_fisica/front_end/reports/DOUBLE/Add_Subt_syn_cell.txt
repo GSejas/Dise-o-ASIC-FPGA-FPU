@@ -1,0 +1,26 @@
+ 
+****************************************
+Report : cell
+Design : Add_Subt
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:53 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Add_Subt_Result           RegisterAdd_W26                 1185.119973
+                                                                    h, n, p
+Add_overflow_Result       RegisterAdd_W1                  50.399999 h, n, p
+Sgf_AS                    add_sub_carry_out_W26           2750.400023
+                                                                    h, p
+--------------------------------------------------------------------------------
+Total 3 cells                                             3985.919995
+1

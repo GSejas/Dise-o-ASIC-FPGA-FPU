@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Barrel_Shifter
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:02 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          818
+Number of nets:                          1267
+Number of cells:                          486
+Number of combinational cells:            371
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                        134
+Number of references:                       2
+
+Combinational area:               2918.880029
+Buf/Inv area:                      629.280025
+Noncombinational area:            1722.239944
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  4641.119974
+Total area:                 undefined
+1

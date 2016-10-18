@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Exp_Operation
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:27:56 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Data_B_i[1]
+              (input port clocked by clk)
+  Endpoint: Underflow/Q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.50       4.50 r
+  Data_B_i[1] (in)                                        0.01       4.51 r
+  exp_add_subt/Data_B[1] (add_sub_carry_out_W8)           0.00       4.51 r
+  exp_add_subt/sub_34/B[1] (add_sub_carry_out_W8_DW01_sub_0)
+                                                          0.00       4.51 r
+  exp_add_subt/sub_34/U7/Y (INVX2TS)                      0.05       4.55 f
+  exp_add_subt/sub_34/U2_1/CO (CMPR32X2TS)                0.64       5.19 f
+  exp_add_subt/sub_34/U2_2/CO (CMPR32X2TS)                0.47       5.66 f
+  exp_add_subt/sub_34/U2_3/CO (CMPR32X2TS)                0.47       6.14 f
+  exp_add_subt/sub_34/U2_4/CO (CMPR32X2TS)                0.47       6.61 f
+  exp_add_subt/sub_34/U2_5/CO (CMPR32X2TS)                0.47       7.08 f
+  exp_add_subt/sub_34/U2_6/CO (CMPR32X2TS)                0.47       7.56 f
+  exp_add_subt/sub_34/U2_7/S (CMPR32X2TS)                 0.48       8.04 f
+  exp_add_subt/sub_34/DIFF[7] (add_sub_carry_out_W8_DW01_sub_0)
+                                                          0.00       8.04 f
+  exp_add_subt/U5/Y (AO22X1TS)                            0.57       8.61 f
+  exp_add_subt/Data_S[7] (add_sub_carry_out_W8)           0.00       8.61 f
+  array_comparators/exp[7] (Comparators_W_Exp9)           0.00       8.61 f
+  array_comparators/LTComparator/Data_A[7] (Comparator_Less_W9)
+                                                          0.00       8.61 f
+  array_comparators/LTComparator/U2/Y (INVX2TS)           0.12       8.73 r
+  array_comparators/LTComparator/U20/Y (OAI32X1TS)        0.17       8.89 f
+  array_comparators/LTComparator/U22/Y (OAI22X1TS)        0.23       9.12 r
+  array_comparators/LTComparator/U23/Y (OAI211X1TS)       0.19       9.31 f
+  array_comparators/LTComparator/U24/Y (OAI2BB1X1TS)      0.12       9.43 r
+  array_comparators/LTComparator/less (Comparator_Less_W9)
+                                                          0.00       9.43 r
+  array_comparators/underflow (Comparators_W_Exp9)        0.00       9.43 r
+  Underflow/D[0] (RegisterAdd_W1_2)                       0.00       9.43 r
+  Underflow/U2/Y (OAI2BB2XLTS)                            0.23       9.65 r
+  Underflow/Q_reg[0]/D (DFFRX2TS)                         0.00       9.65 r
+  data arrival time                                                  9.65
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Underflow/Q_reg[0]/CK (DFFRX2TS)                        0.00      10.50 r
+  library setup time                                     -0.32      10.18
+  data required time                                                10.18
+  --------------------------------------------------------------------------
+  data required time                                                10.18
+  data arrival time                                                 -9.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.53
+
+
+1

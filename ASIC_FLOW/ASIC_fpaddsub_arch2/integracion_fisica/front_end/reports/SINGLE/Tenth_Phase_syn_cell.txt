@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : cell
+Design : Tenth_Phase
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:27:41 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Exp_Mux                   Multiplexer_AC_W8               89.280000 h, p
+Final_Result_IEEE         RegisterAdd_W32                 1438.559966
+                                                                    h, n, p
+Sgf_Mux                   Multiplexer_AC_W23              257.759999
+                                                                    h, p
+Sign_Mux                  Mux_3x1_W1                      31.680001 h, p
+U4                        OR2X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+--------------------------------------------------------------------------------
+Total 5 cells                                             1824.479966
+1

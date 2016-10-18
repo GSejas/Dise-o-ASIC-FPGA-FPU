@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : cell
+Design : LZD
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:38 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+LZD_SINGLEBLK.Codec_32    Priority_Codec_32               86.400001 h
+Output_Reg                RegisterAdd_W5                  220.319994
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 2 cells                                             306.719995
+1

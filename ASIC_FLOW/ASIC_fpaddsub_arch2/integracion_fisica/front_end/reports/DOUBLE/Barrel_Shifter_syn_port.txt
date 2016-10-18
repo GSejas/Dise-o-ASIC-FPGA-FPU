@@ -1,0 +1,112 @@
+Warning: Design 'Barrel_Shifter' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : port
+Design : Barrel_Shifter
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:49 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Bit_Shift_i    in      0.0000   0.0000    1.02    1.71   --         
+Left_Right_i   in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[2]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[3]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[4]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[5]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[6]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[7]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[8]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[9]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[10]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[11]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[12]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[13]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[14]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[15]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[16]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[17]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[18]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[19]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[20]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[21]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[22]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[23]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[24]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Data_i[25]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Value_i[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Value_i[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Value_i[2]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Value_i[3]
+               in      0.0000   0.0000    1.02    1.71   --         
+Shift_Value_i[4]
+               in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+load_i         in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
+N_mant_o[0]    out     0.0000   0.0000   --      --      --         
+N_mant_o[1]    out     0.0000   0.0000   --      --      --         
+N_mant_o[2]    out     0.0000   0.0000   --      --      --         
+N_mant_o[3]    out     0.0000   0.0000   --      --      --         
+N_mant_o[4]    out     0.0000   0.0000   --      --      --         
+N_mant_o[5]    out     0.0000   0.0000   --      --      --         
+N_mant_o[6]    out     0.0000   0.0000   --      --      --         
+N_mant_o[7]    out     0.0000   0.0000   --      --      --         
+N_mant_o[8]    out     0.0000   0.0000   --      --      --         
+N_mant_o[9]    out     0.0000   0.0000   --      --      --         
+N_mant_o[10]   out     0.0000   0.0000   --      --      --         
+N_mant_o[11]   out     0.0000   0.0000   --      --      --         
+N_mant_o[12]   out     0.0000   0.0000   --      --      --         
+N_mant_o[13]   out     0.0000   0.0000   --      --      --         
+N_mant_o[14]   out     0.0000   0.0000   --      --      --         
+N_mant_o[15]   out     0.0000   0.0000   --      --      --         
+N_mant_o[16]   out     0.0000   0.0000   --      --      --         
+N_mant_o[17]   out     0.0000   0.0000   --      --      --         
+N_mant_o[18]   out     0.0000   0.0000   --      --      --         
+N_mant_o[19]   out     0.0000   0.0000   --      --      --         
+N_mant_o[20]   out     0.0000   0.0000   --      --      --         
+N_mant_o[21]   out     0.0000   0.0000   --      --      --         
+N_mant_o[22]   out     0.0000   0.0000   --      --      --         
+N_mant_o[23]   out     0.0000   0.0000   --      --      --         
+N_mant_o[24]   out     0.0000   0.0000   --      --      --         
+N_mant_o[25]   out     0.0000   0.0000   --      --      --         
+
+1

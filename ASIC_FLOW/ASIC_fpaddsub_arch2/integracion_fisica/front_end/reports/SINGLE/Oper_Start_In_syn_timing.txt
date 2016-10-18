@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Oper_Start_In
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:27:46 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: YRegister/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MRegister/Q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  YRegister/Q_reg[1]/CK (DFFRX2TS)                        0.00       1.00 r
+  YRegister/Q_reg[1]/Q (DFFRX2TS)                         1.00       2.00 f
+  YRegister/Q[1] (RegisterAdd_W32_0)                      0.00       2.00 f
+  Magnitude_Comparator/Data_Y_i[1] (Comparator_W31)       0.00       2.00 f
+  Magnitude_Comparator/U40/Y (XOR2X1TS)                   0.29       2.29 r
+  Magnitude_Comparator/U38/Y (OAI32X1TS)                  0.23       2.52 f
+  Magnitude_Comparator/U36/Y (AOI22X1TS)                  0.20       2.72 r
+  Magnitude_Comparator/U29/Y (OAI22X1TS)                  0.17       2.89 f
+  Magnitude_Comparator/U28/Y (AOI222XLTS)                 0.57       3.46 r
+  Magnitude_Comparator/U20/Y (OAI222X1TS)                 0.34       3.80 f
+  Magnitude_Comparator/U19/Y (AOI22X1TS)                  0.22       4.02 r
+  Magnitude_Comparator/U27/Y (OAI22X1TS)                  0.18       4.20 f
+  Magnitude_Comparator/U25/Y (AOI22X1TS)                  0.20       4.40 r
+  Magnitude_Comparator/U24/Y (OAI22X1TS)                  0.17       4.56 f
+  Magnitude_Comparator/U51/Y (AOI222XLTS)                 0.56       5.12 r
+  Magnitude_Comparator/U1/Y (OAI222X1TS)                  0.54       5.66 f
+  Magnitude_Comparator/gtXY_o (Comparator_W31)            0.00       5.66 f
+  MuxXY/select (MultiplexTxT_W31)                         0.00       5.66 f
+  MuxXY/U14/Y (INVX2TS)                                   0.32       5.98 r
+  MuxXY/U13/Y (CLKBUFX2TS)                                0.28       6.26 r
+  MuxXY/U10/Y (CLKBUFX2TS)                                0.30       6.56 r
+  MuxXY/U30/Y (OAI22X1TS)                                 0.19       6.75 f
+  MuxXY/S0_o[1] (MultiplexTxT_W31)                        0.00       6.75 f
+  MRegister/D[1] (RegisterAdd_W31_1)                      0.00       6.75 f
+  MRegister/U3/Y (OAI2BB2XLTS)                            0.28       7.03 f
+  MRegister/Q_reg[1]/D (DFFRX2TS)                         0.00       7.03 f
+  data arrival time                                                  7.03
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  MRegister/Q_reg[1]/CK (DFFRX2TS)                        0.00      10.50 r
+  library setup time                                     -0.22      10.28
+  data required time                                                10.28
+  --------------------------------------------------------------------------
+  data required time                                                10.28
+  data arrival time                                                 -7.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.26
+
+
+1

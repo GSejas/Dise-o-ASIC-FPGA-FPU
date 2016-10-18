@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : cell
+Design : Barrel_Shifter
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:02 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Mux_Array                 Mux_Array_SWR26_EWR5            3473.280002
+                                                                    h, n, p
+Output_Reg                RegisterAdd_W26_1               1167.839972
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 2 cells                                             4641.119974
+1

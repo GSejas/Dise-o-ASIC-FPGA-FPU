@@ -1,0 +1,203 @@
+16:44:55    308 --> ...                                  [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv  +v2k +lint=all -l log_name +define+SYN_SINGLE -ucligui
+16:44:55    309 --> ...                                      [tcl] set ucliGUI::state
+16:44:55    310 --> ...                                          [tcl] set dveMisc::dve_log_file 1
+16:44:55    311 --> ...                                              [tcl] gui_update_simulator_buttons
+16:44:57    312 --> ...                                                  [tcl] set ucliGUI::state
+16:44:57    313 --> ...                                                      [tcl] ucliCore::getToolPID
+16:44:57    314 --> ...                                                          [tcl] synopsys::env hasTB
+16:44:57    315 --> ...                                                              [tcl] trigger_hier_stack_context_switch 0
+16:44:57    316 --> ...                                                                  [tcl] synUtils::setDVEInitPhase 1
+16:44:57    317 --> ...                                                                      [tcl] gui_get_env SIMSETUP::SIMVPD
+16:44:57    318 --> ...                                                                          [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/inter.vpd -locking
+16:44:57    319 --> ...                                                                              [tcl] synopsys::dump -autoflush on -fid VPD2
+16:44:57    320 --> ...                                                                                  [tcl] set ::dve_fid VPD2
+16:44:57    321 --> ...                                                                                      [tcl] synUtils::setDVEInitPhase 0
+16:44:57    322 --> ...                                                                                          [tcl] ucliCore::getToolPID
+16:44:57    323 --> ...                                                                                              [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpRmRKQz
+16:44:57    324 --> ...                                                                                                  [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.10368}
+16:44:57    325 --> ...  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.10368}
+16:44:57    326 --> ...      [tcl] config endofsim noexit
+16:44:57    327 --> ...          [tcl] config onfail enable all
+16:44:57    328 --> ...              [tcl] config syscaddplainmembers
+16:44:57    329 --> ...                  [tcl] config syscaddsourcenames
+16:44:57    330 --> ...                      [tcl] config syscaddstructtypes
+16:44:57    331 --> ...                          [tcl] synopsys::listing -disable
+16:44:57    332 --> ...                              [tcl] # Begin_DVE_Session_Save_Info
+16:44:57    333 --> ...                                  [tcl] # DVE restart session
+16:44:57    334 --> ...                                      [tcl] # Saved on Mon Oct 17 16:44:55 2016
+16:44:57    335 --> ...                                          [tcl] # Designs open: 1
+16:44:57    336 --> ...                                              [tcl] #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv
+16:44:57    337 --> ...                                                  [tcl] # Toplevel windows open: 1
+16:44:57    338 --> ...                                                      [tcl] # 	TopLevel.1
+16:44:57    339 --> ...                                                          [tcl] #   Source.1: tb_LZD
+16:44:57    340 --> ...                                                              [tcl] #   Wave.1: 68 signals
+16:44:57    341 --> ...                                                                  [tcl] #   Group count = 2
+16:44:57    342 --> ...                                                                      [tcl] #   Group tb_LZD signal count = 10
+16:44:57    343 --> ...                                                                          [tcl] # End_DVE_Session_Save_Info
+16:44:57    344 --> ...                                                                              [tcl] # DVE version: K-2015.09-SP2-3_Full64
+16:44:57    345 --> ...                                                                                  [tcl] # DVE build date: Jun 15 2016 22:18:13
+16:44:57    346 --> ...                                                                                      [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+16:44:57    347 --> ...                                                                                          [tcl] gui_set_loading_session_type Restart
+16:44:57    348 --> ...                                                                                              [tcl] gui_continuetime_set
+16:44:57    349 --> ...                                                                                                  [tcl] gui_clear_window -type Wave
+16:44:57    350 --> ...  [tcl] gui_clear_window -type List
+16:44:57    351 --> ...      [tcl] # Application preferences
+16:44:57    352 --> ...          [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+16:44:57    353 --> ...              [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+16:44:57    354 --> ...                  [tcl] #<WindowLayout>
+16:44:57    355 --> ...                      [tcl] # DVE top-level session
+16:44:57    356 --> ...                          [tcl] # Create and position top-level window: TopLevel.1
+16:44:57    357 --> ...                              [tcl] set TopLevel.1 TopLevel.1
+16:44:57    358 --> ...                                  [tcl] # Docked window settings
+16:44:57    359 --> ...                                      [tcl] gui_sync_global -id ${TopLevel.1} -option true
+16:44:57    360 --> ...                                          [tcl] # MDI window settings
+16:44:57    361 --> ...                                              [tcl] set Console.1 Console.1
+16:44:57    362 --> ...                                                  [tcl] gui_update_layout -id ${Console.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+16:44:57    363 --> ...                                                      [tcl] set HSPane.1 HSPane.1
+16:44:57    364 --> ...                                                          [tcl] set Hier.1 Hier.1
+16:44:57    365 --> ...                                                              [tcl] gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 645} {child_hier_coltype 371} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+16:44:57    366 --> ...                                                                  [tcl] set DLPane.1 DLPane.1
+16:44:57    367 --> ...                                                                      [tcl] set Data.1 Data.1
+16:44:57    368 --> ...                                                                          [tcl] gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 440} {child_data_colvalue 261} {child_data_coltype 317} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+16:44:57    369 --> ...                                                                              [tcl] set Source.1 Source.1
+16:44:57    370 --> ...                                                                                  [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+16:44:57    371 --> ...                                                                                      [tcl] set Wave.1 Wave.1
+16:44:57    372 --> ...                                                                                          [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 459} {child_wave_right 499} {child_wave_colname 253} {child_wave_colvalue 202} {child_wave_col1 0} {child_wave_col2 1}}
+16:44:57    373 --> ...                                                                                              [tcl] # End MDI window settings
+16:44:57    374 --> ...                                                                                                  [tcl] #</WindowLayout>
+16:44:57    375 --> ...  [tcl] #<Database>
+16:44:57    376 --> ...      [tcl] gui_set_precision 1ps
+16:44:57    377 --> ...          [tcl] gui_set_time_units 1ps
+16:44:57    378 --> ...              [tcl] #</Database>
+16:44:57    379 --> ...                  [tcl] # DVE Global setting session:
+16:44:57    380 --> ...                      [tcl] # Global: Breakpoints
+16:44:57    381 --> ...                          [tcl] # Global: Bus
+16:44:57    382 --> ...                              [tcl] # Global: Expressions
+16:44:57    383 --> ...                                  [tcl] # Global: Signal Time Shift
+16:44:57    384 --> ...                                      [tcl] # Global: Signal Compare
+16:44:57    385 --> ...                                          [tcl] # Global: Signal Groups
+16:44:57    386 --> ...                                              [tcl] gui_load_child_values {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 }
+16:44:57    387 --> ...                                                  [tcl] synopsys::dump -add {{tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 }} -scope "." -depth 1 -fid VPD2
+16:44:57    388 --> ...                                                      [tcl] gui_load_child_values {tb_LZD}
+16:44:57    389 --> ...                                                          [tcl] synopsys::dump -add {tb_LZD} -scope "." -depth 1 -fid VPD2
+16:44:57    390 --> ...                                                              [tcl] set _session_group_1 tb_LZD
+16:44:57    391 --> ...                                                                  [tcl] gui_sg_create "$_session_group_1"
+16:44:57    392 --> ...                                                                      [tcl] set tb_LZD "$_session_group_1"
+16:44:57    393 --> ...                                                                          [tcl] gui_sg_addsignal -group "$_session_group_1" { tb_LZD.Contador tb_LZD.load_i tb_LZD.SWR tb_LZD.Shift_Value_o tb_LZD.PERIOD tb_LZD.Add_subt_result_i tb_LZD.EWR tb_LZD.clk tb_LZD.rst }
+16:44:57    394 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.SWR}
+16:44:57    395 --> ...                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.SWR}
+16:44:57    396 --> ...                                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.Shift_Value_o}
+16:44:57    397 --> ...                                                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:tb_LZD.Shift_Value_o}
+16:44:57    398 --> ...                                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.PERIOD}
+16:44:57    399 --> ...                                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.PERIOD}
+16:44:57    400 --> ...  [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.EWR}
+16:44:57    401 --> ...      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.EWR}
+16:44:57    402 --> ...          [tcl] set _session_group_2 $_session_group_1|
+16:44:57    403 --> ...              [tcl] append _session_group_2 LZD_SINGLEBLK.Codec_32
+16:44:57    404 --> ...                  [tcl] gui_sg_create "$_session_group_2"
+16:44:57    405 --> ...                      [tcl] set tb_LZD|LZD_SINGLEBLK.Codec_32 "$_session_group_2"
+16:44:57    406 --> ...                          [tcl] gui_sg_addsignal -group "$_session_group_2" { {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n43} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n44} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n45} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n46} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n47} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n48} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .Data_Bin_o} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n49} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n50} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n51} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n52} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n53} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n54} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n55} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n56} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n57} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n10} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n11} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n12} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n13} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n14} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n15} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n16} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n17} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n18} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n19} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n20} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n21} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n22} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n23} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n24} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n25} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n26} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n27} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n28} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n29} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n1} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n2} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n3} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n4} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n5} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n6} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n7} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n8} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n9} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n30} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n31} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n32} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n33} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n34} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n35} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n36} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n37} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n38} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n39} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .Data_Dec_i} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n40} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n41} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 .n42} }
+16:44:57    407 --> ...                              [tcl] # Global: Highlighting
+16:44:57    408 --> ...                                  [tcl] # Global: Stack
+16:44:57    409 --> ...                                      [tcl] gui_change_stack_mode -mode list
+16:44:57    410 --> ...                                          [tcl] # Post database loading setting...
+16:44:57    411 --> ...                                              [tcl] # Save global setting...
+16:44:57    412 --> ...                                                  [tcl] # Wave/List view global setting
+16:44:57    413 --> ...                                                      [tcl] gui_cov_show_value -switch false
+16:44:57    414 --> ...                                                          [tcl] # Close all empty TopLevel windows
+16:44:57    415 --> ...                                                              [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+16:44:57    416 --> ...                                                                  [tcl] gui_set_loading_session_type noSession
+16:44:57    417 --> ...                                                                      [tcl] # DVE View/pane content session:
+16:44:57    418 --> ...                                                                          [tcl] # Hier 'Hier.1'
+16:44:57    419 --> ...                                                                              [tcl] gui_show_window -window ${Hier.1}
+16:44:57    420 --> ...                                                                                  [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+16:44:57    421 --> ...                                                                                      [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+16:44:57    422 --> ...                                                                                          [tcl] gui_change_design -id ${Hier.1} -design Sim
+16:44:57    423 --> ...                                                                                              [tcl] catch {gui_list_expand -id ${Hier.1} tb_LZD}
+16:44:57    424 --> ...                                                                                                  [tcl] catch {gui_list_expand -id ${Hier.1} tb_LZD.inst_LZD}
+16:44:57    425 --> ...  [tcl] catch {gui_list_select -id ${Hier.1} {{tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 }}}
+16:44:57    426 --> ...      [tcl] dveMisc::vbusExpand {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 }
+16:44:57    427 --> ...          [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+16:44:57    428 --> ...              [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+16:44:57    429 --> ...                  [tcl] # Data 'Data.1'
+16:44:57    430 --> ...                      [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+16:44:57    431 --> ...                          [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+16:44:57    432 --> ...                              [tcl] gui_list_show_data -id ${Data.1} {tb_LZD.inst_LZD.\LZD_SINGLEBLK.Codec_32 }
+16:44:57    433 --> ...                                  [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+16:44:57    434 --> ...                                      [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+16:44:57    435 --> ...                                          [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+16:44:57    436 --> ...                                              [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+16:44:57    437 --> ...                                                  [tcl] # Source 'Source.1'
+16:44:57    438 --> ...                                                      [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+16:44:57    439 --> ...                                                          [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+16:44:57    440 --> ...                                                              [tcl] gui_open_source -id ${Source.1}  -replace -active tb_LZD /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/tb_LZD.v
+16:44:57    441 --> ...                                                                  [tcl] gui_view_scroll -id ${Source.1} -vertical -set 45
+16:44:57    442 --> ...                                                                      [tcl] gui_src_set_reusable -id ${Source.1}
+16:44:57    443 --> ...                                                                          [tcl] # View 'Wave.1'
+16:44:57    444 --> ...                                                                              [tcl] gui_wv_sync -id ${Wave.1} -switch false
+16:44:57    445 --> ...                                                                                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+16:44:57    446 --> ...                                                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+16:44:57    447 --> ...                                                                                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+16:44:57    448 --> ...                                                                                              [tcl] gui_list_set_height -id Wave -height 25
+16:44:57    449 --> ...                                                                                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+16:44:57    450 --> ...  [tcl] gui_list_create_group_when_add -wave -disable
+16:44:57    451 --> ...      [tcl] gui_wv_zoom_timerange -id ${Wave.1} 194978 1474355
+16:44:57    452 --> ...          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {tb_LZD}
+16:44:57    453 --> ...              [tcl] gui_list_add_group -id ${Wave.1}  -after tb_LZD {tb_LZD|LZD_SINGLEBLK.Codec_32}
+16:44:57    454 --> ...                  [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+16:44:57    455 --> ...                      [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+16:44:57    456 --> ...                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+16:44:57    457 --> ...                              [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+16:44:57    458 --> ...                                  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+16:44:57    459 --> ...                                      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+16:44:57    460 --> ...                                          [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+16:44:57    461 --> ...                                              [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+16:44:57    462 --> ...                                                  [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group tb_LZD  -position in
+16:44:57    463 --> ...                                                      [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 25
+16:44:57    464 --> ...                                                          [tcl] gui_show_grid -id ${Wave.1} -enable false
+16:44:57    465 --> ...                                                              [tcl] # Restore toplevel window zorder
+16:44:57    466 --> ...                                                                  [tcl] # The toplevel window could be closed if it has no view/pane
+16:44:57    467 --> ...                                                                      [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} }
+16:44:57    468 --> ...                                                                          [tcl] #</Session>
+16:44:58    469 --> ...                                                                              [tcl] synopsys::run
+16:44:58    470 --> ...                                                                                  [tcl] set ucliGUI::state
+16:44:58    471 --> ...                                                                                      [tcl] set ucliGUI::state
+16:44:58    472 --> ...                                                                                          [tcl] set ucliGUI::state
+16:44:58    473 --> ...                                                                                              [tcl] set ucliGUI::state
+16:44:58    474 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+16:44:58    475 --> ...  [tcl] set dveMisc::result
+16:44:58    476 --> ...      [tcl] gui_update_simulator_buttons
+16:52:02    477 --> ...          [tcl] # DVE Simulation Rebuild/Restart Options
+16:52:02    478 --> ...              [tcl] # Saved on Mon Oct 17 16:52:02 2016
+16:52:02    479 --> ...                  [tcl] set SIMSETUP::REBUILDOPTION 0
+16:52:02    480 --> ...                      [tcl] set SIMSETUP::REBUILDCMD {}
+16:52:02    481 --> ...                          [tcl] set SIMSETUP::REBUILDDIR {}
+16:52:02    482 --> ...                              [tcl] set SIMSETUP::RESTOREBP 1
+16:52:02    483 --> ...                                  [tcl] set SIMSETUP::RESTOREDUMP 1
+16:52:02    484 --> ...                                      [tcl] set SIMSETUP::RESTOREFORCE 1
+16:52:02    485 --> ...                                          [tcl] set SIMSETUP::RESTORESPECMAN 0
+16:52:02    486 --> ...                                              [tcl] # DVE Simulation Rebuild/Restart Options
+16:52:02    487 --> ...                                                  [tcl] # Saved on Mon Oct 17 16:52:02 2016
+16:52:02    488 --> ...                                                      [tcl] set SIMSETUP::REBUILDOPTION 0
+16:52:02    489 --> ...                                                          [tcl] set SIMSETUP::REBUILDCMD {}
+16:52:02    490 --> ...                                                              [tcl] set SIMSETUP::REBUILDDIR {}
+16:52:02    491 --> ...                                                                  [tcl] set SIMSETUP::RESTOREBP 1
+16:52:02    492 --> ...                                                                      [tcl] set SIMSETUP::RESTOREDUMP 1
+16:52:02    493 --> ...                                                                          [tcl] set SIMSETUP::RESTOREFORCE 1
+16:52:02    494 --> ...                                                                              [tcl] set SIMSETUP::RESTORESPECMAN 0
+16:52:02    495 --> ...                                                                                  [tcl] synopsys::finish
+16:52:02    496 --> ...                                                                                      [tcl] set ucliGUI::state
+16:52:02    497 --> ...                                                                                          [tcl] set ucliGUI::state
+16:52:02    498 --> ...                                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+16:52:02    499 --> ...                                                                                                  [tcl] set dveMisc::result
+16:52:02    500 --> ...  [tcl] gui_update_simulator_buttons
+16:52:02    501 --> ...      [tcl] # DVE Simulation Rebuild/Restart Options
+16:52:02    502 --> ...          [tcl] # Saved on Mon Oct 17 16:52:02 2016
+16:52:02    503 --> ...              [tcl] set SIMSETUP::REBUILDOPTION 0
+16:52:02    504 --> ...                  [tcl] set SIMSETUP::REBUILDCMD {}
+16:52:02    505 --> ...                      [tcl] set SIMSETUP::REBUILDDIR {}
+16:52:02    506 --> ...                          [tcl] set SIMSETUP::RESTOREBP 1
+16:52:02    507 --> ...                              [tcl] set SIMSETUP::RESTOREDUMP 1
+16:52:02    508 --> ...                                  [tcl] set SIMSETUP::RESTOREFORCE 1
+16:52:02    509 --> ...                                      [tcl] set SIMSETUP::RESTORESPECMAN 0
+16:52:50    510 --> ...                                          [tcl] ucliCore::getToolPID

@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : cell
+Design : Exp_Operation
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:44 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Overflow                  RegisterAdd_W1_3                47.519999 h, n, p
+U1                        INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U2                        INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+Underflow                 RegisterAdd_W1_2                47.519999 h, n, p
+array_comparators         Comparators_W_Exp9              357.120008
+                                                                    h, p
+exp_add_subt              add_sub_carry_out_W8            624.960007
+                                                                    h, p
+exp_result                RegisterAdd_W8                  355.679991
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 7 cells                                             1441.440005
+1

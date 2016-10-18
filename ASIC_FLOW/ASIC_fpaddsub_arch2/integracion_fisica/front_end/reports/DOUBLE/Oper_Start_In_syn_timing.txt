@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Oper_Start_In
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:35 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: XRegister/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MRegister/Q_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  XRegister/Q_reg[1]/CK (DFFRX2TS)                        0.00       1.00 r
+  XRegister/Q_reg[1]/Q (DFFRX2TS)                         0.99       1.99 f
+  XRegister/Q[1] (RegisterAdd_W32_1)                      0.00       1.99 f
+  Magnitude_Comparator/Data_X_i[1] (Comparator_W31)       0.00       1.99 f
+  Magnitude_Comparator/U56/Y (INVX2TS)                    0.10       2.09 r
+  Magnitude_Comparator/U15/Y (XNOR2X1TS)                  0.23       2.32 f
+  Magnitude_Comparator/U53/Y (OAI32X1TS)                  0.27       2.58 r
+  Magnitude_Comparator/U31/Y (AOI22X1TS)                  0.18       2.77 f
+  Magnitude_Comparator/U30/Y (OAI22X1TS)                  0.21       2.98 r
+  Magnitude_Comparator/U28/Y (AOI22X1TS)                  0.16       3.14 f
+  Magnitude_Comparator/U39/Y (OAI22X1TS)                  0.21       3.35 r
+  Magnitude_Comparator/U38/Y (AOI22X1TS)                  0.16       3.51 f
+  Magnitude_Comparator/U36/Y (OAI22X1TS)                  0.20       3.71 r
+  Magnitude_Comparator/U35/Y (AOI222XLTS)                 0.21       3.92 f
+  Magnitude_Comparator/U33/Y (OAI22X1TS)                  0.24       4.16 r
+  Magnitude_Comparator/U32/Y (AOI22X1TS)                  0.16       4.32 f
+  Magnitude_Comparator/U50/Y (OAI22X1TS)                  0.21       4.53 r
+  Magnitude_Comparator/U48/Y (AOI22X1TS)                  0.15       4.68 f
+  Magnitude_Comparator/U47/Y (OAI33XLTS)                  0.48       5.16 r
+  Magnitude_Comparator/U45/Y (NOR2X1TS)                   0.23       5.39 f
+  Magnitude_Comparator/U44/Y (OAI22X1TS)                  0.21       5.60 r
+  Magnitude_Comparator/U27/Y (AOI32X1TS)                  0.22       5.82 f
+  Magnitude_Comparator/U26/Y (OAI21X1TS)                  0.13       5.95 r
+  Magnitude_Comparator/U25/Y (AOI22X1TS)                  0.15       6.09 f
+  Magnitude_Comparator/U24/Y (OAI22X1TS)                  0.59       6.68 r
+  Magnitude_Comparator/gtXY_o (Comparator_W31)            0.00       6.68 r
+  MuxXY/select (MultiplexTxT_W31)                         0.00       6.68 r
+  MuxXY/U14/Y (CLKBUFX2TS)                                0.49       7.17 r
+  MuxXY/U13/Y (INVX2TS)                                   0.18       7.35 f
+  MuxXY/U10/Y (CLKBUFX2TS)                                0.30       7.65 f
+  MuxXY/U9/Y (CLKBUFX2TS)                                 0.40       8.05 f
+  MuxXY/U1/Y (INVX2TS)                                    0.29       8.34 r
+  MuxXY/U44/Y (OAI22X1TS)                                 0.16       8.50 f
+  MuxXY/S0_o[10] (MultiplexTxT_W31)                       0.00       8.50 f
+  MRegister/D[10] (RegisterAdd_W31_1)                     0.00       8.50 f
+  MRegister/U12/Y (OAI2BB2XLTS)                           0.28       8.78 f
+  MRegister/Q_reg[10]/D (DFFRX2TS)                        0.00       8.78 f
+  data arrival time                                                  8.78
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  MRegister/Q_reg[10]/CK (DFFRX2TS)                       0.00      10.50 r
+  library setup time                                     -0.22      10.28
+  data required time                                                10.28
+  --------------------------------------------------------------------------
+  data required time                                                10.28
+  data arrival time                                                 -8.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+1

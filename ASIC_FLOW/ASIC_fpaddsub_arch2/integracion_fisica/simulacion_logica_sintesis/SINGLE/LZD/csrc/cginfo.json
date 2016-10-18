@@ -1,0 +1,215 @@
+{
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "tb_LZD",
+        "INVX2TS",
+        "AOI31X1TS",
+        "NAND4BX1TS",
+        "NOR3X1TS",
+        "NOR4BX1TS",
+        "OAI2BB2XLTS"
+    ],
+    "MlibObjs": {},
+    "CompileStrategy": "fullobj",
+    "CompileStatus": "Successful",
+    "PrevCompiledModules": {
+        "NOR4BX1TS": {
+            "zihT1_d": {
+                "bytes": 8624,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "zihT1_d.o",
+                "mod": "NOR4BX1TS",
+                "mode": 4
+            }
+        },
+        "tb_LZD": {
+            "N7qSD_d": {
+                "bytes": 147636,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "N7qSD_d.o",
+                "mod": "tb_LZD",
+                "mode": 4
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7093,
+                "checksum": 4294967295,
+                "out": "objs/amcQw_d.o",
+                "mod": "...MASTER...",
+                "mode": 4
+            }
+        },
+        "NAND4BX1TS": {
+            "yV15g_d": {
+                "bytes": 8672,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "yV15g_d.o",
+                "mod": "NAND4BX1TS",
+                "mode": 4
+            }
+        },
+        "NOR3X1TS": {
+            "TwzRn_d": {
+                "bytes": 7682,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "TwzRn_d.o",
+                "mod": "NOR3X1TS",
+                "mode": 4
+            }
+        },
+        "INVX2TS": {
+            "vphTK_d": {
+                "bytes": 6032,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "vphTK_d.o",
+                "mod": "INVX2TS",
+                "mode": 4
+            }
+        },
+        "AOI31X1TS": {
+            "VtVU1_d": {
+                "bytes": 10676,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "VtVU1_d.o",
+                "mod": "AOI31X1TS",
+                "mode": 4
+            }
+        },
+        "OAI2BB2XLTS": {
+            "HG8j1_d": {
+                "bytes": 11407,
+                "archive": "archive.7/_prev_archive_1.a",
+                "checksum": 4294967295,
+                "out": "HG8j1_d.o",
+                "mod": "OAI2BB2XLTS",
+                "mode": 4
+            }
+        },
+        "udp_dff": {
+            "udp_dff": {
+                "bytes": 0,
+                "out": "objs/udps/exIG1.o",
+                "mod": "udp_dff",
+                "mode": 4
+            }
+        }
+    },
+    "stat": {
+        "totalObjSize": 96468,
+        "ru_self_cgstart": {
+            "ru_nvcsw": 56,
+            "ru_minflt": 12751,
+            "ru_stime_sec": 0.069988999999999996,
+            "ru_utime_sec": 0.17297299999999999,
+            "ru_maxrss_kb": 52664,
+            "ru_majflt": 0,
+            "ru_nivcsw": 119
+        },
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 0,
+            "ru_minflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_nvcsw": 56,
+            "ru_minflt": 13994,
+            "ru_stime_sec": 0.074987999999999999,
+            "ru_utime_sec": 0.17797199999999999,
+            "ru_maxrss_kb": 56136,
+            "ru_majflt": 0,
+            "ru_nivcsw": 122
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_minflt": 0,
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 0,
+        "nQuads": 0,
+        "Frontend(%)": 97.191131189175834,
+        "CodeGen(%)": 2.8088688108241766
+    },
+    "NameTable": {
+        "tb_LZD": [
+            "tb_LZD",
+            "N7qSD",
+            "module"
+        ],
+        "NOR4BX1TS": [
+            "NOR4BX1TS",
+            "zihT1",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "INVX2TS": [
+            "INVX2TS",
+            "vphTK",
+            "module"
+        ],
+        "AOI31X1TS": [
+            "AOI31X1TS",
+            "VtVU1",
+            "module"
+        ],
+        "NAND4BX1TS": [
+            "NAND4BX1TS",
+            "yV15g",
+            "module"
+        ],
+        "NOR3X1TS": [
+            "NOR3X1TS",
+            "TwzRn",
+            "module"
+        ],
+        "udp_dff": [
+            "udp_dff",
+            "exIG1",
+            "udp"
+        ],
+        "OAI2BB2XLTS": [
+            "OAI2BB2XLTS",
+            "HG8j1",
+            "module"
+        ]
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89375
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.8444.json"
+    ],
+    "Misc": {
+        "csrc": "csrc",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv.daidir",
+        "archive_dir": "archive.7"
+    }
+}

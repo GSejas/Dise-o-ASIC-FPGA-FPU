@@ -1,0 +1,26 @@
+Warning: Design 'Barrel_Shifter' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : Barrel_Shifter
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:49 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Mux_Array                 Mux_Array_SWR26_EWR5            1522.080023
+                                                                    b, h, p
+Output_Reg                RegisterAdd_W26                 1167.839972
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 2 cells                                             2689.919995
+1

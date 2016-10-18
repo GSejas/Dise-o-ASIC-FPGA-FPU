@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Tenth_Phase
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:27:41 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          237
+Number of nets:                           357
+Number of cells:                          124
+Number of combinational cells:             86
+Number of sequential cells:                34
+Number of macros/black boxes:               0
+Number of buf/inv:                         19
+Number of references:                       5
+
+Combinational area:                764.640000
+Buf/Inv area:                       99.360004
+Noncombinational area:            1059.839966
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1824.479966
+Total area:                 undefined
+1

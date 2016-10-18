@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LZD
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:38 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Add_subt_result_i[6]
+              (input port clocked by clk)
+  Endpoint: Output_Reg/Q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.50       4.50 f
+  Add_subt_result_i[6] (in)                               0.00       4.50 f
+  LZD_SINGLEBLK.Codec_32/Data_Dec_i[6] (Priority_Codec_32)
+                                                          0.00       4.50 f
+  LZD_SINGLEBLK.Codec_32/U4/Y (NOR4XLTS)                  0.40       4.91 r
+  LZD_SINGLEBLK.Codec_32/U3/Y (NOR4BX1TS)                 0.39       5.29 r
+  LZD_SINGLEBLK.Codec_32/U6/Y (NAND4X1TS)                 0.27       5.56 f
+  LZD_SINGLEBLK.Codec_32/U12/Y (INVX2TS)                  0.11       5.67 r
+  LZD_SINGLEBLK.Codec_32/Data_Bin_o[0] (Priority_Codec_32)
+                                                          0.00       5.67 r
+  Output_Reg/D[0] (RegisterAdd_W5)                        0.00       5.67 r
+  Output_Reg/U2/Y (OAI2BB2XLTS)                           0.22       5.89 r
+  Output_Reg/Q_reg[0]/D (DFFRX2TS)                        0.00       5.89 r
+  data arrival time                                                  5.89
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Output_Reg/Q_reg[0]/CK (DFFRX2TS)                       0.00      10.50 r
+  library setup time                                     -0.32      10.18
+  data required time                                                10.18
+  --------------------------------------------------------------------------
+  data required time                                                10.18
+  data arrival time                                                 -5.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.29
+
+
+1

@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : port
+Design : LZD
+Version: L-2016.03-SP3
+Date   : Mon Oct 17 18:28:38 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Add_subt_result_i[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[2]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[3]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[4]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[5]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[6]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[7]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[8]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[9]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[10]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[11]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[12]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[13]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[14]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[15]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[16]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[17]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[18]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[19]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[20]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[21]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[22]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[23]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[24]
+               in      0.0000   0.0000    1.02    1.71   --         
+Add_subt_result_i[25]
+               in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+load_i         in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
+Shift_Value_o[0]
+               out     0.0000   0.0000   --      --      --         
+Shift_Value_o[1]
+               out     0.0000   0.0000   --      --      --         
+Shift_Value_o[2]
+               out     0.0000   0.0000   --      --      --         
+Shift_Value_o[3]
+               out     0.0000   0.0000   --      --      --         
+Shift_Value_o[4]
+               out     0.0000   0.0000   --      --      --         
+
+1

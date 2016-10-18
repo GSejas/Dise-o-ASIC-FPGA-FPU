@@ -3,7 +3,7 @@
 Report : qor
 Design : Add_Subt
 Version: L-2016.03-SP3
-Date   : Mon Oct 17 14:52:18 2016
+Date   : Mon Oct 17 20:48:29 2016
 ****************************************
 
 
@@ -65,10 +65,10 @@ Date   : Mon Oct 17 14:52:18 2016
   -----------------------------------------
   Resource Sharing:                    0.08
   Logic Optimization:                  0.31
-  Mapping Optimization:                0.95
+  Mapping Optimization:                0.96
   -----------------------------------------
-  Overall Compile Time:                3.49
-  Overall Compile Wall Clock Time:     3.72
+  Overall Compile Time:                3.51
+  Overall Compile Wall Clock Time:     3.77
 
   --------------------------------------------------------------------
 
