@@ -1,0 +1,53 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : Oper_Start_In_2_W64
+Version: L-2016.03-SP3
+Date   : Tue Oct 18 20:47:17 2016
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 306.0382 uW   (92%)
+  Net Switching Power  =  26.1778 uW    (8%)
+                         ---------
+Total Dynamic Power    = 332.2160 uW  (100%)
+
+Cell Leakage Power     =   8.3760 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.2810        1.5899e-03        4.7292e+03            0.2826  (  85.05%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.5070e-02        2.4588e-02        3.6468e+03        4.9661e-02  (  14.95%)
+--------------------------------------------------------------------------------------------------
+Total              0.3060 mW     2.6178e-02 mW     8.3760e+03 pW         0.3322 mW
+1

@@ -1,0 +1,39 @@
+{
+    "ObjArchives": [],
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7109,
+            "checksum": 4294967295
+        }
+    },
+    "Modules": {
+        "...MASTER...": {},
+        "INVX2TS": {},
+        "MultiplexTxT_W31": {},
+        "OAI32X1TS": {},
+        "tb_Oper_Start_In": {},
+        "DFFRX2TS": {},
+        "RegisterAdd_W1_1": {},
+        "RegisterAdd_W31_0": {},
+        "RegisterAdd_W32_0": {},
+        "Comparator_W31": {},
+        "AND2X2TS": {},
+        "RegisterAdd_W31_1": {},
+        "xor_tri_W32": {},
+        "RegisterAdd_W1_0": {},
+        "sgn_result": {},
+        "AOI222XLTS": {},
+        "AOI22X1TS": {},
+        "CLKBUFX2TS": {},
+        "AOI32X1TS": {},
+        "OAI22X1TS": {},
+        "OAI2BB2XLTS": {},
+        "OAI222X1TS": {},
+        "XOR2X1TS": {},
+        "XNOR2X1TS": {}
+    },
+    "reusePaths": {}
+}

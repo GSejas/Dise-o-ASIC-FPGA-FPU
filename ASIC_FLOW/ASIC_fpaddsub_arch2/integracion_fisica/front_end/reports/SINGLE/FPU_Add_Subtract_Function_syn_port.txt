@@ -1,9 +1,9 @@
  
 ****************************************
 Report : port
-Design : Add_Subt
+Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Mon Oct 17 20:47:57 2016
+Date   : Tue Oct 18 20:31:24 2016
 ****************************************
 
 
@@ -14,130 +14,143 @@ Attributes:
                        Pin      Wire     Max     Max     Connection
 Port           Dir     Load     Load     Trans   Cap     Class      Attrs
 --------------------------------------------------------------------------------
-Add_Sub_op_i   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[0]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[1]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[2]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[3]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[4]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[5]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[6]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[7]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[8]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[9]    in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[10]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[11]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[12]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[13]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[14]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[15]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[16]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[17]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[18]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[19]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[20]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[21]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[22]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[23]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[24]   in      0.0000   0.0000    1.02    1.71   --         
-Data_A_i[25]   in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[0] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[1] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[2] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[3] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[4] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[5] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[6] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[7] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[8] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[9] in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[10]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[11]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[12]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[13]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[14]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[15]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[16]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[17]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[18]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[19]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[20]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[21]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[22]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[23]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[24]
-               in      0.0000   0.0000    1.02    1.71   --         
-PreData_B_i[25]
-               in      0.0000   0.0000    1.02    1.71   --         
+Data_X[0]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[1]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[2]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[3]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[4]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[5]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[6]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[7]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[8]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[9]      in      0.0000   0.0000    1.02    1.71   --         
+Data_X[10]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[11]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[12]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[13]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[14]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[15]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[16]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[17]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[18]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[19]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[20]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[21]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[22]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[23]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[24]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[25]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[26]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[27]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[28]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[29]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[30]     in      0.0000   0.0000    1.02    1.71   --         
+Data_X[31]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[0]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[1]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[2]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[3]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[4]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[5]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[6]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[7]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[8]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[9]      in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[10]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[11]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[12]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[13]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[14]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[15]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[16]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[17]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[18]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[19]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[20]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[21]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[22]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[23]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[24]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[25]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[26]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[27]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[28]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[29]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[30]     in      0.0000   0.0000    1.02    1.71   --         
+Data_Y[31]     in      0.0000   0.0000    1.02    1.71   --         
+ack_FSM        in      0.0000   0.0000    1.02    1.71   --         
+add_subt       in      0.0000   0.0000    1.02    1.71   --         
+beg_FSM        in      0.0000   0.0000    1.02    1.71   --         
 clk            in      0.0000   0.0000   --      --      --         d
-load_i         in      0.0000   0.0000    1.02    1.71   --         
+r_mode[0]      in      0.0000   0.0000    1.02    1.71   --         
+r_mode[1]      in      0.0000   0.0000    1.02    1.71   --         
 rst            in      0.0000   0.0000    1.02    1.71   --         
-Data_Result_o[0]
+final_result_ieee[0]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[1]
+final_result_ieee[1]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[2]
+final_result_ieee[2]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[3]
+final_result_ieee[3]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[4]
+final_result_ieee[4]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[5]
+final_result_ieee[5]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[6]
+final_result_ieee[6]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[7]
+final_result_ieee[7]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[8]
+final_result_ieee[8]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[9]
+final_result_ieee[9]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[10]
+final_result_ieee[10]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[11]
+final_result_ieee[11]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[12]
+final_result_ieee[12]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[13]
+final_result_ieee[13]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[14]
+final_result_ieee[14]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[15]
+final_result_ieee[15]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[16]
+final_result_ieee[16]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[17]
+final_result_ieee[17]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[18]
+final_result_ieee[18]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[19]
+final_result_ieee[19]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[20]
+final_result_ieee[20]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[21]
+final_result_ieee[21]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[22]
+final_result_ieee[22]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[23]
+final_result_ieee[23]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[24]
+final_result_ieee[24]
                out     0.0000   0.0000   --      --      --         
-Data_Result_o[25]
+final_result_ieee[25]
                out     0.0000   0.0000   --      --      --         
-FSM_C_o        out     0.0000   0.0000   --      --      --         
+final_result_ieee[26]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[27]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[28]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[29]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[30]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[31]
+               out     0.0000   0.0000   --      --      --         
+overflow_flag  out     0.0000   0.0000   --      --      --         
+ready          out     0.0000   0.0000   --      --      --         
+underflow_flag out     0.0000   0.0000   --      --      --         
 
 1

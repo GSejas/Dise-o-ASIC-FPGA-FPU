@@ -1,3 +1,4 @@
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv  +v2k +lint=all -a log_name +define+SYN_SINGLE -ucligui
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
@@ -5,27 +6,111 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD0
-set ::dve_fid VPD0
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpqns5rM
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.8818}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.8818}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpT4203w
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.6237}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.6237}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-synopsys::dump -add {tb_LZD} -scope "." -depth 1 -fid VPD0
+if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {tb_LZD} -scope "." -depth 1 -fid VPD1
+set _session_group_1 tb_LZD
+set tb_LZD "$_session_group_1"
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Post database loading setting...
+# Restore C1 time
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_select -id ${Hier.1} {tb_LZD}}
+# Data 'Data.1'
+# Source 'Source.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${HSPane.1} }
+#</Session>
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
-set synopsys::env(time) 31675665000
-set synopsys::env(time) 63399425000
+set synopsys::env(time) 32232025000
+set synopsys::env(time) 63776925000
+set synopsys::env(time) 95992425000
+set synopsys::env(time) 128329645000
+set synopsys::env(time) 160513955000
+set synopsys::env(time) 192735530000
+set synopsys::env(time) 223910990000
+set synopsys::env(time) 255988930000
+set synopsys::env(time) 287791680000
+set synopsys::env(time) 319460955000
+set synopsys::env(time) 351763375000
+set synopsys::env(time) 383785020000
+set synopsys::env(time) 416008135000
+set synopsys::env(time) 448239235000
+ucliCore::getToolPID
+ucliCore::stopTool -no_signal
+set synopsys::env(time) 479667030000
 set ucliGUI::state
-trigger_hier_stack_context_switch 0
+set ucliGUI::state
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/schematic.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/base.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/enable.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/netlist.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/method.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/driversloads.tcl
+ucliGUI::vpdAddHierarchy -scope tb_LZD.inst_LZD.Output_Reg -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/inter.vpd; synopsys::dump -flush VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.load} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n11} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n7} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.clk} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n10} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n5} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Shift_Value_o} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n6} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n8} -aggregates  -fid VPD1
+synopsys::dump -add {tb_LZD.inst_LZD.Output_Reg.n9} -aggregates  -fid VPD1
+synopsys::dump -add {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[0] .D}} -aggregates  -fid VPD1
+synopsys::dump -add {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] .D}} -aggregates  -fid VPD1
+synopsys::dump -add {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[2] .D}} -aggregates  -fid VPD1
+synopsys::dump -add {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[3] .D}} -aggregates  -fid VPD1
+synopsys::dump -add {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[4] .D}} -aggregates  -fid VPD1
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 505860630000
+ucliCore::getToolPID
+ucliCore::stopTool -no_signal
+set ucliGUI::state
+set ucliGUI::state
+synopsys::dump -add {tb_LZD.inst_LZD.clk} -aggregates  -fid VPD1
 if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
 synopsys::finish
 set ucliGUI::state

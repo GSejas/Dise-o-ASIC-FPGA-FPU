@@ -1,14 +1,14 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Mon Oct 17 16:08:12 2016
+# Saved on Tue Oct 18 16:51:20 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: tb_Oper_Start_In
-#   Wave.1: 15 signals
+#   Wave.1: 20 signals
 #   Group count = 1
-#   Group tb_Oper_Start_In signal count = 15
+#   Group inst_Oper_Start_In signal count = 20
 # End_DVE_Session_Save_Info
 
 # DVE version: K-2015.09-SP2-3_Full64
@@ -67,7 +67,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{2 51} {1021 738}}
+gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{0 24} {1359 767}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -128,7 +128,7 @@ if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {
 }
 
 gui_show_window -window ${HSPane.1} -show_state maximized
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 645} {child_hier_coltype 371} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 815} {child_hier_coltype 541} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
 if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
         set Data.1 [gui_share_window -id ${DLPane.1} -type Data]
@@ -137,13 +137,13 @@ if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
 }
 
 gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 437} {child_data_colvalue 261} {child_data_coltype 317} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 440} {child_data_colvalue 261} {child_data_coltype 317} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
 gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 485} {child_wave_right 529} {child_wave_colname 268} {child_wave_colvalue 213} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 651} {child_wave_right 703} {child_wave_colname 349} {child_wave_colvalue 298} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
@@ -163,11 +163,11 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 # DVE Open design session: 
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
-gui_set_env SIMSETUP::SIMARGS {{-ucligui +v2k +lint=all -l log_name +define+SYN_SINGLE}}
-gui_set_env SIMSETUP::SIMEXE {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv}
+gui_set_env SIMSETUP::SIMARGS {{+v2k +lint=all -a log_name +define+SYN_SINGLE}}
+gui_set_env SIMSETUP::SIMEXE {simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
 if { ![gui_is_db_opened -db {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv}] } {
-gui_sim_run Ucli -exe simv -args {-ucligui +v2k +lint=all -l log_name +define+SYN_SINGLE} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE -nosource
+gui_sim_run Ucli -exe simv -args { +v2k +lint=all -a log_name +define+SYN_SINGLE -ucligui} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE -nosource
 }
 }
 if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
@@ -189,19 +189,14 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
+gui_load_child_values {tb_Oper_Start_In.inst_Oper_Start_In}
 
 
-set _session_group_2 tb_Oper_Start_In
+set _session_group_2 inst_Oper_Start_In
 gui_sg_create "$_session_group_2"
-set tb_Oper_Start_In "$_session_group_2"
+set inst_Oper_Start_In "$_session_group_2"
 
-gui_sg_addsignal -group "$_session_group_2" { tb_Oper_Start_In.load_b_i tb_Oper_Start_In.load_a_i tb_Oper_Start_In.contador tb_Oper_Start_In.Data_X_i tb_Oper_Start_In.Data_Y_i tb_Oper_Start_In.real_op_o tb_Oper_Start_In.PERIOD tb_Oper_Start_In.W tb_Oper_Start_In.add_subt_i tb_Oper_Start_In.clk tb_Oper_Start_In.zero_flag_o tb_Oper_Start_In.DmP_o tb_Oper_Start_In.DMP_o tb_Oper_Start_In.sign_final_result_o tb_Oper_Start_In.rst }
-gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_Oper_Start_In.Data_X_i}
-gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_Oper_Start_In.Data_Y_i}
-gui_set_radix -radix {decimal} -signals {Sim:tb_Oper_Start_In.PERIOD}
-gui_set_radix -radix {twosComplement} -signals {Sim:tb_Oper_Start_In.PERIOD}
-gui_set_radix -radix {decimal} -signals {Sim:tb_Oper_Start_In.W}
-gui_set_radix -radix {twosComplement} -signals {Sim:tb_Oper_Start_In.W}
+gui_sg_addsignal -group "$_session_group_2" { tb_Oper_Start_In.inst_Oper_Start_In.load_b_i tb_Oper_Start_In.inst_Oper_Start_In.Data_X_i tb_Oper_Start_In.inst_Oper_Start_In.Data_Y_i tb_Oper_Start_In.inst_Oper_Start_In.eqXY tb_Oper_Start_In.inst_Oper_Start_In.intDX tb_Oper_Start_In.inst_Oper_Start_In.intDY tb_Oper_Start_In.inst_Oper_Start_In.sign_result tb_Oper_Start_In.inst_Oper_Start_In.real_op_o tb_Oper_Start_In.inst_Oper_Start_In.intAS tb_Oper_Start_In.inst_Oper_Start_In.add_subt_i tb_Oper_Start_In.inst_Oper_Start_In.clk tb_Oper_Start_In.inst_Oper_Start_In.zero_flag_o tb_Oper_Start_In.inst_Oper_Start_In.DmP_o tb_Oper_Start_In.inst_Oper_Start_In.DMP_o tb_Oper_Start_In.inst_Oper_Start_In.intm tb_Oper_Start_In.inst_Oper_Start_In.intM tb_Oper_Start_In.inst_Oper_Start_In.sign_final_result_o tb_Oper_Start_In.inst_Oper_Start_In.load_a_i tb_Oper_Start_In.inst_Oper_Start_In.gtXY tb_Oper_Start_In.inst_Oper_Start_In.rst }
 
 # Global: Highlighting
 
@@ -211,7 +206,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 0
+gui_set_time -C1_only 236000
 
 
 
@@ -236,14 +231,15 @@ gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtP
 gui_list_set_filter -id ${Hier.1} -text {*}
 gui_hier_list_init -id ${Hier.1}
 gui_change_design -id ${Hier.1} -design Sim
-catch {gui_list_select -id ${Hier.1} {tb_Oper_Start_In}}
+catch {gui_list_expand -id ${Hier.1} tb_Oper_Start_In}
+catch {gui_list_select -id ${Hier.1} {tb_Oper_Start_In.inst_Oper_Start_In}}
 gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {tb_Oper_Start_In}
+gui_list_show_data -id ${Data.1} {tb_Oper_Start_In.inst_Oper_Start_In}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
 gui_view_scroll -id ${Hier.1} -vertical -set 0
@@ -253,7 +249,7 @@ gui_view_scroll -id ${Hier.1} -horizontal -set 0
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
 gui_open_source -id ${Source.1}  -replace -active tb_Oper_Start_In /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/tb_Oper_Start_In.v
-gui_view_scroll -id ${Source.1} -vertical -set 45
+gui_view_scroll -id ${Source.1} -vertical -set 42
 gui_src_set_reusable -id ${Source.1}
 
 # View 'Wave.1'
@@ -265,9 +261,8 @@ gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 102294926 102494918
-gui_list_add_group -id ${Wave.1} -after {New Group} {tb_Oper_Start_In}
-gui_list_select -id ${Wave.1} {tb_Oper_Start_In.zero_flag_o }
+gui_wv_zoom_timerange -id ${Wave.1} 0 799961
+gui_list_add_group -id ${Wave.1} -after {New Group} {inst_Oper_Start_In}
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -283,9 +278,9 @@ if { $groupExD } {
 }
 gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Wave.1} -text {*}
-gui_list_set_insertion_bar  -id ${Wave.1} -group tb_Oper_Start_In  -item tb_Oper_Start_In.load_a_i -position below
+gui_list_set_insertion_bar  -id ${Wave.1} -group inst_Oper_Start_In  -position in
 
-gui_marker_move -id ${Wave.1} {C1} 0
+gui_marker_move -id ${Wave.1} {C1} 236000
 gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder

@@ -1,14 +1,16 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Mon Oct 17 20:51:24 2016
+# Saved on Tue Oct 18 14:21:14 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv
 # Toplevel windows open: 1
-# 	TopLevel.1
-#   Source.1: tb_LZD
-#   Wave.1: 10 signals
-#   Group count = 1
-#   Group tb_LZD signal count = 10
+# 	TopLevel.2
+#   Wave.2: 10 signals
+#   Schematic.2: .
+#   Group count = 3
+#   Group tb_LZD signal count = 9
+#   Group bt_Schematic.2 signal count = 4
+#   Group bt_end-points_Schematic.2 signal count = 6
 # End_DVE_Session_Save_Info
 
 # DVE version: K-2015.09-SP2-3_Full64
@@ -59,15 +61,15 @@ gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
 # DVE top-level session
 
 
-# Create and position top-level window: TopLevel.1
+# Create and position top-level window: TopLevel.2
 
-if {![gui_exist_window -window TopLevel.1]} {
-    set TopLevel.1 [ gui_create_window -type TopLevel \
+if {![gui_exist_window -window TopLevel.2]} {
+    set TopLevel.2 [ gui_create_window -type TopLevel \
        -icon $::env(DVE)/auxx/gui/images/toolbars/dvewin.xpm] 
 } else { 
-    set TopLevel.1 TopLevel.1
+    set TopLevel.2 TopLevel.2
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{13 57} {972 738}}
+gui_show_window -window ${TopLevel.2} -show_state normal -rect {{3 52} {1360 755}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -82,7 +84,9 @@ gui_set_toolbar_attributes -toolbar {&Trace} -dock_state top
 gui_set_toolbar_attributes -toolbar {&Trace} -offset 0
 gui_show_toolbar -toolbar {&Trace}
 gui_hide_toolbar -toolbar {TraceInstance}
-gui_hide_toolbar -toolbar {BackTrace}
+gui_set_toolbar_attributes -toolbar {BackTrace} -dock_state top
+gui_set_toolbar_attributes -toolbar {BackTrace} -offset 0
+gui_show_toolbar -toolbar {BackTrace}
 gui_set_toolbar_attributes -toolbar {&Scope} -dock_state top
 gui_set_toolbar_attributes -toolbar {&Scope} -offset 0
 gui_show_toolbar -toolbar {&Scope}
@@ -114,47 +118,51 @@ gui_show_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-gui_sync_global -id ${TopLevel.1} -option true
+set Wave.2 [gui_create_window -type Wave -parent ${TopLevel.2} -dock_state bottom -dock_on_new_line false -dock_extent 261]
+gui_set_window_pref_key -window ${Wave.2} -key dock_width -value_type integer -value -1
+gui_set_window_pref_key -window ${Wave.2} -key dock_height -value_type integer -value 261
+gui_set_window_pref_key -window ${Wave.2} -key dock_offset -value_type integer -value 0
+gui_update_layout -id ${Wave.2} {{left 0} {top 0} {width 1357} {height 260} {dock_state bottom} {dock_on_new_line false} {child_wave_left 387} {child_wave_right 945} {child_wave_colname 261} {child_wave_colvalue 122} {child_wave_col1 0} {child_wave_col2 1}}
+#### Start - Readjusting docked view's offset / size
+set dockAreaList { top left right bottom }
+foreach dockArea $dockAreaList {
+  set viewList [gui_ekki_get_window_ids -active_parent -dock_area $dockArea]
+  foreach view $viewList {
+      if {[lsearch -exact [gui_get_window_pref_keys -window $view] dock_width] != -1} {
+        set dockWidth [gui_get_window_pref_value -window $view -key dock_width]
+        set dockHeight [gui_get_window_pref_value -window $view -key dock_height]
+        set offset [gui_get_window_pref_value -window $view -key dock_offset]
+        if { [string equal "top" $dockArea] || [string equal "bottom" $dockArea]} {
+          gui_set_window_attributes -window $view -dock_offset $offset -width $dockWidth
+        } else {
+          gui_set_window_attributes -window $view -dock_offset $offset -height $dockHeight
+        }
+      }
+  }
+}
+#### End - Readjusting docked view's offset / size
+gui_sync_global -id ${TopLevel.2} -option true
 
 # MDI window settings
-set Console.1 [gui_create_window -type {Console}  -parent ${TopLevel.1}]
-gui_show_window -window ${Console.1} -show_state maximized
-gui_update_layout -id ${Console.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
-set HSPane.1 [gui_create_window -type {HSPane}  -parent ${TopLevel.1}]
-if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {
-        set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier]
-} else {
-        set Hier.1  [gui_get_shared_view -id ${HSPane.1} -type Hier]
-}
-
-gui_show_window -window ${HSPane.1} -show_state maximized
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 645} {child_hier_coltype 371} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
-if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
-        set Data.1 [gui_share_window -id ${DLPane.1} -type Data]
-} else {
-        set Data.1  [gui_get_shared_view -id ${DLPane.1} -type Data]
-}
-
-gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 440} {child_data_colvalue 261} {child_data_coltype 317} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
-gui_show_window -window ${Source.1} -show_state maximized
-gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
-set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
-gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 459} {child_wave_right 495} {child_wave_colname 253} {child_wave_colvalue 202} {child_wave_col1 0} {child_wave_col2 1}}
+gui_use_schematics
+set Schematic.2 [gui_create_window -type {Schematic}  -parent ${TopLevel.2} -defer_create_taskbar_icon]
+set setting [::Misc::Setting::create -array DveBtSchematicSettings]
+Misc::init_window $setting ${Schematic.2}
+::Misc::exec_method -window ${Schematic.2} -method captionCmd
+gui_add_icon_to_taskbar -window ${Schematic.2}
+gui_show_window -window ${Schematic.2} -show_state maximized
+gui_update_layout -id ${Schematic.2} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 
 # End MDI window settings
 
-gui_set_env TOPLEVELS::TARGET_FRAME(Source) ${TopLevel.1}
-gui_set_env TOPLEVELS::TARGET_FRAME(Schematic) ${TopLevel.1}
-gui_set_env TOPLEVELS::TARGET_FRAME(PathSchematic) ${TopLevel.1}
-gui_set_env TOPLEVELS::TARGET_FRAME(Wave) ${TopLevel.1}
+gui_set_env TOPLEVELS::TARGET_FRAME(Source) none
+gui_set_env TOPLEVELS::TARGET_FRAME(Schematic) none
+gui_set_env TOPLEVELS::TARGET_FRAME(PathSchematic) none
+gui_set_env TOPLEVELS::TARGET_FRAME(Wave) none
 gui_set_env TOPLEVELS::TARGET_FRAME(List) none
-gui_set_env TOPLEVELS::TARGET_FRAME(Memory) ${TopLevel.1}
+gui_set_env TOPLEVELS::TARGET_FRAME(Memory) none
 gui_set_env TOPLEVELS::TARGET_FRAME(DriverLoad) none
-gui_update_statusbar_target_frame ${TopLevel.1}
+gui_update_statusbar_target_frame ${TopLevel.2}
 
 #</WindowLayout>
 
@@ -163,8 +171,8 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 # DVE Open design session: 
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
-gui_set_env SIMSETUP::SIMARGS {{+v2k +lint=all -a log_name +define+SYN_SINGLE}}
-gui_set_env SIMSETUP::SIMEXE {simv}
+gui_set_env SIMSETUP::SIMARGS {{ +v2k +lint=all -a log_name +define+SYN_SINGLE -ucligui}}
+gui_set_env SIMSETUP::SIMEXE {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
 if { ![gui_is_db_opened -db {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv}] } {
 gui_sim_run Ucli -exe simv -args { +v2k +lint=all -a log_name +define+SYN_SINGLE -ucligui} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD -nosource
@@ -189,28 +197,33 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
-gui_load_child_values {tb_LZD}
 
 
 set _session_group_1 tb_LZD
 gui_sg_create "$_session_group_1"
 set tb_LZD "$_session_group_1"
 
-gui_sg_addsignal -group "$_session_group_1" { tb_LZD.Contador tb_LZD.load_i tb_LZD.SWR tb_LZD.Shift_Value_o tb_LZD.PERIOD tb_LZD.Add_subt_result_i tb_LZD.EWR tb_LZD.incremental tb_LZD.clk tb_LZD.rst }
-gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.Contador}
-gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.Contador}
+gui_sg_addsignal -group "$_session_group_1" { tb_LZD.Contador tb_LZD.load_i tb_LZD.SWR tb_LZD.Shift_Value_o tb_LZD.PERIOD tb_LZD.Add_subt_result_i tb_LZD.EWR tb_LZD.clk tb_LZD.rst }
 gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.SWR}
 gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.SWR}
 gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.Shift_Value_o}
 gui_set_radix -radix {unsigned} -signals {Sim:tb_LZD.Shift_Value_o}
 gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.PERIOD}
 gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.PERIOD}
-gui_set_radix -radix {binary} -signals {Sim:tb_LZD.Add_subt_result_i}
-gui_set_radix -radix {unsigned} -signals {Sim:tb_LZD.Add_subt_result_i}
 gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.EWR}
 gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.EWR}
-gui_set_radix -radix {decimal} -signals {Sim:tb_LZD.incremental}
-gui_set_radix -radix {twosComplement} -signals {Sim:tb_LZD.incremental}
+
+set _session_group_2 bt_Schematic.2
+gui_sg_create "$_session_group_2"
+set bt_Schematic.2 "$_session_group_2"
+
+gui_sg_addsignal -group "$_session_group_2" { {tb_LZD.Shift_Value_o[1]} tb_LZD.inst_LZD.Output_Reg.clk tb_LZD.clk {tb_LZD.inst_LZD.Output_Reg.Q[4]} }
+
+set _session_group_3 bt_end-points_Schematic.2
+gui_sg_create "$_session_group_3"
+set bt_end-points_Schematic.2 "$_session_group_3"
+
+gui_sg_addsignal -group "$_session_group_3" { {tb_LZD.inst_LZD.Output_Reg.\Q_reg[0] .D} tb_LZD.inst_LZD.Output_Reg.clk {tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] .D} {tb_LZD.inst_LZD.Output_Reg.\Q_reg[2] .D} {tb_LZD.inst_LZD.Output_Reg.\Q_reg[3] .D} {tb_LZD.inst_LZD.Output_Reg.\Q_reg[4] .D} }
 
 # Global: Highlighting
 
@@ -220,7 +233,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 41242
+gui_set_time -C1_only 409536000
 
 
 
@@ -239,49 +252,34 @@ gui_set_loading_session_type noSession
 # DVE View/pane content session: 
 
 
-# Hier 'Hier.1'
-gui_show_window -window ${Hier.1}
-gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
-gui_list_set_filter -id ${Hier.1} -text {*}
-gui_hier_list_init -id ${Hier.1}
-gui_change_design -id ${Hier.1} -design Sim
-catch {gui_list_select -id ${Hier.1} {tb_LZD}}
-gui_view_scroll -id ${Hier.1} -vertical -set 0
-gui_view_scroll -id ${Hier.1} -horizontal -set 0
+# View 'Schematic.2'
+gui_use_schematics
 
-# Data 'Data.1'
-gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {tb_LZD}
-gui_view_scroll -id ${Data.1} -vertical -set 0
-gui_view_scroll -id ${Data.1} -horizontal -set 0
-gui_view_scroll -id ${Hier.1} -vertical -set 0
-gui_view_scroll -id ${Hier.1} -horizontal -set 0
+# Create backtrace schematic window 'Schematic.2'
+qtcl_add_property -name ${Schematic.2} -property windowSubType -type QString -value "BtSchematic"
+qtcl_set_property -name ${Schematic.2} -property useBackTraceBar -value true
+gui_bt_set_start -restart -id ${Schematic.2} -time 409542715 -precision 1ps {Sim:tb_LZD.Shift_Value_o[1]}
+gui_zoom -window ${Schematic.2} -rect { {-94319 -43269} {144513 3711} }
 
-# Source 'Source.1'
-gui_src_value_annotate -id ${Source.1} -switch false
-gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active tb_LZD /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/tb_LZD.v
-gui_view_scroll -id ${Source.1} -vertical -set 45
-gui_src_set_reusable -id ${Source.1}
 
-# View 'Wave.1'
-gui_wv_sync -id ${Wave.1} -switch false
+
+# View 'Wave.2'
+gui_wv_sync -id ${Wave.2} -switch false
+qtcl_set_property -name ${Wave.2} -property attachedView -value Schematic.2
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 gui_set_pref_value -category Wave -key exclusiveSG -value {false}
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 0 120926
-gui_list_add_group -id ${Wave.1} -after {New Group} {tb_LZD}
-gui_list_select -id ${Wave.1} {tb_LZD.Shift_Value_o }
-gui_seek_criteria -id ${Wave.1} {Any Edge}
+gui_marker_set_ref -id ${Wave.2}  C1
+gui_wv_zoom_timerange -id ${Wave.2} 163639986 655091244
+gui_list_add_group -id ${Wave.2} -after {New Group} {bt_Schematic.2}
+gui_list_add_group -id ${Wave.2} -after {New Group} {bt_end-points_Schematic.2}
+gui_list_select -id ${Wave.2} {tb_LZD.inst_LZD.Output_Reg.clk }
+gui_seek_criteria -id ${Wave.2} {Any Edge}
 
 
-
-gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
 gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
 gui_list_set_height -id Wave -height $origWaveHeight
 if {$origGroupCreationState} {
@@ -290,18 +288,18 @@ if {$origGroupCreationState} {
 if { $groupExD } {
  gui_msg_report -code DVWW028
 }
-gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-gui_list_set_filter -id ${Wave.1} -text {*}
-gui_list_set_insertion_bar  -id ${Wave.1} -group tb_LZD  -position in
+gui_list_set_filter -id ${Wave.2} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.2} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.2} -group bt_Schematic.2  -item {tb_LZD.inst_LZD.Output_Reg.Q[4]} -position below
 
-gui_marker_move -id ${Wave.1} {C1} 41242
-gui_view_scroll -id ${Wave.1} -vertical -set 0
-gui_show_grid -id ${Wave.1} -enable false
+gui_marker_move -id ${Wave.2} {C1} 409536000
+gui_view_scroll -id ${Wave.2} -vertical -set 10
+gui_show_grid -id ${Wave.2} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.1}]} {
-	gui_set_active_window -window ${TopLevel.1}
-	gui_set_active_window -window ${Wave.1}
+if {[gui_exist_window -window ${TopLevel.2}]} {
+	gui_set_active_window -window ${TopLevel.2}
+	gui_set_active_window -window ${Schematic.2}
 }
 #</Session>
 

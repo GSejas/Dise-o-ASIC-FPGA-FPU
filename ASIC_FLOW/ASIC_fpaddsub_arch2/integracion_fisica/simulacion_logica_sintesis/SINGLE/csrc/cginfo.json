@@ -1,247 +1,458 @@
 {
-    "CompileProcesses": [
-        "cgproc.20981.json"
-    ],
-    "CurCompileUdps": {
-        "udp_mux2": "objs/udps/U7Vwg.o",
-        "udp_dff": "objs/udps/exIG1.o"
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "CLKAND2X2TS": {
+            "TgI2b_d": {
+                "checksum": 4294967295,
+                "bytes": 7382,
+                "mod": "CLKAND2X2TS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "TgI2b_d.o"
+            }
+        },
+        "Multiplexer_AC_W26_2": {
+            "zKqqJ_d": {
+                "checksum": 4294967295,
+                "bytes": 10248,
+                "mod": "Multiplexer_AC_W26_2",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "zKqqJ_d.o"
+            }
+        },
+        "udp_dff": {
+            "udp_dff": {
+                "bytes": 0,
+                "mod": "udp_dff",
+                "mode": 4,
+                "out": "objs/udps/exIG1.o"
+            }
+        },
+        "OAI2BB1X1TS": {
+            "qnwuA_d": {
+                "checksum": 4294967295,
+                "bytes": 8799,
+                "mod": "OAI2BB1X1TS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "qnwuA_d.o"
+            }
+        },
+        "AOI222XLTS": {
+            "fJQL4_d": {
+                "checksum": 4294967295,
+                "bytes": 28265,
+                "mod": "AOI222XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "fJQL4_d.o"
+            }
+        },
+        "NOR2XLTS": {
+            "N2WPb_d": {
+                "checksum": 4294967295,
+                "bytes": 7443,
+                "mod": "NOR2XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "N2WPb_d.o"
+            }
+        },
+        "Exp_Operation_EW8": {
+            "U9fnC_d": {
+                "checksum": 4294967295,
+                "bytes": 78072,
+                "mod": "Exp_Operation_EW8",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "U9fnC_d.o"
+            }
+        },
+        "NOR4XLTS": {
+            "P0U5z_d": {
+                "checksum": 4294967295,
+                "bytes": 8136,
+                "mod": "NOR4XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "P0U5z_d.o"
+            }
+        },
+        "NAND4XLTS": {
+            "Suv9P_d": {
+                "checksum": 4294967295,
+                "bytes": 8031,
+                "mod": "NAND4XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "Suv9P_d.o"
+            }
+        },
+        "Rotate_Mux_Array_SWR26_0": {
+            "Q5PGr_d": {
+                "checksum": 4294967295,
+                "bytes": 10950,
+                "mod": "Rotate_Mux_Array_SWR26_0",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "Q5PGr_d.o"
+            }
+        },
+        "RegisterAdd_W31_0": {
+            "NWdV9_d": {
+                "checksum": 4294967295,
+                "bytes": 14292,
+                "mod": "RegisterAdd_W31_0",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "NWdV9_d.o"
+            }
+        },
+        "Mux_3x1_W5": {
+            "qpDxk_d": {
+                "checksum": 4294967295,
+                "bytes": 13548,
+                "mod": "Mux_3x1_W5",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "qpDxk_d.o"
+            }
+        },
+        "INVXLTS": {
+            "syLS6_d": {
+                "checksum": 4294967295,
+                "bytes": 6032,
+                "mod": "INVXLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "syLS6_d.o"
+            }
+        },
+        "RegisterAdd_W31_1": {
+            "UVEp8_d": {
+                "checksum": 4294967295,
+                "bytes": 14292,
+                "mod": "RegisterAdd_W31_1",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "UVEp8_d.o"
+            }
+        },
+        "Multiplexer_AC_W8_0": {
+            "pstvN_d": {
+                "checksum": 4294967295,
+                "bytes": 7780,
+                "mod": "Multiplexer_AC_W8_0",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "pstvN_d.o"
+            }
+        },
+        "Multiplexer_AC_W8_1": {
+            "c8j3J_d": {
+                "checksum": 4294967295,
+                "bytes": 7524,
+                "mod": "Multiplexer_AC_W8_1",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "c8j3J_d.o"
+            }
+        },
+        "shift_mux_array_SWR26_LEVEL1": {
+            "JeuSF_d": {
+                "checksum": 4294967295,
+                "bytes": 12508,
+                "mod": "shift_mux_array_SWR26_LEVEL1",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "JeuSF_d.o"
+            }
+        },
+        "OAI32X1TS": {
+            "f3qvy_d": {
+                "checksum": 4294967295,
+                "bytes": 17012,
+                "mod": "OAI32X1TS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "f3qvy_d.o"
+            }
+        },
+        "Testbench_FPU_Add_Subt": {
+            "kar0c_d": {
+                "checksum": 4294967295,
+                "bytes": 60169,
+                "mod": "Testbench_FPU_Add_Subt",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "kar0c_d.o"
+            }
+        },
+        "Multiplexer_AC_W1_9": {
+            "D1Frg_d": {
+                "checksum": 4294967295,
+                "bytes": 6722,
+                "mod": "Multiplexer_AC_W1_9",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "D1Frg_d.o"
+            }
+        },
+        "OAI21XLTS": {
+            "eKq3b_d": {
+                "checksum": 4294967295,
+                "bytes": 8752,
+                "mod": "OAI21XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "eKq3b_d.o"
+            }
+        },
+        "shift_mux_array_SWR26_LEVEL4": {
+            "W1His_d": {
+                "checksum": 4294967295,
+                "bytes": 11766,
+                "mod": "shift_mux_array_SWR26_LEVEL4",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "W1His_d.o"
+            }
+        },
+        "Comparator_W31": {
+            "LFpm5_d": {
+                "checksum": 4294967295,
+                "bytes": 37386,
+                "mod": "Comparator_W31",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "LFpm5_d.o"
+            }
+        },
+        "MultiplexTxT_W31": {
+            "yUbAc_d": {
+                "checksum": 4294967295,
+                "bytes": 21110,
+                "mod": "MultiplexTxT_W31",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "yUbAc_d.o"
+            }
+        },
+        "RegisterAdd_W2": {
+            "ZFFWk_d": {
+                "checksum": 4294967295,
+                "bytes": 7102,
+                "mod": "RegisterAdd_W2",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "ZFFWk_d.o"
+            }
+        },
+        "XOR2XLTS": {
+            "Yxwba_d": {
+                "checksum": 4294967295,
+                "bytes": 7859,
+                "mod": "XOR2XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "Yxwba_d.o"
+            }
+        },
+        "RegisterAdd_W1_6": {
+            "aQCSj_d": {
+                "checksum": 4294967295,
+                "bytes": 6906,
+                "mod": "RegisterAdd_W1_6",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "aQCSj_d.o"
+            }
+        },
+        "RegisterAdd_W1_7": {
+            "YKNbB_d": {
+                "checksum": 4294967295,
+                "bytes": 6906,
+                "mod": "RegisterAdd_W1_7",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "YKNbB_d.o"
+            }
+        },
+        "Rotate_Mux_Array_SWR26_1": {
+            "HHA8S_d": {
+                "checksum": 4294967295,
+                "bytes": 11206,
+                "mod": "Rotate_Mux_Array_SWR26_1",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "HHA8S_d.o"
+            }
+        },
+        "LZD_SWR26_EWR5": {
+            "qz2nS_d": {
+                "checksum": 4294967295,
+                "bytes": 59768,
+                "mod": "LZD_SWR26_EWR5",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "qz2nS_d.o"
+            }
+        },
+        "shift_mux_array_SWR26_LEVEL0": {
+            "SudgA_d": {
+                "checksum": 4294967295,
+                "bytes": 10448,
+                "mod": "shift_mux_array_SWR26_LEVEL0",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "SudgA_d.o"
+            }
+        },
+        "shift_mux_array_SWR26_LEVEL2": {
+            "ej4pt_d": {
+                "checksum": 4294967295,
+                "bytes": 12874,
+                "mod": "shift_mux_array_SWR26_LEVEL2",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "ej4pt_d.o"
+            }
+        },
+        "Mux_3x1_W1": {
+            "ss21q_d": {
+                "checksum": 4294967295,
+                "bytes": 9222,
+                "mod": "Mux_3x1_W1",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "ss21q_d.o"
+            }
+        },
+        "shift_mux_array_SWR26_LEVEL3": {
+            "aEuvJ_d": {
+                "checksum": 4294967295,
+                "bytes": 11766,
+                "mod": "shift_mux_array_SWR26_LEVEL3",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "aEuvJ_d.o"
+            }
+        },
+        "Multiplexer_AC_W23": {
+            "tCQx2_d": {
+                "checksum": 4294967295,
+                "bytes": 10144,
+                "mod": "Multiplexer_AC_W23",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "tCQx2_d.o"
+            }
+        },
+        "OAI211XLTS": {
+            "tq4g6_d": {
+                "checksum": 4294967295,
+                "bytes": 9956,
+                "mod": "OAI211XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "tq4g6_d.o"
+            }
+        },
+        "AOI211XLTS": {
+            "r2uty_d": {
+                "checksum": 4294967295,
+                "bytes": 10088,
+                "mod": "AOI211XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "r2uty_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "checksum": 4294967295,
+                "bytes": 9393,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4
+            }
+        },
+        "FSM_Add_Subtract": {
+            "tsP6I_d": {
+                "checksum": 4294967295,
+                "bytes": 48630,
+                "mod": "FSM_Add_Subtract",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "tsP6I_d.o"
+            }
+        },
+        "CLKBUFX2TS": {
+            "EKMET_d": {
+                "checksum": 4294967295,
+                "bytes": 6064,
+                "mod": "CLKBUFX2TS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "EKMET_d.o"
+            }
+        },
+        "CMPR32X2TS": {
+            "i1ayL_d": {
+                "checksum": 4294967295,
+                "bytes": 12547,
+                "mod": "CMPR32X2TS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "i1ayL_d.o"
+            }
+        },
+        "OAI2BB2XLTS": {
+            "HG8j1_d": {
+                "checksum": 4294967295,
+                "bytes": 11411,
+                "mod": "OAI2BB2XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "HG8j1_d.o"
+            }
+        },
+        "NAND2XLTS": {
+            "v4TQJ_d": {
+                "checksum": 4294967295,
+                "bytes": 7452,
+                "mod": "NAND2XLTS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "v4TQJ_d.o"
+            }
+        },
+        "AOI32X1TS": {
+            "bYNep_d": {
+                "checksum": 4294967295,
+                "bytes": 16588,
+                "mod": "AOI32X1TS",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "bYNep_d.o"
+            }
+        },
+        "Mux_3x1_W8": {
+            "ZBqQY_d": {
+                "checksum": 4294967295,
+                "bytes": 17472,
+                "mod": "Mux_3x1_W8",
+                "mode": 4,
+                "archive": "archive.8/_28865_archive_1.a",
+                "out": "ZBqQY_d.o"
+            }
+        }
     },
-    "CurCompileModules": [
-        "...MASTER...",
-        "FSM_Add_Subtract",
-        "RegisterAdd_W1_0",
-        "RegisterAdd_W1_7",
-        "RegisterAdd_W2",
-        "RegisterAdd_W32_2",
-        "Comparator_W31",
-        "xor_tri_W32",
-        "sgn_result",
-        "MultiplexTxT_W31",
-        "RegisterAdd_W31_0",
-        "RegisterAdd_W31_1",
-        "Multiplexer_AC_W8_0",
-        "Mux_3x1_W8",
-        "Exp_Operation_EW8",
-        "Mux_3x1_W5",
-        "Multiplexer_AC_W26_0",
-        "LZD_SWR26_EWR5",
-        "Mux_3x1_W1",
-        "Multiplexer_AC_W8_1",
-        "Multiplexer_AC_W23",
-        "Tenth_Phase_W32_EW8_SW23",
-        "shift_mux_array_SWR26_LEVEL0",
-        "shift_mux_array_SWR26_LEVEL1",
-        "shift_mux_array_SWR26_LEVEL2",
-        "shift_mux_array_SWR26_LEVEL3",
-        "shift_mux_array_SWR26_LEVEL4",
-        "Multiplexer_AC_W1_9",
-        "Rotate_Mux_Array_SWR26_1",
-        "Mux_Array_SWR26_EWR5",
-        "add_sub_carry_out_W26_DW01_sub_0",
-        "add_sub_carry_out_W26_DW01_add_0",
-        "Testbench_FPU_Add_Subt",
-        "INVX2TS",
-        "AND2X8TS",
-        "AND3X1TS",
-        "AOI211X1TS",
-        "AOI22X1TS",
-        "AOI221X1TS",
-        "AOI31X1TS",
-        "AOI32X1TS",
-        "AO22X1TS",
-        "MX2X6TS",
-        "NAND2X8TS",
-        "NAND4X1TS",
-        "NAND2BX1TS",
-        "NAND3BX1TS",
-        "NOR3X1TS",
-        "NOR2BX1TS",
-        "NOR3BX1TS",
-        "NOR4BBX1TS",
-        "OR2X8TS",
-        "OR3X1TS",
-        "OR4X1TS",
-        "OAI21X1TS",
-        "OAI211X1TS",
-        "OAI22X1TS",
-        "OAI32X1TS",
-        "OAI2BB1X1TS",
-        "OAI2BB2XLTS",
-        "XOR2X1TS",
-        "XNOR2X4TS",
-        "CLKBUFX20TS",
-        "ADDFHX4TS",
-        "DFFRXLTS"
-    ],
     "NameTable": {
-        "FSM_Add_Subtract": [
-            "FSM_Add_Subtract",
-            "tsP6I",
-            "module"
-        ],
-        "RegisterAdd_W1_0": [
-            "RegisterAdd_W1_0",
-            "DFhLq",
-            "module"
-        ],
-        "Tenth_Phase_W32_EW8_SW23": [
-            "Tenth_Phase_W32_EW8_SW23",
-            "msKkD",
-            "module"
-        ],
-        "Mux_3x1_W8": [
-            "Mux_3x1_W8",
-            "ZBqQY",
-            "module"
-        ],
-        "xor_tri_W32": [
-            "xor_tri_W32",
-            "vZBze",
-            "module"
-        ],
-        "ADDFHX4TS": [
-            "ADDFHX4TS",
-            "JFQ4S",
-            "module"
-        ],
-        "RegisterAdd_W31_1": [
-            "RegisterAdd_W31_1",
-            "UVEp8",
-            "module"
-        ],
-        "AND2X8TS": [
-            "AND2X8TS",
-            "mnxLv",
-            "module"
-        ],
-        "AOI211X1TS": [
-            "AOI211X1TS",
-            "UcgRe",
-            "module"
-        ],
-        "RegisterAdd_W1_7": [
-            "RegisterAdd_W1_7",
-            "YKNbB",
-            "module"
-        ],
-        "AOI22X1TS": [
-            "AOI22X1TS",
-            "qwLJd",
-            "module"
-        ],
-        "NOR4BBX1TS": [
-            "NOR4BBX1TS",
-            "ZwEHk",
-            "module"
-        ],
-        "Comparator_W31": [
-            "Comparator_W31",
-            "LFpm5",
-            "module"
-        ],
-        "RegisterAdd_W2": [
-            "RegisterAdd_W2",
-            "ZFFWk",
-            "module"
-        ],
         "shift_mux_array_SWR26_LEVEL2": [
             "shift_mux_array_SWR26_LEVEL2",
             "ej4pt",
-            "module"
-        ],
-        "NAND3BX1TS": [
-            "NAND3BX1TS",
-            "ukewC",
-            "module"
-        ],
-        "LZD_SWR26_EWR5": [
-            "LZD_SWR26_EWR5",
-            "qz2nS",
-            "module"
-        ],
-        "RegisterAdd_W32_2": [
-            "RegisterAdd_W32_2",
-            "fJ9yB",
-            "module"
-        ],
-        "MX2X6TS": [
-            "MX2X6TS",
-            "jbpWu",
-            "module"
-        ],
-        "sgn_result": [
-            "sgn_result",
-            "M9GPN",
-            "module"
-        ],
-        "OAI2BB2XLTS": [
-            "OAI2BB2XLTS",
-            "HG8j1",
-            "module"
-        ],
-        "Multiplexer_AC_W23": [
-            "Multiplexer_AC_W23",
-            "tCQx2",
-            "module"
-        ],
-        "MultiplexTxT_W31": [
-            "MultiplexTxT_W31",
-            "yUbAc",
-            "module"
-        ],
-        "OAI32X1TS": [
-            "OAI32X1TS",
-            "f3qvy",
-            "module"
-        ],
-        "Multiplexer_AC_W8_0": [
-            "Multiplexer_AC_W8_0",
-            "pstvN",
-            "module"
-        ],
-        "RegisterAdd_W31_0": [
-            "RegisterAdd_W31_0",
-            "NWdV9",
-            "module"
-        ],
-        "shift_mux_array_SWR26_LEVEL3": [
-            "shift_mux_array_SWR26_LEVEL3",
-            "aEuvJ",
-            "module"
-        ],
-        "Exp_Operation_EW8": [
-            "Exp_Operation_EW8",
-            "U9fnC",
-            "module"
-        ],
-        "Testbench_FPU_Add_Subt": [
-            "Testbench_FPU_Add_Subt",
-            "kar0c",
-            "module"
-        ],
-        "Multiplexer_AC_W26_0": [
-            "Multiplexer_AC_W26_0",
-            "c1D09",
-            "module"
-        ],
-        "Mux_3x1_W5": [
-            "Mux_3x1_W5",
-            "qpDxk",
-            "module"
-        ],
-        "shift_mux_array_SWR26_LEVEL4": [
-            "shift_mux_array_SWR26_LEVEL4",
-            "W1His",
-            "module"
-        ],
-        "Mux_3x1_W1": [
-            "Mux_3x1_W1",
-            "ss21q",
-            "module"
-        ],
-        "Multiplexer_AC_W8_1": [
-            "Multiplexer_AC_W8_1",
-            "c8j3J",
             "module"
         ],
         "shift_mux_array_SWR26_LEVEL0": [
@@ -249,104 +460,129 @@
             "SudgA",
             "module"
         ],
+        "FSM_Add_Subtract": [
+            "FSM_Add_Subtract",
+            "tsP6I",
+            "module"
+        ],
+        "RegisterAdd_W2": [
+            "RegisterAdd_W2",
+            "ZFFWk",
+            "module"
+        ],
         "shift_mux_array_SWR26_LEVEL1": [
             "shift_mux_array_SWR26_LEVEL1",
             "JeuSF",
             "module"
         ],
-        "Multiplexer_AC_W1_9": [
-            "Multiplexer_AC_W1_9",
-            "D1Frg",
+        "Multiplexer_AC_W8_1": [
+            "Multiplexer_AC_W8_1",
+            "c8j3J",
             "module"
         ],
-        "NAND2X8TS": [
-            "NAND2X8TS",
-            "sTuar",
+        "MX2X1TS": [
+            "MX2X1TS",
+            "LjFpg",
             "module"
         ],
-        "Rotate_Mux_Array_SWR26_1": [
-            "Rotate_Mux_Array_SWR26_1",
-            "HHA8S",
+        "RegisterAdd_W1_7": [
+            "RegisterAdd_W1_7",
+            "YKNbB",
             "module"
         ],
-        "NOR3X1TS": [
-            "NOR3X1TS",
-            "TwzRn",
+        "RegisterAdd_W1_6": [
+            "RegisterAdd_W1_6",
+            "aQCSj",
             "module"
         ],
-        "Mux_Array_SWR26_EWR5": [
-            "Mux_Array_SWR26_EWR5",
-            "yUR81",
+        "Mux_3x1_W8": [
+            "Mux_3x1_W8",
+            "ZBqQY",
             "module"
         ],
-        "INVX2TS": [
-            "INVX2TS",
-            "vphTK",
+        "Exp_Operation_EW8": [
+            "Exp_Operation_EW8",
+            "U9fnC",
             "module"
         ],
-        "add_sub_carry_out_W26_DW01_sub_0": [
-            "add_sub_carry_out_W26_DW01_sub_0",
-            "fHDGD",
+        "NOR4XLTS": [
+            "NOR4XLTS",
+            "P0U5z",
             "module"
         ],
-        "add_sub_carry_out_W26_DW01_add_0": [
-            "add_sub_carry_out_W26_DW01_add_0",
-            "jIZvR",
+        "RegisterAdd_W31_1": [
+            "RegisterAdd_W31_1",
+            "UVEp8",
             "module"
         ],
-        "XOR2X1TS": [
-            "XOR2X1TS",
-            "sxiVF",
+        "INVXLTS": [
+            "INVXLTS",
+            "syLS6",
             "module"
         ],
-        "NOR3BX1TS": [
-            "NOR3BX1TS",
-            "qi0gZ",
+        "Mux_3x1_W5": [
+            "Mux_3x1_W5",
+            "qpDxk",
             "module"
         ],
-        "AND3X1TS": [
-            "AND3X1TS",
-            "RGi2M",
+        "Multiplexer_AC_W26_2": [
+            "Multiplexer_AC_W26_2",
+            "zKqqJ",
             "module"
         ],
-        "AOI221X1TS": [
-            "AOI221X1TS",
-            "ff9t5",
+        "LZD_SWR26_EWR5": [
+            "LZD_SWR26_EWR5",
+            "qz2nS",
             "module"
         ],
-        "AOI31X1TS": [
-            "AOI31X1TS",
-            "VtVU1",
+        "MultiplexTxT_W31": [
+            "MultiplexTxT_W31",
+            "yUbAc",
             "module"
         ],
-        "OR4X1TS": [
-            "OR4X1TS",
-            "HQEjF",
+        "NAND2BXLTS": [
+            "NAND2BXLTS",
+            "kfTD2",
             "module"
         ],
-        "AOI32X1TS": [
-            "AOI32X1TS",
-            "bYNep",
+        "AOI22X1TS": [
+            "AOI22X1TS",
+            "qwLJd",
             "module"
         ],
-        "AO22X1TS": [
-            "AO22X1TS",
-            "mnYhr",
+        "shift_mux_array_SWR26_LEVEL3": [
+            "shift_mux_array_SWR26_LEVEL3",
+            "aEuvJ",
             "module"
         ],
-        "NAND4X1TS": [
-            "NAND4X1TS",
-            "uqUWe",
+        "Mux_3x1_W1": [
+            "Mux_3x1_W1",
+            "ss21q",
             "module"
         ],
-        "NAND2BX1TS": [
-            "NAND2BX1TS",
-            "HWWrq",
+        "Multiplexer_AC_W23": [
+            "Multiplexer_AC_W23",
+            "tCQx2",
             "module"
         ],
-        "DFFRXLTS": [
-            "DFFRXLTS",
-            "GPEPC",
+        "Multiplexer_AC_W8_0": [
+            "Multiplexer_AC_W8_0",
+            "pstvN",
+            "module"
+        ],
+        "Rotate_Mux_Array_SWR26_0": [
+            "Rotate_Mux_Array_SWR26_0",
+            "Q5PGr",
+            "module"
+        ],
+        "RegisterAdd_W31_0": [
+            "RegisterAdd_W31_0",
+            "NWdV9",
+            "module"
+        ],
+        "Comparator_W31": [
+            "Comparator_W31",
+            "LFpm5",
             "module"
         ],
         "NOR2BX1TS": [
@@ -354,44 +590,184 @@
             "S4pTH",
             "module"
         ],
-        "OR2X8TS": [
-            "OR2X8TS",
-            "Jv6sP",
+        "AOI21XLTS": [
+            "AOI21XLTS",
+            "aqMTZ",
             "module"
+        ],
+        "Rotate_Mux_Array_SWR26_1": [
+            "Rotate_Mux_Array_SWR26_1",
+            "HHA8S",
+            "module"
+        ],
+        "AFHCINX4TS": [
+            "AFHCINX4TS",
+            "eqgSr",
+            "module"
+        ],
+        "shift_mux_array_SWR26_LEVEL4": [
+            "shift_mux_array_SWR26_LEVEL4",
+            "W1His",
+            "module"
+        ],
+        "OAI21XLTS": [
+            "OAI21XLTS",
+            "eKq3b",
+            "module"
+        ],
+        "Mux_Array_SWR26_EWR5": [
+            "Mux_Array_SWR26_EWR5",
+            "yUR81",
+            "module"
+        ],
+        "XNOR2X1TS": [
+            "XNOR2X1TS",
+            "ThfAH",
+            "module"
+        ],
+        "Multiplexer_AC_W1_9": [
+            "Multiplexer_AC_W1_9",
+            "D1Frg",
+            "module"
+        ],
+        "NAND2XLTS": [
+            "NAND2XLTS",
+            "v4TQJ",
+            "module"
+        ],
+        "add_sub_carry_out_W26": [
+            "add_sub_carry_out_W26",
+            "V0xU8",
+            "module"
+        ],
+        "Testbench_FPU_Add_Subt": [
+            "Testbench_FPU_Add_Subt",
+            "kar0c",
+            "module"
+        ],
+        "AOI211XLTS": [
+            "AOI211XLTS",
+            "r2uty",
+            "module"
+        ],
+        "NOR2XLTS": [
+            "NOR2XLTS",
+            "N2WPb",
+            "module"
+        ],
+        "AOI222XLTS": [
+            "AOI222XLTS",
+            "fJQL4",
+            "module"
+        ],
+        "AOI32X1TS": [
+            "AOI32X1TS",
+            "bYNep",
+            "module"
+        ],
+        "AOI2BB2X1TS": [
+            "AOI2BB2X1TS",
+            "AimmJ",
+            "module"
+        ],
+        "AO22X1TS": [
+            "AO22X1TS",
+            "mnYhr",
+            "module"
+        ],
+        "ADDFX2TS": [
+            "ADDFX2TS",
+            "DWi65",
+            "module"
+        ],
+        "NAND4XLTS": [
+            "NAND4XLTS",
+            "Suv9P",
+            "module"
+        ],
+        "NAND4BX1TS": [
+            "NAND4BX1TS",
+            "yV15g",
+            "module"
+        ],
+        "OAI32X1TS": [
+            "OAI32X1TS",
+            "f3qvy",
+            "module"
+        ],
+        "NOR3XLTS": [
+            "NOR3XLTS",
+            "tmpxG",
+            "module"
+        ],
+        "OR2X4TS": [
+            "OR2X4TS",
+            "tqGJB",
+            "module"
+        ],
+        "OAI211XLTS": [
+            "OAI211XLTS",
+            "tq4g6",
+            "module"
+        ],
+        "DFFRX2TS": [
+            "DFFRX2TS",
+            "sKf2y",
+            "module"
+        ],
+        "OAI22XLTS": [
+            "OAI22XLTS",
+            "LsR6D",
+            "module"
+        ],
+        "OAI31XLTS": [
+            "OAI31XLTS",
+            "wxZzt",
+            "module"
+        ],
+        "udp_dff": [
+            "udp_dff",
+            "exIG1",
+            "udp"
         ],
         "OAI2BB1X1TS": [
             "OAI2BB1X1TS",
             "qnwuA",
             "module"
         ],
-        "OR3X1TS": [
-            "OR3X1TS",
-            "ikx7B",
+        "OAI2BB2XLTS": [
+            "OAI2BB2XLTS",
+            "HG8j1",
             "module"
         ],
-        "OAI21X1TS": [
-            "OAI21X1TS",
-            "dezJx",
+        "OA22X1TS": [
+            "OA22X1TS",
+            "azn5L",
             "module"
         ],
-        "OAI211X1TS": [
-            "OAI211X1TS",
-            "Dyqva",
+        "XOR2XLTS": [
+            "XOR2XLTS",
+            "Yxwba",
             "module"
         ],
-        "OAI22X1TS": [
-            "OAI22X1TS",
-            "bqZmw",
+        "AFHCONX2TS": [
+            "AFHCONX2TS",
+            "cVum8",
             "module"
         ],
-        "XNOR2X4TS": [
-            "XNOR2X4TS",
-            "GL4iV",
+        "CLKBUFX2TS": [
+            "CLKBUFX2TS",
+            "EKMET",
             "module"
         ],
-        "CLKBUFX20TS": [
-            "CLKBUFX20TS",
-            "gjL4H",
+        "CMPR32X2TS": [
+            "CMPR32X2TS",
+            "i1ayL",
+            "module"
+        ],
+        "CLKAND2X2TS": [
+            "CLKAND2X2TS",
+            "TgI2b",
             "module"
         ],
         "...MASTER...": [
@@ -403,77 +779,144 @@
             "udp_mux2",
             "U7Vwg",
             "udp"
-        ],
-        "udp_dff": [
-            "udp_dff",
-            "exIG1",
-            "udp"
         ]
     },
-    "CompileStrategy": "fullobj",
-    "LVLData": [
-        "SIM"
-    ],
-    "Misc": {
-        "daidir": "simv.daidir",
-        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE",
-        "archive_dir": "archive.0",
-        "csrc": "csrc",
-        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/csrc",
-        "default_output_dir": "csrc",
-        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv.daidir"
-    },
+    "CompileStatus": "Successful",
     "SIMBData": {
         "out": "amcQwB.o",
-        "bytes": 96015
+        "bytes": 96571
     },
+    "CompileStrategy": "fullobj",
     "stat": {
-        "CodeGen(%)": 35.386544329209521,
+        "nMops": 32264,
+        "Frontend(%)": 61.72846213494411,
         "ru_self_cgstart": {
-            "ru_nivcsw": 121,
-            "ru_utime_sec": 0.534918,
-            "ru_nvcsw": 56,
-            "ru_stime_sec": 0.083987000000000006,
-            "ru_maxrss_kb": 58144,
-            "ru_minflt": 14176,
+            "ru_nivcsw": 135,
+            "ru_utime_sec": 0.49992399999999998,
+            "ru_stime_sec": 0.10298400000000001,
+            "ru_nvcsw": 54,
+            "ru_maxrss_kb": 56552,
+            "ru_minflt": 14889,
             "ru_majflt": 0
         },
         "ru_childs_cgstart": {
             "ru_nivcsw": 0,
             "ru_utime_sec": 0.0,
-            "ru_nvcsw": 0,
             "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
             "ru_maxrss_kb": 0,
             "ru_minflt": 0,
             "ru_majflt": 0
         },
-        "totalObjSize": 1039589,
-        "ru_self_end": {
-            "ru_nivcsw": 211,
-            "ru_utime_sec": 0.827874,
-            "ru_nvcsw": 56,
-            "ru_stime_sec": 0.13797899999999999,
-            "ru_maxrss_kb": 65648,
-            "ru_minflt": 16835,
-            "ru_majflt": 0
-        },
-        "nMops": 25388,
-        "mopSpeed": 86661.478174196804,
-        "nQuads": 7179,
+        "mop/quad": 3.7329630915191485,
+        "nQuads": 8643,
         "ru_childs_end": {
             "ru_nivcsw": 0,
             "ru_utime_sec": 0.0,
-            "ru_nvcsw": 0,
             "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
             "ru_maxrss_kb": 0,
             "ru_minflt": 0,
             "ru_majflt": 0
         },
-        "quadSpeed": 24505.386474419367,
-        "mop/quad": 3.5364256860286947,
-        "outputSizePerQuad": 144.0,
-        "Frontend(%)": 64.613455670790486
+        "ru_self_end": {
+            "ru_nivcsw": 204,
+            "ru_utime_sec": 0.80987600000000004,
+            "ru_stime_sec": 0.145977,
+            "ru_nvcsw": 56,
+            "ru_maxrss_kb": 64212,
+            "ru_minflt": 17586,
+            "ru_majflt": 0
+        },
+        "totalObjSize": 1097447,
+        "mopSpeed": 104093.53706380341,
+        "quadSpeed": 27884.962832954774,
+        "outputSizePerQuad": 126.0,
+        "CodeGen(%)": 38.27153786505589
     },
+    "Misc": {
+        "archive_dir": "archive.8",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE",
+        "daidir": "simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/csrc",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CurCompileUdps": {
+        "udp_mux2": "objs/udps/U7Vwg.o"
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "FSM_Add_Subtract",
+        "RegisterAdd_W1_7",
+        "RegisterAdd_W1_6",
+        "RegisterAdd_W2",
+        "Multiplexer_AC_W8_1",
+        "Mux_3x1_W8",
+        "Exp_Operation_EW8",
+        "Mux_3x1_W5",
+        "Multiplexer_AC_W26_2",
+        "LZD_SWR26_EWR5",
+        "Mux_3x1_W1",
+        "Multiplexer_AC_W8_0",
+        "Multiplexer_AC_W23",
+        "RegisterAdd_W31_0",
+        "RegisterAdd_W31_1",
+        "MultiplexTxT_W31",
+        "Comparator_W31",
+        "Rotate_Mux_Array_SWR26_1",
+        "shift_mux_array_SWR26_LEVEL0",
+        "shift_mux_array_SWR26_LEVEL1",
+        "shift_mux_array_SWR26_LEVEL2",
+        "shift_mux_array_SWR26_LEVEL3",
+        "shift_mux_array_SWR26_LEVEL4",
+        "Multiplexer_AC_W1_9",
+        "Rotate_Mux_Array_SWR26_0",
+        "Mux_Array_SWR26_EWR5",
+        "add_sub_carry_out_W26",
+        "Testbench_FPU_Add_Subt",
+        "INVXLTS",
+        "AOI21XLTS",
+        "AOI211XLTS",
+        "AOI22X1TS",
+        "AOI222XLTS",
+        "AOI32X1TS",
+        "AOI2BB2X1TS",
+        "AO22X1TS",
+        "MX2X1TS",
+        "NAND2XLTS",
+        "NAND4XLTS",
+        "NAND2BXLTS",
+        "NAND4BX1TS",
+        "NOR2XLTS",
+        "NOR3XLTS",
+        "NOR4XLTS",
+        "NOR2BX1TS",
+        "OR2X4TS",
+        "OAI21XLTS",
+        "OAI211XLTS",
+        "OAI22XLTS",
+        "OAI31XLTS",
+        "OAI32X1TS",
+        "OAI2BB1X1TS",
+        "OAI2BB2XLTS",
+        "OA22X1TS",
+        "XOR2XLTS",
+        "XNOR2X1TS",
+        "CLKBUFX2TS",
+        "CLKAND2X2TS",
+        "ADDFX2TS",
+        "CMPR32X2TS",
+        "AFHCINX4TS",
+        "AFHCONX2TS",
+        "DFFRX2TS"
+    ],
     "PEModules": [],
-    "CompileStatus": "Successful"
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.28865.json"
+    ]
 }

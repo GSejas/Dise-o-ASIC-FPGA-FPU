@@ -1,10 +1,10 @@
-Warning : License for product VCSRuntime_Net(725) will expire within 25 days, on: 10-nov-2016.
+Warning : License for product VCSRuntime_Net(725) will expire within 24 days, on: 10-nov-2016.
 If you would like to temporarily disable this message, set 
  the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
 before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 17 16:01 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 18 14:41 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/inter.vpd' was opened successfully.
 $finish called from file "tb_Oper_Start_In.v", line 99.
@@ -12,5 +12,5 @@ $finish at simulation time            102395000
 Simulation complete, time is 102395000 ps.
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 102395000 ps
-CPU Time:      0.320 seconds;       Data structure size:   0.4Mb
-Mon Oct 17 16:08:06 2016
+CPU Time:      0.360 seconds;       Data structure size:   0.4Mb
+Tue Oct 18 16:51:20 2016

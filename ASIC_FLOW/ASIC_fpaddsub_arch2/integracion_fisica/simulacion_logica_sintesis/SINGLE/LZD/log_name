@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SYN_SINGLE \
 -timescale=1ns/1ps
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Mon Oct 17 20:24:12 2016
+      Version K-2015.09-SP2-3_Full64 -- Tue Oct 18 13:41:30 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -8184,40 +8184,18 @@ rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/
 -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
 Command: ./simv -gui +v2k +lint=all -a log_name +define+SYN_SINGLE -ucli
-Warning : License for product VCSRuntime_Net(725) will expire within 25 days, on: 10-nov-2016.
+Warning : License for product VCSRuntime_Net(725) will expire within 24 days, on: 10-nov-2016.
 If you would like to temporarily disable this message, set 
  the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
 before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 17 20:24 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 18 13:41 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 
-"ibm13rflpvt.v", 23508: Timing violation in tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] 
-    $hold( posedge CK &&& (flag == 1'b1):204735000, negedge D:204735000, limit: 500 );
-
-
-"ibm13rflpvt.v", 23507: Timing violation in tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] 
-    $hold( posedge CK &&& (flag == 1'b1):409535000, posedge D:409535000, limit: 500 );
-
-*** FATAL: Simulation stopped due to an error (please see above in the log for more details)
-The simulation cannot be continued. The current simulation state can be observed in DVE/UCLI.
-
-Error-[VPD-ERR_FILE_WRITE_DISK_FULL] VPD file write failed. File system full.
-  Errno condition: "No space left on device".  A file I/O error occurred when 
-  attempting to write data to the VPD file causing this application to abort. 
-  The OS is indicating the file system where this VPD file is being written is
-  full and no more data can be written to it.  Please reduce the amount of 
-  data currently in this file system or redirect the VPD file to another file 
-  system with more space.
-
-
-Error-[VPD-ERR_FILE_WRITE_DISK_FULL] VPD file write failed. File system full.
-  Errno condition: "No space left on device".  A file I/O error occurred when 
-  attempting to write data to the VPD file causing this application to abort. 
-  The OS is indicating the file system where this VPD file is being written is
-  full and no more data can be written to it.  Please reduce the amount of 
-  data currently in this file system or redirect the VPD file to another file 
-  system with more space.
-
-CPU time: .276 seconds to compile + .333 seconds to elab + .120 seconds to link + 36.641 seconds in simulation
+ucli% uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.070 seconds;       Data structure size:   0.0Mb
+Tue Oct 18 13:41:41 2016
+CPU time: .273 seconds to compile + .010 seconds to elab + .123 seconds to link + 165.809 seconds in simulation

@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Oper_Start_In_2_W64
+Version: L-2016.03-SP3
+Date   : Tue Oct 18 20:47:17 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: intDX[15] (input port clocked by clk)
+  Endpoint: MRegister_Q_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     3.50       4.50 r
+  intDX[15] (in)                           0.01       4.51 r
+  U684/Y (INVX2TS)                         0.05       4.56 f
+  U402/Y (OA22X1TS)                        0.57       5.13 f
+  U423/Y (OAI211XLTS)                      0.26       5.39 r
+  U704/Y (AOI21X1TS)                       0.23       5.62 f
+  U705/Y (OAI2BB2XLTS)                     0.31       5.93 f
+  U465/Y (AOI211XLTS)                      0.30       6.23 r
+  U707/Y (OAI31X1TS)                       0.21       6.44 f
+  U416/Y (NAND3BXLTS)                      0.17       6.61 r
+  U720/Y (AOI32X1TS)                       0.20       6.81 f
+  U620/Y (AOI211XLTS)                      0.46       7.26 r
+  U449/Y (NAND2X1TS)                       0.43       7.70 f
+  U451/Y (CLKBUFX2TS)                      0.45       8.15 f
+  U621/Y (CLKBUFX2TS)                      0.38       8.53 f
+  U1016/Y (INVX2TS)                        0.25       8.78 r
+  U1017/Y (AOI22X1TS)                      0.15       8.93 f
+  U600/Y (OAI21XLTS)                       0.11       9.04 r
+  MRegister_Q_reg_1_/D (DFFRXLTS)          0.00       9.04 r
+  data arrival time                                   9.04
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.50      10.50
+  MRegister_Q_reg_1_/CK (DFFRXLTS)         0.00      10.50 r
+  library setup time                      -0.30      10.20
+  data required time                                 10.20
+  -----------------------------------------------------------
+  data required time                                 10.20
+  data arrival time                                  -9.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.16
+
+
+1

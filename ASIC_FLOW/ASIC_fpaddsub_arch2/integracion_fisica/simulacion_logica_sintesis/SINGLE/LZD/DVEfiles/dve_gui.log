@@ -1,10 +1,23 @@
-Warning : License for product VCSRuntime_Net(725) will expire within 25 days, on: 10-nov-2016.
+Warning : License for product VCSRuntime_Net(725) will expire within 24 days, on: 10-nov-2016.
 If you would like to temporarily disable this message, set 
  the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
 before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 17 20:24 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 18 13:41 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/inter.vpd' was opened successfully.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.070 seconds;       Data structure size:   0.0Mb
+Tue Oct 18 13:41:41 2016
+Warning : License for product VCSRuntime_Net(725) will expire within 24 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 18 13:41 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/inter.vpd' was opened successfully.
 
@@ -15,53 +28,180 @@ The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_
 "ibm13rflpvt.v", 23507: Timing violation in tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] 
     $hold( posedge CK &&& (flag == 1'b1):409535000, posedge D:409535000, limit: 500 );
 
-*** FATAL: Simulation stopped due to an error (please see above in the log for more details)
-The simulation cannot be continued. The current simulation state can be observed in DVE/UCLI.
 
-Error-[VPD-ERR_FILE_WRITE_DISK_FULL] VPD file write failed. File system full.
-  Errno condition: "No space left on device".  A file I/O error occurred when 
-  attempting to write data to the VPD file causing this application to abort. 
-  The OS is indicating the file system where this VPD file is being written is
-  full and no more data can be written to it.  Please reduce the amount of 
-  data currently in this file system or redirect the VPD file to another file 
-  system with more space.
+"ibm13rflpvt.v", 23508: Timing violation in tb_LZD.inst_LZD.Output_Reg.\Q_reg[4] 
+    $hold( posedge CK &&& (flag == 1'b1):209715135000, negedge D:209715135000, limit: 500 );
 
-
-Error-[VPD-ERR_FILE_WRITE_DISK_FULL] VPD file write failed. File system full.
-  Errno condition: "No space left on device".  A file I/O error occurred when 
-  attempting to write data to the VPD file causing this application to abort. 
-  The OS is indicating the file system where this VPD file is being written is
-  full and no more data can be written to it.  Please reduce the amount of 
-  data currently in this file system or redirect the VPD file to another file 
-  system with more space.
-
-Error: synopsys::run
-Error: Simulation stopped due to error
 With selected criteria, DVE has found 'results at time 409536000
     tb_LZD.Shift_Value_o[4:0]'.
+gui/dve/libraries/syn/generic.sdb'
+gui/dve/libraries/syn/vcs.sdb'
+gui/dve/libraries/syn/vcs.sdb'
+gui/dve/libraries/syn/vcs.sdb'
+gui/dve/libraries/syn/generic.sdb'
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+5 drivers (5 possibly active statements) found for signal: tb_LZD.Shift_Value_o[4:0]
+1 driver (1 active statement) found for signal: tb_LZD.Shift_Value_o[1]
+Warning: [DVAP404] 
+Usage of LCA feature "DVE Back Trace" detected.
+Use the command line option "-lca" to suppress this warning.
+1 driver (1 active statement) found for signal: tb_LZD.Shift_Value_o[1]
+dve> 
+dve> 
+dve> 
+dve> 
 With selected criteria, DVE has found 'results at time 204746000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 409536000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 409546000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 819136000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 3276736000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 13107136000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 52428736000
+    tb_LZD.Shift_Value_o[1]'.
+With selected criteria, DVE has found 'results at time 209715136000
+    tb_LZD.Shift_Value_o[1]'.
+Warning: [DVWW010] 
+Seek hit end of values with no more matches.
+Warning: [DVWW010] 
+Seek hit end of values with no more matches.
+Warning: [DVWW010] 
+Seek hit end of values with no more matches.
+Warning: [DVWW010] 
+Seek hit end of values with no more matches.
+Warning: [DVWW010] 
+Seek hit end of values with no more matches.
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+dve> 
+Warning: [DVSC013] 
+Cannot open path schematic for EMPTY object.
+Please select a valid object.
+dve> 
+dve> 
+dve> 
+ok
+
+ok
+
+ok
+
+With selected criteria, DVE has found 'results at time 8000
     tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 204736000
+With selected criteria, DVE has found 'results at time 0
     tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 102336000
+Warning: [DVWW009] 
+Seek hit time zero with no more matches.
+With selected criteria, DVE has found 'results at time 8000
     tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 51136000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 25536000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 12736000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 6336000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 3136000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 1536000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 736000
-    tb_LZD.Shift_Value_o[4:0]'.
-With selected criteria, DVE has found 'results at time 336000
+With selected criteria, DVE has found 'results at time 76000
     tb_LZD.Shift_Value_o[4:0]'.
 With selected criteria, DVE has found 'results at time 136000
     tb_LZD.Shift_Value_o[4:0]'.
 With selected criteria, DVE has found 'results at time 76000
     tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 1536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 3136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 6336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 12736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 25536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 51136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 102336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 204736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 204746000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 204736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 204746000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 409536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 409546000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 819136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 1638336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 3276736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 6553536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 13107136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 26214336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 52428736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 104857536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 209715136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 209715146000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 209715136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 104857536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 52428736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 26214336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 13107136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 6553536000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 3276736000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 1638336000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 819136000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 409546000
+    tb_LZD.Shift_Value_o[4:0]'.
+With selected criteria, DVE has found 'results at time 409536000
+    tb_LZD.Shift_Value_o[4:0]'.
+ok
+
+ok
+
+ok
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 531313405000 ps
+CPU Time:     51.920 seconds;       Data structure size:   0.0Mb
+Tue Oct 18 14:21:14 2016
+.tcl

@@ -1,0 +1,194 @@
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Tue Oct 18 14:41:53 2016
+# Designs open: 1
+#   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv
+# Toplevel windows open: 1
+# 	TopLevel.1
+#   Source.1: tb_Oper_Start_In
+#   Wave.1: 37 signals
+#   Group count = 2
+#   Group tb_Oper_Start_In signal count = 18
+# End_DVE_Session_Save_Info
+
+# DVE version: K-2015.09-SP2-3_Full64
+# DVE build date: Jun 15 2016 22:18:13
+
+
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+
+gui_set_loading_session_type Restart
+gui_continuetime_set
+gui_clear_window -type Wave
+gui_clear_window -type List
+
+# Application preferences
+gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+#<WindowLayout>
+
+# DVE top-level session
+
+
+# Create and position top-level window: TopLevel.1
+
+set TopLevel.1 TopLevel.1
+
+# Docked window settings
+gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Console.1 Console.1
+gui_update_layout -id ${Console.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 815} {child_hier_coltype 541} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 550} {child_data_colvalue 374} {child_data_coltype 430} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+set Wave.1 Wave.1
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 647} {child_wave_right 707} {child_wave_colname 348} {child_wave_colvalue 295} {child_wave_col1 0} {child_wave_col2 1}}
+
+# End MDI window settings
+
+
+#</WindowLayout>
+
+#<Database>
+
+gui_set_precision 1ps
+gui_set_time_units 1ps
+#</Database>
+
+# DVE Global setting session: 
+
+
+# Global: Breakpoints
+
+# Global: Bus
+
+# Global: Expressions
+
+# Global: Signal Time Shift
+
+# Global: Signal Compare
+
+# Global: Signal Groups
+gui_load_child_values {tb_Oper_Start_In}
+gui_load_child_values {tb_Oper_Start_In.inst_Oper_Start_In}
+
+
+set _session_group_3 tb_Oper_Start_In
+gui_sg_create "$_session_group_3"
+set tb_Oper_Start_In "$_session_group_3"
+
+gui_sg_addsignal -group "$_session_group_3" { tb_Oper_Start_In.Array_IN tb_Oper_Start_In.Array_IN_2 tb_Oper_Start_In.DMP_o tb_Oper_Start_In.Data_Y_i tb_Oper_Start_In.DmP_o tb_Oper_Start_In.Data_X_i tb_Oper_Start_In.PERIOD tb_Oper_Start_In.W tb_Oper_Start_In.add_subt_i tb_Oper_Start_In.clk tb_Oper_Start_In.contador tb_Oper_Start_In.load_a_i tb_Oper_Start_In.load_b_i tb_Oper_Start_In.real_op_o tb_Oper_Start_In.rst tb_Oper_Start_In.sign_final_result_o tb_Oper_Start_In.zero_flag_o }
+gui_set_radix -radix {hex} -signals {Sim:tb_Oper_Start_In.DMP_o}
+gui_set_radix -radix {unsigned} -signals {Sim:tb_Oper_Start_In.DMP_o}
+gui_set_radix -radix {hex} -signals {Sim:tb_Oper_Start_In.DmP_o}
+gui_set_radix -radix {unsigned} -signals {Sim:tb_Oper_Start_In.DmP_o}
+gui_set_radix -radix {decimal} -signals {Sim:tb_Oper_Start_In.PERIOD}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_Oper_Start_In.PERIOD}
+gui_set_radix -radix {decimal} -signals {Sim:tb_Oper_Start_In.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_Oper_Start_In.W}
+gui_set_radix -radix {decimal} -signals {Sim:tb_Oper_Start_In.contador}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_Oper_Start_In.contador}
+
+set _session_group_4 $_session_group_3|
+append _session_group_4 inst_Oper_Start_In
+gui_sg_create "$_session_group_4"
+set tb_Oper_Start_In|inst_Oper_Start_In "$_session_group_4"
+
+gui_sg_addsignal -group "$_session_group_4" { tb_Oper_Start_In.inst_Oper_Start_In.load_b_i tb_Oper_Start_In.inst_Oper_Start_In.Data_X_i tb_Oper_Start_In.inst_Oper_Start_In.Data_Y_i tb_Oper_Start_In.inst_Oper_Start_In.eqXY tb_Oper_Start_In.inst_Oper_Start_In.intDX tb_Oper_Start_In.inst_Oper_Start_In.intDY tb_Oper_Start_In.inst_Oper_Start_In.sign_result tb_Oper_Start_In.inst_Oper_Start_In.real_op_o tb_Oper_Start_In.inst_Oper_Start_In.intAS tb_Oper_Start_In.inst_Oper_Start_In.add_subt_i tb_Oper_Start_In.inst_Oper_Start_In.clk tb_Oper_Start_In.inst_Oper_Start_In.zero_flag_o tb_Oper_Start_In.inst_Oper_Start_In.DmP_o tb_Oper_Start_In.inst_Oper_Start_In.DMP_o tb_Oper_Start_In.inst_Oper_Start_In.intm tb_Oper_Start_In.inst_Oper_Start_In.intM tb_Oper_Start_In.inst_Oper_Start_In.sign_final_result_o tb_Oper_Start_In.inst_Oper_Start_In.load_a_i tb_Oper_Start_In.inst_Oper_Start_In.gtXY tb_Oper_Start_In.inst_Oper_Start_In.rst }
+
+gui_sg_move "$_session_group_4" -after "$_session_group_3" -pos 4 
+
+# Global: Highlighting
+
+# Global: Stack
+gui_change_stack_mode -mode list
+
+# Post database loading setting...
+
+# Save global setting...
+
+# Wave/List view global setting
+gui_cov_show_value -switch false
+
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {
+    if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {
+        gui_close_window -window $__top
+    }
+}
+gui_set_loading_session_type noSession
+# DVE View/pane content session: 
+
+
+# Hier 'Hier.1'
+gui_show_window -window ${Hier.1}
+gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+gui_list_set_filter -id ${Hier.1} -text {*}
+gui_change_design -id ${Hier.1} -design Sim
+catch {gui_list_expand -id ${Hier.1} tb_Oper_Start_In}
+catch {gui_list_select -id ${Hier.1} {tb_Oper_Start_In.inst_Oper_Start_In}}
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Data 'Data.1'
+gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Data.1} -text {*}
+gui_list_show_data -id ${Data.1} {tb_Oper_Start_In.inst_Oper_Start_In}
+gui_view_scroll -id ${Data.1} -vertical -set 0
+gui_view_scroll -id ${Data.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active tb_Oper_Start_In /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/tb_Oper_Start_In.v
+gui_view_scroll -id ${Source.1} -vertical -set 42
+gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_wv_zoom_timerange -id ${Wave.1} 102369995 102419993
+gui_list_add_group -id ${Wave.1} -after {New Group} {tb_Oper_Start_In}
+gui_list_add_group -id ${Wave.1}  -after {tb_Oper_Start_In.Data_Y_i[31:0]} {tb_Oper_Start_In|inst_Oper_Start_In}
+gui_list_select -id ${Wave.1} {tb_Oper_Start_In.Data_X_i }
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group tb_Oper_Start_In|inst_Oper_Start_In  -item tb_Oper_Start_In.inst_Oper_Start_In.rst -position below
+
+gui_view_scroll -id ${Wave.1} -vertical -set 515
+gui_show_grid -id ${Wave.1} -enable false
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} {
+	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Wave.1}
+}
+#</Session>
+

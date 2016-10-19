@@ -38,11 +38,9 @@
 -ucli
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
 log_name
-54
+53
 sysc_uni_pwd=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE
 binpath=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/linux64/bin
-XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1473191807.138297-433824659
-VNCDESKTOP=zener:21 (jsequeira)
 VMR_MODE_FLAG=64
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_MX_HOME_INTERNAL=1
@@ -55,16 +53,12 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64
 TCLLIBPATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/auxx/tcllib/lib/tcl8.4 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/auxx/tcllib/snps_tcl
-SYSFONT=latarcyrheb-sun16
 SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/
-SSH_TTY=/dev/pts/27
-SSH_CONNECTION=172.21.16.52 56536 172.21.16.5 22
-SSH_CLIENT=172.21.16.52 56536 22
-SSH_AUTH_SOCK=/tmp/keyring-A5EQMz/socket.ssh
+SSH_TTY=/dev/pts/59
+SSH_CONNECTION=172.21.8.215 50504 172.21.16.5 22
+SSH_CLIENT=172.21.8.215 50504 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=20259
 SPECMAN_OUTPUT_TO_TTY=1
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/20257,unix/unix:/tmp/.ICE-unix/20257
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -78,18 +72,23 @@ ORBIT_SOCKETDIR=/tmp/orbit-jsequeira
 MDB_SIM_ARGS=-simwarn
 MARCH=linux64
 LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_TIME=es_CR.UTF-8
+LC_TELEPHONE=es_CR.UTF-8
+LC_PAPER=es_CR.UTF-8
+LC_NUMERIC=es_CR.UTF-8
+LC_NAME=es_CR.UTF-8
+LC_MONETARY=es_CR.UTF-8
+LC_MEASUREMENT=es_CR.UTF-8
+LC_IDENTIFICATION=es_CR.UTF-8
 LC_ALL=C
+LC_ADDRESS=es_CR.UTF-8
 KDEDIRS=/usr
 HISTCONTROL=ignoredups
 G_BROKEN_FILENAMES=1
-GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/jsequeira/.gtkrc-1.2-gnome2
-GNOME_KEYRING_SOCKET=/tmp/keyring-A5EQMz/socket
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 DVE_SIM_SELECT_LOOP=on
 DVE_PSTACK=/usr/bin/gstack
 DVE_AUXX_GUI=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/auxx/gui
 DVE=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-CDItn4lBcc,guid=841458e6fa3ecdc8dbee3e8e000ac06f
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
 CMD=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/linux64/bin/dve.exe
@@ -98,7 +97,7 @@ CMD=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//gui/dve/linux
 1476740965 ibm13rflpvt.v
 1476740965 ibm13rflpvt.v
 1476740965 tb_Oper_Start_In.v
-1476741402 ../../../front_end/db/SINGLE/Oper_Start_In_syn.v
+1476758853 ../../../front_end/db/SINGLE/Oper_Start_In_syn.v
 1476740965 file_list
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 4

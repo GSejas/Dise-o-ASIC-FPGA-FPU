@@ -1,4 +1,4 @@
-../../front_end/db/fpaddsub_arch2_SINGLE_syn.v
+../../front_end/db/SINGLE/FPU_Add_Subtract_Function_syn.v
 #../../front_end/db/fpaddsub_arch2_DOUBLE_syn.v
 Testbench_FPU_Add_Subt.v
 -v ibm13rflpvt.v

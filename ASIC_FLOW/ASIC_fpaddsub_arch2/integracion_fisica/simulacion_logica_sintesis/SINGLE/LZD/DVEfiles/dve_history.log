@@ -9,24 +9,24 @@ gui_state_default_create -off -ini
 gui_set_state_value -category Globals -key open_wave_inside -value true
 gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -design V1}}
 gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl -ignore_errors}}
-gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session2.inter.vpd.tcl}}
+gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
 gui_set_state_value -category Layout -key child_console_docknewline -value false
 gui_set_state_value -category Layout -key child_console_dockstate -value undocked
 gui_set_state_value -category Layout -key child_console_pos_x -value {-2}
-gui_set_state_value -category Layout -key child_console_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_console_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_console_showstate -value maximized
-gui_set_state_value -category Layout -key child_console_size_x -value 965
-gui_set_state_value -category Layout -key child_console_size_y -value 580
+gui_set_state_value -category Layout -key child_console_size_x -value 963
+gui_set_state_value -category Layout -key child_console_size_y -value 549
 gui_set_state_value -category Layout -key child_data_coltype -value 317
 gui_set_state_value -category Layout -key child_data_colvalue -value 261
 gui_set_state_value -category Layout -key child_data_colvariable -value 440
 gui_set_state_value -category Layout -key child_data_docknewline -value false
 gui_set_state_value -category Layout -key child_data_dockstate -value undocked
 gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
-gui_set_state_value -category Layout -key child_data_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_data_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_data_showstate -value maximized
-gui_set_state_value -category Layout -key child_data_size_x -value 965
-gui_set_state_value -category Layout -key child_data_size_y -value 554
+gui_set_state_value -category Layout -key child_data_size_x -value 963
+gui_set_state_value -category Layout -key child_data_size_y -value 550
 gui_set_state_value -category Layout -key child_driver_size_x -value 1359
 gui_set_state_value -category Layout -key child_driver_size_y -value 127
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
@@ -36,10 +36,10 @@ gui_set_state_value -category Layout -key child_hier_coltype -value 371
 gui_set_state_value -category Layout -key child_hier_docknewline -value false
 gui_set_state_value -category Layout -key child_hier_dockstate -value undocked
 gui_set_state_value -category Layout -key child_hier_pos_x -value {-2}
-gui_set_state_value -category Layout -key child_hier_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_hier_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_hier_showstate -value maximized
-gui_set_state_value -category Layout -key child_hier_size_x -value 965
-gui_set_state_value -category Layout -key child_hier_size_y -value 554
+gui_set_state_value -category Layout -key child_hier_size_x -value 963
+gui_set_state_value -category Layout -key child_hier_size_y -value 550
 gui_set_state_value -category Layout -key child_list_down -value 134
 gui_set_state_value -category Layout -key child_list_right -value 444
 gui_set_state_value -category Layout -key child_schematic_docknewline -value false
@@ -49,9 +49,9 @@ gui_set_state_value -category Layout -key child_schematic_size_x -value 1009
 gui_set_state_value -category Layout -key child_schematic_size_y -value 485
 gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
-gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_source_size_x -value 965
-gui_set_state_value -category Layout -key child_source_size_y -value 554
+gui_set_state_value -category Layout -key child_source_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_source_size_x -value 963
+gui_set_state_value -category Layout -key child_source_size_y -value 550
 gui_set_state_value -category Layout -key child_watch_size_x -value 746
 gui_set_state_value -category Layout -key child_watch_size_y -value 166
 gui_set_state_value -category Layout -key child_wave_colname -value 253
@@ -60,12 +60,12 @@ gui_set_state_value -category Layout -key child_wave_docknewline -value false
 gui_set_state_value -category Layout -key child_wave_left -value 459
 gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_wave_right -value 496
-gui_set_state_value -category Layout -key child_wave_size_x -value 965
-gui_set_state_value -category Layout -key child_wave_size_y -value 554
-gui_set_state_value -category Layout -key main_pos_x -value 11
-gui_set_state_value -category Layout -key main_pos_y -value 56
-gui_set_state_value -category Layout -key main_size_x -value 971
+gui_set_state_value -category Layout -key child_wave_right -value 495
+gui_set_state_value -category Layout -key child_wave_size_x -value 964
+gui_set_state_value -category Layout -key child_wave_size_y -value 553
+gui_set_state_value -category Layout -key main_pos_x -value 13
+gui_set_state_value -category Layout -key main_pos_y -value 57
+gui_set_state_value -category Layout -key main_size_x -value 972
 gui_set_state_value -category Layout -key main_size_y -value 738
 gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
 gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
@@ -106,82 +106,322 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SYN_SINGLE} -dir .
-gui_open_window Wave
-gui_list_add -id Wave.1 -from Hier.1 { tb_LZD } -insertionbar
+gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl
+gui_list_expand -id  Hier.1   tb_LZD
 gui_sim_continue  
+gui_sim_stop 
 gui_zoom -window Wave.1 -full
-gui_marker_move -id  Wave.1 C1 52428736000
-gui_marker_move -id  Wave.1 C1 56191911421
-gui_list_select -id Wave.1 -selected  { {tb_LZD.Add_subt_result_i[25:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_LZD.Add_subt_result_i[25:0]}  {tb_LZD.Shift_Value_o[4:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[4:0]}   }
-gui_list_set_selected_property -id Wave.1 -radix decimal
-gui_list_select -id Wave.1 -selected  { {tb_LZD.Add_subt_result_i[25:0]}   }
-gui_list_set_selected_property -id Wave.1 -radix binary
-gui_marker_move -id  Wave.1 C1 10010435526
-gui_marker_move -id  Wave.1 C1 819136000
+gui_marker_move -id  Wave.1 C1 6992225000
+gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 204746000
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_zoom -window  Wave.1  -full
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[4:0]}   }
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_seek_next -id Wave.1 -number 1 
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 409546000
 gui_marker_move -id  Wave.1 C1 409536000
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
 gui_marker_move -id  Wave.1 C1 409546000
-gui_marker_move -id  Wave.1 C1 409535884
+gui_marker_move -id  Wave.1 C1 409536000
+gui_marker_move -id  Wave.1 C1 409545632
+gui_marker_move -id  Wave.1 C1 409536000
 gui_marker_move -id  Wave.1 C1 409546000
+gui_marker_move -id  Wave.1 C1 409536000
+gui_marker_move -id  Wave.1 C1 409540714
+gui_list_expand -id  Wave.1   {tb_LZD.Shift_Value_o[4:0]}
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[1]}   }
+gui_marker_move -id  Wave.1 C1 409550134
+gui_marker_move -id  Wave.1 C1 409543048
+gui_list_collapse -id  Wave.1   {tb_LZD.Shift_Value_o[4:0]}
+gui_marker_move -id  Wave.1 C1 409539130
+gui_marker_move -id  Wave.1 C1 409536000
 gui_marker_move -id  Wave.1 C1 409546000
+gui_marker_move -id  Wave.1 C1 409540881
+gui_marker_move -id  Wave.1 C1 409536000
+gui_marker_move -id  Wave.1 C1 409541631
+gui_marker_move -id  Wave.1 C1 409539881
+gui_marker_move -id  Wave.1 C1 409542715
+gui_marker_move -id  Wave.1 C1 409539047
+gui_marker_move -id  Wave.1 C1 409539797
+gui_marker_move -id  Wave.1 C1 409540798
+gui_marker_move -id  Wave.1 C1 409542215
+gui_marker_move -id  Wave.1 C1 409539297
+gui_marker_move -id  Wave.1 C1 409541881
+gui_marker_move -id  Wave.1 C1 409539297
 gui_marker_move -id  Wave.1 C1 409536000
 gui_marker_move -id  Wave.1 C1 409546000
 gui_marker_move -id  Wave.1 C1 409536000
 gui_marker_move -id  Wave.1 C1 409546000
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 409542715
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[4:0]}   }
+gui_use_schematics 
+gui_path_schematic_dlg -signal {tb_LZD.Shift_Value_o[4:0]}
+gui_list_select -id Wave.1 -selected  { {tb_LZD.SWR[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[4:0]}   }
+gui_use_schematics 
+gui_path_show -objects {{tb_LZD.Shift_Value_o[4:0]}}
+gui_zoom -window Schematic.1 -rect { {-16635 -4097} {26666 14128} }
+gui_zoom -window Schematic.1 -rect { {-8089 -6617} {17311 4074} }
+gui_zoom -window Schematic.1 -rect { {-8089 -6617} {17311 4074} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {tb_LZD.inst_LZD.Shift_Value_o}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-21557 -22574} {42027 4188} }
+gui_zoom -window Schematic.1 -rect { {-8090 -6621} {17313 4071} }
+gui_zoom -window Schematic.1 -rect { {-15035 -18922} {31076 486} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q[0]}
+gui_schematic_select -id Schematic.1 -type {pin} -parent {tb_LZD.inst_LZD.Output_Reg.Q[0]} {tb_LZD.inst_LZD.Output_Reg.Q[0].r0}
+gui_schematic_select -id Schematic.1 -type {pin} -parent {tb_LZD.inst_LZD.Output_Reg.Q[0]} {tb_LZD.inst_LZD.Output_Reg.Q[0].r0}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-20119 -25663} {50855 4210} }
+gui_zoom -window Schematic.1 -rect { {-15036 -18931} {31078 478} }
+gui_zoom -window Schematic.1 -rect { {-7706 -17210} {38408 2199} }
+gui_schematic_select -id Schematic.1 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q[4]}
+gui_schematic_select -id Schematic.1 -type {pin} -parent {tb_LZD.inst_LZD.Output_Reg.Q[4]} {tb_LZD.inst_LZD.Output_Reg.Q[4].r0}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.1 -silent
+gui_zoom -window Schematic.1 -rect { {-20119 -25663} {50855 4210} }
+gui_zoom -window Schematic.1 -rect { {-7706 -17210} {38410 2200} }
+gui_zoom -window Schematic.1 -rect { {-7706 -19550} {38410 -140} }
+gui_zoom -window Schematic.1 -rect { {-7706 -15317} {38410 4093} }
+gui_zoom -window Schematic.1 -rect { {-7706 -21133} {38410 -1723} }
+gui_zoom -window Schematic.1 -rect { {-7706 -25607} {38410 -6197} }
+gui_list_action -id  Wave.1 {tb_LZD.Shift_Value_o[4:0]}
+gui_get_drivers -id Wave.1 -signal {tb_LZD.Shift_Value_o[4:0]}
+gui_list_expand -id  Wave.1   {tb_LZD.Shift_Value_o[4:0]}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[2]}   }
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[1]}   }
+gui_list_action -id  Wave.1 {tb_LZD.Shift_Value_o[1]}
+gui_get_drivers -id Wave.1 -signal {tb_LZD.Shift_Value_o[1]}
+gui_src_highlight_item -id Source.1 -lfrom 99 -idxfrom 73 -fileIdFrom 0 -lto 103 -idxto 72 -fileIdTo 0 -selection {
+  DFFRX2TS \Q_reg[4]  ( .D(n11), .CK(clk), .RN(n10), .Q(Q[4]), .QN(n5) );
+  DFFRX2TS \Q_reg[3]  ( .D(n9), .CK(clk), .RN(n10), .Q(Q[3]), .QN(n4) );
+  DFFRX2TS \Q_reg[2]  ( .D(n8), .CK(clk), .RN(n10), .Q(Q[2]), .QN(n3) );
+  DFFRX2TS \Q_reg[1]  ( .D(n7), .CK(clk), .RN(n10), .Q(Q[1]), .QN(n2) );} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 99 -idxfrom 73 -fileIdFrom 0 -lto 104 -idxto 72 -fileIdTo 0 -selection {
+  DFFRX2TS \Q_reg[4]  ( .D(n11), .CK(clk), .RN(n10), .Q(Q[4]), .QN(n5) );
+  DFFRX2TS \Q_reg[3]  ( .D(n9), .CK(clk), .RN(n10), .Q(Q[3]), .QN(n4) );
+  DFFRX2TS \Q_reg[2]  ( .D(n8), .CK(clk), .RN(n10), .Q(Q[2]), .QN(n3) );
+  DFFRX2TS \Q_reg[1]  ( .D(n7), .CK(clk), .RN(n10), .Q(Q[1]), .QN(n2) );
+  DFFRX2TS \Q_reg[0]  ( .D(n6), .CK(clk), .RN(n10), .Q(Q[0]), .QN(n1) );} -selectionId 0 -replace 0
+gui_list_select -id Wave.1 -selected  {  }
+gui_use_schematics 
+gui_path_schematic_dlg 
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Add_subt_result_i[25:0]}   }
+gui_use_schematics 
+gui_path_schematic_dlg -signal {tb_LZD.Add_subt_result_i[25:0]}
+gui_path_show -objects {{tb_LZD.Shift_Value_o[4:0]} {tb_LZD.Add_subt_result_i[25:0]}}
+gui_zoom -window Schematic.2 -rect { {-26903 -4143} {36902 14189} }
+gui_zoom -window Schematic.2 -rect { {-19182 -11288} {34582 4158} }
+gui_sch_expand_path -window Schematic.2 -source {{tb_LZD.Shift_Value_o[4:0]}} -target {{tb_LZD.Add_subt_result_i[25:0]}}  -max_cell_depth 10
+gui_schematic_clear_selection -id Schematic.2
+gui_zoom -window Schematic.2 -rect { {-19182 -11288} {34582 4158} }
+gui_zoom -window Schematic.2 -rect { {-19182 -11288} {34582 4158} }
+gui_close_window -window Schematic.2
+gui_path_show -objects {{tb_LZD.Shift_Value_o[4:0]} {tb_LZD.Add_subt_result_i[25]}}
+gui_zoom -window Schematic.2 -rect { {-26903 -4143} {36902 14189} }
+gui_zoom -window Schematic.2 -rect { {-19182 -11288} {34582 4158} }
+gui_sch_expand_path -window Schematic.2 -source {{tb_LZD.Shift_Value_o[4:0]}} -target {{tb_LZD.Add_subt_result_i[25]}}  -max_cell_depth 10
+gui_zoom -window Schematic.2 -rect { {-19182 -11288} {34582 4158} }
+gui_zoom -window Schematic.2 -rect { {-19182 -11288} {34582 4158} }
+gui_close_window -window Schematic.2
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[1]}   }
+gui_trace_value -id Wave.1 -signal {tb_LZD.Shift_Value_o[1]} -time 409542715 -trace_x
+gui_list_select -id DriverLoad.1 -selected  { {LZD_syn.v 103 1.0}   }
+gui_list_select -id DriverLoad.1 -selected  { {LZD_syn.v 103 0.0}   }
+gui_list_select -id DriverLoad.1 -selected  { {Sim:tb_LZD.Shift_Value_o[1] 409536000 0}   }
+gui_list_select -id DriverLoad.1 -selected  { {Sim:tb_LZD.Shift_Value_o[1] 409536000 1}   }
+gui_list_select -id DriverLoad.1 -selected  { {LZD_syn.v 103 0.0}   }
+gui_src_highlight_item -id Source.1 -lfrom 99 -idxfrom 2 -fileIdFrom 0 -lto 99 -idxto 13 -fileIdTo 0 -selection {OAI2BB2XLTS} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 99 -idxfrom 2 -fileIdFrom 0 -lto 99 -idxto 13 -fileIdTo 0 -selection {OAI2BB2XLTS} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 100 -idxfrom 27 -fileIdFrom 0 -lto 100 -idxto 30 -fileIdTo 0 -selection {n11} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 100 -idxfrom 27 -fileIdFrom 0 -lto 100 -idxto 30 -fileIdTo 0 -selection {n11} -selectionId 0 -replace 0
+gui_src_highlight_item -id Source.1 -lfrom 103 -idxfrom 27 -fileIdFrom 0 -lto 103 -idxto 29 -fileIdTo 0 -selection {n7} -selectionId 0 -replace 0
+gui_list_select -id DriverLoad.1 -selected  { {Sim:tb_LZD.Shift_Value_o[1] 409536000 0}   }
+gui_use_schematics 
+gui_backtrace_signal -newView -view DriverLoad.1 {{Sim:tb_LZD.Shift_Value_o[1]}}
+gui_zoom -window Schematic.2 -rect { {-40556 -4152} {50555 14202} }
+gui_zoom -window Schematic.2 -rect { {-22093 -6649} {31351 4117} }
+gui_zoom -window Schematic.2 -rect { {-26069 -6663} {35331 4135} }
+gui_zoom -window Schematic.2 -rect { {-121682 -43546} {161045 4843} }
+gui_zoom -window Schematic.2 -rect { {-26085 -6653} {19640 1173} }
+gui_zoom -window Schematic.2 -rect { {-128077 -39875} {110928 1031} }
+gui_marker_move -id  Wave.2 C1 204736000
+gui_marker_move -id  Wave.2 C1 409546000
+gui_marker_select -id  Wave.2 { C1 }
+gui_get_drivers -id Wave.2 -signal {tb_LZD.Shift_Value_o[1]}
+gui_wv_zoom_timerange -id  Wave.2 0 491451258
+gui_list_select -id Wave.2 -selected  { {tb_LZD.inst_LZD.Output_Reg.\Q_reg[0] .D}   }
+gui_sim_continue  
+gui_zoom -window Schematic.2 -rect { {-128077 -43269} {110928 3889} }
+gui_zoom -window Schematic.2 -rect { {-128077 -43448} {110928 3710} }
+gui_sim_stop 
+gui_marker_move -id  Wave.2 C1 531271561066
+gui_wv_scroll_hslidermove -id  Wave.2 0
+gui_marker_move -id  Wave.2 C1 409546000
+gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q[4]}
+gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q[4]}
+gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q[4]}
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q}
+gui_list_select -id Wave.2 -selected  { bt_Schematic.2   }
+gui_list_select -id Wave.2 -selected  { {tb_LZD.Shift_Value_o[1]}   }
+gui_marker_move -id  Wave.2 C1 204736000
+gui_trace_value -id Wave.2 -signal {tb_LZD.Shift_Value_o[1]} -time 204736000
+gui_list_select -id DriverLoad.1 -selected  { {Sim:tb_LZD.Shift_Value_o[1] 204736000 0}   }
+gui_list_select -id DriverLoad.1 -selected  { {LZD_syn.v 103 0.0}   }
+gui_set_target_frame List TopLevel.1
+gui_unset_target_frame List
+gui_unset_target_frame Memory
+gui_set_target_frame Memory TopLevel.1
+gui_set_target_frame List TopLevel.1
+gui_src_expand -id { Source.1 } -fid  0  -line 108
+gui_src_collapse -id { Source.1 } -fid  0  -line 108
+gui_src_expand -id { Source.1 } -fid  0  -line 8
+gui_src_highlight_item -id Source.1 -lfrom 25 -idxfrom 39 -fileIdFrom 0 -lto 25 -idxto 49 -fileIdTo 0 -selection {Data_Dec_i} -selectionId 0 -replace 0
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_seek_next -id Wave.2 -number 1 
+gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q}
+gui_schematic_clear_selection -id Schematic.2
+gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q}
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.inst_LZD.Output_Reg.clk}
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.inst_LZD.Output_Reg.clk}
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.inst_LZD.Output_Reg.clk}
+gui_backtrace_signal -view Schematic.2 tb_LZD.inst_LZD.Output_Reg.clk
+gui_zoom -window Schematic.2 -rect { {-96970 -43460} {147254 4728} }
+gui_zoom -window Schematic.2 -rect { {-128080 -43448} {110930 3711} }
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.inst_LZD.Output_Reg.n10}
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.clk}
+gui_schematic_select -id Schematic.2 -type {net} -parent {.} {tb_LZD.clk}
+gui_schematic_select -id Schematic.2 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.Q[4]}
+gui_use_schematics 
+gui_path_show -objects {{tb_LZD.inst_LZD.Output_Reg.Q[4]}}
+gui_zoom -window Schematic.3 -rect { {-26770 -4142} {36817 14188} }
+gui_zoom -window Schematic.3 -rect { {-14717 -10255} {35244 4146} }
+gui_zoom -window Schematic.3 -rect { {-14717 -10255} {35244 4146} }
+gui_schematic_select -id Schematic.3 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.\Q_reg[4] }
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.3 -silent
+gui_zoom -window Schematic.3 -rect { {-24446 -23672} {72543 4286} }
+gui_zoom -window Schematic.3 -rect { {-14709 -10242} {35253 4160} }
+gui_zoom -window Schematic.3 -rect { {-14585 -19962} {56669 578} }
+gui_schematic_select -id Schematic.3 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.\Q_reg[4] }
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.3 -silent
+gui_zoom -window Schematic.3 -rect { {-24446 -23672} {72543 4286} }
+gui_zoom -window Schematic.3 -rect { {-14586 -19962} {56672 579} }
+gui_schematic_clear_selection -id Schematic.3
+gui_path_show -window Schematic.3 -objects {}
+gui_schematic_select -id Schematic.3 -type {cell} -parent {.} {tb_LZD.inst_LZD.Output_Reg.U7}
+gui_schematic_select -id Schematic.3 -type {pin} -parent {tb_LZD.inst_LZD.Output_Reg.U7} {tb_LZD.inst_LZD.Output_Reg.U7.B0}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.3 -silent
+gui_zoom -window Schematic.3 -rect { {-24446 -23672} {72543 4286} }
+gui_zoom -window Schematic.3 -rect { {-11569 -19962} {59692 580} }
+gui_schematic_select -id Schematic.3 -type {pin} -parent {tb_LZD.inst_LZD.Output_Reg.U7} {tb_LZD.inst_LZD.Output_Reg.U7.A1N}
+::Schematic::pathSchematicAddFanInOut -windowName Schematic.3 -silent
+gui_zoom -window Schematic.3 -rect { {-21096 -22640} {72276 4275} }
+gui_zoom -window Schematic.3 -rect { {-11570 -19891} {59695 652} }
+gui_close_window -window  Schematic.3
+gui_wv_zoom_timerange -id  Wave.1 0 57435
+gui_marker_move -id  Wave.1 C1 25000
+gui_marker_move -id  Wave.1 C1 25000
+gui_wv_scroll_hslidermove -id  Wave.1 81966514
+gui_list_collapse -id  Wave.1   {tb_LZD.Shift_Value_o[4:0]}
 gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[4:0]}   }
 gui_seek_previous -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_previous -id Wave.1 -number 1 
+gui_list_expand -id  Wave.1   {tb_LZD.Shift_Value_o[4:0]}
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
@@ -193,34 +433,40 @@ gui_seek_previous -id Wave.1 -number 1
 gui_seek_previous -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
 gui_seek_previous -id Wave.1 -number 1 
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_marker_move -id  Wave.1 C1 50407
-gui_marker_move -id  Wave.1 C1 75000
-gui_marker_move -id  Wave.1 C1 63136
-gui_marker_move -id  Wave.1 C1 65000
-gui_marker_move -id  Wave.1 C1 70000
-gui_marker_move -id  Wave.1 C1 75000
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_wv_scrollleft -id  Wave.1  line
-gui_marker_move -id  Wave.1 C1 44806
-gui_marker_move -id  Wave.1 C1 56772
-gui_marker_move -id  Wave.1 C1 65000
-gui_marker_move -id  Wave.1 C1 75000
-gui_marker_move -id  Wave.1 C1 70774
-gui_marker_move -id  Wave.1 C1 63900
-gui_marker_move -id  Wave.1 C1 67719
-gui_marker_move -id  Wave.1 C1 41242
+gui_list_select -id Wave.1 -selected  { {tb_LZD.Shift_Value_o[4]}   }
+gui_dlg_toggle_sync_drivers -syncsource -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_source} -value {false}
+gui_dlg_toggle_sync_drivers -syncschematic -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_schematic} -value {true}
+gui_use_schematics
+gui_zoom -window Schematic.3 -rect { {-26770 -4142} {36817 14188} }
+gui_zoom -window Schematic.3 -rect { {-14032 -6643} {23267 4109} }
+gui_zoom -window Schematic.3 -rect { {-14032 -6643} {23267 4109} }
+gui_schematic_clear_selection -id Schematic.3
+gui_schematic_select -id Schematic.3 -type {pin net} -parent {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] } tb_LZD} {{tb_LZD.inst_LZD.Output_Reg.\Q_reg[1] .Q} tb_LZD.Shift_Value_o}
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_schematic_clear_selection -id Schematic.3
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_dlg_toggle_sync_drivers -syncschematic -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_schematic} -value {false}
+gui_dlg_toggle_sync_drivers -syncsource -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_source} -value {true}
+gui_dlg_toggle_sync_drivers -syncsource -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_source} -value {false}
+gui_dlg_toggle_sync_drivers -syncschematic -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_schematic} -value {true}
+gui_use_schematics
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_dlg_toggle_sync_drivers -id  TopLevel.1 -nosyncview
+gui_set_pref_value -category {Driver} -key {driver_link_to_view} -value {false}
+gui_dlg_toggle_sync_drivers -id  TopLevel.1
+gui_set_pref_value -category {Driver} -key {driver_link_to_view} -value {true}
+gui_use_schematics
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_zoom -window Schematic.3 -rect { {-25048 -14384} {39383 4189} }
+gui_close_window -window TopLevel.1

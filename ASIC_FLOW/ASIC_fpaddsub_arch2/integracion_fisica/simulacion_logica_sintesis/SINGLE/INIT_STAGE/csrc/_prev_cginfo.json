@@ -1,51 +1,259 @@
 {
-    "CompileProcesses": [
-        "cgproc.8336.json"
-    ],
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "DFFRX2TS": {
+            "sKf2y_d": {
+                "bytes": 18488,
+                "checksum": 4294967295,
+                "mod": "DFFRX2TS",
+                "out": "sKf2y_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "AOI32X1TS": {
+            "bYNep_d": {
+                "bytes": 16388,
+                "checksum": 4294967295,
+                "mod": "AOI32X1TS",
+                "out": "bYNep_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "AOI222XLTS": {
+            "fJQL4_d": {
+                "bytes": 28099,
+                "checksum": 4294967295,
+                "mod": "AOI222XLTS",
+                "out": "fJQL4_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "udp_dff": {
+            "udp_dff": {
+                "bytes": 0,
+                "mod": "udp_dff",
+                "out": "objs/udps/exIG1.o",
+                "mode": 4
+            }
+        },
+        "XOR2X1TS": {
+            "sxiVF_d": {
+                "bytes": 7851,
+                "checksum": 4294967295,
+                "mod": "XOR2X1TS",
+                "out": "sxiVF_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7109,
+                "checksum": 4294967295,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "OAI22X1TS": {
+            "bqZmw_d": {
+                "bytes": 11251,
+                "checksum": 4294967295,
+                "mod": "OAI22X1TS",
+                "out": "bqZmw_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "Comparator_W31": {
+            "LFpm5_d": {
+                "bytes": 43455,
+                "checksum": 4294967295,
+                "mod": "Comparator_W31",
+                "out": "LFpm5_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "OAI32X1TS": {
+            "f3qvy_d": {
+                "bytes": 17124,
+                "checksum": 4294967295,
+                "mod": "OAI32X1TS",
+                "out": "f3qvy_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "RegisterAdd_W31_0": {
+            "NWdV9_d": {
+                "bytes": 13813,
+                "checksum": 4294967295,
+                "mod": "RegisterAdd_W31_0",
+                "out": "NWdV9_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "AOI22X1TS": {
+            "qwLJd_d": {
+                "bytes": 11165,
+                "checksum": 4294967295,
+                "mod": "AOI22X1TS",
+                "out": "qwLJd_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "RegisterAdd_W1_1": {
+            "pdpxi_d": {
+                "bytes": 6848,
+                "checksum": 4294967295,
+                "mod": "RegisterAdd_W1_1",
+                "out": "pdpxi_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "RegisterAdd_W31_1": {
+            "UVEp8_d": {
+                "bytes": 13813,
+                "checksum": 4294967295,
+                "mod": "RegisterAdd_W31_1",
+                "out": "UVEp8_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "RegisterAdd_W32_0": {
+            "DQSUp_d": {
+                "bytes": 14021,
+                "checksum": 4294967295,
+                "mod": "RegisterAdd_W32_0",
+                "out": "DQSUp_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "AND2X2TS": {
+            "spKVQ_d": {
+                "bytes": 7276,
+                "checksum": 4294967295,
+                "mod": "AND2X2TS",
+                "out": "spKVQ_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "MultiplexTxT_W31": {
+            "yUbAc_d": {
+                "bytes": 20007,
+                "checksum": 4294967295,
+                "mod": "MultiplexTxT_W31",
+                "out": "yUbAc_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "RegisterAdd_W1_0": {
+            "DFhLq_d": {
+                "bytes": 6848,
+                "checksum": 4294967295,
+                "mod": "RegisterAdd_W1_0",
+                "out": "DFhLq_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "OAI222X1TS": {
+            "DPNuy_d": {
+                "bytes": 27295,
+                "checksum": 4294967295,
+                "mod": "OAI222X1TS",
+                "out": "DPNuy_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "INVX2TS": {
+            "vphTK_d": {
+                "bytes": 6032,
+                "checksum": 4294967295,
+                "mod": "INVX2TS",
+                "out": "vphTK_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "CLKBUFX2TS": {
+            "EKMET_d": {
+                "bytes": 6064,
+                "checksum": 4294967295,
+                "mod": "CLKBUFX2TS",
+                "out": "EKMET_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "tb_Oper_Start_In": {
+            "tW6Qs_d": {
+                "bytes": 33557,
+                "checksum": 4294967295,
+                "mod": "tb_Oper_Start_In",
+                "out": "tW6Qs_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "sgn_result": {
+            "M9GPN_d": {
+                "bytes": 15565,
+                "checksum": 4294967295,
+                "mod": "sgn_result",
+                "out": "M9GPN_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "xor_tri_W32": {
+            "vZBze_d": {
+                "bytes": 10319,
+                "checksum": 4294967295,
+                "mod": "xor_tri_W32",
+                "out": "vZBze_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "OAI2BB2XLTS": {
+            "HG8j1_d": {
+                "bytes": 11301,
+                "checksum": 4294967295,
+                "mod": "OAI2BB2XLTS",
+                "out": "HG8j1_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        },
+        "XNOR2X1TS": {
+            "ThfAH_d": {
+                "bytes": 7852,
+                "checksum": 4294967295,
+                "mod": "XNOR2X1TS",
+                "out": "ThfAH_d.o",
+                "mode": 4,
+                "archive": "archive.4/_prev_archive_1.a"
+            }
+        }
+    },
+    "PEModules": [],
     "NameTable": {
-        "...MASTER...": [
-            "SIM",
-            "amcQw",
-            "module"
-        ],
-        "CLKBUFX2TS": [
-            "CLKBUFX2TS",
-            "EKMET",
-            "module"
-        ],
         "RegisterAdd_W1_1": [
             "RegisterAdd_W1_1",
             "pdpxi",
-            "module"
-        ],
-        "OAI22X1TS": [
-            "OAI22X1TS",
-            "bqZmw",
-            "module"
-        ],
-        "OAI32X1TS": [
-            "OAI32X1TS",
-            "f3qvy",
-            "module"
-        ],
-        "RegisterAdd_W32_0": [
-            "RegisterAdd_W32_0",
-            "DQSUp",
-            "module"
-        ],
-        "sgn_result": [
-            "sgn_result",
-            "M9GPN",
-            "module"
-        ],
-        "Comparator_W31": [
-            "Comparator_W31",
-            "LFpm5",
-            "module"
-        ],
-        "RegisterAdd_W31_0": [
-            "RegisterAdd_W31_0",
-            "NWdV9",
             "module"
         ],
         "AOI22X1TS": [
@@ -53,14 +261,14 @@
             "qwLJd",
             "module"
         ],
-        "udp_dff": [
-            "udp_dff",
-            "exIG1",
-            "udp"
+        "RegisterAdd_W31_1": [
+            "RegisterAdd_W31_1",
+            "UVEp8",
+            "module"
         ],
-        "DFFRX2TS": [
-            "DFFRX2TS",
-            "sKf2y",
+        "AND2X2TS": [
+            "AND2X2TS",
+            "spKVQ",
             "module"
         ],
         "xor_tri_W32": [
@@ -68,14 +276,29 @@
             "vZBze",
             "module"
         ],
-        "AOI32X1TS": [
-            "AOI32X1TS",
-            "bYNep",
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
             "module"
         ],
-        "OAI222X1TS": [
-            "OAI222X1TS",
-            "DPNuy",
+        "Comparator_W31": [
+            "Comparator_W31",
+            "LFpm5",
+            "module"
+        ],
+        "OAI22X1TS": [
+            "OAI22X1TS",
+            "bqZmw",
+            "module"
+        ],
+        "sgn_result": [
+            "sgn_result",
+            "M9GPN",
+            "module"
+        ],
+        "RegisterAdd_W32_0": [
+            "RegisterAdd_W32_0",
+            "DQSUp",
             "module"
         ],
         "MultiplexTxT_W31": [
@@ -83,9 +306,9 @@
             "yUbAc",
             "module"
         ],
-        "XNOR2X1TS": [
-            "XNOR2X1TS",
-            "ThfAH",
+        "OAI222X1TS": [
+            "OAI222X1TS",
+            "DPNuy",
             "module"
         ],
         "RegisterAdd_W1_0": [
@@ -93,9 +316,14 @@
             "DFhLq",
             "module"
         ],
-        "RegisterAdd_W31_1": [
-            "RegisterAdd_W31_1",
-            "UVEp8",
+        "RegisterAdd_W31_0": [
+            "RegisterAdd_W31_0",
+            "NWdV9",
+            "module"
+        ],
+        "CLKBUFX2TS": [
+            "CLKBUFX2TS",
+            "EKMET",
             "module"
         ],
         "tb_Oper_Start_In": [
@@ -108,29 +336,104 @@
             "vphTK",
             "module"
         ],
-        "AND2X2TS": [
-            "AND2X2TS",
-            "spKVQ",
-            "module"
-        ],
-        "XOR2X1TS": [
-            "XOR2X1TS",
-            "sxiVF",
-            "module"
-        ],
         "AOI222XLTS": [
             "AOI222XLTS",
             "fJQL4",
+            "module"
+        ],
+        "AOI32X1TS": [
+            "AOI32X1TS",
+            "bYNep",
+            "module"
+        ],
+        "OAI32X1TS": [
+            "OAI32X1TS",
+            "f3qvy",
             "module"
         ],
         "OAI2BB2XLTS": [
             "OAI2BB2XLTS",
             "HG8j1",
             "module"
+        ],
+        "udp_dff": [
+            "udp_dff",
+            "exIG1",
+            "udp"
+        ],
+        "XOR2X1TS": [
+            "XOR2X1TS",
+            "sxiVF",
+            "module"
+        ],
+        "XNOR2X1TS": [
+            "XNOR2X1TS",
+            "ThfAH",
+            "module"
+        ],
+        "DFFRX2TS": [
+            "DFFRX2TS",
+            "sKf2y",
+            "module"
         ]
     },
-    "CurCompileUdps": {
-        "udp_dff": "objs/udps/exIG1.o"
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.23896300000000001,
+            "ru_maxrss_kb": 51000,
+            "ru_stime_sec": 0.091985999999999998,
+            "ru_minflt": 13425,
+            "ru_nvcsw": 51,
+            "ru_nivcsw": 40
+        },
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "Frontend(%)": 97.551048734089363,
+        "CodeGen(%)": 2.4489512659106327,
+        "nMops": 0,
+        "totalObjSize": 96288,
+        "nQuads": 0,
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.24496200000000001,
+            "ru_maxrss_kb": 54524,
+            "ru_stime_sec": 0.095985000000000001,
+            "ru_minflt": 14694,
+            "ru_nvcsw": 51,
+            "ru_nivcsw": 47
+        }
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89179
+    },
+    "Misc": {
+        "archive_dir": "archive.4",
+        "default_output_dir": "csrc",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE",
+        "csrc": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv.daidir"
     },
     "CurCompileModules": [
         "...MASTER...",
@@ -158,70 +461,11 @@
         "CLKBUFX2TS",
         "DFFRX2TS"
     ],
-    "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 91019
-    },
-    "CompileStrategy": "fullobj",
-    "stat": {
-        "ru_childs_cgstart": {
-            "ru_utime_sec": 0.0,
-            "ru_nivcsw": 0,
-            "ru_stime_sec": 0.0,
-            "ru_maxrss_kb": 0,
-            "ru_minflt": 0,
-            "ru_nvcsw": 0,
-            "ru_majflt": 0
-        },
-        "Frontend(%)": 65.405481384970116,
-        "ru_self_cgstart": {
-            "ru_utime_sec": 0.24196300000000001,
-            "ru_nivcsw": 175,
-            "ru_stime_sec": 0.076988000000000001,
-            "ru_maxrss_kb": 50836,
-            "ru_minflt": 13344,
-            "ru_nvcsw": 56,
-            "ru_majflt": 2
-        },
-        "nMops": 16689,
-        "nQuads": 3509,
-        "quadSpeed": 27418.346616658851,
-        "totalObjSize": 452560,
-        "mopSpeed": 130403.18799812469,
-        "outputSizePerQuad": 128.0,
-        "ru_childs_end": {
-            "ru_utime_sec": 0.0,
-            "ru_nivcsw": 0,
-            "ru_stime_sec": 0.0,
-            "ru_maxrss_kb": 0,
-            "ru_minflt": 0,
-            "ru_nvcsw": 0,
-            "ru_majflt": 0
-        },
-        "ru_self_end": {
-            "ru_utime_sec": 0.36994300000000002,
-            "ru_nivcsw": 239,
-            "ru_stime_sec": 0.10198400000000001,
-            "ru_maxrss_kb": 61320,
-            "ru_minflt": 16457,
-            "ru_nvcsw": 58,
-            "ru_majflt": 3
-        },
-        "mop/quad": 4.7560558563693363,
-        "CodeGen(%)": 34.594518615029884
-    },
     "CompileStatus": "Successful",
     "LVLData": [
         "SIM"
     ],
-    "Misc": {
-        "default_output_dir": "csrc",
-        "daidir": "simv.daidir",
-        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE",
-        "csrc": "csrc",
-        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/csrc",
-        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv.daidir",
-        "archive_dir": "archive.0"
-    },
-    "PEModules": []
+    "CompileProcesses": [
+        "cgproc.15553.json"
+    ]
 }

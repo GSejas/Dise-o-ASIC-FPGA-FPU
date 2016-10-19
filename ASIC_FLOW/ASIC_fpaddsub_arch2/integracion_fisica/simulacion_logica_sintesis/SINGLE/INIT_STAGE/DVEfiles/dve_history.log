@@ -1,4 +1,6 @@
 # Preference setting overrides
+gui_set_pref_value -category {Driver} -key {driver_link_to_schematic} -value {true}
+gui_set_pref_value -category {Driver} -key {driver_link_to_source} -value {false}
 gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
 gui_create_pref_category -category {schem_obj_name}
 gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
@@ -8,26 +10,38 @@ gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {str
 gui_state_default_create -off -ini
 gui_set_state_value -category Globals -key open_wave_inside -value true
 gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -design V1}}
-gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session3.inter.vpd.tcl}}
-gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/session2.inter.vpd.tcl}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter1.vpd.tcl -ignore_errors}}
+gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_console_docknewline -value false
+gui_set_state_value -category Layout -key child_console_dockstate -value undocked
+gui_set_state_value -category Layout -key child_console_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_console_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_console_showstate -value maximized
-gui_set_state_value -category Layout -key child_console_size_x -value 1023
-gui_set_state_value -category Layout -key child_console_size_y -value 178
-gui_set_state_value -category Layout -key child_data_coltype -value 14
-gui_set_state_value -category Layout -key child_data_colvalue -value 12
-gui_set_state_value -category Layout -key child_data_colvariable -value 138
+gui_set_state_value -category Layout -key child_console_size_x -value 963
+gui_set_state_value -category Layout -key child_console_size_y -value 549
+gui_set_state_value -category Layout -key child_data_coltype -value 317
+gui_set_state_value -category Layout -key child_data_colvalue -value 261
+gui_set_state_value -category Layout -key child_data_colvariable -value 440
+gui_set_state_value -category Layout -key child_data_docknewline -value false
+gui_set_state_value -category Layout -key child_data_dockstate -value undocked
+gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_data_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_data_showstate -value maximized
-gui_set_state_value -category Layout -key child_data_size_x -value 172
-gui_set_state_value -category Layout -key child_data_size_y -value 390
+gui_set_state_value -category Layout -key child_data_size_x -value 963
+gui_set_state_value -category Layout -key child_data_size_y -value 550
 gui_set_state_value -category Layout -key child_driver_size_x -value 1359
 gui_set_state_value -category Layout -key child_driver_size_y -value 127
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
-gui_set_state_value -category Layout -key child_hier_colhier -value 318
+gui_set_state_value -category Layout -key child_hier_colhier -value 645
 gui_set_state_value -category Layout -key child_hier_colpd -value 0
-gui_set_state_value -category Layout -key child_hier_coltype -value 44
+gui_set_state_value -category Layout -key child_hier_coltype -value 371
+gui_set_state_value -category Layout -key child_hier_docknewline -value false
+gui_set_state_value -category Layout -key child_hier_dockstate -value undocked
+gui_set_state_value -category Layout -key child_hier_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_hier_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_hier_showstate -value maximized
-gui_set_state_value -category Layout -key child_hier_size_x -value 386
-gui_set_state_value -category Layout -key child_hier_size_y -value 390
+gui_set_state_value -category Layout -key child_hier_size_x -value 963
+gui_set_state_value -category Layout -key child_hier_size_y -value 550
 gui_set_state_value -category Layout -key child_list_down -value 134
 gui_set_state_value -category Layout -key child_list_right -value 444
 gui_set_state_value -category Layout -key child_schematic_docknewline -value false
@@ -36,24 +50,24 @@ gui_set_state_value -category Layout -key child_schematic_pos_y -value {-20}
 gui_set_state_value -category Layout -key child_schematic_size_x -value 1009
 gui_set_state_value -category Layout -key child_schematic_size_y -value 485
 gui_set_state_value -category Layout -key child_source_docknewline -value false
-gui_set_state_value -category Layout -key child_source_pos_x -value 2
-gui_set_state_value -category Layout -key child_source_pos_y -value 2
-gui_set_state_value -category Layout -key child_source_size_x -value 267
-gui_set_state_value -category Layout -key child_source_size_y -value 210
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_source_size_x -value 963
+gui_set_state_value -category Layout -key child_source_size_y -value 550
 gui_set_state_value -category Layout -key child_watch_size_x -value 746
 gui_set_state_value -category Layout -key child_watch_size_y -value 166
-gui_set_state_value -category Layout -key child_wave_colname -value 135
-gui_set_state_value -category Layout -key child_wave_colvalue -value 80
+gui_set_state_value -category Layout -key child_wave_colname -value 253
+gui_set_state_value -category Layout -key child_wave_colvalue -value 202
 gui_set_state_value -category Layout -key child_wave_docknewline -value false
-gui_set_state_value -category Layout -key child_wave_left -value 219
+gui_set_state_value -category Layout -key child_wave_left -value 459
 gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_wave_right -value 239
-gui_set_state_value -category Layout -key child_wave_size_x -value 468
-gui_set_state_value -category Layout -key child_wave_size_y -value 385
-gui_set_state_value -category Layout -key main_pos_x -value 2
-gui_set_state_value -category Layout -key main_pos_y -value 51
-gui_set_state_value -category Layout -key main_size_x -value 1021
+gui_set_state_value -category Layout -key child_wave_right -value 495
+gui_set_state_value -category Layout -key child_wave_size_x -value 964
+gui_set_state_value -category Layout -key child_wave_size_y -value 553
+gui_set_state_value -category Layout -key main_pos_x -value 13
+gui_set_state_value -category Layout -key main_pos_y -value 57
+gui_set_state_value -category Layout -key main_size_x -value 972
 gui_set_state_value -category Layout -key main_size_y -value 738
 gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
 gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
@@ -87,21 +101,20 @@ gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -va
 gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
 gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{+v2k +lint=all -a log_name +define+SYN_SINGLE} {+v2k +lint=all -a log_name +define+SINGLE} {-ucligui +v2k +lint=all -l log_name +define+SINGLE}}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/BARREL_SHIFTER /home/local/ESTUDIANTES/jsequeira/detector/integracion_fisica/simulacion_logica_sintesis}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/simv}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{ +v2k +lint=all -l log_name +define+SYN_SINGLE -ucligui} { +v2k +lint=all -a log_name +define+SYN_SINGLE -ucligui} {+v2k +lint=all -a log_name +define+SINGLE} {-ucligui +v2k +lint=all -l log_name +define+SINGLE}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/BARREL_SHIFTER}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/simv}
 gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SYN_SINGLE} -dir .
 gui_list_expand -id  Hier.1   tb_Oper_Start_In
-gui_list_expand -id  Hier.1   tb_Oper_Start_In.inst_Oper_Start_In
-gui_list_collapse -id  Hier.1   tb_Oper_Start_In.inst_Oper_Start_In
+gui_list_select -id Hier.1 -current_item_name tb_Oper_Start_In.inst_Oper_Start_In -current_item_type Scope  -selected  { tb_Oper_Start_In.inst_Oper_Start_In   }
 gui_open_window Wave
-gui_list_add -id Wave.1 -from Hier.1 { tb_Oper_Start_In } -insertionbar
+gui_list_add -id Wave.1 -from Hier.1 { tb_Oper_Start_In.inst_Oper_Start_In } -insertionbar
 gui_sim_continue  
 gui_zoom -window Wave.1 -full
-gui_marker_move -id  Wave.1 C1 12038000
+gui_marker_move -id  Wave.1 C1 0
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
@@ -109,65 +122,41 @@ gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
 gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_zoom -window Wave.1 -factor 2
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 86440
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_list_select -id Wave.1 -selected  { tb_Oper_Start_In.real_op_o   }
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_wv_scrollright -id  Wave.1  page
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.DmP_o[30:0]}   }
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_marker_move -id  Wave.1 C1 2604991
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_X_i[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_X_i[31:0]}  {tb_Oper_Start_In.Data_Y_i[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}  {tb_Oper_Start_In.Data_X_i[31:0]}   }
-gui_list_set_insertion_bar -id Wave.1 -item {tb_Oper_Start_In.Data_X_i[31:0]} -index 4 -group tb_Oper_Start_In -position auto
-gui_list_set_selected_property -id Wave.1 -radix Hex2Float_BigEndian
-gui_marker_move -id  Wave.1 C1 2543697
-gui_marker_move -id  Wave.1 C1 2588000
-gui_marker_move -id  Wave.1 C1 2601062
-gui_marker_move -id  Wave.1 C1 2652140
-gui_marker_move -id  Wave.1 C1 2610884
-gui_marker_move -id  Wave.1 C1 2559413
-gui_marker_move -id  Wave.1 C1 2509907
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.FileSaveData[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.FileSaveData[31:0]}  {tb_Oper_Start_In.Recept[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.FileSaveData[31:0]}  {tb_Oper_Start_In.Recept[31:0]}  {tb_Oper_Start_In.Cont_CLK[31:0]}   }
-gui_delete_selected -id  Wave.1
-gui_list_select -id Wave.1 -selected  { tb_Oper_Start_In.load_a_i   }
-gui_wv_scrollleft -id  Wave.1  page
-gui_wv_scrollleft -id  Wave.1  page
-gui_wv_scrollleft -id  Wave.1  page
-gui_marker_move -id  Wave.1 C1 1915042
-gui_marker_move -id  Wave.1 C1 1939795
-gui_marker_move -id  Wave.1 C1 1912684
-gui_list_sort -id  Wave.1   {Name}
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.DmP_o[30:0]}   }
-gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_Oper_Start_In.DMP_o[30:0]} {{tb_Oper_Start_In.DmP_o[30:0]}} 
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}  {tb_Oper_Start_In.Data_X_i[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}  {tb_Oper_Start_In.Data_X_i[31:0]}  {tb_Oper_Start_In.DmP_o[30:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}  {tb_Oper_Start_In.Data_X_i[31:0]}  {tb_Oper_Start_In.DmP_o[30:0]}  {tb_Oper_Start_In.DMP_o[30:0]}   }
-gui_list_set_selected_property -id Wave.1 -radix oct
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}   }
-gui_list_select -id Wave.1 -selected  { {tb_Oper_Start_In.Data_Y_i[31:0]}  {tb_Oper_Start_In.Data_X_i[31:0]}   }
-gui_save_session -savedb relative -global { Breakpoint Bus Radix Expression TimeShift Compare SignalGroup Highlight Stack }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/session.inter.vpd.tcl
+gui_marker_move -id  Wave.1 C1 138000
+gui_marker_move -id  Wave.1 C1 39822
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_marker_move -id  Wave.1 C1 236000
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_wv_zoom_timerange -id  Wave.1 0 798790
+gui_wv_zoom_timerange -id  Wave.1 0 799961
+gui_save_session -savedb relative -global { Breakpoint Bus Radix Expression TimeShift Compare SignalGroup Highlight Stack }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/session2.inter.vpd.tcl

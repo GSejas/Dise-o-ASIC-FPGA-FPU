@@ -1,16 +1,16 @@
  
 ****************************************
 Report : qor
-Design : Add_Subt
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Mon Oct 17 20:48:29 2016
+Date   : Tue Oct 18 20:31:51 2016
 ****************************************
 
 
   Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:              24.00
-  Critical Path Length:          5.77
+  Levels of Logic:              35.00
+  Critical Path Length:          9.30
   Critical Path Slack:           0.01
   Critical Path Clk Period:     10.00
   Total Negative Slack:          0.00
@@ -23,36 +23,36 @@ Date   : Mon Oct 17 20:48:29 2016
 
   Cell Count
   -----------------------------------
-  Hierarchical Cell Count:          5
-  Hierarchical Port Count:        306
-  Leaf Cell Count:                281
-  Buf/Inv Cell Count:              53
-  Buf Cell Count:                  10
-  Inv Cell Count:                  43
+  Hierarchical Cell Count:        157
+  Hierarchical Port Count:       4249
+  Leaf Cell Count:               3747
+  Buf/Inv Cell Count:             965
+  Buf Cell Count:                 237
+  Inv Cell Count:                 728
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:       254
-  Sequential Cell Count:           27
+  Combinational Cell Count:      3233
+  Sequential Cell Count:          514
   Macro Count:                      0
   -----------------------------------
 
 
   Area
   -----------------------------------
-  Combinational Area:     3012.480021
-  Noncombinational Area:   894.239971
-  Buf/Inv Area:            243.360010
-  Total Buffer Area:            57.60
-  Total Inverter Area:         185.76
+  Combinational Area:    27326.880369
+  Noncombinational Area: 17038.079453
+  Buf/Inv Area:           4515.840179
+  Total Buffer Area:          1370.88
+  Total Inverter Area:        3144.96
   Macro/Black Box Area:      0.000000
   Net Area:                  0.000000
   -----------------------------------
-  Cell Area:              3906.719992
-  Design Area:            3906.719992
+  Cell Area:             44364.959822
+  Design Area:           44364.959822
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:           398
+  Total Number of Nets:          4442
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -63,12 +63,12 @@ Date   : Mon Oct 17 20:48:29 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.08
-  Logic Optimization:                  0.31
-  Mapping Optimization:                0.96
+  Resource Sharing:                    2.72
+  Logic Optimization:                  4.08
+  Mapping Optimization:               11.50
   -----------------------------------------
-  Overall Compile Time:                3.51
-  Overall Compile Wall Clock Time:     3.77
+  Overall Compile Time:               21.95
+  Overall Compile Wall Clock Time:    22.46
 
   --------------------------------------------------------------------
 
