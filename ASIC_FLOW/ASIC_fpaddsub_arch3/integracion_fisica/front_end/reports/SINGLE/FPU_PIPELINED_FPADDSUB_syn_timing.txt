@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Fri Oct 21 13:54:20 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: SGF_STAGE_DmP_mant_Q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: NRM_STAGE_Raw_mant_Q_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  SGF_STAGE_DmP_mant_Q_reg_0_/CK (DFFRXLTS)               0.00       1.00 r
+  SGF_STAGE_DmP_mant_Q_reg_0_/QN (DFFRXLTS)               1.32       2.32 r
+  U1906/CON (AHHCONX2TS)                                  0.26       2.58 f
+  U1901/CO (AFHCINX2TS)                                   0.22       2.80 r
+  U1897/CON (AFHCONX2TS)                                  0.19       2.99 f
+  U1813/CO (AFHCINX2TS)                                   0.33       3.32 r
+  U1809/CON (AFHCONX2TS)                                  0.19       3.52 f
+  U1893/CO (AFHCINX2TS)                                   0.33       3.85 r
+  U1817/CON (AFHCONX2TS)                                  0.19       4.04 f
+  U1822/CO (AFHCINX2TS)                                   0.33       4.37 r
+  U1889/CON (AFHCONX2TS)                                  0.19       4.56 f
+  U1885/CO (AFHCINX2TS)                                   0.33       4.89 r
+  U1881/CON (AFHCONX2TS)                                  0.19       5.09 f
+  U1877/CO (AFHCINX2TS)                                   0.33       5.42 r
+  U1873/CON (AFHCONX2TS)                                  0.19       5.61 f
+  U1868/CO (AFHCINX2TS)                                   0.33       5.94 r
+  U1864/CON (AFHCONX2TS)                                  0.19       6.14 f
+  U1860/CO (AFHCINX2TS)                                   0.33       6.46 r
+  U1856/CON (AFHCONX2TS)                                  0.19       6.66 f
+  U1839/CO (AFHCINX2TS)                                   0.33       6.99 r
+  U1843/CON (AFHCONX2TS)                                  0.19       7.18 f
+  U1848/CO (AFHCINX2TS)                                   0.30       7.49 r
+  U1853/CO (CMPR32X2TS)                                   0.45       7.93 r
+  U1826/CO (CMPR32X2TS)                                   0.41       8.34 r
+  U1831/CO (CMPR32X2TS)                                   0.41       8.74 r
+  U1835/CO (CMPR32X2TS)                                   0.39       9.14 r
+  U1836/Y (XNOR2X1TS)                                     0.23       9.36 f
+  U1837/Y (AOI22X1TS)                                     0.18       9.54 r
+  U1838/Y (OAI2BB1X1TS)                                   0.12       9.67 f
+  NRM_STAGE_Raw_mant_Q_reg_25_/D (DFFRXLTS)               0.00       9.67 f
+  data arrival time                                                  9.67
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  NRM_STAGE_Raw_mant_Q_reg_25_/CK (DFFRXLTS)              0.00      10.50 r
+  library setup time                                     -0.19      10.31
+  data required time                                                10.31
+  --------------------------------------------------------------------------
+  data required time                                                10.31
+  data arrival time                                                 -9.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+1

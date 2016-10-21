@@ -1,0 +1,244 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpLOeInc
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.11861}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.11861}
+ucliGUI::getSignalValues -scope add_sub_carry_out -radix {decimal binary hexadecimal hexadecimal hexadecimal } -list {W op_mode {Data_A[31:0]} {Data_B[31:0]} {Data_S[32:0]} }
+ucliGUI::getSignalValues -scope add_sub_carry_out -radix {binary hexadecimal hexadecimal hexadecimal decimal } -list {op_mode {Data_A[31:0]} {Data_B[31:0]} {Data_S[32:0]} W }
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+# Begin_DVE_Session_Save_Info
+# DVE full session
+# Saved on Thu Oct 20 20:22:04 2016
+# Designs open: 1
+#   Sim: simv
+# Toplevel windows open: 1
+# 	TopLevel.1
+#   List.1: 4 signals
+#   Source.1: tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut
+#   Wave.1: 135 signals
+#   Group count = 41
+#   Group tb_FPU_PIPELINED_FPADDSUB2_vector_testing signal count = 28
+#   Group Group1 signal count = 4
+#   Group Group2 signal count = 4
+#   Group Group3 signal count = 9
+#   Group Group4 signal count = 9
+#   Group SHT1_STAGE_DMP signal count = 6
+#   Group SHT1_STAGE_DmP_mant signal count = 6
+#   Group SHT1_STAGE_FLAGS signal count = 6
+#   Group SHT1_STAGE_sft_amount signal count = 6
+#   Group INPUT_STAGE_FLAGS signal count = 6
+#   Group INPUT_STAGE_OPERANDX signal count = 6
+#   Group INPUT_STAGE_OPERANDY signal count = 6
+#   Group INIT signal count = 3
+#   Group EXP signal count = 8
+#   Group SHT1 signal count = 8
+#   Group SHT2 signal count = 5
+#   Group SGF signal count = 6
+#   Group NRM signal count = 5
+#   Group FRMT signal count = 8
+#   Group Group12 signal count = 0
+#   Group inst_ShiftRegister signal count = 5
+#   Group Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load@0 signal count = 1
+#   Group Group13 signal count = 1
+#   Group Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000 signal count = 1
+#   Group inst_FSM_INPUT_ENABLE signal count = 8
+#   Group Group14 signal count = 4
+#   Group Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]@155000 signal count = 3
+#   Group DriversLoads signal count = 1
+#   Group Group15 signal count = 4
+#   Group Group16 signal count = 0
+#   Group Group17 signal count = 0
+#   Group Group18 signal count = 0
+#   Group Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]@175000 signal count = 2
+# End_DVE_Session_Save_Info
+# DVE version: K-2015.09-SP2-3_Full64
+# DVE build date: Jun 15 2016 22:18:13
+#<Session mode="Full" path="/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/FPU_ADD_PIPE_BEHAV_SINGLE_v5.tcl" type="Debug">
+# Close design
+if { [gui_sim_state -check active] } { }
+# Close all windows
+# Application preferences
+#<WindowLayout>
+# DVE top-level session
+# Create and position top-level window: TopLevel.1
+if {![gui_exist_window -window TopLevel.1]} {     set TopLevel.1 [ gui_create_window -type TopLevel        -icon $::env(DVE)/auxx/gui/images/toolbars/dvewin.xpm]  } else {      set TopLevel.1 TopLevel.1 }
+# ToolBar settings
+# End ToolBar settings
+# Docked window settings
+set DriverLoad.1 [gui_create_window -type DriverLoad -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line false -dock_extent 180]
+#### Start - Readjusting docked view's offset / size
+set dockAreaList { top left right bottom }
+foreach dockArea $dockAreaList {   set viewList [gui_ekki_get_window_ids -active_parent -dock_area $dockArea]   foreach view $viewList {       if {[lsearch -exact [gui_get_window_pref_keys -window $view] dock_width] != -1} {         set dockWidth [gui_get_window_pref_value -window $view -key dock_width]         set dockHeight [gui_get_window_pref_value -window $view -key dock_height]         set offset [gui_get_window_pref_value -window $view -key dock_offset]         if { [string equal "top" $dockArea] || [string equal "bottom" $dockArea]} {           gui_set_window_attributes -window $view -dock_offset $offset -width $dockWidth         } else {           gui_set_window_attributes -window $view -dock_offset $offset -height $dockHeight         }       }   } }
+#### End - Readjusting docked view's offset / size
+# MDI window settings
+set Console.1 [gui_create_window -type {Console}  -parent ${TopLevel.1}]
+set HSPane.1 [gui_create_window -type {HSPane}  -parent ${TopLevel.1}]
+if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {         set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] } else {         set Hier.1  [gui_get_shared_view -id ${HSPane.1} -type Hier] }
+set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
+if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {         set Data.1 [gui_share_window -id ${DLPane.1} -type Data] } else {         set Data.1  [gui_get_shared_view -id ${DLPane.1} -type Data] }
+set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
+set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
+set List.1 [gui_create_window -type {List}  -parent ${TopLevel.1}]
+# End MDI window settings
+#</WindowLayout>
+#<Database>
+# DVE Open design session:
+if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } { gui_set_env SIMSETUP::SIMARGS {{-ucligui +v2k +lint=all -l log_name +define+SINGLE}} gui_set_env SIMSETUP::SIMEXE {simv} gui_set_env SIMSETUP::ALLOW_POLL {0} if { ![gui_is_db_opened -db {simv}] } { } }
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY} -scope "." -depth 1 -fid VPD0
+set _session_group_1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+set tb_FPU_PIPELINED_FPADDSUB2_vector_testing "$_session_group_1"
+set _session_group_2 Group1
+set Group1 "$_session_group_2"
+set _session_group_3 Group2
+set Group2 "$_session_group_3"
+set _session_group_4 Group3
+set Group3 "$_session_group_4"
+set _session_group_5 Group4
+set Group4 "$_session_group_5"
+set _session_group_6 SHT1_STAGE_DMP
+set SHT1_STAGE_DMP "$_session_group_6"
+set _session_group_7 SHT1_STAGE_DmP_mant
+set SHT1_STAGE_DmP_mant "$_session_group_7"
+set _session_group_8 SHT1_STAGE_FLAGS
+set SHT1_STAGE_FLAGS "$_session_group_8"
+set _session_group_9 SHT1_STAGE_sft_amount
+set SHT1_STAGE_sft_amount "$_session_group_9"
+set _session_group_10 INPUT_STAGE_FLAGS
+set INPUT_STAGE_FLAGS "$_session_group_10"
+set _session_group_11 INPUT_STAGE_OPERANDX
+set INPUT_STAGE_OPERANDX "$_session_group_11"
+set _session_group_12 INPUT_STAGE_OPERANDY
+set INPUT_STAGE_OPERANDY "$_session_group_12"
+set _session_group_13 INIT
+set INIT "$_session_group_13"
+set _session_group_14 $_session_group_13|
+append _session_group_14 FLAGS
+set INIT|FLAGS "$_session_group_14"
+set _session_group_15 EXP
+set EXP "$_session_group_15"
+set _session_group_16 $_session_group_15|
+append _session_group_16 Group2
+set EXP|Group2 "$_session_group_16"
+set _session_group_17 SHT1
+set SHT1 "$_session_group_17"
+set _session_group_18 $_session_group_17|
+append _session_group_18 Group2
+set SHT1|Group2 "$_session_group_18"
+set _session_group_19 $_session_group_17|
+append _session_group_19 FLAGS
+set SHT1|FLAGS "$_session_group_19"
+set _session_group_20 SHT2
+set SHT2 "$_session_group_20"
+set _session_group_21 $_session_group_20|
+append _session_group_21 FLAGS
+set SHT2|FLAGS "$_session_group_21"
+set _session_group_22 SGF
+set SGF "$_session_group_22"
+set _session_group_23 $_session_group_22|
+append _session_group_23 FLAGS
+set SGF|FLAGS "$_session_group_23"
+set _session_group_24 NRM
+set NRM "$_session_group_24"
+set _session_group_25 $_session_group_24|
+append _session_group_25 FLAGS
+set NRM|FLAGS "$_session_group_25"
+set _session_group_26 FRMT
+set FRMT "$_session_group_26"
+set _session_group_27 $_session_group_26|
+append _session_group_27 FLAGS
+set FRMT|FLAGS "$_session_group_27"
+set _session_group_28 Group12
+set Group12 "$_session_group_28"
+set _session_group_29 inst_ShiftRegister
+set inst_ShiftRegister "$_session_group_29"
+set _session_group_30 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load@0}
+set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load@0} "$_session_group_30"
+set _session_group_31 Group13
+set Group13 "$_session_group_31"
+set _session_group_32 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000}
+set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000} "$_session_group_32"
+set _session_group_33 inst_FSM_INPUT_ENABLE
+set inst_FSM_INPUT_ENABLE "$_session_group_33"
+set _session_group_34 Group14
+set Group14 "$_session_group_34"
+set _session_group_35 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]@155000}
+set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]@155000} "$_session_group_35"
+set _session_group_36 DriversLoads
+set DriversLoads "$_session_group_36"
+set _session_group_37 Group15
+set Group15 "$_session_group_37"
+set _session_group_38 Group16
+set Group16 "$_session_group_38"
+set _session_group_39 Group17
+set Group17 "$_session_group_39"
+set _session_group_40 Group18
+set Group18 "$_session_group_40"
+set _session_group_41 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]@175000}
+set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]@175000} "$_session_group_41"
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Post database loading setting...
+# Restore C1 time
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_expand -id ${Hier.1} tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+catch {gui_list_select -id ${Hier.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut}}
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut} -scope "." -depth 1 -fid VPD0
+# Data 'Data.1'
+catch { gui_list_select -id ${Data.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR }}
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.add_subt tb_FPU_PIPELINED_FPADDSUB2_vector_testing.beg_OP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy tb_FPU_PIPELINED_FPADDSUB2_vector_testing.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.contador tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag } -aggregates  -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg } -aggregates  -fid VPD0
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_Pipeline_input tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_input_internal tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.init_OPERATION tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.state_next tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.state_reg } -aggregates  -fid VPD0
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Source 'Source.1'
+# View 'List.1'
+# DriverLoad 'DriverLoad.1'
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} 	gui_set_active_window -window ${DriverLoad.1} }
+#</Session>
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut -radix {binary hexadecimal binary hexadecimal binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary binary binary binary } -list {clk {formatted_number_W[63:0]} ZERO_FLAG_SFG {sftr_idat_SHT1_SWR[54:0]} SIGN_FLAG_EXP OP_FLAG_INIT {shift_value_SHT2_EWR[5:0]} {DMP_EXP_EWSW[62:0]} {DmP_EXP_EWSW[62:0]} {LZD_raw_out_EWR[5:0]} {shft_value_mux_o_EWR[5:0]} gtXY ZERO_FLAG_SHT1 ZERO_FLAG_SHT2 ZERO_FLAG_NRM }

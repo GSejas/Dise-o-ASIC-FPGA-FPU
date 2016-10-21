@@ -1,0 +1,10 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=add_sub_carry_out Comparators tb_FPU_PIPELINED_FPADDSUB2_vector_testing 

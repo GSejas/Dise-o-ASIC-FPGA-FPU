@@ -1,20 +1,20 @@
 //==================================================================================================
 //  Filename      : FSM_input_enable.v
-//  Created On    : 2016-10-04 09:10:38
-//  Last Modified : 2016-10-04 09:45:50
+//  Created On    : 2016-10-20 19:33:48
+//  Last Modified : 2016-10-20 19:33:50
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
 //  Email         : jsequeira@gmail.com
 //
-//  Description   : Added extra state to the mix, pertaining to the
-//								initialization module (FSM).
+//  Description   :
+//
 //
 //==================================================================================================
 //==================================================================================================
 //  Filename      : FSM_input_enable.v
 //  Created On    : 2016-09-21 00:26:00
-//  Last Modified : 2016-10-04 09:08:38
+//  Last Modified : 2016-09-25 21:37:40
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -86,7 +86,8 @@ always @*
 		State0:
 			begin
 				//OUTPUT SIGNAL
-
+				enable_input_internal=1;
+				enable_shift_reg = 0;
 				//NEXT STATE
 				if(init_OPERATION)
 					state_next = State1; //JUMP TO NEXT STATE
@@ -102,18 +103,8 @@ always @*
 				enable_input_internal=1;
 				enable_shift_reg = 1;
 				//NEXT STATE
-				state_next = State6;
-			end
-
-		State6:
-			begin
-				//OUTPUT SIGNAL
-				enable_input_internal=1;
-				enable_shift_reg = 1;
-				//NEXT STATE
 				state_next = State2;
 			end
-
 
 		State2:
 			begin
@@ -148,21 +139,16 @@ always @*
 				enable_input_internal=0;
 				enable_shift_reg = 1;
 				//NEXT STATE
-				//state_next = State0;
-				if (init_OPERATION) begin
-					state_next = State1;
-				end else begin
-					state_next = State0;
-				end
+				state_next = State0;
 			end
 
 		// State6:
 		// 	begin
 		// 		//OUTPUT SIGNAL
-		// 		enable_input_internal=1;
+		// 		enable_input_internal=0;
 		// 		enable_shift_reg = 1;
 		// 		//NEXT STATE
-		// 		state_next = State1;
+		// 		state_next = State7;
 		// 	end
 
 		// State7:

@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : FPU_ADD_Substract_PIPELINED.v
 //  Created On    : 2016-09-27 20:11:48
-//  Last Modified : 2016-10-20 19:44:09
+//  Last Modified : 2016-10-04 09:20:37
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -99,11 +99,10 @@ FSM_INPUT_ENABLE inst_FSM_INPUT_ENABLE (
 
 
 
-
   ShiftRegister #(.W(7)) inst_ShiftRegister (
       .clk(clk),
       .rst(rst),
-      .load  (enable_shift_reg|enable_Pipeline_input),
+      .load  (enable_shift_reg),
       .in_bit (FSM_enable_input_internal),
       .Q(Shift_reg_FLAGS_7));
 
@@ -434,34 +433,6 @@ assign DmP_mant_EXP_SW = DmP_EXP_EWSW[SW-1:0];
 
 
 //////////////////////////////----------------------------------///////////////////////////////
-// `ifdef GEN_NAME
-// generate
-//     case(EW)
-//         8:begin : LZD_Filler1
-//             assign b_shifter_one_EWR = 5'd1;
-//         end
-//         default:begin : LZD_Filler3
-//             assign b_shifter_one_EWR = 6'd1;
-//         end
-//     endcase
-// endgenerate
-
-// generate
-//     case(EW)
-//         8:begin : LZD_Filler2
-//             assign LZD_ZFiller =3'd0;
-//             assign Exp_oper_1_EW = 8'd1;
-//         end
-//         default:begin : LZD_Filler4
-//             assign LZD_ZFiller =5'd0;
-//              assign Exp_oper_1_EW = 11'd1;
-//         end
-//     endcase
-// endgenerate
-// `endif
-  // assign b_shifter_one_EWR = {{(EWR-1){1'b0}},1'b1};
-  // assign LZD_ZFiller ={(EW-EWR){1'b0}};
-  // assign Exp_oper_1_EW = {{(EW-1){1'b0}},1'b1};
 
 generate
     case(EW)
@@ -486,8 +457,6 @@ generate
         end
     endcase
 endgenerate
-
-
 //assign mux_out = (sel) ? din_1 : din_0;
 //Input variables for the shifter, depending upon the stage.
 
@@ -869,4 +838,5 @@ assign busy = SHT1_ACTIVE;
 
 
 endmodule
+
 

@@ -1,6 +1,6 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Thu Oct 20 19:49:55 2016
+# Saved on Fri Oct 21 14:03:25 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
 # Toplevel windows open: 1
@@ -46,7 +46,7 @@ set DLPane.1 DLPane.1
 set Data.1 Data.1
 gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 571} {child_data_colvalue 358} {child_data_coltype 425} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Wave.1 Wave.1
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 498} {child_wave_right 856} {child_wave_colname 317} {child_wave_colvalue 177} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 618} {child_wave_right 736} {child_wave_colname 377} {child_wave_colvalue 237} {child_wave_col1 0} {child_wave_col2 1}}
 set Source.1 Source.1
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 
@@ -125,7 +125,7 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 0 20695000
+gui_wv_zoom_timerange -id ${Wave.1} 20694882 20695119
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -156,7 +156,7 @@ gui_src_set_reusable -id ${Source.1}
 # The toplevel window could be closed if it has no view/pane
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
-	gui_set_active_window -window ${Wave.1}
+	gui_set_active_window -window ${DLPane.1}
 }
 #</Session>
 

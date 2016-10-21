@@ -1,6 +1,6 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Thu Oct 20 11:02:43 2016
+# Saved on Thu Oct 20 23:37:38 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
 # Toplevel windows open: 1
@@ -67,7 +67,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{1362 47} {2724 763}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{2 51} {1021 738}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -130,7 +130,7 @@ if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {
 }
 
 gui_show_window -window ${HSPane.1} -show_state maximized
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 818} {child_hier_coltype 544} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 645} {child_hier_coltype 371} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
 if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
         set Data.1 [gui_share_window -id ${DLPane.1} -type Data]
@@ -145,7 +145,7 @@ gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 423} {child_wave_right 934} {child_wave_colname 239} {child_wave_colvalue 180} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 361} {child_wave_right 653} {child_wave_colname 155} {child_wave_colvalue 203} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
@@ -198,27 +198,30 @@ set _session_group_1 Testbench_FPU_Add_Subt
 gui_sg_create "$_session_group_1"
 set Testbench_FPU_Add_Subt "$_session_group_1"
 
-gui_sg_addsignal -group "$_session_group_1" { Testbench_FPU_Add_Subt.EW Testbench_FPU_Add_Subt.contador Testbench_FPU_Add_Subt.Array_IN_2 Testbench_FPU_Add_Subt.SW Testbench_FPU_Add_Subt.underflow_flag Testbench_FPU_Add_Subt.FileSaveData Testbench_FPU_Add_Subt.ready Testbench_FPU_Add_Subt.SWR Testbench_FPU_Add_Subt.ack_FSM Testbench_FPU_Add_Subt.PERIOD Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.add_subt Testbench_FPU_Add_Subt.EWR Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.final_result_ieee Testbench_FPU_Add_Subt.W Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.r_mode Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.Recept Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.Cont_CLK Testbench_FPU_Add_Subt.rst }
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EW}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EW}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.contador}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.contador}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SW}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SW}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.W}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.W}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.Recept}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.Recept}
+gui_sg_addsignal -group "$_session_group_1" { Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.Array_IN_2 Testbench_FPU_Add_Subt.Cont_CLK Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.final_result_ieee Testbench_FPU_Add_Subt.EWR Testbench_FPU_Add_Subt.EW Testbench_FPU_Add_Subt.FileSaveData Testbench_FPU_Add_Subt.PERIOD Testbench_FPU_Add_Subt.Recept Testbench_FPU_Add_Subt.SWR Testbench_FPU_Add_Subt.SW Testbench_FPU_Add_Subt.W Testbench_FPU_Add_Subt.ack_FSM Testbench_FPU_Add_Subt.add_subt Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.contador Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.r_mode Testbench_FPU_Add_Subt.ready Testbench_FPU_Add_Subt.rst Testbench_FPU_Add_Subt.underflow_flag }
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.Cont_CLK}
 gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.Cont_CLK}
+gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:Testbench_FPU_Add_Subt.Data_X}
+gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:Testbench_FPU_Add_Subt.Data_Y}
+gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:Testbench_FPU_Add_Subt.final_result_ieee}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.FileSaveData}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.Recept}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.Recept}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.W}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.contador}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.contador}
 
 # Global: Highlighting
 
@@ -228,7 +231,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 1946441
+gui_set_time -C1_only 598607
 
 
 
@@ -270,7 +273,7 @@ gui_view_scroll -id ${Hier.1} -horizontal -set 0
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
 gui_open_source -id ${Source.1}  -replace -active Testbench_FPU_Add_Subt /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/Testbench_FPU_Add_Subt.v
-gui_view_scroll -id ${Source.1} -vertical -set 294
+gui_view_scroll -id ${Source.1} -vertical -set 315
 gui_src_set_reusable -id ${Source.1}
 
 # View 'Wave.1'
@@ -282,8 +285,9 @@ gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 1916004 4635302
+gui_wv_zoom_timerange -id ${Wave.1} 340915 975619
 gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Add_Subt}
+gui_list_select -id ${Wave.1} {Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.final_result_ieee }
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -299,10 +303,10 @@ if { $groupExD } {
 }
 gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Wave.1} -text {*}
-gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_FPU_Add_Subt  -position in
+gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_FPU_Add_Subt  -item {Testbench_FPU_Add_Subt.final_result_ieee[31:0]} -position below
 
-gui_marker_move -id ${Wave.1} {C1} 1946441
-gui_view_scroll -id ${Wave.1} -vertical -set 192
+gui_marker_move -id ${Wave.1} {C1} 598607
+gui_view_scroll -id ${Wave.1} -vertical -set 75
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane

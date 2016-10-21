@@ -25,15 +25,15 @@ set CLK_LATENCY_SOURCE 0.5
 set CLK_LATENCY 0.5
 
 # set the "input valid" delay to 4.0nS
-set INPUT_DELAY_MAX 3
+set INPUT_DELAY_MAX 3.5
 #set the fastest input data arrival time to check for hold time changes to 1000pS
-set INPUT_DELAY_MIN 2
+set INPUT_DELAY_MIN 1
 
 
 # set the setup time requirements for the next block to 2nS
-set OUTPUT_DELAY_MAX 0
+set OUTPUT_DELAY_MAX 2
 # set the hold time requirements for the next block to 150pS
-set OUTPUT_DELAY_MIN -3
+set OUTPUT_DELAY_MIN 1
 
 set MAX_AREA 0
 set FANOUT 10

@@ -71,3 +71,7 @@ Thread 1 (Thread 0x7f8012f5f800 (LWP 4629)):
 #20 0x0000000000de6a69 in main ()
 No context available
 ==========================================================================
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 174035000 ps
+CPU Time:      1.030 seconds;       Data structure size:   0.9Mb
+Thu Oct 20 23:37:39 2016

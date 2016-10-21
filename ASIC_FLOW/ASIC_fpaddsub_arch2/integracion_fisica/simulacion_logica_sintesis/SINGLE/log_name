@@ -10033,3 +10033,8 @@ VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 $finish called from file "Testbench_FPU_Add_Subt.v", line 153.
 $finish at simulation time            174035000
 Simulation complete, time is 174035000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 174035000 ps
+CPU Time:      1.030 seconds;       Data structure size:   0.9Mb
+Thu Oct 20 23:37:39 2016
+CPU time: .854 seconds to compile + .780 seconds to elab + .246 seconds to link + 752.581 seconds in simulation
