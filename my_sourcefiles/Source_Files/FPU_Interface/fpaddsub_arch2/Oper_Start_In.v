@@ -22,12 +22,11 @@
 
 //dc_script_begin
 // set LIB_NAME scx3_cmos8rf_lpvt_tt_1p2v_25c.db
-
-// set_input_delay -max 3 -clock $CLK_NAME $ALL_IN_EX_CLK_NAME
-// set_input_delay -min 2 -clock $CLK_NAME $ALL_IN_EX_CLK_NAME
-// set_output_delay -max 2 -clock $CLK_NAME $ALL_OUT_NAME
-// set_output_delay -min 1 -clock $CLK_NAME $ALL_OUT_NAME
-//set_clock_transition 0.5 [get_clocks $CLK_NAME]
+// create_clock -period 10 [get_ports clk]
+// set_max_delay -from [get_ports {intDX intDY load_b_i}] -to [get_ports {DMP_o DmP_o}] 4
+// set_min_delay -from [get_ports {intDX intDY load_b_i}] -to [get_ports {DMP_o DmP_o}] 3
+//set_clock_transition 0.5 [get_clocks clk]
+// set_flatten true -effort high
 //dc_script_end
 
 
@@ -169,21 +168,21 @@ module Oper_Start_In_2
 	//W = 64 indicates the double precision format
 	//W = 32 indicates the single precision format
 	(
-        input wire clk, //system clock
-		input wire rst, //reset of the module
-		//input wire load_a_i,//The ctrl_x signals are used to load certain registers within the module
-		input wire load_b_i,
-		input wire intAS, //This signal selects if the operations is an add o subtract operation
-		input wire [W-1:0] intDX, //Data_X and Data_y are both operands of the module
-		//they are expected in ieee 754 format
-		input wire [W-1:0] intDY,
+	input wire clk, //system clock
+	input wire rst, //reset of the module
+	//input wire load_a_i,//The ctrl_x signals are used to load certain registers within the module
+	input wire load_b_i,
+	input wire intAS, //This signal selects if the operations is an add o subtract operation
+	input wire [W-1:0] intDX, //Data_X and Data_y are both operands of the module
+	//they are expected in ieee 754 format
+	input wire [W-1:0] intDY,
 
-		//////////////////////////////////////////////////////////////////////
-		output wire [W-2:0] DMP_o, //Because the algorithm these outputs contain the largest and smallest operand
-        output wire [W-2:0] DmP_o,
-        output wire zero_flag_o, //Flag for FSM when the subt result is zero
-        output wire real_op_o, //bit for real add/subt operation in case for -DataY
-        output wire sign_final_result_o //bit for sign result
+	//////////////////////////////////////////////////////////////////////
+	output wire [W-2:0] DMP_o, //Because the algorithm these outputs contain the largest and smallest operand
+	output wire [W-2:0] DmP_o,
+	output wire zero_flag_o, //Flag for FSM when the subt result is zero
+	output wire real_op_o, //bit for real add/subt operation in case for -DataY
+	output wire sign_final_result_o //bit for sign result
 
     );
 
@@ -232,6 +231,8 @@ MultiplexTxT #(.W(W-1)) MuxXY (//Classify in the registers the bigger value (M) 
     .S0_o(intM),
     .S1_o(intm)
     );
+
+
 
 RegisterAdd #(.W(W-1)) MRegister ( //Data_M register
     .clk(clk),

@@ -19,6 +19,18 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
+
+//dc_script_begin
+// set LIB_NAME scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+// create_clock -period 10 [get_ports clk]
+// set_max_delay -from [get_ports {intDX intDY load_b_i}] -to [get_ports {DMP_o DmP_o}] 4
+// set_min_delay -from [get_ports {intDX intDY load_b_i}] -to [get_ports {DMP_o DmP_o}] 3
+//set_clock_transition 0.5 [get_clocks clk]
+// set_flatten true -effort high
+//dc_script_end
+
+
+
 `ifdef FRANCIS
 module Oper_Start_In
 
@@ -156,7 +168,7 @@ module Oper_Start_In_2
 	//W = 64 indicates the double precision format
 	//W = 32 indicates the single precision format
 	(
-        input wire clk, //system clock
+		input wire clk, //system clock
 		input wire rst, //reset of the module
 		//input wire load_a_i,//The ctrl_x signals are used to load certain registers within the module
 		input wire load_b_i,
@@ -167,10 +179,10 @@ module Oper_Start_In_2
 
 		//////////////////////////////////////////////////////////////////////
 		output wire [W-2:0] DMP_o, //Because the algorithm these outputs contain the largest and smallest operand
-        output wire [W-2:0] DmP_o,
-        output wire zero_flag_o, //Flag for FSM when the subt result is zero
-        output wire real_op_o, //bit for real add/subt operation in case for -DataY
-        output wire sign_final_result_o //bit for sign result
+		output wire [W-2:0] DmP_o,
+		output wire zero_flag_o, //Flag for FSM when the subt result is zero
+		output wire real_op_o, //bit for real add/subt operation in case for -DataY
+		output wire sign_final_result_o //bit for sign result
 
     );
 
@@ -219,6 +231,8 @@ MultiplexTxT #(.W(W-1)) MuxXY (//Classify in the registers the bigger value (M) 
     .S0_o(intM),
     .S1_o(intm)
     );
+
+assign intM = gtXY ? intDX[W-2:0] : intDY[W-2:0]
 
 RegisterAdd #(.W(W-1)) MRegister ( //Data_M register
     .clk(clk),

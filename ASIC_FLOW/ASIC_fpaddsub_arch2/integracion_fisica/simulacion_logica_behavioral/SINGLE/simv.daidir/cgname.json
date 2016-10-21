@@ -4,6 +4,11 @@
         "UDPPh",
         "module"
     ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
     "Rotate_Mux_Array_0000": [
         "Rotate_Mux_Array_0000",
         "GBFFm",
@@ -12,11 +17,6 @@
     "Testbench_FPU_Add_Subt": [
         "Testbench_FPU_Add_Subt",
         "kar0c",
-        "module"
-    ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
         "module"
     ]
 }

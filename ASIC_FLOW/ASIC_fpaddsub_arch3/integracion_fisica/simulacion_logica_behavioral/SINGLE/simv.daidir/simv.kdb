@@ -7,4 +7,4 @@ UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=FPU_Add_Subtract_Function tb_FPU_PIPELINED_FPADDSUB2_vector_testing 
+TOP=add_sub_carry_out Comparators tb_FPU_PIPELINED_FPADDSUB2_vector_testing 

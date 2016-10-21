@@ -18,7 +18,7 @@ set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
 
 set SUBMODULE_NAME {"Tenth_Phase"     "Oper_Start_In" "LZD"          "FSM_Add_Subtract" "Exp_Operation"       "Barrel_Shifter" "Add_Subt"}
 
-remove_design -designs
+#remove_design -designs
 
 #WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
 set fp [open "scripts/file_list" r]

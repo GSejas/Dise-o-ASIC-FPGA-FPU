@@ -58,6 +58,9 @@ parameter PERIOD = 10;
 		wire underflow_flag;
 		wire ready;
 		wire [W-1:0] final_result_ieee;
+		
+		
+		
 `ifdef SINGLE
 		FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5 uut(
 			.clk(clk),
@@ -203,6 +206,7 @@ parameter PERIOD = 10;
              //******************************* Se ejecuta el CLK ************************
 
                 initial forever #5 clk = ~clk;
+		
 
-
+initial $sdf_annotate("FPU_Add_Subtract_Function_syn.sdf");
             endmodule

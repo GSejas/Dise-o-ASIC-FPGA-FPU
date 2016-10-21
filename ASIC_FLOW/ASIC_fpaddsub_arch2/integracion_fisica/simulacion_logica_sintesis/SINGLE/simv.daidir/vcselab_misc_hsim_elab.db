@@ -3,9 +3,12 @@ psLogFileName                      	log_name
 pDaiDir                            	/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
-hsMainFileCount                    	0
-hsMainFileName                     	dummy
-hsAuxFileName                      	dummy
+hsMainFileCount                    	1
+hsMtmSpecArr_i                     	2
+hsMainFileSuffixArr_i              	csdf1_0_0.MAIN
+hsAuxFileSuffixArr_i               	csdf10.AUX
+hsOriginalSdfFileArr_i             	FPU_Add_Subtract_Function_syn.sdf
+fHsMultiSdfDbg                     	0
 hsimDlpPartitionFilename           	0
 partitionName                      	6	MASTER
 hsimInitRegValue                   	3
@@ -25,7 +28,7 @@ fHsimClasses                       	0
 fHsimPulseMPDelay                  	1
 fHsimMvsimDb                       	0
 fHsimMvsimDebug                    	0
-fHsimAllXmrs                       	1
+fHsimAllXmrs                       	0
 fHsimTaskFuncXmrs                  	0
 fHsimTaskFuncXmrsDbg               	0
 fHsimAllTaskFuncXmrs               	0
@@ -84,7 +87,7 @@ fHsimNtbVl                         	0
 fHsimICTimeStamp                   	0
 fHsimICDiag                        	0
 fHsimNewCSDF                       	1
-vcselabIncrMode                    	2
+vcselabIncrMode                    	1
 fHsimMPPackDelay                   	0
 fHsimMultDriver                    	0
 fHsimPart                          	0
@@ -99,11 +102,11 @@ fHsimNewRootSig                    	1
 fHsimDisableRootSigModeOpt         	0
 fHsimTestRootSigModeOpt            	0
 fHsimIncrWriteOnce                 	0
-fHsimUnifInterfaceStrId            	1
-fHsimUnifInterfaceFlow             	1
+fHsimUnifInterfaceStrId            	0
+fHsimUnifInterfaceFlow             	0
 fHsimUnifInterfaceFlowDiag         	0
 fHsimUnifInterfaceFlowXmrDiag      	0
-fHsimUnifInterfaceMultiDrvChk      	1
+fHsimUnifInterfaceMultiDrvChk      	0
 fHsimCongruencyIntTestI            	0
 fHsimCongruencySVA                 	0
 fHsimCongruencySVADbg              	0
@@ -144,7 +147,7 @@ fHsimElabMemProfile                	0
 fHsimElabTimeProfile               	0
 fHsimFileProfile                   	0
 fHsimCountProfile                  	0
-fHsimXmrDefault                    	1
+fHsimXmrDefault                    	0
 fHsimFuseWireAndReg                	0
 fHsimFuseSelfDrvLogic              	0
 fHsimFuseProcess                   	0
@@ -167,13 +170,13 @@ hsNodeUpdateOffsetPageElems        	0
 hsSdfOffsetPageElems               	0
 fHsimPageAllLevelData              	0
 fHsimAggrCg                        	0
-fHsimViWire                        	1
+fHsimViWire                        	0
 fHsimPcCbOpt                       	1
 fHsimAmsTunneling                  	0
 fHsimAmsTunnelingDiag              	0
-fHsimScUpwardXmrNoSplit            	1
+fHsimScUpwardXmrNoSplit            	0
 fHsimOrigNdbViewOnly               	0
-fHsimVcsInterface                  	1
+fHsimVcsInterface                  	0
 fHsimVcsInterfaceAlias             	0
 fHsimSVTypesIntf                   	0
 fUnifiedAssertCtrlDiag             	0
@@ -329,7 +332,7 @@ fHsimLowPowerDumpOnly              	0
 fHsimLowPowerDiag                  	0
 fHsimXpropFix                      	1
 fHsimXpropConfigTrace              	0
-fHsimNameBasedInterface            	1
+fHsimNameBasedInterface            	0
 fHsimVcsInterfaceHierDiag          	0
 fHsimCbSchedFix                    	0
 fHsimIncrDebug                     	0
@@ -343,7 +346,7 @@ fHsimMergeOnly                     	0
 fHsimCbkOpt                        	1
 fFrcRelCbk                         	1
 fPulserrWarn                       	1
-hsMtmSpec                          	0
+hsMtmSpec                          	2
 fprofile                           	0
 fPreserveDaidir                    	1
 fHsimLevelize                      	1
@@ -407,9 +410,9 @@ fHsimOptMPDelayLoad                	0
 fHsimTransMPDelay                  	1
 fLargeSizeSdfTest                  	0
 fAllMtm                            	0
-fHsimDelayGateMbme                 	0
+fHsimDelayGateMbme                 	1
 fHsimDelayGateMbmeOld              	0
-fHsimNdb                           	1
+fHsimNdb                           	0
 fHsimNdbDebug                      	0
 fHsimNdbTest                       	0
 fHsimGrpByGrpElabIncrTest          	0
@@ -450,7 +453,7 @@ dGblPeR                            	1.000000
 fNewdaidirpath                     	0
 fHsimDelayMbmeCheck                	4
 fHsimMdbPartInputLimit             	1
-fHsimSdfData                       	0
+fHsimSdfData                       	1
 fGblMSah                           	0
 fGblMSTe                           	0
 fGblIntPe                          	0

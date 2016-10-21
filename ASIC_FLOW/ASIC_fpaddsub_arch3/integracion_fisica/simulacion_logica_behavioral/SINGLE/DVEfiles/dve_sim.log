@@ -1,46 +1,393 @@
-15:37:36    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE -pid 430 -toolin /tmp/vcs_20161010213731_429_jsequeira..stdin -toolout /tmp/vcs_20161010213731_429_jsequeira..stdout  
-15:37:36    17 -->                                                                 [tcl] set ucliGUI::state
-15:37:36    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
-15:37:36    19 -->                                                                         [tcl] gui_update_simulator_buttons
-15:37:37    20 -->                                                                             [tcl] set ucliGUI::state
-15:37:37    21 -->                                                                                 [tcl] ucliCore::getToolPID
-15:37:37    22 -->                                                                                     [tcl] synopsys::env hasTB
-15:37:37    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
-15:37:37    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
-15:37:37    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
-15:37:37    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
-15:37:37    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
-15:37:37    28 --> ...              [tcl] set ::dve_fid VPD0
-15:37:37    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
-15:37:37    30 --> ...                      [tcl] ucliCore::getToolPID
-15:37:37    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp0iv3lx
-15:37:37    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.430}
-15:37:37    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.430}
-15:37:37    34 --> ...                                      [tcl] dveMisc::vbusExpand FPU_Add_Subtract_Function
-15:37:37    35 --> ...                                          [tcl] config endofsim noexit
-15:37:37    36 --> ...                                              [tcl] config onfail enable all
-15:37:37    37 --> ...                                                  [tcl] config syscaddplainmembers
-15:37:37    38 --> ...                                                      [tcl] config syscaddsourcenames
-15:37:37    39 --> ...                                                          [tcl] config syscaddstructtypes
-15:37:37    40 --> ...                                                              [tcl] synopsys::listing -disable
-18:49:47    41 --> ...                                                                  [tcl] dveMisc::vbusExpand tb_FPU_PIPELINED_FPADDSUB2_vector_testing
-18:50:00    42 --> ...                                                                      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Array_IN tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Array_IN_2 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Array_IN_3 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Cont_CLK tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.FileSaveData tb_FPU_PIPELINED_FPADDSUB2_vector_testing.PERIOD tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Recept tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.add_subt tb_FPU_PIPELINED_FPADDSUB2_vector_testing.beg_OP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy tb_FPU_PIPELINED_FPADDSUB2_vector_testing.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.contador tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.formatted_number_W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.logVectorReference tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag_t tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag_t tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag } -aggregates  -fid VPD0
-18:50:04    43 --> ...                                                                          [tcl] synopsys::run
-18:50:04    44 --> ...                                                                              [tcl] set ucliGUI::state
-18:50:04    45 --> ...                                                                                  [tcl] set ucliGUI::state
-18:50:05    46 --> ...                                                                                      [tcl] gui_update_simulator_buttons
-18:50:05    47 --> ...                                                                                          [tcl] set ucliGUI::state
-18:50:05    48 --> ...                                                                                              [tcl] set ucliGUI::state
-18:50:05    49 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
-18:50:05    50 --> ...  [tcl] set dveMisc::result
-18:50:05    51 --> ...      [tcl] gui_update_simulator_buttons
-18:51:11    52 --> ...          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
-18:51:11    53 --> ...              [tcl] synopsys::finish
-18:51:11    54 --> ...                  [tcl] set ucliGUI::state
-18:51:11    55 --> ...                      [tcl] set ucliGUI::state
-18:51:11    56 --> ...                          [tcl] catch {senv activeDomain} dveMisc::result 
-18:51:11    57 --> ...                              [tcl] set dveMisc::result
-18:51:11    58 --> ...                                  [tcl] gui_update_simulator_buttons
-18:51:11    59 --> ...                                      [tcl] catch {senv activeDomain} dveMisc::result 
-18:51:11    60 --> ...                                          [tcl] set dveMisc::result
-18:51:11    61 --> ...                                              [tcl] ucli_exit
+20:22:39    313 --> ...                                                      [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE
+20:22:39    314 --> ...                                                          [tcl] set ucliGUI::state
+20:22:39    315 --> ...                                                              [tcl] set dveMisc::dve_log_file 1
+20:22:39    316 --> ...                                                                  [tcl] gui_update_simulator_buttons
+20:22:41    317 --> ...                                                                      [tcl] set ucliGUI::state
+20:22:41    318 --> ...                                                                          [tcl] ucliCore::getToolPID
+20:22:41    319 --> ...                                                                              [tcl] synopsys::env hasTB
+20:22:41    320 --> ...                                                                                  [tcl] trigger_hier_stack_context_switch 0
+20:22:41    321 --> ...                                                                                      [tcl] synUtils::setDVEInitPhase 1
+20:22:41    322 --> ...                                                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
+20:22:41    323 --> ...                                                                                              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
+20:22:41    324 --> ...                                                                                                  [tcl] synopsys::dump -autoflush on -fid VPD1
+20:22:41    325 --> ...  [tcl] set ::dve_fid VPD1
+20:22:41    326 --> ...      [tcl] synUtils::setDVEInitPhase 0
+20:22:41    327 --> ...          [tcl] ucliCore::getToolPID
+20:22:41    328 --> ...              [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpGHUaD7
+20:22:41    329 --> ...                  [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.32124}
+20:22:41    330 --> ...                      [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.32124}
+20:22:41    331 --> ...                          [tcl] config endofsim noexit
+20:22:41    332 --> ...                              [tcl] config onfail enable all
+20:22:41    333 --> ...                                  [tcl] config syscaddplainmembers
+20:22:41    334 --> ...                                      [tcl] config syscaddsourcenames
+20:22:41    335 --> ...                                          [tcl] config syscaddstructtypes
+20:22:41    336 --> ...                                              [tcl] synopsys::listing -disable
+20:22:41    337 --> ...                                                  [tcl] if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+20:22:41    338 --> ...                                                      [tcl] gui_set_precision 1ps
+20:22:41    339 --> ...                                                          [tcl] gui_set_time_units 1ns
+20:22:41    340 --> ...                                                              [tcl] #</Database>
+20:22:41    341 --> ...                                                                  [tcl] # DVE Global setting session:
+20:22:41    342 --> ...                                                                      [tcl] # Global: Breakpoints
+20:22:41    343 --> ...                                                                          [tcl] # Global: Bus
+20:22:41    344 --> ...                                                                              [tcl] # Global: Expressions
+20:22:41    345 --> ...                                                                                  [tcl] # Global: Signal Time Shift
+20:22:41    346 --> ...                                                                                      [tcl] # Global: Signal Compare
+20:22:41    347 --> ...                                                                                          [tcl] # Global: Signal Groups
+20:22:41    348 --> ...                                                                                              [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister}
+20:22:41    349 --> ...                                                                                                  [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister} -scope "." -depth 1 -fid VPD1
+20:22:41    350 --> ...  [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant}
+20:22:41    351 --> ...      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant} -scope "." -depth 1 -fid VPD1
+20:22:41    352 --> ...          [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP}
+20:22:41    353 --> ...              [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP} -scope "." -depth 1 -fid VPD1
+20:22:41    354 --> ...                  [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS}
+20:22:41    355 --> ...                      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS} -scope "." -depth 1 -fid VPD1
+20:22:41    356 --> ...                          [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS}
+20:22:41    357 --> ...                              [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS} -scope "." -depth 1 -fid VPD1
+20:22:41    358 --> ...                                  [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX}
+20:22:41    359 --> ...                                      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX} -scope "." -depth 1 -fid VPD1
+20:22:41    360 --> ...                                          [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount}
+20:22:41    361 --> ...                                              [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount} -scope "." -depth 1 -fid VPD1
+20:22:41    362 --> ...                                                  [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY}
+20:22:41    363 --> ...                                                      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY} -scope "." -depth 1 -fid VPD1
+20:22:41    364 --> ...                                                          [tcl] set _session_group_1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+20:22:41    365 --> ...                                                              [tcl] gui_sg_create "$_session_group_1"
+20:22:41    366 --> ...                                                                  [tcl] set tb_FPU_PIPELINED_FPADDSUB2_vector_testing "$_session_group_1"
+20:22:41    367 --> ...                                                                      [tcl] gui_sg_addsignal -group "$_session_group_1" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.add_subt tb_FPU_PIPELINED_FPADDSUB2_vector_testing.beg_OP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.contador tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag }
+20:22:41    368 --> ...                                                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+20:22:41    369 --> ...                                                                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+20:22:41    370 --> ...                                                                                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+20:22:41    371 --> ...                                                                                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+20:22:41    372 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR}
+20:22:41    373 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR}
+20:22:41    374 --> ...                                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW}
+20:22:41    375 --> ...  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW}
+20:22:41    376 --> ...      [tcl] set _session_group_2 Group1
+20:22:41    377 --> ...          [tcl] gui_sg_create "$_session_group_2"
+20:22:41    378 --> ...              [tcl] set Group1 "$_session_group_2"
+20:22:41    379 --> ...                  [tcl] gui_sg_addsignal -group "$_session_group_2" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee }
+20:22:41    380 --> ...                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+20:22:41    381 --> ...                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+20:22:41    382 --> ...                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+20:22:41    383 --> ...                                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+20:22:41    384 --> ...                                      [tcl] set _session_group_3 Group2
+20:22:41    385 --> ...                                          [tcl] gui_sg_create "$_session_group_3"
+20:22:41    386 --> ...                                              [tcl] set Group2 "$_session_group_3"
+20:22:41    387 --> ...                                                  [tcl] gui_sg_addsignal -group "$_session_group_3" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee }
+20:22:41    388 --> ...                                                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+20:22:41    389 --> ...                                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+20:22:41    390 --> ...                                                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+20:22:41    391 --> ...                                                                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+20:22:41    392 --> ...                                                                      [tcl] set _session_group_4 Group3
+20:22:41    393 --> ...                                                                          [tcl] gui_sg_create "$_session_group_4"
+20:22:41    394 --> ...                                                                              [tcl] set Group3 "$_session_group_4"
+20:22:41    395 --> ...                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_4" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_INIT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intDX_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intDY_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intAS tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.eqXY tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.gtXY tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_INIT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_INIT }
+20:22:41    396 --> ...                                                                                      [tcl] set _session_group_5 Group4
+20:22:41    397 --> ...                                                                                          [tcl] gui_sg_create "$_session_group_5"
+20:22:41    398 --> ...                                                                                              [tcl] set Group4 "$_session_group_5"
+20:22:41    399 --> ...                                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_5" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_INIT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intDX_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intDY_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intAS tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.eqXY tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.gtXY tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_INIT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_INIT }
+20:22:41    400 --> ...  [tcl] set _session_group_6 SHT1_STAGE_DMP
+20:22:41    401 --> ...      [tcl] gui_sg_create "$_session_group_6"
+20:22:41    402 --> ...          [tcl] set SHT1_STAGE_DMP "$_session_group_6"
+20:22:41    403 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_6" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.Q tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.rst }
+20:22:41    404 --> ...                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.W}
+20:22:41    405 --> ...                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DMP.W}
+20:22:41    406 --> ...                          [tcl] set _session_group_7 SHT1_STAGE_DmP_mant
+20:22:41    407 --> ...                              [tcl] gui_sg_create "$_session_group_7"
+20:22:41    408 --> ...                                  [tcl] set SHT1_STAGE_DmP_mant "$_session_group_7"
+20:22:41    409 --> ...                                      [tcl] gui_sg_addsignal -group "$_session_group_7" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.Q tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.rst }
+20:22:41    410 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.W}
+20:22:41    411 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_DmP_mant.W}
+20:22:41    412 --> ...                                                  [tcl] set _session_group_8 SHT1_STAGE_FLAGS
+20:22:41    413 --> ...                                                      [tcl] gui_sg_create "$_session_group_8"
+20:22:41    414 --> ...                                                          [tcl] set SHT1_STAGE_FLAGS "$_session_group_8"
+20:22:41    415 --> ...                                                              [tcl] gui_sg_addsignal -group "$_session_group_8" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.Q tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.rst }
+20:22:41    416 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.W}
+20:22:41    417 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_FLAGS.W}
+20:22:41    418 --> ...                                                                          [tcl] set _session_group_9 SHT1_STAGE_sft_amount
+20:22:41    419 --> ...                                                                              [tcl] gui_sg_create "$_session_group_9"
+20:22:41    420 --> ...                                                                                  [tcl] set SHT1_STAGE_sft_amount "$_session_group_9"
+20:22:41    421 --> ...                                                                                      [tcl] gui_sg_addsignal -group "$_session_group_9" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.Q }
+20:22:41    422 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.W}
+20:22:41    423 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_STAGE_sft_amount.W}
+20:22:41    424 --> ...                                                                                                  [tcl] set _session_group_10 INPUT_STAGE_FLAGS
+20:22:41    425 --> ...  [tcl] gui_sg_create "$_session_group_10"
+20:22:41    426 --> ...      [tcl] set INPUT_STAGE_FLAGS "$_session_group_10"
+20:22:41    427 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_10" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.Q tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.rst }
+20:22:41    428 --> ...              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_FLAGS.W}
+20:22:41    429 --> ...                  [tcl] set _session_group_11 INPUT_STAGE_OPERANDX
+20:22:41    430 --> ...                      [tcl] gui_sg_create "$_session_group_11"
+20:22:41    431 --> ...                          [tcl] set INPUT_STAGE_OPERANDX "$_session_group_11"
+20:22:41    432 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_11" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.Q tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.rst }
+20:22:41    433 --> ...                                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.D}
+20:22:41    434 --> ...                                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.Q}
+20:22:41    435 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.W}
+20:22:41    436 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDX.W}
+20:22:41    437 --> ...                                                  [tcl] set _session_group_12 INPUT_STAGE_OPERANDY
+20:22:41    438 --> ...                                                      [tcl] gui_sg_create "$_session_group_12"
+20:22:41    439 --> ...                                                          [tcl] set INPUT_STAGE_OPERANDY "$_session_group_12"
+20:22:41    440 --> ...                                                              [tcl] gui_sg_addsignal -group "$_session_group_12" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.D tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.Q }
+20:22:41    441 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.W}
+20:22:41    442 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.W}
+20:22:41    443 --> ...                                                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.D}
+20:22:41    444 --> ...                                                                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_STAGE_OPERANDY.Q}
+20:22:41    445 --> ...                                                                                  [tcl] set _session_group_13 INIT
+20:22:41    446 --> ...                                                                                      [tcl] gui_sg_create "$_session_group_13"
+20:22:41    447 --> ...                                                                                          [tcl] set INIT "$_session_group_13"
+20:22:41    448 --> ...                                                                                              [tcl] gui_sg_addsignal -group "$_session_group_13" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intDX_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intDY_EWSW }
+20:22:41    449 --> ...                                                                                                  [tcl] set _session_group_14 $_session_group_13|
+20:22:41    450 --> ...  [tcl] append _session_group_14 FLAGS
+20:22:41    451 --> ...      [tcl] gui_sg_create "$_session_group_14"
+20:22:41    452 --> ...          [tcl] set INIT|FLAGS "$_session_group_14"
+20:22:41    453 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_14" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.intAS tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_INIT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.INPUT_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.gtXY tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.eqXY tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_INIT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_INIT }
+20:22:41    454 --> ...                  [tcl] set _session_group_15 EXP
+20:22:41    455 --> ...                      [tcl] gui_sg_create "$_session_group_15"
+20:22:41    456 --> ...                          [tcl] set EXP "$_session_group_15"
+20:22:41    457 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_15" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_EXP_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DmP_EXP_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_mant_EXP_SW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DmP_mant_EXP_SW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_exp_EXP_EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DmP_exp_EXP_EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Shift_amount_EXP_EW }
+20:22:41    458 --> ...                                  [tcl] set _session_group_16 $_session_group_15|
+20:22:41    459 --> ...                                      [tcl] append _session_group_16 Group2
+20:22:41    460 --> ...                                          [tcl] gui_sg_create "$_session_group_16"
+20:22:41    461 --> ...                                              [tcl] set EXP|Group2 "$_session_group_16"
+20:22:41    462 --> ...                                                  [tcl] gui_sg_addsignal -group "$_session_group_16" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.EXP_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_EXP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_EXP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_EXP }
+20:22:41    463 --> ...                                                      [tcl] set _session_group_17 SHT1
+20:22:41    464 --> ...                                                          [tcl] gui_sg_create "$_session_group_17"
+20:22:41    465 --> ...                                                              [tcl] set SHT1 "$_session_group_17"
+20:22:41    466 --> ...                                                                  [tcl] gui_sg_addsignal -group "$_session_group_17" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_SHT1_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DmP_mant_SHT1_SW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.sftr_idat_SHT1_SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.sftr_odat_SHT1_SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Shift_amount_SHT1_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.shft_value_mux_o_EWR }
+20:22:41    467 --> ...                                                                      [tcl] set _session_group_18 $_session_group_17|
+20:22:41    468 --> ...                                                                          [tcl] append _session_group_18 Group2
+20:22:41    469 --> ...                                                                              [tcl] gui_sg_create "$_session_group_18"
+20:22:41    470 --> ...                                                                                  [tcl] set SHT1|Group2 "$_session_group_18"
+20:22:41    471 --> ...                                                                                      [tcl] gui_sg_addsignal -group "$_session_group_18" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ADD_OVRFLW_NRM tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.shft_value_mux_o_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.NRM_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Shift_amount_SHT1_EWR }
+20:22:41    472 --> ...                                                                                          [tcl] gui_sg_move "$_session_group_18" -after "$_session_group_17" -pos 3
+20:22:41    473 --> ...                                                                                              [tcl] set _session_group_19 $_session_group_17|
+20:22:41    474 --> ...                                                                                                  [tcl] append _session_group_19 FLAGS
+20:22:41    475 --> ...  [tcl] gui_sg_create "$_session_group_19"
+20:22:41    476 --> ...      [tcl] set SHT1|FLAGS "$_session_group_19"
+20:22:41    477 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_19" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT1_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_SHT1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_SHT1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_SHT1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.left_right_SHT1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.bit_shift_SHT1 }
+20:22:41    478 --> ...              [tcl] set _session_group_20 SHT2
+20:22:41    479 --> ...                  [tcl] gui_sg_create "$_session_group_20"
+20:22:41    480 --> ...                      [tcl] set SHT2 "$_session_group_20"
+20:22:41    481 --> ...                          [tcl] gui_sg_addsignal -group "$_session_group_20" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_SHT2_EWSW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.shift_value_SHT2_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.sftr_idat_SHT2_SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.sftr_odat_SHT2_SWR }
+20:22:41    482 --> ...                              [tcl] set _session_group_21 $_session_group_20|
+20:22:41    483 --> ...                                  [tcl] append _session_group_21 FLAGS
+20:22:41    484 --> ...                                      [tcl] gui_sg_create "$_session_group_21"
+20:22:41    485 --> ...                                          [tcl] set SHT2|FLAGS "$_session_group_21"
+20:22:41    486 --> ...                                              [tcl] gui_sg_addsignal -group "$_session_group_21" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_SHT2 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_SHT2 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_SHT2 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SHT2_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.left_right_SHT2 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.bit_shift_SHT2 }
+20:22:41    487 --> ...                                                  [tcl] set _session_group_22 SGF
+20:22:41    488 --> ...                                                      [tcl] gui_sg_create "$_session_group_22"
+20:22:41    489 --> ...                                                          [tcl] set SGF "$_session_group_22"
+20:22:41    490 --> ...                                                              [tcl] gui_sg_addsignal -group "$_session_group_22" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DmP_mant_SFG_SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_mant_SFG_SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_exp_SFG tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Raw_mant_SGF tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_SFG }
+20:22:41    491 --> ...                                                                  [tcl] set _session_group_23 $_session_group_22|
+20:22:41    492 --> ...                                                                      [tcl] append _session_group_23 FLAGS
+20:22:41    493 --> ...                                                                          [tcl] gui_sg_create "$_session_group_23"
+20:22:41    494 --> ...                                                                              [tcl] set SGF|FLAGS "$_session_group_23"
+20:22:41    495 --> ...                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_23" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OP_FLAG_SFG tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SFG_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_SFG tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_SFG tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ADD_OVRFLW_SGF tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Carry_out_SGF }
+20:22:41    496 --> ...                                                                                      [tcl] set _session_group_24 NRM
+20:22:41    497 --> ...                                                                                          [tcl] gui_sg_create "$_session_group_24"
+20:22:41    498 --> ...                                                                                              [tcl] set NRM "$_session_group_24"
+20:22:41    499 --> ...                                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_24" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_exp_NRM_EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Add_Subt_LZD_SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Raw_mant_NRM_SWR }
+20:22:41    500 --> ...  [tcl] set _session_group_25 $_session_group_24|
+20:22:41    501 --> ...      [tcl] append _session_group_25 FLAGS
+20:22:41    502 --> ...          [tcl] gui_sg_create "$_session_group_25"
+20:22:41    503 --> ...              [tcl] set NRM|FLAGS "$_session_group_25"
+20:22:41    504 --> ...                  [tcl] gui_sg_addsignal -group "$_session_group_25" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ADD_OVRFLW_NRM tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.NRM_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.SIGN_FLAG_NRM tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ZERO_FLAG_NRM }
+20:22:41    505 --> ...                      [tcl] set _session_group_26 FRMT
+20:22:41    506 --> ...                          [tcl] gui_sg_create "$_session_group_26"
+20:22:41    507 --> ...                              [tcl] set FRMT "$_session_group_26"
+20:22:41    508 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_26" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_output_NRM2_EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.DMP_exp_NRM2_EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_NRM2_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_ZFiller tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.exp_rslt_NRM2_EW1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.formatted_number_W }
+20:22:41    509 --> ...                                      [tcl] set _session_group_27 $_session_group_26|
+20:22:41    510 --> ...                                          [tcl] append _session_group_27 FLAGS
+20:22:41    511 --> ...                                              [tcl] gui_sg_create "$_session_group_27"
+20:22:41    512 --> ...                                                  [tcl] set FRMT|FLAGS "$_session_group_27"
+20:22:41    513 --> ...                                                      [tcl] gui_sg_addsignal -group "$_session_group_27" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.OVRFLW_FLAG_FRMT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.UNDRFLW_FLAG_FRMT tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ADD_OVRFLW_NRM2 }
+20:22:41    514 --> ...                                                          [tcl] set _session_group_28 Group12
+20:22:41    515 --> ...                                                              [tcl] gui_sg_create "$_session_group_28"
+20:22:41    516 --> ...                                                                  [tcl] set Group12 "$_session_group_28"
+20:22:41    517 --> ...                                                                      [tcl] set _session_group_29 inst_ShiftRegister
+20:22:41    518 --> ...                                                                          [tcl] gui_sg_create "$_session_group_29"
+20:22:41    519 --> ...                                                                              [tcl] set inst_ShiftRegister "$_session_group_29"
+20:22:41    520 --> ...                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_29" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.in_bit tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.Q }
+20:22:41    521 --> ...                                                                                      [tcl] set _session_group_30 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load@0}
+20:22:41    522 --> ...                                                                                          [tcl] gui_sg_create "$_session_group_30"
+20:22:41    523 --> ...                                                                                              [tcl] set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load@0} "$_session_group_30"
+20:22:41    524 --> ...                                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_30" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load }
+20:22:41    525 --> ...  [tcl] set _session_group_31 Group13
+20:22:41    526 --> ...      [tcl] gui_sg_create "$_session_group_31"
+20:22:41    527 --> ...          [tcl] set Group13 "$_session_group_31"
+20:22:41    528 --> ...              [tcl] gui_sg_addsignal -group "$_session_group_31" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg }
+20:22:41    529 --> ...                  [tcl] set _session_group_32 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000}
+20:22:41    530 --> ...                      [tcl] gui_sg_create "$_session_group_32"
+20:22:41    531 --> ...                          [tcl] set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000} "$_session_group_32"
+20:22:41    532 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_32" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg }
+20:22:41    533 --> ...                                  [tcl] set _session_group_33 inst_FSM_INPUT_ENABLE
+20:22:41    534 --> ...                                      [tcl] gui_sg_create "$_session_group_33"
+20:22:41    535 --> ...                                          [tcl] set inst_FSM_INPUT_ENABLE "$_session_group_33"
+20:22:41    536 --> ...                                              [tcl] gui_sg_addsignal -group "$_session_group_33" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.init_OPERATION tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_input_internal tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_Pipeline_input tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.state_reg tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.state_next }
+20:22:41    537 --> ...                                                  [tcl] set _session_group_34 Group14
+20:22:41    538 --> ...                                                      [tcl] gui_sg_create "$_session_group_34"
+20:22:41    539 --> ...                                                          [tcl] set Group14 "$_session_group_34"
+20:22:41    540 --> ...                                                              [tcl] gui_sg_addsignal -group "$_session_group_34" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee }
+20:22:41    541 --> ...                                                                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+20:22:41    542 --> ...                                                                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+20:22:41    543 --> ...                                                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+20:22:41    544 --> ...                                                                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+20:22:41    545 --> ...                                                                                  [tcl] set _session_group_35 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]@155000}
+20:22:41    546 --> ...                                                                                      [tcl] gui_sg_create "$_session_group_35"
+20:22:41    547 --> ...                                                                                          [tcl] set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]@155000} "$_session_group_35"
+20:22:41    548 --> ...                                                                                              [tcl] gui_sg_addsignal -group "$_session_group_35" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.ADD_OVRFLW_NRM tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR }
+20:22:41    549 --> ...                                                                                                  [tcl] set _session_group_36 DriversLoads
+20:22:41    550 --> ...  [tcl] gui_sg_create "$_session_group_36"
+20:22:41    551 --> ...      [tcl] set DriversLoads "$_session_group_36"
+20:22:41    552 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_36" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR }
+20:22:41    553 --> ...              [tcl] set _session_group_37 Group15
+20:22:41    554 --> ...                  [tcl] gui_sg_create "$_session_group_37"
+20:22:41    555 --> ...                      [tcl] set Group15 "$_session_group_37"
+20:22:41    556 --> ...                          [tcl] gui_sg_addsignal -group "$_session_group_37" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.shft_value_mux_o_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.NRM_ACTIVE tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.Shift_amount_SHT1_EWR }
+20:22:41    557 --> ...                              [tcl] set _session_group_38 Group16
+20:22:41    558 --> ...                                  [tcl] gui_sg_create "$_session_group_38"
+20:22:41    559 --> ...                                      [tcl] set Group16 "$_session_group_38"
+20:22:41    560 --> ...                                          [tcl] set _session_group_39 Group17
+20:22:41    561 --> ...                                              [tcl] gui_sg_create "$_session_group_39"
+20:22:41    562 --> ...                                                  [tcl] set Group17 "$_session_group_39"
+20:22:41    563 --> ...                                                      [tcl] set _session_group_40 Group18
+20:22:41    564 --> ...                                                          [tcl] gui_sg_create "$_session_group_40"
+20:22:41    565 --> ...                                                              [tcl] set Group18 "$_session_group_40"
+20:22:41    566 --> ...                                                                  [tcl] set _session_group_41 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]@175000}
+20:22:41    567 --> ...                                                                      [tcl] gui_sg_create "$_session_group_41"
+20:22:41    568 --> ...                                                                          [tcl] set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]@175000} "$_session_group_41"
+20:22:41    569 --> ...                                                                              [tcl] gui_sg_addsignal -group "$_session_group_41" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_SINGLE.Codec_32.Data_Dec_i }
+20:22:41    570 --> ...                                                                                  [tcl] # Global: Highlighting
+20:22:41    571 --> ...                                                                                      [tcl] gui_highlight_signals -color #006400 {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.NRM_ACTIVE}
+20:22:41    572 --> ...                                                                                          [tcl] dveMisc::vbusExpand tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut
+20:22:41    573 --> ...                                                                                              [tcl] gui_highlight_signals -color #00ff00 {{tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_SINGLE.Codec_32.Data_Dec_i[25:0]}}
+20:22:41    574 --> ...                                                                                                  [tcl] dveMisc::vbusExpand tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_SINGLE.Codec_32
+20:22:41    575 --> ...  [tcl] # Global: Stack
+20:22:41    576 --> ...      [tcl] gui_change_stack_mode -mode list
+20:22:41    577 --> ...          [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+20:22:41    578 --> ...              [tcl] # Post database loading setting...
+20:22:41    579 --> ...                  [tcl] # Restore C1 time
+20:22:41    580 --> ...                      [tcl] gui_set_time -C1_only 179.856
+20:22:41    581 --> ...                          [tcl] # Save global setting...
+20:22:41    582 --> ...                              [tcl] # Wave/List view global setting
+20:22:41    583 --> ...                                  [tcl] gui_list_create_group_when_add -wave -enable
+20:22:41    584 --> ...                                      [tcl] gui_cov_show_value -switch false
+20:22:41    585 --> ...                                          [tcl] # Close all empty TopLevel windows
+20:22:41    586 --> ...                                              [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+20:22:41    587 --> ...                                                  [tcl] gui_set_loading_session_type noSession
+20:22:41    588 --> ...                                                      [tcl] # DVE View/pane content session:
+20:22:41    589 --> ...                                                          [tcl] # Hier 'Hier.1'
+20:22:41    590 --> ...                                                              [tcl] gui_show_window -window ${Hier.1}
+20:22:41    591 --> ...                                                                  [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+20:22:41    592 --> ...                                                                      [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+20:22:41    593 --> ...                                                                          [tcl] gui_hier_list_init -id ${Hier.1}
+20:22:41    594 --> ...                                                                              [tcl] gui_change_design -id ${Hier.1} -design Sim
+20:22:41    595 --> ...                                                                                  [tcl] catch {gui_list_expand -id ${Hier.1} tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+20:22:41    596 --> ...                                                                                      [tcl] catch {gui_list_select -id ${Hier.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut}}
+20:22:41    597 --> ...                                                                                          [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut} -scope "." -depth 1 -fid VPD1
+20:22:41    598 --> ...                                                                                              [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 72
+20:22:41    599 --> ...                                                                                                  [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+20:22:41    600 --> ...  [tcl] # Data 'Data.1'
+20:22:41    601 --> ...      [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+20:22:41    602 --> ...          [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+20:22:41    603 --> ...              [tcl] gui_list_show_data -id ${Data.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut}
+20:22:41    604 --> ...                  [tcl] gui_show_window -window ${Data.1}
+20:22:41    605 --> ...                      [tcl] catch { gui_list_select -id ${Data.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR }}
+20:22:41    606 --> ...                          [tcl] gui_view_scroll -id ${Data.1} -vertical -set 420
+20:22:41    607 --> ...                              [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+20:22:41    608 --> ...                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 72
+20:22:41    609 --> ...                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+20:22:41    610 --> ...                                          [tcl] # View 'Wave.1'
+20:22:41    611 --> ...                                              [tcl] gui_wv_sync -id ${Wave.1} -switch false
+20:22:41    612 --> ...                                                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+20:22:41    613 --> ...                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+20:22:41    614 --> ...                                                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+20:22:41    615 --> ...                                                              [tcl] gui_list_set_height -id Wave -height 25
+20:22:41    616 --> ...                                                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+20:22:41    617 --> ...                                                                      [tcl] gui_list_create_group_when_add -wave -disable
+20:22:41    618 --> ...                                                                          [tcl] gui_marker_set_ref -id ${Wave.1}  C1
+20:22:41    619 --> ...                                                                              [tcl] gui_wv_zoom_timerange -id ${Wave.1} 39.867 232.635
+20:22:41    620 --> ...                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {DriversLoads}
+20:22:41    621 --> ...                                                                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+20:22:41    622 --> ...                                                                                          [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.add_subt tb_FPU_PIPELINED_FPADDSUB2_vector_testing.beg_OP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy tb_FPU_PIPELINED_FPADDSUB2_vector_testing.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.contador tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag } -aggregates  -fid VPD1
+20:22:41    623 --> ...                                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_ShiftRegister.load@0}}
+20:22:41    624 --> ...                                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group1}
+20:22:41    625 --> ...  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {INIT}
+20:22:41    626 --> ...      [tcl] gui_list_add_group -id ${Wave.1}  -after INIT {INIT|FLAGS}
+20:22:41    627 --> ...          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {EXP}
+20:22:41    628 --> ...              [tcl] gui_list_add_group -id ${Wave.1}  -after EXP {EXP|Group2}
+20:22:41    629 --> ...                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {SHT1}
+20:22:41    630 --> ...                      [tcl] gui_list_add_group -id ${Wave.1}  -after SHT1 {SHT1|FLAGS}
+20:22:41    631 --> ...                          [tcl] gui_list_add_group -id ${Wave.1} -after SHT1|FLAGS {SHT1|Group2}
+20:22:41    632 --> ...                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]@155000}}
+20:22:41    633 --> ...                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {SHT2}
+20:22:41    634 --> ...                                      [tcl] gui_list_add_group -id ${Wave.1}  -after SHT2 {SHT2|FLAGS}
+20:22:41    635 --> ...                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {SGF}
+20:22:41    636 --> ...                                              [tcl] gui_list_add_group -id ${Wave.1}  -after SGF {SGF|FLAGS}
+20:22:41    637 --> ...                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {NRM}
+20:22:41    638 --> ...                                                      [tcl] gui_list_add_group -id ${Wave.1}  -after NRM {NRM|FLAGS}
+20:22:41    639 --> ...                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]@175000}}
+20:22:41    640 --> ...                                                              [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_SINGLE.Codec_32.Data_Dec_i } -aggregates  -fid VPD1
+20:22:41    641 --> ...                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {FRMT}
+20:22:41    642 --> ...                                                                      [tcl] gui_list_add_group -id ${Wave.1}  -after FRMT {FRMT|FLAGS}
+20:22:41    643 --> ...                                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group12}
+20:22:41    644 --> ...                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {inst_ShiftRegister}
+20:22:41    645 --> ...                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group13}
+20:22:41    646 --> ...                                                                                      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg } -aggregates  -fid VPD1
+20:22:41    647 --> ...                                                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000}}
+20:22:41    648 --> ...                                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {inst_FSM_INPUT_ENABLE}
+20:22:41    649 --> ...                                                                                                  [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_Pipeline_input tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_input_internal tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.init_OPERATION tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.state_next tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.state_reg } -aggregates  -fid VPD1
+20:22:41    650 --> ...  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group15}
+20:22:41    651 --> ...      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group16}
+20:22:41    652 --> ...          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group17}
+20:22:41    653 --> ...              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group18}
+20:22:41    654 --> ...                  [tcl] gui_list_collapse -id ${Wave.1} SHT2
+20:22:41    655 --> ...                      [tcl] gui_list_collapse -id ${Wave.1} FRMT
+20:22:41    656 --> ...                          [tcl] gui_list_collapse -id ${Wave.1} inst_ShiftRegister
+20:22:41    657 --> ...                              [tcl] gui_list_collapse -id ${Wave.1} Group13
+20:22:41    658 --> ...                                  [tcl] gui_list_collapse -id ${Wave.1} {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.inst_FSM_INPUT_ENABLE.enable_shift_reg@105000}
+20:22:41    659 --> ...                                      [tcl] gui_list_collapse -id ${Wave.1} inst_FSM_INPUT_ENABLE
+20:22:41    660 --> ...                                          [tcl] gui_list_select -id ${Wave.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR }
+20:22:41    661 --> ...                                              [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+20:22:41    662 --> ...                                                  [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+20:22:41    663 --> ...                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+20:22:41    664 --> ...                                                          [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+20:22:41    665 --> ...                                                              [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+20:22:41    666 --> ...                                                                  [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+20:22:41    667 --> ...                                                                      [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+20:22:41    668 --> ...                                                                          [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+20:22:41    669 --> ...                                                                              [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group NRM  -item {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]} -position below
+20:22:41    670 --> ...                                                                                  [tcl] gui_marker_move -id ${Wave.1} {C1} 179.856
+20:22:41    671 --> ...                                                                                      [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 2514
+20:22:41    672 --> ...                                                                                          [tcl] gui_set_grid_property -id ${Wave.1} -grid_range {Begin End} -enable_count -type signal -criteria {Any Edge} -number 1 -signals {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[31:0] tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp[7:0] tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant[22:0] tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign }
+20:22:41    673 --> ...                                                                                              [tcl] gui_show_grid -id ${Wave.1} -enable true
+20:22:41    674 --> ...                                                                                                  [tcl] # Source 'Source.1'
+20:22:41    675 --> ...  [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+20:22:41    676 --> ...      [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+20:22:41    677 --> ...          [tcl] gui_open_source -id ${Source.1}  -replace -active tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/source/FPU_ADD_Substract_PIPELINED.v
+20:22:41    678 --> ...              [tcl] gui_src_value_annotate -id ${Source.1} -switch true
+20:22:42    679 --> ...                  [tcl] gui_set_env TOGGLE::VALUEANNOTATE 1
+20:22:42    680 --> ...                      [tcl] gui_view_scroll -id ${Source.1} -vertical -set 742
+20:22:42    681 --> ...                          [tcl] gui_src_set_reusable -id ${Source.1}
+20:22:42    682 --> ...                              [tcl] # View 'List.1'
+20:22:42    683 --> ...                                  [tcl] gui_lst_add_group -id ${List.1} {{Group14} } -noupdate
+20:22:42    684 --> ...                                      [tcl] gui_lst_set_strobing_period -id ${List.1} -start {0} -end {0} -update -all
+20:22:42    685 --> ...                                          [tcl] gui_set_env TOGGLE::DEFAULT_LIST_WINDOW ${List.1}
+20:22:42    686 --> ...                                              [tcl] gui_view_scroll -id ${List.1} -vertical -set 0
+20:22:42    687 --> ...                                                  [tcl] gui_view_scroll -id ${List.1} -horizontal -set 0
+20:22:42    688 --> ...                                                      [tcl] # DriverLoad 'DriverLoad.1'
+20:22:42    689 --> ...                                                          [tcl] gui_get_drivers -session -id ${DriverLoad.1} -signal {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]} -time 155 -starttime 180.309
+20:22:42    690 --> ...                                                              [tcl] gui_get_loads -session -id ${DriverLoad.1} -signal {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.mux_sel_norm_EWR[4:0]}
+20:22:42    691 --> ...                                                                  [tcl] gui_get_drivers -session -id ${DriverLoad.1} -signal {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]} -time 175 -starttime 179.856
+20:22:42    692 --> ...                                                                      [tcl] # Restore toplevel window zorder
+20:22:42    693 --> ...                                                                          [tcl] # The toplevel window could be closed if it has no view/pane
+20:22:42    694 --> ...                                                                              [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} 	gui_set_active_window -window ${DriverLoad.1} }
+20:22:42    695 --> ...                                                                                  [tcl] #</Session>
+20:22:42    696 --> ...                                                                                      [tcl] synopsys::run
+20:22:42    697 --> ...                                                                                          [tcl] set ucliGUI::state
+20:22:42    698 --> ...                                                                                              [tcl] set ucliGUI::state
+20:22:42    699 --> ...                                                                                                  [tcl] gui_update_simulator_buttons
+20:22:42    700 --> ...  [tcl] set ucliGUI::state
+20:22:42    701 --> ...      [tcl] set ucliGUI::state
+20:22:42    702 --> ...          [tcl] catch {senv activeDomain} dveMisc::result 
+20:22:42    703 --> ...              [tcl] set dveMisc::result
+20:22:42    704 --> ...                  [tcl] gui_update_simulator_buttons
+20:22:42    705 --> ...                      [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut -radix {binary hexadecimal binary hexadecimal binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary binary binary binary } -list {clk {formatted_number_W[31:0]} ZERO_FLAG_SFG {sftr_idat_SHT1_SWR[25:0]} SIGN_FLAG_EXP OP_FLAG_INIT {shift_value_SHT2_EWR[4:0]} {DMP_EXP_EWSW[30:0]} {DmP_EXP_EWSW[30:0]} {LZD_raw_out_EWR[4:0]} {shft_value_mux_o_EWR[4:0]} gtXY ZERO_FLAG_SHT1 ZERO_FLAG_SHT2 ZERO_FLAG_NRM }

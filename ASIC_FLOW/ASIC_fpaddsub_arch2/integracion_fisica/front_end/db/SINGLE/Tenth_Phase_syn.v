@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Expert(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Mon Oct 17 20:47:27 2016
+// Date      : Wed Oct 19 14:29:42 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -11,13 +11,12 @@ module Mux_3x1_W1 ( ctrl, D0, D1, D2, S );
   input [0:0] D1;
   input [0:0] D2;
   output [0:0] S;
-  wire   n1, n2, n3, n4;
+  wire   n2, n3, n1;
 
   AOI22X1TS U2 ( .A0(D0[0]), .A1(n2), .B0(ctrl[0]), .B1(D1[0]), .Y(n3) );
-  OAI22X1TS U3 ( .A0(ctrl[1]), .A1(n3), .B0(n1), .B1(n4), .Y(S[0]) );
-  INVX2TS U4 ( .A(ctrl[1]), .Y(n1) );
-  NAND2X1TS U5 ( .A(D2[0]), .B(n2), .Y(n4) );
-  INVX2TS U6 ( .A(ctrl[0]), .Y(n2) );
+  OAI2BB2XLTS U3 ( .B0(ctrl[1]), .B1(n3), .A0N(ctrl[1]), .A1N(n1), .Y(S[0]) );
+  AND2X2TS U4 ( .A(D2[0]), .B(n2), .Y(n1) );
+  INVX2TS U5 ( .A(ctrl[0]), .Y(n2) );
 endmodule
 
 

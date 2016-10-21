@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : FPU_ADD_Substract_PIPELINED.v
 //  Created On    : 2016-09-27 20:11:48
-//  Last Modified : 2016-10-10 14:49:15
+//  Last Modified : 2016-10-20 19:44:09
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -99,10 +99,11 @@ FSM_INPUT_ENABLE inst_FSM_INPUT_ENABLE (
 
 
 
+
   ShiftRegister #(.W(7)) inst_ShiftRegister (
       .clk(clk),
       .rst(rst),
-      .load  (enable_shift_reg),
+      .load  (enable_shift_reg|enable_Pipeline_input),
       .in_bit (FSM_enable_input_internal),
       .Q(Shift_reg_FLAGS_7));
 
@@ -155,7 +156,7 @@ wire [EW-1:0] Shift_amount_EXP_EW; //Exponent operation result
 
 //FLAGS
 
-wire [SWR-1:0]b_shifter_one_SWR;
+wire [EWR-1:0]b_shifter_one_EWR;
 
 wire SIGN_FLAG_SHT1, OP_FLAG_SHT1, ZERO_FLAG_SHT1, SHT1_ACTIVE;
 
@@ -433,35 +434,65 @@ assign DmP_mant_EXP_SW = DmP_EXP_EWSW[SW-1:0];
 
 
 //////////////////////////////----------------------------------///////////////////////////////
+// `ifdef GEN_NAME
+// generate
+//     case(EW)
+//         8:begin : LZD_Filler1
+//             assign b_shifter_one_EWR = 5'd1;
+//         end
+//         default:begin : LZD_Filler3
+//             assign b_shifter_one_EWR = 6'd1;
+//         end
+//     endcase
+// endgenerate
+
+// generate
+//     case(EW)
+//         8:begin : LZD_Filler2
+//             assign LZD_ZFiller =3'd0;
+//             assign Exp_oper_1_EW = 8'd1;
+//         end
+//         default:begin : LZD_Filler4
+//             assign LZD_ZFiller =5'd0;
+//              assign Exp_oper_1_EW = 11'd1;
+//         end
+//     endcase
+// endgenerate
+// `endif
+  // assign b_shifter_one_EWR = {{(EWR-1){1'b0}},1'b1};
+  // assign LZD_ZFiller ={(EW-EWR){1'b0}};
+  // assign Exp_oper_1_EW = {{(EW-1){1'b0}},1'b1};
 
 generate
     case(EW)
-        8:begin : LZD_Filler1
-            assign b_shifter_one_SWR = 5'd1;
+        8:begin
+            assign b_shifter_one_EWR = 5'd1;
         end
-        default:begin : LZD_Filler3
-            assign b_shifter_one_SWR = 6'd1;
+        default:begin
+            assign b_shifter_one_EWR = 6'd1;
         end
     endcase
 endgenerate
 
 generate
     case(EW)
-        8:begin : LZD_Filler2
+        8:begin
             assign LZD_ZFiller =3'd0;
             assign Exp_oper_1_EW = 8'd1;
         end
-        default:begin : LZD_Filler4
+        default:begin
             assign LZD_ZFiller =5'd0;
              assign Exp_oper_1_EW = 11'd1;
         end
     endcase
 endgenerate
+
+
 //assign mux_out = (sel) ? din_1 : din_0;
 //Input variables for the shifter, depending upon the stage.
 
 
-assign mux_sel_norm_EWR     = (ADD_OVRFLW_NRM) ? b_shifter_one_SWR : LZD_raw_out_EWR;
+assign mux_sel_norm_EWR     = (ADD_OVRFLW_NRM) ? b_shifter_one_EWR : LZD_raw_out_EWR;
 assign shft_value_mux_o_EWR = (NRM_ACTIVE)     ?  mux_sel_norm_EWR : Shift_amount_SHT1_EWR;
 
 //assign left_right_SHT1      = (NRM_ACTIVE)     ? (~ADD_OVRFLW_NRM) : 1'b0;
@@ -689,6 +720,9 @@ FORMATTER #(.EW(EW+1)) array_comparators(
           1'b1  : begin
                       {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR - DmP_mant_SFG_SWR;
                    end
+          default: begin
+                      {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR + DmP_mant_SFG_SWR;
+                   end
        endcase
   end
 	assign ADD_OVRFLW_SGF = Carry_out_SGF&(~OP_FLAG_SFG);
@@ -826,7 +860,7 @@ assign busy = SHT1_ACTIVE;
   RegisterAdd #(.W(1)) Ready_reg (
   .clk(clk),
   .rst(rst),
-  .load(1'b1),
+  .load(1),
   .D(NRM2_ACTIVE),
   .Q(ready));
 
@@ -835,5 +869,4 @@ assign busy = SHT1_ACTIVE;
 
 
 endmodule
-
 

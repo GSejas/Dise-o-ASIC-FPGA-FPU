@@ -39,7 +39,7 @@ module Priority_Codec_32(
     );
 parameter SWR = 26;
 
-`ifdef FRANCIS
+`ifdef FRANCIS_LZD
 	always @(Data_Dec_i)
 	begin
 		if(~Data_Dec_i[25]) begin Data_Bin_o = 5'b00000;//0
@@ -101,7 +101,7 @@ parameter case_data0 				   = {1'b1,{(SWR-1){1'bx}}},
 					case_data24          = {{24{1'b0}}, 1'b1,{(SWR-25){1'bx}}} ,
 					case_data25          = {{25{1'b0}}, 1'b1} ;
 
-`ifndef FRANCIS
+`ifndef FRANCIS_LZD
 
 always @(Data_Dec_i) begin
 	   casex (Data_Dec_i)

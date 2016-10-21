@@ -1,23 +1,131 @@
 {
+    "stat": {
+        "mop/quad": 2.7395209580838324,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.21796599999999999,
+            "ru_stime_sec": 0.034993999999999997,
+            "ru_maxrss_kb": 59944,
+            "ru_minflt": 14058,
+            "ru_nivcsw": 28,
+            "ru_majflt": 0,
+            "ru_nvcsw": 51
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 0.35994500000000001,
+            "ru_stime_sec": 0.045992999999999999,
+            "ru_maxrss_kb": 69500,
+            "ru_minflt": 16779,
+            "ru_nivcsw": 41,
+            "ru_majflt": 0,
+            "ru_nvcsw": 51
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0
+        },
+        "totalObjSize": 387781,
+        "Frontend(%)": 60.555362624845458,
+        "nMops": 22875,
+        "quadSpeed": 58811.514378887012,
+        "nQuads": 8350,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0
+        },
+        "mopSpeed": 161115.37621760962,
+        "outputSizePerQuad": 46.0,
+        "CodeGen(%)": 39.444637375154542
+    },
+    "CompileStatus": "Successful",
+    "MlibObjs": {},
+    "CompileProcesses": [
+        "cgproc.26690.json"
+    ],
+    "PrevCompiledModules": {
+        "Comparators": {
+            "iGyxR_d": {
+                "bytes": 9458,
+                "mod": "Comparators",
+                "checksum": 4294967295,
+                "mode": 4,
+                "archive": "archive.15/_prev_archive_1.a",
+                "out": "iGyxR_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 8130,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 4294967295,
+                "mode": 4
+            }
+        },
+        "add_sub_carry_out": {
+            "vTLY2_d": {
+                "bytes": 8729,
+                "mod": "add_sub_carry_out",
+                "checksum": 4294967295,
+                "mode": 4,
+                "archive": "archive.15/_prev_archive_1.a",
+                "out": "vTLY2_d.o"
+            }
+        },
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": {
+            "vberv_d": {
+                "bytes": 269120,
+                "mod": "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+                "checksum": 4294967295,
+                "mode": 4,
+                "archive": "archive.15/_26690_archive_1.a",
+                "out": "vberv_d.o"
+            }
+        },
+        "Multiplexer_AC_0000": {
+            "UPR0r_d": {
+                "bytes": 7984,
+                "mod": "Multiplexer_AC_0000",
+                "checksum": 4294967295,
+                "mode": 4,
+                "archive": "archive.15/_prev_archive_1.a",
+                "out": "UPR0r_d.o"
+            }
+        },
+        "Rotate_Mux_Array_0000": {
+            "GBFFm_d": {
+                "bytes": 13059,
+                "mod": "Rotate_Mux_Array_0000",
+                "checksum": 4294967295,
+                "mode": 4,
+                "archive": "archive.15/_prev_archive_1.a",
+                "out": "GBFFm_d.o"
+            }
+        }
+    },
     "NameTable": {
         "Rotate_Mux_Array_0000": [
             "Rotate_Mux_Array_0000",
             "GBFFm",
             "module"
         ],
-        "shift_mux_array_0000": [
-            "shift_mux_array_0000",
-            "qaeRY",
+        "Multiplexer_AC_0000": [
+            "Multiplexer_AC_0000",
+            "UPR0r",
             "module"
         ],
-        "Priority_Codec_32": [
-            "Priority_Codec_32",
-            "Y4GEV",
-            "module"
-        ],
-        "FPU_Add_Subtract_Function": [
-            "FPU_Add_Subtract_Function",
-            "CJHB3",
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
             "module"
         ],
         "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
@@ -25,94 +133,42 @@
             "vberv",
             "module"
         ],
-        "Multiplexer_AC_0001": [
-            "Multiplexer_AC_0001",
-            "UDPPh",
+        "Comparators": [
+            "Comparators",
+            "iGyxR",
             "module"
         ],
-        "...MASTER...": [
-            "SIM",
-            "amcQw",
+        "add_sub_carry_out": [
+            "add_sub_carry_out",
+            "vTLY2",
             "module"
         ]
     },
-    "CompileProcesses": [
-        "cgproc.32420.json"
-    ],
-    "CompileStrategy": "fullobj",
-    "stat": {
-        "ru_self_cgstart": {
-            "ru_nvcsw": 61,
-            "ru_utime_sec": 0.23796300000000001,
-            "ru_stime_sec": 0.059990000000000002,
-            "ru_maxrss_kb": 58108,
-            "ru_minflt": 16340,
-            "ru_majflt": 8,
-            "ru_nivcsw": 90
-        },
-        "ru_self_end": {
-            "ru_nvcsw": 66,
-            "ru_utime_sec": 0.41693599999999997,
-            "ru_stime_sec": 0.081987000000000004,
-            "ru_maxrss_kb": 66720,
-            "ru_minflt": 19885,
-            "ru_majflt": 13,
-            "ru_nivcsw": 198
-        },
-        "ru_childs_cgstart": {
-            "ru_nvcsw": 1,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0029989999999999999,
-            "ru_maxrss_kb": 19444,
-            "ru_minflt": 461,
-            "ru_majflt": 0,
-            "ru_nivcsw": 2
-        },
-        "nMops": 18292,
-        "nQuads": 8100,
-        "Frontend(%)": 57.074227219525305,
-        "mopSpeed": 102205.36058511621,
-        "outputSizePerQuad": 62.0,
-        "totalObjSize": 507327,
-        "ru_childs_end": {
-            "ru_nvcsw": 1,
-            "ru_utime_sec": 0.0,
-            "ru_stime_sec": 0.0029989999999999999,
-            "ru_maxrss_kb": 19444,
-            "ru_minflt": 461,
-            "ru_majflt": 0,
-            "ru_nivcsw": 2
-        },
-        "quadSpeed": 45258.223307426269,
-        "mop/quad": 2.2582716049382716,
-        "CodeGen(%)": 42.925772780474702
+    "Misc": {
+        "archive_dir": "archive.15",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/csrc",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE",
+        "daidir": "simv.daidir",
+        "csrc": "csrc",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir",
+        "default_output_dir": "csrc"
     },
     "CurCompileUdps": {},
-    "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 108374
-    },
-    "CompileStatus": "Successful",
-    "CurCompileModules": [
-        "...MASTER...",
-        "shift_mux_array_0000",
-        "FPU_Add_Subtract_Function",
-        "Multiplexer_AC_0001",
-        "Rotate_Mux_Array_0000",
-        "Priority_Codec_32",
-        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing"
-    ],
-    "PEModules": [],
+    "CompileStrategy": "fullobj",
     "LVLData": [
         "SIM"
     ],
-    "Misc": {
-        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE",
-        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/csrc",
-        "csrc": "csrc",
-        "daidir": "simv.daidir",
-        "archive_dir": "archive.0",
-        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir",
-        "default_output_dir": "csrc"
-    }
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 111007
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "Multiplexer_AC_0000",
+        "add_sub_carry_out",
+        "Rotate_Mux_Array_0000",
+        "Comparators",
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing"
+    ],
+    "PEModules": []
 }

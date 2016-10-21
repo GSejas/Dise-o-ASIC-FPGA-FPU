@@ -1,7 +1,8 @@
 0 
-38
+39
 +cli+4
 +define+DOUBLE
++define+FRANCIS_LZD=1
 +itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 +lint=all
 +memcbk
@@ -38,10 +39,8 @@
 -ucli
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
 log_name
-43
+42
 sysc_uni_pwd=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE
-XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1473191807.138297-433824659
-VNCDESKTOP=zener:21 (jsequeira)
 VMR_MODE_FLAG=64
 VCS_MX_HOME_INTERNAL=1
 VCS_MODE_FLAG=64
@@ -52,15 +51,11 @@ VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64
-SYSFONT=latarcyrheb-sun16
 SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/
-SSH_TTY=/dev/pts/27
-SSH_CONNECTION=172.21.16.52 56536 172.21.16.5 22
-SSH_CLIENT=172.21.16.52 56536 22
-SSH_AUTH_SOCK=/tmp/keyring-A5EQMz/socket.ssh
+SSH_TTY=/dev/pts/56
+SSH_CONNECTION=172.21.8.215 51742 172.21.16.5 22
+SSH_CLIENT=172.21.8.215 51742 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=20259
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/20257,unix/unix:/tmp/.ICE-unix/20257
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
 SELINUX_LEVEL_REQUESTED=
@@ -72,43 +67,48 @@ QTDIR=/usr/lib64/qt-3.3
 OVA_UUM=0
 ORBIT_SOCKETDIR=/tmp/orbit-jsequeira
 LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_TIME=es_CR.UTF-8
+LC_TELEPHONE=es_CR.UTF-8
+LC_PAPER=es_CR.UTF-8
+LC_NUMERIC=es_CR.UTF-8
+LC_NAME=es_CR.UTF-8
+LC_MONETARY=es_CR.UTF-8
+LC_MEASUREMENT=es_CR.UTF-8
+LC_IDENTIFICATION=es_CR.UTF-8
 LC_ALL=C
+LC_ADDRESS=es_CR.UTF-8
 KDEDIRS=/usr
 HISTCONTROL=ignoredups
 G_BROKEN_FILENAMES=1
-GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/jsequeira/.gtkrc-1.2-gnome2
-GNOME_KEYRING_SOCKET=/tmp/keyring-A5EQMz/socket
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-CDItn4lBcc,guid=841458e6fa3ecdc8dbee3e8e000ac06f
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
 0
 28
 1476083115 Testbench_FPU_Add_Subt.v
-1475945806 ../../front_end/source/Comparators.v
-1475945806 ../../front_end/source/Barrel_shifter.v
+1476133519 ../../front_end/source/Comparators.v
+1476408215 ../../front_end/source/Barrel_shifter.v
 1475945806 ../../front_end/source/Comparator.v
-1476079544 ../../front_end/source/Tenth_Phase.v
-1475945806 ../../front_end/source/Priority_Codec_32.v
-1475945806 ../../front_end/source/Add_Subt.v
-1476050516 ../../front_end/source/Rotate_Mux_Array.v
+1476133519 ../../front_end/source/Tenth_Phase.v
+1476914452 ../../front_end/source/Priority_Codec_32.v
+1476922065 ../../front_end/source/Add_Subt.v
+1476223306 ../../front_end/source/Rotate_Mux_Array.v
 1475945806 ../../front_end/source/Comparator_Less.v
-1475945806 ../../front_end/source/Priority_Codec_64.v
-1475945806 ../../front_end/source/Oper_Start_In.v
+1477000517 ../../front_end/source/Priority_Codec_64.v
+1476918536 ../../front_end/source/Oper_Start_In.v
 1476050516 ../../front_end/source/sgn_result.v
-1476050516 ../../front_end/source/Mux_Array.v
-1475945806 ../../front_end/source/FSM_Add_Subtract.v
+1476408218 ../../front_end/source/Mux_Array.v
+1476834848 ../../front_end/source/FSM_Add_Subtract.v
 1475945806 ../../front_end/source/Mux_3x1.v
-1475945806 ../../front_end/source/add_sub_carry_out.v
-1476078455 ../../front_end/source/xor_tri.v
+1476912895 ../../front_end/source/add_sub_carry_out.v
+1476724424 ../../front_end/source/xor_tri.v
 1475945806 ../../front_end/source/Greater_Comparator.v
 1475945806 ../../front_end/source/Multiplexer_AC.v
 1475945806 ../../front_end/source/Round_Sgf_Dec.v
-1476050516 ../../front_end/source/exp_operation.v
+1476133519 ../../front_end/source/exp_operation.v
 1475945806 ../../front_end/source/RegisterAdd.v
-1475945806 ../../front_end/source/FPU_Add_Subtract_Function.v
-1475945806 ../../front_end/source/LZD.v
-1476080918 ../../front_end/source/shift_mux.v
+1476916566 ../../front_end/source/FPU_Add_Subtract_Function.v
+1476758829 ../../front_end/source/LZD.v
+1476316426 ../../front_end/source/shift_mux.v
 1475945806 ../../front_end/source/MultiplexTxT.v
 1476083064 file_list
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab

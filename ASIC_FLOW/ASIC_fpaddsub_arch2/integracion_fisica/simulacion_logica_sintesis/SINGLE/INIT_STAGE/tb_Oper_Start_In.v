@@ -38,7 +38,7 @@ module tb_Oper_Start_In (); /* this is automatically generated */
   wire         zero_flag_o;
   wire         real_op_o;
   wire         sign_final_result_o;
-
+`ifdef OPER1
   Oper_Start_In #(
       .W(W)
     ) inst_Oper_Start_In (
@@ -55,7 +55,21 @@ module tb_Oper_Start_In (); /* this is automatically generated */
       .real_op_o           (real_op_o),
       .sign_final_result_o (sign_final_result_o)
     );
+`endif
 
+     Oper_Start_In_2_W32_1 inst_Oper_Start_In (
+      .clk                 (clk),
+      .rst                 (rst),
+      .load_b_i            (load_b_i),
+      .intAS               (add_subt_i),
+      .intDX               (Data_X_i),
+      .intDY               (Data_Y_i),
+      .DMP_o               (DMP_o),
+      .DmP_o               (DmP_o),
+      .zero_flag_o         (zero_flag_o),
+      .real_op_o           (real_op_o),
+      .sign_final_result_o (sign_final_result_o)
+    );
   reg [W-1:0] Array_IN   [0:((2**PERIOD)-1)];
   reg [W-1:0] Array_IN_2 [0:((2**PERIOD)-1)];
   integer contador;

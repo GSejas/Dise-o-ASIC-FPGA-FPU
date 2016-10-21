@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : Comparators.v
 //  Created On    : 2016-09-22 10:07:30
-//  Last Modified : 2016-10-10 14:48:27
+//  Last Modified : 2016-09-22 14:51:38
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -74,11 +74,11 @@ Comparator_Less #(.W(EW)) LTComparator (
 //precision format
 
   generate
-  	if(EW == 9) begin : LIMASSIGN_BLK1
+  	if(EW == 9) begin
   		assign U_limit = 9'hfe;
   		assign L_limit = 9'h01;
   	end
-  	else begin : LIMASSIGN_BLK2
+  	else begin
   		assign U_limit = 12'b111111111110;
   		assign L_limit = 12'b000000000001;
   	end

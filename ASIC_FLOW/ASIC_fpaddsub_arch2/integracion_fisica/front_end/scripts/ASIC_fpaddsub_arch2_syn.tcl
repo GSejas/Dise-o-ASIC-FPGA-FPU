@@ -15,6 +15,7 @@ set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 set DESIGN_NAME  "fpaddsub_arch2"
 set TOP_NAME     "FPU_Add_Subtract_Function"
 set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch2_syn_constraints.tcl"
+set compile_fix_cell_degradation true
 remove_design -designs
 
 #WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
@@ -23,18 +24,20 @@ set file_sources [read $fp]
 close $fp
 
 set data [split $file_sources "\n"]
-#set data "{$data}"
+
 # Primero se analiza el módulo principal
 
 foreach line $data {
-  analyze -library WORK -format verilog "$line"
+  analyze -library WORK -format verilog "$line" -define {FRANCIS_LZD}
 }
+
+#source "ASIC_fpaddsub_arch2_syn_2.tcl"
 
 set x 0;
 while {$x < 2} {
 
 #Elaboramos el módulo principal
-elaborate -update $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
+elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
 
 uniquify
 
@@ -51,16 +54,24 @@ source $CONTRAINTS_FILE_NAME
 propagate_constraints
 
 #Revisar el diseño
-check_design
+check_design -multiple_designs
 
-set compile_top_all_paths true;
+#set compile_top_all_paths true;
 
 #Compilar el diseño
-compile -exact_map -auto_ungroup delay
+compile_ultra -timing_high_effort_script -retime -exact_map
 
 #Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
 #- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
 #- Como una de las entradas para el sintetizador físico (IC Compiler).
+set TOP_PARAM $current_design
+
+#LO SIGUIENTE SE VA A COMENTAR PARA NO GENERAR UNA VERSION APARTE DE LA SECCION OPER_IN_OP
+#source "ASIC_Oper_In_Op_syn.tcl"
+#write_sdc ./db/$PRECISION($x)/Oper_Start_in\_syn.sdc
+
+#current_design "$TOP_PARAM"
+
 set verilogout_no_tri true
 change_names -hierarchy -rules verilog
 write -hierarchy -format verilog -output \
@@ -82,7 +93,13 @@ write -hierarchy -format ddc -output \
 #Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
 #para el sintetizador físico (IC Compiler)
 write_sdc ./db/$PRECISION($x)/$TOP_NAME\_syn.sdc
+write_sdf ./db/$PRECISION($x)/$TOP_NAME\_syn.sdf
+write_sdf ../simulacion_logica_sintesis/$PRECISION($x)/$TOP_NAME\_syn.sdf
 
+##LE AGREGAMOS CON UN COMANDO DE BASH EL SDF CORRESPONDIENTE PARA LA SIMULACION
+set string_replace "sed -i \"s/endmodule/initial\ \\\$sdf\_annotate\(\\\"$TOP_NAME\_syn.sdf\\\"\)\\\\; \\n endmodule/g\" db/$PRECISION($x)/$TOP_NAME\_syn.v"
+#set string_replace "sed -i \"s/endmodule/ initial \t \$sdf_annotate\(\"$TOP_NAME\_syn.sdf\"\); \n endmodule/g\" db/$PRECISION(1)/$TOP_NAME\_syn.v"
+exec /bin/sh -c "$string_replace"
 #Revisar la configuración de temporizado
 check_timing
 

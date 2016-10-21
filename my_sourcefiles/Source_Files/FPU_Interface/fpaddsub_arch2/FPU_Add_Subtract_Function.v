@@ -320,8 +320,13 @@ Multiplexer_AC #(.W(EW)) Exp_Oper_A_mux(
     );
 
 ///////////Mux exp_operation OPER_B_i//////////
+
 wire [EW-EWR-1:0] Exp_oper_B_D1;
 wire [EW-1:0] Exp_oper_B_D2;
+
+`ifdef FRANCIS_GEN
+//El generate es innecesario, y poco útil para la parametrización
+
 
 Mux_3x1 #(.W(EW)) Exp_Oper_B_mux(
                 .ctrl(FSM_selector_B),
@@ -344,7 +349,21 @@ generate
         end
     endcase
 endgenerate
+`endif
 
+`ifndef FRANCIS_GEN
+
+assign Exp_oper_B_D1 =(EW-EWR)*1'b0;
+assign Exp_oper_B_D2 ={{(EW-1){1'b0}},1'b1};
+
+Mux_3x1 #(.W(EW)) Exp_Oper_B_mux(
+                .ctrl(FSM_selector_B),
+                .D0 (DmP[W-2:W-EW-1]),
+                .D1 ({Exp_oper_B_D1,LZA_output}),
+                .D2 (Exp_oper_B_D2),
+                .S(S_Oper_B_exp)
+            );
+`endif
 ///////////exp_operation///////////////////////////
 
 Exp_Operation #(.EW(EW)) Exp_Operation_Module(
@@ -365,6 +384,8 @@ Exp_Operation #(.EW(EW)) Exp_Operation_Module(
 
 wire [EWR-1:0] Barrel_Shifter_S_V_D2;
 
+`ifdef FRANCIS_GEN
+//THIS BLOCK GETS TAKEN OUT, TO FURTHER PARAMTERIZATION
 Mux_3x1 #(.W(EWR)) Barrel_Shifter_S_V_mux(
                 .ctrl(FSM_selector_B),
                 .D0 (exp_oper_result[EWR-1:0]),
@@ -383,7 +404,19 @@ generate
         end
     endcase
 endgenerate
+`endif
 
+`ifndef FRANCIS_GEN
+assign Barrel_Shifter_S_V_D2 = {{(EWR-1){1'b0}},1'b1};
+
+Mux_3x1 #(.W(EWR)) Barrel_Shifter_S_V_mux(
+                .ctrl(FSM_selector_B),
+                .D0 (exp_oper_result[EWR-1:0]),
+                .D1 (LZA_output),
+                .D2 (Barrel_Shifter_S_V_D2),
+                .S  (S_Shift_Value)
+            );
+`endif
 ///////////Mux Barrel shifter Data_in//////
 
 Multiplexer_AC #(.W(SWR)) Barrel_Shifter_D_I_mux(

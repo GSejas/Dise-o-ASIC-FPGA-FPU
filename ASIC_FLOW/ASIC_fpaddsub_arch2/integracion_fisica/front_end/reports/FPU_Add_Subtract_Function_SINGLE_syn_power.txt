@@ -1,3 +1,4 @@
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
@@ -8,7 +9,7 @@ Report : power
         -analysis_effort high
 Design : Add_Subt
 Version: L-2016.03-SP3
-Date   : Mon Oct 17 20:47:57 2016
+Date   : Wed Oct 19 14:30:17 2016
 ****************************************
 
 

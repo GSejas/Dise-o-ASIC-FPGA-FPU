@@ -1,14 +1,14 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Tue Oct 18 16:51:20 2016
+# Saved on Wed Oct 19 19:14:55 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
-#   Source.1: tb_Oper_Start_In
-#   Wave.1: 20 signals
+#   Source.1: FPU_Add_Subtract_Function_W32
+#   Wave.1: 17 signals
 #   Group count = 1
-#   Group inst_Oper_Start_In signal count = 20
+#   Group inst_Oper_Start_In signal count = 17
 # End_DVE_Session_Save_Info
 
 # DVE version: K-2015.09-SP2-3_Full64
@@ -67,7 +67,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{0 24} {1359 767}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{1382 70} {2724 766}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -82,7 +82,9 @@ gui_set_toolbar_attributes -toolbar {&Trace} -dock_state top
 gui_set_toolbar_attributes -toolbar {&Trace} -offset 0
 gui_show_toolbar -toolbar {&Trace}
 gui_hide_toolbar -toolbar {TraceInstance}
-gui_hide_toolbar -toolbar {BackTrace}
+gui_set_toolbar_attributes -toolbar {BackTrace} -dock_state top
+gui_set_toolbar_attributes -toolbar {BackTrace} -offset 0
+gui_show_toolbar -toolbar {BackTrace}
 gui_set_toolbar_attributes -toolbar {&Scope} -dock_state top
 gui_set_toolbar_attributes -toolbar {&Scope} -offset 0
 gui_show_toolbar -toolbar {&Scope}
@@ -128,7 +130,7 @@ if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {
 }
 
 gui_show_window -window ${HSPane.1} -show_state maximized
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 815} {child_hier_coltype 541} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 817} {child_hier_coltype 543} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
 if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
         set Data.1 [gui_share_window -id ${DLPane.1} -type Data]
@@ -137,13 +139,13 @@ if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
 }
 
 gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 440} {child_data_colvalue 261} {child_data_coltype 317} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 554} {child_data_colvalue 375} {child_data_coltype 430} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
 gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 651} {child_wave_right 703} {child_wave_colname 349} {child_wave_colvalue 298} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 417} {child_wave_right 920} {child_wave_colname 236} {child_wave_colvalue 177} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
@@ -151,7 +153,7 @@ gui_set_env TOPLEVELS::TARGET_FRAME(Source) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(Schematic) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(PathSchematic) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(Wave) ${TopLevel.1}
-gui_set_env TOPLEVELS::TARGET_FRAME(List) none
+gui_set_env TOPLEVELS::TARGET_FRAME(List) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(Memory) ${TopLevel.1}
 gui_set_env TOPLEVELS::TARGET_FRAME(DriverLoad) none
 gui_update_statusbar_target_frame ${TopLevel.1}
@@ -192,11 +194,11 @@ gui_set_time_units 1ps
 gui_load_child_values {tb_Oper_Start_In.inst_Oper_Start_In}
 
 
-set _session_group_2 inst_Oper_Start_In
-gui_sg_create "$_session_group_2"
-set inst_Oper_Start_In "$_session_group_2"
+set _session_group_1 inst_Oper_Start_In
+gui_sg_create "$_session_group_1"
+set inst_Oper_Start_In "$_session_group_1"
 
-gui_sg_addsignal -group "$_session_group_2" { tb_Oper_Start_In.inst_Oper_Start_In.load_b_i tb_Oper_Start_In.inst_Oper_Start_In.Data_X_i tb_Oper_Start_In.inst_Oper_Start_In.Data_Y_i tb_Oper_Start_In.inst_Oper_Start_In.eqXY tb_Oper_Start_In.inst_Oper_Start_In.intDX tb_Oper_Start_In.inst_Oper_Start_In.intDY tb_Oper_Start_In.inst_Oper_Start_In.sign_result tb_Oper_Start_In.inst_Oper_Start_In.real_op_o tb_Oper_Start_In.inst_Oper_Start_In.intAS tb_Oper_Start_In.inst_Oper_Start_In.add_subt_i tb_Oper_Start_In.inst_Oper_Start_In.clk tb_Oper_Start_In.inst_Oper_Start_In.zero_flag_o tb_Oper_Start_In.inst_Oper_Start_In.DmP_o tb_Oper_Start_In.inst_Oper_Start_In.DMP_o tb_Oper_Start_In.inst_Oper_Start_In.intm tb_Oper_Start_In.inst_Oper_Start_In.intM tb_Oper_Start_In.inst_Oper_Start_In.sign_final_result_o tb_Oper_Start_In.inst_Oper_Start_In.load_a_i tb_Oper_Start_In.inst_Oper_Start_In.gtXY tb_Oper_Start_In.inst_Oper_Start_In.rst }
+gui_sg_addsignal -group "$_session_group_1" { tb_Oper_Start_In.inst_Oper_Start_In.load_b_i tb_Oper_Start_In.inst_Oper_Start_In.eqXY tb_Oper_Start_In.inst_Oper_Start_In.intDX tb_Oper_Start_In.inst_Oper_Start_In.intDY tb_Oper_Start_In.inst_Oper_Start_In.sign_result tb_Oper_Start_In.inst_Oper_Start_In.real_op_o tb_Oper_Start_In.inst_Oper_Start_In.intAS tb_Oper_Start_In.inst_Oper_Start_In.n1 tb_Oper_Start_In.inst_Oper_Start_In.clk tb_Oper_Start_In.inst_Oper_Start_In.zero_flag_o tb_Oper_Start_In.inst_Oper_Start_In.DmP_o tb_Oper_Start_In.inst_Oper_Start_In.DMP_o tb_Oper_Start_In.inst_Oper_Start_In.intm tb_Oper_Start_In.inst_Oper_Start_In.intM tb_Oper_Start_In.inst_Oper_Start_In.sign_final_result_o tb_Oper_Start_In.inst_Oper_Start_In.gtXY tb_Oper_Start_In.inst_Oper_Start_In.rst }
 
 # Global: Highlighting
 
@@ -206,7 +208,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 236000
+gui_set_time -C1_only 86838
 
 
 
@@ -248,8 +250,8 @@ gui_view_scroll -id ${Hier.1} -horizontal -set 0
 # Source 'Source.1'
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active tb_Oper_Start_In /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/tb_Oper_Start_In.v
-gui_view_scroll -id ${Source.1} -vertical -set 42
+gui_open_source -id ${Source.1}  -replace -active FPU_Add_Subtract_Function_W32 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/../../../front_end/db/SINGLE/FPU_Add_Subtract_Function_syn.v
+gui_view_scroll -id ${Source.1} -vertical -set 4298
 gui_src_set_reusable -id ${Source.1}
 
 # View 'Wave.1'
@@ -261,8 +263,9 @@ gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 0 799961
+gui_wv_zoom_timerange -id ${Wave.1} 43580 431917
 gui_list_add_group -id ${Wave.1} -after {New Group} {inst_Oper_Start_In}
+gui_list_select -id ${Wave.1} {tb_Oper_Start_In.inst_Oper_Start_In.intm tb_Oper_Start_In.inst_Oper_Start_In.intM }
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -280,8 +283,8 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group inst_Oper_Start_In  -position in
 
-gui_marker_move -id ${Wave.1} {C1} 236000
-gui_view_scroll -id ${Wave.1} -vertical -set 0
+gui_marker_move -id ${Wave.1} {C1} 86838
+gui_view_scroll -id ${Wave.1} -vertical -set 37
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane

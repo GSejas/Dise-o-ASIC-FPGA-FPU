@@ -26,7 +26,7 @@ module Priority_Codec_64(
     );
 parameter SWR = 55;
 
-`ifdef FRANCIS
+
 always @(Data_Dec_i)
 	begin
 	Data_Bin_o=6'b000000;
@@ -88,128 +88,6 @@ always @(Data_Dec_i)
 		end else begin Data_Bin_o = 6'b000000;//zero value
 		end
 	end
-`endif
 
 
-parameter
-				  case_data0  = {1'b1,{(SWR-1){1'bx}}},
-					case_data1  = {1'b0, 1'b1,{(SWR-2){1'bx}}},
-					case_data2  = {{2{1'b0}}, 1'b1,{(SWR-3){1'bx}}},
-					case_data3  = {{3{1'b0}}, 1'b1,{(SWR-4){1'bx}}},
-					case_data4  = {{4{1'b0}}, 1'b1,{(SWR-5){1'bx}}},
-					case_data5  = {{5{1'b0}}, 1'b1,{(SWR-6){1'bx}}},
-					case_data6  = {{6{1'b0}}, 1'b1,{(SWR-7){1'bx}}},
-					case_data7  = {{7{1'b0}}, 1'b1,{(SWR-8){1'bx}}},
-					case_data8  = {{8{1'b0}}, 1'b1,{(SWR-9){1'bx}}},
-					case_data9  = {{9{1'b0}}, 1'b1,{(SWR-10){1'bx}}},
-					case_data10 = {{10{1'b0}}, 1'b1,{(SWR-11){1'bx}}},
-					case_data11 = {{11{1'b0}}, 1'b1,{(SWR-12){1'bx}}},
-					case_data12 = {{12{1'b0}}, 1'b1,{(SWR-13){1'bx}}},
-					case_data13 = {{13{1'b0}}, 1'b1,{(SWR-14){1'bx}}},
-					case_data14 = {{14{1'b0}}, 1'b1,{(SWR-15){1'bx}}},
-					case_data15 = {{15{1'b0}}, 1'b1,{(SWR-16){1'bx}}},
-					case_data16 = {{16{1'b0}}, 1'b1,{(SWR-17){1'bx}}},
-					case_data17 = {{17{1'b0}}, 1'b1,{(SWR-18){1'bx}}},
-					case_data18 = {{18{1'b0}}, 1'b1,{(SWR-19){1'bx}}},
-					case_data19 = {{19{1'b0}}, 1'b1,{(SWR-20){1'bx}}},
-					case_data20 = {{20{1'b0}}, 1'b1,{(SWR-21){1'bx}}},
-					case_data21 = {{21{1'b0}}, 1'b1,{(SWR-22){1'bx}}},
-					case_data22 = {{22{1'b0}}, 1'b1,{(SWR-23){1'bx}}},
-					case_data23 = {{23{1'b0}}, 1'b1,{(SWR-24){1'bx}}},
-					case_data24 = {{24{1'b0}}, 1'b1,{(SWR-25){1'bx}}},
-					case_data25 = {{25{1'b0}}, 1'b1,{(SWR-26){1'bx}}},
-					case_data26 = {{26{1'b0}}, 1'b1,{(SWR-27){1'bx}}},
-					case_data27 = {{27{1'b0}}, 1'b1,{(SWR-28){1'bx}}},
-					case_data28 = {{28{1'b0}}, 1'b1,{(SWR-29){1'bx}}},
-					case_data29 = {{29{1'b0}}, 1'b1,{(SWR-30){1'bx}}},
-					case_data30 = {{30{1'b0}}, 1'b1,{(SWR-31){1'bx}}},
-					case_data31 = {{31{1'b0}}, 1'b1,{(SWR-32){1'bx}}},
-					case_data32 = {{32{1'b0}}, 1'b1,{(SWR-33){1'bx}}},
-					case_data33 = {{33{1'b0}}, 1'b1,{(SWR-34){1'bx}}},
-					case_data34 = {{34{1'b0}}, 1'b1,{(SWR-35){1'bx}}},
-					case_data35 = {{35{1'b0}}, 1'b1,{(SWR-36){1'bx}}},
-					case_data36 = {{36{1'b0}}, 1'b1,{(SWR-37){1'bx}}},
-					case_data37 = {{37{1'b0}}, 1'b1,{(SWR-38){1'bx}}},
-					case_data38 = {{38{1'b0}}, 1'b1,{(SWR-39){1'bx}}},
-					case_data39 = {{39{1'b0}}, 1'b1,{(SWR-40){1'bx}}},
-					case_data40 = {{40{1'b0}}, 1'b1,{(SWR-41){1'bx}}},
-					case_data41 = {{41{1'b0}}, 1'b1,{(SWR-42){1'bx}}},
-					case_data42 = {{42{1'b0}}, 1'b1,{(SWR-43){1'bx}}},
-					case_data43 = {{43{1'b0}}, 1'b1,{(SWR-44){1'bx}}},
-					case_data44 = {{44{1'b0}}, 1'b1,{(SWR-45){1'bx}}},
-					case_data45 = {{45{1'b0}}, 1'b1,{(SWR-46){1'bx}}},
-					case_data46 = {{46{1'b0}}, 1'b1,{(SWR-47){1'bx}}},
-					case_data47 = {{47{1'b0}}, 1'b1,{(SWR-48){1'bx}}},
-					case_data48 = {{48{1'b0}}, 1'b1,{(SWR-49){1'bx}}},
-					case_data49 = {{49{1'b0}}, 1'b1,{(SWR-50){1'bx}}},
-					case_data50 = {{50{1'b0}}, 1'b1,{(SWR-51){1'bx}}},
-					case_data51 = {{51{1'b0}}, 1'b1,{(SWR-52){1'bx}}},
-					case_data52 = {{52{1'b0}}, 1'b1,{(SWR-53){1'bx}}},
-					case_data53 = {{53{1'b0}}, 1'b1,{(SWR-54){1'bx}}},
-					case_data54 = {{54{1'b0}}, 1'b1,{(SWR-55){1'bx}}};
-
-
-`ifndef FRANCIS
-
-always @(Data_Dec_i) begin
-	   casex (Data_Dec_i)
-				case_data0 : begin Data_Bin_o = 6'd0; end
-				case_data1 : begin Data_Bin_o = 6'd1; end
-				case_data2 : begin Data_Bin_o = 6'd2; end
-				case_data3 : begin Data_Bin_o = 6'd3; end
-				case_data4 : begin Data_Bin_o = 6'd4; end
-				case_data5 : begin Data_Bin_o = 6'd5; end
-				case_data6 : begin Data_Bin_o = 6'd6; end
-				case_data7 : begin Data_Bin_o = 6'd7; end
-				case_data8 : begin Data_Bin_o = 6'd8; end
-				case_data9 : begin Data_Bin_o = 6'd9; end
-				case_data10 : begin Data_Bin_o = 6'd10; end
-				case_data11 : begin Data_Bin_o = 6'd11; end
-				case_data12 : begin Data_Bin_o = 6'd12; end
-				case_data13 : begin Data_Bin_o = 6'd13; end
-				case_data14 : begin Data_Bin_o = 6'd14; end
-				case_data15 : begin Data_Bin_o = 6'd15; end
-				case_data16 : begin Data_Bin_o = 6'd16; end
-				case_data17 : begin Data_Bin_o = 6'd17; end
-				case_data18 : begin Data_Bin_o = 6'd18; end
-				case_data19 : begin Data_Bin_o = 6'd19; end
-				case_data20 : begin Data_Bin_o = 6'd20; end
-				case_data21 : begin Data_Bin_o = 6'd21; end
-				case_data22 : begin Data_Bin_o = 6'd22; end
-				case_data23 : begin Data_Bin_o = 6'd23; end
-				case_data24 : begin Data_Bin_o = 6'd24; end
-				case_data25 : begin Data_Bin_o = 6'd25; end
-				case_data26 : begin Data_Bin_o = 6'd26; end
-				case_data27 : begin Data_Bin_o = 6'd27; end
-				case_data28 : begin Data_Bin_o = 6'd28; end
-				case_data29 : begin Data_Bin_o = 6'd29; end
-				case_data30 : begin Data_Bin_o = 6'd30; end
-				case_data31 : begin Data_Bin_o = 6'd31; end
-				case_data32 : begin Data_Bin_o = 6'd32; end
-				case_data33 : begin Data_Bin_o = 6'd33; end
-				case_data34 : begin Data_Bin_o = 6'd34; end
-				case_data35 : begin Data_Bin_o = 6'd35; end
-				case_data36 : begin Data_Bin_o = 6'd36; end
-				case_data37 : begin Data_Bin_o = 6'd37; end
-				case_data38 : begin Data_Bin_o = 6'd38; end
-				case_data39 : begin Data_Bin_o = 6'd39; end
-				case_data40 : begin Data_Bin_o = 6'd40; end
-				case_data41 : begin Data_Bin_o = 6'd41; end
-				case_data42 : begin Data_Bin_o = 6'd42; end
-				case_data43 : begin Data_Bin_o = 6'd43; end
-				case_data44 : begin Data_Bin_o = 6'd44; end
-				case_data45 : begin Data_Bin_o = 6'd45; end
-				case_data46 : begin Data_Bin_o = 6'd46; end
-				case_data47 : begin Data_Bin_o = 6'd47; end
-				case_data48 : begin Data_Bin_o = 6'd48; end
-				case_data49 : begin Data_Bin_o = 6'd49; end
-				case_data50 : begin Data_Bin_o = 6'd50; end
-				case_data51 : begin Data_Bin_o = 6'd51; end
-				case_data52 : begin Data_Bin_o = 6'd52; end
-				case_data53 : begin Data_Bin_o = 6'd53; end
-				case_data54 : begin Data_Bin_o = 6'd54; end
-				default    : begin Data_Bin_o  = 6'd55; end
-	   endcase
-end
-`endif
 endmodule

@@ -1,0 +1,47 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_22132_archive_1.a",
+            "objects": [
+                [
+                    "kar0c_d.o",
+                    472503
+                ]
+            ],
+            "size": 472503
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "Round_Sgf_Dec": {},
+        "FSM_Add_Subtract": {},
+        "Multiplexer_AC": {},
+        "Multiplexer_AC_0000": {},
+        "Multiplexer_AC_0001": {},
+        "Mux_3x1": {},
+        "Testbench_FPU_Add_Subt": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_3x1_0000": {},
+        "Rotate_Mux_Array_0000": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7109,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "kar0c_d": {
+            "mod": "Testbench_FPU_Add_Subt",
+            "out": "kar0c_d.o",
+            "archive": "archive.3/_22132_archive_1.a",
+            "bytes": 472503,
+            "mode": 4,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {}
+}

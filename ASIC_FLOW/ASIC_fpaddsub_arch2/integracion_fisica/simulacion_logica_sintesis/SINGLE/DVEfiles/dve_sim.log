@@ -1,79 +1,36 @@
-20:20:15    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE -pid 29318 -toolin /tmp/vcs_20161019022012_29317_jsequeira..stdin -toolout /tmp/vcs_20161019022012_29317_jsequeira..stdout  
-20:20:15    17 -->                                                                 [tcl] set ucliGUI::state
-20:20:15    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
-20:20:16    19 -->                                                                         [tcl] gui_update_simulator_buttons
-20:20:17    20 -->                                                                             [tcl] set ucliGUI::state
-20:20:17    21 -->                                                                                 [tcl] ucliCore::getToolPID
-20:20:17    22 -->                                                                                     [tcl] synopsys::env hasTB
-20:20:17    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
-20:20:17    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
-20:20:17    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
-20:20:17    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
-20:20:17    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
-20:20:17    28 --> ...              [tcl] set ::dve_fid VPD0
-20:20:17    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
-20:20:17    30 --> ...                      [tcl] ucliCore::getToolPID
-20:20:17    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpmJMZUH
-20:20:17    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.29318}
-20:20:17    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.29318}
-20:20:17    34 --> ...                                      [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt
-20:20:17    35 --> ...                                          [tcl] config endofsim noexit
-20:20:17    36 --> ...                                              [tcl] config onfail enable all
-20:20:17    37 --> ...                                                  [tcl] config syscaddplainmembers
-20:20:17    38 --> ...                                                      [tcl] config syscaddsourcenames
-20:20:17    39 --> ...                                                          [tcl] config syscaddstructtypes
-20:20:17    40 --> ...                                                              [tcl] synopsys::listing -disable
-20:20:47    41 --> ...                                                                  [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut.Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_11_
-20:20:58    42 --> ...                                                                      [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut
-20:22:12    43 --> ...                                                                          [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut} -scope "." -depth 1 -fid VPD0
-20:22:24    44 --> ...                                                                              [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister
-20:22:26    45 --> ...                                                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister} -scope "." -depth 1 -fid VPD0
-20:22:39    46 --> ...                                                                                      [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_MuxXY
-20:22:40    47 --> ...                                                                                          [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_result_sign_bit_U3
-20:23:03    48 --> ...                                                                                              [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {hexadecimal } -list {{D[30:0]} }
-20:23:04    49 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {hexadecimal } -list {{Q[30:0]} }
-20:23:05    50 --> ...  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {binary } -list {clk }
-20:23:08    51 --> ...      [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {binary } -list {rst }
-20:23:14    52 --> ...          [tcl] synopsys::run -relative 200000
-20:23:14    53 --> ...              [tcl] set ucliGUI::state
-20:23:14    54 --> ...                  [tcl] set ucliGUI::state
-20:23:14    55 --> ...                      [tcl] set ucliGUI::state
-20:23:14    56 --> ...                          [tcl] set ucliGUI::state
-20:23:14    57 --> ...                              [tcl] set ucliGUI::state
-20:23:14    58 --> ...                                  [tcl] catch {senv activeDomain} dveMisc::result 
-20:23:14    59 --> ...                                      [tcl] set dveMisc::result
-20:23:14    60 --> ...                                          [tcl] gui_update_simulator_buttons
-20:23:14    61 --> ...                                              [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {hexadecimal hexadecimal binary binary } -list {{D[30:0]} {Q[30:0]} clk rst }
-20:23:21    62 --> ...                                                  [tcl] synopsys::run -relative 1800000
-20:23:21    63 --> ...                                                      [tcl] set ucliGUI::state
-20:23:21    64 --> ...                                                          [tcl] set ucliGUI::state
-20:23:21    65 --> ...                                                              [tcl] set ucliGUI::state
-20:23:21    66 --> ...                                                                  [tcl] set ucliGUI::state
-20:23:21    67 --> ...                                                                      [tcl] set ucliGUI::state
-20:23:21    68 --> ...                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
-20:23:21    69 --> ...                                                                              [tcl] set dveMisc::result
-20:23:21    70 --> ...                                                                                  [tcl] gui_update_simulator_buttons
-20:23:21    71 --> ...                                                                                      [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {hexadecimal hexadecimal binary binary } -list {{D[30:0]} {Q[30:0]} clk rst }
-20:23:29    72 --> ...                                                                                          [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {binary } -list {load }
-20:23:55    73 --> ...                                                                                              [tcl] synopsys::run
-20:23:55    74 --> ...                                                                                                  [tcl] set ucliGUI::state
-20:23:55    75 --> ...  [tcl] set ucliGUI::state
-20:23:55    76 --> ...      [tcl] gui_update_simulator_buttons
-20:23:58    77 --> ...          [tcl] set synopsys::env(time) 85495000
-20:24:01    78 --> ...              [tcl] set synopsys::env(time) 166805000
-20:24:01    79 --> ...                  [tcl] set ucliGUI::state
-20:24:01    80 --> ...                      [tcl] set ucliGUI::state
-20:24:01    81 --> ...                          [tcl] catch {senv activeDomain} dveMisc::result 
-20:24:01    82 --> ...                              [tcl] set dveMisc::result
-20:24:01    83 --> ...                                  [tcl] gui_update_simulator_buttons
-20:24:01    84 --> ...                                      [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Add_Subt.uut.Oper_Start_in_module_mRegister -radix {hexadecimal hexadecimal binary binary binary } -list {{D[30:0]} {Q[30:0]} clk rst load }
-20:49:25    85 --> ...                                          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
-20:49:25    86 --> ...                                              [tcl] synopsys::finish
-20:49:25    87 --> ...                                                  [tcl] set ucliGUI::state
-20:49:25    88 --> ...                                                      [tcl] set ucliGUI::state
-20:49:25    89 --> ...                                                          [tcl] catch {senv activeDomain} dveMisc::result 
-20:49:25    90 --> ...                                                              [tcl] set dveMisc::result
-20:49:25    91 --> ...                                                                  [tcl] gui_update_simulator_buttons
-20:49:25    92 --> ...                                                                      [tcl] catch {senv activeDomain} dveMisc::result 
-20:49:25    93 --> ...                                                                          [tcl] set dveMisc::result
-20:49:25    94 --> ...                                                                              [tcl] ucli_exit
+11:02:54    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE -pid 4615 -toolin /tmp/vcs_20161020170250_4614_jsequeira..stdin -toolout /tmp/vcs_20161020170250_4614_jsequeira..stdout  
+11:02:54    17 -->                                                                 [tcl] set ucliGUI::state
+11:02:54    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
+11:02:54    19 -->                                                                         [tcl] gui_update_simulator_buttons
+11:02:55    20 -->                                                                             [tcl] set ucliGUI::state
+11:02:55    21 -->                                                                                 [tcl] ucliCore::getToolPID
+11:02:55    22 -->                                                                                     [tcl] synopsys::env hasTB
+11:02:55    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
+11:02:55    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
+11:02:55    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
+11:02:55    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
+11:02:55    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
+11:02:55    28 --> ...              [tcl] set ::dve_fid VPD0
+11:02:55    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
+11:02:55    30 --> ...                      [tcl] ucliCore::getToolPID
+11:02:55    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpoxkAgQ
+11:02:55    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.4615}
+11:02:55    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.4615}
+11:02:55    34 --> ...                                      [tcl] dveMisc::vbusExpand Testbench_FPU_Add_Subt
+11:02:55    35 --> ...                                          [tcl] config endofsim noexit
+11:02:55    36 --> ...                                              [tcl] config onfail enable all
+11:02:55    37 --> ...                                                  [tcl] config syscaddplainmembers
+11:02:55    38 --> ...                                                      [tcl] config syscaddsourcenames
+11:02:55    39 --> ...                                                          [tcl] config syscaddstructtypes
+11:02:55    40 --> ...                                                              [tcl] synopsys::listing -disable
+11:03:09    41 --> ...                                                                  [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt} -scope "." -depth 1 -fid VPD0
+11:03:09    42 --> ...                                                                      [tcl] synopsys::dump -add {Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.Array_IN_2 } -aggregates  -fid VPD0
+11:03:11    43 --> ...                                                                          [tcl] synopsys::run
+11:03:11    44 --> ...                                                                              [tcl] set ucliGUI::state
+11:03:11    45 --> ...                                                                                  [tcl] set ucliGUI::state
+11:03:11    46 --> ...                                                                                      [tcl] gui_update_simulator_buttons
+11:03:12    47 --> ...                                                                                          [tcl] set ucliGUI::state
+11:03:12    48 --> ...                                                                                              [tcl] set ucliGUI::state
+11:03:12    49 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+11:03:12    50 --> ...  [tcl] set dveMisc::result
+11:03:12    51 --> ...      [tcl] gui_update_simulator_buttons

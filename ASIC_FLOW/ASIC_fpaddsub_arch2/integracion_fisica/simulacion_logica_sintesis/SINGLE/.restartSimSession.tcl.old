@@ -1,14 +1,14 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Tue Oct 18 20:12:07 2016
+# Saved on Wed Oct 19 20:27:27 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: Testbench_FPU_Add_Subt
-#   Wave.1: 5 signals
-#   Group count = 1
-#   Group mRegister signal count = 5
+#   Wave.1: 41 signals
+#   Group count = 2
+#   Group Testbench_FPU_Add_Subt signal count = 25
 # End_DVE_Session_Save_Info
 
 # DVE version: K-2015.09-SP2-3_Full64
@@ -42,14 +42,14 @@ set Console.1 Console.1
 gui_update_layout -id ${Console.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set HSPane.1 HSPane.1
 set Hier.1 Hier.1
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 817} {child_hier_coltype 543} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 818} {child_hier_coltype 544} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 DLPane.1
 set Data.1 Data.1
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 549} {child_data_colvalue 370} {child_data_coltype 425} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 555} {child_data_colvalue 376} {child_data_coltype 431} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Source.1 Source.1
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set Wave.1 Wave.1
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 394} {child_wave_right 964} {child_wave_colname 264} {child_wave_colvalue 126} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 424} {child_wave_right 936} {child_wave_colname 239} {child_wave_colvalue 181} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
@@ -76,13 +76,38 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
+gui_load_child_values {Testbench_FPU_Add_Subt}
+gui_load_child_values {Testbench_FPU_Add_Subt.uut.Oper_Start_in_module}
 
 
-set _session_group_2 mRegister
+set _session_group_2 Testbench_FPU_Add_Subt
 gui_sg_create "$_session_group_2"
-set mRegister "$_session_group_2"
+set Testbench_FPU_Add_Subt "$_session_group_2"
 
-gui_sg_addsignal -group "$_session_group_2" { Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.rst Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.clk Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.load Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.D Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q }
+gui_sg_addsignal -group "$_session_group_2" { Testbench_FPU_Add_Subt.EW Testbench_FPU_Add_Subt.contador Testbench_FPU_Add_Subt.Array_IN_2 Testbench_FPU_Add_Subt.SW Testbench_FPU_Add_Subt.underflow_flag Testbench_FPU_Add_Subt.FileSaveData Testbench_FPU_Add_Subt.ready Testbench_FPU_Add_Subt.SWR Testbench_FPU_Add_Subt.ack_FSM Testbench_FPU_Add_Subt.PERIOD Testbench_FPU_Add_Subt.Array_IN Testbench_FPU_Add_Subt.add_subt Testbench_FPU_Add_Subt.EWR Testbench_FPU_Add_Subt.beg_FSM Testbench_FPU_Add_Subt.final_result_ieee Testbench_FPU_Add_Subt.W Testbench_FPU_Add_Subt.clk Testbench_FPU_Add_Subt.Data_X Testbench_FPU_Add_Subt.r_mode Testbench_FPU_Add_Subt.Data_Y Testbench_FPU_Add_Subt.Recept Testbench_FPU_Add_Subt.overflow_flag Testbench_FPU_Add_Subt.Cont_CLK Testbench_FPU_Add_Subt.rst }
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EW}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SW}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.SWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.PERIOD}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.EWR}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.W}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.W}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.Recept}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.Recept}
+gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Add_Subt.Cont_CLK}
+gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Add_Subt.Cont_CLK}
+
+set _session_group_3 $_session_group_2|
+append _session_group_3 Oper_Start_in_module
+gui_sg_create "$_session_group_3"
+set Testbench_FPU_Add_Subt|Oper_Start_in_module "$_session_group_3"
+
+gui_sg_addsignal -group "$_session_group_3" { Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.load_b_i Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.eqXY Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.intDX Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.intDY Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.sign_result Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.real_op_o Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.intAS Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.n1 Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.clk Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.zero_flag_o Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.DmP_o Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.DMP_o Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.intm Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.intM Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.sign_final_result_o Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.gtXY Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.rst }
 
 # Global: Highlighting
 
@@ -111,16 +136,19 @@ gui_show_window -window ${Hier.1}
 gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
 gui_list_set_filter -id ${Hier.1} -text {*}
 gui_change_design -id ${Hier.1} -design Sim
-gui_view_scroll -id ${Hier.1} -vertical -set 809
+catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt}
+catch {gui_list_expand -id ${Hier.1} Testbench_FPU_Add_Subt.uut}
+catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Add_Subt.uut.Oper_Start_in_module}}
+gui_view_scroll -id ${Hier.1} -vertical -set 660
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister}
+gui_list_show_data -id ${Data.1} {Testbench_FPU_Add_Subt.uut.Oper_Start_in_module}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
-gui_view_scroll -id ${Hier.1} -vertical -set 809
+gui_view_scroll -id ${Hier.1} -vertical -set 660
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Source 'Source.1'
@@ -138,10 +166,9 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 172676479 175395839
-gui_list_add_group -id ${Wave.1} -after {New Group} {mRegister}
-gui_list_expand -id ${Wave.1} Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q
-gui_list_select -id ${Wave.1} {Testbench_FPU_Add_Subt.uut.Oper_Start_in_module.mRegister.Q }
+gui_wv_zoom_timerange -id ${Wave.1} 174034847 174035153
+gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Add_Subt}
+gui_list_add_group -id ${Wave.1}  -after Testbench_FPU_Add_Subt {Testbench_FPU_Add_Subt|Oper_Start_in_module}
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -157,9 +184,9 @@ if { $groupExD } {
 }
 gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Wave.1} -text {*}
-gui_list_set_insertion_bar  -id ${Wave.1} -group mRegister  -position in
+gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_FPU_Add_Subt  -position in
 
-gui_view_scroll -id ${Wave.1} -vertical -set 350
+gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane

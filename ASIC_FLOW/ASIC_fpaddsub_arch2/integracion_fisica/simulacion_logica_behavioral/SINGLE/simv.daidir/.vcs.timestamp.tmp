@@ -1,7 +1,8 @@
 0 
-38
+39
 +cli+4
-+define+SINGLE
++define+FRANCIS_LZD=1
++define+SINGLE=1
 +itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 +lint=all
 +memcbk
@@ -51,9 +52,9 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64
 SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/
-SSH_TTY=/dev/pts/57
-SSH_CONNECTION=172.21.8.215 40252 172.21.16.5 22
-SSH_CLIENT=172.21.8.215 40252 22
+SSH_TTY=/dev/pts/62
+SSH_CONNECTION=172.21.8.215 53156 172.21.16.5 22
+SSH_CLIENT=172.21.8.215 53156 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SELINUX_USE_CURRENT_RANGE=
 SELINUX_ROLE_REQUESTED=
@@ -84,29 +85,29 @@ COLORTERM=gnome-terminal
 0
 28
 1476074623 Testbench_FPU_Add_Subt.v
-1476078455 ../../front_end/source/xor_tri.v
+1476724424 ../../front_end/source/xor_tri.v
 1476133519 ../../front_end/source/Comparators.v
 1476408215 ../../front_end/source/Barrel_shifter.v
 1475945806 ../../front_end/source/Comparator.v
 1476133519 ../../front_end/source/Tenth_Phase.v
-1475945806 ../../front_end/source/Priority_Codec_32.v
-1475945806 ../../front_end/source/Add_Subt.v
+1476914452 ../../front_end/source/Priority_Codec_32.v
+1476921145 ../../front_end/source/Add_Subt.v
 1476223306 ../../front_end/source/Rotate_Mux_Array.v
 1475945806 ../../front_end/source/Comparator_Less.v
-1475945806 ../../front_end/source/Priority_Codec_64.v
-1476133519 ../../front_end/source/Oper_Start_In.v
+1476756844 ../../front_end/source/Priority_Codec_64.v
+1476918536 ../../front_end/source/Oper_Start_In.v
 1476050516 ../../front_end/source/sgn_result.v
 1476408218 ../../front_end/source/Mux_Array.v
-1475945806 ../../front_end/source/FSM_Add_Subtract.v
+1476834848 ../../front_end/source/FSM_Add_Subtract.v
 1475945806 ../../front_end/source/Mux_3x1.v
-1475945806 ../../front_end/source/add_sub_carry_out.v
+1476912895 ../../front_end/source/add_sub_carry_out.v
 1475945806 ../../front_end/source/Greater_Comparator.v
 1475945806 ../../front_end/source/Multiplexer_AC.v
 1475945806 ../../front_end/source/Round_Sgf_Dec.v
 1476133519 ../../front_end/source/exp_operation.v
 1475945806 ../../front_end/source/RegisterAdd.v
-1476133519 ../../front_end/source/FPU_Add_Subtract_Function.v
-1476133519 ../../front_end/source/LZD.v
+1476916566 ../../front_end/source/FPU_Add_Subtract_Function.v
+1476758829 ../../front_end/source/LZD.v
 1476316426 ../../front_end/source/shift_mux.v
 1475945806 ../../front_end/source/MultiplexTxT.v
 1476078490 file_list

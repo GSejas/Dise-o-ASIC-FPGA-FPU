@@ -1,0 +1,855 @@
+{
+    "Modules": {
+        "NAND3XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OAI221XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OAI22X1TS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "AO22XLTS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "AOI22X1TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "...MASTER...": {},
+        "AOI211XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5": {
+            "Compiled Times": 3,
+            "Compiled": "Yes"
+        },
+        "Testbench_FPU_Add_Subt": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "CLKBUFX2TS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "AOI2BB2XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "INVX2TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "AO21XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "AOI222XLTS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "NOR4XLTS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "AND4X1TS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "AOI32X1TS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "AFHCONX2TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "AOI21X1TS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "NAND2BXLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OR2X2TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "AOI2BB1XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "AOI221XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "AOI31XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "MX2X1TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "NOR3BXLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OAI21XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "MXI2XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "NAND2XLTS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "NAND4XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "XNOR2X1TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "XOR2XLTS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "OAI31X1TS": {
+            "Compiled Times": 7,
+            "Compiled": "Yes"
+        },
+        "NAND3BX1TS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "NOR2XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "NAND4BXLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "NAND4BBX1TS": {
+            "Compiled Times": 8,
+            "Compiled": "Yes"
+        },
+        "NOR3XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "NOR2BX1TS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "OR3X1TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OR4X2TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OAI211XLTS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "OAI32X1TS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "OAI2BB1X1TS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "OAI2BB2XLTS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "OA21XLTS": {
+            "Compiled Times": 6,
+            "Compiled": "Yes"
+        },
+        "OA22X1TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "CLKAND2X2TS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "ADDFX1TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "CMPR32X2TS": {
+            "Compiled Times": 9,
+            "Compiled": "Yes"
+        },
+        "AFHCINX4TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "ACHCONX2TS": {
+            "Compiled Times": 5,
+            "Compiled": "Yes"
+        },
+        "DFFRXLTS": {
+            "Compiled Times": 8,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "cVum8_d": {
+            "out": "cVum8_d.o",
+            "mod": "AFHCONX2TS",
+            "bytes": 12685,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "fJQL4_d": {
+            "out": "fJQL4_d.o",
+            "mod": "AOI222XLTS",
+            "bytes": 28178,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "ikx7B_d": {
+            "out": "ikx7B_d.o",
+            "mod": "OR3X1TS",
+            "bytes": 7787,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "EKMET_d": {
+            "out": "EKMET_d.o",
+            "mod": "CLKBUFX2TS",
+            "bytes": 6064,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "amcQw_d": {
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 7109,
+            "checksum": 4294967295,
+            "mode": 4
+        },
+        "gjE4d_d": {
+            "out": "gjE4d_d.o",
+            "mod": "ACHCONX2TS",
+            "bytes": 10275,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "FsSad_d": {
+            "out": "FsSad_d.o",
+            "mod": "FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5",
+            "bytes": 150432,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "An0FV_d": {
+            "out": "An0FV_d.o",
+            "mod": "NAND4BBX1TS",
+            "bytes": 8547,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "qwLJd_d": {
+            "out": "qwLJd_d.o",
+            "mod": "AOI22X1TS",
+            "bytes": 11276,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "bYNep_d": {
+            "out": "bYNep_d.o",
+            "mod": "AOI32X1TS",
+            "bytes": 16634,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "P0U5z_d": {
+            "out": "P0U5z_d.o",
+            "mod": "NOR4XLTS",
+            "bytes": 8100,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "kar0c_d": {
+            "out": "kar0c_d.o",
+            "mod": "Testbench_FPU_Add_Subt",
+            "bytes": 17664,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "U58Kd_d": {
+            "out": "U58Kd_d.o",
+            "mod": "AO21XLTS",
+            "bytes": 8598,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "vphTK_d": {
+            "out": "vphTK_d.o",
+            "mod": "INVX2TS",
+            "bytes": 6032,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "azn5L_d": {
+            "out": "azn5L_d.o",
+            "mod": "OA22X1TS",
+            "bytes": 11343,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "znNGb_d": {
+            "out": "znNGb_d.o",
+            "mod": "AOI2BB1XLTS",
+            "bytes": 8530,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "LR0dg_d": {
+            "out": "LR0dg_d.o",
+            "mod": "AND4X1TS",
+            "bytes": 8216,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "HG8j1_d": {
+            "out": "HG8j1_d.o",
+            "mod": "OAI2BB2XLTS",
+            "bytes": 11354,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "f3qvy_d": {
+            "out": "f3qvy_d.o",
+            "mod": "OAI32X1TS",
+            "bytes": 16492,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "nzxkZ_d": {
+            "out": "nzxkZ_d.o",
+            "mod": "AOI21X1TS",
+            "bytes": 8639,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "vgxzN_d": {
+            "out": "vgxzN_d.o",
+            "mod": "AOI31XLTS",
+            "bytes": 10368,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "rj8ev_d": {
+            "out": "rj8ev_d.o",
+            "mod": "MXI2XLTS",
+            "bytes": 9232,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "r2uty_d": {
+            "out": "r2uty_d.o",
+            "mod": "AOI211XLTS",
+            "bytes": 9864,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "N03LN_d": {
+            "out": "N03LN_d.o",
+            "mod": "AOI221XLTS",
+            "bytes": 14567,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "tmpxG_d": {
+            "out": "tmpxG_d.o",
+            "mod": "NOR3XLTS",
+            "bytes": 7820,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "i1ayL_d": {
+            "out": "i1ayL_d.o",
+            "mod": "CMPR32X2TS",
+            "bytes": 12304,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "pNJDd_d": {
+            "out": "pNJDd_d.o",
+            "mod": "NAND4BXLTS",
+            "bytes": 8283,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "v4TQJ_d": {
+            "out": "v4TQJ_d.o",
+            "mod": "NAND2XLTS",
+            "bytes": 7452,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "vsI84_d": {
+            "out": "vsI84_d.o",
+            "mod": "AOI2BB2XLTS",
+            "bytes": 11301,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "TgI2b_d": {
+            "out": "TgI2b_d.o",
+            "mod": "CLKAND2X2TS",
+            "bytes": 7382,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "h1mxv_d": {
+            "out": "h1mxv_d.o",
+            "mod": "AO22XLTS",
+            "bytes": 11275,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "jfAC3_d": {
+            "out": "jfAC3_d.o",
+            "mod": "NAND3XLTS",
+            "bytes": 7821,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "LjFpg_d": {
+            "out": "LjFpg_d.o",
+            "mod": "MX2X1TS",
+            "bytes": 8861,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "Suv9P_d": {
+            "out": "Suv9P_d.o",
+            "mod": "NAND4XLTS",
+            "bytes": 8097,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "N2WPb_d": {
+            "out": "N2WPb_d.o",
+            "mod": "NOR2XLTS",
+            "bytes": 7443,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "H7A32_d": {
+            "out": "H7A32_d.o",
+            "mod": "OR4X2TS",
+            "bytes": 8155,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "q2fPg_d": {
+            "out": "q2fPg_d.o",
+            "mod": "NOR3BXLTS",
+            "bytes": 8256,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "kfTD2_d": {
+            "out": "kfTD2_d.o",
+            "mod": "NAND2BXLTS",
+            "bytes": 7862,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "S4pTH_d": {
+            "out": "S4pTH_d.o",
+            "mod": "NOR2BX1TS",
+            "bytes": 7861,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "eqgSr_d": {
+            "out": "eqgSr_d.o",
+            "mod": "AFHCINX4TS",
+            "bytes": 12340,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "ukewC_d": {
+            "out": "ukewC_d.o",
+            "mod": "NAND3BX1TS",
+            "bytes": 8167,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "MRVcp_d": {
+            "out": "MRVcp_d.o",
+            "mod": "OR2X2TS",
+            "bytes": 7410,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "eKq3b_d": {
+            "out": "eKq3b_d.o",
+            "mod": "OAI21XLTS",
+            "bytes": 8719,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "tq4g6_d": {
+            "out": "tq4g6_d.o",
+            "mod": "OAI211XLTS",
+            "bytes": 9934,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "sJDFZ_d": {
+            "out": "sJDFZ_d.o",
+            "mod": "ADDFX1TS",
+            "bytes": 11997,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "bqZmw_d": {
+            "out": "bqZmw_d.o",
+            "mod": "OAI22X1TS",
+            "bytes": 11405,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "Yxwba_d": {
+            "out": "Yxwba_d.o",
+            "mod": "XOR2XLTS",
+            "bytes": 7779,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "yIM47_d": {
+            "out": "yIM47_d.o",
+            "mod": "OAI221XLTS",
+            "bytes": 15539,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "E46LR_d": {
+            "out": "E46LR_d.o",
+            "mod": "OAI31X1TS",
+            "bytes": 10575,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "qnwuA_d": {
+            "out": "qnwuA_d.o",
+            "mod": "OAI2BB1X1TS",
+            "bytes": 8687,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "xvYs6_d": {
+            "out": "xvYs6_d.o",
+            "mod": "OA21XLTS",
+            "bytes": 8613,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "ThfAH_d": {
+            "out": "ThfAH_d.o",
+            "mod": "XNOR2X1TS",
+            "bytes": 7852,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        },
+        "GPEPC_d": {
+            "out": "GPEPC_d.o",
+            "mod": "DFFRXLTS",
+            "bytes": 18628,
+            "checksum": 4294967295,
+            "mode": 4,
+            "archive": "archive.16/_4063_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.16/_4063_archive_1.a",
+            "objects": [
+                [
+                    "FsSad_d.o",
+                    150432
+                ],
+                [
+                    "kar0c_d.o",
+                    17664
+                ],
+                [
+                    "vphTK_d.o",
+                    6032
+                ],
+                [
+                    "LR0dg_d.o",
+                    8216
+                ],
+                [
+                    "nzxkZ_d.o",
+                    8639
+                ],
+                [
+                    "r2uty_d.o",
+                    9864
+                ],
+                [
+                    "qwLJd_d.o",
+                    11276
+                ],
+                [
+                    "N03LN_d.o",
+                    14567
+                ],
+                [
+                    "fJQL4_d.o",
+                    28178
+                ],
+                [
+                    "vgxzN_d.o",
+                    10368
+                ],
+                [
+                    "bYNep_d.o",
+                    16634
+                ],
+                [
+                    "znNGb_d.o",
+                    8530
+                ],
+                [
+                    "vsI84_d.o",
+                    11301
+                ],
+                [
+                    "U58Kd_d.o",
+                    8598
+                ],
+                [
+                    "h1mxv_d.o",
+                    11275
+                ],
+                [
+                    "LjFpg_d.o",
+                    8861
+                ],
+                [
+                    "rj8ev_d.o",
+                    9232
+                ],
+                [
+                    "v4TQJ_d.o",
+                    7452
+                ],
+                [
+                    "jfAC3_d.o",
+                    7821
+                ],
+                [
+                    "Suv9P_d.o",
+                    8097
+                ],
+                [
+                    "kfTD2_d.o",
+                    7862
+                ],
+                [
+                    "ukewC_d.o",
+                    8167
+                ],
+                [
+                    "pNJDd_d.o",
+                    8283
+                ],
+                [
+                    "An0FV_d.o",
+                    8547
+                ],
+                [
+                    "N2WPb_d.o",
+                    7443
+                ],
+                [
+                    "tmpxG_d.o",
+                    7820
+                ],
+                [
+                    "P0U5z_d.o",
+                    8100
+                ],
+                [
+                    "S4pTH_d.o",
+                    7861
+                ],
+                [
+                    "q2fPg_d.o",
+                    8256
+                ],
+                [
+                    "MRVcp_d.o",
+                    7410
+                ],
+                [
+                    "ikx7B_d.o",
+                    7787
+                ],
+                [
+                    "H7A32_d.o",
+                    8155
+                ],
+                [
+                    "eKq3b_d.o",
+                    8719
+                ],
+                [
+                    "tq4g6_d.o",
+                    9934
+                ],
+                [
+                    "bqZmw_d.o",
+                    11405
+                ],
+                [
+                    "yIM47_d.o",
+                    15539
+                ],
+                [
+                    "E46LR_d.o",
+                    10575
+                ],
+                [
+                    "f3qvy_d.o",
+                    16492
+                ],
+                [
+                    "qnwuA_d.o",
+                    8687
+                ],
+                [
+                    "HG8j1_d.o",
+                    11354
+                ],
+                [
+                    "xvYs6_d.o",
+                    8613
+                ],
+                [
+                    "azn5L_d.o",
+                    11343
+                ],
+                [
+                    "Yxwba_d.o",
+                    7779
+                ],
+                [
+                    "ThfAH_d.o",
+                    7852
+                ],
+                [
+                    "EKMET_d.o",
+                    6064
+                ],
+                [
+                    "TgI2b_d.o",
+                    7382
+                ],
+                [
+                    "sJDFZ_d.o",
+                    11997
+                ],
+                [
+                    "i1ayL_d.o",
+                    12304
+                ],
+                [
+                    "eqgSr_d.o",
+                    12340
+                ],
+                [
+                    "cVum8_d.o",
+                    12685
+                ],
+                [
+                    "gjE4d_d.o",
+                    10275
+                ],
+                [
+                    "GPEPC_d.o",
+                    18628
+                ]
+            ],
+            "size": 678695
+        }
+    ]
+}

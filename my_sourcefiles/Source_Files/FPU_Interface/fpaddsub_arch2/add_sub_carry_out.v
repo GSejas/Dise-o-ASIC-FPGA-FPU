@@ -21,7 +21,7 @@
 
 //This module it's different to the add_sub module synthesized
 module add_sub_carry_out
-	# (parameter W = 32)
+		# (parameter W = 32)
 	(
 		input wire op_mode,
 		input wire [W-1:0] Data_A,

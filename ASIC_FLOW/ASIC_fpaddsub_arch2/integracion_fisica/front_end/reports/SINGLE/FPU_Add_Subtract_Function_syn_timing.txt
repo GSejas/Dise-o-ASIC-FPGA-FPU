@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Tue Oct 18 20:31:24 2016
+Date   : Thu Oct 20 15:59:03 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Barrel_Shifter_module/Output_Reg/Q_reg_1_
+  Startpoint: ASRegister_Q_reg_0_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_25_
+  Endpoint: Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -23,94 +23,57 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  Barrel_Shifter_module/Output_Reg/Q_reg_1_/CK (DFFRX4TS)
-                                                          0.00       1.00 r
-  Barrel_Shifter_module/Output_Reg/Q_reg_1_/Q (DFFRX4TS)
-                                                          0.87       1.87 f
-  Barrel_Shifter_module/Output_Reg/Q[1] (RegisterAdd_W26_2)
-                                                          0.00       1.87 f
-  Barrel_Shifter_module/N_mant_o[1] (Barrel_Shifter_SWR26_EWR5)
-                                                          0.00       1.87 f
-  U57/Y (NOR2BX4TS)                                       0.19       2.06 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/A[1] (add_sub_carry_out_W26_DW01_sub_0)
-                                                          0.00       2.06 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_1/CO (ADDFHX4TS)
-                                                          0.46       2.51 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U32/Y (NAND2X2TS)     0.12       2.64 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2/Y (NAND3X4TS)      0.11       2.75 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U33/Y (NAND2X1TS)     0.14       2.89 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U12/Y (NAND3X2TS)     0.12       3.01 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_4/CO (ADDFHX2TS)
-                                                          0.29       3.30 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_5/CO (ADDFHX2TS)
-                                                          0.29       3.59 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_6/CO (CMPR32X2TS)
-                                                          0.46       4.05 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_7/CO (ADDFHX2TS)
-                                                          0.30       4.35 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_8/CO (ADDFHX2TS)
-                                                          0.32       4.67 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U24/Y (NAND2X2TS)     0.13       4.80 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U22/Y (NAND3X4TS)     0.13       4.93 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U31/Y (NAND2X1TS)     0.14       5.06 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U16/Y (NAND3X2TS)     0.15       5.21 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U45/Y (NAND2X1TS)     0.16       5.37 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U34/Y (NAND3X2TS)     0.13       5.50 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U40/Y (NAND2X1TS)     0.14       5.63 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U14/Y (AND2X4TS)      0.20       5.84 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U6/Y (NAND2X4TS)      0.07       5.91 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U42/Y (NAND2X1TS)     0.13       6.04 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U35/Y (NAND3X2TS)     0.16       6.19 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U11/Y (NAND2X2TS)     0.13       6.32 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U10/Y (NAND3X2TS)     0.13       6.45 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_15/CO (ADDFHX2TS)
-                                                          0.29       6.75 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_16/CO (ADDFHX2TS)
-                                                          0.29       7.03 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_17/CO (ADDFHX2TS)
-                                                          0.29       7.32 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_18/CO (ADDFHX2TS)
-                                                          0.32       7.64 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U9/Y (NAND2X2TS)      0.13       7.77 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U7/Y (NAND3X4TS)      0.13       7.90 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U20/Y (NAND2X2TS)     0.10       8.00 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U62/Y (NAND2X2TS)     0.10       8.10 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U64/Y (CLKINVX4TS)
-                                                          0.07       8.17 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U63/Y (NAND2X4TS)     0.06       8.23 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U25/Y (NAND2X1TS)     0.10       8.33 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U30/Y (NAND2X1TS)     0.12       8.46 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U29/Y (INVX2TS)       0.09       8.55 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U27/Y (NAND2X2TS)     0.09       8.64 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U26/Y (NAND2X1TS)     0.14       8.78 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U18/Y (NAND3X2TS)     0.13       8.91 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U21/Y (NAND2X1TS)     0.15       9.07 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U54/Y (NAND3X2TS)     0.14       9.21 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_24/CO (ADDFHX2TS)
-                                                          0.29       9.51 f
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/U2_25/S (ADDFHX2TS)
-                                                          0.33       9.83 r
-  Add_Subt_Sgf_module_Sgf_AS_sub_34/DIFF[25] (add_sub_carry_out_W26_DW01_sub_0)
-                                                          0.00       9.83 r
-  U49/Y (AND2X2TS)                                        0.20      10.03 r
-  U39/Y (NOR2X2TS)                                        0.07      10.10 f
-  U169/Y (OAI2BB2X1TS)                                    0.12      10.22 r
-  Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_25_/D (DFFRX1TS)
-                                                          0.00      10.22 r
-  data arrival time                                                 10.22
+  ASRegister_Q_reg_0_/CK (DFFRXLTS)                       0.00       1.00 r
+  ASRegister_Q_reg_0_/Q (DFFRXLTS)                        0.97       1.97 f
+  U1311/Y (XNOR2X1TS)                                     0.31       2.28 r
+  U1312/Y (XOR2X1TS)                                      0.32       2.59 r
+  U1298/Y (NOR2BX2TS)                                     0.43       3.03 r
+  U1314/Y (BUFX3TS)                                       0.38       3.40 r
+  U1337/Y (XOR2X4TS)                                      0.22       3.63 f
+  U1719/CON (AFHCONX2TS)                                  0.19       3.82 r
+  U1016/Y (NOR2X2TS)                                      0.13       3.95 f
+  U993/CON (AFHCONX2TS)                                   0.18       4.13 r
+  U1108/CO (AFHCINX2TS)                                   0.21       4.34 f
+  U1766/CON (AFHCONX2TS)                                  0.23       4.57 r
+  U1308/CO (AFHCINX2TS)                                   0.19       4.76 f
+  U1118/Y (OAI22X1TS)                                     0.28       5.04 r
+  U1115/CO (AFHCINX2TS)                                   0.25       5.29 f
+  U1767/CON (AFHCONX2TS)                                  0.23       5.53 r
+  U1768/CO (AFHCINX2TS)                                   0.21       5.73 f
+  U1769/CON (AFHCONX2TS)                                  0.23       5.97 r
+  U1121/CO (AFHCINX2TS)                                   0.21       6.17 f
+  U1771/CON (AFHCONX2TS)                                  0.23       6.41 r
+  U1017/CO (AFHCINX2TS)                                   0.21       6.62 f
+  U1770/CON (AFHCONX2TS)                                  0.23       6.85 r
+  U1126/CO (AFHCINX2TS)                                   0.19       7.04 f
+  U1132/Y (OAI22X1TS)                                     0.28       7.32 r
+  U1130/CO (AFHCINX2TS)                                   0.24       7.56 f
+  U1136/Y (OAI22X1TS)                                     0.28       7.83 r
+  U1134/CO (AFHCINX2TS)                                   0.25       8.08 f
+  U1069/Y (OAI22X2TS)                                     0.21       8.29 r
+  U1067/CO (AFHCINX2TS)                                   0.19       8.48 f
+  U1139/Y (OAI22X1TS)                                     0.28       8.76 r
+  U1764/CO (AFHCINX2TS)                                   0.23       8.99 f
+  U976/CO (ADDFHX2TS)                                     0.31       9.30 f
+  U975/CO (ADDFHX1TS)                                     0.37       9.67 f
+  U1279/Y (XOR2XLTS)                                      0.19       9.86 r
+  U1278/Y (MX2X1TS)                                       0.34      10.20 r
+  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRXLTS)
+                                                          0.00      10.20 r
+  data arrival time                                                 10.20
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_25_/CK (DFFRX1TS)
+  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/CK (DFFRXLTS)
                                                           0.00      10.50 r
-  library setup time                                     -0.28      10.22
-  data required time                                                10.22
+  library setup time                                     -0.26      10.24
+  data required time                                                10.24
   --------------------------------------------------------------------------
-  data required time                                                10.22
-  data arrival time                                                -10.22
+  data required time                                                10.24
+  data arrival time                                                -10.20
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.01
+  slack (MET)                                                        0.05
 
 
 1

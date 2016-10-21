@@ -366,7 +366,7 @@ fHsimVpdOptSelGate                 	1
 fHsimVpdOptSkipFuncPorts           	0
 fHsimVpdOptAlways                  	1
 fHsimVpdOptMdbCell                 	0
-fHsimVpdOptPartialMdb              	1
+fHsimVpdOptPartialMdb              	0
 fHsimVpdHilRtl                     	0
 fHsimNoSched0InCell                	1
 fHsimPartialMdb                    	0

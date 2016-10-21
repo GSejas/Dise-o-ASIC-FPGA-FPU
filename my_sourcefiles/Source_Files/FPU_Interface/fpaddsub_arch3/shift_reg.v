@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : shift_reg.v
 //  Created On    : 2016-09-25 00:24:05
-//  Last Modified : 2016-09-25 09:23:28
+//  Last Modified : 2016-10-20 19:49:23
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -32,3 +32,4 @@ module ShiftRegister
       Q <= Q;
 
 endmodule
+

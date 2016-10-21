@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : Oper_Start_In_2_W32
 Version: L-2016.03-SP3
-Date   : Tue Oct 18 20:48:19 2016
+Date   : Wed Oct 19 19:49:19 2016
 ****************************************
 
 
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 152.6763 uW   (92%)
-  Net Switching Power  =  13.0230 uW    (8%)
+  Cell Internal Power  = 150.8765 uW   (92%)
+  Net Switching Power  =  12.6003 uW    (8%)
                          ---------
-Total Dynamic Power    = 165.6994 uW  (100%)
+Total Dynamic Power    = 163.4768 uW  (100%)
 
-Cell Leakage Power     =   4.1147 nW
+Cell Leakage Power     =   3.8918 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.1405        8.2007e-04        2.3494e+03            0.1413  (  85.30%)
+register           0.1404        8.1840e-04        2.3494e+03            0.1412  (  86.40%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  1.2151e-02        1.2203e-02        1.7653e+03        2.4356e-02  (  14.70%)
+combinational  1.0454e-02        1.1782e-02        1.5423e+03        2.2238e-02  (  13.60%)
 --------------------------------------------------------------------------------------------------
-Total              0.1527 mW     1.3023e-02 mW     4.1147e+03 pW         0.1657 mW
+Total              0.1509 mW     1.2600e-02 mW     3.8918e+03 pW         0.1635 mW
 1
