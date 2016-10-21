@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"if\tif_else_statement"
+			],
+			[
+				"case",
+				"case\t: 3bit case "
+			],
+			[
+				"Da",
+				"Data_i"
+			],
+			[
 				"Un",
 				"Underflow_flag"
 			],
@@ -60,10 +72,6 @@
 				"ready_add_subt"
 			],
 			[
-				"if",
-				"if\tif"
-			],
-			[
 				"cas",
 				"case\t: 2bit case "
 			],
@@ -102,10 +110,6 @@
 			[
 				"Ope",
 				"Operand1_W"
-			],
-			[
-				"Da",
-				"Data_X"
 			],
 			[
 				"log",
@@ -264,54 +268,190 @@
 	"buffers":
 	[
 		{
-			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_submodules_syn.tcl",
 			"settings":
 			{
-				"buffer_size": 2931,
+				"buffer_size": 3257,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3/FPU_ADD_Substract_PIPELINED.v",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn_2.tcl~",
 			"settings":
 			{
-				"buffer_size": 24753,
+				"buffer_size": 3678,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/sim_file_list.sh",
+			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Barrel_shifter.v",
 			"settings":
 			{
-				"buffer_size": 207,
+				"buffer_size": 1563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Tenth_Phase.v",
+			"settings":
+			{
+				"buffer_size": 2495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n`timescale 1ns/1ps\n\nmodule tb_Tenth_Phase (); /* this is automatically generated */\n\n  logic rstb;\n  logic srst;\n  logic clk;\n\n  // clock\n  initial begin\n    clk = 0;\n    forever #5 clk = ~clk;\n  end\n\n  // reset\n  initial begin\n    rstb = 0;\n    srst = 0;\n    #20\n    rstb = 1;\n    repeat (5) @(posedge clk);\n    srst = 1;\n    repeat (1) @(posedge clk);\n    srst = 0;\n  end\n\n  // (*NOTE*) replace reset, clock\n\n  parameter W  = 32;\n  parameter EW = 8;\n  parameter SW = 23;\n\n  logic          rst;\n  logic          load_i;\n  logic          sel_a_i;\n  logic          sel_b_i;\n  logic          sign_i;\n  logic [EW-1:0] exp_ieee_i;\n  logic [SW-1:0] sgf_ieee_i;\n  logic  [W-1:0] final_result_ieee_o;\n\n  Tenth_Phase #(\n      .W(W),\n      .EW(EW),\n      .SW(SW)\n    ) inst_Tenth_Phase (\n      .clk                 (clk),\n      .rst                 (rst),\n      .load_i              (load_i),\n      .sel_a_i             (sel_a_i),\n      .sel_b_i             (sel_b_i),\n      .sign_i              (sign_i),\n      .exp_ieee_i          (exp_ieee_i),\n      .sgf_ieee_i          (sgf_ieee_i),\n      .final_result_ieee_o (final_result_ieee_o)\n    );\n\n  initial begin\n    // do something\n\n    repeat(10)@(posedge clk);\n    $finish;\n  end\n\n  // dump wave\n  initial begin\n    $fsdbDumpfile(\"tb_Tenth_Phase.fsdb\");\n    $fsdbDumpvars(0, \"tb_Tenth_Phase\", \"+mda\");\n  end\n\nendmodule\n",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/TENTH_PHASE/tb_Tenth_Phase.v",
+			"file_size": 1362,
+			"file_write_time": 131212128998009145,
+			"settings":
+			{
+				"buffer_size": 1362,
+				"line_ending": "Unix",
+				"name": "tb_Tenth_Phase.sv",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "\n`timescale 1ns/1ps\n\nmodule tb_Oper_Start_In (); /* this is automatically generated */\n\n  parameter PERIOD = 10;\n  reg clk;\n  reg rst;\n\n  // clock\n  initial begin\n    clk = 0;\n    forever #5 clk = ~clk;\n  end\n\n  // reset\n  initial begin\n    rst = 0;\n\n    #6\n    rst = 1;\n    repeat (6) @(posedge clk);\n    rst = 0;\n  end\n\n  // (*NOTE*) replace reset, clock\n\n  parameter W = 32;\n\n  reg          rst;\n  reg          load_a_i;\n  reg          load_b_i;\n  reg          add_subt_i;\n  reg  [W-1:0] Data_X_i;\n  reg  [W-1:0] Data_Y_i;\n  wire [W-2:0] DMP_o;\n  wire [W-2:0] DmP_o;\n  wire         zero_flag_o;\n  wire         real_op_o;\n  wire         sign_final_result_o;\n\n  Oper_Start_In #(\n      .W(W)\n    ) inst_Oper_Start_In (\n      .clk                 (clk),\n      .rst                 (rst),\n      .load_a_i            (load_a_i),\n      .load_b_i            (load_b_i),\n      .add_subt_i          (add_subt_i),\n      .Data_X_i            (Data_X_i),\n      .Data_Y_i            (Data_Y_i),\n      .DMP_o               (DMP_o),\n      .DmP_o               (DmP_o),\n      .zero_flag_o         (zero_flag_o),\n      .real_op_o           (real_op_o),\n      .sign_final_result_o (sign_final_result_o)\n    );\n\n  reg [W-1:0] Array_IN   [0:((2**PERIOD)-1)];\n  reg [W-1:0] Array_IN_2 [0:((2**PERIOD)-1)];\n  integer contador;\n  integer FileSaveData;\n  integer Cont_CLK;\n  integer Recept;\n\nalways begin\n  #(3*PERIOD/2)\n  @(posedge clk) begin\n    load_a_i = 1;\n    load_b_i = 0;\n  end\n  @(posedge clk) begin\n    Data_X_i = Array_IN[contador];\n    Data_Y_i = Array_IN_2[contador];\n    contador = contador + 1;\n    load_a_i = 1;\n    load_b_i = 1;\n  end\n  @(posedge clk) begin\n    load_a_i = 0;\n    load_b_i = 0;\n  end\n  #(3*PERIOD/2);\nend\n\ninitial begin\n  $readmemh(\"Hexadecimal_A.txt\", Array_IN);\n  $readmemh(\"Hexadecimal_B.txt\", Array_IN_2);\nend\n\n\n  initial begin\n    load_a_i = 1;\n    load_b_i = 1;\n    add_subt_i = 0;\n    contador = 0;\n\n    repeat(10240)@(posedge clk);\n    $finish;\n  end\n\n\nendmodule\n",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/tb_Oper_Start_In.v",
+			"file_size": 1982,
+			"file_write_time": 131212144871187625,
+			"settings":
+			{
+				"buffer_size": 1982,
+				"line_ending": "Unix",
+				"name": "tb_Oper_Start_In.sv",
+				"scratch": true
+			}
+		},
+		{
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/file_list",
+			"settings":
+			{
+				"buffer_size": 85,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v",
+			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
 			"settings":
 			{
-				"buffer_size": 12627,
+				"buffer_size": 5957,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/sim_file_list.sh",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/tb_LZD.v",
 			"settings":
 			{
-				"buffer_size": 195,
+				"buffer_size": 1280,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
+			"settings":
+			{
+				"buffer_size": 5957,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/sim_run.sh",
+			"file": "my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/LZD.v",
 			"settings":
 			{
-				"buffer_size": 141,
+				"buffer_size": 2224,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_64.v",
+			"settings":
+			{
+				"buffer_size": 10103,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn_2.tcl",
+			"settings":
+			{
+				"buffer_size": 4200,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Odd SourceFiles/Greater_Comparator.v",
+			"settings":
+			{
+				"buffer_size": 829,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Add_Subt.v",
+			"settings":
+			{
+				"buffer_size": 2538,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
+			"settings":
+			{
+				"buffer_size": 25624,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/Tenth_Phase_v2.v",
+			"settings":
+			{
+				"buffer_size": 3173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Pipeline_FPADD_sourcefiles/shift_reg.v",
+			"settings":
+			{
+				"buffer_size": 948,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FORMATTER.v",
+			"settings":
+			{
+				"buffer_size": 2230,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/bloody_simruns/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+			"settings":
+			{
+				"buffer_size": 35125,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FSM_input_enable.v",
+			"settings":
+			{
+				"buffer_size": 3526,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -323,10 +463,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 165.0,
-		"last_filter": "Material",
+		"height": 273.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
 			[
 				"Material",
 				"Material Theme: Configuration"
@@ -379,28 +523,42 @@
 	"expanded_folders":
 	[
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/front_end/scripts",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE"
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch3",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2"
 	],
 	"file_history":
 	[
+		"/home/jorge/.config/sublime-text-3/Packages/Verilog Automatic/Default (Linux).sublime-keymap",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/Tenth_Phase_v2.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sim_single_fpsub/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Testbench/Arch2_vector_single_source/testbench_CORDICArch2.v",
+		"/home/jorge/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/home/jorge/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/jorge/.config/sublime-text-3/Packages/User/Verilog.sublime-settings",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/tb_LZD.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/BARREL_SHIFTER/Testbench_Barrel_Shifter.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/LZD.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Oper_Start_In.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/DW_rbsh_inst.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/exp_operation.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/Shifter_DW_combinational.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/DW_shifter_int.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/sim_file_list.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/sim_file_list.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3/FPU_ADD_Substract_PIPELINED.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/ADD_SUB_FUNCIONAL_v1/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/new/Testbench_FPU_Add_Subt.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sim_double_fpaddsub/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sim_single_fpsub/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3/Tenth_Phase_v2.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/shift_mux.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/LZD.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/FPU_Add_Subtract_Function.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3/FORMATTER.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/exp_operation.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Oper_Start_In.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Rotate_Mux_Array.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Tenth_Phase.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparators.v",
@@ -419,7 +577,6 @@
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/sim_file_list.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/sim_run.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPU_Add_Subt.v",
-		"/home/jorge/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/cordic_Arch3/CORDIC_Arch3.v",
 		"/home/jorge/.config/sublime-text-3/Packages/User/HDLProject.sublime-settings",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/xor_tri.v",
@@ -444,7 +601,6 @@
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/shift_mux.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/Rotate_Mux_Array.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/Mux_Array.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/scripts/ASIC_cordic_Arch2_syn.tcl",
 		"/home/jorge/Documents/Karatsuba_FPU/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/counter_d.v",
 		"/home/jorge/Documents/Karatsuba_FPU/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/my_sourcefiles/cordic_jorge/PriorityEncoder_ExtCORDIC.v",
@@ -502,21 +658,7 @@
 		"/home/jorge/Documents/Karatsuba_FPU/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_Arch2.v",
 		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/new/Testbench_FPU_multiplication.v",
 		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/sgn_result.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/imports/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/bloody_simruns/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/rtl/KOA_c_v2.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/source/rtl/KOA_c_v2.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/rtl/KOA_c_v3.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/rtl/RecursiveKOA.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/source/rtl/RecursiveKOA.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/OR_Module.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/shift_mux.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v"
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v"
 	],
 	"find":
 	{
@@ -534,6 +676,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mux_sel_norm_EWR",
+			"b_shifter_one_EWR",
+			"b_shifter_one_SWR",
+			"SHT2_ACTIVE",
+			"rst_int",
+			"intDY",
+			",",
+			"1'b0",
+			"*",
+			"{1'bx}}",
+			"(SWR",
+			",  ",
+			"* 1'bx}",
+			"*1'bx",
+			"bX",
+			"repeat",
+			"X}",
+			"},",
+			"{1",
 			"sign_result",
 			"generate",
 			"zero_flag",
@@ -642,26 +803,7 @@
 			"sign",
 			"%8h",
 			"%23h",
-			"%26h",
-			"%h",
-			"\",",
-			"\")",
-			"\"",
-			"\");",
-			"FileSaveData",
-			"$fwrite(\"",
-			"display",
-			")\n",
-			"add_subt",
-			"Shift_reg_FLAGS_7",
-			"Shift_reg_FLAGS_6",
-			"INPUT_ACTIVE",
-			"ready",
-			"Shift_reg_FLAGS_6",
-			"FLAGS_OR",
-			"Shift_reg_FLAGS",
-			"LZD_raw_val_EWR",
-			"SIGN_FLAG_SHT2"
+			"%26h"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -669,6 +811,18 @@
 		"regex": false,
 		"replace_history":
 		[
+			"b_shifter_one_EWR",
+			"",
+			"1'b0}",
+			"{",
+			"{1'bx}}}",
+			"{(SWR",
+			",",
+			"{1'bx}",
+			"bx",
+			"x",
+			",",
+			"*1",
 			"$DESIGN_NAME",
 			"fpaddsub_arch2_$PRECISION($x)_",
 			"fpaddsub_arch2_$PRECISION($x)",
@@ -784,19 +938,7 @@
 			"DmP_INIT_EWSW",
 			"DMP_EXP_EWSW",
 			"DmP_INIT_W_2",
-			"DMP_INIT_W_2",
-			"DMP_INIT_W.2",
-			"DMP_INIT",
-			"DMP_INIT_W_2",
-			"DMP_INIT",
-			"intDY_W",
-			"intDX_W",
-			"intDX",
-			"LZD_raw_val_EWR",
-			"LZD_raw_val_EW",
-			"Exponent_diff_EW",
-			"Exponent_m_EW",
-			"Exponent_M_EW"
+			"DMP_INIT_W_2"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -807,24 +949,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 15,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl",
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_submodules_syn.tcl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2931,
+						"buffer_size": 3257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1267,
-								1267
+								1999,
+								1999
 							]
 						],
 						"settings":
@@ -832,133 +974,19 @@
 							"syntax": "Packages/TCL/Tcl.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 864.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3/FPU_ADD_Substract_PIPELINED.v",
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn_2.tcl~",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24753,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12168,
-								12168
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Verilog/Verilog.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4545.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/sim_file_list.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 207,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								196,
-								196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12627,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								498,
-								498
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Verilog/Verilog.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 73.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/sim_file_list.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 195,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								184,
-								184
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/sim_run.sh",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 141,
+						"buffer_size": 3678,
 						"regions":
 						{
 						},
@@ -971,13 +999,572 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 528.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Barrel_shifter.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Tenth_Phase.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/TENTH_PHASE/tb_Tenth_Phase.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1362,
+								1362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/tb_Oper_Start_In.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								459,
+								459
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 912.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/file_list",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1104.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/tb_LZD.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1106,
+								1106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2907,
+								2907
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/LZD.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 96.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_64.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4275,
+								4275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 81.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn_2.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1244,
+								1244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TCL/Tcl.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 297.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Odd SourceFiles/Greater_Comparator.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								735,
+								735
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Add_Subt.v",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2538,
+								2538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1104.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14207,
+								14207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 7597.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/Tenth_Phase_v2.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								969,
+								969
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 328.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Pipeline_FPADD_sourcefiles/shift_reg.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								948,
+								948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FORMATTER.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2230,
+								2230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 264.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/bloody_simruns/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35125,
+								35125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1008.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FSM_input_enable.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2609,
+								2609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -985,7 +1572,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 21.0
+		"height": 26.0
 	},
 	"input":
 	{
