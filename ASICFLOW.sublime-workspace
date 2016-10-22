@@ -280,7 +280,7 @@
 			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn_2.tcl~",
 			"settings":
 			{
-				"buffer_size": 3678,
+				"buffer_size": 4200,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -315,13 +315,13 @@
 			}
 		},
 		{
-			"contents": "\n`timescale 1ns/1ps\n\nmodule tb_Oper_Start_In (); /* this is automatically generated */\n\n  parameter PERIOD = 10;\n  reg clk;\n  reg rst;\n\n  // clock\n  initial begin\n    clk = 0;\n    forever #5 clk = ~clk;\n  end\n\n  // reset\n  initial begin\n    rst = 0;\n\n    #6\n    rst = 1;\n    repeat (6) @(posedge clk);\n    rst = 0;\n  end\n\n  // (*NOTE*) replace reset, clock\n\n  parameter W = 32;\n\n  reg          rst;\n  reg          load_a_i;\n  reg          load_b_i;\n  reg          add_subt_i;\n  reg  [W-1:0] Data_X_i;\n  reg  [W-1:0] Data_Y_i;\n  wire [W-2:0] DMP_o;\n  wire [W-2:0] DmP_o;\n  wire         zero_flag_o;\n  wire         real_op_o;\n  wire         sign_final_result_o;\n\n  Oper_Start_In #(\n      .W(W)\n    ) inst_Oper_Start_In (\n      .clk                 (clk),\n      .rst                 (rst),\n      .load_a_i            (load_a_i),\n      .load_b_i            (load_b_i),\n      .add_subt_i          (add_subt_i),\n      .Data_X_i            (Data_X_i),\n      .Data_Y_i            (Data_Y_i),\n      .DMP_o               (DMP_o),\n      .DmP_o               (DmP_o),\n      .zero_flag_o         (zero_flag_o),\n      .real_op_o           (real_op_o),\n      .sign_final_result_o (sign_final_result_o)\n    );\n\n  reg [W-1:0] Array_IN   [0:((2**PERIOD)-1)];\n  reg [W-1:0] Array_IN_2 [0:((2**PERIOD)-1)];\n  integer contador;\n  integer FileSaveData;\n  integer Cont_CLK;\n  integer Recept;\n\nalways begin\n  #(3*PERIOD/2)\n  @(posedge clk) begin\n    load_a_i = 1;\n    load_b_i = 0;\n  end\n  @(posedge clk) begin\n    Data_X_i = Array_IN[contador];\n    Data_Y_i = Array_IN_2[contador];\n    contador = contador + 1;\n    load_a_i = 1;\n    load_b_i = 1;\n  end\n  @(posedge clk) begin\n    load_a_i = 0;\n    load_b_i = 0;\n  end\n  #(3*PERIOD/2);\nend\n\ninitial begin\n  $readmemh(\"Hexadecimal_A.txt\", Array_IN);\n  $readmemh(\"Hexadecimal_B.txt\", Array_IN_2);\nend\n\n\n  initial begin\n    load_a_i = 1;\n    load_b_i = 1;\n    add_subt_i = 0;\n    contador = 0;\n\n    repeat(10240)@(posedge clk);\n    $finish;\n  end\n\n\nendmodule\n",
+			"contents": "\n`timescale 1ns/1ps\n\nmodule tb_Oper_Start_In (); /* this is automatically generated */\n\n  parameter PERIOD = 10;\n  reg clk;\n  reg rst;\n\n  // clock\n  initial begin\n    clk = 0;\n    forever #5 clk = ~clk;\n  end\n\n  // reset\n  initial begin\n    rst = 0;\n\n    #6\n    rst = 1;\n    repeat (6) @(posedge clk);\n    rst = 0;\n  end\n\n  // (*NOTE*) replace reset, clock\n\n  parameter W = 32;\n\n  reg          rst;\n  reg          load_a_i;\n  reg          load_b_i;\n  reg          add_subt_i;\n  reg  [W-1:0] Data_X_i;\n  reg  [W-1:0] Data_Y_i;\n  wire [W-2:0] DMP_o;\n  wire [W-2:0] DmP_o;\n  wire         zero_flag_o;\n  wire         real_op_o;\n  wire         sign_final_result_o;\n`ifdef OPER1\n  Oper_Start_In #(\n      .W(W)\n    ) inst_Oper_Start_In (\n      .clk                 (clk),\n      .rst                 (rst),\n      .load_a_i            (load_a_i),\n      .load_b_i            (load_b_i),\n      .add_subt_i          (add_subt_i),\n      .Data_X_i            (Data_X_i),\n      .Data_Y_i            (Data_Y_i),\n      .DMP_o               (DMP_o),\n      .DmP_o               (DmP_o),\n      .zero_flag_o         (zero_flag_o),\n      .real_op_o           (real_op_o),\n      .sign_final_result_o (sign_final_result_o)\n    );\n`endif\n\n     Oper_Start_In_2_W32_1 inst_Oper_Start_In (\n      .clk                 (clk),\n      .rst                 (rst),\n      .load_b_i            (load_b_i),\n      .intAS               (add_subt_i),\n      .intDX               (Data_X_i),\n      .intDY               (Data_Y_i),\n      .DMP_o               (DMP_o),\n      .DmP_o               (DmP_o),\n      .zero_flag_o         (zero_flag_o),\n      .real_op_o           (real_op_o),\n      .sign_final_result_o (sign_final_result_o)\n    );\n  reg [W-1:0] Array_IN   [0:((2**PERIOD)-1)];\n  reg [W-1:0] Array_IN_2 [0:((2**PERIOD)-1)];\n  integer contador;\n  integer FileSaveData;\n  integer Cont_CLK;\n  integer Recept;\n\nalways begin\n  #(3*PERIOD/2)\n  @(posedge clk) begin\n    load_a_i = 1;\n    load_b_i = 0;\n  end\n  @(posedge clk) begin\n    Data_X_i = Array_IN[contador];\n    Data_Y_i = Array_IN_2[contador];\n    contador = contador + 1;\n    load_a_i = 1;\n    load_b_i = 1;\n  end\n  @(posedge clk) begin\n    load_a_i = 0;\n    load_b_i = 0;\n  end\n  #(3*PERIOD/2);\nend\n\ninitial begin\n  $readmemh(\"Hexadecimal_A.txt\", Array_IN);\n  $readmemh(\"Hexadecimal_B.txt\", Array_IN_2);\nend\n\n\n  initial begin\n    load_a_i = 1;\n    load_b_i = 1;\n    add_subt_i = 0;\n    contador = 0;\n\n    repeat(10240)@(posedge clk);\n    $finish;\n  end\n\n\nendmodule\n",
 			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/tb_Oper_Start_In.v",
-			"file_size": 1982,
-			"file_write_time": 131212144871187625,
+			"file_size": 2485,
+			"file_write_time": 131215023999159600,
 			"settings":
 			{
-				"buffer_size": 1982,
+				"buffer_size": 2485,
 				"line_ending": "Unix",
 				"name": "tb_Oper_Start_In.sv",
 				"scratch": true
@@ -331,7 +331,7 @@
 			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/file_list",
 			"settings":
 			{
-				"buffer_size": 85,
+				"buffer_size": 97,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -340,7 +340,7 @@
 			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
 			"settings":
 			{
-				"buffer_size": 5957,
+				"buffer_size": 5965,
 				"line_ending": "Unix"
 			}
 		},
@@ -356,7 +356,7 @@
 			"file": "my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
 			"settings":
 			{
-				"buffer_size": 5957,
+				"buffer_size": 5965,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -374,7 +374,7 @@
 			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_64.v",
 			"settings":
 			{
-				"buffer_size": 10103,
+				"buffer_size": 4266,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -383,7 +383,7 @@
 			"file": "ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn_2.tcl",
 			"settings":
 			{
-				"buffer_size": 4200,
+				"buffer_size": 4201,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -400,7 +400,7 @@
 			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Add_Subt.v",
 			"settings":
 			{
-				"buffer_size": 2538,
+				"buffer_size": 2540,
 				"line_ending": "Unix"
 			}
 		},
@@ -439,10 +439,106 @@
 			}
 		},
 		{
+			"contents": "//==================================================================================================\n//  Filename      : tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v\n//  Created On    : 2016-09-27 18:38:13\n//  Last Modified : 2016-09-27 20:01:24\n//  Revision      :\n//  Author        : Jorge Sequeira Rojas\n//  Company       : Instituto Tecnologico de Costa Rica\n//  Email         : jsequeira@gmail.com\n//\n//  Description   :\n//\n//\n//==================================================================================================\n//==================================================================================================\n//  Filename      : tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v\n//  Created On    : 2016-09-25 17:59:05\n//  Last Modified : 2016-09-27 18:36:46\n//  Revision      :\n//  Author        : Jorge Sequeira Rojas\n//  Company       : Instituto Tecnologico de Costa Rica\n//  Email         : jsequeira@gmail.com\n//\n//  Description   :\n//\n//\n//==================================================================================================\n//==================================================================================================\n//  Filename      : tb_uut2_vector_testing.v\n//  Created On    : 2016-09-25 12:25:16\n//  Last Modified : 2016-09-25 12:25:16\n//  Revision      :\n//  Author        : Jorge Sequeira Rojas\n//  Company       : Instituto Tecnologico de Costa Rica\n//  Email         : jsequeira@gmail.com\n//\n//  Description   : Testbench simulating the behavior and stimuli of the FPADD/FPSUB Unit.\n//\n//\n//==================================================================================================\n//==================================================================================================\n//  Filename      : tb_uut2_vector_testing.v\n//  Created On    : 2016-09-24 01:24:56\n//  Last Modified : 2016-09-24 01:24:56\n//  Revision      :\n//  Author        : Jorge Sequeira Rojas\n//  Company       : Instituto Tecnologico de Costa Rica\n//  Email         : jsequeira@gmail.com\n//\n//  Description   : Testbench simulating the behavior and stimuli of the FPADD/FPSUB Unit.\n//\n//\n//==================================================================================================\n\n`timescale 1ns/1ps\n\n\nmodule tb_FPU_PIPELINED_FPADDSUB2_vector_testing (); /* this is automatically generated */\n\n  localparam PERIOD = 10;\n\n  // (*NOTE*) replace reset, clock\n   parameter W   = 32;\n   parameter EW  = 8;\n   parameter SW  = 23;\n   parameter SWR =26;\n   parameter EWR = 5;  //Single Precision */\n\n  // parameter W   = 64;\n  // parameter EW  = 11;\n  // parameter SW  = 52;\n  // parameter SWR = 55;\n  // parameter EWR = 6;\n\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n//\n//                           MODULE SIGNALS\n//\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n  reg         clk;\n  reg         rst;\n  reg         beg_OP;\n  reg [W-1:0] Data_X;\n  reg [W-1:0] Data_Y;\n  reg         add_subt;\n  wire        busy;\n  wire        overflow_flag;\n  wire        underflow_flag;\n  wire        zero_flag;\n\n  wire [W-1:0] final_result_ieee;\n  reg [SW-1:0] final_result_ieee_mantissa;\n  reg [EW-1:0] final_result_ieee_exponent;\n  reg          final_result_ieee_sign;\n\n  wire ready;\n\n//Temps for the testbench and verification\n\n  reg [SW-1:0] Data_X_mant;\n  reg [SW-1:0] Data_Y_mant;\n  reg [EW-1:0] Data_X_exp;\n  reg [EW-1:0] Data_Y_exp;\n  reg Data_X_sign;\n  reg Data_Y_sign;\n\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n//\n//                           TASKS VARIABLES\n//\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n  reg  [W-1:0] formatted_number_W;\n  reg overflow_flag_t, underflow_flag_t;\n\n  //reg [EWR-1:0] LZD_raw_val_EWR;\n  reg [W-1:0]  Theoretical_result;\n  reg [SW-1:0] Theoretical_result_mantissa;\n  reg [EW-1:0] Theoretical_result_exponent;\n  reg Theoretical_result_sign;\n\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n//\n//                           STIMULI SIGNALS\n//\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n  reg [W-1:0] Array_IN [0:((2**PERIOD)-1)];\n  reg [W-1:0] Array_IN_2 [0:((2**PERIOD)-1)];\n  reg [W-1:0] Array_IN_3 [0:((2**PERIOD)-1)];\n  integer contador;\n  integer FileSaveData;\n  integer logVectorReference;\n  integer Cont_CLK;\n  integer Recept;\n\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n//\n//                           END OF DECLARATIONS\n//\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n\n  FPU_PIPELINED_FPADDSUB #(\n      .W(W),\n      .EW(EW),\n      .SW(SW),\n      .SWR(SWR),\n      .EWR(EWR)\n    ) inst_uut (\n      .clk               (clk),\n      .rst               (rst),\n      .beg_OP            (beg_OP),\n      .Data_X            (Data_X),\n      .Data_Y            (Data_Y),\n      .add_subt          (add_subt),\n      .busy              (busy),\n      .overflow_flag     (overflow_flag),\n      .underflow_flag    (underflow_flag),\n      .zero_flag         (zero_flag),\n      .ready             (ready),\n      .final_result_ieee (final_result_ieee)\n    );\n\nalways begin\n    #1;\n    final_result_ieee_mantissa = final_result_ieee[SW-1:0];\n    final_result_ieee_exponent = final_result_ieee[W-2:SW];\n    final_result_ieee_sign     = final_result_ieee[W-1];\n    Data_X_mant = Data_X[SW-1:0];\n    Data_Y_mant = Data_Y[SW-1:0];\n    Data_X_exp  = Data_X[W-2:SW];\n    Data_Y_exp  = Data_Y[W-2:SW];\n    Data_X_sign = Data_X[W-1];\n    Data_Y_sign = Data_Y[W-1];\n    Theoretical_result_mantissa = Theoretical_result[SW-1:0];\n    Theoretical_result_exponent = Theoretical_result[W-2:SW];\n    Theoretical_result_sign = Theoretical_result[W-1];\n\nend\n\n// function [EWR-1:0] LZD_raw; // function definition starts here\n//    input [SWR-1:0] ADD_SUB_RAW;\n//    integer k;\n//    begin\n//      LZD_raw = 0;\n//      k=SWR-1;\n//      while(ADD_SUB_RAW[k] == 0) begin\n//        k = k-1;\n//        LZD_raw = LZD_raw + 1;\n//         $display(\"This is the bit analized %d\\n\", k);\n//         $display(\"This is the bit analized %d\\n\", ADD_SUB_RAW[k]);\n//         $display(\"Number of 0s %d\\n\", LZD_raw);\n//      end\n//    end\n//  endfunction\n\n\n   initial begin\n    FileSaveData = $fopen(\"ResultadoXilinxFLM.txt\",\"w\");\n    logVectorReference = $fopen(\"output_log.py\",\"w\");\n\n    rst = 1;\n\n`ifdef SUB_OPER\n    add_subt = 1; //Se realiza la operacion de resta\n`else\n    add_subt = 0; //Se realiza la operacion de suma\n`endif\n\n    beg_OP = 0;\n    Data_Y = 0;\n    Data_X = 0;\n    Data_X_mant = 0;\n    Data_Y_mant = 0;\n    Data_X_exp  = 0;\n    Data_Y_exp  = 0;\n    Data_X_sign = 0;\n    Data_Y_sign = 0;\n    //Theoretical_result = 32'hbe1abef8;\n    //Inicializa las variables del testbench\n    contador = 0;\n    Cont_CLK = 0;\n\n\n\n    #98 rst = 0;\n    //FPADD_FPSUB(0, Array_IN[3], Array_IN_2[3], formatted_number_W, overflow_flag_t, underflow_flag_t);\n\n\n\n   end\n\n   //**************************** Se lee el archivo txt y se almacena en un arrays***************************************************//\n\n    initial begin\n        $readmemh(\"Hexadecimal_A.txt\", Array_IN);\n        $readmemh(\"Hexadecimal_B.txt\", Array_IN_2);\n        $readmemh(\"Hexadecimal_R.txt\", Array_IN_3);\n    end\n\n     //**************************** Transmision de datos de forma paralela ************************************************************//\n\n  always @(posedge clk) begin\n      if (contador == (2**PERIOD+6)) begin\n          $fclose(FileSaveData);\n          $fclose(logVectorReference);\n          $finish;\n      end else if(ready) begin\n        $fwrite(FileSaveData,\"%h\\n\",final_result_ieee);\n      end\n\n  end\n\nalways @(negedge clk) begin\n    #(PERIOD/5);\n    if(~busy & ~rst) begin\n      beg_OP = 1;\n    end\nend\n\nalways @(posedge clk) begin\n    #(PERIOD/5);\n    if(rst) begin\n        contador = 0;\n    end\n    else if(~busy & ~rst) begin\n        Data_X = Array_IN[contador];\n        Data_Y = Array_IN_2[contador];\n        Theoretical_result = Array_IN_3[contador];\n        contador = contador + 1;\n        @(posedge clk)\n        #(PERIOD/3);\n        Data_X = Array_IN[contador];\n        Data_Y = Array_IN_2[contador];\n        Theoretical_result = Array_IN_3[contador];\n        contador = contador + 1;\n        @(posedge clk)\n        #(PERIOD/3);\n        Data_X = Array_IN[contador];\n        Data_Y = Array_IN_2[contador];\n        Theoretical_result = Array_IN_3[contador];\n        contador = contador + 1;\n        repeat(3) @(posedge clk);\n    end\nend\n\n  // clock\n\n  initial begin\n    clk = 0;\n    forever #(PERIOD/2) clk = ~clk;\n  end\n\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\n//\n//                           TASKS\n//\n//////////////////////////////////////////////////////////////////////////////////////////////////////////\ntask FPADD_FPSUB;\n\n  //inputs\n    input op;\n    input [W-1:0] Operand1_W;\n    input [W-1:0] Operand2_W;\n\n  //outputs\n    output [W-1:0] formatted_number_W;\n    output overflow_flag;\n    output underflow_flag;\n\n  //Temporaries\n    reg [SW-1:0] Mantissa1_SW;\n    reg [SW-1:0] Mantissa2_SW;\n    reg [EW-1:0] Exponent1_EW;\n    reg [EW-1:0] Exponent2_EW;\n\n    reg          Sign1;\n    reg [SW-1:0] Mantissa_M_SW;\n    reg [EW-1:0] Exponent_M_EW;\n\n    reg          Sign2;\n    reg [SW-1:0] Mantissa_m_SW;\n    reg [EW-1:0] Exponent_m_EW;\n\n    reg [SWR-1:0] Mantissa_M_SWR;\n    reg [SWR-1:0] Mantissa_m_SWR;\n    reg [SWR-1:0] Mantissa_m_SWR1;\n    reg [SWR-1:0] norm_Mantissa_SWR;\n\n    reg [EW-1:0] Exponent_diff_EW;\n\n    reg [SWR:0] raw_Mantissa_SWR1;\n\n    reg overflow_flag, underflow_flag;\n    reg carry_out_exp_oper;\n    reg gtXY;\n    reg eqXY;\n    reg real_sign;\n    reg real_op;\n    reg add_overflow;\n    reg overunder;\n    reg [SWR-1:0]raw_Mantissa_SWR;\n    reg [EWR-1:0]LZD_raw_val_EWR;\n    reg [EW-1:0] U_limit; //Max Normal value of the standar ieee 754\n    reg [EW-1:0] L_limit; //Min Normal value of the standar ieee 754\n    reg final_sign;\n    reg [EW-1:0] exp_mux_D1;\n    reg [SW-1:0] sgf_mux_D1;\n    reg [EW-EWR-1:0] LZD_ZFiller;\n    integer k;\n\n    begin\n\n\n      // $display (\"%g CPU Write task with address : 0x%h Data : 0x%h\",\n      //   $time, address,data);\n      // $display (\"%g  -> Driving CE, WR, WR data and ADDRESS on to bus\",\n      //   $time);\n      Sign1 =     Operand1_W[W-1];\n      Sign2 =     Operand2_W[W-1];\n      Exponent1_EW = Operand1_W[EW-1+SW:SW];\n      Exponent2_EW = Operand2_W[EW-1+SW:SW];\n      Mantissa1_SW = Operand1_W[SW-1:0];\n      Mantissa2_SW = Operand2_W[SW-1:0];\n\n\n      //LZD_raw_val_EWR = LZD_raw({3'b000,Operand1_W});\n\n      if(EW == 8) begin\n        assign U_limit = 9'hfe;\n        assign L_limit = 9'h01;\n      end\n      else begin\n        assign U_limit = 12'b111111111110;\n        assign L_limit = 12'b000000000001;\n      end\n\n      if(W == 32) begin\n          assign exp_mux_D1 =8'hff;\n          assign sgf_mux_D1 =23'd0;\n      end\n      else begin\n\n          assign exp_mux_D1 =11'hfff;\n          assign sgf_mux_D1 =52'd0;\n\n      end\n\n    if (EW == 8) begin\n        LZD_ZFiller = 3'd0;\n    end else begin\n        LZD_ZFiller =5'd0;\n    end\n\n      //@ (posedge clk);\n      #10;\n\n      $fwrite(logVectorReference,\"=============INIT STAGE: input signals==============\\n\");\n\n      $fwrite(logVectorReference,\"---------First Operator------------\\n\");\n      $fwrite(logVectorReference,\"FP Format = 0x%30h, Mantissa = 0x%21h, Exponent = 0x%6h, sign = %d\\n\", Operand1_W, Mantissa1_SW, Exponent1_EW, Sign1);\n      $fwrite(logVectorReference,\"FP Format = %b, Mantissa = %b, Exponent = %b, sign = %b\\n\", Operand1_W, Mantissa1_SW, Exponent1_EW, Sign1);\n      $fwrite(logVectorReference,\"--------Second Operator------------\\n\");\n      $fwrite(logVectorReference,\"P Format = 0x%30h, Mantissa = 0x%21h, Exponent = 0x%6h, sign = %d\\n\", Operand2_W, Mantissa2_SW, Exponent2_EW, Sign2);\n      $fwrite(logVectorReference,\"FP Format = %b, Mantissa = %b, Exponent = %b, sign = %b\\n\", Operand2_W, Mantissa2_SW, Exponent2_EW, Sign2);\n\n      gtXY = ({Exponent1_EW, Mantissa1_SW} > {Exponent2_EW, Mantissa2_SW}) ? 1'b1 : 1'b0;\n      eqXY = ({Exponent1_EW, Mantissa1_SW} == {Exponent2_EW, Mantissa2_SW}) ? 1'b1 : 1'b0;\n      real_op = op ^ Sign2 ^ Sign1;\n      real_sign = (gtXY | ((op | Sign2) & (~op | ~Sign2))) & ( Sign1 | ~(eqXY | gtXY));\n\n      if(gtXY == 1) begin\n        {Exponent_M_EW, Mantissa_M_SW} = {Exponent1_EW , Mantissa1_SW};\n        {Exponent_m_EW, Mantissa_m_SW} = {Exponent2_EW , Mantissa2_SW};\n      end\n      else begin\n        {Exponent_M_EW, Mantissa_M_SW} = {Exponent2_EW , Mantissa2_SW};\n        {Exponent_m_EW, Mantissa_m_SW} = {Exponent1_EW , Mantissa1_SW};\n      end\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=============INIT STAGE: output signals==============\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"Sign = %d, real_op = %d\\n\", real_sign, real_op);\n      $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa_M_SW = 0x%21h, Exponent_M_EW = 0x%6h\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SW = %b, Exponent_M_EW = %b\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------Small Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa_m_SW = 0x%21h, Exponent_m_EW = 0x%6h\\n\", Mantissa_m_SW, Exponent_m_EW);\n      $fwrite(logVectorReference,\"Mantissa_m_SW = %b, Exponent_m_EW = %b\\n\", Mantissa_m_SW, Exponent_m_EW);\n      $fwrite(logVectorReference,\"======================== ^ ===================\\n\");\n\n      //$fwrite(logVectorReference,\"===============INIT STAGE: FROM THE UUT ============\\n\");\n      //$fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      //$fwrite(logVectorReference,\"SIGN_FLAG_EXP = %d, OP_FLAG_INIT = %d\\n\", uut.SIGN_FLAG_INIT, uut.OP_FLAG_INIT);\n      // $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      // $fwrite(logVectorReference,\"Mantissa_M_SW = 0x%21h, Exponent_M_EW = 0x%6h\\n\", Mantissa_M_SW, Exponent_M_EW);\n      // $fwrite(logVectorReference,\"Mantissa_M_SW = %b, Exponent_M_EW = %b\\n\", Mantissa_M_SW, Exponent_M_EW);\n      // $fwrite(logVectorReference,\"--------Small Number------------\\n\");\n      // $fwrite(logVectorReference,\"Mantissa_m_SW = 0x%21h, Exponent_m_EW = 0x%6h\\n\", Mantissa_m_SW, Exponent_m_EW);\n      // $fwrite(logVectorReference,\"Mantissa_m_SW = %b, Exponent_m_EW = %b\\n\", Mantissa_m_SW, Exponent_m_EW);\n      // $fwrite(logVectorReference,\"======================== ^ ===================\\n\");\n      // $fwrite(logVectorReference,\"======================== ^ ===================\\n\");\n      // $fwrite(logVectorReference,\"======================== ^ ===================\\n\");\n      // $fwrite(logVectorReference,\"======================== ^ ===================\\n\");\n      @ (posedge clk);\n\n      Exponent_diff_EW = Exponent_M_EW - Exponent_m_EW;\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=============EXP STAGE==============\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"Sign = %d, real_op = %d\\n\", real_sign, real_op);\n      $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa_M_SW = 0x%21h, Exponent_M_EW = 0x%6h\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SW = %b, Exponent_M_EW = %b\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------Small Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa_m_SW = 0x%21h\\n\", Mantissa_m_SW);\n      $fwrite(logVectorReference,\"Mantissa_m_SW = %b\\n\", Mantissa_m_SW);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"Exponent_diff_EW = Exp M - Exp m = 0x%6h\\n\", Exponent_diff_EW);\n      $fwrite(logVectorReference,\"Exponent_diff_EW = Exp M - Exp m = %b\\n\", Exponent_diff_EW);\n\n\n      // $fwrite(logVectorReference,\"===============EXP STAGE FROM UUT============\\n\");\n      // $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      // $fwrite(logVectorReference,\"SIGN_FLAG_EXP = %d, OP_FLAG_EXP = %d\\n\", uut.SIGN_FLAG_EXP, uut.OP_FLAG_EXP);\n      // $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      // $fwrite(logVectorReference,\"DMP_mant_EXP_SW = 0x%21h, Exponent_M_EW = 0x%6h\\n\", uut.DMP_mant_EXP_SW, uut.DMP_exp_EXP_EW);\n      // $fwrite(logVectorReference,\"DMP_mant_EXP_SW = %b, Exponent_M_EW = %b\\n\", uut.DMP_mant_EXP_SW, uut.DMP_exp_EXP_EW);\n      // $fwrite(logVectorReference,\"--------Small Number------------\\n\");\n      // $fwrite(logVectorReference,\"Mantissa_m_SW = 0x%21h\\n\", uut.DmP_mant_EXP_SW);\n      // $fwrite(logVectorReference,\"Mantissa_m_SW = %b\\n\", uut.DmP_mant_EXP_SW);\n      // $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      // $fwrite(logVectorReference,\"Shift_amount_EXP_EW = Exp M - Exp m = 0x%6h\\n\", uut.Exponent_diff_EW);\n      // $fwrite(logVectorReference,\"Shift_amount_EXP_EW = Exp M - Exp m = %b\\n\", uut.Exponent_diff_EW);\n      // $fwrite(logVectorReference,\"===============EXP STAGE============\\n\");\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=============EXP STAGE==============\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n      @ (posedge clk);\n\n      Mantissa_m_SWR = {1'b1,Mantissa_m_SW, 2'b0} >> Exponent_diff_EW;\n\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"==========        ===SHT1 STAGE==============\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"--------Sign = %d, real_op = %d ----------------\\n\", real_sign, real_op);\n      $fwrite(logVectorReference,\"--------Big Number------------------------------------\\n\");\n      $fwrite(logVectorReference,\"--------------Mantissa_M_SW = 0x%21h, Exponent_M_EW = 0x%6h--------\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------------Mantissa_M_SW = %b, Exponent_M_EW = %b--------\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------------Small Number--------------------\\n\");\n      $fwrite(logVectorReference,\"--------Mantissa_m_SW hex = 0x%21h--------\\n\", Mantissa_m_SW);\n      $fwrite(logVectorReference,\"--------Mantissa_m_SW bin = %b----------\\n\", Mantissa_m_SW);\n      $fwrite(logVectorReference,\"--------------------OPERATION RESULT--------------------\\n\");\n      $fwrite(logVectorReference,\"--------Shifted mantissa result hex = 0x%24h-------\\n\", Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"--------Shifted mantissa result bin = %b-------\\n\", Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"==========          ===SHT1 STAGE==============\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n\n\n      @ (posedge clk);\n\n      //Our shifter is segmented, hence, the extra clk cycle\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"===================SHT2 STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"Sign = %d, real_op = %d\\n\", real_sign, real_op);\n      $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa_M_SW = 0x%21h, Exponent_M_EW = 0x%6h\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SW = %b, Exponent_M_EW = %b\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"Shifted Mantissa_m_SWR = 0x%24h\\n\", Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"Shifted Mantissa_m_SWR = %b\\n\", Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"===================SHT2 STAGE================\\n\");\n\n      // $fwrite(logVectorReference,\"======================== ^ ===================\\n\");\n      // $fwrite(logVectorReference,\"===================SHT2 STAGE FROM THE UUT================\\n\");\n      // $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      // $fwrite(logVectorReference,\"Sign = %d, real_op = %d\\n\", uut.SIGN_FLAG_SHT2, uut.OP_FLAG_SHT2);\n\n      // $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      // $fwrite(logVectorReference,\"sftr_idat_SHT2_SWR = 0x%24h\\n\", uut.sftr_idat_SHT2_SWR);\n      // $fwrite(logVectorReference,\"sftr_odat_SHT2_SWR = %b\\n\", uut.sftr_odat_SHT2_SWR);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"===================SHT2 STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n      @ (posedge clk);\n\n      Mantissa_M_SWR = {1'b1,Mantissa_M_SW, 2'b0};\n\n      if (real_op == 1) begin\n        raw_Mantissa_SWR1 = Mantissa_M_SWR - Mantissa_m_SWR;\n        $display(\"Se restan las mantisas\\n\");\n      end\n      else begin\n        raw_Mantissa_SWR1 = Mantissa_M_SWR + Mantissa_m_SWR;\n        $display(\"Se suman las mantisas\\n\");\n      end\n      raw_Mantissa_SWR = raw_Mantissa_SWR1[SWR-1:0];\n      add_overflow = raw_Mantissa_SWR1[SWR-2];\n\n      add_overflow = add_overflow&(~real_op);\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"===================SGF STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"add_overflw = %d, Sign = %d\\n\", add_overflow, real_sign);\n      $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa_M_SW = 0x%24h, Exponent_M_EW = 0x%6h\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SW = %b, Exponent_M_EW = %b\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SW = %26d, Exponent_M_EW = %8d\\n\", Mantissa_M_SW, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SWR = 0x%24h, Exponent_M_EW = 0x%6h\\n\", Mantissa_M_SWR, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SWR = %b, Exponent_M_EW = %b\\n\", Mantissa_M_SWR, Exponent_M_EW);\n      $fwrite(logVectorReference,\"Mantissa_M_SWR = %26d, Exponent_M_EW = %8d\\n\", Mantissa_M_SWR, Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------Small Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa hex = 0x%24h\\n\",Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"Mantissa bin = %b\\n\",Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"Mantissa bin = %26d\\n\",Mantissa_m_SWR);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa operation result = 0x%24h\\n\", raw_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Mantissa operation result = %b\\n\", raw_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Mantissa operation result = %26d\\n\", raw_Mantissa_SWR);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"===================SGF STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n      @ (posedge clk);\n\n      LZD_raw_val_EWR = 0;\n      k=SWR-1;\n      $display(\"Mantissa operation result = 0x%h, Mantissa result bin = %b\\n\", raw_Mantissa_SWR, raw_Mantissa_SWR);\n      $display(\"dentro del loop %d, \\n\", raw_Mantissa_SWR[k]);\n      while(~raw_Mantissa_SWR[k]) begin\n        k = k-1;\n        LZD_raw_val_EWR = LZD_raw_val_EWR + 1;\n        $display(\"dentro del loop\\n\");\n      end\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== NRM STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"add_overflw = %d, Sign = %d\\n\", add_overflow, real_sign);\n      $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      $fwrite(logVectorReference,\"Mantisa hex SW  = 0x%21h \\n\", Mantissa_M_SW);\n      $fwrite(logVectorReference,\"Mantisa hex SW  = %b\\n\", Mantissa_M_SW);\n      $fwrite(logVectorReference,\"Mantisa hex SWR = 0x%24h\\n\", Mantissa_M_SWR);\n      $fwrite(logVectorReference,\"Mantisa hex SWR = %b\\n\", Mantissa_M_SWR);\n      $fwrite(logVectorReference,\"Exponent = 0x%h\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"Mantissa operation result = 0x%24h\\n\", raw_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Mantissa operation result = 0x%h\\n\", raw_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Mantissa operation result = %26d\\n\", raw_Mantissa_SWR);\n      $fwrite(logVectorReference,\"LZD result hex = 0x%h, LZD result hex = %b\\n\", LZD_raw_val_EWR, LZD_raw_val_EWR);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== NRM STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n\n      @ (posedge clk);\n\n      if (add_overflow) begin\n      //Signed shift\n        norm_Mantissa_SWR = raw_Mantissa_SWR >>> 1;\n      end\n      else begin\n        norm_Mantissa_SWR = raw_Mantissa_SWR << LZD_raw_val_EWR;\n      end\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== NRM2 STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"add_overflw = %d, sign = %d\\n\", add_overflow, real_sign);\n      $fwrite(logVectorReference,\"--------Big Number------------\\n\");\n      $fwrite(logVectorReference,\"Exponent = 0x%6h\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"Exponent = %b\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"Exponent = %8d\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"Normalized mantissa (shifted) = 0x%24h\\n\", norm_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Normalized mantissa (shifted) = %b\\n\", norm_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Normalized mantissa (shifted) = %26d\\n\", norm_Mantissa_SWR);\n      $fwrite(logVectorReference,\"LZD result hex = 0x%h, LZD result bin = %b\\n\", LZD_raw_val_EWR, LZD_raw_val_EWR);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== NRM2 STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n\n      @ (posedge clk);\n\n      //We do a second shift over here\n\n      //We do the xponent compensation\n\n      if (add_overflow) begin\n        {carry_out_exp_oper,Exponent_M_EW} = Exponent_M_EW - 1;\n      end\n      else begin\n        {carry_out_exp_oper,Exponent_M_EW} = Exponent_M_EW + {LZD_ZFiller,LZD_raw_val_EWR};\n      end\n\n        overflow_flag  =({carry_out_exp_oper,Exponent_M_EW} > U_limit) ? 1'b1 : 1'b0;\n        underflow_flag =({carry_out_exp_oper,Exponent_M_EW} < L_limit) ? 1'b1 : 1'b0;\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== NRM2 STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"overflow flag = %d, underflow flag = %d, sign flag = %d\\n\", overflow_flag, underflow_flag, real_sign);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"Compensated Exponent = 0x%6h, Normalized mantissa (shifted) = 0x%24h\\n\", Exponent_M_EW, norm_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Compensated Exponent = %b,  Normalized mantissa (shifted) = %b\\n\", Exponent_M_EW, norm_Mantissa_SWR);\n      $fwrite(logVectorReference,\"Compensated Exponent = %8d, Normalized mantissa (shifted) = %26d\\n\", Exponent_M_EW, norm_Mantissa_SWR);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== NRM2 STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n\n      @ (posedge clk);\n\n\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== FRMT STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"La mantisa final sera: 0x%21h\\n\", norm_Mantissa_SWR[SWR-2:2]);\n      $fwrite(logVectorReference,\"La mantisa final sera: %b\\n\", norm_Mantissa_SWR[SWR-2:2]);\n      $fwrite(logVectorReference,\"La mantisa final sera: %23d\\n\", norm_Mantissa_SWR[SWR-2:2]);\n      $fwrite(logVectorReference,\"El exponente final sera: 0x%6h\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"El exponente final sera: %b\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"El exponente final sera: %8d\\n\", Exponent_M_EW);\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"=================== FRMT STAGE================\\n\");\n      $fwrite(logVectorReference,\"===                                             \\n\");\n      $fwrite(logVectorReference,\"======================== * ===================\\n\");\n        overunder = overflow_flag | underflow_flag;\n        case ({overflow_flag,underflow_flag})\n            2'b00: final_sign=real_sign;\n            2'b01: final_sign=1'b1;\n            2'b10: final_sign=1'b0;\n            default: final_sign=0;\n        endcase\n\n        if (overunder == 0) begin\n            formatted_number_W = {final_sign, Exponent_M_EW, norm_Mantissa_SWR[SWR-2:2]};\n        end else begin\n            formatted_number_W = {final_sign,exp_mux_D1,sgf_mux_D1};\n        end\n\n      $fwrite(logVectorReference,\"=================== FRMT STAGE ================\\n\");\n      $fwrite(logVectorReference,\"--------------------FLAGS------------------\\n\");\n      $fwrite(logVectorReference,\"overflow flag = %d, underflow flag = %d\\n\", overflow_flag, underflow_flag);\n      $fwrite(logVectorReference,\"--------OPERATION RESULT------------\\n\");\n      $fwrite(logVectorReference,\"El resultado final sera: %32h\\n\", formatted_number_W);\n      $fwrite(logVectorReference,\"El resultado final sera: %b\\n\", formatted_number_W);\n      $fwrite(logVectorReference,\"El resultado final sera: %32d\\n\", formatted_number_W);\n      $fwrite(logVectorReference,\"=================== FRMT STAGE ================\\n\");\n\n    end\nendtask\n\nendmodule\n\n\n\n\n",
 			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/bloody_simruns/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+			"file_size": 35125,
+			"file_write_time": 131195016840000000,
 			"settings":
 			{
-				"buffer_size": 35125,
+				"buffer_size": 35130,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/new/CORDIC_Arch3.v",
+			"settings":
+			{
+				"buffer_size": 20406,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/addsub/FPU_ADD_Substract_PIPELINED.v",
+			"settings":
+			{
+				"buffer_size": 24832,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/addsub/FSM_input_enable.v",
+			"settings":
+			{
+				"buffer_size": 3812,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jorge/Documents/Proyecto",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jorge/de",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jorge/Graduación/4Marco",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jorge/Teórico/FPUs/NTNU",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jorge/FPU/low-cost-fpu-src/fpu_top.v",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jorge/FPU/low-cost-fpu-src/testbenches/fpu_top_exception_tb.v",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,6 +627,7 @@
 	],
 	"file_history":
 	[
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/tb_CORDIC_Arch3_single/imports/cordic_jorge/tb_CORDIC_Arch3.v",
 		"/home/jorge/.config/sublime-text-3/Packages/Verilog Automatic/Default (Linux).sublime-keymap",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/Tenth_Phase_v2.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sim_single_fpsub/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
@@ -657,8 +754,7 @@
 		"/opt/sublime_text/sublime_text",
 		"/home/jorge/Documents/Karatsuba_FPU/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_Arch2.v",
 		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/new/Testbench_FPU_multiplication.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
-		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v"
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v"
 	],
 	"find":
 	{
@@ -676,6 +772,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"b_shifter_one_SWR",
 			"mux_sel_norm_EWR",
 			"b_shifter_one_EWR",
 			"b_shifter_one_SWR",
@@ -802,8 +899,7 @@
 			"sign_",
 			"sign",
 			"%8h",
-			"%23h",
-			"%26h"
+			"%23h"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -949,7 +1045,7 @@
 	"groups":
 	[
 		{
-			"selected": 15,
+			"selected": 27,
 			"sheets":
 			[
 				{
@@ -977,7 +1073,7 @@
 						"translation.y": 864.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
@@ -986,7 +1082,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3678,
+						"buffer_size": 4200,
 						"regions":
 						{
 						},
@@ -1007,7 +1103,7 @@
 						"translation.y": 528.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
@@ -1037,7 +1133,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
@@ -1067,7 +1163,7 @@
 						"translation.y": 144.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -1097,7 +1193,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
@@ -1106,7 +1202,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1982,
+						"buffer_size": 2485,
 						"regions":
 						{
 						},
@@ -1127,7 +1223,7 @@
 						"translation.y": 912.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
@@ -1136,15 +1232,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 85,
+						"buffer_size": 97,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64,
-								64
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1155,7 +1251,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
@@ -1164,15 +1260,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5957,
+						"buffer_size": 5965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								655,
-								655
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1184,7 +1280,7 @@
 						"translation.y": 1104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
@@ -1214,7 +1310,7 @@
 						"translation.y": 576.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
@@ -1223,15 +1319,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5957,
+						"buffer_size": 5965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2907,
-								2907
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1243,7 +1339,7 @@
 						"translation.y": 1585.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -1271,7 +1367,7 @@
 						"translation.y": 96.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -1280,15 +1376,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10103,
+						"buffer_size": 4266,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4275,
-								4275
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1300,7 +1396,7 @@
 						"translation.y": 81.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
@@ -1309,15 +1405,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4200,
+						"buffer_size": 4201,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1244,
-								1244
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1329,7 +1425,7 @@
 						"translation.y": 297.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -1357,7 +1453,7 @@
 						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -1366,15 +1462,15 @@
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2538,
+						"buffer_size": 2540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2538,
-								2538
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1387,7 +1483,7 @@
 						"translation.y": 1104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -1415,7 +1511,7 @@
 						"translation.y": 7597.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1445,7 +1541,7 @@
 						"translation.y": 328.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1475,7 +1571,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1505,7 +1601,7 @@
 						"translation.y": 264.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1514,15 +1610,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35125,
+						"buffer_size": 35130,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35125,
-								35125
+								8307,
+								8307
 							]
 						],
 						"settings":
@@ -1532,14 +1628,271 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1008.0,
+						"translation.y": 4334.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/new/CORDIC_Arch3.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/addsub/FPU_ADD_Substract_PIPELINED.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13302,
+								13302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7101.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/addsub/FSM_input_enable.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2638,
+								2496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1528.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/home/jorge/Documents/Proyecto",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/home/jorge/de",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/home/jorge/Graduación/4Marco",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/home/jorge/Teórico/FPUs/NTNU",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/home/jorge/FPU/low-cost-fpu-src/fpu_top.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "/home/jorge/FPU/low-cost-fpu-src/testbenches/fpu_top_exception_tb.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 29,
 					"file": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FSM_input_enable.v",
 					"semi_transient": false,
 					"settings":
@@ -1564,7 +1917,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 14,
 					"type": "text"
 				}
 			]
