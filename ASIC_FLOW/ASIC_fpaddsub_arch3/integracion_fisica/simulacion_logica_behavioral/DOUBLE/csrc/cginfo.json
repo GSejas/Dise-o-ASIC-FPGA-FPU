@@ -1,122 +1,164 @@
 {
-    "MlibObjs": {},
+    "stat": {
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0
+        },
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.342947,
+            "ru_stime_sec": 0.036993999999999999,
+            "ru_maxrss_kb": 61112,
+            "ru_minflt": 15379,
+            "ru_nivcsw": 47,
+            "ru_majflt": 0,
+            "ru_nvcsw": 50
+        },
+        "nMops": 27465,
+        "mopSpeed": 177219.84552546509,
+        "nQuads": 9567,
+        "totalObjSize": 412503,
+        "ru_self_end": {
+            "ru_utime_sec": 0.49792399999999998,
+            "ru_stime_sec": 0.052991000000000003,
+            "ru_maxrss_kb": 70144,
+            "ru_minflt": 18009,
+            "ru_nivcsw": 52,
+            "ru_majflt": 0,
+            "ru_nvcsw": 50
+        },
+        "Frontend(%)": 68.87537053847575,
+        "outputSizePerQuad": 43.0,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0
+        },
+        "quadSpeed": 61731.740838963211,
+        "mop/quad": 2.8708058952649735,
+        "CodeGen(%)": 31.124629461524247
+    },
     "CurCompileUdps": {},
-    "PEModules": [],
-    "CurCompileModules": [
-        "...MASTER...",
-        "shift_mux_array_0003",
-        "shift_mux_array_0004",
-        "shift_mux_array_0005",
-        "Multiplexer_AC_0000",
-        "add_sub_carry_out",
-        "Rotate_Mux_Array_0000",
-        "Comparators",
-        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing"
-    ],
+    "CompileStatus": "Successful",
+    "MlibObjs": {},
     "PrevCompiledModules": {
         "shift_mux_array_0003": {
             "w253U_d": {
-                "mod": "shift_mux_array_0003",
                 "bytes": 64144,
+                "mod": "shift_mux_array_0003",
                 "mode": 4,
+                "checksum": 4294967295,
                 "out": "w253U_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
-            }
-        },
-        "Rotate_Mux_Array_0000": {
-            "GBFFm_d": {
-                "mod": "Rotate_Mux_Array_0000",
-                "bytes": 24099,
-                "mode": 4,
-                "out": "GBFFm_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
-            }
-        },
-        "shift_mux_array_0004": {
-            "G4Syt_d": {
-                "mod": "shift_mux_array_0004",
-                "bytes": 64016,
-                "mode": 4,
-                "out": "G4Syt_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
-            }
-        },
-        "Comparators": {
-            "iGyxR_d": {
-                "mod": "Comparators",
-                "bytes": 9458,
-                "mode": 4,
-                "out": "iGyxR_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
-            }
-        },
-        "Multiplexer_AC_0000": {
-            "UPR0r_d": {
-                "mod": "Multiplexer_AC_0000",
-                "bytes": 7984,
-                "mode": 4,
-                "out": "UPR0r_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
-            }
-        },
-        "shift_mux_array_0005": {
-            "hxDwR_d": {
-                "mod": "shift_mux_array_0005",
-                "bytes": 63760,
-                "mode": 4,
-                "out": "hxDwR_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
-            }
-        },
-        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": {
-            "vberv_d": {
-                "mod": "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
-                "bytes": 312337,
-                "mode": 4,
-                "out": "vberv_d.o",
-                "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
+                "archive": "archive.2/_prev_archive_1.a"
             }
         },
         "add_sub_carry_out": {
             "vTLY2_d": {
-                "mod": "add_sub_carry_out",
                 "bytes": 8729,
+                "mod": "add_sub_carry_out",
                 "mode": 4,
-                "out": "vTLY2_d.o",
                 "checksum": 4294967295,
-                "archive": "archive.1/_prev_archive_1.a"
+                "out": "vTLY2_d.o",
+                "archive": "archive.2/_prev_archive_1.a"
             }
         },
         "...MASTER...": {
             "amcQw_d": {
-                "mod": "...MASTER...",
                 "bytes": 8130,
-                "mode": 4,
+                "mod": "...MASTER...",
                 "out": "objs/amcQw_d.o",
+                "mode": 4,
                 "checksum": 4294967295
+            }
+        },
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": {
+            "vberv_d": {
+                "bytes": 312337,
+                "mod": "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "vberv_d.o",
+                "archive": "archive.2/_30036_archive_1.a"
+            }
+        },
+        "shift_mux_array_0004": {
+            "G4Syt_d": {
+                "bytes": 64016,
+                "mod": "shift_mux_array_0004",
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "G4Syt_d.o",
+                "archive": "archive.2/_prev_archive_1.a"
+            }
+        },
+        "shift_mux_array_0005": {
+            "hxDwR_d": {
+                "bytes": 63760,
+                "mod": "shift_mux_array_0005",
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "hxDwR_d.o",
+                "archive": "archive.2/_prev_archive_1.a"
+            }
+        },
+        "Multiplexer_AC_0000": {
+            "UPR0r_d": {
+                "bytes": 7984,
+                "mod": "Multiplexer_AC_0000",
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "UPR0r_d.o",
+                "archive": "archive.2/_prev_archive_1.a"
+            }
+        },
+        "Rotate_Mux_Array_0000": {
+            "GBFFm_d": {
+                "bytes": 24099,
+                "mod": "Rotate_Mux_Array_0000",
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "GBFFm_d.o",
+                "archive": "archive.2/_prev_archive_1.a"
+            }
+        },
+        "Comparators": {
+            "iGyxR_d": {
+                "bytes": 9458,
+                "mod": "Comparators",
+                "mode": 4,
+                "checksum": 4294967295,
+                "out": "iGyxR_d.o",
+                "archive": "archive.2/_prev_archive_1.a"
             }
         }
     },
-    "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 92730
-    },
     "NameTable": {
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
+            "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+            "vberv",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
         "shift_mux_array_0003": [
             "shift_mux_array_0003",
             "w253U",
             "module"
         ],
-        "Rotate_Mux_Array_0000": [
-            "Rotate_Mux_Array_0000",
-            "GBFFm",
+        "add_sub_carry_out": [
+            "add_sub_carry_out",
+            "vTLY2",
             "module"
         ],
         "shift_mux_array_0004": [
@@ -129,91 +171,52 @@
             "hxDwR",
             "module"
         ],
-        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
-            "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
-            "vberv",
-            "module"
-        ],
         "Multiplexer_AC_0000": [
             "Multiplexer_AC_0000",
             "UPR0r",
+            "module"
+        ],
+        "Rotate_Mux_Array_0000": [
+            "Rotate_Mux_Array_0000",
+            "GBFFm",
             "module"
         ],
         "Comparators": [
             "Comparators",
             "iGyxR",
             "module"
-        ],
-        "...MASTER...": [
-            "SIM",
-            "amcQw",
-            "module"
-        ],
-        "add_sub_carry_out": [
-            "add_sub_carry_out",
-            "vTLY2",
-            "module"
         ]
     },
+    "CurCompileModules": [
+        "...MASTER...",
+        "shift_mux_array_0003",
+        "shift_mux_array_0004",
+        "shift_mux_array_0005",
+        "Multiplexer_AC_0000",
+        "add_sub_carry_out",
+        "Rotate_Mux_Array_0000",
+        "Comparators",
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing"
+    ],
     "CompileStrategy": "fullobj",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 92810
+    },
     "Misc": {
-        "daidir": "simv.daidir",
+        "archive_dir": "archive.2",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/csrc",
         "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE",
         "csrc": "csrc",
-        "default_output_dir": "csrc",
-        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/csrc",
-        "archive_dir": "archive.1",
-        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/simv.daidir"
-    },
-    "stat": {
-        "ru_self_cgstart": {
-            "ru_utime_sec": 0.35394599999999998,
-            "ru_nvcsw": 51,
-            "ru_stime_sec": 0.034993999999999997,
-            "ru_maxrss_kb": 59692,
-            "ru_nivcsw": 42,
-            "ru_majflt": 0,
-            "ru_minflt": 15572
-        },
-        "CodeGen(%)": 1.9390765906163079,
-        "nMops": 5,
-        "ru_self_end": {
-            "ru_utime_sec": 0.36094500000000002,
-            "ru_nvcsw": 51,
-            "ru_stime_sec": 0.039993000000000001,
-            "ru_maxrss_kb": 64420,
-            "ru_nivcsw": 51,
-            "ru_majflt": 0,
-            "ru_minflt": 17091
-        },
-        "ru_childs_cgstart": {
-            "ru_utime_sec": 0.0,
-            "ru_nvcsw": 0,
-            "ru_stime_sec": 0.0,
-            "ru_maxrss_kb": 0,
-            "ru_nivcsw": 0,
-            "ru_majflt": 0,
-            "ru_minflt": 0
-        },
-        "nQuads": 9,
-        "outputSizePerQuad": 11206.0,
-        "totalObjSize": 100860,
-        "ru_childs_end": {
-            "ru_utime_sec": 0.0,
-            "ru_nvcsw": 0,
-            "ru_stime_sec": 0.0,
-            "ru_maxrss_kb": 0,
-            "ru_nivcsw": 0,
-            "ru_majflt": 0,
-            "ru_minflt": 0
-        },
-        "Frontend(%)": 98.06092340938369
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/simv.daidir",
+        "default_output_dir": "csrc"
     },
     "LVLData": [
         "SIM"
     ],
+    "PEModules": [],
     "CompileProcesses": [
-        "cgproc.9469.json"
-    ],
-    "CompileStatus": "Successful"
+        "cgproc.30036.json"
+    ]
 }

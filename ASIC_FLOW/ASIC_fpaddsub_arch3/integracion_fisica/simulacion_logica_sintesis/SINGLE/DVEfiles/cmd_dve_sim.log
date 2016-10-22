@@ -1,0 +1,88 @@
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv  +v2k +lint=all -a log_name +define+SINGLE +define+FRANCIS_LZD=1 +neg_tchk +sdfverbose -ucligui
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpBmlut2
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.22992}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.22992}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut} -scope "." -depth 1 -fid VPD1
+set _session_group_1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+set tb_FPU_PIPELINED_FPADDSUB2_vector_testing "$_session_group_1"
+set _session_group_2 Group1
+set Group1 "$_session_group_2"
+set _session_group_3 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}
+set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593} "$_session_group_3"
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Global: Watch 'Watch'
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{Data_X[31:0]} }
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{Data_Y[31:0]} }
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{Theoretical_result[31:0]} }
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{final_result_ieee[31:0]} }
+# Post database loading setting...
+# Restore C1 time
+ucliGUI::vpdAddHierarchy -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -depth 2 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd; synopsys::dump -flush VPD1
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X} -aggregates  -fid VPD1
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y} -aggregates  -fid VPD1
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result} -aggregates  -fid VPD1
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee} -aggregates  -fid VPD1
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_select -id ${Hier.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing}}
+synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing} -scope "." -depth 1 -fid VPD1
+# Data 'Data.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Source 'Source.1'
+# View 'List.1'
+# DriverLoad 'DriverLoad.1'
+# Watch 'Watch.1'
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Console.1} }
+#</Session>
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {symbolic decimal symbolic hexadecimal binary hexadecimal hexadecimal hexadecimal decimal binary hexadecimal symbolic hexadecimal binary binary decimal decimal } -list {{logVectorReference[31:0]} EW {contador[31:0]} {Data_Y_exp[7:0]} Data_X_sign {Theoretical_result[31:0]} {Data_X_exp[7:0]} {Theoretical_result_exponent[7:0]} SW underflow_flag {final_result_ieee_exponent[7:0]} {FileSaveData[31:0]} {Data_Y_mant[22:0]} beg_OP ready SWR PERIOD }
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal hexadecimal } -list {{Data_X[31:0]} {Data_Y[31:0]} }
+ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{final_result_ieee[31:0]} }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

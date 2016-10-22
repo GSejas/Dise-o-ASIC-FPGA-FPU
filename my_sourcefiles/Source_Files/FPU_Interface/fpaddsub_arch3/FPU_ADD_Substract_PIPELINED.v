@@ -434,29 +434,10 @@ assign DmP_mant_EXP_SW = DmP_EXP_EWSW[SW-1:0];
 
 //////////////////////////////----------------------------------///////////////////////////////
 
-generate
-    case(EW)
-        8:begin
-            assign b_shifter_one_EWR = 5'd1;
-        end
-        default:begin
-            assign b_shifter_one_EWR = 6'd1;
-        end
-    endcase
-endgenerate
-
-generate
-    case(EW)
-        8:begin
-            assign LZD_ZFiller =3'd0;
-            assign Exp_oper_1_EW = 8'd1;
-        end
-        default:begin
-            assign LZD_ZFiller =5'd0;
-             assign Exp_oper_1_EW = 11'd1;
-        end
-    endcase
-endgenerate
+	assign b_shifter_one_EWR = {{(EWR-1){1'b0}},1'b1}; 
+	assign LZD_ZFiller ={(EW-EWR){1'b0}}; 
+	assign Exp_oper_1_EW = {{(EW-1){1'b0}},1'b1};
+	
 //assign mux_out = (sel) ? din_1 : din_0;
 //Input variables for the shifter, depending upon the stage.
 
@@ -681,19 +662,14 @@ FORMATTER #(.EW(EW+1)) array_comparators(
 
 	assign DMP_exp_SFG = DMP_SFG[W-2:SW];
 
-	always @* begin : ADD_SUB_SGF
-       case (OP_FLAG_SFG)
-          1'b0  : begin
-                      {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR + DmP_mant_SFG_SWR;
-                   end
-          1'b1  : begin
-                      {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR - DmP_mant_SFG_SWR;
-                   end
-          default: begin
-                      {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR + DmP_mant_SFG_SWR;
-                   end
-       endcase
+   always @* begin : ADD_SUB_SGF
+       if (OP_FLAG_SFG) begin
+          {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR - DmP_mant_SFG_SWR;
+       end else begin
+          {Carry_out_SGF, Raw_mant_SGF} = DMP_mant_SFG_SWR + DmP_mant_SFG_SWR;
+       end
   end
+  
 	assign ADD_OVRFLW_SGF = Carry_out_SGF&(~OP_FLAG_SFG);
 
 
@@ -826,10 +802,9 @@ assign busy = SHT1_ACTIVE;
   .Q({overflow_flag   , underflow_flag  , zero_flag     })
   );
 
-  RegisterAdd #(.W(1)) Ready_reg (
+  FFD_NoCE #(.W(1)) Ready_reg (
   .clk(clk),
   .rst(rst),
-  .load(1),
   .D(NRM2_ACTIVE),
   .Q(ready));
 

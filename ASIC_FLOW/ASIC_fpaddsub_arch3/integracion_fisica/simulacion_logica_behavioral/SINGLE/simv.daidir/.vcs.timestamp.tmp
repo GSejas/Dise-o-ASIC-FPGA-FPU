@@ -1,11 +1,12 @@
 0 
-39
+40
 +cli+4
 +define+FRANCIS_LZD=1
 +define+SINGLE
 +itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 +lint=all
 +memcbk
++neg_tchk
 +v2k
 +vcsd
 +vpi
@@ -84,10 +85,10 @@ CVS_RSH=ssh
 COLORTERM=gnome-terminal
 0
 23
-1477009162 ./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v
+1477088940 ./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparators.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator.v
-1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v
+1477087194 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Rotate_Mux_Array.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator_Less.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_64.v
@@ -97,12 +98,12 @@ COLORTERM=gnome-terminal
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/xor_tri.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Greater_Comparator.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Multiplexer_AC.v
-1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/RegisterAdd.v
+1477088432 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/RegisterAdd.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/shift_mux.v
 1477028845 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/MultiplexTxT.v
-1477086051 ../../front_end/source/FPU_ADD_Substract_PIPELINED.v
-1477028845 ../../front_end/source/Tenth_Phase_v2.v
-1477028845 ../../front_end/source/FORMATTER.v
+1477087722 ../../front_end/source/FPU_ADD_Substract_PIPELINED.v
+1477088288 ../../front_end/source/Tenth_Phase_v2.v
+1477088375 ../../front_end/source/FORMATTER.v
 1477085926 ../../front_end/source/FSM_input_enable.v
 1477028845 ../../front_end/source/shift_reg.v
 1477006575 file_list

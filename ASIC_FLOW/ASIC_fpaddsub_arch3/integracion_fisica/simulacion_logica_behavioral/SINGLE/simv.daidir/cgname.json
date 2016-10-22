@@ -4,19 +4,14 @@
         "GBFFm",
         "module"
     ],
-    "add_sub_carry_out": [
-        "add_sub_carry_out",
-        "vTLY2",
-        "module"
-    ],
     "Multiplexer_AC_0000": [
         "Multiplexer_AC_0000",
         "UPR0r",
         "module"
     ],
-    "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
-        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
-        "vberv",
+    "add_sub_carry_out": [
+        "add_sub_carry_out",
+        "vTLY2",
         "module"
     ],
     "Comparators": [
@@ -27,6 +22,11 @@
     "...MASTER...": [
         "SIM",
         "amcQw",
+        "module"
+    ],
+    "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+        "vberv",
         "module"
     ]
 }

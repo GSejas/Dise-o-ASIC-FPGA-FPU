@@ -1,4 +1,3 @@
-add_sub_carry_out.v
 Comparator_Less.v
 Comparators.v
 Comparator.v
@@ -12,6 +11,7 @@ MultiplexTxT.v
 Mux_3x1.v
 Mux_Array.v
 Priority_Codec_64.v
+Priority_Codec_32.v
 RegisterAdd.v
 Rotate_Mux_Array.v
 Round_Sgf_Dec.v

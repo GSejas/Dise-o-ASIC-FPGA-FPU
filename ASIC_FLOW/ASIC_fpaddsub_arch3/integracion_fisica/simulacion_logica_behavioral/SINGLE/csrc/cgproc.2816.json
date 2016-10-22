@@ -1,0 +1,103 @@
+{
+    "Modules": {
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "Rotate_Mux_Array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer_AC_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "add_sub_carry_out": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Comparators": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 8130,
+            "checksum": 4294967295
+        },
+        "iGyxR_d": {
+            "mod": "Comparators",
+            "mode": 4,
+            "out": "iGyxR_d.o",
+            "bytes": 9458,
+            "checksum": 4294967295,
+            "archive": "archive.38/_2816_archive_1.a"
+        },
+        "UPR0r_d": {
+            "mod": "Multiplexer_AC_0000",
+            "mode": 4,
+            "out": "UPR0r_d.o",
+            "bytes": 7984,
+            "checksum": 4294967295,
+            "archive": "archive.38/_2816_archive_1.a"
+        },
+        "vTLY2_d": {
+            "mod": "add_sub_carry_out",
+            "mode": 4,
+            "out": "vTLY2_d.o",
+            "bytes": 8729,
+            "checksum": 4294967295,
+            "archive": "archive.38/_2816_archive_1.a"
+        },
+        "GBFFm_d": {
+            "mod": "Rotate_Mux_Array_0000",
+            "mode": 4,
+            "out": "GBFFm_d.o",
+            "bytes": 13059,
+            "checksum": 4294967295,
+            "archive": "archive.38/_2816_archive_1.a"
+        },
+        "vberv_d": {
+            "mod": "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+            "mode": 4,
+            "out": "vberv_d.o",
+            "bytes": 268191,
+            "checksum": 4294967295,
+            "archive": "archive.38/_2816_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "size": 307421,
+            "archive": "archive.38/_2816_archive_1.a",
+            "objects": [
+                [
+                    "UPR0r_d.o",
+                    7984
+                ],
+                [
+                    "vTLY2_d.o",
+                    8729
+                ],
+                [
+                    "GBFFm_d.o",
+                    13059
+                ],
+                [
+                    "iGyxR_d.o",
+                    9458
+                ],
+                [
+                    "vberv_d.o",
+                    268191
+                ]
+            ]
+        }
+    ]
+}

@@ -6,13 +6,13 @@ Report : timing
         -max_paths 1
 Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Fri Oct 21 13:55:00 2016
+Date   : Fri Oct 21 16:43:14 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: SGF_STAGE_DmP_mant_Q_reg_10_
+  Startpoint: SGF_STAGE_DmP_mant_Q_reg_8_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: NRM_STAGE_Raw_mant_Q_reg_54_
             (rising edge-triggered flip-flop clocked by clk)
@@ -23,58 +23,58 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  SGF_STAGE_DmP_mant_Q_reg_10_/CK (DFFRXLTS)              0.00       1.00 r
-  SGF_STAGE_DmP_mant_Q_reg_10_/QN (DFFRXLTS)              1.15       2.15 r
-  U2324/Y (NOR2XLTS)                                      0.18       2.34 f
-  U2367/Y (NOR2XLTS)                                      0.38       2.72 r
-  U2674/Y (NAND2X1TS)                                     0.25       2.97 f
-  U2678/Y (NOR2X1TS)                                      0.16       3.13 r
-  U2691/Y (AOI21X1TS)                                     0.20       3.33 f
-  U2717/Y (OAI21X2TS)                                     0.21       3.55 r
-  U2718/Y (OAI22X2TS)                                     0.15       3.70 f
-  U2212/CO (AFHCINX2TS)                                   0.22       3.92 r
-  U4324/CON (AFHCONX2TS)                                  0.22       4.14 f
-  U2216/CO (AFHCINX4TS)                                   0.29       4.43 r
-  U4087/CON (AFHCONX2TS)                                  0.22       4.65 f
-  U2217/CO (AFHCINX4TS)                                   0.29       4.94 r
-  U4419/CON (AFHCONX2TS)                                  0.22       5.15 f
-  U2219/CO (AFHCINX4TS)                                   0.29       5.44 r
-  U4080/CON (AFHCONX2TS)                                  0.19       5.63 f
-  U2426/CO (AFHCINX2TS)                                   0.33       5.96 r
-  U4252/CON (AFHCONX2TS)                                  0.20       6.15 f
-  U2424/CO (AFHCINX2TS)                                   0.32       6.48 r
-  U4186/CON (AFHCONX2TS)                                  0.22       6.70 f
-  U2213/CO (AFHCINX4TS)                                   0.28       6.98 r
-  U4311/CON (AFHCONX2TS)                                  0.19       7.17 f
-  U1915/CO (AFHCINX2TS)                                   0.32       7.49 r
-  U2214/Y (OAI22X2TS)                                     0.18       7.67 f
-  U4172/CO (AFHCINX2TS)                                   0.22       7.88 r
-  U4175/CON (AFHCONX2TS)                                  0.22       8.10 f
-  U4179/CO (AFHCINX4TS)                                   0.29       8.39 r
-  U4212/CON (AFHCONX2TS)                                  0.22       8.61 f
-  U2218/CO (AFHCINX4TS)                                   0.28       8.89 r
-  U2420/Y (OAI22X1TS)                                     0.21       9.10 f
-  U4203/CO (AFHCINX2TS)                                   0.24       9.34 r
-  U2719/Y (OAI2BB1X2TS)                                   0.15       9.49 f
-  U2290/Y (OAI2BB1X2TS)                                   0.09       9.58 r
-  U2419/Y (OAI2BB1X1TS)                                   0.10       9.68 f
-  U2082/Y (OAI2BB1X1TS)                                   0.12       9.80 r
-  U2720/Y (XNOR2X1TS)                                     0.22      10.02 f
-  U2762/Y (OAI2BB1X1TS)                                   0.28      10.30 f
-  NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRXLTS)               0.00      10.30 f
-  data arrival time                                                 10.30
+  SGF_STAGE_DmP_mant_Q_reg_8_/CK (DFFRXLTS)               0.00       1.00 r
+  SGF_STAGE_DmP_mant_Q_reg_8_/QN (DFFRXLTS)               1.15       2.15 r
+  U2195/Y (NOR2XLTS)                                      0.18       2.34 f
+  U2287/Y (NOR2XLTS)                                      0.33       2.67 r
+  U2636/Y (NAND2X1TS)                                     0.22       2.89 f
+  U2102/Y (OAI21X1TS)                                     0.26       3.15 r
+  U2657/Y (AOI21X1TS)                                     0.24       3.39 f
+  U2681/Y (OAI21X2TS)                                     0.21       3.60 r
+  U2146/Y (OAI22X2TS)                                     0.15       3.75 f
+  U4202/CO (AFHCINX2TS)                                   0.22       3.98 r
+  U4334/CON (AFHCONX2TS)                                  0.22       4.20 f
+  U2151/CO (AFHCINX4TS)                                   0.29       4.49 r
+  U4096/CON (AFHCONX2TS)                                  0.22       4.70 f
+  U2148/CO (AFHCINX4TS)                                   0.29       4.99 r
+  U4426/CON (AFHCONX2TS)                                  0.22       5.21 f
+  U2152/CO (AFHCINX4TS)                                   0.29       5.50 r
+  U4089/CON (AFHCONX2TS)                                  0.22       5.71 f
+  U2154/CO (AFHCINX4TS)                                   0.29       6.00 r
+  U4267/CON (AFHCONX2TS)                                  0.19       6.19 f
+  U2379/CO (AFHCINX2TS)                                   0.32       6.51 r
+  U4194/CON (AFHCONX2TS)                                  0.22       6.74 f
+  U2150/CO (AFHCINX4TS)                                   0.28       7.02 r
+  U4323/CON (AFHCONX2TS)                                  0.22       7.23 f
+  U2145/CO (AFHCINX4TS)                                   0.28       7.52 r
+  U2147/Y (OAI22X2TS)                                     0.17       7.68 f
+  U4181/CO (AFHCINX2TS)                                   0.22       7.90 r
+  U4184/CON (AFHCONX2TS)                                  0.22       8.12 f
+  U2155/CO (AFHCINX4TS)                                   0.29       8.41 r
+  U4222/CON (AFHCONX2TS)                                  0.19       8.60 f
+  U1957/CO (AFHCINX2TS)                                   0.31       8.91 r
+  U2374/Y (OAI22X1TS)                                     0.22       9.13 f
+  U4211/CO (AFHCINX2TS)                                   0.24       9.37 r
+  U2683/Y (OAI2BB1X2TS)                                   0.15       9.51 f
+  U2233/Y (OAI2BB1X2TS)                                   0.09       9.60 r
+  U2586/Y (OAI2BB1X1TS)                                   0.10       9.71 f
+  U2025/Y (OAI2BB1X1TS)                                   0.12       9.83 r
+  U2684/Y (XNOR2X1TS)                                     0.16       9.99 r
+  U2149/Y (OAI2BB1X2TS)                                   0.25      10.24 r
+  NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRXLTS)               0.00      10.24 r
+  data arrival time                                                 10.24
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
   NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRXLTS)              0.00      10.50 r
-  library setup time                                     -0.19      10.31
-  data required time                                                10.31
+  library setup time                                     -0.26      10.24
+  data required time                                                10.24
   --------------------------------------------------------------------------
-  data required time                                                10.31
-  data arrival time                                                -10.30
+  data required time                                                10.24
+  data arrival time                                                -10.24
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.00
+  slack (MET)                                                        0.01
 
 
 1

@@ -1,12 +1,12 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Fri Oct 21 14:03:25 2016
+# Saved on Fri Oct 21 16:10:39 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
-#   Source.1: add_sub_carry_out
 #   Wave.1: 0 signals
+#   Source.1: add_sub_carry_out
 #   Group count = 0
 # End_DVE_Session_Save_Info
 
@@ -41,12 +41,12 @@ set Console.1 Console.1
 gui_update_layout -id ${Console.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 set HSPane.1 HSPane.1
 set Hier.1 Hier.1
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 956} {child_hier_coltype 400} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 584} {child_hier_coltype 90} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 DLPane.1
 set Data.1 Data.1
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 571} {child_data_colvalue 358} {child_data_coltype 425} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 344} {child_data_colvalue 131} {child_data_coltype 198} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Wave.1 Wave.1
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 618} {child_wave_right 736} {child_wave_colname 377} {child_wave_colvalue 237} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 307} {child_wave_right 365} {child_wave_colname 222} {child_wave_colvalue 81} {child_wave_col1 0} {child_wave_col2 1}}
 set Source.1 Source.1
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 
@@ -125,7 +125,7 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 20694882 20695119
+gui_wv_zoom_timerange -id ${Wave.1} 20694943 20695058
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 

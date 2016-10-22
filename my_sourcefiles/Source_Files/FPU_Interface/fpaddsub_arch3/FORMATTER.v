@@ -72,7 +72,7 @@ Comparator_Less #(.W(EW)) LTComparator (
 
 //This generate sentence creates the limit values based on the
 //precision format
-
+`ifdef GEN
   generate
   	if(EW == 9) begin
   		assign U_limit = 9'hfe;
@@ -83,6 +83,10 @@ Comparator_Less #(.W(EW)) LTComparator (
   		assign L_limit = 12'b000000000001;
   	end
   endgenerate
+`endif
+
+assign U_limit = {{(EW-1){1'b1}},1'b0};
+assign L_limit = {{(EW-1){1'b0}},1'b1};
 
 endmodule
 

@@ -1,0 +1,138 @@
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE +define+FRANCIS_LZD=1
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpPUrpQ0
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.26377}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.26377}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Fri Oct 21 16:09:22 2016
+# Designs open: 1
+#   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
+# Toplevel windows open: 1
+# 	TopLevel.1
+#   Source.1: add_sub_carry_out
+#   Wave.1: 0 signals
+#   Group count = 0
+# End_DVE_Session_Save_Info
+# DVE version: K-2015.09-SP2-3_Full64
+# DVE build date: Jun 15 2016 22:18:13
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+# Application preferences
+#<WindowLayout>
+# DVE top-level session
+# Create and position top-level window: TopLevel.1
+set TopLevel.1 TopLevel.1
+# Docked window settings
+# MDI window settings
+set Console.1 Console.1
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Wave.1 Wave.1
+set Source.1 Source.1
+# End MDI window settings
+#</WindowLayout>
+#<Database>
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Post database loading setting...
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_select -id ${Hier.1} {add_sub_carry_out}}
+ucliGUI::getSignalValues -scope add_sub_carry_out -radix {binary hexadecimal hexadecimal hexadecimal decimal } -list {op_mode {Data_A[31:0]} {Data_B[31:0]} {Data_S[32:0]} W }
+# Data 'Data.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Source 'Source.1'
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${DLPane.1} }
+#</Session>
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope add_sub_carry_out -radix {binary hexadecimal hexadecimal hexadecimal decimal } -list {op_mode {Data_A[31:0]} {Data_B[31:0]} {Data_S[32:0]} W }
+# DVE Simulation Rebuild/Restart Options
+# Saved on Thu Oct 20 16:15:30 2016
+set SIMSETUP::REBUILDOPTION 0
+set SIMSETUP::REBUILDCMD {}
+set SIMSETUP::REBUILDDIR {}
+set SIMSETUP::RESTOREBP 1
+set SIMSETUP::RESTOREDUMP 1
+set SIMSETUP::RESTOREFORCE 1
+set SIMSETUP::RESTORESPECMAN 0
+# DVE Simulation Rebuild/Restart Options
+# Saved on Thu Oct 20 16:15:30 2016
+set SIMSETUP::REBUILDOPTION 0
+set SIMSETUP::REBUILDCMD {}
+set SIMSETUP::REBUILDDIR {}
+set SIMSETUP::RESTOREBP 1
+set SIMSETUP::RESTOREDUMP 1
+set SIMSETUP::RESTOREFORCE 1
+set SIMSETUP::RESTORESPECMAN 0
+# DVE Simulation Rebuild/Restart Options
+# Saved on Fri Oct 21 16:10:39 2016
+set SIMSETUP::REBUILDOPTION 0
+set SIMSETUP::REBUILDCMD {}
+set SIMSETUP::REBUILDDIR {}
+set SIMSETUP::RESTOREBP 1
+set SIMSETUP::RESTOREDUMP 1
+set SIMSETUP::RESTOREFORCE 1
+set SIMSETUP::RESTORESPECMAN 0
+# DVE Simulation Rebuild/Restart Options
+# Saved on Fri Oct 21 16:10:39 2016
+set SIMSETUP::REBUILDOPTION 0
+set SIMSETUP::REBUILDCMD {}
+set SIMSETUP::REBUILDDIR {}
+set SIMSETUP::RESTOREBP 1
+set SIMSETUP::RESTOREDUMP 1
+set SIMSETUP::RESTOREFORCE 1
+set SIMSETUP::RESTORESPECMAN 0
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+# DVE Simulation Rebuild/Restart Options
+# Saved on Fri Oct 21 16:10:39 2016
+set SIMSETUP::REBUILDOPTION 0
+set SIMSETUP::REBUILDCMD {}
+set SIMSETUP::REBUILDDIR {}
+set SIMSETUP::RESTOREBP 1
+set SIMSETUP::RESTOREDUMP 1
+set SIMSETUP::RESTOREFORCE 1
+set SIMSETUP::RESTORESPECMAN 0

@@ -6,9 +6,9 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
   Please refer to release notes for information on supported platforms.
 
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
-+define+FRANCIS_LZD=1 -timescale=1ns/1ps
++define+FRANCIS_LZD=1 -timescale=1ns/1ps +neg_tchk
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Fri Oct 21 15:41:03 2016
+      Version K-2015.09-SP2-3_Full64 -- Fri Oct 21 16:39:56 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -34,17 +34,21 @@ Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/FORMATTER.v, 14
   Verilog compiler directive encountered "`timescale".
 
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 75
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 86
+  Verilog compiler directive encountered "`endif".
+
 Parsing design file '../../front_end/source/Tenth_Phase_v2.v'
 
 Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/Tenth_Phase_v2.v, 1
   Verilog compiler directive encountered "`timescale".
-
-
-Warning-[TMBIN] Too many bits in Based Number
-../../front_end/source/Tenth_Phase_v2.v, 112
-  The specified width is '11' bits, actually got '12' bits.
-  The offending number is : 'fff'.
 
 Parsing design file '../../front_end/source/FPU_ADD_Substract_PIPELINED.v'
 
@@ -130,26 +134,6 @@ Lint-[VCDE] Compiler directive encountered
 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v, 14
   Verilog compiler directive encountered "`timescale".
 
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v, 42
-  Verilog compiler directive encountered "`ifdef".
-
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v, 75
-  Verilog compiler directive encountered "`endif".
-
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v, 104
-  Verilog compiler directive encountered "`ifndef".
-
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v, 137
-  Verilog compiler directive encountered "`endif".
-
 Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator.v'
 
 Lint-[VCDE] Compiler directive encountered
@@ -211,31 +195,31 @@ Lint-[VCDE] Compiler directive encountered
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 259
+./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 261
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 266
+./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 268
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 276
+./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 278
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 282
+./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 284
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 287
+./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 289
   Null statement is used in following verilog source.
   
 
@@ -244,26 +228,25 @@ Top Level Modules:
        Comparators
        tb_FPU_PIPELINED_FPADDSUB2_vector_testing
 TimeScale is 1 ns / 1 ps
-
-Lint-[PCWM-L] Port connection width mismatch
-../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 829
-"RegisterAdd #(1) Ready_reg( .clk (clk),  .rst (rst),  .load (1),  .D (NRM2_ACTIVE),  .Q (ready));"
-  The following 32-bit expression is connected to 1-bit port "load" of module 
-  "RegisterAdd", instance "Ready_reg".
-  Expression: 1
-  The expression is from module FPU_PIPELINED_FPADDSUB, instance inst_uut 
-
 Starting vcs inline pass...
 5 modules and 0 UDP read.
-	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module Multiplexer_AC because:
+	Some compilation options have been changed.
+recompiling module add_sub_carry_out because:
+	Some compilation options have been changed.
+recompiling module Rotate_Mux_Array because:
+	Some compilation options have been changed.
+recompiling module Comparators because:
+	Some compilation options have been changed.
 recompiling module tb_FPU_PIPELINED_FPADDSUB2_vector_testing because:
-	This module or some inlined child module(s) has/have been modified.
+	Some compilation options have been changed.
+All of 5 modules done
 rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
-_6801_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
-rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+_2816_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
@@ -274,20 +257,20 @@ rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/
 -Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o \
 -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
-Command: ./simv -gui +v2k +lint=all -a log_name +define+SINGLE +define+FRANCIS_LZD=1 -ucli
+Command: ./simv -gui +v2k +lint=all -a log_name +define+SINGLE +define+FRANCIS_LZD=1 +neg_tchk -ucli
 Warning : License for product VCSRuntime_Net(725) will expire within 21 days, on: 10-nov-2016.
 If you would like to temporarily disable this message, set 
  the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
 before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 21 15:41 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 21 16:39 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-$finish called from file "./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v", line 251.
+$finish called from file "./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v", line 252.
 $finish at simulation time             20695000
 Simulation complete, time is 20695000 ps.
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 20695000 ps
-CPU Time:      0.170 seconds;       Data structure size:   0.1Mb
-Fri Oct 21 15:41:13 2016
-CPU time: .439 seconds to compile + .600 seconds to elab + .115 seconds to link + 4.848 seconds in simulation
+CPU Time:      0.240 seconds;       Data structure size:   0.1Mb
+Fri Oct 21 17:17:52 2016
+CPU time: .453 seconds to compile + .325 seconds to elab + .124 seconds to link + 27.294 seconds in simulation

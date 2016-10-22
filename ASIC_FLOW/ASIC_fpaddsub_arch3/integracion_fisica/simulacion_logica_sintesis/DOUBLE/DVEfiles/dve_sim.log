@@ -1,0 +1,251 @@
+18:11:40    288 --> ...                                                      [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/simv  +v2k +lint=all -a log_name +define+DOUBLE +define+FRANCIS_LZD=1 +neg_tchk +sdfverbose -ucligui
+18:11:40    289 --> ...                                                          [tcl] set ucliGUI::state
+18:11:40    290 --> ...                                                              [tcl] gui_update_simulator_buttons
+18:11:41    291 --> ...                                                                  [tcl] set ucliGUI::state
+18:11:41    292 --> ...                                                                      [tcl] ucliCore::getToolPID
+18:11:41    293 --> ...                                                                          [tcl] synopsys::env hasTB
+18:11:41    294 --> ...                                                                              [tcl] trigger_hier_stack_context_switch 0
+18:11:41    295 --> ...                                                                                  [tcl] synUtils::setDVEInitPhase 1
+18:11:41    296 --> ...                                                                                      [tcl] gui_get_env SIMSETUP::SIMVPD
+18:11:41    297 --> ...                                                                                          [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd -locking
+18:11:41    298 --> ...                                                                                              [tcl] synopsys::dump -autoflush on -fid VPD1
+18:11:41    299 --> ...                                                                                                  [tcl] set ::dve_fid VPD1
+18:11:41    300 --> ...  [tcl] synUtils::setDVEInitPhase 0
+18:11:41    301 --> ...      [tcl] ucliCore::getToolPID
+18:11:41    302 --> ...          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp88u9zG
+18:11:41    303 --> ...              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.12751}
+18:11:41    304 --> ...                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.12751}
+18:11:41    305 --> ...                      [tcl] config endofsim noexit
+18:11:41    306 --> ...                          [tcl] config onfail enable all
+18:11:41    307 --> ...                              [tcl] config syscaddplainmembers
+18:11:41    308 --> ...                                  [tcl] config syscaddsourcenames
+18:11:41    309 --> ...                                      [tcl] config syscaddstructtypes
+18:11:41    310 --> ...                                          [tcl] synopsys::listing -disable
+18:11:41    311 --> ...                                              [tcl] if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+18:11:41    312 --> ...                                                  [tcl] gui_set_precision 1ps
+18:11:41    313 --> ...                                                      [tcl] gui_set_time_units 1ns
+18:11:41    314 --> ...                                                          [tcl] #</Database>
+18:11:41    315 --> ...                                                              [tcl] # DVE Global setting session:
+18:11:41    316 --> ...                                                                  [tcl] # Global: Breakpoints
+18:11:41    317 --> ...                                                                      [tcl] # Global: Bus
+18:11:41    318 --> ...                                                                          [tcl] # Global: Expressions
+18:11:41    319 --> ...                                                                              [tcl] # Global: Signal Time Shift
+18:11:41    320 --> ...                                                                                  [tcl] # Global: Signal Compare
+18:11:41    321 --> ...                                                                                      [tcl] # Global: Signal Groups
+18:11:41    322 --> ...                                                                                          [tcl] gui_load_child_values {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut}
+18:11:41    323 --> ...                                                                                              [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut} -scope "." -depth 1 -fid VPD1
+18:11:41    324 --> ...                                                                                                  [tcl] set _session_group_1 tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:41    325 --> ...  [tcl] gui_sg_create "$_session_group_1"
+18:11:41    326 --> ...      [tcl] set tb_FPU_PIPELINED_FPADDSUB2_vector_testing "$_session_group_1"
+18:11:41    327 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_1" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Cont_CLK tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_exp tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_mant tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.FileSaveData tb_FPU_PIPELINED_FPADDSUB2_vector_testing.PERIOD tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SWR tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SW tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.W tb_FPU_PIPELINED_FPADDSUB2_vector_testing.add_subt tb_FPU_PIPELINED_FPADDSUB2_vector_testing.beg_OP tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy tb_FPU_PIPELINED_FPADDSUB2_vector_testing.clk tb_FPU_PIPELINED_FPADDSUB2_vector_testing.contador tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_exponent tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_mantissa tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_sign tb_FPU_PIPELINED_FPADDSUB2_vector_testing.logVectorReference tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee }
+18:11:41    328 --> ...              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+18:11:41    329 --> ...                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+18:11:41    330 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR}
+18:11:41    331 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR}
+18:11:41    332 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW}
+18:11:41    333 --> ...                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW}
+18:11:41    334 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.PERIOD}
+18:11:41    335 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.PERIOD}
+18:11:41    336 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SWR}
+18:11:41    337 --> ...                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SWR}
+18:11:41    338 --> ...                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SW}
+18:11:41    339 --> ...                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SW}
+18:11:41    340 --> ...                                                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+18:11:41    341 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.W}
+18:11:41    342 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.W}
+18:11:41    343 --> ...                                                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+18:11:41    344 --> ...                                                                              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+18:11:41    345 --> ...                                                                                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+18:11:41    346 --> ...                                                                                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+18:11:41    347 --> ...                                                                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+18:11:41    348 --> ...                                                                                              [tcl] set _session_group_2 Group1
+18:11:41    349 --> ...                                                                                                  [tcl] gui_sg_create "$_session_group_2"
+18:11:41    350 --> ...  [tcl] set Group1 "$_session_group_2"
+18:11:41    351 --> ...      [tcl] gui_sg_addsignal -group "$_session_group_2" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee }
+18:11:41    352 --> ...          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X}
+18:11:41    353 --> ...              [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y}
+18:11:41    354 --> ...                  [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result}
+18:11:41    355 --> ...                      [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+18:11:41    356 --> ...                          [tcl] set _session_group_3 {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}
+18:11:41    357 --> ...                              [tcl] gui_sg_create "$_session_group_3"
+18:11:41    358 --> ...                                  [tcl] set {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593} "$_session_group_3"
+18:11:41    359 --> ...                                      [tcl] gui_sg_addsignal -group "$_session_group_3" { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.clk }
+18:11:41    360 --> ...                                          [tcl] gui_set_radix -radix {Hex2Float_BigEndian} -signals {Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee}
+18:11:41    361 --> ...                                              [tcl] # Global: Highlighting
+18:11:41    362 --> ...                                                  [tcl] # Global: Stack
+18:11:41    363 --> ...                                                      [tcl] gui_change_stack_mode -mode list
+18:11:41    364 --> ...                                                          [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+18:11:41    365 --> ...                                                              [tcl] # Global: Watch 'Watch'
+18:11:41    366 --> ...                                                                  [tcl] gui_watch_page_delete -id Watch -all
+18:11:41    367 --> ...                                                                      [tcl] gui_watch_page_add -id Watch
+18:11:41    368 --> ...                                                                          [tcl] gui_watch_page_rename -id Watch -name {Watch 1}
+18:11:41    369 --> ...                                                                              [tcl] gui_watch_list_add_expr -id Watch -expr {Data_X[63:0]} -meta tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X -type Reg -nonlocal -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:41    370 --> ...                                                                                  [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{Data_X[63:0]} }
+18:11:41    371 --> ...                                                                                      [tcl] gui_watch_list_add_expr -id Watch -expr {Data_Y[63:0]} -meta tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y -type Reg -nonlocal -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:41    372 --> ...                                                                                          [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{Data_Y[63:0]} }
+18:11:41    373 --> ...                                                                                              [tcl] gui_watch_list_add_expr -id Watch -expr {Theoretical_result[63:0]} -meta tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result -type Reg -nonlocal -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:41    374 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{Theoretical_result[63:0]} }
+18:11:41    375 --> ...  [tcl] gui_watch_list_add_expr -id Watch -expr {final_result_ieee[63:0]} -meta tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee -type Wire -nonlocal -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:41    376 --> ...      [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{final_result_ieee[63:0]} }
+18:11:41    377 --> ...          [tcl] gui_watch_page_add -id Watch
+18:11:41    378 --> ...              [tcl] gui_watch_page_rename -id Watch -name {Watch 2}
+18:11:41    379 --> ...                  [tcl] gui_watch_page_add -id Watch
+18:11:41    380 --> ...                      [tcl] gui_watch_page_rename -id Watch -name {Watch 3}
+18:11:41    381 --> ...                          [tcl] # Post database loading setting...
+18:11:41    382 --> ...                              [tcl] # Restore C1 time
+18:11:41    383 --> ...                                  [tcl] gui_set_time -C1_only 20695
+18:11:41    384 --> ...                                      [tcl] ucliGUI::vpdAddHierarchy -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -depth 2 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd; synopsys::dump -flush VPD1
+18:11:41    385 --> ...                                          [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X} -aggregates  -fid VPD1
+18:11:41    386 --> ...                                              [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y} -aggregates  -fid VPD1
+18:11:41    387 --> ...                                                  [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result} -aggregates  -fid VPD1
+18:11:41    388 --> ...                                                      [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee} -aggregates  -fid VPD1
+18:11:41    389 --> ...                                                          [tcl] # Save global setting...
+18:11:41    390 --> ...                                                              [tcl] # Wave/List view global setting
+18:11:41    391 --> ...                                                                  [tcl] gui_cov_show_value -switch false
+18:11:41    392 --> ...                                                                      [tcl] # Close all empty TopLevel windows
+18:11:41    393 --> ...                                                                          [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+18:11:41    394 --> ...                                                                              [tcl] gui_set_loading_session_type noSession
+18:11:41    395 --> ...                                                                                  [tcl] # DVE View/pane content session:
+18:11:41    396 --> ...                                                                                      [tcl] # DriverLoad 'DriverLoad.1'
+18:11:41    397 --> ...                                                                                          [tcl] gui_get_drivers -session -id ${DriverLoad.1} -signal {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]} -time 3.593 -starttime 118
+18:11:41    398 --> ...                                                                                              [tcl] # Watch 'Watch.1'
+18:11:41    399 --> ...                                                                                                  [tcl] gui_watch_page_activate -id ${Watch.1} -page {Watch 1}
+18:11:41    400 --> ...  [tcl] gui_list_set_filter -id ${Watch.1} -page {Watch 1} -list { {static 1} {randc 1} {public 1} {Parameter 1} {protected 1} {OtherTypes 1} {array 1} {local 1} {class 1} {AllTypes 1} {rand 1} {constraint 1} }
+18:11:41    401 --> ...      [tcl] gui_list_set_filter -id ${Watch.1} -page {Watch 1} -text {*}
+18:11:41    402 --> ...          [tcl] gui_watch_list_scroll_to -id ${Watch.1} -horz 0 -vert 0
+18:11:41    403 --> ...              [tcl] gui_watch_page_activate -id ${Watch.1} -page {Watch 2}
+18:11:42    404 --> ...                  [tcl] gui_list_set_filter -id ${Watch.1} -page {Watch 2} -list { {static 1} {randc 1} {public 1} {Parameter 1} {protected 1} {OtherTypes 1} {array 1} {local 1} {class 1} {AllTypes 1} {rand 1} {constraint 1} }
+18:11:42    405 --> ...                      [tcl] gui_list_set_filter -id ${Watch.1} -page {Watch 2} -text {*}
+18:11:42    406 --> ...                          [tcl] gui_watch_page_activate -id ${Watch.1} -page {Watch 3}
+18:11:42    407 --> ...                              [tcl] gui_list_set_filter -id ${Watch.1} -page {Watch 3} -list { {static 1} {randc 1} {public 1} {Parameter 1} {protected 1} {OtherTypes 1} {array 1} {local 1} {class 1} {AllTypes 1} {rand 1} {constraint 1} }
+18:11:42    408 --> ...                                  [tcl] gui_list_set_filter -id ${Watch.1} -page {Watch 3} -text {*}
+18:11:42    409 --> ...                                      [tcl] gui_watch_page_activate -id ${Watch.1} -page {Watch 1}
+18:11:42    410 --> ...                                          [tcl] gui_view_scroll -id ${Watch.1} -vertical -set 0
+18:11:42    411 --> ...                                              [tcl] gui_view_scroll -id ${Watch.1} -horizontal -set 0
+18:11:42    412 --> ...                                                  [tcl] # Hier 'Hier.1'
+18:11:42    413 --> ...                                                      [tcl] gui_show_window -window ${Hier.1}
+18:11:42    414 --> ...                                                          [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+18:11:42    415 --> ...                                                              [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+18:11:42    416 --> ...                                                                  [tcl] gui_hier_list_init -id ${Hier.1}
+18:11:42    417 --> ...                                                                      [tcl] gui_change_design -id ${Hier.1} -design Sim
+18:11:42    418 --> ...                                                                          [tcl] catch {gui_list_select -id ${Hier.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing}}
+18:11:42    419 --> ...                                                                              [tcl] dveMisc::vbusExpand tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:42    420 --> ...                                                                                  [tcl] synopsys::dump -add {tb_FPU_PIPELINED_FPADDSUB2_vector_testing} -scope "." -depth 1 -fid VPD1
+18:11:42    421 --> ...                                                                                      [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+18:11:42    422 --> ...                                                                                          [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+18:11:42    423 --> ...                                                                                              [tcl] # Data 'Data.1'
+18:11:42    424 --> ...                                                                                                  [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+18:11:42    425 --> ...  [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+18:11:42    426 --> ...      [tcl] gui_list_show_data -id ${Data.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    427 --> ...          [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+18:11:42    428 --> ...              [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+18:11:42    429 --> ...                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+18:11:42    430 --> ...                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+18:11:42    431 --> ...                          [tcl] # View 'Wave.1'
+18:11:42    432 --> ...                              [tcl] gui_wv_sync -id ${Wave.1} -switch false
+18:11:42    433 --> ...                                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+18:11:42    434 --> ...                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+18:11:42    435 --> ...                                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+18:11:42    436 --> ...                                              [tcl] gui_list_set_height -id Wave -height 15
+18:11:42    437 --> ...                                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+18:11:42    438 --> ...                                                      [tcl] gui_list_create_group_when_add -wave -disable
+18:11:42    439 --> ...                                                          [tcl] gui_marker_set_ref -id ${Wave.1}  C1
+18:11:42    440 --> ...                                                              [tcl] gui_wv_zoom_timerange -id ${Wave.1} 20641.497 20748.532
+18:11:42    441 --> ...                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    442 --> ...                                                                      [tcl] gui_list_set_height -id ${Wave.1} -height 25 -name tb_FPU_PIPELINED_FPADDSUB2_vector_testing
+18:11:42    443 --> ...                                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {{Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}}
+18:11:42    444 --> ...                                                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25 -name {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}
+18:11:42    445 --> ...                                                                                  [tcl] gui_list_select -id ${Wave.1} {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee }
+18:11:42    446 --> ...                                                                                      [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+18:11:42    447 --> ...                                                                                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Cont_CLK -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    448 --> ...                                                                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    449 --> ...                                                                                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_exp -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    450 --> ...  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_mant -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    451 --> ...      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X_sign -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    452 --> ...          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    453 --> ...              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_exp -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    454 --> ...                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_mant -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    455 --> ...                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y_sign -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    456 --> ...                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EWR -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    457 --> ...                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.EW -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    458 --> ...                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.FileSaveData -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    459 --> ...                                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.PERIOD -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    460 --> ...                                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SWR -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    461 --> ...                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.SW -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    462 --> ...                                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    463 --> ...                                                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_exponent -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    464 --> ...                                                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_mantissa -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    465 --> ...                                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result_sign -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    466 --> ...                                                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.W -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    467 --> ...                                                                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.add_subt -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    468 --> ...                                                                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.beg_OP -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    469 --> ...                                                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    470 --> ...                                                                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.clk -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    471 --> ...                                                                                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.contador -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    472 --> ...                                                                                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    473 --> ...                                                                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_exponent -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    474 --> ...                                                                                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_mantissa -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    475 --> ...  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee_sign -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    476 --> ...      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.logVectorReference -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    477 --> ...          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.overflow_flag -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    478 --> ...              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    479 --> ...                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    480 --> ...                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    481 --> ...                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag -occurrence 1 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    482 --> ...                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X -occurrence 2 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    483 --> ...                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y -occurrence 2 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    484 --> ...                                      [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result -occurrence 2 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    485 --> ...                                          [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee -occurrence 2 -group ${tb_FPU_PIPELINED_FPADDSUB2_vector_testing}
+18:11:42    486 --> ...                                              [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee -occurrence 1 -group ${Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}
+18:11:42    487 --> ...                                                  [tcl] gui_list_set_height -id ${Wave.1} -height 25  -name Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.clk -occurrence 1 -group ${Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}
+18:11:42    488 --> ...                                                      [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+18:11:42    489 --> ...                                                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+18:11:42    490 --> ...                                                              [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+18:11:42    491 --> ...                                                                  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+18:11:42    492 --> ...                                                                      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+18:11:42    493 --> ...                                                                          [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+18:11:42    494 --> ...                                                                              [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+18:11:42    495 --> ...                                                                                  [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group tb_FPU_PIPELINED_FPADDSUB2_vector_testing  -position in
+18:11:42    496 --> ...                                                                                      [tcl] gui_marker_move -id ${Wave.1} {C1} 20695
+18:11:42    497 --> ...                                                                                          [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 777
+18:11:42    498 --> ...                                                                                              [tcl] gui_show_grid -id ${Wave.1} -enable false
+18:11:42    499 --> ...                                                                                                  [tcl] # Source 'Source.1'
+18:11:42    500 --> ...  [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+18:11:42    501 --> ...      [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+18:11:42    502 --> ...          [tcl] gui_open_source -id ${Source.1}  -replace -active tb_FPU_PIPELINED_FPADDSUB2_vector_testing tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v
+18:11:42    503 --> ...              [tcl] gui_src_value_annotate -id ${Source.1} -switch true
+18:11:42    504 --> ...                  [tcl] gui_set_env TOGGLE::VALUEANNOTATE 1
+18:11:42    505 --> ...                      [tcl] gui_view_scroll -id ${Source.1} -vertical -set 1120
+18:11:42    506 --> ...                          [tcl] gui_src_set_reusable -id ${Source.1}
+18:11:42    507 --> ...                              [tcl] # View 'List.1'
+18:11:42    508 --> ...                                  [tcl] gui_lst_add_group -id ${List.1} {{Group1} } -noupdate
+18:11:42    509 --> ...                                      [tcl] gui_lst_set_strobing_period -id ${List.1} -start {0} -end {0} -update -all
+18:11:42    510 --> ...                                          [tcl] gui_set_env TOGGLE::DEFAULT_LIST_WINDOW ${List.1}
+18:11:42    511 --> ...                                              [tcl] gui_view_scroll -id ${List.1} -vertical -set 169045
+18:11:42    512 --> ...                                                  [tcl] gui_view_scroll -id ${List.1} -horizontal -set 0
+18:11:42    513 --> ...                                                      [tcl] # Restore toplevel window zorder
+18:11:42    514 --> ...                                                          [tcl] # The toplevel window could be closed if it has no view/pane
+18:11:42    515 --> ...                                                              [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} }
+18:11:42    516 --> ...                                                                  [tcl] #</Session>
+18:11:43    517 --> ...                                                                      [tcl] synopsys::run
+18:11:43    518 --> ...                                                                          [tcl] set ucliGUI::state
+18:11:43    519 --> ...                                                                              [tcl] set ucliGUI::state
+18:11:43    520 --> ...                                                                                  [tcl] gui_update_simulator_buttons
+18:11:46    521 --> ...                                                                                      [tcl] set ucliGUI::state
+18:11:46    522 --> ...                                                                                          [tcl] set ucliGUI::state
+18:11:46    523 --> ...                                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+18:11:46    524 --> ...                                                                                                  [tcl] set dveMisc::result
+18:11:46    525 --> ...  [tcl] gui_update_simulator_buttons
+18:11:46    526 --> ...      [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {symbolic decimal symbolic hexadecimal binary hexadecimal hexadecimal hexadecimal decimal binary hexadecimal symbolic hexadecimal binary binary decimal decimal } -list {{logVectorReference[31:0]} EW {contador[31:0]} {Data_Y_exp[10:0]} Data_X_sign {Theoretical_result[63:0]} {Data_X_exp[10:0]} {Theoretical_result_exponent[10:0]} SW underflow_flag {final_result_ieee_exponent[10:0]} {FileSaveData[31:0]} {Data_Y_mant[51:0]} beg_OP ready SWR PERIOD }
+18:11:46    527 --> ...          [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal hexadecimal } -list {{Data_X[63:0]} {Data_Y[63:0]} }
+18:11:46    528 --> ...              [tcl] ucliGUI::getSignalValues -scope tb_FPU_PIPELINED_FPADDSUB2_vector_testing -radix {hexadecimal } -list {{final_result_ieee[63:0]} }
+18:19:03    529 --> ...                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+18:19:03    530 --> ...                      [tcl] synopsys::finish
+18:19:03    531 --> ...                          [tcl] set ucliGUI::state
+18:19:03    532 --> ...                              [tcl] set ucliGUI::state
+18:19:03    533 --> ...                                  [tcl] catch {senv activeDomain} dveMisc::result 
+18:19:03    534 --> ...                                      [tcl] set dveMisc::result
+18:19:03    535 --> ...                                          [tcl] gui_update_simulator_buttons
+18:19:03    536 --> ...                                              [tcl] catch {senv activeDomain} dveMisc::result 
+18:19:03    537 --> ...                                                  [tcl] set dveMisc::result
+18:19:03    538 --> ...                                                      [tcl] ucli_exit

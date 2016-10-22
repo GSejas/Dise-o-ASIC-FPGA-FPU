@@ -39,7 +39,6 @@ module Priority_Codec_32(
     );
 parameter SWR = 26;
 
-`ifdef FRANCIS_LZD
 	always @(Data_Dec_i)
 	begin
 		if(~Data_Dec_i[25]) begin Data_Bin_o = 5'b00000;//0
@@ -72,67 +71,6 @@ parameter SWR = 26;
 		else Data_Bin_o = 5'b00000;//zero value
 
 	end
-`endif
 
-parameter case_data0 				   = {1'b1,{(SWR-1){1'bx}}},
-					case_data1           = {1'b0,1'b1,{(SWR-2){1'bx}}},
-					case_data2           = {{2{1'b0}}, 1'b1,{(SWR-3){1'bx}}},
-					case_data3           = {{3{1'b0}}, 1'b1,{(SWR-4){1'bx}}},
-					case_data4           = {{4{1'b0}}, 1'b1,{(SWR-5){1'bx}}},
-					case_data5           = {{5{1'b0}}, 1'b1,{(SWR-6){1'bx}}},
-					case_data6           = {{6{1'b0}}, 1'b1,{(SWR-7){1'bx}}},
-					case_data7           = {{7{1'b0}}, 1'b1,{(SWR-8){1'bx}}},
-					case_data8           = {{8{1'b0}}, 1'b1,{(SWR-9){1'bx}}},
-					case_data9           = {{9{1'b0}}, 1'b1,{(SWR-10){1'bx}}},
-					case_data10          = {{10{1'b0}}, 1'b1,{(SWR-11){1'bx}}} ,
-					case_data11          = {{11{1'b0}}, 1'b1,{(SWR-12){1'bx}}},
-					case_data12          = {{12{1'b0}}, 1'b1,{(SWR-13){1'bx}}},
-					case_data13          = {{13{1'b0}}, 1'b1,{(SWR-14){1'bx}}},
-					case_data14          = {{14{1'b0}}, 1'b1,{(SWR-15){1'bx}}},
-					case_data15          = {{15{1'b0}}, 1'b1,{(SWR-16){1'bx}}},
-					case_data16          = {{16{1'b0}}, 1'b1,{(SWR-17){1'bx}}},
-					case_data17          = {{17{1'b0}}, 1'b1,{(SWR-18){1'bx}}},
-					case_data18          = {{18{1'b0}}, 1'b1,{(SWR-19){1'bx}}},
-					case_data19          = {{19{1'b0}}, 1'b1,{(SWR-20){1'bx}}} ,
-					case_data20          = {{20{1'b0}}, 1'b1,{(SWR-21){1'bx}}} ,
-					case_data21          = {{21{1'b0}}, 1'b1,{(SWR-22){1'bx}}} ,
-					case_data22          = {{22{1'b0}}, 1'b1,{(SWR-23){1'bx}}} ,
-					case_data23          = {{23{1'b0}}, 1'b1,{(SWR-24){1'bx}}} ,
-					case_data24          = {{24{1'b0}}, 1'b1,{(SWR-25){1'bx}}} ,
-					case_data25          = {{25{1'b0}}, 1'b1} ;
 
-`ifndef FRANCIS_LZD
-
-always @(Data_Dec_i) begin
-	   casex (Data_Dec_i)
-							case_data0 : begin Data_Bin_o = 5'd0; end
-							case_data1 : begin Data_Bin_o = 5'd1; end
-							case_data2 : begin Data_Bin_o = 5'd2; end
-							case_data3 : begin Data_Bin_o = 5'd3; end
-							case_data4 : begin Data_Bin_o = 5'd4; end
-							case_data5 : begin Data_Bin_o = 5'd5; end
-							case_data6 : begin Data_Bin_o = 5'd6; end
-							case_data7 : begin Data_Bin_o = 5'd7; end
-							case_data8 : begin Data_Bin_o = 5'd8; end
-							case_data9 : begin Data_Bin_o = 5'd9; end
-							case_data10 : begin Data_Bin_o = 5'd10; end
-							case_data11: begin Data_Bin_o = 5'd11; end
-							case_data12: begin Data_Bin_o = 5'd12; end
-							case_data13: begin Data_Bin_o = 5'd13; end
-							case_data14: begin Data_Bin_o = 5'd14; end
-							case_data15: begin Data_Bin_o = 5'd15; end
-							case_data16: begin Data_Bin_o = 5'd16; end
-							case_data17 : begin Data_Bin_o = 5'd17; end
-							case_data18 : begin Data_Bin_o = 5'd18; end
-							case_data19: begin Data_Bin_o = 5'd19; end
-							case_data20: begin Data_Bin_o = 5'd20; end
-							case_data21: begin Data_Bin_o = 5'd21; end
-							case_data22: begin Data_Bin_o = 5'd22; end
-							case_data23: begin Data_Bin_o = 5'd23; end
-							case_data24: begin Data_Bin_o = 5'd24; end
-							case_data25: begin Data_Bin_o = 5'd25; end
-							default    : begin Data_Bin_o = 5'd26; end
-	   endcase
-end
-`endif
 endmodule

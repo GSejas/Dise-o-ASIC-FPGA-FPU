@@ -37,3 +37,20 @@ module RegisterAdd
 			Q <= Q;
 
 endmodule
+
+module FFD_NoCE
+	# (parameter W = 16)
+	(
+		input wire clk, //system clock
+		input wire rst, //system reset
+		input wire [W-1:0] D, //input signal
+		output reg [W-1:0] Q //output signal
+    );
+
+	always @(posedge clk, posedge rst)
+		if(rst)
+			Q <= 0;
+		else
+			Q <= D;
+
+endmodule

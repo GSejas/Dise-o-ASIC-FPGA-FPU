@@ -102,31 +102,14 @@ Multiplexer_AC #(.W(SW)) Sgf_Mux (
         .S(Sgf_S_mux)
         );
 /////////////////////////////////////////////////////////
-generate
-if(W == 32) begin
-    assign exp_mux_D1 =8'hff;
-    assign sgf_mux_D1 =23'd0;
-end
-else begin
 
-    assign exp_mux_D1 =11'hfff;
-    assign sgf_mux_D1 =52'd0;
 
-end
-endgenerate
+assign exp_mux_D1 = {(EW-1){1'b1}};
+assign sgf_mux_D1 = {(SW-1){1'b0}};
 ////////////////////////////////////////////////////////////////
 
 
 assign formatted_number = {Sign_S_mux,Exp_S_mux,Sgf_S_mux};
-// ////////////////////////////////////////////////////////
-// RegisterAdd #(.W(W)) Final_Result_IEEE (
-//     .clk(clk),
-//     .rst(rst),
-//     .load(load_i),
-//     .D({Sign_S_mux,Exp_S_mux,Sgf_S_mux}),
-//     .Q(final_result_ieee_o)
-//     );
-
 
 endmodule
 

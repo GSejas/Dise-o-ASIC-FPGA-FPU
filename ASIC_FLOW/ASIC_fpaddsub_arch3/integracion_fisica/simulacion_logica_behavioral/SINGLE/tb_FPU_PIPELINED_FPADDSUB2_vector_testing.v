@@ -237,6 +237,7 @@ end
    //**************************** Se lee el archivo txt y se almacena en un arrays***************************************************//
 
     initial begin
+        $vcdpluson; //ESTO ES PARA LA OBTENCION DE LA POTENCIA DINAMICA, para esto necesitamos el .vcd
         $readmemh("Hexadecimal_A.txt", Array_IN);
         $readmemh("Hexadecimal_B.txt", Array_IN_2);
         $readmemh("Hexadecimal_R.txt", Array_IN_3);
@@ -249,6 +250,7 @@ end
           $fclose(FileSaveData);
           $fclose(logVectorReference);
           $finish;
+          $vcdplusclose;
       end else if(ready) begin
         $fwrite(FileSaveData,"%h\n",final_result_ieee);
       end
