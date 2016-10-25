@@ -42,7 +42,7 @@
 # ln --symbolic /home/jorge/Documents/Karatsuba_FPU/my_sourcefiles/Source_Files/FPU_Interface/cordic_Arch3 /home/jorge/Documents/Karatsuba_FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/source/cordic_Arch2_sym
 
 # ln --symbolic /home/jorge/Documents/Karatsuba_FPU/my_sourcefiles/Source_Files/FPU_Interface/cordic_Arch3 /home/jorge/Documents/Karatsuba_FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/source/cordic_Arch3_sym
-ln --symbolic /home/jorge/Documents/Karatsuba_FPU/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2 /home/jorge/Documents/Karatsuba_FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/source/fpaddsub_arch2_sym
+#ln --symbolic /home/jorge/Documents/Karatsuba_FPU/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2 /home/jorge/Documents/Karatsuba_FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/source/fpaddsub_arch2_sym
 ln --symbolic /home/jorge/Documents/Karatsuba_FPU/my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch3 /home/jorge/Documents/Karatsuba_FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/source/fpaddsub_arch3_sym
 
 ln --symbolic /home/jorge/Documents/Karatsuba_FPU/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2 /home/jorge/Documents/Karatsuba_FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/front_end/source/fpmult_arch2_sym
