@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_3" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_3" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_4" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_4" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_5" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_5" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_6" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_6" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_7" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_7" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_8" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_8" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_9" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_9" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_10" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_10" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_11" LaunchDir="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_11" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

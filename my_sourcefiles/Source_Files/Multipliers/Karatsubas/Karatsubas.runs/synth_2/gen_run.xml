@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1477383457">
-  <File Type="VDS-TIMING-PB" Name="Recursive_KOA_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="Recursive_KOA.tcl"/>
+  <File Type="RDS-RDS" Name="Recursive_KOA.vds"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Recursive_KOA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Recursive_KOA_timing_summary_synth.pb"/>
   <File Type="RDS-DCP" Name="Recursive_KOA.dcp"/>
   <File Type="RDS-UTIL-PB" Name="Recursive_KOA_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="Recursive_KOA_utilization_synth.rpt"/>
   <File Type="RDS-PROPCONSTRS" Name="Recursive_KOA_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="Recursive_KOA.vds"/>
-  <File Type="PA-TCL" Name="Recursive_KOA.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../26bit/ReCodeRKOARecursive/RKOA_Recursive.v">
@@ -173,12 +173,10 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2016">
-      <Desc>Performs general area optimizations including changing the threshold for control set optimizations, forcing ternary adder implementation, applying lower thresholds for use of carry chain in comparators and also area optimized mux optimizations.</Desc>
-    </StratHandle>
+    <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design">
-      <Option Id="Directive">1</Option>
       <Option Id="ControlSetOptThreshold">1</Option>
+      <Option Id="Directive">1</Option>
     </Step>
   </Strategy>
 </GenRun>

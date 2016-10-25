@@ -1,0 +1,612 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Oct 25 15:49:26 2016
+# Process ID: 7579
+# Current directory: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_9
+# Command line: vivado -log Recursive_KOA.vds -mode batch -messageDb vivado.pb -notrace -source Recursive_KOA.tcl
+# Log file: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_9/Recursive_KOA.vds
+# Journal file: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_9/vivado.jou
+#-----------------------------------------------------------
+source Recursive_KOA.tcl -notrace
+Command: synth_design -top Recursive_KOA -part xc7a100tcsg324-1 -max_dsp 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 0
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7628 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.117 ; gain = 123.137 ; free physical = 648 ; free virtual = 6979
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 23 - type: integer 
+	Parameter half bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized0' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 11 - type: integer 
+	Parameter half bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized1' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 5 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized2' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 2 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized2' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized3' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized3' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized4' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized4' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.S_B_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:160]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.Q_middle_temp_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:154]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized1' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized5' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 6 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized6' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized6' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized7' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized7' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized8' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized8' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'EVEN1.S_B_reg' and it is trimmed from '10' to '8' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized5' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized9' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 7 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized10' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized10' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized11' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized11' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized12' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 5 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized13' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 2 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized13' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized14' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized14' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized15' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized15' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.S_B_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:160]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.Q_middle_temp_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:154]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized12' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized9' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized0' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized16' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 12 - type: integer 
+	Parameter half bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized17' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 6 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized18' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized18' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized19' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized19' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized20' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized20' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'EVEN1.S_B_reg' and it is trimmed from '10' to '8' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized17' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized21' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 6 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized22' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized22' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized23' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized23' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized24' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized24' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'EVEN1.S_B_reg' and it is trimmed from '10' to '8' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized21' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized25' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 7 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized26' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized26' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized27' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized27' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized28' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 5 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized29' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 2 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized29' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized30' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized30' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized31' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized31' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.S_B_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:160]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.Q_middle_temp_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:154]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized28' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized25' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'EVEN1.S_B_reg' and it is trimmed from '16' to '14' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized16' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized32' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 13 - type: integer 
+	Parameter half bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized33' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 6 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized34' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized34' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized35' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized35' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized36' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized36' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'EVEN1.S_B_reg' and it is trimmed from '10' to '8' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized33' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized37' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 7 - type: integer 
+	Parameter half bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized38' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized38' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized39' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized39' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized40' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 5 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized41' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 2 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized41' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized42' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized42' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized43' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized43' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.S_B_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:160]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.Q_middle_temp_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:154]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized40' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized37' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized44' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 8 - type: integer 
+	Parameter half bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized45' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized45' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized46' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized46' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized47' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 5 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized48' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 2 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized48' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized49' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 3 - type: integer 
+	Parameter half bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized49' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-638] synthesizing module 'Recursive_KOA__parameterized50' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+	Parameter SW bound to: 4 - type: integer 
+	Parameter half bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized50' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.S_B_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:160]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ODD1.Q_middle_temp_reg' and it is trimmed from '8' to '7' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:154]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized47' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 'EVEN1.S_B_reg' and it is trimmed from '12' to '10' bits. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:110]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized44' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA__parameterized32' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Recursive_KOA' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v:19]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.555 ; gain = 163.574 ; free physical = 546 ; free virtual = 6887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1055.555 ; gain = 163.574 ; free physical = 546 ; free virtual = 6887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1063.559 ; gain = 171.578 ; free physical = 546 ; free virtual = 6887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1071.566 ; gain = 179.586 ; free physical = 529 ; free virtual = 6874
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   4 Input     26 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 3     
+	   4 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 5     
+	   4 Input     10 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   4 Input      7 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Recursive_KOA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     46 Bit       Adders := 1     
+	   4 Input     26 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+Module Recursive_KOA__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+Module Recursive_KOA__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   4 Input     14 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+Module Recursive_KOA__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized28 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+Module Recursive_KOA__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   4 Input     14 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+Module Recursive_KOA__parameterized33 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized40 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized37 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+Module Recursive_KOA__parameterized47 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+Module Recursive_KOA__parameterized44 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+Module Recursive_KOA__parameterized32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1155.574 ; gain = 263.594 ; free physical = 323 ; free virtual = 6685
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1163.582 ; gain = 271.602 ; free physical = 300 ; free virtual = 6665
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1163.582 ; gain = 271.602 ; free physical = 300 ; free virtual = 6665
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 324 ; free virtual = 6697
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 324 ; free virtual = 6697
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 324 ; free virtual = 6697
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 324 ; free virtual = 6698
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 324 ; free virtual = 6698
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 324 ; free virtual = 6698
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 321 ; free virtual = 6697
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 321 ; free virtual = 6697
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 321 ; free virtual = 6697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 323 ; free virtual = 6701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 323 ; free virtual = 6701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 323 ; free virtual = 6701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   152|
+|2     |LUT1   |    47|
+|3     |LUT2   |   264|
+|4     |LUT3   |   125|
+|5     |LUT4   |   202|
+|6     |LUT5   |    87|
+|7     |LUT6   |   306|
+|8     |IBUF   |    46|
+|9     |OBUF   |    46|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------------------+------+
+|      |Instance                  |Module                         |Cells |
++------+--------------------------+-------------------------------+------+
+|1     |top                       |                               |  1275|
+|2     |  \ODD1.left_high         |Recursive_KOA__parameterized0  |   308|
+|3     |    \ODD1.left_high       |Recursive_KOA__parameterized1  |    95|
+|4     |      \ODD1.middle        |Recursive_KOA__parameterized4  |    42|
+|5     |    \ODD1.middle          |Recursive_KOA__parameterized9  |   120|
+|6     |      \ODD1.middle        |Recursive_KOA__parameterized12 |    24|
+|7     |        \ODD1.middle      |Recursive_KOA__parameterized15 |    14|
+|8     |      \ODD1.right_lower   |Recursive_KOA__parameterized11 |    29|
+|9     |    \ODD1.right_lower     |Recursive_KOA__parameterized5  |    52|
+|10    |      \EVEN1.middle       |Recursive_KOA__parameterized8  |    19|
+|11    |  \ODD1.middle            |Recursive_KOA__parameterized32 |   500|
+|12    |    \ODD1.left_high       |Recursive_KOA__parameterized33 |    95|
+|13    |      \EVEN1.middle       |Recursive_KOA__parameterized36 |    19|
+|14    |    \ODD1.middle          |Recursive_KOA__parameterized44 |   136|
+|15    |      \EVEN1.left_high    |Recursive_KOA__parameterized45 |    12|
+|16    |      \EVEN1.middle       |Recursive_KOA__parameterized47 |    61|
+|17    |        \ODD1.middle      |Recursive_KOA__parameterized50 |    54|
+|18    |      \EVEN1.right_lower  |Recursive_KOA__parameterized46 |    26|
+|19    |    \ODD1.right_lower     |Recursive_KOA__parameterized37 |   222|
+|20    |      \ODD1.middle        |Recursive_KOA__parameterized40 |    62|
+|21    |        \ODD1.middle      |Recursive_KOA__parameterized43 |    49|
+|22    |      \ODD1.right_lower   |Recursive_KOA__parameterized39 |    71|
+|23    |  \ODD1.right_lower       |Recursive_KOA__parameterized16 |   320|
+|24    |    \EVEN1.left_high      |Recursive_KOA__parameterized17 |    61|
+|25    |      \EVEN1.middle       |Recursive_KOA__parameterized20 |    19|
+|26    |    \EVEN1.middle         |Recursive_KOA__parameterized25 |   113|
+|27    |      \ODD1.middle        |Recursive_KOA__parameterized28 |    54|
+|28    |        \ODD1.middle      |Recursive_KOA__parameterized31 |    48|
+|29    |      \ODD1.right_lower   |Recursive_KOA__parameterized27 |    39|
+|30    |    \EVEN1.right_lower    |Recursive_KOA__parameterized21 |    51|
+|31    |      \EVEN1.middle       |Recursive_KOA__parameterized24 |    19|
++------+--------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1235.613 ; gain = 343.633 ; free physical = 323 ; free virtual = 6701
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1235.613 ; gain = 256.492 ; free physical = 323 ; free virtual = 6701
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1235.621 ; gain = 343.641 ; free physical = 324 ; free virtual = 6703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1302.625 ; gain = 336.090 ; free physical = 271 ; free virtual = 6644
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1334.641 ; gain = 0.000 ; free physical = 727 ; free virtual = 7101
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 25 15:50:18 2016...

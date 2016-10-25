@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Oct 25 02:26:29 2016">
+<application name="pa" timeStamp="Tue Oct 25 15:44:48 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="febbd7cbcaee4ff28d3e387215171af7" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MoveToSimSet" value="3" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="5" type="JavaHandler"/>
 <property name="ReportUtilization" value="2" type="JavaHandler"/>
-<property name="RunDesignAhead" value="1" type="JavaHandler"/>
+<property name="RunDesignAhead" value="2" type="JavaHandler"/>
 <property name="RunSchematic" value="9" type="JavaHandler"/>
 <property name="RunSynthesis" value="16" type="JavaHandler"/>
 <property name="SetGlobalInclude" value="2" type="JavaHandler"/>
@@ -48,16 +48,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ZoomOut" value="4" type="JavaHandler"/>
 <property name="aO" value="5" type="JavaHandler"/>
 </item>
-<item name="Gui Resources Info">
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 5" value="1" type="GuiResourceData"/>
-</item>
 <item name="Other">
-<property name="GuiMode" value="79" type="GuiMode"/>
+<property name="GuiMode" value="80" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="59" type="TclMode"/>
+<property name="TclMode" value="60" type="TclMode"/>
 </item>
 </section>
 </application>

@@ -200,6 +200,12 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PPRDIR/../../../../../1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/constrs_Sgf/imports/RKOA/Time_Constrains_RKOA_sfg.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
@@ -225,6 +231,7 @@
       </Config>
     </FileSet>
     <FileSet Name="KOA" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/KOA">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/KOA/imports/Multipliers/tb_Multipliers.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../tb_Multipliers.v"/>
@@ -244,6 +251,7 @@
       </Config>
     </FileSet>
     <FileSet Name="RKOA" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/RKOA">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/RKOA/imports/Multipliers/tb_Multipliers.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../tb_Multipliers.v"/>
@@ -263,6 +271,7 @@
       </Config>
     </FileSet>
     <FileSet Name="FKOA" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/FKOA">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/FKOA/imports/Multipliers/tb_Multipliers.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../tb_Multipliers.v"/>
@@ -282,6 +291,7 @@
       </Config>
     </FileSet>
     <FileSet Name="KOA_SIMPLE" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/KOA_SIMPLE">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/KOA_SIMPLE/imports/Multipliers/tb_Multipliers.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../tb_Multipliers.v"/>
@@ -301,6 +311,7 @@
       </Config>
     </FileSet>
     <FileSet Name="KOA_RECURSIVE" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/KOA_RECURSIVE">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../tb_Multipliers.v"/>
@@ -354,12 +365,109 @@
     </Run>
     <Run Id="synth_2" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Performs general area optimizations including changing the threshold for control set optimizations, forcing ternary adder implementation, applying lower thresholds for use of carry chain in comparators and also area optimized mux optimizations." State="current" Dir="$PRUNDIR/synth_2" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2016">
-          <Desc>Performs general area optimizations including changing the threshold for control set optimizations, forcing ternary adder implementation, applying lower thresholds for use of carry chain in comparators and also area optimized mux optimizations.</Desc>
-        </StratHandle>
+        <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="ControlSetOptThreshold">1</Option>
           <Option Id="Directive">1</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_3" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_3" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_4" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_4" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_5" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_5" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_6" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_6" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_7" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_7" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_8" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_8" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_9" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_9" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_10" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_10" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
+        </Step>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="synth_11" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_11" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
+          <Desc>We are using a single strategy, with no dsps in the design</Desc>
+        </StratHandle>
+        <Step Id="synth_design">
+          <Option Id="MaxDsp">0</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
