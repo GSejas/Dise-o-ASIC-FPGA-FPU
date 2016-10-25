@@ -1,0 +1,69 @@
+restart;
+
+checkComposePolynomials = proc(p,q) {
+  var r,s,i,err, EXPECTED_NUMBER_OF_BITS;
+  var okay;
+
+  okay = true;
+
+  EXPECTED_NUMBER_OF_BITS = prec-10;
+
+  r = p(q);
+  s = composepolynomials(p,q);
+
+  for i from 0 to degree(r) do {
+    if ! ( coeff(r, i) in coeff(s.poly, i)+s.radii[i] )
+    then { print("Check fail in composepolynomials(",p,",",q,") : coefficient ",i," = ",coeff(r,i)," and does not lie in ",coeff(s.poly, i),"+",s.radii[i]); okay = false; };
+    
+    if (coeff(r,i) != 0) then {
+      if ( abs(coeff(s.poly,i)/coeff(r,i)-1) > 2^(-EXPECTED_NUMBER_OF_BITS) )
+      then {
+        err := -log2( abs(coeff(s.poly,i)/coeff(r,i)-1));
+        print("Check fail in composepolynomials(",p,",",q,") : exact coefficient ",i," = ",coeff(r,i), "and the computed approximate value is ",coeff(s.poly,i)," which corresponds to only ~ ", err, "correct bits");
+	okay = false;
+      };
+    };
+  };
+
+  if (okay) then "OKAY!";
+
+  return void;
+};
+
+checkComposePolynomials(1+x, x^4);
+checkComposePolynomials(1+x/3, x^4);
+p=11692536319630510474283968587625525849426869787677b-163 + x * (23384922893552793741208186896732057180708286140565b-164 + x * (46692941277611593554424973690517694800554713844979b-166 + x * (3891678517537147456387754739468835779118224484425b-164 + x * (1024072943597638219514404758611859127188920401873b-164 + x * 26154763285557255659575812244171511366994513699585b-171))));
+q=17718778180354651383863675962713604666010364485019b-171 + x * (11285277392540280818073220803494664327743210300889b-163 + x * (14059659517842917521277573489957716260107438465415b-167 + x * (-45540662462117273602262338480450403246420473477993b-167 + x * 3624010771221772523305976483479451079148459719227b-166)));
+checkComposePolynomials(p,q);
+checkComposePolynomials(1+2*x^20,3*x^17);
+checkComposePolynomials(1+2*x^5,p);
+checkComposePolynomials(p, 1+2*x^20);
+checkComposePolynomials(exp(5) * x + sin(16) + log(19) * x^2 + asin(0.5) * x^7,erf(0.5) + 1/5 * x + atanh(1/2) * x^7);
+
+prec = 3000;
+
+
+print(composepolynomials(1 + x, x^4));
+print(composepolynomials(5 * x + 17 + 19 * x^2 + 0.5 * x^7,0.25 + 1/4 * x + 177 * x^7));
+print(composepolynomials(1 + 17 * x + 13 * x^44, 2 + 1001 * x^2 + x^77));
+
+prec = 300;
+
+checkComposePolynomials(1+x, x^4);
+checkComposePolynomials(1+x/3, x^4);
+p=127320445892597569233192084573816508818883486078679099554120447022081703359819068009205547b-296 + x * (1018557044797143666503767416322855867839491631117818135205555253332674508098291366773725959b-299 + x * (508441106512784560521103888523310670303733435407883686814016285688113354381980961005656571b-299 + x * (1356052046777263815902350693610623816222104351491496878169889792980744642403155011929747871b-302 + x * (1427349359299711414482673569219142091501984527550101477773398194525418017639951550600094011b-304 + x * 142400076760410063419384360841976625466855068476814073302706323729266395387747260369551141b-303))));
+q=771761635395839434377129531728754385222063722650731773025337381349894526273800455320994121b-306 + x * (983086311046602665020193955808933540240886933805254554081204274414484972714644572789529703b-299 + x * (76548067490437194072378457129688613050755939490186799978176875461592935525688706282740277b-299 + x * (-1983575604919226129310884695050125857481118988868047284422761383554783357868809833784652613b-302 + x * 315695862515659025289961779855922792366704584708683921548700851798936806281466374297543777b-302)));
+checkComposePolynomials(p,q);
+checkComposePolynomials(1+2*x^20,3*x^17);
+checkComposePolynomials(1+2*x^5,p);
+checkComposePolynomials(p, 1+2*x^20);
+checkComposePolynomials(exp(5) * x + sin(16) + log(19) * x^2 + asin(0.5) * x^7,erf(0.5) + 1/5 * x + atanh(1/2) * x^7);
+
+
+prec = 5000;
+
+
+print(composepolynomials(1 + x, x^4));
+print(composepolynomials(5 * x + 17 + 19 * x^2 + 0.5 * x^7,0.25 + 1/4 * x + 177 * x^7));
+print(composepolynomials(1 + 17 * x + 13 * x^44, 2 + 1001 * x^2 + x^77));
+

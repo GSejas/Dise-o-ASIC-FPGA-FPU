@@ -1,0 +1,16 @@
+The verbosity level has been set to 9.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Warning: evaluateFaithful returned NaN.
+Information: expression '(diff(foo))(x + 1) * 1' has been simplified to expression '(diff(foo))(x + 1)'.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: expression '(diff(diff(foo)))(x + 1) * 1' has been simplified to expression '(diff(diff(foo)))(x + 1)'.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: expression '1 + x * 1' has been simplified to expression '1 + x'.
+Information: expression '(diff(foo))(x + 1) * 1' has been simplified to expression '(diff(foo))(x + 1)'.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: extraction of coefficient terms from a polynomial uses a special algorithm for canonical forms.
+Information: expression '1 + x * 1' has been simplified to expression '1 + x'.
+[0;1]

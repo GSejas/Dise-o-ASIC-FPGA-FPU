@@ -1,0 +1,71 @@
+17 == 42 returns false
+
+42 == 17 returns false
+
+17 == 17 returns true
+
+The following test is not certified (both values are probably equal)
+sin((pi) / 3) == sqrt(3) / 2 returns true
+
+sin((pi) / 3) == sqrt(3) / 2 * (1 + 6.22301527786114170714406405378012424059025216872117e-61) returns false
+
+sin((pi) / 3) - sqrt(3) / 2 == 1 returns false
+
+The test will rely on pure FP evaluation.
+sin((pi) / 3) - sqrt(3) / 2 == 0 returns true
+
+1 == sin((pi) / 3) - sqrt(3) / 2 returns false
+
+The test will rely on pure FP evaluation.
+0 == sin((pi) / 3) - sqrt(3) / 2 returns true
+
+Warning: the following test involves a NaN
+1 == log(-17) returns false
+
+Warning: the following test involves a NaN
+log(-17) == 1 returns false
+
+The test will rely on pure FP evaluation.
+1 == tan((pi) / 2)^2 returns false
+
+The test will rely on pure FP evaluation.
+1 == -(tan((pi) / 2)^2) returns false
+
+The test will rely on pure FP evaluation.
+tan((pi) / 2)^2 == 1 returns false
+
+The test will rely on pure FP evaluation.
+-(tan((pi) / 2)^2) == 1 returns false
+
+The test will rely on pure FP evaluation.
+@Inf@ == -(tan((pi) / 2)^2) returns false
+
+The test will rely on pure FP evaluation.
+-(tan((pi) / 2)^2) == @Inf@ returns false
+
+The test will rely on pure FP evaluation.
+@Inf@ == tan((pi) / 2)^2 returns false
+
+The test will rely on pure FP evaluation.
+tan((pi) / 2)^2 == @Inf@ returns false
+
+error == 17 returns false
+
+error == error returns false
+
+@NaN@ == error returns false
+
+@NaN@ == @NaN@ returns false
+
+@NaN@ == 1 returns false
+
+2 + _x_ == _x_ + 2 returns false
+
+[1;2] == [1;2] returns true (even when bounds are stored at different precisions)
+
+1 + exp(sin(x + log(x^2))) == 1 + exp(sin(x + log(x^2))) returns true (even when constructed at different precisions)
+
+Hello! == Hella! returns false
+
+Hello! == Hello! returns true
+

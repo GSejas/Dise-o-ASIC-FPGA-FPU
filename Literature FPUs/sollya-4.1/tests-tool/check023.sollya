@@ -1,0 +1,66 @@
+1 .: 2 .: 3 .: 4 .: [||]; /* expecting [|1, 2, 3, 4|] */
+b = {.val = 2};
+1 .: b . val  .: 3 .: 4 .: [||]; /* expecting [|1, 2, 3, 4|] */
+1 .: [||] != 1 .: [||]; /* expecting false */
+1 .: 2 .: [||] :. 3; /* expecting [|1, 2, 3|] */
+1 .: [||] .: [|2|]; /* expecting [|1, [| |], 2 |] */
+[|1|] :. [|2|] .: [|3|]; /*  expecting [|1, [|[|2|], 3|]|] */
+[|1|] .: [|2|] :. [|3|]; /*  expecting [|[|1|], 2, [|3|]|] */
+[||] :. 1 :. 2 :. 3 :. 4; /* expecting [|1, 2, 3, 4|] */
+1 .: 2 .: [|3|] @ [|1|]; /* expecting [|1, 2, 3, 1|] */
+[|2|] @ [|3|] .: [|1|]; /* expecting [|2, [|3|], 1|] */
+[|1|] @ [|2|] :. 3 :. 4; /* expecting [|1, 2, 3, 4|] */
+[|2|] :. [|3|] @ [|1|]; /* expecting [|2, [|3|], 1|] */
+[|1 * 1 , 2|]; /* expecting [|1, 2|] */
+[|0 + 1 , 2|]; /* expecting [|1, 2|] */
+[|2 - 1 , 2|]; /* expecting [|1, 2|] */
+[|2 / 2 , 2|]; /* expecting [|1, 2|] */
+[|2 ^ 0  , 2|]; /* expecting [|1, 2|] */
+[|true && false , 2|]; /* expecting [|false, 2|] */
+[|false || false , 2|]; /* expecting [|false, 2|] */
+[|1 == 2 , 2|]; /* expecting [|false, 2|] */
+[|1 != 1 , 2|]; /* expecting [|false, 2|] */
+b = {.val = 1};
+[| b . val , 2|]; /* expecting [|1, 2|] */
+[| 1 .: [||] , 2|]; /* expecting [|[|1|], 2|] */
+[| [||] :. 1 , 2|]; /* expecting [|[|1|], 2|] */
+[| [||] @ [|1|] , 2|]; /* expecting [|[|1|], 2|] */
+a=false;
+a && false || true; /* expecting true */
+b = {.val = true};
+a && b . val;       /* expecting false */
+a && 1 < 2;  /* expecting false */
+a && 2 < 1;  /* expecting false */
+a && 1 == 1; /* expecting false */
+a && 1 != 2; /* expecting false */
+a=1; b = {.val = 1};
+a != 0 + 1;         /* expecting false */
+a != 2 * (1/2);     /* expecting false */
+a != 3 - 2;         /* expecting false */
+a != b . val;       /* expecting false */
+a != 1 .: [||];     /* expecting true */
+a != 2 / 2;         /* expecting false */
+a=[|1|];
+a != [||] :. 1;     /* expecting false */
+a != [||] @ [|1|];  /* expecting false */
+a = 2;
+a != 4 ^ (1/2);     /* expecting false */
+a != ~ 2;           /* expecting false */
+a=1; b = {.val = 1};
+a == 0 + 1;         /* expecting true */
+a == 2 * (1/2);     /* expecting true */
+a == 3 - 2;         /* expecting true */
+a == b . val;       /* expecting true */
+a == 1 .: [||];     /* expecting false */
+a == 2 / 2;         /* expecting true */
+a=[|1|];
+a == [||] :. 1;     /* expecting true */
+a == [||] @ [|1|];  /* expecting true */
+a = 2;
+a == 4 ^ (1/2);     /* expecting true */
+a == ~ 2;           /* expecting true */
+1 < 1 + 1;          /* expecting true */
+1 < 1 * 2;          /* expecting true */
+1 < 1 - (-2);       /* expecting true */
+1 < 1 / 0.5;        /* expecting true */
+3 < 2 ^ 2;          /* expecting true */

@@ -1,0 +1,9 @@
+b = cos(exp(_x_) + 1) [should be cos(exp(_x_) + 1)]
+b = cos(exp(_x_) + 1) [should be cos(exp(_x_) + 1)]
+b = cos(exp(_x_) + 1) [should be cos(exp(_x_) + 1)]
+
+b = [|cos(_x_), 3|] [should be [|cos(_x_), 3|]]
+b = [|cos(_x_), 3|] [should be [|cos(_x_), 3|]]
+b = [|cos(_x_), 3|] [should be [|cos(_x_), 3|]]
+b = [|cos(_x_), 3|] [should be [|cos(_x_), 3|]]
+

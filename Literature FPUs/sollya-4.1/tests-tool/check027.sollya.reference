@@ -1,0 +1,132 @@
+The tool has been restarted.
+=============== Test number 1 ================
+@NaN@
+@NaN@
+The tool has been restarted.
+=============== Test number 2 ================
+The verbosity level has been set to 2.
+Information: rounding down has happened.
+0x7f7fffff
+Information: rounding up has happened.
+0x7f800000
+Information: no rounding has happened.
+0x7f7fffff
+Information: no rounding has happened.
+0x7f7fffff
+Information: no rounding has happened.
+0x7f7fffff
+Information: rounding down has happened.
+0x7f7fffff
+Information: rounding up has happened.
+0x7f800000
+Information: rounding up has happened.
+0x7f800000
+Information: no rounding has happened.
+0x00800000
+Information: no rounding has happened.
+0x00800000
+Information: no rounding has happened.
+0x00800000
+Information: no rounding has happened.
+0x007fffff
+Information: no rounding has happened.
+0x007fffff
+Information: no rounding has happened.
+0x007fffff
+Information: no rounding has happened.
+0x00000001
+Information: no rounding has happened.
+0x00000001
+Information: no rounding has happened.
+0x00000001
+Information: rounding down has happened.
+0x00000000
+Information: rounding down has happened.
+0x00000000
+Information: rounding up has happened.
+0x00000001
+Information: no rounding has happened.
+0xff7fffff
+Information: no rounding has happened.
+0xff7fffff
+Information: no rounding has happened.
+0xff7fffff
+Information: rounding down has happened.
+0xff800000
+Information: rounding down has happened.
+0xff800000
+Information: rounding up has happened.
+0xff7fffff
+Information: no rounding has happened.
+0x80800000
+Information: no rounding has happened.
+0x80800000
+Information: no rounding has happened.
+0x80800000
+Information: no rounding has happened.
+0x807fffff
+Information: no rounding has happened.
+0x807fffff
+Information: no rounding has happened.
+0x807fffff
+Information: no rounding has happened.
+0x80000001
+Information: no rounding has happened.
+0x80000001
+Information: no rounding has happened.
+0x80000001
+Information: rounding down has happened.
+0x80000001
+Information: rounding up has happened.
+0x80000000
+Information: rounding up has happened.
+0x80000000
+The tool has been restarted.
+=============== Test number 3 ================
+The verbosity level has been set to 2.
+1
+x
+The tool has been restarted.
+=============== Test number 4 ================
+The verbosity level has been set to 2.
+Rounding warning mode has been activated.
+Warning: Rounding occurred when converting the constant "0.1" to floating-point with 165 bits.
+The inclusion property is nevertheless satisfied.
+Warning: Rounding occurred when converting the constant "0.1" to floating-point with 165 bits.
+The inclusion property is nevertheless satisfied.
+The tool has been restarted.
+=============== Test number 5 ================
+[-@Inf@;@Inf@]
+[@NaN@;@NaN@]
+[@NaN@;@NaN@]
+0 / 0
+0
+1
+log2(x) - log(x) / log(2)
+(log2(x) - log(x) / log(2)) / (log2(x) - log(x) / log(2))
+cos(x)^2 + sin(x)^2 + 2
+1
+1
+((x + 1)^2 / (x^2 + 2 * x + 1) - 1) / ((x + 1)^2 / (x^2 + 2 * x + 1) - 1)
+0
+log(cos(x)^2 + sin(x)^2 - 1) - log(cos(x)^2 + sin(x)^2 - 1)
+cos(x) / cos(x)
+cos(2 * x) / cos(2 * x)
+cos(2 + x) / cos(2 + x)
+cos((pi) / 2 + x) / cos((pi) / 2 + x)
+cos((pi) / 2 + cos(x)^2 + sin(x)^2 - 1) / cos((pi) / 2 + cos(x)^2 + sin(x)^2 - 1)
+cos(((pi) * abs(x)) / (2 * x)) / cos(((pi) * abs(x)) / (2 * x))
+log(x) - log(x)
+log(x) / log(x)
+0
+(x + 1)^2 / (x^2 + 2 * x + 1) - 1
+0
+(-log(x))^(-1) / (-log(x))^(-1)
+0
+@Inf@ / x - @Inf@ / x
+0
+1
+(abs(x) / x + 1) / (abs(x) / x + 1)
+0 / (abs(x) / x + 1)
+0
+1

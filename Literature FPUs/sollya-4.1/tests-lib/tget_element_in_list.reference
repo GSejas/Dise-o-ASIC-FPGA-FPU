@@ -1,0 +1,34 @@
+Failure on [| |] (i=0 and a=NULL).
+Failure on [| |] (i=0 and a=NULL).
+
+Failure on [|3, cos(_x_), double|] (i=-1 and a=NULL).
+Failure on [|3, cos(_x_), double|] (i=-1 and a=NULL).
+
+Failure on [|3, cos(_x_), double|] (i=3 and a=NULL).
+Failure on [|3, cos(_x_), double|] (i=3 and a=NULL).
+
+Success on [|3, cos(_x_), double|] : 3 (i=0)
+Second call on [|3, cos(_x_), double|] : 3 (i=0)
+
+Success on [|3, cos(_x_), double|] : double (i=2)
+Second call on [|3, cos(_x_), double|] : double (i=2)
+
+Failure on [|3, cos(_x_), double...|] (i=-1 and a=NULL).
+Failure on [|3, cos(_x_), double...|] (i=-1 and a=NULL).
+
+Success on [|3, cos(_x_), double...|] : double (i=3)
+Second call on [|3, cos(_x_), double...|] : double (i=3)
+
+Success on [|pi, cos(_x_), 4...|] : 5 (i=3)
+Second call on [|pi, cos(_x_), 4...|] : 5 (i=3)
+
+Success on [|pi, cos(_x_), 4...|] : pi (i=0)
+Second call on [|pi, cos(_x_), 4...|] : pi (i=0)
+
+Success on [|pi, cos(_x_), 4...|] : 4 (i=2)
+Second call on [|pi, cos(_x_), 4...|] : 4 (i=2)
+
+Failure on cos(_x_) (i=0 and a=NULL).
+Failure on cos(_x_) (i=0 and a=NULL).
+
+Testing that a call to get_element_in_list has complexity O(1): OK

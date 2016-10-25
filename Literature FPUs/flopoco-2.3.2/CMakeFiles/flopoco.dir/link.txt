@@ -1,0 +1,1 @@
+/usr/bin/c++   -pg -Wall   CMakeFiles/flopoco.dir/src/main.o  -o flopoco -rdynamic libFloPoCo.a -lmpfr -lgmp -lgmpxx -lxml2 -lmpfi /usr/local/lib/libsollya.so -Wl,-rpath,/usr/local/lib 

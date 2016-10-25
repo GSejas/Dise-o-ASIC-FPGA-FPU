@@ -1,0 +1,5 @@
+The hornerized version of ((2 * x + (-3))^3 - x^5)^2 is 729 + x * (-2916 + x * (4860 + x * (-4320 + x * (2160 + x * (-522 + x * (-44 + x * (72 + x * (-16 + x^2)))))))).
+The hornerized version of exp(x) is exp(x).
+The hornerized version of ((2 * x + (-3))^3 - x^5)^2 + sin(((2 * x + (-3))^3 - x^5)^2) is 729 + x * (-2916 + x * (4860 + x * (-4320 + x * (2160 + x * (-522 + x * (-44 + x * (72 + x * (-16 + x^2)))))))) + sin(729 + x * (-2916 + x * (4860 + x * (-4320 + x * (2160 + x * (-522 + x * (-44 + x * (72 + x * (-16 + x^2))))))))).
+The hornerized version of 3 * x^5 + 2 * x^4 + 7 * x is x * (7 + x^3 * (2 + x * 3)).
+The hornerized version of x * (7 + x^3 * (2 + x * 3)) is x * (7 + x^3 * (2 + x * 3)).

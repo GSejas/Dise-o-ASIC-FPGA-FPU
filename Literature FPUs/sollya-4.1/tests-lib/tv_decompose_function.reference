@@ -1,0 +1,39 @@
+pi: type = SOLLYA_BASE_FUNC_PI, n = 0, subfunctions = NULL, NULL and NULL.
+3: type = SOLLYA_BASE_FUNC_CONSTANT, n = 0, subfunctions = NULL, NULL and NULL.
+superconst: type = SOLLYA_BASE_FUNC_LIBRARYCONSTANT, n = 0, subfunctions = superconst, NULL and NULL.
+_x_: type = SOLLYA_BASE_FUNC_FREE_VARIABLE, n = 1, subfunctions = _x_, NULL and NULL.
+exp(sin(_x_) + 17): type = SOLLYA_BASE_FUNC_EXP, n = 1, subfunctions = sin(_x_) + 17, NULL and NULL.
+(diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})))(sin(_x_)): type = SOLLYA_BASE_FUNC_PROCEDUREFUNCTION, n = 1, subfunctions = sin(_x_), diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})) and NULL.
+stupid1(cos(_x_)): type = SOLLYA_BASE_FUNC_LIBRARYFUNCTION, n = 1, subfunctions = cos(_x_), stupid1 and NULL.
+_x_ + stupid1: type = SOLLYA_BASE_FUNC_ADD, n = 2, subfunctions = _x_, stupid1 and NULL.
+absolute is not a functional expression (type=Unknown type. Expecting 'Unknown type')
+[1;2] is not a functional expression (type=Unknown type. Expecting 'Unknown type')
+NULL given as 2nd argument. exp(sin(_x_) + 17): type = Unknown type, n = 1, subfunctions = sin(_x_) + 17 and NULL.
+NULL given as 3rd argument. exp(sin(_x_) + 17): type = SOLLYA_BASE_FUNC_EXP, n = -1, subfunctions = sin(_x_) + 17 and NULL.
+NULL given as 4th argument. exp(sin(_x_) + 17): type = SOLLYA_BASE_FUNC_EXP, n = 1, subfunctions = NULL and NULL.
+NULL given as 4th argument. sin(_x_) + 17: type = SOLLYA_BASE_FUNC_ADD, n = 2, subfunctions = NULL and NULL.
+NULL given as 5th argument. sin(_x_) + 17: type = SOLLYA_BASE_FUNC_ADD, n = 2, subfunctions = sin(_x_) and NULL.
+NULL given as 4th argument. stupid1(cos(_x_)): type = SOLLYA_BASE_FUNC_LIBRARYFUNCTION, n = 1, subfunctions = NULL and NULL.
+NULL given as 5th argument. stupid1(cos(_x_)): type = SOLLYA_BASE_FUNC_LIBRARYFUNCTION, n = 1, subfunctions = cos(_x_) and NULL.
+((pi) + 1) * superconst is made of constants.
+_x_ is *NOT* made of constants.
+sin(_x_ + 1) is *NOT* made of constants.
+sin(exp(1)) is made of constants.
+[0;1] is not a mathematical function.[0;1] is *NOT* made of constants.
+relative is not a mathematical function.relative is *NOT* made of constants.

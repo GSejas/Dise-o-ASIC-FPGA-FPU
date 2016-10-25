@@ -1,0 +1,58 @@
+Trying to faithfuly evaluate pi at 3 with cutoff NULL: returns 843314857 * 2^(-28) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 105414357 * 2^(-25) or 843314857 * 2^(-28)
+Trying to faithfuly evaluate pi at 3 with cutoff 1: returns 843314857 * 2^(-28) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 105414357 * 2^(-25) or 843314857 * 2^(-28)
+Trying to faithfuly evaluate pi at 3 with cutoff 4: returns 843314857 * 2^(-28) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 105414357 * 2^(-25) or 843314857 * 2^(-28)
+
+Trying to faithfuly evaluate exp(0) / 4 at 3 with cutoff NULL: returns 1 * 2^(-2) (status: SOLLYA_FP_PROVEN_EXACT) -- expecting 1 * 2^(-2)
+
+Trying to faithfuly evaluate 1 + log10(_x_) / log10(2) - log(_x_) / log(2) at 3 with cutoff NULL: returns 1 (status: SOLLYA_FP_CORRECTLY_ROUNDED) -- expecting 1
+
+Trying to faithfuly evaluate 1 + 2^(-30) + log10(_x_) / log10(2) - log(_x_) / log(2) at 3 with cutoff NULL: returns 1 (status: SOLLYA_FP_FAITHFUL_PROVEN_INEXACT) -- expecting 1 or 536870913 * 2^(-29)
+
+Trying to faithfuly evaluate 1 / 10 at 3 with cutoff NULL: returns 858993459 * 2^(-33) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 858993459 * 2^(-33) or 214748365 * 2^(-31)
+Trying to faithfuly evaluate 1 / 10 at 3 with cutoff 687194767 * 2^(-36): returns 858993459 * 2^(-33) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 858993459 * 2^(-33) or 214748365 * 2^(-31)
+Trying to faithfuly evaluate 1 / 10 at 3 with cutoff 4: returns 858993459 * 2^(-33) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT)
+
+Trying to faithfuly evaluate Hello at 3 with cutoff NULL: returns @NaN@ (status: SOLLYA_FP_OBJ_NO_FUNCTION)
+
+Trying to faithfuly evaluate log10(_x_) / log10(2) - log(_x_) / log(2) at 3 with cutoff NULL: returns 0 (status: SOLLYA_SOLLYA_FP_NOT_FAITHFUL_ZERO_CONTAINED_BELOW_THRESHOLD)
+Trying to faithfuly evaluate log10(_x_) / log10(2) - log(_x_) / log(2) at 3 with cutoff 687194767 * 2^(-36): returns 0 (status: SOLLYA_FP_BELOW_CUTOFF)
+
+Trying to faithfuly evaluate exp(cos(_x_)) at 3 with cutoff NULL: returns 797960855 * 2^(-31) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 797960855 * 2^(-31) or 99745107 * 2^(-28)
+Trying to faithfuly evaluate exp(cos(_x_)) at 3 with cutoff 687194767 * 2^(-36): returns 797960855 * 2^(-31) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 797960855 * 2^(-31) or 99745107 * 2^(-28)
+Trying to faithfuly evaluate exp(cos(_x_)) at 3 with cutoff 4: returns 797960855 * 2^(-31) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 797960855 * 2^(-31) or 99745107 * 2^(-28)
+
+Trying to faithfuly evaluate exp(_x_) at -100 with cutoff NULL: returns 445390613 * 2^(-173) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 890781225 * 2^(-174) or 445390613 * 2^(-173)
+Trying to faithfuly evaluate exp(_x_) at -100 with cutoff 502168139 * 2^(-195): returns 445390613 * 2^(-173) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 890781225 * 2^(-174) or 445390613 * 2^(-173)
+Trying to faithfuly evaluate exp(_x_) at -100 with cutoff 4: returns 445390613 * 2^(-173) (status: SOLLYA_FP_CORRECTLY_ROUNDED_PROVEN_INEXACT) -- expecting one of 890781225 * 2^(-174) or 445390613 * 2^(-173)
+
+Trying to faithfuly evaluate tan((pi) / 2) at -100 with cutoff NULL: returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+Trying to faithfuly evaluate tan((pi) / 2) at -100 with cutoff 502168139 * 2^(-195): returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+Trying to faithfuly evaluate tan((pi) / 2) at -100 with cutoff 4: returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+
+Trying to faithfuly evaluate 1 / _x_^2 at 0 with cutoff NULL: returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+Trying to faithfuly evaluate 1 / _x_^2 at 0 with cutoff 502168139 * 2^(-195): returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+Trying to faithfuly evaluate 1 / _x_^2 at 0 with cutoff 4: returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+
+Trying to faithfuly evaluate 1 / _x_ at 0 with cutoff NULL: returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+Trying to faithfuly evaluate 1 / _x_ at 0 with cutoff 502168139 * 2^(-195): returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+Trying to faithfuly evaluate 1 / _x_ at 0 with cutoff 4: returns @NaN@ (status: SOLLYA_FP_NOT_FAITHFUL_INFINITY_CONTAINED)
+
+Trying to faithfuly evaluate log(_x_) at 0 with cutoff NULL: returns -@Inf@ (status: SOLLYA_FP_INFINITY)
+Trying to faithfuly evaluate log(_x_) at 0 with cutoff 502168139 * 2^(-195): returns -@Inf@ (status: SOLLYA_FP_INFINITY)
+Trying to faithfuly evaluate log(_x_) at 0 with cutoff 4: returns -@Inf@ (status: SOLLYA_FP_INFINITY)
+
+Trying to faithfuly evaluate log(_x_) at -1 with cutoff NULL: returns @NaN@ (status: SOLLYA_FP_FAILURE)
+Trying to faithfuly evaluate log(_x_) at -1 with cutoff 502168139 * 2^(-195): returns @NaN@ (status: SOLLYA_FP_FAILURE)
+Trying to faithfuly evaluate log(_x_) at -1 with cutoff 4: returns @NaN@ (status: SOLLYA_FP_FAILURE)
+
+Trying to faithfuly evaluate sin((pi) / 6) - x + (1 * 2^(-100000)) at 1 * 2^(-1) with cutoff NULL: returns 0 (status: SOLLYA_SOLLYA_FP_NOT_FAITHFUL_ZERO_CONTAINED_BELOW_THRESHOLD)
+Trying to faithfuly evaluate sin((pi) / 6) - x + (1 * 2^(-100000)) at 1 * 2^(-1) with cutoff 502168139 * 2^(-195): returns 0 (status: SOLLYA_FP_BELOW_CUTOFF)
+Trying to faithfuly evaluate sin((pi) / 6) - x + (1 * 2^(-100000)) at 1 * 2^(-1) with cutoff 4: returns 0 (status: SOLLYA_FP_BELOW_CUTOFF)
+
+Trying to faithfuly evaluate (sin((pi) / 6) - x) * (1 * 2^(100000)) + 3 at 1 * 2^(-1) with cutoff NULL: returns 3 (status: SOLLYA_FP_NOT_FAITHFUL_ZERO_CONTAINED_NOT_BELOW_THRESHOLD)
+Trying to faithfuly evaluate (sin((pi) / 6) - x) * (1 * 2^(100000)) + (1 * 2^(50000)) at 1 * 2^(-1) with cutoff NULL: returns 1 * 2^(50000) (status: SOLLYA_FP_NOT_FAITHFUL_ZERO_NOT_CONTAINED)
+Trying to faithfuly evaluate 3 + 7 * 2^(-31) * sin(1 / (35 * 2^(-17997) + sin((pi) / 6) - x)) at 1 * 2^(-1) with cutoff NULL: returns 3 (status: SOLLYA_FP_FAITHFUL)
+
+Trying to faithfuly evaluate sin((pi) / 6) - x + (1 * 2^(-100000)) at 1 * 2^(-1) with cutoff -4: returns 0 (status: SOLLYA_FP_BELOW_CUTOFF)
+Trying to faithfuly evaluate sin((pi) / 6) - x + (1 * 2^(-100000)) at 1 * 2^(-1) with cutoff @Inf@: returns 0 (status: SOLLYA_FP_BELOW_CUTOFF)
+Trying to faithfuly evaluate sin((pi) / 6) - x + (1 * 2^(-100000)) at 1 * 2^(-1) with cutoff @NaN@: returns @NaN@ (status: SOLLYA_FP_CUTOFF_IS_NAN)

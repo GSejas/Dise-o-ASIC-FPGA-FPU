@@ -1,0 +1,10 @@
+function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})
+7.3890560989306521832986618392169475555419921875 (expecting approximate value of exp(2))

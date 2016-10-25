@@ -1,0 +1,1212 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ST",
+				"STOP_SW2"
+			],
+			[
+				"final",
+				"final_result_ieee"
+			],
+			[
+				"NRM",
+				"NRM_STAGE"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"ARR",
+				"Array_IN_3"
+			],
+			[
+				"Ope",
+				"Operand1_W"
+			],
+			[
+				"Da",
+				"Data_X"
+			],
+			[
+				"log",
+				"logVectorReference"
+			],
+			[
+				"beg",
+				"begin\tbegin"
+			],
+			[
+				"ena",
+				"enable_Pipeline_input"
+			],
+			[
+				"SGF",
+				"SFG_ACTIVE"
+			],
+			[
+				"SHT2",
+				"SHT2_ACTIVE"
+			],
+			[
+				"SHT",
+				"SHT1_ACTIVE"
+			],
+			[
+				"EXP",
+				"EXP_ACTIVE"
+			],
+			[
+				"Theoretical_result_",
+				"Theoretical_result_exponent"
+			],
+			[
+				"un",
+				"underflow_flag_t"
+			],
+			[
+				"L",
+				"L_limit"
+			],
+			[
+				"under",
+				"underflow_flag"
+			],
+			[
+				"Sign",
+				"Sign1"
+			],
+			[
+				"Ex",
+				"Exponent1_EW"
+			],
+			[
+				"dia",
+				"display"
+			],
+			[
+				"be",
+				"begin\tbegin"
+			],
+			[
+				"M",
+				"Mantissa_M"
+			],
+			[
+				"re",
+				"reg"
+			],
+			[
+				"SW",
+				"SW-1"
+			],
+			[
+				"zero",
+				"zero_flag"
+			],
+			[
+				"ZERO",
+				"ZERO_FLAG_SHT2"
+			],
+			[
+				"reg",
+				"register\t: w bit d register "
+			],
+			[
+				"Comp",
+				"Comparator_Less"
+			],
+			[
+				"SWR",
+				"SWR-1"
+			],
+			[
+				"Compara",
+				"Comparators"
+			],
+			[
+				"Mul",
+				"MultiplexTxT"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"W",
+				"W-2"
+			],
+			[
+				"DMP_exp",
+				"DMP_exp_NRM2"
+			],
+			[
+				"EW",
+				"EW-1"
+			],
+			[
+				"EWR",
+				"EWR-1"
+			],
+			[
+				"LZ",
+				"LZD_output"
+			],
+			[
+				"fi",
+				"final_result_ieee_o"
+			],
+			[
+				"mux",
+				"mux_sel_norm"
+			],
+			[
+				"LZD",
+				"LZD_output"
+			],
+			[
+				"ADD",
+				"ADD_OVRFLW_SGF"
+			],
+			[
+				"INPUT",
+				"INPUT_ACTIVE"
+			],
+			[
+				"d_ff3",
+				"d_ff3_LUT_out"
+			],
+			[
+				"d_ff2",
+				"d_ff2_Z"
+			],
+			[
+				"para",
+				"parameter"
+			],
+			[
+				"rea",
+				"ready_cordic"
+			],
+			[
+				"CO",
+				"CORDIC_Arch2"
+			],
+			[
+				"al",
+				"always\talways"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tb_Multipliers.v",
+			"settings":
+			{
+				"buffer_size": 1137,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/SimpleKOA/ks26.v",
+			"settings":
+			{
+				"buffer_size": 2614,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Karatsubas/Karatsubas.runs/synth_2/RKOA_utilization_synth.rpt",
+			"settings":
+			{
+				"buffer_size": 6823,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/HybridKOA/ks26.v",
+			"settings":
+			{
+				"buffer_size": 26796,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/FrancisKOA/Sgf_Multiplication.v",
+			"settings":
+			{
+				"buffer_size": 6457,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/RKOA/RKOA.v",
+			"settings":
+			{
+				"buffer_size": 8692,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/FrancisKOA/substractor.v",
+			"settings":
+			{
+				"buffer_size": 691,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/BinaryKOA/ks2.v",
+			"settings":
+			{
+				"buffer_size": 797,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/SimpleKOA/ks7.v",
+			"settings":
+			{
+				"buffer_size": 1229,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/SimpleKOA/ks13.v",
+			"settings":
+			{
+				"buffer_size": 1728,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "26bit/SimpleKOA/ks4.v",
+			"settings":
+			{
+				"buffer_size": 930,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 319.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: forg"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/HybridKOA",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/RKOA",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/SimpleKOA"
+	],
+	"file_history":
+	[
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_1/Sgf_Multiplication_utilization_synth.rpt",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA/ks16.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA/ks2.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA/ks26.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA/ks4.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA/ks8.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/HybridKOA/ks26.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/SimpleKOA/ks7.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/BinaryKOA/ks10.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/SimpleKOA/ks4.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/SimpleKOA/ks13.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/SimpleKOA/ks26.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/new/CORDIC_Arch3.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/rtl/KOA_c_v2.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/substractor.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Testbench/Testbench_FPU_multiplication.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/rtl/FPU_Multiplication_Function_v2.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/multiplier.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/ecp/mod.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sim_RKOA_single/imports/sim_1/imports/new/Testbench_Sgf_multiplication.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/hdl/ks26.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Adder_Round.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Deco_Round_Mult.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/OR_Module.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Round_decoder_M.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/shift_mux.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Barrel_Shifter_M.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/substractor.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/adder.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sim_RKOA_double/imports/sim/testbench_RKOA.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/ecp/multiplier.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/ecp/ks14.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Exp_operation_m.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Comparator_Equal.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Zero_InfMult_Unit.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/FSM_Mult_Function.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/First_Phase_M.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Sgf_Multiplication.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/XOR_M.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/Comparator_Less.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/RegisterMult.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/rtl/RecursiveKOA.v",
+		"/home/jorge/Documents/Hello_Microblaze/Hello_Microblaze.srcs/constrs_1/imports/Karatsuba_FPU/Nexys4_Master.xdc",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/RKOA/RKOA.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/Sgf_Multiplication.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/ecp/ec_alu.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sim_1/imports/sim/testbench_RKOA.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sim_fpmult_single/imports/sim_1/imports/new/Testbench_Sgf_multiplication.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/sources_1/imports/ecp/tb.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_Arch2.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/new/Testbench_FPU_multiplication.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/sgn_result.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/imports/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/bloody_simruns/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/rtl/KOA_c_v2.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/source/rtl/KOA_c_v2.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/rtl/KOA_c_v3.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/rtl/RecursiveKOA.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/source/rtl/RecursiveKOA.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/OR_Module.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/shift_mux.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_3x1.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/MultiplexTxT.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/source/rtl/FPU_Multiplication_Function_v2.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/constrs_1/imports/RTL/Nexys4_Master.xdc",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/constrs_1/new/Time_Constrains.xdc",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FSM_Add_Subtract.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_32.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Add_Subt.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/add_sub_carry_out.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/b_shifter_2.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Multiplexer_AC.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.sim/bloody_simruns/behav/output_log.py",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FSM_input_enable.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Proyectos",
+		"/home/jorge/Funcionales",
+		"/home/jorge/Francis",
+		"/home/jorge/Jeffrey/CORDICO/CORDICO.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_Arch2.v",
+		"/home/jorge/Jeffrey/CORDICO/CORDICO.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_FSM_v2.v",
+		"/home/jorge/Jeffrey/CORDICO/CORDICO.srcs/sources_1/new/CORDIC_Arch3.v",
+		"/home/jorge/Jeffrey/CORDICO/CORDICO.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/FPU_Interface_and_NaN/FPU_Interface.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/new/Testbench_Sgf_multiplication.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sim_1/imports/sim/testbench_RKOA.v",
+		"/home/jorge/Documents/Karatsuba_FPU/CORDICO/CORDICO.srcs/sources_1/new/CORDIC_Arch3.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Resultados/FPSUB/FPADDFPSUB_Pipelined/FPADDFPSUB_Pipelined.srcs/sources_1/imports/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Resultados/FPADDFPSUB_Pipelined/FPADDFPSUB_Pipelined.srcs/constrs_1/new/Time_Constrains.xdc",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/vector_simulation_add/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Pipeline_FPADD_sourcefiles/shift_reg.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/shift_reg.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/b_shifter_1.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_double_fpaddsub/imports/TXTVerification_v3/Hexadecimal_A.txt",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/bloody_simruns/imports/behav/Hexadecimal_A.txt",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/constrs_1/imports/RTL/Nexys4_Master.xdc",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/vector_simulation_add/imports/behav/Hexadecimal_B.txt",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/imports/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.sim/vector_simulation_add/behav/output_log.txt",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.sim/vector_simulation_add/behav/output_log.py",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/new/Testbench_FPU_Add_Subt.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/display.log",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/imports/Pipeline_FPADD_sourcefiles/shift_reg.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/project_1/archive_project_summary.txt",
+		"/home/jorge/Documents/Karatsuba_FPU/Karat/MUL_FPU_FUNCIONAL_v1/MUL_FPU_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FORMATTER.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/Tenth_Phase_v2.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/task_FPADD_FPSUB.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_FUNCIONAL_v1/ADD_SUB_FUNCIONAL_v1.srcs/sim_1/new/Testbench_FPU_Add_Subt.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Comparators.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v",
+		"/home/jorge/Documents/Karatsuba_FPU/Add_Sub/ADD_SUB_PIPELINED/ADD_SUB_FUNCIONAL_v1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Barrel_shifter.v"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Stop",
+			", .Stop_I(Stop_I)",
+			"Data_S_o",
+			"Data_A_i",
+			"Data_B_i",
+			"rese",
+			"resey",
+			"rst",
+			"PACKAGE_PIN E3",
+			"load_cont_var",
+			"d_var",
+			"enable_Pipeline_input",
+			"FSM",
+			"SIGN_FLAG_SHT1SHT2",
+			"SIGN",
+			"Exp_oper_1_EWR",
+			"SIGN",
+			"raw_Mantissa_SWR1",
+			"Array_IN_3",
+			"Array_IN_2",
+			"fclose",
+			"uut",
+			"logVectorReference",
+			"FPU_PIPELINED_FPADDSUB",
+			"SIGN_FLAG_INIT",
+			"sign_",
+			"sign",
+			"%8h",
+			"%23h",
+			"%26h",
+			"%h",
+			"\",",
+			"\")",
+			"\"",
+			"\");",
+			"FileSaveData",
+			"$fwrite(\"",
+			"display",
+			")\n",
+			"add_subt",
+			"Shift_reg_FLAGS_7",
+			"Shift_reg_FLAGS_6",
+			"INPUT_ACTIVE",
+			"ready",
+			"Shift_reg_FLAGS_6",
+			"FLAGS_OR",
+			"Shift_reg_FLAGS",
+			"LZD_raw_val_EWR",
+			"SIGN_FLAG_SHT2",
+			"ADD_OVRFLW_FRMT",
+			"SIGN_FLAG_SHT1SHT2",
+			"enable_input_internal",
+			"ack_FSM",
+			"beg_FSM",
+			";\n",
+			"ADD_OVRFLW_NRM",
+			"ADD_OVRFLW",
+			"Mantissa_M_SWR",
+			"raw_Mantissa_SWR",
+			"exp_oper_result",
+			"LZD_raw_val_EWR",
+			"Raw_mant_SGF",
+			"Exponent_M_EW",
+			"Mantissa_M_SW",
+			"real_sign",
+			"si",
+			"Data_X",
+			"add_subt",
+			"enable_Pipeline_input",
+			"task",
+			"raw_Mantissa_SWR1",
+			"exp_mux_D1",
+			"Mantissa_M_SWR",
+			"Mantissa_m_SWR",
+			"raw_Mantissa_SWR1",
+			"raw_Mantissa_SWR",
+			"formatted_number",
+			"DMP_EXP_EWSW",
+			"intDY_W1",
+			"intDX_W1",
+			"intDY_W",
+			"intDX_W",
+			"formatted_number",
+			"LZD_raw_output",
+			"LZD_raw_output_NRM2",
+			"LZD_output_NRM2",
+			"Raw_mant_NRM",
+			"Add_Subt_LZD",
+			"DMP_exp_NRM",
+			"DMP_mant_SFG",
+			"DmP_mant_SFG",
+			"DMP_exp_NRM2",
+			"ADDSUB_exp_operand",
+			"exp_rslt_NRM2",
+			"Exp_oper_1",
+			"sftr_odat_SHT2",
+			"sftr_idat_SHT2",
+			"shift_value_SHT2",
+			"DMP_SHT2",
+			"Data_array",
+			"mux_sel_norm",
+			"sftr_odat_SHT1",
+			"sftr_idat_SHT1",
+			"shft_value_mux_o",
+			"Shift_amount_SHT1",
+			"DmP_mant_SHT1",
+			"DMP_SHT1",
+			"b_shifter_one",
+			"Shift_amount_EXP",
+			"DmP_mant_EXP",
+			"DMP_mant_EXP",
+			"DmP_exp_EXP",
+			"DMP_exp_EXP",
+			"DmP_EXP",
+			"DMP_EXP",
+			"DmP_INIT_W_2",
+			"DMP_INIT_W_2",
+			"DmP_INIT",
+			"DMP_INIT",
+			"intDY",
+			"intDX",
+			"ADD_OVRFLW_FRMT",
+			"ADD_OVRFLW_NRM",
+			"ADD_OVRFLW_SGF",
+			"add_ov",
+			"LZD_raw_val_EW",
+			"LZD_raw_val_EWR",
+			"LZD_raw_val"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"d",
+			"a",
+			"b",
+			"Exp_oper_1_EW",
+			"uut",
+			"0x%6h",
+			"%0x6h",
+			"0x%21h",
+			"0x%24h",
+			"0x%h",
+			"\\n\",",
+			"\\n\")",
+			"\\n\"",
+			"\"",
+			"\n      $display(\"===============INIT STAGE: input signals============\");\n      $display(\"---------First Operator------------\");\n      $display(\"Mantissa = %23h, Exponent = %8h, sign = %d\", Mantissa1_SW, Exponent1_EW, Sign1);\n      $display(\"Mantissa = %b, Exponent = %b, sign = %b\", Mantissa1_SW, Exponent1_EW, Sign1);\n      $display(\"--------Second Operator------------\");\n      $display(\"Mantissa = %23h, Exponent = %8h, sign = %d\", Mantissa2_SW, Exponent2_EW, Sign2);\n      $display(\"Mantissa = %b, Exponent = %b, sign = %b\", Mantissa2_SW, Exponent2_EW, Sign2);\n",
+			"\");",
+			"\\n\");",
+			"\");",
+			"$fwrite(logVectorReference,\"",
+			"fwrite",
+			"Shift_reg_FLAGS_7",
+			"Shift_reg_FLAGS_6",
+			"Shift_reg_FLAGS",
+			"ADD_OVRFLW_NRM2",
+			"ADD_OVRFLW_FRMT",
+			"enable_input_internal",
+			"//ack_FSM",
+			"beg_OP",
+			"DMP_INIT_EWSW",
+			"intDY_EWSW",
+			"intDY_W1",
+			"intDX_EWSW",
+			"intDX_W1",
+			"intDY_W1",
+			"intDY_W",
+			"intDX_W1",
+			"intDX_W",
+			"formatted_number_W",
+			"formatted_number",
+			"LZD_raw_out_EWR",
+			"LZD_raw_output",
+			"LZD_raw_out_NRM2_EWR",
+			"LZD_raw_output_NRM2",
+			"LZD_output_NRM2_EW",
+			"LZD_output_NRM2",
+			"Raw_mant_NRM_SWR",
+			"Raw_mant_NRM",
+			"wire [SWR-1:0] Raw_mant_NRM;\n",
+			"Add_Subt_LZD_SWR",
+			"Add_Subt_LZD",
+			"DMP_exp_NRM_EW",
+			"DMP_exp_NRM",
+			"DMP_mant_SFG_SWR",
+			"DmP_mant_SFG_SWR",
+			"DmP_mant_SFG",
+			"DMP_exp_NRM2_EW",
+			"DMP_exp_NRM2",
+			"ADDSUB_exp_operand_EW",
+			"ADDSUB_exp_operand",
+			"exp_rslt_NRM2_EW1",
+			"exp_rslt_NRM2",
+			"Exp_oper_1_EWR",
+			"Exp_oper_1",
+			"sftr_odat_SHT2_SWR",
+			"sftr_odat_SHT2",
+			"sftr_idat_SHT2_SWR",
+			"sftr_idat_SHT2",
+			"shift_value_SHT2_EWR",
+			"shift_value_SHT2",
+			"DMP_SHT2_EWSW",
+			"DMP_SHT2",
+			"Data_array_SWR",
+			"Data_array",
+			"mux_sel_norm_EWR",
+			"mux_sel_norm",
+			"sftr_odat_SHT1_SWR",
+			"sftr_odat_SHT1",
+			"sftr_idat_SHT1_SWR",
+			"sftr_idat_SHT1",
+			"shft_value_mux_o_EWR",
+			"shft_value_mux_o",
+			"Shift_amount_SHT1_EWR",
+			"Shift_amount_SHT1",
+			"DmP_mant_SHT1_SW",
+			"DmP_mant_SHT1",
+			"DMP_SHT1_EWSW",
+			"DMP_SHT1",
+			"b_shifter_one_SWR",
+			"b_shifter_one",
+			"Shift_amount_EXP_EW",
+			"Shift_amount_EXP",
+			"DmP_mant_EXP_SW",
+			"DMP_mant_EXP_SW",
+			"DMP_mant_EXP",
+			"DmP_exp_EXP_EW",
+			"DMP_exp_EXP_EW",
+			"DMP_exp_EXP",
+			"DmP_EXP_EWSW",
+			"DmP_EXP",
+			"wire [W-2:0] DMP_EXP_EWSW, DmP_EXP;\n",
+			"DMP_EXP_EWSW",
+			"DMP_EXP",
+			"DmP_INIT_EWSW",
+			"DMP_EXP_EWSW",
+			"DmP_INIT_W_2",
+			"DMP_INIT_W_2",
+			"DMP_INIT_W.2",
+			"DMP_INIT",
+			"DMP_INIT_W_2",
+			"DMP_INIT",
+			"intDY_W",
+			"intDX_W",
+			"intDX",
+			"LZD_raw_val_EWR",
+			"LZD_raw_val_EW",
+			"Exponent_diff_EW",
+			"Exponent_m_EW",
+			"Exponent_M_EW",
+			"Mantissa_m_SW",
+			"Mantissa_M_SW",
+			"Mantissa2_SW",
+			"Mantissa1_SW",
+			"Operand2_W",
+			"Operand1_W",
+			"Exponent2_EW",
+			"Exponent1_EW",
+			"raw_Mantissa_SWR"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tb_Multipliers.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "26bit/SimpleKOA/ks26.v",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Karatsubas/Karatsubas.runs/synth_2/RKOA_utilization_synth.rpt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6709,
+								6709
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2538.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "26bit/HybridKOA/ks26.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "26bit/FrancisKOA/Sgf_Multiplication.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								572,
+								572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1092.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "26bit/RKOA/RKOA.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8149,
+								8149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4373.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "26bit/FrancisKOA/substractor.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "26bit/BinaryKOA/ks2.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "26bit/SimpleKOA/ks7.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								573,
+								573
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "26bit/SimpleKOA/ks13.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "26bit/SimpleKOA/ks4.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/Verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "",
+	"project": "multipliers.sublime-project",
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Karatsuba_FPU/Pipeline_FPADD_sourcefiles/FPU_ADD_Substract_PIPELINED.v"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Proyecto de Graduación/5TESIS/tmain.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 322.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Add_Subt"
+			]
+		],
+		"width": 314.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

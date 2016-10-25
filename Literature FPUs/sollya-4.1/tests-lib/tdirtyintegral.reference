@@ -1,0 +1,9 @@
+The integral "int _x_ d _x_ over [1;2]" gets approximated with dirtyintegral by 1.49999999999999999999999999999999999999999999999196
+The integral "int _x_ d _x_ over [2;3]" gets approximated with dirtyintegral by 2.49999999999999999999999999999999999999999999993286
+The integral "int 2 / sqrt(pi) * exp(-(_x_^2)) d _x_ over [0;100]" gets approximated with dirtyintegral by 1.00000000000000000000000000000000000000000000000009
+The integral "int 2 / sqrt(pi) * exp(-(_x_^2)) d _x_ over [-5;5]" gets approximated with dirtyintegral by 1.99999999999691468132028041677901960172984359314663
+The integral "int exp(_x_) d _x_ over [0;1]" gets approximated with dirtyintegral by 1.71828239893542924836278534461803762484402866155196
+Caught the message: the given domain is not a closed subset of the reals.
+The integral "int exp(_x_) d _x_ over [-@Inf@;1]" gets approximated with dirtyintegral by @NaN@
+Caught the message: the given domain is not a closed subset of the reals.
+The integral "int exp(_x_) d _x_ over [1;@Inf@]" gets approximated with dirtyintegral by @NaN@

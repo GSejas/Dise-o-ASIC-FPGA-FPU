@@ -1,0 +1,1 @@
+/usr/bin/c++   -pg -Wall   CMakeFiles/longacc2fp.dir/src/Tools/longacc2fp.o CMakeFiles/longacc2fp.dir/src/utils.o  -o longacc2fp -rdynamic -lmpfr -lgmp -lgmpxx 

@@ -1,0 +1,29 @@
+\begin{picture}(0,0)%
+\includegraphics{flopocoLogo.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFontNFSS\undefined%
+\gdef\SetFigFontNFSS#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(7155,5599)(3137,-10129)
+\put(6706,-9871){\makebox(0,0)[b]{\smash{{\SetFigFontNFSS{20}{24.0}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{1,1,1}Arithmetic Core Generator }%
+}}}}
+\put(6661,-8071){\makebox(0,0)[b]{\smash{{\SetFigFontNFSS{45}{54.0}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{1,1,1}FloPoCo}%
+}}}}
+\put(9766,-7891){\rotatebox{295.0}{\makebox(0,0)[lb]{\smash{{\SetFigFontNFSS{43}{51.6}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{1,0,1}$\sin{e^{x+y}}$}%
+}}}}}
+\put(4906,-6676){\rotatebox{340.0}{\makebox(0,0)[b]{\smash{{\SetFigFontNFSS{43}{51.6}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\pi{x}$}%
+}}}}}
+\put(9496,-7351){\rotatebox{341.0}{\makebox(0,0)[b]{\smash{{\SetFigFontNFSS{43}{51.6}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$\sqrt{x}$}%
+}}}}}
+\put(7381,-7396){\rotatebox{30.0}{\makebox(0,0)[lb]{\smash{{\SetFigFontNFSS{43}{51.6}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$e^{\frac{x}{\sqrt{x^2+y^2+z^2}}}$}%
+}}}}}
+\put(3646,-8881){\rotatebox{61.0}{\makebox(0,0)[b]{\smash{{\SetFigFontNFSS{43}{51.6}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,.69,0}$\displaystyle y=\sum_{i=0}^n x_i$}%
+}}}}}
+\put(6481,-6721){\makebox(0,0)[b]{\smash{{\SetFigFontNFSS{43}{51.6}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{.56,0,0}$\log{x}$}%
+}}}}
+\end{picture}%

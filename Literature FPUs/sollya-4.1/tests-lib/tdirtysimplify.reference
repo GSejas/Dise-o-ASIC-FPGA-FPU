@@ -1,0 +1,8 @@
+x + 2 - (x + 2) has been simplified (with possible rounding) to 0.
+asin(exp(x + 2 - (x + 2))) has been simplified (with possible rounding) to 1.57079632679489661923132169163975144209858469968754.
+exp(x) - 1 - expm1(x) has been simplified (with possible rounding) to 0.
+1 + 1.0000000000000000250590918352087596856961468077037e-300 has been simplified (with possible rounding) to 1.
+13 / 17 - 19 / 368 has been simplified (with possible rounding) to 0.71307544757033248081841432225063938618925831202046.
+(x + 1)^5 + exp(3) - ((x + 1)^log10(100000) + exp(3 + 9.332636185032188789900895447238171696170914463717e-302)) has been simplified (with possible rounding) to (x + 1)^5 + 2.00855369231876677409285296545817178969879078385544e1 - ((x + 1)^5 + 2.00855369231876677409285296545817178969879078385544e1).
+(x + 1)^5 + exp(3) - ((x + 1)^5 + exp(3)) has been simplified (with possible rounding) to 0.
+-log(13) / log(17) + x * (sin((pi) / 3) - sqrt(3) / 2) + log2(13) / log2(17) has been simplified (with possible rounding) to 0.

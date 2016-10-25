@@ -1,0 +1,13 @@
+0-th element in list1 before copy and modification of the copy: 1
+1-th element in list1 before copy and modification of the copy: 2
+2-th element in list1 before copy and modification of the copy: 3
+3-th element in list1 before copy and modification of the copy: 4
+0-th element in list1 after copy and modification of the copy: 1
+1-th element in list1 after copy and modification of the copy: 2
+2-th element in list1 after copy and modification of the copy: 3
+3-th element in list1 after copy and modification of the copy: 4
+0-th element in list2 after copy and modification of the copy: 5
+1-th element in list2 after copy and modification of the copy: 1
+2-th element in list2 after copy and modification of the copy: 2
+3-th element in list2 after copy and modification of the copy: 3
+4-th element in list2 after copy and modification of the copy: 4

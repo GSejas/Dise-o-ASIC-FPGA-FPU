@@ -340,7 +340,7 @@
 			"file": "ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
 			"settings":
 			{
-				"buffer_size": 5965,
+				"buffer_size": 2855,
 				"line_ending": "Unix"
 			}
 		},
@@ -356,7 +356,7 @@
 			"file": "my_sourcefiles/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v",
 			"settings":
 			{
-				"buffer_size": 5965,
+				"buffer_size": 2855,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -1260,7 +1260,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5965,
+						"buffer_size": 2855,
 						"regions":
 						{
 						},
@@ -1319,7 +1319,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5965,
+						"buffer_size": 2855,
 						"regions":
 						{
 						},
@@ -1336,7 +1336,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1585.0,
+						"translation.y": 1216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 20,

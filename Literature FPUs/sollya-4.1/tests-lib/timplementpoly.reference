@@ -1,0 +1,720 @@
+Caught the message: the implemented polynomial is different from the original one.
+implementpoly(649037107316853453566312041152512 - 108172851219475575594385340192085 * x^2,[-1b-10;1b-10],1b-44,double,p,"timplementpoly.implementation.c") returns 649037107316853453566312041152512 + x^2 * (-108172851219475569589585837031424) and produces the following code:
+
+/*
+    This code was generated using non-trivial code generation commands of
+    the Sollya software program.
+    
+    Before using, modifying and/or integrating this code into other
+    software, review the copyright and license status of this generated
+    code. In particular, see the exception below.
+    
+    Sollya is
+    
+    Copyright 2006-2013 by
+    
+    Laboratoire de l'Informatique du Parallelisme, UMR CNRS - ENS Lyon -
+    UCB Lyon 1 - INRIA 5668,
+    
+    Laboratoire d'Informatique de Paris 6, equipe PEQUAN, UPMC Universite
+    Paris 06 - CNRS - UMR 7606 - LIP6, Paris, France
+    
+    and by
+    
+    Centre de recherche INRIA Sophia-Antipolis Mediterranee, equipe APICS,
+    Sophia Antipolis, France.
+    
+    Contributors Ch. Lauter, S. Chevillard, M. Joldes
+    
+    christoph.lauter@ens-lyon.org
+    sylvain.chevillard@ens-lyon.org
+    joldes@lass.fr
+    
+    The Sollya software is a computer program whose purpose is to provide
+    an environment for safe floating-point code development. It is
+    particularily targeted to the automatized implementation of
+    mathematical floating-point libraries (libm). Amongst other features,
+    it offers a certified infinity norm, an automatic polynomial
+    implementer and a fast Remez algorithm.
+    
+    The Sollya software is governed by the CeCILL-C license under French
+    law and abiding by the rules of distribution of free software.  You
+    can use, modify and/ or redistribute the software under the terms of
+    the CeCILL-C license as circulated by CEA, CNRS and INRIA at the
+    following URL "http://www.cecill.info".
+    
+    As a counterpart to the access to the source code and rights to copy,
+    modify and redistribute granted by the license, users are provided
+    only with a limited warranty and the software's author, the holder of
+    the economic rights, and the successive licensors have only limited
+    liability.
+    
+    In this respect, the user's attention is drawn to the risks associated
+    with loading, using, modifying and/or developing or reproducing the
+    software by the user in light of its specific status of free software,
+    that may mean that it is complicated to manipulate, and that also
+    therefore means that it is reserved for developers and experienced
+    professionals having in-depth computer knowledge. Users are therefore
+    encouraged to load and test the software's suitability as regards
+    their requirements in conditions enabling the security of their
+    systems and/or data to be ensured and, more generally, to use and
+    operate it in the same conditions as regards security.
+    
+    The fact that you are presently reading this means that you have had
+    knowledge of the CeCILL-C license and that you accept its terms.
+    
+    The Sollya program is distributed WITHOUT ANY WARRANTY; without even
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+    PURPOSE.
+    
+    This generated program is distributed WITHOUT ANY WARRANTY; without
+    even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.
+    
+    As a special exception, you may create a larger work that contains
+    part or all of this software generated using Sollya and distribute
+    that work under terms of your choice, so long as that work isn't
+    itself a numerical code generator using the skeleton of this code or a
+    modified version thereof as a code skeleton.  Alternatively, if you
+    modify or redistribute this generated code itself, or its skeleton,
+    you may (at your option) remove this special exception, which will
+    cause this generated code and its skeleton and the resulting Sollya
+    output files to be licensed under the CeCILL-C licence without this
+    special exception.
+    
+    This special exception was added by the Sollya copyright holders in
+    version 4.1 of Sollya.
+    
+*/
+
+
+#define p_coeff_0h 6.49037107316853453566312041152512000000000000000000000000000000000000000000000000e+32
+#define p_coeff_2h -1.08172851219475569589585837031424000000000000000000000000000000000000000000000000e+32
+
+
+void p(double *p_resh, double x) {
+double p_x_0_pow2h;
+
+
+p_x_0_pow2h = x * x;
+
+
+double p_t_1_0h;
+double p_t_2_0h;
+double p_t_3_0h;
+ 
+
+
+p_t_1_0h = p_coeff_2h;
+p_t_2_0h = p_t_1_0h * p_x_0_pow2h;
+p_t_3_0h = p_coeff_0h + p_t_2_0h;
+*p_resh = p_t_3_0h;
+
+
+}
+
+Caught the message: the infered precision of a coefficient is higher than what seems to be needed to meet the accuracy target.
+implementpoly(649037107316853453566312041152512 - 108172851219475575594385340192085 * x^2,[-1b-10;1b-10],1b-44,double,p,"timplementpoly.implementation.c",honorcoeffprec) returns 649037107316853453566312041152512 + x^2 * (-108172851219475575594385340192085) and produces the following code:
+
+/*
+    This code was generated using non-trivial code generation commands of
+    the Sollya software program.
+    
+    Before using, modifying and/or integrating this code into other
+    software, review the copyright and license status of this generated
+    code. In particular, see the exception below.
+    
+    Sollya is
+    
+    Copyright 2006-2013 by
+    
+    Laboratoire de l'Informatique du Parallelisme, UMR CNRS - ENS Lyon -
+    UCB Lyon 1 - INRIA 5668,
+    
+    Laboratoire d'Informatique de Paris 6, equipe PEQUAN, UPMC Universite
+    Paris 06 - CNRS - UMR 7606 - LIP6, Paris, France
+    
+    and by
+    
+    Centre de recherche INRIA Sophia-Antipolis Mediterranee, equipe APICS,
+    Sophia Antipolis, France.
+    
+    Contributors Ch. Lauter, S. Chevillard, M. Joldes
+    
+    christoph.lauter@ens-lyon.org
+    sylvain.chevillard@ens-lyon.org
+    joldes@lass.fr
+    
+    The Sollya software is a computer program whose purpose is to provide
+    an environment for safe floating-point code development. It is
+    particularily targeted to the automatized implementation of
+    mathematical floating-point libraries (libm). Amongst other features,
+    it offers a certified infinity norm, an automatic polynomial
+    implementer and a fast Remez algorithm.
+    
+    The Sollya software is governed by the CeCILL-C license under French
+    law and abiding by the rules of distribution of free software.  You
+    can use, modify and/ or redistribute the software under the terms of
+    the CeCILL-C license as circulated by CEA, CNRS and INRIA at the
+    following URL "http://www.cecill.info".
+    
+    As a counterpart to the access to the source code and rights to copy,
+    modify and redistribute granted by the license, users are provided
+    only with a limited warranty and the software's author, the holder of
+    the economic rights, and the successive licensors have only limited
+    liability.
+    
+    In this respect, the user's attention is drawn to the risks associated
+    with loading, using, modifying and/or developing or reproducing the
+    software by the user in light of its specific status of free software,
+    that may mean that it is complicated to manipulate, and that also
+    therefore means that it is reserved for developers and experienced
+    professionals having in-depth computer knowledge. Users are therefore
+    encouraged to load and test the software's suitability as regards
+    their requirements in conditions enabling the security of their
+    systems and/or data to be ensured and, more generally, to use and
+    operate it in the same conditions as regards security.
+    
+    The fact that you are presently reading this means that you have had
+    knowledge of the CeCILL-C license and that you accept its terms.
+    
+    The Sollya program is distributed WITHOUT ANY WARRANTY; without even
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+    PURPOSE.
+    
+    This generated program is distributed WITHOUT ANY WARRANTY; without
+    even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.
+    
+    As a special exception, you may create a larger work that contains
+    part or all of this software generated using Sollya and distribute
+    that work under terms of your choice, so long as that work isn't
+    itself a numerical code generator using the skeleton of this code or a
+    modified version thereof as a code skeleton.  Alternatively, if you
+    modify or redistribute this generated code itself, or its skeleton,
+    you may (at your option) remove this special exception, which will
+    cause this generated code and its skeleton and the resulting Sollya
+    output files to be licensed under the CeCILL-C licence without this
+    special exception.
+    
+    This special exception was added by the Sollya copyright holders in
+    version 4.1 of Sollya.
+    
+*/
+
+
+#define p_coeff_0h 6.49037107316853453566312041152512000000000000000000000000000000000000000000000000e+32
+#define p_coeff_2h -1.08172851219475569589585837031424000000000000000000000000000000000000000000000000e+32
+#define p_coeff_2m -6.00479950316066100000000000000000000000000000000000000000000000000000000000000000e+15
+
+
+void p(double *p_resh, double x) {
+double p_x_0_pow2h, p_x_0_pow2m;
+
+
+Mul12(&p_x_0_pow2h,&p_x_0_pow2m,x,x);
+
+
+double p_t_1_0h, p_t_1_0m;
+double p_t_2_0h, p_t_2_0m;
+double p_t_3_0h, p_t_3_0m;
+ 
+
+
+p_t_1_0h = p_coeff_2h; p_t_1_0m = p_coeff_2m;
+Mul22(&p_t_2_0h,&p_t_2_0m,p_t_1_0h,p_t_1_0m,p_x_0_pow2h,p_x_0_pow2m);
+Add122(&p_t_3_0h,&p_t_3_0m,p_coeff_0h,p_t_2_0h,p_t_2_0m);
+*p_resh = p_t_3_0h; *p_resm = p_t_3_0m;
+
+
+}
+
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: a coefficient in a Horner scheme is not guaranteed to also be twice as large as the subpolynomial.
+Caught the message: an error has occured during the determination of the required precisions.
+implementpoly(15 + x * (14 + x * (13 + x * (12 + x * (11 + x * (10 + x * (9 + x * (8 + x * (7 + x * (6 + x * (5 + x * (4 + x * (3 + x * (2 + x))))))))))))),[-1b-1;1b-1],1b-60,doubledouble,p,"timplementpoly.implementation.c",honorcoeffprec,"timplementpoly.implementation.gappa") returns 15 + x * (14 + x * (13 + x * (12 + x * (11 + x * (10 + x * (9 + x * (8 + x * (7 + x * (6 + x * (5 + x * (4 + x * (3 + x * (2 + x))))))))))))) and produces the following code:
+
+/*
+    This code was generated using non-trivial code generation commands of
+    the Sollya software program.
+    
+    Before using, modifying and/or integrating this code into other
+    software, review the copyright and license status of this generated
+    code. In particular, see the exception below.
+    
+    Sollya is
+    
+    Copyright 2006-2013 by
+    
+    Laboratoire de l'Informatique du Parallelisme, UMR CNRS - ENS Lyon -
+    UCB Lyon 1 - INRIA 5668,
+    
+    Laboratoire d'Informatique de Paris 6, equipe PEQUAN, UPMC Universite
+    Paris 06 - CNRS - UMR 7606 - LIP6, Paris, France
+    
+    and by
+    
+    Centre de recherche INRIA Sophia-Antipolis Mediterranee, equipe APICS,
+    Sophia Antipolis, France.
+    
+    Contributors Ch. Lauter, S. Chevillard, M. Joldes
+    
+    christoph.lauter@ens-lyon.org
+    sylvain.chevillard@ens-lyon.org
+    joldes@lass.fr
+    
+    The Sollya software is a computer program whose purpose is to provide
+    an environment for safe floating-point code development. It is
+    particularily targeted to the automatized implementation of
+    mathematical floating-point libraries (libm). Amongst other features,
+    it offers a certified infinity norm, an automatic polynomial
+    implementer and a fast Remez algorithm.
+    
+    The Sollya software is governed by the CeCILL-C license under French
+    law and abiding by the rules of distribution of free software.  You
+    can use, modify and/ or redistribute the software under the terms of
+    the CeCILL-C license as circulated by CEA, CNRS and INRIA at the
+    following URL "http://www.cecill.info".
+    
+    As a counterpart to the access to the source code and rights to copy,
+    modify and redistribute granted by the license, users are provided
+    only with a limited warranty and the software's author, the holder of
+    the economic rights, and the successive licensors have only limited
+    liability.
+    
+    In this respect, the user's attention is drawn to the risks associated
+    with loading, using, modifying and/or developing or reproducing the
+    software by the user in light of its specific status of free software,
+    that may mean that it is complicated to manipulate, and that also
+    therefore means that it is reserved for developers and experienced
+    professionals having in-depth computer knowledge. Users are therefore
+    encouraged to load and test the software's suitability as regards
+    their requirements in conditions enabling the security of their
+    systems and/or data to be ensured and, more generally, to use and
+    operate it in the same conditions as regards security.
+    
+    The fact that you are presently reading this means that you have had
+    knowledge of the CeCILL-C license and that you accept its terms.
+    
+    The Sollya program is distributed WITHOUT ANY WARRANTY; without even
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+    PURPOSE.
+    
+    This generated program is distributed WITHOUT ANY WARRANTY; without
+    even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.
+    
+    As a special exception, you may create a larger work that contains
+    part or all of this software generated using Sollya and distribute
+    that work under terms of your choice, so long as that work isn't
+    itself a numerical code generator using the skeleton of this code or a
+    modified version thereof as a code skeleton.  Alternatively, if you
+    modify or redistribute this generated code itself, or its skeleton,
+    you may (at your option) remove this special exception, which will
+    cause this generated code and its skeleton and the resulting Sollya
+    output files to be licensed under the CeCILL-C licence without this
+    special exception.
+    
+    This special exception was added by the Sollya copyright holders in
+    version 4.1 of Sollya.
+    
+*/
+
+
+#define p_coeff_0h 1.50000000000000000000000000000000000000000000000000000000000000000000000000000000e+01
+#define p_coeff_1h 1.40000000000000000000000000000000000000000000000000000000000000000000000000000000e+01
+#define p_coeff_2h 1.30000000000000000000000000000000000000000000000000000000000000000000000000000000e+01
+#define p_coeff_3h 1.20000000000000000000000000000000000000000000000000000000000000000000000000000000e+01
+#define p_coeff_4h 1.10000000000000000000000000000000000000000000000000000000000000000000000000000000e+01
+#define p_coeff_5h 1.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+01
+#define p_coeff_6h 9.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_7h 8.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_8h 7.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_9h 6.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_10h 5.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_11h 4.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_12h 3.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_13h 2.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+#define p_coeff_14h 1.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00
+
+
+void p(double *p_resh, double *p_resm, double xh, double xm) {
+
+
+
+
+double p_t_1_0h;
+double p_t_2_0h, p_t_2_0m;
+double p_t_3_0h, p_t_3_0m;
+double p_t_4_0h, p_t_4_0m;
+double p_t_5_0h, p_t_5_0m;
+double p_t_6_0h, p_t_6_0m;
+double p_t_7_0h, p_t_7_0m;
+double p_t_8_0h, p_t_8_0m;
+double p_t_9_0h, p_t_9_0m;
+double p_t_10_0h, p_t_10_0m;
+double p_t_11_0h, p_t_11_0m;
+double p_t_12_0h, p_t_12_0m;
+double p_t_13_0h, p_t_13_0m;
+double p_t_14_0h, p_t_14_0m;
+double p_t_15_0h, p_t_15_0m;
+double p_t_16_0h, p_t_16_0m;
+double p_t_17_0h, p_t_17_0m;
+double p_t_18_0h, p_t_18_0m;
+double p_t_19_0h, p_t_19_0m;
+double p_t_20_0h, p_t_20_0m;
+double p_t_21_0h, p_t_21_0m;
+double p_t_22_0h, p_t_22_0m;
+double p_t_23_0h, p_t_23_0m;
+double p_t_24_0h, p_t_24_0m;
+double p_t_25_0h, p_t_25_0m;
+double p_t_26_0h, p_t_26_0m;
+double p_t_27_0h, p_t_27_0m;
+double p_t_28_0h, p_t_28_0m;
+double p_t_29_0h, p_t_29_0m;
+ 
+
+
+p_t_1_0h = p_coeff_14h;
+Mul122(&p_t_2_0h,&p_t_2_0m,p_t_1_0h,xh,xm);
+Add122(&p_t_3_0h,&p_t_3_0m,p_coeff_13h,p_t_2_0h,p_t_2_0m);
+Mul22(&p_t_4_0h,&p_t_4_0m,p_t_3_0h,p_t_3_0m,xh,xm);
+Add122(&p_t_5_0h,&p_t_5_0m,p_coeff_12h,p_t_4_0h,p_t_4_0m);
+Mul22(&p_t_6_0h,&p_t_6_0m,p_t_5_0h,p_t_5_0m,xh,xm);
+Add122(&p_t_7_0h,&p_t_7_0m,p_coeff_11h,p_t_6_0h,p_t_6_0m);
+Mul22(&p_t_8_0h,&p_t_8_0m,p_t_7_0h,p_t_7_0m,xh,xm);
+Add122(&p_t_9_0h,&p_t_9_0m,p_coeff_10h,p_t_8_0h,p_t_8_0m);
+Mul22(&p_t_10_0h,&p_t_10_0m,p_t_9_0h,p_t_9_0m,xh,xm);
+Add122(&p_t_11_0h,&p_t_11_0m,p_coeff_9h,p_t_10_0h,p_t_10_0m);
+Mul22(&p_t_12_0h,&p_t_12_0m,p_t_11_0h,p_t_11_0m,xh,xm);
+Add122(&p_t_13_0h,&p_t_13_0m,p_coeff_8h,p_t_12_0h,p_t_12_0m);
+Mul22(&p_t_14_0h,&p_t_14_0m,p_t_13_0h,p_t_13_0m,xh,xm);
+Add122(&p_t_15_0h,&p_t_15_0m,p_coeff_7h,p_t_14_0h,p_t_14_0m);
+Mul22(&p_t_16_0h,&p_t_16_0m,p_t_15_0h,p_t_15_0m,xh,xm);
+Add122(&p_t_17_0h,&p_t_17_0m,p_coeff_6h,p_t_16_0h,p_t_16_0m);
+Mul22(&p_t_18_0h,&p_t_18_0m,p_t_17_0h,p_t_17_0m,xh,xm);
+Add122(&p_t_19_0h,&p_t_19_0m,p_coeff_5h,p_t_18_0h,p_t_18_0m);
+Mul22(&p_t_20_0h,&p_t_20_0m,p_t_19_0h,p_t_19_0m,xh,xm);
+Add122(&p_t_21_0h,&p_t_21_0m,p_coeff_4h,p_t_20_0h,p_t_20_0m);
+Mul22(&p_t_22_0h,&p_t_22_0m,p_t_21_0h,p_t_21_0m,xh,xm);
+Add122(&p_t_23_0h,&p_t_23_0m,p_coeff_3h,p_t_22_0h,p_t_22_0m);
+Mul22(&p_t_24_0h,&p_t_24_0m,p_t_23_0h,p_t_23_0m,xh,xm);
+Add122(&p_t_25_0h,&p_t_25_0m,p_coeff_2h,p_t_24_0h,p_t_24_0m);
+Mul22(&p_t_26_0h,&p_t_26_0m,p_t_25_0h,p_t_25_0m,xh,xm);
+Add122(&p_t_27_0h,&p_t_27_0m,p_coeff_1h,p_t_26_0h,p_t_26_0m);
+Mul22(&p_t_28_0h,&p_t_28_0m,p_t_27_0h,p_t_27_0m,xh,xm);
+Add122(&p_t_29_0h,&p_t_29_0m,p_coeff_0h,p_t_28_0h,p_t_28_0m);
+*p_resh = p_t_29_0h; *p_resm = p_t_29_0m;
+
+
+}
+
+Additionnally, the following Gappa proof is produced:
+
+# The polynomial to implement is: 15b0 + (x * (7b1 + (x * (13b0 + (x * (3b2 + (x * (11b0 + (x * (5b1 + (x * (9b0 + (x * (1b3 + (x * (7b0 + (x * (3b1 + (x * (5b0 + (x * (1b2 + (x * (3b0 + (x * (1b1 + x))))))))))))))))))))))))))
+# The polynomial implemented is: 15b0 + (x * (7b1 + (x * (13b0 + (x * (3b2 + (x * (11b0 + (x * (5b1 + (x * (9b0 + (x * (1b3 + (x * (7b0 + (x * (3b1 + (x * (5b0 + (x * (1b2 + (x * (3b0 + (x * (1b1 + (x * 1b0)))))))))))))))))))))))))))
+# The domain is [-1b-1;1b-1]
+# The free variable x is a double-double number, the result p_res* is stored on a double-double number.
+# The code produces 45 intermediate and final arithmetical approximations.
+
+# Double precision rounding operator:
+@double = float<ieee_64,ne>;
+
+# Disable some annoying warnings:
+#@-Wno-dichotomy-failure
+
+# Helper definitions for decomposing the free variable
+xh = double(xhm);
+xm = xhm - xh;
+
+# Transcription of the C code
+p_coeff_0h = double(1.50000000000000000000000000000000000000000000000000000000000000000000000000000000e+01);
+
+p_coeff_1h = double(1.40000000000000000000000000000000000000000000000000000000000000000000000000000000e+01);
+
+p_coeff_2h = double(1.30000000000000000000000000000000000000000000000000000000000000000000000000000000e+01);
+
+p_coeff_3h = double(1.20000000000000000000000000000000000000000000000000000000000000000000000000000000e+01);
+
+p_coeff_4h = double(1.10000000000000000000000000000000000000000000000000000000000000000000000000000000e+01);
+
+p_coeff_5h = double(1.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+01);
+
+p_coeff_6h = double(9.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_7h = double(8.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_8h = double(7.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_9h = double(6.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_10h = double(5.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_11h = double(4.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_12h = double(3.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_13h = double(2.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_coeff_14h = double(1.00000000000000000000000000000000000000000000000000000000000000000000000000000000e+00);
+
+p_t_1_0h = p_coeff_14h;
+
+p_t_2_0hm = mul_rel<102>(p_t_1_0h,xhm);
+p_t_2_0h = double(p_t_2_0hm);
+p_t_2_0m = p_t_2_0hm - p_t_2_0h;
+
+p_t_3_0hm = add_rel<102>(p_coeff_13h,p_t_2_0hm);
+p_t_3_0h = double(p_t_3_0hm);
+p_t_3_0m = p_t_3_0hm - p_t_3_0h;
+
+p_t_4_0hm = mul_rel<102>(p_t_3_0hm,xhm);
+p_t_4_0h = double(p_t_4_0hm);
+p_t_4_0m = p_t_4_0hm - p_t_4_0h;
+
+p_t_5_0hm = add_rel<102>(p_coeff_12h,p_t_4_0hm);
+p_t_5_0h = double(p_t_5_0hm);
+p_t_5_0m = p_t_5_0hm - p_t_5_0h;
+
+p_t_6_0hm = mul_rel<102>(p_t_5_0hm,xhm);
+p_t_6_0h = double(p_t_6_0hm);
+p_t_6_0m = p_t_6_0hm - p_t_6_0h;
+
+p_t_7_0hm = add_rel<102>(p_coeff_11h,p_t_6_0hm);
+p_t_7_0h = double(p_t_7_0hm);
+p_t_7_0m = p_t_7_0hm - p_t_7_0h;
+
+p_t_8_0hm = mul_rel<102>(p_t_7_0hm,xhm);
+p_t_8_0h = double(p_t_8_0hm);
+p_t_8_0m = p_t_8_0hm - p_t_8_0h;
+
+p_t_9_0hm = add_rel<102>(p_coeff_10h,p_t_8_0hm);
+p_t_9_0h = double(p_t_9_0hm);
+p_t_9_0m = p_t_9_0hm - p_t_9_0h;
+
+p_t_10_0hm = mul_rel<102>(p_t_9_0hm,xhm);
+p_t_10_0h = double(p_t_10_0hm);
+p_t_10_0m = p_t_10_0hm - p_t_10_0h;
+
+p_t_11_0hm = add_rel<102>(p_coeff_9h,p_t_10_0hm);
+p_t_11_0h = double(p_t_11_0hm);
+p_t_11_0m = p_t_11_0hm - p_t_11_0h;
+
+p_t_12_0hm = mul_rel<102>(p_t_11_0hm,xhm);
+p_t_12_0h = double(p_t_12_0hm);
+p_t_12_0m = p_t_12_0hm - p_t_12_0h;
+
+p_t_13_0hm = add_rel<102>(p_coeff_8h,p_t_12_0hm);
+p_t_13_0h = double(p_t_13_0hm);
+p_t_13_0m = p_t_13_0hm - p_t_13_0h;
+
+p_t_14_0hm = mul_rel<102>(p_t_13_0hm,xhm);
+p_t_14_0h = double(p_t_14_0hm);
+p_t_14_0m = p_t_14_0hm - p_t_14_0h;
+
+p_t_15_0hm = add_rel<102>(p_coeff_7h,p_t_14_0hm);
+p_t_15_0h = double(p_t_15_0hm);
+p_t_15_0m = p_t_15_0hm - p_t_15_0h;
+
+p_t_16_0hm = mul_rel<102>(p_t_15_0hm,xhm);
+p_t_16_0h = double(p_t_16_0hm);
+p_t_16_0m = p_t_16_0hm - p_t_16_0h;
+
+p_t_17_0hm = add_rel<102>(p_coeff_6h,p_t_16_0hm);
+p_t_17_0h = double(p_t_17_0hm);
+p_t_17_0m = p_t_17_0hm - p_t_17_0h;
+
+p_t_18_0hm = mul_rel<102>(p_t_17_0hm,xhm);
+p_t_18_0h = double(p_t_18_0hm);
+p_t_18_0m = p_t_18_0hm - p_t_18_0h;
+
+p_t_19_0hm = add_rel<102>(p_coeff_5h,p_t_18_0hm);
+p_t_19_0h = double(p_t_19_0hm);
+p_t_19_0m = p_t_19_0hm - p_t_19_0h;
+
+p_t_20_0hm = mul_rel<102>(p_t_19_0hm,xhm);
+p_t_20_0h = double(p_t_20_0hm);
+p_t_20_0m = p_t_20_0hm - p_t_20_0h;
+
+p_t_21_0hm = add_rel<102>(p_coeff_4h,p_t_20_0hm);
+p_t_21_0h = double(p_t_21_0hm);
+p_t_21_0m = p_t_21_0hm - p_t_21_0h;
+
+p_t_22_0hm = mul_rel<102>(p_t_21_0hm,xhm);
+p_t_22_0h = double(p_t_22_0hm);
+p_t_22_0m = p_t_22_0hm - p_t_22_0h;
+
+p_t_23_0hm = add_rel<102>(p_coeff_3h,p_t_22_0hm);
+p_t_23_0h = double(p_t_23_0hm);
+p_t_23_0m = p_t_23_0hm - p_t_23_0h;
+
+p_t_24_0hm = mul_rel<102>(p_t_23_0hm,xhm);
+p_t_24_0h = double(p_t_24_0hm);
+p_t_24_0m = p_t_24_0hm - p_t_24_0h;
+
+p_t_25_0hm = add_rel<102>(p_coeff_2h,p_t_24_0hm);
+p_t_25_0h = double(p_t_25_0hm);
+p_t_25_0m = p_t_25_0hm - p_t_25_0h;
+
+p_t_26_0hm = mul_rel<102>(p_t_25_0hm,xhm);
+p_t_26_0h = double(p_t_26_0hm);
+p_t_26_0m = p_t_26_0hm - p_t_26_0h;
+
+p_t_27_0hm = add_rel<102>(p_coeff_1h,p_t_26_0hm);
+p_t_27_0h = double(p_t_27_0hm);
+p_t_27_0m = p_t_27_0hm - p_t_27_0h;
+
+p_t_28_0hm = mul_rel<102>(p_t_27_0hm,xhm);
+p_t_28_0h = double(p_t_28_0hm);
+p_t_28_0m = p_t_28_0hm - p_t_28_0h;
+
+p_t_29_0hm = add_rel<102>(p_coeff_0h,p_t_28_0hm);
+p_t_29_0h = double(p_t_29_0hm);
+p_t_29_0m = p_t_29_0hm - p_t_29_0h;
+
+p_reshm = p_t_29_0hm;
+p_resh = p_t_29_0h;
+p_resm = p_t_29_0m;
+
+
+# Mathematical equivalents
+Mx = xhm;
+Mp_coeff_0 = p_coeff_0h;
+Mp_coeff_1 = p_coeff_1h;
+Mp_coeff_2 = p_coeff_2h;
+Mp_coeff_3 = p_coeff_3h;
+Mp_coeff_4 = p_coeff_4h;
+Mp_coeff_5 = p_coeff_5h;
+Mp_coeff_6 = p_coeff_6h;
+Mp_coeff_7 = p_coeff_7h;
+Mp_coeff_8 = p_coeff_8h;
+Mp_coeff_9 = p_coeff_9h;
+Mp_coeff_10 = p_coeff_10h;
+Mp_coeff_11 = p_coeff_11h;
+Mp_coeff_12 = p_coeff_12h;
+Mp_coeff_13 = p_coeff_13h;
+Mp_coeff_14 = p_coeff_14h;
+Mp_t_1_0 = Mp_coeff_14;
+Mp_t_2_0 = Mp_t_1_0 * Mx;
+Mp_t_3_0 = Mp_coeff_13 + Mp_t_2_0;
+Mp_t_4_0 = Mp_t_3_0 * Mx;
+Mp_t_5_0 = Mp_coeff_12 + Mp_t_4_0;
+Mp_t_6_0 = Mp_t_5_0 * Mx;
+Mp_t_7_0 = Mp_coeff_11 + Mp_t_6_0;
+Mp_t_8_0 = Mp_t_7_0 * Mx;
+Mp_t_9_0 = Mp_coeff_10 + Mp_t_8_0;
+Mp_t_10_0 = Mp_t_9_0 * Mx;
+Mp_t_11_0 = Mp_coeff_9 + Mp_t_10_0;
+Mp_t_12_0 = Mp_t_11_0 * Mx;
+Mp_t_13_0 = Mp_coeff_8 + Mp_t_12_0;
+Mp_t_14_0 = Mp_t_13_0 * Mx;
+Mp_t_15_0 = Mp_coeff_7 + Mp_t_14_0;
+Mp_t_16_0 = Mp_t_15_0 * Mx;
+Mp_t_17_0 = Mp_coeff_6 + Mp_t_16_0;
+Mp_t_18_0 = Mp_t_17_0 * Mx;
+Mp_t_19_0 = Mp_coeff_5 + Mp_t_18_0;
+Mp_t_20_0 = Mp_t_19_0 * Mx;
+Mp_t_21_0 = Mp_coeff_4 + Mp_t_20_0;
+Mp_t_22_0 = Mp_t_21_0 * Mx;
+Mp_t_23_0 = Mp_coeff_3 + Mp_t_22_0;
+Mp_t_24_0 = Mp_t_23_0 * Mx;
+Mp_t_25_0 = Mp_coeff_2 + Mp_t_24_0;
+Mp_t_26_0 = Mp_t_25_0 * Mx;
+Mp_t_27_0 = Mp_coeff_1 + Mp_t_26_0;
+Mp_t_28_0 = Mp_t_27_0 * Mx;
+Mp_t_29_0 = Mp_coeff_0 + Mp_t_28_0;
+Mp_res = Mp_t_29_0;
+
+# Definition of the relative arithmetical error
+epsilon = (p_reshm - Mp_res) / Mp_res;
+
+# Implication to prove
+{(
+   xhm in [-1b-1,1b-1]
+/\ not    xhm in [-1b-401,1b-401]
+)
+->
+(
+   epsilon in ?
+)}
+
+# Hints and Meta-Hints for expansion decomposition
+xh ~ xhm;
+
+p_t_2_0h ~ p_t_2_0hm;
+p_t_3_0h ~ p_t_3_0hm;
+p_t_4_0h ~ p_t_4_0hm;
+p_t_5_0h ~ p_t_5_0hm;
+p_t_6_0h ~ p_t_6_0hm;
+p_t_7_0h ~ p_t_7_0hm;
+p_t_8_0h ~ p_t_8_0hm;
+p_t_9_0h ~ p_t_9_0hm;
+p_t_10_0h ~ p_t_10_0hm;
+p_t_11_0h ~ p_t_11_0hm;
+p_t_12_0h ~ p_t_12_0hm;
+p_t_13_0h ~ p_t_13_0hm;
+p_t_14_0h ~ p_t_14_0hm;
+p_t_15_0h ~ p_t_15_0hm;
+p_t_16_0h ~ p_t_16_0hm;
+p_t_17_0h ~ p_t_17_0hm;
+p_t_18_0h ~ p_t_18_0hm;
+p_t_19_0h ~ p_t_19_0hm;
+p_t_20_0h ~ p_t_20_0hm;
+p_t_21_0h ~ p_t_21_0hm;
+p_t_22_0h ~ p_t_22_0hm;
+p_t_23_0h ~ p_t_23_0hm;
+p_t_24_0h ~ p_t_24_0hm;
+p_t_25_0h ~ p_t_25_0hm;
+p_t_26_0h ~ p_t_26_0hm;
+p_t_27_0h ~ p_t_27_0hm;
+p_t_28_0h ~ p_t_28_0hm;
+p_t_29_0h ~ p_t_29_0hm;
+
+# Meta-Hints for Horner scheme
+p_t_1_0h ~ Mp_t_1_0;
+p_t_2_0hm ~ Mp_t_2_0;
+p_t_3_0hm ~ Mp_t_3_0;
+p_t_4_0hm ~ Mp_t_4_0;
+p_t_5_0hm ~ Mp_t_5_0;
+p_t_6_0hm ~ Mp_t_6_0;
+p_t_7_0hm ~ Mp_t_7_0;
+p_t_8_0hm ~ Mp_t_8_0;
+p_t_9_0hm ~ Mp_t_9_0;
+p_t_10_0hm ~ Mp_t_10_0;
+p_t_11_0hm ~ Mp_t_11_0;
+p_t_12_0hm ~ Mp_t_12_0;
+p_t_13_0hm ~ Mp_t_13_0;
+p_t_14_0hm ~ Mp_t_14_0;
+p_t_15_0hm ~ Mp_t_15_0;
+p_t_16_0hm ~ Mp_t_16_0;
+p_t_17_0hm ~ Mp_t_17_0;
+p_t_18_0hm ~ Mp_t_18_0;
+p_t_19_0hm ~ Mp_t_19_0;
+p_t_20_0hm ~ Mp_t_20_0;
+p_t_21_0hm ~ Mp_t_21_0;
+p_t_22_0hm ~ Mp_t_22_0;
+p_t_23_0hm ~ Mp_t_23_0;
+p_t_24_0hm ~ Mp_t_24_0;
+p_t_25_0hm ~ Mp_t_25_0;
+p_t_26_0hm ~ Mp_t_26_0;
+p_t_27_0hm ~ Mp_t_27_0;
+p_t_28_0hm ~ Mp_t_28_0;
+p_t_29_0hm ~ Mp_t_29_0;
+p_reshm ~ Mp_res;
+
+# Dichotomies for triple-double decomposition
+
+# Dichotomy for the error bound
+epsilon $ xhm;
+
+

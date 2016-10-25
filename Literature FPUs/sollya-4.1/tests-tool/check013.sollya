@@ -1,0 +1,532 @@
+restart;
+print("=============== Test number 241 ================");
+
+verbosity=0!;
+
+test1 = proc(f, n, x0, mode) {
+  var TStruct, p, errs, k, j, a, t, i, res;
+
+  res=1;
+  TStruct = taylorform(f,n,x0,mode);
+  p = TStruct[0];
+  errs = TStruct[1];
+  if (inf(x0)==sup(x0)) then k=1 else k=10;
+  for j from 1 to k+1 do {
+    roundingwarnings=off!;
+    a := inf(x0) + sup([(j-1)*(sup(x0)-inf(x0))/k]);
+    roundingwarnings=on!;
+    if (a>=sup(x0)) then a := sup(x0);
+    t = taylor(f,n,a);
+    for i from 0 to n do {
+      if (! coeff(t,i) in coeff(p, i)+errs[i]) then {
+        print("test1(",f,",",n,",",x0,",",mode,"): error with coefficient ",i," and point xi0 = ",a);
+        res = 0;
+      };
+    };
+  };
+  if (res==1)
+    then print("Testing taylorform(",f,",",n,",",x0,",",mode,": OK");
+};
+
+test2 = proc(f, n, x0, I, mode) {
+  var TStruct, p, errs, Delta, k, j, a, t, i, xk, res;
+
+  res = 1;
+  TStruct = taylorform(f,n,x0,I,mode);
+  p = TStruct[0];
+  errs = TStruct[1];
+  Delta = TStruct[2];
+  if (inf(x0)==sup(x0)) then k=1 else k=10;
+  for j from 1 to k+1 do {
+   roundingwarnings=off!;
+   a := inf(x0) + sup([(j-1)*(sup(x0)-inf(x0))/k]);
+   roundingwarnings=on!;
+   if (a>=sup(x0)) then a := sup(x0);
+   for i from 0 to points do {
+     roundingwarnings=off!;
+     xk := inf(I) + sup([(i/points)*(sup(I)-inf(I))]);
+     roundingwarnings=on!;
+     if (xk >= sup(I)) then xk := sup(I);
+
+     if (mode==relative) then dd = Delta else dd = [0];
+     for s from n to 0 by -1 do {
+       dd = errs[s] + (xk-a)*dd;
+     };
+     if (mode==absolute) then dd = dd + Delta;
+     if (! (f(xk)-p(xk-a)) in dd) then {
+       print("test2(",f,",",n,",",x0,",",I,",",mode,"): error at point x=",xk," and point xi0 = ",a);
+       res = 0;
+     };
+   };
+ };
+ if (res==1)
+   then print("Testing taylorform(",f,",",n,",",x0,",",I,",",mode,": OK");
+};
+
+test1(exp(x),5,0,absolute);
+test1(sin(x),17,1289b-10, absolute);
+test1(sin(exp(x)) + 2 - x,7,0, absolute);
+test1(sin(exp(x)) + 2 - x,7,[-1;1], absolute);
+test1(sin(exp(x)) + 2 - x,7,1289b-10, absolute);
+
+p1 = taylorform(sin(exp(x)) + 2 - x,7,1289b-10, absolute);
+p2 = taylorform(sin(exp(x)) + 2 - x,7,1289b-10, relative);
+p3 = taylorform(sin(exp(x)) + 2 - x,7,1289b-10);
+(p1==p2);
+(p2==p3);
+
+test2(sin(exp(x)) + 2 - x,7,0,[-1;1], absolute);
+test2(sin(exp(x)) + 2 - x,7,[-1;1],[-1;1], absolute);
+test2(sin(exp(x)) + 2 - x,7,[-1;1],[-1;1], relative);
+test2(sin(exp(x)) + 2 - x,7,1289b-19,[-1b-8;1b-7], absolute);
+test2(sin(exp(x)) + 2 - x,7,1289b-19,[-1b-8;1b-7], relative);
+
+p1 = taylorform(sin(exp(x)) + 2 - x,7,1289b-19,[-1b-8;1b-7], absolute);
+p2 = taylorform(sin(exp(x)) + 2 - x,7,1289b-19,[-1b-8;1b-7]);
+p1==p2;
+
+test2(sin(exp(x)) + 2 - x,7,0,[-1b-8;1b-7],relative);
+test2(sin(exp(x)) + 2 - x,7,0,[-1b-8;1b-7],absolute);
+test2(sin(x)^4 + x^5 * exp(17 * x),7,1289b-19,[-1b-8;1b-7],relative);
+test2(2^x,7,1289b-19,[-1b-8;1b-7],relative);
+test2(x^17,7,1289b-19,[-1b-8;1b-7],relative);
+test2(x^5,7,1289b-19,[-1b-8;1b-7],relative);
+test2(2^x,7,1289b-19,[-1b-8;1b-7],absolute);
+test2(2^x,7,0,[-1b-8;1b-7],relative);
+test2(2^x,7,0,[-1b-8;1b-7],absolute);
+test2(x^17,7,1289b-19,[-1b-8;1b-7],absolute);
+test2(x^5,7,0,[-1b-8;1b-7],absolute);
+
+test2(1 + 2 * x + 3 * x^2 + 4 * x^3,7,0,[-1b-8;1b-7],relative);
+test2(2 * x + 3 * x^2 + 4 * x^3,7,0,[-1b-8;1b-7],relative);
+test2(exp(sin(x))^log2(1 + sin(x)^2) * erf(x),7,1289b-19,[-1b-8;1b-7],relative);
+test2(exp(sin(x))^log2(1 + sin(x)^2) * erf(x),7,1289b-19,[-1b-8;1b-7],absolute);
+test2(exp(sin(x))^log2(1 + sin(x)^2) * erf(x),7,0,[-1b-8;1b-7],absolute);
+test2(exp(sin(x))^log2(1 + sin(x)^2) * erf(x),7,0,[-1b-8;1b-7],relative);
+
+restart;
+print("=============== Test number 242 ================");
+
+5 in [-1;17];
+5 in [5;17];
+5 in [-1;5];
+5 in [-1;4];
+5 in [6;17];
+
+5 in [-4;7];
+4 in [-1;1];
+0 in sin([-17;17]);
+
+[5;7] in [2;8];
+[2;3] in [4;5];
+[2;3] in [2.5;5];
+
+restart;
+print("=============== Test number 243 ================");
+
+nearestint(exp(17));
+nearestint(2.5);
+nearestint(3.5);
+nearestint(-exp(17));
+nearestint(-2.5);
+nearestint(-3.5);
+
+restart;
+print("=============== Test number 243 ================");
+
+
+SG(exp(5));
+SG(1b-170);
+round(1b-170,SG,RN);
+round(1b-170,SG,RD);
+round(1b-170,SG,RU);
+round(1b-170,SG,RZ);
+
+restart;
+print("=============== Test number 244 ================");
+
+
+
+succ = proc(n) { return n + 1; };
+succ(5);
+3 + succ(0);
+succ;
+
+
+add = proc(m,n) { var res; res := m + n; return res; };
+add(5,6);
+add;
+verbosity = 1!;
+add(3);
+add(true,false);
+
+
+
+succ = proc(n) { return n + 1; };
+succ(5);
+succ(x);
+
+
+hey = proc() { print("Hello world."); };
+hey();
+print(hey());
+hey;
+
+
+
+fac = proc(n) { var res; if (n == 0) then res := 1 else res := n * fac(n - 1); return res; };
+fac(5);
+fac(11);
+fac;
+
+
+myprocs = [| proc(m,n) { return m + n; }, proc(m,n) { return m - n; } |];
+(myprocs[0])(5,6);
+(myprocs[1])(5,6);
+succ = proc(n) { return n + 1; };
+pred = proc(n) { return n - 1; };
+applier = proc(p,n) { return p(n); };
+applier(succ,5);
+applier(pred,5);
+
+
+verbosity = 1!;
+myquit = proc(n) { print(n); quit; };
+myquit;
+myquit(5);
+
+
+printsucc = proc(n) { var succ; succ = proc(n) { return n + 1; }; print("Successor of",n,"is",succ(n)); };
+printsucc(5);
+
+
+makeadd = proc(n) { var add; print("n =",n); add = proc(m,n) { return n + m; }; return add; };
+makeadd(4);
+(makeadd(4))(5,6);
+
+
+sumall = proc(L = ...) { var acc, i; acc = 0; for i in L do acc = acc + i; return acc; };
+sumall;
+sumall();
+sumall(2);
+sumall(2,5);
+sumall(2,5,7,9,16);
+sumall @ [|1,...,10|];
+
+restart;
+print("=============== Test number 245 ================");
+
+nop(17);
+
+restart;
+print("=============== Test number 246 ================");
+
+parse("taylor(exp(x),5,0)");
+
+restart;
+print("=============== Test number 247 ================");
+display=binary;
+x^3;
+write(x^3.5); 
+
+print(" ", x^3.5);
+
+write(x^3.5) > "foo.sol";
+readfile("foo.sol");
+
+print(x^3.5) > "foo.sol";
+readfile("foo.sol");
+
+"This is a test " @ x^17.5 @ " " @ x^16.5 @ " " @ x^1 ; 
+
+procedure giveNTimes17thPower(n) {
+var res;
+res = n * x^17;
+return res;
+};
+giveNTimes17thPower;
+
+restart;
+print("=============== Test number 248 ================");
+display=powers;
+x^3.5;
+write(x^3.5); 
+
+print(" ",x^3.5);
+
+write(x^3.5) > "foo.sol";
+readfile("foo.sol");
+
+print(x^3.5) > "foo.sol";
+readfile("foo.sol");
+
+"This is a test " @ x^17.5 @ " " @ x^16.5 @ " " @ x^1 ; 
+
+procedure giveNTimes17thPower(n) {
+var res;
+res = n * x^17;
+return res;
+};
+giveNTimes17thPower;
+
+restart;
+print("=============== Test number 249 ================");
+display=binary;
+x^3.5;
+write(x^3.5); 
+
+print(x^3.5);
+
+write(x^3.5) > "foo.sol";
+readfile("foo.sol");
+
+print(x^3.5) > "foo.sol";
+readfile("foo.sol");
+
+"This is a test " @ x^17.5 @ " " @ x^16.5 @ " " @ x^1 ; 
+
+procedure giveNTimes17thPower(n) {
+var res;
+res = n * x^17;
+return res;
+};
+giveNTimes17thPower;
+
+restart;
+print("=============== Test number 250 ================");
+
+(1b-150 + 1b-1000)==1b-150;
+1b-150==1b-150;
+
+(1b-150 + 1b-1000)!=1b-150;
+1b-150!=1b-150;
+
+(1b-150 + 1b-1000)>=1b-150;
+1b-150>=1b-150;
+(1b-150 - 1b-1000)>=1b-150;
+
+(1b-150 + 1b-1000)<=1b-150;
+1b-150<=1b-150;
+(1b-150 - 1b-1000)<=1b-150;
+
+log2(10)==1/log10(2);
+log2(10)<=1/log10(2);
+log2(10)<1/log10(2);
+log2(10)>=1/log10(2);
+log2(10)>1/log10(2);
+
+
+restart;
+print("=============== Test number 251 ================");
+0x1.babep5;
+0x1.babeP5;
+
+restart;
+print("=============== Test number 252 ================");
+
+p=43196308294462357981024142731744116362697650584913 * 2^(-162) + x * (18940787880364826805042269910263056604186704676385 * 2^(-174) + x * (-5407597148055485570520706914301083250046007009437 * 2^(-159) + x * (37158356061791619043023830634511656708279826437585 * 2^(-168) + x * (32172009152272473020619646792981657725473812329329 * 2^(-162) + x * (39187281871360719997063676655971689323407411628341 * 2^(-163) + x * (-26178718640082384235967489910783645916516005140397 * 2^(-160) + x * (34953759648934510005190488964943453595170700848359 * 2^(-159) + x * (-25072723712224167158963228120240167477268243723855 * 2^(-157) + x * (15974295673579355540834731298883300753051706741309 * 2^(-155) + x * (-2176005277471622096317865317106429160007158181801 * 2^(-151) + x * (33095761423826438946556046816497669710132120490171 * 2^(-154) + x * (-27718463467204126627436664918521327080755133519747 * 2^(-153) + x * (41018859930667620878816122286632372011502828873813 * 2^(-153) + x * (-26839299879098746961860416101061429355276420223739 * 2^(-152) + x * (31039058326645149073567114046352001019871290715243 * 2^(-152) + x * (-15801771700140275545965431016584266752105943750081 * 2^(-151) + x * (28076103767775091115696407203606638391234359105431 * 2^(-152) + x * (-42703195634516805510364492875454224918599509045247 * 2^(-153) + x * (26615563879496098110497721850307891153971825144695 * 2^(-153) + x * (-23883679720985746622879467992193972349337502563713 * 2^(-154) + x * (11421445412702654560555951381067331891187471180861 * 2^(-156) + x * (16755037220371053240555785133468864281631785332199 * 2^(-155) + x * (-11646670708092672585279036943937814846722577306673 * 2^(-154) + x * (40930309254568821225122401834793624138027143082127 * 2^(-156) + x * (-28530073517778957683685414455245651646608282167685 * 2^(-156) + x * (16797844237434699460571558890943993481011634641003 * 2^(-156) + x * (-34280238236703589306896157793274873208973597110311 * 2^(-158) + x * (15338943662913561221432544272089077525108228764329 * 2^(-158) + x * (-24217778558935481135350419674960859956074648358005 * 2^(-160) + x * (33803150088894044184226414786438554964658466346207 * 2^(-162) + x * (-41704166743539326703622522076463525048484223709581 * 2^(-164) + x * (45382762035972197898257359180449883318357559151117 * 2^(-166) + x * (-43393016157184010556768624341670918448542448702857 * 2^(-168) + x * (9062263530935343636230776487744808048086339345527 * 2^(-168) + x * (-26249957299281112459419473007793993250525153688655 * 2^(-172) + x * (8153372488500584383974032291269228233309776969651 * 2^(-173) + x * (-34275209578373058119395297855481723033952834442033 * 2^(-178) + x * (14947107854277265774083749720190587877532571672469 * 2^(-180) + x * (-42131790041261699503379598633077466039830243229279 * 2^(-185) + x * (46113329036784136269736055212911483845268185185643 * 2^(-189) + x * (-4598366306216743281628691776535731218705653553989 * 2^(-190) + x * (9516311956994985484307564235440345214209834280373 * 2^(-196) + x * (-4794052779112477067768031456163342500587090722373 * 2^(-201)))))))))))))))))))))))))))))))))))))))))))) - (985247789068894326741367665457048597966095675907751 * 2^(-168));
+I = [1;2];
+numberroots(p,I);
+
+restart;
+print("=============== Test number 253 ================");
+NaN < 17;
+17 <= NaN;
+NaN < NaN;
+NaN == NaN ;
+NaN == 17 ;
+NaN == "aaa" ;
+NaN != NaN ;
+NaN != 17 ;
+NaN != "aaa" ;
+NaN != error ;
+NaN == error;
+
+restart;
+print("=============== Test number 254 ================");
+1==1;
+
+restart;
+print("=============== Test number 255 ================");
+{ .a = 5, .b = exp(x) };
+{ .a = 5, .b = exp(x) }.a;
+{ .a = 5, .b = exp(x) }.b;
+{ .a = 5, .b = exp(x) }.b(5);
+c = { .a = 5; .b = exp(x) };
+c.a;
+c.a + c.b;
+c.d = sin(pi * x);
+c.d;
+c.d(17.25);
+c.e.f.g = "Salut";
+c;
+c.e;
+c.e;
+c.e.f.g @ " and hello";
+c.h = { .a = 17, .n = true };
+c.h.n;
+c;
+d.a.b.c = "Hallo";
+d;
+d.a.b.c = 17;
+d;
+d.a.b = "Blub";
+d;
+d.a.b = { .a = "Blub" };
+d;
+d.a.b.d.e.f = "Blib";
+d;
+d.a.b.f.h = 17;
+d;
+f = exp(x);
+f.a = 17;
+h = { .b = exp(x) };
+h.a = 17;
+f;
+h;
+a = { .u=1};
+b = { .toto = a };
+b;
+a = { .toto = .25};
+a = { .a = a };
+a;
+t = { .b = 1; .b = 2};
+
+restart;
+print("=============== Test number 256 ================");
+verbosity=0; i = 1;
+"Test ", i, ": ", "(-3)^(+0) = ", (-3)^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "3^(+0) = ", 3^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "NaN^(+0) = ", NaN^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "NaN^(-0) = ", NaN^(-0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-infty)^(+0) = ", (-infty)^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-infty)^(-0) = ", (-infty)^(-0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(infty)^(+0) = ", (infty)^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(infty)^(-0) = ", (infty)^(-0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+0)^(-5) = ", (+0)^(-5), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(-0)^(-5) = ", (-0)^(-5), " IEEE 754-2008: -infty"; i := i + 1;
+"Test ", i, ": ", "(+0)^(-4) = ", (+0)^(-4), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(-0)^(-4) = ", (-0)^(-4), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(+0)^(+5) = ", (+0)^(+5), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-0)^(+5) = ", (-0)^(+5), " IEEE 754-2008: -0"; i := i + 1;
+"Test ", i, ": ", "(+0)^(+4) = ", (+0)^(+4), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-0)^(+4) = ", (-0)^(+4), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(+0)^(-5.5) = ", (+0)^(-5.5), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(-0)^(-5.5) = ", (-0)^(-5.5), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(+0)^(-4.5) = ", (+0)^(-4.5), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(-0)^(-4.5) = ", (-0)^(-4.5), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(+0)^(+5.5) = ", (+0)^(+5.5), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-0)^(+5.5) = ", (-0)^(+5.5), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(+0)^(+4.5) = ", (+0)^(+4.5), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-0)^(+4.5) = ", (-0)^(+4.5), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(+0)^(-infty) = ", (+0)^(-infty), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(-0)^(-infty) = ", (-0)^(-infty), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(+0)^(+infty) = ", (+0)^(+infty), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-0)^(+infty) = ", (-0)^(+infty), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-1)^(+infty) = ", (-1)^(+infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-infty) = ", (-1)^(-infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(+infty) = ", (+1)^(+infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-infty) = ", (+1)^(-infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-3) = ", (+1)^(-3), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-3.5) = ", (+1)^(-3.5), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-4) = ", (+1)^(-4), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-3.5) = ", (+1)^(-3.5), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-3) = ", (-1)^(-3), " IEEE 754-2008: -1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-3.5) = ", (-1)^(-3.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-4) = ", (-1)^(-4), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-4.5) = ", (-1)^(-4.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(+1)^(+0) = ", (+1)^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-0) = ", (+1)^(-0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(+0) = ", (-1)^(+0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-0) = ", (-1)^(-0), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(+2) = ", (+1)^(+2), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(+2) = ", (-1)^(+2), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(+2.5) = ", (+1)^(+2.5), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(+2.5) = ", (-1)^(+2.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(+1)^(+infty) = ", (+1)^(+infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^(-infty) = ", (+1)^(-infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(+infty) = ", (-1)^(+infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^(-infty) = ", (-1)^(-infty), " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(+1)^NaN = ", (+1)^NaN, " IEEE 754-2008: 1"; i := i + 1;
+"Test ", i, ": ", "(-1)^NaN = ", (-1)^NaN, " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-5)^(-5.5) = ", (-5)^(-5.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-5)^(-4.5) = ", (-5)^(-4.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-5)^(+5.5) = ", (-5)^(+5.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-5)^(+4.5) = ", (-5)^(+4.5), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(+5)^(-5.5) = ", (+5)^(-5.5), " IEEE 754-2008: real"; i := i + 1;
+"Test ", i, ": ", "(+5)^(-4.5) = ", (+5)^(-4.5), " IEEE 754-2008: real"; i := i + 1;
+"Test ", i, ": ", "(+5)^(+5.5) = ", (+5)^(+5.5), " IEEE 754-2008: real"; i := i + 1;
+"Test ", i, ": ", "(+5)^(+4.5) = ", (+5)^(+4.5), " IEEE 754-2008: real"; i := i + 1;
+"Test ", i, ": ", "NaN^NaN = ", NaN^NaN, " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(+infty)^(+infty) = ", (+infty)^(+infty), " IEEE 754-2008: +infty"; i := i + 1;
+"Test ", i, ": ", "(+infty)^(-infty) = ", (+infty)^(-infty), " IEEE 754-2008: +0"; i := i + 1;
+"Test ", i, ": ", "(-infty)^(+infty) = ", (-infty)^(+infty), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-infty)^(-infty) = ", (-infty)^(-infty), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(+infty)^NaN = ", (+infty)^NaN, " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "(-infty)^NaN = ", (-infty)^NaN, " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "NaN^(+infty) = ", NaN^(+infty), " IEEE 754-2008: NaN"; i := i + 1;
+"Test ", i, ": ", "NaN^(-infty) = ", NaN^(-infty), " IEEE 754-2008: NaN"; i := i + 1;
+
+"Test ", i, ": ", "infty = ", infty; i := i + 1;
+"Test ", i, ": ", "-infty = ", -infty; i := i + 1;
+"Test ", i, ": ", "exp(-infty) = ", exp(-infty); i := i + 1;
+"Test ", i, ": ", "infty^infty = ", infty^infty; i := i + 1;
+"Test ", i, ": ", "infty^(-infty) = ", infty^(-infty); i := i + 1;
+
+restart;
+print("=============== Test number 257 ================");
+[@Inf@]/[0,1], "  ", [@Inf@];
+[-@Inf@]/[0,1], "  ", [-@Inf@];
+[@Inf@]/[-1,0], "  ", [-@Inf@];
+[-@Inf@]/[-1,0], "  ", [@Inf@];
+[@Inf@]/[-1,1], "  ", [-@Inf@, @Inf@];
+[-@Inf@]/[-1,1], "  ", [-@Inf@, @Inf@];
+[@Inf@, @NaN@], "  ", [@NaN@];
+[@NaN@, 2], "  ", [@NaN@];
+[2, -2];
+[@Inf@, -@Inf@];
+[1,2]^[0], "  ", [1];
+[1, @Inf@]^[0], "  ", [1];
+[@Inf@, @Inf@]^[0], "  ", [@NaN@];
+[1/4, 1/2]^[@Inf@], "  ", [0];
+[0,1]*[@Inf@], "  ", [@Inf@];
+[0,1]/[0,1], "  ", [0, @Inf@];
+[@Inf@]/[0,1], "  ", [@Inf@];
+[1,2]/[0,1], "  ", [1, @Inf@];
+[0,1]*[2], "  ", [0,2];
+[3,4]^[-@Inf@], "  ", [0];
+[@Inf@, @Inf@]^[-5], "  ", [0];
+[@Inf@, @Inf@]^[-5.5], "  ", [0];
+[@Inf@, @Inf@]^[-6, -5], "  ", [0];
+[0]^[5], "  ", [0];
+[0]^[5.5], "  ", [0];
+[0]^[5, 6], "  ", [0];
+
+restart;
+print("=============== Test number 258 ================");
+1==2;
+
+restart;
+print("=============== Test number 259 ================");
+min(1,2,3,exp(5),log(0.25));
+min(17);
+min([|2,NaN,1|]);
+min([|1,NaN,2|]);
+l = [|1,2,3,exp(5),log(0.25)|];
+min(l);
+print(min(exp(17),sin(62)));
+verbosity = 1!;
+print(min(17 + log2(13)/log2(9),17 + log(13)/log(9)));
+max(1,2,3,exp(5),log(0.25));
+max(17);
+max([|2,NaN,1|]);
+max([|NaN,1,2|]);
+l = [|1,2,3,exp(5),log(0.25)|];
+max(l);
+print(max(exp(17),sin(62)));
+verbosity = 1!;
+print(max(17 + log2(13)/log2(9),17 + log(13)/log(9)));
+
+
+restart;
+print("=============== Test number 260 ================");

@@ -1,0 +1,9 @@
+The degree of 1 is 0.
+The degree of _x_ is 1.
+The degree of _x_^2 is 2.
+The degree of _x_ * _x_ is 2.
+The degree of (_x_^2 + 1)^5 is 10.
+The degree of 0 is 0.
+The degree of exp(_x_) is -1.
+The degree of _x_^2.5 is -1.
+The degree of (_x_^2.5)^2 is -1.

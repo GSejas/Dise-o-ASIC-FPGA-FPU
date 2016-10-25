@@ -1,0 +1,3 @@
+foo = library("./libraryexample.a");
+verbosity=9;
+evaluate(diff(foo(x+1)), 0);

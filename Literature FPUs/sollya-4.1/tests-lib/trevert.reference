@@ -1,0 +1,15 @@
+The revert operation on [| |] yields to [| |]
+The revert operation on [|1|] yields to [|1|]
+The revert operation on [|1, 2|] yields to [|2, 1|]
+The revert operation on [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|] yields to [|17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1|]
+The expected error message stating that the revert operation cannot be performed on final-elliptic lists has been caught.
+The revert operation on [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|] yields to error
+The revert operation on [|"Hello"|] yields to [|"Hello"|]
+The revert operation on [|"Hello", "World"|] yields to [|"World", "Hello"|]
+The revert operation on [|"land", "of", "milk", "and", "honey"|] yields to [|"honey", "and", "milk", "of", "land"|]
+The expected error message stating that the revert operation cannot be performed on final-elliptic lists has been caught.
+The revert operation on [|"land", "of", "milk", "and", "honey"...|] yields to error
+The expected error message stating that the revert operation cannot be performed on final-elliptic lists has been caught.
+The revert operation on [|17...|] yields to error
+The expected error message stating that the revert operation cannot be performed on final-elliptic lists has been caught.
+The revert operation on [|"Rudolph the red-nosed reindeer"...|] yields to error

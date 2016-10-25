@@ -1,0 +1,10 @@
+The integral "int _x_ d _x_ over [1;2]" is bounded with the integral command by [1.4999499928268136272890842519700527191162109375;1.5000500071731863727109157480299472808837890625]
+The integral "int _x_ d _x_ over [2;3]" is bounded with the integral command by [2.4999499928268136272890842519700527191162109375;2.5000500071731863727109157480299472808837890625]
+The integral "int 2 / sqrt(pi) * exp(-(_x_^2)) d _x_ over [0;100]" is bounded with the integral command by [0.99435716795210161775649263072181358099552204037967;1.0056428320478983822435073692781864190044779600116]
+The integral "int 2 / sqrt(pi) * exp(-(_x_^2)) d _x_ over [-5;5]" is bounded with the integral command by [1.99887143362015695640194457419539902844035337378217;2.001128566406489039587462400632742551298313173973]
+The integral "int exp(_x_) d _x_ over [0;1]" is bounded with the integral command by [1.71819590459810309582943490346073251934454177876243;1.71836775518460438013235262248155718292433397664925]
+Caught the message: the given domain is not a closed subset of the reals.
+The integral "int exp(_x_) d _x_ over [-@Inf@;1]" is bounded with the integral command by [-@Inf@;@Inf@]
+Caught the message: the given domain is not a closed subset of the reals.
+The integral "int exp(_x_) d _x_ over [1;@Inf@]" is bounded with the integral command by [-@Inf@;@Inf@]
+The integral "int 1 / sqrt(_x_) d _x_ over [0;1]" is bounded with the integral command by [1.98544525175296084917141344044608534989182741607639;@Inf@]

@@ -1,0 +1,6 @@
+Decomposing (diff(myownlog))(cos(_x_ + 1)) gives deriv=1 and the sub-object cos(_x_ + 1).
+(diff(myownlog))(cos(_x_ + 1)) == (diff(myownlog))(cos(_x_ + 1)) gives true (expecting true)
+Decomposing (diff(diff(foo)))(exp(_x_)) gives deriv=2 and the sub-object exp(_x_).
+(diff(diff(foo)))(exp(_x_)) == (diff(diff(foo)))(exp(_x_)) gives true (expecting true)
+Decomposing (diff(diff(bar)))(log(_x_)) gives deriv=2 and the sub-object log(_x_).
+(diff(diff(bar)))(log(_x_)) == (diff(diff(bar)))(log(_x_)) gives true (expecting true)

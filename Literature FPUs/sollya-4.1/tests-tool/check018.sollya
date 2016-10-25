@@ -1,0 +1,217 @@
+/* Set of tests for QD */
+
+w=15; p=113;
+infinity = 2^(2^(w-1)); /* smallest power of two not representable */
+largest =  ( (2^p-1)/2^(p-1) )*infinity/2; /* largest representable number */
+smallest = 2^(2-2^(w-1)); /* smallest normalized number */
+smallestdenorm = smallest*2^(1-p); /* smallest denormalized number */
+
+round(smallestdenorm/2, QD, RD) == 0;
+round(smallestdenorm/2, QD, RZ) == 0;
+round(smallestdenorm/2, QD, RN) == 0;
+round(smallestdenorm/2, QD, RU) == smallestdenorm;
+
+round(-smallestdenorm/2, QD, RD) == -smallestdenorm;
+round(-smallestdenorm/2, QD, RZ) == 0;
+round(-smallestdenorm/2, QD, RN) == 0;
+round(-smallestdenorm/2, QD, RU) == 0;
+
+round(smallestdenorm/2*(1+1b-164), QD, RN) == smallestdenorm;
+round(-smallestdenorm/2*(1+1b-164), QD, RN) == -smallestdenorm;
+
+round(smallestdenorm, QD, RD) == smallestdenorm;
+round(smallestdenorm, QD, RZ) == smallestdenorm;
+round(smallestdenorm, QD, RN) == smallestdenorm;
+round(smallestdenorm, QD, RU) == smallestdenorm;
+
+round(-smallestdenorm, QD, RD) == -smallestdenorm;
+round(-smallestdenorm, QD, RZ) == -smallestdenorm;
+round(-smallestdenorm, QD, RN) == -smallestdenorm;
+round(-smallestdenorm, QD, RU) == -smallestdenorm;
+
+round(0, QD, RD) == 0;
+round(0, QD, RZ) == 0;
+round(0, QD, RN) == 0;
+round(0, QD, RU) == 0;
+
+round(smallestdenorm/1024, QD, RU) == smallestdenorm;
+round(-smallestdenorm/1024, QD, RD) == -smallestdenorm;
+
+round(round(1873489789623786986976897912387b-137, QD, RN), QD, RN) == round(1873489789623786986976897912387b-137, p, RN);
+
+
+round(infinity, QD, RD) == largest;
+round(infinity, QD, RZ) == largest;
+round(infinity, QD, RN) == @Inf@;
+round(infinity, QD, RU) == @Inf@;
+
+round(-infinity, QD, RD) == -@Inf@;
+round(-infinity, QD, RZ) == -largest;
+round(-infinity, QD, RN) == -@Inf@;
+round(-infinity, QD, RU) == -largest;
+
+round(largest, QD, RD) == largest;
+round(largest, QD, RZ) == largest;
+round(largest, QD, RN) == largest;
+round(largest, QD, RU) == largest;
+
+round(-largest, QD, RD) == -largest;
+round(-largest, QD, RZ) == -largest;
+round(-largest, QD, RN) == -largest;
+round(-largest, QD, RU) == -largest;
+
+round((largest+infinity)/2, QD, RD) == largest;
+round((largest+infinity)/2, QD, RZ) == largest;
+round((largest+infinity)/2, QD, RN) == @Inf@;
+round((largest+infinity)/2, QD, RU) == @Inf@;
+
+round(-(largest+infinity)/2, QD, RD) == -@Inf@;
+round(-(largest+infinity)/2, QD, RZ) == -largest;
+round(-(largest+infinity)/2, QD, RN) == -@Inf@;
+round(-(largest+infinity)/2, QD, RU) == -largest;
+
+round((largest+infinity)/2*(1+1b-164), QD, RD) == largest;
+round((largest+infinity)/2*(1+1b-164), QD, RZ) == largest;
+round((largest+infinity)/2*(1+1b-164), QD, RN) == @Inf@;
+round((largest+infinity)/2*(1+1b-164), QD, RU) == @Inf@;
+
+round(-(largest+infinity)/2*(1+1b-164), QD, RD) == -@Inf@;
+round(-(largest+infinity)/2*(1+1b-164), QD, RZ) == -largest;
+round(-(largest+infinity)/2*(1+1b-164), QD, RN) == -@Inf@;
+round(-(largest+infinity)/2*(1+1b-164), QD, RU) == -largest;
+
+round((largest+infinity)/2*(1-1b-164), QD, RD) == largest;
+round((largest+infinity)/2*(1-1b-164), QD, RZ) == largest;
+round((largest+infinity)/2*(1-1b-164), QD, RN) == largest;
+round((largest+infinity)/2*(1-1b-164), QD, RU) == @Inf@;
+
+round(-(largest+infinity)/2*(1-1b-164), QD, RD) == -@Inf@;
+round(-(largest+infinity)/2*(1-1b-164), QD, RZ) == -largest;
+round(-(largest+infinity)/2*(1-1b-164), QD, RN) == -largest;
+round(-(largest+infinity)/2*(1-1b-164), QD, RU) == -largest;
+
+
+
+
+/* Set of tests for HP */
+
+w=5; p=11;
+infinity = 2^(2^(w-1)); /* smallest power of two not representable */
+largest =  ( (2^p-1)/2^(p-1) )*infinity/2; /* largest representable number */
+smallest = 2^(2-2^(w-1)); /* smallest normalized number */
+smallestdenorm = smallest*2^(1-p); /* smallest denormalized number */
+
+round(smallestdenorm/2, HP, RD) == 0;
+round(smallestdenorm/2, HP, RZ) == 0;
+round(smallestdenorm/2, HP, RN) == 0;
+round(smallestdenorm/2, HP, RU) == smallestdenorm;
+
+round(-smallestdenorm/2, HP, RD) == -smallestdenorm;
+round(-smallestdenorm/2, HP, RZ) == 0;
+round(-smallestdenorm/2, HP, RN) == 0;
+round(-smallestdenorm/2, HP, RU) == 0;
+
+round(smallestdenorm/2*(1+1b-164), HP, RN) == smallestdenorm;
+round(-smallestdenorm/2*(1+1b-164), HP, RN) == -smallestdenorm;
+
+round(smallestdenorm, HP, RD) == smallestdenorm;
+round(smallestdenorm, HP, RZ) == smallestdenorm;
+round(smallestdenorm, HP, RN) == smallestdenorm;
+round(smallestdenorm, HP, RU) == smallestdenorm;
+
+round(-smallestdenorm, HP, RD) == -smallestdenorm;
+round(-smallestdenorm, HP, RZ) == -smallestdenorm;
+round(-smallestdenorm, HP, RN) == -smallestdenorm;
+round(-smallestdenorm, HP, RU) == -smallestdenorm;
+
+round(0, HP, RD) == 0;
+round(0, HP, RZ) == 0;
+round(0, HP, RN) == 0;
+round(0, HP, RU) == 0;
+
+round(smallestdenorm/1024, HP, RU) == smallestdenorm;
+round(-smallestdenorm/1024, HP, RD) == -smallestdenorm;
+
+round(round(1873b-12, HP, RN), HP, RN) == round(1873b-12, p, RN);
+
+
+round(infinity, HP, RD) == largest;
+round(infinity, HP, RZ) == largest;
+round(infinity, HP, RN) == @Inf@;
+round(infinity, HP, RU) == @Inf@;
+
+round(-infinity, HP, RD) == -@Inf@;
+round(-infinity, HP, RZ) == -largest;
+round(-infinity, HP, RN) == -@Inf@;
+round(-infinity, HP, RU) == -largest;
+
+round(largest, HP, RD) == largest;
+round(largest, HP, RZ) == largest;
+round(largest, HP, RN) == largest;
+round(largest, HP, RU) == largest;
+
+round(-largest, HP, RD) == -largest;
+round(-largest, HP, RZ) == -largest;
+round(-largest, HP, RN) == -largest;
+round(-largest, HP, RU) == -largest;
+
+round((largest+infinity)/2, HP, RD) == largest;
+round((largest+infinity)/2, HP, RZ) == largest;
+round((largest+infinity)/2, HP, RN) == @Inf@;
+round((largest+infinity)/2, HP, RU) == @Inf@;
+
+round(-(largest+infinity)/2, HP, RD) == -@Inf@;
+round(-(largest+infinity)/2, HP, RZ) == -largest;
+round(-(largest+infinity)/2, HP, RN) == -@Inf@;
+round(-(largest+infinity)/2, HP, RU) == -largest;
+
+round((largest+infinity)/2*(1+1b-164), HP, RD) == largest;
+round((largest+infinity)/2*(1+1b-164), HP, RZ) == largest;
+round((largest+infinity)/2*(1+1b-164), HP, RN) == @Inf@;
+round((largest+infinity)/2*(1+1b-164), HP, RU) == @Inf@;
+
+round(-(largest+infinity)/2*(1+1b-164), HP, RD) == -@Inf@;
+round(-(largest+infinity)/2*(1+1b-164), HP, RZ) == -largest;
+round(-(largest+infinity)/2*(1+1b-164), HP, RN) == -@Inf@;
+round(-(largest+infinity)/2*(1+1b-164), HP, RU) == -largest;
+
+round((largest+infinity)/2*(1-1b-164), HP, RD) == largest;
+round((largest+infinity)/2*(1-1b-164), HP, RZ) == largest;
+round((largest+infinity)/2*(1-1b-164), HP, RN) == largest;
+round((largest+infinity)/2*(1-1b-164), HP, RU) == @Inf@;
+
+round(-(largest+infinity)/2*(1-1b-164), HP, RD) == -@Inf@;
+round(-(largest+infinity)/2*(1-1b-164), HP, RZ) == -largest;
+round(-(largest+infinity)/2*(1-1b-164), HP, RN) == -largest;
+round(-(largest+infinity)/2*(1-1b-164), HP, RU) == -largest;
+
+/* Test for a nasty bug with substitution in polynomials */
+
+restart;
+
+p =  x * (35075959548088382976405608668755193338674883419681b-163 + x * (-42086437883432000582784192785873419614087226350999b-165 + x * (6305164210920614639652779299557670286468422732771b-163 + x * (-9393944093750410651940191621405810850640998071215b-164 + x * (15415134511238209224970388325432729247409270589207b-165 + x * (-26157173752570834429858647099539259501314358843629b-166 + x * (43881912789153516491333129265841018968298397822271b-167 + x * (-17597629421926460459390225831873864200720777073233b-166 + x * (26371671923673917521582700087408786301495850183925b-167 + x * (-568519934538854956776995360555316677425708956673b-162 + x * (22919122446304402024517231711564232123592173587333b-168 + x * (-26259025112053702417460500315529776563807394337645b-169 + x * (27325429597118712236350268843548673923948974835257b-170 + x * (-807307892802220923533002811460969912804873806975b-166 + x * (22216033265583031226337645139893576664414087406439b-172 + x * (-17407181023767045342103997548797784772466988690895b-173 + x * (3112704999717065356931139366771158221465954500187b-172 + x * (-32582361130244386534106375475709753190330442340477b-177 + x * (39068186684277987306424324661064788662489242511871b-179 + x * (-43007148679394744899466444414443653566356379129397b-181 + x * (5442288170592514462515364456089275622778176416763b-180 + x * (-40596797729493102382008208611758971956071909231047b-185 + x * (34915094521358798203406269897179935622739481211939b-187 + x * (-13866042770369231299553250746486768753347709516873b-188 + x * (1272803896463444371470256168178709943188046154401b-187 + x * (-6919867357044963000564701699610292434723394052629b-192 + x * (34844645457769983185179376481470035739795831158009b-197 + x * (-40654532828004341497687544303620845675143893478791b-200 + x * (43985335202182205551498877390856773842786450943955b-203 + x * (-5518402994492305929387557801974768357099996928253b-203 + x * (5139433322631852153878831260732760059159501450367b-206 + x * (-35535455403086378565673803431130067325745730201873b-212 + x * (1781310494523690360859044110321144369562210395805b-211 + x * (-42418046226633401112392881579204953240887937106205b-219 + x * (14638648877490999465225540785824765357371226949061b-221 + x * (-37466833948258520119587173709383353960828198830505b-226 + x * (5552536616399393462341601384919300123296709358489b-227 + x * (-24374632254129885691320677458587189874132167957901b-233 + x * (12367880366589476731326807532875751982701839134369b-236 + x * (-11591448670312179616276269973355664695019938832229b-240 + x * (10018123606948444130408565493795172236499583820515b-244 + x * (-31881305262572147072874583960133862881860803391033b-250 + x * (46601514616512486247555737486762800626766818325445b-255 + x * (-15606317634283494586189081513049713331981056924605b-258 + x * (19104440662669639455367911017699670904709884887667b-263 + x * (-42603245208576406169620972873800764349000722942887b-269 + x * (43101350384310809485726781051940124196250181256569b-274 + x * (-39385560864604543053261371085586271477835384240125b-279 + x * (32332823444291916953227729385214348158891405072431b-284 + x * (-23692722711144363095731888862967414320431642791281b-289 + x * (30753819122669311181418983886253592754954912316585b-295 + x * (-17509955875342672111490934461061742679287598284239b-300 + x * (4320999031572684438763704790763693079004005105273b-304 + x * (-14564845647582049607503995840067369395622129268083b-312 + x * (41074034876163570181662338350751895326622964362479b-320 + x * (-11782286397291604755666322207873441236996257272769b-325 + x * (2641392161064709702437897321160772956210965676813b-330 + x * (-27778050306429783806538813839145555488712478088645b-341 + x * (23800236875362639623045093022848239637436710708129b-349 + x * (-9972059785289929452697198892711451778301663837749b-357)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) ;
+h =  (pi) * x * (1 + x / 10) ;
+q = h(p);
+display = dyadic!;
+q(20);
+print(q);
+
+restart;
+
+/* Tests for the bug #13930 Sollya crashes unexpectedly with message Error: getMaxPowerDividerUnsafe: an error occurred. The exponent in a power operator is not constant. */
+
+x^(0+1)/1;
+(x^(0+1))/1;
+x^((0+1)/1);
+
+/* Tests for the bug #14259 An overflow in GMP makes Sollya crash (on 64bit machines only) */
+
+1.87^1.52e10;
+2^(2^62);
+3^(2^29);
+3^(2^30);
+
+/* Tests for the bug #13943 Rationalapprox with low approximation accuracy makes MPFR assertion fail, killing the tool's execution */
+
+rationalapprox(D(pi),-0);
+

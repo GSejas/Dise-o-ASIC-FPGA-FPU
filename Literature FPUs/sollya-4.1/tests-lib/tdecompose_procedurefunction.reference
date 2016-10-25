@@ -1,0 +1,102 @@
+Decomposing (diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})))(cos(_x_ + 1)) gives deriv=1 and the sub-objects proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+} and cos(_x_ + 1).
+(diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})))(cos(_x_ + 1)) == (diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})))(cos(_x_ + 1)) gives true (expecting true)
+Decomposing diff(diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (3) * (exp(X));
+prec = oldPrec!;
+return res;
+}))) gives deriv=2 and the sub-objects proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (3) * (exp(X));
+prec = oldPrec!;
+return res;
+} and _x_.
+diff(diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (3) * (exp(X));
+prec = oldPrec!;
+return res;
+}))) == diff(diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (3) * (exp(X));
+prec = oldPrec!;
+return res;
+}))) gives true (expecting true)
+Decomposing function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (17) * (exp(X));
+prec = oldPrec!;
+return res;
+}) gives deriv=0 and the sub-objects proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (17) * (exp(X));
+prec = oldPrec!;
+return res;
+} and _x_.
+function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (17) * (exp(X));
+prec = oldPrec!;
+return res;
+}) == function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = (17) * (exp(X));
+prec = oldPrec!;
+return res;
+}) gives true (expecting true)

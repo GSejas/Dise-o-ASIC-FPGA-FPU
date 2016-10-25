@@ -1,0 +1,6 @@
+error
+error
+[|cos(_x_)...|]. listobj[2] is cos(_x_)
+[|3...|]. listobj[2] is 5
+[|cos(_x_), 3, double...|]. listobj[2] is double
+[|cos(_x_), 3...|]. listobj[4] is 6

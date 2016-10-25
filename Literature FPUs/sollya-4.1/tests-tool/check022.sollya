@@ -1,0 +1,311 @@
+/* List operations in Sollya:
+
+   - Literate lists: 
+   
+     * [||]
+     * [| 1, 2, exp(x), "Coucou" |]
+     * ellipses in integer lists: [| 1, 7, ..., 27, 29 |]
+
+   - Operations 
+
+     * Prepend .:
+     * Append :.
+     * Legacy prepend ::
+     * Concatenation @
+     * tail 
+     * head
+     * length
+     * revert
+     * sort
+     * Random access in rvalues (taking elements out of lists)
+     * Random access in lvalues (assignments)
+
+   - Special operations in end-elliptic lists
+
+     * length(l) = infty
+     * tail never reaches the empty list
+     * Random access works for any index >= 0
+     * append :. must fail with an error message
+     * concatenation @ must fail with an error message iff an end-elliptic list is its left operand
+     * matches match the implicit elements and decompose the lists correctly
+
+   The following list operations are optimized for O(1) complexity, at least starting with the second 
+   optimized operation:
+
+     * Prepend on the same variable: l = a .: l
+     * tail on the same variable: l = tail(l)
+     * head 
+     * length
+     * Random access in rvalues
+
+   The O(1) optimizations for prepend and tail are based on a in-place modification of
+   the Sollya object representing the list that is stored in the table of (local) variables.
+   Hence, if these operations are performed on list objects that share the same object
+   representation with other lists, the optimizations cannot be performed for the first access.
+
+   The optimizations for head are for free in an environment where
+   Sollya objects can be reference-counted.
+
+   The optimizations for length and random access in rvalues are based on a second internal 
+   representation of lists that allows for random accesses. That representation is built up 
+   at the first access to the list that touches all list elements (i.e. even a print or write). It
+   is maintained for all other optimized list operations that eventually execute in O(1). This
+   means it gets destroyed for random accesses to lists in lvalue and prepend and tail operations
+   on Sollya list objects that are shared with other lists.
+
+   
+   In the sequel, we will test all list operations as well as there complexity for the important ones
+   (prepend .:, tail, head, random access). We will not test the match operations as they have
+   already been tested with the match construct tests.
+
+*/
+
+/* Test literate lists */
+
+/* Empty lists */
+a = [||];
+a;
+b = a;
+b;
+a == b;
+a == [| |];
+b == [| |];
+length(a);
+length(b);
+
+
+
+/* Complete literate lists */
+
+c = [| 1, 2, 3, 4, exp(x), "Coucou", 17, { .a = exp(x) } |];
+d = c;
+c == d;
+c;
+d;
+length(c);
+length(d);
+c == [| 1, 2, 3, 4, exp(x), "Coucou", 17, { .a = exp(x) } |];
+
+
+/* Literate lists in which ellipses need to be expanded */
+
+e = [| 1, 2, 3, ..., floor(exp(2)), "Coucou" |];
+f = [| 3, ..., 17, ..., 27, 29, ..., 67, ..., 99 |];
+e;
+f;
+g = e;
+h = f;
+e == g;
+h == f;
+
+l = [| 1, 2, 17, ..., 23, "Coucou", 88... |];
+
+l;
+for i from 0 to 17 do {
+    write(l[i], " ");
+};
+write("\n");
+
+/* Ellipses and affectation */
+l = [| 1, ..., 5, 17... |];
+l[10] = "Coucou";
+l;
+l[11];
+l = [| 1, ..., 5, 1, exp(x)... |];
+l[10] = "Coucou";
+l;
+l[11];
+l = [| 1, ..., 5, 17... |];
+l[10] := "Coucou";
+l;
+l[11];
+l = [| 1, ..., 5, 1, exp(x)... |];
+l[10] := "Coucou";
+l;
+l[11];
+
+/* Legacy O(n) operations 
+
+   * append :.
+   * legacy prepend ::
+   * concatenation @
+   * revert 
+   * sort
+
+*/
+
+/* Append :. */
+
+[||] :. 5;
+([||] :. 5) :. exp(x);
+l = [||]; for i from 0 to 10 do l = l :. i;
+l;
+
+/* Special way of performing append */
+L = [||];
+L[0] = 1;
+L;
+L[1] = "a";
+L;
+L[2] = "Foo";
+L;
+L[0] = "Bar is";
+L;
+
+/* Prepend */
+
+5 .: [||];
+exp(x) .: 5 .: [||];
+
+1 .: 2 .: 3 .: 4 .: [|"Hello", "guys"|];
+
+[| 5 |] .: [||];
+[| exp(x) |] .: [| 5 |] .: [||];
+
+L = [| 1, ..., 5 |];
+for i from 0 to 15 do { L = i .: L; };
+for i from 0 to length(L)-1 do write(L[i], " "); write("\n");
+
+L = [| 1, ..., 5 |];
+L[0] = L[0];
+for i from 0 to 15 do { L = i .: L; };
+for i from 0 to length(L)-1 do write(L[i], " "); write("\n");
+
+/* Concatenation */
+
+[||] @ [||];
+[| "eins", "zwei", "Polizei" |] @ [||];
+[||] @ [| "eins", "zwei", "Polizei" |];
+[| "eins", "zwei", "Polizei" |] @ [| "raz", "dva", "tri", "chetyre", "pyat", "poshol", "zaichik", "pogulat" |];
+a = [| "eins", "zwei", "Polizei" |];
+b = [| "raz", "dva", "tri", "chetyre", "pyat", "poshol", "zaichik", "pogulat" |];
+c = a @ a;
+d = b @ b;
+e = d @ d;
+c;
+e;
+
+
+
+/* revert */
+
+a = [||];
+b = revert(a);
+c = revert(b);
+a;
+b;
+a == b;
+a == c;
+
+a = [|"hinein", "Welt", "weite", "die", "in", "allein", "ging", "klein", "Hänschen"|];
+b = revert(a);
+c = revert(b);
+a;
+b;
+a == b;
+a == c;
+
+
+
+
+/* sort */
+
+a = [||];
+b = sort(a);
+a;
+b;
+a == b;
+okay = true;
+for i from 0 to length(b) - 2 do {
+    okay = okay && (b[i] <= b[i + 1]);
+};
+okay;
+
+a = [| 1 |];
+b = sort(a);
+a;
+b;
+a == b;
+okay = true;
+for i from 0 to length(b) - 2 do {
+    okay = okay && (b[i] <= b[i + 1]);
+};
+okay;
+
+a = [| 1, ..., 17 |];
+b = sort(a);
+a;
+b;
+a == b;
+okay = true;
+for i from 0 to length(b) - 2 do {
+    okay = okay && (b[i] <= b[i + 1]);
+};
+okay;
+
+a = [| 17, 2, 1, 16, 13, 9, 8, 6, 3, 14, 11 |];
+b = sort(a);
+a;
+b;
+a == b;
+okay = true;
+for i from 0 to length(b) - 2 do {
+    okay = okay && (b[i] <= b[i + 1]);
+};
+okay;
+
+/*   Special operations in end-elliptic lists
+
+     * length(l) = infty
+     * tail never reaches the empty list
+     * Random access works for any index >= 0
+     * append :. must fail with an error message
+     * concatenation @ must fail with an error message iff an end-elliptic list is its left operand
+
+*/
+
+length( [| 1, 3... |] );
+length( [| 1, 3, "Coucou"... |] );
+length( [| 0... |] );
+
+l = [| "Käse", "fromage", "cheese", 0... |];
+for i from 0 to 12 do {
+    write(head(l), " ");
+    l = tail(l);
+};
+write("\n");
+l;
+
+l = [| "Käse", "fromage", "cheese", exp(x)... |];
+for i from 0 to 12 do {
+    write(head(l), " ");
+    l = tail(l);
+};
+write("\n");
+l;
+
+l = [| "Käse", "fromage", "cheese", 0... |];
+l[0];
+l[2];
+l[17178];
+l[9199010];
+
+l = [| "Käse", "fromage", "cheese", "syr"... |];
+l[0];
+l[2];
+l[17178];
+l[9199010];
+
+[| "Käse", "fromage", "cheese", 0... |] :. 5;
+[| "Käse", "fromage", "cheese", "syr"... |] :. 5;
+
+[| "Käse", "fromage", "cheese", 0... |] @ [| 5 |];
+[| 5 |] @ [| "Käse", "fromage", "cheese", 0... |];
+[| "Käse", "fromage", "cheese", 0... |] @ [| |];
+[| |] @ [| "Käse", "fromage", "cheese", 0... |];
+
+[| "Käse", "fromage", "cheese", "syr"... |] @ [| 5 |];
+[| 5 |] @ [| "Käse", "fromage", "cheese", "syr"... |];
+[| "Käse", "fromage", "cheese", "syr"... |] @ [| |];
+[| |] @ [| "Käse", "fromage", "cheese", "syr"... |];
+

@@ -1,0 +1,13 @@
+0-th element in list1 before copy and modification of the copy: 0.5
+1-th element in list1 before copy and modification of the copy: 1.25
+2-th element in list1 before copy and modification of the copy: 3.75
+3-th element in list1 before copy and modification of the copy: 9.125
+0-th element in list1 after copy and modification of the copy: 0.5
+1-th element in list1 after copy and modification of the copy: 1.25
+2-th element in list1 after copy and modification of the copy: 3.75
+3-th element in list1 after copy and modification of the copy: 9.125
+0-th element in list2 after copy and modification of the copy: 1700000000000000000
+1-th element in list2 after copy and modification of the copy: 0.5
+2-th element in list2 after copy and modification of the copy: 1.25
+3-th element in list2 after copy and modification of the copy: 3.75
+4-th element in list2 after copy and modification of the copy: 9.125

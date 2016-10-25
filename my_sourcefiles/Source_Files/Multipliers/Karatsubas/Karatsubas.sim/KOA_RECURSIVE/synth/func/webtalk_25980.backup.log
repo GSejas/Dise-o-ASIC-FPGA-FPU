@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Oct 25 02:16:20 2016
+# Process ID: 25980
+# Current directory: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/KOA_RECURSIVE/synth/func
+# Command line: wbtcv -mode batch -source /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/KOA_RECURSIVE/synth/func/xsim.dir/tb_multiplier_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/KOA_RECURSIVE/synth/func/webtalk.log
+# Journal file: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/KOA_RECURSIVE/synth/func/webtalk.jou
+#-----------------------------------------------------------
+source /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/KOA_RECURSIVE/synth/func/xsim.dir/tb_multiplier_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 25 02:16:20 2016...

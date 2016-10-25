@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOARecursive/RKOA_Recursive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Recursive_KOA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_multiplier
+WARNING: [VRFC 10-756] identifier clk is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v:9]
+WARNING: [VRFC 10-756] identifier clk is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v:10]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v:16]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v:17]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/KOA_RECURSIVE/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

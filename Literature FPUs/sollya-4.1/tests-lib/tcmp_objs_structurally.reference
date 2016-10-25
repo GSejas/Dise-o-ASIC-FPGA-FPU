@@ -1,0 +1,10 @@
+2+3 is *NOT* structurally equal to 5
+5 is structurally equal to the result of simplify(2+3)
+2+x is *NOT* structurally equal to x+2
+Intervals with identical bounds but stored at different precisions are structurally equal
+Identical intervals are structurally equal
+on is structurally equal to on
+on is *NOT* structurally equal to off
+Hello! is *NOT* structurally equal to Hella!
+Hello! is structurally equal to Hello!
+1 + exp(sin(x + log(x^2))) is structurally equal to 1 + exp(sin(x + log(x^2))), even if defined at different precisions

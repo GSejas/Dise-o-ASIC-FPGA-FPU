@@ -1,0 +1,18 @@
+Arity of pi: 0
+Arity of 3: 0
+Arity of superconst: 0
+Arity of _x_: 1
+Arity of exp(_x_): 1
+Arity of diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})): 1
+Arity of stupid1: 1
+Arity of _x_ + stupid1: 2
+absolute is not a functional expression (n=-1. Expecting -1)
+[1;2] is not a functional expression (n=-1. Expecting -1)

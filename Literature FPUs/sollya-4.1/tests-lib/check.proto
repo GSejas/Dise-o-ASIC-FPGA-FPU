@@ -1,0 +1,45 @@
+TEST=0
+for i in $TESTFILES
+do
+  if ! test -e $i.reference
+  then
+    if ! test -e $i 
+    then 
+      echo "Unexpected error: executable $i not found. Are you in the right directory?" >&2
+    else 
+      echo "Unexpected error: file $i.reference seems to be missing." >&2
+    fi
+    TEST=1
+  else
+    if test -s $i.reference
+    then
+      if ! ./$i > $i.output < /dev/null
+      then
+        ############################################################
+        ##### $i.reference exists but $i returns an error code #####
+        ############################################################
+        TEST=1
+      else
+        if ! diff $i.output $i.reference > /dev/null
+        then
+          ##################################################################
+          ##### $i.reference exists, $i does not return an error code, #####
+          ##### but its output is incorrect.                           #####
+          ##################################################################
+          TEST=1
+        fi
+      fi
+      test -e $i.output && test $TEST -eq 0 && rm $i.output
+    else
+      if ! ./$i > /dev/null < /dev/null
+      then
+        ###############################################################
+        ##### $i.reference is empty but $i returns an error code. #####
+        ###############################################################
+        TEST=1
+      fi
+    fi
+  fi
+done
+
+exit $TEST

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "tb_multiplier_func_synth.v"
+verilog xil_defaultlib  "../../../../../26bit/FrancisKOA/substractor.v"
+verilog xil_defaultlib  "../../../../../26bit/FrancisKOA/multiplier.v"
+verilog xil_defaultlib  "../../../../../26bit/FrancisKOA/adder.v"
+verilog xil_defaultlib  "../../../../../26bit/FrancisKOA/Sgf_Multiplication.v"
+verilog xil_defaultlib  "../../../../../26bit/ReCodeRKOA/RKOA_OPCHANGE.v"
+verilog xil_defaultlib  "../../../../../26bit/RKOA/RKOA.v"
+verilog xil_defaultlib  "../../../../../tb_Multipliers.v"
+
+# Do not sort compile order
+nosort

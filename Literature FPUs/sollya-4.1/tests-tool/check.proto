@@ -1,0 +1,21 @@
+TEST=0
+for i in $TESTFILES
+do
+ if ! test -e $i 
+ then
+  echo "Unexpected error: test input file seems to be missing. Are you in the right directory?" >&2
+  TEST=1
+ else 
+  $SOLLYA < $i > $i.output
+  if ! diff $i.output $i.reference > /dev/null
+  then
+     TEST=1
+  else
+     rm $i.output
+  fi
+ fi
+done
+
+exit $TEST
+
+

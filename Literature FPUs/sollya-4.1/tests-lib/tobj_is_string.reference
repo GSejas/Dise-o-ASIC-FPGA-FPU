@@ -1,0 +1,2 @@
+sollya_lib_obj_is_string detects the string "string"
+sollya_lib_obj_is_string detects the empty string.

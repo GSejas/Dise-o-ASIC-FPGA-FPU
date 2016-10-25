@@ -1,0 +1,4 @@
+the negation of true gives false
+the negation of false gives true
+The following test produces a typing error
+the negation of 17 gives error

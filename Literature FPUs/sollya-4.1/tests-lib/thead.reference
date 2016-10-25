@@ -1,0 +1,12 @@
+The expected error message stating that the head operation on an empty list cannot be performed has been caught.
+The head operation on [| |] yields to error
+The head operation on [|1|] yields to 1
+The head operation on [|1, 2|] yields to 1
+The head operation on [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|] yields to 1
+The head operation on [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|] yields to 1
+The head operation on [|"Hello"|] yields to Hello
+The head operation on [|"Hello", "World"|] yields to Hello
+The head operation on [|"land", "of", "milk", "and", "honey"|] yields to land
+The head operation on [|"land", "of", "milk", "and", "honey"...|] yields to land
+The head operation on [|17...|] yields to 17
+The head operation on [|"Rudolph the red-nosed reindeer"...|] yields to Rudolph the red-nosed reindeer

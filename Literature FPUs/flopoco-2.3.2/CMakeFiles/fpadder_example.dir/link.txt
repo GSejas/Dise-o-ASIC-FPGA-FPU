@@ -1,0 +1,1 @@
+/usr/bin/c++   -pg -Wall   CMakeFiles/fpadder_example.dir/src/main_minimal.o  -o fpadder_example -rdynamic libFloPoCo.a -lmpfr -lgmp -lgmpxx -lxml2 -lmpfi /usr/local/lib/libsollya.so -Wl,-rpath,/usr/local/lib 

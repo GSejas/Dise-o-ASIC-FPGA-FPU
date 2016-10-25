@@ -1,0 +1,22 @@
+superconst (expecting superconst)
+0.57721566490153275452712477999739348888397216796875 (expecting: 0.5772...)
+0.57721566490153275452712477999739348888397216796875 (expecting: 0.5772...)
+superconst (expecting superconst)
+superconst (expecting superconst)
+superconst (expecting superconst)
+superconst (expecting superconst)
+superconst (expecting superconst)
+true (expecting true)
+true (expecting true)
+true (expecting true)
+true (expecting true)
+true (expecting true)
+superconst_0 (expecting superconst_0)
+The behavior when the first argument is NULL is conform to the semantic.
+exp_0 (expecting exp_0)
+The behavior when the first argument is NULL is conform to the semantic.
+a (expecting a)
+Testing NULL/invalid ptr combination: OK
+Testing NULL/invalid ptr combination: OK
+Testing NULL/invalid ptr combination: OK
+Testing NULL/invalid ptr combination: OK

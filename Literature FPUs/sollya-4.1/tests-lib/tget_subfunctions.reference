@@ -1,0 +1,32 @@
+Subfunction of pi: NULL, NULL and NULL (n=0)
+Subfunction of 3: NULL, NULL and NULL (n=0)
+Subfunction of superconst: superconst, NULL and NULL (n=0)
+Subfunction of _x_: _x_, NULL and NULL (n=1)
+Subfunction of exp(sin(_x_) + 17): sin(_x_) + 17, NULL and NULL (n=1)
+Subfunction of (diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})))(sin(_x_)): sin(_x_), diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})) and NULL (n=1)
+Subfunction of stupid1(cos(_x_)): cos(_x_), stupid1 and NULL (n=1)
+Subfunction of _x_ + stupid1: _x_, stupid1 and NULL (n=2)
+absolute is not a functional expression (n=-1, g[0]=NULL, g[1]=NULL, g[2]=NULL. Expecting -1, NULL, NULL, NULL)
+[1;2] is not a functional expression (n=-1, g[0]=NULL, g[1]=NULL, g[2]=NULL. Expecting -1, NULL, NULL, NULL)
+Subfunction of exp(sin(_x_) + 17) with NULL as 2nd argument: sin(_x_) + 17 and NULL (n=-1)
+Subfunction of exp(sin(_x_) + 17) with NULL as 3rd argument: NULL and NULL (n=1)
+Subfunction of sin(_x_) + 17 with NULL as 3rd argument: NULL and NULL (n=2)
+Subfunction of sin(_x_) + 17 with NULL as 4th argument: sin(_x_) and NULL (n=2)
+Subfunction of stupid1(cos(_x_)) with NULL as 3rd argument: NULL and NULL (n=1)
+Subfunction of stupid1(cos(_x_)) with NULL as 4th argument: cos(_x_) and NULL (n=1)

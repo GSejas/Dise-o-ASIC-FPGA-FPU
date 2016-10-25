@@ -1,0 +1,6 @@
+length of Hello world! is 12
+length of [|1, 2, 3, 4, 5|] is 5
+length of [| |] is 0
+length of [|1, 2...|] is @Inf@
+The following test is not correctly typed
+length of [1;2] is error

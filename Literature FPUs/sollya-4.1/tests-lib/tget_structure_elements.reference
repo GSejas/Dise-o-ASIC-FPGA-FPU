@@ -1,0 +1,2 @@
+Is the Sollya object { .a = 5, .b = exp(_x_), .c = { .d = 17, .e = sin(_x_) } } detected as a structure? Yes. It contains 3 elements, which are a -> 5, b -> exp(_x_), c -> { .d = 17, .e = sin(_x_) }, 
+Is the Sollya object exp(_x_) is detected as a structure? No. It contains -1 elements, which are None

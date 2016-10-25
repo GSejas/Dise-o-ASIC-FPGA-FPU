@@ -1,0 +1,12 @@
+The expected error message stating that the tail operation on an empty list cannot be performed has been caught.
+The tail operation on [| |] yields to error
+The tail operation on [|1|] yields to [| |]
+The tail operation on [|1, 2|] yields to [|2|]
+The tail operation on [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|] yields to [|2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]
+The tail operation on [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|] yields to [|2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]
+The tail operation on [|"Hello"|] yields to [| |]
+The tail operation on [|"Hello", "World"|] yields to [|"World"|]
+The tail operation on [|"land", "of", "milk", "and", "honey"|] yields to [|"of", "milk", "and", "honey"|]
+The tail operation on [|"land", "of", "milk", "and", "honey"...|] yields to [|"of", "milk", "and", "honey"...|]
+The tail operation on [|17...|] yields to [|18...|]
+The tail operation on [|"Rudolph the red-nosed reindeer"...|] yields to [|"Rudolph the red-nosed reindeer"...|]

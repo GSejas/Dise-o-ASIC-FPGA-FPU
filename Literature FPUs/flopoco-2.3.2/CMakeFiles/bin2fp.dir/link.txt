@@ -1,0 +1,1 @@
+/usr/bin/c++   -pg -Wall   CMakeFiles/bin2fp.dir/src/Tools/bin2fp.o CMakeFiles/bin2fp.dir/src/utils.o  -o bin2fp -rdynamic -lmpfr -lgmp -lgmpxx 

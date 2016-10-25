@@ -1,0 +1,10 @@
+[1.1001100110011001100110011001100110011_2 * 2^(-4);1.100110011001100110011001100110011001101_2 * 2^(-3)]
+[1.1001100110011001100110011001100110011_2 * 2^(-4);1.100110011001100110011001100110011001101_2 * 2^(-3)] (should be the same as above)
+[1.1001100110011001100110011001100110011_2 * 2^(-4);1.100110011001100110011001100110011001101_2 * 2^(-3)] (should be the same as above)
+Caught the message about bounds in inverse order.
+[1.1001100110011001100110011001100110011_2 * 2^(-4);1.100110011001100110011001100110011001101_2 * 2^(-3)] (should be the same as above)
+[@NaN@;@NaN@] (should be [NaN, NaN])
+Caught the message indicating that only one bound is NaN.
+[@NaN@;@NaN@] (should be [NaN, NaN])
+Caught the message indicating that only one bound is NaN.
+[@NaN@;@NaN@] (should be [NaN, NaN])

@@ -1,0 +1,25 @@
+Substituting _x_ in _x_ + 1 + _x_^2 with 13 yields 183
+Substituting _x_ in _x_ + 1 + _x_^2 with exp(_x_) yields exp(_x_) + 1 + exp(_x_)^2
+Substituting _x_ in _x_ + 1 + _x_^2 with (5 * _x_ + 7) * _x_ + 9 yields 91 + _x_ * (133 + _x_ * (144 + _x_ * (70 + _x_ * 25)))
+Substituting _x_ in _x_ + 1 + _x_^2 with sqrt(_x_) yields sqrt(_x_) + 1 + _x_
+Substituting _x_ in _x_ + 1 + _x_^2 with 1001 yields 1003003
+Substituting _x_ in log(_x_) with 13 yields log(13)
+Substituting _x_ in log(_x_) with exp(_x_) yields _x_
+Substituting _x_ in log(_x_) with (5 * _x_ + 7) * _x_ + 9 yields log((5 * _x_ + 7) * _x_ + 9)
+Substituting _x_ in log(_x_) with sqrt(_x_) yields log(sqrt(_x_))
+Substituting _x_ in log(_x_) with 1001 yields log(1001)
+Substituting _x_ in 17 with 13 yields 17
+Substituting _x_ in 17 with exp(_x_) yields 17
+Substituting _x_ in 17 with (5 * _x_ + 7) * _x_ + 9 yields 17
+Substituting _x_ in 17 with sqrt(_x_) yields 17
+Substituting _x_ in 17 with 1001 yields 17
+Substituting _x_ in _x_ / 13 with 13 yields 1
+Substituting _x_ in _x_ / 13 with exp(_x_) yields exp(_x_) / 13
+Substituting _x_ in _x_ / 13 with (5 * _x_ + 7) * _x_ + 9 yields ((5 * _x_ + 7) * _x_ + 9) / 13
+Substituting _x_ in _x_ / 13 with sqrt(_x_) yields sqrt(_x_) / 13
+Substituting _x_ in _x_ / 13 with 1001 yields 77
+Substituting _x_ in 13 / _x_ with 13 yields 1
+Substituting _x_ in 13 / _x_ with exp(_x_) yields 13 / exp(_x_)
+Substituting _x_ in 13 / _x_ with (5 * _x_ + 7) * _x_ + 9 yields 13 / ((5 * _x_ + 7) * _x_ + 9)
+Substituting _x_ in 13 / _x_ with sqrt(_x_) yields 13 / sqrt(_x_)
+Substituting _x_ in 13 / _x_ with 1001 yields 13 / 1001

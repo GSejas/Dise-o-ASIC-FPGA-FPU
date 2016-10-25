@@ -1,0 +1,5 @@
+Adding element "u" with content exp(asin(_x_)) to an empty thing: Success, yielding { .u = exp(asin(_x_)) }
+Adding element "v" with content log(atan(_x_)) to { .u = exp(asin(_x_)) }: Success, yielding { .v = log(atan(_x_)), .u = exp(asin(_x_)) }
+Adding element "v" with content { .u = exp(asin(_x_)) } to { .a = 5, .b = exp(_x_), .c = { .d = 17, .e = sin(_x_) } }: Success, yielding { .v = { .u = exp(asin(_x_)) }, .c = { .d = 17, .e = sin(_x_) }, .b = exp(_x_), .a = 5 }
+Adding element "v" with content { .u = exp(asin(_x_)) } to exp(asin(_x_)): Failure, yielding NULL
+Adding element "u" with content { .u = exp(asin(_x_)) } to { .v = log(atan(_x_)), .u = exp(asin(_x_)) }: Success, yielding { .u = { .u = exp(asin(_x_)) }, .v = log(atan(_x_)) }

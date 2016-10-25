@@ -1,0 +1,34 @@
+The derivative of 17 is 0
+The derivative of exp(sin(x) + x) is exp(sin(x) + x) * (cos(x) + 1)
+The derivative of (x + 1)^7 is 7 + 42 * x + 105 * x^2 + 140 * x^3 + 105 * x^4 + 42 * x^5 + 7 * x^6
+The derivative of sin(17 * x) is cos(17 * x) * 17
+The derivative of x is 1
+The derivative of exp(x) + atan(x) is exp(x) + 1 / (1 + x * x)
+The derivative of exp(x) - atan(x) is exp(x) - 1 / (1 + x * x)
+The derivative of exp(x) * atan(x) is exp(x) / (1 + x * x) + atan(x) * exp(x)
+The derivative of exp(x) / atan(x) is (atan(x) * exp(x) - exp(x) / (1 + x * x)) / atan(x)^2
+The derivative of sqrt(x) is 1 / (2 * sqrt(x))
+The derivative of exp(x) is exp(x)
+The derivative of log(x) is 1 / x
+The derivative of log2(x) is 1 / (x * log(2))
+The derivative of log10(x) is 1 / (x * log(10))
+The derivative of sin(x) is cos(x)
+The derivative of cos(x) is -sin(x)
+The derivative of tan(x) is 1 + tan(x)^2
+The derivative of asin(x) is 1 / sqrt(1 - x^2)
+The derivative of acos(x) is -1 / sqrt(1 - x^2)
+The derivative of atan(x) is 1 / (1 + x * x)
+The derivative of exp(x)^atan(x) is exp(x)^atan(x) * ((exp(x) * atan(x)) / exp(x) + x / (1 + x * x))
+The derivative of -x is -1
+The derivative of abs(x) is x / abs(x)
+The derivative of erf(x) is exp(-(x^2)) / sqrt((pi) / 4)
+The derivative of erfc(x) is -(exp(-(x^2)) / sqrt((pi) / 4))
+The derivative of log1p(x) is 1 / (1 + x)
+The derivative of expm1(x) is exp(x)
+The derivative of sinh(x) is cosh(x)
+The derivative of cosh(x) is sinh(x)
+The derivative of tanh(x) is 1 - tanh(x)^2
+The derivative of asinh(x) is 1 / sqrt(1 + x * x)
+The derivative of acosh(x) is 1 / sqrt(-1 + x * x)
+The derivative of atanh(x) is 1 / (1 - x * x)
+The derivative of pi is 0

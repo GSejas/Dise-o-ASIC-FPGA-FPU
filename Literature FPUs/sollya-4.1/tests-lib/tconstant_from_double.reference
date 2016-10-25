@@ -1,0 +1,14 @@
+Caught the message about rounding while reading a constant.
+-1.1001001000011111101101010100010001000010110100011_2 * 2^(1)
+-1.1001001000011111101101010100010001000010110100011_2 * 2^(1) (should be the same as above)
+-1.1001001000011111101101010100010001000010110100011_2 * 2^(1) (should be the same as above)
+-1.1001001000011111101101010100010001000010110100011_2 * 2^(1) (should be the same as above)
+0 (should be 0)
+@NaN@ (should be NaN)
+@Inf@ (should be +Inf)
+Caught the message about rounding while reading a constant.
+1.10010010000111111011010101000100010000101101_2 * 2^(-1028)
+1.10010010000111111011010101000100010000101101_2 * 2^(-1028) (should be the same as above)
+Caught the message about rounding while reading a constant.
+1.1001001000011111101101010100010001000010110100011_2 * 2^(-1028) (should *NOT* be the same, but the previous entry should be a prefix of this one)
+-@Inf@ (should be -Inf)

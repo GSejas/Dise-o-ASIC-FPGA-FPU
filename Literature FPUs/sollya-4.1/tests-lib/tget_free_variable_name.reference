@@ -1,0 +1,4 @@
+cos(_x_) + _x_ (variable name: _x_)
+cos(_x_) + _x_ (with local name changed: ax_)
+cos(foo) + foo (variable name: foo)
+cos(foo) + foo (with local name changed: aoo)

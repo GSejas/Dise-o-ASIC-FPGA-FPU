@@ -1,0 +1,6 @@
+The numerator of 17 / 1001 is 17.
+The numerator of (x + x^2) / (x + 2 * x^2 + 1) is x + x^2.
+The following object is not a fraction.
+The numerator of (x + 1) / (x + 2) * (x + 3) / (x + 4) is (x + 1) / (x + 2) * (x + 3) / (x + 4).
+The following object is not a fraction.
+The numerator of exp(x / 4) is exp(x / 4).

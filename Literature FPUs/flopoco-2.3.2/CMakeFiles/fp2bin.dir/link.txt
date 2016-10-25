@@ -1,0 +1,1 @@
+/usr/bin/c++   -pg -Wall   CMakeFiles/fp2bin.dir/src/Tools/fp2bin.o CMakeFiles/fp2bin.dir/src/utils.o  -o fp2bin -rdynamic -lmpfr -lgmp -lgmpxx 

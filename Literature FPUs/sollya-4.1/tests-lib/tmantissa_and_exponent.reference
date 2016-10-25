@@ -1,0 +1,3 @@
+val = 3.14159393310546875, mantissa = 411775, exponent = -17, val - mantissa * 2^exponent = 0
+val = -3.14159393310546875, mantissa = -411775, exponent = -17, val - mantissa * 2^exponent = 0
+val = 1.00000762939453125, mantissa = 131073, exponent = -17, val - mantissa * 2^exponent = 0

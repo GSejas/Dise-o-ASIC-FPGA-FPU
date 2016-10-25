@@ -1,0 +1,16 @@
+The sort operation on [| |] yields to [| |]
+The sort operation on [|1|] yields to [|1|]
+The expected error message stating that the sort operation cannot be performed on list containing other objects but constant expressions or that are final-elliptic has been caught.
+The sort operation on [|1...|] yields to error
+The sort operation on [|2, 3, 9, 17, 0, 19, -190, 1664|] yields to [|-190, 0, 2, 3, 9, 17, 19, 1664|]
+The expected error message stating that the a certain expression should have been a constant and that faithful evaluation is not possible has been caught.
+The expected error message stating that the a certain expression should have been a constant and that faithful evaluation is not possible has been caught.
+The expected error message stating that the a certain expression should have been a constant and that faithful evaluation is possible has been caught.
+The expected error message stating that the a certain expression should have been a constant and that faithful evaluation is possible has been caught.
+The sort operation on [|sin((pi) / 3) - sqrt(3) / 2, -1, 0, log2(15) / log2(13) - log(15) / log(13), 17 + sin((pi) / 3) - sqrt(3) / 2, 17 + log2(15) / log2(13) - log(15) / log(13)|] yields to [|-1, 0, 0, 0, 17, 17|]
+The expected error message stating that the sort operation cannot be performed on list containing other objects but constant expressions or that are final-elliptic has been caught.
+The sort operation on [|2, 3, 9, 17, 0, 19, -190, 1664...|] yields to error
+The expected error message stating that the sort operation cannot be performed on list containing other objects but constant expressions or that are final-elliptic has been caught.
+The sort operation on [|"land", "of", "milk", "and", "honey"|] yields to error
+The expected error message stating that the sort operation cannot be performed on list containing other objects but constant expressions or that are final-elliptic has been caught.
+The sort operation on [|"land", "of", "milk", "and", "honey"...|] yields to error

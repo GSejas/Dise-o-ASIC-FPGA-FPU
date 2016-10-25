@@ -1,0 +1,79 @@
+restart;
+print("=============== Test number 1 ================");
+(0*1)/@NaN@;
+evaluate((0*1)/@NaN@,13);
+
+restart;
+print("=============== Test number 2 ================");
+/* This code used to produce a memory leak until revision 1871. See bug #8726 for details. */
+prec = 53;
+
+nearest = floor(x + 1/2);
+
+procedure myround(k,X) {
+var ulp;
+
+ulp = 2^(floor(log2(abs(X)))-k+1);
+
+return ulp * nearest(X * 1/ulp);
+};
+
+
+procedure worstCaseRange(f,mMin,mMax) {
+var m;
+var y, roundY;
+var delta;
+var minDelta, minDeltaM;
+
+minDelta = 1b1000000;
+minDeltaM = NaN;
+for m from mMin to mMax do {
+y = f(m);
+roundY = myround(25,y);
+delta = abs(roundY - y);
+if (delta < minDelta) then {
+minDelta = delta;
+minDeltaM = m;
+m,", ", ~delta;
+};
+};
+
+return [| minDelta, minDeltaM |];
+};
+
+f = 1/sqrt(x);
+
+a = worstCaseRange(f,1b23,1b23+10);
+
+
+restart;
+print("=============== Test number 3 ================");
+f=x^2147483647;
+diff(f);
+
+restart;
+print("=============== Test number 4 ================");
+p = (0 * x) / NaN + NaN;
+p;
+
+restart;
+print("=============== Test number 5 ================");
+prec=12!;
+c=12345.25;
+a=floor(c);
+b=ceil(c);
+b==a+1;
+a<=c;
+c<=b;
+
+c=1234525;
+a=floor(c);
+b=ceil(c);
+b==a;
+a<=c;
+c<=b;
+
+print(floor(1233455646547894351534646584685465165146546135100546645604654654654654684864654165464654), " should be 1233455646547894351534646584685465165146546135100546645604654654654654684864654165464654");
+print(ceil(4096.5), " should be 4097");
+print(nearestint(4096.5), " should be 4096");
+print(nearestint(4097), " should be 4097");

@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../26bit/ReCodeRKOARecursive/RKOA_Recursive.v"
+verilog xil_defaultlib  "../../../Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

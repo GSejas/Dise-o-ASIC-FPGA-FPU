@@ -1,0 +1,53 @@
+The precision has been set to 20 bits.
+[1;2] is not a constant.
+
+[1;1] is not a constant.
+
+(3 * cos(2 * x)) / (2 * sin(x) * cos(x)) is not a constant.
+
+3.25 has been converted to 0x1.ap+1 (expecting 0x1.ap+1)
+
+7.6293945e4 has been converted to 0x1.2a05f2p+16 (expecting 0x1.2a05f2p16)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1.606938e60 + 1 - 1.606938e60 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 0x1p+0 (expecting 0x1p+0)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 3.872591e-121 + 1.110223e-16 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 0x1p+0 (expecting one of 0x1p+0 or 0x1.0000000000001p+0 -- the second one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 3.872591e-121 + 1.110223e-16 has been converted to 0x1p+0 (expecting one of 0x1p+0 or 0x1.0000000000001p+0 -- the second one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 - 5.551115e-17 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 0x1p+0 (expecting one of 0x1p+0 or 0xf.ffffffffffff8p-4 -- the first one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 - 5.551115e-17 has been converted to 0x1p+0 (expecting one of 0x1p+0 or 0xf.ffffffffffff8p-4 -- the first one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 3.330669e-16 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 0x1.0000000000002p+0 (expecting one of 0x1.0000000000001p0 or 0x1.0000000000002p0 -- the second one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 3.330669e-16 has been converted to 0x1.0000000000002p+0 (expecting one of 0x1.0000000000001p0 or 0x1.0000000000002p0 -- the second one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+exp(pi) + log(2) has been converted to 0x1.7d57686a86509p+4 (expecting one of 0x1.7d57686a86509p4 or 0x1.7d57686a8650ap4 -- the first one would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+log10(2) / log10(3) - log(2) / log(3) has been converted to 0x0p+0 (expecting 0x0p+0).
+
+Warning: the given expression is not a constant but an expression to evaluate
+and a faithful evaluation is *NOT* possible.
+(sin((pi) / 3) - sqrt(3) / 2) * 9.99002e30102 + 3 has been converted to some number. Expecting that the above warning message states that faithtul evaluation is *NOT* possible.
+
+Warning: the given expression is not a constant but an expression to evaluate
+and a faithful evaluation is *NOT* possible.
+(sin((pi) / 3) - sqrt(3) / 2) * 9.99002e30102 + 6.305794e18061 has been converted to some number. Expecting that the above warning message states that faithtul evaluation is *NOT* possible.
+
+-@Inf@ has been converted to -inf (expecting -inf).
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+-1.1481307e602 has been converted to -inf (expecting -inf with an overflow warning).
+
+@NaN@ has been converted to nan (expecting NaN).
+

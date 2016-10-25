@@ -1,0 +1,6 @@
+true or true gives true
+true or false gives true
+false or true gives true
+false or false gives false
+The following test produces a typing error
+17 or Hello gives error

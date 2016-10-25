@@ -1,0 +1,61 @@
+max(4,5,1,3) returns 5
+
+max([|4, 5, 1, 3|]) returns 5
+
+The following test is not certified (probably because the max is reached by two equal values).
+max of 17 + log2(13)/log2(9) and 17 + log(13)/log(9) returns 17 + log2(13) / log2(9)
+
+The following test is not certified (probably because the max is reached by two equal values).
+max([|17 + log2(13) / log2(9), 17 + log(13) / log(9)|]) returns 17 + log2(13) / log2(9)
+
+max of 17 + log2(13)/log2(9), 17 + log(13)/log(9), 100 returns 100
+
+max([|17 + log2(13) / log2(9), 17 + log(13) / log(9), 100|]) returns 100
+
+max of 100, 17 + log2(13)/log2(9) and 17 + log(13)/log(9) returns 100
+
+max([|100, 17 + log2(13) / log2(9), 17 + log(13) / log(9)|]) returns 100
+
+The test will rely on pure FP evaluation (probably because 0 is the maximum but it is hard to prove it).
+max of sin(pi/3)-sqrt(3)/2 and 0 returns sin((pi) / 3) - sqrt(3) / 2
+
+The test will rely on pure FP evaluation (probably because 0 is the maximum but it is hard to prove it).
+max([|sin((pi) / 3) - sqrt(3) / 2, 0|]) returns sin((pi) / 3) - sqrt(3) / 2
+
+max of 0, sin(pi/3)-sqrt(3)/2 and 1 returns 1
+
+max([|0, sin((pi) / 3) - sqrt(3) / 2, 1|]) returns 1
+
+max of 1 and sin(pi/3)-sqrt(3)/2 and 0 returns 1
+
+max([|1, sin((pi) / 3) - sqrt(3) / 2, 0|]) returns 1
+
+max(2,NaN,1) returns 2
+
+max([|2, @NaN@, 1|]) returns 2
+
+Warning: the following test involves a NaN
+max(2,log(-17),1) returns 2
+
+Warning: the following test involves a NaN
+max([|2, log(-17), 1|]) returns 2
+
+max(NaN,1,2) returns 2
+
+max([|@NaN@, 1, 2|]) returns 2
+
+Warning: the following test involves a NaN
+max(log(-17),1,2) returns 2
+
+Warning: the following test involves a NaN
+max([|log(-17), 1, 2|]) returns 2
+
+max of 17 returns 17
+
+max([|17|]) returns 17
+
+The following expression is not correctly typed.
+max of an empty list returns error
+
+max([|4, 1, 3|], 5) returns 4
+

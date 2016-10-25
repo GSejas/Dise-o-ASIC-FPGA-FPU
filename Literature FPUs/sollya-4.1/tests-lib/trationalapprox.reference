@@ -1,0 +1,22 @@
+17 gets approximated to 2 bits by rationalapprox with 16 which is correct.
+17 gets approximated to 15 bits by rationalapprox with 17 which is correct.
+double(pi) gets approximated to 15 bits by rationalapprox with 355 / 113 which is correct.
+tripledouble(pi) gets approximated to 150 bits by rationalapprox with 124501831084886682872033 / 39630163682303811490688 which is correct.
+Caught a message stating that the precision is not large enough.
+Caught a message stating that the command cannot be handeled.
+double(pi) gets approximated to 1 bits by rationalapprox with error which is correct.
+Caught a message stating that the precision is not large enough.
+Caught a message stating that the command cannot be handeled.
+double(pi) gets approximated to 0 bits by rationalapprox with error which is correct.
+double(pi) gets approximated to 2 bits by rationalapprox with 3 which is correct.
+Caught a message stating that the precision is not large enough.
+Caught a message stating that the command cannot be handeled.
+double(pi) gets approximated to -2 bits by rationalapprox with error which is correct.
+0.100000000000000005551115123125782702118158340454102 gets approximated to 10 bits by rationalapprox with 1 / 10 which is correct.
+0.100000000000000005551115123125782702118158340454102 gets approximated to 100 bits by rationalapprox with 0.100000000000000005551115123125782702118158340454102 which is correct.
+tripledouble(1329 / 5971) gets approximated to 20 bits by rationalapprox with 1329 / 5971 which is correct.
+0 gets approximated to 17 bits by rationalapprox with 0 which is correct.
+Caught a message stating that a constant expression was given instead of a constant.
+10 * (pi) / 59 gets approximated to 6 bits by rationalapprox with 7 / 13 which is correct.
+Caught a message stating that a constant expression was given instead of a constant.
+sin(10 * (pi) / 59) gets approximated to 7 bits by rationalapprox with 33 / 65 which is correct.

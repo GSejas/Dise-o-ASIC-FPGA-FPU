@@ -1,0 +1,4 @@
+An empty string: AA
+A non-empty string: AfoobarA
+cos(_x_) must not be mistaken for cos(_x_)
+A list of strings: [|"cos(_x_)", cos(_x_)|]

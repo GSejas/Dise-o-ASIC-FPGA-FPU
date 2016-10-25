@@ -1,0 +1,4 @@
+x + 2 - (x + 2) can be safely simplified to 0.
+asin(exp(x + 2 - (x + 2))) can be safely simplified to (pi) / 2.
+expm1(x) - expm1(x) can be safely simplified to 0.
+1 + 1.0000000000000000250590918352087596856961468077037e-300 can be safely simplified to 1 + 1.0000000000000000250590918352087596856961468077037e-300.

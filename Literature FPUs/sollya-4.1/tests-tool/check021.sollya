@@ -1,0 +1,57 @@
+restart;
+print("=============== Test ChebModels ================");
+
+verbosity=0!;
+
+test2 = proc(f, n, I) {
+  var x,TStruct, p, errs, Delta, t, i, xk, res;
+  res = 1;
+  TStruct = chebyshevform(f,n,I);
+  p = TStruct[0];
+  errs = TStruct[1];
+  Delta= TStruct[2];
+  chebyCoeffs = TStruct[3];
+  for i from 0 to points do {
+     roundingwarnings=off!;
+     xk := inf(I) + sup([(i/points)*(sup(I)-inf(I))]);
+     roundingwarnings=on!;
+     if (xk >= sup(I)) then xk := sup(I);
+
+     dd = [0];
+     for s from n to 0 by -1 do {
+       dd = errs[s] + xk*dd;
+     };
+     dd = dd + Delta;
+     if (! (f(xk)-p(xk)) in dd) then {
+       print("test2(",f,",",n,",",I,"): error at point x=",xk);
+       res = 0;
+     };
+   };
+ if (res==1)
+   then {print("Testing chebyshevform(",f,",",n,",",I,"): OK"); print("Delta=",Delta);};
+};
+
+test2(sin(x), 7, [-1,1]);
+test2(sin(exp(x)) + 2 - x,7,[-1;1]);
+test2(sin(exp(x)) + 2 - x,7,[-1b-8;1b-7]);
+
+test2(sin(x)^4 + x^5 * exp(17 * x),7,[-1b-8;1b-7]);
+test2(2^x,7,[-1b-8;1b-7]);
+test2(x^17,7,[-1b-8;1b-7]);
+test2(x^5,7,[-1b-8;1b-7]);
+
+test2(1 + 2 * x + 3 * x^2 + 4 * x^3,7,[-1b-8;1b-7]);
+test2(2 * x + 3 * x^2 + 4 * x^3,7,[-1b-8;1b-7]);
+test2(exp(sin(x))^log2(1 + sin(x)^2) * erf(x),7,[-1b-8;1b-7]);
+
+test2(sin(x),10,[3,4]);
+test2(atan(x),15, [-0.25,0.25]);
+test2(atan(x),15, [-0.9,0.9]);
+test2(exp(1/cos(x)),14, [0,1]);
+test2(exp(x)/(log(2+x)*cos(x)),15, [0,1]);
+test2(sin(exp(x)),10, [-1,1]);
+test2(tanh(x+0.5)-tanh(x-0.5),10, [-1,1]);
+test2(sqrt(x+01.0001),10, [-1,0]);
+test2(sqrt(x+01.0001)*sin(x),10, [-1,0]);
+test2(1/(1+4*x^2),10, [-1,1]);
+test2(sin(x)^2+cos(x)^2,10, [-1,1]);

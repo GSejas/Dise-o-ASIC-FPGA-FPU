@@ -1,0 +1,9 @@
+This directory contains unmaintained code that used to compute the exponential by the recurrence described in the Arith 2007 paper "Return of the hardware floating-point elementary function"
+
+This code was replaced with the polynomial-based version that is more suited to current FPGA's DSP and memory blocks.
+
+All the files in this directory were written by Xavier Pujol and later FloPoCo-ized by Florent de Dinechin. They now belong to the FloPoCo project and are 
+  Initial software.
+  Copyright © ENS-Lyon, INRIA, CNRS, UCBL, 2008-2010.
+  All right reserved.
+

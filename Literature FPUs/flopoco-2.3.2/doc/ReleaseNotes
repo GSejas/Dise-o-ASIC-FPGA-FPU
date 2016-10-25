@@ -1,0 +1,184 @@
+Version 2.3.2
+This is a maintenance release, it adds a missing header that prevented compilation on recent gcc.
+
+======================================================================
+Version 2.3.1
+This is a bugfix release, mostly fixing a few multiplier bugs.
+
+======================================================================
+Version 2.3.0
+This version adds
+- Proper librarization, and an example on how to use FloPoCoLib
+- FPPowr and FPPow functions from C99
+- FunctionTable (as the name suggests)
+- FPConstMultRational, correctly rounded multiplication by small rational constants
+- IntConstDiv, LUT-based Euclidean division by small integer constants
+- FPConstDiv and FPConstDivExpert, an FP wrapper for the previous
+- TaMaDi architecture, an example of a full application
+- bug fixes and improvements
+- new bugs so that we hear from you, our valued users
+
+======================================================================
+Version 2.2.1
+This is a bugfix release. It corrects major bugs on some multipliers
+not working on some Altera targets, and some minor bugs.
+
+======================================================================
+Version 2.2.0
+The new version brings with it:
+- FPPipeline assembles floating-point computational pipelines 
+  from a C-like description (early alpha)
+- a smaller (single path) architecture for floating-point addition
+  (now the default architecture when calling FPAdder)
+- 3-operand FPAdder
+- KCM constant multipliers, including a FixRealKCM and FPRealKCM
+- some bug-fixes
+- plenty of other improvements of other operators, especially due to 
+pipeline refinement 
+
+======================================================================
+Version 2.1.1
+Identical to 2.1.0 except one small fix to enable compilation with latest mpfr
+
+======================================================================
+Version 2.1.0
+Frequency-directed pipelining made easy. Operator latency scales much better
+for lower frequencies. The two functions that do it all are: manageCriticalPath()
+and setCriticalPath(). Most operators are already ported to this improved framework.
+As a result, a global improvement can be remarked. 
+
+- FPExp operator is completely new. It is a significant increment over any 
+exponential operator currently available on the market.
+- Truncated multipliers can now be signed
+- FunctionEvaluator is improved by using truncated multipliers in the polynomial 
+evaluation part.  
+- FPLog pipeline is refined 
+- FPPowr is introduced in experimental phase. 
+- plenty of improvements of other operators, especially pipeline refinement 
+
+======================================================================
+Version 2.0.0
+This version brings significant improvements to the framework:
+- pipeline now made really easy: the C++ is now much easier to write
+    and read, no longer need to insert use() everywhere
+- improved support of Altera targets 
+- added TestBenchFile, including exhaustive test
+- much improved support of DSP blocks through Int*Multiplier operators
+- UserDefinedOperator to bootstrap new users
+There are few new operators, but they will boost future developments:
+- FunctionEvaluator for high-precision fixed-point function evaluation
+- MyIntAdder (name is temporary) for pipelined large additions
+- IntTilingMultiplier, IntTruncMultipliers, IntKaratsubaMultiplier
+    for DSP-efficient pipelined multipliers
+- FPSqrtPoly, a polynomial version of the floating-point square root
+
+======================================================================
+Version 1.15.2
+- fixes a bug in LongAcc2FP
+- introduces autotools support thanks to Daniele Mastrandrea, 
+    for people wanting to link to an autotools-based project
+- introduces a Tobin Tax restriction in the license, 
+    to prevent FloPoCo from participating in the next financial crisis.
+
+======================================================================
+Version 1.15.1 
+- improves FPLog, which is now as good as we'll get for a while
+- includes several new targets at various levels of completion. 
+- introduces an integer compression tree, and improves 
+   pipelined multipliers for these targets 
+
+FloPoCo also now lives in its own namespace (thanks to Mariusz Grad),
+which should help integrating it in larger project. 
+Heaps of bugfixes, too.
+
+======================================================================
+Version 1.15.0 adds a Karatsuba multiplier (Virtex-only so far),
+FPSquarer, FPSQrt, Fix2FP, InputIEEE, and a lot of cleaning up and bug fixes.
+With FPSqrt, we now have the 4 basic operations, so we proudly leave
+the 0.xxx version numbers for 1.xxx, and drop FPLibrary for good.
+
+======================================================================
+Version 0.11.0 adds an IntSquarer, an FPDiv, and a rudimentary
+pipeline to FPLog (work still in progress). It also adds Collision, an
+example coarse-grain operator. From the developer point of view, this
+version is the first with Pipeline Made Easy, the new framework for
+cycle-based pipeline description.
+
+======================================================================
+Version 0.9.3 corrects a bug in FPAdder (adding zero was giving wrong
+results). Thanks to A. Rolim for pointing it out.
+
+======================================================================
+Version 0.9.2 corrects bugs in FPConstMult and cleans up the pipeline
+framework.
+
+======================================================================
+Version 0.9.1 vastly improves FPAdder, stabilizes LongAcc, and sees an
+invasion of Logarithm Number System operators developed by external
+contributor Sylvain Collange.
+
+Logarithm Number System is an alternative to Floating-Point
+where multiplication and division are faster, cheaper and more
+accurate while addition and subtraction are more expensive and less
+accurate. It may be the right thing for your application.  
+
+======================================================================
+Version 0.8beta introduces FPLog and FPExp operators (currently not
+pipelined) and LongAcc2FP. It improves automatic test bench
+generation.  It also introduces the Altera Stratix II target.  It
+improves pipelining of LongAcc and FPMultiplier, and introduces
+pipelined version of IntConstMult (still buggy for some large
+constants).  This is still a beta release, comments and bug reports
+welcome.
+
+======================================================================
+Version 0.5beta adds the HOTBM operator 
+and fixes bugs in the other operators.
+
+It also introduces automatic testbench generation.
+
+HOTBM is the Higher Order Table-Based Method for function evaluation.
+With HOTBM support, FloPoCo is able to generate high-speed, low area
+fixed-point implementations for a large class of real functions on
+[0,1[.
+
+HOTBM uses a polynomial approximation. It works well for functions
+which are regular enough (in mathematical terms, they should be
+defined and n-times continuously differentiable on the domain).
+
+======================================================================
+
+Version 0.4beta provides the following operators:
+    LeftShifter, RightShifter, LZOC, IntAdder 
+       building blocks of FP computing, pipelined
+    LongAcc
+       An operator for efficient and accurate accumulation 
+       of floating-point numbers, partly pipelined 
+    IntConstMult, FPConstMult
+       optimized constant multipliers in integer and FP flavor 
+    IntMultiplier, FPMultiplier 
+       multipliers with automatic pipeline generation
+
+In addition, this distribution provides the useful conversion tools 
+fp2bin, bin2fp and longacc2fp.
+
+There has been no extensive testing on these operators yet, use at your own risk. 
+
+This is the first version with automatic pipeline generation, although
+not all the operators support it.
+
+The utopian objective is to have each operator built to
+work at a user-specified frequency (option -frequency) on a
+user-specified hardware target.
+
+The sad reality is that currently, the only target is a Virtex 4. On other
+chips (Altera or other Xilinx), you will get synthesisable VHDL, and
+the pipeline will be deeper for higher frequencies, but it will not
+necessarily be any close to the optimal. 
+In the near future there will be a Stratix III target.
+
+
+
+
+======================================================================
+Version 0.1.1 was a proof of concept.

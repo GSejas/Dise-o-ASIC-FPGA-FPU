@@ -1,0 +1,3 @@
+euler_gamma + cos(4) == euler_gamma + cos(4) gives true (expecting true)
+foo == foo gives true (expecting true)
+bar == bar gives true (expecting true)

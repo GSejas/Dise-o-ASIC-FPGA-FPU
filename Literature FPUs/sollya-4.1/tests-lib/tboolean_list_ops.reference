@@ -1,0 +1,13 @@
+0-th element in list1 before copy and modification of the copy: true
+1-th element in list1 before copy and modification of the copy: false
+2-th element in list1 before copy and modification of the copy: true
+3-th element in list1 before copy and modification of the copy: true
+0-th element in list1 after copy and modification of the copy: true
+1-th element in list1 after copy and modification of the copy: false
+2-th element in list1 after copy and modification of the copy: true
+3-th element in list1 after copy and modification of the copy: true
+0-th element in list2 after copy and modification of the copy: false
+1-th element in list2 after copy and modification of the copy: true
+2-th element in list2 after copy and modification of the copy: false
+3-th element in list2 after copy and modification of the copy: true
+4-th element in list2 after copy and modification of the copy: true

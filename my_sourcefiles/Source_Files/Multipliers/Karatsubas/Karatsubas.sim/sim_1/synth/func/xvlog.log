@@ -1,0 +1,55 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.sim/sim_1/synth/func/tb_multiplier_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Recursive_KOA
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized0
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized1
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized11
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized12
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized15
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized16
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized17
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized20
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized21
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized24
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized25
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized27
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized28
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized31
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized32
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized33
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized36
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized37
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized39
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized4
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized40
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized43
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized44
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized45
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized46
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized47
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized5
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized50
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized8
+INFO: [VRFC 10-311] analyzing module Recursive_KOA__parameterized9
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/substractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module substractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/FrancisKOA/Sgf_Multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/ReCodeRKOA/RKOA_OPCHANGE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Simple_KOA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/26bit/RKOA/RKOA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RKOA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_multiplier
+WARNING: [VRFC 10-756] identifier clk is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:9]
+WARNING: [VRFC 10-756] identifier clk is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:10]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:16]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:17]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:19]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:20]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:23]
+WARNING: [VRFC 10-756] identifier SW is used before its declaration [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/tb_Multipliers.v:24]

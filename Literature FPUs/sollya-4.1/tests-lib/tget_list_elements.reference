@@ -1,0 +1,6 @@
+Success on [| |] (n=0 and end_ell=0).
+Success on [|2|] (n=1 and end_ell=0). 2
+Success on [|2, sin(_x_), double|] (n=3 and end_ell=0). 2 sin(_x_) double
+Success on [|2...|] (n=1 and end_ell=1). 2
+Success on [|2, sin(_x_), double...|] (n=3 and end_ell=1). 2 sin(_x_) double
+Failure on double (n=-1, end_ell=-1, ptr=NULL).

@@ -1,0 +1,29 @@
+function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})
+7.3890560989306521832986618392169475555419921875 (expecting approximate value of exp(2))
+(diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})))(sin(_x_)) * cos(_x_) (expecting: (diff(function(proc(X, n, p) {...})))(sin(_x_)) * cos(_x_))
+diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})) (expecting: diff(function(proc(X, n, p) {...})))
+[2.71828182845904523536028747135266249775724709369989;7.3890560989306502272304274605750078131803155705518] (expecting: [2.71828182845904523536028747135266249775724709369989, 7.3890560989306502272304274605750078131803155705518])

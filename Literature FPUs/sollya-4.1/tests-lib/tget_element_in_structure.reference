@@ -1,0 +1,4 @@
+Does the Sollya object { .a = 5, .b = exp(_x_), .c = { .d = 17, .e = sin(_x_) } } contain an element called "a"? Yes. That element is 5.
+Does the Sollya object exp(_x_) contain an element called "a"? No. 
+Does the Sollya object { .a = 5, .b = exp(_x_), .c = { .d = 17, .e = sin(_x_) } } contain an element called "u"? No. 
+Does the Sollya object { .a = 5, .b = exp(_x_), .c = { .d = 17, .e = sin(_x_) } } contain an element called "d"? No. 

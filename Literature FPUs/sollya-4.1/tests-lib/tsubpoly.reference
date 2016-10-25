@@ -1,0 +1,40 @@
+The subpolynomial with monomials [|1|] taken out of _x_ + 1 + _x_^2 is _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of _x_ + 1 + _x_^2 is _x_
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of _x_ + 1 + _x_^2 is 1 + _x_^2
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of _x_ + 1 + _x_^2 is _x_
+The subpolynomial with monomials [|0...|] taken out of _x_ + 1 + _x_^2 is 1 + _x_ * (1 + _x_)
+The subpolynomial with monomials [|1|] taken out of (5 * _x_ + 7) * _x_ + 9 is 7 * _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of (5 * _x_ + 7) * _x_ + 9 is 7 * _x_
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of (5 * _x_ + 7) * _x_ + 9 is 9 + _x_^2 * 5
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of (5 * _x_ + 7) * _x_ + 9 is 7 * _x_
+The subpolynomial with monomials [|0...|] taken out of (5 * _x_ + 7) * _x_ + 9 is 9 + _x_ * (7 + _x_ * 5)
+The subpolynomial with monomials [|1|] taken out of _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 8 * _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 8 * _x_
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 10 + _x_^2 * 6
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 8 * _x_
+The subpolynomial with monomials [|0...|] taken out of _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 10 + _x_ * (8 + _x_ * 6)
+The subpolynomial with monomials [|1|] taken out of _x_ + exp(1) + _x_^2 is _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of _x_ + exp(1) + _x_^2 is _x_
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of _x_ + exp(1) + _x_^2 is exp(1) + _x_^2
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of _x_ + exp(1) + _x_^2 is _x_
+The subpolynomial with monomials [|0...|] taken out of _x_ + exp(1) + _x_^2 is exp(1) + _x_ * (1 + _x_)
+The subpolynomial with monomials [|1|] taken out of (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is atan(7) * _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is atan(7) * _x_
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is erfc(9) + _x_^2 * log(5)
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is atan(7) * _x_
+The subpolynomial with monomials [|0...|] taken out of (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is erfc(9) + _x_ * (atan(7) + _x_ * log(5))
+The subpolynomial with monomials [|1|] taken out of _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is (1 + atan(7)) * _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is (1 + atan(7)) * _x_
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is exp(1) + erfc(9) + _x_^2 * (1 + log(5))
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is (1 + atan(7)) * _x_
+The subpolynomial with monomials [|0...|] taken out of _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is exp(1) + erfc(9) + _x_ * (1 + atan(7) + _x_ * (1 + log(5)))
+The subpolynomial with monomials [|1|] taken out of exp(_x_) is 0
+The subpolynomial with monomials [|1, 3, 5|] taken out of exp(_x_) is 0
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of exp(_x_) is 0
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of exp(_x_) is 0
+The subpolynomial with monomials [|0...|] taken out of exp(_x_) is 0
+The subpolynomial with monomials [|1|] taken out of (_x_ + 1)^15 is 15 * _x_
+The subpolynomial with monomials [|1, 3, 5|] taken out of (_x_ + 1)^15 is _x_ * (15 + _x_^2 * (455 + _x_^2 * 3003))
+The subpolynomial with monomials [|0, 2, 7, 11...|] taken out of (_x_ + 1)^15 is 1 + _x_^2 * (105 + _x_^5 * (6435 + _x_^4 * (1365 + _x_ * (455 + _x_ * (105 + _x_ * (15 + _x_))))))
+The subpolynomial with monomials [|1, 3, 5, 17|] taken out of (_x_ + 1)^15 is _x_ * (15 + _x_^2 * (455 + _x_^2 * 3003))
+The subpolynomial with monomials [|0...|] taken out of (_x_ + 1)^15 is 1 + _x_ * (15 + _x_ * (105 + _x_ * (455 + _x_ * (1365 + _x_ * (3003 + _x_ * (5005 + _x_ * (6435 + _x_ * (6435 + _x_ * (5005 + _x_ * (3003 + _x_ * (1365 + _x_ * (455 + _x_ * (105 + _x_ * (15 + _x_))))))))))))))

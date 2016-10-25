@@ -1,0 +1,16 @@
+The polynomial x has 1 root(s) in the interval [-1;1].
+The polynomial x has 1 root(s) in the interval [-9.765625e-4;1].
+The polynomial x has 1 root(s) in the interval [0;1].
+The polynomial x has 0 root(s) in the interval [9.765625e-4;1].
+The polynomial x^2 - 9.765625e-4 has 2 root(s) in the interval [-1;1].
+The polynomial x^2 + 9.765625e-4 has 0 root(s) in the interval [-1;1].
+The polynomial x^2 has 1 root(s) in the interval [-1;1].
+The polynomial x^2 - 8.7098098162172166755761954947788722958591037427053e-603 has 2 root(s) in the interval [-1;1].
+Caught the message that a certain polynomial coefficient is neither a constant nor a rational expression and that it got rounded.
+The polynomial exp(1) * x^2 - 2.5 has 2 root(s) in the interval [-1;1].
+The polynomial 106 / 39 * x^2 - 2.5 has 2 root(s) in the interval [-1;1].
+Caught the message that a slower version of the Sturm algorithm, using rational arithmetic is used.
+The polynomial 4.98433858766847607572119674832101659036346057980888594722531428147165925512023745865901769e89 / 2.5896123861159997676642578632777090580596800778039106672929156127734321665679038808925498e89 + x * (-5.24133224017035031109281522782898592169355668835836355206157e59 / 1.14571887226029877918962998584166318199402976872444732755988e59 + (x * 551157654494325100219720823521) / 202759569932735203392750534601) has 1 root(s) in the interval [-2;2].
+Caught the message that a given function is no polynomial.
+Caught the message that a given expression is not correctly typed.
+The polynomial exp(x) has error root(s) in the interval [-1;1].

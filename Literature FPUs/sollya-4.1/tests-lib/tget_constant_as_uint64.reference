@@ -1,0 +1,62 @@
+The precision has been set to 20 bits.
+[1;2] is not a constant.
+
+[1;1] is not a constant.
+
+(3 * cos(2 * x)) / (2 * sin(x) * cos(x)) is not a constant.
+
+3 has been converted to 3 (expecting 3)
+
+1073741800 has been converted to 1073741824 (expecting 1073741824)
+
+Warning: rounding occurred on retrieval of a constant.
+-3 has been converted to 0 (expecting 0)
+
+1 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 - 1 has been converted to UINT64_MAX
+
+Warning: rounding occurred on retrieval of a constant.
+1 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 has been converted to UINT64_MAX (with an overflow warning expected)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1.606938e60 + 1 - 1.606938e60 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 1 (expecting 1)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 3.872591e-121 + 0.5 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 2 (expecting either 1 or 2 -- 2 would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 3.872591e-121 + 0.5 has been converted to 2 (expecting either 1 or 2 -- 2 would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 - 0.5 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 0 (expecting either 0 or 1 -- 0 would be better)
+
+Warning: rounding occurred on retrieval of a constant.
+0.5 has been converted to 0 (expecting either 0 or 1 -- 0 would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+1 + 1.5 * (log2(3) / log2(7) - log(3) / log(7) + 1) has been converted to 2 (expecting either 2 or 3 -- 2 would be better)
+
+Warning: rounding occurred on retrieval of a constant.
+2.5 has been converted to 2 (expecting either 2 or 3 -- 2 would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+exp(pi) + log(2) has been converted to 24 (expecting either 23 or 24 -- 24 would be better)
+
+Warning: the given expression is not a constant but an expression to evaluate. A faithful evaluation will be used.
+log10(2) / log10(3) - log(2) / log(3) has been converted to 0 (expecting 0).
+
+Warning: the given expression is not a constant but an expression to evaluate
+and a faithful evaluation is *NOT* possible.
+(sin((pi) / 3) - sqrt(3) / 2) * 9.99002e30102 + 3 has been converted to some number. Expecting that the above warning message states that faithtul evaluation is *NOT* possible.
+
+Testing a tricky expression. Might return UINT64_MAX with an overflow message or return anything with a message stating that faithful rounding was not possible... OK
+(sin((pi) / 3) - sqrt(3) / 2) * 9.99002e30102 + 6.305794e18061 has been converted to some number.
+
+Warning: rounding occurred on retrieval of a constant.
+-@Inf@ has been converted to 0 (expecting 0).
+
+Warning: rounding occurred on retrieval of a constant.
+@Inf@ has been converted to UINT64_MAX
+
+Warning: a Not-A-Number value has been converted to a number upon retrieval of a constant.
+@NaN@ has been converted to 0 (expecting 0).
+

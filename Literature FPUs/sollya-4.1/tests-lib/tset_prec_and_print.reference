@@ -1,0 +1,35 @@
+Current state of the tool:
+  prec = 165
+  points = 501
+  diam = 1.0001659393310546875e-4
+  display = decimal
+  verbosity = 1
+  canonical = off
+  autosimplify = on
+  showmessagenumbers = off
+  taylorrecursions = 0
+  timing = off
+  midpointmode = off
+  dieonerrormode = off
+  rationalmode = off
+  roundingwarnings = on
+  hopitalrecursions = 2
+
+The precision has been set to 200 bits.
+Current state of the tool:
+  prec = 200
+  points = 501
+  diam = 1.0001659393310546875e-4
+  display = decimal
+  verbosity = 1
+  canonical = off
+  autosimplify = on
+  showmessagenumbers = off
+  taylorrecursions = 0
+  timing = off
+  midpointmode = off
+  dieonerrormode = off
+  rationalmode = off
+  roundingwarnings = on
+  hopitalrecursions = 2
+

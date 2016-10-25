@@ -1,0 +1,48 @@
+sqrt(_x_) is sqrt(_x_)
+exp(_x_) is exp(_x_)
+log(_x_) is log(_x_)
+log2(_x_) is log2(_x_)
+log10(_x_) is log10(_x_)
+sin(_x_) is sin(_x_)
+cos(_x_) is cos(_x_)
+tan(_x_) is tan(_x_)
+asin(_x_) is asin(_x_)
+acos(_x_) is acos(_x_)
+atan(_x_) is atan(_x_)
+-_x_ is -_x_
+abs(_x_) is abs(_x_)
+double(_x_) is double(_x_)
+single(_x_) is single(_x_)
+quad(_x_) is quad(_x_)
+halfprecision(_x_) is halfprecision(_x_)
+doubledouble(_x_) is doubledouble(_x_)
+tripledouble(_x_) is tripledouble(_x_)
+erf(_x_) is erf(_x_)
+erfc(_x_) is erfc(_x_)
+log1p(_x_) is log1p(_x_)
+expm1(_x_) is expm1(_x_)
+doubleextended(_x_) is doubleextended(_x_)
+ceil(_x_) is ceil(_x_)
+floor(_x_) is floor(_x_)
+nearestint(_x_) is nearestint(_x_)
+sinh(_x_) is sinh(_x_)
+cosh(_x_) is cosh(_x_)
+tanh(_x_) is tanh(_x_)
+asinh(_x_) is asinh(_x_)
+acosh(_x_) is acosh(_x_)
+atanh(_x_) is atanh(_x_)
+_x_ + 1 is _x_ + 1
+_x_ - 1 is _x_ - 1
+_x_ * 2 is _x_ * 2
+_x_ / 2 is _x_ / 2
+_x_^2 is _x_^2
+pi is pi
+43 is 43
+43 is 43
+1180591620717411303424 is 1180591620717411303424
+Caught the message about the fact that faithful rounding has occurred.
+0.100000000000000005551115123125782702118158340454102 is not 0.1 (and it is expected)
+... but 0.100000000000000005551115123125782702118158340454102 is 0.100000000000000005551115123125782702118158340454102
+281474976710656 is 281474976710656
+18446462598732840960 is 18446462598732840960
+-281474976710656 is -281474976710656

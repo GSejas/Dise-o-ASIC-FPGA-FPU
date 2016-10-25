@@ -1,0 +1,35 @@
+The coefficient of order 0 in _x_ + 1 + _x_^2 is 1
+The coefficient of order 1 in _x_ + 1 + _x_^2 is 1
+The coefficient of order 2 in _x_ + 1 + _x_^2 is 1
+The coefficient of order 3 in _x_ + 1 + _x_^2 is 0
+The coefficient of order 17 in _x_ + 1 + _x_^2 is 0
+The coefficient of order 0 in (5 * _x_ + 7) * _x_ + 9 is 9
+The coefficient of order 1 in (5 * _x_ + 7) * _x_ + 9 is 7
+The coefficient of order 2 in (5 * _x_ + 7) * _x_ + 9 is 5
+The coefficient of order 3 in (5 * _x_ + 7) * _x_ + 9 is 0
+The coefficient of order 17 in (5 * _x_ + 7) * _x_ + 9 is 0
+The coefficient of order 0 in _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 10
+The coefficient of order 1 in _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 8
+The coefficient of order 2 in _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 6
+The coefficient of order 3 in _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 0
+The coefficient of order 17 in _x_ + 1 + _x_^2 + (5 * _x_ + 7) * _x_ + 9 is 0
+The coefficient of order 0 in _x_ + exp(1) + _x_^2 is exp(1)
+The coefficient of order 1 in _x_ + exp(1) + _x_^2 is 1
+The coefficient of order 2 in _x_ + exp(1) + _x_^2 is 1
+The coefficient of order 3 in _x_ + exp(1) + _x_^2 is 0
+The coefficient of order 17 in _x_ + exp(1) + _x_^2 is 0
+The coefficient of order 0 in (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is erfc(9)
+The coefficient of order 1 in (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is atan(7)
+The coefficient of order 2 in (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is log(5)
+The coefficient of order 3 in (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is 0
+The coefficient of order 17 in (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is 0
+The coefficient of order 0 in _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is exp(1) + erfc(9)
+The coefficient of order 1 in _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is 1 + atan(7)
+The coefficient of order 2 in _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is 1 + log(5)
+The coefficient of order 3 in _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is 0
+The coefficient of order 17 in _x_ + exp(1) + _x_^2 + (log(5) * _x_ + atan(7)) * _x_ + erfc(9) is 0
+The coefficient of order 0 in exp(_x_) is 0
+The coefficient of order 1 in exp(_x_) is 0
+The coefficient of order 2 in exp(_x_) is 0
+The coefficient of order 3 in exp(_x_) is 0
+The coefficient of order 17 in exp(_x_) is 0

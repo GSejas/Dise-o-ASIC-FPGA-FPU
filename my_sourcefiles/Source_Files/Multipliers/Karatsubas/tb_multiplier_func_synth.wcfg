@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_multiplier_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_multiplier" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="14910166667fs"></ZoomStartTime>
+      <ZoomEndTime time="15779166668fs"></ZoomEndTime>
+      <Cursor1Time time="15055000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="array" fp_name="/tb_multiplier/a">
+      <obj_property name="ElementShortName">a[22:0]</obj_property>
+      <obj_property name="ObjectShortName">a[22:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/b">
+      <obj_property name="ElementShortName">b[22:0]</obj_property>
+      <obj_property name="ObjectShortName">b[22:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/FKOARES">
+      <obj_property name="ElementShortName">FKOARES[45:0]</obj_property>
+      <obj_property name="ObjectShortName">FKOARES[45:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/RKOARES">
+      <obj_property name="ElementShortName">RKOARES[45:0]</obj_property>
+      <obj_property name="ObjectShortName">RKOARES[45:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/Recursive_KOA">
+      <obj_property name="ElementShortName">Recursive_KOA[45:0]</obj_property>
+      <obj_property name="ObjectShortName">Recursive_KOA[45:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/Simple_KOA">
+      <obj_property name="ElementShortName">Simple_KOA[45:0]</obj_property>
+      <obj_property name="ObjectShortName">Simple_KOA[45:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multiplier/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/SW">
+      <obj_property name="ElementShortName">SW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multiplier/cycles">
+      <obj_property name="ElementShortName">cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycles[31:0]</obj_property>
+   </wvobject>
+</wave_config>

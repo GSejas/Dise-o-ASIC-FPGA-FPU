@@ -1,0 +1,18 @@
+Type of pi: SOLLYA_BASE_FUNC_PI
+Type of 3: SOLLYA_BASE_FUNC_CONSTANT
+Type of superconst: SOLLYA_BASE_FUNC_LIBRARYCONSTANT
+Type of _x_: SOLLYA_BASE_FUNC_FREE_VARIABLE
+Type of exp(_x_): SOLLYA_BASE_FUNC_EXP
+Type of diff(function(proc(X, n, p)
+{
+var res, oldPrec;
+oldPrec = prec;
+prec = p!;
+res = exp(X);
+prec = oldPrec!;
+return res;
+})): SOLLYA_BASE_FUNC_PROCEDUREFUNCTION
+Type of stupid1: SOLLYA_BASE_FUNC_LIBRARYFUNCTION
+Type of _x_ + stupid1: SOLLYA_BASE_FUNC_ADD
+absolute is not a functional expression (type=Unknown type. Expecting 'Unknown type')
+[1;2] is not a functional expression (type=Unknown type. Expecting 'Unknown type')

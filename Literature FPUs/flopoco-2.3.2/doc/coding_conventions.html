@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.4  (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Florent Dinechin">
+	<META NAME="CHANGED" CONTENT="20081206;14420300">
+	<META NAME="DC.date" CONTENT="2008-07-22T10:14:32">
+	<STYLE TYPE="text/css">
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1>Getting started with FloPoCo</H1>
+
+<P>Welcome to new developers!</P>
+
+<P>If you are unfamiliar with the cmake system, there is
+little to learn, really. When adding .hpp and .cpp files to the
+project, you will need to edit CMakeLists.txt. It is probably going
+to be straightforward, just do some imitation of what is already
+there. Anyway cmake is well documented. 
+</P>
+
+<P>In FloPoCo, everything is an Operator. Go read Operator.hpp first. 
+</P>
+
+<P>Operator is a virtual class. For an example of simple
+Operator, go read IntAdder. Addition is written as + in modern VHDL,
+but the class IntAdder implements adders pipelined to arbitrary
+frequency, so you'll get an idea on how FloPoCo implements
+frequency-directed pipelining. 
+</P>
+
+<P>For a more complex class with subcomponents, go read
+FPAdder. It instantiates several IntAdders, leading zero counters and
+shifters, asks them their pipeline depth, then builds its own pipeline
+out of this information. There should be a figure in the doc/Figures
+directory. This class is also an example of the best way to write a
+single code for both a pipelined operator and the combinatorial
+version.</P>
+
+<P>To understand the command line, go read main.cpp. It is
+not the part we are the most proud of, but it does the job.</P>
+
+<P>The rest is arithmetic! 
+</P>
+
+<P>And do not hesitate to contact us: Florent.de.Dinechin,
+à ens-lyon.fr</P>
+
+<P><BR><BR>
+</P>
+
+
+
+<H2>FloPoCo Coding Standards</H2>
+<P>As
+the complexity and size of this project increase, it feels necessary
+to define a set of coding rules and guidelines in order to have a
+clean an consistent code. 
+</P>
+
+<H3>File Names</H3>
+<UL>
+  <LI><P>The extensions should be .hpp/.cpp for C++
+		headers/code. 
+	 </P>
+  <LI><P>C++ files should have the same name and case
+		than the class they contain. For example class FPAdder should be
+		declared in file FPAdder.hpp and implemented in FPAdder.cpp. 
+	 </P>
+</UL>
+
+<H3>Stylistic conventions</H3>
+
+<UL>
+  <LI><P>Source code should use <B>UTF8</B> character set.</P>
+  <LI><P>Variable names and comments
+	should be in <B>English</B>. 
+	</P>
+	<LI><P>Class names are nouns, in mixed-case, with
+	an initial upper-case letter and the ﬁrst letter of each
+	subsequent word capitalized (e.g. TestBench). 
+	</P>
+	<LI><P>Method names are verbs or nouns
+	in <B>mixed-case, starting with a lower-case letter </B>(e.g.
+	update() or addElement()). 
+	</P>
+	<LI><P>Methods that return a value should
+	take the form getSize(). 
+	</P>
+	<LI><P>The <B>names of local variables</B> should
+	be in mixed case, starting with a lower-case letter (e.g.
+	countDepth). This also applies to the formal parameters of methods.
+	<FONT COLOR="#ff0000">Do not use names starting with underscore</FONT>.
+		</P>
+	<LI><P>Private and protected data member names must
+	end with underscore &quot;_&quot;</P>
+	<LI><P>The names of macros or <CODE>static const</CODE>
+	should be all upper-case words, separated by underscore: 
+	</P>
+	<PRE STYLE="border: 1px solid #000000; padding: 0.1cm">
+#define MIN_WIDTH 3
+static const string VERSION = &quot;0.8&quot;;</PRE>
+
+	<LI> <P>Indentation should be done
+		 with <B>tabs</B>, <FONT COLOR="#ff0000">not
+			spaces</FONT>. This allows each developers to use his
+		 favorite indent size without changing the code.
+	  </P>
+	<LI><P>Preferred layout for braces: </P>
+	  <PRE STYLE="border: 1px solid #000000; padding: 0.1cm">
+void MyClass::myMethod(int x){
+  if (x&gt;10){
+    cout &lt;&lt; &quot;Some text&quot; &lt;&lt; endl;
+  }
+}</PRE>
+
+<LI><P>When wrapping lines from long function calls,
+where the wrapped line does not start at the same level of
+indentation as the start of the function call, tab up to the start of
+the function call, and then use spaces to the opening parenthesis. 
+</P>
+<PRE  STYLE="border: 1px solid #000000; padding: 0.1cm">
+[--tab-][--tab-][--tab-]someFunction(param, ...
+[--tab-][--tab-][--tab-][  spaces   ]moreparams, ...);</PRE>
+
+	<LI><P><I>enums</I> should follow the QT
+	conventions. i.e. CamelCase with First letter capitalization for
+	both enum type and enum values. Should be document with doxygen. The
+	/**&lt; tag */ can be used to add descriptions on the same line as
+	an enum value, e.g. 
+	  <PRE STYLE="border: 1px solid #000000; padding: 0.1cm">
+/** @enum EnumName Here is a description of the enum *
+enum EnumName {
+   EnumValueOne,  /**&lt; Some doxygen description of EnumValueOne */
+   EnumValueTwo,  /**&lt; Some doxygen description of EnumValueTwo */
+   EnumValueThree /**&lt; Some doxygen description of EnumValueThree */
+};
+</PRE>
+</UL>
+
+
+
+<H3>Doxygen Comments </H3>
+<P>FloPoCo source code should be documented with
+<A HREF="http://www.stack.nl/%7Edimitri/doxygen/index.html">Doxygen</A>.
+From Doxygen webpage: 
+</P>
+<P><I>&quot;Doxygen is a documentation system for
+	 C++, C, Java, [...] It can generate an on-line documentation browser
+	 (in HTML) and/or an off-line reference manual (in LaTeX) from a set
+	 of documented source files. [...] The documentation is extracted
+directly from the sources, which makes it much easier to keep the
+documentation consistent with the source code. [...] You can also
+visualize the relations between the various elements by means of
+include dependency graphs, inheritance diagrams, and collaboration
+diagrams, which are all generated automatically.</I> 
+</P>
+<P>(Quote extracted from the Sellarium Project
+webpage)</P>
+<P><FONT COLOR="#ff0000">All public and protected
+classes and methods from FloPoCo should be fully documented in the
+headers (.hpp). </FONT>
+</P>
+<P>There are different ways to comment C++ code with
+Doxygen, in FloPoCo use the following for headers files: 
+</P>
+<PRE STYLE="border: 1px solid #000000; padding: 0.1cm">
+/**
+&nbsp;* Adds a TestCase to this TestCaseList. 
+   Detailled description
+&nbsp;*@param t TestCase to add<
+&nbsp;*/
+void add(TestCase t);
+</PRE>
+
+<P>Brief descriptions are single line only, and stop
+at the first full stop (period). Any subsequent sentences which occur
+before @param or a similar tag are considered to be part of a
+detailed description. 
+</P>
+
+
+<H3>Stylistic conventions for generated VHDL</H3>
+
+... may be formalized some day. Currently, the main advice is to use helper functions of the  Operator class as much as possible.
+
+</BODY>
+</HTML>

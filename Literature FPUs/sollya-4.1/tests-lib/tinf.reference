@@ -1,0 +1,9 @@
+inf of 2 is 2
+inf of 1 / 3 is 1 / 3
+inf of log(-3) is log(-3)
+inf of @NaN@ is @NaN@
+inf of [1;2] is 1
+The following test produces a typing error
+inf of _x_ is error
+The following test produces a typing error
+inf of Hello is error

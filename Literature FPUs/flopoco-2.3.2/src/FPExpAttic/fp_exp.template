@@ -1,0 +1,231 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+package pkg_fp_exp is
+  function min ( x, y : integer ) return integer;
+  function max ( x, y : integer ) return integer;
+  function fp_exp_shift_wx ( wE, wF, g : positive ) return positive;
+  function log2 ( x : positive ) return integer;
+  
+  component fp_exp_shift is
+    generic ( wE : positive;
+              wF : positive;
+              g : positive );
+    port ( fpX : in  std_logic_vector(wE+wF downto 0);
+           nX  : out std_logic_vector(wE+wF+g-1 downto 0);
+           ofl : out std_logic;
+           ufl : out std_logic );
+  end component;
+  
+$
+    port ( x : in  std_logic_vector(2+wE+wF downto 0);
+           r : out std_logic_vector(2+wE+wF downto 0) );
+  end component;
+end package;
+
+package body pkg_fp_exp is
+  function min ( x, y : integer ) return integer is
+  begin
+    if x <= y then
+      return x;
+    else
+      return y;
+    end if;
+  end function;
+
+  function max ( x, y : integer ) return integer is
+  begin
+    if x >= y then
+      return x;
+    else
+      return y;
+    end if;
+  end function;
+  
+  function fp_exp_shift_wx ( wE, wF, g : positive ) return positive is
+  begin
+    return min(wF+g, 2**(wE-1)-1);
+  end function;
+  
+  function log2 ( x : positive ) return integer is
+    variable n : natural := 0;
+  begin
+    while 2**(n+1) <= x loop
+      n := n+1;
+    end loop;
+    return n;
+  end function;
+
+end package body;
+
+-- Conversion de l'entrée en virgule fixe
+-- ======================================
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+library work;
+use work.pkg_fp_exp.all;
+
+entity fp_exp_shift is
+  generic ( wE : positive;
+            wF : positive;
+            g : positive );
+  port ( fpX : in  std_logic_vector(wE+wF downto 0);
+         nX  : out std_logic_vector(wE+wF+g-1 downto 0);
+         ofl : out std_logic;
+         ufl : out std_logic );
+end entity;
+
+architecture arch of fp_exp_shift is
+  -- longueur de la partie fractionnaire de x
+  constant wX : integer  := fp_exp_shift_wx(wE, wF, g);
+  -- nombre d'étapes du décalage 
+  -- (de l'ordre de log2(taille du nombre en virgule fixe))
+  constant n  : positive := log2(wX+wE-2)+1;
+
+  signal e0 : std_logic_vector(wE+1 downto 0);
+  signal eX : std_logic_vector(wE+1 downto 0);
+
+  signal mXu : std_logic_vector(wF downto 0);
+  signal mXs : std_logic_vector(wF+1 downto 0);
+
+  signal buf : std_logic_vector((n+1)*(wF+2**n+1)-1 downto 0);
+begin
+  -- évalue le décalage à effectuer
+  e0 <= conv_std_logic_vector(2**(wE-1)-1 - wX, wE+2);
+  eX <= ("00" & fpX(wE+wF-1 downto wF)) - e0;
+
+  -- underflow quand l'entrée est arrondie à zéro (donc au final exp(entrée) = 1) (?)
+  ufl <= eX(wE+1);
+  -- overflow (détection partielle en se basant uniquement sur l'exposant de l'entrée)
+  ofl <= not eX(wE+1) when eX(wE downto 0) > conv_std_logic_vector(wX+wE-2, wE+1) else
+         '0';
+
+  -- mantisse de l'entrée (rajoute le 1 implicite)
+  mXu <= "1" & fpX(wF-1 downto 0);
+  -- représentation signée de la mantisse
+  mXs <= (wF+1 downto 0 => '0') - ("0" & mXu) when fpX(wE+wF) = '1' else ("0" & mXu);
+
+  -- ajoute eX zéros à droite de la mantisse
+  buf(wF+1 downto 0) <= mXs;
+  shift : for i in 0 to n-1 generate
+    buf( (i+1)*(wF+2**n+1) + wF+2**(i+1) downto
+         (i+1)*(wF+2**n+1) )
+      <=   -- pas de décalage si eX(i) = 0
+           ( 2**i-1 downto 0 => buf(i*(wF+2**n+1) + wF+2**i) ) &
+           buf( i*(wF+2**n+1) + wF+2**i downto
+                i*(wF+2**n+1) )
+        when eX(i) = '0' else
+           -- décalage de 2 ^ i bits si eX(i) = 1
+           buf( i*(wF+2**n+1) + wF+2**i downto
+                i*(wF+2**n+1) ) &
+           ( 2**i-1 downto 0 => '0' );
+  end generate;
+
+  no_padding : if wX >= g generate
+    nX <= buf(n*(wF+2**n+1)+wF+wE+wX-1 downto n*(wF+2**n+1)+wX-g);
+  end generate;
+
+  padding : if wX < g generate
+    nX <= buf(n*(wF+2**n+1)+wF+wE+wX-1 downto n*(wF+2**n+1)) & (g-wX-1 downto 0 => '0');
+  end generate;
+
+end architecture;
+
+-- Exponentielle en virgule flottante
+-- ==================================
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+library work;
+use work.pkg_exp.all;
+use work.pkg_fp_exp.all;
+
+$
+
+  signal nX : std_logic_vector(wE+wF+g-1 downto 0);
+  signal nK0 : std_logic_vector(wE+4+wE downto 0);
+  signal nK1 : std_logic_vector(wE+4+wE+1 downto 0);
+  signal nK  : std_logic_vector(wE downto 0);
+  
+  signal nKLog20 : std_logic_vector(wE+wE-1+wF+g-1 downto 0);
+  signal nKLog2  : std_logic_vector(wE+wE-1+wF+g downto 0);
+  signal nY  : std_logic_vector(wE+wF+g-1 downto 0);
+  signal sign : std_logic;
+  signal unsigned_input : std_logic_vector(wF+g-2 downto 0);
+  
+  signal nZ : std_logic_vector(wF+g-1 downto 0);
+  signal significand : std_logic_vector(wF+g-1 downto g);
+  signal exponent : std_logic_vector(wE downto 0);
+
+  signal sticky : std_logic;
+  signal round  : std_logic;
+
+  signal fR0 : std_logic_vector(wF+1 downto 0);
+  signal fR1 : std_logic_vector(wF downto 0);
+  signal fR  : std_logic_vector(wF-1 downto 0);
+
+  signal eR : std_logic_vector(wE downto 0);
+  
+  signal ofl0 : std_logic;
+  signal ofl1 : std_logic;
+  signal ofl2 : std_logic;
+  signal ufl0 : std_logic;
+  signal ufl1 : std_logic;
+  
+begin
+  shift : fp_exp_shift
+    generic map ( wE => wE,
+                  wF => wF,
+                  g => g )
+    port map ( fpX => X(wE+wF downto 0),
+               nX  => nX,
+               ofl => ofl0,
+               ufl => ufl0 );
+
+  nK0 <= nX(wE+wF+g-2 downto wF+g-4) * cstInvLog2;
+  nK1 <= ("0" & nK0) - ("0" & cstInvLog2 & (wE+4-2 downto 0 => '0')) when nX(wE+wF+g-1) = '1' else
+         "0" & nK0;
+
+  nK <= nK1(wE+4+wE+1 downto 4+wE+1) + ((wE downto 1 => '0') & nK1(4+wE));
+
+  nKLog20 <= nK(wE-1 downto 0) * cstLog2;
+  nKLog2  <= ("0" & nKLog20) - ("0" & cstLog2 & (wE-1 downto 0 => '0')) when nK(wE) = '1' else
+             "0" & nKLog20;
+
+  nY <= nX - nKLog2(wE+wE-1+wF+g-1 downto wE-1);
+  sign <= nY(wF+g-1);
+  unsigned_input <= nY(wF+g-2 downto 0) when sign = '0' else (wF+g-2 downto 0 => '0') - nY(wF+g-2 downto 0);
+  
+$
+    port map (x    => unsigned_input,
+              y    => nZ,
+              sign => sign);
+
+  significand <= nZ(wF+g-1 downto g)   + ((wF-g-1 downto g+1 => '0') & nZ(g-1)) when sign = '0' else
+                 nZ(wF+g-2 downto g-1) + ((wF-g-2 downto g   => '0') & nZ(g-2));
+  exponent <= nK + ("00" & (wE-2 downto 1 => '1') & (not sign));
+
+  ofl1 <= '1' when exponent(wE-1 downto 0) = (wE-1 downto 0 => '0') else
+          '1' when exponent(wE-1 downto 0) = (wE-1 downto 0 => '1') else
+          ofl0 or exponent(wE);
+
+  ufl1 <= '1' when X(wE+wF+2 downto wE+wF+1) = "00" else
+          ufl0;
+
+  ofl2 <= '1' when X(wE+wF+2 downto wE+wF+1) = "10" else
+          ofl1 and (not ufl1);
+  
+  R(wE+wF+2 downto wE+wF+1) <= "11"                   when X(wE+wF+2 downto wE+wF+1) = "11" else
+                                 (not X(wE+wF)) & "0" when ofl2 = '1'                         else
+                                 "01";
+
+  R(wE+wF downto 0) <= "00" & (wE-2 downto 0 => '1') & (wF-1 downto 0 => '0') when ufl1 = '1' else
+                         "0" & exponent(wE-1 downto 0) & significand;
+end architecture;

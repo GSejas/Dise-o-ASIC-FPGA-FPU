@@ -1,0 +1,77 @@
+TODO file for FloPoCo
+
+Testbench
+* Bug on outputs that are bits with isBus false and  multiple-valued  
+	(see the P output of Collision in release 2.1.0)
+* Multiple valued outputs should always be intervals, shouldn't they?
+
+
+Pipeline framework, Operator and Targets:
+* add FPU object and remove all global variables, to enable library build
+* add semantic support of fixed-point to Signal
+* fix obvious memory leaks
+
+Collision
+* manage infinities etc
+* decompose into FPSumOf3Squares and Collision
+
+
+FPLog:
+* Fix a few remaining last-bit accuracy problems, damn.
+* compare with polynomial-based version.
+
+FPExp:
+* Everybody wants less-than-single-precision
+
+HOTBM:
+* true FloPoCoization, pipeline
+* better (DSP-aware) architectural exploration
+
+ConstMult:
+* group KCM and shift-and-add in a single OO hierearchy (selecting the one with less hardware)
+* For FPConstMult, don't output the LSBs of the IntConstMult 
+   but only their sticky
+* Try left to right and right to left; try variations of the initial recoding
+* more clever, Lefevre-inspired algorithm
+* Use DSP: find the most interesting constant fitting on 18 bits
+* compare with Spiral.net and Gustafsson papers
+* Implement the continued fraction stuff for FPCRConstMult
+
+SumOfProducts, LongAcc
+* add test bench generation
+
+Shifters
+* provide finer spec, see the TODOs inside Shifter.cpp
+
+General
+* Doxygenize while it's not too late
+
+********************************************************************
+
+Tentative roadmap 
+(minor version number count, more or less, the number of working operators. 
+We have left  0.xx for 1.xx when all the basic operators have been backported with working pipeline):
+
+Version 0.1: IntConstMult, FPConstMult, FPCRConstMult
+Version 0.4: LongAccumulator, FPMultiplier
+Version 0.5 : HOTBM integration 
+Version 0.6 : FPLog
+Version 0.7 : FPExp
+Version 0.8 : DotProduct
+Version 0.9 : LNS operators, thanks to Sylvain Collange
+Version 0.11: FPDiv, IntSquarer, new pipeline framework
+Version 1.15: FPSqrt FPSquarer InputIEEE Fix2FP 
+Version 2.0 : FunctionEvaluator
+Version 2.2 : FPExp, FPPowr (experimental)
+-- we're here (faster than expected)
+Version ???   FPAddSub (for FFT butterfly structure)
+Version ???   FixToFPUniformDist (2008 ASAP paper by Thomas)
+Version ???   FPNorm2D
+Version ???   FPNorm3D -- Almost there, see Collision
+Version ???   FPSinCos
+Version ??    FPBoxMuller
+Version ???   Interval operators
+(insert your wishlist here)
+
+
+

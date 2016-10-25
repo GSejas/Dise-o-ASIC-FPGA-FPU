@@ -1,0 +1,50 @@
+Warning: at least one of the given expressions or a subexpression is not correctly typed
+or its evaluation has failed because of some error on a side-effect.
+
+Nothing should be displayed between now and now.
+
+Nothing should be displayed between now and now.
+Warning: the tool is unable to decide an inequality test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal.
+
+Warning: at least one of the given expressions or a subexpression is not correctly typed
+or its evaluation has failed because of some error on a side-effect.
+
+Value of the flag: 0
+Warning: at least one of the given expressions or a subexpression is not correctly typed
+or its evaluation has failed because of some error on a side-effect.
+Value of the flag: 0
+Generic message: A rounding occurred while reading a constant
+Specific message:
+Warning: Rounding occurred when converting the constant "0.1" to floating-point with 165 bits.
+If safe computation is needed, try to increase the precision.
+Value of the flag: 1
+Warning: at least one of the given expressions or a subexpression is not correctly typed
+or its evaluation has failed because of some error on a side-effect.
+Value of the flag: 1
+
+Nothing should be displayed between now and now.
+Warning: the tool is unable to decide an inequality test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal.
+Nothing should be displayed between now and now.
+Nothing should be displayed between now and now.
+Warning: the tool is unable to decide an inequality test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal.
+
+Nothing should be displayed between now and now.
+Recorded messages:
+  * At least one of the given expressions or a subexpression is not correctly typed or its evaluation has failed because of some error on a side-effect
+  * The tool is unable to decide a test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal
+
+Nothing should be displayed between now and now.
+Recorded messages:
+  * At least one of the given expressions or a subexpression is not correctly typed or its evaluation has failed because of some error on a side-effect
+  * The tool is unable to decide a test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal
+Nothing should be displayed between now and now.
+Recorded messages:
+  * At least one of the given expressions or a subexpression is not correctly typed or its evaluation has failed because of some error on a side-effect
+  * The tool is unable to decide a test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal
+  * At least one of the given expressions or a subexpression is not correctly typed or its evaluation has failed because of some error on a side-effect
+Expecting a warning about NULL passed as data argument to the callback:
+rember_history callback is called with NULL as data argument.
+Recorded messages:
+  * At least one of the given expressions or a subexpression is not correctly typed or its evaluation has failed because of some error on a side-effect
+  * The tool is unable to decide a test by evaluation even though faithful evaluation of the terms has been possible. The terms will be considered to be equal
+  * At least one of the given expressions or a subexpression is not correctly typed or its evaluation has failed because of some error on a side-effect

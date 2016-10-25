@@ -1,0 +1,57 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d3d3315f013d4c0cbe82a0bd758e72a1 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_multiplier_func_synth xil_defaultlib.tb_multiplier xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1037] module Recursive_KOA does not have a parameter named SW [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/KOA_RECURSIVE/imports/Multipliers/tb_Multipliers.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.x_lut3_mux4_reduced_0
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.Recursive_KOA__parameterized4
+Compiling module xil_defaultlib.Recursive_KOA__parameterized1
+Compiling module xil_defaultlib.Recursive_KOA__parameterized15
+Compiling module xil_defaultlib.Recursive_KOA__parameterized12
+Compiling module xil_defaultlib.Recursive_KOA__parameterized11
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.Recursive_KOA__parameterized9
+Compiling module xil_defaultlib.Recursive_KOA__parameterized8
+Compiling module xil_defaultlib.Recursive_KOA__parameterized5
+Compiling module xil_defaultlib.Recursive_KOA__parameterized0
+Compiling module xil_defaultlib.Recursive_KOA__parameterized36
+Compiling module xil_defaultlib.Recursive_KOA__parameterized33
+Compiling module xil_defaultlib.Recursive_KOA__parameterized45
+Compiling module xil_defaultlib.Recursive_KOA__parameterized50
+Compiling module xil_defaultlib.Recursive_KOA__parameterized47
+Compiling module xil_defaultlib.Recursive_KOA__parameterized46
+Compiling module xil_defaultlib.Recursive_KOA__parameterized44
+Compiling module xil_defaultlib.Recursive_KOA__parameterized43
+Compiling module xil_defaultlib.Recursive_KOA__parameterized40
+Compiling module xil_defaultlib.Recursive_KOA__parameterized39
+Compiling module xil_defaultlib.Recursive_KOA__parameterized37
+Compiling module xil_defaultlib.Recursive_KOA__parameterized32
+Compiling module xil_defaultlib.Recursive_KOA__parameterized20
+Compiling module xil_defaultlib.Recursive_KOA__parameterized17
+Compiling module xil_defaultlib.Recursive_KOA__parameterized31
+Compiling module xil_defaultlib.Recursive_KOA__parameterized28
+Compiling module xil_defaultlib.Recursive_KOA__parameterized27
+Compiling module xil_defaultlib.Recursive_KOA__parameterized25
+Compiling module xil_defaultlib.Recursive_KOA__parameterized24
+Compiling module xil_defaultlib.Recursive_KOA__parameterized21
+Compiling module xil_defaultlib.Recursive_KOA__parameterized16
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.Recursive_KOA
+Compiling module xil_defaultlib.tb_multiplier
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_multiplier_func_synth

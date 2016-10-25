@@ -1,0 +1,90 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/Tools/bin2fp.cpp
+iostream
+-
+sstream
+-
+fstream
+-
+string
+-
+vector
+-
+gmpxx.h
+-
+mpfr.h
+-
+cstdlib
+-
+../utils.hpp
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/utils.hpp
+
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/pstdint.h
+stddef.h
+-
+limits.h
+-
+signal.h
+-
+stdint.h
+-
+wchar.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/utils.cpp
+iostream
+-
+sstream
+-
+utils.hpp
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/utils.hpp
+cstdlib
+-
+math.h
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/math.h
+functional
+-
+algorithm
+-
+cctype
+-
+gmp.h
+-
+gmpxx.h
+-
+
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/utils.hpp
+iostream
+-
+vector
+-
+utility
+-
+gmp.h
+-
+mpfr.h
+-
+gmpxx.h
+-
+map
+-
+math.h
+-
+pstdint.h
+/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/flopoco-2.3.2/src/pstdint.h
+inttypes.h
+-
+

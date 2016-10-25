@@ -1,0 +1,76 @@
+##
+################################################################################
+##                    Compilation and Result Generation script
+## This tool is part of  FloPoCo
+## Author:  Bogdan Pasca (2008)
+## All rights reserved
+################################################################################
+
+
+# PARAMETERS MANUALLY SET BY USER
+########################################################
+
+stratixII="StratixII"
+stratixIV="StratixIV"
+
+
+
+if [ $target == "stratixII" ]; then
+	selected_target=$stratixII
+elif [ $target == "stratixIV" ]; then
+	selected_target=$stratixIV
+else
+	selected_target=$stratixII
+fi 
+
+if [ $frequency == "" ]; then
+	selected_frequnecy=400
+else
+	selected_frequency=$frequency
+fi
+
+
+topModule=$1
+echo "> INFO: Top Module name is: |$topModule| "
+#check if $topModule exists
+searchPattern="entity $topModule is"
+grepResult=`grep "$searchPattern" flopoco.vhdl`
+grepResult2=`grep "$searchPattern" $projectPath/flopoco.vhdl`
+if [ "$grepResult" == "" ]; then 
+	if [ "$grepResult2" == "" ]; then 
+		echo "> ERROR: requested top module: $topModule is not found in flopoco.vhdl"
+		echo "> Grep result: |$grepResult|"
+		echo "  Exting ..."
+		exit
+	fi
+fi
+
+
+quartus_map --source=flopoco.vhdl --family=$selected_target $topModule
+quartus_fit --parallel=1 --fmax=$selected_frequency\MHz  $topModule
+quartus_tan --read_settings_files=on --write_settings_files=off $topModule -c $topModule
+
+echo -en "\033[0;33;40m"
+grep -A 14 'Top-level Entity Name' $topModule.fit.summary
+#echo -e "\033[0m"
+echo -en "\033[0;32;40m"
+grep -A 18 -m 1 'Type           : Clock Setup:' $topModule.tan.summary 
+echo -e "\033[0m"
+
+
+# For Altera
+#COMMAND:  quartus_map --source=flopoco.vhdl --family=StratixII  Test
+#COMMENT: creates project files  Test.qpf and Test.qsf, 
+#          analyses VHDL, 
+#          writes some reports Test.map.*, don't use them
+#OPTIONS: see quartus_map --help
+#   --part=EP4SGX70DF29C3  (this one is a StratixIV, keep the default)
+#
+#COMMAND:  quartus_fit Test
+#COMMENT: place and route. 
+#	  Assigns pins to the IO (see Test.pin)
+#          writes some reports Test.fit.summary has the area information, the delay is at the end of Test.fit.rpt	
+# OPTIONS: see quartus_fit --help
+# --fmax=400MHz  
+# --parallel=3 for multicore
+

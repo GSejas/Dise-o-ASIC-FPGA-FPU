@@ -1,0 +1,9 @@
+sup of 2 is 2
+sup of 1 / 3 is 1 / 3
+sup of log(-3) is log(-3)
+sup of @NaN@ is @NaN@
+sup of [1;2] is 2
+The following test produces a typing error
+sup of _x_ is error
+The following test produces a typing error
+sup of Hello is error

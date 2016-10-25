@@ -1,0 +1,8 @@
+One of the expected warning messages has been caught.
+One of the expected warning messages has been caught.
+One of the expected warning messages has been caught.
+0x3ff0000000000000 + x * (0x3ff0000000000000 + x * (0x3fe0000000000000 + x * ((0x3fc5555555555555 + 0x3c65555555555555) + x * ((0x3fa5555555555555 + 0x3c45555555555555) + x * (0x3f81111111111111 + 0x3c01111111111111)))))
+(0x3ff0002eec908ce9 + 0xbc7df99eb225af5b + 0xb8d55834b08b1f18) + x * ((0x3ff0002835917719 + 0x3c6d82c073b25ebf + 0xb902cf062b54b7b6 + 0x35b0000000000000) + x * ((0x3fdff2d7e6a9c5e9 + 0xbc7b09a95b0d520f + 0xb915b639add55731 + 0x35a8000000000000) + x * ((0x3fc54d67338ba09f + 0x3c4867596d0631cf + 0xb8ef0756bdb4af6e) + x * ((0x3fa66c209b825167 + 0x3c45ec5b6655b076 + 0xb8d8c125286400bc) + x * (0x3f81e55425e72ab4 + 0x3c263b25a1bf597b + 0xb8c843e0401dadd0 + 0x3540000000000000)))))
+(0x400921fb54442d18 + 0x3ca1a62633145c07 + 0xb92f1976b7ed8fbc + 0x35c0000000000000)One of the expected warning messages has been caught.
+
+(0x3ff0000000000000 + 0xbc09fda20235c100) + x * ((0x3b29ecd485d34781 + 0xb7c1cbc97120359a) + x * (0xbfdfffffffffff98 + x * (0xbbfa6e0b3183cb0d + x * (0x3fa5555555145337 + x * (0x3ca3540480618939 + x * 0xbf56c138142d8c3b)))))

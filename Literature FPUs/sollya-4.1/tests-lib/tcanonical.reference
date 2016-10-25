@@ -1,0 +1,5 @@
+((2 * x + (-3))^3 - x^5)^2 with all polynomial subtrees written in the canonical basis is 729 + -2916 * x + 4860 * x^2 + -4320 * x^3 + 2160 * x^4 + -522 * x^5 + -44 * x^6 + 72 * x^7 + -16 * x^8 + x^10.
+exp(x) with all polynomial subtrees written in the canonical basis is exp(x).
+((2 * x + (-3))^3 - x^5)^2 + sin(((2 * x + (-3))^3 - x^5)^2) with all polynomial subtrees written in the canonical basis is 729 + -2916 * x + 4860 * x^2 + -4320 * x^3 + 2160 * x^4 + -522 * x^5 + -44 * x^6 + 72 * x^7 + -16 * x^8 + x^10 + sin(729 + -2916 * x + 4860 * x^2 + -4320 * x^3 + 2160 * x^4 + -522 * x^5 + -44 * x^6 + 72 * x^7 + -16 * x^8 + x^10).
+3 * x^5 + 2 * x^4 + 7 * x with all polynomial subtrees written in the canonical basis is 7 * x + 2 * x^4 + 3 * x^5.
+7 * x + 2 * x^4 + 3 * x^5 with all polynomial subtrees written in the canonical basis is 7 * x + 2 * x^4 + 3 * x^5.

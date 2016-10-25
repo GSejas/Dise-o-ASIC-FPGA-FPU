@@ -1,0 +1,953 @@
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[| |]") yields to "[| |]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|1|]") yields to "[|1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|1, 2|]") yields to "[|1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|"Hello"|]") yields to "[|"Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|"Hello", "World"|]") yields to "[|"Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|"land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|"land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|17...|]") yields to "[|17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|"Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","Hello ") yields to "[| |]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","world") yields to "[| |]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[| |]","") yields to "[| |]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[| |]") yields to "[|1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|1|]") yields to "[|1, 1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|1, 2|]") yields to "[|1, 1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|"Hello"|]") yields to "[|1, "Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|"Hello", "World"|]") yields to "[|1, "Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|1, "land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|1, "land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|17...|]") yields to "[|1, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|1, "Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","Hello ") yields to "[|1|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","world") yields to "[|1|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1|]","") yields to "[|1|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[| |]") yields to "[|1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|1|]") yields to "[|1, 2, 1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|1, 2|]") yields to "[|1, 2, 1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|1, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|1, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|"Hello"|]") yields to "[|1, 2, "Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|"Hello", "World"|]") yields to "[|1, 2, "Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|1, 2, "land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|1, 2, "land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|17...|]") yields to "[|1, 2, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|1, 2, "Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","Hello ") yields to "[|1, 2|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","world") yields to "[|1, 2|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2|]","") yields to "[|1, 2|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[| |]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|1|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|1, 2|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|"Hello"|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, "Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|"Hello", "World"|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, "Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, "land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, "land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|17...|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, "Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","Hello ") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","world") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]","") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]","Hello ") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]","world") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]","") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[| |]") yields to "[|"Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|1|]") yields to "[|"Hello", 1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|1, 2|]") yields to "[|"Hello", 1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|"Hello", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|"Hello", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|"Hello"|]") yields to "[|"Hello", "Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|"Hello", "World"|]") yields to "[|"Hello", "Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|"Hello", "land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|"Hello", "land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|17...|]") yields to "[|"Hello", 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|"Hello", "Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","Hello ") yields to "[|"Hello"|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","world") yields to "[|"Hello"|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello"|]","") yields to "[|"Hello"|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[| |]") yields to "[|"Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|1|]") yields to "[|"Hello", "World", 1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|1, 2|]") yields to "[|"Hello", "World", 1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|"Hello", "World", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|"Hello", "World", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|"Hello"|]") yields to "[|"Hello", "World", "Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|"Hello", "World"|]") yields to "[|"Hello", "World", "Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|"Hello", "World", "land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|"Hello", "World", "land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|17...|]") yields to "[|"Hello", "World", 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|"Hello", "World", "Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","Hello ") yields to "[|"Hello", "World"|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","world") yields to "[|"Hello", "World"|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Hello", "World"|]","") yields to "[|"Hello", "World"|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[| |]") yields to "[|"land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|1|]") yields to "[|"land", "of", "milk", "and", "honey", 1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|1, 2|]") yields to "[|"land", "of", "milk", "and", "honey", 1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|"land", "of", "milk", "and", "honey", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|"land", "of", "milk", "and", "honey", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|"Hello"|]") yields to "[|"land", "of", "milk", "and", "honey", "Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|"Hello", "World"|]") yields to "[|"land", "of", "milk", "and", "honey", "Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|"land", "of", "milk", "and", "honey"|]") yields to "[|"land", "of", "milk", "and", "honey", "land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|"land", "of", "milk", "and", "honey", "land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|17...|]") yields to "[|"land", "of", "milk", "and", "honey", 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|"land", "of", "milk", "and", "honey", "Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","Hello ") yields to "[|"land", "of", "milk", "and", "honey"|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","world") yields to "[|"land", "of", "milk", "and", "honey"|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"|]","") yields to "[|"land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"...|]","Hello ") yields to "[|"land", "of", "milk", "and", "honey"...|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"...|]","world") yields to "[|"land", "of", "milk", "and", "honey"...|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"land", "of", "milk", "and", "honey"...|]","") yields to "[|"land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|17...|]","Hello ") yields to "[|17...|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|17...|]","world") yields to "[|17...|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|17...|]","") yields to "[|17...|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Rudolph the red-nosed reindeer"...|]","Hello ") yields to "[|"Rudolph the red-nosed reindeer"...|]Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Rudolph the red-nosed reindeer"...|]","world") yields to "[|"Rudolph the red-nosed reindeer"...|]world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("[|"Rudolph the red-nosed reindeer"...|]","") yields to "[|"Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[| |]") yields to "Hello [| |]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|1|]") yields to "Hello [|1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|1, 2|]") yields to "Hello [|1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "Hello [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "Hello [|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|"Hello"|]") yields to "Hello [|"Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|"Hello", "World"|]") yields to "Hello [|"Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|"land", "of", "milk", "and", "honey"|]") yields to "Hello [|"land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|"land", "of", "milk", "and", "honey"...|]") yields to "Hello [|"land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|17...|]") yields to "Hello [|17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","[|"Rudolph the red-nosed reindeer"...|]") yields to "Hello [|"Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","Hello ") yields to "Hello Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","world") yields to "Hello world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","") yields to "Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}") yields to "Hello proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}") yields to "Hello proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("Hello ","proc(a, b)
+{
+nop;
+return (a) + (b);
+}") yields to "Hello proc(a, b)
+{
+nop;
+return (a) + (b);
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[| |]") yields to "world[| |]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|1|]") yields to "world[|1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|1, 2|]") yields to "world[|1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "world[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "world[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|"Hello"|]") yields to "world[|"Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|"Hello", "World"|]") yields to "world[|"Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|"land", "of", "milk", "and", "honey"|]") yields to "world[|"land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|"land", "of", "milk", "and", "honey"...|]") yields to "world[|"land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|17...|]") yields to "world[|17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","[|"Rudolph the red-nosed reindeer"...|]") yields to "world[|"Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","Hello ") yields to "worldHello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","world") yields to "worldworld"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","") yields to "world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}") yields to "worldproc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}") yields to "worldproc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("world","proc(a, b)
+{
+nop;
+return (a) + (b);
+}") yields to "worldproc(a, b)
+{
+nop;
+return (a) + (b);
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[| |]") yields to "[| |]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|1|]") yields to "[|1|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|1, 2|]") yields to "[|1, 2|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|"Hello"|]") yields to "[|"Hello"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|"Hello", "World"|]") yields to "[|"Hello", "World"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|"land", "of", "milk", "and", "honey"|]") yields to "[|"land", "of", "milk", "and", "honey"|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|"land", "of", "milk", "and", "honey"...|]") yields to "[|"land", "of", "milk", "and", "honey"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|17...|]") yields to "[|17...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","[|"Rudolph the red-nosed reindeer"...|]") yields to "[|"Rudolph the red-nosed reindeer"...|]"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","Hello ") yields to "Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("","world") yields to "world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","") yields to ""
+-----------------------------------------------------------------------------
+sollya_lib_concat("","proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}") yields to "proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}") yields to "proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("","proc(a, b)
+{
+nop;
+return (a) + (b);
+}") yields to "proc(a, b)
+{
+nop;
+return (a) + (b);
+}"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[| |]") yields to "0"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|1|]") yields to "1"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|1, 2|]") yields to "3"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "153"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "0"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain command could not be executed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain command could not be executed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain command could not be executed.
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|"land", "of", "milk", "and", "honey"...|]") yields to "0"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|17...|]") yields to "0"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","[|"Rudolph the red-nosed reindeer"...|]") yields to "0"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","Hello ") yields to "proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","world") yields to "proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}","") yields to "proc(L = ...)
+{
+var r, i;
+r = 0;
+for i in L do
+r = (r) + (i);
+return r;
+}"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[| |]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+1
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|1|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+1
+2
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|1, 2|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17...|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+Hello
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|"Hello"|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+Hello
+World
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|"Hello", "World"|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+land
+of
+milk
+and
+honey
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|"land", "of", "milk", "and", "honey"|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|"land", "of", "milk", "and", "honey"...|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|17...|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+Caught the message that a loop over an end-elliptic list is not allowed.
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","[|"Rudolph the red-nosed reindeer"...|]") yields to "exp(_x_)"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","Hello ") yields to "proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","world") yields to "proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}","") yields to "proc(L = ...)
+{
+var i;
+for i in L do
+i;
+return exp(_x_);
+}"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(a, b)
+{
+nop;
+return (a) + (b);
+}","[|1, 2|]") yields to "3"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+Caught the message that a certain command could not be executed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(a, b)
+{
+nop;
+return (a) + (b);
+}","Hello ") yields to "proc(a, b)
+{
+nop;
+return (a) + (b);
+}Hello "
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(a, b)
+{
+nop;
+return (a) + (b);
+}","world") yields to "proc(a, b)
+{
+nop;
+return (a) + (b);
+}world"
+-----------------------------------------------------------------------------
+sollya_lib_concat("proc(a, b)
+{
+nop;
+return (a) + (b);
+}","") yields to "proc(a, b)
+{
+nop;
+return (a) + (b);
+}"
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.
+-----------------------------------------------------------------------------
+Caught the message that a certain expression is not correctly typed.

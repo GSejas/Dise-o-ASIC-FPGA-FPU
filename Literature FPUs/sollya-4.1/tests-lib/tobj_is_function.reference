@@ -1,0 +1,11 @@
+sollya_lib_obj_is_function detects pi
+sollya_lib_obj_is_function detects a constant
+sollya_lib_obj_is_function detects free_variable
+sollya_lib_obj_is_function detects D(_x_).
+sollya_lib_obj_is_function detects S(_x_).
+sollya_lib_obj_is_function detects QD(_x_).
+sollya_lib_obj_is_function detects HP(_x_).
+sollya_lib_obj_is_function detects DE(_x_).
+sollya_lib_obj_is_function detects DD(_x_).
+sollya_lib_obj_is_function detects TD(_x_).
+sollya_lib_obj_is_function detects a constant expression.
