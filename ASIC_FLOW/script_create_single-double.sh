@@ -53,3 +53,5 @@ do
   cp .synopsys_dc.setup $i/integracion_fisica/front_end
 
 done
+
+find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \;
