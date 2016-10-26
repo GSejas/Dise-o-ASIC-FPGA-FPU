@@ -10,7 +10,11 @@ do
   mkdir $i/integracion_fisica/front_end/libs
   mkdir $i/integracion_fisica/front_end/source
   mkdir $i/integracion_fisica/front_end/db
+  mkdir $i/integracion_fisica/front_end/db/SINGLE
+  mkdir $i/integracion_fisica/front_end/db/DOUBLE
   mkdir $i/integracion_fisica/front_end/reports
+  mkdir $i/integracion_fisica/front_end/reports/SINGLE
+  mkdir $i/integracion_fisica/front_end/reports/SINGLE
   mkdir $i/integracion_fisica/front_end/scripts
   mkdir $i/integracion_fisica/front_end/work
 ##CREATE SIM FILES
