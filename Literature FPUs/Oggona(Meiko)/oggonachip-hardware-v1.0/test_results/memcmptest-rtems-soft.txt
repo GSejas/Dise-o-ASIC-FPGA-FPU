@@ -1,0 +1,66 @@
+ð
+
+  MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 10.0 MHz
+  baud rate      : 37878 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting memcmptest-rtems
+
+setting the values after first 4 bytes of 2 arrays to be different..
+0:	chksum: 120	page:120
+1:	chksum: 127	page:127
+2:	chksum: -128	page:128
+3:	chksum: -125	page:131
+Resule from memcmp(chksum,page,4): 0
+ð
+
+  MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 10.0 MHz
+  baud rate      : 37878 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting memcmptest-rtems
+
+setting the values after first 4 bytes of 2 arrays to be different..
+0:	chksum: 120	page:120
+1:	chksum: 127	page:127
+2:	chksum: -128	page:128
+3:	chksum: -125	page:131
+Resule from memcmp(chksum,page,4): 0
+ð
+
+  MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 10.0 MHz
+  baud rate      : 37878 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting memcmptest-rtems
+
+setting the values after first 4 bytes of 2 arrays to be different..
+0:	chksum: 120	page:120
+1:	chksum: 127	page:127
+2:	chksum: -128	page:128
+3:	chksum: -125	page:131
+Resule from memcmp(chksum,page,4): 0

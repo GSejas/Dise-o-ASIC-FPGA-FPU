@@ -1,0 +1,19 @@
+#!/bin/sh
+# Script to load EXO to flash and all other necessary processes.
+# ott@linux.thai.net 14.02.2002
+
+# Check parameters
+if [ $# == 0 ]; then
+	echo "Usage: $0  <exo-file> [more exo-file]"
+	exit 1
+fi
+
+# load the exo file using xsload
+export XSTOOLS_BIN_DIR=/home/$USER/cvs/oggonachip/software/xsvsoft/
+xsload $1
+if [ $2"x" != "x" ]; then
+	xsload $2
+fi
+
+xsload /home/$USER/cvs/oggonachip/software/xsvsoft/flash_to_fpga.svf
+

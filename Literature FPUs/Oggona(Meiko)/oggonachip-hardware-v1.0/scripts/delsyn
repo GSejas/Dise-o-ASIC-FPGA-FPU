@@ -1,0 +1,12 @@
+#!/bin/tcsh
+#Script to delete big files after synthesis
+#Created by Luis L. Azuara
+#lazuara@csi.com
+
+rm *.ngd
+rm *.ngm
+rm *.edf
+rm *.dly
+rm *.ncd
+rm *.vhm
+rm *.ngo

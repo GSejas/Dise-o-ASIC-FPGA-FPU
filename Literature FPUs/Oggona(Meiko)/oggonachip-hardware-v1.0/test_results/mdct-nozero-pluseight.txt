@@ -1,0 +1,146 @@
+paa√ê MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x400086C8 : 0 
+Value at 0x400086C9 : 1 
+Value at 0x400086CA : 2 
+Value at 0x400086CB : 3 
+Value at 0x400086CC : 4 
+Value at 0x400086CD : 5 
+Value at 0x400086CE : 6 
+Value at 0x400086CF : 7 
+Value at 0x400086D0 : 8 
+Value at 0x400086D1 : 9 
+Testing values stored as input array...
+Value at 0x400086C8 : 0 
+Value at 0x400086C9 : 1 
+Value at 0x400086CA : 2 
+Value at 0x400086CB : 3 
+Value at 0x400086CC : 4 
+Value at 0x400086CD : 5 
+Value at 0x400086CE : 6 
+Value at 0x400086CF : 7 
+Value at 0x400086D0 : 8 
+Value at 0x400086D1 : 9 
+Initial value of result array:
+Value at 0x40008698 : 8 
+Value at 0x40008699 : 9 
+Value at 0x4000869A : 10 
+Value at 0x4000869B : 11 
+Value at 0x4000869C : 12 
+Value at 0x4000869D : 13 
+Value at 0x4000869E : 14 
+Value at 0x4000869F : 15 
+Value at 0x400086A0 : 16 
+Value at 0x400086A1 : 17 
+Write value 0x400086C8 to start read address register ...
+startreadaddr register is 0x400086C8
+Write value 0x40008698 to start write address register ...
+startwriteaddr is 0x40008698
+Write value 0x400086C8 to start read address register ...
+startreadaddr register is 0x400086C8
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+act_mem_addr is 0x400086C8
+Status register is 0x00000001
+Finished ... output values:
+Value at 0x40008698 : 8 
+Value at 0x40008699 : 9 
+Value at 0x4000869A : 10 
+Value at 0x4000869B : 11 
+Value at 0x4000869C : 12 
+Value at 0x4000869D : 13 
+Value at 0x4000869E : 14 
+Value at 0x4000869F : 15 
+Value at 0x400086A0 : 16 
+Value at 0x400086A1 : 17 
+NòX2d”m‘πom LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x400086C8 : 0 
+Value at 0x400086C9 : 1 
+Value at 0x400086CA : 2 
+Value at 0x400086CB : 3 
+Value at 0x400086CC : 4 
+Value at 0x400086CD : 5 
+Value at 0x400086CE : 6 
+Value at 0x400086CF : 7 
+Value at 0x400086D0 : 8 
+Value at 0x400086D1 : 9 
+Testing values stored as input array...
+Value at 0x400086C8 : 0 
+Value at 0x400086C9 : 1 
+Value at 0x400086CA : 2 
+Value at 0x400086CB : 3 
+Value at 0x400086CC : 4 
+Value at 0x400086CD : 5 
+Value at 0x400086CE : 6 
+Value at 0x400086CF : 7 
+Value at 0x400086D0 : 8 
+Value at 0x400086D1 : 9 
+Initial value of result array:
+Value at 0x40008698 : 8 
+Value at 0x40008699 : 9 
+Value at 0x4000869A : 10 
+Value at 0x4000869B : 11 
+Value at 0x4000869C : 12 
+Value at 0x4000869D : 13 
+Value at 0x4000869E : 14 
+Value at 0x4000869F : 15 
+Value at 0x400086A0 : 16 
+Value at 0x400086A1 : 17 
+Write value 0x400086C8 to start read address register ...
+startreadaddr register is 0x400086C8
+Write value 0x40008698 to start write address register ...
+startwriteaddr is 0x40008698
+Write value 0x400086C8 to start read address register ...
+startreadaddr register is 0x400086C8
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+act_mem_addr is 0x400086C8
+Status register is 0x00000001
+Finished ... output values:
+Value at 0x40008698 : 8 
+Value at 0x40008699 : 9 
+Value at 0x4000869A : 10 
+Value at 0x4000869B : 11 
+Value at 0x4000869C : 12 
+Value at 0x4000869D : 13 
+Value at 0x4000869E : 14 
+Value at 0x4000869F : 15 
+Value at 0x400086A0 : 16 
+Value at 0x400086A1 : 17 

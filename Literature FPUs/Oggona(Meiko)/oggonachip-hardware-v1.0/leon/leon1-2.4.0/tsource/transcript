@@ -1,0 +1,13 @@
+# ERROR: Could not open library work at work: No such file or directory
+# Load canceled
+do /home/lazuara/cvs/myoggonachip/hardware/ddmnewleon/modelsim/compileOgg.do
+# Can't create directory: leon/work
+# leon/work: No such file or directory
+# Model Technology ModelSim SE/EE-64 vcom 5.4e Compiler 2000.11 Oct 27 2000
+# ERROR: cannot open leon/amba.vhd
+# ERROR: /cad/mentor/modelsim-5.4e/modeltech/sunos5v9/vcom failed.
+# Error in macro /home/lazuara/cvs/myoggonachip/hardware/ddmnewleon/modelsim/compileOgg.do line 11
+# /cad/mentor/modelsim-5.4e/modeltech/sunos5v9/vcom failed.
+#     while executing
+# "vcom  leon/amba.vhd "
+exit

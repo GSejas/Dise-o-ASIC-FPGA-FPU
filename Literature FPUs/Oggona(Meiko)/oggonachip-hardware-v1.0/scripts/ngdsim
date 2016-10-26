@@ -1,0 +1,12 @@
+#!/bin/tcsh
+#Script to build Oggonachip Hardware
+#lazuara@csi.com
+
+#Check parameters
+if ( $#argv == 0 ) then
+	echo "Usage: $0 <edif-file>"
+	exit 1
+else
+	ngdbuild -a -p  XCV800HQ240-4  $1.edf
+	ngd2vhdl $1.ngd
+endif

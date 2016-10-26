@@ -1,0 +1,282 @@
+Release 4.1i - Par E.30
+Copyright (c) 1995-2001 Xilinx, Inc.  All rights reserved.
+
+
+Thu Mar 14 10:08:39 2002
+
+par -w audio-33M-mdct-noddm-nofpu-fpga2k2k25M
+audio-33M-mdct-noddm-nofpu-fpga2k2k25M
+
+
+Constraints file: audio-33M-mdct-noddm-nofpu-fpga2k2k25M.pcf
+
+Loading design for application par from file
+audio-33M-mdct-noddm-nofpu-fpga2k2k25M.ncd.
+   "xsv800" is an NCD, version 2.36, device xcv800, package hq240, speed -4
+Loading device for application par from file 'v800.nph' in environment
+/cad/xilinx2000/4.1i.
+Device speed data version:  FINAL 1.115 2001-06-20.
+
+
+Resolved that IOB <CTS> must be placed at site P185.
+Resolved that IOB <RXD> must be placed at site P184.
+Resolved that IOB <RTS> must be placed at site P123.
+Resolved that IOB <TXD> must be placed at site P178.
+Resolved that GCLKIOB <clk> must be placed at site P89.
+Resolved that IOB <mclk> must be placed at site P3.
+Resolved that IOB <ram_ce0> must be placed at site P186.
+Resolved that IOB <ram_ce1> must be placed at site P109.
+Resolved that IOB <ram_oe0> must be placed at site P228.
+Resolved that IOB <ram_oe1> must be placed at site P95.
+Resolved that IOB <ram_we0> must be placed at site P201.
+Resolved that IOB <ram_we1> must be placed at site P68.
+Resolved that IOB <ram_address0(0)> must be placed at site P200.
+Resolved that IOB <ram_address0(1)> must be placed at site P199.
+Resolved that IOB <ram_address0(2)> must be placed at site P195.
+Resolved that IOB <ram_address0(3)> must be placed at site P194.
+Resolved that IOB <ram_address1(0)> must be placed at site P67.
+Resolved that IOB <ram_address0(4)> must be placed at site P193.
+Resolved that IOB <ram_address1(1)> must be placed at site P66.
+Resolved that IOB <ram_address0(5)> must be placed at site P192.
+Resolved that IOB <ram_address1(2)> must be placed at site P65.
+Resolved that IOB <ram_address0(6)> must be placed at site P191.
+Resolved that IOB <ram_address1(3)> must be placed at site P64.
+Resolved that IOB <ram_address0(7)> must be placed at site P189.
+Resolved that IOB <ram_address1(4)> must be placed at site P63.
+Resolved that IOB <ram_address0(8)> must be placed at site P188.
+Resolved that IOB <ram_address1(5)> must be placed at site P57.
+Resolved that IOB <ram_address0(9)> must be placed at site P187.
+Resolved that IOB <ram_address1(6)> must be placed at site P56.
+Resolved that IOB <ram_address1(7)> must be placed at site P55.
+Resolved that IOB <ram_address1(8)> must be placed at site P54.
+Resolved that IOB <ram_address1(9)> must be placed at site P53.
+Resolved that IOB <rom_data(0)> must be placed at site P177.
+Resolved that IOB <rom_data(1)> must be placed at site P167.
+Resolved that IOB <rom_data(2)> must be placed at site P163.
+Resolved that IOB <rom_data(3)> must be placed at site P156.
+Resolved that IOB <rom_data(4)> must be placed at site P145.
+Resolved that IOB <rom_data(5)> must be placed at site P138.
+Resolved that IOB <rom_data(6)> must be placed at site P134.
+Resolved that IOB <rom_data(7)> must be placed at site P124.
+Resolved that IOB <shift_clk> must be placed at site P5.
+Resolved that IOB <audioout> must be placed at site P6.
+Resolved that IOB <lr_out> must be placed at site P4.
+Resolved that IOB <resetn> must be placed at site P174.
+Resolved that IOB <rom_ce> must be placed at site P170.
+Resolved that IOB <rom_oe> must be placed at site P173.
+Resolved that IOB <rom_we> must be placed at site P131.
+Resolved that IOB <ram_data(10)> must be placed at site P84.
+Resolved that IOB <ram_data(11)> must be placed at site P85.
+Resolved that IOB <ram_data(12)> must be placed at site P86.
+Resolved that IOB <ram_data(20)> must be placed at site P207.
+Resolved that IOB <ram_data(13)> must be placed at site P87.
+Resolved that IOB <ram_data(21)> must be placed at site P208.
+Resolved that IOB <ram_data(14)> must be placed at site P93.
+Resolved that IOB <ram_data(22)> must be placed at site P209.
+Resolved that IOB <ram_data(30)> must be placed at site P223.
+Resolved that IOB <ram_data(15)> must be placed at site P94.
+Resolved that IOB <ram_data(23)> must be placed at site P215.
+Resolved that IOB <ram_data(31)> must be placed at site P224.
+Resolved that IOB <ram_data(16)> must be placed at site P202.
+Resolved that IOB <ram_data(24)> must be placed at site P216.
+Resolved that IOB <ram_data(17)> must be placed at site P203.
+Resolved that IOB <ram_data(25)> must be placed at site P217.
+Resolved that IOB <ram_data(18)> must be placed at site P205.
+Resolved that IOB <ram_data(26)> must be placed at site P218.
+Resolved that IOB <ram_data(19)> must be placed at site P206.
+Resolved that IOB <ram_data(27)> must be placed at site P220.
+Resolved that IOB <ram_data(28)> must be placed at site P221.
+Resolved that IOB <ram_data(29)> must be placed at site P222.
+Resolved that IOB <ram_data(0)> must be placed at site P70.
+Resolved that IOB <ram_data(1)> must be placed at site P71.
+Resolved that IOB <ram_data(2)> must be placed at site P72.
+Resolved that IOB <ram_data(3)> must be placed at site P73.
+Resolved that IOB <ram_data(4)> must be placed at site P74.
+Resolved that IOB <ram_data(5)> must be placed at site P78.
+Resolved that IOB <ram_data(6)> must be placed at site P79.
+Resolved that IOB <ram_data(7)> must be placed at site P80.
+Resolved that IOB <ram_data(8)> must be placed at site P81.
+Resolved that IOB <ram_data(9)> must be placed at site P82.
+Resolved that IOB <ram_address0(10)> must be placed at site P238.
+Resolved that IOB <ram_address0(11)> must be placed at site P237.
+Resolved that IOB <ram_address0(12)> must be placed at site P236.
+Resolved that IOB <ram_address0(13)> must be placed at site P235.
+Resolved that IOB <ram_address0(14)> must be placed at site P234.
+Resolved that IOB <ram_address0(15)> must be placed at site P232.
+Resolved that IOB <ram_address0(16)> must be placed at site P231.
+Resolved that IOB <ram_address0(17)> must be placed at site P230.
+Resolved that IOB <ram_address1(10)> must be placed at site P108.
+Resolved that IOB <ram_address0(18)> must be placed at site P229.
+Resolved that IOB <ram_address1(11)> must be placed at site P107.
+Resolved that IOB <ram_address1(12)> must be placed at site P103.
+Resolved that IOB <ram_address1(13)> must be placed at site P102.
+Resolved that IOB <ram_address1(14)> must be placed at site P101.
+Resolved that IOB <ram_address1(15)> must be placed at site P100.
+Resolved that IOB <ram_address1(16)> must be placed at site P99.
+Resolved that IOB <ram_address1(17)> must be placed at site P97.
+Resolved that IOB <ram_address1(18)> must be placed at site P96.
+Resolved that IOB <rom_address(10)> must be placed at site P162.
+Resolved that IOB <rom_address(11)> must be placed at site P169.
+Resolved that IOB <rom_address(12)> must be placed at site P168.
+Resolved that IOB <rom_address(20)> must be placed at site P140.
+Resolved that IOB <rom_address(13)> must be placed at site P161.
+Resolved that IOB <rom_address(14)> must be placed at site P159.
+Resolved that IOB <rom_address(15)> must be placed at site P155.
+Resolved that IOB <rom_address(16)> must be placed at site P153.
+Resolved that IOB <rom_address(17)> must be placed at site P149.
+Resolved that IOB <rom_address(18)> must be placed at site P146.
+Resolved that IOB <rom_address(19)> must be placed at site P142.
+Resolved that IOB <rom_address(0)> must be placed at site P132.
+Resolved that IOB <rom_address(1)> must be placed at site P133.
+Resolved that IOB <rom_address(2)> must be placed at site P139.
+Resolved that IOB <rom_address(3)> must be placed at site P141.
+Resolved that IOB <rom_address(4)> must be placed at site P144.
+Resolved that IOB <rom_address(5)> must be placed at site P147.
+Resolved that IOB <rom_address(6)> must be placed at site P152.
+Resolved that IOB <rom_address(7)> must be placed at site P154.
+Resolved that IOB <rom_address(8)> must be placed at site P157.
+Resolved that IOB <rom_address(9)> must be placed at site P160.
+
+
+Device utilization summary:
+
+   Number of External GCLKIOBs         1 out of 4      25%
+   Number of External IOBs           118 out of 166    71%
+      Number of LOCed External IOBs  117 out of 118    99%
+
+   Number of BLOCKRAMs                14 out of 28     50%
+   Number of SLICEs                 3201 out of 9408   34%
+
+   Number of GCLKs                     3 out of 4      75%
+
+
+
+Overall effort level (-ol):   2 (default)
+Placer effort level (-pl):    2 (default)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    2 (default)
+Extra effort level (-xe):     0 (default)
+
+Starting initial Timing Analysis.  REAL time: 22 secs 
+Finished initial Timing Analysis.  REAL time: 37 secs 
+
+Starting initial Placement phase. REAL time: 40 secs 
+Finished initial Placement phase. REAL time: 46 secs 
+Starting the placer. REAL time: 47 secs 
+Placement pass 1 ..........
+Placer score = 1201905
+Placement pass 2 ...............
+Placer score = 1414442
+Placement pass 3 ......................
+Placer score = 1428308
+Placement pass 4 ..................
+Placer score = 1370083
+Optimizing ... 
+Placer score = 1199053
+Placer score = 1208491
+Placer score = 1212301
+Placer score = 1210950
+Placer score = 1207866
+Placer stage completed in real time: 3 mins 34 secs 
+
+Placer score = 1206096
+Placer completed in real time: 3 mins 34 secs 
+
+Dumping design to file audio-33M-mdct-noddm-nofpu-fpga2k2k25M.ncd.
+
+Total REAL time to Placer completion: 3 mins 44 secs 
+Total CPU time to Placer completion: 3 mins 44 secs 
+
+0 connection(s) routed; 21965 unrouted active, 85 unrouted PWR/GND.
+Starting router resource preassignment
+Completed router resource preassignment. REAL time: 4 mins 20 secs 
+Starting iterative routing. 
+Routing active signals.
+.............................
+End of iteration 1 
+22050 successful; 0 unrouted; (41398) REAL time: 21 mins 36 secs 
+..........End of iteration 2 
+22050 successful; 0 unrouted; (14599) REAL time: 25 mins 20 secs 
+.............End of iteration 3 
+22050 successful; 0 unrouted; (12946) REAL time: 30 mins 15 secs 
+..........End of iteration 4 
+22050 successful; 0 unrouted; (11991) REAL time: 34 mins 52 secs 
+.........End of iteration 5 
+22050 successful; 0 unrouted; (11887) REAL time: 39 mins 7 secs 
+.........End of iteration 6 
+22050 successful; 0 unrouted; (11701) REAL time: 44 mins 24 secs 
+Ending automatic router iterations. 
+Total REAL time: 44 mins 24 secs 
+Total CPU  time: 44 mins 21 secs 
+End of route.  22050 routed (100.00%); 0 unrouted.
+No errors found. 
+Completely routed. 
+
+The design submitted for place and route did not meet the specified timing
+requirements.  Please use the static timing analysis tools (TRCE or Timing
+Analyzer) to report which constraints were not met.  To obtain a better result,
+you may try the following:
+  * Use the Re-entrant routing feature to run more router iterations on the
+design.
+  * Check the timing constraints to make sure the design is not
+over-constrained.
+  * Specify a higher placer effort level, if possible.
+  * Specify a higher router effort level.
+  * Use the Multi-Pass PAR (MPPR) feature.  This generates multiple placement
+trials from which the best (i.e., lowest design score) placement can be used
+with re-entrant routing to obtain a better result.
+
+Please consult the Development System Reference Guide for more detailed
+information about the usage options pertaining to these features.
+
+Total REAL time to Router completion: 44 mins 40 secs 
+Total CPU time to Router completion: 44 mins 37 secs 
+
+Generating PAR statistics.
+
+   The Delay Summary Report
+
+   The Score for this design is: 21801
+
+
+The Number of signals not completely routed for this design is: 0
+
+   The Average Connection Delay for this design is:        3.094 ns
+   The Maximum Pin Delay is:                              17.310 ns
+   The Average Connection Delay on the 10 Worst Nets is:  12.909 ns
+
+   Listing Pin Delays by value: (ns)
+
+    d < 3.00   < d < 6.00  < d < 9.00  < d < 12.00  < d < 18.00  d >= 18.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+       12632        7261        1696         338         123           0
+
+Timing Score: 11701
+
+WARNING:Par:62 - Timing constraints have not been met.
+
+Asterisk (*) preceding a constraint indicates it was not met.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+* NET "clk_ibuf/IBUFG" PERIOD =  40 nS   HI | 40.000ns   | 43.192ns   | 7    
+  GH 50.000000 %                            |            |            |      
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+Dumping design to file audio-33M-mdct-noddm-nofpu-fpga2k2k25M.ncd.
+
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 45 mins 34 secs 
+Total CPU time to PAR completion: 45 mins 31 secs 
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - 21 errors found.
+
+PAR done.
