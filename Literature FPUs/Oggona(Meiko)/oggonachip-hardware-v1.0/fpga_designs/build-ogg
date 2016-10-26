@@ -1,0 +1,64 @@
+#!/bin/tcsh
+#Script to build Oggonachip Hardware
+#lazuara@csi.com
+
+#Check parameters
+if ( $#argv == 0 ) then
+	echo "Usage: $0 <edif-file> [description TAG] [ampbe] [par opt1] [par arg1] [par opt2] [par arg2] [par opt3] [par arg3]"
+	exit 1
+else
+	set TAG=$2
+	if ( $#argv >= 2) then
+		set TAG=-$2
+	endif
+	if ( $#argv >= 4) then
+		set TAG=$TAG-par$4$5$6$7$8$9
+	endif
+
+	if ( $#argv >= 3 ) then
+	switch ($argv[3])
+		case [m]	 
+			goto map
+			breaksw
+		case [p]
+			goto par
+			breaksw
+		case [b]
+			goto bit
+			breaksw
+		case [e]
+			goto exo
+			breaksw
+		endsw 
+	endif
+
+	echo "ngdbuild -a -p  XCV800HQ240-4 -uc xsv800_32b.ucf  $1.edf"
+map:
+	echo "map -u $1"
+par:
+	echo "par -w $4 $5 $6 $7 $8 $9 $1 $1$TAG"
+bit:
+	echo "bitgen -w $1$TAG B$1$TAG"
+exo:
+	echo "promgen -p exo -x 1M -c 0xFF -w -o $1$TAG.exo -u 0 B$1$TAG.bit"
+endif
+
+
+
+
+
+#rm -rf WORK
+#rm dc_command.log
+#rm -rf xsv800_32b.db
+#rm -rf xsv800_32b.edif
+#dc_shell -f build_xsv800_32b.dc &> dc_command.log
+
+
+
+
+
+
+
+
+
+

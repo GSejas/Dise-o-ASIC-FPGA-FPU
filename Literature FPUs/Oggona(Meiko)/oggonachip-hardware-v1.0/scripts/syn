@@ -1,0 +1,19 @@
+#!/bin/tcsh
+#Script to synthesize a synplify_pro project from command line
+#Created by Luis L. Azuara
+#lazuara@csi.com
+
+#Check parameters
+if ( $#argv == 0 ) then 
+	echo "Usage $0 <synplify_prj.prj>"
+	echo "to convert one synplify prj into tcl:"
+	echo
+	echo "project -new"
+	echo "tcl commands (actually the file.prj)"
+	echo "project -run"
+	exit 1
+else
+
+    cat  ~/bin/new.cmn $1  ~/bin/run.cmn > prj.tcl
+    synplify_pro -batch prj.tcl
+endif

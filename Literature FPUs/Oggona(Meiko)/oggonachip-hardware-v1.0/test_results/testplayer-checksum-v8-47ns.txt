@@ -1,0 +1,94 @@
+paaÐ MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting player-leon-checksum-org.nomv8
+
+Input data read:  1%	Time:   0	 Diff:   0
+Input data read:  3%	Time:   0	 Diff:   0
+
+Bitstream is 2 channel, 44100Hz
+Encoded by: Xiphophorus libVorbis I 20011231
+
+Input data read:  5%	Time:   0	 Diff:   0
+Input data read:  6%	Time:   2	 Diff:   2
+Corrupt or missing data in bitstream; continuing...
+Input data read:  8%	Time:   2	 Diff:   0
+Input data read: 10%	Time:   3	 Diff:   1
+Input data read: 11%	Time:   4	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 13%	Time:   4	 Diff:   0
+Input data read: 15%	Time:   4	 Diff:   0
+Input data read: 16%	Time:   4	 Diff:   0
+Input data read: 18%	Time:   4	 Diff:   0
+Input data read: 20%	Time:   5	 Diff:   1
+Input data read: 21%	Time:   6	 Diff:   1
+Input data read: 23%	Time:   7	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 25%	Time:   7	 Diff:   0
+Input data read: 26%	Time:   8	 Diff:   1
+Input data read: 28%	Time:   8	 Diff:   0
+Input data read: 30%	Time:   9	 Diff:   1
+Input data read: 31%	Time:  10	 Diff:   1
+Input data read: 33%	Time:  11	 Diff:   1
+Input data read: 35%	Time:  12	 Diff:   1
+Input data read: 36%	Time:  13	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 38%	Time:  13	 Diff:   0
+Input data read: 40%	Time:  14	 Diff:   1
+Input data read: 41%	Time:  15	 Diff:   1
+Input data read: 43%	Time:  16	 Diff:   1
+Input data read: 45%	Time:   0	 Diff: -16
+Input data read: 46%	Time:   1	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 48%	Time:   1	 Diff:   0
+Input data read: 50%	Time:   2	 Diff:   1
+Input data read: 51%	Time:   2	 Diff:   0
+Input data read: 53%	Time:   3	 Diff:   1
+Input data read: 55%	Time:   4	 Diff:   1
+Input data read: 56%	Time:   5	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 58%	Time:   5	 Diff:   0
+Input data read: 60%	Time:   6	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 62%	Time:   6	 Diff:   0
+Input data read: 63%	Time:   6	 Diff:   0
+Input data read: 65%	Time:   6	 Diff:   0
+Input data read: 67%	Time:   6	 Diff:   0
+Input data read: 68%	Time:   7	 Diff:   1
+Input data read: 70%	Time:   8	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 72%	Time:   8	 Diff:   0
+Input data read: 73%	Time:   9	 Diff:   1
+Input data read: 75%	Time:   9	 Diff:   0
+Input data read: 77%	Time:  10	 Diff:   1
+Input data read: 78%	Time:  11	 Diff:   1
+Input data read: 80%	Time:  12	 Diff:   1
+Input data read: 82%	Time:  13	 Diff:   1
+Input data read: 83%	Time:  14	 Diff:   1
+Input data read: 85%	Time:  15	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 87%	Time:  15	 Diff:   0
+Input data read: 88%	Time:  16	 Diff:   1
+Input data read: 90%	Time:   0	 Diff: -16
+Input data read: 92%	Time:   1	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 93%	Time:   1	 Diff:   0
+Input data read: 95%	Time:   1	 Diff:   0
+Input data read: 97%	Time:   2	 Diff:   1
+Corrupt or missing data in bitstream; continuing...
+Input data read: 98%	Time:   2	 Diff:   0
+Input data read: 100%	Time:   2	 Diff:   0
+Input data read: 100%	Time:   2	 Diff:   0
+Input data read: 100%	Time:   2	 Diff:   0
+Total samples [672192]: 460736
+Check sum [0x3F]: 0x2A
+Done.

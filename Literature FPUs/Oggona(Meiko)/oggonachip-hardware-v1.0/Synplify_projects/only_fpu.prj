@@ -1,0 +1,51 @@
+#-- Synplicity, Inc.
+#-- Version 7.0.2   
+#-- Project file /home/lazuara/cvs/myoggonachip/hardware/ddmnewleon/syn/only_fpu.prj
+#-- Written on Thu Mar  7 19:48:39 2002
+
+
+#add_file options
+add_file -constraint "leon.sdc"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/rtl/cells_ref.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/rtl/ff_primitives.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/rtl/macros_ref.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/rtl/me_cells.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/rtl/sc_ref.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/meiko1.v"
+
+#reporting options
+
+
+#implementation: "only FPU"
+impl -add only FPU
+
+#device options
+set_option -technology VIRTEX
+set_option -part XCV800
+set_option -package HQ240
+set_option -speed_grade -4
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler 0
+set_option -resource_sharing 0
+set_option -top_module "FPU"
+
+#map options
+set_option -frequency 25.000
+set_option -fanout_limit 100
+set_option -disable_io_insertion 0
+set_option -pipe 0
+set_option -modular 0
+set_option -retiming 0
+
+#simulation options
+set_option -write_verilog 1
+set_option -write_vhdl 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "only FPU/audio-xsv800-32b.edf"
+impl -active "only FPU"

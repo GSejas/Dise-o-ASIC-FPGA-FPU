@@ -1,0 +1,120 @@
+ğ
+
+  MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 10.0 MHz
+  baud rate      : 37878 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting ./player-leon-small-debug4
+
+Input data read: 19%	Time:   0	 Diff:   0
+Input data read: 39%	Time:   0	 Diff:   0
+title=Very small snapshot
+artist=Shakatak
+album=Night Birds
+tracknumber=1
+
+Bitstream is 2 channel, 44100Hz
+Encoded by: Xiphophorus libVorbis I 20011231
+
+0: cheksum is now 0x6C
+1: cheksum is now 0x57
+2: cheksum is now 0x0B
+3: cheksum is now 0xAF
+4: cheksum is now 0xDB
+5: cheksum is now 0xDE
+6: cheksum is now 0x1C
+7: cheksum is now 0x70
+8: cheksum is now 0xDF
+9: cheksum is now 0x04
+10: cheksum is now 0x4A
+11: cheksum is now 0xCC
+12: cheksum is now 0x5F
+13: cheksum is now 0x5D
+14: cheksum is now 0x45
+15: cheksum is now 0x50
+16: cheksum is now 0xF9
+17: cheksum is now 0x1B
+18: cheksum is now 0x4E
+19: cheksum is now 0x23
+20: cheksum is now 0x56
+21: cheksum is now 0x5A
+22: cheksum is now 0x7E
+23: cheksum is now 0x73
+24: cheksum is now 0xD7
+25: cheksum is now 0x5C
+Input data read: 59%	Time:   3	 Diff:   3
+ogg_sync_pageseek: result of memcmp is 43
+ogg_sync_pageseek: 0: checksum = 131, page = 131
+ogg_sync_pageseek: 1: checksum = 44, page = 44
+ogg_sync_pageseek: 2: checksum = 206, page = 206
+ogg_sync_pageseek: 3: checksum = 158, page = 158
+ogg_sync_pageout: oy->unsynced is 0
+Corrupt or missing data in bitstream; continuing...
+ğ
+
+  MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 10.0 MHz
+  baud rate      : 37878 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting ./player-leon-small-debug4
+
+Input data read: 19%	Time:   0	 Diff:   0
+Input data read: 39%	Time:   0	 Diff:   0
+title=Very small snapshot
+artist=Shakatak
+album=Night Birds
+tracknumber=1
+
+Bitstream is 2 channel, 44100Hz
+Encoded by: Xiphophorus libVorbis I 20011231
+
+0: cheksum is now 0x6C
+1: cheksum is now 0x57
+2: cheksum is now 0x0B
+3: cheksum is now 0xAF
+4: cheksum is now 0xDB
+5: cheksum is now 0xDE
+6: cheksum is now 0x1C
+7: cheksum is now 0x70
+8: cheksum is now 0xDF
+9: cheksum is now 0x04
+10: cheksum is now 0x4A
+11: cheksum is now 0xCC
+12: cheksum is now 0x5F
+13: cheksum is now 0x5D
+14: cheksum is now 0x45
+15: cheksum is now 0x50
+16: cheksum is now 0xF9
+17: cheksum is now 0x1B
+18: cheksum is now 0x4E
+19: cheksum is now 0x23
+20: cheksum is now 0x56
+21: cheksum is now 0x5A
+22: cheksum is now 0x7E
+23: cheksum is now 0x73
+24: cheksum is now 0xD7
+25: cheksum is now 0x5C
+Input data read: 59%	Time:   3	 Diff:   3
+ogg_sync_pageseek: result of memcmp is 43
+ogg_sync_pageseek: 0: checksum = 131, page = 131
+ogg_sync_pageseek: 1: checksum = 44, page = 44
+ogg_sync_pageseek: 2: checksum = 206, page = 206
+ogg_sync_pageseek: 3: checksum = 158, page = 158
+ogg_sync_pageout: oy->unsynced is 0
+Corrupt or missing data in bitstream; continuing...

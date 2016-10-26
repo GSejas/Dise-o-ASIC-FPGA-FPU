@@ -1,0 +1,180 @@
+paa√ê MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000001
+Allocate memory ...
+Initializing values of input array...
+Value at 0x40008608 : 0 
+Value at 0x40008609 : 1 
+Value at 0x4000860A : 2 
+Value at 0x4000860B : 3 
+Value at 0x4000860C : 4 
+Value at 0x4000860D : 5 
+Value at 0x4000860E : 6 
+Value at 0x4000860F : 7 
+Value at 0x40008610 : 8 
+Value at 0x40008611 : 9 
+Initial value of result array:
+Value at 0x40008638 : 460921491 
+Value at 0x40008639 : 207813251 
+Value at 0x4000863A : -511319628 
+Value at 0x4000863B : -675756093 
+Value at 0x4000863C : -610665980 
+Value at 0x4000863D : 294064533 
+Value at 0x4000863E : 150873776 
+Value at 0x4000863F : 1338006661 
+Value at 0x40008640 : 1574722227 
+Value at 0x40008641 : 1329809920 
+Write value 0x40008608 to start read address register ...
+startreadaddr register is 0x40008608
+Write value 0x40008638 to start write address register ...
+startwriteaddr is 0x40008638
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+act_mem_addr is 0x40008608
+Status register is 0x00000003
+Finished ... output values:
+Value at 0x40008638 : 460921491 
+Value at 0x40008639 : -1877859628 
+Value at 0x4000863A : -511319628 
+Value at 0x4000863B : -675756093 
+Value at 0x4000863C : 11 
+Value at 0x4000863D : 294064533 
+Value at 0x4000863E : 150873776 
+Value at 0x4000863F : 1338006661 
+Value at 0x40008640 : 1574722227 
+Value at 0x40008641 : 1329809920 
+NòX2d”m‘πom LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000001
+Allocate memory ...
+Initializing values of input array...
+Value at 0x40008608 : 0 
+Value at 0x40008609 : 1 
+Value at 0x4000860A : 2 
+Value at 0x4000860B : 3 
+Value at 0x4000860C : 4 
+Value at 0x4000860D : 5 
+Value at 0x4000860E : 6 
+Value at 0x4000860F : 7 
+Value at 0x40008610 : 8 
+Value at 0x40008611 : 9 
+Initial value of result array:
+Value at 0x40008638 : 460921491 
+Value at 0x40008639 : -1877859628 
+Value at 0x4000863A : -511319628 
+Value at 0x4000863B : -675756093 
+Value at 0x4000863C : 11 
+Value at 0x4000863D : 294064533 
+Value at 0x4000863E : 150873776 
+Value at 0x4000863F : 8 
+Value at 0x40008640 : 1574722227 
+Value at 0x40008641 : 1329809920 
+Write value 0x40008608 to start read address register ...
+startreadaddr register is 0x40008608
+Write value 0x40008638 to start write address register ...
+startwriteaddr is 0x40008638
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+act_mem_addr is 0x40008608
+Status register is 0x00000003
+Finished ... output values:
+Value at 0x40008638 : 460921491 
+Value at 0x40008639 : -1877859628 
+Value at 0x4000863A : -511319628 
+Value at 0x4000863B : -675756093 
+Value at 0x4000863C : 11 
+Value at 0x4000863D : 294064533 
+Value at 0x4000863E : 150873776 
+Value at 0x4000863F : 8 
+Value at 0x40008640 : 1574722227 
+Value at 0x40008641 : 1329809920 
+NòX2d”m‘πom LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000001
+Allocate memory ...
+Initializing values of input array...
+Value at 0x40008608 : 0 
+Value at 0x40008609 : 1 
+Value at 0x4000860A : 2 
+Value at 0x4000860B : 3 
+Value at 0x4000860C : 4 
+Value at 0x4000860D : 5 
+Value at 0x4000860E : 6 
+Value at 0x4000860F : 7 
+Value at 0x40008610 : 8 
+Value at 0x40008611 : 9 
+Initial value of result array:
+Value at 0x40008638 : 460921491 
+Value at 0x40008639 : -1877859628 
+Value at 0x4000863A : -511319628 
+Value at 0x4000863B : -675756093 
+Value at 0x4000863C : 11 
+Value at 0x4000863D : 294064533 
+Value at 0x4000863E : 150873776 
+Value at 0x4000863F : 8 
+Value at 0x40008640 : 1574722227 
+Value at 0x40008641 : 1329809920 
+Write value 0x40008608 to start read address register ...
+startreadaddr register is 0x40008608
+Write value 0x40008638 to start write address register ...
+startwriteaddr is 0x40008638
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+act_mem_addr is 0x40008608
+Status register is 0x00000003
+Finished ... output values:
+Value at 0x40008638 : 460921491 
+Value at 0x40008639 : -1877859628 
+Value at 0x4000863A : -511319628 
+Value at 0x4000863B : -675756093 
+Value at 0x4000863C : 11 
+Value at 0x4000863D : 294064533 
+Value at 0x4000863E : 150873776 
+Value at 0x4000863F : 8 
+Value at 0x40008640 : 1574722227 
+Value at 0x40008641 : 1329809920 

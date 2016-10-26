@@ -1,0 +1,159 @@
+#-- Synplicity, Inc.
+#-- Version 7.0.2   
+#-- Project file /home/lazuara/cvs/myoggonachip/hardware/ddmnewleon/syn/ddm_2_4_fpu_XMeiko.prj
+#-- Written on Wed Feb 27 19:53:17 2002
+
+
+#add_file options
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/rtl/fpuassign.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/meikofpu/try1/fpumodel.v"
+add_file -vhdl -lib work "../leon/amba.vhd"
+add_file -vhdl -lib work "../leon/target32.vhd"
+add_file -vhdl -lib work "../leon/device.vhd"
+add_file -vhdl -lib work "../leon/config.vhd"
+add_file -vhdl -lib work "../leon/sparcv8.vhd"
+add_file -vhdl -lib work "../leon/iface32.vhd"
+add_file -vhdl -lib work "../leon/macro.vhd"
+add_file -vhdl -lib work "../leon/bprom.vhd"
+add_file -vhdl -lib work "../leon/tech_generic.vhd"
+add_file -vhdl -lib work "../leon/tech_virtex.vhd"
+add_file -vhdl -lib work "../leon/tech_atc35.vhd"
+add_file -vhdl -lib work "../leon/tech_atc25.vhd"
+add_file -vhdl -lib work "../leon/tech_fs90.vhd"
+add_file -vhdl -lib work "../leon/tech_umc18.vhd"
+add_file -vhdl -lib work "../leon/multlib.vhd"
+add_file -vhdl -lib work "../leon/tech_map.vhd"
+add_file -vhdl -lib work "../leon/cachemem.vhd"
+add_file -vhdl -lib work "../leon/icache.vhd"
+add_file -vhdl -lib work "../leon/dcache.vhd"
+add_file -vhdl -lib work "../leon/acache.vhd"
+add_file -vhdl -lib work "../leon/cache.vhd"
+add_file -vhdl -lib work "../leon/apbmst.vhd"
+add_file -vhdl -lib work "../leon/ahbstat.vhd"
+add_file -vhdl -lib work "../leon/ahbtest.vhd"
+add_file -vhdl -lib work "../leon/ambacomp32.vhd"
+add_file -vhdl -lib work "../leon/ahbarb.vhd"
+add_file -vhdl -lib work "../leon/lconf.vhd"
+add_file -vhdl -lib work "../leon/fpulib.vhd"
+add_file -vhdl -lib work "../leon/fp1eu.vhd"
+add_file -vhdl -lib work "../leon/ioport.vhd"
+add_file -vhdl -lib work "../leon/irqctrl.vhd"
+add_file -vhdl -lib work "../leon/clkgen.vhd"
+add_file -vhdl -lib work "../leon/mctrl.vhd"
+add_file -vhdl -lib work "../leon/rstgen.vhd"
+add_file -vhdl -lib work "../leon/timers.vhd"
+add_file -vhdl -lib work "../leon/uart.vhd"
+add_file -vhdl -lib work "../leon/div.vhd"
+add_file -vhdl -lib work "../leon/mul.vhd"
+add_file -vhdl -lib work "../leon/iu.vhd"
+add_file -vhdl -lib work "../leon/ddm16.vhd"
+add_file -vhdl -lib work "../leon/proc.vhd"
+add_file -vhdl -lib work "../leon/wprot.vhd"
+add_file -vhdl -lib work "../leon/mcore32.vhd"
+add_file -vhdl -lib work "../leon/leon_32.vhd"
+add_file -vhdl -lib work "../leon/xsv800_32b.vhd"
+add_file -constraint "leon.sdc"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/areginexact.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/carrysavereglsb.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/casegeneration.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/condmux.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/decodecomparesandneg.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/decodestatus.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/divlog.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/entrycheck.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/exp_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/expadderlsb.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/expshifter.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/fp_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/fpuromhdr.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/frac_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/miptr.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/implementedcheck.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/lengthlogic.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/microcoderom.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/miptrincrement.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/miptrmultiplexor.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/miselect.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/mullsblog.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/mulselctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/multiplierlsb.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/normcalslice.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/nullifyexceptionlogic.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/preventswapctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/roundingmodelogic.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/sampledwaitctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/samplereset.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/shiftleftctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/shiftrightctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/signdp.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/signlogic.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/tregloadctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/ymuxctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_exp/rtl/dp.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_exp/rtl/exception.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_exp/rtl/normcallog.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_exp/rtl/resultexception.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/ctl_unit.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/fhold_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/fp_fpc.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/fp_qst.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/qcore_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/rfrw_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_fpc/rtl/stat_ctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/adderlsblog.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/areginexactslice.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/areglsblog.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/checkoverflow.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/csarray.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/csregslice.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/fdp.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/mulselslice.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/multiplierslice.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/shiftleft.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_frac/rtl/shiftright.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_rf/rtl/fp_rf.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_rf/rtl/rf16x64.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_rom/rtl/fp_rom.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/aregloadctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/bregloadctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/control.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/cregloadctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/expconstantctl.v"
+add_file -verilog "/home/lazuara/cvs/myoggonachip/hardware/MicrosparcII/sparc_v8/ssparc/fpu/fp_ctl/rtl/expregloadctl.v"
+
+#reporting options
+
+
+#implementation: "fpu_s16_25M"
+impl -add fpu_s16_25M
+
+#device options
+set_option -technology VIRTEX
+set_option -part XCV800
+set_option -package HQ240
+set_option -speed_grade -4
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler 0
+set_option -resource_sharing 0
+set_option -top_module "xsv800"
+
+#map options
+set_option -frequency 25.000
+set_option -fanout_limit 100
+set_option -disable_io_insertion 0
+set_option -pipe 0
+set_option -modular 0
+set_option -retiming 0
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 0
+
+#set result format/file last
+project -result_file "fpu_s16_25M/audio-xsv800-32b.edf"
+impl -active "fpu_s16_25M"

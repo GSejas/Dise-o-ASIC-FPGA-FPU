@@ -1,0 +1,216 @@
+paa√ê MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x400086B8 : 0 
+Value at 0x400086B9 : 1 
+Value at 0x400086BA : 2 
+Value at 0x400086BB : 3 
+Value at 0x400086BC : 4 
+Value at 0x400086BD : 5 
+Value at 0x400086BE : 6 
+Value at 0x400086BF : 7 
+Value at 0x400086C0 : 8 
+Value at 0x400086C1 : 9 
+Testing values stored as input array...
+Value at 0x400086B8 : 0 
+Value at 0x400086B9 : 0 
+Value at 0x400086BA : 0 
+Value at 0x400086BB : 0 
+Value at 0x400086BC : 0 
+Value at 0x400086BD : 0 
+Value at 0x400086BE : 0 
+Value at 0x400086BF : 0 
+Value at 0x400086C0 : 0 
+Value at 0x400086C1 : 0 
+Initial value of result array:
+Value at 0x400086E8 : 276824098 
+Value at 0x400086E9 : -2121269240 
+Value at 0x400086EA : -1848631288 
+Value at 0x400086EB : 16777224 
+Value at 0x400086EC : 16777224 
+Value at 0x400086ED : 16777224 
+Value at 0x400086EE : -1848631288 
+Value at 0x400086EF : 16777224 
+Value at 0x400086F0 : 16777224 
+Value at 0x400086F1 : 16777224 
+Write value 0x400086B8 to start read address register ...
+startreadaddr register is 0x000002B8
+Write value 0x400086E8 to start write address register ...
+startwriteaddr is 0x400086E8
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+Stop! control register is 0x00000000
+act_mem_addr is 0x00000003
+Status register is 0x00000000
+Finished ... output values:
+Value at 0x400086E8 : 276824098 
+Value at 0x400086E9 : -2121269240 
+Value at 0x400086EA : -1848631288 
+Value at 0x400086EB : 16777224 
+Value at 0x400086EC : 16777224 
+Value at 0x400086ED : 16777224 
+Value at 0x400086EE : -1848631288 
+Value at 0x400086EF : 16777224 
+Value at 0x400086F0 : 16777224 
+Value at 0x400086F1 : 16777224 
+NòX2d”m‘πom LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x400086B8 : 0 
+Value at 0x400086B9 : 1 
+Value at 0x400086BA : 2 
+Value at 0x400086BB : 3 
+Value at 0x400086BC : 4 
+Value at 0x400086BD : 5 
+Value at 0x400086BE : 6 
+Value at 0x400086BF : 7 
+Value at 0x400086C0 : 8 
+Value at 0x400086C1 : 9 
+Testing values stored as input array...
+Value at 0x400086B8 : 0 
+Value at 0x400086B9 : 0 
+Value at 0x400086BA : 0 
+Value at 0x400086BB : 0 
+Value at 0x400086BC : 0 
+Value at 0x400086BD : 0 
+Value at 0x400086BE : 0 
+Value at 0x400086BF : 0 
+Value at 0x400086C0 : 0 
+Value at 0x400086C1 : 0 
+Initial value of result array:
+Value at 0x400086E8 : 276824098 
+Value at 0x400086E9 : -2121269240 
+Value at 0x400086EA : -1848631288 
+Value at 0x400086EB : 16777224 
+Value at 0x400086EC : 16777224 
+Value at 0x400086ED : 16777224 
+Value at 0x400086EE : -1848631288 
+Value at 0x400086EF : 16777224 
+Value at 0x400086F0 : 16777224 
+Value at 0x400086F1 : 16777224 
+Write value 0x400086B8 to start read address register ...
+startreadaddr register is 0x000002B8
+Write value 0x400086E8 to start write address register ...
+startwriteaddr is 0x400086E8
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+Stop! control register is 0x00000000
+act_mem_addr is 0x00000003
+Status register is 0x00000000
+Finished ... output values:
+Value at 0x400086E8 : 276824098 
+Value at 0x400086E9 : -2121269240 
+Value at 0x400086EA : -1848631288 
+Value at 0x400086EB : 16777224 
+Value at 0x400086EC : 16777224 
+Value at 0x400086ED : 16777224 
+Value at 0x400086EE : -1848631288 
+Value at 0x400086EF : 16777224 
+Value at 0x400086F0 : 16777224 
+Value at 0x400086F1 : 16777224 
+NòX2d”m‘πom LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test1
+
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x400086B8 : 0 
+Value at 0x400086B9 : 1 
+Value at 0x400086BA : 2 
+Value at 0x400086BB : 3 
+Value at 0x400086BC : 4 
+Value at 0x400086BD : 5 
+Value at 0x400086BE : 6 
+Value at 0x400086BF : 7 
+Value at 0x400086C0 : 8 
+Value at 0x400086C1 : 9 
+Testing values stored as input array...
+Value at 0x400086B8 : 0 
+Value at 0x400086B9 : 0 
+Value at 0x400086BA : 0 
+Value at 0x400086BB : 0 
+Value at 0x400086BC : 0 
+Value at 0x400086BD : 0 
+Value at 0x400086BE : 0 
+Value at 0x400086BF : 0 
+Value at 0x400086C0 : 0 
+Value at 0x400086C1 : 0 
+Initial value of result array:
+Value at 0x400086E8 : 276824098 
+Value at 0x400086E9 : -2121269240 
+Value at 0x400086EA : -1848631288 
+Value at 0x400086EB : 16777224 
+Value at 0x400086EC : 16777224 
+Value at 0x400086ED : 16777224 
+Value at 0x400086EE : -1848631288 
+Value at 0x400086EF : 16777224 
+Value at 0x400086F0 : 16777224 
+Value at 0x400086F1 : 16777224 
+Write value 0x400086B8 to start read address register ...
+startreadaddr register is 0x000002B8
+Write value 0x400086E8 to start write address register ...
+startwriteaddr is 0x400086E8
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+Stop! control register is 0x00000000
+act_mem_addr is 0x00000003
+Status register is 0x00000000
+Finished ... output values:
+Value at 0x400086E8 : 276824098 
+Value at 0x400086E9 : -2121269240 
+Value at 0x400086EA : -1848631288 
+Value at 0x400086EB : 16777224 
+Value at 0x400086EC : 16777224 
+Value at 0x400086ED : 16777224 
+Value at 0x400086EE : -1848631288 
+Value at 0x400086EF : 16777224 
+Value at 0x400086F0 : 16777224 
+Value at 0x400086F1 : 16777224 

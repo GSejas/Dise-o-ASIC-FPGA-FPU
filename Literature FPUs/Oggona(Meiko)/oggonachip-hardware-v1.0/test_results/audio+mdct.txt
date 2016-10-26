@@ -1,0 +1,234 @@
+NòX2d”m‘˝om LEON bˇot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+ˇ  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting audio-mdct-test
+
+Sound test program. Sampling rate = 22050, Bit-per-sample = 16, 2-channel
+Number of sound samples found in music data: 339826
+Allocated memory of 1359304 bytes for sound buffer
+Loading music data to memory ... 
+Done...
+Now start to play the sound ... 
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x401FA6F0 : 0 
+Value at 0x401FA6F1 : 1 
+Value at 0x401FA6F2 : 2 
+Value at 0x401FA6F3 : 3 
+Value at 0x401FA6F4 : 4 
+Value at 0x401FA6F5 : 5 
+Value at 0x401FA6F6 : 6 
+Value at 0x401FA6F7 : 7 
+Value at 0x401FA6F8 : 8 
+Value at 0x401FA6F9 : 9 
+Testing values stored as input array...
+Value at 0x401FA6F0 : 0 
+Value at 0x401FA6F1 : 1 
+Value at 0x401FA6F2 : 2 
+Value at 0x401FA6F3 : 3 
+Value at 0x401FA6F4 : 4 
+Value at 0x401FA6F5 : 5 
+Value at 0x401FA6F6 : 6 
+Value at 0x401FA6F7 : 7 
+Value at 0x401FA6F8 : 8 
+Value at 0x401FA6F9 : 9 
+Initial value of result array:
+Value at 0x401FA720 : -2147483648 
+Value at 0x401FA721 : 0 
+Value at 0x401FA722 : -2147483648 
+Value at 0x401FA723 : 0 
+Value at 0x401FA724 : -2147483648 
+Value at 0x401FA725 : 0 
+Value at 0x401FA726 : -2147483648 
+Value at 0x401FA727 : 0 
+Value at 0x401FA728 : -2147483648 
+Value at 0x401FA729 : 0 
+Write value 0x401FA6F0 to start read address register ...
+startreadaddr register is 0x401FA6F0
+Write value 0x401FA720 to start write address register ...
+startwriteaddr is 0x401FA720
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+Start the audio core .. 
+act_mem_addr is 0x401FA6F0
+Status register is 0x00000001
+Finished ... output values:
+Value at 0x401FA720 : 8 
+Value at 0x401FA721 : 9 
+Value at 0x401FA722 : 10 
+Value at 0x401FA723 : 11 
+Value at 0x401FA724 : 12 
+Value at 0x401FA725 : 13 
+Value at 0x401FA726 : 14 
+Value at 0x401FA727 : 15 
+Value at 0x401FA728 : 16 
+Value at 0x401FA729 : 17 
+paa√ê MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting audio-mdct-test
+
+Sound test program. Sampling rate = 22050, Bit-per-sample = 16, 2-channel
+Number of sound samples found in music data: 339826
+Allocated memory of 1359304 bytes for sound buffer
+Loading music data to memory ... 
+Done...
+Now start to play the sound ... 
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x401FA6F0 : 0 
+Value at 0x401FA6F1 : 1 
+Value at 0x401FA6F2 : 2 
+Value at 0x401FA6F3 : 3 
+Value at 0x401FA6F4 : 4 
+Value at 0x401FA6F5 : 5 
+Value at 0x401FA6F6 : 6 
+Value at 0x401FA6F7 : 7 
+Value at 0x401FA6F8 : 8 
+Value at 0x401FA6F9 : 9 
+Testing values stored as input array...
+Value at 0x401FA6F0 : 0 
+Value at 0x401FA6F1 : 1 
+Value at 0x401FA6F2 : 2 
+Value at 0x401FA6F3 : 3 
+Value at 0x401FA6F4 : 4 
+Value at 0x401FA6F5 : 5 
+Value at 0x401FA6F6 : 6 
+Value at 0x401FA6F7 : 7 
+Value at 0x401FA6F8 : 8 
+Value at 0x401FA6F9 : 9 
+Initial value of result array:
+Value at 0x401FA720 : 8 
+Value at 0x401FA721 : 9 
+Value at 0x401FA722 : 10 
+Value at 0x401FA723 : 11 
+Value at 0x401FA724 : 12 
+Value at 0x401FA725 : 13 
+Value at 0x401FA726 : 14 
+Value at 0x401FA727 : 15 
+Value at 0x401FA728 : 16 
+Value at 0x401FA729 : 17 
+Write value 0x401FA6F0 to start read address register ...
+startreadaddr register is 0x401FA6F0
+Write value 0x401FA720 to start write address register ...
+startwriteaddr is 0x401FA720
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+Start the audio core .. 
+act_mem_addr is 0x401FA6F0
+Status register is 0x00000001
+Finished ... output values:
+Value at 0x401FA720 : 8 
+Value at 0x401FA721 : 9 
+Value at 0x401FA722 : 10 
+Value at 0x401FA723 : 11 
+Value at 0x401FA724 : 12 
+Value at 0x401FA725 : 13 
+Value at 0x401FA726 : 14 
+Value at 0x401FA727 : 15 
+Value at 0x401FA728 : 16 
+Value at 0x401FA729 : 17 
+NòX2d”m‘πom LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram ˇ          : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting audio-mdct-test
+
+Sound test program. Sampling rate = 22050, Bit-per-sample = 16, 2-channel
+Number of sound samples found in music data: 339826
+Allocated memory of 1359304 bytes for sound buffer
+Loading music data to memory ... 
+Done...
+Now start to play the sound ... 
+MDCT Core test program started ..
+Initial control register is 0x00000000
+Allocate memory ...
+Initializing values of input array...
+Value at 0x401FA6F0 : 0 
+Value at 0x401FA6F1 : 1 
+Value at 0x401FA6F2 : 2 
+Value at 0x401FA6F3 : 3 
+Value at 0x401FA6F4 : 4 
+Value at 0x401FA6F5 : 5 
+Value at 0x401FA6F6 : 6 
+Value at 0x401FA6F7 : 7 
+Value at 0x401FA6F8 : 8 
+Value at 0x401FA6F9 : 9 
+Testing values stored as input array...
+Value at 0x401FA6F0 : 0 
+Value at 0x401FA6F1 : 1 
+Value at 0x401FA6F2 : 2 
+Value at 0x401FA6F3 : 3 
+Value at 0x401FA6F4 : 4 
+Value at 0x401FA6F5 : 5 
+Value at 0x401FA6F6 : 6 
+Value at 0x401FA6F7 : 7 
+Value at 0x401FA6F8 : 8 
+Value at 0x401FA6F9 : 9 
+Initial value of result array:
+Value at 0x401FA720 : 8 
+Value at 0x401FA721 : 9 
+Value at 0x401FA722 : 10 
+Value at 0x401FA723 : 11 
+Value at 0x401FA724 : 12 
+Value at 0x401FA725 : 13 
+Value at 0x401FA726 : 14 
+Value at 0x401FA727 : 15 
+Value at 0x401FA728 : 16 
+Value at 0x401FA729 : 17 
+Write value 0x401FA6F0 to start read address register ...
+startreadaddr register is 0x401FA6F0
+Write value 0x401FA720 to start write address register ...
+startwriteaddr is 0x401FA720
+Write value 10 to array size register ...
+array size is 0x0000000A
+Start the MDCT core .. 
+control register is 0x00000001
+Start the audio core .. 
+act_mem_addr is 0x401FA6F0
+Status register is 0x00000001
+Finished ... output values:
+Value at 0x401FA720 : 8 
+Value at 0x401FA721 : 9 
+Value at 0x401FA722 : 10 
+Value at 0x401FA723 : 11 
+Value at 0x401FA724 : 12 
+Value at 0x401FA725 : 13 
+Value at 0x401FA726 : 14 
+Value at 0x401FA727 : 15 
+Value at 0x401FA728 : 16 
+Value at 0x401FA729 : 17 

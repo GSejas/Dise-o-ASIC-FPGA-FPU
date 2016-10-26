@@ -1,0 +1,163 @@
+paaÐ MkProm LEON boot loader v1.2
+  Copyright Gaisler Research - all right reserved
+
+  system clock   : 25.0 MHz
+  baud rate      : 38580 baud
+  prom           : 1024 K, (2/2) ws (r/w)
+  ram            : 2048 K, 1 bank(s), 0/0 ws (r/w)
+  edac           : disabled
+
+  loading .text
+  loading .data
+
+  starting test
+
+MDCT Core test program started ..
+Allocate memory ...
+Initializing values of input array...
+Value at 0x400084F8 : 0 
+Value at 0x400084F9 : 1 
+Value at 0x400084FA : 2 
+Value at 0x400084FB : 3 
+Value at 0x400084FC : 4 
+Value at 0x400084FD : 5 
+Value at 0x400084FE : 6 
+Value at 0x400084FF : 7 
+Value at 0x40008500 : 8 
+Value at 0x40008501 : 9 
+Write value 0x400084F8 to start read address register ...
+Write value 0x40008528 to start write address register ...
+Write value 10 to array size register ...
+Start the MDCT core .. 
+Wait until calculation is finished...
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003
+act_mem_addr is 0x00000003

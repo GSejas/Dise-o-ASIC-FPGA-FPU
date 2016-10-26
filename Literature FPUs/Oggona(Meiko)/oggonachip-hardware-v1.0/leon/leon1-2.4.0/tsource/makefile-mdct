@@ -1,0 +1,13 @@
+MAKE=make
+CC=sparc-rtems-gcc
+CFLAGS= -static -O2  -W -Wall # -mno-ieee-fp -O20  -ffast-math  -fsigned-char # normal version
+PROG=test1
+
+all: $(PROG)
+
+test: test.c
+
+test1: test1.c
+
+clean:
+	-rm -f $(PROG) *.o
