@@ -9,12 +9,12 @@
 ####################################################################################################################################
 set PRECISION(0) "SINGLE";
 set PRECISION(1) "DOUBLE";
-set PREC_PARAM(0) "SW=24";
-set PREC_PARAM(1) "SW=54";
+set PREC_PARAM(0) "W=32,SW=23,EW=8,SWR=26,EWR=5";
+set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 # Eliminar diseños previos
-set DESIGN_NAME  "KOA_FRANCIS"
-set TOP_NAME     "Sgf_Multiplication"
-set CONTRAINTS_FILE_NAME "KOA_FRANCIS_syn_constraints.tcl"
+set DESIGN_NAME  "fpaddsub_arch3"
+set TOP_NAME     "FPU_PIPELINED_FPADDSUB"
+set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch3_syn_constraints.tcl"
 set compile_fix_cell_degradation true
 remove_design -designs
 
@@ -34,7 +34,7 @@ foreach line $data {
 #source "ASIC_fpaddsub_arch2_syn_2.tcl"
 
 set x 0;
-while {$x < 1} {
+while {$x < 2} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
@@ -59,11 +59,7 @@ check_design -multiple_designs
 #set compile_top_all_paths true;
 
 #Compilar el diseño
-
-#Este compile ultra es para el timing, se le puede quitar ese retime si fuera el caso de area o algo más
-#compile_ultra -timing_high_effort_script -retime
-compile
-
+compile_ultra -timing_high_effort_script -retime
 
 #Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
 #- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
