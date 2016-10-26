@@ -13943,3 +13943,4 @@ Error: Value for list '-through' must have 1 elements. (CMD-036)
 puts $current_design
 FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
 dc_shell> dc_shell> 
+Received Signal 1 from: PID=22433 (UID=1160251034)

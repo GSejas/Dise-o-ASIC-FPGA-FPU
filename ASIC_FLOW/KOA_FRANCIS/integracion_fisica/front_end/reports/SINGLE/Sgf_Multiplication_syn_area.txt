@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Sgf_Multiplication_SW24
+Version: L-2016.03-SP3
+Date   : Wed Oct 26 14:33:30 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                         1263
+Number of nets:                          3582
+Number of cells:                         2100
+Number of combinational cells:           1955
+Number of sequential cells:               128
+Number of macros/black boxes:               0
+Number of buf/inv:                        381
+Number of references:                      12
+
+Combinational area:              22328.640264
+Buf/Inv area:                     1751.040067
+Noncombinational area:            3405.599915
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 25734.240178
+Total area:                 undefined
+1

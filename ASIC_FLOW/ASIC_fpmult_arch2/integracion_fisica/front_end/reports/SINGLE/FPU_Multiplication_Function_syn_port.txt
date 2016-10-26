@@ -1,0 +1,155 @@
+ 
+****************************************
+Report : port
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Wed Oct 26 12:27:37 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Data_MX[0]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[1]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[2]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[3]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[4]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[5]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[6]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[7]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[8]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[9]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[10]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[11]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[12]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[13]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[14]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[15]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[16]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[17]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[18]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[19]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[20]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[21]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[22]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[23]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[24]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[25]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[26]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[27]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[28]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[29]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[30]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MX[31]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[0]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[1]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[2]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[3]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[4]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[5]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[6]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[7]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[8]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[9]     in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[10]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[11]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[12]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[13]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[14]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[15]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[16]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[17]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[18]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[19]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[20]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[21]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[22]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[23]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[24]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[25]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[26]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[27]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[28]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[29]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[30]    in      0.0000   0.0000    1.02    1.71   --         
+Data_MY[31]    in      0.0000   0.0000    1.02    1.71   --         
+ack_FSM        in      0.0000   0.0000    1.02    1.71   --         
+beg_FSM        in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+round_mode[0]  in      0.0000   0.0000    1.02    1.71   --         
+round_mode[1]  in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
+final_result_ieee[0]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[1]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[2]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[3]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[4]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[5]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[6]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[7]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[8]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[9]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[10]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[11]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[12]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[13]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[14]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[15]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[16]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[17]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[18]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[19]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[20]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[21]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[22]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[23]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[24]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[25]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[26]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[27]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[28]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[29]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[30]
+               out     0.0000   0.0000   --      --      --         
+final_result_ieee[31]
+               out     0.0000   0.0000   --      --      --         
+overflow_flag  out     0.0000   0.0000   --      --      --         
+ready          out     0.0000   0.0000   --      --      --         
+underflow_flag out     0.0000   0.0000   --      --      --         
+
+1

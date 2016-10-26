@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Sgf_Multiplication_SW24
+Version: L-2016.03-SP3
+Date   : Wed Oct 26 14:33:30 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Data_A_i[5]
+              (input port clocked by clk)
+  Endpoint: GEN1_middle/pdt_int_reg_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.50       4.50 f
+  Data_A_i[5] (in)                                        0.01       4.51 f
+  GEN1_A_operation/Data_B_i[5] (adder_W12_1)              0.00       4.51 f
+  GEN1_A_operation/add_42/B[5] (adder_W12_1_DW01_add_2)
+                                                          0.00       4.51 f
+  GEN1_A_operation/add_42/U96/Y (NOR2X1TS)                0.25       4.76 r
+  GEN1_A_operation/add_42/U152/Y (OAI21X1TS)              0.24       5.00 f
+  GEN1_A_operation/add_42/U139/Y (AOI21X1TS)              0.23       5.24 r
+  GEN1_A_operation/add_42/U154/Y (OAI21X2TS)              0.15       5.39 f
+  GEN1_A_operation/add_42/U106/Y (AOI21X2TS)              0.18       5.56 r
+  GEN1_A_operation/add_42/U16/Y (XOR2X1TS)                0.28       5.85 f
+  GEN1_A_operation/add_42/SUM[9] (adder_W12_1_DW01_add_2)
+                                                          0.00       5.85 f
+  GEN1_A_operation/Data_S_o[9] (adder_W12_1)              0.00       5.85 f
+  GEN1_middle/Data_A_i[9] (multiplier_W13)                0.00       5.85 f
+  GEN1_middle/mult_59/a[9] (multiplier_W13_DW_mult_uns_2)
+                                                          0.00       5.85 f
+  GEN1_middle/mult_59/U570/Y (CLKBUFX3TS)                 0.37       6.21 f
+  GEN1_middle/mult_59/U660/Y (XNOR2XLTS)                  0.34       6.56 r
+  GEN1_middle/mult_59/U927/Y (OAI22X1TS)                  0.34       6.89 f
+  GEN1_middle/mult_59/U593/S (CMPR32X2TS)                 0.52       7.41 f
+  GEN1_middle/mult_59/U909/CO (CMPR42X1TS)                0.81       8.22 f
+  GEN1_middle/mult_59/U247/S (CMPR42X2TS)                 0.99       9.21 f
+  GEN1_middle/mult_59/U767/Y (NAND2X1TS)                  0.14       9.35 r
+  GEN1_middle/mult_59/U599/Y (OAI21X1TS)                  0.22       9.57 f
+  GEN1_middle/mult_59/U985/Y (AOI21X2TS)                  0.22       9.79 r
+  GEN1_middle/mult_59/U653/Y (OAI21X2TS)                  0.16       9.95 f
+  GEN1_middle/mult_59/U947/Y (AOI21X1TS)                  0.19      10.15 r
+  GEN1_middle/mult_59/U607/Y (XOR2XLTS)                   0.19      10.33 r
+  GEN1_middle/mult_59/product[20] (multiplier_W13_DW_mult_uns_2)
+                                                          0.00      10.33 r
+  GEN1_middle/pdt_int_reg_20_/D (DFFQX1TS)                0.00      10.33 r
+  data arrival time                                                 10.33
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  GEN1_middle/pdt_int_reg_20_/CK (DFFQX1TS)               0.00      10.50 r
+  library setup time                                     -0.17      10.33
+  data required time                                                10.33
+  --------------------------------------------------------------------------
+  data required time                                                10.33
+  data arrival time                                                -10.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

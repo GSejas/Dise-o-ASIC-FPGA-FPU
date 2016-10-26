@@ -9,12 +9,12 @@
 ####################################################################################################################################
 set PRECISION(0) "SINGLE";
 set PRECISION(1) "DOUBLE";
-set PREC_PARAM(0) "W=32,SW=23,EW=8,SWR=26,EWR=5";
-set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
+set PREC_PARAM(0) "W=32,SW=23,EW=8";
+set PREC_PARAM(1) "W=64,SW=52,EW=11";
 # Eliminar diseños previos
-set DESIGN_NAME  "fpaddsub_arch3"
-set TOP_NAME     "FPU_PIPELINED_FPADDSUB"
-set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch3_syn_constraints.tcl"
+set DESIGN_NAME  "fpmult_arch2"
+set TOP_NAME     "FPU_Multiplication_Function"
+set CONTRAINTS_FILE_NAME "ASIC_fpmult_arch2_syn_constraints.tcl"
 set compile_fix_cell_degradation true
 remove_design -designs
 
@@ -34,17 +34,17 @@ foreach line $data {
 #source "ASIC_fpaddsub_arch2_syn_2.tcl"
 
 set x 0;
-while {$x < 2} {
+while {$x < 1} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
+#elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
 
-uniquify
 
 #Enlazar los demás módulos al módulo principal
 link
 
-
+uniquify
 #Escribir el archivo *.ddc (base de datos sin sintetizar)
 write -hierarchy -format ddc -output \
 ./db/$PRECISION($x)/$TOP_NAME\_syn_unmapped.ddc
@@ -59,8 +59,8 @@ check_design -multiple_designs
 #set compile_top_all_paths true;
 
 #Compilar el diseño
-compile_ultra -timing_high_effort_script -retime
-
+#compile_ultra -timing_high_effort_script -retime
+compile
 #Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
 #- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
 #- Como una de las entradas para el sintetizador físico (IC Compiler).

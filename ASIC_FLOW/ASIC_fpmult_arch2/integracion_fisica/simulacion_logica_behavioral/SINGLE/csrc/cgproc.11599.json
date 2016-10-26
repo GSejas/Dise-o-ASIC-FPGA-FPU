@@ -1,0 +1,40 @@
+{
+    "Modules": {
+        "FFD_NoCE": {},
+        "...MASTER...": {},
+        "Testbench_FPU_multiplication": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7795,
+            "checksum": 4294967295
+        },
+        "NNGm3_d": {
+            "mod": "Testbench_FPU_multiplication",
+            "archive": "archive.2/_11599_archive_1.a",
+            "out": "NNGm3_d.o",
+            "mode": 4,
+            "bytes": 132263,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "size": 132263,
+            "archive": "archive.2/_11599_archive_1.a",
+            "objects": [
+                [
+                    "NNGm3_d.o",
+                    132263
+                ]
+            ]
+        }
+    ]
+}

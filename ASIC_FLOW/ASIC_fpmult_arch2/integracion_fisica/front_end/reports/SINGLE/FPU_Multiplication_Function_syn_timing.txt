@@ -1,0 +1,146 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Wed Oct 26 12:27:37 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Sgf_operation/genblk1_left/pdt_int_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation/genblk1_finalreg/Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  Sgf_operation/genblk1_left/pdt_int_reg_1_/CK (DFFQX1TS)
+                                                          0.00       1.00 r
+  Sgf_operation/genblk1_left/pdt_int_reg_1_/Q (DFFQX1TS)
+                                                          0.93       1.93 f
+  Sgf_operation/genblk1_left/Data_S_o[1] (multiplier_W12_1)
+                                                          0.00       1.93 f
+  Sgf_operation/genblk1_Subtr_1/Data_B_i[1] (substractor_W26_1)
+                                                          0.00       1.93 f
+  Sgf_operation/genblk1_Subtr_1/sub_31/B[1] (substractor_W26_1_DW01_sub_2)
+                                                          0.00       1.93 f
+  Sgf_operation/genblk1_Subtr_1/sub_31/U72/Y (INVX2TS)
+                                                          0.12       2.05 r
+  Sgf_operation/genblk1_Subtr_1/sub_31/U25/CO (AFHCINX2TS)
+                                                          0.33       2.38 r
+  Sgf_operation/genblk1_Subtr_1/sub_31/U24/CON (AFHCONX2TS)
+                                                          0.19       2.57 f
+  Sgf_operation/genblk1_Subtr_1/sub_31/U23/S (AFHCINX2TS)
+                                                          0.43       3.00 f
+  Sgf_operation/genblk1_Subtr_1/sub_31/DIFF[3] (substractor_W26_1_DW01_sub_2)
+                                                          0.00       3.00 f
+  Sgf_operation/genblk1_Subtr_1/Data_S_o[3] (substractor_W26_1)
+                                                          0.00       3.00 f
+  Sgf_operation/genblk1_Subtr_2/Data_A_i[3] (substractor_W26_0)
+                                                          0.00       3.00 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/A[3] (substractor_W26_0_DW01_sub_2)
+                                                          0.00       3.00 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U23/CO (AFHCINX2TS)
+                                                          0.38       3.39 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U22/CON (AFHCONX2TS)
+                                                          0.23       3.62 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U21/CO (AFHCINX2TS)
+                                                          0.21       3.83 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U20/CON (AFHCONX2TS)
+                                                          0.23       4.06 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U19/CO (AFHCINX2TS)
+                                                          0.21       4.27 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U18/CON (AFHCONX2TS)
+                                                          0.23       4.51 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U17/CO (AFHCINX2TS)
+                                                          0.21       4.71 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U16/CON (AFHCONX2TS)
+                                                          0.23       4.95 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U15/CO (AFHCINX2TS)
+                                                          0.21       5.16 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U14/CON (AFHCONX2TS)
+                                                          0.23       5.39 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U13/CO (AFHCINX2TS)
+                                                          0.21       5.60 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U12/CON (AFHCONX2TS)
+                                                          0.23       5.83 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U11/CO (AFHCINX2TS)
+                                                          0.21       6.04 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U10/CON (AFHCONX2TS)
+                                                          0.23       6.27 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U9/CO (AFHCINX2TS)
+                                                          0.21       6.48 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U8/CON (AFHCONX2TS)
+                                                          0.23       6.72 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U7/CO (AFHCINX2TS)
+                                                          0.21       6.92 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U6/CON (AFHCONX2TS)
+                                                          0.23       7.16 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U5/CO (AFHCINX2TS)
+                                                          0.21       7.36 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U4/CON (AFHCONX2TS)
+                                                          0.23       7.60 r
+  Sgf_operation/genblk1_Subtr_2/sub_31/U3/CO (AFHCINX2TS)
+                                                          0.21       7.81 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/U2/S (AFHCONX2TS)
+                                                          0.38       8.18 f
+  Sgf_operation/genblk1_Subtr_2/sub_31/DIFF[24] (substractor_W26_0_DW01_sub_2)
+                                                          0.00       8.18 f
+  Sgf_operation/genblk1_Subtr_2/Data_S_o[24] (substractor_W26_0)
+                                                          0.00       8.18 f
+  Sgf_operation/genblk1_Final/Data_B_i[36] (adder_W48)
+                                                          0.00       8.18 f
+  Sgf_operation/genblk1_Final/add_31/B[36] (adder_W48_DW01_add_2)
+                                                          0.00       8.18 f
+  Sgf_operation/genblk1_Final/add_31/U371/Y (OR2X2TS)     0.31       8.50 f
+  Sgf_operation/genblk1_Final/add_31/U404/Y (AOI21X2TS)
+                                                          0.18       8.67 r
+  Sgf_operation/genblk1_Final/add_31/U405/Y (OAI21X2TS)
+                                                          0.11       8.79 f
+  Sgf_operation/genblk1_Final/add_31/U375/Y (AND2X4TS)
+                                                          0.20       8.98 f
+  Sgf_operation/genblk1_Final/add_31/U372/Y (NOR2X4TS)
+                                                          0.11       9.09 r
+  Sgf_operation/genblk1_Final/add_31/U407/CO (AFHCINX2TS)
+                                                          0.16       9.25 f
+  Sgf_operation/genblk1_Final/add_31/U4/CON (AFHCONX2TS)
+                                                          0.23       9.48 r
+  Sgf_operation/genblk1_Final/add_31/U3/CO (AFHCINX2TS)
+                                                          0.20       9.69 f
+  Sgf_operation/genblk1_Final/add_31/U2/S (AFHCONX2TS)
+                                                          0.34      10.03 r
+  Sgf_operation/genblk1_Final/add_31/SUM[47] (adder_W48_DW01_add_2)
+                                                          0.00      10.03 r
+  Sgf_operation/genblk1_Final/Data_S_o[47] (adder_W48)
+                                                          0.00      10.03 r
+  Sgf_operation/genblk1_finalreg/D[47] (RegisterAdd_W48)
+                                                          0.00      10.03 r
+  Sgf_operation/genblk1_finalreg/U2/Y (CLKMX2X3TS)        0.22      10.25 r
+  Sgf_operation/genblk1_finalreg/Q_reg_47_/D (DFFRXLTS)
+                                                          0.00      10.25 r
+  data arrival time                                                 10.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Sgf_operation/genblk1_finalreg/Q_reg_47_/CK (DFFRXLTS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.25      10.25
+  data required time                                                10.25
+  --------------------------------------------------------------------------
+  data required time                                                10.25
+  data arrival time                                                -10.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

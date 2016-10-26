@@ -1,0 +1,79 @@
+Warning: Design 'FPU_Multiplication_Function_W64_EW11_SW52' has '8' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Tue Oct 25 17:51:50 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Operands_load_reg/XMRegister_Q_reg_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation/genblk1_right_pdt_int_reg_53_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  Operands_load_reg/XMRegister_Q_reg_23_/CK (DFFRX4TS)
+                                                          0.00       1.00 r
+  Operands_load_reg/XMRegister_Q_reg_23_/Q (DFFRX4TS)     0.86       1.86 f
+  Operands_load_reg/Op_MX[23] (First_Phase_M_W64)         0.00       1.86 f
+  U50/Y (INVX2TS)                                         0.09       1.95 r
+  U28/Y (INVX3TS)                                         0.09       2.04 f
+  Sgf_operation/Data_A_i[23] (Sgf_Multiplication_SW53)
+                                                          0.00       2.04 f
+  Sgf_operation/U1218/Y (INVX2TS)                         0.12       2.15 r
+  Sgf_operation/U1814/Y (INVX2TS)                         0.11       2.27 f
+  Sgf_operation/U4885/Y (XOR2X1TS)                        0.26       2.52 f
+  Sgf_operation/U4889/Y (AND3X1TS)                        0.45       2.98 f
+  Sgf_operation/U4890/Y (CLKBUFX2TS)                      0.34       3.32 f
+  Sgf_operation/U4905/Y (AOI222XLTS)                      0.57       3.89 r
+  Sgf_operation/U3068/Y (OAI21XLTS)                       0.25       4.14 f
+  Sgf_operation/U2002/Y (XOR2XLTS)                        0.28       4.42 r
+  Sgf_operation/U4912/S (CMPR32X2TS)                      0.93       5.35 f
+  Sgf_operation/genblk1_right_mult_x_1_U657/CO (CMPR42X1TS)
+                                                          1.20       6.55 f
+  Sgf_operation/genblk1_right_mult_x_1_U651/S (CMPR42X1TS)
+                                                          1.11       7.66 f
+  Sgf_operation/U3004/Y (OR2X1TS)                         0.40       8.06 f
+  Sgf_operation/U3705/Y (AOI21X1TS)                       0.23       8.29 r
+  Sgf_operation/U3711/Y (OAI21X1TS)                       0.19       8.48 f
+  Sgf_operation/U3712/Y (AOI21X2TS)                       0.17       8.66 r
+  Sgf_operation/U553/Y (OAI21X2TS)                        0.18       8.84 f
+  Sgf_operation/U883/Y (AOI21X4TS)                        0.17       9.01 r
+  Sgf_operation/U4767/CO (AFHCINX2TS)                     0.16       9.18 f
+  Sgf_operation/U4766/CON (AFHCONX2TS)                    0.22       9.40 r
+  Sgf_operation/U890/CO (ACHCINX2TS)                      0.17       9.57 f
+  Sgf_operation/U4765/CON (AFHCONX2TS)                    0.20       9.78 r
+  Sgf_operation/U4088/CO (ACHCINX2TS)                     0.18       9.95 f
+  Sgf_operation/U4764/CON (AFHCONX2TS)                    0.19      10.14 r
+  Sgf_operation/U2925/Y (XNOR2X2TS)                       0.22      10.36 f
+  Sgf_operation/genblk1_right_pdt_int_reg_53_/D (DFFQX1TS)
+                                                          0.00      10.36 f
+  data arrival time                                                 10.36
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Sgf_operation/genblk1_right_pdt_int_reg_53_/CK (DFFQX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.14      10.36
+  data required time                                                10.36
+  --------------------------------------------------------------------------
+  data required time                                                10.36
+  data arrival time                                                -10.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

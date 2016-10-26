@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "FFD_NoCE": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Testbench_FPU_multiplication": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7795,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "HnhJZ_d": {
+            "bytes": 8379,
+            "mod": "FFD_NoCE",
+            "out": "HnhJZ_d.o",
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_1624_archive_1.a"
+        },
+        "NNGm3_d": {
+            "bytes": 168170,
+            "mod": "Testbench_FPU_multiplication",
+            "out": "NNGm3_d.o",
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_1624_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_1624_archive_1.a",
+            "objects": [
+                [
+                    "HnhJZ_d.o",
+                    8379
+                ],
+                [
+                    "NNGm3_d.o",
+                    168170
+                ]
+            ],
+            "size": 176549
+        }
+    ]
+}

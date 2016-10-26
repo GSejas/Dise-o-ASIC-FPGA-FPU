@@ -1,0 +1,274 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+DOUBLE \
+-timescale=1ns/1ps +neg_tchk +sdfverbose
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Wed Oct 26 12:20:09 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../front_end/source/Barrel_Shifter_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Barrel_Shifter_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_mux.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_mux.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RegisterAdd.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/XOR_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/XOR_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Multiplexer_AC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Multiplexer_AC.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Zero_InfMult_Unit.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Zero_InfMult_Unit.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Deco_Round_Mult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Deco_Round_Mult.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/multiplier.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/multiplier.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Adder_Round.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Adder_Round.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RegisterMult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterMult.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/First_Phase_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/First_Phase_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/add_sub_carry_out.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/add_sub_carry_out.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/adder.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/adder.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FSM_Mult_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_Mult_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Round_decoder_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_decoder_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/Round_decoder_M.v, 34
+  No type is specified for wire 'round_ok'. Default wire type is being applied
+  according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/FPU_Multiplication_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Multiplication_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Multiplication_Function.v, 156
+  No type is specified for wire 'FSM_Shift_Value'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Multiplication_Function.v, 177
+  No type is specified for wire 'FSM_selector_C'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/Comparator_Equal.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Equal.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/OR_Module.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/OR_Module.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Exp_operation_m.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Exp_operation_m.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Less.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Less.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/substractor.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/substractor.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Sgf_Multiplication.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Sgf_Multiplication.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file 'Testbench_FPU_multiplication.v'
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_multiplication.v, 11
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_multiplication.v, 36
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_multiplication.v, 40
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_multiplication.v, 42
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_FPU_multiplication.v, 46
+  Verilog compiler directive encountered "`endif".
+
+Top Level Modules:
+       FFD_NoCE
+       Testbench_FPU_multiplication
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Multiplication_Function.v, 156
+  No type is specified for wire 'FSM_Shift_Value'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Multiplication_Function.v, 177
+  No type is specified for wire 'FSM_selector_C'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+TimeScale is 1 ns / 1 ps
+
+Lint-[PCWM-L] Port connection width mismatch
+../../front_end/source/Sgf_Multiplication.v, 294
+" adder #(((4 * (SW / 2)) + 2)) Final( .Data_A_i ({Q_left, Q_right}),  .Data_B_i ({S_B, rightside2}),  .Data_S_o (Result[((4 * (SW / 2)) + 2):0]));"
+  The following 83-bit expression is connected to 106-bit port "Data_B_i" of 
+  module "adder", instance "Final".
+  Expression: {S_B, rightside2}
+  The expression is from module Sgf_Multiplication, instance Sgf_operation 
+
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+recompiling module FFD_NoCE
+recompiling module Testbench_FPU_multiplication
+Both modules done.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
+_1624_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so \
+-Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so \
+-Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+Command: ./simv -gui +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose -ucli
+Warning : License for product VCSRuntime_Net(725) will expire within 16 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 26 12:20 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+$finish called from file "Testbench_FPU_multiplication.v", line 134.
+$finish at simulation time            143345000
+Simulation complete, time is 143345000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 143345000 ps
+CPU Time:      0.240 seconds;       Data structure size:   0.1Mb
+Wed Oct 26 12:26:32 2016
+CPU time: .333 seconds to compile + .309 seconds to elab + .115 seconds to link + 9.198 seconds in simulation

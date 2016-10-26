@@ -1,0 +1,94 @@
+{
+    "NameTable": {
+        "FFD_NoCE": [
+            "FFD_NoCE",
+            "HnhJZ",
+            "module"
+        ],
+        "Testbench_FPU_multiplication": [
+            "Testbench_FPU_multiplication",
+            "NNGm3",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "PEModules": [],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 93159
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful",
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "stat": {
+        "nQuads": 4675,
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.155976,
+            "ru_nvcsw": 52,
+            "ru_maxrss_kb": 56004,
+            "ru_stime_sec": 0.042993000000000003,
+            "ru_minflt": 15695,
+            "ru_nivcsw": 31
+        },
+        "quadSpeed": 46757.013552032811,
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 1,
+            "ru_maxrss_kb": 18572,
+            "ru_stime_sec": 0.0019989999999999999,
+            "ru_minflt": 460,
+            "ru_nivcsw": 2
+        },
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.25596099999999999,
+            "ru_nvcsw": 52,
+            "ru_maxrss_kb": 64028,
+            "ru_stime_sec": 0.051991999999999997,
+            "ru_minflt": 18932,
+            "ru_nivcsw": 40
+        },
+        "nMops": 13209,
+        "outputSizePerQuad": 59.0,
+        "totalObjSize": 277503,
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 1,
+            "ru_maxrss_kb": 18572,
+            "ru_stime_sec": 0.0019989999999999999,
+            "ru_minflt": 460,
+            "ru_nivcsw": 2
+        },
+        "mopSpeed": 132109.81647247088,
+        "mop/quad": 2.8254545454545457,
+        "CodeGen(%)": 39.062591566683984,
+        "Frontend(%)": 60.937408433316016
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "FFD_NoCE",
+        "Testbench_FPU_multiplication"
+    ],
+    "CompileProcesses": [
+        "cgproc.1624.json"
+    ],
+    "Misc": {
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/simv.daidir",
+        "archive_dir": "archive.0"
+    }
+}
