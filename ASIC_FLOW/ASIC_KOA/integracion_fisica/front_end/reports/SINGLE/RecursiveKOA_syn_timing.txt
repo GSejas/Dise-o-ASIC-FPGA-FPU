@@ -1,0 +1,48 @@
+Warning: Design 'RecursiveKOA_SW24' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RecursiveKOA_SW24
+Version: L-2016.03-SP3
+Date   : Wed Oct 26 18:11:22 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: load_b_i (input port clocked by clk)
+  Endpoint: finalreg/Q_reg_37_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     3.00       4.00 r
+  load_b_i (in)                            0.01       4.01 r
+  finalreg/load (RegisterAdd_W48)          0.00       4.01 r
+  finalreg/U56/Y (INVX2TS)                 0.08       4.09 f
+  finalreg/U57/Y (CLKBUFX2TS)              0.30       4.38 f
+  finalreg/U39/Y (AO22XLTS)                0.52       4.90 f
+  finalreg/Q_reg_37_/D (DFFRXLTS)          0.00       4.90 f
+  data arrival time                                   4.90
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.50      10.50
+  finalreg/Q_reg_37_/CK (DFFRXLTS)         0.00      10.50 r
+  library setup time                      -0.20      10.30
+  data required time                                 10.30
+  -----------------------------------------------------------
+  data required time                                 10.30
+  data arrival time                                  -4.90
+  -----------------------------------------------------------
+  slack (MET)                                         5.40
+
+
+1

@@ -34,7 +34,7 @@ foreach line $data {
 #source "ASIC_fpaddsub_arch2_syn_2.tcl"
 
 set x 0;
-while {$x < 1} {
+while {$x < 2} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
@@ -61,8 +61,8 @@ check_design -multiple_designs
 #Compilar el diseño
 
 #Este compile ultra es para el timing, se le puede quitar ese retime si fuera el caso de area o algo más
-#compile_ultra -timing_high_effort_script -retime
-compile
+compile_ultra -timing_high_effort_script -retime
+#compile
 
 
 #Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
@@ -109,4 +109,7 @@ check_timing
 
 #FINALIZAMOS EL LOOP
 set x [expr {$x + 1}]
+
 }
+
+current_design Sgf_Multiplication_SW24

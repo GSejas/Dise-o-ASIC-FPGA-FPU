@@ -19,7 +19,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module Exp_Operation_m
     #(parameter EW = 8) //Exponent Width
     (
@@ -45,6 +44,7 @@ wire Overflow_A;
 wire Overflow_flag_A;
 wire underflow_exp_reg;
 wire [EW:0] U_Limit;
+
 
 /////////////////////////////Exponent calculation///
 add_sub_carry_out #(.W(EW+1)) exp_add_subt_m(
@@ -92,11 +92,19 @@ RegisterMult #(.W(1)) Underflow_m (
         .Q(Underflow_flag_o)
         );
 
-generate
-    if (EW == 8)
-        assign U_Limit = 9'd127;
-    else
-        assign U_Limit = 12'd1023;
-endgenerate
+
+//Este valor de upper_limit es definido por la precision del formato
+// 127 para simple
+//1023 para doble        
+localparam integer Upper_limit = (2**(EW-1)-1);
+
+assign U_Limit = Upper_limit[EW:0];
+
+//generate
+//    if (EW == 8)
+//        assign U_Limit = 9'd127;
+//    else
+//        assign U_Limit = 12'd1023;
+//endgenerate
 
 endmodule

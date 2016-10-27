@@ -30,13 +30,13 @@ module shift_mux_array
     );
 
 genvar j;
-generate for (j=0; j<=SWR-1 ; j=j+1) begin
+generate for (j=0; j<=SWR-1 ; j=j+1) begin : BLK_GEN
 
 	localparam sh=(2**LEVEL)+j; //value for second mux input. It changes in exponentation by 2 for each level
 
 	case (sh>SWR-1)
 
-		1'b1:begin
+		1'b1:begin : BLK1ROT
 			Multiplexer_AC #(.W(1)) rotate_mux(
 			    .ctrl(select_i),
 			    .D0 (Data_i[j]),
@@ -44,7 +44,7 @@ generate for (j=0; j<=SWR-1 ; j=j+1) begin
 			    .S (Data_o[j])
 			    );
 			end
-		1'b0:begin
+		1'b0:begin : BLK2ROT
 			Multiplexer_AC #(.W(1)) rotate_mux(
 			    .ctrl(select_i),
 			    .D0 (Data_i[j]),

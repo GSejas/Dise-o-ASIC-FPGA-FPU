@@ -1,13 +1,13 @@
 ###################################################################
 
-# Created by write_sdc on Wed Oct 26 14:33:30 2016
+# Created by write_sdc on Wed Oct 26 18:56:51 2016
 
 ###################################################################
 set sdc_version 2.0
 
 set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
-set_max_area 0
 set_max_fanout 10 [current_design]
+set_max_area 0
 set_driving_cell -lib_cell TBUFX20TS [get_ports rst]
 set_driving_cell -lib_cell TBUFX20TS [get_ports load_b_i]
 set_driving_cell -lib_cell TBUFX20TS [get_ports {Data_A_i[23]}]

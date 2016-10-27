@@ -1,0 +1,25 @@
+Warning: Design 'RecursiveKOA_SW24' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : RecursiveKOA_SW24
+Version: L-2016.03-SP3
+Date   : Wed Oct 26 18:11:22 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+finalreg                  RegisterAdd_W48                 2157.119948
+                                                                    h, n, p
+main_KOA                  Simple_KOA                      0.000000  b, p
+--------------------------------------------------------------------------------
+Total 2 cells                                             2157.119948
+1

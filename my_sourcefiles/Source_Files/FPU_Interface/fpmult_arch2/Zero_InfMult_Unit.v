@@ -66,12 +66,13 @@ RegisterAdd #(.W(1)) Zero_Info_Mult ( //Data X input register
 
 
 assign zero_reg = or_1 || or_2;
+assign zero_comp = {(W-1){1'd0}};
 
-generate
-		if (W == 32)
-			assign zero_comp = 31'd0;
-		else
-			assign zero_comp = 63'd0;
-endgenerate
+//generate
+//		if (W == 32) 
+//			assign zero_comp = 31'd0;
+//		else
+//			assign zero_comp = 63'd0;
+//endgenerate
 
 endmodule

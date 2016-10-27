@@ -19,48 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module substractor
-    # (parameter W = 32) (
-    input wire [W-1:0] Data_A_i,
-    input wire [W-1:0] Data_B_i,
-    output reg [W-1:0] Data_S_o
-    );
-
-        always @*
-            Data_S_o <= Data_A_i - Data_B_i;
-
-endmodule
-
-module adder
-    # (parameter W = 32) (
-    input wire [W-1:0] Data_A_i,
-    input wire [W-1:0] Data_B_i,
-    output reg [W:0] Data_S_o
-    );
-
-    always @*
-        Data_S_o <= Data_A_i + Data_B_i;
-
-endmodule
-
-module multiplier
-    # (parameter W = 32) (
-    input wire clk,
-    input wire [W-1:0] Data_A_i,
-    input wire [W-1:0] Data_B_i,
-    output wire [2*W-1:0] Data_S_o
-    );
-    reg [2*W-1:0] pdt_int;
-
-    assign Data_S_o=pdt_int;
-
-    always@(posedge clk)
-    begin
-        pdt_int<= Data_A_i*Data_B_i;
-    end
-
-endmodule
-
 module Sgf_Multiplication
     #(parameter SW = 24)
     //#(parameter SW = 54)
@@ -113,17 +71,12 @@ module Sgf_Multiplication
     ////////////////////////////////////
 generate
     case (SW%2)
-        0:begin
+        0:begin : GEN1
         //////////////////////////////////even//////////////////////////////////
        //Multiplier for left side and right side
         
-            multiplier #(.W(SW/2)/*,.level(level1)*/) left(
-                .clk(clk),
-                .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
-                .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
-                .Data_S_o(/*result_left_mult*/Q_left)
-            );
-            
+  
+            assign Q_left = Data_A_i[SW-1:SW-SW/2]*Data_B_i[SW-1:SW-SW/2];
             /*RegisterAdd #(.W(SW)) leftreg( //Data X input register
                 .clk(clk), 
                 .rst(rst), 
@@ -132,13 +85,8 @@ generate
                 .Q(Q_left)
             );//*/
     
-            multiplier #(.W(SW/2)/*,.level(level1)*/) right(
-                .clk(clk),
-                .Data_A_i(Data_A_i[SW-SW/2-1:0]),
-                .Data_B_i(Data_B_i[SW-SW/2-1:0]),
-                .Data_S_o(/*result_right_mult[2*(SW/2)-1:0]*/Q_right[2*(SW/2)-1:0])
-            );
-        
+
+        	assign Q_right[2*(SW/2)-1:0] = Data_A_i[SW-SW/2-1:0]*Data_B_i[SW-SW/2-1:0];
             /*RegisterAdd #(.W(SW)) rightreg( //Data X input register
                 .clk(clk), 
                 .rst(rst), 
@@ -180,12 +128,13 @@ generate
            //multiplication for middle
         
             multiplier #(.W(SW/2+1)/*,.level(level1)*/) middle (
-                .clk(clk),
+   //             .clk(clk),
                 .Data_A_i(/*Q_result_A_adder[SW/2:0]*/result_A_adder[SW/2:0]),
                 .Data_B_i(/*Q_result_B_adder[SW/2:0]*/result_B_adder[SW/2:0]),
                 .Data_S_o(/*result_middle_mult[2*(SW/2)+1:0]*/Q_middle[2*(SW/2)+1:0])
             );
-        
+		assign Q_middle[2*(SW/2)+1:0] = result_A_adder[SW/2:0]*result_B_adder[SW/2:0];
+
            //segmentation registers array
         
         
@@ -231,7 +180,7 @@ generate
             );
             
         end
-    1:begin
+    1:begin  : GEN2
         //////////////////////////////////odd//////////////////////////////////
         //Multiplier for left side and right side
            
