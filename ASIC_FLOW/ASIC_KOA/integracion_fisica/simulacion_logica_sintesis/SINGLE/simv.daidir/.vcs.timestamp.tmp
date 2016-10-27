@@ -1,22 +1,5 @@
-18       
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
-0 Sgf_Multiplication_syn.sdf_c
+1        
+0 Simple_KOA_syn.sdf_c
 40
 +cli+4
 +define+SINGLE
@@ -59,7 +42,7 @@
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
 log_name
 45
-sysc_uni_pwd=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE
+sysc_uni_pwd=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE
 XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1473191807.138297-433824659
 VNCDESKTOP=zener:21 (jsequeira)
 VMR_MODE_FLAG=64
@@ -106,12 +89,12 @@ CVS_RSH=ssh
 COLORTERM=gnome-terminal
 0
 7
-1477522982 Sgf_Multiplication_syn.sdf
+1477584655 Simple_KOA_syn.sdf
 1477434699 ibm13rflpvt.v
-1477522731 tb_Multipliers.v
+1477584886 tb_Multipliers.v
 1477434699 ibm13rflpvt.v
-1477522982 ../../front_end/db/SINGLE/Sgf_Multiplication_syn.v
-1477523441 file_list
+1477584655 ../../front_end/db/SINGLE/Simple_KOA_syn.v
+1477584268 file_list
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 4
 0 

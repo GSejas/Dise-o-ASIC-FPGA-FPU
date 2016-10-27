@@ -1,8 +1,16 @@
 PIC_LD=ld
 
 ARCHIVE_OBJS=
+ARCHIVE_OBJS += _18046_archive_1.so
+_18046_archive_1.so : archive.5/_18046_archive_1.a
+	@$(AR) -s $<
+	@$(PIC_LD) -shared  -o .//../simv.daidir//_18046_archive_1.so --whole-archive $< --no-whole-archive
+	@rm -f $@
+	@ln -sf .//../simv.daidir//_18046_archive_1.so $@
+
+
 ARCHIVE_OBJS += _prev_archive_1.so
-_prev_archive_1.so : archive.2/_prev_archive_1.a
+_prev_archive_1.so : archive.5/_prev_archive_1.a
 	@$(AR) -s $<
 	@$(PIC_LD) -shared  -o .//../simv.daidir//_prev_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
@@ -12,7 +20,7 @@ _prev_archive_1.so : archive.2/_prev_archive_1.a
 
 VCS_ARC0 =_csrc0.so
 
-VCS_OBJS0 =objs/udps/exIG1.o objs/udps/U7Vwg.o 
+VCS_OBJS0 =objs/udps/exIG1.o objs/udps/U7Vwg.o objs/udps/uYEPC.o 
 
 
 

@@ -3,28 +3,28 @@
 Report : area
 Design : Simple_KOA_SW54
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 17:41:15 2016
+Date   : Thu Oct 27 10:12:53 2016
 ****************************************
 
 Library(s) Used:
 
     scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
 
-Number of ports:                          216
-Number of nets:                          6703
-Number of cells:                         5524
-Number of combinational cells:           5524
-Number of sequential cells:                 0
+Number of ports:                          219
+Number of nets:                          9300
+Number of cells:                         8217
+Number of combinational cells:           7945
+Number of sequential cells:               272
 Number of macros/black boxes:               0
-Number of buf/inv:                       1299
-Number of references:                      46
+Number of buf/inv:                       1456
+Number of references:                     113
 
-Combinational area:              67115.520530
-Buf/Inv area:                     6215.040247
-Noncombinational area:               0.000000
+Combinational area:             102437.280984
+Buf/Inv area:                     7367.040233
+Noncombinational area:            8278.559769
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:                 67115.520530
+Total cell area:                110715.840753
 Total area:                 undefined
 1

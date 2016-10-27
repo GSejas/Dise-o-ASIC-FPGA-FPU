@@ -3,9 +3,13 @@
 Report : port
 Design : Simple_KOA_SW54
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 17:41:16 2016
+Date   : Thu Oct 27 10:12:54 2016
 ****************************************
 
+
+
+Attributes:
+    d - dont_touch_network
 
                        Pin      Wire     Max     Max     Connection
 Port           Dir     Load     Load     Trans   Cap     Class      Attrs
@@ -118,6 +122,9 @@ Data_B_i[50]   in      0.0000   0.0000    1.02    1.71   --
 Data_B_i[51]   in      0.0000   0.0000    1.02    1.71   --         
 Data_B_i[52]   in      0.0000   0.0000    1.02    1.71   --         
 Data_B_i[53]   in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+load_b_i       in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
 sgf_result_o[0]
                out     0.0000   0.0000   --      --      --         
 sgf_result_o[1]

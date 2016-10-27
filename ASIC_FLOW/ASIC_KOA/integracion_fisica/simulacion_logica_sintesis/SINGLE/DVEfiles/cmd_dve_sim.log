@@ -1,97 +1,32 @@
-ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
 synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
-synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD1
-set ::dve_fid VPD1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp8mmT40
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.6640}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.6640}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpKic8Gj
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.18568}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.18568}
+ucliGUI::getSignalValues -scope tb_multiplier -radix {binary decimal hexadecimal hexadecimal hexadecimal binary binary symbolic decimal } -list {clk SW {a[23:0]} {b[23:0]} {FKOARES[47:0]} rst load_b_i {i[31:0]} cycles }
+ucliGUI::getSignalValues -scope tb_multiplier -radix {symbolic hexadecimal binary hexadecimal hexadecimal binary binary decimal decimal } -list {{i[31:0]} {FKOARES[47:0]} clk {a[23:0]} {b[23:0]} rst load_b_i SW cycles }
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-# Begin_DVE_Session_Save_Info
-# DVE restart session
-# Saved on Wed Oct 26 17:14:42 2016
-# Designs open: 1
-#   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
-# Toplevel windows open: 1
-# 	TopLevel.1
-#   Source.1: tb_multiplier
-#   Wave.1: 9 signals
-#   Group count = 1
-#   Group tb_multiplier signal count = 9
-# End_DVE_Session_Save_Info
-# DVE version: K-2015.09-SP2-3_Full64
-# DVE build date: Jun 15 2016 22:18:13
-#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
-# Application preferences
-#<WindowLayout>
-# DVE top-level session
-# Create and position top-level window: TopLevel.1
-set TopLevel.1 TopLevel.1
-# Docked window settings
-# MDI window settings
-set Console.1 Console.1
-set HSPane.1 HSPane.1
-set Hier.1 Hier.1
-set DLPane.1 DLPane.1
-set Data.1 Data.1
-set Wave.1 Wave.1
-set Source.1 Source.1
-# End MDI window settings
-#</WindowLayout>
-#<Database>
-#</Database>
-# DVE Global setting session:
-# Global: Breakpoints
-# Global: Bus
-# Global: Expressions
-# Global: Signal Time Shift
-# Global: Signal Compare
-# Global: Signal Groups
-synopsys::dump -add {tb_multiplier} -scope "." -depth 1 -fid VPD1
-set _session_group_1 tb_multiplier
-set tb_multiplier "$_session_group_1"
-# Global: Highlighting
-# Global: Stack
-synopsys::xml {set_only_active_frame <data value="1" />}
-# Post database loading setting...
-# Save global setting...
-# Wave/List view global setting
-# Close all empty TopLevel windows
-foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
-# DVE View/pane content session:
-# Hier 'Hier.1'
-catch {gui_list_select -id ${Hier.1} {tb_multiplier}}
-ucliGUI::getSignalValues -scope tb_multiplier -radix {binary decimal hexadecimal hexadecimal symbolic hexadecimal binary decimal binary } -list {load_b_i SW {a[23:0]} {b[23:0]} {i[31:0]} {FKOARES[47:0]} clk cycles rst }
-# Data 'Data.1'
-# View 'Wave.1'
-set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-set origGroupCreationState [gui_list_create_group_when_add -wave]
-if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-if { $groupExD } {  gui_msg_report -code DVWW028 }
-# Source 'Source.1'
-# Restore toplevel window zorder
-# The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${DLPane.1} }
-#</Session>
+synopsys::dump -add {tb_multiplier} -scope "." -depth 1 -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
-ucliGUI::getSignalValues -scope tb_multiplier -radix {binary decimal hexadecimal hexadecimal symbolic hexadecimal binary decimal binary } -list {load_b_i SW {a[23:0]} {b[23:0]} {i[31:0]} {FKOARES[47:0]} clk cycles rst }
+ucliGUI::getSignalValues -scope tb_multiplier -radix {symbolic hexadecimal binary hexadecimal hexadecimal binary binary decimal decimal } -list {{i[31:0]} {FKOARES[47:0]} clk {a[23:0]} {b[23:0]} rst load_b_i SW cycles }
 if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
 synopsys::finish
 set ucliGUI::state

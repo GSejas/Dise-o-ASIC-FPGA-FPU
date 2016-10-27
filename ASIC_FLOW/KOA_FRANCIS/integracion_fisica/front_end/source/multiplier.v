@@ -31,7 +31,7 @@ module multiplier
     reg [2*W-1:0] pdt_int;// [level-1:0];
     
     assign Data_S_o=pdt_int;
-    
+ 
     always@*
     begin
         //aint<=Data_A_i;

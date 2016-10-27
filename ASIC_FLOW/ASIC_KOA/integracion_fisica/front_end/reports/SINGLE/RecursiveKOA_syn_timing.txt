@@ -7,42 +7,80 @@ Report : timing
         -max_paths 1
 Design : RecursiveKOA_SW24
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 18:11:22 2016
+Date   : Thu Oct 27 08:26:33 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: load_b_i (input port clocked by clk)
-  Endpoint: finalreg/Q_reg_37_
+  Startpoint: EVEN1_right_RECURSIVE_EVEN1_left_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: EVEN1_finalreg_Q_reg_47_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              1.00       1.00
-  input external delay                     3.00       4.00 r
-  load_b_i (in)                            0.01       4.01 r
-  finalreg/load (RegisterAdd_W48)          0.00       4.01 r
-  finalreg/U56/Y (INVX2TS)                 0.08       4.09 f
-  finalreg/U57/Y (CLKBUFX2TS)              0.30       4.38 f
-  finalreg/U39/Y (AO22XLTS)                0.52       4.90 f
-  finalreg/Q_reg_37_/D (DFFRXLTS)          0.00       4.90 f
-  data arrival time                                   4.90
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  EVEN1_right_RECURSIVE_EVEN1_left_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_0_/CK (DFFQX1TS)
+                                                          0.00       1.00 r
+  EVEN1_right_RECURSIVE_EVEN1_left_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_0_/Q (DFFQX1TS)
+                                                          0.90       1.90 f
+  U792/CON (AFHCONX2TS)                                   0.52       2.42 r
+  U795/CO (AFHCINX2TS)                                    0.21       2.63 f
+  U791/CON (AFHCONX2TS)                                   0.23       2.86 r
+  U790/CO (AFHCINX2TS)                                    0.21       3.07 f
+  U789/CON (AFHCONX2TS)                                   0.23       3.30 r
+  U788/S (AFHCINX2TS)                                     0.42       3.72 r
+  U797/CON (AFHCONX2TS)                                   0.35       4.08 f
+  U796/CO (AFHCINX2TS)                                    0.22       4.30 r
+  U845/S (ADDFHX2TS)                                      0.44       4.73 f
+  U602/Y (INVX2TS)                                        0.15       4.88 r
+  U546/S (ADDFHX2TS)                                      0.44       5.32 f
+  U604/Y (NAND2X1TS)                                      0.16       5.49 r
+  U608/Y (NAND2X1TS)                                      0.19       5.68 f
+  U529/Y (XOR2X4TS)                                       0.19       5.87 r
+  U503/Y (NOR2X4TS)                                       0.12       5.99 f
+  U816/Y (NOR2X2TS)                                       0.14       6.13 r
+  U841/Y (AOI21X2TS)                                      0.14       6.27 f
+  U527/CO (ACHCINX4TS)                                    0.16       6.43 r
+  U937/CON (AFHCONX2TS)                                   0.19       6.62 f
+  U579/CO (AFHCINX2TS)                                    0.27       6.89 r
+  U976/CON (AHHCONX2TS)                                   0.20       7.09 f
+  U844/Y (NOR2BX4TS)                                      0.15       7.24 r
+  U985/CO (CMPR22X2TS)                                    0.22       7.47 r
+  U528/Y (XOR2X4TS)                                       0.16       7.62 r
+  U728/S (ADDFHX2TS)                                      0.40       8.02 r
+  U33/Y (NAND2X1TS)                                       0.18       8.20 f
+  U1143/Y (OAI21X1TS)                                     0.34       8.54 r
+  U1144/Y (AOI21X4TS)                                     0.16       8.69 f
+  U738/Y (XOR2X4TS)                                       0.15       8.84 r
+  U24/Y (NOR2BX2TS)                                       0.15       8.99 f
+  U1096/Y (NOR2X4TS)                                      0.12       9.11 r
+  U586/Y (NAND2X2TS)                                      0.11       9.22 f
+  U1099/Y (NOR2X2TS)                                      0.16       9.38 r
+  U1102/Y (AOI21X4TS)                                     0.16       9.54 f
+  U1440/CO (AHHCINX4TS)                                   0.17       9.70 r
+  U1131/CON (AHHCONX4TS)                                  0.12       9.82 f
+  U1135/Y (NOR2X4TS)                                      0.12       9.94 r
+  U1137/Y (XOR2X4TS)                                      0.16      10.10 f
+  U127/Y (OAI21X2TS)                                      0.13      10.23 r
+  EVEN1_finalreg_Q_reg_47_/D (DFFRXLTS)                   0.00      10.23 r
+  data arrival time                                                 10.23
 
-  clock clk (rise edge)                   10.00      10.00
-  clock network delay (ideal)              1.00      11.00
-  clock uncertainty                       -0.50      10.50
-  finalreg/Q_reg_37_/CK (DFFRXLTS)         0.00      10.50 r
-  library setup time                      -0.20      10.30
-  data required time                                 10.30
-  -----------------------------------------------------------
-  data required time                                 10.30
-  data arrival time                                  -4.90
-  -----------------------------------------------------------
-  slack (MET)                                         5.40
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  EVEN1_finalreg_Q_reg_47_/CK (DFFRXLTS)                  0.00      10.50 r
+  library setup time                                     -0.27      10.23
+  data required time                                                10.23
+  --------------------------------------------------------------------------
+  data required time                                                10.23
+  data arrival time                                                -10.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
 
 
 1

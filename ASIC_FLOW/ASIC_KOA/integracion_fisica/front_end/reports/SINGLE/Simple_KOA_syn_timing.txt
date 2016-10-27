@@ -6,79 +6,55 @@ Report : timing
         -max_paths 1
 Design : Simple_KOA_SW24
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 17:40:32 2016
+Date   : Thu Oct 27 10:10:55 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Data_A_i[3]
-              (input port)
-  Endpoint: sgf_result_o[47]
-            (output port)
-  Path Group: (none)
+  Startpoint: Data_A_i[14]
+              (input port clocked by clk)
+  Endpoint: RECURSIVE_EVEN1_middle_Data_S_o_reg_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
   Path Type: max
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  Data_A_i[3] (in)                         0.01       0.01 f
-  U398/Y (NAND2X1TS)                       0.13       0.14 r
-  U35/Y (OAI21XLTS)                        0.16       0.30 f
-  U199/Y (NOR2XLTS)                        0.66       0.96 r
-  U399/Y (INVX2TS)                         0.34       1.30 f
-  U197/Y (INVX2TS)                         0.18       1.48 r
-  U418/Y (AOI21X1TS)                       0.14       1.63 f
-  U36/Y (NOR2XLTS)                         0.30       1.93 r
-  U39/Y (AO21XLTS)                         0.31       2.24 r
-  U459/S (CMPR32X2TS)                      0.72       2.95 f
-  U1183/CO (CMPR32X2TS)                    0.65       3.60 f
-  U761/CO (CMPR32X2TS)                     0.67       4.27 f
-  U763/CO (CMPR32X2TS)                     0.47       4.74 f
-  U765/CO (CMPR32X2TS)                     0.47       5.22 f
-  U767/CO (CMPR32X2TS)                     0.47       5.69 f
-  U769/CO (CMPR32X2TS)                     0.47       6.16 f
-  U771/CO (CMPR32X2TS)                     0.47       6.64 f
-  U774/CO (CMPR32X2TS)                     0.47       7.11 f
-  U773/S (CMPR32X2TS)                      0.55       7.66 f
-  U794/CO (CMPR32X2TS)                     0.66       8.32 f
-  U800/CO (CMPR32X2TS)                     0.67       8.99 f
-  U809/CO (CMPR32X2TS)                     0.67       9.66 f
-  U811/CO (CMPR32X2TS)                     0.47      10.14 f
-  U820/CO (CMPR32X2TS)                     0.67      10.81 f
-  U822/CO (CMPR32X2TS)                     0.47      11.28 f
-  U831/CO (CMPR32X2TS)                     0.67      11.96 f
-  U833/CO (CMPR32X2TS)                     0.47      12.43 f
-  U845/CO (CMPR32X2TS)                     0.67      13.10 f
-  U854/CO (CMPR32X2TS)                     0.47      13.57 f
-  U859/CO (CMPR32X2TS)                     0.67      14.25 f
-  U864/CO (CMPR32X2TS)                     0.67      14.92 f
-  U870/CO (CMPR32X2TS)                     0.67      15.59 f
-  U875/CO (CMPR32X2TS)                     0.67      16.26 f
-  U880/CO (CMPR32X2TS)                     0.67      16.93 f
-  U885/CO (CMPR32X2TS)                     0.67      17.60 f
-  U893/CO (CMPR32X2TS)                     0.67      18.28 f
-  U900/CO (CMPR32X2TS)                     0.67      18.95 f
-  U908/CO (CMPR32X2TS)                     0.67      19.62 f
-  U916/CO (CMPR32X2TS)                     0.67      20.29 f
-  U924/CO (CMPR32X2TS)                     0.67      20.96 f
-  U931/CO (CMPR32X2TS)                     0.67      21.63 f
-  U939/CO (CMPR32X2TS)                     0.67      22.31 f
-  U947/CO (CMPR32X2TS)                     0.67      22.98 f
-  U1261/CO (CMPR32X2TS)                    0.68      23.66 f
-  U274/Y (NOR3XLTS)                        0.48      24.13 r
-  U1263/Y (NAND2X1TS)                      0.32      24.46 f
-  U1265/Y (NOR2XLTS)                       0.37      24.83 r
-  U1267/Y (NAND2X1TS)                      0.28      25.11 f
-  U1269/Y (NOR2XLTS)                       0.37      25.48 r
-  U1271/Y (NAND2X1TS)                      0.28      25.76 f
-  U1273/Y (NOR2XLTS)                       0.37      26.13 r
-  U1283/Y (NOR2BX1TS)                      0.35      26.49 r
-  U1284/Y (XNOR2X1TS)                      0.23      26.71 f
-  sgf_result_o[47] (out)                   0.00      26.71 f
-  data arrival time                                  26.71
-  -----------------------------------------------------------
-  (Path is unconstrained)
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 f
+  Data_A_i[14] (in)                                       0.01       4.01 f
+  U83/Y (XOR2X1TS)                                        0.24       4.25 r
+  U1419/Y (XNOR2X1TS)                                     0.28       4.53 r
+  U726/Y (CLKXOR2X4TS)                                    0.50       5.03 r
+  U723/Y (NAND2X4TS)                                      0.12       5.15 f
+  U725/Y (AO21X2TS)                                       0.35       5.49 f
+  U385/S (ADDFX1TS)                                       0.75       6.24 f
+  DP_OP_17J22_123_9811_U272/S (CMPR42X2TS)                1.15       7.40 f
+  DP_OP_17J22_123_9811_U271/S (CMPR42X2TS)                0.89       8.29 f
+  U1650/Y (NOR2X2TS)                                      0.16       8.45 r
+  U1654/Y (OAI21X2TS)                                     0.16       8.61 f
+  U835/Y (AOI21X2TS)                                      0.17       8.79 r
+  U1656/Y (OAI21X2TS)                                     0.17       8.95 f
+  U1703/Y (AOI21X1TS)                                     0.20       9.15 r
+  U710/Y (XOR2XLTS)                                       0.19       9.33 r
+  RECURSIVE_EVEN1_middle_Data_S_o_reg_20_/D (DFFQX1TS)
+                                                          0.00       9.33 r
+  data arrival time                                                  9.33
+
+  clock clk (rise edge)                                   9.00       9.00
+  clock network delay (ideal)                             1.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  RECURSIVE_EVEN1_middle_Data_S_o_reg_20_/CK (DFFQX1TS)
+                                                          0.00       9.50 r
+  library setup time                                     -0.17       9.33
+  data required time                                                 9.33
+  --------------------------------------------------------------------------
+  data required time                                                 9.33
+  data arrival time                                                 -9.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
 
 
 1

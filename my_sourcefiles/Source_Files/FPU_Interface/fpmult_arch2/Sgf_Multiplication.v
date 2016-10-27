@@ -75,26 +75,24 @@ generate
         //////////////////////////////////even//////////////////////////////////
        //Multiplier for left side and right side
         
-  
-            assign Q_left = Data_A_i[SW-1:SW-SW/2]*Data_B_i[SW-1:SW-SW/2];
-            /*RegisterAdd #(.W(SW)) leftreg( //Data X input register
-                .clk(clk), 
-                .rst(rst), 
-                .load(1'b1), 
-                .D(result_left_mult), 
-                .Q(Q_left)
-            );//*/
-    
+              multiplier #(.W(SW/2)/*,.level(level1)*/) left(
+                .clk(clk),
+                .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
+                .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
+                .Data_S_o(/*result_left_mult*/Q_left)
+            );
+            
+            multiplier #(.W(SW/2)/*,.level(level1)*/) right(
+                .clk(clk),
+                .Data_A_i(Data_A_i[SW-SW/2-1:0]),
+                .Data_B_i(Data_B_i[SW-SW/2-1:0]),
+                .Data_S_o(Q_right[2*(SW/2)-1:0])
+            );
 
-        	assign Q_right[2*(SW/2)-1:0] = Data_A_i[SW-SW/2-1:0]*Data_B_i[SW-SW/2-1:0];
-            /*RegisterAdd #(.W(SW)) rightreg( //Data X input register
-                .clk(clk), 
-                .rst(rst), 
-                .load(1'b1), 
-                .D(result_right_mult[2*(SW/2)-1:0]), 
-                .Q(Q_right[2*(SW/2)-1:0])
-            );//*/
-        
+         //   assign Q_left = Data_A_i[SW-1:SW-SW/2]*Data_B_i[SW-1:SW-SW/2];
+
+        //	assign Q_right[2*(SW/2)-1:0] = Data_A_i[SW-SW/2-1:0]*Data_B_i[SW-SW/2-1:0];
+
            //Adders for middle 
         
             adder #(.W(SW/2)) A_operation (
@@ -110,30 +108,17 @@ generate
             );
             //segmentation registers for 64 bits
             
-            /*RegisterAdd #(.W(SW/2+1)) preAreg ( //Data X input register
-                            .clk(clk), 
-                            .rst(rst), 
-                            .load(1'b1), 
-                            .D(result_A_adder[SW/2:0]), 
-                            .Q(Q_result_A_adder[SW/2:0])
-                        );//
-                        
-            RegisterAdd #(.W(SW/2+1)) preBreg ( //Data X input register
-                            .clk(clk), 
-                            .rst(rst), 
-                            .load(1'b1), 
-                            .D(result_B_adder[SW/2:0]), 
-                            .Q(Q_result_B_adder[SW/2:0])
-                        );//*/
+
            //multiplication for middle
         
             multiplier #(.W(SW/2+1)/*,.level(level1)*/) middle (
-   //             .clk(clk),
+                .clk(clk),
                 .Data_A_i(/*Q_result_A_adder[SW/2:0]*/result_A_adder[SW/2:0]),
                 .Data_B_i(/*Q_result_B_adder[SW/2:0]*/result_B_adder[SW/2:0]),
                 .Data_S_o(/*result_middle_mult[2*(SW/2)+1:0]*/Q_middle[2*(SW/2)+1:0])
             );
-		assign Q_middle[2*(SW/2)+1:0] = result_A_adder[SW/2:0]*result_B_adder[SW/2:0];
+
+		//assign Q_middle[2*(SW/2)+1:0] = result_A_adder[SW/2:0]*result_B_adder[SW/2:0];
 
            //segmentation registers array
         
@@ -163,7 +148,7 @@ generate
            //Final adder
             adder #(.W(4*(SW/2))) Final(
                 .Data_A_i({/*result_left_mult,result_right_mult*/Q_left,Q_right[2*(SW/2)-1:0]}),
-                .Data_B_i({{(2*SW-(SW+(SW/2)+2)){1'b0}},S_B[2*(SW/2)+1:0],rightside1}),
+                .Data_B_i({{(2*SW-(SW+(SW/2)+2))){1'b0}},S_B[2*(SW/2)+1:0],rightside1}),
                 .Data_S_o(Result[4*(SW/2):0])
             );
            
@@ -185,7 +170,7 @@ generate
         //Multiplier for left side and right side
            
            multiplier #(.W(SW/2)/*,.level(level2)*/) left(
-        //                .clk(clk),
+                        .clk(clk),
                         .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
                         .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
                         .Data_S_o(/*result_left_mult*/Q_left)
@@ -200,7 +185,7 @@ generate
             );//*/
     
             multiplier #(.W((SW/2)+1)/*,.level(level2)*/) right(
-    //            .clk(clk),
+                .clk(clk),
                 .Data_A_i(Data_A_i[SW-SW/2-1:0]),
                 .Data_B_i(Data_B_i[SW-SW/2-1:0]),
                 .Data_S_o(/*result_right_mult*/Q_right)
@@ -228,42 +213,17 @@ generate
                 .Data_S_o(result_B_adder)
             );
             
-            //segmentation registers for 64 bits
-                        
-            /*RegisterAdd #(.W(SW/2+2)) preAreg ( //Data X input register
-                            .clk(clk), 
-                            .rst(rst), 
-                            .load(1'b1), 
-                            .D(result_A_adder), 
-                            .Q(Q_result_A_adder)
-                        );//
-                        
-            RegisterAdd #(.W(SW/2+2)) preBreg ( //Data X input register
-                            .clk(clk), 
-                            .rst(rst), 
-                            .load(1'b1), 
-                            .D(result_B_adder), 
-                            .Q(Q_result_B_adder)
-                        );//*/
+
            //multiplication for middle
         
             multiplier #(.W(SW/2+2)/*,.level(level2)*/) middle (
-   //             .clk(clk),
+                .clk(clk),
                 .Data_A_i(/*Q_result_A_adder*/result_A_adder),
                 .Data_B_i(/*Q_result_B_adder*/result_B_adder),
                 .Data_S_o(/*result_middle_mult*/Q_middle)
             );
         
            //segmentation registers array
-        
-        
-            /*RegisterAdd #(.W(2*((SW/2)+2))) midreg ( //Data X input register
-                .clk(clk), 
-                .rst(rst), 
-                .load(1'b1), 
-                .D(result_middle_mult), 
-                .Q(Q_middle)
-            );//*/
         
            ///Subtractors for middle
             

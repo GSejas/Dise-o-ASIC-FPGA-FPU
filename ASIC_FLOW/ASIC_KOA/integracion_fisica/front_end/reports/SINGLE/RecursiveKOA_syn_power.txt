@@ -9,7 +9,7 @@ Report : power
         -analysis_effort high
 Design : RecursiveKOA_SW24
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 18:11:22 2016
+Date   : Thu Oct 27 08:26:33 2016
 ****************************************
 
 
@@ -31,12 +31,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 107.2139 uW   (97%)
-  Net Switching Power  =   3.4394 uW    (3%)
+  Cell Internal Power  = 800.8719 uW   (77%)
+  Net Switching Power  = 235.7654 uW   (23%)
                          ---------
-Total Dynamic Power    = 110.6532 uW  (100%)
+Total Dynamic Power    =   1.0366 mW  (100%)
 
-Cell Leakage Power     =   2.3474 nW
+Cell Leakage Power     =  30.5820 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,10 +45,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.1047        2.3491e-04        1.7886e+03            0.1049  (  94.80%)
+clock_network      0.2551            0.1659        1.1566e+04            0.4210  (  40.61%)
+register           0.3986        7.5611e-03        4.8385e+03            0.4062  (  39.18%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  2.5465e-03        3.2045e-03          558.7593        5.7515e-03  (   5.20%)
+combinational      0.1472        6.2284e-02        1.4178e+04            0.2095  (  20.21%)
 --------------------------------------------------------------------------------------------------
-Total              0.1072 mW     3.4394e-03 mW     2.3474e+03 pW         0.1107 mW
+Total              0.8009 mW         0.2358 mW     3.0582e+04 pW         1.0367 mW
 1

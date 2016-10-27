@@ -28,10 +28,10 @@ module tb_multiplier (); /* this is automatically generated */
   reg load_b_i;
 
  `ifdef SINGLE
-Sgf_Multiplication_SW24 #(.SW(SW))
+Simple_KOA_SW24 
 `endif
 `ifdef DOUBLE
-Sgf_Multiplication_SW54 #(.SW(SW))
+Simple_KOA_SW54 
 `endif
 inst_Sgf_Multiplication (.clk(clk),.rst(rst),.load_b_i(load_b_i),.Data_A_i(a), .Data_B_i(b), .sgf_result_o(FKOARES));
 
@@ -53,6 +53,7 @@ end
       load_b_i = 1;
       #100;
       b = 2;
+      #5;
 
           repeat (cycles)  begin
           a = i;

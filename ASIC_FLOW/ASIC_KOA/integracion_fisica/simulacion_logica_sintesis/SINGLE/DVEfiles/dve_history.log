@@ -128,12 +128,36 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose} -dir .
-gui_sim_continue  
-gui_zoom -window Wave.1 -full
 gui_list_add -id Wave.1 -from Hier.1 { tb_multiplier } -insertionbar
-gui_sim_restart
-gui_set_pref_value -category {Source} -key {value_annotate} -value {false}
-gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
 gui_sim_continue  
 gui_zoom -window Wave.1 -full
-gui_marker_move -id  Wave.1 C1 3065941
+gui_marker_move -id  Wave.1 C1 8050000
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 8070000
+gui_marker_move -id  Wave.1 C1 8065000
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 8100000
+gui_marker_move -id  Wave.1 C1 8111583
+gui_marker_move -id  Wave.1 C1 8115000
+gui_marker_move -id  Wave.1 C1 8100000
+gui_marker_move -id  Wave.1 C1 8105000
+gui_marker_move -id  Wave.1 C1 8115000
+gui_marker_move -id  Wave.1 C1 8115931

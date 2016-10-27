@@ -1,8 +1,8 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Wed Oct 26 17:15:17 2016
+# Saved on Thu Oct 27 10:15:53 2016
 # Designs open: 1
-#   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
+#   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: tb_multiplier
@@ -15,7 +15,7 @@
 # DVE build date: Jun 15 2016 22:18:13
 
 
-#<Session mode="Full" path="/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/DVEfiles/session.tcl" type="Debug">
+#<Session mode="Full" path="/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE/DVEfiles/session.tcl" type="Debug">
 
 gui_set_loading_session_type Post
 gui_continuetime_set
@@ -139,10 +139,10 @@ if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
 }
 
 gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 459} {child_data_colvalue 246} {child_data_coltype 313} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 415} {child_data_colvalue 336} {child_data_coltype 269} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 465} {child_wave_right 553} {child_wave_colname 300} {child_wave_colvalue 161} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 465} {child_wave_right 553} {child_wave_colname 300} {child_wave_colvalue 160} {child_wave_col1 0} {child_wave_col2 1}}
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
 gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
@@ -165,11 +165,11 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 # DVE Open design session: 
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
-gui_set_env SIMSETUP::SIMARGS {{-ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose}}
-gui_set_env SIMSETUP::SIMEXE {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv}
+gui_set_env SIMSETUP::SIMARGS {{+v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose}}
+gui_set_env SIMSETUP::SIMEXE {simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
-if { ![gui_is_db_opened -db {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv}] } {
-gui_sim_run Ucli -exe simv -args {-ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE -nosource
+if { ![gui_is_db_opened -db {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv}] } {
+gui_sim_run Ucli -exe simv -args { +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose -ucligui} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE -nosource
 }
 }
 if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
@@ -194,13 +194,15 @@ gui_set_time_units 1ps
 gui_load_child_values {tb_multiplier}
 
 
-set _session_group_2 tb_multiplier
-gui_sg_create "$_session_group_2"
-set tb_multiplier "$_session_group_2"
+set _session_group_1 tb_multiplier
+gui_sg_create "$_session_group_1"
+set tb_multiplier "$_session_group_1"
 
-gui_sg_addsignal -group "$_session_group_2" { tb_multiplier.load_b_i tb_multiplier.SW tb_multiplier.a tb_multiplier.b tb_multiplier.i tb_multiplier.FKOARES tb_multiplier.clk tb_multiplier.cycles tb_multiplier.rst }
+gui_sg_addsignal -group "$_session_group_1" { tb_multiplier.load_b_i tb_multiplier.SW tb_multiplier.a tb_multiplier.b tb_multiplier.i tb_multiplier.FKOARES tb_multiplier.clk tb_multiplier.cycles tb_multiplier.rst }
 gui_set_radix -radix {decimal} -signals {Sim:tb_multiplier.SW}
 gui_set_radix -radix {twosComplement} -signals {Sim:tb_multiplier.SW}
+gui_set_radix -radix {decimal} -signals {Sim:tb_multiplier.i}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_multiplier.i}
 gui_set_radix -radix {decimal} -signals {Sim:tb_multiplier.cycles}
 gui_set_radix -radix {twosComplement} -signals {Sim:tb_multiplier.cycles}
 
@@ -212,7 +214,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 3065941
+gui_set_time -C1_only 8115931
 
 
 
@@ -259,7 +261,7 @@ gui_list_set_height -id Wave -height 15
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 0 51345000
+gui_wv_zoom_timerange -id ${Wave.1} 8088062 8188356
 gui_list_add_group -id ${Wave.1} -after {New Group} {tb_multiplier}
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
@@ -278,14 +280,14 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group tb_multiplier  -position in
 
-gui_marker_move -id ${Wave.1} {C1} 3065941
+gui_marker_move -id ${Wave.1} {C1} 8115931
 gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 
 # Source 'Source.1'
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active tb_multiplier /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_sintesis/SINGLE/tb_Multipliers.v
+gui_open_source -id ${Source.1}  -replace -active tb_multiplier /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_KOA/integracion_fisica/simulacion_logica_sintesis/SINGLE/tb_Multipliers.v
 gui_src_value_annotate -id ${Source.1} -switch true
 gui_set_env TOGGLE::VALUEANNOTATE 1
 gui_view_scroll -id ${Source.1} -vertical -set 45

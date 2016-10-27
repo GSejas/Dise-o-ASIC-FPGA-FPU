@@ -21,20 +21,39 @@ module tb_multiplier (); /* this is automatically generated */
 
   reg [SW-1:0] a;
   reg [SW-1:0] b;
- // wire [2*SW-2:0] BinaryRES;
+  wire [2*SW-1:0] RecursiveKOA;
   wire [2*SW-1:0] KOA_Simple;
-  reg clk;
+
   reg rst;
   reg load_b_i;
 
+  // RecursiveKOA #(
+  //     .SW(SW)
+  //   ) inst_RecursiveKOA (
+  //     .clk          (clk),
+  //     .rst          (rst),
+  //     .load_b_i     (load_b_i),
+  //     .Data_A_i     (a),
+  //     .Data_B_i     (b),
+  //     .sgf_result_o (RecursiveKOA)
+  //   );
 
-  RecursiveKOA #(.SW(SW)) inst_Simple_KOA (.clk(clk),.rst(rst),.load_b_i(load_b_i),.Data_A_i(a), .Data_B_i(b), .sgf_result_o(KOA_Simple));
+  Simple_KOA #(
+      .SW(SW)
+    ) inst_Simple_KOA (
+      .clk          (clk),
+      .rst          (rst),
+      .load_b_i     (load_b_i),
+      .Data_A_i     (a),
+      .Data_B_i     (b),
+      .sgf_result_o (KOA_Simple)
+    );
 
   integer i = 1;
   parameter cycles = 1024;
 
     initial begin
-      $monitor(a,b, KOA_Simple, a*b);
+      $monitor(a,b, KOA_Simple, RecursiveKOA, a*b);
 end
 
     initial begin

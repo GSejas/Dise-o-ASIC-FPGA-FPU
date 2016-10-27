@@ -1,0 +1,68 @@
+{
+    "Modules": {
+        "CLKBUFX2TS": {},
+        "...MASTER...": {},
+        "XNOR2X4TS": {},
+        "Simple_KOA_SW24": {},
+        "AOI21X4TS": {},
+        "INVX4TS": {},
+        "tb_multiplier": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "NAND2X4TS": {},
+        "AO21XLTS": {},
+        "DFFTRX1TS": {},
+        "XOR2XLTS": {},
+        "MX2X1TS": {},
+        "OAI22X1TS": {},
+        "NAND2BXLTS": {},
+        "NOR2XLTS": {},
+        "NOR2BX1TS": {},
+        "OAI21XLTS": {},
+        "OA21X2TS": {},
+        "AFHCONX2TS": {},
+        "OR2X2TS": {},
+        "XOR3X1TS": {},
+        "CMPR32X2TS": {},
+        "ADDFX1TS": {},
+        "CLKAND2X2TS": {},
+        "ADDHXLTS": {},
+        "AHHCONX4TS": {},
+        "AFHCINX2TS": {},
+        "DFFRXLTS": {},
+        "AHHCINX4TS": {},
+        "CMPR42X2TS": {},
+        "DFFQX1TS": {}
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7101,
+            "checksum": 4294967295
+        },
+        "vVQa8_d": {
+            "mod": "tb_multiplier",
+            "out": "vVQa8_d.o",
+            "mode": 4,
+            "bytes": 12989,
+            "checksum": 4294967295,
+            "archive": "archive.5/_18046_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 12989,
+            "objects": [
+                [
+                    "vVQa8_d.o",
+                    12989
+                ]
+            ],
+            "archive": "archive.5/_18046_archive_1.a"
+        }
+    ]
+}

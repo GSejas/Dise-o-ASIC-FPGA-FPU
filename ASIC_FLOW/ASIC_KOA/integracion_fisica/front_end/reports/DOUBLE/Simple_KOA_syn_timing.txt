@@ -6,143 +6,81 @@ Report : timing
         -max_paths 1
 Design : Simple_KOA_SW54
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 17:41:16 2016
+Date   : Thu Oct 27 10:12:54 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Data_A_i[2]
-              (input port)
-  Endpoint: sgf_result_o[107]
-            (output port)
-  Path Group: (none)
+  Startpoint: RECURSIVE_EVEN1_right_Data_S_o_reg_33_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: RECURSIVE_EVEN1_finalreg_Q_reg_105_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
   Path Type: max
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 r
-  Data_A_i[2] (in)                         0.02       0.02 r
-  U619/Y (INVX2TS)                         0.07       0.10 f
-  U1266/Y (CLKBUFX2TS)                     0.25       0.34 f
-  U1267/Y (OAI2BB2XLTS)                    0.33       0.68 f
-  U618/Y (NOR2XLTS)                        0.39       1.06 r
-  U1268/Y (INVX2TS)                        0.29       1.35 f
-  U1269/Y (CLKBUFX2TS)                     0.34       1.70 f
-  U1366/Y (OAI222X1TS)                     0.32       2.02 r
-  U1367/Y (AOI21X1TS)                      0.19       2.20 f
-  U1370/Y (AND3X1TS)                       0.36       2.56 f
-  U1572/CO (CMPR32X2TS)                    0.47       3.03 f
-  U1571/CO (CMPR32X2TS)                    0.67       3.70 f
-  U1570/CO (CMPR32X2TS)                    0.67       4.37 f
-  U1569/CO (CMPR32X2TS)                    0.67       5.04 f
-  U1575/CO (CMPR32X2TS)                    0.67       5.71 f
-  U4708/CO (CMPR32X2TS)                    0.67       6.39 f
-  U4232/CO (CMPR32X2TS)                    0.47       6.86 f
-  U1566/CO (CMPR32X2TS)                    0.67       7.53 f
-  U1564/CO (CMPR32X2TS)                    0.67       8.20 f
-  U4719/CO (CMPR32X2TS)                    0.67       8.87 f
-  U4230/CO (CMPR32X2TS)                    0.67       9.55 f
-  U4725/CO (CMPR32X2TS)                    0.67      10.22 f
-  U4727/CO (CMPR32X2TS)                    0.67      10.89 f
-  U4319/CO (CMPR32X2TS)                    0.67      11.56 f
-  U1523/CO (CMPR32X2TS)                    0.67      12.23 f
-  U4894/CO (CMPR32X2TS)                    0.67      12.90 f
-  U4346/CO (CMPR32X2TS)                    0.67      13.58 f
-  U1525/CO (CMPR32X2TS)                    0.67      14.25 f
-  U4809/CO (CMPR32X2TS)                    0.67      14.92 f
-  U4302/CO (CMPR32X2TS)                    0.67      15.59 f
-  U1765/CO (CMPR32X2TS)                    0.67      16.26 f
-  U4814/CO (CMPR32X2TS)                    0.67      16.93 f
-  U4264/CO (CMPR32X2TS)                    0.67      17.61 f
-  U1772/CO (CMPR32X2TS)                    0.67      18.28 f
-  U2189/CO (CMPR32X2TS)                    0.67      18.95 f
-  U2383/CO (CMPR32X2TS)                    0.67      19.62 f
-  U2382/CO (CMPR32X2TS)                    0.47      20.09 f
-  U1521/CO (CMPR32X2TS)                    0.47      20.57 f
-  U1548/CO (CMPR32X2TS)                    0.47      21.04 f
-  U2008/S (CMPR32X2TS)                     0.50      21.54 r
-  U4934/CO (CMPR32X2TS)                    0.63      22.17 r
-  U4933/CO (CMPR32X2TS)                    0.67      22.84 r
-  U4932/CO (CMPR32X2TS)                    0.41      23.25 r
-  U4931/CO (CMPR32X2TS)                    0.67      23.92 r
-  U4930/CO (CMPR32X2TS)                    0.67      24.59 r
-  U4929/CO (CMPR32X2TS)                    0.41      24.99 r
-  U4928/CO (CMPR32X2TS)                    0.67      25.67 r
-  U4927/CO (CMPR32X2TS)                    0.67      26.34 r
-  U4926/CO (CMPR32X2TS)                    0.41      26.74 r
-  U4925/CO (CMPR32X2TS)                    0.41      27.15 r
-  U4924/CO (CMPR32X2TS)                    0.67      27.82 r
-  U4923/CO (CMPR32X2TS)                    0.41      28.22 r
-  U4922/CO (CMPR32X2TS)                    0.41      28.63 r
-  U4921/CO (CMPR32X2TS)                    0.67      29.30 r
-  U4920/CO (CMPR32X2TS)                    0.41      29.71 r
-  U4919/CO (CMPR32X2TS)                    0.67      30.38 r
-  U4918/CO (CMPR32X2TS)                    0.67      31.05 r
-  U4917/CO (CMPR32X2TS)                    0.41      31.46 r
-  U4916/CO (CMPR32X2TS)                    0.67      32.13 r
-  U4915/CO (CMPR32X2TS)                    0.67      32.80 r
-  U4914/CO (CMPR32X2TS)                    0.41      33.21 r
-  U2469/CO (CMPR32X2TS)                    0.67      33.88 r
-  U2468/CO (CMPR32X2TS)                    0.41      34.28 r
-  U2467/CO (CMPR32X2TS)                    0.41      34.69 r
-  U2466/CO (CMPR32X2TS)                    0.41      35.09 r
-  U2465/CO (CMPR32X2TS)                    0.41      35.50 r
-  U2464/CO (CMPR32X2TS)                    0.41      35.90 r
-  U2463/CO (CMPR32X2TS)                    0.67      36.57 r
-  U2462/CO (CMPR32X2TS)                    0.41      36.98 r
-  U2461/CO (CMPR32X2TS)                    0.41      37.38 r
-  U2460/CO (CMPR32X2TS)                    0.41      37.79 r
-  U2459/CO (CMPR32X2TS)                    0.67      38.46 r
-  U2458/CO (CMPR32X2TS)                    0.41      38.87 r
-  U4913/CO (CMPR32X2TS)                    0.41      39.27 r
-  U2437/CO (CMPR32X2TS)                    0.67      39.94 r
-  U2436/CO (CMPR32X2TS)                    0.41      40.35 r
-  U2435/CO (CMPR32X2TS)                    0.41      40.75 r
-  U2434/CO (CMPR32X2TS)                    0.41      41.16 r
-  U2433/CO (CMPR32X2TS)                    0.41      41.56 r
-  U2432/CO (CMPR32X2TS)                    0.41      41.97 r
-  U2431/CO (CMPR32X2TS)                    0.41      42.37 r
-  U2430/CO (CMPR32X2TS)                    0.41      42.78 r
-  U2429/CO (CMPR32X2TS)                    0.67      43.45 r
-  U2428/CO (CMPR32X2TS)                    0.41      43.86 r
-  U2427/CO (CMPR32X2TS)                    0.67      44.53 r
-  U2426/CO (CMPR32X2TS)                    0.41      44.93 r
-  U2425/CO (CMPR32X2TS)                    0.41      45.34 r
-  U2424/CO (CMPR32X2TS)                    0.41      45.74 r
-  U2423/CO (CMPR32X2TS)                    0.41      46.15 r
-  U5071/CO (CMPR32X2TS)                    0.41      46.56 r
-  U5085/CO (CMPR32X2TS)                    0.67      47.23 r
-  U5086/Y (INVX2TS)                        0.08      47.30 f
-  U5087/Y (NOR2XLTS)                       0.32      47.62 r
-  U5088/Y (NAND2X1TS)                      0.28      47.90 f
-  U5089/Y (NOR2XLTS)                       0.37      48.27 r
-  U5090/Y (NAND2X1TS)                      0.28      48.55 f
-  U5091/Y (NOR2XLTS)                       0.37      48.93 r
-  U5092/Y (NAND2X1TS)                      0.28      49.20 f
-  U5093/Y (NOR2XLTS)                       0.37      49.58 r
-  U5094/Y (NAND2X1TS)                      0.28      49.85 f
-  U5095/Y (NOR2XLTS)                       0.37      50.23 r
-  U5096/Y (NAND2X1TS)                      0.28      50.51 f
-  U5097/Y (NOR2XLTS)                       0.37      50.88 r
-  U5098/Y (NAND2X1TS)                      0.28      51.16 f
-  U5099/Y (NOR2XLTS)                       0.37      51.53 r
-  U5100/Y (NAND2X1TS)                      0.28      51.81 f
-  U5101/Y (NOR2XLTS)                       0.37      52.18 r
-  U5102/Y (NAND2X1TS)                      0.28      52.46 f
-  U1253/Y (NOR2XLTS)                       0.37      52.83 r
-  U5103/Y (NAND2X1TS)                      0.28      53.11 f
-  U5104/Y (NOR2XLTS)                       0.37      53.48 r
-  U5105/Y (NAND2X1TS)                      0.28      53.76 f
-  U5106/Y (NOR2XLTS)                       0.37      54.13 r
-  U5108/Y (NAND2X1TS)                      0.28      54.41 f
-  U5122/Y (NOR2XLTS)                       0.37      54.78 r
-  U5137/Y (NOR2BX1TS)                      0.35      55.13 r
-  U5138/Y (XNOR2X1TS)                      0.23      55.36 f
-  sgf_result_o[107] (out)                  0.00      55.36 f
-  data arrival time                                  55.36
-  -----------------------------------------------------------
-  (Path is unconstrained)
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  RECURSIVE_EVEN1_right_Data_S_o_reg_33_/CK (DFFQX1TS)
+                                                          0.00       1.00 r
+  RECURSIVE_EVEN1_right_Data_S_o_reg_33_/Q (DFFQX1TS)     0.93       1.93 f
+  U4413/Y (INVX2TS)                                       0.10       2.03 r
+  U4418/S (CMPR32X2TS)                                    0.49       2.52 f
+  U4414/Y (NOR2X1TS)                                      0.25       2.77 r
+  U4438/Y (OAI21X1TS)                                     0.19       2.96 f
+  U2609/Y (AOI21X1TS)                                     0.26       3.22 r
+  U2266/Y (OAI21X2TS)                                     0.19       3.41 f
+  U1750/Y (AOI21X2TS)                                     0.20       3.61 r
+  U3352/Y (OAI21X2TS)                                     0.14       3.75 f
+  U2276/Y (AOI21X2TS)                                     0.17       3.91 r
+  U4646/CO (AFHCINX2TS)                                   0.19       4.10 f
+  U2442/Y (OAI22X2TS)                                     0.20       4.30 r
+  U4451/CO (ACHCINX2TS)                                   0.18       4.48 f
+  U4453/CON (AFHCONX2TS)                                  0.20       4.68 r
+  U1962/CO (ACHCINX2TS)                                   0.18       4.86 f
+  U4460/CON (AFHCONX2TS)                                  0.21       5.07 r
+  U2453/Y (OAI22X2TS)                                     0.17       5.24 f
+  U4469/CON (AFHCONX2TS)                                  0.20       5.44 r
+  U4475/Y (OAI22X2TS)                                     0.17       5.60 f
+  U1356/Y (OAI22X2TS)                                     0.17       5.77 r
+  U2285/CO (ACHCINX2TS)                                   0.18       5.95 f
+  U4486/CON (AFHCONX2TS)                                  0.21       6.16 r
+  U2445/Y (OAI22X2TS)                                     0.15       6.32 f
+  U3107/CO (ADDFHX2TS)                                    0.31       6.63 f
+  U4492/Y (XNOR2X4TS)                                     0.16       6.79 r
+  U4493/Y (NOR2X4TS)                                      0.13       6.92 f
+  U1276/Y (NOR2X4TS)                                      0.14       7.06 r
+  U3351/Y (AOI21X2TS)                                     0.13       7.19 f
+  U4705/Y (NOR2X2TS)                                      0.12       7.31 r
+  U2451/Y (OAI2BB1X4TS)                                   0.24       7.55 r
+  U2450/CON (AHHCONX4TS)                                  0.11       7.66 f
+  U983/Y (NOR2X6TS)                                       0.12       7.78 r
+  U938/CON (AHHCONX2TS)                                   0.13       7.90 f
+  U1256/Y (NOR2X4TS)                                      0.14       8.05 r
+  U2393/CON (AHHCONX4TS)                                  0.12       8.17 f
+  U2452/CO (AHHCINX4TS)                                   0.16       8.33 r
+  U2425/Y (NAND2X4TS)                                     0.13       8.45 f
+  U2424/CO (AHHCINX4TS)                                   0.14       8.59 r
+  U3350/Y (AND2X8TS)                                      0.18       8.77 r
+  U2401/Y (AND2X8TS)                                      0.15       8.92 r
+  U2444/Y (XOR2X4TS)                                      0.12       9.03 r
+  U1254/Y (MX2X2TS)                                       0.21       9.25 r
+  RECURSIVE_EVEN1_finalreg_Q_reg_105_/D (DFFRXLTS)        0.00       9.25 r
+  data arrival time                                                  9.25
+
+  clock clk (rise edge)                                   9.00       9.00
+  clock network delay (ideal)                             1.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  RECURSIVE_EVEN1_finalreg_Q_reg_105_/CK (DFFRXLTS)       0.00       9.50 r
+  library setup time                                     -0.25       9.25
+  data required time                                                 9.25
+  --------------------------------------------------------------------------
+  data required time                                                 9.25
+  data arrival time                                                 -9.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
 
 
 1

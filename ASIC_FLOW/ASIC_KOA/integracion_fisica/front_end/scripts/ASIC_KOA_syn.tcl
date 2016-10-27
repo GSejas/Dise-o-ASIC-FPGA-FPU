@@ -13,7 +13,7 @@ set PREC_PARAM(0) "SW=24";
 set PREC_PARAM(1) "SW=54";
 # Eliminar diseños previos
 set DESIGN_NAME  "KOA_Simple"
-set TOP_NAME     "RecursiveKOA"
+set TOP_NAME     "Simple_KOA"
 set CONTRAINTS_FILE_NAME "ASIC_KOA_syn_constraints.tcl"
 set compile_fix_cell_degradation true
 remove_design -designs
@@ -34,7 +34,7 @@ foreach line $data {
 #source "ASIC_fpaddsub_arch2_syn_2.tcl"
 
 set x 0;
-while {$x < 1} {
+while {$x < 2} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
@@ -61,7 +61,7 @@ check_design -multiple_designs
 #Compilar el diseño
 
 #Este compile ultra es para el timing, se le puede quitar ese retime si fuera el caso de area o algo más
-compile_ultra -timing_high_effort_script -retime
+compile_ultra -timing_high_effort_script 
 #compile
 
 

@@ -1,69 +1,183 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Jorge Sequeira Rojas
-// 
-// Create Date: 08/31/2016 04:06:16 PM
-// Design Name: Recursive Parameterized KOA
-// Module Name: RecursiveKOA
-// Project Name: FPU
-// Target Devices: Artix 7
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//==================================================================================================
+//  Filename      : RKOA_OPCHANGE.v
+//  Created On    : 2016-10-26 23:25:59
+//  Last Modified : 2016-10-27 08:51:06
+//  Revision      : 
+//  Author        : Jorge Esteban Sequeira Rojas
+//  Company       : Instituto Tecnologico de Costa Rica
+//  Email         : jsequeira03@gmail.com
+//
+//  Description   : 
+//
+//
+//==================================================================================================
+//=========================================================================================
+//==================================================================================================
+//  Filename      : RKOA_OPCHANGE.v
+//  Created On    : 2016-10-24 22:49:36
+//  Last Modified : 2016-10-26 23:25:21
+//  Revision      :
+//  Author        : Jorge Sequeira Rojas
+//  Company       : Instituto Tecnologico de Costa Rica
+//  Email         : jsequeira@gmail.com
+//
+//  Description   :
+//
+//
+//==================================================================================================
 
+`timescale 1ns / 1ps
+
+`define STOP_SW1 3
+`define STOP_SW2 4
 
 module RecursiveKOA
-   #(parameter SW = 24
-    //#(parameter SW = 56
-    )  //Se está optimizando el modulo para FPGA o para un ASIC
-	(
+    //#(parameter SW = 24, parameter precision = 0)
+    #(parameter SW = 24)
+    (
     input wire clk,
     input wire rst,
     input wire load_b_i,
     input wire [SW-1:0] Data_A_i,
     input wire [SW-1:0] Data_B_i,
-    output wire [2*SW-1:0] sgf_result_o
+    output reg [2*SW-1:0] sgf_result_o
     );
 
-//genvar precision = 1;
+    ///////////////////////////////////////////////////////////
+    wire [1:0] zero1;
+    wire [3:0] zero2;
+    assign zero1 = 2'b00;
+    assign zero2 = 4'b0000;
+    ///////////////////////////////////////////////////////////
+    wire [SW/2-1:0] rightside1;
+    wire [SW/2:0] rightside2;
+    //Modificacion: Leftside signals are added. They are created as zero fillings as preparation for the final adder.
+    wire [SW/2-3:0] leftside1;
+    wire [SW/2-4:0] leftside2;
 
+ reg [4*(SW/2)+2:0] Result;
+   
+    reg [4*(SW/2)-1:0] sgf_r;
 
-////////////////////WIRE DECLARATIONS
+    assign rightside1 = {(SW/2){1'b0}};
+    assign rightside2 = {(SW/2+1){1'b0}};
 
-wire [2*SW-1:0] Result;
+    assign leftside1 = {(SW/2-4){1'b0}}; //Se le quitan dos bits con respecto al right side, esto porque al sumar, se agregan bits, esos hacen que sea diferente
+    assign leftside2 = {(SW/2-5){1'b0}};
 
+    localparam half = SW/2;
 
+generate
 
-///////////////////////////INSTANCIATIONS//////////////////
+    case (SW%2)
+        0:begin : EVEN1
 
-/////////////////////FIRST KOA MULTIPLIER//////////////////
-        
+            reg [SW/2:0] result_A_adder;
+            reg [SW/2:0] result_B_adder;
+            reg [SW-1:0] Q_left;
+            reg [SW-1:0] Q_right;
+            reg [SW+1:0] Q_middle;
+            reg [2*(SW/2+2)-1:0] S_A;
+            reg [SW+1:0] S_B; //SW+2
 
-    	   Simple_KOA #(.SW(SW)) main_KOA(
-                .Data_A_i(Data_A_i[SW-1:0]/*P=SW*/),
-                .Data_B_i(Data_B_i[SW-1:0]/*P=SW*/),
-                .sgf_result_o(Result[2*SW-1:0]) /*P=SW*/
-            );	
+          subRecursiveKOA #(.SW(SW/2)) left(
+                .clk(clk),
+                .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
+                .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
+                .Data_S_o(Q_left)
+            );
+            
+          subRecursiveKOA #(.SW(SW/2)) right(
+                .clk(clk),
+                .Data_A_i(Data_A_i[SW-SW/2-1:0]),
+                .Data_B_i(Data_B_i[SW-SW/2-1:0]),
+                .Data_S_o(Q_right)
+            );
+		
+          subRecursiveKOA #(.SW((SW/2)+1)) middle (
+                .clk(clk),
+                .Data_A_i(result_A_adder),
+                .Data_B_i(result_B_adder),
+                .Data_S_o(Q_middle)
+            );
 
+           always @* begin : EVEN
 
-//////////////////////Following REG///////////////////
+                 result_A_adder <= (Data_A_i[((SW/2)-1):0] + Data_A_i[(SW-1) -: SW/2]);
 
-            RegisterAdd #(.W(2*SW)) finalreg ( //Data X input register
+                 result_B_adder <= (Data_B_i[((SW/2)-1):0] + Data_B_i[(SW-1) -: SW/2]);
+
+                 S_B <= (Q_middle - Q_left - Q_right);
+
+                 Result[4*(SW/2):0] <= {leftside1,S_B,rightside1} + {Q_left,Q_right};
+                 
+           end
+                
+       RegisterAdd #(.W(4*(SW/2))) finalreg ( //Data X input register
                 .clk(clk), 
                 .rst(rst), 
                 .load(load_b_i), 
-                .D(Result[2*SW-1:0]/*P=2*SW*/), 
-                .Q({sgf_result_o[2*SW-1:0]})
+                .D(Result[4*(SW/2)-1:0]), 
+                .Q({sgf_result_o})
             );
 
-///////////////////////END OF CODE////////////////////
+        end
+    1:begin : ODD1
+
+                reg [SW/2+1:0] result_A_adder;
+                reg [SW/2+1:0] result_B_adder;
+                reg [2*(SW/2)-1:0]   Q_left;
+                reg [2*(SW/2+1)-1:0] Q_right;
+                reg [2*(SW/2+2)-1:0] Q_middle;
+                reg [2*(SW/2+2)-1:0] S_A;
+                reg [SW+4-1:0] S_B;
+
+          subRecursiveKOA #(.SW(SW/2)) left(
+                .clk(clk),
+                .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
+                .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
+                .Data_S_o(Q_left)
+            );
+            
+          subRecursiveKOA #(.SW(SW/2)) right(
+                .clk(clk),
+                .Data_A_i(Data_A_i[SW-SW/2-1:0]),
+                .Data_B_i(Data_B_i[SW-SW/2-1:0]),
+                .Data_S_o(Q_right)
+            );
+        
+          subRecursiveKOA #(.SW(SW/2+2)) middle (
+                .clk(clk),
+                .Data_A_i(result_A_adder),
+                .Data_B_i(result_B_adder),
+                .Data_S_o(Q_middle)
+            );
+
+            always @* begin : ODD
+
+
+                 result_A_adder <= (Data_A_i[SW-SW/2-1:0] + Data_A_i[SW-1:SW-SW/2]);
+
+                 result_B_adder <= Data_B_i[SW-SW/2-1:0] + Data_B_i[SW-1:SW-SW/2];
+
+                 S_B <= (Q_middle - Q_left - Q_right);
+
+                 Result[4*(SW/2)+2:0]<= {leftside2,S_B,rightside2} + {Q_left,Q_right};
+                 //sgf_result_o <= Result[2*SW-1:0];
+
+           end
+          
+        RegisterAdd #(.W(4*(SW/2)+2)) finalreg ( //Data X input register
+                    .clk(clk), 
+                    .rst(rst), 
+                    .load(load_b_i), 
+                    .D(Result[2*SW-1:0]), 
+                    .Q({sgf_result_o})
+                );
+        end
+    endcase
+
+
+endgenerate
 
 endmodule

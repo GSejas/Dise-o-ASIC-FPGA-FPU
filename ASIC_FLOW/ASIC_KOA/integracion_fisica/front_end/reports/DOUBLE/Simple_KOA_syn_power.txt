@@ -1,14 +1,14 @@
 Information: Updating design information... (UID-85)
 Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
-Warning: There is no defined clock in the design. (PWR-80)
 Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
 ****************************************
 Report : power
         -analysis_effort high
 Design : Simple_KOA_SW54
 Version: L-2016.03-SP3
-Date   : Wed Oct 26 17:41:15 2016
+Date   : Thu Oct 27 10:12:53 2016
 ****************************************
 
 
@@ -30,14 +30,13 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  31.5768 mW   (76%)
-  Net Switching Power  =   9.8018 mW   (24%)
+  Cell Internal Power  =   5.4030 mW   (72%)
+  Net Switching Power  =   2.0649 mW   (28%)
                          ---------
-Total Dynamic Power    =  41.3786 mW  (100%)
+Total Dynamic Power    =   7.4679 mW  (100%)
 
-Cell Leakage Power     =  84.3936 nW
+Cell Leakage Power     = 162.9200 nW
 
-Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
@@ -46,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.1110        3.8864e-02        1.0800e+04            1.1498  (  15.40%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational     31.5768            9.8018        8.4394e+04           41.3788  ( 100.00%)
+combinational      4.2921            2.0260        1.5212e+05            6.3182  (  84.60%)
 --------------------------------------------------------------------------------------------------
-Total             31.5768 mW         9.8018 mW     8.4394e+04 pW        41.3788 mW
+Total              5.4030 mW         2.0649 mW     1.6292e+05 pW         7.4681 mW
 1
