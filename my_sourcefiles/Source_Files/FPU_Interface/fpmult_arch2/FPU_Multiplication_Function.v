@@ -97,7 +97,7 @@ wire [EW:0] exp_oper_result;
 wire [2*SW+1:0] P_Sgf;
 
 wire[SW:0] significand;
-wire[SW:0] non_significand;
+wire[SW-1:0] non_significand;
 //Sign Operation
 
 wire sign_final_result;
@@ -229,11 +229,11 @@ Mux_3x1 #(.W(EW)) Exp_Oper_B_mux(
 
 generate
     case(EW)
-        8:begin
+        8:begin : BLK1EXP
             assign Exp_oper_B_D1 = 8'd127; 
             assign Exp_oper_B_D2 = 8'd1;
         end
-        default:begin
+        default:begin  : BLK2EXP
              assign Exp_oper_B_D1 = 11'd1023;
              assign Exp_oper_B_D2 = 11'd1;
         end

@@ -25,6 +25,8 @@ module Deco_Round_Mult(
 	output reg ctrl //control signal mux --- control of the rounded significand
     );
 
+wire round_ok;
+
 always @*
   case ({xor_info,or_info,round_mode})
  // Round to infinity - (Round down)

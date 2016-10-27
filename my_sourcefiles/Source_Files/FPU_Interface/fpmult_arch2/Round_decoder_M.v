@@ -21,7 +21,7 @@
 
 
 module Round_decoder_M
-    #(parameter SW=24)
+    #(parameter SW=23)
     (
     input wire [SW-1:0] Round_Bits_i,
     input wire [1:0] Round_Mode_i,

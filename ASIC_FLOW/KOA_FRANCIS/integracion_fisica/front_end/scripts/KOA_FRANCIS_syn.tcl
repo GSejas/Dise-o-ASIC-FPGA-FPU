@@ -61,6 +61,11 @@ check_design -multiple_designs
 #Compilar el diseño
 compile_ultra -timing_high_effort_script -retime
 
+#Este compile ultra es para el timing, se le puede quitar ese retime si fuera el caso de area o algo más
+compile_ultra -timing_high_effort_script -retime
+#compile
+
+
 #Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
 #- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
 #- Como una de las entradas para el sintetizador físico (IC Compiler).
@@ -105,4 +110,7 @@ check_timing
 
 #FINALIZAMOS EL LOOP
 set x [expr {$x + 1}]
+
 }
+
+current_design Sgf_Multiplication_SW24

@@ -1,0 +1,40 @@
+{
+    "Modules": {
+        "tb_multiplier": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "...MASTER...": {},
+        "FFD_NoCE": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7779,
+            "checksum": 4294967295
+        },
+        "vVQa8_d": {
+            "mod": "tb_multiplier",
+            "out": "vVQa8_d.o",
+            "mode": 4,
+            "bytes": 39319,
+            "checksum": 4294967295,
+            "archive": "archive.1/_3965_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_3965_archive_1.a",
+            "objects": [
+                [
+                    "vVQa8_d.o",
+                    39319
+                ]
+            ],
+            "size": 39319
+        }
+    ],
+    "reusePaths": {}
+}

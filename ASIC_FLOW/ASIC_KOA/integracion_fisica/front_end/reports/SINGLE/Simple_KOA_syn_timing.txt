@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Simple_KOA_SW24
+Version: L-2016.03-SP3
+Date   : Thu Oct 27 10:10:55 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Data_A_i[14]
+              (input port clocked by clk)
+  Endpoint: RECURSIVE_EVEN1_middle_Data_S_o_reg_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 f
+  Data_A_i[14] (in)                                       0.01       4.01 f
+  U83/Y (XOR2X1TS)                                        0.24       4.25 r
+  U1419/Y (XNOR2X1TS)                                     0.28       4.53 r
+  U726/Y (CLKXOR2X4TS)                                    0.50       5.03 r
+  U723/Y (NAND2X4TS)                                      0.12       5.15 f
+  U725/Y (AO21X2TS)                                       0.35       5.49 f
+  U385/S (ADDFX1TS)                                       0.75       6.24 f
+  DP_OP_17J22_123_9811_U272/S (CMPR42X2TS)                1.15       7.40 f
+  DP_OP_17J22_123_9811_U271/S (CMPR42X2TS)                0.89       8.29 f
+  U1650/Y (NOR2X2TS)                                      0.16       8.45 r
+  U1654/Y (OAI21X2TS)                                     0.16       8.61 f
+  U835/Y (AOI21X2TS)                                      0.17       8.79 r
+  U1656/Y (OAI21X2TS)                                     0.17       8.95 f
+  U1703/Y (AOI21X1TS)                                     0.20       9.15 r
+  U710/Y (XOR2XLTS)                                       0.19       9.33 r
+  RECURSIVE_EVEN1_middle_Data_S_o_reg_20_/D (DFFQX1TS)
+                                                          0.00       9.33 r
+  data arrival time                                                  9.33
+
+  clock clk (rise edge)                                   9.00       9.00
+  clock network delay (ideal)                             1.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  RECURSIVE_EVEN1_middle_Data_S_o_reg_20_/CK (DFFQX1TS)
+                                                          0.00       9.50 r
+  library setup time                                     -0.17       9.33
+  data required time                                                 9.33
+  --------------------------------------------------------------------------
+  data required time                                                 9.33
+  data arrival time                                                 -9.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

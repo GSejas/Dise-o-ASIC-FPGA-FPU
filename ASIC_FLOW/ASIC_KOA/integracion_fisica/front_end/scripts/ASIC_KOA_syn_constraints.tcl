@@ -13,7 +13,7 @@
 
 set LIB_NAME scx3_cmos8rf_lpvt_tt_1p2v_25c.db
 
-set CLK_PERIOD 10
+set CLK_PERIOD 1
 set CLK_NAME clk
 
 #set CLK_2_NAME divisor_frecuencia/clk_2
@@ -24,15 +24,15 @@ set CLK_TRANSITION 0.5
 set CLK_LATENCY_SOURCE 0.5
 set CLK_LATENCY 0.5
 
-# set the "input valid" delay to 4.0nS
+# set the "input valid" delay to 
 set INPUT_DELAY_MAX 3
 #set the fastest input data arrival time to check for hold time changes to 1000pS
 set INPUT_DELAY_MIN 2
 
 
-# set the setup time requirements for the next block to 2nS
+# set the setup time requirements for the next block to 
 set OUTPUT_DELAY_MAX 0
-# set the hold time requirements for the next block to 150pS
+# set the hold time requirements for the next block to 
 set OUTPUT_DELAY_MIN -3
 
 set MAX_AREA 0
