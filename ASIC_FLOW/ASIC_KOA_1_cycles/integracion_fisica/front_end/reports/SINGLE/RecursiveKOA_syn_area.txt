@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : area
+Design : RecursiveKOA_SW24
+Version: L-2016.03-SP3
+Date   : Thu Oct 27 20:28:10 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                           99
+Number of nets:                          2731
+Number of cells:                         2386
+Number of combinational cells:           2262
+Number of sequential cells:               124
+Number of macros/black boxes:               0
+Number of buf/inv:                        460
+Number of references:                      75
+
+Combinational area:              29018.880138
+Buf/Inv area:                     2100.960080
+Noncombinational area:            3850.559942
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 32869.440080
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+RecursiveKOA_SW24                 32869.4401    100.0  29018.8801  3850.5599  0.0000  RecursiveKOA_SW24
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+Total                                                  29018.8801  3850.5599  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                           Estimated  Perc. of
+  Module   Implem.  Count       Area cell area
+  -------- -------  ----- ---------- ---------
+  DW01_add  pparch      1  4003.2017     12.2%
+  -------- -------  ----- ---------- ---------
+  Total:                1  4003.2017     12.2%
+
+Total synthetic cell area:              4003.2017  12.2%  (estimated)
+
+1

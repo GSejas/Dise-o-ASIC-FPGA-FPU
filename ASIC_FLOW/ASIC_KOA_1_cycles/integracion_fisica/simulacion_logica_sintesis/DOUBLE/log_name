@@ -1,0 +1,217 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+DOUBLE \
+-timescale=1ns/1ps +neg_tchk +sdfverbose
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Wed Oct 26 17:13:56 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v'
+Parsing design file 'tb_Multipliers.v'
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 2
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 12
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 14
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 16
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 18
+  Verilog compiler directive encountered "`endif".
+
+
+Warning-[IPDW] Identifier previously declared
+tb_Multipliers.v, 26
+  Second declaration for identifier 'clk' ignored
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 30
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 32
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 33
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 35
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 50
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 52
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 54
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 61
+  Null statement is used in following verilog source.
+  
+
+
+Warning-[LFCOR] Library file or dir cannot be opened
+  Library file 'ibm13rflpvt.v' cannot be opened for reading due to 'No such 
+  file or directory', will skip it.
+  The library was specified from command line through -y or -v.
+
+
+Warning-[LFCOR] Library file or dir cannot be opened
+  Library file 'ibm13rflpvt.v' cannot be opened for reading due to 'No such 
+  file or directory', will skip it.
+  The library was specified from command line through -y or -v.
+
+Top Level Modules:
+       tb_multiplier
+
+Warning-[AOUP] Attempt to override undefined parameter
+tb_Multipliers.v, 36
+  Attempting to override undefined parameter "SW", will ignore it.
+
+TimeScale is 1 ns / 1 ps
+
+Lint-[TFIPC-L] Too few instance port connections
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 5624
+"adder_W27_1_DW01_add_2 add_42( .A ({1'b0, Data_A_i}),  .B ({1'b0, Data_B_i}),  .CI (1'b0),  .SUM (Data_S_o));"
+  The above instance has fewer port connections than the module definition,
+  output port 'CO' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 5930
+"adder_W27_0_DW01_add_1 add_42( .A ({1'b0, Data_A_i}),  .B ({1'b0, Data_B_i}),  .CI (1'b0),  .SUM (Data_S_o));"
+  The above instance has fewer port connections than the module definition,
+  output port 'CO' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 9244
+"substractor_W56_1_DW01_sub_2 sub_30( .A (Data_A_i),  .B (Data_B_i),  .CI (1'b0),  .DIFF (Data_S_o));"
+  The above instance has fewer port connections than the module definition,
+  output port 'CO' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 9715
+"substractor_W56_0_DW01_sub_2 sub_30( .A (Data_A_i),  .B (Data_B_i),  .CI (1'b0),  .DIFF (Data_S_o));"
+  The above instance has fewer port connections than the module definition,
+  output port 'CO' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 10644
+"adder_W108_DW01_add_2 add_42( .A ({1'b0, Data_A_i}),  .B ({1'b0, Data_B_i}),  .CI (1'b0),  .SUM (Data_S_o));"
+  The above instance has fewer port connections than the module definition,
+  output port 'CO' is not connected.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 242
+"XOR2X1TS U466( .A (n451),  .B (n180),  .Y (product[28]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 243
+"XOR2X1TS U477( .A (n458),  .B (n181),  .Y (product[27]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 244
+"XOR2X1TS U487( .A (n467),  .B (n182),  .Y (product[26]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 245
+"XOR2X1TS U546( .A (n509),  .B (n187),  .Y (product[21]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 246
+"XOR2X1TS U556( .A (n517),  .B (n188),  .Y (product[20]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 247
+"XOR2X1TS U567( .A (n524),  .B (n189),  .Y (product[19]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 248
+"XOR2X1TS U577( .A (n533),  .B (n190),  .Y (product[18]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 249
+"XOR2X1TS U606( .A (n547),  .B (n193),  .Y (product[15]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 250
+"XOR2X1TS U612( .A (n555),  .B (n194),  .Y (product[14]));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+../../front_end/db/DOUBLE/Sgf_Multiplication_syn.v, 251
+"XOR2X1TS U623( .A (n560),  .B (n195),  .Y (product[13]));"
+  Module definition of above instance is not found in the design.
+
+
+Note-[MAX_ERROR_COUNT] Maximum error count reached
+  Current number of errors has reached the default maximum error count (10).
+  Please use +error+<count> to increase the limit.
+
+4 warnings
+10 errors
+CPU time: .276 seconds to compile

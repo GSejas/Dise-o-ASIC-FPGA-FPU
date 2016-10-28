@@ -1,0 +1,161 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
+-timescale=1ns/1ps +neg_tchk +sdfverbose
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Thu Oct 27 09:56:08 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'tb_Multipliers.v'
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 2
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 12
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 14
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 16
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+tb_Multipliers.v, 18
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 64
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 66
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 68
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+tb_Multipliers.v, 75
+  Null statement is used in following verilog source.
+  
+
+Parsing design file '../../front_end/source/RegisterAdd.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/mult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/mult.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/subRecursiveKOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA.v, 29
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA.v, 31
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA.v, 32
+  Verilog compiler directive encountered "`define".
+
+Parsing design file '../../front_end/source/KOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/KOA.v, 29
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/KOA.v, 31
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/KOA.v, 32
+  Verilog compiler directive encountered "`define".
+
+Top Level Modules:
+       tb_multiplier
+       FFD_NoCE
+TimeScale is 1 ns / 1 ps
+
+Lint-[VNGS] Variable never gets set
+tb_Multipliers.v, 24
+  Following variable has never been set any value.
+  Source info: RecursiveKOA
+
+
+Error-[IPC-E] Illegal port connection
+../../front_end/source/KOA.v, 95
+  Register 'RECURSIVE®EVEN1®Q_left' is illegally connected to output port 
+  "Data_S_o" of module "mult", instance "RECURSIVE®EVEN1®left".
+  Source info:  mult #((SW / 2)) RECURSIVE.EVEN1.left( .clk (clk),  .Data_A_i 
+  (Data_A_i[(SW - 1):(SW - (SW / 2))]),  .Data_B_i (Data_B_i[(SW - 1):(SW - 
+  (SW / 2))]),  .Data_S ...
+
+
+Error-[IPC-E] Illegal port connection
+../../front_end/source/KOA.v, 102
+  Register 'RECURSIVE®EVEN1®Q_right' is illegally connected to output port 
+  "Data_S_o" of module "mult", instance "RECURSIVE®EVEN1®right".
+  Source info:  mult #((SW / 2)) RECURSIVE.EVEN1.right( .clk (clk),  .Data_A_i
+  (Data_A_i[((SW - (SW / 2)) - 1):0]),  .Data_B_i (Data_B_i[((SW - (SW / 2)) -
+  1):0]),  .Data_S_ ...
+
+
+Error-[IPC-E] Illegal port connection
+../../front_end/source/KOA.v, 109
+  Register 'RECURSIVE®EVEN1®Q_middle' is illegally connected to output port 
+  "Data_S_o" of module "mult", instance "RECURSIVE®EVEN1®middle".
+  Source info:  mult #(((SW / 2) + 1)) RECURSIVE.EVEN1.middle( .clk (clk),  
+  .Data_A_i (RECURSIVE.EVEN1.result_A_adder),  .Data_B_i 
+  (RECURSIVE.EVEN1.result_B_adder),  .Data_S ...
+
+
+Error-[IPC-E] Illegal port connection
+../../front_end/source/KOA.v, 128
+  The following expression is illegally connected to output port "Q" of module
+  "RegisterAdd", instance "RECURSIVE®EVEN1®finalreg".
+  Expression: {sgf_result_o}
+  Source info:  RegisterAdd #((4 * (SW / 2))) RECURSIVE.EVEN1.finalreg( .clk 
+  (clk),  .rst (rst),  .load (load_b_i),  .D (Result[((4 * (SW / 2)) - 1):0]),
+  .Q ({sgf_result_o} ...
+
+4 errors
+CPU time: .081 seconds to compile

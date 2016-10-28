@@ -2,7 +2,10 @@
 	"folders":
 	[
 		{
-			"path": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW"
+			"name": "ASIC_FLOW",
+			"path": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW",
+			 "file_exclude_patterns": ["*.v~", "*.sh~","*.svf","*.gitkeep"]
 		}
+
 	]
 }

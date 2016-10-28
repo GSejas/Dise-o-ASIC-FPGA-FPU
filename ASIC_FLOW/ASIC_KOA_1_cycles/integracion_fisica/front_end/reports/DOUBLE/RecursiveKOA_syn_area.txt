@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : area
+Design : RecursiveKOA_SW54
+Version: L-2016.03-SP3
+Date   : Thu Oct 27 20:33:29 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          219
+Number of nets:                         12196
+Number of cells:                        11069
+Number of combinational cells:          10618
+Number of sequential cells:               451
+Number of macros/black boxes:               0
+Number of buf/inv:                       2200
+Number of references:                     109
+
+Combinational area:             130394.880632
+Buf/Inv area:                    10118.880380
+Noncombinational area:           14041.439781
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                144436.320414
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------
+RecursiveKOA_SW54                 144436.3204    100.0  130394.8806  14041.4398  0.0000  RecursiveKOA_SW54
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------
+Total                                                   130394.8806  14041.4398  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                                       Estimated  Perc. of
+  Module              Implem.  Count        Area cell area
+  ------------------- -------  ----- ----------- ---------
+  DP_OP_59J4_122_190      str      1  34028.5000     23.6%
+  DP_OP_61J4_124_939      str      1  26912.1094     18.6%
+  DP_OP_62J4_125_4796     str      1   8892.0039      6.2%
+  DW01_add             pparch      2  12008.1602      8.3%
+  ------------------- -------  ----- ----------- ---------
+  DP_OP Subtotal:                  3  69832.6133     48.3%
+  Total:                           5  81840.7734     56.7%
+
+Subtotal of datapath(DP_OP) cell area:  69832.6133  48.3%  (estimated)
+Total synthetic cell area:              81840.7734  56.7%  (estimated)
+
+1

@@ -1,0 +1,314 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : Simple_KOA_SW24
+Version: L-2016.03-SP3
+Date   : Thu Oct 27 19:58:52 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Data_B_i[10]
+              (input port clocked by clk)
+  Endpoint: EVEN1_finalreg_Q_reg_34_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 f
+  Data_B_i[10] (in)                                       0.03       4.03 f
+  U2305/Y (XNOR2X4TS)                                     0.22       4.24 f
+  U1210/Y (BUFX3TS)                                       0.25       4.49 f
+  U1638/Y (OAI22X2TS)                                     0.20       4.70 r
+  U1168/Y (NOR2BX2TS)                                     0.30       5.00 r
+  U1705/Y (XNOR2X4TS)                                     0.26       5.26 r
+  U217/Y (XNOR2X2TS)                                      0.22       5.48 r
+  U1719/Y (INVX2TS)                                       0.17       5.65 f
+  U2084/Y (XOR2X4TS)                                      0.21       5.85 r
+  U2083/Y (XNOR2X4TS)                                     0.21       6.06 f
+  U139/Y (BUFX2TS)                                        0.24       6.30 f
+  U2667/Y (NAND2X1TS)                                     0.14       6.44 r
+  U1488/Y (INVX2TS)                                       0.11       6.55 f
+  U2179/Y (AOI2BB1X4TS)                                   0.15       6.70 r
+  U964/Y (NAND2X6TS)                                      0.13       6.83 f
+  U985/Y (INVX2TS)                                        0.10       6.94 r
+  U2011/Y (OAI21X4TS)                                     0.14       7.08 f
+  U2691/Y (AOI21X1TS)                                     0.21       7.29 r
+  U1990/Y (XOR2X2TS)                                      0.26       7.55 f
+  U2714/Y (NAND2X1TS)                                     0.20       7.75 r
+  U2079/Y (OAI21X2TS)                                     0.14       7.88 f
+  U1069/Y (AOI21X2TS)                                     0.15       8.03 r
+  U1068/Y (OAI21X2TS)                                     0.16       8.19 f
+  U2213/Y (AOI21X4TS)                                     0.18       8.37 r
+  U2109/Y (OAI21X4TS)                                     0.13       8.50 f
+  U2120/Y (AOI21X4TS)                                     0.17       8.67 r
+  U1945/Y (OAI21X4TS)                                     0.13       8.80 f
+  U921/Y (AOI21X4TS)                                      0.18       8.98 r
+  U1860/Y (OAI21X4TS)                                     0.15       9.13 f
+  U889/Y (BUFX8TS)                                        0.16       9.29 f
+  U1484/Y (AOI21X1TS)                                     0.19       9.48 r
+  U1370/Y (XOR2X2TS)                                      0.23       9.70 f
+  U1327/Y (AOI2BB2X1TS)                                   0.17       9.87 r
+  EVEN1_finalreg_Q_reg_34_/D (DFFSX1TS)                   0.00       9.87 r
+  data arrival time                                                  9.87
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.00      10.50
+  clock uncertainty                                      -0.50      10.00
+  EVEN1_finalreg_Q_reg_34_/CK (DFFSX1TS)                  0.00      10.00 r
+  library setup time                                     -0.13       9.87
+  data required time                                                 9.87
+  --------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -9.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: Data_A_i[5]
+              (input port clocked by clk)
+  Endpoint: EVEN1_finalreg_Q_reg_43_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 f
+  Data_A_i[5] (in)                                        0.02       4.02 f
+  U333/Y (NOR2X6TS)                                       0.14       4.16 r
+  U330/Y (INVX2TS)                                        0.09       4.25 f
+  U768/Y (NAND2X2TS)                                      0.10       4.35 r
+  U1140/Y (INVX2TS)                                       0.15       4.50 f
+  U769/Y (NAND3X8TS)                                      0.16       4.66 r
+  U1821/Y (NAND2X8TS)                                     0.11       4.77 f
+  U1721/Y (AOI21X4TS)                                     0.16       4.93 r
+  U1720/Y (XOR2X4TS)                                      0.18       5.11 r
+  U1109/Y (XOR2X1TS)                                      0.32       5.43 f
+  U346/Y (OAI22X1TS)                                      0.22       5.66 r
+  U133/S (ADDFX2TS)                                       0.78       6.43 f
+  U1028/Y (OAI21X2TS)                                     0.15       6.58 r
+  U1727/Y (OAI2BB1X4TS)                                   0.14       6.72 f
+  U101/S (ADDFHX2TS)                                      0.44       7.16 r
+  U1744/Y (XOR2X4TS)                                      0.24       7.40 r
+  U1891/Y (XOR2X4TS)                                      0.21       7.60 f
+  U1547/Y (NOR2X4TS)                                      0.17       7.78 r
+  U1477/Y (NOR2X4TS)                                      0.12       7.90 f
+  U1889/Y (AOI21X4TS)                                     0.17       8.07 r
+  U846/Y (NAND2X6TS)                                      0.15       8.22 f
+  U76/Y (BUFX3TS)                                         0.20       8.42 f
+  U2198/Y (AOI21X4TS)                                     0.16       8.58 r
+  U1913/Y (XOR2X4TS)                                      0.18       8.76 r
+  U414/Y (NOR2BX4TS)                                      0.12       8.89 f
+  U387/Y (INVX2TS)                                        0.14       9.02 r
+  U411/Y (INVX4TS)                                        0.11       9.13 f
+  U2778/Y (NAND2X1TS)                                     0.09       9.23 r
+  U500/Y (OAI21X1TS)                                      0.11       9.34 f
+  U952/Y (AOI21X1TS)                                      0.15       9.48 r
+  U61/Y (XOR2XLTS)                                        0.22       9.70 r
+  U409/Y (AOI21X1TS)                                      0.24       9.94 f
+  EVEN1_finalreg_Q_reg_43_/D (DFFSHQX8TS)                 0.00       9.94 f
+  data arrival time                                                  9.94
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.00      10.50
+  clock uncertainty                                      -0.50      10.00
+  EVEN1_finalreg_Q_reg_43_/CK (DFFSHQX8TS)                0.00      10.00 r
+  library setup time                                     -0.05       9.95
+  data required time                                                 9.95
+  --------------------------------------------------------------------------
+  data required time                                                 9.95
+  data arrival time                                                 -9.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: Data_B_i[11]
+              (input port clocked by clk)
+  Endpoint: EVEN1_finalreg_Q_reg_40_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 r
+  Data_B_i[11] (in)                                       0.03       4.03 r
+  U697/Y (INVX12TS)                                       0.06       4.09 f
+  U1170/Y (INVX2TS)                                       0.10       4.19 r
+  U286/Y (XNOR2X1TS)                                      0.28       4.47 r
+  U1581/Y (OAI22X2TS)                                     0.30       4.77 f
+  U1533/CO (ADDFHX2TS)                                    0.56       5.32 f
+  U353/Y (OAI21X1TS)                                      0.22       5.54 r
+  U223/Y (OAI2BB1X2TS)                                    0.19       5.73 f
+  U453/Y (OAI21X2TS)                                      0.20       5.93 r
+  U1704/Y (OAI2BB1X4TS)                                   0.13       6.06 f
+  U183/Y (INVX2TS)                                        0.12       6.18 r
+  U815/Y (NAND2X2TS)                                      0.10       6.28 f
+  U552/Y (NAND2X2TS)                                      0.11       6.38 r
+  U1748/Y (XNOR2X4TS)                                     0.17       6.55 r
+  U1793/Y (XOR2X4TS)                                      0.27       6.82 r
+  U1792/Y (XNOR2X4TS)                                     0.21       7.03 r
+  U958/Y (XOR2X4TS)                                       0.27       7.29 r
+  U957/Y (XOR2X4TS)                                       0.21       7.50 r
+  U1291/Y (NOR2X4TS)                                      0.13       7.63 f
+  U1241/Y (NOR2X2TS)                                      0.17       7.80 r
+  U2018/Y (NAND2X4TS)                                     0.13       7.93 f
+  U897/Y (NAND2X6TS)                                      0.10       8.03 r
+  U1372/Y (NAND3X6TS)                                     0.11       8.14 f
+  U846/Y (NAND2X6TS)                                      0.15       8.29 r
+  U2039/Y (AOI21X4TS)                                     0.12       8.41 f
+  U2217/Y (XOR2X4TS)                                      0.18       8.59 r
+  U2117/Y (NOR2X8TS)                                      0.14       8.73 f
+  U1369/Y (NOR2X6TS)                                      0.15       8.88 r
+  U1490/Y (NAND2X2TS)                                     0.12       9.00 f
+  U1860/Y (OAI21X4TS)                                     0.21       9.21 r
+  U898/Y (BUFX6TS)                                        0.23       9.43 r
+  U950/Y (AOI21X1TS)                                      0.15       9.58 f
+  U949/Y (XOR2X2TS)                                       0.21       9.79 f
+  U948/Y (AOI21X2TS)                                      0.17       9.96 r
+  EVEN1_finalreg_Q_reg_40_/D (DFFSHQX8TS)                 0.00       9.96 r
+  data arrival time                                                  9.96
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.00      10.50
+  clock uncertainty                                      -0.50      10.00
+  EVEN1_finalreg_Q_reg_40_/CK (DFFSHQX8TS)                0.00      10.00 r
+  library setup time                                     -0.04       9.96
+  data required time                                                 9.96
+  --------------------------------------------------------------------------
+  data required time                                                 9.96
+  data arrival time                                                 -9.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: Data_A_i[5]
+              (input port clocked by clk)
+  Endpoint: EVEN1_finalreg_Q_reg_42_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 f
+  Data_A_i[5] (in)                                        0.02       4.02 f
+  U333/Y (NOR2X6TS)                                       0.14       4.16 r
+  U330/Y (INVX2TS)                                        0.09       4.25 f
+  U768/Y (NAND2X2TS)                                      0.10       4.35 r
+  U1140/Y (INVX2TS)                                       0.15       4.50 f
+  U769/Y (NAND3X8TS)                                      0.16       4.66 r
+  U1821/Y (NAND2X8TS)                                     0.11       4.77 f
+  U1721/Y (AOI21X4TS)                                     0.16       4.93 r
+  U1720/Y (XOR2X4TS)                                      0.18       5.11 r
+  U1109/Y (XOR2X1TS)                                      0.32       5.43 f
+  U346/Y (OAI22X1TS)                                      0.22       5.66 r
+  U133/S (ADDFX2TS)                                       0.78       6.43 f
+  U1028/Y (OAI21X2TS)                                     0.15       6.58 r
+  U1727/Y (OAI2BB1X4TS)                                   0.14       6.72 f
+  U101/S (ADDFHX2TS)                                      0.44       7.16 r
+  U1744/Y (XOR2X4TS)                                      0.24       7.40 r
+  U1891/Y (XOR2X4TS)                                      0.21       7.60 f
+  U1547/Y (NOR2X4TS)                                      0.17       7.78 r
+  U1477/Y (NOR2X4TS)                                      0.12       7.90 f
+  U1889/Y (AOI21X4TS)                                     0.17       8.07 r
+  U846/Y (NAND2X6TS)                                      0.15       8.22 f
+  U944/Y (AOI21X2TS)                                      0.20       8.42 r
+  U1907/Y (XOR2X4TS)                                      0.20       8.62 f
+  U955/Y (NOR2X4TS)                                       0.16       8.77 r
+  U1788/Y (OAI21X4TS)                                     0.15       8.93 f
+  U1777/Y (AOI21X4TS)                                     0.23       9.16 r
+  U931/Y (OAI21X1TS)                                      0.19       9.34 f
+  U1321/Y (AOI21X1TS)                                     0.15       9.50 r
+  U1320/Y (XOR2X1TS)                                      0.25       9.75 f
+  U497/Y (AOI21X1TS)                                      0.20       9.94 r
+  EVEN1_finalreg_Q_reg_42_/D (DFFSHQX8TS)                 0.00       9.94 r
+  data arrival time                                                  9.94
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.00      10.50
+  clock uncertainty                                      -0.50      10.00
+  EVEN1_finalreg_Q_reg_42_/CK (DFFSHQX8TS)                0.00      10.00 r
+  library setup time                                     -0.05       9.95
+  data required time                                                 9.95
+  --------------------------------------------------------------------------
+  data required time                                                 9.95
+  data arrival time                                                 -9.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: Data_A_i[5]
+              (input port clocked by clk)
+  Endpoint: EVEN1_finalreg_Q_reg_45_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    3.00       4.00 f
+  Data_A_i[5] (in)                                        0.02       4.02 f
+  U333/Y (NOR2X6TS)                                       0.14       4.16 r
+  U330/Y (INVX2TS)                                        0.09       4.25 f
+  U768/Y (NAND2X2TS)                                      0.10       4.35 r
+  U1140/Y (INVX2TS)                                       0.15       4.50 f
+  U769/Y (NAND3X8TS)                                      0.16       4.66 r
+  U1821/Y (NAND2X8TS)                                     0.11       4.77 f
+  U1721/Y (AOI21X4TS)                                     0.16       4.93 r
+  U1720/Y (XOR2X4TS)                                      0.18       5.11 r
+  U1109/Y (XOR2X1TS)                                      0.32       5.43 f
+  U346/Y (OAI22X1TS)                                      0.22       5.66 r
+  U133/S (ADDFX2TS)                                       0.78       6.43 f
+  U1028/Y (OAI21X2TS)                                     0.15       6.58 r
+  U1727/Y (OAI2BB1X4TS)                                   0.14       6.72 f
+  U101/S (ADDFHX2TS)                                      0.44       7.16 r
+  U1744/Y (XOR2X4TS)                                      0.24       7.40 r
+  U1891/Y (XOR2X4TS)                                      0.21       7.60 f
+  U1547/Y (NOR2X4TS)                                      0.17       7.78 r
+  U1477/Y (NOR2X4TS)                                      0.12       7.90 f
+  U1889/Y (AOI21X4TS)                                     0.17       8.07 r
+  U846/Y (NAND2X6TS)                                      0.15       8.22 f
+  U944/Y (AOI21X2TS)                                      0.20       8.42 r
+  U1907/Y (XOR2X4TS)                                      0.20       8.62 f
+  U955/Y (NOR2X4TS)                                       0.16       8.77 r
+  U1788/Y (OAI21X4TS)                                     0.15       8.93 f
+  U1777/Y (AOI21X4TS)                                     0.23       9.16 r
+  U1606/Y (OAI21XLTS)                                     0.20       9.35 f
+  U1572/Y (AOI21X1TS)                                     0.24       9.59 r
+  U900/Y (XOR2X4TS)                                       0.23       9.82 f
+  U892/Y (AOI21X4TS)                                      0.14       9.96 r
+  EVEN1_finalreg_Q_reg_45_/D (DFFSHQX8TS)                 0.00       9.96 r
+  data arrival time                                                  9.96
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.00      10.50
+  clock uncertainty                                      -0.50      10.00
+  EVEN1_finalreg_Q_reg_45_/CK (DFFSHQX8TS)                0.00      10.00 r
+  library setup time                                     -0.03       9.97
+  data required time                                                 9.97
+  --------------------------------------------------------------------------
+  data required time                                                 9.97
+  data arrival time                                                 -9.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

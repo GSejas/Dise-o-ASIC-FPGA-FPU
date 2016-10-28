@@ -1,0 +1,94 @@
+{
+    "CompileProcesses": [
+        "cgproc.24669.json"
+    ],
+    "NameTable": {
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "FFD_NoCE": [
+            "FFD_NoCE",
+            "HnhJZ",
+            "module"
+        ],
+        "tb_multiplier": [
+            "tb_multiplier",
+            "vVQa8",
+            "module"
+        ]
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.055990999999999999,
+            "ru_maxrss_kb": 54752,
+            "ru_stime_sec": 0.037994,
+            "ru_minflt": 13750,
+            "ru_majflt": 0,
+            "ru_nvcsw": 52,
+            "ru_nivcsw": 24
+        },
+        "nQuads": 932,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "mopSpeed": 91079.206323600592,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "quadSpeed": 30069.366026778516,
+        "nMops": 2823,
+        "totalObjSize": 145417,
+        "ru_self_end": {
+            "ru_utime_sec": 0.086985999999999994,
+            "ru_maxrss_kb": 62588,
+            "ru_stime_sec": 0.046991999999999999,
+            "ru_minflt": 16061,
+            "ru_majflt": 0,
+            "ru_nvcsw": 52,
+            "ru_nivcsw": 28
+        },
+        "mop/quad": 3.0289699570815452,
+        "Frontend(%)": 64.367829305865314,
+        "outputSizePerQuad": 156.0,
+        "CodeGen(%)": 35.632170694134686
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "CompileStatus": "Successful",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 90636
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "FFD_NoCE",
+        "tb_multiplier"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_behavioral/SINGLE",
+        "archive_dir": "archive.0",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_behavioral/SINGLE/csrc",
+        "daidir": "simv.daidir"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "tb_multiplier": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "FFD_NoCE": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 7775,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "HnhJZ_d": {
+            "out": "HnhJZ_d.o",
+            "mod": "FFD_NoCE",
+            "bytes": 8379,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_30646_archive_1.a"
+        },
+        "vVQa8_d": {
+            "out": "vVQa8_d.o",
+            "mod": "tb_multiplier",
+            "bytes": 26247,
+            "mode": 4,
+            "checksum": 4294967295,
+            "archive": "archive.0/_30646_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_30646_archive_1.a",
+            "size": 34626,
+            "objects": [
+                [
+                    "vVQa8_d.o",
+                    26247
+                ],
+                [
+                    "HnhJZ_d.o",
+                    8379
+                ]
+            ]
+        }
+    ]
+}
