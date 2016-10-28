@@ -31,5 +31,5 @@ do
   cp ASIC_fpaddsub_arch3_syn_constraints.tcl $i/integracion_fisica/front_end/scripts
   mv "$i/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_syn_constraints.tcl" "${i}/integracion_fisica/front_end/scripts/${i}_syn_constraints.tcl"
   cp .synopsys_dc.setup $i/integracion_fisica/front_end
-
+  find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \;
 done

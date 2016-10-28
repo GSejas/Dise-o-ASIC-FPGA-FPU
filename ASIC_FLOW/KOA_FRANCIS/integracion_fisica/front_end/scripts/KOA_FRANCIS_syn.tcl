@@ -9,12 +9,12 @@
 ####################################################################################################################################
 set PRECISION(0) "SINGLE";
 set PRECISION(1) "DOUBLE";
-set PREC_PARAM(0) "SW=24";
-set PREC_PARAM(1) "SW=54";
+set PREC_PARAM(0) "W=32,SW=23,EW=8,SWR=26,EWR=5";
+set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 # Eliminar diseños previos
-set DESIGN_NAME  "KOA_FRANCIS"
-set TOP_NAME     "Sgf_Multiplication"
-set CONTRAINTS_FILE_NAME "KOA_FRANCIS_syn_constraints.tcl"
+set DESIGN_NAME  "fpaddsub_arch3"
+set TOP_NAME     "FPU_PIPELINED_FPADDSUB"
+set CONTRAINTS_FILE_NAME "ASIC_fpaddsub_arch3_syn_constraints.tcl"
 set compile_fix_cell_degradation true
 remove_design -designs
 
@@ -59,6 +59,7 @@ check_design -multiple_designs
 #set compile_top_all_paths true;
 
 #Compilar el diseño
+compile_ultra -timing_high_effort_script -retime
 
 #Este compile ultra es para el timing, se le puede quitar ese retime si fuera el caso de area o algo más
 compile_ultra -timing_high_effort_script -retime
