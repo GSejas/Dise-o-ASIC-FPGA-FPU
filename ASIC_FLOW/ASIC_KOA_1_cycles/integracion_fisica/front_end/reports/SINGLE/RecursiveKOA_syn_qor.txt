@@ -3,7 +3,7 @@
 Report : qor
 Design : RecursiveKOA_SW24
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 20:28:10 2016
+Date   : Fri Oct 28 09:12:02 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Oct 27 20:28:10 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    3.55
-  Logic Optimization:                 10.57
-  Mapping Optimization:               14.35
+  Resource Sharing:                    3.53
+  Logic Optimization:                 10.85
+  Mapping Optimization:               14.32
   -----------------------------------------
-  Overall Compile Time:               40.43
-  Overall Compile Wall Clock Time:    40.92
+  Overall Compile Time:               40.56
+  Overall Compile Wall Clock Time:    41.20
 
   --------------------------------------------------------------------
 

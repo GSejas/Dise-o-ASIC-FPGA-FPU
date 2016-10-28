@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : mult_SW54
+Version: L-2016.03-SP3
+Date   : Fri Oct 28 10:05:25 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          217
+Number of nets:                          8120
+Number of cells:                         6601
+Number of combinational cells:           6492
+Number of sequential cells:               109
+Number of macros/black boxes:               0
+Number of buf/inv:                        991
+Number of references:                      87
+
+Combinational area:             106956.000595
+Buf/Inv area:                     5493.600132
+Noncombinational area:            2926.079933
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                109882.080528
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-  Black-
+                                  Total        Total    national     national   boxes   Design
+--------------------------------  -----------  -------  -----------  ---------  ------  ---------
+mult_SW54                         109882.0805    100.0  106956.0006  2926.0799  0.0000  mult_SW54
+--------------------------------  -----------  -------  -----------  ---------  ------  ---------
+Total                                                   106956.0006  2926.0799  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+1

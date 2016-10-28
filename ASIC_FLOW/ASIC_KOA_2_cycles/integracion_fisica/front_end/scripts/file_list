@@ -1,5 +1,10 @@
 KOA.v
 RecursiveKOA.v
+RecursiveKOA_Weighted.v
 RegisterAdd.v
 mult.v
+cmult.v
 subRecursiveKOA.v
+subRecursiveKOA_1c.v
+submidRecursiveKOA.v
+submidRecursiveKOA2.v

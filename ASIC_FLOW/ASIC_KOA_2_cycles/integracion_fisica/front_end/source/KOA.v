@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-27 08:01:08
+//  Last Modified : 2016-10-27 23:56:43
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -28,8 +28,8 @@
 
 `timescale 1ns / 1ps
 
-`define STOP_SW1 3
-`define STOP_SW2 4
+`include "global.v"
+
 
 module Simple_KOA
     //#(parameter SW = 24, parameter precision = 0)
@@ -70,7 +70,7 @@ module Simple_KOA
 generate
 
     //assign i = Stop_I;
-    if (SW <=`STOP_SW1 || SW <=`STOP_SW2) begin : GENSTOP
+    if (SW <= 7) begin : GENSTOP
 
             mult #(.SW(SW)) 
             inst_mult (

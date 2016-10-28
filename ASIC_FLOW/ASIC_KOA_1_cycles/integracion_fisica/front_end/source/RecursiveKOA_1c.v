@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-27 19:50:05
+//  Last Modified : 2016-10-28 09:09:39
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -40,7 +40,7 @@ module RecursiveKOA
     input wire load_b_i,
     input wire [SW-1:0] Data_A_i,
     input wire [SW-1:0] Data_B_i,
-    output reg [2*SW-1:0] sgf_result_o
+    output wire [2*SW-1:0] sgf_result_o
     );
 
     ///////////////////////////////////////////////////////////
@@ -80,21 +80,21 @@ generate
             reg [2*(SW/2+2)-1:0] S_A;
             reg [SW+1:0] S_B; //SW+2
 
-          subRecursiveKOA #(.SW(SW/2)) left(
+          csubRecursiveKOA #(.SW(SW/2)) left(
                 //.clk(clk),
                 .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
                 .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
                 .Data_S_o(Q_left)
             );
             
-          subRecursiveKOA #(.SW(SW/2)) right(
+          csubRecursiveKOA #(.SW(SW/2)) right(
                 //.clk(clk),
                 .Data_A_i(Data_A_i[SW-SW/2-1:0]),
                 .Data_B_i(Data_B_i[SW-SW/2-1:0]),
                 .Data_S_o(Q_right)
             );
 		
-          subRecursiveKOA #(.SW((SW/2)+1)) middle (
+          csubRecursiveKOA #(.SW((SW/2)+1)) middle (
                 //.clk(clk),
                 .Data_A_i(result_A_adder),
                 .Data_B_i(result_B_adder),
@@ -132,21 +132,21 @@ generate
                 reg [2*(SW/2+2)-1:0] S_A;
                 reg [SW+4-1:0] S_B;
 
-          subRecursiveKOA #(.SW(SW/2)) left(
+          csubRecursiveKOA #(.SW(SW/2)) left(
                 //.clk(clk),
                 .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
                 .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
                 .Data_S_o(Q_left)
             );
             
-          subRecursiveKOA #(.SW((SW/2)+1)) right(
+          csubRecursiveKOA #(.SW((SW/2)+1)) right(
                 //.clk(clk),
                 .Data_A_i(Data_A_i[SW-SW/2-1:0]),
                 .Data_B_i(Data_B_i[SW-SW/2-1:0]),
                 .Data_S_o(Q_right)
             );
         
-          subRecursiveKOA #(.SW(SW/2+2)) middle (
+          csubRecursiveKOA #(.SW(SW/2+2)) middle (
                 //.clk(clk),
                 .Data_A_i(result_A_adder),
                 .Data_B_i(result_B_adder),

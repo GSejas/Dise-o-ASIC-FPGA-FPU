@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : RecursiveKOA_SW24
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 18:37:21 2016
+Date   : Fri Oct 28 00:16:14 2016
 ****************************************
 
 
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =   1.0533 mW   (79%)
-  Net Switching Power  = 276.1528 uW   (21%)
+  Cell Internal Power  =   1.3758 mW   (80%)
+  Net Switching Power  = 337.8243 uW   (20%)
                          ---------
-Total Dynamic Power    =   1.3295 mW  (100%)
+Total Dynamic Power    =   1.7136 mW  (100%)
 
-Cell Leakage Power     =  32.7872 nW
+Cell Leakage Power     =  45.3668 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.3378        1.4068e-02        4.4778e+03            0.3519  (  26.46%)
+register           0.5340        2.6554e-02        7.2864e+03            0.5606  (  32.71%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.7155            0.2621        2.8309e+04            0.9777  (  73.54%)
+combinational      0.8418            0.3113        3.8080e+04            1.1531  (  67.29%)
 --------------------------------------------------------------------------------------------------
-Total              1.0533 mW         0.2762 mW     3.2787e+04 pW         1.3295 mW
+Total              1.3758 mW         0.3378 mW     4.5367e+04 pW         1.7137 mW
 1

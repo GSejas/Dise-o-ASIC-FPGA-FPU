@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-27 18:33:21
+//  Last Modified : 2016-10-27 23:56:17
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -28,8 +28,7 @@
 
 `timescale 1ns / 1ps
 
-`define STOP_SW1 7
-
+`include "global.v"
 
 module RecursiveKOA
     //#(parameter SW = 24, parameter precision = 0)

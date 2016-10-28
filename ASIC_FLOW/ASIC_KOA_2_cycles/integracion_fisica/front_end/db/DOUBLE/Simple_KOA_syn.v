@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Thu Oct 27 18:26:19 2016
+// Date      : Thu Oct 27 23:52:25 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -99,8 +99,8 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
          n64, n65, n66, n67, n68, n69, n70, n71, n72, n73, n74, n75, n76, n77,
          n78, n79, n80, n81, n82, n83, n84, n85, n86, n87, n88, n89, n90, n91,
          n92, n93, n94, n95, n96, n97, n98, n99, n100, n101, n102, n103, n104,
-         n105, n106, n107, n108, n109, n110, DP_OP_17J15_123_5889_n2557,
-         DP_OP_17J15_123_5889_n717, DP_OP_17J15_123_5889_n89, n112, n113, n114,
+         n105, n106, n107, n108, n109, n110, DP_OP_17J9_123_5889_n2557,
+         DP_OP_17J9_123_5889_n717, DP_OP_17J9_123_5889_n89, n112, n113, n114,
          n115, n116, n117, n118, n119, n120, n121, n122, n123, n124, n125,
          n126, n127, n128, n129, n130, n131, n132, n133, n134, n135, n136,
          n137, n138, n139, n140, n141, n142, n143, n144, n145, n146, n147,
@@ -1243,10 +1243,10 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   DFFRXLTS RECURSIVE_EVEN1_finalreg_Q_reg_92_ ( .D(n18), .CK(clk), .RN(n8558), 
         .Q(sgf_result_o[92]) );
   DFFTRX1TS RECURSIVE_EVEN1_middle_Data_S_o_reg_0_ ( .D(
-        DP_OP_17J15_123_5889_n89), .RN(DP_OP_17J15_123_5889_n2557), .CK(clk), 
+        DP_OP_17J9_123_5889_n89), .RN(DP_OP_17J9_123_5889_n2557), .CK(clk), 
         .Q(RECURSIVE_EVEN1_Q_middle[0]) );
   DFFTRX1TS RECURSIVE_EVEN1_middle_Data_S_o_reg_1_ ( .D(n8556), .RN(
-        DP_OP_17J15_123_5889_n717), .CK(clk), .Q(RECURSIVE_EVEN1_Q_middle[1])
+        DP_OP_17J9_123_5889_n717), .CK(clk), .Q(RECURSIVE_EVEN1_Q_middle[1])
          );
   DFFQX1TS RECURSIVE_EVEN1_right_Data_S_o_reg_20_ ( .D(
         RECURSIVE_EVEN1_right_N20), .CK(clk), .Q(Result[20]) );
@@ -3178,7 +3178,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   OAI21X1TS U1736 ( .A0(n4318), .A1(n3760), .B0(n2958), .Y(n2959) );
   OAI21X1TS U1737 ( .A0(n3839), .A1(n3459), .B0(n3269), .Y(n3270) );
   XOR2X1TS U1738 ( .A(n5392), .B(n5439), .Y(n5422) );
-  INVX1TS U1739 ( .A(DP_OP_17J15_123_5889_n717), .Y(n7271) );
+  INVX1TS U1739 ( .A(DP_OP_17J9_123_5889_n717), .Y(n7271) );
   OAI21X1TS U1740 ( .A0(n4335), .A1(n4209), .B0(n4098), .Y(n4099) );
   OAI21X1TS U1741 ( .A0(n3660), .A1(n3459), .B0(n2738), .Y(n2739) );
   OAI21X1TS U1742 ( .A0(n3839), .A1(n3344), .B0(n2730), .Y(n2731) );
@@ -3507,7 +3507,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   INVX1TS U2057 ( .A(n483), .Y(n485) );
   NAND2X2TS U2058 ( .A(n373), .B(n372), .Y(n523) );
   XOR2X1TS U2059 ( .A(Data_A_i[0]), .B(Data_A_i[27]), .Y(
-        DP_OP_17J15_123_5889_n2557) );
+        DP_OP_17J9_123_5889_n2557) );
   INVX4TS U2060 ( .A(Data_A_i[14]), .Y(n6112) );
   NOR2X4TS U2061 ( .A(n7167), .B(n7173), .Y(n7159) );
   OAI22X1TS U2062 ( .A0(n1109), .A1(n1654), .B0(n1655), .B1(n1118), .Y(n1158)
@@ -4331,7 +4331,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   CLKBUFX2TS U2829 ( .A(n891), .Y(n2139) );
   CLKBUFX2TS U2830 ( .A(n585), .Y(n2062) );
   NAND2BXLTS U2831 ( .AN(n1358), .B(n1083), .Y(n1082) );
-  BUFX3TS U2832 ( .A(DP_OP_17J15_123_5889_n89), .Y(n1358) );
+  BUFX3TS U2832 ( .A(DP_OP_17J9_123_5889_n89), .Y(n1358) );
   INVX2TS U2833 ( .A(n460), .Y(n462) );
   INVX2TS U2834 ( .A(n515), .Y(n517) );
   NAND2X1TS U2835 ( .A(n553), .B(n552), .Y(n591) );
@@ -4869,9 +4869,9 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   XNOR2X1TS U3361 ( .A(n2310), .B(n2244), .Y(n1928) );
   OAI21XLTS U3362 ( .A0(n226), .A1(n6941), .B0(n6942), .Y(n6817) );
   OAI21XLTS U3363 ( .A0(n226), .A1(n6801), .B0(n6800), .Y(n6805) );
-  CLKBUFX2TS U3364 ( .A(DP_OP_17J15_123_5889_n89), .Y(n228) );
-  CLKBUFX2TS U3365 ( .A(DP_OP_17J15_123_5889_n89), .Y(n229) );
-  CLKBUFX2TS U3366 ( .A(DP_OP_17J15_123_5889_n89), .Y(n1302) );
+  CLKBUFX2TS U3364 ( .A(DP_OP_17J9_123_5889_n89), .Y(n228) );
+  CLKBUFX2TS U3365 ( .A(DP_OP_17J9_123_5889_n89), .Y(n229) );
+  CLKBUFX2TS U3366 ( .A(DP_OP_17J9_123_5889_n89), .Y(n1302) );
   OAI21X1TS U3367 ( .A0(n4193), .A1(n4172), .B0(n3163), .Y(n3164) );
   OAI21XLTS U3368 ( .A0(n167), .A1(n6620), .B0(n6621), .Y(n6496) );
   OAI21XLTS U3369 ( .A0(n167), .A1(n6486), .B0(n6485), .Y(n6491) );
@@ -5526,14 +5526,14 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   INVX4TS U3992 ( .A(n4685), .Y(n5602) );
   OR2X4TS U3993 ( .A(Data_B_i[27]), .B(n5602), .Y(n277) );
   NAND2X1TS U3994 ( .A(n277), .B(n284), .Y(n278) );
-  INVX2TS U3995 ( .A(n278), .Y(DP_OP_17J15_123_5889_n89) );
+  INVX2TS U3995 ( .A(n278), .Y(DP_OP_17J9_123_5889_n89) );
   NOR2X4TS U3996 ( .A(Data_B_i[28]), .B(Data_B_i[1]), .Y(n285) );
   INVX2TS U3997 ( .A(n285), .Y(n279) );
   NAND2X2TS U3998 ( .A(Data_B_i[28]), .B(Data_B_i[1]), .Y(n283) );
   XOR2X1TS U3999 ( .A(n311), .B(n310), .Y(n1577) );
   INVX2TS U4000 ( .A(n1577), .Y(n1401) );
   XNOR2X1TS U4001 ( .A(n175), .B(n1401), .Y(n1137) );
-  INVX2TS U4002 ( .A(DP_OP_17J15_123_5889_n2557), .Y(n617) );
+  INVX2TS U4002 ( .A(DP_OP_17J9_123_5889_n2557), .Y(n617) );
   CLKBUFX2TS U4003 ( .A(n617), .Y(n1138) );
   NAND2X1TS U4004 ( .A(n281), .B(n1153), .Y(n873) );
   CLKBUFX2TS U4005 ( .A(n873), .Y(n1442) );
@@ -5541,7 +5541,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
          );
   INVX2TS U4007 ( .A(n1577), .Y(n1120) );
   NAND2X1TS U4008 ( .A(n282), .B(n1442), .Y(n7369) );
-  NAND2X1TS U4009 ( .A(n7370), .B(n7369), .Y(DP_OP_17J15_123_5889_n717) );
+  NAND2X1TS U4009 ( .A(n7370), .B(n7369), .Y(DP_OP_17J9_123_5889_n717) );
   NOR2X2TS U4010 ( .A(Data_B_i[35]), .B(Data_B_i[8]), .Y(n379) );
   NOR2X2TS U4011 ( .A(n367), .B(n379), .Y(n492) );
   NOR2X2TS U4012 ( .A(Data_B_i[37]), .B(Data_B_i[10]), .Y(n433) );
@@ -5969,7 +5969,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   NOR2X1TS U4420 ( .A(n1276), .B(n1275), .Y(n7224) );
   INVX2TS U4421 ( .A(n7224), .Y(n7309) );
   NAND2X2TS U4422 ( .A(n7226), .B(n7309), .Y(n7219) );
-  NOR2BX1TS U4423 ( .AN(DP_OP_17J15_123_5889_n89), .B(n2277), .Y(n917) );
+  NOR2BX1TS U4423 ( .AN(DP_OP_17J9_123_5889_n89), .B(n2277), .Y(n917) );
   XNOR2X1TS U4424 ( .A(n174), .B(n2132), .Y(n886) );
   XNOR2X1TS U4425 ( .A(n179), .B(n2082), .Y(n883) );
   OAI22X1TS U4426 ( .A0(n869), .A1(n2112), .B0(n883), .B1(n2139), .Y(n915) );
@@ -6016,7 +6016,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   OAI22X1TS U4467 ( .A0(n2113), .A1(n894), .B0(n896), .B1(n1563), .Y(n938) );
   XNOR2X1TS U4468 ( .A(n183), .B(n1797), .Y(n940) );
   OAI22X1TS U4469 ( .A0(n940), .A1(n1676), .B0(n895), .B1(n1067), .Y(n942) );
-  NOR2BX1TS U4470 ( .AN(DP_OP_17J15_123_5889_n89), .B(n2208), .Y(n901) );
+  NOR2BX1TS U4470 ( .AN(DP_OP_17J9_123_5889_n89), .B(n2208), .Y(n901) );
   XNOR2X1TS U4471 ( .A(n179), .B(n1932), .Y(n937) );
   OAI22X1TS U4472 ( .A0(n898), .A1(n2022), .B0(n937), .B1(n2062), .Y(n899) );
   XNOR2X1TS U4473 ( .A(n189), .B(n1083), .Y(n930) );
@@ -6302,7 +6302,7 @@ module Simple_KOA_SW54 ( clk, rst, load_b_i, Data_A_i, Data_B_i, sgf_result_o
   ADDHX1TS U4696 ( .A(n1318), .B(n1317), .CO(n1433), .S(n1382) );
   OAI22X1TS U4697 ( .A0(n1319), .A1(n123), .B0(n1384), .B1(n2381), .Y(n1432)
          );
-  NOR2BX1TS U4698 ( .AN(DP_OP_17J15_123_5889_n89), .B(n1300), .Y(n1327) );
+  NOR2BX1TS U4698 ( .AN(DP_OP_17J9_123_5889_n89), .B(n1300), .Y(n1327) );
   OAI22X1TS U4699 ( .A0(n1324), .A1(n2407), .B0(n1323), .B1(n2428), .Y(n1325)
          );
   XNOR2X1TS U4700 ( .A(n194), .B(n1328), .Y(n1403) );

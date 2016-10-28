@@ -3,7 +3,7 @@
 Report : area
 Design : RecursiveKOA_SW54
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 18:39:00 2016
+Date   : Fri Oct 28 00:26:51 2016
 ****************************************
 
 Library(s) Used:
@@ -11,34 +11,34 @@ Library(s) Used:
     scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
 
 Number of ports:                          219
-Number of nets:                         10373
-Number of cells:                         9234
-Number of combinational cells:           8848
-Number of sequential cells:               386
+Number of nets:                         16906
+Number of cells:                        15415
+Number of combinational cells:          14613
+Number of sequential cells:               802
 Number of macros/black boxes:               0
-Number of buf/inv:                       1796
-Number of references:                      99
+Number of buf/inv:                       3185
+Number of references:                     142
 
-Combinational area:              97322.400967
-Buf/Inv area:                     7872.480312
-Noncombinational area:           10853.279772
+Combinational area:             171743.040971
+Buf/Inv area:                    14928.480549
+Noncombinational area:           25333.919487
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:                108175.680739
+Total cell area:                197076.960458
 Total area:                 undefined
 
 Hierarchical area distribution
 ------------------------------
 
-                                  Global cell area             Local cell area
-                                  --------------------  ------------------------------ 
-Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black-
-                                  Total        Total    national    national    boxes   Design
---------------------------------  -----------  -------  ----------  ----------  ------  ---------
-RecursiveKOA_SW54                 108175.6807    100.0  97322.4010  10853.2798  0.0000  RecursiveKOA_SW54
---------------------------------  -----------  -------  ----------  ----------  ------  ---------
-Total                                                   97322.4010  10853.2798  0.0000
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------
+RecursiveKOA_SW54                 197076.9605    100.0  171743.0410  25333.9195  0.0000  RecursiveKOA_SW54
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------
+Total                                                   171743.0410  25333.9195  0.0000
 
 
 Area of detected synthetic parts
@@ -47,21 +47,47 @@ Area of detected synthetic parts
 
 Estimated area of ungrouped synthetic parts
 -------------------------------------------
-                                        Estimated  Perc. of
-  Module               Implem.  Count        Area cell area
-  -------------------- -------  ----- ----------- ---------
-  DP_OP_59J23_122_9183     str      1   2498.8514      2.3%
-  DP_OP_61J23_124_4727     str      1   2543.5475      2.4%
-  DP_OP_63J23_126_4774     str      1   8407.2811      7.8%
-  DP_OP_64J23_127_455      str      1  20507.4177     19.0%
-  DP_OP_65J23_128_4774     str      1   8404.4868      7.8%
-  DW01_add              pparch      1   1821.4131      1.7%
-  DW_mult_uns           pparch      5  30743.8385     28.4%
-  -------------------- -------  ----- ----------- ---------
-  DP_OP Subtotal:                   5  42361.5845     39.2%
-  Total:                           11  74926.8361     69.3%
+                                          Estimated  Perc. of
+  Module                Implem.  Count         Area cell area
+  --------------------- -------  ----- ------------ ---------
+  DP_OP_358J21_122_4980     str      1    1406.8807      0.7%
+  DP_OP_359J21_123_9059     str      1     768.9608      0.4%
+  DP_OP_360J21_124_6958     str      1    1487.5209      0.8%
+  DP_OP_361J21_125_9059     str      1    1311.8401      0.7%
+  DP_OP_362J21_126_4748     str      1    1844.6407      0.9%
+  DP_OP_363J21_127_9059     str      1     925.9207      0.5%
+  DP_OP_366J21_130_4980     str      1    2413.6103      1.2%
+  DP_OP_367J21_131_9059     str      1     925.9208      0.5%
+  DP_OP_368J21_132_6958     str      1    1807.1978      0.9%
+  DP_OP_369J21_133_9059     str      1    1100.1605      0.6%
+  DP_OP_370J21_134_8900     str      1    1461.5996      0.7%
+  DP_OP_371J21_135_9059     str      1    1559.5197      0.8%
+  DP_OP_374J21_138_4980     str      1    2125.4382      1.1%
+  DP_OP_375J21_139_9059     str      1    1124.6403      0.6%
+  DP_OP_376J21_140_6958     str      1    1933.9171      1.0%
+  DP_OP_377J21_141_9059     str      1    1222.5594      0.6%
+  DP_OP_378J21_142_8900     str      1    1604.1584      0.8%
+  DP_OP_379J21_143_9059     str      1    1522.0796      0.8%
+  DP_OP_380J21_144_4748     str      1    2227.6780      1.1%
+  DP_OP_381J21_145_4727     str      1    3375.3628      1.7%
+  DP_OP_383J21_147_9432     str      1   16762.8926      8.5%
+  DP_OP_384J21_148_3150     str      1    6772.3169      3.4%
+  DP_OP_385J21_149_3150     str      1    6750.7173      3.4%
+  DP_OP_386J21_150_4980     str      1    3338.1786      1.7%
+  DP_OP_387J21_151_1982     str      1    2626.5581      1.3%
+  DP_OP_388J21_152_1982     str      1    3479.1324      1.8%
+  DP_OP_389J21_153_4980     str      1    3338.1786      1.7%
+  DP_OP_390J21_154_1982     str      1    3479.1324      1.8%
+  DP_OP_391J21_155_2915     str      1    1065.6002      0.5%
+  DP_OP_392J21_156_2915     str      1    1032.4801      0.5%
+  DP_OP_393J21_157_2915     str      1    1036.8002      0.5%
+  DW01_add               pparch     13   15919.5526      8.1%
+  DW_mult_uns           apparch     26   23484.1622     11.9%
+  --------------------- -------  ----- ------------ ---------
+  DP_OP Subtotal:                   31   81831.5938     41.5%
+  Total:                            70  121235.3086     61.5%
 
-Subtotal of datapath(DP_OP) cell area:  42361.5845  39.2%  (estimated)
-Total synthetic cell area:              74926.8361  69.3%  (estimated)
+Subtotal of datapath(DP_OP) cell area:  81831.5938  41.5%  (estimated)
+Total synthetic cell area:              121235.3086  61.5%  (estimated)
 
 1

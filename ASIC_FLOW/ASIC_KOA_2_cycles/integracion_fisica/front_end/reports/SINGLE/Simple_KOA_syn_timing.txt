@@ -6,7 +6,7 @@ Report : timing
         -max_paths 5
 Design : Simple_KOA_SW24
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 18:24:59 2016
+Date   : Thu Oct 27 23:51:05 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -34,8 +34,8 @@ Wire Load Model Mode: top
   U1412/Y (XNOR2X1TS)                                     0.45       5.50 f
   U166/Y (OAI22X1TS)                                      0.28       5.78 r
   U1652/CO (ADDFHX1TS)                                    0.60       6.38 r
-  DP_OP_17J14_123_9811_U283/CO (CMPR42X2TS)               1.08       7.46 f
-  DP_OP_17J14_123_9811_U278/CO (CMPR42X1TS)               0.91       8.36 r
+  DP_OP_17J8_123_9811_U283/CO (CMPR42X2TS)                1.08       7.46 f
+  DP_OP_17J8_123_9811_U278/CO (CMPR42X1TS)                0.91       8.36 r
   U1393/Y (NAND2X1TS)                                     0.16       8.52 f
   U111/Y (OAI21XLTS)                                      0.46       8.98 r
   U760/Y (AOI21X1TS)                                      0.29       9.27 f
@@ -82,8 +82,8 @@ Wire Load Model Mode: top
   U1412/Y (XNOR2X1TS)                                     0.45       5.50 f
   U166/Y (OAI22X1TS)                                      0.28       5.78 r
   U1652/CO (ADDFHX1TS)                                    0.60       6.38 r
-  DP_OP_17J14_123_9811_U283/CO (CMPR42X2TS)               1.08       7.46 f
-  DP_OP_17J14_123_9811_U278/CO (CMPR42X1TS)               0.91       8.36 r
+  DP_OP_17J8_123_9811_U283/CO (CMPR42X2TS)                1.08       7.46 f
+  DP_OP_17J8_123_9811_U278/CO (CMPR42X1TS)                0.91       8.36 r
   U1393/Y (NAND2X1TS)                                     0.16       8.52 f
   U111/Y (OAI21XLTS)                                      0.46       8.98 r
   U760/Y (AOI21X1TS)                                      0.29       9.27 f
@@ -130,8 +130,8 @@ Wire Load Model Mode: top
   U1412/Y (XNOR2X1TS)                                     0.45       5.50 f
   U166/Y (OAI22X1TS)                                      0.28       5.78 r
   U1652/CO (ADDFHX1TS)                                    0.60       6.38 r
-  DP_OP_17J14_123_9811_U283/CO (CMPR42X2TS)               1.08       7.46 f
-  DP_OP_17J14_123_9811_U278/CO (CMPR42X1TS)               0.91       8.36 r
+  DP_OP_17J8_123_9811_U283/CO (CMPR42X2TS)                1.08       7.46 f
+  DP_OP_17J8_123_9811_U278/CO (CMPR42X1TS)                0.91       8.36 r
   U1393/Y (NAND2X1TS)                                     0.16       8.52 f
   U111/Y (OAI21XLTS)                                      0.46       8.98 r
   U760/Y (AOI21X1TS)                                      0.29       9.27 f
@@ -178,8 +178,8 @@ Wire Load Model Mode: top
   U1412/Y (XNOR2X1TS)                                     0.45       5.50 f
   U166/Y (OAI22X1TS)                                      0.28       5.78 r
   U1652/CO (ADDFHX1TS)                                    0.60       6.38 r
-  DP_OP_17J14_123_9811_U283/CO (CMPR42X2TS)               1.08       7.46 f
-  DP_OP_17J14_123_9811_U278/CO (CMPR42X1TS)               0.91       8.36 r
+  DP_OP_17J8_123_9811_U283/CO (CMPR42X2TS)                1.08       7.46 f
+  DP_OP_17J8_123_9811_U278/CO (CMPR42X1TS)                0.91       8.36 r
   U1393/Y (NAND2X1TS)                                     0.16       8.52 f
   U111/Y (OAI21XLTS)                                      0.46       8.98 r
   U760/Y (AOI21X1TS)                                      0.29       9.27 f
@@ -226,8 +226,8 @@ Wire Load Model Mode: top
   U1412/Y (XNOR2X1TS)                                     0.45       5.50 f
   U166/Y (OAI22X1TS)                                      0.28       5.78 r
   U1652/CO (ADDFHX1TS)                                    0.60       6.38 r
-  DP_OP_17J14_123_9811_U283/CO (CMPR42X2TS)               1.08       7.46 f
-  DP_OP_17J14_123_9811_U278/CO (CMPR42X1TS)               0.91       8.36 r
+  DP_OP_17J8_123_9811_U283/CO (CMPR42X2TS)                1.08       7.46 f
+  DP_OP_17J8_123_9811_U278/CO (CMPR42X1TS)                0.91       8.36 r
   U1393/Y (NAND2X1TS)                                     0.16       8.52 f
   U111/Y (OAI21XLTS)                                      0.46       8.98 r
   U760/Y (AOI21X1TS)                                      0.29       9.27 f

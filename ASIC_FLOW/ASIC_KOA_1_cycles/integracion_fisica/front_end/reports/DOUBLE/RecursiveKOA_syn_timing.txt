@@ -6,7 +6,7 @@ Report : timing
         -max_paths 5
 Design : RecursiveKOA_SW54
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 20:33:30 2016
+Date   : Fri Oct 28 09:17:22 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -14,7 +14,7 @@ Wire Load Model Mode: top
 
   Startpoint: Data_A_i[0]
               (input port clocked by clk)
-  Endpoint: DP_OP_62J4_125_4796_R_6206_RW_0
+  Endpoint: DP_OP_62J6_125_4796_R_6206_RW_0
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -50,13 +50,13 @@ Wire Load Model Mode: top
   U151/Y (XOR2X1TS)                                       0.23       8.99 r
   U5874/Y (XNOR2X2TS)                                     0.34       9.33 r
   U9218/S (ADDFHX2TS)                                     0.41       9.74 r
-  DP_OP_62J4_125_4796_R_6206_RW_0/D (DFFRXLTS)            0.00       9.74 r
+  DP_OP_62J6_125_4796_R_6206_RW_0/D (DFFRXLTS)            0.00       9.74 r
   data arrival time                                                  9.74
 
   clock clk (rise edge)                                   9.50       9.50
   clock network delay (ideal)                             1.00      10.50
   clock uncertainty                                      -0.50      10.00
-  DP_OP_62J4_125_4796_R_6206_RW_0/CK (DFFRXLTS)           0.00      10.00 r
+  DP_OP_62J6_125_4796_R_6206_RW_0/CK (DFFRXLTS)           0.00      10.00 r
   library setup time                                     -0.26       9.74
   data required time                                                 9.74
   --------------------------------------------------------------------------
@@ -68,7 +68,7 @@ Wire Load Model Mode: top
 
   Startpoint: Data_B_i[46]
               (input port clocked by clk)
-  Endpoint: DP_OP_62J4_125_4796_R_5447_RW_0
+  Endpoint: DP_OP_62J6_125_4796_R_5447_RW_0
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -104,13 +104,13 @@ Wire Load Model Mode: top
   U5749/Y (XNOR2X4TS)                                     0.16       9.28 f
   U1426/Y (INVX4TS)                                       0.11       9.39 r
   U9651/S (ADDFHX2TS)                                     0.36       9.75 r
-  DP_OP_62J4_125_4796_R_5447_RW_0/D (DFFRXLTS)            0.00       9.75 r
+  DP_OP_62J6_125_4796_R_5447_RW_0/D (DFFRXLTS)            0.00       9.75 r
   data arrival time                                                  9.75
 
   clock clk (rise edge)                                   9.50       9.50
   clock network delay (ideal)                             1.00      10.50
   clock uncertainty                                      -0.50      10.00
-  DP_OP_62J4_125_4796_R_5447_RW_0/CK (DFFRXLTS)           0.00      10.00 r
+  DP_OP_62J6_125_4796_R_5447_RW_0/CK (DFFRXLTS)           0.00      10.00 r
   library setup time                                     -0.25       9.75
   data required time                                                 9.75
   --------------------------------------------------------------------------
@@ -122,7 +122,7 @@ Wire Load Model Mode: top
 
   Startpoint: Data_A_i[0]
               (input port clocked by clk)
-  Endpoint: DP_OP_59J4_122_190_R_5714
+  Endpoint: DP_OP_59J6_122_190_R_5714
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -160,13 +160,13 @@ Wire Load Model Mode: top
   U3779/Y (NOR2X2TS)                                      0.13       9.74 r
   U9402/Y (INVX2TS)                                       0.08       9.82 f
   U9661/Y (NAND2X1TS)                                     0.07       9.89 r
-  DP_OP_59J4_122_190_R_5714/D (DFFSX1TS)                  0.00       9.89 r
+  DP_OP_59J6_122_190_R_5714/D (DFFSX1TS)                  0.00       9.89 r
   data arrival time                                                  9.89
 
   clock clk (rise edge)                                   9.50       9.50
   clock network delay (ideal)                             1.00      10.50
   clock uncertainty                                      -0.50      10.00
-  DP_OP_59J4_122_190_R_5714/CK (DFFSX1TS)                 0.00      10.00 r
+  DP_OP_59J6_122_190_R_5714/CK (DFFSX1TS)                 0.00      10.00 r
   library setup time                                     -0.11       9.89
   data required time                                                 9.89
   --------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 Report : qor
 Design : Simple_KOA_SW54
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 18:26:23 2016
+Date   : Thu Oct 27 23:52:28 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Oct 27 18:26:23 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    3.45
-  Logic Optimization:                  9.96
-  Mapping Optimization:               41.10
+  Resource Sharing:                    3.38
+  Logic Optimization:                  9.89
+  Mapping Optimization:               41.02
   -----------------------------------------
-  Overall Compile Time:               78.82
-  Overall Compile Wall Clock Time:    79.30
+  Overall Compile Time:               78.59
+  Overall Compile Wall Clock Time:    78.97
 
   --------------------------------------------------------------------
 

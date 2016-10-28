@@ -3,7 +3,7 @@
 Report : area
 Design : RecursiveKOA_SW24
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 18:37:21 2016
+Date   : Fri Oct 28 00:16:14 2016
 ****************************************
 
 Library(s) Used:
@@ -11,21 +11,21 @@ Library(s) Used:
     scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
 
 Number of ports:                           99
-Number of nets:                          2270
-Number of cells:                         1956
-Number of combinational cells:           1831
-Number of sequential cells:               125
+Number of nets:                          2907
+Number of cells:                         2356
+Number of combinational cells:           2159
+Number of sequential cells:               197
 Number of macros/black boxes:               0
-Number of buf/inv:                        357
-Number of references:                      54
+Number of buf/inv:                        369
+Number of references:                      73
 
-Combinational area:              20839.680257
-Buf/Inv area:                     1566.720062
-Noncombinational area:            3529.439915
+Combinational area:              26995.680316
+Buf/Inv area:                     1630.080065
+Noncombinational area:            5499.359945
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:                 24369.120172
+Total cell area:                 32495.040261
 Total area:                 undefined
 
 Hierarchical area distribution
@@ -36,9 +36,9 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
                                   Total       Total    national    national   boxes   Design
 --------------------------------  ----------  -------  ----------  ---------  ------  ---------
-RecursiveKOA_SW24                 24369.1202    100.0  20839.6803  3529.4399  0.0000  RecursiveKOA_SW24
+RecursiveKOA_SW24                 32495.0403    100.0  26995.6803  5499.3599  0.0000  RecursiveKOA_SW24
 --------------------------------  ----------  -------  ----------  ---------  ------  ---------
-Total                                                  20839.6803  3529.4399  0.0000
+Total                                                  26995.6803  5499.3599  0.0000
 
 
 Area of detected synthetic parts
@@ -47,13 +47,25 @@ Area of detected synthetic parts
 
 Estimated area of ungrouped synthetic parts
 -------------------------------------------
-                              Estimated  Perc. of
-  Module      Implem.  Count       Area cell area
-  ----------- -------  ----- ---------- ---------
-  DW_mult_uns  pparch      2  9017.1512     37.0%
-  ----------- -------  ----- ---------- ---------
-  Total:                   2  9017.1512     37.0%
+                                        Estimated  Perc. of
+  Module               Implem.  Count        Area cell area
+  -------------------- -------  ----- ----------- ---------
+  DP_OP_73J20_122_1609     str      1    672.4800      2.1%
+  DP_OP_74J20_123_8724     str      1   1202.4010      3.7%
+  DP_OP_75J20_124_9404     str      1   1042.5603      3.2%
+  DP_OP_76J20_125_9404     str      1   1042.5603      3.2%
+  DP_OP_77J20_126_1492     str      1   2577.6008      7.9%
+  DP_OP_78J20_127_9115     str      1   2252.4165      6.9%
+  DP_OP_79J20_128_8145     str      1   5656.3115     17.4%
+  DP_OP_80J20_129_9115     str      1   2252.4165      6.9%
+  DW01_add              pparch      4   3332.1611     10.3%
+  DW_mult_uns          apparch      5   4819.6798     14.8%
+  DW_mult_uns           pparch      1   1840.3207      5.7%
+  -------------------- -------  ----- ----------- ---------
+  DP_OP Subtotal:                   8  16698.7470     51.4%
+  Total:                           18  26690.9086     82.1%
 
-Total synthetic cell area:              9017.1512  37.0%  (estimated)
+Subtotal of datapath(DP_OP) cell area:  16698.7470  51.4%  (estimated)
+Total synthetic cell area:              26690.9086  82.1%  (estimated)
 
 1

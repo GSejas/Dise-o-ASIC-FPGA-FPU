@@ -1,7 +1,7 @@
 //==================================================================================================
-//  Filename      : RKOA_OPCHANGE.v
-//  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-27 18:36:08
+//  Filename      : subRecursiveKOA.v
+//  Created On    : 2016-10-27 23:29:14
+//  Last Modified : 2016-10-28 00:15:22
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -11,22 +11,10 @@
 //
 //
 //==================================================================================================
-//=========================================================================================
-//==================================================================================================
-//  Filename      : RKOA_OPCHANGE.v
-//  Created On    : 2016-10-24 22:49:36
-//  Last Modified : 2016-10-26 23:25:21
-//  Revision      :
-//  Author        : Jorge Sequeira Rojas
-//  Company       : Instituto Tecnologico de Costa Rica
-//  Email         : jsequeira@gmail.com
-//
-//  Description   :
-//
-//
-//==================================================================================================
 
 `timescale 1ns / 1ps
+`include "global.v"
+
 
 module subRecursiveKOA
     //#(parameter SW = 24, parameter precision = 0)
@@ -38,11 +26,12 @@ module subRecursiveKOA
         output wire [2*SW-1:0] Data_S_o
     );
   
+localparam integer STOP_CONT = `STOP_CONT;
 
 generate
 
     //assign i = Stop_I;
-    if (SW <= 16) begin : GENSTOP
+    if (SW <= STOP_CONT) begin : GENSTOP
 
             mult #(.SW(SW)) 
             inst_mult (

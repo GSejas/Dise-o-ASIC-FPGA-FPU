@@ -3,7 +3,7 @@
 Report : area
 Design : RecursiveKOA_SW54
 Version: L-2016.03-SP3
-Date   : Thu Oct 27 20:33:29 2016
+Date   : Fri Oct 28 09:17:20 2016
 ****************************************
 
 Library(s) Used:
@@ -50,9 +50,9 @@ Estimated area of ungrouped synthetic parts
                                        Estimated  Perc. of
   Module              Implem.  Count        Area cell area
   ------------------- -------  ----- ----------- ---------
-  DP_OP_59J4_122_190      str      1  34028.5000     23.6%
-  DP_OP_61J4_124_939      str      1  26912.1094     18.6%
-  DP_OP_62J4_125_4796     str      1   8892.0039      6.2%
+  DP_OP_59J6_122_190      str      1  34028.5000     23.6%
+  DP_OP_61J6_124_939      str      1  26912.1094     18.6%
+  DP_OP_62J6_125_4796     str      1   8892.0039      6.2%
   DW01_add             pparch      2  12008.1602      8.3%
   ------------------- -------  ----- ----------- ---------
   DP_OP Subtotal:                  3  69832.6133     48.3%
