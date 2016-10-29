@@ -1,0 +1,50 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "FFD_NoCE": {},
+        "CORDIC_FSM_v2": {},
+        "Rotate_Mux_Array_0000": {},
+        "Multiplexer_AC_0001": {},
+        "LUT_CASE_32bits": {},
+        "Mux_2x1": {},
+        "Mux_2x1_0000": {},
+        "Simple_Subt": {},
+        "sign_inverter": {},
+        "Mux_3x1_b": {},
+        "Op_Select": {},
+        "testbench_CORDIC_Arch2": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 4294967295,
+            "mode": 4,
+            "bytes": 7787,
+            "out": "objs/amcQw_d.o"
+        },
+        "C4KAC_d": {
+            "mod": "testbench_CORDIC_Arch2",
+            "checksum": 4294967295,
+            "mode": 4,
+            "bytes": 308264,
+            "out": "C4KAC_d.o",
+            "archive": "archive.1/_21840_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_21840_archive_1.a",
+            "objects": [
+                [
+                    "C4KAC_d.o",
+                    308264
+                ]
+            ],
+            "size": 308264
+        }
+    ]
+}

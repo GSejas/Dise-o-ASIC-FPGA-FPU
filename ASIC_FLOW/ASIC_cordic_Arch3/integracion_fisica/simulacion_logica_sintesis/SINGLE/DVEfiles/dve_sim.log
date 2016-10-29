@@ -1,0 +1,211 @@
+00:03:24    268 --> ...                                                                          [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose
+00:03:24    269 --> ...                                                                              [tcl] set ucliGUI::state
+00:03:24    270 --> ...                                                                                  [tcl] set dveMisc::dve_log_file 1
+00:03:24    271 --> ...                                                                                      [tcl] gui_update_simulator_buttons
+00:03:25    272 --> ...                                                                                          [tcl] set ucliGUI::state
+00:03:25    273 --> ...                                                                                              [tcl] ucliCore::getToolPID
+00:03:25    274 --> ...                                                                                                  [tcl] synopsys::env hasTB
+00:03:25    275 --> ...  [tcl] trigger_hier_stack_context_switch 0
+00:03:25    276 --> ...      [tcl] synUtils::setDVEInitPhase 1
+00:03:25    277 --> ...          [tcl] gui_get_env SIMSETUP::SIMVPD
+00:03:25    278 --> ...              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
+00:03:25    279 --> ...                  [tcl] synopsys::dump -autoflush on -fid VPD1
+00:03:25    280 --> ...                      [tcl] set ::dve_fid VPD1
+00:03:25    281 --> ...                          [tcl] synUtils::setDVEInitPhase 0
+00:03:25    282 --> ...                              [tcl] ucliCore::getToolPID
+00:03:25    283 --> ...                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp3oTNKE
+00:03:25    284 --> ...                                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.26230}
+00:03:25    285 --> ...                                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.26230}
+00:03:25    286 --> ...                                              [tcl] config endofsim noexit
+00:03:25    287 --> ...                                                  [tcl] config onfail enable all
+00:03:25    288 --> ...                                                      [tcl] config syscaddplainmembers
+00:03:25    289 --> ...                                                          [tcl] config syscaddsourcenames
+00:03:25    290 --> ...                                                              [tcl] config syscaddstructtypes
+00:03:25    291 --> ...                                                                  [tcl] synopsys::listing -disable
+00:03:25    292 --> ...                                                                      [tcl] if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+00:03:25    293 --> ...                                                                          [tcl] gui_set_precision 1ps
+00:03:25    294 --> ...                                                                              [tcl] gui_set_time_units 1ps
+00:03:25    295 --> ...                                                                                  [tcl] #</Database>
+00:03:25    296 --> ...                                                                                      [tcl] # DVE Global setting session:
+00:03:25    297 --> ...                                                                                          [tcl] # Global: Breakpoints
+00:03:25    298 --> ...                                                                                              [tcl] # Global: Bus
+00:03:25    299 --> ...                                                                                                  [tcl] # Global: Expressions
+00:03:25    300 --> ...  [tcl] # Global: Signal Time Shift
+00:03:25    301 --> ...      [tcl] # Global: Signal Compare
+00:03:25    302 --> ...          [tcl] # Global: Signal Groups
+00:03:25    303 --> ...              [tcl] gui_load_child_values {testbench_CORDIC_Arch3}
+00:03:25    304 --> ...                  [tcl] synopsys::dump -add {testbench_CORDIC_Arch3} -scope "." -depth 1 -fid VPD1
+00:03:25    305 --> ...                      [tcl] set _session_group_2 testbench_CORDIC_Arch3
+00:03:25    306 --> ...                          [tcl] gui_sg_create "$_session_group_2"
+00:03:25    307 --> ...                              [tcl] set testbench_CORDIC_Arch3 "$_session_group_2"
+00:03:25    308 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_2" { testbench_CORDIC_Arch3.EW testbench_CORDIC_Arch3.ack_cordic testbench_CORDIC_Arch3.contador testbench_CORDIC_Arch3.SW testbench_CORDIC_Arch3.data_output testbench_CORDIC_Arch3.underflow_flag testbench_CORDIC_Arch3.FileSaveData testbench_CORDIC_Arch3.beg_fsm_cordic testbench_CORDIC_Arch3.SWR testbench_CORDIC_Arch3.PERIOD testbench_CORDIC_Arch3.Array_IN testbench_CORDIC_Arch3.data_in testbench_CORDIC_Arch3.EWR testbench_CORDIC_Arch3.ready_cordic testbench_CORDIC_Arch3.W testbench_CORDIC_Arch3.shift_region_flag testbench_CORDIC_Arch3.busy testbench_CORDIC_Arch3.operation testbench_CORDIC_Arch3.clk testbench_CORDIC_Arch3.Recept testbench_CORDIC_Arch3.overflow_flag testbench_CORDIC_Arch3.zero_flag testbench_CORDIC_Arch3.Cont_CLK testbench_CORDIC_Arch3.rst testbench_CORDIC_Arch3.inst_CORDIC_Arch3.inst_CORDIC_FSM_v3_state_next testbench_CORDIC_Arch3.inst_CORDIC_Arch3.inst_CORDIC_FSM_v3_state_reg testbench_CORDIC_Arch3.inst_CORDIC_Arch3.result_add_subt testbench_CORDIC_Arch3.inst_CORDIC_Arch3.cont_iter_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.cont_var_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff1_shift_region_flag_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff1_Z testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Xn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Yn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Zn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_X testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_Y testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_Z testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_sh_x_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_sh_y_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_LUT_out }
+00:03:25    309 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:testbench_CORDIC_Arch3.EW}
+00:03:25    310 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:testbench_CORDIC_Arch3.EW}
+00:03:25    311 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:testbench_CORDIC_Arch3.SW}
+00:03:25    312 --> ...                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:testbench_CORDIC_Arch3.SW}
+00:03:25    313 --> ...                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:testbench_CORDIC_Arch3.SWR}
+00:03:25    314 --> ...                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:testbench_CORDIC_Arch3.SWR}
+00:03:25    315 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:testbench_CORDIC_Arch3.PERIOD}
+00:03:25    316 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:testbench_CORDIC_Arch3.PERIOD}
+00:03:25    317 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:testbench_CORDIC_Arch3.EWR}
+00:03:25    318 --> ...                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:testbench_CORDIC_Arch3.EWR}
+00:03:25    319 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:testbench_CORDIC_Arch3.W}
+00:03:25    320 --> ...                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:testbench_CORDIC_Arch3.W}
+00:03:25    321 --> ...                                                                                      [tcl] # Global: Highlighting
+00:03:25    322 --> ...                                                                                          [tcl] # Global: Stack
+00:03:25    323 --> ...                                                                                              [tcl] gui_change_stack_mode -mode list
+00:03:25    324 --> ...                                                                                                  [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+00:03:25    325 --> ...  [tcl] # Post database loading setting...
+00:03:25    326 --> ...      [tcl] # Restore C1 time
+00:03:25    327 --> ...          [tcl] gui_set_time -C1_only 6467
+00:03:25    328 --> ...              [tcl] # Save global setting...
+00:03:25    329 --> ...                  [tcl] # Wave/List view global setting
+00:03:25    330 --> ...                      [tcl] gui_cov_show_value -switch false
+00:03:25    331 --> ...                          [tcl] # Close all empty TopLevel windows
+00:03:25    332 --> ...                              [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+00:03:25    333 --> ...                                  [tcl] gui_set_loading_session_type noSession
+00:03:25    334 --> ...                                      [tcl] # DVE View/pane content session:
+00:03:25    335 --> ...                                          [tcl] # Hier 'Hier.1'
+00:03:25    336 --> ...                                              [tcl] gui_show_window -window ${Hier.1}
+00:03:25    337 --> ...                                                  [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+00:03:25    338 --> ...                                                      [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+00:03:25    339 --> ...                                                          [tcl] gui_hier_list_init -id ${Hier.1}
+00:03:25    340 --> ...                                                              [tcl] gui_change_design -id ${Hier.1} -design Sim
+00:03:25    341 --> ...                                                                  [tcl] catch {gui_list_expand -id ${Hier.1} testbench_CORDIC_Arch3}
+00:03:25    342 --> ...                                                                      [tcl] catch {gui_list_select -id ${Hier.1} {testbench_CORDIC_Arch3.inst_CORDIC_Arch3}}
+00:03:26    343 --> ...                                                                          [tcl] dveMisc::vbusExpand testbench_CORDIC_Arch3.inst_CORDIC_Arch3
+00:03:26    344 --> ...                                                                              [tcl] synopsys::dump -add {testbench_CORDIC_Arch3.inst_CORDIC_Arch3} -scope "." -depth 1 -fid VPD1
+00:03:26    345 --> ...                                                                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+00:03:26    346 --> ...                                                                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+00:03:26    347 --> ...                                                                                          [tcl] # Data 'Data.1'
+00:03:26    348 --> ...                                                                                              [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+00:03:26    349 --> ...                                                                                                  [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+00:03:26    350 --> ...  [tcl] gui_list_show_data -id ${Data.1} {testbench_CORDIC_Arch3.inst_CORDIC_Arch3}
+00:03:26    351 --> ...      [tcl] gui_show_window -window ${Data.1}
+00:03:26    352 --> ...          [tcl] catch { gui_list_select -id ${Data.1} {testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_Z testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_sh_y_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_sh_x_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Yn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_LUT_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff1_shift_region_flag_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.cont_var_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.cont_iter_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Xn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Zn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff1_Z testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_X testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_Y }}
+00:03:26    353 --> ...              [tcl] gui_view_scroll -id ${Data.1} -vertical -set 39971
+00:03:26    354 --> ...                  [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+00:03:26    355 --> ...                      [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+00:03:26    356 --> ...                          [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+00:03:26    357 --> ...                              [tcl] # View 'Wave.1'
+00:03:26    358 --> ...                                  [tcl] gui_wv_sync -id ${Wave.1} -switch false
+00:03:26    359 --> ...                                      [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+00:03:26    360 --> ...                                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+00:03:26    361 --> ...                                              [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+00:03:26    362 --> ...                                                  [tcl] gui_list_set_height -id Wave -height 17
+00:03:26    363 --> ...                                                      [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+00:03:26    364 --> ...                                                          [tcl] gui_list_create_group_when_add -wave -disable
+00:03:26    365 --> ...                                                              [tcl] gui_marker_set_ref -id ${Wave.1}  C1
+00:03:26    366 --> ...                                                                  [tcl] gui_wv_zoom_timerange -id ${Wave.1} 0 22528
+00:03:26    367 --> ...                                                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {testbench_CORDIC_Arch3}
+00:03:26    368 --> ...                                                                          [tcl] synopsys::dump -add {testbench_CORDIC_Arch3.Array_IN } -aggregates  -fid VPD1
+00:03:26    369 --> ...                                                                              [tcl] gui_list_select -id ${Wave.1} {testbench_CORDIC_Arch3.rst }
+00:03:26    370 --> ...                                                                                  [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+00:03:26    371 --> ...                                                                                      [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+00:03:26    372 --> ...                                                                                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+00:03:26    373 --> ...                                                                                              [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+00:03:26    374 --> ...                                                                                                  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+00:03:26    375 --> ...  [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+00:03:26    376 --> ...      [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+00:03:26    377 --> ...          [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+00:03:26    378 --> ...              [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group testbench_CORDIC_Arch3  -position in
+00:03:26    379 --> ...                  [tcl] gui_marker_move -id ${Wave.1} {C1} 6467
+00:03:26    380 --> ...                      [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 263
+00:03:26    381 --> ...                          [tcl] gui_show_grid -id ${Wave.1} -enable false
+00:03:26    382 --> ...                              [tcl] # Source 'Source.1'
+00:03:26    383 --> ...                                  [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+00:03:26    384 --> ...                                      [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+00:03:26    385 --> ...                                          [tcl] gui_open_source -id ${Source.1}  -replace -active testbench_CORDIC_Arch3 tb_CORDIC_Arch3.v
+00:03:26    386 --> ...                                              [tcl] gui_src_value_annotate -id ${Source.1} -switch true
+00:03:26    387 --> ...                                                  [tcl] gui_set_env TOGGLE::VALUEANNOTATE 1
+00:03:26    388 --> ...                                                      [tcl] gui_view_scroll -id ${Source.1} -vertical -set 465
+00:03:26    389 --> ...                                                          [tcl] gui_src_set_reusable -id ${Source.1}
+00:03:26    390 --> ...                                                              [tcl] # Restore toplevel window zorder
+00:03:26    391 --> ...                                                                  [tcl] # The toplevel window could be closed if it has no view/pane
+00:03:26    392 --> ...                                                                      [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} }
+00:03:26    393 --> ...                                                                          [tcl] #</Session>
+00:03:31    394 --> ...                                                                              [tcl] synopsys::run -relative 109000
+00:03:31    395 --> ...                                                                                  [tcl] set ucliGUI::state
+00:03:31    396 --> ...                                                                                      [tcl] set ucliGUI::state
+00:03:31    397 --> ...                                                                                          [tcl] set ucliGUI::state
+00:03:31    398 --> ...                                                                                              [tcl] set ucliGUI::state
+00:03:31    399 --> ...                                                                                                  [tcl] set ucliGUI::state
+00:03:31    400 --> ...  [tcl] catch {senv activeDomain} dveMisc::result 
+00:03:31    401 --> ...      [tcl] set dveMisc::result
+00:03:31    402 --> ...          [tcl] gui_update_simulator_buttons
+00:03:31    403 --> ...              [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+00:03:32    404 --> ...                  [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+00:03:52    405 --> ...                      [tcl] synopsys::run -relative 100000
+00:03:52    406 --> ...                          [tcl] set ucliGUI::state
+00:03:52    407 --> ...                              [tcl] set ucliGUI::state
+00:03:52    408 --> ...                                  [tcl] set ucliGUI::state
+00:03:52    409 --> ...                                      [tcl] set ucliGUI::state
+00:03:52    410 --> ...                                          [tcl] set ucliGUI::state
+00:03:52    411 --> ...                                              [tcl] catch {senv activeDomain} dveMisc::result 
+00:03:52    412 --> ...                                                  [tcl] set dveMisc::result
+00:03:52    413 --> ...                                                      [tcl] gui_update_simulator_buttons
+00:03:52    414 --> ...                                                          [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+00:03:52    415 --> ...                                                              [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+00:04:06    416 --> ...                                                                  [tcl] synopsys::run
+00:04:06    417 --> ...                                                                      [tcl] set ucliGUI::state
+00:04:06    418 --> ...                                                                          [tcl] set ucliGUI::state
+00:04:06    419 --> ...                                                                              [tcl] gui_update_simulator_buttons
+00:04:09    420 --> ...                                                                                  [tcl] set synopsys::env(time) 82076810
+00:04:12    421 --> ...                                                                                      [tcl] set synopsys::env(time) 165710000
+00:04:15    422 --> ...                                                                                          [tcl] set synopsys::env(time) 250635939
+00:04:18    423 --> ...                                                                                              [tcl] set synopsys::env(time) 337132091
+00:04:21    424 --> ...                                                                                                  [tcl] set synopsys::env(time) 422547338
+00:04:24    425 --> ...  [tcl] set synopsys::env(time) 508267303
+00:04:27    426 --> ...      [tcl] set synopsys::env(time) 593706181
+00:04:30    427 --> ...          [tcl] set synopsys::env(time) 675856567
+00:04:33    428 --> ...              [tcl] set synopsys::env(time) 760867082
+00:04:36    429 --> ...                  [tcl] set synopsys::env(time) 847145000
+00:04:39    430 --> ...                      [tcl] set synopsys::env(time) 933366781
+00:04:42    431 --> ...                          [tcl] set synopsys::env(time) 1022338184
+00:04:45    432 --> ...                              [tcl] ucliCore::getToolPID
+00:04:45    433 --> ...                                  [tcl] ucliCore::stopTool -no_signal
+00:04:45    434 --> ...                                      [tcl] set ucliGUI::state
+00:04:45    435 --> ...                                          [tcl] set ucliGUI::state
+00:04:45    436 --> ...                                              [tcl] catch {senv activeDomain} dveMisc::result 
+00:04:45    437 --> ...                                                  [tcl] set dveMisc::result
+00:04:45    438 --> ...                                                      [tcl] gui_update_simulator_buttons
+00:04:45    439 --> ...                                                          [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+00:04:50    440 --> ...                                                              [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+00:05:03    441 --> ...                                                                  [tcl] synopsys::run
+00:05:03    442 --> ...                                                                      [tcl] set ucliGUI::state
+00:05:03    443 --> ...                                                                          [tcl] set ucliGUI::state
+00:05:03    444 --> ...                                                                              [tcl] gui_update_simulator_buttons
+00:05:06    445 --> ...                                                                                  [tcl] set synopsys::env(time) 1190058561
+00:05:09    446 --> ...                                                                                      [tcl] set synopsys::env(time) 1277040000
+00:05:12    447 --> ...                                                                                          [tcl] set synopsys::env(time) 1365925964
+00:05:15    448 --> ...                                                                                              [tcl] set synopsys::env(time) 1453996007
+00:05:18    449 --> ...                                                                                                  [tcl] set synopsys::env(time) 1542276744
+00:05:21    450 --> ...  [tcl] set synopsys::env(time) 1629237437
+00:05:24    451 --> ...      [tcl] set synopsys::env(time) 1716276226
+00:05:27    452 --> ...          [tcl] set synopsys::env(time) 1799066056
+00:05:30    453 --> ...              [tcl] set synopsys::env(time) 1883057877
+00:05:33    454 --> ...                  [tcl] set synopsys::env(time) 1968196918
+00:05:36    455 --> ...                      [tcl] set synopsys::env(time) 2053236077
+00:05:39    456 --> ...                          [tcl] set synopsys::env(time) 2138423056
+00:05:42    457 --> ...                              [tcl] set synopsys::env(time) 2223428304
+00:05:45    458 --> ...                                  [tcl] set synopsys::env(time) 2305947477
+00:05:48    459 --> ...                                      [tcl] set synopsys::env(time) 2392018301
+00:05:51    460 --> ...                                          [tcl] set synopsys::env(time) 2475868069
+00:05:54    461 --> ...                                              [tcl] set synopsys::env(time) 2557836284
+00:05:57    462 --> ...                                                  [tcl] set ucliGUI::state
+00:05:57    463 --> ...                                                      [tcl] set ucliGUI::state
+00:05:57    464 --> ...                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+00:05:57    465 --> ...                                                              [tcl] set dveMisc::result
+00:05:57    466 --> ...                                                                  [tcl] gui_update_simulator_buttons
+00:05:57    467 --> ...                                                                      [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+00:06:06    468 --> ...                                                                          [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+01:03:02    469 --> ...                                                                              [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+01:03:02    470 --> ...                                                                                  [tcl] synopsys::finish
+01:03:02    471 --> ...                                                                                      [tcl] set ucliGUI::state
+01:03:02    472 --> ...                                                                                          [tcl] set ucliGUI::state
+01:03:02    473 --> ...                                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+01:03:02    474 --> ...                                                                                                  [tcl] set dveMisc::result
+01:03:02    475 --> ...  [tcl] gui_update_simulator_buttons
+01:03:02    476 --> ...      [tcl] catch {senv activeDomain} dveMisc::result 
+01:03:02    477 --> ...          [tcl] set dveMisc::result
+01:03:03    478 --> ...              [tcl] ucli_exit

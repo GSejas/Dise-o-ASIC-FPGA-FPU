@@ -1,3 +1,2 @@
 #!/bin/bash
-ls "../../front_end/source" > file_list
-
+ls -A ../source >file_list

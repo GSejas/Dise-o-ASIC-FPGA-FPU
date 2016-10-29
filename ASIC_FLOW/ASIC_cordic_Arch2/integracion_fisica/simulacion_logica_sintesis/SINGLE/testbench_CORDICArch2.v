@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : testbench_CORDICArch2.v
 //  Created On    : 2016-10-03 23:33:09
-//  Last Modified : 2016-10-05 15:59:27
+//  Last Modified : 2016-10-28 17:48:22
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -55,21 +55,25 @@ wire [W-1:0] data_output;          						//	Bus de datos con el valor final del 
 wire overflow_flag;										//	Bandera de overflow de la operacion.
 wire underflow_flag;									//	Bandera de underflow de la operacion.
 
-	CORDIC_Arch2 #(.W(W),.EW(EW),.SW(SW),.SWR(SWR),.EWR(EWR)) uut
-		(
-			.clk               (clk),
-			.rst               (rst),
-			.beg_fsm_cordic    (beg_fsm_cordic),
-			.ack_cordic        (ack_cordic),
-			.operation         (operation),
-			.data_in           (data_in),
-			.shift_region_flag (shift_region_flag),
-			.r_mode            (r_mode),
-			.ready_cordic      (ready_cordic),
-			.overflow_flag     (overflow_flag),
-			.underflow_flag    (underflow_flag),
-			.data_output       (data_output)
-		);
+`ifdef SINGLE
+CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 uut (
+`endif
+`ifdef DOUBLE
+CORDIC_Arch2_W64_EW11_SW55_SWR55_EWR6 uut  (
+`endif 
+            .clk(clk),
+            .rst(rst),
+            .beg_fsm_cordic(beg_fsm_cordic),
+            .ack_cordic(ack_cordic),
+            .operation(operation),
+            .data_in(data_in),
+            .shift_region_flag(shift_region_flag),
+            .r_mode(r_mode),
+            .ready_cordic(ready_cordic),
+            .overflow_flag(overflow_flag),
+            .underflow_flag(underflow_flag),
+            .data_output(data_output)
+        );
 
 
 

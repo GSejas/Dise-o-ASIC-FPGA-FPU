@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : DECO_CORDIC_OP.v
 //  Created On    : 2016-10-03 13:00:49
-//  Last Modified : 2016-10-03 14:44:53
+//  Last Modified : 2016-10-28 23:06:30
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -19,7 +19,7 @@ module DECO_CORDIC_EXT #(parameter W = 32)(
    input wire         operation,
    input wire [1:0]   shift_region_flag,
    output reg         sel_mux_3,
-   output reg [W-1:0] data_out
+   output reg [W-1:0] data_out_CORDECO
    );
 
 
@@ -29,23 +29,19 @@ module DECO_CORDIC_EXT #(parameter W = 32)(
           case (shift_region_flag)
             2'b00  : begin
                         sel_mux_3 = 1'b0;
-                        data_out = data_i;
+                        data_out_CORDECO = data_i;
                      end
             2'b01  : begin
                         sel_mux_3 = 1'b1;
-                        data_out = {~data_i[W-1],data_i[W-2:0]};
+                        data_out_CORDECO = {~data_i[W-1],data_i[W-2:0]};
                      end
             2'b10  : begin
                         sel_mux_3 = 1'b1;
-                        data_out = data_i;
+                        data_out_CORDECO = data_i;
                      end
             2'b11  : begin
                         sel_mux_3 = 1'b0;
-                        data_out = data_i;
-                     end
-            default: begin
-                        sel_mux_3 = 1'b0;
-                        data_out = data_i;
+                        data_out_CORDECO = data_i;
                      end
           endcase
         end
@@ -53,24 +49,20 @@ module DECO_CORDIC_EXT #(parameter W = 32)(
           case (shift_region_flag)
             2'b00  : begin
                         sel_mux_3 = 1'b1;
-                        data_out = data_i;
+                        data_out_CORDECO = data_i;
                      end
             2'b01  : begin
                         sel_mux_3 = 1'b0;
-                        data_out = data_i;
+                        data_out_CORDECO = data_i;
                      end
             2'b10  : begin
                         sel_mux_3 = 1'b0;
-                        data_out = {~data_i[W-1],data_i[W-2:0]};;
+                        data_out_CORDECO = {~data_i[W-1],data_i[W-2:0]};;
                      end
             2'b11  : begin
                         sel_mux_3 = 1'b1;
-                        data_out = data_i;
-                     end
-            default: begin
-                        sel_mux_3 = 1'b1;
-                        data_out = data_i;
-                     end
+                        data_out_CORDECO = data_i;
+                     end 
           endcase
       end
    end

@@ -1,4 +1,3 @@
-3ff0000000000000
 3feffffd88586ee6
 3feffff621621d02
 3fefffe9cb1e2e8d

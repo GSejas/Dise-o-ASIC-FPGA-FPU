@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Oct 29 01:03:47 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: inst_FPU_PIPELINED_FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  inst_FPU_PIPELINED_FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_0_/CK (DFFRXLTS)
+                                                          0.00       1.00 r
+  inst_FPU_PIPELINED_FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_0_/QN (DFFRXLTS)
+                                                          1.32       2.32 r
+  U3001/CON (AHHCONX2TS)                                  0.26       2.58 f
+  U3004/CO (AFHCINX2TS)                                   0.22       2.80 r
+  U2997/CON (AFHCONX2TS)                                  0.19       2.99 f
+  U3029/CO (AFHCINX2TS)                                   0.33       3.32 r
+  U3033/CON (AFHCONX2TS)                                  0.19       3.52 f
+  U3025/CO (AFHCINX2TS)                                   0.33       3.85 r
+  U3021/CON (AFHCONX2TS)                                  0.19       4.04 f
+  U3017/CO (AFHCINX2TS)                                   0.33       4.37 r
+  U3013/CON (AFHCONX2TS)                                  0.19       4.56 f
+  U2992/CO (AFHCINX2TS)                                   0.33       4.89 r
+  U2988/CON (AFHCONX2TS)                                  0.19       5.09 f
+  U3009/CO (AFHCINX2TS)                                   0.33       5.42 r
+  U2984/CON (AFHCONX2TS)                                  0.19       5.61 f
+  U2980/CO (AFHCINX2TS)                                   0.33       5.94 r
+  U2938/CON (AFHCONX2TS)                                  0.19       6.14 f
+  U2942/CO (AFHCINX2TS)                                   0.33       6.46 r
+  U2947/CON (AFHCONX2TS)                                  0.19       6.66 f
+  U2975/CO (AFHCINX2TS)                                   0.33       6.99 r
+  U2963/CON (AFHCONX2TS)                                  0.19       7.18 f
+  U2967/CO (AFHCINX2TS)                                   0.30       7.49 r
+  U2972/CO (CMPR32X2TS)                                   0.45       7.93 r
+  U2960/CO (CMPR32X2TS)                                   0.41       8.34 r
+  U2956/CO (CMPR32X2TS)                                   0.41       8.74 r
+  U2952/CO (CMPR32X2TS)                                   0.39       9.14 r
+  U2948/Y (XNOR2X1TS)                                     0.23       9.36 f
+  U2949/Y (AOI22X1TS)                                     0.18       9.54 r
+  U2950/Y (OAI2BB1X1TS)                                   0.12       9.67 f
+  inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_/D (DFFRXLTS)
+                                                          0.00       9.67 f
+  data arrival time                                                  9.67
+
+  clock clk (rise edge)                                   9.50       9.50
+  clock network delay (ideal)                             1.00      10.50
+  clock uncertainty                                      -0.50      10.00
+  inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_/CK (DFFRXLTS)
+                                                          0.00      10.00 r
+  library setup time                                     -0.19       9.81
+  data required time                                                 9.81
+  --------------------------------------------------------------------------
+  data required time                                                 9.81
+  data arrival time                                                 -9.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+1

@@ -1,0 +1,92 @@
+{
+    "shift_mux_array_0003": [
+        "shift_mux_array_0003",
+        "w253U",
+        "module"
+    ],
+    "shift_mux_array_0000": [
+        "shift_mux_array_0000",
+        "qaeRY",
+        "module"
+    ],
+    "shift_mux_array_0002": [
+        "shift_mux_array_0002",
+        "WjFVn",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "testbench_CORDIC_Arch3": [
+        "testbench_CORDIC_Arch3",
+        "hPhaI",
+        "module"
+    ],
+    "shift_mux_array_0001": [
+        "shift_mux_array_0001",
+        "Dnpmq",
+        "module"
+    ],
+    "LUT_CASE_32bits": [
+        "LUT_CASE_32bits",
+        "APd0b",
+        "module"
+    ],
+    "Simple_Subt": [
+        "Simple_Subt",
+        "dcfj1",
+        "module"
+    ],
+    "shift_mux_array_0004": [
+        "shift_mux_array_0004",
+        "G4Syt",
+        "module"
+    ],
+    "CORDIC_Arch2": [
+        "CORDIC_Arch2",
+        "Qb7ID",
+        "module"
+    ],
+    "Multiplexer_AC_0001": [
+        "Multiplexer_AC_0001",
+        "UDPPh",
+        "module"
+    ],
+    "Mux_2x1": [
+        "Mux_2x1",
+        "Zxgtm",
+        "module"
+    ],
+    "Rotate_Mux_Array_0000": [
+        "Rotate_Mux_Array_0000",
+        "GBFFm",
+        "module"
+    ],
+    "Mux_3x1_b": [
+        "Mux_3x1_b",
+        "ncGYg",
+        "module"
+    ],
+    "Mux_2x1_0000": [
+        "Mux_2x1_0000",
+        "RKILn",
+        "module"
+    ],
+    "sign_inverter": [
+        "sign_inverter",
+        "yjNM0",
+        "module"
+    ],
+    "Priority_Codec_32": [
+        "Priority_Codec_32",
+        "Y4GEV",
+        "module"
+    ],
+    "Op_Select": [
+        "Op_Select",
+        "MMLH0",
+        "module"
+    ]
+}

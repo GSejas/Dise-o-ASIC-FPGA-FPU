@@ -1,0 +1,295 @@
+{
+    "Modules": {
+        "testbench_CORDIC_Arch3": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "shift_mux_array_0003": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_0002": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_0004": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "CORDIC_Arch2": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer_AC_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "LUT_CASE_32bits": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Simple_Subt": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_2x1": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_3x1_b": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_2x1_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "sign_inverter": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Priority_Codec_32": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Op_Select": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "RKILn_d": {
+            "checksum": 4294967295,
+            "mod": "Mux_2x1_0000",
+            "out": "RKILn_d.o",
+            "bytes": 7638,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "Y4GEV_d": {
+            "checksum": 4294967295,
+            "mod": "Priority_Codec_32",
+            "out": "Y4GEV_d.o",
+            "bytes": 9049,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "amcQw_d": {
+            "checksum": 4294967295,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 8480,
+            "mode": 4
+        },
+        "qaeRY_d": {
+            "checksum": 4294967295,
+            "mod": "shift_mux_array_0000",
+            "out": "qaeRY_d.o",
+            "bytes": 40227,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "Dnpmq_d": {
+            "checksum": 4294967295,
+            "mod": "shift_mux_array_0001",
+            "out": "Dnpmq_d.o",
+            "bytes": 40211,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "yjNM0_d": {
+            "checksum": 4294967295,
+            "mod": "sign_inverter",
+            "out": "yjNM0_d.o",
+            "bytes": 9358,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "w253U_d": {
+            "checksum": 4294967295,
+            "mod": "shift_mux_array_0003",
+            "out": "w253U_d.o",
+            "bytes": 39799,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "WjFVn_d": {
+            "checksum": 4294967295,
+            "mod": "shift_mux_array_0002",
+            "out": "WjFVn_d.o",
+            "bytes": 40075,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "ncGYg_d": {
+            "checksum": 4294967295,
+            "mod": "Mux_3x1_b",
+            "out": "ncGYg_d.o",
+            "bytes": 8557,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "G4Syt_d": {
+            "checksum": 4294967295,
+            "mod": "shift_mux_array_0004",
+            "out": "G4Syt_d.o",
+            "bytes": 39443,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "Qb7ID_d": {
+            "checksum": 4294967295,
+            "mod": "CORDIC_Arch2",
+            "out": "Qb7ID_d.o",
+            "bytes": 153578,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "MMLH0_d": {
+            "checksum": 4294967295,
+            "mod": "Op_Select",
+            "out": "MMLH0_d.o",
+            "bytes": 7366,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "UDPPh_d": {
+            "checksum": 4294967295,
+            "mod": "Multiplexer_AC_0001",
+            "out": "UDPPh_d.o",
+            "bytes": 7792,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "Zxgtm_d": {
+            "checksum": 4294967295,
+            "mod": "Mux_2x1",
+            "out": "Zxgtm_d.o",
+            "bytes": 7729,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "APd0b_d": {
+            "checksum": 4294967295,
+            "mod": "LUT_CASE_32bits",
+            "out": "APd0b_d.o",
+            "bytes": 8973,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "dcfj1_d": {
+            "checksum": 4294967295,
+            "mod": "Simple_Subt",
+            "out": "dcfj1_d.o",
+            "bytes": 7968,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "GBFFm_d": {
+            "checksum": 4294967295,
+            "mod": "Rotate_Mux_Array_0000",
+            "out": "GBFFm_d.o",
+            "bytes": 12875,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        },
+        "hPhaI_d": {
+            "checksum": 4294967295,
+            "mod": "testbench_CORDIC_Arch3",
+            "out": "hPhaI_d.o",
+            "bytes": 164771,
+            "mode": 4,
+            "archive": "archive.0/_32670_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_32670_archive_1.a",
+            "size": 605409,
+            "objects": [
+                [
+                    "qaeRY_d.o",
+                    40227
+                ],
+                [
+                    "Dnpmq_d.o",
+                    40211
+                ],
+                [
+                    "WjFVn_d.o",
+                    40075
+                ],
+                [
+                    "w253U_d.o",
+                    39799
+                ],
+                [
+                    "G4Syt_d.o",
+                    39443
+                ],
+                [
+                    "UDPPh_d.o",
+                    7792
+                ],
+                [
+                    "Qb7ID_d.o",
+                    153578
+                ],
+                [
+                    "APd0b_d.o",
+                    8973
+                ],
+                [
+                    "Zxgtm_d.o",
+                    7729
+                ],
+                [
+                    "RKILn_d.o",
+                    7638
+                ],
+                [
+                    "yjNM0_d.o",
+                    9358
+                ],
+                [
+                    "dcfj1_d.o",
+                    7968
+                ],
+                [
+                    "ncGYg_d.o",
+                    8557
+                ],
+                [
+                    "GBFFm_d.o",
+                    12875
+                ],
+                [
+                    "Y4GEV_d.o",
+                    9049
+                ],
+                [
+                    "MMLH0_d.o",
+                    7366
+                ],
+                [
+                    "hPhaI_d.o",
+                    164771
+                ]
+            ]
+        }
+    ]
+}

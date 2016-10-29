@@ -1,0 +1,79 @@
+01:09:15    105 --> ...                      [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose -pid 18030 -toolin /tmp/vcs_20161029070912_17960_jsequeira..stdin -toolout /tmp/vcs_20161029070912_17960_jsequeira..stdout  
+01:09:15    106 --> ...                          [tcl] set ucliGUI::state
+01:09:15    107 --> ...                              [tcl] set dveMisc::dve_log_file 1
+01:09:15    108 --> ...                                  [tcl] gui_update_simulator_buttons
+01:09:16    109 --> ...                                      [tcl] set ucliGUI::state
+01:09:16    110 --> ...                                          [tcl] ucliCore::getToolPID
+01:09:16    111 --> ...                                              [tcl] synopsys::env hasTB
+01:09:16    112 --> ...                                                  [tcl] trigger_hier_stack_context_switch 0
+01:09:16    113 --> ...                                                      [tcl] synUtils::setDVEInitPhase 1
+01:09:16    114 --> ...                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
+01:09:16    115 --> ...                                                              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd -locking
+01:09:16    116 --> ...                                                                  [tcl] synopsys::dump -autoflush on -fid VPD0
+01:09:16    117 --> ...                                                                      [tcl] set ::dve_fid VPD0
+01:09:16    118 --> ...                                                                          [tcl] synUtils::setDVEInitPhase 0
+01:09:16    119 --> ...                                                                              [tcl] ucliCore::getToolPID
+01:09:16    120 --> ...                                                                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpLzkh7s
+01:09:16    121 --> ...                                                                                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.18030}
+01:09:16    122 --> ...                                                                                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.18030}
+01:09:17    123 --> ...                                                                                              [tcl] dveMisc::vbusExpand testbench_CORDIC_Arch3
+01:09:17    124 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[63:0]} {shift_region_flag[1:0]} ready_cordic {data_output[63:0]} overflow_flag }
+01:09:17    125 --> ...  [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {symbolic symbolic symbolic symbolic binary hexadecimal binary binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {Cont_CLK[31:0]} {Recept[31:0]} ready_cordic {data_output[63:0]} overflow_flag underflow_flag zero_flag busy clk rst beg_fsm_cordic ack_cordic operation {data_in[63:0]} {shift_region_flag[1:0]} Array_IN PERIOD W EW SW SWR EWR }
+01:09:17    126 --> ...      [tcl] config endofsim noexit
+01:09:17    127 --> ...          [tcl] config onfail enable all
+01:09:17    128 --> ...              [tcl] config syscaddplainmembers
+01:09:17    129 --> ...                  [tcl] config syscaddsourcenames
+01:09:17    130 --> ...                      [tcl] config syscaddstructtypes
+01:09:17    131 --> ...                          [tcl] synopsys::listing -disable
+01:09:17    132 --> ...                              [tcl] synopsys::run
+01:09:17    133 --> ...                                  [tcl] set ucliGUI::state
+01:09:17    134 --> ...                                      [tcl] set ucliGUI::state
+01:09:17    135 --> ...                                          [tcl] gui_update_simulator_buttons
+01:09:20    136 --> ...                                              [tcl] set synopsys::env(time) 81267969
+01:09:23    137 --> ...                                                  [tcl] set synopsys::env(time) 163006707
+01:09:26    138 --> ...                                                      [tcl] set synopsys::env(time) 245587831
+01:09:29    139 --> ...                                                          [tcl] set synopsys::env(time) 329258500
+01:09:32    140 --> ...                                                              [tcl] set synopsys::env(time) 412806325
+01:09:35    141 --> ...                                                                  [tcl] set synopsys::env(time) 495696860
+01:09:38    142 --> ...                                                                      [tcl] set synopsys::env(time) 577779078
+01:09:41    143 --> ...                                                                          [tcl] set synopsys::env(time) 657326961
+01:09:44    144 --> ...                                                                              [tcl] set synopsys::env(time) 738796529
+01:09:47    145 --> ...                                                                                  [tcl] set synopsys::env(time) 821407625
+01:09:50    146 --> ...                                                                                      [tcl] set synopsys::env(time) 904498233
+01:09:53    147 --> ...                                                                                          [tcl] set synopsys::env(time) 988497300
+01:09:56    148 --> ...                                                                                              [tcl] set synopsys::env(time) 1073179017
+01:09:59    149 --> ...                                                                                                  [tcl] set synopsys::env(time) 1156416225
+01:10:02    150 --> ...  [tcl] set synopsys::env(time) 1240236606
+01:10:05    151 --> ...      [tcl] set synopsys::env(time) 1321905000
+01:10:08    152 --> ...          [tcl] set synopsys::env(time) 1405046526
+01:10:11    153 --> ...              [tcl] set synopsys::env(time) 1487505000
+01:10:14    154 --> ...                  [tcl] set synopsys::env(time) 1568926324
+01:10:17    155 --> ...                      [tcl] set synopsys::env(time) 1646336429
+01:10:20    156 --> ...                          [tcl] set synopsys::env(time) 1727086443
+01:10:23    157 --> ...                              [tcl] set synopsys::env(time) 1808629495
+01:10:26    158 --> ...                                  [tcl] set synopsys::env(time) 1891456196
+01:10:29    159 --> ...                                      [tcl] set synopsys::env(time) 1973276947
+01:10:32    160 --> ...                                          [tcl] set synopsys::env(time) 2053247169
+01:10:35    161 --> ...                                              [tcl] set synopsys::env(time) 2135408646
+01:10:38    162 --> ...                                                  [tcl] set synopsys::env(time) 2217727778
+01:10:41    163 --> ...                                                      [tcl] set synopsys::env(time) 2300206919
+01:10:44    164 --> ...                                                          [tcl] set synopsys::env(time) 2382236203
+01:10:47    165 --> ...                                                              [tcl] set synopsys::env(time) 2464366775
+01:10:50    166 --> ...                                                                  [tcl] set synopsys::env(time) 2546195000
+01:10:53    167 --> ...                                                                      [tcl] set synopsys::env(time) 2627826041
+01:10:54    168 --> ...                                                                          [tcl] set ucliGUI::state
+01:10:54    169 --> ...                                                                              [tcl] set ucliGUI::state
+01:10:54    170 --> ...                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+01:10:54    171 --> ...                                                                                      [tcl] set dveMisc::result
+01:10:54    172 --> ...                                                                                          [tcl] gui_update_simulator_buttons
+01:10:54    173 --> ...                                                                                              [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {symbolic symbolic symbolic symbolic binary hexadecimal binary binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {Cont_CLK[31:0]} {Recept[31:0]} ready_cordic {data_output[63:0]} overflow_flag underflow_flag zero_flag busy clk rst beg_fsm_cordic ack_cordic operation {data_in[63:0]} {shift_region_flag[1:0]} Array_IN PERIOD W EW SW SWR EWR }
+01:12:50    174 --> ...                                                                                                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+01:12:50    175 --> ...  [tcl] synopsys::finish
+01:12:50    176 --> ...      [tcl] set ucliGUI::state
+01:12:50    177 --> ...          [tcl] set ucliGUI::state
+01:12:50    178 --> ...              [tcl] catch {senv activeDomain} dveMisc::result 
+01:12:50    179 --> ...                  [tcl] set dveMisc::result
+01:12:50    180 --> ...                      [tcl] gui_update_simulator_buttons
+01:12:50    181 --> ...                          [tcl] catch {senv activeDomain} dveMisc::result 
+01:12:50    182 --> ...                              [tcl] set dveMisc::result
+01:12:50    183 --> ...                                  [tcl] ucli_exit

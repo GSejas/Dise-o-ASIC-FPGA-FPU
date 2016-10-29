@@ -1,0 +1,97 @@
+{
+    "FFD_NoCE": [
+        "FFD_NoCE",
+        "HnhJZ",
+        "module"
+    ],
+    "Round_Sgf_Dec": [
+        "Round_Sgf_Dec",
+        "irDw0",
+        "module"
+    ],
+    "Multiplexer_AC_0001": [
+        "Multiplexer_AC_0001",
+        "UDPPh",
+        "module"
+    ],
+    "Multiplexer_AC": [
+        "Multiplexer_AC",
+        "DDzib",
+        "module"
+    ],
+    "Mux_3x1_0000": [
+        "Mux_3x1_0000",
+        "Mr93H",
+        "module"
+    ],
+    "Multiplexer_AC_0000": [
+        "Multiplexer_AC_0000",
+        "UPR0r",
+        "module"
+    ],
+    "CORDIC_FSM_v2": [
+        "CORDIC_FSM_v2",
+        "Negbg",
+        "module"
+    ],
+    "Mux_3x1_b": [
+        "Mux_3x1_b",
+        "ncGYg",
+        "module"
+    ],
+    "Mux_2x1_0000": [
+        "Mux_2x1_0000",
+        "RKILn",
+        "module"
+    ],
+    "Mux_3x1": [
+        "Mux_3x1",
+        "eQNzi",
+        "module"
+    ],
+    "FSM_Add_Subtract": [
+        "FSM_Add_Subtract",
+        "tsP6I",
+        "module"
+    ],
+    "Mux_2x1": [
+        "Mux_2x1",
+        "Zxgtm",
+        "module"
+    ],
+    "sign_inverter": [
+        "sign_inverter",
+        "yjNM0",
+        "module"
+    ],
+    "LUT_CASE_64bits": [
+        "LUT_CASE_64bits",
+        "qhI9a",
+        "module"
+    ],
+    "Simple_Subt": [
+        "Simple_Subt",
+        "dcfj1",
+        "module"
+    ],
+    "Rotate_Mux_Array_0000": [
+        "Rotate_Mux_Array_0000",
+        "GBFFm",
+        "module"
+    ],
+    "Op_Select": [
+        "Op_Select",
+        "MMLH0",
+        "module"
+    ],
+    "testbench_CORDIC_Arch2": [
+        "testbench_CORDIC_Arch2",
+        "C4KAC",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}

@@ -1,7 +1,9 @@
+
+
 //==================================================================================================
 //  Filename      : tb_CORDIC_Arch3.v
 //  Created On    : 2016-10-03 23:39:40
-//  Last Modified : 2016-10-05 14:22:11
+//  Last Modified : 2016-10-29 01:07:38
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -70,8 +72,12 @@ wire underflow_flag;                  //  Bandera de underflow de la operacion.
 wire zero_flag;
 wire busy;
 
-  CORDIC_Arch3 #(.W(W),.EW(EW),.SW(SW),.SWR(SWR),.EWR(EWR)) inst_CORDIC_Arch3
-    (
+`ifdef SINGLE
+  CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5 inst_CORDIC_Arch3 (
+`endif
+ `ifdef DOUBLE
+  CORDIC_Arch3_W64_EW11_SW52_SWR55_EWR6 inst_CORDIC_Arch3 (
+`endif
       .clk               (clk),
       .rst               (rst),
       .beg_fsm_cordic    (beg_fsm_cordic),
@@ -103,7 +109,7 @@ wire busy;
     beg_fsm_cordic = 0;
     ack_cordic = 0;
     operation = 0;
-    data_in = 32'h00000000;
+    data_in = 0;
     shift_region_flag = 2'b00;
     rst = 1;
 
@@ -147,7 +153,8 @@ wire busy;
   // clock
   initial forever #5 clk = ~clk;
 
-    always @(posedge clk) begin
+    always @(negedge clk) begin
+    //#(PERIOD/3);
     if(rst) begin
         contador = 0;
         Cont_CLK = 0;
@@ -194,7 +201,8 @@ wire busy;
 end
 
     // Recepción de datos y almacenamiento en archivo*************
-    always @(posedge clk) begin
+    always @(negedge clk) begin
+       // #(PERIOD/3);
         if(ready_cordic) begin
             if(Recept == 1) begin
                 $fwrite(FileSaveData,"%h\n",data_output);

@@ -1,0 +1,85 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Oct 28 17:06:00 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: add_subt_module_YRegister_Q_reg_63_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: add_subt_module_Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  add_subt_module_YRegister_Q_reg_63_/CK (DFFRXLTS)       0.00 #     1.00 r
+  add_subt_module_YRegister_Q_reg_63_/Q (DFFRXLTS)        0.97       1.97 f
+  U4700/Y (XNOR2X1TS)                                     0.32       2.29 r
+  U4701/Y (XOR2X2TS)                                      0.30       2.59 r
+  U3417/Y (NOR2X2TS)                                      0.17       2.75 f
+  U3598/Y (CLKBUFX2TS)                                    0.34       3.10 f
+  U5506/Y (XOR2X1TS)                                      0.28       3.38 r
+  U3158/Y (NOR2X1TS)                                      0.21       3.59 f
+  U3321/Y (NOR2X2TS)                                      0.14       3.74 r
+  U5508/Y (NAND2X1TS)                                     0.11       3.85 f
+  U3597/Y (OR2X1TS)                                       0.40       4.25 f
+  U5521/Y (NOR2X2TS)                                      0.16       4.41 r
+  U5522/Y (NAND2X2TS)                                     0.12       4.54 f
+  U5549/Y (OAI21X2TS)                                     0.19       4.73 r
+  U5554/Y (AOI21X2TS)                                     0.15       4.89 f
+  U5561/CO (AFHCINX2TS)                                   0.21       5.09 r
+  U5618/CON (AFHCONX2TS)                                  0.22       5.31 f
+  U3422/CO (AFHCINX4TS)                                   0.28       5.59 r
+  U5740/CON (AFHCONX2TS)                                  0.21       5.81 f
+  U3421/CO (AFHCINX4TS)                                   0.28       6.08 r
+  U5742/CON (AFHCONX2TS)                                  0.18       6.26 f
+  U4059/CO (ACHCINX2TS)                                   0.31       6.57 r
+  U5749/CON (AFHCONX2TS)                                  0.19       6.76 f
+  U3676/CO (AFHCINX2TS)                                   0.32       7.09 r
+  U3264/Y (OAI22X2TS)                                     0.21       7.29 f
+  U5747/CO (AFHCINX4TS)                                   0.21       7.50 r
+  U5622/Y (OAI22X4TS)                                     0.18       7.69 f
+  U5746/CO (AFHCINX4TS)                                   0.19       7.88 r
+  U5624/Y (OAI22X4TS)                                     0.18       8.06 f
+  U4058/CO (AFHCINX4TS)                                   0.19       8.25 r
+  U5627/Y (OAI22X4TS)                                     0.18       8.44 f
+  U5743/CO (AFHCINX4TS)                                   0.19       8.63 r
+  U5630/Y (OAI22X4TS)                                     0.17       8.80 f
+  U3418/CO (AFHCINX2TS)                                   0.20       9.00 r
+  U5744/CON (AFHCONX2TS)                                  0.18       9.18 f
+  U3658/CO (ACHCINX2TS)                                   0.28       9.47 r
+  U3420/CO (ADDFHX2TS)                                    0.26       9.73 r
+  U3706/Y (XOR2XLTS)                                      0.18       9.90 r
+  U3705/Y (MX2X1TS)                                       0.33      10.24 r
+  add_subt_module_Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRXLTS)
+                                                          0.00      10.24 r
+  data arrival time                                                 10.24
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  add_subt_module_Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/CK (DFFRXLTS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.26      10.24
+  data required time                                                10.24
+  --------------------------------------------------------------------------
+  data required time                                                10.24
+  data arrival time                                                -10.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

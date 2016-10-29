@@ -1,0 +1,60 @@
+20:43:59    105 --> ...                      [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 22667 -toolin /tmp/vcs_20161029024356_22666_jsequeira..stdin -toolout /tmp/vcs_20161029024356_22666_jsequeira..stdout  
+20:43:59    106 --> ...                          [tcl] set ucliGUI::state
+20:43:59    107 --> ...                              [tcl] gui_update_simulator_buttons
+20:44:00    108 --> ...                                  [tcl] set ucliGUI::state
+20:44:00    109 --> ...                                      [tcl] ucliCore::getToolPID
+20:44:00    110 --> ...                                          [tcl] synopsys::env hasTB
+20:44:00    111 --> ...                                              [tcl] trigger_hier_stack_context_switch 0
+20:44:00    112 --> ...                                                  [tcl] synUtils::setDVEInitPhase 1
+20:44:00    113 --> ...                                                      [tcl] gui_get_env SIMSETUP::SIMVPD
+20:44:00    114 --> ...                                                          [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
+20:44:00    115 --> ...                                                              [tcl] synopsys::dump -autoflush on -fid VPD0
+20:44:00    116 --> ...                                                                  [tcl] set ::dve_fid VPD0
+20:44:00    117 --> ...                                                                      [tcl] synUtils::setDVEInitPhase 0
+20:44:00    118 --> ...                                                                          [tcl] ucliCore::getToolPID
+20:44:00    119 --> ...                                                                              [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpeMXKsm
+20:44:00    120 --> ...                                                                                  [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.22667}
+20:44:00    121 --> ...                                                                                      [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.22667}
+20:44:01    122 --> ...                                                                                          [tcl] dveMisc::vbusExpand CORDIC_Arch2
+20:44:01    123 --> ...                                                                                              [tcl] ucliGUI::getSignalValues -scope CORDIC_Arch2 -radix {decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal binary binary binary hexadecimal decimal decimal decimal decimal hexadecimal hexadecimal } -list {W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} {r_mode[1:0]} ready_cordic overflow_flag underflow_flag {data_output[31:0]} d_var d_iter mode iter_bits {x0[31:0]} {y0[31:0]} }
+20:44:01    124 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope CORDIC_Arch2 -radix {binary binary binary binary binary hexadecimal hexadecimal hexadecimal binary binary binary hexadecimal hexadecimal hexadecimal binary binary binary binary binary binary binary binary binary binary binary binary } -list {clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} {r_mode[1:0]} ready_cordic overflow_flag underflow_flag {data_output[31:0]} {x0[31:0]} {y0[31:0]} reset_reg_cordic enab_d_ff_RB1 enab_d_ff2_RB2 enab_RB3 enab_d_ff4_Xn enab_d_ff4_Yn enab_d_ff4_Zn enab_d_ff5_data_out enab_cont_iter enab_cont_var load_cont_iter load_cont_var }
+20:44:01    125 --> ...  [tcl] config endofsim noexit
+20:44:01    126 --> ...      [tcl] config onfail enable all
+20:44:01    127 --> ...          [tcl] config syscaddplainmembers
+20:44:01    128 --> ...              [tcl] config syscaddsourcenames
+20:44:01    129 --> ...                  [tcl] config syscaddstructtypes
+20:44:01    130 --> ...                      [tcl] synopsys::listing -disable
+20:44:06    131 --> ...                          [tcl] ucliGUI::getSignalValues -scope CORDIC_Arch2 -radix {decimal decimal decimal decimal decimal decimal decimal decimal decimal } -list {W EW SW SWR EWR d_var d_iter mode iter_bits }
+20:44:37    132 --> ...                              [tcl] synopsys::dump -add {testbench_CORDIC_Arch3} -scope "." -depth 1 -fid VPD0
+20:44:37    133 --> ...                                  [tcl] synopsys::dump -add {testbench_CORDIC_Arch3.Array_IN} -aggregates  -fid VPD0
+20:44:37    134 --> ...                                      [tcl] dveMisc::vbusExpand testbench_CORDIC_Arch3
+20:44:54    135 --> ...                                          [tcl] synopsys::run
+20:44:54    136 --> ...                                              [tcl] set ucliGUI::state
+20:44:54    137 --> ...                                                  [tcl] set ucliGUI::state
+20:44:54    138 --> ...                                                      [tcl] gui_update_simulator_buttons
+20:44:57    139 --> ...                                                          [tcl] set synopsys::env(time) 1899255000
+20:44:59    140 --> ...                                                              [tcl] set ucliGUI::state
+20:44:59    141 --> ...                                                                  [tcl] set ucliGUI::state
+20:44:59    142 --> ...                                                                      [tcl] catch {senv activeDomain} dveMisc::result 
+20:44:59    143 --> ...                                                                          [tcl] set dveMisc::result
+20:44:59    144 --> ...                                                                              [tcl] gui_update_simulator_buttons
+20:45:05    145 --> ...                                                                                  [tcl] ucliGUI::vpdAddHierarchy -scope CORDIC_Arch2 -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd; synopsys::dump -flush VPD0
+20:45:29    146 --> ...                                                                                      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/schematic.tcl
+20:45:29    147 --> ...                                                                                          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/base.tcl
+20:45:29    148 --> ...                                                                                              [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/enable.tcl
+20:45:29    149 --> ...                                                                                                  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/netlist.tcl
+20:45:29    150 --> ...  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/method.tcl
+20:45:29    151 --> ...      [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+20:45:29    152 --> ...          [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+20:45:29    153 --> ...              [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+20:45:29    154 --> ...                  [tcl] tcl_source /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/gui/dve/auxx/gui/dve/driversloads.tcl
+20:49:10    155 --> ...                      [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+20:49:10    156 --> ...                          [tcl] synopsys::finish
+20:49:10    157 --> ...                              [tcl] set ucliGUI::state
+20:49:10    158 --> ...                                  [tcl] set ucliGUI::state
+20:49:10    159 --> ...                                      [tcl] catch {senv activeDomain} dveMisc::result 
+20:49:10    160 --> ...                                          [tcl] set dveMisc::result
+20:49:10    161 --> ...                                              [tcl] gui_update_simulator_buttons
+20:49:10    162 --> ...                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+20:49:10    163 --> ...                                                      [tcl] set dveMisc::result
+20:49:10    164 --> ...                                                          [tcl] ucli_exit

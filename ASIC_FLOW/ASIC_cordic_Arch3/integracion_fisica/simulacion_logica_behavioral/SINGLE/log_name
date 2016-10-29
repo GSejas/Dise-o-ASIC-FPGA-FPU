@@ -1,0 +1,16 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 14 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 28 18:20 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+$finish called from file "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_CORDIC_Arch3.v", line 154.
+$finish at simulation time           2639565000
+Simulation complete, time is 2639565000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2639565000 ps
+CPU Time:      4.270 seconds;       Data structure size:   0.1Mb
+Fri Oct 28 18:40:40 2016
+CPU time: .772 seconds to compile + .368 seconds to elab + .133 seconds to link + 27.940 seconds in simulation

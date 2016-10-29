@@ -1,0 +1,391 @@
+{
+    "Modules": {
+        "shift_mux_array_0009": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "LUT_CASE_64bits": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_3x1_bv2": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "shift_mux_array_0008": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "shift_mux_array_000A": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "CORDIC_FSM_v3": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_2x1": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer_AC_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "CORDIC_Arch2": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "CORDIC_FSM_v2": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "LUT_CASE_32bits": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Simple_Subt_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_2x1_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "sign_inverter": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Op_Select": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_2x1_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "DECO_CORDIC_EXT": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Simple_Subt": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Mux_3x1_b": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Rotate_Mux_Array_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "PriorityEncoder_CORDIC": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "testbench_CORDIC_Arch3": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 8316,
+            "checksum": 4294967295
+        },
+        "Qb7ID_d": {
+            "mode": 4,
+            "mod": "CORDIC_Arch2",
+            "out": "Qb7ID_d.o",
+            "bytes": 295499,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "qhI9a_d": {
+            "mode": 4,
+            "mod": "LUT_CASE_64bits",
+            "out": "qhI9a_d.o",
+            "bytes": 9429,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "n6LkL_d": {
+            "mode": 4,
+            "mod": "shift_mux_array_0008",
+            "out": "n6LkL_d.o",
+            "bytes": 63960,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "V7hu5_d": {
+            "mode": 4,
+            "mod": "shift_mux_array_0009",
+            "out": "V7hu5_d.o",
+            "bytes": 63832,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "S2q3J_d": {
+            "mode": 4,
+            "mod": "shift_mux_array_000A",
+            "out": "S2q3J_d.o",
+            "bytes": 63576,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "GBFFm_d": {
+            "mode": 4,
+            "mod": "Rotate_Mux_Array_0000",
+            "out": "GBFFm_d.o",
+            "bytes": 12875,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "ewejs_d": {
+            "mode": 4,
+            "mod": "CORDIC_FSM_v3",
+            "out": "ewejs_d.o",
+            "bytes": 13608,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "BrK1N_d": {
+            "mode": 4,
+            "mod": "Mux_3x1_bv2",
+            "out": "BrK1N_d.o",
+            "bytes": 8604,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "UDPPh_d": {
+            "mode": 4,
+            "mod": "Multiplexer_AC_0001",
+            "out": "UDPPh_d.o",
+            "bytes": 7792,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "Negbg_d": {
+            "mode": 4,
+            "mod": "CORDIC_FSM_v2",
+            "out": "Negbg_d.o",
+            "bytes": 21075,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "APd0b_d": {
+            "mode": 4,
+            "mod": "LUT_CASE_32bits",
+            "out": "APd0b_d.o",
+            "bytes": 8973,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "ZNHBN_d": {
+            "mode": 4,
+            "mod": "Rotate_Mux_Array_0001",
+            "out": "ZNHBN_d.o",
+            "bytes": 23915,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "xEaRP_d": {
+            "mode": 4,
+            "mod": "Mux_2x1_0001",
+            "out": "xEaRP_d.o",
+            "bytes": 7901,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "Zxgtm_d": {
+            "mode": 4,
+            "mod": "Mux_2x1",
+            "out": "Zxgtm_d.o",
+            "bytes": 7729,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "RKILn_d": {
+            "mode": 4,
+            "mod": "Mux_2x1_0000",
+            "out": "RKILn_d.o",
+            "bytes": 7638,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "M5RTI_d": {
+            "mode": 4,
+            "mod": "DECO_CORDIC_EXT",
+            "out": "M5RTI_d.o",
+            "bytes": 9827,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "yjNM0_d": {
+            "mode": 4,
+            "mod": "sign_inverter",
+            "out": "yjNM0_d.o",
+            "bytes": 9358,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "dcfj1_d": {
+            "mode": 4,
+            "mod": "Simple_Subt",
+            "out": "dcfj1_d.o",
+            "bytes": 7968,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "ncGYg_d": {
+            "mode": 4,
+            "mod": "Mux_3x1_b",
+            "out": "ncGYg_d.o",
+            "bytes": 8557,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "QszvF_d": {
+            "mode": 4,
+            "mod": "Simple_Subt_0000",
+            "out": "QszvF_d.o",
+            "bytes": 8084,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "L4uQu_d": {
+            "mode": 4,
+            "mod": "PriorityEncoder_CORDIC",
+            "out": "L4uQu_d.o",
+            "bytes": 8062,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "MMLH0_d": {
+            "mode": 4,
+            "mod": "Op_Select",
+            "out": "MMLH0_d.o",
+            "bytes": 7366,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        },
+        "hPhaI_d": {
+            "mode": 4,
+            "mod": "testbench_CORDIC_Arch3",
+            "out": "hPhaI_d.o",
+            "bytes": 345321,
+            "checksum": 4294967295,
+            "archive": "archive.0/_5117_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_5117_archive_1.a",
+            "objects": [
+                [
+                    "n6LkL_d.o",
+                    63960
+                ],
+                [
+                    "V7hu5_d.o",
+                    63832
+                ],
+                [
+                    "S2q3J_d.o",
+                    63576
+                ],
+                [
+                    "BrK1N_d.o",
+                    8604
+                ],
+                [
+                    "ewejs_d.o",
+                    13608
+                ],
+                [
+                    "UDPPh_d.o",
+                    7792
+                ],
+                [
+                    "Qb7ID_d.o",
+                    295499
+                ],
+                [
+                    "Negbg_d.o",
+                    21075
+                ],
+                [
+                    "APd0b_d.o",
+                    8973
+                ],
+                [
+                    "Zxgtm_d.o",
+                    7729
+                ],
+                [
+                    "RKILn_d.o",
+                    7638
+                ],
+                [
+                    "xEaRP_d.o",
+                    7901
+                ],
+                [
+                    "M5RTI_d.o",
+                    9827
+                ],
+                [
+                    "yjNM0_d.o",
+                    9358
+                ],
+                [
+                    "qhI9a_d.o",
+                    9429
+                ],
+                [
+                    "dcfj1_d.o",
+                    7968
+                ],
+                [
+                    "QszvF_d.o",
+                    8084
+                ],
+                [
+                    "ncGYg_d.o",
+                    8557
+                ],
+                [
+                    "GBFFm_d.o",
+                    12875
+                ],
+                [
+                    "ZNHBN_d.o",
+                    23915
+                ],
+                [
+                    "L4uQu_d.o",
+                    8062
+                ],
+                [
+                    "MMLH0_d.o",
+                    7366
+                ],
+                [
+                    "hPhaI_d.o",
+                    345321
+                ]
+            ],
+            "size": 1020949
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv -ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp3oTNKE
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.26230}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.26230}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {testbench_CORDIC_Arch3} -scope "." -depth 1 -fid VPD1
+set _session_group_2 testbench_CORDIC_Arch3
+set testbench_CORDIC_Arch3 "$_session_group_2"
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Post database loading setting...
+# Restore C1 time
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_expand -id ${Hier.1} testbench_CORDIC_Arch3}
+catch {gui_list_select -id ${Hier.1} {testbench_CORDIC_Arch3.inst_CORDIC_Arch3}}
+synopsys::dump -add {testbench_CORDIC_Arch3.inst_CORDIC_Arch3} -scope "." -depth 1 -fid VPD1
+# Data 'Data.1'
+catch { gui_list_select -id ${Data.1} {testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_Z testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_sh_y_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_sh_x_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Yn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff3_LUT_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff1_shift_region_flag_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.cont_var_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.cont_iter_out testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Xn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff_Zn testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff1_Z testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_X testbench_CORDIC_Arch3.inst_CORDIC_Arch3.d_ff2_Y }}
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+synopsys::dump -add {testbench_CORDIC_Arch3.Array_IN } -aggregates  -fid VPD1
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Source 'Source.1'
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Wave.1} }
+#</Session>
+synopsys::run -relative 109000
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+synopsys::run -relative 100000
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 82076810
+set synopsys::env(time) 165710000
+set synopsys::env(time) 250635939
+set synopsys::env(time) 337132091
+set synopsys::env(time) 422547338
+set synopsys::env(time) 508267303
+set synopsys::env(time) 593706181
+set synopsys::env(time) 675856567
+set synopsys::env(time) 760867082
+set synopsys::env(time) 847145000
+set synopsys::env(time) 933366781
+set synopsys::env(time) 1022338184
+ucliCore::getToolPID
+ucliCore::stopTool -no_signal
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 1190058561
+set synopsys::env(time) 1277040000
+set synopsys::env(time) 1365925964
+set synopsys::env(time) 1453996007
+set synopsys::env(time) 1542276744
+set synopsys::env(time) 1629237437
+set synopsys::env(time) 1716276226
+set synopsys::env(time) 1799066056
+set synopsys::env(time) 1883057877
+set synopsys::env(time) 1968196918
+set synopsys::env(time) 2053236077
+set synopsys::env(time) 2138423056
+set synopsys::env(time) 2223428304
+set synopsys::env(time) 2305947477
+set synopsys::env(time) 2392018301
+set synopsys::env(time) 2475868069
+set synopsys::env(time) 2557836284
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3.inst_CORDIC_Arch3 -radix {binary binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {n3011 n3012 n3013 n3014 n3015 n3016 n3017 n3018 {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SFG_SWR[25:1]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SFG[30:0]} {inst_FPU_PIPELINED_FPADDSUB_exp_rslt_NRM2_EW1[7:0]} {inst_FPU_PIPELINED_FPADDSUB_LZD_output_NRM2_EW[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_exp_NRM2_EW[7:0]} {inst_FPU_PIPELINED_FPADDSUB_shift_value_SHT2_EWR[4:2]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT2_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_Data_array_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Raw_mant_NRM_SWR[25:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_amount_SHT1_EWR[4:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_mant_SHT1_SW[22:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_SHT1_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_DmP_EXP_EWSW[27:0]} {inst_FPU_PIPELINED_FPADDSUB_DMP_EXP_EWSW[30:0]} {inst_FPU_PIPELINED_FPADDSUB_intDY_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_intDX_EWSW[31:0]} {inst_FPU_PIPELINED_FPADDSUB_Shift_reg_FLAGS_7[3:0]} {inst_FPU_PIPELINED_FPADDSUB_inst_FSM_INPUT_ENABLE_state_reg[2:0]} }
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch3 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal binary hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {data_in[31:0]} {shift_region_flag[1:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag zero_flag busy }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

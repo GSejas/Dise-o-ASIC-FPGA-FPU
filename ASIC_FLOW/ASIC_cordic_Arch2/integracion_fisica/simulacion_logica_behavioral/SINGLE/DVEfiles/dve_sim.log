@@ -1,0 +1,55 @@
+17:12:56    105 --> ...                      [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose -pid 22370 -toolin /tmp/vcs_20161028231252_22368_jsequeira..stdin -toolout /tmp/vcs_20161028231252_22368_jsequeira..stdout  
+17:12:56    106 --> ...                          [tcl] set ucliGUI::state
+17:12:56    107 --> ...                              [tcl] set dveMisc::dve_log_file 1
+17:12:56    108 --> ...                                  [tcl] gui_update_simulator_buttons
+17:12:57    109 --> ...                                      [tcl] set ucliGUI::state
+17:12:57    110 --> ...                                          [tcl] ucliCore::getToolPID
+17:12:57    111 --> ...                                              [tcl] synopsys::env hasTB
+17:12:57    112 --> ...                                                  [tcl] trigger_hier_stack_context_switch 0
+17:12:57    113 --> ...                                                      [tcl] synUtils::setDVEInitPhase 1
+17:12:57    114 --> ...                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
+17:12:57    115 --> ...                                                              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
+17:12:57    116 --> ...                                                                  [tcl] synopsys::dump -autoflush on -fid VPD0
+17:12:57    117 --> ...                                                                      [tcl] set ::dve_fid VPD0
+17:12:57    118 --> ...                                                                          [tcl] synUtils::setDVEInitPhase 0
+17:12:57    119 --> ...                                                                              [tcl] ucliCore::getToolPID
+17:12:57    120 --> ...                                                                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpkBykET
+17:12:57    121 --> ...                                                                                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.22370}
+17:12:57    122 --> ...                                                                                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.22370}
+17:12:57    123 --> ...                                                                                              [tcl] dveMisc::vbusExpand FFD_NoCE
+17:12:57    124 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope FFD_NoCE -radix {decimal binary binary hexadecimal hexadecimal } -list {W clk rst {D[15:0]} {Q[15:0]} }
+17:12:57    125 --> ...  [tcl] ucliGUI::getSignalValues -scope FFD_NoCE -radix {binary binary hexadecimal hexadecimal decimal } -list {clk rst {D[15:0]} {Q[15:0]} W }
+17:12:57    126 --> ...      [tcl] config endofsim noexit
+17:12:57    127 --> ...          [tcl] config onfail enable all
+17:12:57    128 --> ...              [tcl] config syscaddplainmembers
+17:12:57    129 --> ...                  [tcl] config syscaddsourcenames
+17:12:57    130 --> ...                      [tcl] config syscaddstructtypes
+17:12:57    131 --> ...                          [tcl] synopsys::listing -disable
+17:13:01    132 --> ...                              [tcl] dveMisc::vbusExpand testbench_CORDIC_Arch2
+17:13:01    133 --> ...                                  [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch2 -radix {symbolic symbolic symbolic symbolic binary hexadecimal binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {Cont_CLK[31:0]} {Recept[31:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag clk rst beg_fsm_cordic ack_cordic operation {r_mode[1:0]} {data_in[31:0]} {shift_region_flag[1:0]} Array_IN PERIOD W EW SW SWR EWR }
+17:13:02    134 --> ...                                      [tcl] synopsys::dump -add {testbench_CORDIC_Arch2} -scope "." -depth 1 -fid VPD0
+17:13:02    135 --> ...                                          [tcl] synopsys::dump -add {testbench_CORDIC_Arch2.Array_IN } -aggregates  -fid VPD0
+17:13:08    136 --> ...                                              [tcl] synopsys::run
+17:13:08    137 --> ...                                                  [tcl] set ucliGUI::state
+17:13:08    138 --> ...                                                      [tcl] set ucliGUI::state
+17:13:08    139 --> ...                                                          [tcl] gui_update_simulator_buttons
+17:13:11    140 --> ...                                                              [tcl] set synopsys::env(time) 2096055000
+17:13:14    141 --> ...                                                                  [tcl] set synopsys::env(time) 4179585000
+17:13:17    142 --> ...                                                                      [tcl] set synopsys::env(time) 6282525000
+17:13:19    143 --> ...                                                                          [tcl] set ucliGUI::state
+17:13:19    144 --> ...                                                                              [tcl] set ucliGUI::state
+17:13:19    145 --> ...                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+17:13:19    146 --> ...                                                                                      [tcl] set dveMisc::result
+17:13:19    147 --> ...                                                                                          [tcl] gui_update_simulator_buttons
+17:13:19    148 --> ...                                                                                              [tcl] ucliGUI::getSignalValues -scope testbench_CORDIC_Arch2 -radix {symbolic symbolic symbolic symbolic binary hexadecimal binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {Cont_CLK[31:0]} {Recept[31:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag clk rst beg_fsm_cordic ack_cordic operation {r_mode[1:0]} {data_in[31:0]} {shift_region_flag[1:0]} Array_IN PERIOD W EW SW SWR EWR }
+17:13:28    149 --> ...                                                                                                  [tcl] ucliGUI::vpdAddHierarchy -scope FFD_NoCE -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd; synopsys::dump -flush VPD0
+17:26:49    150 --> ...  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+17:26:49    151 --> ...      [tcl] synopsys::finish
+17:26:49    152 --> ...          [tcl] set ucliGUI::state
+17:26:49    153 --> ...              [tcl] set ucliGUI::state
+17:26:49    154 --> ...                  [tcl] catch {senv activeDomain} dveMisc::result 
+17:26:49    155 --> ...                      [tcl] set dveMisc::result
+17:26:49    156 --> ...                          [tcl] gui_update_simulator_buttons
+17:26:49    157 --> ...                              [tcl] catch {senv activeDomain} dveMisc::result 
+17:26:49    158 --> ...                                  [tcl] set dveMisc::result
+17:26:49    159 --> ...                                      [tcl] ucli_exit

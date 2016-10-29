@@ -1,0 +1,313 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+20781
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Fri Oct 28 16:37:03 CST 2016 (1477694223)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: zener
+arch: x86_64
+release_version: 2.6.32-642.4.2.el6.x86_64
+
+SECTION_IPC_INFO
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 51249263   jsequeira  600        393216     2          dest         
+0x00000000 205029548  jsequeira  600        393216     2          dest         
+0x00000000 209355010  jsequeira  600        393216     2          dest         
+0x00000000 212631812  rgarcia    777        18192      2          dest         
+0x00000000 46399790   jsequeira  600        393216     2          dest         
+0x00000000 46432559   jsequeira  600        393216     2          dest         
+0x00000000 46465328   jsequeira  600        393216     2          dest         
+0x00000000 46498097   jsequeira  600        393216     2          dest         
+0x00000000 46530866   jsequeira  600        393216     2          dest         
+0x00000000 46563635   jsequeira  600        393216     2          dest         
+0x00000000 46596404   jsequeira  600        393216     2          dest         
+0x00000SECTION_ULIMIT
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 128349
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 10240
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 1024
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 4096
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 2621440
+_SC_CHILD_MAX= 1024
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/mnt/vol_NFS_Zener/tools/synopsys/apps//syn/L-2016.03-SP3/linux64/syn/bin/common_shell_exec -shell dc_shell -r /mnt/vol_NFS_Zener/tools/synopsys/apps//syn/L-2016.03-SP3 -gui
+
+SECTION_CPUINFO
+total_core: 8
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+model_name:  Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat epb xsaveopt pln pts dtherm
+cpu_family: 6
+core_frequency_mhz: 2400
+core_per_socket: 0
+stepping: 7
+cache_size_kb: 20480
+ht: 0
+
+SECTION_OS_RELEASE_VERSION
+CentOS release 6.8 (Final)
+
+
+SECTION_QSC_CHECKER
+
+        qscchk.sh Version 1.6.3, 12 November 2014
+        qscchk.dat QSC K Rev: 17, 17 November 2014
+     Copyright (c) 1988-2014 by Synopsys, Inc.
+             All RIGHTS RESERVED
+
+ERROR: This does not appear to be a Synopsys supported Linux variant
+ERROR: Unable to determine Snps_Platform for this operating system.
+ERROR: Unknown Linux variant 'Unknown'
+ 
+No QSC information for the K Synopsys release, on the
+64 bit Unknown platform running the Unknown Operating System 
+could be found in datafile /tmp/sdp_20781_0/qscchk.dat
+ 
+
+Return code from the QSC checker script is 256
+
+SECTION_SYS/VM
+/proc/sys/vm/admin_reserve_kbytes:8192
+/proc/sys/vm/block_dump:0
+/proc/sys/vm/dirty_background_bytes:0
+/proc/sys/vm/dirty_background_ratio:10
+/proc/sys/vm/dirty_bytes:0
+/proc/sys/vm/dirty_expire_centisecs:3000
+/proc/sys/vm/dirty_ratio:20
+/proc/sys/vm/dirty_writeback_centisecs:500
+/proc/sys/vm/drop_caches:0
+/proc/sys/vm/extfrag_threshold:500
+/proc/sys/vm/extra_free_kbytes:0
+/proc/sys/vm/hugepages_treat_as_movable:0
+/proc/sys/vm/hugetlb_shm_group:0
+/proc/sys/vm/laptop_mode:0
+/proc/sys/vm/legacy_va_layout:0
+/proc/sys/vm/lowmem_reserve_ratio:256	256	32
+/proc/sys/vm/max_map_count:65530
+/proc/sys/vm/meminfo_legacy_layout:1
+/proc/sys/vm/memory_failure_early_kill:0
+/proc/sys/vm/memory_failure_recovery:1
+/proc/sys/vm/min_free_kbytes:67584
+/proc/sys/vm/min_slab_ratio:5
+/proc/sys/vm/min_unmapped_ratio:1
+/proc/sys/vm/mmap_min_addr:4096
+/proc/sys/vm/nr_hugepages:0
+/proc/sys/vm/nr_hugepages_mempolicy:0
+/proc/sys/vm/nr_overcommit_hugepages:0
+/proc/sys/vm/nr_pdflush_threads:0
+/proc/sys/vm/numa_zonelist_order:default
+/proc/sys/vm/oom_dump_tasks:1
+/proc/sys/vm/oom_kill_allocating_task:0
+/proc/sys/vm/overcommit_kbytes:0
+/proc/sys/vm/overcommit_memory:0
+/proc/sys/vm/overcommit_ratio:50
+/proc/sys/vm/page-cluster:3
+/proc/sys/vm/panic_on_oom:0
+/proc/sys/vm/percpu_pagelist_fraction:0
+/proc/sys/vm/scan_unevictable_pages:0
+/proc/sys/vm/stat_interval:1
+/proc/sys/vm/swappiness:60
+/proc/sys/vm/unmap_area_factor:0
+/proc/sys/vm/vfs_cache_pressure:100
+/proc/sys/vm/would_have_oomkilled:0
+/proc/sys/vm/zone_reclaim_mode:0
+
+
+SECTION_SWAP
+swap_partition: /dev/sda2
+size_gb: 15
+
+CRTE_SNAPSHOT_END
+
+CRTE_PERIODIC_START 1 1477694223815
+
+SECTION_MPSTAT
+total_core: 8
+
+CPU     %user   %kernel %wait   %idle   
+all   24.661720 4.877846 0.049283 70.411156
+0     15.510582 6.180325 0.124947 78.184143
+1     16.185297 6.056879 0.040272 77.717552
+2     25.434013 4.748912 0.017274 69.799797
+3     41.695480 1.875536 0.008346 56.420635
+4     17.147560 6.351514 0.033891 76.467033
+5     16.960062 6.517169 0.032749 76.490021
+6     25.232079 5.268151 0.032997 69.466774
+7     38.879288 2.067277 0.104028 58.949406
+
+SECTION_PID_STATUS
+name: common_shell_ex
+state: 1
+vmsize: 1329468
+vmrss: 429364
+vmdata: 857528
+vmstk: 216
+vmexe: 252556
+vmlib: 113160
+threads: 1
+
+SECTION_PROCESS_CPU_UTIL
+pid: 20781
+cpu_total_time: 4120501341
+cpu_used_time: 63492
+cpu_p: 
+
+SECTION_SYSTEM_CPU_UTIL
+sys_cpu_p: 
+
+SECTION_MEMINFO
+memtotal: 32883160
+memfree: 1180852
+cached: 4878416
+swapcached: 413324
+active: 23906188
+swaptotal: 16383996
+swapfree: 11579048
+
+SECTION_SMAPS
+shared_kb: 65684
+private_kb: 363680
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        134G  121G  6G    95
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          8962048  1865501 7096547   4294967016
+
+SECTION_CWD
+Filesystem  Size  Used Avail Use%
+filesystem        101G  94G  2G    98
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          6799360  587766 6211594   4294966340
+
+SECTION_SWAP_RATE
+blk_read: 15282840
+blk_wrtn: 38806848
+swap_in_rate: 
+swap_out_rate: 
+swap_in_rate: 
+swap_out_rate: 
+
+SECTION_FD_SIZE
+files: 17
+total_size: 1784108
+
+SECTION_NET_INTERFACE
+total_eth_avbl: 2
+
+name net_rx_err net_rx_drp net_tx_err net_tx_drp 
+    lo:         0        0        0        0
+  eth3:         0        0        0        0
+
+SECTION_NFSSTAT
+readlink: 0
+write: 1
+getattr: 87
+retrans: 0
+raw_data: 
+net 0 0 0 0
+rpc 120058517 552 120060152
+proc2 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+proc3 22 0 104696550 3016812 461285 8625808 8010 303723 1440884 181554 18746 502 0 79057 4267 24008 19208 2139 511640 656281 14 7 8398
+proc4 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+
+SECTION_THREAD_CPU_UTIL
+20781 : 20781 (common_shell_ex) R 19016 20781 19016 34840 20781 4202496 1118652 262162 56 37 37783 13235 12339 136 20 0 1 0 519142996 1361375232 107342 18446744073709551615 4194304 262811573 140728612608752 140728612574768 244962093101 0 1024 2101248 1268412159 0 0 0 17 0 0 0 45 0 0
+
+CRTE_PERIODIC_END 1 1477694223815

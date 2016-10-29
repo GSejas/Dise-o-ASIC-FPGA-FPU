@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : CORDIC_Arch3.v
 //  Created On    : 2016-09-28 14:58:46
-//  Last Modified : 2016-10-09 20:48:26
+//  Last Modified : 2016-10-28 23:00:40
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -52,20 +52,20 @@ wire [W-1:0] x0,y0;
 generate
     case(W)
 
-    32:
-    begin
+    32: 
+    begin : INITVALBLK1
         assign x0 = 32'h3f1b74ee;                 //    x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 32'h00000000;                 //    y0 = 0, valor inicial de la variable Y.
     end
 
     64:
-    begin
+    begin : INITVALBLK2
         assign x0 = 64'h3fe36e9db5086bc9;        // x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 64'h0000000000000000;        // y0 = 0, valor inicial de la variable Y.
     end
 
     default:
-    begin
+    begin : INITVALBLK3
         assign x0 = 32'h3f1b74ee;                   //    x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 32'h00000000;                   //    y0 = 0, valor inicial de la variable Y.
     end
@@ -78,7 +78,7 @@ endgenerate
 
 //Signal declaration
 
-wire reset_reg_cordic;
+//wire reset_reg_cordic;
 
 //ENABLE
 wire enab_d_ff_RB1;                                         //  Enable de la primera linea de registros.
@@ -143,7 +143,7 @@ wire [W-1:0] add_subt_dataB;                                //  Bus de datos hac
             .max_tick_iter       (max_tick_iter),
             .max_tick_var        (max_tick_var),
             .enab_dff_z          (enab_d_ff4_Zn),
-            .reset_reg_cordic    (reset_reg_cordic),
+           // .reset_reg_cordic    (reset_reg_cordic),
             .ready_CORDIC        (ready_cordic),
             .beg_add_subt        (beg_add_subt),
             .enab_cont_iter      (enab_cont_iter),
@@ -158,7 +158,7 @@ wire [W-1:0] add_subt_dataB;                                //  Bus de datos hac
   Up_counter #(.COUNTER_WIDTH(iter_bits)
     ) ITER_CONT (
       .clk        (clk),
-      .rst        (reset_reg_cordic),
+      .rst        (rst),
       .enable     (enab_cont_iter),
       .c_output_W (cont_iter_out)
     );
@@ -243,7 +243,7 @@ wire [W-1:0] add_subt_dataB;                                //  Bus de datos hac
         d_ff_en # (.W(W)) reg_val_muxX_2stage
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_d_ff2_RB2), //load signal
         .D(first_mux_X), //input signal
         .Q(d_ff2_X) //output signal
@@ -252,7 +252,7 @@ wire [W-1:0] add_subt_dataB;                                //  Bus de datos hac
         d_ff_en # (.W(W)) reg_val_muxY_2stage
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_d_ff2_RB2), //load signal
         .D(first_mux_Y), //input signal
         .Q(d_ff2_Y) //output signal
@@ -261,7 +261,7 @@ wire [W-1:0] add_subt_dataB;                                //  Bus de datos hac
         d_ff_en # (.W(W)) reg_val_muxZ_2stage
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_d_ff2_RB2), //load signal
         .D(first_mux_Z), //input signal
         .Q(d_ff2_Z) //output signal
@@ -289,24 +289,24 @@ wire [W-1:0] add_subt_dataB;                                //  Bus de datos hac
 generate
     case(W)
     32:
-    begin
-        LUT_ROM_32bits #(.W(W),.N(iter_bits)) LUT32
+    begin : LUTBLK1
+        LUT_CASE_32bits #(.W(W),.N(iter_bits)) LUT32
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
         );
     end
     64:
-    begin
-        LUT_ROM_64bits #(.W(W),.N(iter_bits)) LUT64
+    begin : LUTBLK2
+        LUT_CASE_64bits #(.W(W),.N(iter_bits)) LUT64
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
         );
     end
     default:
-    begin
-        LUT_ROM_32bits #(.W(W),.N(iter_bits)) LUT32
+    begin : LUTBLK3
+        LUT_CASE_32bits #(.W(W),.N(iter_bits)) LUT32
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
@@ -331,7 +331,7 @@ endgenerate
         d_ff_en # (.W(W)) reg_shift_x
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_RB3), //load signal
         .D({d_ff2_X[W-1],sh_exp_x,d_ff2_X[SW-1:0]}), //input signal
         .Q(d_ff3_sh_x_out) //output signal
@@ -340,7 +340,7 @@ endgenerate
         d_ff_en # (.W(W)) reg_shift_y
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_RB3), //load signal
         .D({d_ff2_Y[W-1],sh_exp_y,d_ff2_Y[SW-1:0]}), //input signal
         .Q(d_ff3_sh_y_out) //output signal
@@ -349,7 +349,7 @@ endgenerate
         d_ff_en # (.W(W)) reg_LUT
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_RB3), //load signal
         .D(data_out_LUT), //input signal
         .Q(d_ff3_LUT_out) //output signal
@@ -358,7 +358,7 @@ endgenerate
         d_ff_en # (.W(1)) reg_sign
         (
         .clk(clk),//system clock
-        .rst(reset_reg_cordic), //system reset
+        .rst(rst), //system reset
         .enable(enab_RB3), //load signal
         .D(sign), //input signal
         .Q(d_ff3_sign_out) //output signal
@@ -432,7 +432,7 @@ endgenerate
     d_ff_en #(.W(W)) d_ff4_Xn
     (
     .clk   (clk),
-    .rst   (reset_reg_cordic),
+    .rst   (rst),
     .enable(enab_d_ff4_Xn),
     .D     (result_add_subt),
     .Q     (d_ff_Xn)
@@ -441,7 +441,7 @@ endgenerate
     d_ff_en #(.W(W)) d_ff4_Yn
     (
     .clk   (clk),
-    .rst   (reset_reg_cordic),
+    .rst   (rst),
     .enable(enab_d_ff4_Yn),
     .D     (result_add_subt),
     .Q     (d_ff_Yn)
@@ -450,7 +450,7 @@ endgenerate
     d_ff_en #(.W(W)) d_ff4_Zn
     (
     .clk   (clk),
-    .rst   (reset_reg_cordic),
+    .rst   (rst),
     .enable(enab_d_ff4_Zn),
     .D     (result_add_subt),
     .Q     (d_ff_Zn)
@@ -479,13 +479,13 @@ endgenerate
             .operation         (d_ff1_operation_out),
             .shift_region_flag (d_ff1_shift_region_flag_out),
             .sel_mux_3         (sel_mux_3),
-            .data_out          (fmtted_Result)
+            .data_out_CORDECO  (fmtted_Result)
         );
 
     d_ff_en #(.W(W)) d_ff5_data_out
     (
     .clk   (clk),
-    .rst   (reset_reg_cordic),
+    .rst   (rst),
     .enable(enab_d_ff5_data_out),
     .D     (fmtted_Result),
     .Q     (data_output)

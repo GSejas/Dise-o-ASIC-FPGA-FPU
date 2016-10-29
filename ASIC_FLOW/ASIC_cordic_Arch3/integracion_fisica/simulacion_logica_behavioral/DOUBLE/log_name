@@ -1,0 +1,544 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+DOUBLE \
+-timescale=1ns/1ps +neg_tchk +sdfverbose
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Fri Oct 28 18:23:21 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../front_end/source/shift_reg.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_reg.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/MultiplexTxT.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/MultiplexTxT.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_mux.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_mux.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1_b_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1_b_v2.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/LZD.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/LZD.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_FSM_v3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_FSM_v3.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Add_Subtract_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 240
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 255
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 262
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 305
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 327
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 352
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 354
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 366
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 387
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 407
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 409
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 419
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/FSM_input_enable.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_input_enable.v, 28
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/d_ff_en.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/d_ff_en.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RegisterAdd.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FORMATTER.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 75
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 86
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/exp_operation.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/exp_operation.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Round_Sgf_Dec.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_Sgf_Dec.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Multiplexer_AC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Multiplexer_AC.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Greater_Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Greater_Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/counter_d.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/counter_d.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/xor_tri.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/xor_tri.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_Arch3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_Arch3.v, 17
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/add_sub_carry_out.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/add_sub_carry_out.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_Arch2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_Arch2.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase_v2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FSM_Add_Subtract.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_Add_Subtract.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_FSM_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_FSM_v2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Up_Counter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Up_Counter.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/counter_up.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/counter_up.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/sgn_result.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sgn_result.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Oper_Start_In.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 34
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 160
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 162
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 265
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/lut_CASE_32.v'
+Parsing design file '../../front_end/source/Priority_Codec_64.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_64.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Less.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Less.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_2x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_2x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/DECO_CORDIC_OP.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/DECO_CORDIC_OP.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[NS] Null statement
+../../front_end/source/DECO_CORDIC_OP.v, 64
+  Null statement is used in following verilog source.
+  
+
+Parsing design file '../../front_end/source/sign_inverter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sign_inverter.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/lut_CASE_64.v'
+Parsing design file '../../front_end/source/Simple_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Simple_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1_b.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1_b.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Rotate_Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Rotate_Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Add_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Add_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_32.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_32.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/PriorityEncoder_ExtCORDIC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/PriorityEncoder_ExtCORDIC.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Barrel_shifter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Barrel_shifter.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparators.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparators.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_ADD_Substract_PIPELINED.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Op_Select.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Op_Select.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v'
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 28
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 37
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 43
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 45
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 51
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 140
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 142
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 143
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 145
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 165
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 168
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 174
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 180
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 185
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v, 190
+  Null statement is used in following verilog source.
+  
+
+Top Level Modules:
+       CORDIC_Arch2
+       testbench_CORDIC_Arch3
+TimeScale is 1 ns / 1 ps
+
+Lint-[CAWM-L] Width mismatch
+../../front_end/source/FPU_Add_Subtract_Function.v, 356
+  Continuous assignment width mismatch
+  3 bits (lhs) versus 32 bits (rhs).
+  Source info: assign Exp_oper_B_D1 = ((EW - EWR) * 1'b0);  
+
+
+Lint-[UI] Unused input
+../../front_end/source/Mux_Array.v, 30
+  Following is an unused input.
+  Source info: load_i
+
+Starting vcs inline pass...
+17 modules and 0 UDP read.
+recompiling module shift_mux_array
+recompiling module Mux_3x1_bv2
+recompiling module CORDIC_FSM_v3
+recompiling module Multiplexer_AC
+recompiling module CORDIC_Arch2
+recompiling module CORDIC_FSM_v2
+recompiling module LUT_CASE_32bits
+recompiling module Mux_2x1
+recompiling module DECO_CORDIC_EXT
+recompiling module sign_inverter
+recompiling module LUT_CASE_64bits
+recompiling module Simple_Subt
+recompiling module Mux_3x1_b
+recompiling module Rotate_Mux_Array
+recompiling module PriorityEncoder_CORDIC
+recompiling module Op_Select
+recompiling module testbench_CORDIC_Arch3
+All of 17 modules done
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
+_5117_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so \
+-Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so \
+-Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+Command: ./simv -gui +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose -ucli
+Warning : License for product VCSRuntime_Net(725) will expire within 14 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 28 18:23 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+$finish called from file "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/tb_CORDIC_Arch3.v", line 158.
+$finish at simulation time           2639565000
+Simulation complete, time is 2639565000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2639565000 ps
+CPU Time:      9.830 seconds;       Data structure size:   0.1Mb
+Fri Oct 28 18:40:35 2016
+CPU time: 1.217 seconds to compile + .388 seconds to elab + .136 seconds to link + 25.418 seconds in simulation

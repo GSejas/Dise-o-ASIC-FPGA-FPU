@@ -1,0 +1,122 @@
+{
+    "shift_mux_array_0009": [
+        "shift_mux_array_0009",
+        "V7hu5",
+        "module"
+    ],
+    "LUT_CASE_64bits": [
+        "LUT_CASE_64bits",
+        "qhI9a",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "Mux_3x1_bv2": [
+        "Mux_3x1_bv2",
+        "BrK1N",
+        "module"
+    ],
+    "shift_mux_array_0008": [
+        "shift_mux_array_0008",
+        "n6LkL",
+        "module"
+    ],
+    "shift_mux_array_000A": [
+        "shift_mux_array_000A",
+        "S2q3J",
+        "module"
+    ],
+    "CORDIC_FSM_v3": [
+        "CORDIC_FSM_v3",
+        "ewejs",
+        "module"
+    ],
+    "Mux_2x1": [
+        "Mux_2x1",
+        "Zxgtm",
+        "module"
+    ],
+    "Multiplexer_AC_0001": [
+        "Multiplexer_AC_0001",
+        "UDPPh",
+        "module"
+    ],
+    "Rotate_Mux_Array_0001": [
+        "Rotate_Mux_Array_0001",
+        "ZNHBN",
+        "module"
+    ],
+    "CORDIC_Arch2": [
+        "CORDIC_Arch2",
+        "Qb7ID",
+        "module"
+    ],
+    "CORDIC_FSM_v2": [
+        "CORDIC_FSM_v2",
+        "Negbg",
+        "module"
+    ],
+    "LUT_CASE_32bits": [
+        "LUT_CASE_32bits",
+        "APd0b",
+        "module"
+    ],
+    "Simple_Subt_0000": [
+        "Simple_Subt_0000",
+        "QszvF",
+        "module"
+    ],
+    "Mux_2x1_0000": [
+        "Mux_2x1_0000",
+        "RKILn",
+        "module"
+    ],
+    "sign_inverter": [
+        "sign_inverter",
+        "yjNM0",
+        "module"
+    ],
+    "Op_Select": [
+        "Op_Select",
+        "MMLH0",
+        "module"
+    ],
+    "Mux_2x1_0001": [
+        "Mux_2x1_0001",
+        "xEaRP",
+        "module"
+    ],
+    "DECO_CORDIC_EXT": [
+        "DECO_CORDIC_EXT",
+        "M5RTI",
+        "module"
+    ],
+    "Simple_Subt": [
+        "Simple_Subt",
+        "dcfj1",
+        "module"
+    ],
+    "Mux_3x1_b": [
+        "Mux_3x1_b",
+        "ncGYg",
+        "module"
+    ],
+    "Rotate_Mux_Array_0000": [
+        "Rotate_Mux_Array_0000",
+        "GBFFm",
+        "module"
+    ],
+    "PriorityEncoder_CORDIC": [
+        "PriorityEncoder_CORDIC",
+        "L4uQu",
+        "module"
+    ],
+    "testbench_CORDIC_Arch3": [
+        "testbench_CORDIC_Arch3",
+        "hPhaI",
+        "module"
+    ]
+}

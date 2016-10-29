@@ -1,0 +1,19 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 13 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 29 00:03 2016
+Doing SDF annotation ...... Done
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+109000 ps
+209000 ps
+$finish called from file "tb_CORDIC_Arch3.v", line 165.
+$finish at simulation time           2639560000
+Simulation complete, time is 2639560000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2639560000 ps
+CPU Time:     93.030 seconds;       Data structure size:   2.3Mb
+Sat Oct 29 01:03:02 2016
+CPU time: 1.802 seconds to compile + .603 seconds to elab + .292 seconds to link + 161.167 seconds in simulation

@@ -1,0 +1,52 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpdxpIzn
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.18715}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.18715}
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch2 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal } -list {PERIOD W EW SW SWR EWR clk rst beg_fsm_cordic ack_cordic operation {r_mode[1:0]} {data_in[31:0]} {shift_region_flag[1:0]} }
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch2 -radix {symbolic symbolic symbolic symbolic binary hexadecimal binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {Cont_CLK[31:0]} {Recept[31:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag clk rst beg_fsm_cordic ack_cordic operation {r_mode[1:0]} {data_in[31:0]} {shift_region_flag[1:0]} Array_IN PERIOD W EW SW SWR EWR }
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {testbench_CORDIC_Arch2} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {testbench_CORDIC_Arch2.Array_IN } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 452406627
+set synopsys::env(time) 903917453
+set synopsys::env(time) 1356426682
+set synopsys::env(time) 1806586615
+set synopsys::env(time) 2241580000
+set synopsys::env(time) 2692725975
+set synopsys::env(time) 3143975000
+set synopsys::env(time) 3600855000
+set synopsys::env(time) 4054117795
+set synopsys::env(time) 4507496629
+set synopsys::env(time) 4959577296
+set synopsys::env(time) 5408946017
+set synopsys::env(time) 5857346836
+set synopsys::env(time) 6293495000
+set synopsys::env(time) 6746221195
+set synopsys::env(time) 7191166135
+set synopsys::env(time) 7638316856
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope testbench_CORDIC_Arch2 -radix {symbolic symbolic symbolic symbolic binary hexadecimal binary binary binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {Cont_CLK[31:0]} {Recept[31:0]} ready_cordic {data_output[31:0]} overflow_flag underflow_flag clk rst beg_fsm_cordic ack_cordic operation {r_mode[1:0]} {data_in[31:0]} {shift_region_flag[1:0]} Array_IN PERIOD W EW SW SWR EWR }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

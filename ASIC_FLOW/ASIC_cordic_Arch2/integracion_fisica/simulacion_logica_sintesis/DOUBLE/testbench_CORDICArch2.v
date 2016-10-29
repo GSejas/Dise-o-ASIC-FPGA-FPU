@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : testbench_CORDICArch2.v
 //  Created On    : 2016-10-03 23:33:09
-//  Last Modified : 2016-10-05 16:03:09
+//  Last Modified : 2016-10-28 17:47:55
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -22,92 +22,97 @@ parameter PERIOD = 10;
 //DEL SIMULADOR O EL SINTETIZADOR
 
 `ifdef SINGLE
-	parameter W = 32;
-	parameter EW = 8;
-	parameter SW = 23;
-	parameter SWR = 26;
-	parameter EWR = 5;
+    parameter W = 32;
+    parameter EW = 8;
+    parameter SW = 23;
+    parameter SWR = 26;
+    parameter EWR = 5;
 `endif
 
 `ifdef DOUBLE
-	parameter W = 64;
-	parameter EW = 11;
-	parameter SW = 52;
-	parameter SWR = 55;
-	parameter EWR = 6;
+    parameter W = 64;
+    parameter EW = 11;
+    parameter SW = 52;
+    parameter SWR = 55;
+    parameter EWR = 6;
 `endif
 
 
 
-reg clk;                         						//	Reloj del sistema.
-reg rst;													//	Señal de reset del sistema.
-reg beg_fsm_cordic;              						//	Señal de inicio de la maquina de estados del módulo CORDIC.
-reg ack_cordic;                  						//	Señal de acknowledge proveniente de otro módulo que indica que ha recibido el resultado del modulo CORDIC.
-reg operation;											//	Señal que indica si se realiza la operacion seno(1'b1) o coseno(1'b0).
+reg clk;                                                //  Reloj del sistema.
+reg rst;                                                    //  Señal de reset del sistema.
+reg beg_fsm_cordic;                                     //  Señal de inicio de la maquina de estados del módulo CORDIC.
+reg ack_cordic;                                         //  Señal de acknowledge proveniente de otro módulo que indica que ha recibido el resultado del modulo CORDIC.
+reg operation;                                          //  Señal que indica si se realiza la operacion seno(1'b1) o coseno(1'b0).
 reg [1:0] r_mode;
-reg [W-1:0] data_in;             						//	Dato de entrada, contiene el angulo que se desea calcular en radianes.
-reg [1:0] shift_region_flag;     						//	Señal que indica si el ángulo a calcular esta fuera del rango de calculo del algoritmo CORDIC.
+reg [W-1:0] data_in;                                    //  Dato de entrada, contiene el angulo que se desea calcular en radianes.
+reg [1:0] shift_region_flag;                            //  Señal que indica si el ángulo a calcular esta fuera del rango de calculo del algoritmo CORDIC.
 
 //Output Signals
-wire ready_cordic;                						//	Señal de salida que indica que se ha completado el calculo del seno/coseno.
-wire [W-1:0] data_output;          						//	Bus de datos con el valor final del angulo calculado.
+wire ready_cordic;                                      //  Señal de salida que indica que se ha completado el calculo del seno/coseno.
+wire [W-1:0] data_output;                               //  Bus de datos con el valor final del angulo calculado.
 
-wire overflow_flag;										//	Bandera de overflow de la operacion.
-wire underflow_flag;									//	Bandera de underflow de la operacion.
-
-	CORDIC_Arch2 #(.W(W),.EW(EW),.SW(SW),.SWR(SWR),.EWR(EWR)) uut
-		(
-			.clk               (clk),
-			.rst               (rst),
-			.beg_fsm_cordic    (beg_fsm_cordic),
-			.ack_cordic        (ack_cordic),
-			.operation         (operation),
-			.data_in           (data_in),
-			.shift_region_flag (shift_region_flag),
-			.r_mode            (r_mode),
-			.ready_cordic      (ready_cordic),
-			.overflow_flag     (overflow_flag),
-			.underflow_flag    (underflow_flag),
-			.data_output       (data_output)
-		);
+wire overflow_flag;                                     //  Bandera de overflow de la operacion.
+wire underflow_flag;                                    //  Bandera de underflow de la operacion.
 
 
+`ifdef SINGLE
+CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 uut (
+`endif
+`ifdef DOUBLE
+CORDIC_Arch2_W64_EW11_SW55_SWR55_EWR6 uut  (
+`endif 
+            .clk(clk),
+            .rst(rst),
+            .beg_fsm_cordic(beg_fsm_cordic),
+            .ack_cordic(ack_cordic),
+            .operation(operation),
+            .data_in(data_in),
+            .shift_region_flag(shift_region_flag),
+            .r_mode(r_mode),
+            .ready_cordic(ready_cordic),
+            .overflow_flag(overflow_flag),
+            .underflow_flag(underflow_flag),
+            .data_output(data_output)
+        );
 
-	reg [W-1:0] Array_IN [0:((2**PERIOD)-1)];
+
+
+    reg [W-1:0] Array_IN [0:((2**PERIOD)-1)];
     //reg [W-1:0] Array_IN_2 [0:((2**PERIOD)-1)];
     integer contador;
     integer FileSaveData;
     integer Cont_CLK;
     integer Recept;
 
-	initial begin
+    initial begin
 
-   		clk = 0;
-   		beg_fsm_cordic = 0;
-		ack_cordic = 0;
-		operation = 0;
-		data_in = 32'h00000000;
-		shift_region_flag = 2'b00;
-		rst = 1;
+        clk = 0;
+        beg_fsm_cordic = 0;
+        ack_cordic = 0;
+        operation = 0;
+        data_in = 32'h00000000;
+        shift_region_flag = 2'b00;
+        rst = 1;
 
-		//Depending upong the sumulator, this directive will
-		//understand that if the macro is defined (e.g. RMODE00)
-		//then the following code will be added to the compilation
-		//simulation or sinthesis.
+        //Depending upong the sumulator, this directive will
+        //understand that if the macro is defined (e.g. RMODE00)
+        //then the following code will be added to the compilation
+        //simulation or sinthesis.
 
 //This is added in order to simulate the accuracy change of the system.
 
 `ifndef RMODE00
-		r_mode = 2'b00;
+        r_mode = 2'b00;
 `endif
 `ifdef RMODE01
-		r_mode = 2'b01;
+        r_mode = 2'b01;
 `endif
 `ifdef RMODE10
-		r_mode = 2'b10;
+        r_mode = 2'b10;
 `endif
 `ifdef RMODE11
-		r_mode = 2'b11;
+        r_mode = 2'b11;
 `endif
         //Abre el archivo testbench
         FileSaveData = $fopen("ResultadoXilinxFLM.txt","w");
@@ -118,17 +123,17 @@ wire underflow_flag;									//	Bandera de underflow de la operacion.
         Recept = 1;
 
 
-		#100 rst = 0;
-		// #15
-		// data_in = 32'h3f25514d; //37 grados
-		// shift_region_flag = 2'b00;
+        #100 rst = 0;
+        // #15
+        // data_in = 32'h3f25514d; //37 grados
+        // shift_region_flag = 2'b00;
 
-		// #5
-		// beg_fsm_cordic = 1;
+        // #5
+        // beg_fsm_cordic = 1;
 
-		// #10
-		// beg_fsm_cordic = 0;
- 	end
+        // #10
+        // beg_fsm_cordic = 0;
+    end
 
 
   initial begin
@@ -139,8 +144,8 @@ wire underflow_flag;									//	Bandera de underflow de la operacion.
     $readmemh("CORDIC64_input_angles_hex.txt", Array_IN);
     `endif
   end
-	// clock
-	initial forever #5 clk = ~clk;
+    // clock
+    initial forever #5 clk = ~clk;
 
     always @(posedge clk) begin
     if(rst) begin
@@ -157,7 +162,7 @@ wire underflow_flag;									//	Bandera de underflow de la operacion.
                 contador = contador + 1;
                 beg_fsm_cordic = 0;
                 data_in = Array_IN[contador];
-    			#40;
+                #40;
                 Cont_CLK = Cont_CLK + 1;
                 ack_cordic = 0;
                 #40;

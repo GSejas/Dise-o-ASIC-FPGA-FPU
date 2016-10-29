@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP3 for linux64 -- Jul 18, 2016
-#@ # Date:   Thu Oct 20 15:50:44 2016
+#@ # Date:   Fri Oct 28 13:00:23 2016
 #@ # Run by: jsequeir@zener
 #@ 
 
@@ -42177,3 +42177,5 @@ uplevel #0 source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-F
 
 #@ # -- End source /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch2_syn.tcl
 
+link
+check_design

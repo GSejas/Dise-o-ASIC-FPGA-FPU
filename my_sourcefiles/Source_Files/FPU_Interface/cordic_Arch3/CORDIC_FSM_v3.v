@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : CORDIC_FSM_v3.v
 //  Created On    : 2016-10-03 15:59:21
-//  Last Modified : 2016-10-05 08:17:22
+//  Last Modified : 2016-10-28 22:39:59
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -27,7 +27,7 @@ module CORDIC_FSM_v3
 
   //Output Signals
 
-  output reg reset_reg_cordic,
+  //output reg reset_reg_cordic,
   output reg ready_CORDIC,								//	Señal que indica que el calculo CORDIC se ha terminado.
   output reg beg_add_subt,								//	Señal que indica al modulo de suma/resta que inicie su operacion.
   output reg enab_cont_iter,				//	Señales de habilitacion y carga, respectivamente, en el contador de iteraciones.
@@ -74,7 +74,7 @@ always @*
     state_next = state_reg; // default state : the same
 
     //declaration of default outputs.
-    reset_reg_cordic = 0;
+   // reset_reg_cordic = 0;
     enab_RB1 = 0;
     enab_RB2 = 0;
     enab_RB3 = 0;
@@ -88,7 +88,7 @@ always @*
 
     est0:
     begin
-      reset_reg_cordic = 1'b1;
+//      reset_reg_cordic = 1'b1;
       enab_RB1 = 1'b1;
       if(beg_FSM_CORDIC) begin
         state_next = est1;

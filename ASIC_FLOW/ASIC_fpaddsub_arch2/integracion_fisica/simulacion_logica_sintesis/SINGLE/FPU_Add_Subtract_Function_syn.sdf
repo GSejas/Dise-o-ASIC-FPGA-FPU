@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5")
-(DATE "Thu Oct 20 15:59:03 2016")
+(DATE "Fri Oct 28 13:01:04 2016")
 (VENDOR "scx3_cmos8rf_lpvt_tt_1p2v_25c")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "L-2016.03-SP3")

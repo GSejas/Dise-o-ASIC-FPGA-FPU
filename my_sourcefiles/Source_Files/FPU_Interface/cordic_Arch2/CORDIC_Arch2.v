@@ -1,7 +1,7 @@
-//==================================================================================================
+    //==================================================================================================
 //  Filename      : CORDIC_Arch2.v
 //  Created On    : 2016-09-16 10:43:46
-//  Last Modified : 2016-09-18 13:11:43
+//  Last Modified : 2016-10-28 16:55:22
 //  Revision      : 
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -35,8 +35,8 @@ output wire underflow_flag,					//	Bandera de underflow de la operacion.
 output wire [W-1:0] data_output          //	Bus de datos con el valor final del angulo calculado.
 );
 
-localparam d_var = 0;				       //	Valor por defecto que se le carga al contador de variables.
-localparam d_iter = 0;                  //	Valor por defecto que se le carga al contador de iteraciones.
+localparam integer d_var = 0;				       //	Valor por defecto que se le carga al contador de variables.
+localparam integer d_iter = 0;                  //	Valor por defecto que se le carga al contador de iteraciones.
 localparam mode = 1'b0;
 localparam iter_bits = 4;                  //Modificar valor para obtener diferente cantidad de iteraciones; ejem= 3=8iter, 4=16iter. etc
 
@@ -47,19 +47,19 @@ generate
     case(W)
     
     32:
-    begin
+    begin : INIT_VALSBLK
         assign x0 = 32'h3f1b74ee; 			      //	x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 32'h00000000; 			      //	y0 = 0, valor inicial de la variable Y.
     end
     
     64:
-    begin
+    begin  : INIT_VALSBLK2
         assign x0 = 64'h3fe36e9db5086bc9;	     //	x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 64'h0000000000000000;	     //	y0 = 0, valor inicial de la variable Y.
     end
     
     default:
-    begin
+    begin  : INIT_VALSBLK3
         assign x0 = 32'h3f1b74ee;                   //    x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 32'h00000000;                   //    y0 = 0, valor inicial de la variable Y.
     end    
@@ -173,7 +173,7 @@ counter_d #(.W(iter_bits)) cont_iter
 .rst(reset_reg_cordic),
 .load(load_cont_iter),
 .enable(enab_cont_iter),
-.d(d_iter),
+.d(d_iter[iter_bits-1:0]),
 .max_tick(max_tick_iter),
 .min_tick(min_tick_iter),
 .q(cont_iter_out)
@@ -185,7 +185,7 @@ counter_up #(.W(2)) cont_var
 .rst(reset_reg_cordic),
 .load(load_cont_var),
 .enable(enab_cont_var),
-.d(d_var),
+.d(d_var[1:0]),
 .max_tick(max_tick_var),
 .min_tick(min_tick_var),
 .q(cont_var_out)
@@ -309,24 +309,24 @@ Simple_Subt #(.W(EW),.N(iter_bits)) shift_y
 generate
     case(W)
     32:
-    begin
-        LUT_ROM_32bits #(.W(W),.N(iter_bits)) LUT32
+    begin  : ROMBLK1
+        LUT_CASE_32bits #(.W(W),.N(iter_bits)) LUT32
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
         );
     end
     64:
-    begin        
-        LUT_ROM_64bits #(.W(W),.N(iter_bits)) LUT64
+    begin      : ROMBLK2   
+        LUT_CASE_64bits #(.W(W),.N(iter_bits)) LUT64
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
         );
     end
     default:
-    begin
-        LUT_ROM_32bits #(.W(W),.N(iter_bits)) LUT32
+    begin  : ROMBLK4
+        LUT_CASE_32bits #(.W(W),.N(iter_bits)) LUT32
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
