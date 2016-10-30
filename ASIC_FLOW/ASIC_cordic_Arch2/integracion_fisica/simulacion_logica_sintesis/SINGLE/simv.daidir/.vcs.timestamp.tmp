@@ -1,16 +1,13 @@
 1        
 0 CORDIC_Arch2_syn.sdf_c
 40
-+cli+4
 +define+SINGLE
-+itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
++itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
 +lint=all
 +memcbk
 +neg_tchk
-+sdfverbose
 +v2k
 +vcsd
-+vpi
 +vpi
 -Mamsrun=
 -Masflags=
@@ -29,16 +26,19 @@
 -Mupdate
 -Mvcsaceobjs=
 -Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/include
+-Xpiyushb1=0x80
 -Xvcs_run_simv=1
--debug=3
+-debug_access+all+dmptf+bc
+-debug_access+class+driver+dmptf+bc
+-debug_region=cell+lib
+-debug_region=cell+lib
 -f file_list
 -full64
 -gen_obj
--gui
 -l
 -picarchive
+-pp_used
 -timescale=1ns/1ps
--ucli
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
 log_name
 43
@@ -93,7 +93,7 @@ COLORTERM=gnome-terminal
 1477698502 testbench_CORDICArch2.v
 1477695904 ../../front_end/db/SINGLE/CORDIC_Arch2_syn.v
 1477697975 file_list
-1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
+1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
 4
 0 
 1466053571 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so

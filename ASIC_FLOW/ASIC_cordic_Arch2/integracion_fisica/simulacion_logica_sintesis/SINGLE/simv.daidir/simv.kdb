@@ -8,3 +8,4 @@ KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
 TOP=testbench_CORDIC_Arch2 
+OPTION=-ssz -ssv -ssy -ssz -ssv -ssy -ssz -ssv -ssy 
