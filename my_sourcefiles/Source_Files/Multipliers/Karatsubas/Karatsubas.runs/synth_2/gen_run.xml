@@ -1,17 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1477383457">
-  <File Type="PA-TCL" Name="Recursive_KOA.tcl"/>
-  <File Type="RDS-RDS" Name="Recursive_KOA.vds"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Recursive_KOA_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Recursive_KOA_timing_summary_synth.pb"/>
-  <File Type="RDS-DCP" Name="Recursive_KOA.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="Recursive_KOA_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="Recursive_KOA_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="Recursive_KOA_drc_synth.rpt"/>
+<GenRun Id="synth_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1477760712">
+  <File Type="VDS-TIMING-PB" Name="CORDIC_Arch2_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CORDIC_Arch2_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="CORDIC_Arch2.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="CORDIC_Arch2_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="CORDIC_Arch2_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="CORDIC_Arch2_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="CORDIC_Arch2.vds"/>
+  <File Type="PA-TCL" Name="CORDIC_Arch2.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Simple_Subt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Simple_Subt.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/sign_inverter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/sign_inverter.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Op_Select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Op_Select.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Mux_3x1_b.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Mux_3x1_b.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Mux_2x1.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_64bits.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/LUT_ROM_64bits.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/LUT_ROM_32bits.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/d_ff_en.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/counter_up.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/counter_up.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/counter_d.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/counter_d.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/CORDIC_FSM_v2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_FSM_v2.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/CORDIC_Arch2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_Arch2.v"/>
+        <Attr Name="ImportTime" Val="1468513860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../26bit/ReCodeRKOARecursive/RKOA_Recursive.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -163,11 +272,17 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Recursive_KOA"/>
+      <Option Name="TopModule" Val="CORDIC_Arch2"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../1Proyectos_TesisdeGraduacion/FPGA_FLOW/Karat/MUL_FPU_FUNCIONAL_v2.srcs/constrs_Sgf/imports/RKOA/Time_Constrains_RKOA_sfg.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
@@ -175,8 +290,8 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design">
-      <Option Id="ControlSetOptThreshold">1</Option>
       <Option Id="Directive">1</Option>
+      <Option Id="ControlSetOptThreshold">1</Option>
     </Step>
   </Strategy>
 </GenRun>

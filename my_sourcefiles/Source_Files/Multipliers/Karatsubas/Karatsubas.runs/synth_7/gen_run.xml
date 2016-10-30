@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_7" LaunchPart="xc7a100tcsg324-1" LaunchTime="1477431888">
-  <File Type="VDS-TIMING-PB" Name="Recursive_KOA_timing_summary_synth.pb"/>
+  <File Type="RDS-DCP" Name="Recursive_KOA.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Recursive_KOA_utilization_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Recursive_KOA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Recursive_KOA_timing_summary_synth.pb"/>
   <File Type="RDS-RDS" Name="Recursive_KOA.vds"/>
   <File Type="PA-TCL" Name="Recursive_KOA.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Recursive_KOA_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="Recursive_KOA_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Recursive_KOA_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Recursive_KOA.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../26bit/ReCodeRKOARecursive/RKOA_Recursive.v">
@@ -173,9 +173,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-      <Desc>We are using a single strategy, with no dsps in the design</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design">
       <Option Id="MaxDsp">0</Option>
     </Step>

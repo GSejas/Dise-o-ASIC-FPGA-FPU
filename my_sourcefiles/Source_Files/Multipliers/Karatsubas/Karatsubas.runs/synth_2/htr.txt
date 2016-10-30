@@ -6,4 +6,4 @@
 # Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log Recursive_KOA.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Recursive_KOA.tcl
+vivado -log CORDIC_Arch2.vds -m64 -mode batch -messageDb vivado.pb -notrace -source CORDIC_Arch2.tcl

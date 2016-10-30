@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Oct 29 11:05:13 2016
+# Process ID: 15338
+# Current directory: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_2
+# Command line: vivado -log CORDIC_Arch2.vds -mode batch -messageDb vivado.pb -notrace -source CORDIC_Arch2.tcl
+# Log file: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_2/CORDIC_Arch2.vds
+# Journal file: /home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source CORDIC_Arch2.tcl -notrace
+Command: synth_design -top CORDIC_Arch2 -part xc7a100tcsg324-1 -directive AreaOptimized_high -control_set_opt_threshold 1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15343 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.117 ; gain = 123.137 ; free physical = 355 ; free virtual = 6607
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CORDIC_Arch2' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/CORDIC_Arch2.v:3]
+	Parameter W bound to: 32 - type: integer 
+	Parameter EW bound to: 8 - type: integer 
+	Parameter SW bound to: 23 - type: integer 
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+	Parameter d_var bound to: 0 - type: integer 
+	Parameter d_iter bound to: 0 - type: integer 
+	Parameter mode bound to: 1'b0 
+	Parameter r_mode bound to: 2'b00 
+	Parameter iter_bits bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'LUT_ROM_32bits' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:3]
+	Parameter W bound to: 32 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter ROM_FILE bound to: /home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/Results_Sim_sincosCORDIC/Archivos_pruebas/LUT_sincos_32.txt - type: string 
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file '/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/Results_Sim_sincosCORDIC/Archivos_pruebas/LUT_sincos_32.txt'; please make sure the file is added to project and has read permission, ignoring [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:14]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+WARNING: [Synth 8-3848] Net rom_test in module/entity LUT_ROM_32bits does not have driver. [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:11]
+INFO: [Synth 8-256] done synthesizing module 'LUT_ROM_32bits' (1#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v:3]
+INFO: [Synth 8-638] synthesizing module 'CORDIC_FSM_v2' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/CORDIC_FSM_v2.v:3]
+	Parameter est0 bound to: 4'b0000 
+	Parameter est1 bound to: 4'b0001 
+	Parameter est2 bound to: 4'b0010 
+	Parameter est3 bound to: 4'b0011 
+	Parameter est4 bound to: 4'b0100 
+	Parameter est5 bound to: 4'b0101 
+	Parameter est6 bound to: 4'b0110 
+	Parameter est7 bound to: 4'b0111 
+	Parameter est8 bound to: 4'b1000 
+	Parameter est9 bound to: 4'b1001 
+	Parameter est10 bound to: 4'b1010 
+	Parameter est11 bound to: 4'b1011 
+	Parameter est12 bound to: 4'b1100 
+	Parameter est13 bound to: 4'b1101 
+INFO: [Synth 8-256] done synthesizing module 'CORDIC_FSM_v2' (2#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/CORDIC_FSM_v2.v:3]
+WARNING: [Synth 8-350] instance 'cordic_FSM' of module 'CORDIC_FSM_v2' requires 35 connections, but only 34 given [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/CORDIC_Arch2.v:115]
+INFO: [Synth 8-638] synthesizing module 'counter_d' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/counter_d.v:3]
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_d' (3#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/counter_d.v:3]
+INFO: [Synth 8-638] synthesizing module 'counter_up' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/counter_up.v:3]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_up' (4#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/counter_up.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en' (5#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized0' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized0' (5#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized1' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized1' (5#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux_2x1' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v:14]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2x1' (6#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized2' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized2' (6#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized3' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized3' (6#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized4' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized4' (6#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'Simple_Subt' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Simple_Subt.v:3]
+	Parameter W bound to: 8 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Simple_Subt' (7#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Simple_Subt.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux_2x1__parameterized0' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v:3]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v:14]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2x1__parameterized0' (7#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized5' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized5' (7#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized6' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized6' (7#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized7' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized7' (7#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_ff_en__parameterized8' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff_en__parameterized8' (7#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux_3x1_b' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_3x1_b.v:3]
+	Parameter W bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux_3x1_b' (8#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Mux_3x1_b.v:3]
+INFO: [Synth 8-638] synthesizing module 'Op_Select' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Op_Select.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Op_Select' (9#1) [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/Op_Select.v:3]
+ERROR: [Synth 8-439] module 'FPU_Add_Subtract_Function' not found [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/CORDIC_Arch2.v:412]
+	Parameter W bound to: 32 - type: integer 
+	Parameter EW bound to: 8 - type: integer 
+	Parameter SW bound to: 23 - type: integer 
+	Parameter SWR bound to: 26 - type: integer 
+	Parameter EWR bound to: 5 - type: integer 
+ERROR: [Synth 8-285] failed synthesizing module 'CORDIC_Arch2' [/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.srcs/sources_1/imports/sine_cosine_CORDIC/CORDIC_Arch2.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1055.555 ; gain = 163.574 ; free physical = 312 ; free virtual = 6566
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 17 Warnings, 1 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 29 11:05:38 2016...

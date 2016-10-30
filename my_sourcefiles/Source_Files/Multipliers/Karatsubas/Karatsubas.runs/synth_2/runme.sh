@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Recursive_KOA.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Recursive_KOA.tcl
+EAStep vivado -log CORDIC_Arch2.vds -m64 -mode batch -messageDb vivado.pb -notrace -source CORDIC_Arch2.tcl

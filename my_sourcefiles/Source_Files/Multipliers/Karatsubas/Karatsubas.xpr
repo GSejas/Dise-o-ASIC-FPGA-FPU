@@ -10,12 +10,12 @@
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/Multipliers/Karatsubas/Karatsubas.cache/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="KOA_RECURSIVE"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
@@ -42,8 +42,117 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Simple_Subt.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Simple_Subt.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/sign_inverter.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/sign_inverter.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Op_Select.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Op_Select.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Mux_3x1_b.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Mux_3x1_b.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/Mux_2x1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Mux_2x1.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_64bits.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/LUT_ROM_64bits.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/LUT_ROM_32bits.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/LUT_ROM_32bits.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/d_ff_en.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/d_ff_en.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/counter_up.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/counter_up.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/counter_d.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/counter_d.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/CORDIC_FSM_v2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_FSM_v2.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sine_cosine_CORDIC/CORDIC_Arch2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Downloads/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/CORDIC_Arch2.v"/>
+          <Attr Name="ImportTime" Val="1468513860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../26bit/ReCodeRKOARecursive/RKOA_Recursive.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -195,7 +304,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Recursive_KOA"/>
+        <Option Name="TopModule" Val="CORDIC_Arch2"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -375,9 +484,7 @@
     </Run>
     <Run Id="synth_3" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_3" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -386,9 +493,7 @@
     </Run>
     <Run Id="synth_4" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_4" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -397,9 +502,7 @@
     </Run>
     <Run Id="synth_5" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_5" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -408,9 +511,7 @@
     </Run>
     <Run Id="synth_6" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_6" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -419,9 +520,7 @@
     </Run>
     <Run Id="synth_7" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_7" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -430,9 +529,7 @@
     </Run>
     <Run Id="synth_8" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_8" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -441,9 +538,7 @@
     </Run>
     <Run Id="synth_9" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_9" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -452,9 +547,7 @@
     </Run>
     <Run Id="synth_10" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_10" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
@@ -463,9 +556,7 @@
     </Run>
     <Run Id="synth_11" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="We are using a single strategy, with no dsps in the design" Dir="$PRUNDIR/synth_11" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016">
-          <Desc>We are using a single strategy, with no dsps in the design</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults NODSPs SINGLE" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
           <Option Id="MaxDsp">0</Option>
         </Step>
