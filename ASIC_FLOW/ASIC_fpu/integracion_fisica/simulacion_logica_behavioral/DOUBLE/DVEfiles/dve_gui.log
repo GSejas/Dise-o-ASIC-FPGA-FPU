@@ -1,0 +1,426 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 12 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 30 23:17 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd' was opened successfully.
+------------------------SUMA--------------------------
+------------------------    --------------------------
+------------------------SUMA--------------------------
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 267
+  The file 'ADD/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'ADD/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 268
+  Cannot open file 'ADD/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'ADD/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 269
+  Cannot open file 'ADD/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 273
+  The file 'ADD/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'ADD/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 274
+  Cannot open file 'ADD/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'ADD/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 275
+  Cannot open file 'ADD/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 279
+  The file 'ADD/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'ADD/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 280
+  Cannot open file 'ADD/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'ADD/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 281
+  Cannot open file 'ADD/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+------------------------RSTA--------------------------
+------------------------    --------------------------
+------------------------RSTA--------------------------
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 291
+  The file 'SUB/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SUB/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 292
+  Cannot open file 'SUB/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SUB/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 293
+  Cannot open file 'SUB/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 297
+  The file 'SUB/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SUB/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 298
+  Cannot open file 'SUB/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SUB/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 299
+  Cannot open file 'SUB/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 303
+  The file 'SUB/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SUB/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 304
+  Cannot open file 'SUB/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SUB/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
+  directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 305
+  Cannot open file 'SUB/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+------------------------MULT--------------------------
+------------------------    --------------------------
+------------------------MULT--------------------------
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 316
+  The file 'MULT/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'MULT/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file 
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 317
+  Cannot open file 'MULT/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'MULT/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file 
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 318
+  Cannot open file 'MULT/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 322
+  The file 'MULT/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'MULT/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file 
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 323
+  Cannot open file 'MULT/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'MULT/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file 
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 324
+  Cannot open file 'MULT/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 328
+  The file 'MULT/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'MULT/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file 
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 329
+  Cannot open file 'MULT/DOUBLE/Hexadecimal_A.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'MULT/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file 
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 330
+  Cannot open file 'MULT/DOUBLE/Hexadecimal_B.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+---------------------REGION I or IV--------------------------
+------------------------    --------------------------
+---------------------REGION I or IV-------------------
+------------------------SENO--------------------------
+------------------------    --------------------------
+------------------------SENO--------------------------
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 347
+  The file 'SIN/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SIN/DOUBLE/input_angles_hex.txt' could not be opened. No such file
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 348
+  Cannot open file 'SIN/DOUBLE/input_angles_hex.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 352
+  The file 'SIN/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SIN/DOUBLE/input_angles_hex.txt' could not be opened. No such file
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 353
+  Cannot open file 'SIN/DOUBLE/input_angles_hex.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 357
+  The file 'SIN/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SIN/DOUBLE/input_angles_hex.txt' could not be opened. No such file
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 358
+  Cannot open file 'SIN/DOUBLE/input_angles_hex.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+------------------------COS--------------------------
+------------------------    --------------------------
+------------------------COS--------------------------
+
+Warning-[STASKW_CO] Cannot open file
+Testbench_FPUv1_Interface.v, 368
+  The file 'COS/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'COS/DOUBLE/input_angles_hex.txt' could not be opened. No such file
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+Testbench_FPUv1_Interface.v, 369
+  Cannot open file 'COS/DOUBLE/input_angles_hex.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+

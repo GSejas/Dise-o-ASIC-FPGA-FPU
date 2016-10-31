@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : Testbench_FPUv1_Interface.v
 //  Created On    : 2016-10-30 18:45:24
-//  Last Modified : 2016-10-30 18:45:27
+//  Last Modified : 2016-10-30 22:40:07
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -91,14 +91,8 @@ parameter PERIOD = 10;
                          ROUNDING_MODE_NEG_INF  = 2'b01,
                          ROUNDING_MODE_POS_INF  = 2'b10;
 
-
-    FPU_Interface #(
-            .W(W),
-            .EW(EW),
-            .SW(SW),
-            .SWR(SWR),
-            .EWR(EWR)
-        ) inst_FPU_Interface (
+`ifdef SINGLE
+    FPU_Interface_W32_EW8_SW23_SWR26_EWR5 FPU_Interface (
             .clk             (clk),
             .rst             (rst),
             .begin_operation (begin_operation),
@@ -114,6 +108,26 @@ parameter PERIOD = 10;
             .operation_ready (operation_ready),
             .op_result       (op_result)
         );
+`endif
+`ifdef DOUBLE
+    FPU_Interface_W64_EW11_SW52_SWR55_EWR6 FPU_Interface (
+            .clk             (clk),
+            .rst             (rst),
+            .begin_operation (begin_operation),
+            .ack_operation   (ack_operation),
+            .operation       (operation),
+            .region_flag     (region_flag),
+            .Data_1          (Data_1),
+            .Data_2          (Data_2),
+            .r_mode          (r_mode),
+            .overflow_flag   (overflow_flag),
+            .underflow_flag  (underflow_flag),
+            .NaN_flag        (NaN_flag),
+            .operation_ready (operation_ready),
+            .op_result       (op_result)
+        );
+`endif
+
 
 
 

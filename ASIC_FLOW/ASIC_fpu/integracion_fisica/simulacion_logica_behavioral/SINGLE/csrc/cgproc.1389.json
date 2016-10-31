@@ -1,0 +1,36 @@
+{
+    "Modules": {
+        "CORDIC_FSM_v2": {},
+        "...MASTER...": {},
+        "shift_mux_array_0006": {},
+        "Mux_3x1_bv2": {},
+        "sign_inverter": {},
+        "FPU_PIPELINED_FPADDSUB": {},
+        "Multiplexer_AC_0001": {},
+        "CORDIC_Arch2": {},
+        "FPU_Add_Subtract_Function_0000": {},
+        "Up_counter": {},
+        "LUT_CASE_32bits": {},
+        "Testbench_FPU_Mark1": {},
+        "DECO_CORDIC_EXT": {},
+        "Priority_Codec_64": {},
+        "Mux_2x1": {},
+        "PriorityEncoder_CORDIC": {},
+        "Mux_2x1_0000": {},
+        "Mux_3x1_b": {},
+        "Rotate_Mux_Array_0000": {},
+        "Rotate_Mux_Array_0001": {},
+        "demux_1x3": {}
+    },
+    "ObjArchives": [],
+    "CompUnits": {
+        "amcQw_d": {
+            "checksum": 4294967295,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 9702,
+            "mode": 4
+        }
+    },
+    "reusePaths": {}
+}

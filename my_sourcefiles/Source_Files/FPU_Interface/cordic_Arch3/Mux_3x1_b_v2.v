@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : Mux_3x1_b.v
 //  Created On    : 2016-10-03 16:53:16
-//  Last Modified : 2016-10-04 10:26:18
+//  Last Modified : 2016-10-30 20:31:25
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -30,7 +30,7 @@ output reg [W-1:0] data_out
                 2'b01: data_out <= ch_0;
                 2'b10: data_out <= ch_1;
                 2'b11: data_out <= ch_2;
-                default : data_out <= ch_0;
+        //        default : data_out <= ch_0;
             endcase
         end
 endmodule

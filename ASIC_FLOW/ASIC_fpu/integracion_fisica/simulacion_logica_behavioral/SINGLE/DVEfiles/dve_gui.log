@@ -1,0 +1,34 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 12 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 30 20:56 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd' was opened successfully.
+------------------------SUMA--------------------------
+------------------------    --------------------------
+------------------------SUMA--------------------------
+------------------------RSTA--------------------------
+------------------------    --------------------------
+------------------------RSTA--------------------------
+------------------------MULT--------------------------
+------------------------    --------------------------
+------------------------MULT--------------------------
+---------------------REGION I or IV--------------------------
+------------------------    --------------------------
+---------------------REGION I or IV-------------------
+------------------------SENO--------------------------
+------------------------    --------------------------
+------------------------SENO--------------------------
+------------------------COS--------------------------
+------------------------    --------------------------
+------------------------COS--------------------------
+$finish called from file "Testbench_FPUv1_Interface.v", line 384.
+$finish at simulation time          48705460000
+Simulation complete, time is 48705460000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 48705460000 ps
+CPU Time:     61.200 seconds;       Data structure size:   0.2Mb
+Sun Oct 30 23:16:00 2016

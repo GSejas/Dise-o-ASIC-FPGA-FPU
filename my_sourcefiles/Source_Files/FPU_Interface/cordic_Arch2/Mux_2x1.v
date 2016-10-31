@@ -14,7 +14,7 @@ output reg [W-1:0] data_out
             case(select)
                 1'b0: data_out = ch_0;
                 1'b1: data_out = ch_1;
-                default : data_out = ch_0;
+     //           default : data_out = ch_0;
             endcase
         end
 endmodule

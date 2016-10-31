@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sun Oct 30 20:47:56 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Operands_load_reg_XMRegister_Q_reg_21_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_GEN1_middle_pdt_int_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_21_/CK (DFFRXLTS)
+                                                          0.00       1.00 r
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_21_/QN (DFFRXLTS)
+                                                          1.32       2.32 r
+  U3077/Y (INVX2TS)                                       0.30       2.63 f
+  U3079/Y (NOR2XLTS)                                      0.23       2.86 r
+  U3305/Y (XNOR2X1TS)                                     0.32       3.18 r
+  U3311/Y (CLKXOR2X2TS)                                   0.54       3.72 f
+  U3007/Y (INVX2TS)                                       0.16       3.88 r
+  U3008/Y (INVX2TS)                                       0.12       4.00 f
+  U2962/Y (AND2X2TS)                                      0.26       4.26 f
+  U2990/Y (INVX2TS)                                       0.12       4.38 r
+  U3402/Y (OAI22X1TS)                                     0.12       4.50 f
+  U3552/S (ADDHXLTS)                                      0.47       4.98 r
+  U6044/CO (CMPR42X1TS)                                   1.24       6.22 f
+  U2305/S (CMPR42X1TS)                                    1.18       7.40 f
+  U3352/CON (AFHCONX2TS)                                  0.38       7.78 r
+  U3298/Y (OAI22X2TS)                                     0.17       7.95 f
+  U3351/CON (AFHCONX2TS)                                  0.19       8.14 r
+  U3299/CO (ACHCINX2TS)                                   0.18       8.31 f
+  U3350/CON (AFHCONX2TS)                                  0.20       8.52 r
+  U3300/CO (ACHCINX2TS)                                   0.18       8.69 f
+  U3349/CON (AFHCONX2TS)                                  0.20       8.90 r
+  U2405/CO (ACHCINX2TS)                                   0.17       9.07 f
+  U3348/CON (AFHCONX2TS)                                  0.21       9.28 r
+  U3347/CO (AFHCINX2TS)                                   0.21       9.49 f
+  U3346/CON (AFHCONX2TS)                                  0.23       9.73 r
+  U3345/CO (AFHCINX2TS)                                   0.21       9.93 f
+  U3344/CON (AFHCONX2TS)                                  0.23      10.17 r
+  U3343/Y (XNOR2X4TS)                                     0.21      10.37 f
+  FPMULT_Sgf_operation_GEN1_middle_pdt_int_reg_25_/D (DFFQX1TS)
+                                                          0.00      10.37 f
+  data arrival time                                                 10.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FPMULT_Sgf_operation_GEN1_middle_pdt_int_reg_25_/CK (DFFQX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.13      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

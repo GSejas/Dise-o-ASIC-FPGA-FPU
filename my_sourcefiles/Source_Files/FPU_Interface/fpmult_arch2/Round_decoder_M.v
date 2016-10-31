@@ -28,7 +28,7 @@ module Round_decoder_M
     input wire Sign_Result_i,
     output wire Round_Flag_o
     );
-
+ wire round_ok;
     OR_Module #(.W(SW)) OR_info_reg (
         .Sgf_Round_Part(Round_Bits_i),
         .round_ok(round_ok)

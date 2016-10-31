@@ -148,7 +148,7 @@ generate
            //Final adder
             adder #(.W(4*(SW/2))) Final(
                 .Data_A_i({/*result_left_mult,result_right_mult*/Q_left,Q_right[2*(SW/2)-1:0]}),
-                .Data_B_i({{(2*SW-(SW+(SW/2)+2))){1'b0}},S_B[2*(SW/2)+1:0],rightside1}),
+                .Data_B_i({{(2*SW-(SW+SW/2+2)){1'b0}},S_B[2*(SW/2)+1:0],rightside1}),
                 .Data_S_o(Result[4*(SW/2):0])
             );
            

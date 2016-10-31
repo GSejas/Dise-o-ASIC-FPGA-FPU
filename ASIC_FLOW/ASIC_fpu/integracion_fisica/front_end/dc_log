@@ -1,0 +1,2049 @@
+Removing design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'
+Running PRESTO HDLC
+Compiling source file ./source/Adder_Round.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/add_sub_carry_out.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Add_Subt.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Barrel_Shifter_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Barrel_shifter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparator_Equal.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparator_Less.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparators.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparator.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Error:  Unable to open file `cordic_Arch2_sym': in search_path {$PWD ./libs ./db ./source ./scripts /media/datos/IBM/TECH/ibm130_lp/digital}. (VER-41)
+*** Presto compilation terminated with 1 errors. ***
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch2v1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Error:  Unable to open file `cordic_Arch3_sym': in search_path {$PWD ./libs ./db ./source ./scripts /media/datos/IBM/TECH/ibm130_lp/digital}. (VER-41)
+*** Presto compilation terminated with 1 errors. ***
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch3.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch3v1.v
+Warning:  ./source/CORDIC_Arch3v1.v:57: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./source/CORDIC_Arch3v1.v:57: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./source/CORDIC_Arch3v1.v:57: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./source/CORDIC_Arch3v1.v:287: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./source/CORDIC_Arch3v1.v:287: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  ./source/CORDIC_Arch3v1.v:287: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_FSM_v2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/multiplier.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/adder.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/substractor.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_FSM_v3.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/counter_d.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/counter_up.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/DECO_CORDIC_OP.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/deco_op.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Deco_Round_Mult.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/demux_1x3.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/d_ff_en.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Exp_operation_m.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/exp_operation.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/First_Phase_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FORMATTER.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_ADD_Substract_PIPELINED.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Add_Subtract_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Interface_1v1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Interface2v1.v
+Warning:  ./source/FPU_Interface2v1.v:296: the undeclared symbol 'zero_flag' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FSM_Add_Subtract.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FSM_input_enable.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FSM_Mult_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Greater_Comparator.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/lut_CASE_32.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/lut_CASE_64.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Error:  Unable to open file `LUT_ROM_32bits.v': in search_path {$PWD ./libs ./db ./source ./scripts /media/datos/IBM/TECH/ibm130_lp/digital}. (VER-41)
+*** Presto compilation terminated with 1 errors. ***
+Running PRESTO HDLC
+Error:  Unable to open file `LUT_ROM_64bits.v': in search_path {$PWD ./libs ./db ./source ./scripts /media/datos/IBM/TECH/ibm130_lp/digital}. (VER-41)
+*** Presto compilation terminated with 1 errors. ***
+Running PRESTO HDLC
+Compiling source file ./source/LZD.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Multiplexer_AC.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/MultiplexTxT.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_2x1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_3x1_b.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_3x1_b_v2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_3x1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_Array.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/NaN_mod_32.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/NaN_mod_64.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Oper_Start_In.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Op_Select.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/OR_Module.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Priority_Codec_32.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Priority_Codec_64.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/PriorityEncoder_ExtCORDIC.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RegisterAdd.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RegisterMult.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Rotate_Mux_Array.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Round_decoder_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Round_Sgf_Dec.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Sgf_Multiplication.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/sgn_result.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/shift_mux.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/shift_reg.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/sign_inverter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Simple_Subt.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Tenth_Phase.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Tenth_Phase_v2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Up_Counter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/XOR_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/xor_tri.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Zero_InfMult_Unit.v
+Presto compilation completed successfully.
+Error: Value for list 'file_list' must have more than zero elements. (CMD-036)
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W2 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W32 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'NaN_mod_32'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'./source/NaN_mod_32.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W1 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'demux_1x3'. (HDL-193)
+
+Statistics for case statements in always block at line 11 in file
+	'./source/demux_1x3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'deco_op'. (HDL-193)
+Warning:  ./source/deco_op.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 9 in file
+	'./source/deco_op.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_Arch2v1' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32,EW=8,SW=23,SWR=26". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_Multiplication_Function' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32,EW=8,SW=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_Add_Subtract_Function' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32,EW=8,SW=23,SWR=26,EWR=5". (HDL-193)
+Warning:  ./source/FPU_Add_Subtract_Function.v:356: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_FSM_v2'. (HDL-193)
+
+Statistics for case statements in always block at line 66 in file
+	'./source/CORDIC_FSM_v2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            94            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CORDIC_FSM_v2 line 56 in file
+		'./source/CORDIC_FSM_v2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'counter_d' instantiated from design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26' with
+	the parameters "W=4". (HDL-193)
+Warning:  ./source/counter_d.v:43: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine counter_d_W4 line 28 in file
+		'./source/counter_d.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'counter_up' instantiated from design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine counter_up_W2 line 15 in file
+		'./source/counter_up.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Simple_Subt' instantiated from design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26' with
+	the parameters "W=8,N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'LUT_CASE_32bits' instantiated from design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26' with
+	the parameters "W=32,N=4". (HDL-193)
+Warning:  ./source/lut_CASE_32.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'./source/lut_CASE_32.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Op_Select'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sign_inverter' instantiated from design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_Mult_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 128 in file
+	'./source/FSM_Mult_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Mult_Function line 121 in file
+		'./source/FSM_Mult_Function.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W1 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W2 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'First_Phase_M' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Zero_InfMult_Unit' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=9". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=8". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation_m' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "EW=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'XOR_M'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Sgf_Multiplication' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=24". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter_M' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_decoder_M' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder_Round' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Tenth_Phase' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=32,EW=8,SW=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_Add_Subtract'. (HDL-193)
+
+Statistics for case statements in always block at line 176 in file
+	'./source/FSM_Add_Subtract.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           235            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Add_Subtract line 167 in file
+		'./source/FSM_Add_Subtract.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W32 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Oper_Start_In_2' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=8". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "EW=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=5". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=26". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "SWR=26,EWR=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Add_Subt' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "SWR=26". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'LZD' instantiated from design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5' with
+	the parameters "SWR=26,EWR=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_Sgf_Dec'. (HDL-193)
+
+Statistics for case statements in always block at line 31 in file
+	'./source/Round_Sgf_Dec.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            32            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'First_Phase_M_W32' with
+	the parameters "W=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W32 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Equal' instantiated from design 'Zero_InfMult_Unit_W32' with
+	the parameters "S=31". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=9". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W9 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W1 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Less' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'multiplier' instantiated from design 'Sgf_Multiplication_SW24' with
+	the parameters "W=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine multiplier_W12 line 35 in file
+		'./source/multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pdt_int_reg     | Flip-flop |  24   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Sgf_Multiplication_SW24' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'multiplier' instantiated from design 'Sgf_Multiplication_SW24' with
+	the parameters "W=13". (HDL-193)
+
+Inferred memory devices in process
+	in routine multiplier_W13 line 35 in file
+		'./source/multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pdt_int_reg     | Flip-flop |  26   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'substractor' instantiated from design 'Sgf_Multiplication_SW24' with
+	the parameters "W=26". (HDL-193)
+$display output: Instanciacion: substractor de Francis, SW: 26
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Sgf_Multiplication_SW24' with
+	the parameters "W=48". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Sgf_Multiplication_SW24' with
+	the parameters "W=48". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W48 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Barrel_Shifter_M_SW24' with
+	the parameters "SWR=24,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Barrel_Shifter_M_SW24' with
+	the parameters "W=24". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W24 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OR_Module' instantiated from design 'Round_decoder_M_SW23' with
+	the parameters "W=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Deco_Round_Mult'. (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'./source/Deco_Round_Mult.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Adder_Round_SW24' with
+	the parameters "W=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Adder_Round_SW24' with
+	the parameters "W=24". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W24 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'Tenth_Phase_W32_EW8_SW23' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W32_EW8_SW23' with
+	the parameters "W=23". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator' instantiated from design 'Oper_Start_In_2_W32' with
+	the parameters "W=31". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'xor_tri' instantiated from design 'Oper_Start_In_2_W32' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgn_result'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MultiplexTxT' instantiated from design 'Oper_Start_In_2_W32' with
+	the parameters "W=31". (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'./source/MultiplexTxT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            34            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Oper_Start_In_2_W32' with
+	the parameters "W=31". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W31 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_EW8' with
+	the parameters "W=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Comparators' instantiated from design 'Exp_Operation_EW8' with
+	the parameters "W_Exp=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Exp_Operation_EW8' with
+	the parameters "W=8". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W8 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_Array' instantiated from design 'Barrel_Shifter_SWR26_EWR5' with
+	the parameters "SWR=26,EWR=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Barrel_Shifter_SWR26_EWR5' with
+	the parameters "W=26". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W26 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  26   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Add_Subt_SWR26' with
+	the parameters "W=26". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Priority_Codec_32'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'LZD_SWR26_EWR5' with
+	the parameters "W=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W5 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Greater_Comparator' instantiated from design 'Comparators_W_Exp9' with
+	the parameters "W=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Rotate_Mux_Array' instantiated from design 'Mux_Array_SWR26_EWR5' with
+	the parameters "SWR=26". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Mux_Array_SWR26_EWR5' with
+	the parameters "SWR=26,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Mux_Array_SWR26_EWR5' with
+	the parameters "SWR=26,LEVEL=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Mux_Array_SWR26_EWR5' with
+	the parameters "SWR=26,LEVEL=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Mux_Array_SWR26_EWR5' with
+	the parameters "SWR=26,LEVEL=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Mux_Array_SWR26_EWR5' with
+	the parameters "SWR=26,LEVEL=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Uniquified 3 instances of design 'd_ff_en_W2'. (OPT-1056)
+Information: Uniquified 14 instances of design 'd_ff_en_W32'. (OPT-1056)
+Information: Uniquified 5 instances of design 'd_ff_en_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'demux_1x3'. (OPT-1056)
+Information: Uniquified 6 instances of design 'Mux_2x1_W1'. (OPT-1056)
+Information: Uniquified 6 instances of design 'Mux_2x1_W32'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Mux_3x1_b_W32'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Simple_Subt_W8_N4'. (OPT-1056)
+Information: Uniquified 12 instances of design 'RegisterAdd_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W2'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_W8'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Tenth_Phase_W32_EW8_SW23'. (OPT-1056)
+Information: Uniquified 4 instances of design 'RegisterAdd_W32'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Multiplexer_AC_W8'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Multiplexer_AC_W26'. (OPT-1056)
+Information: Uniquified 53 instances of design 'Multiplexer_AC_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W32'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Equal_S31'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Less_W9'. (OPT-1056)
+Information: Uniquified 2 instances of design 'multiplier_W12'. (OPT-1056)
+Information: Uniquified 2 instances of design 'adder_W12'. (OPT-1056)
+Information: Uniquified 2 instances of design 'substractor_W26'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W23'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W31'. (OPT-1056)
+Information: Uniquified 3 instances of design 'RegisterAdd_W26'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Rotate_Mux_Array_SWR26'. (OPT-1056)
+
+  Linking design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (207 designs)             /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface_W32_EW8_SW23_SWR26_EWR5.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Writing ddc file './db/SINGLE/FPU_Interface_syn_unmapped.ddc'.
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+
+#   Propagate Constraints from cell mux_result_op/ (Mux_3x1_b_W32_2) #
+
+#   Propagate Constraints from cell mux_ready_op/ (Mux_3x1_b_W1) #
+
+#   Propagate Constraints from cell underflow_flag_mux/ (Mux_2x1_W1_1) #
+
+#   Propagate Constraints from cell overflow_flag_mux/ (Mux_2x1_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/ (FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5) #
+
+#   Propagate Constraints from cell FPADDSUB/final_result_ieee_Module/ (Tenth_Phase_W32_EW8_SW23_0) #
+
+#   Propagate Constraints from cell FPADDSUB/final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W32_0) #
+
+#   Propagate Constraints from cell FPADDSUB/final_result_ieee_Module/Sgf_Mux/ (Multiplexer_AC_W23_0) #
+
+#   Propagate Constraints from cell FPADDSUB/final_result_ieee_Module/Exp_Mux/ (Multiplexer_AC_W8_0) #
+
+#   Propagate Constraints from cell FPADDSUB/final_result_ieee_Module/Sign_Mux/ (Mux_3x1_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Rounding_Decoder/ (Round_Sgf_Dec) #
+
+#   Propagate Constraints from cell FPADDSUB/Leading_Zero_Detector_Module/ (LZD_SWR26_EWR5) #
+
+#   Propagate Constraints from cell FPADDSUB/Leading_Zero_Detector_Module/Output_Reg/ (RegisterAdd_W5) #
+
+#   Propagate Constraints from cell FPADDSUB/Leading_Zero_Detector_Module/LZD_SINGLEBLK.Codec_32/ (Priority_Codec_32) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Subt_Sgf_module/ (Add_Subt_SWR26) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Subt_Sgf_module/Add_overflow_Result/ (RegisterAdd_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Subt_Sgf_module/Add_Subt_Result/ (RegisterAdd_W26_1) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Subt_Sgf_module/Sgf_AS/ (add_sub_carry_out_W26) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Sub_Sgf_Oper_B_mux/ (Multiplexer_AC_W26_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Sub_Sgf_Oper_A_mux/ (Multiplexer_AC_W26_1) #
+
+#   Propagate Constraints from cell FPADDSUB/Add_Sub_Sgf_op_mux/ (Multiplexer_AC_W1_52) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/ (Barrel_Shifter_SWR26_EWR5) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Output_Reg/ (RegisterAdd_W26_2) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/ (Mux_Array_SWR26_EWR5) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/ (Rotate_Mux_Array_SWR26_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_1) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_3) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_4) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_5) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_6) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_7) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_8) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_9) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_10) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_11) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_12) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_13) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_14) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_15) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_16) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_17) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_18) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_19) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_20) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_21) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_22) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_23) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_24) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_25) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_2LVLS[4].shift_mux_array/ (shift_mux_array_SWR26_LEVEL4) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_2LVLS[3].shift_mux_array/ (shift_mux_array_SWR26_LEVEL3) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/Mid_Reg/ (RegisterAdd_W26_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_1LVLS[2].shift_mux_array/ (shift_mux_array_SWR26_LEVEL2) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_1LVLS[1].shift_mux_array/ (shift_mux_array_SWR26_LEVEL1) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_1LVLS[0].shift_mux_array/ (shift_mux_array_SWR26_LEVEL0) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/ (Rotate_Mux_Array_SWR26_1) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_26) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_27) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_28) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_29) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_30) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_31) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_32) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_33) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_34) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_35) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_36) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_37) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_38) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_39) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_40) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_41) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_42) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_43) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_44) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_45) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_46) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_47) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_48) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_49) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_50) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/ (Multiplexer_AC_W1_51) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_D_I_mux/ (Multiplexer_AC_W26_2) #
+
+#   Propagate Constraints from cell FPADDSUB/Barrel_Shifter_S_V_mux/ (Mux_3x1_W5) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/ (Exp_Operation_EW8) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/Underflow/ (RegisterAdd_W1_1) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/Overflow/ (RegisterAdd_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/exp_result/ (RegisterAdd_W8) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/array_comparators/ (Comparators_W_Exp9) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/array_comparators/LTComparator/ (Comparator_Less_W9_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/array_comparators/GTComparator/ (Greater_Comparator_W9) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Operation_Module/exp_add_subt/ (add_sub_carry_out_W8) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Oper_B_mux/ (Mux_3x1_W8_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Exp_Oper_A_mux/ (Multiplexer_AC_W8_2) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/ (Oper_Start_In_2_W32) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/SignRegister/ (RegisterAdd_W1_3) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/mRegister/ (RegisterAdd_W31_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/MRegister/ (RegisterAdd_W31_1) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/MuxXY/ (MultiplexTxT_W31) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/result_sign_bit/ (sgn_result) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/Op_verification/ (xor_tri_W32) #
+
+#   Propagate Constraints from cell FPADDSUB/Oper_Start_in_module/Magnitude_Comparator/ (Comparator_W31) #
+
+#   Propagate Constraints from cell FPADDSUB/ASRegister/ (RegisterAdd_W1_6) #
+
+#   Propagate Constraints from cell FPADDSUB/YRegister/ (RegisterAdd_W32_2) #
+
+#   Propagate Constraints from cell FPADDSUB/XRegister/ (RegisterAdd_W32_3) #
+
+#   Propagate Constraints from cell FPADDSUB/Sel_B/ (RegisterAdd_W2_0) #
+
+#   Propagate Constraints from cell FPADDSUB/Sel_D/ (RegisterAdd_W1_7) #
+
+#   Propagate Constraints from cell FPADDSUB/Sel_C/ (RegisterAdd_W1_8) #
+
+#   Propagate Constraints from cell FPADDSUB/Sel_A/ (RegisterAdd_W1_9) #
+
+#   Propagate Constraints from cell FPADDSUB/FS_Module/ (FSM_Add_Subtract) #
+
+#   Propagate Constraints from cell FPMULT/ (FPU_Multiplication_Function_W32_EW8_SW23) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/ (Tenth_Phase_W32_EW8_SW23_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W32_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sgf_Mux/ (Multiplexer_AC_W23_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Exp_Mux/ (Multiplexer_AC_W8_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sign_Mux/ (Mux_3x1_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/ (Adder_Round_SW24) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_overflow_Result/ (RegisterAdd_W1_4) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_Subt_Result/ (RegisterAdd_W24) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/A_operation/ (adder_W24) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/ (Round_decoder_M_SW23) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/Rounding_Deco/ (Deco_Round_Mult) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/OR_info_reg/ (OR_Module_W23) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/ (Barrel_Shifter_M_SW24) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/Output_Reg/ (RegisterMult_W24) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/shift_mux_array/ (shift_mux_array_SWR24_LEVEL0) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_D_I_mux/ (Multiplexer_AC_W24) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ (Sgf_Multiplication_SW24) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.finalreg/ (RegisterAdd_W48) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.Final/ (adder_W48) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.Subtr_2/ (substractor_W26_0) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.Subtr_1/ (substractor_W26_1) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.middle/ (multiplier_W13) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.B_operation/ (adder_W12_0) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.A_operation/ (adder_W12_1) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.right/ (multiplier_W12_0) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/GEN1.left/ (multiplier_W12_1) #
+
+#   Propagate Constraints from cell FPMULT/Sign_operation/ (XOR_M) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/ (Exp_Operation_m_EW8) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Underflow_m/ (RegisterMult_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Exp_unflow_Comparator_m/ (Comparator_Less_W9_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Oflow_A_m/ (RegisterMult_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_result_m/ (RegisterMult_W9) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_add_subt_m/ (add_sub_carry_out_W9) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_B_mux/ (Mux_3x1_W8_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_A_mux/ (Multiplexer_AC_W9) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/ (Zero_InfMult_Unit_W32) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Zero_Info_Mult/ (RegisterAdd_W1_5) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_B_Comp/ (Comparator_Equal_S31_0) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_A_Comp/ (Comparator_Equal_S31_1) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/ (First_Phase_M_W32) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/YMRegister/ (RegisterMult_W32_0) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/XMRegister/ (RegisterMult_W32_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_B/ (RegisterAdd_W2_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_C/ (RegisterAdd_W1_10) #
+
+#   Propagate Constraints from cell FPMULT/Sel_A/ (RegisterAdd_W1_11) #
+
+#   Propagate Constraints from cell FPMULT/FS_Module/ (FSM_Mult_Function) #
+
+#   Propagate Constraints from cell FPSENCOS/ (CORDIC_Arch2v1_W32_EW8_SW23_SWR26) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff5_data_out/ (d_ff_en_W32_0) #
+
+#   Propagate Constraints from cell FPSENCOS/sign_inverter_mod/ (sign_inverter_W32) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff5/ (d_ff_en_W32_1) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_2x1_sal/ (Mux_2x1_W32_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_ch_mux_3/ (d_ff_en_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Zn/ (d_ff_en_W32_2) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Yn/ (d_ff_en_W32_3) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Xn/ (d_ff_en_W32_4) #
+
+#   Propagate Constraints from cell FPSENCOS/op_select_mod/ (Op_Select) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var2/ (Mux_3x1_b_W32_0) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var1/ (Mux_3x1_b_W32_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_ch_mux_2/ (d_ff_en_W2_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_sign/ (d_ff_en_W1_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_LUT/ (d_ff_en_W32_5) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_y/ (d_ff_en_W32_6) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_x/ (d_ff_en_W32_7) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_sign/ (Mux_2x1_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/ROMBLK1.LUT32/ (LUT_CASE_32bits_W32_N4) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_y/ (Simple_Subt_W8_N4_0) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_x/ (Simple_Subt_W8_N4_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxZ_2stage/ (d_ff_en_W32_8) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxY_2stage/ (d_ff_en_W32_9) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxX_2stage/ (d_ff_en_W32_10) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_z0/ (Mux_2x1_W32_1) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_y0/ (Mux_2x1_W32_2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_x0/ (Mux_2x1_W32_3) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_ch_mux_1/ (d_ff_en_W1_2) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_Z0/ (d_ff_en_W32_11) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_region_flag/ (d_ff_en_W2_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_operation/ (d_ff_en_W1_3) #
+
+#   Propagate Constraints from cell FPSENCOS/cont_var/ (counter_up_W2) #
+
+#   Propagate Constraints from cell FPSENCOS/cont_iter/ (counter_d_W4) #
+
+#   Propagate Constraints from cell FPSENCOS/cordic_FSM/ (CORDIC_FSM_v2) #
+
+#   Propagate Constraints from cell mux_data_in2/ (Mux_2x1_W32_4) #
+
+#   Propagate Constraints from cell mux_data_in1/ (Mux_2x1_W32_5) #
+
+#   Propagate Constraints from cell mux_operation_add_cordic/ (Mux_2x1_W1_3) #
+
+#   Propagate Constraints from cell mux_ack_addsubt/ (Mux_2x1_W1_4) #
+
+#   Propagate Constraints from cell mux_beg_addsubt/ (Mux_2x1_W1_5) #
+
+#   Propagate Constraints from cell deco_operation/ (deco_op) #
+
+#   Propagate Constraints from cell demux_ack_op/ (demux_1x3_0) #
+
+#   Propagate Constraints from cell demux_beg_op/ (demux_1x3_1) #
+
+#   Propagate Constraints from cell NaN_dff/ (d_ff_en_W1_4) #
+
+#   Propagate Constraints from cell BLKNaN1.NaN_flag_32/ (NaN_mod_32) #
+
+#   Propagate Constraints from cell reg_dataB/ (d_ff_en_W32_12) #
+
+#   Propagate Constraints from cell reg_dataA/ (d_ff_en_W32_13) #
+
+#   Propagate Constraints from cell operation_dff/ (d_ff_en_W2_2) #
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Sun Oct 30 20:47:08 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     44
+    Unconnected ports (LINT-28)                                     1
+    Feedthrough (LINT-29)                                          31
+    Shorted outputs (LINT-31)                                       7
+    Constant outputs (LINT-52)                                      5
+
+Cells                                                              37
+    Cells do not drive (LINT-1)                                     8
+    Nets connected to multiple pins on same cell (LINT-33)         29
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'counter_d_W4', cell 'C68' does not drive any nets. (LINT-1)
+Warning: In design 'counter_up_W2', cell 'C56' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W9', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W9', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W8', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W8', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W26', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W26', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5', net 'FPMULT/Sgf_operation/Result[48]' driven by pin 'FPMULT/Sgf_operation/GEN1.Final/Data_S_o[48]' has no loads. (LINT-2)
+Warning: In design 'Mux_Array_SWR26_EWR5', port 'load_i' is not connected to any nets. (LINT-28)
+Warning: In design 'sign_inverter_W32', input port 'data[30]' is connected directly to output port 'data_out[30]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[29]' is connected directly to output port 'data_out[29]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[28]' is connected directly to output port 'data_out[28]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[27]' is connected directly to output port 'data_out[27]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[26]' is connected directly to output port 'data_out[26]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[25]' is connected directly to output port 'data_out[25]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[24]' is connected directly to output port 'data_out[24]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[23]' is connected directly to output port 'data_out[23]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[22]' is connected directly to output port 'data_out[22]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[21]' is connected directly to output port 'data_out[21]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[20]' is connected directly to output port 'data_out[20]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[19]' is connected directly to output port 'data_out[19]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[18]' is connected directly to output port 'data_out[18]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[17]' is connected directly to output port 'data_out[17]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[16]' is connected directly to output port 'data_out[16]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[15]' is connected directly to output port 'data_out[15]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[14]' is connected directly to output port 'data_out[14]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[13]' is connected directly to output port 'data_out[13]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[12]' is connected directly to output port 'data_out[12]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[11]' is connected directly to output port 'data_out[11]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[10]' is connected directly to output port 'data_out[10]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[9]' is connected directly to output port 'data_out[9]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[8]' is connected directly to output port 'data_out[8]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[7]' is connected directly to output port 'data_out[7]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[6]' is connected directly to output port 'data_out[6]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[5]' is connected directly to output port 'data_out[5]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[4]' is connected directly to output port 'data_out[4]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[3]' is connected directly to output port 'data_out[3]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[2]' is connected directly to output port 'data_out[2]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[1]' is connected directly to output port 'data_out[1]'. (LINT-29)
+Warning: In design 'sign_inverter_W32', input port 'data[0]' is connected directly to output port 'data_out[0]'. (LINT-29)
+Warning: In design 'CORDIC_FSM_v2', output port 'load_cont_iter' is connected directly to output port 'enab_RB1'. (LINT-31)
+Warning: In design 'CORDIC_FSM_v2', output port 'load_cont_var' is connected directly to output port 'enab_RB3'. (LINT-31)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[31]' is connected directly to output port 'data_out[30]'. (LINT-31)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[29]' is connected directly to output port 'data_out[27]'. (LINT-31)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[29]' is connected directly to output port 'data_out[28]'. (LINT-31)
+Warning: In design 'FSM_Mult_Function', output port 'load_1_o' is connected directly to output port 'ctrl_select_a_o'. (LINT-31)
+Warning: In design 'FSM_Add_Subtract', output port 'ctrl_a_o' is connected directly to output port 'ctrl_d_o'. (LINT-31)
+Warning: In design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26', the same net is connected to more than one pin on submodule 'cont_iter'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'd[3]', 'd[2]'', 'd[1]', 'd[0]'.
+Warning: In design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26', the same net is connected to more than one pin on submodule 'cont_var'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'd[1]', 'd[0]''.
+Warning: In design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[31]', 'ch_0[30]'', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[18]', 'ch_0[15]', 'ch_0[11]', 'ch_0[9]', 'ch_0[8]', 'ch_0[4]', 'ch_0[0]'.
+Warning: In design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'ch_0[29]', 'ch_0[28]'', 'ch_0[27]', 'ch_0[26]', 'ch_0[25]', 'ch_0[24]', 'ch_0[20]', 'ch_0[19]', 'ch_0[17]', 'ch_0[16]', 'ch_0[14]', 'ch_0[13]', 'ch_0[12]', 'ch_0[10]', 'ch_0[7]', 'ch_0[6]', 'ch_0[5]', 'ch_0[3]', 'ch_0[2]', 'ch_0[1]'.
+Warning: In design 'CORDIC_Arch2v1_W32_EW8_SW23_SWR26', the same net is connected to more than one pin on submodule 'mux1_y0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[31]', 'ch_0[30]'', 'ch_0[29]', 'ch_0[28]', 'ch_0[27]', 'ch_0[26]', 'ch_0[25]', 'ch_0[24]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[19]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[14]', 'ch_0[13]', 'ch_0[12]', 'ch_0[11]', 'ch_0[10]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[5]', 'ch_0[4]', 'ch_0[3]', 'ch_0[2]', 'ch_0[1]', 'ch_0[0]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[7]', 'D2[7]'', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[6]', 'D1[5]'', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]', 'D2[0]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Sgf_operation'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_A_i[23]', 'Data_B_i[23]''.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[23]', 'Data_B_i[22]'', 'Data_B_i[21]', 'Data_B_i[20]', 'Data_B_i[19]', 'Data_B_i[18]', 'Data_B_i[17]', 'Data_B_i[16]', 'Data_B_i[15]', 'Data_B_i[14]', 'Data_B_i[13]', 'Data_B_i[12]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[5]', 'Data_B_i[3]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B_i[4]', 'Data_B_i[2]'', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[7]', 'D1[6]'', 'D1[5]', 'D2[7]', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5', the same net is connected to more than one pin on submodule 'Barrel_Shifter_S_V_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D2[4]', 'D2[3]'', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5', the same net is connected to more than one pin on submodule 'Barrel_Shifter_D_I_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D0[1]', 'D0[0]''.
+Warning: In design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5', the same net is connected to more than one pin on submodule 'Add_Sub_Sgf_Oper_A_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D0[1]', 'D0[0]''.
+Warning: In design 'FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5', the same net is connected to more than one pin on submodule 'Add_Sub_Sgf_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[25]', 'D1[24]'', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Zero_InfMult_Unit_W32', the same net is connected to more than one pin on submodule 'Data_A_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[30]', 'Data_B[29]'', 'Data_B[28]', 'Data_B[27]', 'Data_B[26]', 'Data_B[25]', 'Data_B[24]', 'Data_B[23]', 'Data_B[22]', 'Data_B[21]', 'Data_B[20]', 'Data_B[19]', 'Data_B[18]', 'Data_B[17]', 'Data_B[16]', 'Data_B[15]', 'Data_B[14]', 'Data_B[13]', 'Data_B[12]', 'Data_B[11]', 'Data_B[10]', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Zero_InfMult_Unit_W32', the same net is connected to more than one pin on submodule 'Data_B_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_A[30]', 'Data_A[29]'', 'Data_A[28]', 'Data_A[27]', 'Data_A[26]', 'Data_A[25]', 'Data_A[24]', 'Data_A[23]', 'Data_A[22]', 'Data_A[21]', 'Data_A[20]', 'Data_A[19]', 'Data_A[18]', 'Data_A[17]', 'Data_A[16]', 'Data_A[15]', 'Data_A[14]', 'Data_A[13]', 'Data_A[12]', 'Data_A[11]', 'Data_A[10]', 'Data_A[9]', 'Data_A[8]', 'Data_A[7]', 'Data_A[6]', 'Data_A[5]', 'Data_A[4]', 'Data_A[3]', 'Data_A[2]', 'Data_A[1]', 'Data_A[0]'.
+Warning: In design 'Exp_Operation_m_EW8', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[8]', 'Data_B[7]''.
+Warning: In design 'Exp_Operation_m_EW8', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[6]', 'Data_B[5]'', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Sgf_Multiplication_SW24', the same net is connected to more than one pin on submodule 'GEN1.Subtr_1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[25]', 'Data_B_i[24]''.
+Warning: In design 'Sgf_Multiplication_SW24', the same net is connected to more than one pin on submodule 'GEN1.Subtr_2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[25]', 'Data_B_i[24]''.
+Warning: In design 'Sgf_Multiplication_SW24', the same net is connected to more than one pin on submodule 'GEN1.Final'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[47]', 'Data_B_i[46]'', 'Data_B_i[45]', 'Data_B_i[44]', 'Data_B_i[43]', 'Data_B_i[42]', 'Data_B_i[41]', 'Data_B_i[40]', 'Data_B_i[39]', 'Data_B_i[38]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[5]', 'Data_B_i[4]', 'Data_B_i[3]', 'Data_B_i[2]', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'Tenth_Phase_W32_EW8_SW23_1', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[7]', 'D1[6]'', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W32_EW8_SW23_1', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[22]', 'D1[21]'', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Comparators_W_Exp9', the same net is connected to more than one pin on submodule 'GTComparator'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[8]', 'Data_B[0]''.
+Warning: In design 'Comparators_W_Exp9', the same net is connected to more than one pin on submodule 'GTComparator'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[7]', 'Data_B[6]'', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'Comparators_W_Exp9', the same net is connected to more than one pin on submodule 'LTComparator'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[8]', 'Data_B[7]'', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'Tenth_Phase_W32_EW8_SW23_0', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[7]', 'D1[6]'', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W32_EW8_SW23_0', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[22]', 'D1[21]'', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[31]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[29]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[28]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_32bits_W32_N4', output port 'data_out[27]' is connected directly to 'logic 1'. (LINT-52)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 439 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'
+
+Loaded alib file '../alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+Information: Ungrouping hierarchy operation_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy BLKNaN1.NaN_flag_32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy NaN_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_beg_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy deco_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_beg_addsubt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_ready_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_result_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_ack_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy underflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy overflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_operation_add_cordic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_ack_addsubt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/cordic_FSM before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/cont_iter before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/cont_var before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/ROMBLK1.LUT32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/op_select_mod before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/sign_inverter_mod before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/FS_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_A before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_B before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sign_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_D_I_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FS_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/XRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_S_V_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_D_I_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Sub_Sgf_op_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Subt_Sgf_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Leading_Zero_Detector_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Rounding_Decoder before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_ch_mux_2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_region_flag before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff5_data_out before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Zn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Yn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Xn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_LUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxZ_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxY_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxX_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_Z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_ch_mux_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_ch_mux_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_2x1_sal before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_y0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_x0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/ASRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Sel_D before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Sel_C before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Sel_A before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_C before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Sel_B before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/final_result_ieee_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/YRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Sub_Sgf_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Sub_Sgf_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/XMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_A_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_add_subt_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_result_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Oflow_A_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Exp_unflow_Comparator_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.A_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.Subtr_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.Final before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.finalreg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/OR_info_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/Rounding_Deco before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/A_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_Subt_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/Magnitude_Comparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/Op_verification before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/result_sign_bit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/MuxXY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/MRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/exp_add_subt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/array_comparators before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/exp_result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Subt_Sgf_module/Sgf_AS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Leading_Zero_Detector_Module/LZD_SINGLEBLK.Codec_32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Leading_Zero_Detector_Module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Subt_Sgf_module/Add_overflow_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/Underflow before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/Overflow before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/SignRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_overflow_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Zero_Info_Mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/final_result_ieee_Module/Final_Result_IEEE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Final_Result_IEEE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/final_result_ieee_Module/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/YMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_B_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Underflow_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.B_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/GEN1.Subtr_2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/final_result_ieee_Module/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/final_result_ieee_Module/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Oper_Start_in_module/mRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Add_Subt_Sgf_module/Add_Subt_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/array_comparators/GTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_1LVLS[0].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_1LVLS[1].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_1LVLS[2].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_2LVLS[3].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/SHIFT_2LVLS[4].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Exp_Operation_Module/array_comparators/LTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/Mid_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Barrel_Shifter_module/Mux_Array/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping 206 of 207 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'
+Information: Added key list 'DesignWare' to design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'. (DDB-72)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: In design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5', the register 'FPSENCOS/reg_LUT/Q_reg[28]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[27]'. (OPT-1215)
+Information: In design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5', the register 'FPSENCOS/reg_LUT/Q_reg[29]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[27]'. (OPT-1215)
+Information: In design 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5', the register 'FPADDSUB/Sel_D/Q_reg[0]' is removed because it is merged to 'FPADDSUB/Sel_A/Q_reg[0]'. (OPT-1215)
+ Implement Synthetic for 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5_DW01_add_2'
+  Mapping 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5_DP_OP_497J4_122_5135_1'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:27   75051.4      0.41       1.0     534.4                           91235.2500
+    0:00:28   75365.3      0.00       0.0     534.4                           91956.0625
+    0:00:28   75365.3      0.00       0.0     534.4                           91956.0625
+    0:00:29   75310.6      0.00       0.0     544.4                           91907.3906
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:33   74489.8      0.00       0.0     536.4                           90686.5469
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:34   73817.3      0.00       0.0     536.3                           89451.0078
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:36   74818.1      0.00       0.0       0.0                           90079.7266
+    0:00:36   74818.1      0.00       0.0       0.0                           90079.7266
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:36   74818.1      0.00       0.0       0.0                           90079.7266
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+    0:00:38   73650.2      0.00       0.0       0.0                           88551.5234
+    0:00:38   73650.2      0.00       0.0       0.0                           88551.5234
+    0:00:38   73650.2      0.00       0.0       0.0                           88551.5234
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:39   73618.6      0.00       0.0       0.0                           88507.5078
+    0:00:40   73487.5      0.00       0.0       0.0                           88313.9531
+    0:00:40   73487.5      0.00       0.0       0.0                           88313.9531
+    0:00:40   73487.5      0.00       0.0       0.0                           88313.9531
+    0:00:41   73487.5      0.00       0.0       0.0                           88313.9531
+    0:00:42   73437.1      0.00       0.0       0.0                           88204.6875
+    0:00:42   73437.1      0.00       0.0       0.0                           88204.6875
+    0:00:42   73437.1      0.00       0.0       0.0                           88204.6875
+    0:00:42   73437.1      0.00       0.0       0.0                           88204.6875
+    0:00:43   73392.5      0.00       0.0       0.0                           88180.6484
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Current design is 'FPU_Interface_W32_EW8_SW23_SWR26_EWR5'.
+Writing verilog file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/SINGLE/FPU_Interface_syn.v'.
+Writing ddc file './db/SINGLE/FPU_Interface_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/SINGLE/FPU_Interface_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_Interface_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...

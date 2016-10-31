@@ -63,7 +63,8 @@ wire FSM_final_result_load;
 //Op_MX;
 //Op_MY
 wire zero_flag;
-
+wire FSM_Shift_Value;
+wire FSM_selector_C;
 //FIRST PHASE
 wire [W-1:0] Op_MX;
 wire [W-1:0] Op_MY;

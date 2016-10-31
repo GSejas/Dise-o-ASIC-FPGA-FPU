@@ -1,0 +1,167 @@
+{
+    "shift_mux_array_0003": [
+        "shift_mux_array_0003",
+        "w253U",
+        "module"
+    ],
+    "Mux_3x1_b_0001": [
+        "Mux_3x1_b_0001",
+        "uCHpa",
+        "module"
+    ],
+    "NaN_mod_64": [
+        "NaN_mod_64",
+        "buq2z",
+        "module"
+    ],
+    "shift_mux_array_0001": [
+        "shift_mux_array_0001",
+        "Dnpmq",
+        "module"
+    ],
+    "shift_mux_array_0002": [
+        "shift_mux_array_0002",
+        "WjFVn",
+        "module"
+    ],
+    "shift_mux_array_0004": [
+        "shift_mux_array_0004",
+        "G4Syt",
+        "module"
+    ],
+    "FPU_Add_Subtract_Function_0001": [
+        "FPU_Add_Subtract_Function_0001",
+        "gEfYf",
+        "module"
+    ],
+    "shift_mux_array_0005": [
+        "shift_mux_array_0005",
+        "hxDwR",
+        "module"
+    ],
+    "Op_Select": [
+        "Op_Select",
+        "MMLH0",
+        "module"
+    ],
+    "FPU_PIPELINED_FPADDSUB": [
+        "FPU_PIPELINED_FPADDSUB",
+        "IfjdF",
+        "module"
+    ],
+    "CORDIC_Arch2": [
+        "CORDIC_Arch2",
+        "Qb7ID",
+        "module"
+    ],
+    "shift_mux_array_0006": [
+        "shift_mux_array_0006",
+        "Lq53g",
+        "module"
+    ],
+    "Mux_3x1_bv2": [
+        "Mux_3x1_bv2",
+        "BrK1N",
+        "module"
+    ],
+    "Mux_3x1_b": [
+        "Mux_3x1_b",
+        "ncGYg",
+        "module"
+    ],
+    "Multiplexer_AC_0001": [
+        "Multiplexer_AC_0001",
+        "UDPPh",
+        "module"
+    ],
+    "LUT_CASE_32bits": [
+        "LUT_CASE_32bits",
+        "APd0b",
+        "module"
+    ],
+    "Mux_3x1_b_0000": [
+        "Mux_3x1_b_0000",
+        "tIU8K",
+        "module"
+    ],
+    "FSM_Add_Subtract": [
+        "FSM_Add_Subtract",
+        "tsP6I",
+        "module"
+    ],
+    "Up_counter": [
+        "Up_counter",
+        "Ba8Ad",
+        "module"
+    ],
+    "Mux_2x1_0000": [
+        "Mux_2x1_0000",
+        "RKILn",
+        "module"
+    ],
+    "CORDIC_FSM_v2": [
+        "CORDIC_FSM_v2",
+        "Negbg",
+        "module"
+    ],
+    "Priority_Codec_64": [
+        "Priority_Codec_64",
+        "dKutG",
+        "module"
+    ],
+    "Testbench_FPU_Mark1": [
+        "Testbench_FPU_Mark1",
+        "NdheE",
+        "module"
+    ],
+    "Mux_2x1_0001": [
+        "Mux_2x1_0001",
+        "xEaRP",
+        "module"
+    ],
+    "Rotate_Mux_Array_0001": [
+        "Rotate_Mux_Array_0001",
+        "ZNHBN",
+        "module"
+    ],
+    "DECO_CORDIC_EXT": [
+        "DECO_CORDIC_EXT",
+        "M5RTI",
+        "module"
+    ],
+    "Rotate_Mux_Array_0000": [
+        "Rotate_Mux_Array_0000",
+        "GBFFm",
+        "module"
+    ],
+    "sign_inverter": [
+        "sign_inverter",
+        "yjNM0",
+        "module"
+    ],
+    "Simple_Subt": [
+        "Simple_Subt",
+        "dcfj1",
+        "module"
+    ],
+    "deco_op": [
+        "deco_op",
+        "ngvTp",
+        "module"
+    ],
+    "demux_1x3": [
+        "demux_1x3",
+        "B5gYR",
+        "module"
+    ],
+    "PriorityEncoder_CORDIC": [
+        "PriorityEncoder_CORDIC",
+        "L4uQu",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}
