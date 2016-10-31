@@ -34,9 +34,9 @@ gui_set_state_value -category Layout -key child_console_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_console_showstate -value maximized
 gui_set_state_value -category Layout -key child_console_size_x -value 1028
 gui_set_state_value -category Layout -key child_console_size_y -value 563
-gui_set_state_value -category Layout -key child_data_coltype -value 192
-gui_set_state_value -category Layout -key child_data_colvalue -value 474
-gui_set_state_value -category Layout -key child_data_colvariable -value 338
+gui_set_state_value -category Layout -key child_data_coltype -value 308
+gui_set_state_value -category Layout -key child_data_colvalue -value 241
+gui_set_state_value -category Layout -key child_data_colvariable -value 454
 gui_set_state_value -category Layout -key child_data_docknewline -value false
 gui_set_state_value -category Layout -key child_data_dockstate -value undocked
 gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
@@ -131,3 +131,4 @@ gui_state_default_create -off
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose} -dir .
 gui_list_add -id Wave.1 -from Hier.1 { Testbench_FPU_Mark1 } -insertionbar
 gui_sim_continue  
+gui_save_session -savedb relative -global { Breakpoint Bus Radix Expression TimeShift Compare SignalGroup Highlight Stack }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_syn_v1_vdc.tcl

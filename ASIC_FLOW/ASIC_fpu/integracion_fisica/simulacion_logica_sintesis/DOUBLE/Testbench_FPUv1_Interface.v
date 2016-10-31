@@ -1,36 +1,19 @@
 //==================================================================================================
 //  Filename      : Testbench_FPUv1_Interface.v
-//  Created On    : 2016-10-30 18:45:24
-//  Last Modified : 2016-10-30 18:45:27
-//  Revision      :
-//  Author        : Jorge Sequeira Rojas
+//  Created On    : 2016-10-31 01:04:16
+//  Last Modified : 2016-10-31 01:04:28
+//  Revision      : 
+//  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
-//  Email         : jsequeira@gmail.com
+//  Email         : jsequeira03@gmail.com
 //
-//  Description   :
+//  Description   : 
 //
 //
 //==================================================================================================
+
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 03/29/2016 05:57:16 AM
-// Design Name:
-// Module Name: Testbench_FPU
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module Testbench_FPU_Mark1();
 
@@ -91,14 +74,8 @@ parameter PERIOD = 10;
                          ROUNDING_MODE_NEG_INF  = 2'b01,
                          ROUNDING_MODE_POS_INF  = 2'b10;
 
-
-    FPU_Interface #(
-            .W(W),
-            .EW(EW),
-            .SW(SW),
-            .SWR(SWR),
-            .EWR(EWR)
-        ) inst_FPU_Interface (
+`ifdef SINGLE
+    FPU_Interface_W32_EW8_SW23_SWR26_EWR5 FPU_Interface (
             .clk             (clk),
             .rst             (rst),
             .begin_operation (begin_operation),
@@ -114,6 +91,26 @@ parameter PERIOD = 10;
             .operation_ready (operation_ready),
             .op_result       (op_result)
         );
+`endif
+`ifdef DOUBLE
+    FPU_Interface_W64_EW11_SW52_SWR55_EWR6 FPU_Interface (
+            .clk             (clk),
+            .rst             (rst),
+            .begin_operation (begin_operation),
+            .ack_operation   (ack_operation),
+            .operation       (operation),
+            .region_flag     (region_flag),
+            .Data_1          (Data_1),
+            .Data_2          (Data_2),
+            .r_mode          (r_mode),
+            .overflow_flag   (overflow_flag),
+            .underflow_flag  (underflow_flag),
+            .NaN_flag        (NaN_flag),
+            .operation_ready (operation_ready),
+            .op_result       (op_result)
+        );
+`endif
+
 
 
 

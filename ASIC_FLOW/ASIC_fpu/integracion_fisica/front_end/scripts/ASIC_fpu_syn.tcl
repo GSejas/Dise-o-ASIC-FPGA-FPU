@@ -18,6 +18,7 @@ set CONTRAINTS_FILE_NAME "ASIC_fpu_syn_constraints.tcl"
 set compile_fix_cell_degradation true
 remove_design -designs
 suppress_message LINT-32
+suppress_message UID-401
 #WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
 set fp [open "scripts/file_list" r]
 set file_sources [read $fp]
@@ -34,7 +35,7 @@ foreach line $data {
 #source "ASIC_fpaddsub_arch2_syn_2.tcl"
 
 set x 0;
-while {$x < 1} {
+while {$x < 2} {
 
 #Elaboramos el módulo principal
 elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
