@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : CORDIC_Arch3.v
 //  Created On    : 2016-09-28 14:58:46
-//  Last Modified : 2016-10-30 14:04:05
+//  Last Modified : 2016-10-31 00:16:10
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -56,20 +56,20 @@ wire [W-1:0] x0,y0;
 generate
     case(W)
 
-    32:
-    begin
+    32: 
+    begin : INITVALBLK1
         assign x0 = 32'h3f1b74ee;                 //    x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 32'h00000000;                 //    y0 = 0, valor inicial de la variable Y.
     end
 
     64:
-    begin
+    begin : INITVALBLK2
         assign x0 = 64'h3fe36e9db5086bc9;        // x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 64'h0000000000000000;        // y0 = 0, valor inicial de la variable Y.
     end
 
     default:
-    begin
+    begin : INITVALBLK3
         assign x0 = 32'h3f1b74ee;                   //    x0 = 0.607252935008881, valor inicial de la variable X.
         assign y0 = 32'h00000000;                   //    y0 = 0, valor inicial de la variable Y.
     end
@@ -82,7 +82,7 @@ endgenerate
 
 //Signal declaration
 
-wire reset_reg_cordic;
+//wire reset_reg_cordic;
 
 //ENABLE
 wire enab_d_ff_RB1;                                         //  Enable de la primera linea de registros.
@@ -140,7 +140,7 @@ wire min_tick_var,max_tick_var;                             //  Señales que ind
             .max_tick_iter       (max_tick_iter),
             .max_tick_var        (max_tick_var),
             .enab_dff_z          (enab_d_ff4_Zn),
-            .reset_reg_cordic    (reset_reg_cordic),
+           // .reset_reg_cordic    (reset_reg_cordic),
             .ready_CORDIC        (ready_cordic),
             .beg_add_subt        (beg_add_subt),
             .enab_cont_iter      (enab_cont_iter),
@@ -286,24 +286,24 @@ wire min_tick_var,max_tick_var;                             //  Señales que ind
 generate
     case(W)
     32:
-    begin
-        LUT_ROM_32bits #(.W(W),.N(iter_bits)) LUT32
+    begin : LUTBLK1
+        LUT_CASE_32bits #(.W(W),.N(iter_bits)) LUT32
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
         );
     end
     64:
-    begin
-        LUT_ROM_64bits #(.W(W),.N(iter_bits)) LUT64
+    begin : LUTBLK2
+        LUT_CASE_64bits #(.W(W),.N(iter_bits)) LUT64
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
         );
     end
     default:
-    begin
-        LUT_ROM_32bits #(.W(W),.N(iter_bits)) LUT32
+    begin : LUTBLK3
+        LUT_CASE_32bits #(.W(W),.N(iter_bits)) LUT32
         (
         .address(cont_iter_out),
         .data_out(data_out_LUT)
@@ -376,10 +376,10 @@ endgenerate
 
     Mux_3x1_bv2 #(.W(W)) mux_3x1_var2
     (
-        .select(cont_var_out),
-        .ch_0(d_ff3_sh_y_out),
-        .ch_1(d_ff3_sh_x_out),
-        .ch_2(d_ff3_LUT_out),
+        .select  (cont_var_out),
+        .ch_0    (d_ff3_sh_y_out),
+        .ch_1    (d_ff3_sh_x_out),
+        .ch_2    (d_ff3_LUT_out),
         .data_out(add_subt_dataB)
     );
 
@@ -391,15 +391,12 @@ endgenerate
 
     Op_Select   op_select_mod
     (
-        .variable(~cont_var_out[0]),
-        .sign(d_ff3_sign_out),
+        .variable (~cont_var_out[0]),
+        .sign     (d_ff3_sign_out),
         .operation(op_add_subt)
     );
 
 //--------------------------------------------------------------------------------------------------------------------------------
-//Septima Etapa : Instanciamiento del módulo de suma y resta.
-
-
 
 
 //-------------------------------------------------------------------------------------------------------------------------------
@@ -407,29 +404,29 @@ endgenerate
 
     d_ff_en #(.W(W)) d_ff4_Xn
     (
-    .clk(clk),
-    .rst(rst),
+    .clk   (clk),
+    .rst   (rst),
     .enable(enab_d_ff4_Xn),
-    .D(result_add_subt),
-    .Q(d_ff_Xn)
+    .D     (result_add_subt),
+    .Q     (d_ff_Xn)
     );
 
     d_ff_en #(.W(W)) d_ff4_Yn
     (
-    .clk(clk),
-    .rst(rst),
+    .clk   (clk),
+    .rst   (rst),
     .enable(enab_d_ff4_Yn),
-    .D(result_add_subt),
-    .Q(d_ff_Yn)
+    .D     (result_add_subt),
+    .Q     (d_ff_Yn)
     );
 
     d_ff_en #(.W(W)) d_ff4_Zn
     (
-    .clk(clk),
-    .rst(rst),
+    .clk   (clk),
+    .rst   (rst),
     .enable(enab_d_ff4_Zn),
-    .D(result_add_subt),
-    .Q(d_ff_Zn)
+    .D     (result_add_subt),
+    .Q     (d_ff_Zn)
     );
 
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -455,16 +452,16 @@ endgenerate
             .operation         (d_ff1_operation_out),
             .shift_region_flag (d_ff1_shift_region_flag_out),
             .sel_mux_3         (sel_mux_3),
-            .data_out          (fmtted_Result)
+            .data_out_CORDECO  (fmtted_Result)
         );
 
     d_ff_en #(.W(W)) d_ff5_data_out
     (
-    .clk(clk),
-    .rst(rst),
+    .clk   (clk),
+    .rst   (rst),
     .enable(enab_d_ff5_data_out),
-    .D(fmtted_Result),
-    .Q(data_output)
+    .D     (fmtted_Result),
+    .Q     (data_output)
     );
 
 endmodule

@@ -132,3 +132,7 @@ gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+D
 gui_list_select -id Hier.1 -current_item_name Testbench_FPU_Mark1 -current_item_type Scope  -selected  { Testbench_FPU_Mark1   }
 gui_list_add -id Wave.1 -from Hier.1 { Testbench_FPU_Mark1 } -insertionbar
 gui_sim_continue  
+gui_sim_restart
+gui_set_pref_value -category {Source} -key {value_annotate} -value {false}
+gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
+gui_sim_continue  

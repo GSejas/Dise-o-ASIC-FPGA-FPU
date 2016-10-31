@@ -12,7 +12,9 @@
 ########Definición de las variables a utilizar###########
 
 set LIB_NAME scx3_cmos8rf_lpvt_tt_1p2v_25c.db
-
+set_wire_load_model -name ibm13_wl10 -library scx3_cmos8rf_lpvt_tt_1p2v_25c
+set_wire_load_mode top
+set_operating_conditions -library scx3_cmos8rf_lpvt_tt_1p2v_25c tt_1p2v_25c
 set CLK_PERIOD 10
 set CLK_NAME clk
 

@@ -1,0 +1,89 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp0RKiNY
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.4405}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.4405}
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} overflow_flag underflow_flag operation_ready NaN_flag }
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[63:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD FPSUB }
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {Testbench_FPU_Mark1} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_1 Testbench_FPU_Mark1.Array_IN_2 } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 17135095000
+set synopsys::env(time) 35698770000
+set synopsys::env(time) 54056465022
+set synopsys::env(time) 72541110063
+set synopsys::env(time) 91143450063
+set synopsys::env(time) 109489215000
+set synopsys::env(time) 128143625063
+set synopsys::env(time) 146824830063
+set synopsys::env(time) 165403585022
+set synopsys::env(time) 183562135000
+set synopsys::env(time) 202178155000
+set synopsys::env(time) 220118270022
+set synopsys::env(time) 238752940063
+set synopsys::env(time) 257360425000
+set synopsys::env(time) 275744630022
+set synopsys::env(time) 293305470000
+set synopsys::env(time) 311660655000
+set synopsys::env(time) 330104875000
+set synopsys::env(time) 348453070000
+set synopsys::env(time) 365674525063
+set synopsys::env(time) 383772610000
+set synopsys::env(time) 402467145063
+set synopsys::env(time) 420994025000
+set synopsys::env(time) 439669725000
+set synopsys::env(time) 458340840000
+set synopsys::env(time) 477008505063
+set synopsys::env(time) 495662620000
+set synopsys::env(time) 514091110000
+set synopsys::env(time) 532106920063
+set synopsys::env(time) 550357645000
+set synopsys::env(time) 568519475000
+set synopsys::env(time) 587102885000
+set synopsys::env(time) 605655410000
+set synopsys::env(time) 624356985022
+set synopsys::env(time) 643084510063
+set synopsys::env(time) 661155370022
+set synopsys::env(time) 679846645000
+set synopsys::env(time) 698397710000
+set synopsys::env(time) 716983650000
+set synopsys::env(time) 735598975022
+set synopsys::env(time) 754347875000
+set synopsys::env(time) 773007585063
+set synopsys::env(time) 791669295063
+set synopsys::env(time) 809029745063
+set synopsys::env(time) 826821835000
+set synopsys::env(time) 845459570000
+set synopsys::env(time) 864231460000
+set synopsys::env(time) 883038770000
+set synopsys::env(time) 901534630000
+set synopsys::env(time) 918552710063
+set synopsys::env(time) 937205470000
+set synopsys::env(time) 955233470000
+set synopsys::env(time) 973859565000
+set synopsys::env(time) 992548800000
+set synopsys::env(time) 1011259435000
+set synopsys::env(time) 1029528850000
+set synopsys::env(time) 1048140215063
+set synopsys::env(time) 1066785855063
+set synopsys::env(time) 1085445880022
+set synopsys::env(time) 1104108025000
+set synopsys::env(time) 1122090305022
+set synopsys::env(time) 1140669725000

@@ -270,15 +270,25 @@ XOR_M Sign_operation (
 
 /////Significant_Operation//////////////////////////
 
-Sgf_Multiplication #(.SW(SW+1)) Sgf_operation (
-    .clk(clk),
-    .rst(rst),
-    .load_b_i(FSM_load_second_step),
-    .Data_A_i({1'b1,Op_MX[SW-1:0]}),
-    .Data_B_i({1'b1,Op_MY[SW-1:0]}),
-    .sgf_result_o(P_Sgf)
-    );
-    
+// Sgf_Multiplication #(.SW(SW+1)) Sgf_operation (
+//     .clk(clk),
+//     .rst(rst),
+//     .load_b_i(FSM_load_second_step),
+//     .Data_A_i({1'b1,Op_MX[SW-1:0]}),
+//     .Data_B_i({1'b1,Op_MY[SW-1:0]}),
+//     .sgf_result_o(P_Sgf)
+//     );
+    Simple_KOA #(
+            .SW(SW+1)
+        ) Sgf_operation (
+            .clk          (clk),
+            .rst          (rst),
+            .load_b_i     (FSM_load_second_step),
+            .Data_A_i     ({1'b1,Op_MX[SW-1:0]}),
+            .Data_B_i     ({1'b1,Op_MY[SW-1:0]}),
+            .sgf_result_o (P_Sgf)
+        );
+
     //////////Mux Barrel shifter shift_Value/////////////////
     
     assign significand = P_Sgf [2*SW:SW];

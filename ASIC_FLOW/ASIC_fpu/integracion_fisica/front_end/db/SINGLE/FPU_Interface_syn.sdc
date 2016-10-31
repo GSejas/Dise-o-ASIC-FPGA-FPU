@@ -1,11 +1,14 @@
 ###################################################################
 
-# Created by write_sdc on Sun Oct 30 20:47:56 2016
+# Created by write_sdc on Mon Oct 31 01:16:21 2016
 
 ###################################################################
 set sdc_version 2.0
 
 set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+set_operating_conditions tt_1p2v_25c -library scx3_cmos8rf_lpvt_tt_1p2v_25c
+set_wire_load_mode top
+set_wire_load_model -name ibm13_wl10 -library scx3_cmos8rf_lpvt_tt_1p2v_25c
 set_max_fanout 10 [current_design]
 set_max_area 0
 set_driving_cell -lib_cell TBUFX20TS [get_ports rst]

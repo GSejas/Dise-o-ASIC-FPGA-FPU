@@ -1,12 +1,12 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Sun Oct 30 22:48:23 2016
+# Saved on Mon Oct 31 00:24:32 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
-#   Source.1: Testbench_FPU_Mark1
 #   Wave.1: 36 signals
+#   Source.1: Testbench_FPU_Mark1
 #   Group count = 1
 #   Group Testbench_FPU_Mark1 signal count = 36
 # End_DVE_Session_Save_Info
@@ -139,7 +139,7 @@ if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
 }
 
 gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 338} {child_data_colvalue 474} {child_data_coltype 192} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 454} {child_data_colvalue 241} {child_data_coltype 308} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
 gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 465} {child_wave_right 553} {child_wave_colname 300} {child_wave_colvalue 160} {child_wave_col1 0} {child_wave_col2 1}}
@@ -250,7 +250,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 48705460000
+gui_set_time -C1_only 1139450000
 
 
 
@@ -297,8 +297,9 @@ gui_list_set_height -id Wave -height 17
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 48705459911 48705460088
+gui_wv_zoom_timerange -id ${Wave.1} 668215156 1429237972
 gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Mark1}
+gui_list_select -id ${Wave.1} {Testbench_FPU_Mark1.Array_IN_2 }
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -316,8 +317,8 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_FPU_Mark1  -position in
 
-gui_marker_move -id ${Wave.1} {C1} 48705460000
-gui_view_scroll -id ${Wave.1} -vertical -set 0
+gui_marker_move -id ${Wave.1} {C1} 1139450000
+gui_view_scroll -id ${Wave.1} -vertical -set 195
 gui_show_grid -id ${Wave.1} -enable false
 
 # Source 'Source.1'
@@ -326,7 +327,7 @@ gui_set_env TOGGLE::VALUEANNOTATE 0
 gui_open_source -id ${Source.1}  -replace -active Testbench_FPU_Mark1 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/Testbench_FPUv1_Interface.v
 gui_src_value_annotate -id ${Source.1} -switch true
 gui_set_env TOGGLE::VALUEANNOTATE 1
-gui_view_scroll -id ${Source.1} -vertical -set 510
+gui_view_scroll -id ${Source.1} -vertical -set 2895
 gui_src_set_reusable -id ${Source.1}
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
