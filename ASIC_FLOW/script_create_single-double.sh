@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir_list=(ASIC_fpmult_arch2 ASIC_fpmult_arch3)
+dir_list=(fpu)
 for i in "${dir_list[@]}"
 do
 #CREATE DC STRUCTURE

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir_list=(ASIC_cordic_Arch2 ASIC_cordic_Arch3)
+dir_list=(ASIC_fpu)
 for i in "${dir_list[@]}"
 do
 #CREATE DC STRUCTURE
@@ -8,27 +8,27 @@ do
   sim_beh_dir="$i/integracion_fisica/simulacion_logica_behavioral"
   echo $sim_syn_dir
   echo $sim_beh_dir
- # mkdir $i
- # mkdir $i/integracion_fisica
- # mkdir $i/integracion_fisica/front_end
- # mkdir $i/integracion_fisica/front_end/libs
- # mkdir $i/integracion_fisica/front_end/source
- # mkdir $i/integracion_fisica/front_end/db
+  mkdir $i
+  mkdir $i/integracion_fisica
+  mkdir $i/integracion_fisica/front_end
+  mkdir $i/integracion_fisica/front_end/libs
+  mkdir $i/integracion_fisica/front_end/source
+  mkdir $i/integracion_fisica/front_end/db
   mkdir $i/integracion_fisica/front_end/db/SINGLE
   mkdir $i/integracion_fisica/front_end/db/DOUBLE
- # mkdir $i/integracion_fisica/front_end/reports
+  mkdir $i/integracion_fisica/front_end/reports
   mkdir $i/integracion_fisica/front_end/reports/SINGLE
   mkdir $i/integracion_fisica/front_end/reports/DOUBLE
- # mkdir $i/integracion_fisica/front_end/scripts
-  #mkdir $i/integracion_fisica/front_end/work
+  mkdir $i/integracion_fisica/front_end/scripts
+ mkdir $i/integracion_fisica/front_end/work
 ##CREATE SIM FILES
-  #mkdir $sim_syn_dir
-  #mkdir $sim_syn_dir/SINGLE
-  #mkdir $sim_syn_dir/DOUBLE
+  mkdir $sim_syn_dir
+ mkdir $sim_syn_dir/SINGLE
+ mkdir $sim_syn_dir/DOUBLE
 
-#  mkdir $sim_beh_dir
- # mkdir $sim_beh_dir/SINGLE
-  #mkdir $sim_beh_dir/DOUBLE
+  mkdir $sim_beh_dir
+  mkdir $sim_beh_dir/SINGLE
+ mkdir $sim_beh_dir/DOUBLE
 
 #WE COPY THE CELL LIBRARY FROM THIS ROOT
   cp ibm13rflpvt.v $sim_syn_dir/SINGLE
@@ -37,8 +37,8 @@ do
   cp filelist4sim.sh $sim_beh_dir/SINGLE
   cp filelist4sim.sh $sim_beh_dir/DOUBLE
 
- # cp get_saif.sh $sim_beh_dir/SINGLE
-#  cp get_saif.sh $sim_beh_dir/DOUBLE
+  cp get_saif.sh $sim_beh_dir/SINGLE
+ cp get_saif.sh $sim_beh_dir/DOUBLE
 
   cp get_saif.sh $sim_syn_dir/SINGLE
   cp get_saif.sh $sim_syn_dir/DOUBLE
