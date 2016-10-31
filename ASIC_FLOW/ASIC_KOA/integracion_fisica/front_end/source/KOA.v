@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-27 08:01:08
+//  Last Modified : 2016-10-31 02:55:00
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -40,7 +40,7 @@ module Simple_KOA
     input wire load_b_i,
     input wire [SW-1:0] Data_A_i,
     input wire [SW-1:0] Data_B_i,
-    output reg [2*SW-1:0] sgf_result_o
+    output wire [2*SW-1:0] sgf_result_o
     );
 
     ///////////////////////////////////////////////////////////

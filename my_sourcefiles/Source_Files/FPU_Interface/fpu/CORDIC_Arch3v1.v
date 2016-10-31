@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : CORDIC_Arch3.v
 //  Created On    : 2016-09-28 14:58:46
-//  Last Modified : 2016-10-31 00:16:10
+//  Last Modified : 2016-10-31 02:51:57
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -173,7 +173,7 @@ wire min_tick_var,max_tick_var;                             //  Señales que ind
       .c_output_W (cont_var_out)
     );
 
-    assign max_tick_var = (cont_var_out == 2**2-1) ? 1'b1 : 1'b0;
+    assign max_tick_var = (cont_var_out == ((2**2)-1)) ? 1'b1 : 1'b0;
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------

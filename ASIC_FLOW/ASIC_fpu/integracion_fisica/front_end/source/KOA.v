@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-31 00:46:10
+//  Last Modified : 2016-10-31 11:17:35
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -40,7 +40,7 @@ module Simple_KOA
     input wire load_b_i,
     input wire [SW-1:0] Data_A_i,
     input wire [SW-1:0] Data_B_i,
-    output reg [2*SW-1:0] sgf_result_o
+    output wire [2*SW-1:0] sgf_result_o
     );
 
     ///////////////////////////////////////////////////////////
@@ -72,11 +72,11 @@ generate
     //assign i = Stop_I;
     if (SW <= 7) begin : GENSTOP
 
-            mult #(.SW(SW)) 
+            mult2 #(.SW(SW)) 
             inst_mult (
-                .Data_A_i(Data_A_i), 
-                .Data_B_i(Data_B_i),
-                .sgf_result_o(sgf_result_o)
+                .DatA(Data_A_i), 
+                .DatB(Data_B_i),
+                .DatO(sgf_result_o)
                  );
 
     end else begin  : RECURSIVE
@@ -86,31 +86,32 @@ generate
 
             reg [SW/2:0] result_A_adder;
             reg [SW/2:0] result_B_adder;
-            reg [SW-1:0] Q_left;
-            reg [SW-1:0] Q_right;
-            reg [SW+1:0] Q_middle;
+            wire [SW-1:0] Q_left;
+            wire [SW-1:0] Q_right;
+            wire [SW+1:0] Q_middle;
+
             reg [2*(SW/2+2)-1:0] S_A;
             reg [SW+1:0] S_B; //SW+2
 
-          mult #(.SW(SW/2)) left(
+          mult2 #(.SW(SW/2)) left(
                 .clk(clk),
-                .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
-                .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
-                .Data_S_o(Q_left)
+                .DatA(Data_A_i[SW-1:SW-SW/2]),
+                .DatB(Data_B_i[SW-1:SW-SW/2]),
+                .DatO(Q_left)
             );
             
-          mult #(.SW(SW/2)) right(
+          mult2 #(.SW(SW/2)) right(
                 .clk(clk),
-                .Data_A_i(Data_A_i[SW-SW/2-1:0]),
-                .Data_B_i(Data_B_i[SW-SW/2-1:0]),
-                .Data_S_o(Q_right)
+                .DatA(Data_A_i[SW-SW/2-1:0]),
+                .DatB(Data_B_i[SW-SW/2-1:0]),
+                .DatO(Q_right)
             );
 		
-          mult #(.SW((SW/2)+1)) middle (
+          mult2 #(.SW((SW/2)+1)) middle (
                 .clk(clk),
-                .Data_A_i(result_A_adder),
-                .Data_B_i(result_B_adder),
-                .Data_S_o(Q_middle)
+                .DatA(result_A_adder),
+                .DatB(result_B_adder),
+                .DatO(Q_middle)
             );
 
            always @* begin : EVEN
@@ -138,31 +139,31 @@ generate
 
                 reg [SW/2+1:0] result_A_adder;
                 reg [SW/2+1:0] result_B_adder;
-                reg [2*(SW/2)-1:0]   Q_left;
-                reg [2*(SW/2+1)-1:0] Q_right;
-                reg [2*(SW/2+2)-1:0] Q_middle;
+                wire [2*(SW/2)-1:0]   Q_left;
+                wire [2*(SW/2+1)-1:0] Q_right;
+                wire [2*(SW/2+2)-1:0] Q_middle;
                 reg [2*(SW/2+2)-1:0] S_A;
                 reg [SW+4-1:0] S_B;
 
-          mult #(.SW(SW/2)) left(
+          mult2 #(.SW(SW/2)) left(
                 .clk(clk),
-                .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
-                .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
-                .Data_S_o(Q_left)
+                .DatA(Data_A_i[SW-1:SW-SW/2]),
+                .DatB(Data_B_i[SW-1:SW-SW/2]),
+                .DatO(Q_left)
             );
             
-          mult  #(.SW((SW/2)+1)) right(
+          mult2  #(.SW((SW/2)+1)) right(
                 .clk(clk),
-                .Data_A_i(Data_A_i[SW-SW/2-1:0]),
-                .Data_B_i(Data_B_i[SW-SW/2-1:0]),
-                .Data_S_o(Q_right)
+                .DatA(Data_A_i[SW-SW/2-1:0]),
+                .DatB(Data_B_i[SW-SW/2-1:0]),
+                .DatO(Q_right)
             );
         
-          mult #(.SW(SW/2+2)) middle (
+          mult2 #(.SW(SW/2+2)) middle (
                 .clk(clk),
-                .Data_A_i(result_A_adder),
-                .Data_B_i(result_B_adder),
-                .Data_S_o(Q_middle)
+                .DatA(result_A_adder),
+                .DatB(result_B_adder),
+                .DatO(Q_middle)
             );
 
             always @* begin : ODD

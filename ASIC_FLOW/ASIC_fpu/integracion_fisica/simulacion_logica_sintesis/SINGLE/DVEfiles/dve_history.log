@@ -25,25 +25,23 @@ gui_set_state_value -category Globals -key BackTrace_toolbar -value true
 gui_set_state_value -category Globals -key open_list_inside -value true
 gui_set_state_value -category Globals -key open_wave_inside -value true
 gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -design V1}}
-gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/session.inter.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/KOA_FRANCIS/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_ADD_PIPE_SYN_DOUBLE_v1.tcl -ignore_errors}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_v1_syn_vdc.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_syn_v1_vdc.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/session.inter.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch2/integracion_fisica/simulacion_logica_behavioral/DOUBLE/session.inter.vpd.tcl}}
 gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
 gui_set_state_value -category Layout -key child_console_docknewline -value false
 gui_set_state_value -category Layout -key child_console_dockstate -value undocked
-gui_set_state_value -category Layout -key child_console_pos_x -value {-2}
-gui_set_state_value -category Layout -key child_console_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_console_showstate -value maximized
-gui_set_state_value -category Layout -key child_console_size_x -value 1028
-gui_set_state_value -category Layout -key child_console_size_y -value 563
-gui_set_state_value -category Layout -key child_data_coltype -value 308
-gui_set_state_value -category Layout -key child_data_colvalue -value 241
-gui_set_state_value -category Layout -key child_data_colvariable -value 454
+gui_set_state_value -category Layout -key child_console_size_x -value 680
+gui_set_state_value -category Layout -key child_console_size_y -value 295
+gui_set_state_value -category Layout -key child_data_coltype -value 192
+gui_set_state_value -category Layout -key child_data_colvalue -value 474
+gui_set_state_value -category Layout -key child_data_colvariable -value 338
 gui_set_state_value -category Layout -key child_data_docknewline -value false
 gui_set_state_value -category Layout -key child_data_dockstate -value undocked
 gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_data_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_data_showstate -value maximized
 gui_set_state_value -category Layout -key child_data_size_x -value 1028
-gui_set_state_value -category Layout -key child_data_size_y -value 563
+gui_set_state_value -category Layout -key child_data_size_y -value 587
 gui_set_state_value -category Layout -key child_driver_size_x -value 1363
 gui_set_state_value -category Layout -key child_driver_size_y -value 213
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
@@ -56,7 +54,7 @@ gui_set_state_value -category Layout -key child_hier_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_hier_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_hier_showstate -value maximized
 gui_set_state_value -category Layout -key child_hier_size_x -value 1028
-gui_set_state_value -category Layout -key child_hier_size_y -value 563
+gui_set_state_value -category Layout -key child_hier_size_y -value 587
 gui_set_state_value -category Layout -key child_hier_sort_order -value 1
 gui_set_state_value -category Layout -key child_list_docknewline -value false
 gui_set_state_value -category Layout -key child_list_down -value 296
@@ -74,7 +72,7 @@ gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_source_size_x -value 1028
-gui_set_state_value -category Layout -key child_source_size_y -value 563
+gui_set_state_value -category Layout -key child_source_size_y -value 587
 gui_set_state_value -category Layout -key child_watch_size_x -value 904
 gui_set_state_value -category Layout -key child_watch_size_y -value 177
 gui_set_state_value -category Layout -key child_wave_colname -value 300
@@ -85,7 +83,7 @@ gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_wave_right -value 553
 gui_set_state_value -category Layout -key child_wave_size_x -value 1028
-gui_set_state_value -category Layout -key child_wave_size_y -value 563
+gui_set_state_value -category Layout -key child_wave_size_y -value 587
 gui_set_state_value -category Layout -key main_pos_x -value 2
 gui_set_state_value -category Layout -key main_pos_y -value 51
 gui_set_state_value -category Layout -key main_size_x -value 1025
@@ -129,6 +127,7 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose} -dir .
-gui_list_add -id Wave.1 -from Hier.1 { Testbench_FPU_Mark1 } -insertionbar
+set DIALOGS::LOADFILEDIR [file dirname /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_syn_v1_vdc.tcl]; gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_syn_v1_vdc.tcl
+gui_set_pref_value -category {Source} -key {value_annotate} -value {false}
+gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
 gui_sim_continue  
-gui_save_session -savedb relative -global { Breakpoint Bus Radix Expression TimeShift Compare SignalGroup Highlight Stack }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_syn_v1_vdc.tcl

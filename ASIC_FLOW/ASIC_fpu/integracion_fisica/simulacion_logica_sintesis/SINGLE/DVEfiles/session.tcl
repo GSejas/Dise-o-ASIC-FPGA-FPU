@@ -1,12 +1,12 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Mon Oct 31 00:24:32 2016
+# Saved on Mon Oct 31 11:26:48 2016
 # Designs open: 1
 #   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
-#   Wave.1: 36 signals
 #   Source.1: Testbench_FPU_Mark1
+#   Wave.1: 36 signals
 #   Group count = 1
 #   Group Testbench_FPU_Mark1 signal count = 36
 # End_DVE_Session_Save_Info
@@ -67,7 +67,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{2 51} {1025 742}}
+gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{0 51} {1023 742}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -139,10 +139,10 @@ if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
 }
 
 gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 454} {child_data_colvalue 241} {child_data_coltype 308} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 338} {child_data_colvalue 474} {child_data_coltype 192} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 465} {child_wave_right 553} {child_wave_colname 300} {child_wave_colvalue 160} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 465} {child_wave_right 553} {child_wave_colname 300} {child_wave_colvalue 161} {child_wave_col1 0} {child_wave_col2 1}}
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
 gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
@@ -165,8 +165,8 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 # DVE Open design session: 
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
-gui_set_env SIMSETUP::SIMARGS {{+v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose}}
-gui_set_env SIMSETUP::SIMEXE {simv}
+gui_set_env SIMSETUP::SIMARGS {{ +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose -ucligui}}
+gui_set_env SIMSETUP::SIMEXE {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
 if { ![gui_is_db_opened -db {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv}] } {
 gui_sim_run Ucli -exe simv -args { +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose -ucligui} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE -nosource
@@ -201,20 +201,14 @@ set Testbench_FPU_Mark1 "$_session_group_1"
 gui_sg_addsignal -group "$_session_group_1" { Testbench_FPU_Mark1.EW Testbench_FPU_Mark1.Data_1 Testbench_FPU_Mark1.Data_2 Testbench_FPU_Mark1.contador Testbench_FPU_Mark1.FPSEN Testbench_FPU_Mark1.Array_IN_1 Testbench_FPU_Mark1.II Testbench_FPU_Mark1.Array_IN_2 Testbench_FPU_Mark1.FPSUB Testbench_FPU_Mark1.SW Testbench_FPU_Mark1.begin_operation Testbench_FPU_Mark1.underflow_flag Testbench_FPU_Mark1.FileSaveData Testbench_FPU_Mark1.ack_operation Testbench_FPU_Mark1.SWR Testbench_FPU_Mark1.operation_ready Testbench_FPU_Mark1.PERIOD Testbench_FPU_Mark1.region_flag Testbench_FPU_Mark1.op_result Testbench_FPU_Mark1.EWR Testbench_FPU_Mark1.NaN_flag Testbench_FPU_Mark1.ROUNDING_MODE_POS_INF Testbench_FPU_Mark1.W Testbench_FPU_Mark1.operation Testbench_FPU_Mark1.III Testbench_FPU_Mark1.FPMULT Testbench_FPU_Mark1.clk Testbench_FPU_Mark1.r_mode Testbench_FPU_Mark1.overflow_flag Testbench_FPU_Mark1.IoIV1 Testbench_FPU_Mark1.IoIV2 Testbench_FPU_Mark1.FPCOS Testbench_FPU_Mark1.FPADD Testbench_FPU_Mark1.ROUNDING_MODE_TRUNCT Testbench_FPU_Mark1.rst Testbench_FPU_Mark1.ROUNDING_MODE_NEG_INF }
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.EW}
 gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.EW}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.contador}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.contador}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPSEN}
 gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPSEN}
-gui_set_radix -radix enum -signals {Sim:Testbench_FPU_Mark1.Array_IN_1}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.II}
 gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.II}
-gui_set_radix -radix enum -signals {Sim:Testbench_FPU_Mark1.Array_IN_2}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPSUB}
 gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPSUB}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.SW}
 gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.SW}
-gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FileSaveData}
-gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.FileSaveData}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.SWR}
 gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.SWR}
 gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.PERIOD}
@@ -250,7 +244,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 1139450000
+gui_set_time -C1_only 48705460000
 
 
 
@@ -297,9 +291,8 @@ gui_list_set_height -id Wave -height 17
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 668215156 1429237972
+gui_wv_zoom_timerange -id ${Wave.1} 48705459911 48705460088
 gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Mark1}
-gui_list_select -id ${Wave.1} {Testbench_FPU_Mark1.Array_IN_2 }
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -317,8 +310,8 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_FPU_Mark1  -position in
 
-gui_marker_move -id ${Wave.1} {C1} 1139450000
-gui_view_scroll -id ${Wave.1} -vertical -set 195
+gui_marker_move -id ${Wave.1} {C1} 48705460000
+gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 
 # Source 'Source.1'
@@ -327,13 +320,13 @@ gui_set_env TOGGLE::VALUEANNOTATE 0
 gui_open_source -id ${Source.1}  -replace -active Testbench_FPU_Mark1 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/Testbench_FPUv1_Interface.v
 gui_src_value_annotate -id ${Source.1} -switch true
 gui_set_env TOGGLE::VALUEANNOTATE 1
-gui_view_scroll -id ${Source.1} -vertical -set 2895
+gui_view_scroll -id ${Source.1} -vertical -set 510
 gui_src_set_reusable -id ${Source.1}
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
-	gui_set_active_window -window ${DLPane.1}
+	gui_set_active_window -window ${Wave.1}
 }
 #</Session>
 

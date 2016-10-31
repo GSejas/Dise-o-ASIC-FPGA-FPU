@@ -1,95 +1,467 @@
-01:26:30    105 --> ...                      [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose -pid 4405 -toolin /tmp/vcs_20161031072627_4404_jsequeira..stdin -toolout /tmp/vcs_20161031072627_4404_jsequeira..stdout  
-01:26:30    106 --> ...                          [tcl] set ucliGUI::state
-01:26:30    107 --> ...                              [tcl] set dveMisc::dve_log_file 1
-01:26:30    108 --> ...                                  [tcl] gui_update_simulator_buttons
-01:26:32    109 --> ...                                      [tcl] set ucliGUI::state
-01:26:32    110 --> ...                                          [tcl] ucliCore::getToolPID
-01:26:32    111 --> ...                                              [tcl] synopsys::env hasTB
-01:26:32    112 --> ...                                                  [tcl] trigger_hier_stack_context_switch 0
-01:26:32    113 --> ...                                                      [tcl] synUtils::setDVEInitPhase 1
-01:26:32    114 --> ...                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
-01:26:32    115 --> ...                                                              [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd -locking
-01:26:32    116 --> ...                                                                  [tcl] synopsys::dump -autoflush on -fid VPD0
-01:26:32    117 --> ...                                                                      [tcl] set ::dve_fid VPD0
-01:26:32    118 --> ...                                                                          [tcl] synUtils::setDVEInitPhase 0
-01:26:32    119 --> ...                                                                              [tcl] ucliCore::getToolPID
-01:26:32    120 --> ...                                                                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp0RKiNY
-01:26:32    121 --> ...                                                                                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.4405}
-01:26:32    122 --> ...                                                                                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.4405}
-01:26:32    123 --> ...                                                                                              [tcl] dveMisc::vbusExpand Testbench_FPU_Mark1
-01:26:32    124 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} overflow_flag underflow_flag operation_ready NaN_flag }
-01:26:32    125 --> ...  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[63:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD FPSUB }
-01:26:32    126 --> ...      [tcl] config endofsim noexit
-01:26:32    127 --> ...          [tcl] config onfail enable all
-01:26:32    128 --> ...              [tcl] config syscaddplainmembers
-01:26:32    129 --> ...                  [tcl] config syscaddsourcenames
-01:26:32    130 --> ...                      [tcl] config syscaddstructtypes
-01:26:32    131 --> ...                          [tcl] synopsys::listing -disable
-01:26:35    132 --> ...                              [tcl] synopsys::dump -add {Testbench_FPU_Mark1} -scope "." -depth 1 -fid VPD0
-01:26:35    133 --> ...                                  [tcl] synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_1 Testbench_FPU_Mark1.Array_IN_2 } -aggregates  -fid VPD0
-01:26:40    134 --> ...                                      [tcl] synopsys::run
-01:26:40    135 --> ...                                          [tcl] set ucliGUI::state
-01:26:40    136 --> ...                                              [tcl] set ucliGUI::state
-01:26:40    137 --> ...                                                  [tcl] gui_update_simulator_buttons
-01:26:43    138 --> ...                                                      [tcl] set synopsys::env(time) 17135095000
-01:26:46    139 --> ...                                                          [tcl] set synopsys::env(time) 35698770000
-01:26:49    140 --> ...                                                              [tcl] set synopsys::env(time) 54056465022
-01:26:52    141 --> ...                                                                  [tcl] set synopsys::env(time) 72541110063
-01:26:55    142 --> ...                                                                      [tcl] set synopsys::env(time) 91143450063
-01:26:58    143 --> ...                                                                          [tcl] set synopsys::env(time) 109489215000
-01:27:01    144 --> ...                                                                              [tcl] set synopsys::env(time) 128143625063
-01:27:04    145 --> ...                                                                                  [tcl] set synopsys::env(time) 146824830063
-01:27:07    146 --> ...                                                                                      [tcl] set synopsys::env(time) 165403585022
-01:27:10    147 --> ...                                                                                          [tcl] set synopsys::env(time) 183562135000
-01:27:13    148 --> ...                                                                                              [tcl] set synopsys::env(time) 202178155000
-01:27:16    149 --> ...                                                                                                  [tcl] set synopsys::env(time) 220118270022
-01:27:19    150 --> ...  [tcl] set synopsys::env(time) 238752940063
-01:27:22    151 --> ...      [tcl] set synopsys::env(time) 257360425000
-01:27:25    152 --> ...          [tcl] set synopsys::env(time) 275744630022
-01:27:28    153 --> ...              [tcl] set synopsys::env(time) 293305470000
-01:27:31    154 --> ...                  [tcl] set synopsys::env(time) 311660655000
-01:27:34    155 --> ...                      [tcl] set synopsys::env(time) 330104875000
-01:27:37    156 --> ...                          [tcl] set synopsys::env(time) 348453070000
-01:27:40    157 --> ...                              [tcl] set synopsys::env(time) 365674525063
-01:27:43    158 --> ...                                  [tcl] set synopsys::env(time) 383772610000
-01:27:46    159 --> ...                                      [tcl] set synopsys::env(time) 402467145063
-01:27:49    160 --> ...                                          [tcl] set synopsys::env(time) 420994025000
-01:27:52    161 --> ...                                              [tcl] set synopsys::env(time) 439669725000
-01:27:55    162 --> ...                                                  [tcl] set synopsys::env(time) 458340840000
-01:27:58    163 --> ...                                                      [tcl] set synopsys::env(time) 477008505063
-01:28:01    164 --> ...                                                          [tcl] set synopsys::env(time) 495662620000
-01:28:04    165 --> ...                                                              [tcl] set synopsys::env(time) 514091110000
-01:28:07    166 --> ...                                                                  [tcl] set synopsys::env(time) 532106920063
-01:28:10    167 --> ...                                                                      [tcl] set synopsys::env(time) 550357645000
-01:28:13    168 --> ...                                                                          [tcl] set synopsys::env(time) 568519475000
-01:28:16    169 --> ...                                                                              [tcl] set synopsys::env(time) 587102885000
-01:28:19    170 --> ...                                                                                  [tcl] set synopsys::env(time) 605655410000
-01:28:22    171 --> ...                                                                                      [tcl] set synopsys::env(time) 624356985022
-01:28:25    172 --> ...                                                                                          [tcl] set synopsys::env(time) 643084510063
-01:28:28    173 --> ...                                                                                              [tcl] set synopsys::env(time) 661155370022
-01:28:31    174 --> ...                                                                                                  [tcl] set synopsys::env(time) 679846645000
-01:28:34    175 --> ...  [tcl] set synopsys::env(time) 698397710000
-01:28:37    176 --> ...      [tcl] set synopsys::env(time) 716983650000
-01:28:40    177 --> ...          [tcl] set synopsys::env(time) 735598975022
-01:28:43    178 --> ...              [tcl] set synopsys::env(time) 754347875000
-01:28:46    179 --> ...                  [tcl] set synopsys::env(time) 773007585063
-01:28:49    180 --> ...                      [tcl] set synopsys::env(time) 791669295063
-01:28:52    181 --> ...                          [tcl] set synopsys::env(time) 809029745063
-01:28:55    182 --> ...                              [tcl] set synopsys::env(time) 826821835000
-01:28:58    183 --> ...                                  [tcl] set synopsys::env(time) 845459570000
-01:29:01    184 --> ...                                      [tcl] set synopsys::env(time) 864231460000
-01:29:04    185 --> ...                                          [tcl] set synopsys::env(time) 883038770000
-01:29:07    186 --> ...                                              [tcl] set synopsys::env(time) 901534630000
-01:29:10    187 --> ...                                                  [tcl] set synopsys::env(time) 918552710063
-01:29:13    188 --> ...                                                      [tcl] set synopsys::env(time) 937205470000
-01:29:16    189 --> ...                                                          [tcl] set synopsys::env(time) 955233470000
-01:29:19    190 --> ...                                                              [tcl] set synopsys::env(time) 973859565000
-01:29:22    191 --> ...                                                                  [tcl] set synopsys::env(time) 992548800000
-01:29:25    192 --> ...                                                                      [tcl] set synopsys::env(time) 1011259435000
-01:29:28    193 --> ...                                                                          [tcl] set synopsys::env(time) 1029528850000
-01:29:31    194 --> ...                                                                              [tcl] set synopsys::env(time) 1048140215063
-01:29:34    195 --> ...                                                                                  [tcl] set synopsys::env(time) 1066785855063
-01:29:37    196 --> ...                                                                                      [tcl] set synopsys::env(time) 1085445880022
-01:29:40    197 --> ...                                                                                          [tcl] set synopsys::env(time) 1104108025000
-01:29:43    198 --> ...                                                                                              [tcl] set synopsys::env(time) 1122090305022
-01:29:46    199 --> ...                                                                                                  [tcl] set synopsys::env(time) 1140669725000
+01:47:07    268 --> ...                                                                          [tcl] ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/simv  +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose -ucligui
+01:47:07    269 --> ...                                                                              [tcl] set ucliGUI::state
+01:47:07    270 --> ...                                                                                  [tcl] gui_update_simulator_buttons
+01:47:09    271 --> ...                                                                                      [tcl] set ucliGUI::state
+01:47:09    272 --> ...                                                                                          [tcl] ucliCore::getToolPID
+01:47:09    273 --> ...                                                                                              [tcl] synopsys::env hasTB
+01:47:09    274 --> ...                                                                                                  [tcl] trigger_hier_stack_context_switch 0
+01:47:09    275 --> ...  [tcl] synUtils::setDVEInitPhase 1
+01:47:09    276 --> ...      [tcl] gui_get_env SIMSETUP::SIMVPD
+01:47:09    277 --> ...          [tcl] synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd -locking
+01:47:09    278 --> ...              [tcl] synopsys::dump -autoflush on -fid VPD1
+01:47:09    279 --> ...                  [tcl] set ::dve_fid VPD1
+01:47:09    280 --> ...                      [tcl] synUtils::setDVEInitPhase 0
+01:47:09    281 --> ...                          [tcl] ucliCore::getToolPID
+01:47:09    282 --> ...                              [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp2qx9pU
+01:47:09    283 --> ...                                  [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.32755}
+01:47:09    284 --> ...                                      [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.32755}
+01:47:09    285 --> ...                                          [tcl] config endofsim noexit
+01:47:09    286 --> ...                                              [tcl] config onfail enable all
+01:47:09    287 --> ...                                                  [tcl] config syscaddplainmembers
+01:47:09    288 --> ...                                                      [tcl] config syscaddsourcenames
+01:47:09    289 --> ...                                                          [tcl] config syscaddstructtypes
+01:47:09    290 --> ...                                                              [tcl] synopsys::listing -disable
+01:47:09    291 --> ...                                                                  [tcl] if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+01:47:09    292 --> ...                                                                      [tcl] gui_set_precision 1ps
+01:47:09    293 --> ...                                                                          [tcl] gui_set_time_units 1ps
+01:47:09    294 --> ...                                                                              [tcl] #</Database>
+01:47:09    295 --> ...                                                                                  [tcl] # DVE Global setting session:
+01:47:09    296 --> ...                                                                                      [tcl] # Global: Breakpoints
+01:47:09    297 --> ...                                                                                          [tcl] # Global: Bus
+01:47:09    298 --> ...                                                                                              [tcl] # Global: Expressions
+01:47:09    299 --> ...                                                                                                  [tcl] # Global: Signal Time Shift
+01:47:09    300 --> ...  [tcl] # Global: Signal Compare
+01:47:09    301 --> ...      [tcl] # Global: Signal Groups
+01:47:09    302 --> ...          [tcl] gui_load_child_values {Testbench_FPU_Mark1}
+01:47:09    303 --> ...              [tcl] synopsys::dump -add {Testbench_FPU_Mark1} -scope "." -depth 1 -fid VPD1
+01:47:09    304 --> ...                  [tcl] set _session_group_1 Testbench_FPU_Mark1
+01:47:09    305 --> ...                      [tcl] gui_sg_create "$_session_group_1"
+01:47:09    306 --> ...                          [tcl] set Testbench_FPU_Mark1 "$_session_group_1"
+01:47:09    307 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_1" { Testbench_FPU_Mark1.EW Testbench_FPU_Mark1.Data_1 Testbench_FPU_Mark1.Data_2 Testbench_FPU_Mark1.contador Testbench_FPU_Mark1.FPSEN Testbench_FPU_Mark1.Array_IN_1 Testbench_FPU_Mark1.II Testbench_FPU_Mark1.Array_IN_2 Testbench_FPU_Mark1.FPSUB Testbench_FPU_Mark1.SW Testbench_FPU_Mark1.begin_operation Testbench_FPU_Mark1.underflow_flag Testbench_FPU_Mark1.FileSaveData Testbench_FPU_Mark1.ack_operation Testbench_FPU_Mark1.SWR Testbench_FPU_Mark1.operation_ready Testbench_FPU_Mark1.PERIOD Testbench_FPU_Mark1.region_flag Testbench_FPU_Mark1.op_result Testbench_FPU_Mark1.EWR Testbench_FPU_Mark1.NaN_flag Testbench_FPU_Mark1.ROUNDING_MODE_POS_INF Testbench_FPU_Mark1.W Testbench_FPU_Mark1.operation Testbench_FPU_Mark1.III Testbench_FPU_Mark1.FPMULT Testbench_FPU_Mark1.clk Testbench_FPU_Mark1.r_mode Testbench_FPU_Mark1.overflow_flag Testbench_FPU_Mark1.IoIV1 Testbench_FPU_Mark1.IoIV2 Testbench_FPU_Mark1.FPCOS Testbench_FPU_Mark1.FPADD Testbench_FPU_Mark1.ROUNDING_MODE_TRUNCT Testbench_FPU_Mark1.rst Testbench_FPU_Mark1.ROUNDING_MODE_NEG_INF }
+01:47:09    308 --> ...                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.EW}
+01:47:09    309 --> ...                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.EW}
+01:47:09    310 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.contador}
+01:47:09    311 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.contador}
+01:47:09    312 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPSEN}
+01:47:09    313 --> ...                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPSEN}
+01:47:09    314 --> ...                                                          [tcl] gui_set_radix -radix enum -signals {Sim:Testbench_FPU_Mark1.Array_IN_1}
+01:47:09    315 --> ...                                                              [tcl] synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_1} -aggregates  -fid VPD1
+01:47:09    316 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.II}
+01:47:09    317 --> ...                                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.II}
+01:47:09    318 --> ...                                                                          [tcl] gui_set_radix -radix enum -signals {Sim:Testbench_FPU_Mark1.Array_IN_2}
+01:47:09    319 --> ...                                                                              [tcl] synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_2} -aggregates  -fid VPD1
+01:47:09    320 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPSUB}
+01:47:09    321 --> ...                                                                                      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPSUB}
+01:47:09    322 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.SW}
+01:47:09    323 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.SW}
+01:47:09    324 --> ...                                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FileSaveData}
+01:47:09    325 --> ...  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.FileSaveData}
+01:47:09    326 --> ...      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.SWR}
+01:47:09    327 --> ...          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.SWR}
+01:47:09    328 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.PERIOD}
+01:47:09    329 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.PERIOD}
+01:47:09    330 --> ...                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.EWR}
+01:47:09    331 --> ...                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.EWR}
+01:47:09    332 --> ...                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.ROUNDING_MODE_POS_INF}
+01:47:09    333 --> ...                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.ROUNDING_MODE_POS_INF}
+01:47:09    334 --> ...                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.W}
+01:47:09    335 --> ...                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:Testbench_FPU_Mark1.W}
+01:47:09    336 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.III}
+01:47:09    337 --> ...                                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.III}
+01:47:09    338 --> ...                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPMULT}
+01:47:09    339 --> ...                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPMULT}
+01:47:09    340 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.IoIV1}
+01:47:09    341 --> ...                                                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.IoIV1}
+01:47:09    342 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.IoIV2}
+01:47:09    343 --> ...                                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.IoIV2}
+01:47:09    344 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPCOS}
+01:47:09    345 --> ...                                                                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPCOS}
+01:47:09    346 --> ...                                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.FPADD}
+01:47:09    347 --> ...                                                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.FPADD}
+01:47:09    348 --> ...                                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.ROUNDING_MODE_TRUNCT}
+01:47:09    349 --> ...                                                                                                  [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.ROUNDING_MODE_TRUNCT}
+01:47:09    350 --> ...  [tcl] gui_set_radix -radix {decimal} -signals {Sim:Testbench_FPU_Mark1.ROUNDING_MODE_NEG_INF}
+01:47:09    351 --> ...      [tcl] gui_set_radix -radix {unsigned} -signals {Sim:Testbench_FPU_Mark1.ROUNDING_MODE_NEG_INF}
+01:47:09    352 --> ...          [tcl] # Global: Highlighting
+01:47:09    353 --> ...              [tcl] # Global: Stack
+01:47:09    354 --> ...                  [tcl] gui_change_stack_mode -mode list
+01:47:09    355 --> ...                      [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+01:47:09    356 --> ...                          [tcl] # Post database loading setting...
+01:47:09    357 --> ...                              [tcl] # Restore C1 time
+01:47:09    358 --> ...                                  [tcl] gui_set_time -C1_only 0
+01:47:09    359 --> ...                                      [tcl] # Save global setting...
+01:47:09    360 --> ...                                          [tcl] # Wave/List view global setting
+01:47:09    361 --> ...                                              [tcl] gui_cov_show_value -switch false
+01:47:09    362 --> ...                                                  [tcl] # Close all empty TopLevel windows
+01:47:09    363 --> ...                                                      [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+01:47:09    364 --> ...                                                          [tcl] gui_set_loading_session_type noSession
+01:47:09    365 --> ...                                                              [tcl] # DVE View/pane content session:
+01:47:09    366 --> ...                                                                  [tcl] # Hier 'Hier.1'
+01:47:09    367 --> ...                                                                      [tcl] gui_show_window -window ${Hier.1}
+01:47:09    368 --> ...                                                                          [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+01:47:09    369 --> ...                                                                              [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+01:47:09    370 --> ...                                                                                  [tcl] gui_hier_list_init -id ${Hier.1}
+01:47:09    371 --> ...                                                                                      [tcl] gui_change_design -id ${Hier.1} -design Sim
+01:47:09    372 --> ...                                                                                          [tcl] catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Mark1}}
+01:47:09    373 --> ...                                                                                              [tcl] dveMisc::vbusExpand Testbench_FPU_Mark1
+01:47:09    374 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {hexadecimal decimal symbolic hexadecimal hexadecimal decimal hexadecimal decimal binary decimal decimal binary symbolic binary decimal binary decimal hexadecimal hexadecimal decimal binary decimal decimal hexadecimal binary decimal decimal } -list {{Data_1[63:0]} EW {contador[31:0]} {Data_2[63:0]} Array_IN_1 FPSEN Array_IN_2 II begin_operation SW FPSUB underflow_flag {FileSaveData[31:0]} ack_operation SWR operation_ready PERIOD {op_result[63:0]} {region_flag[1:0]} EWR NaN_flag ROUNDING_MODE_POS_INF W {operation[2:0]} clk FPMULT III }
+01:47:09    375 --> ...  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+01:47:09    376 --> ...      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+01:47:09    377 --> ...          [tcl] # Data 'Data.1'
+01:47:09    378 --> ...              [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+01:47:09    379 --> ...                  [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+01:47:09    380 --> ...                      [tcl] gui_list_show_data -id ${Data.1} {Testbench_FPU_Mark1}
+01:47:09    381 --> ...                          [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+01:47:09    382 --> ...                              [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+01:47:09    383 --> ...                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+01:47:09    384 --> ...                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+01:47:09    385 --> ...                                          [tcl] # View 'Wave.1'
+01:47:09    386 --> ...                                              [tcl] gui_wv_sync -id ${Wave.1} -switch false
+01:47:09    387 --> ...                                                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+01:47:09    388 --> ...                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+01:47:09    389 --> ...                                                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+01:47:09    390 --> ...                                                              [tcl] gui_list_set_height -id Wave -height 17
+01:47:09    391 --> ...                                                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+01:47:09    392 --> ...                                                                      [tcl] gui_list_create_group_when_add -wave -disable
+01:47:09    393 --> ...                                                                          [tcl] gui_marker_set_ref -id ${Wave.1}  C1
+01:47:09    394 --> ...                                                                              [tcl] gui_wv_zoom_timerange -id ${Wave.1} 0 176
+01:47:09    395 --> ...                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Testbench_FPU_Mark1}
+01:47:09    396 --> ...                                                                                      [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+01:47:09    397 --> ...                                                                                          [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+01:47:09    398 --> ...                                                                                              [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+01:47:09    399 --> ...                                                                                                  [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+01:47:09    400 --> ...  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+01:47:09    401 --> ...      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+01:47:09    402 --> ...          [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+01:47:09    403 --> ...              [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+01:47:09    404 --> ...                  [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group Testbench_FPU_Mark1  -position in
+01:47:09    405 --> ...                      [tcl] gui_marker_move -id ${Wave.1} {C1} 0
+01:47:09    406 --> ...                          [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
+01:47:09    407 --> ...                              [tcl] gui_show_grid -id ${Wave.1} -enable false
+01:47:09    408 --> ...                                  [tcl] # Source 'Source.1'
+01:47:09    409 --> ...                                      [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+01:47:09    410 --> ...                                          [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+01:47:09    411 --> ...                                              [tcl] gui_open_source -id ${Source.1}  -replace -active Testbench_FPU_Mark1 Testbench_FPUv1_Interface.v
+01:47:09    412 --> ...                                                  [tcl] gui_src_value_annotate -id ${Source.1} -switch true
+01:47:09    413 --> ...                                                      [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {binary hexadecimal binary decimal decimal decimal decimal } -list {rst {r_mode[1:0]} overflow_flag FPADD FPCOS IoIV1 IoIV2 }
+01:47:09    414 --> ...                                                          [tcl] gui_set_env TOGGLE::VALUEANNOTATE 1
+01:47:09    415 --> ...                                                              [tcl] gui_view_scroll -id ${Source.1} -vertical -set 255
+01:47:09    416 --> ...                                                                  [tcl] gui_src_set_reusable -id ${Source.1}
+01:47:09    417 --> ...                                                                      [tcl] # Restore toplevel window zorder
+01:47:09    418 --> ...                                                                          [tcl] # The toplevel window could be closed if it has no view/pane
+01:47:09    419 --> ...                                                                              [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${DLPane.1} }
+01:47:09    420 --> ...                                                                                  [tcl] #</Session>
+01:47:11    421 --> ...                                                                                      [tcl] synopsys::run
+01:47:11    422 --> ...                                                                                          [tcl] set ucliGUI::state
+01:47:11    423 --> ...                                                                                              [tcl] set ucliGUI::state
+01:47:11    424 --> ...                                                                                                  [tcl] gui_update_simulator_buttons
+01:47:14    425 --> ...  [tcl] set synopsys::env(time) 172380000
+01:47:17    426 --> ...      [tcl] set synopsys::env(time) 345068423
+01:47:20    427 --> ...          [tcl] set synopsys::env(time) 516465000
+01:47:23    428 --> ...              [tcl] set synopsys::env(time) 692805000
+01:47:26    429 --> ...                  [tcl] set synopsys::env(time) 871157232
+01:47:29    430 --> ...                      [tcl] set synopsys::env(time) 924781311
+01:47:32    431 --> ...                          [tcl] set synopsys::env(time) 948135000
+01:47:35    432 --> ...                              [tcl] set synopsys::env(time) 970434398
+01:47:38    433 --> ...                                  [tcl] set synopsys::env(time) 992543056
+01:47:41    434 --> ...                                      [tcl] set synopsys::env(time) 1013773773
+01:47:44    435 --> ...                                          [tcl] set synopsys::env(time) 1036117263
+01:47:47    436 --> ...                                              [tcl] set synopsys::env(time) 1060502027
+01:47:50    437 --> ...                                                  [tcl] set synopsys::env(time) 1082268323
+01:47:53    438 --> ...                                                      [tcl] set synopsys::env(time) 1104994263
+01:47:56    439 --> ...                                                          [tcl] set synopsys::env(time) 1127107010
+01:47:59    440 --> ...                                                              [tcl] set synopsys::env(time) 1150510788
+01:48:02    441 --> ...                                                                  [tcl] set synopsys::env(time) 1174447651
+01:48:05    442 --> ...                                                                      [tcl] set synopsys::env(time) 1198595000
+01:48:08    443 --> ...                                                                          [tcl] set synopsys::env(time) 1223522812
+01:48:11    444 --> ...                                                                              [tcl] set synopsys::env(time) 1247604821
+01:48:14    445 --> ...                                                                                  [tcl] set synopsys::env(time) 1312886492
+01:48:17    446 --> ...                                                                                      [tcl] set synopsys::env(time) 1482978594
+01:48:20    447 --> ...                                                                                          [tcl] set synopsys::env(time) 1656612227
+01:48:23    448 --> ...                                                                                              [tcl] set synopsys::env(time) 1832696571
+01:48:26    449 --> ...                                                                                                  [tcl] set synopsys::env(time) 2004659044
+01:48:29    450 --> ...  [tcl] set synopsys::env(time) 2176286910
+01:48:32    451 --> ...      [tcl] set synopsys::env(time) 2351176965
+01:48:35    452 --> ...          [tcl] set synopsys::env(time) 2522688282
+01:48:38    453 --> ...              [tcl] set synopsys::env(time) 2696639571
+01:48:41    454 --> ...                  [tcl] set synopsys::env(time) 2868870355
+01:48:44    455 --> ...                      [tcl] set synopsys::env(time) 3042201361
+01:48:47    456 --> ...                          [tcl] set synopsys::env(time) 3213029018
+01:48:50    457 --> ...                              [tcl] set synopsys::env(time) 3383827142
+01:48:53    458 --> ...                                  [tcl] set synopsys::env(time) 3557351052
+01:48:56    459 --> ...                                      [tcl] set synopsys::env(time) 3733998362
+01:48:59    460 --> ...                                          [tcl] set synopsys::env(time) 3904449538
+01:49:02    461 --> ...                                              [tcl] set synopsys::env(time) 4078960401
+01:49:05    462 --> ...                                                  [tcl] set synopsys::env(time) 4245119747
+01:49:08    463 --> ...                                                      [tcl] set synopsys::env(time) 4422409116
+01:49:11    464 --> ...                                                          [tcl] set synopsys::env(time) 4594566086
+01:49:14    465 --> ...                                                              [tcl] set synopsys::env(time) 4770885000
+01:49:17    466 --> ...                                                                  [tcl] set synopsys::env(time) 4943599400
+01:49:20    467 --> ...                                                                      [tcl] set synopsys::env(time) 5115809486
+01:49:23    468 --> ...                                                                          [tcl] set synopsys::env(time) 5289910552
+01:49:26    469 --> ...                                                                              [tcl] set synopsys::env(time) 5465645063
+01:49:29    470 --> ...                                                                                  [tcl] set synopsys::env(time) 5639901361
+01:49:32    471 --> ...                                                                                      [tcl] set synopsys::env(time) 5811901414
+01:49:35    472 --> ...                                                                                          [tcl] set synopsys::env(time) 5982716067
+01:49:38    473 --> ...                                                                                              [tcl] set synopsys::env(time) 6159978630
+01:49:41    474 --> ...                                                                                                  [tcl] set synopsys::env(time) 6332701521
+01:49:44    475 --> ...  [tcl] set synopsys::env(time) 6509841564
+01:49:47    476 --> ...      [tcl] set synopsys::env(time) 6681778537
+01:49:50    477 --> ...          [tcl] set synopsys::env(time) 6857100113
+01:49:53    478 --> ...              [tcl] set synopsys::env(time) 7027177325
+01:49:56    479 --> ...                  [tcl] set synopsys::env(time) 7200779317
+01:49:59    480 --> ...                      [tcl] set synopsys::env(time) 7373700709
+01:50:02    481 --> ...                          [tcl] set synopsys::env(time) 7548460846
+01:50:05    482 --> ...                              [tcl] set synopsys::env(time) 7723729399
+01:50:08    483 --> ...                                  [tcl] set synopsys::env(time) 7893819175
+01:50:11    484 --> ...                                      [tcl] set synopsys::env(time) 8069346791
+01:50:14    485 --> ...                                          [tcl] set synopsys::env(time) 8245386261
+01:50:17    486 --> ...                                              [tcl] set synopsys::env(time) 8416340588
+01:50:20    487 --> ...                                                  [tcl] set synopsys::env(time) 8593157694
+01:50:23    488 --> ...                                                      [tcl] set synopsys::env(time) 8764741129
+01:50:26    489 --> ...                                                          [tcl] set synopsys::env(time) 8935514499
+01:50:29    490 --> ...                                                              [tcl] set synopsys::env(time) 9105935000
+01:50:32    491 --> ...                                                                  [tcl] set synopsys::env(time) 9279149751
+01:50:35    492 --> ...                                                                      [tcl] set synopsys::env(time) 9459270725
+01:50:38    493 --> ...                                                                          [tcl] set synopsys::env(time) 9632870245
+01:50:41    494 --> ...                                                                              [tcl] set synopsys::env(time) 9815648233
+01:50:44    495 --> ...                                                                                  [tcl] set synopsys::env(time) 9990519857
+01:50:47    496 --> ...                                                                                      [tcl] set synopsys::env(time) 10162387447
+01:50:50    497 --> ...                                                                                          [tcl] set synopsys::env(time) 10344900778
+01:50:53    498 --> ...                                                                                              [tcl] set synopsys::env(time) 10522769664
+01:50:56    499 --> ...                                                                                                  [tcl] set synopsys::env(time) 10694622490
+01:50:59    500 --> ...  [tcl] set synopsys::env(time) 10876707645
+01:51:02    501 --> ...      [tcl] set synopsys::env(time) 11050661031
+01:51:05    502 --> ...          [tcl] set synopsys::env(time) 11232087824
+01:51:08    503 --> ...              [tcl] set synopsys::env(time) 11415837736
+01:51:11    504 --> ...                  [tcl] set synopsys::env(time) 11592172563
+01:51:14    505 --> ...                      [tcl] set synopsys::env(time) 11768739393
+01:51:17    506 --> ...                          [tcl] set synopsys::env(time) 11944929281
+01:51:20    507 --> ...                              [tcl] set synopsys::env(time) 12122678623
+01:51:23    508 --> ...                                  [tcl] set synopsys::env(time) 12294720381
+01:51:26    509 --> ...                                      [tcl] set synopsys::env(time) 12474699513
+01:51:29    510 --> ...                                          [tcl] set synopsys::env(time) 12654818165
+01:51:32    511 --> ...                                              [tcl] set synopsys::env(time) 12836236533
+01:51:35    512 --> ...                                                  [tcl] set synopsys::env(time) 13017025000
+01:51:38    513 --> ...                                                      [tcl] set synopsys::env(time) 13191570473
+01:51:41    514 --> ...                                                          [tcl] set synopsys::env(time) 13373125000
+01:51:44    515 --> ...                                                              [tcl] set synopsys::env(time) 13554176200
+01:51:47    516 --> ...                                                                  [tcl] set synopsys::env(time) 13735767598
+01:51:50    517 --> ...                                                                      [tcl] set synopsys::env(time) 13912589994
+01:51:53    518 --> ...                                                                          [tcl] set synopsys::env(time) 14093285000
+01:51:56    519 --> ...                                                                              [tcl] set synopsys::env(time) 14273086034
+01:51:59    520 --> ...                                                                                  [tcl] set synopsys::env(time) 14455228709
+01:52:02    521 --> ...                                                                                      [tcl] set synopsys::env(time) 14636621797
+01:52:05    522 --> ...                                                                                          [tcl] set synopsys::env(time) 14819807992
+01:52:08    523 --> ...                                                                                              [tcl] set synopsys::env(time) 14994911754
+01:52:11    524 --> ...                                                                                                  [tcl] set synopsys::env(time) 15172839772
+01:52:14    525 --> ...  [tcl] set synopsys::env(time) 15353977442
+01:52:17    526 --> ...      [tcl] set synopsys::env(time) 15533387450
+01:52:20    527 --> ...          [tcl] set synopsys::env(time) 15713421303
+01:52:23    528 --> ...              [tcl] set synopsys::env(time) 15886716072
+01:52:26    529 --> ...                  [tcl] set synopsys::env(time) 16067880666
+01:52:29    530 --> ...                      [tcl] set synopsys::env(time) 16247208127
+01:52:32    531 --> ...                          [tcl] set synopsys::env(time) 16428837511
+01:52:35    532 --> ...                              [tcl] set synopsys::env(time) 16604476636
+01:52:38    533 --> ...                                  [tcl] set synopsys::env(time) 16787096049
+01:52:41    534 --> ...                                      [tcl] set synopsys::env(time) 16963578423
+01:52:44    535 --> ...                                          [tcl] set synopsys::env(time) 17141718549
+01:52:47    536 --> ...                                              [tcl] set synopsys::env(time) 17317409183
+01:52:50    537 --> ...                                                  [tcl] set synopsys::env(time) 17478836210
+01:52:53    538 --> ...                                                      [tcl] set synopsys::env(time) 17649530028
+01:52:56    539 --> ...                                                          [tcl] set synopsys::env(time) 17825689582
+01:52:59    540 --> ...                                                              [tcl] set synopsys::env(time) 18001198115
+01:53:02    541 --> ...                                                                  [tcl] set synopsys::env(time) 18179848359
+01:53:05    542 --> ...                                                                      [tcl] set synopsys::env(time) 18357458537
+01:53:08    543 --> ...                                                                          [tcl] set synopsys::env(time) 18520586249
+01:53:11    544 --> ...                                                                              [tcl] set synopsys::env(time) 18692987188
+01:53:14    545 --> ...                                                                                  [tcl] set synopsys::env(time) 18870469795
+01:53:17    546 --> ...                                                                                      [tcl] set synopsys::env(time) 19043799273
+01:53:20    547 --> ...                                                                                          [tcl] set synopsys::env(time) 19217756103
+01:53:23    548 --> ...                                                                                              [tcl] set synopsys::env(time) 19394959414
+01:53:26    549 --> ...                                                                                                  [tcl] set synopsys::env(time) 19566900057
+01:53:29    550 --> ...  [tcl] set synopsys::env(time) 19741819121
+01:53:32    551 --> ...      [tcl] set synopsys::env(time) 19920165000
+01:53:35    552 --> ...          [tcl] set synopsys::env(time) 20095989886
+01:53:38    553 --> ...              [tcl] set synopsys::env(time) 20272415000
+01:53:41    554 --> ...                  [tcl] set synopsys::env(time) 20445608841
+01:53:44    555 --> ...                      [tcl] set synopsys::env(time) 20621946953
+01:53:47    556 --> ...                          [tcl] set synopsys::env(time) 20799946031
+01:53:50    557 --> ...                              [tcl] set synopsys::env(time) 20975419476
+01:53:53    558 --> ...                                  [tcl] set synopsys::env(time) 21156238163
+01:53:56    559 --> ...                                      [tcl] set synopsys::env(time) 21332447398
+01:53:59    560 --> ...                                          [tcl] set synopsys::env(time) 21505666416
+01:54:02    561 --> ...                                              [tcl] set synopsys::env(time) 21681568807
+01:54:05    562 --> ...                                                  [tcl] set synopsys::env(time) 21859469540
+01:54:08    563 --> ...                                                      [tcl] set synopsys::env(time) 22037946065
+01:54:11    564 --> ...                                                          [tcl] set synopsys::env(time) 22216256892
+01:54:14    565 --> ...                                                              [tcl] set synopsys::env(time) 22389016342
+01:54:17    566 --> ...                                                                  [tcl] set synopsys::env(time) 22565837848
+01:54:20    567 --> ...                                                                      [tcl] set synopsys::env(time) 22740638091
+01:54:23    568 --> ...                                                                          [tcl] set synopsys::env(time) 22920816247
+01:54:26    569 --> ...                                                                              [tcl] set synopsys::env(time) 23099255000
+01:54:29    570 --> ...                                                                                  [tcl] set synopsys::env(time) 23279227631
+01:54:32    571 --> ...                                                                                      [tcl] set synopsys::env(time) 23463826410
+01:54:35    572 --> ...                                                                                          [tcl] set synopsys::env(time) 23642007377
+01:54:38    573 --> ...                                                                                              [tcl] set synopsys::env(time) 23821220048
+01:54:41    574 --> ...                                                                                                  [tcl] set synopsys::env(time) 24001137511
+01:54:44    575 --> ...  [tcl] set synopsys::env(time) 24170900049
+01:54:47    576 --> ...      [tcl] set synopsys::env(time) 24343690000
+01:54:50    577 --> ...          [tcl] set synopsys::env(time) 24527807377
+01:54:53    578 --> ...              [tcl] set synopsys::env(time) 24709446302
+01:54:56    579 --> ...                  [tcl] set synopsys::env(time) 24888177555
+01:54:59    580 --> ...                      [tcl] set synopsys::env(time) 25064148780
+01:55:02    581 --> ...                          [tcl] set synopsys::env(time) 25245840692
+01:55:05    582 --> ...                              [tcl] set synopsys::env(time) 25423543101
+01:55:08    583 --> ...                                  [tcl] set synopsys::env(time) 25600810692
+01:55:11    584 --> ...                                      [tcl] set synopsys::env(time) 25772978608
+01:55:14    585 --> ...                                          [tcl] set synopsys::env(time) 25947278579
+01:55:17    586 --> ...                                              [tcl] set synopsys::env(time) 26119999773
+01:55:20    587 --> ...                                                  [tcl] set synopsys::env(time) 26290728627
+01:55:23    588 --> ...                                                      [tcl] set synopsys::env(time) 26464158755
+01:55:26    589 --> ...                                                          [tcl] set synopsys::env(time) 26637247666
+01:55:29    590 --> ...                                                              [tcl] set synopsys::env(time) 26808608898
+01:55:32    591 --> ...                                                                  [tcl] set synopsys::env(time) 26986235000
+01:55:35    592 --> ...                                                                      [tcl] set synopsys::env(time) 27157158608
+01:55:38    593 --> ...                                                                          [tcl] set synopsys::env(time) 27334506202
+01:55:41    594 --> ...                                                                              [tcl] set synopsys::env(time) 27504927651
+01:55:44    595 --> ...                                                                                  [tcl] set synopsys::env(time) 27676697511
+01:55:47    596 --> ...                                                                                      [tcl] set synopsys::env(time) 27849390296
+01:55:50    597 --> ...                                                                                          [tcl] set synopsys::env(time) 28027325000
+01:55:53    598 --> ...                                                                                              [tcl] set synopsys::env(time) 28199080285
+01:55:56    599 --> ...                                                                                                  [tcl] set synopsys::env(time) 28371299356
+01:55:59    600 --> ...  [tcl] set synopsys::env(time) 28542993664
+01:56:02    601 --> ...      [tcl] set synopsys::env(time) 28707415000
+01:56:05    602 --> ...          [tcl] set synopsys::env(time) 28885129873
+01:56:08    603 --> ...              [tcl] set synopsys::env(time) 29058397269
+01:56:11    604 --> ...                  [tcl] set synopsys::env(time) 29229856064
+01:56:14    605 --> ...                      [tcl] set synopsys::env(time) 29401047938
+01:56:17    606 --> ...                          [tcl] set synopsys::env(time) 29572876738
+01:56:20    607 --> ...                              [tcl] set synopsys::env(time) 29750505000
+01:56:23    608 --> ...                                  [tcl] set synopsys::env(time) 29923216984
+01:56:26    609 --> ...                                      [tcl] set synopsys::env(time) 30092687268
+01:56:29    610 --> ...                                          [tcl] set synopsys::env(time) 30266868025
+01:56:32    611 --> ...                                              [tcl] set synopsys::env(time) 30436817205
+01:56:35    612 --> ...                                                  [tcl] set synopsys::env(time) 30607648828
+01:56:38    613 --> ...                                                      [tcl] set synopsys::env(time) 30779817250
+01:56:41    614 --> ...                                                          [tcl] set synopsys::env(time) 30951668846
+01:56:44    615 --> ...                                                              [tcl] set synopsys::env(time) 31127679794
+01:56:47    616 --> ...                                                                  [tcl] set synopsys::env(time) 31299615000
+01:56:50    617 --> ...                                                                      [tcl] set synopsys::env(time) 31471016460
+01:56:53    618 --> ...                                                                          [tcl] set synopsys::env(time) 31641825000
+01:56:56    619 --> ...                                                                              [tcl] set synopsys::env(time) 31820250113
+01:56:59    620 --> ...                                                                                  [tcl] set synopsys::env(time) 31989980434
+01:57:02    621 --> ...                                                                                      [tcl] set synopsys::env(time) 32163379180
+01:57:05    622 --> ...                                                                                          [tcl] set synopsys::env(time) 32329808004
+01:57:08    623 --> ...                                                                                              [tcl] set synopsys::env(time) 32500667661
+01:57:11    624 --> ...                                                                                                  [tcl] set synopsys::env(time) 32671688380
+01:57:14    625 --> ...  [tcl] set synopsys::env(time) 32845239922
+01:57:17    626 --> ...      [tcl] set synopsys::env(time) 33015032045
+01:57:20    627 --> ...          [tcl] set synopsys::env(time) 33187755000
+01:57:23    628 --> ...              [tcl] set synopsys::env(time) 33362399615
+01:57:26    629 --> ...                  [tcl] set synopsys::env(time) 33533938335
+01:57:29    630 --> ...                      [tcl] set synopsys::env(time) 33700856808
+01:57:32    631 --> ...                          [tcl] set synopsys::env(time) 33879691255
+01:57:35    632 --> ...                              [tcl] set synopsys::env(time) 34051122410
+01:57:38    633 --> ...                                  [tcl] set synopsys::env(time) 34224566523
+01:57:41    634 --> ...                                      [tcl] set synopsys::env(time) 34403956819
+01:57:44    635 --> ...                                          [tcl] set synopsys::env(time) 34575789878
+01:57:47    636 --> ...                                              [tcl] set synopsys::env(time) 34747562848
+01:57:50    637 --> ...                                                  [tcl] set synopsys::env(time) 34914115907
+01:57:53    638 --> ...                                                      [tcl] set synopsys::env(time) 35084809732
+01:57:56    639 --> ...                                                          [tcl] set synopsys::env(time) 35257081276
+01:57:59    640 --> ...                                                              [tcl] set synopsys::env(time) 35431826774
+01:58:02    641 --> ...                                                                  [tcl] set synopsys::env(time) 35604020330
+01:58:05    642 --> ...                                                                      [tcl] set synopsys::env(time) 35776789617
+01:58:08    643 --> ...                                                                          [tcl] set synopsys::env(time) 35950098263
+01:58:11    644 --> ...                                                                              [tcl] set synopsys::env(time) 36120186221
+01:58:14    645 --> ...                                                                                  [tcl] set synopsys::env(time) 36292471895
+01:58:17    646 --> ...                                                                                      [tcl] set synopsys::env(time) 36460629584
+01:58:20    647 --> ...                                                                                          [tcl] set synopsys::env(time) 36632506337
+01:58:23    648 --> ...                                                                                              [tcl] set synopsys::env(time) 36802716550
+01:58:26    649 --> ...                                                                                                  [tcl] set synopsys::env(time) 36979646230
+01:58:29    650 --> ...  [tcl] set synopsys::env(time) 37151858678
+01:58:32    651 --> ...      [tcl] set synopsys::env(time) 37321298840
+01:58:35    652 --> ...          [tcl] set synopsys::env(time) 37495158777
+01:58:38    653 --> ...              [tcl] set synopsys::env(time) 37666556067
+01:58:41    654 --> ...                  [tcl] set synopsys::env(time) 37839196313
+01:58:44    655 --> ...                      [tcl] set synopsys::env(time) 38012761842
+01:58:47    656 --> ...                          [tcl] set synopsys::env(time) 38185667266
+01:58:50    657 --> ...                              [tcl] set synopsys::env(time) 38358820473
+01:58:53    658 --> ...                                  [tcl] set synopsys::env(time) 38531385000
+01:58:56    659 --> ...                                      [tcl] set synopsys::env(time) 38702908982
+01:58:59    660 --> ...                                          [tcl] set synopsys::env(time) 38873799521
+01:59:02    661 --> ...                                              [tcl] set synopsys::env(time) 39043166490
+01:59:05    662 --> ...                                                  [tcl] set synopsys::env(time) 39220759699
+01:59:08    663 --> ...                                                      [tcl] set synopsys::env(time) 39393630120
+01:59:11    664 --> ...                                                          [tcl] set synopsys::env(time) 39566780766
+01:59:14    665 --> ...                                                              [tcl] set synopsys::env(time) 39740710772
+01:59:17    666 --> ...                                                                  [tcl] set synopsys::env(time) 39912026359
+01:59:20    667 --> ...                                                                      [tcl] set synopsys::env(time) 40083225000
+01:59:23    668 --> ...                                                                          [tcl] set synopsys::env(time) 40256717660
+01:59:26    669 --> ...                                                                              [tcl] set synopsys::env(time) 40431316228
+01:59:29    670 --> ...                                                                                  [tcl] set synopsys::env(time) 40605568338
+01:59:32    671 --> ...                                                                                      [tcl] set synopsys::env(time) 40773285000
+01:59:35    672 --> ...                                                                                          [tcl] set synopsys::env(time) 40953809922
+01:59:38    673 --> ...                                                                                              [tcl] set synopsys::env(time) 41129029441
+01:59:41    674 --> ...                                                                                                  [tcl] set synopsys::env(time) 41305462026
+01:59:44    675 --> ...  [tcl] set synopsys::env(time) 41483899340
+01:59:47    676 --> ...      [tcl] set synopsys::env(time) 41669660305
+01:59:50    677 --> ...          [tcl] set synopsys::env(time) 41848516228
+01:59:53    678 --> ...              [tcl] set synopsys::env(time) 42025338598
+01:59:56    679 --> ...                  [tcl] set synopsys::env(time) 42207681094
+01:59:59    680 --> ...                      [tcl] set synopsys::env(time) 42386217842
+02:00:02    681 --> ...                          [tcl] set synopsys::env(time) 42561038868
+02:00:05    682 --> ...                              [tcl] set synopsys::env(time) 42738676440
+02:00:08    683 --> ...                                  [tcl] set synopsys::env(time) 42921557369
+02:00:11    684 --> ...                                      [tcl] set synopsys::env(time) 43100618626
+02:00:14    685 --> ...                                          [tcl] set synopsys::env(time) 43276497393
+02:00:17    686 --> ...                                              [tcl] set synopsys::env(time) 43453985000
+02:00:20    687 --> ...                                                  [tcl] set synopsys::env(time) 43633018626
+02:00:23    688 --> ...                                                      [tcl] set synopsys::env(time) 43817689985
+02:00:26    689 --> ...                                                          [tcl] set synopsys::env(time) 43996381616
+02:00:29    690 --> ...                                                              [tcl] set synopsys::env(time) 44176109665
+02:00:32    691 --> ...                                                                  [tcl] set synopsys::env(time) 44355418991
+02:00:35    692 --> ...                                                                      [tcl] set synopsys::env(time) 44534827354
+02:00:38    693 --> ...                                                                          [tcl] set synopsys::env(time) 44714135000
+02:00:41    694 --> ...                                                                              [tcl] set synopsys::env(time) 44898906466
+02:00:44    695 --> ...                                                                                  [tcl] set synopsys::env(time) 45074397827
+02:00:47    696 --> ...                                                                                      [tcl] set synopsys::env(time) 45252120347
+02:00:50    697 --> ...                                                                                          [tcl] set synopsys::env(time) 45432527286
+02:00:53    698 --> ...                                                                                              [tcl] set synopsys::env(time) 45612368619
+02:00:56    699 --> ...                                                                                                  [tcl] set synopsys::env(time) 45789306362
+02:00:59    700 --> ...  [tcl] set synopsys::env(time) 45968919264
+02:01:02    701 --> ...      [tcl] set synopsys::env(time) 46149215000
+02:01:05    702 --> ...          [tcl] set synopsys::env(time) 46321160487
+02:01:08    703 --> ...              [tcl] set synopsys::env(time) 46504905063
+02:01:11    704 --> ...                  [tcl] set synopsys::env(time) 46681236203
+02:01:14    705 --> ...                      [tcl] set synopsys::env(time) 46856986101
+02:01:17    706 --> ...                          [tcl] set synopsys::env(time) 47033149204
+02:01:20    707 --> ...                              [tcl] set synopsys::env(time) 47209070000
+02:01:23    708 --> ...                                  [tcl] set synopsys::env(time) 47388058596
+02:01:26    709 --> ...                                      [tcl] set synopsys::env(time) 47566895000
+02:01:29    710 --> ...                                          [tcl] set synopsys::env(time) 47750450217
+02:01:32    711 --> ...                                              [tcl] set synopsys::env(time) 47925218343
+02:01:35    712 --> ...                                                  [tcl] set synopsys::env(time) 48106107295
+02:01:38    713 --> ...                                                      [tcl] set synopsys::env(time) 48283898783
+02:01:41    714 --> ...                                                          [tcl] set synopsys::env(time) 48460076701
+02:01:44    715 --> ...                                                              [tcl] set synopsys::env(time) 48637157369
+02:01:47    716 --> ...                                                                  [tcl] set synopsys::env(time) 48811976251
+02:01:50    717 --> ...                                                                      [tcl] set synopsys::env(time) 48984216115
+02:01:53    718 --> ...                                                                          [tcl] set ucliGUI::state
+02:01:53    719 --> ...                                                                              [tcl] set ucliGUI::state
+02:01:53    720 --> ...                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+02:01:53    721 --> ...                                                                                      [tcl] set dveMisc::result
+02:01:53    722 --> ...                                                                                          [tcl] gui_update_simulator_buttons
+02:01:53    723 --> ...                                                                                              [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {hexadecimal decimal symbolic hexadecimal hexadecimal decimal hexadecimal decimal binary decimal decimal binary symbolic binary decimal binary decimal hexadecimal hexadecimal decimal binary decimal decimal hexadecimal binary decimal decimal hexadecimal } -list {{Data_1[63:0]} EW {contador[31:0]} {Data_2[63:0]} Array_IN_1 FPSEN Array_IN_2 II begin_operation SW FPSUB underflow_flag {FileSaveData[31:0]} ack_operation SWR operation_ready PERIOD {op_result[63:0]} {region_flag[1:0]} EWR NaN_flag ROUNDING_MODE_POS_INF W {operation[2:0]} clk FPMULT III {r_mode[1:0]} }
+02:01:54    724 --> ...                                                                                                  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {binary binary decimal decimal decimal decimal } -list {rst overflow_flag FPADD FPCOS IoIV1 IoIV2 }
+02:43:43    725 --> ...  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+02:43:43    726 --> ...      [tcl] synopsys::finish
+02:43:43    727 --> ...          [tcl] set ucliGUI::state
+02:43:43    728 --> ...              [tcl] set ucliGUI::state
+02:43:43    729 --> ...                  [tcl] catch {senv activeDomain} dveMisc::result 
+02:43:43    730 --> ...                      [tcl] set dveMisc::result
+02:43:43    731 --> ...                          [tcl] gui_update_simulator_buttons
+02:43:43    732 --> ...                              [tcl] catch {senv activeDomain} dveMisc::result 
+02:43:43    733 --> ...                                  [tcl] set dveMisc::result
+02:43:43    734 --> ...                                      [tcl] ucli_exit

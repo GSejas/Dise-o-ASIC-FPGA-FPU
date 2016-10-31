@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : submidRecursiveKOA2.v
 //  Created On    : 2016-10-28 08:46:44
-//  Last Modified : 2016-10-28 08:59:25
+//  Last Modified : 2016-10-31 11:42:31
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -76,9 +76,9 @@ reg [SW-1:0] post_Data_B_i;
 
             reg [SW/2:0] result_A_adder;
             reg [SW/2:0] result_B_adder;
-            reg [SW-1:0] Q_left;
-            reg [SW-1:0] Q_right;
-            reg [SW+1:0] Q_middle;
+            wire [SW-1:0] Q_left;
+            wire [SW-1:0] Q_right;
+            wire [SW+1:0] Q_middle;
 
             reg [2*(SW/2+2)-1:0] S_A;
             reg [SW+1:0] S_B; //SW+2
@@ -122,9 +122,9 @@ reg [SW-1:0] post_Data_B_i;
 
                 reg [SW/2+1:0] result_A_adder;
                 reg [SW/2+1:0] result_B_adder;
-                reg [2*(SW/2)-1:0]   Q_left;
-                reg [2*(SW/2+1)-1:0] Q_right;
-                reg [2*(SW/2+2)-1:0] Q_middle;
+                wire [2*(SW/2)-1:0]   Q_left;
+                wire [2*(SW/2+1)-1:0] Q_right;
+                wire [2*(SW/2+2)-1:0] Q_middle;
  
                 reg [2*(SW/2+2)-1:0] S_A;
                 reg [SW+4-1:0] S_B;

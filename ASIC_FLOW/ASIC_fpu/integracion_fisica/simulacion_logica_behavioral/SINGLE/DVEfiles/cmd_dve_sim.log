@@ -1,3 +1,4 @@
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv  +v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose -ucligui
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
@@ -5,52 +6,75 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD0
-set ::dve_fid VPD0
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpsjGm5E
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.1853}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.1853}
-ucliGUI::getSignalValues -scope Mux_3x1_bv2 -radix {decimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {W {select[1:0]} {ch_0[31:0]} {ch_1[31:0]} {ch_2[31:0]} {data_out[31:0]} }
-ucliGUI::getSignalValues -scope Mux_3x1_bv2 -radix {hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal } -list {{select[1:0]} {ch_0[31:0]} {ch_1[31:0]} {ch_2[31:0]} {data_out[31:0]} W }
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpUz4ap5
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.26685}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.26685}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-ucliGUI::getSignalValues -scope FPU_PIPELINED_FPADDSUB -radix {binary binary binary hexadecimal hexadecimal binary binary binary binary binary binary hexadecimal binary binary hexadecimal binary binary binary hexadecimal hexadecimal binary binary binary binary binary binary } -list {clk rst beg_OP {Data_X[63:0]} {Data_Y[63:0]} add_subt busy overflow_flag underflow_flag zero_flag ready {final_result_ieee[63:0]} enable_Pipeline_input FSM_enable_input_internal {Shift_reg_FLAGS_7[6:0]} real_input_enable enable_shift_reg ZERO_FLAG_INIT {intDX_EWSW[63:0]} {intDY_EWSW[63:0]} intAS INPUT_ACTIVE gtXY eqXY OP_FLAG_INIT SIGN_FLAG_INIT }
-ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[31:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[31:0]} {Data_2[31:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD FPSUB }
-synopsys::dump -add {Testbench_FPU_Mark1} -scope "." -depth 1 -fid VPD0
-synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_1 Testbench_FPU_Mark1.Array_IN_2 } -aggregates  -fid VPD0
+if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {Testbench_FPU_Mark2} -scope "." -depth 1 -fid VPD1
+set _session_group_2 Testbench_FPU_Mark2
+set Testbench_FPU_Mark2 "$_session_group_2"
+synopsys::dump -add {Testbench_FPU_Mark2.Array_IN_1} -aggregates  -fid VPD1
+synopsys::dump -add {Testbench_FPU_Mark2.Array_IN_2} -aggregates  -fid VPD1
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Post database loading setting...
+# Restore C1 time
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Mark2}}
+# Data 'Data.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Source 'Source.1'
+ucliGUI::vpdAddHierarchy -scope mult -depth 1 -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd; synopsys::dump -flush VPD1
+synopsys::dump -add {mult.SW} -aggregates  -fid VPD1
+synopsys::dump -add {mult.clk} -aggregates  -fid VPD1
+synopsys::dump -add {mult.Data_A_i} -aggregates  -fid VPD1
+synopsys::dump -add {mult.Data_B_i} -aggregates  -fid VPD1
+synopsys::dump -add {mult.Data_S_o} -aggregates  -fid VPD1
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Console.1} }
+#</Session>
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
-set synopsys::env(time) 2484490000
-set synopsys::env(time) 4857675000
-set synopsys::env(time) 7237745000
-set synopsys::env(time) 9593455000
-set synopsys::env(time) 11980735000
-set synopsys::env(time) 14311505000
-set synopsys::env(time) 16700015000
-set synopsys::env(time) 19145025000
-set synopsys::env(time) 21575915000
-set synopsys::env(time) 24015855000
-set synopsys::env(time) 26338725000
-set synopsys::env(time) 28696835000
-set synopsys::env(time) 31069895000
-set synopsys::env(time) 33458235000
-set synopsys::env(time) 35855555000
-set synopsys::env(time) 38258955000
-set synopsys::env(time) 40652995000
-set synopsys::env(time) 43084245000
-set synopsys::env(time) 45547740000
-set synopsys::env(time) 47931205000
+set synopsys::env(time) 1044395000
+set synopsys::env(time) 2114655000
+set synopsys::env(time) 3077355000
+set synopsys::env(time) 4112745000
+set synopsys::env(time) 5146285000
 set ucliGUI::state
 set ucliGUI::state
-ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[31:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[31:0]} {Data_2[31:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD FPSUB }
-ucliGUI::getSignalValues -scope Mux_3x1_bv2 -radix {decimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal } -list {W {select[1:0]} {ch_0[31:0]} {ch_1[31:0]} {ch_2[31:0]} {data_out[31:0]} }
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {hexadecimal decimal symbolic hexadecimal hexadecimal decimal hexadecimal decimal binary decimal decimal binary symbolic binary decimal binary decimal hexadecimal hexadecimal decimal binary decimal decimal binary hexadecimal binary decimal } -list {{Data_1[31:0]} EW {contador[31:0]} {Data_2[31:0]} Array_IN_1 FPSEN Array_IN_2 II begin_operation SW FPSUB underflow_flag {FileSaveData[31:0]} ack_operation SWR operation_ready PERIOD {op_result[31:0]} {region_flag[1:0]} EWR NaN_flag ROUNDING_MODE_POS_INF W busy {operation[2:0]} clk FPMULT }
+ucliGUI::getSignalValues -scope mult -radix {decimal binary hexadecimal hexadecimal hexadecimal } -list {SW clk {Data_A_i[23:0]} {Data_B_i[23:0]} {Data_S_o[47:0]} }
 if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
 synopsys::finish
 set ucliGUI::state

@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+DOUBLE \
 -timescale=1ns/1ps +neg_tchk +sdfverbose
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Mon Oct 31 01:26:19 2016
+      Version K-2015.09-SP2-3_Full64 -- Mon Oct 31 01:46:47 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -17305,7 +17305,7 @@ ibm13rflpvt.v, 30500
    ***    Turnoff delay: "FROM_FILE"
    ***    Approximation (mipd) policy: "MAXIMUM"
 
-   ***    SDF annotation begin: Mon Oct 31 01:26:21 2016
+   ***    SDF annotation begin: Mon Oct 31 01:46:48 2016
 
 
 SDF Info: +pulse_r/100, +pulse_e/100 in effect
@@ -95996,82 +95996,21 @@ module: CMPR32X2TS, "instance: Testbench_FPU_Mark1.FPU_Interface.intadd_14_U4"
 
           Total errors: 0
           Total warnings: 13114
-   ***    SDF annotation completed: Mon Oct 31 01:26:24 2016
+   ***    SDF annotation completed: Mon Oct 31 01:46:51 2016
 
 
 Starting vcs inline pass...
 63 modules and 2 UDPs read.
-recompiling module FPU_Interface_W64_EW11_SW52_SWR55_EWR6
-recompiling module Testbench_FPU_Mark1
-recompiling module INVX8TS
-recompiling module AND3X6TS
-recompiling module AND4X1TS
-recompiling module AOI21X4TS
-recompiling module AOI211XLTS
-recompiling module AOI22X2TS
-recompiling module AOI221X1TS
-recompiling module AOI222X4TS
-recompiling module AOI31XLTS
-recompiling module AOI32X1TS
-recompiling module AOI2BB1XLTS
-recompiling module AOI2BB2XLTS
-recompiling module AO21XLTS
-recompiling module AO22XLTS
-recompiling module MX2X2TS
-recompiling module MXI2X2TS
-recompiling module NAND2XLTS
-recompiling module NAND3XLTS
-recompiling module NAND4XLTS
-recompiling module NAND2BXLTS
-recompiling module NAND3BXLTS
-recompiling module NAND4BXLTS
-recompiling module NOR2XLTS
-recompiling module NOR3XLTS
-recompiling module NOR4X2TS
-recompiling module NOR2BX4TS
-recompiling module NOR3BX1TS
-recompiling module NOR4BX2TS
-recompiling module OR2X8TS
-recompiling module OR3X2TS
-recompiling module OR4X2TS
-recompiling module OAI21XLTS
-recompiling module OAI211XLTS
-recompiling module OAI22X2TS
-recompiling module OAI221XLTS
-recompiling module OAI222X1TS
-recompiling module OAI31XLTS
-recompiling module OAI32X4TS
-recompiling module OAI33X1TS
-recompiling module OAI2BB1X4TS
-recompiling module OAI2BB2XLTS
-recompiling module OA21XLTS
-recompiling module OA22X2TS
-recompiling module XOR2XLTS
-recompiling module XOR3X1TS
-recompiling module XNOR2X4TS
-recompiling module CLKBUFX3TS
-recompiling module CLKAND2X2TS
-50 of 63 modules done
-recompiling module ADDFX2TS
-recompiling module CMPR22X2TS
-recompiling module CMPR32X2TS
-recompiling module AHHCINX2TS
-recompiling module AHHCONX2TS
-recompiling module CMPR42X2TS
-recompiling module DFFX1TS
-recompiling module DFFQX4TS
-recompiling module DFFRXLTS
-recompiling module DFFSX2TS
-recompiling module DFFSRX4TS
-recompiling module DFFRHQX4TS
-recompiling module DFFSRHQX8TS
-All of 63 modules done
+	However, due to incremental compilation, no re-compilation is necessary.
 rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/udps/exIG1.o objs/udps/U7Vwg.o  \
+
+rm -f _csrc0.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
-_2854_archive_1.so objs/udps/U7Vwg.o objs/udps/exIG1.o  SIM_l.o       rmapats_mop.o \
-rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+_prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o \
+rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
@@ -96089,48 +96028,11 @@ If you would like to temporarily disable this message, set
 before expiration that you want this message to start (the minimum is 0).
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 31 01:26 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 31 01:46 2016
 Doing SDF annotation ...... Done
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-------------------------SUMA--------------------------
-------------------------    --------------------------
-------------------------SUMA--------------------------
-
-Warning-[STASKW_CO] Cannot open file
-Testbench_FPUv1_Interface.v, 264
-  The file 'ADD/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt' could not be 
-  opened. No such file or directory.
-  Please ensure that the file exists with proper permissions.
-
-
-Warning-[STASKW_CO1] Cannot open file
-  The file 'ADD/DOUBLE/Hexadecimal_A.txt' could not be opened. No such file or
-  directory.
-  Please ensure that the file exists with proper permissions.
-
-
-Warning-[STASKW_RMCOF] Cannot open file
-Testbench_FPUv1_Interface.v, 265
-  Cannot open file 'ADD/DOUBLE/Hexadecimal_A.txt' passed as argument to 
-  $readmem.
-  Please verify that the first argument to $readmem is a file that exists with
-  proper permissions.
-
-
-Warning-[STASKW_CO1] Cannot open file
-  The file 'ADD/DOUBLE/Hexadecimal_B.txt' could not be opened. No such file or
-  directory.
-  Please ensure that the file exists with proper permissions.
-
-
-Warning-[STASKW_RMCOF] Cannot open file
-Testbench_FPUv1_Interface.v, 266
-  Cannot open file 'ADD/DOUBLE/Hexadecimal_B.txt' passed as argument to 
-  $readmem.
-  Please verify that the first argument to $readmem is a file that exists with
-  proper permissions.
-
-
-"ibm13rflpvt.v", 23231: Timing violation in Testbench_FPU_Mark1.FPU_Interface.FPMULT_Sgf_operation_RECURSIVE_ODD1_middle_Data_S_o_reg_0_
-    $setuphold( posedge CK &&& (flag == 1'b1):25000, negedge D:25024, limits: (157,104) );
-
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.220 seconds;       Data structure size:   8.6Mb
+Mon Oct 31 01:47:07 2016
+CPU time: 4.576 seconds to compile + .011 seconds to elab + .171 seconds to link + 1186.124 seconds in simulation

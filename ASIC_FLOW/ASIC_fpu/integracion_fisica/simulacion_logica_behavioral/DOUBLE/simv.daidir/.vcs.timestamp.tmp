@@ -30,7 +30,7 @@
 -Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/include
 -Xvcs_run_simv=1
 -debug=3
--f file_list
+-f file_list1
 -full64
 -gen_obj
 -gui
@@ -85,9 +85,12 @@ DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-CDItn4lBcc,guid=841458e6fa3ecdc
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
 0
-72
-1477876926 Testbench_FPUv1_Interface.v
+89
+1477667000 global.v
+1477667000 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/global.v
+1477940366 /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv1_Interface.v
 1476074801 ../../front_end/source/Op_Select.v
+1477934255 ../../front_end/source/KOA.v
 1477881014 ../../front_end/source/Sgf_Multiplication.v
 1476074801 ../../front_end/source/FPU_ADD_Substract_PIPELINED.v
 1477017167 ../../front_end/source/Comparators.v
@@ -103,6 +106,8 @@ COLORTERM=gnome-terminal
 1477881085 ../../front_end/source/Mux_3x1_b.v
 1476074801 ../../front_end/source/Simple_Subt.v
 1477876926 ../../front_end/source/lut_CASE_64.v
+1477631284 ../../front_end/source/cmult.v
+1477935689 ../../front_end/source/subRecursiveKOA.v
 1476074801 ../../front_end/source/sign_inverter.v
 1477529998 ../../front_end/source/substractor.v
 1477717677 ../../front_end/source/DECO_CORDIC_OP.v
@@ -115,13 +120,15 @@ COLORTERM=gnome-terminal
 1477680288 ../../front_end/source/Oper_Start_In.v
 1477017167 ../../front_end/source/sgn_result.v
 1476074801 ../../front_end/source/counter_up.v
+1477667000 ../../front_end/source/global.v
 1477720519 ../../front_end/source/Up_Counter.v
 1476074801 ../../front_end/source/CORDIC_FSM_v2.v
 1477437227 ../../front_end/source/Comparator_Equal.v
 1477017167 ../../front_end/source/Mux_Array.v
-1477880784 ../../front_end/source/FPU_Multiplication_Function.v
+1477895814 ../../front_end/source/FPU_Multiplication_Function.v
 1477880895 ../../front_end/source/Round_decoder_M.v
 1477680288 ../../front_end/source/FSM_Add_Subtract.v
+1477875308 ../../front_end/source/FPU_Interface2v1.v
 1477437227 ../../front_end/source/FSM_Mult_Function.v
 1476074801 ../../front_end/source/Tenth_Phase_v2.v
 1477017167 ../../front_end/source/Mux_3x1.v
@@ -132,16 +139,23 @@ COLORTERM=gnome-terminal
 1477875308 ../../front_end/source/NaN_mod_64.v
 1477017167 ../../front_end/source/add_sub_carry_out.v
 1477875308 ../../front_end/source/NaN_mod_32.v
+1477717769 ../../front_end/source/CORDIC_Arch3.v
+1477935700 ../../front_end/source/subRecursiveKOA_1c.v
 1477437227 ../../front_end/source/First_Phase_M.v
+1477576652 ../../front_end/source/mult.v
 1477017167 ../../front_end/source/xor_tri.v
+1477935804 ../../front_end/source/RecursiveKOA.v
 1477437227 ../../front_end/source/RegisterMult.v
 1477437227 ../../front_end/source/Adder_Round.v
 1477881320 ../../front_end/source/multiplier.v
 1477437227 ../../front_end/source/Deco_Round_Mult.v
 1476074801 ../../front_end/source/counter_d.v
+1477935753 ../../front_end/source/submidRecursiveKOA2.v
 1477437227 ../../front_end/source/Zero_InfMult_Unit.v
 1477017167 ../../front_end/source/Greater_Comparator.v
+1477935736 ../../front_end/source/submidRecursiveKOA.v
 1477017167 ../../front_end/source/Multiplexer_AC.v
+1477933765 ../../front_end/source/mult2.v
 1477437227 ../../front_end/source/XOR_M.v
 1477017167 ../../front_end/source/Round_Sgf_Dec.v
 1477680288 ../../front_end/source/exp_operation.v
@@ -150,13 +164,16 @@ COLORTERM=gnome-terminal
 1476074801 ../../front_end/source/d_ff_en.v
 1476074801 ../../front_end/source/FSM_input_enable.v
 1477680288 ../../front_end/source/FPU_Add_Subtract_Function.v
+1477715999 ../../front_end/source/CORDIC_FSM_v3.v
+1477935653 ../../front_end/source/RecursiveKOA_Weighted.v
 1477017167 ../../front_end/source/LZD.v
 1477881085 ../../front_end/source/Mux_3x1_b_v2.v
 1477017167 ../../front_end/source/shift_mux.v
+1477903922 ../../front_end/source/CORDIC_Arch3v1.v
 1477017167 ../../front_end/source/MultiplexTxT.v
 1477437227 ../../front_end/source/Barrel_Shifter_M.v
 1476074801 ../../front_end/source/shift_reg.v
-1477882388 file_list
+1477935570 file_list1
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 4
 0 

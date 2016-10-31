@@ -1,0 +1,1027 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 11 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 31 12:00 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd' was opened successfully.
+------------------------SUMA--------------------------
+------------------------    --------------------------
+------------------------SUMA--------------------------
+------------------------RSTA--------------------------
+------------------------    --------------------------
+------------------------RSTA--------------------------
+------------------------MULT--------------------------
+------------------------    --------------------------
+------------------------MULT--------------------------
+---------------------REGION I or IV--------------------------
+------------------------    --------------------------
+---------------------REGION I or IV-------------------
+------------------------SENO--------------------------
+------------------------    --------------------------
+------------------------SENO--------------------------
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SIN/DOUBLE/input_angles_hex.txt' could not be opened. No such file
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 245
+  Cannot open file 'SIN/DOUBLE/input_angles_hex.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+------------------------COS--------------------------
+------------------------    --------------------------
+------------------------COS--------------------------
+$finish called from file "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v", line 267.
+$finish at simulation time           5151140000
+Simulation complete, time is 5151140000 ps.
+Warning : License for product VCSRuntime_Net(725) will expire within 11 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 31 12:01 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd' was opened successfully.
+------------------------SUMA--------------------------
+------------------------    --------------------------
+------------------------SUMA--------------------------
+------------------------RSTA--------------------------
+------------------------    --------------------------
+------------------------RSTA--------------------------
+------------------------MULT--------------------------
+------------------------    --------------------------
+------------------------MULT--------------------------
+---------------------REGION I or IV--------------------------
+------------------------    --------------------------
+---------------------REGION I or IV-------------------
+------------------------SENO--------------------------
+------------------------    --------------------------
+------------------------SENO--------------------------
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'SIN/DOUBLE/input_angles_hex.txt' could not be opened. No such file
+  or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 245
+  Cannot open file 'SIN/DOUBLE/input_angles_hex.txt' passed as argument to 
+  $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1743780000 ps
+CPU Time:      5.990 seconds;       Data structure size:   0.3Mb
+Mon Oct 31 12:01:27 2016
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+*** Using vcs compiler /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1 instead of /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1...
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Mon Oct 31 12:01:28 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Warning : License for product VCSCompiler_Net(723) will expire within 11 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Parsing design file '../../front_end/source/shift_reg.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_reg.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Barrel_Shifter_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Barrel_Shifter_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/MultiplexTxT.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/MultiplexTxT.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_Arch3v1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_Arch3v1.v, 17
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_mux.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_mux.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1_b_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1_b_v2.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/LZD.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/LZD.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RecursiveKOA_Weighted.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 42
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 44
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/RecursiveKOA_Weighted.v'.
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 108
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 110
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 111
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 113
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 164
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 166
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 167
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA_Weighted.v, 169
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/CORDIC_FSM_v3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_FSM_v3.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Add_Subtract_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 240
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 255
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 262
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 305
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 327
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 352
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 354
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 366
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 387
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 407
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 409
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Add_Subtract_Function.v, 419
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/FSM_input_enable.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_input_enable.v, 28
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/d_ff_en.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/d_ff_en.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RegisterAdd.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FORMATTER.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 75
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FORMATTER.v, 86
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/exp_operation.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/exp_operation.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Round_Sgf_Dec.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_Sgf_Dec.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/XOR_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/XOR_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/mult2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/mult2.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Multiplexer_AC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Multiplexer_AC.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/submidRecursiveKOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/submidRecursiveKOA.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/submidRecursiveKOA.v, 16
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/submidRecursiveKOA.v'.
+Parsing design file '../../front_end/source/Greater_Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Greater_Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Zero_InfMult_Unit.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Zero_InfMult_Unit.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/submidRecursiveKOA2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/submidRecursiveKOA2.v, 28
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/submidRecursiveKOA2.v, 29
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/submidRecursiveKOA2.v'.
+Parsing design file '../../front_end/source/counter_d.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/counter_d.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Deco_Round_Mult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Deco_Round_Mult.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/multiplier.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/multiplier.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Adder_Round.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Adder_Round.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RegisterMult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RegisterMult.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RecursiveKOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA.v, 29
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RecursiveKOA.v, 31
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/RecursiveKOA.v'.
+Parsing design file '../../front_end/source/xor_tri.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/xor_tri.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/mult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/mult.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/First_Phase_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/First_Phase_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/subRecursiveKOA_1c.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA_1c.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA_1c.v, 17
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/subRecursiveKOA_1c.v'.
+Parsing design file '../../front_end/source/CORDIC_Arch3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_Arch3.v, 17
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/NaN_mod_32.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/NaN_mod_32.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/add_sub_carry_out.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/add_sub_carry_out.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/NaN_mod_64.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/NaN_mod_64.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_Arch2v1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_Arch2v1.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Interface_1v1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Interface_1v1.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_Arch2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_Arch2.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/adder.v'
+Parsing design file '../../front_end/source/Mux_3x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase_v2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FSM_Mult_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_Mult_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Interface2v1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Interface2v1.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Interface2v1.v, 296
+  No type is specified for wire 'zero_flag'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/FSM_Add_Subtract.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_Add_Subtract.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Round_decoder_M.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_decoder_M.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_Multiplication_Function.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_Multiplication_Function.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Equal.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Equal.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/CORDIC_FSM_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/CORDIC_FSM_v2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Up_Counter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Up_Counter.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/global.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Parsing design file '../../front_end/source/counter_up.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/counter_up.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/sgn_result.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sgn_result.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Oper_Start_In.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 34
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 160
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 162
+  Verilog compiler directive encountered "`ifndef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Oper_Start_In.v, 265
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/lut_CASE_32.v'
+Parsing design file '../../front_end/source/OR_Module.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/OR_Module.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_64.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_64.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Exp_operation_m.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Exp_operation_m.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Less.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Less.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_2x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_2x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/DECO_CORDIC_OP.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/DECO_CORDIC_OP.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[NS] Null statement
+../../front_end/source/DECO_CORDIC_OP.v, 60
+  Null statement is used in following verilog source.
+  
+
+Parsing design file '../../front_end/source/substractor.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/substractor.v, 2
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/substractor.v, 33
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/substractor.v, 35
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/sign_inverter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sign_inverter.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/subRecursiveKOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/subRecursiveKOA.v, 16
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/subRecursiveKOA.v'.
+Parsing design file '../../front_end/source/cmult.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/cmult.v, 15
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/lut_CASE_64.v'
+Parsing design file '../../front_end/source/Simple_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Simple_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1_b.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1_b.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/deco_op.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/deco_op.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Rotate_Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Rotate_Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/demux_1x3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/demux_1x3.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Add_Subt.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Add_Subt.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_32.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_32.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/PriorityEncoder_ExtCORDIC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/PriorityEncoder_ExtCORDIC.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Barrel_shifter.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Barrel_shifter.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparators.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparators.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/FPU_ADD_Substract_PIPELINED.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Sgf_Multiplication.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Sgf_Multiplication.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/KOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/KOA.v, 29
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/KOA.v, 31
+  Verilog compiler directive encountered "`include".
+
+Parsing included file 'global.v'.
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Back to file '../../front_end/source/KOA.v'.
+Parsing design file '../../front_end/source/Op_Select.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Op_Select.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v'
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 26
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 32
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 34
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 40
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[IWU] Implicit wire is used
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 103
+  No type is specified for wire 'busy'. Default wire type is being applied 
+  according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 123
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 190
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 191
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 264
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 297
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 299
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 337
+  Null statement is used in following verilog source.
+  
+
+Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/global.v'
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/global.v, 14
+  Verilog compiler directive encountered "`define".
+
+
+Lint-[VCDE] Compiler directive encountered
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/global.v, 15
+  Verilog compiler directive encountered "`define".
+
+Top Level Modules:
+       WRecursiveKOA
+       RecursiveKOA
+       CORDIC_Arch3
+       FPU_Interface
+       CORDIC_Arch2
+       Sgf_Multiplication
+       Testbench_FPU_Mark2
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/FPU_Interface2v1.v, 296
+  No type is specified for wire 'zero_flag'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+TimeScale is 1 ns / 1 ps
+
+Lint-[VNGS] Variable never gets set
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv2_Interface.v, 55
+  Following variable has never been set any value.
+  Source info: r_mode
+
+
+Lint-[CAWM-L] Width mismatch
+../../front_end/source/FPU_Add_Subtract_Function.v, 356
+  Continuous assignment width mismatch
+  5 bits (lhs) versus 32 bits (rhs).
+  Source info: assign Exp_oper_B_D1 = ((EW - EWR) * 1'b0);  
+
+
+Lint-[CAWM-L] Width mismatch
+../../front_end/source/FPU_Add_Subtract_Function.v, 356
+  Continuous assignment width mismatch
+  3 bits (lhs) versus 32 bits (rhs).
+  Source info: assign Exp_oper_B_D1 = ((EW - EWR) * 1'b0);  
+
+
+Lint-[UI] Unused input
+../../front_end/source/Mux_Array.v, 30
+  Following is an unused input.
+  Source info: load_i
+
+
+Lint-[UI] Unused input
+../../front_end/source/Mux_Array.v, 30
+  Following is an unused input.
+  Source info: load_i
+
+Starting vcs inline pass...
+23 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module Testbench_FPU_Mark2 because:
+	This module or some inlined child module(s) has/have been modified.
+Warning : License for product VCSCompiler_Net(723) will expire within 11 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _13725_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so    /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so   -Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so -Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+
+Warning-[DVEENVDIRNFND] DVE warning
+  Environment variable DVE is set. Please unset it.
+
+Warning : License for product VT_Visual(790) will expire within 11 days, on: 10-nov-2016.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).

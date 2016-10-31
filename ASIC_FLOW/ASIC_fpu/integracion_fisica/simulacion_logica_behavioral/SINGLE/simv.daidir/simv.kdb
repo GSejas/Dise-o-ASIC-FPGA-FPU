@@ -7,4 +7,4 @@ UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=Mux_3x1_bv2 CORDIC_Arch2 Up_counter DECO_CORDIC_EXT PriorityEncoder_CORDIC FPU_PIPELINED_FPADDSUB Testbench_FPU_Mark1 
+TOP=mult CORDIC_Arch3 CORDIC_Arch2 Sgf_Multiplication Testbench_FPU_Mark1 Testbench_FPU_Mark2 

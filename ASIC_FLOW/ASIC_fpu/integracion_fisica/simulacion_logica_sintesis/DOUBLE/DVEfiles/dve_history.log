@@ -34,9 +34,9 @@ gui_set_state_value -category Layout -key child_console_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_console_showstate -value maximized
 gui_set_state_value -category Layout -key child_console_size_x -value 1028
 gui_set_state_value -category Layout -key child_console_size_y -value 563
-gui_set_state_value -category Layout -key child_data_coltype -value 308
-gui_set_state_value -category Layout -key child_data_colvalue -value 241
-gui_set_state_value -category Layout -key child_data_colvariable -value 454
+gui_set_state_value -category Layout -key child_data_coltype -value 192
+gui_set_state_value -category Layout -key child_data_colvalue -value 474
+gui_set_state_value -category Layout -key child_data_colvariable -value 338
 gui_set_state_value -category Layout -key child_data_docknewline -value false
 gui_set_state_value -category Layout -key child_data_dockstate -value undocked
 gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
@@ -129,6 +129,182 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose} -dir .
-gui_list_add -id Wave.1 -from Hier.1 { Testbench_FPU_Mark1 } -insertionbar
+set DIALOGS::LOADFILEDIR [file dirname /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_v1_syn_vdc.tcl]; gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_v1_syn_vdc.tcl
+gui_set_pref_value -category {Source} -key {value_annotate} -value {false}
+gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
 gui_sim_continue  
-gui_save_session -savedb relative -global { Breakpoint Bus Radix Expression TimeShift Compare SignalGroup Highlight Stack }  -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_v1_syn_vdc.tcl
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 25463470000
+gui_marker_move -id  Wave.1 C1 25463470000
+gui_marker_move -id  Wave.1 C1 27848179250
+gui_marker_move -id  Wave.1 C1 3872925591
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Array_IN_1[0:1023][63:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Array_IN_1[0:1023][63:0]}  {Testbench_FPU_Mark1.Array_IN_2[0:1023][63:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Array_IN_1[0:1023][63:0]}  {Testbench_FPU_Mark1.Array_IN_2[0:1023][63:0]}  {Testbench_FPU_Mark1.op_result[63:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix Hex2Float_BigEndian
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 197271
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Data_1[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Data_1[63:0]}  {Testbench_FPU_Mark1.Data_2[63:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix Hex2Float_BigEndian
+gui_marker_move -id  Wave.1 C1 362374
+gui_marker_move -id  Wave.1 C1 356745
+gui_wv_scrollright -id  Wave.1  page
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.op_result[63:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {Testbench_FPU_Mark1.Data_2[63:0]} {{Testbench_FPU_Mark1.op_result[63:0]}} 
+gui_marker_move -id  Wave.1 C1 630461
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 63176896
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Data_1[63:0]}   }
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 20670000
+gui_marker_move -id  Wave.1 C1 14230000
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_zoom_timerange -id  Wave.1 12451610 21705881
+gui_marker_move -id  Wave.1 C1 16470000
+gui_marker_move -id  Wave.1 C1 18430000
+gui_wv_scroll_hslidermove -id  Wave.1 837571
+gui_marker_move -id  Wave.1 C1 18863400000
+gui_wv_scroll_hslidermove -id  Wave.1 1498190
+gui_marker_move -id  Wave.1 C1 33739150000
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.op_result[63:0]}   }
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 33746628259
+gui_seek_next -id Wave.1 -number 1 
+gui_marker_move -id  Wave.1 C1 33746664145
+gui_seek_next -id Wave.1 -number 1 
+gui_marker_move -id  Wave.1 C1 33754084079
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.contador[31:0]}   }
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_wv_scroll_hslidermove -id  Wave.1 98921774
+gui_marker_move -id  Wave.1 C1 34802946118
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_wv_scroll_hslidermove -id  Wave.1 55501911
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_wv_scroll_hslidermove -id  Wave.1 103452542
+gui_marker_move -id  Wave.1 C1 36396993532
+gui_seek_next -id Wave.1 -number 1 
+gui_wv_scroll_hslidermove -id  Wave.1 36623710
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.EW[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark1.Data_1[63:0]}   }
+gui_marker_move -id  Wave.1 C1 12885087068

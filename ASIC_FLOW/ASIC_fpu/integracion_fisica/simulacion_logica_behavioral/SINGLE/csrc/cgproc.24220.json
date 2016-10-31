@@ -1,0 +1,67 @@
+{
+    "ObjArchives": [
+        {
+            "size": 104803,
+            "archive": "archive.5/_24220_archive_1.a",
+            "objects": [
+                [
+                    "W96Hc_d.o",
+                    104803
+                ]
+            ]
+        }
+    ],
+    "Modules": {
+        "shift_mux_array_0004": {},
+        "FPU_Add_Subtract_Function_0000": {},
+        "...MASTER...": {},
+        "deco_op": {},
+        "shift_mux_array_0002": {},
+        "Multiplexer_AC_0000": {},
+        "LUT_CASE_32bits": {},
+        "shift_mux_array_0001": {},
+        "DECO_CORDIC_EXT": {},
+        "CORDIC_FSM_v3": {},
+        "FPU_Multiplication_Function_0000": {},
+        "Mux_3x1_bv2": {},
+        "shift_mux_array_0003": {},
+        "Testbench_FPU_Mark1": {},
+        "demux_1x3": {},
+        "shift_mux_array_0005": {},
+        "mult": {},
+        "Sgf_Multiplication": {},
+        "FPU_PIPELINED_FPADDSUB_0000": {},
+        "CORDIC_Arch3": {},
+        "NaN_mod_32": {},
+        "CORDIC_Arch2": {},
+        "Mux_3x1_b": {},
+        "CORDIC_FSM_v2": {},
+        "Mux_2x1": {},
+        "Mux_2x1_0000": {},
+        "sign_inverter": {},
+        "Rotate_Mux_Array_0000": {},
+        "Priority_Codec_32": {},
+        "Testbench_FPU_Mark2": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 4294967295,
+            "out": "objs/amcQw_d.o",
+            "bytes": 9446,
+            "mode": 4
+        },
+        "W96Hc_d": {
+            "mod": "Testbench_FPU_Mark2",
+            "checksum": 4294967295,
+            "out": "W96Hc_d.o",
+            "bytes": 104803,
+            "mode": 4,
+            "archive": "archive.5/_24220_archive_1.a"
+        }
+    },
+    "reusePaths": {}
+}

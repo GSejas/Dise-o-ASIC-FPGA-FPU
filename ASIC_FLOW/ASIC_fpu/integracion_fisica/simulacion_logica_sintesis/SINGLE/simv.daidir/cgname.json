@@ -1,7 +1,7 @@
 {
-    "AND3X2TS": [
-        "AND3X2TS",
-        "hJH7t",
+    "AOI31XLTS": [
+        "AOI31XLTS",
+        "vgxzN",
         "module"
     ],
     "FPU_Interface_W32_EW8_SW23_SWR26_EWR5": [
@@ -9,54 +9,24 @@
         "K4fUu",
         "module"
     ],
-    "AOI31XLTS": [
-        "AOI31XLTS",
-        "vgxzN",
-        "module"
-    ],
-    "NAND4XLTS": [
-        "NAND4XLTS",
-        "Suv9P",
-        "module"
-    ],
-    "AOI2BB1XLTS": [
-        "AOI2BB1XLTS",
-        "znNGb",
-        "module"
-    ],
-    "MXI2X1TS": [
-        "MXI2X1TS",
-        "ekEYZ",
-        "module"
-    ],
-    "OAI33X1TS": [
-        "OAI33X1TS",
-        "s6A9s",
-        "module"
-    ],
     "Testbench_FPU_Mark1": [
         "Testbench_FPU_Mark1",
         "NdheE",
         "module"
     ],
-    "AOI2BB2XLTS": [
-        "AOI2BB2XLTS",
-        "vsI84",
+    "AO22XLTS": [
+        "AO22XLTS",
+        "h1mxv",
         "module"
     ],
-    "OAI222X1TS": [
-        "OAI222X1TS",
-        "DPNuy",
+    "NOR4BX1TS": [
+        "NOR4BX1TS",
+        "zihT1",
         "module"
     ],
-    "NAND2XLTS": [
-        "NAND2XLTS",
-        "v4TQJ",
-        "module"
-    ],
-    "AOI222X4TS": [
-        "AOI222X4TS",
-        "hgVY3",
+    "INVX6TS": [
+        "INVX6TS",
+        "B5gZn",
         "module"
     ],
     "AOI221X1TS": [
@@ -64,9 +34,49 @@
         "ff9t5",
         "module"
     ],
-    "MX2X2TS": [
-        "MX2X2TS",
-        "HxCBu",
+    "AOI21X4TS": [
+        "AOI21X4TS",
+        "EAHjU",
+        "module"
+    ],
+    "AND3X2TS": [
+        "AND3X2TS",
+        "hJH7t",
+        "module"
+    ],
+    "CMPR32X2TS": [
+        "CMPR32X2TS",
+        "i1ayL",
+        "module"
+    ],
+    "DFFRXLTS": [
+        "DFFRXLTS",
+        "GPEPC",
+        "module"
+    ],
+    "AOI2BB2XLTS": [
+        "AOI2BB2XLTS",
+        "vsI84",
+        "module"
+    ],
+    "NOR3XLTS": [
+        "NOR3XLTS",
+        "tmpxG",
+        "module"
+    ],
+    "AOI2BB1XLTS": [
+        "AOI2BB1XLTS",
+        "znNGb",
+        "module"
+    ],
+    "AOI211XLTS": [
+        "AOI211XLTS",
+        "r2uty",
+        "module"
+    ],
+    "NOR2XLTS": [
+        "NOR2XLTS",
+        "N2WPb",
         "module"
     ],
     "AND4X1TS": [
@@ -79,34 +89,24 @@
         "mxuAI",
         "module"
     ],
-    "OR2X4TS": [
-        "OR2X4TS",
-        "tqGJB",
+    "OR3X2TS": [
+        "OR3X2TS",
+        "pVksL",
         "module"
     ],
-    "INVX6TS": [
-        "INVX6TS",
-        "B5gZn",
+    "AOI222X4TS": [
+        "AOI222X4TS",
+        "hgVY3",
         "module"
     ],
-    "DFFQX4TS": [
-        "DFFQX4TS",
-        "IS4b5",
+    "NAND4XLTS": [
+        "NAND4XLTS",
+        "Suv9P",
         "module"
     ],
-    "AOI21X4TS": [
-        "AOI21X4TS",
-        "EAHjU",
-        "module"
-    ],
-    "AOI211XLTS": [
-        "AOI211XLTS",
-        "r2uty",
-        "module"
-    ],
-    "OAI31XLTS": [
-        "OAI31XLTS",
-        "wxZzt",
+    "OA21XLTS": [
+        "OA21XLTS",
+        "xvYs6",
         "module"
     ],
     "AOI22X2TS": [
@@ -119,19 +119,9 @@
         "rPbND",
         "module"
     ],
-    "OAI221XLTS": [
-        "OAI221XLTS",
-        "yIM47",
-        "module"
-    ],
-    "OAI2BB2XLTS": [
-        "OAI2BB2XLTS",
-        "HG8j1",
-        "module"
-    ],
-    "AO22XLTS": [
-        "AO22XLTS",
-        "h1mxv",
+    "MXI2X1TS": [
+        "MXI2X1TS",
+        "ekEYZ",
         "module"
     ],
     "AO21XLTS": [
@@ -139,79 +129,9 @@
         "U58Kd",
         "module"
     ],
-    "NAND3XLTS": [
-        "NAND3XLTS",
-        "jfAC3",
-        "module"
-    ],
-    "NAND2BXLTS": [
-        "NAND2BXLTS",
-        "kfTD2",
-        "module"
-    ],
-    "udp_mux2": [
-        "udp_mux2",
-        "U7Vwg",
-        "udp"
-    ],
-    "NOR2XLTS": [
-        "NOR2XLTS",
-        "N2WPb",
-        "module"
-    ],
-    "CLKAND2X2TS": [
-        "CLKAND2X2TS",
-        "TgI2b",
-        "module"
-    ],
-    "NAND4BXLTS": [
-        "NAND4BXLTS",
-        "pNJDd",
-        "module"
-    ],
-    "NAND4BBX1TS": [
-        "NAND4BBX1TS",
-        "An0FV",
-        "module"
-    ],
-    "NOR3XLTS": [
-        "NOR3XLTS",
-        "tmpxG",
-        "module"
-    ],
-    "CLKBUFX3TS": [
-        "CLKBUFX3TS",
-        "Et0cN",
-        "module"
-    ],
-    "NOR4X2TS": [
-        "NOR4X2TS",
-        "zLfUQ",
-        "module"
-    ],
-    "NOR2BX2TS": [
-        "NOR2BX2TS",
-        "z9H3q",
-        "module"
-    ],
-    "NOR3BX2TS": [
-        "NOR3BX2TS",
-        "UJ1RH",
-        "module"
-    ],
-    "NOR4BX1TS": [
-        "NOR4BX1TS",
-        "zihT1",
-        "module"
-    ],
-    "OR3X2TS": [
-        "OR3X2TS",
-        "pVksL",
-        "module"
-    ],
-    "OR4X2TS": [
-        "OR4X2TS",
-        "H7A32",
+    "MX2X2TS": [
+        "MX2X2TS",
+        "HxCBu",
         "module"
     ],
     "OAI21XLTS": [
@@ -219,14 +139,9 @@
         "eKq3b",
         "module"
     ],
-    "OAI211XLTS": [
-        "OAI211XLTS",
-        "tq4g6",
-        "module"
-    ],
-    "OAI22X2TS": [
-        "OAI22X2TS",
-        "tHERP",
+    "NAND2XLTS": [
+        "NAND2XLTS",
+        "v4TQJ",
         "module"
     ],
     "OAI32X4TS": [
@@ -234,29 +149,64 @@
         "mRiyP",
         "module"
     ],
-    "AHHCINX2TS": [
-        "AHHCINX2TS",
-        "y12wg",
+    "NAND3XLTS": [
+        "NAND3XLTS",
+        "jfAC3",
         "module"
     ],
-    "DFFRXLTS": [
-        "DFFRXLTS",
-        "GPEPC",
+    "NAND4BBX1TS": [
+        "NAND4BBX1TS",
+        "An0FV",
         "module"
     ],
-    "OAI2BB1X2TS": [
-        "OAI2BB1X2TS",
-        "NSnjy",
+    "NAND2BXLTS": [
+        "NAND2BXLTS",
+        "kfTD2",
         "module"
     ],
-    "ADDFX2TS": [
-        "ADDFX2TS",
-        "DWi65",
+    "NAND4BXLTS": [
+        "NAND4BXLTS",
+        "pNJDd",
         "module"
     ],
-    "OA21XLTS": [
-        "OA21XLTS",
-        "xvYs6",
+    "OAI22X2TS": [
+        "OAI22X2TS",
+        "tHERP",
+        "module"
+    ],
+    "NOR4X2TS": [
+        "NOR4X2TS",
+        "zLfUQ",
+        "module"
+    ],
+    "NOR3BX2TS": [
+        "NOR3BX2TS",
+        "UJ1RH",
+        "module"
+    ],
+    "NOR2BX2TS": [
+        "NOR2BX2TS",
+        "z9H3q",
+        "module"
+    ],
+    "OR2X4TS": [
+        "OR2X4TS",
+        "tqGJB",
+        "module"
+    ],
+    "OR4X2TS": [
+        "OR4X2TS",
+        "H7A32",
+        "module"
+    ],
+    "udp_mux2": [
+        "udp_mux2",
+        "U7Vwg",
+        "udp"
+    ],
+    "OAI211XLTS": [
+        "OAI211XLTS",
+        "tq4g6",
         "module"
     ],
     "OA22X1TS": [
@@ -264,14 +214,44 @@
         "azn5L",
         "module"
     ],
+    "OAI221XLTS": [
+        "OAI221XLTS",
+        "yIM47",
+        "module"
+    ],
+    "OAI222X1TS": [
+        "OAI222X1TS",
+        "DPNuy",
+        "module"
+    ],
+    "OAI31XLTS": [
+        "OAI31XLTS",
+        "wxZzt",
+        "module"
+    ],
+    "OAI33X1TS": [
+        "OAI33X1TS",
+        "s6A9s",
+        "module"
+    ],
+    "CMPR42X2TS": [
+        "CMPR42X2TS",
+        "xeQxf",
+        "module"
+    ],
+    "OAI2BB1X2TS": [
+        "OAI2BB1X2TS",
+        "NSnjy",
+        "module"
+    ],
+    "OAI2BB2XLTS": [
+        "OAI2BB2XLTS",
+        "HG8j1",
+        "module"
+    ],
     "XOR2XLTS": [
         "XOR2XLTS",
         "Yxwba",
-        "module"
-    ],
-    "MDFFHQX1TS": [
-        "MDFFHQX1TS",
-        "nGVYF",
         "module"
     ],
     "XOR3X1TS": [
@@ -284,14 +264,34 @@
         "GL4iV",
         "module"
     ],
+    "CLKBUFX3TS": [
+        "CLKBUFX3TS",
+        "Et0cN",
+        "module"
+    ],
+    "CLKAND2X2TS": [
+        "CLKAND2X2TS",
+        "TgI2b",
+        "module"
+    ],
+    "AHHCINX2TS": [
+        "AHHCINX2TS",
+        "y12wg",
+        "module"
+    ],
+    "udp_dff": [
+        "udp_dff",
+        "exIG1",
+        "udp"
+    ],
     "ADDHXLTS": [
         "ADDHXLTS",
         "cBJMG",
         "module"
     ],
-    "CMPR32X2TS": [
-        "CMPR32X2TS",
-        "i1ayL",
+    "ADDFX2TS": [
+        "ADDFX2TS",
+        "DWi65",
         "module"
     ],
     "AFHCONX2TS": [
@@ -304,14 +304,14 @@
         "RJHrC",
         "module"
     ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
+    "MDFFHQX1TS": [
+        "MDFFHQX1TS",
+        "nGVYF",
         "module"
     ],
-    "CMPR42X2TS": [
-        "CMPR42X2TS",
-        "xeQxf",
+    "DFFQX4TS": [
+        "DFFQX4TS",
+        "IS4b5",
         "module"
     ],
     "DFFSX1TS": [
@@ -319,9 +319,9 @@
         "TQVu6",
         "module"
     ],
-    "udp_dff": [
-        "udp_dff",
-        "exIG1",
-        "udp"
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
     ]
 }

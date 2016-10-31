@@ -1,3 +1,4 @@
+ucliGUI::start /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/simv  +v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose -ucligui
 set ucliGUI::state
 set ucliGUI::state
 ucliCore::getToolPID
@@ -5,85 +6,361 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD0
-set ::dve_fid VPD0
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp0RKiNY
-synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.4405}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.4405}
-ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {decimal decimal decimal decimal decimal decimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary binary binary binary } -list {PERIOD W EW SW SWR EWR clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} overflow_flag underflow_flag operation_ready NaN_flag }
-ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[63:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD FPSUB }
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp2qx9pU
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.32755}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.32755}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
 config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
-synopsys::dump -add {Testbench_FPU_Mark1} -scope "." -depth 1 -fid VPD0
-synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_1 Testbench_FPU_Mark1.Array_IN_2 } -aggregates  -fid VPD0
+if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {Testbench_FPU_Mark1} -scope "." -depth 1 -fid VPD1
+set _session_group_1 Testbench_FPU_Mark1
+set Testbench_FPU_Mark1 "$_session_group_1"
+synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_1} -aggregates  -fid VPD1
+synopsys::dump -add {Testbench_FPU_Mark1.Array_IN_2} -aggregates  -fid VPD1
+# Global: Highlighting
+# Global: Stack
+synopsys::xml {set_only_active_frame <data value="1" />}
+# Post database loading setting...
+# Restore C1 time
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_select -id ${Hier.1} {Testbench_FPU_Mark1}}
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {hexadecimal decimal symbolic hexadecimal hexadecimal decimal hexadecimal decimal binary decimal decimal binary symbolic binary decimal binary decimal hexadecimal hexadecimal decimal binary decimal decimal hexadecimal binary decimal decimal } -list {{Data_1[63:0]} EW {contador[31:0]} {Data_2[63:0]} Array_IN_1 FPSEN Array_IN_2 II begin_operation SW FPSUB underflow_flag {FileSaveData[31:0]} ack_operation SWR operation_ready PERIOD {op_result[63:0]} {region_flag[1:0]} EWR NaN_flag ROUNDING_MODE_POS_INF W {operation[2:0]} clk FPMULT III }
+# Data 'Data.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Source 'Source.1'
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {binary hexadecimal binary decimal decimal decimal decimal } -list {rst {r_mode[1:0]} overflow_flag FPADD FPCOS IoIV1 IoIV2 }
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${DLPane.1} }
+#</Session>
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
-set synopsys::env(time) 17135095000
-set synopsys::env(time) 35698770000
-set synopsys::env(time) 54056465022
-set synopsys::env(time) 72541110063
-set synopsys::env(time) 91143450063
-set synopsys::env(time) 109489215000
-set synopsys::env(time) 128143625063
-set synopsys::env(time) 146824830063
-set synopsys::env(time) 165403585022
-set synopsys::env(time) 183562135000
-set synopsys::env(time) 202178155000
-set synopsys::env(time) 220118270022
-set synopsys::env(time) 238752940063
-set synopsys::env(time) 257360425000
-set synopsys::env(time) 275744630022
-set synopsys::env(time) 293305470000
-set synopsys::env(time) 311660655000
-set synopsys::env(time) 330104875000
-set synopsys::env(time) 348453070000
-set synopsys::env(time) 365674525063
-set synopsys::env(time) 383772610000
-set synopsys::env(time) 402467145063
-set synopsys::env(time) 420994025000
-set synopsys::env(time) 439669725000
-set synopsys::env(time) 458340840000
-set synopsys::env(time) 477008505063
-set synopsys::env(time) 495662620000
-set synopsys::env(time) 514091110000
-set synopsys::env(time) 532106920063
-set synopsys::env(time) 550357645000
-set synopsys::env(time) 568519475000
-set synopsys::env(time) 587102885000
-set synopsys::env(time) 605655410000
-set synopsys::env(time) 624356985022
-set synopsys::env(time) 643084510063
-set synopsys::env(time) 661155370022
-set synopsys::env(time) 679846645000
-set synopsys::env(time) 698397710000
-set synopsys::env(time) 716983650000
-set synopsys::env(time) 735598975022
-set synopsys::env(time) 754347875000
-set synopsys::env(time) 773007585063
-set synopsys::env(time) 791669295063
-set synopsys::env(time) 809029745063
-set synopsys::env(time) 826821835000
-set synopsys::env(time) 845459570000
-set synopsys::env(time) 864231460000
-set synopsys::env(time) 883038770000
-set synopsys::env(time) 901534630000
-set synopsys::env(time) 918552710063
-set synopsys::env(time) 937205470000
-set synopsys::env(time) 955233470000
-set synopsys::env(time) 973859565000
-set synopsys::env(time) 992548800000
-set synopsys::env(time) 1011259435000
-set synopsys::env(time) 1029528850000
-set synopsys::env(time) 1048140215063
-set synopsys::env(time) 1066785855063
-set synopsys::env(time) 1085445880022
-set synopsys::env(time) 1104108025000
-set synopsys::env(time) 1122090305022
-set synopsys::env(time) 1140669725000
+set synopsys::env(time) 172380000
+set synopsys::env(time) 345068423
+set synopsys::env(time) 516465000
+set synopsys::env(time) 692805000
+set synopsys::env(time) 871157232
+set synopsys::env(time) 924781311
+set synopsys::env(time) 948135000
+set synopsys::env(time) 970434398
+set synopsys::env(time) 992543056
+set synopsys::env(time) 1013773773
+set synopsys::env(time) 1036117263
+set synopsys::env(time) 1060502027
+set synopsys::env(time) 1082268323
+set synopsys::env(time) 1104994263
+set synopsys::env(time) 1127107010
+set synopsys::env(time) 1150510788
+set synopsys::env(time) 1174447651
+set synopsys::env(time) 1198595000
+set synopsys::env(time) 1223522812
+set synopsys::env(time) 1247604821
+set synopsys::env(time) 1312886492
+set synopsys::env(time) 1482978594
+set synopsys::env(time) 1656612227
+set synopsys::env(time) 1832696571
+set synopsys::env(time) 2004659044
+set synopsys::env(time) 2176286910
+set synopsys::env(time) 2351176965
+set synopsys::env(time) 2522688282
+set synopsys::env(time) 2696639571
+set synopsys::env(time) 2868870355
+set synopsys::env(time) 3042201361
+set synopsys::env(time) 3213029018
+set synopsys::env(time) 3383827142
+set synopsys::env(time) 3557351052
+set synopsys::env(time) 3733998362
+set synopsys::env(time) 3904449538
+set synopsys::env(time) 4078960401
+set synopsys::env(time) 4245119747
+set synopsys::env(time) 4422409116
+set synopsys::env(time) 4594566086
+set synopsys::env(time) 4770885000
+set synopsys::env(time) 4943599400
+set synopsys::env(time) 5115809486
+set synopsys::env(time) 5289910552
+set synopsys::env(time) 5465645063
+set synopsys::env(time) 5639901361
+set synopsys::env(time) 5811901414
+set synopsys::env(time) 5982716067
+set synopsys::env(time) 6159978630
+set synopsys::env(time) 6332701521
+set synopsys::env(time) 6509841564
+set synopsys::env(time) 6681778537
+set synopsys::env(time) 6857100113
+set synopsys::env(time) 7027177325
+set synopsys::env(time) 7200779317
+set synopsys::env(time) 7373700709
+set synopsys::env(time) 7548460846
+set synopsys::env(time) 7723729399
+set synopsys::env(time) 7893819175
+set synopsys::env(time) 8069346791
+set synopsys::env(time) 8245386261
+set synopsys::env(time) 8416340588
+set synopsys::env(time) 8593157694
+set synopsys::env(time) 8764741129
+set synopsys::env(time) 8935514499
+set synopsys::env(time) 9105935000
+set synopsys::env(time) 9279149751
+set synopsys::env(time) 9459270725
+set synopsys::env(time) 9632870245
+set synopsys::env(time) 9815648233
+set synopsys::env(time) 9990519857
+set synopsys::env(time) 10162387447
+set synopsys::env(time) 10344900778
+set synopsys::env(time) 10522769664
+set synopsys::env(time) 10694622490
+set synopsys::env(time) 10876707645
+set synopsys::env(time) 11050661031
+set synopsys::env(time) 11232087824
+set synopsys::env(time) 11415837736
+set synopsys::env(time) 11592172563
+set synopsys::env(time) 11768739393
+set synopsys::env(time) 11944929281
+set synopsys::env(time) 12122678623
+set synopsys::env(time) 12294720381
+set synopsys::env(time) 12474699513
+set synopsys::env(time) 12654818165
+set synopsys::env(time) 12836236533
+set synopsys::env(time) 13017025000
+set synopsys::env(time) 13191570473
+set synopsys::env(time) 13373125000
+set synopsys::env(time) 13554176200
+set synopsys::env(time) 13735767598
+set synopsys::env(time) 13912589994
+set synopsys::env(time) 14093285000
+set synopsys::env(time) 14273086034
+set synopsys::env(time) 14455228709
+set synopsys::env(time) 14636621797
+set synopsys::env(time) 14819807992
+set synopsys::env(time) 14994911754
+set synopsys::env(time) 15172839772
+set synopsys::env(time) 15353977442
+set synopsys::env(time) 15533387450
+set synopsys::env(time) 15713421303
+set synopsys::env(time) 15886716072
+set synopsys::env(time) 16067880666
+set synopsys::env(time) 16247208127
+set synopsys::env(time) 16428837511
+set synopsys::env(time) 16604476636
+set synopsys::env(time) 16787096049
+set synopsys::env(time) 16963578423
+set synopsys::env(time) 17141718549
+set synopsys::env(time) 17317409183
+set synopsys::env(time) 17478836210
+set synopsys::env(time) 17649530028
+set synopsys::env(time) 17825689582
+set synopsys::env(time) 18001198115
+set synopsys::env(time) 18179848359
+set synopsys::env(time) 18357458537
+set synopsys::env(time) 18520586249
+set synopsys::env(time) 18692987188
+set synopsys::env(time) 18870469795
+set synopsys::env(time) 19043799273
+set synopsys::env(time) 19217756103
+set synopsys::env(time) 19394959414
+set synopsys::env(time) 19566900057
+set synopsys::env(time) 19741819121
+set synopsys::env(time) 19920165000
+set synopsys::env(time) 20095989886
+set synopsys::env(time) 20272415000
+set synopsys::env(time) 20445608841
+set synopsys::env(time) 20621946953
+set synopsys::env(time) 20799946031
+set synopsys::env(time) 20975419476
+set synopsys::env(time) 21156238163
+set synopsys::env(time) 21332447398
+set synopsys::env(time) 21505666416
+set synopsys::env(time) 21681568807
+set synopsys::env(time) 21859469540
+set synopsys::env(time) 22037946065
+set synopsys::env(time) 22216256892
+set synopsys::env(time) 22389016342
+set synopsys::env(time) 22565837848
+set synopsys::env(time) 22740638091
+set synopsys::env(time) 22920816247
+set synopsys::env(time) 23099255000
+set synopsys::env(time) 23279227631
+set synopsys::env(time) 23463826410
+set synopsys::env(time) 23642007377
+set synopsys::env(time) 23821220048
+set synopsys::env(time) 24001137511
+set synopsys::env(time) 24170900049
+set synopsys::env(time) 24343690000
+set synopsys::env(time) 24527807377
+set synopsys::env(time) 24709446302
+set synopsys::env(time) 24888177555
+set synopsys::env(time) 25064148780
+set synopsys::env(time) 25245840692
+set synopsys::env(time) 25423543101
+set synopsys::env(time) 25600810692
+set synopsys::env(time) 25772978608
+set synopsys::env(time) 25947278579
+set synopsys::env(time) 26119999773
+set synopsys::env(time) 26290728627
+set synopsys::env(time) 26464158755
+set synopsys::env(time) 26637247666
+set synopsys::env(time) 26808608898
+set synopsys::env(time) 26986235000
+set synopsys::env(time) 27157158608
+set synopsys::env(time) 27334506202
+set synopsys::env(time) 27504927651
+set synopsys::env(time) 27676697511
+set synopsys::env(time) 27849390296
+set synopsys::env(time) 28027325000
+set synopsys::env(time) 28199080285
+set synopsys::env(time) 28371299356
+set synopsys::env(time) 28542993664
+set synopsys::env(time) 28707415000
+set synopsys::env(time) 28885129873
+set synopsys::env(time) 29058397269
+set synopsys::env(time) 29229856064
+set synopsys::env(time) 29401047938
+set synopsys::env(time) 29572876738
+set synopsys::env(time) 29750505000
+set synopsys::env(time) 29923216984
+set synopsys::env(time) 30092687268
+set synopsys::env(time) 30266868025
+set synopsys::env(time) 30436817205
+set synopsys::env(time) 30607648828
+set synopsys::env(time) 30779817250
+set synopsys::env(time) 30951668846
+set synopsys::env(time) 31127679794
+set synopsys::env(time) 31299615000
+set synopsys::env(time) 31471016460
+set synopsys::env(time) 31641825000
+set synopsys::env(time) 31820250113
+set synopsys::env(time) 31989980434
+set synopsys::env(time) 32163379180
+set synopsys::env(time) 32329808004
+set synopsys::env(time) 32500667661
+set synopsys::env(time) 32671688380
+set synopsys::env(time) 32845239922
+set synopsys::env(time) 33015032045
+set synopsys::env(time) 33187755000
+set synopsys::env(time) 33362399615
+set synopsys::env(time) 33533938335
+set synopsys::env(time) 33700856808
+set synopsys::env(time) 33879691255
+set synopsys::env(time) 34051122410
+set synopsys::env(time) 34224566523
+set synopsys::env(time) 34403956819
+set synopsys::env(time) 34575789878
+set synopsys::env(time) 34747562848
+set synopsys::env(time) 34914115907
+set synopsys::env(time) 35084809732
+set synopsys::env(time) 35257081276
+set synopsys::env(time) 35431826774
+set synopsys::env(time) 35604020330
+set synopsys::env(time) 35776789617
+set synopsys::env(time) 35950098263
+set synopsys::env(time) 36120186221
+set synopsys::env(time) 36292471895
+set synopsys::env(time) 36460629584
+set synopsys::env(time) 36632506337
+set synopsys::env(time) 36802716550
+set synopsys::env(time) 36979646230
+set synopsys::env(time) 37151858678
+set synopsys::env(time) 37321298840
+set synopsys::env(time) 37495158777
+set synopsys::env(time) 37666556067
+set synopsys::env(time) 37839196313
+set synopsys::env(time) 38012761842
+set synopsys::env(time) 38185667266
+set synopsys::env(time) 38358820473
+set synopsys::env(time) 38531385000
+set synopsys::env(time) 38702908982
+set synopsys::env(time) 38873799521
+set synopsys::env(time) 39043166490
+set synopsys::env(time) 39220759699
+set synopsys::env(time) 39393630120
+set synopsys::env(time) 39566780766
+set synopsys::env(time) 39740710772
+set synopsys::env(time) 39912026359
+set synopsys::env(time) 40083225000
+set synopsys::env(time) 40256717660
+set synopsys::env(time) 40431316228
+set synopsys::env(time) 40605568338
+set synopsys::env(time) 40773285000
+set synopsys::env(time) 40953809922
+set synopsys::env(time) 41129029441
+set synopsys::env(time) 41305462026
+set synopsys::env(time) 41483899340
+set synopsys::env(time) 41669660305
+set synopsys::env(time) 41848516228
+set synopsys::env(time) 42025338598
+set synopsys::env(time) 42207681094
+set synopsys::env(time) 42386217842
+set synopsys::env(time) 42561038868
+set synopsys::env(time) 42738676440
+set synopsys::env(time) 42921557369
+set synopsys::env(time) 43100618626
+set synopsys::env(time) 43276497393
+set synopsys::env(time) 43453985000
+set synopsys::env(time) 43633018626
+set synopsys::env(time) 43817689985
+set synopsys::env(time) 43996381616
+set synopsys::env(time) 44176109665
+set synopsys::env(time) 44355418991
+set synopsys::env(time) 44534827354
+set synopsys::env(time) 44714135000
+set synopsys::env(time) 44898906466
+set synopsys::env(time) 45074397827
+set synopsys::env(time) 45252120347
+set synopsys::env(time) 45432527286
+set synopsys::env(time) 45612368619
+set synopsys::env(time) 45789306362
+set synopsys::env(time) 45968919264
+set synopsys::env(time) 46149215000
+set synopsys::env(time) 46321160487
+set synopsys::env(time) 46504905063
+set synopsys::env(time) 46681236203
+set synopsys::env(time) 46856986101
+set synopsys::env(time) 47033149204
+set synopsys::env(time) 47209070000
+set synopsys::env(time) 47388058596
+set synopsys::env(time) 47566895000
+set synopsys::env(time) 47750450217
+set synopsys::env(time) 47925218343
+set synopsys::env(time) 48106107295
+set synopsys::env(time) 48283898783
+set synopsys::env(time) 48460076701
+set synopsys::env(time) 48637157369
+set synopsys::env(time) 48811976251
+set synopsys::env(time) 48984216115
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {hexadecimal decimal symbolic hexadecimal hexadecimal decimal hexadecimal decimal binary decimal decimal binary symbolic binary decimal binary decimal hexadecimal hexadecimal decimal binary decimal decimal hexadecimal binary decimal decimal hexadecimal } -list {{Data_1[63:0]} EW {contador[31:0]} {Data_2[63:0]} Array_IN_1 FPSEN Array_IN_2 II begin_operation SW FPSUB underflow_flag {FileSaveData[31:0]} ack_operation SWR operation_ready PERIOD {op_result[63:0]} {region_flag[1:0]} EWR NaN_flag ROUNDING_MODE_POS_INF W {operation[2:0]} clk FPMULT III {r_mode[1:0]} }
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {binary binary decimal decimal decimal decimal } -list {rst overflow_flag FPADD FPCOS IoIV1 IoIV2 }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

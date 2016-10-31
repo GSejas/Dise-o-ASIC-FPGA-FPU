@@ -108,6 +108,7 @@ parameter PERIOD = 10;
         reg [W-1:0] Array_IN_2 [0:(((2**PERIOD))-1)];
         integer contador;
         integer FileSaveData;
+        integer FileSaveData_FLOAT;
 
 
                 initial begin
@@ -118,7 +119,7 @@ parameter PERIOD = 10;
                     ack_operation = 0;
                     Data_1 = 0;
                     Data_2 = 0;
-
+                    region_flag = IoIV1;
 `ifdef SINGLE
             $display("------------------------SUMA--------------------------");
             $display("------------------------    --------------------------");
@@ -128,17 +129,9 @@ parameter PERIOD = 10;
                     $readmemh("ADD/SINGLE/Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("ADD/SINGLE/Hexadecimal_B.txt", Array_IN_2);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("ADD/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("ADD/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("ADD/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("ADD/SINGLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("ADD/SINGLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_PIPE(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
             $display("------------------------RSTA--------------------------");
             $display("------------------------    --------------------------");
@@ -148,17 +141,9 @@ parameter PERIOD = 10;
                     $readmemh("SUB/SINGLE/Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("SUB/SINGLE/Hexadecimal_B.txt", Array_IN_2);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("SUB/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("SUB/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("SUB/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("SUB/SINGLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("SUB/SINGLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_PIPE(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
 
             $display("------------------------MULT--------------------------");
@@ -169,24 +154,16 @@ parameter PERIOD = 10;
                     $readmemh("MULT/SINGLE/Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("MULT/SINGLE/Hexadecimal_B.txt", Array_IN_2);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("MULT/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("MULT/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("MULT/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("MULT/SINGLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("MULT/SINGLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_Arch2(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
 
             $display("---------------------REGION I or IV--------------------------");
             $display("------------------------    --------------------------");
             $display("---------------------REGION I or IV-------------------");
 
-                region_flag = IoIV1;
+               
 
             $display("------------------------SENO--------------------------");
             $display("------------------------    --------------------------");
@@ -195,17 +172,9 @@ parameter PERIOD = 10;
                     operation = FPSEN;
                     $readmemh("SIN/SINGLE/input_angles_hex.txt", Array_IN_1);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("SIN/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("SIN/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("SIN/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("SIN/SINGLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("SIN/SINGLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_Arch2(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
             $display("------------------------COS--------------------------");
             $display("------------------------    --------------------------");
@@ -214,17 +183,10 @@ parameter PERIOD = 10;
                     operation = FPCOS;
                     $readmemh("COS/SINGLE/input_angles_hex.txt", Array_IN_1);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("COS/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
 
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("COS/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("COS/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("COS/SINGLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("COS/SINGLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_Arch2(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 `endif
 `ifdef DOUBLE
             $display("------------------------SUMA--------------------------");
@@ -235,15 +197,9 @@ parameter PERIOD = 10;
                     $readmemh("ADD/DOUBLE/Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("ADD/DOUBLE/Hexadecimal_B.txt", Array_IN_2);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("ADD/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("ADD/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("ADD/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
+                        FileSaveData = $fopen("ADD/DOUBLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("ADD/DOUBLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_PIPE(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
             $display("------------------------RSTA--------------------------");
             $display("------------------------    --------------------------");
@@ -253,17 +209,11 @@ parameter PERIOD = 10;
                     $readmemh("SUB/DOUBLE/Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("SUB/DOUBLE/Hexadecimal_B.txt", Array_IN_2);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("SUB/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("SUB/DOUBLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("SUB/DOUBLE/ResultadoXilinxFLMv2F.txt","w");
+                       
+                        run_PIPE(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("SUB/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("SUB/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_PIPE(FileSaveData,(2**PERIOD));
 
 
             $display("------------------------MULT--------------------------");
@@ -274,17 +224,11 @@ parameter PERIOD = 10;
                     $readmemh("MULT/DOUBLE/Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("MULT/DOUBLE/Hexadecimal_B.txt", Array_IN_2);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("MULT/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("MULT/DOUBLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("MULT/DOUBLE/ResultadoXilinxFLMv2F.txt","w");
+                        
+                        run_Arch2(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("MULT/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("MULT/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
 
 
             $display("---------------------REGION I or IV--------------------------");
@@ -300,17 +244,11 @@ parameter PERIOD = 10;
                     operation = FPSEN;
                     $readmemh("SIN/DOUBLE/input_angles_hex.txt", Array_IN_1);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("SIN/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("SIN/DOUBLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("SIN/DOUBLE/ResultadoXilinxFLMv2F.txt","w");
+                      
+                        run_Arch2(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("SIN/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("SIN/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
 
             $display("------------------------COS--------------------------");
             $display("------------------------    --------------------------");
@@ -319,17 +257,10 @@ parameter PERIOD = 10;
                     operation = FPCOS;
                     $readmemh("COS/DOUBLE/input_angles_hex.txt", Array_IN_1);
 
-                    r_mode = ROUNDING_MODE_TRUNCT;
-                        FileSaveData = $fopen("COS/DOUBLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
+                        FileSaveData = $fopen("COS/DOUBLE/ResultadoXilinxFLMv2.txt","w");
+                        FileSaveData_FLOAT = $fopen("COS/DOUBLE/ResultadoXilinxFLMv2F.txt","w");
+                        run_Arch2(FileSaveData,FileSaveData_FLOAT,(2**PERIOD));
 
-                    r_mode = ROUNDING_MODE_NEG_INF;
-                        FileSaveData = $fopen("COS/DOUBLE/RMODE_NEGINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
-
-                    r_mode = ROUNDING_MODE_POS_INF;
-                        FileSaveData = $fopen("COS/DOUBLE/RMODE_POSINF/ResultadoXilinxFLM.txt","w");
-                        run_Arch2(FileSaveData,(2**PERIOD));
 `endif
 
                     #100 rst = 0;
@@ -344,6 +275,7 @@ parameter PERIOD = 10;
 
                 task run_Arch2;
                     input integer FDataO;
+                    input integer FData1;
                     input integer Vector_size;
                 begin
                     begin_operation = 0;
@@ -366,6 +298,7 @@ parameter PERIOD = 10;
                                 ack_operation = 1;
                                 #4;
                                 $fwrite(FDataO,"%h\n",op_result);
+                                $fwrite(FData1,"%f\n",$bitstoreal(op_result));
                             end
                             @(negedge clk) begin
                                 ack_operation = 0;
@@ -374,6 +307,7 @@ parameter PERIOD = 10;
 
                     end
                     $fclose(FDataO);
+                    $fclose(FData1);
                 end
             endtask
 ////////////////////////////TASK FOR THE PIPE ADDER/////////////////
@@ -384,6 +318,7 @@ parameter PERIOD = 10;
 
                 task run_PIPE;
                     input integer FData1;
+                    input integer FData2;
                     input integer Vector_size2;
                 begin
                     begin_operation = 0;
@@ -407,10 +342,12 @@ parameter PERIOD = 10;
                             end
                             if (operation_ready) begin
                                     $fwrite(FData1,"%h\n",op_result);
+                                    $fwrite(FData2,"%f\n",$bitstoreal(op_result));
                             end
                     end
                     begin_operation = 0;
                     $fclose(FData1);
+                    $fclose(FData2);
                 end
 
                 endtask
