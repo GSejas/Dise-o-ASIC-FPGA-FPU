@@ -1,0 +1,13 @@
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/SVD_unit.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/exp_register_file.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/exponent_alu.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/external_mul_16x16.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/fpu_control_unit.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/fpu_top.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/mask_and_shift.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/shift_and_extend.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/sig_register_file.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/front_end/source/significand_alu.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/simulacion_logica_behavioral/SINGLE/fpu_top_tb.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/simulacion_logica_behavioral/SINGLE/global.v
+/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_NTNU/integracion_fisica/simulacion_logica_behavioral/global.v

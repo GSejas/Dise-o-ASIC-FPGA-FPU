@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : fpu_top
+Version: L-2016.03-SP3
+Date   : Mon Oct 31 14:13:37 2016
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fpu_top                ibm13_wl10        scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 812.2877 uW   (53%)
+  Net Switching Power  = 722.0816 uW   (47%)
+                         ---------
+Total Dynamic Power    =   1.5344 mW  (100%)
+
+Cell Leakage Power     =  61.0457 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.5296        2.9172e-02        9.9284e+03            0.5587  (  36.41%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2827            0.6929        5.1117e+04            0.9757  (  63.59%)
+--------------------------------------------------------------------------------------------------
+Total              0.8123 mW         0.7221 mW     6.1046e+04 pW         1.5344 mW
+1

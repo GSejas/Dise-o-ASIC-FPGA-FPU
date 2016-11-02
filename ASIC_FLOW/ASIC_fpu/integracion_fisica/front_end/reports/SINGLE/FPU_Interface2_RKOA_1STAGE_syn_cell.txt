@@ -1,0 +1,135 @@
+Warning: Design 'FPU_Interface2_W32_EW8_SW23_SWR26_EWR5' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  1 20:37:18 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+FPADDSUB                  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                                                          25799.039682
+                                                                    h, n, p
+FPMULT                    FPU_Multiplication_Function     0.000000  b, p
+FPSENCOS                  CORDIC_Arch3v1                  0.000000  b, p
+NaN_dff                   d_ff_en_W1                      37.439999 h, n, p
+R_3                       DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          30.240000 n
+R_4                       DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          30.240000 n
+R_11                      DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          30.240000 n
+R_12                      DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+U35                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U37                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U38                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U39                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U40                       CLKINVX3TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U41                       INVX4TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U42                       NAND3X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U43                       NAND3X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U44                       NAND3XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U45                       AOI31XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U46                       NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U47                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U48                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U49                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U50                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U51                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U52                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U53                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U54                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U55                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U56                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U57                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U58                       AOI31XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U59                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U60                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U61                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U62                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U63                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U64                       NOR3XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U66                       AND4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U67                       NOR4BX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U68                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U69                       OR3X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U70                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U71                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U72                       NOR4BX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U73                       NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U74                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U75                       OAI31X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U76                       OAI2BB2XLTS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+deco_operation            deco_op                         14.400000 h
+demux_ack_op              demux_1x3_0                     20.160000 h
+demux_beg_op              demux_1x3_1                     30.240000 h
+mux_beg_addsubt           Mux_2x1_W1_3                    14.400000 h, p
+mux_data_in1              Mux_2x1_W32_1                   367.199997
+                                                                    h, p
+mux_data_in2              Mux_2x1_W32_0                   370.079997
+                                                                    h, p
+mux_operation_add_cordic  Mux_2x1_W1_2                    14.400000 h, p
+mux_ready_op              Mux_3x1_b                       0.000000  b, p
+mux_result_op             Mux_3x1_b_W32                   695.519992
+                                                                    h, p
+operation_dff             d_ff_en_W2                      70.559998 h, n, p
+overflow_flag_mux         Mux_2x1_W1_1                    14.400000 h, p
+reg_dataA                 d_ff_en_W32_1                   306.719991
+                                                                    h, n, p
+reg_dataB                 d_ff_en_W32_0                   306.719991
+                                                                    h, n, p
+underflow_flag_mux        Mux_2x1_W1_0                    14.400000 h, p
+--------------------------------------------------------------------------------
+Total 62 cells                                            28532.159647
+1

@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2v2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Mon Oct 31 15:36:50 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_inst_RecursiveKOA_EVEN1_left_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_44 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2v2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPMULT_inst_RecursiveKOA_EVEN1_left_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_11_/CK (DFFHQX1TS)
+                                                          0.00 #     1.00 r
+  FPMULT_inst_RecursiveKOA_EVEN1_left_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_11_/Q (DFFHQX1TS)
+                                                          0.60       1.60 f
+  U3361/Y (INVX2TS)                                       0.26       1.87 r
+  U2494/S (CMPR32X2TS)                                    0.99       2.86 f
+  U2489/Y (NOR2X4TS)                                      0.34       3.20 r
+  U5220/Y (OAI21X2TS)                                     0.24       3.44 f
+  U5221/Y (INVX2TS)                                       0.17       3.61 r
+  U3379/Y (OAI21X4TS)                                     0.15       3.76 f
+  U5222/Y (AOI21X4TS)                                     0.27       4.02 r
+  U5230/Y (OAI21X4TS)                                     0.21       4.23 f
+  U5231/Y (XNOR2X4TS)                                     0.23       4.46 f
+  U3715/Y (NOR2X6TS)                                      0.30       4.76 r
+  U3362/Y (NOR2X6TS)                                      0.18       4.94 f
+  U5389/Y (AOI21X4TS)                                     0.31       5.25 r
+  U5396/Y (NOR2X4TS)                                      0.17       5.43 f
+  U5397/Y (AOI21X4TS)                                     0.26       5.68 r
+  U4530/Y (NOR2X4TS)                                      0.17       5.85 f
+  U4154/Y (XOR2X4TS)                                      0.24       6.09 r
+  DP_OP_499J1_125_4188_U227/S (CMPR42X2TS)                1.13       7.21 f
+  U4726/Y (NOR2X8TS)                                      0.27       7.48 r
+  U4749/Y (OAI21X4TS)                                     0.18       7.66 f
+  U4750/Y (AOI21X4TS)                                     0.23       7.89 r
+  U2350/Y (OAI21X2TS)                                     0.22       8.11 f
+  U3348/Y (AOI21X2TS)                                     0.28       8.39 r
+  U3491/Y (XOR2X4TS)                                      0.32       8.71 r
+  U3490/Y (NAND2X4TS)                                     0.35       9.06 f
+  U2274/Y (NOR2X1TS)                                      0.50       9.56 r
+  U5243/Y (AOI21X4TS)                                     0.30       9.86 f
+  U3498/Y (NOR2X4TS)                                      0.19      10.05 r
+  U3497/Y (AOI21X4TS)                                     0.12      10.18 f
+  U3374/Y (XOR2X4TS)                                      0.16      10.34 r
+  R_44/D (DFFSX1TS)                                       0.00      10.34 r
+  data arrival time                                                 10.34
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  R_44/CK (DFFSX1TS)                                      0.00      10.50 r
+  library setup time                                     -0.16      10.34
+  data required time                                                10.34
+  --------------------------------------------------------------------------
+  data required time                                                10.34
+  data arrival time                                                -10.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

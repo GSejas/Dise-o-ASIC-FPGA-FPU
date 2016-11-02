@@ -1,0 +1,75 @@
+Warning: Design 'FPU_Interface2_W32_EW8_SW23_SWR26_EWR5' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  1 20:38:59 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPADDSUB/INPUT_STAGE_OPERANDX_Q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPADDSUB/EXP_STAGE_DMP_Q_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPADDSUB/INPUT_STAGE_OPERANDX_Q_reg_2_/CK (DFFRX2TS)
+                                                          0.00       1.00 r
+  FPADDSUB/INPUT_STAGE_OPERANDX_Q_reg_2_/QN (DFFRX2TS)
+                                                          1.40       2.40 r
+  FPADDSUB/U1170/Y (OAI22X1TS)                            0.42       2.82 f
+  FPADDSUB/U1171/Y (AOI31X1TS)                            0.45       3.27 r
+  FPADDSUB/U1172/Y (OAI22X2TS)                            0.34       3.60 f
+  FPADDSUB/U1173/Y (AOI2BB2X4TS)                          0.25       3.86 r
+  FPADDSUB/U272/Y (OAI21X2TS)                             0.17       4.03 f
+  FPADDSUB/U1175/Y (AOI222X2TS)                           0.48       4.51 r
+  FPADDSUB/U22/Y (OAI21X2TS)                              0.35       4.85 f
+  FPADDSUB/U1180/Y (AOI222X2TS)                           0.50       5.35 r
+  FPADDSUB/U23/Y (OAI2BB1X1TS)                            0.34       5.69 f
+  FPADDSUB/U24/Y (AOI222X2TS)                             0.52       6.22 r
+  FPADDSUB/U652/Y (OAI21X2TS)                             0.27       6.49 f
+  FPADDSUB/U313/Y (AOI22X2TS)                             0.31       6.80 r
+  FPADDSUB/U633/Y (OAI22X1TS)                             0.34       7.15 f
+  FPADDSUB/U1184/Y (AOI21X4TS)                            0.31       7.46 r
+  FPADDSUB/U1185/Y (OAI22X4TS)                            0.17       7.63 f
+  FPADDSUB/U1187/Y (AOI22X4TS)                            0.27       7.90 r
+  FPADDSUB/U1196/Y (OAI21X4TS)                            0.18       8.08 f
+  FPADDSUB/U1197/Y (OAI21X4TS)                            0.20       8.28 r
+  FPADDSUB/U65/Y (OR2X4TS)                                0.37       8.65 r
+  FPADDSUB/U61/Y (INVX4TS)                                0.20       8.85 f
+  FPADDSUB/U59/Y (INVX4TS)                                0.23       9.08 r
+  FPADDSUB/U4/Y (BUFX3TS)                                 0.62       9.70 r
+  FPADDSUB/U42/Y (OAI21XLTS)                              0.52      10.22 f
+  FPADDSUB/EXP_STAGE_DMP_Q_reg_6_/D (DFFRXLTS)            0.00      10.22 f
+  data arrival time                                                 10.22
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FPADDSUB/EXP_STAGE_DMP_Q_reg_6_/CK (DFFRXLTS)           0.00      10.50 r
+  library setup time                                     -0.27      10.23
+  data required time                                                10.23
+  --------------------------------------------------------------------------
+  data required time                                                10.23
+  data arrival time                                                -10.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

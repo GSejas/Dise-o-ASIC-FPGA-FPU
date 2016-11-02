@@ -1,0 +1,95 @@
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Nov  1 19:34:55 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Sgf_operation_ODD1_right_RECURSIVE_ODD1_left_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_12_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: add_x_63_R_3351
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPMULT_Sgf_operation_ODD1_right_RECURSIVE_ODD1_left_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_12_/CK (DFFQX4TS)
+                                                          0.00 #     1.00 r
+  FPMULT_Sgf_operation_ODD1_right_RECURSIVE_ODD1_left_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_12_/Q (DFFQX4TS)
+                                                          0.96       1.96 f
+  U11402/Y (NAND2BX4TS)                                   0.27       2.23 f
+  U11401/Y (NOR2X6TS)                                     0.26       2.49 r
+  U16620/Y (NOR2X4TS)                                     0.21       2.70 f
+  U6380/Y (NAND2X4TS)                                     0.20       2.90 r
+  U7075/Y (INVX2TS)                                       0.18       3.08 f
+  U7583/Y (NAND2X4TS)                                     0.13       3.21 r
+  U7538/Y (NAND2X4TS)                                     0.11       3.33 f
+  U10351/Y (AOI21X4TS)                                    0.18       3.51 r
+  U13013/Y (XNOR2X4TS)                                    0.28       3.79 r
+  U9988/Y (NOR2X8TS)                                      0.22       4.01 f
+  U9987/Y (NOR2X8TS)                                      0.18       4.19 r
+  U5771/Y (NAND2X6TS)                                     0.16       4.34 f
+  U5743/Y (BUFX4TS)                                       0.21       4.55 f
+  U11130/Y (NOR2X8TS)                                     0.16       4.71 r
+  U9940/Y (NOR2X8TS)                                      0.12       4.83 f
+  U9989/Y (OAI21X4TS)                                     0.23       5.05 r
+  U13130/Y (XOR2X4TS)                                     0.26       5.31 r
+  U17189/S (ADDFHX4TS)                                    0.72       6.03 r
+  U10139/Y (NOR2X6TS)                                     0.20       6.23 f
+  U10588/Y (NOR2X8TS)                                     0.21       6.45 r
+  U10330/Y (AND2X8TS)                                     0.24       6.69 r
+  U10326/Y (NAND2X8TS)                                    0.09       6.77 f
+  U5284/Y (NAND2X6TS)                                     0.09       6.86 r
+  U9896/Y (XNOR2X4TS)                                     0.25       7.12 r
+  U10328/Y (NOR2X8TS)                                     0.23       7.34 f
+  U10083/Y (OAI21X4TS)                                    0.31       7.65 r
+  U10128/Y (NAND2X8TS)                                    0.21       7.86 f
+  U9720/Y (NAND2X8TS)                                     0.21       8.07 r
+  U4952/Y (INVX4TS)                                       0.18       8.26 f
+  U11572/Y (OAI21X4TS)                                    0.20       8.46 r
+  U14379/Y (AOI21X4TS)                                    0.13       8.59 f
+  U13015/Y (XNOR2X4TS)                                    0.24       8.83 r
+  U4610/Y (INVX6TS)                                       0.23       9.06 f
+  U14720/Y (OR2X8TS)                                      0.31       9.37 f
+  U11259/Y (NAND2X4TS)                                    0.13       9.50 r
+  U11258/Y (NAND2BX4TS)                                   0.14       9.63 f
+  U6535/Y (NOR2X6TS)                                      0.18       9.81 r
+  U9665/Y (NAND3X8TS)                                     0.18       9.99 f
+  U4305/Y (NAND2X6TS)                                     0.15      10.14 r
+  U9753/Y (NAND3X8TS)                                     0.12      10.26 f
+  U9752/Y (INVX2TS)                                       0.12      10.38 r
+  add_x_63_R_3351/D (DFFSX1TS)                            0.00      10.38 r
+  data arrival time                                                 10.38
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  add_x_63_R_3351/CK (DFFSX1TS)                           0.00      10.50 r
+  library setup time                                     -0.12      10.38
+  data required time                                                10.38
+  --------------------------------------------------------------------------
+  data required time                                                10.38
+  data arrival time                                                -10.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,60 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Nov  1 20:58:50 2016
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                       ibm13_wl10        scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   4.1118 mW    (5%)
+  Net Switching Power  =  73.6825 mW   (95%)
+                         ---------
+Total Dynamic Power    =  77.7943 mW  (100%)
+
+Cell Leakage Power     = 289.0475 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  5.1222e-02           73.0191        8.2052e+03           73.0702  (  93.93%)
+register           3.8706            0.1275        7.5892e+04            3.9982  (   5.14%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1900            0.5366        2.0495e+05            0.7267  (   0.93%)
+--------------------------------------------------------------------------------------------------
+Total              4.1118 mW        73.6831 mW     2.8905e+05 pW        77.7951 mW
+1

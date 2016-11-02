@@ -1,0 +1,181 @@
+ 
+****************************************
+Report : port
+Design : fpu_top
+Version: L-2016.03-SP3
+Date   : Mon Oct 31 14:13:37 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk_in         in      0.0000   0.0000   --      --      --         d
+fpuOpCode_in[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+fpuOpCode_in[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+fpuOpCode_in[2]
+               in      0.0000   0.0000    1.02    1.71   --         
+fpuOpCode_in[3]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[0] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[1] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[2] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[3] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[4] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[5] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[6] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[7] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[8] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[9] in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[10]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[11]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[12]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[13]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[14]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[15]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[16]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[17]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[18]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[19]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[20]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[21]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[22]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[23]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[24]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[25]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[26]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[27]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[28]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[29]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[30]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandA_in[31]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[0] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[1] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[2] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[3] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[4] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[5] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[6] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[7] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[8] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[9] in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[10]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[11]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[12]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[13]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[14]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[15]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[16]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[17]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[18]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[19]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[20]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[21]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[22]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[23]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[24]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[25]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[26]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[27]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[28]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[29]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[30]
+               in      0.0000   0.0000    1.02    1.71   --         
+operandB_in[31]
+               in      0.0000   0.0000    1.02    1.71   --         
+reset_in       in      0.0000   0.0000    1.02    1.71   --         
+roundingMode_in[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+roundingMode_in[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+divisionByZero_out
+               out     0.0000   0.0000   --      --      --         
+inexact_out    out     0.0000   0.0000   --      --      --         
+invalidOperation_out
+               out     0.0000   0.0000   --      --      --         
+overflow_out   out     0.0000   0.0000   --      --      --         
+resultReady_out
+               out     0.0000   0.0000   --      --      --         
+result_out[0]  out     0.0000   0.0000   --      --      --         
+result_out[1]  out     0.0000   0.0000   --      --      --         
+result_out[2]  out     0.0000   0.0000   --      --      --         
+result_out[3]  out     0.0000   0.0000   --      --      --         
+result_out[4]  out     0.0000   0.0000   --      --      --         
+result_out[5]  out     0.0000   0.0000   --      --      --         
+result_out[6]  out     0.0000   0.0000   --      --      --         
+result_out[7]  out     0.0000   0.0000   --      --      --         
+result_out[8]  out     0.0000   0.0000   --      --      --         
+result_out[9]  out     0.0000   0.0000   --      --      --         
+result_out[10] out     0.0000   0.0000   --      --      --         
+result_out[11] out     0.0000   0.0000   --      --      --         
+result_out[12] out     0.0000   0.0000   --      --      --         
+result_out[13] out     0.0000   0.0000   --      --      --         
+result_out[14] out     0.0000   0.0000   --      --      --         
+result_out[15] out     0.0000   0.0000   --      --      --         
+result_out[16] out     0.0000   0.0000   --      --      --         
+result_out[17] out     0.0000   0.0000   --      --      --         
+result_out[18] out     0.0000   0.0000   --      --      --         
+result_out[19] out     0.0000   0.0000   --      --      --         
+result_out[20] out     0.0000   0.0000   --      --      --         
+result_out[21] out     0.0000   0.0000   --      --      --         
+result_out[22] out     0.0000   0.0000   --      --      --         
+result_out[23] out     0.0000   0.0000   --      --      --         
+result_out[24] out     0.0000   0.0000   --      --      --         
+result_out[25] out     0.0000   0.0000   --      --      --         
+result_out[26] out     0.0000   0.0000   --      --      --         
+result_out[27] out     0.0000   0.0000   --      --      --         
+result_out[28] out     0.0000   0.0000   --      --      --         
+result_out[29] out     0.0000   0.0000   --      --      --         
+result_out[30] out     0.0000   0.0000   --      --      --         
+result_out[31] out     0.0000   0.0000   --      --      --         
+underflow_out  out     0.0000   0.0000   --      --      --         
+
+1

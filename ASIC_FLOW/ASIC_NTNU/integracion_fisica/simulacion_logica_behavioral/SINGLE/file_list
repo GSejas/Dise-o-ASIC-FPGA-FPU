@@ -1,0 +1,11 @@
+../../front_end/source/exp_register_file.v
+../../front_end/source/sig_register_file.v
+../../front_end/source/fpu_top.v
+../../front_end/source/fpu_control_unit.v
+../../front_end/source/exponent_alu.v
+../../front_end/source/SVD_unit.v
+../../front_end/source/external_mul_16x16.v
+../../front_end/source/shift_and_extend.v
+../../front_end/source/significand_alu.v
+../../front_end/source/mask_and_shift.v
+fpu_top_tb.v

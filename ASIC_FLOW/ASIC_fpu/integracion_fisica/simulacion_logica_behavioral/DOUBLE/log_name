@@ -949,3 +949,8 @@ VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 $finish called from file "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE/Testbench_FPUv1_Interface.v", line 415.
 $finish at simulation time          48635430000
 Simulation complete, time is 48635430000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 48635430000 ps
+CPU Time:    109.600 seconds;       Data structure size:   0.3Mb
+Mon Oct 31 15:34:00 2016
+CPU time: 1.687 seconds to compile + .669 seconds to elab + .245 seconds to link + 202.256 seconds in simulation

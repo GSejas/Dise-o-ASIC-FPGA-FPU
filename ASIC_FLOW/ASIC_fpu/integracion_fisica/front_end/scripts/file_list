@@ -22,6 +22,7 @@ deco_op.v
 Deco_Round_Mult.v
 demux_1x3.v
 d_ff_en.v
+DW_mult.v
 Exp_operation_m.v
 exp_operation.v
 First_Phase_M.v
@@ -36,10 +37,12 @@ FSM_input_enable.v
 FSM_Mult_Function.v
 global.v
 Greater_Comparator.v
-KOA.v
+KOA_1c.v
+KOA_2c.v
 lut_CASE_32.v
 lut_CASE_64.v
 LZD.v
+mult2.v
 Multiplexer_AC.v
 MultiplexTxT.v
 multiplier.v
@@ -57,6 +60,7 @@ OR_Module.v
 Priority_Codec_32.v
 Priority_Codec_64.v
 PriorityEncoder_ExtCORDIC.v
+RecursiveKOA_1c.v
 RecursiveKOA.v
 RecursiveKOA_Weighted.v
 RegisterAdd.v

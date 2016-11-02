@@ -1,0 +1,33 @@
+Warning: Design 'FPU_Interface2_W32_EW8_SW23_SWR26_EWR5' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  1 20:36:45 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          826
+Number of nets:                          5808
+Number of cells:                         4401
+Number of combinational cells:           3665
+Number of sequential cells:               721
+Number of macros/black boxes:               0
+Number of buf/inv:                        949
+Number of references:                      34
+
+Combinational area:              38172.960327
+Buf/Inv area:                     4636.800111
+Noncombinational area:           23171.039278
+Macro/Black Box area:                0.000000
+Net Interconnect area:          578436.289368
+
+Total cell area:                 61343.999605
+Total area:                     639780.288973
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

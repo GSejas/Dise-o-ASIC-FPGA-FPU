@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpu_top
+Version: L-2016.03-SP3
+Date   : Mon Oct 31 14:13:37 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: operandB_in[4]
+              (input port clocked by clk_in)
+  Endpoint: R_8 (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: clk_in
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu_top            ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_in (rise edge)                 0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     3.50       4.50 r
+  operandB_in[4] (in)                      0.02       4.52 r
+  U2241/Y (INVX4TS)                        0.09       4.61 f
+  U4338/Y (MXI2X4TS)                       0.27       4.88 r
+  U4340/Y (XNOR2X4TS)                      0.37       5.25 r
+  U2854/Y (INVX6TS)                        0.22       5.46 f
+  U2315/Y (INVX4TS)                        0.46       5.92 r
+  U2052/Y (AO21XLTS)                       0.68       6.60 r
+  U2653/S (ADDFHX2TS)                      0.54       7.14 r
+  U4494/S (ADDFHX2TS)                      0.41       7.55 f
+  U4495/CO (ADDFHX2TS)                     0.35       7.90 f
+  U4619/S (ADDFHX2TS)                      0.43       8.32 r
+  U3342/S (ADDFHX4TS)                      0.51       8.84 r
+  U2431/Y (NOR2X6TS)                       0.15       8.99 f
+  U4496/Y (NOR2X8TS)                       0.19       9.19 r
+  U2979/Y (NAND2X6TS)                      0.16       9.35 f
+  U2984/Y (NOR2X8TS)                       0.14       9.49 r
+  U1923/Y (NAND2X6TS)                      0.13       9.62 f
+  U4610/Y (NAND3X8TS)                      0.16       9.78 r
+  U2907/Y (INVX16TS)                       0.13       9.91 f
+  U2896/Y (OAI21X2TS)                      0.26      10.18 r
+  U2925/Y (XOR2X4TS)                       0.25      10.43 f
+  R_8/D (DFFHQX8TS)                        0.00      10.43 f
+  data arrival time                                  10.43
+
+  clock clk_in (rise edge)                10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.50      10.50
+  R_8/CK (DFFHQX8TS)                       0.00      10.50 r
+  library setup time                      -0.07      10.43
+  data required time                                 10.43
+  -----------------------------------------------------------
+  data required time                                 10.43
+  data arrival time                                 -10.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

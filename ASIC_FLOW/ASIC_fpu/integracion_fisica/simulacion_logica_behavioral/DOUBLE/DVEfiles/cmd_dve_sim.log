@@ -66,3 +66,8 @@ set synopsys::env(time) 47969815000
 set ucliGUI::state
 set ucliGUI::state
 ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {FileSaveDataF[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[63:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

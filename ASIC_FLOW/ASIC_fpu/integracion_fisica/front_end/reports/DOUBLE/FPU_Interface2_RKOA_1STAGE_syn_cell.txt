@@ -1,0 +1,181 @@
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Nov  1 20:48:15 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+FPADDSUB                  FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+                                                          63037.439439
+                                                                    h, n, p
+FPMULT                    FPU_Multiplication_Function_W64_EW11_SW52
+                                                          169460.640182
+                                                                    h, n, p
+FPSENCOS                  CORDIC_Arch3v1                  0.000000  b, p
+NaN_dff                   d_ff_en_W1                      37.439999 h, n, p
+R_1927                    DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+R_1928                    DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+R_1929                    DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          33.119999 n
+U57                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U59                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U60                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U61                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U62                       CLKINVX6TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U63                       CLKINVX3TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U64                       NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U65                       OAI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U66                       NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U67                       NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U68                       INVX6TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U69                       NAND3X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U70                       NAND3X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U71                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U72                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U73                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U74                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U75                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U76                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U77                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U78                       NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U79                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U80                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U81                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U82                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U83                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U84                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U85                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U86                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U87                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U88                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U89                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U90                       NOR4BX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          17.280001 
+U91                       NOR4X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          15.840000 
+U92                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U93                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U94                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U95                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U96                       OR4X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U97                       OR4X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U98                       NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U99                       NAND4X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U100                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U101                      OR4X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U102                      OR4X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U103                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U104                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U105                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U106                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U107                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U108                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U109                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U110                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U111                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U112                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U113                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U114                      AND4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U115                      NAND4XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U116                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U117                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U118                      NOR4X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U119                      OAI32X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U122                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U123                      OAI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+deco_operation            deco_op                         14.400000 h
+demux_ack_op              demux_1x3_2                     20.160000 h
+demux_beg_op              demux_1x3_3                     30.240000 h
+mux_beg_addsubt           Mux_2x1_W1_7                    15.840001 h, p
+mux_data_in1              Mux_2x1_W64_1                   745.919994
+                                                                    h, p
+mux_data_in2              Mux_2x1_W64_0                   741.599993
+                                                                    h, p
+mux_operation_add_cordic  Mux_2x1_W1_6                    14.400000 h, p
+mux_ready_op              Mux_3x1_b                       0.000000  b, p
+mux_result_op             Mux_3x1_b_W64                   1383.839985
+                                                                    h, p
+operation_dff             d_ff_en_W2                      37.439999 h, n, p
+overflow_flag_mux         Mux_2x1_W1_5                    14.400000 h, p
+reg_dataA                 d_ff_en_W64_1                   4.320000  h, p
+reg_dataB                 d_ff_en_W64_0                   0.000000  h, p
+underflow_flag_mux        Mux_2x1_W1_4                    14.400000 h, p
+--------------------------------------------------------------------------------
+Total 85 cells                                            236259.359593
+1

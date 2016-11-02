@@ -1,0 +1,135 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "ShiftAndExtend": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ExpRegisterFile": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "SigRegisterFile": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "FPU_top_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ExponentALU": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "SignificandALU": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "MaskAndShift": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7101,
+            "checksum": 4294967295
+        },
+        "QcPYJ_d": {
+            "mod": "ExpRegisterFile",
+            "out": "QcPYJ_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 11859,
+            "checksum": 4294967295
+        },
+        "JTk1D_d": {
+            "mod": "SignificandALU",
+            "out": "JTk1D_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 15730,
+            "checksum": 4294967295
+        },
+        "f7bdG_d": {
+            "mod": "ShiftAndExtend",
+            "out": "f7bdG_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 8932,
+            "checksum": 4294967295
+        },
+        "vsEwV_d": {
+            "mod": "ExponentALU",
+            "out": "vsEwV_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 9540,
+            "checksum": 4294967295
+        },
+        "Kb6dh_d": {
+            "mod": "SigRegisterFile",
+            "out": "Kb6dh_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 13483,
+            "checksum": 4294967295
+        },
+        "m3zPF_d": {
+            "mod": "MaskAndShift",
+            "out": "m3zPF_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 9007,
+            "checksum": 4294967295
+        },
+        "JkcYK_d": {
+            "mod": "FPU_top_tb",
+            "out": "JkcYK_d.o",
+            "archive": "archive.0/_7478_archive_1.a",
+            "mode": 4,
+            "bytes": 147016,
+            "checksum": 4294967295
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 215567,
+            "archive": "archive.0/_7478_archive_1.a",
+            "objects": [
+                [
+                    "QcPYJ_d.o",
+                    11859
+                ],
+                [
+                    "Kb6dh_d.o",
+                    13483
+                ],
+                [
+                    "vsEwV_d.o",
+                    9540
+                ],
+                [
+                    "f7bdG_d.o",
+                    8932
+                ],
+                [
+                    "JTk1D_d.o",
+                    15730
+                ],
+                [
+                    "m3zPF_d.o",
+                    9007
+                ],
+                [
+                    "JkcYK_d.o",
+                    147016
+                ]
+            ]
+        }
+    ]
+}

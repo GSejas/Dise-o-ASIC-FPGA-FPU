@@ -40,8 +40,6 @@ module FPU_Multiplication_Function
     );
 
 
-
-
 //GENERAL
 wire rst_int; //**
 
@@ -278,7 +276,10 @@ XOR_M Sign_operation (
 //     .Data_B_i({1'b1,Op_MY[SW-1:0]}),
 //     .sgf_result_o(P_Sgf)
 //     );
-    Simple_KOA #(
+
+`ifdef KOA_1STAGE
+
+    Simple_KOA_STAGE_1 #(
             .SW(SW+1)
         ) Sgf_operation (
             .clk          (clk),
@@ -288,6 +289,65 @@ XOR_M Sign_operation (
             .Data_B_i     ({1'b1,Op_MY[SW-1:0]}),
             .sgf_result_o (P_Sgf)
         );
+`endif
+
+`ifdef RKOA_1STAGE
+
+    RecursiveKOA_STAGE_1 #(
+            .SW(SW+1)
+        ) Sgf_operation (
+            .clk          (clk),
+            .rst          (rst),
+            .load_b_i     (FSM_load_second_step),
+            .Data_A_i     ({1'b1,Op_MX[SW-1:0]}),
+            .Data_B_i     ({1'b1,Op_MY[SW-1:0]}),
+            .sgf_result_o (P_Sgf)
+        );
+`endif
+
+`ifdef DW_1STAGE
+
+    DW_mult #(
+            .SW(SW+1)
+        ) Sgf_operation (
+            .clk          (clk),
+            .rst          (rst),
+            .load_b_i     (FSM_load_second_step),
+            .Data_A_i     ({1'b1,Op_MX[SW-1:0]}),
+            .Data_B_i     ({1'b1,Op_MY[SW-1:0]}),
+            .sgf_result_o (P_Sgf)
+        );
+`endif
+
+`ifdef KOA_2STAGE
+
+    Simple_KOA_STAGE_2 #(
+            .SW(SW+1)
+        ) Sgf_operation (
+            .clk          (clk),
+            .rst          (rst),
+            .load_b_i     (FSM_load_second_step),
+            .Data_A_i     ({1'b1,Op_MX[SW-1:0]}),
+            .Data_B_i     ({1'b1,Op_MY[SW-1:0]}),
+            .sgf_result_o (P_Sgf)
+        );
+`endif
+
+`ifdef RKOA_2STAGE
+
+    RecursiveKOA_STAGE_2 #(
+            .SW(SW+1)
+        ) Sgf_operation (
+            .clk          (clk),
+            .rst          (rst),
+            .load_b_i     (FSM_load_second_step),
+            .Data_A_i     ({1'b1,Op_MX[SW-1:0]}),
+            .Data_B_i     ({1'b1,Op_MY[SW-1:0]}),
+            .sgf_result_o (P_Sgf)
+        );
+
+`endif
+
 
     //////////Mux Barrel shifter shift_Value/////////////////
     

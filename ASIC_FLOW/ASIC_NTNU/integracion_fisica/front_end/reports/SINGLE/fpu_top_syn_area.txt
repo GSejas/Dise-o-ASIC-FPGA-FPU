@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : fpu_top
+Version: L-2016.03-SP3
+Date   : Mon Oct 31 14:13:37 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          110
+Number of nets:                          4471
+Number of cells:                         4274
+Number of combinational cells:           3997
+Number of sequential cells:               277
+Number of macros/black boxes:               0
+Number of buf/inv:                        824
+Number of references:                     162
+
+Combinational area:              41752.800200
+Buf/Inv area:                     4885.920134
+Noncombinational area:            7103.519886
+Macro/Black Box area:                0.000000
+Net Interconnect area:          467042.361938
+
+Total cell area:                 48856.320086
+Total area:                     515898.682025
+1

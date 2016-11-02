@@ -1,0 +1,10 @@
+exponent_alu.v
+exp_register_file.v
+external_mul_16x16.v
+fpu_control_unit.v
+fpu_top.v
+mask_and_shift.v
+shift_and_extend.v
+significand_alu.v
+sig_register_file.v
+SVD_unit.v

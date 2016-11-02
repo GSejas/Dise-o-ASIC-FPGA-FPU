@@ -77,3 +77,13 @@
 13:01:54    181 --> ...                          [tcl] set dveMisc::result
 13:01:54    182 --> ...                              [tcl] gui_update_simulator_buttons
 13:01:54    183 --> ...                                  [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark1 -radix {symbolic symbolic symbolic binary binary binary binary hexadecimal binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal decimal } -list {{contador[31:0]} {FileSaveData[31:0]} {FileSaveDataF[31:0]} overflow_flag underflow_flag operation_ready NaN_flag {op_result[63:0]} clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR FPADD }
+15:34:00    184 --> ...                                      [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+15:34:00    185 --> ...                                          [tcl] synopsys::finish
+15:34:00    186 --> ...                                              [tcl] set ucliGUI::state
+15:34:00    187 --> ...                                                  [tcl] set ucliGUI::state
+15:34:00    188 --> ...                                                      [tcl] catch {senv activeDomain} dveMisc::result 
+15:34:00    189 --> ...                                                          [tcl] set dveMisc::result
+15:34:00    190 --> ...                                                              [tcl] gui_update_simulator_buttons
+15:34:00    191 --> ...                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+15:34:00    192 --> ...                                                                      [tcl] set dveMisc::result
+15:34:00    193 --> ...                                                                          [tcl] ucli_exit

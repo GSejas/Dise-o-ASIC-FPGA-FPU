@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : CORDIC_Arch3.v
 //  Created On    : 2016-09-28 14:58:46
-//  Last Modified : 2016-10-31 02:51:57
+//  Last Modified : 2016-11-01 20:34:44
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -445,15 +445,19 @@ endgenerate
             .data_out (mux_sal)
         );
 
-    DECO_CORDIC_EXT #(
-            .W(W)
-        ) inst_DECO_CORDIC_EXT (
-            .data_i            (mux_sal),
+
+
+    DECO_CORDIC_EXT2 inst_DECO_CORDIC_EXT2 (
+            .data_i            (mux_sal[W-1]),
             .operation         (d_ff1_operation_out),
             .shift_region_flag (d_ff1_shift_region_flag_out),
             .sel_mux_3         (sel_mux_3),
-            .data_out_CORDECO  (fmtted_Result)
+            .data_out_CORDECO  (f_sign)
         );
+
+wire f_sign;
+
+assign fmtted_Result = {f_sign,mux_sal[W-2:0]};
 
     d_ff_en #(.W(W)) d_ff5_data_out
     (
