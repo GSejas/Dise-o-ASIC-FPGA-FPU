@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 11:05:47 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Sel_B/Q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Exp_module/Underflow_m/Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  Sel_B/Q_reg_1_/CK (DFFRX4TS)                            0.00       1.00 r
+  Sel_B/Q_reg_1_/Q (DFFRX4TS)                             0.96       1.96 f
+  Sel_B/Q[1] (RegisterAdd_W2)                             0.00       1.96 f
+  Exp_Oper_B_mux/ctrl[1] (Mux_3x1_W8)                     0.00       1.96 f
+  Exp_Oper_B_mux/U18/Y (NOR2BX4TS)                        0.56       2.52 r
+  Exp_Oper_B_mux/U3/Y (AOI22X2TS)                         0.42       2.94 f
+  Exp_Oper_B_mux/U17/Y (OAI2BB1X2TS)                      0.36       3.30 r
+  Exp_Oper_B_mux/S[0] (Mux_3x1_W8)                        0.00       3.30 r
+  Exp_module/Data_B_i[0] (Exp_Operation_m_EW8)            0.00       3.30 r
+  Exp_module/exp_add_subt_m/Data_B[0] (add_sub_carry_out_W9)
+                                                          0.00       3.30 r
+  Exp_module/exp_add_subt_m/sub_34/B[0] (add_sub_carry_out_W9_DW01_sub_0)
+                                                          0.00       3.30 r
+  Exp_module/exp_add_subt_m/sub_34/U1/Y (NAND2X1TS)       0.34       3.65 f
+  Exp_module/exp_add_subt_m/sub_34/U2_1/CO (ADDFHX1TS)
+                                                          0.55       4.20 f
+  Exp_module/exp_add_subt_m/sub_34/U2_2/CO (CMPR32X2TS)
+                                                          0.57       4.77 f
+  Exp_module/exp_add_subt_m/sub_34/U2_3/CO (CMPR32X2TS)
+                                                          0.56       5.32 f
+  Exp_module/exp_add_subt_m/sub_34/U2_4/CO (CMPR32X2TS)
+                                                          0.56       5.88 f
+  Exp_module/exp_add_subt_m/sub_34/U2_5/CO (CMPR32X2TS)
+                                                          0.56       6.44 f
+  Exp_module/exp_add_subt_m/sub_34/U2_6/CO (CMPR32X2TS)
+                                                          0.56       7.00 f
+  Exp_module/exp_add_subt_m/sub_34/U2_7/CO (ADDFHX2TS)
+                                                          0.37       7.37 f
+  Exp_module/exp_add_subt_m/sub_34/U2_8/S (CMPR32X2TS)
+                                                          0.57       7.94 f
+  Exp_module/exp_add_subt_m/sub_34/DIFF[8] (add_sub_carry_out_W9_DW01_sub_0)
+                                                          0.00       7.94 f
+  Exp_module/exp_add_subt_m/U5/Y (AO22X2TS)               0.53       8.46 f
+  Exp_module/exp_add_subt_m/Data_S[8] (add_sub_carry_out_W9)
+                                                          0.00       8.46 f
+  Exp_module/Exp_unflow_Comparator_m/Data_A[8] (Comparator_Less_W9)
+                                                          0.00       8.46 f
+  Exp_module/Exp_unflow_Comparator_m/U1/Y (CLKINVX4TS)
+                                                          0.21       8.67 r
+  Exp_module/Exp_unflow_Comparator_m/U2/Y (OAI22X2TS)     0.18       8.85 f
+  Exp_module/Exp_unflow_Comparator_m/U4/Y (OR3X1TS)       0.57       9.42 f
+  Exp_module/Exp_unflow_Comparator_m/U5/Y (NAND2X1TS)     0.26       9.69 r
+  Exp_module/Exp_unflow_Comparator_m/less (Comparator_Less_W9)
+                                                          0.00       9.69 r
+  Exp_module/Underflow_m/D[0] (RegisterMult_W1_0)         0.00       9.69 r
+  Exp_module/Underflow_m/U3/Y (AO22X1TS)                  0.45      10.14 r
+  Exp_module/Underflow_m/Q_reg_0_/D (DFFRX2TS)            0.00      10.14 r
+  data arrival time                                                 10.14
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Exp_module/Underflow_m/Q_reg_0_/CK (DFFRX2TS)           0.00      10.50 r
+  library setup time                                     -0.33      10.17
+  data required time                                                10.17
+  --------------------------------------------------------------------------
+  data required time                                                10.17
+  data arrival time                                                -10.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

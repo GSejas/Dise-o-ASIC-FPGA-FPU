@@ -1,15 +1,15 @@
 Information: Updating design information... (UID-85)
+Warning: Design 'FPU_Interface2_W32_EW8_SW23_SWR26_EWR5' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
-Warning: Design has unannotated black box outputs. (PWR-428)
  
 ****************************************
 Report : power
         -analysis_effort high
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Tue Nov  1 20:37:51 2016
+Date   : Wed Nov  2 00:41:04 2016
 ****************************************
 
 
@@ -36,12 +36,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 823.0278 uW   (53%)
-  Net Switching Power  = 728.5845 uW   (47%)
+  Cell Internal Power  =   1.8438 mW   (82%)
+  Net Switching Power  = 411.0418 uW   (18%)
                          ---------
-Total Dynamic Power    =   1.5516 mW  (100%)
+Total Dynamic Power    =   2.2548 mW  (100%)
 
-Cell Leakage Power     =  29.6663 nW
+Cell Leakage Power     =  93.6890 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,10 +50,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network  2.2602e-02            0.6300        2.8627e+03            0.6526  (  42.06%)
-register           0.7850        3.7184e-02        1.5777e+04            0.8222  (  52.99%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.7572        6.9538e-02        3.6997e+04            1.8268  (  81.01%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  1.5425e-02        6.1430e-02        1.1026e+04        7.6866e-02  (   4.95%)
+combinational  8.6570e-02            0.3415        5.6692e+04            0.4281  (  18.99%)
 --------------------------------------------------------------------------------------------------
-Total              0.8230 mW         0.7286 mW     2.9666e+04 pW         1.5516 mW
+Total              1.8438 mW         0.4110 mW     9.3689e+04 pW         2.2549 mW
 1

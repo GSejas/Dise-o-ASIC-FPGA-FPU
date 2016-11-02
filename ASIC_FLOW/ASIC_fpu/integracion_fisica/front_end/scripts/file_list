@@ -18,6 +18,7 @@ CORDIC_FSM_v3.v
 counter_d.v
 counter_up.v
 DECO_CORDIC_OP.v
+DECO_CORDIC_OP2.v
 deco_op.v
 Deco_Round_Mult.v
 demux_1x3.v

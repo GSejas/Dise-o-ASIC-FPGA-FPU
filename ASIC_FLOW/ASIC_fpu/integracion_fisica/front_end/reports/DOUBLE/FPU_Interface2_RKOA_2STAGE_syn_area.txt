@@ -1,33 +1,30 @@
-Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : area
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Tue Nov  1 19:34:53 2016
+Date   : Wed Nov  2 01:17:43 2016
 ****************************************
 
 Library(s) Used:
 
     scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
 
-Number of ports:                          544
-Number of nets:                         25966
-Number of cells:                        23667
-Number of combinational cells:          20422
-Number of sequential cells:              3241
+Number of ports:                          208
+Number of nets:                         25285
+Number of cells:                        23064
+Number of combinational cells:          19732
+Number of sequential cells:              3332
 Number of macros/black boxes:               0
-Number of buf/inv:                       4778
-Number of references:                     203
+Number of buf/inv:                       4189
+Number of references:                     198
 
-Combinational area:             233174.880968
-Buf/Inv area:                    27866.880672
-Noncombinational area:          106967.517286
+Combinational area:             217931.041064
+Buf/Inv area:                    22423.680575
+Noncombinational area:          108308.157331
 Macro/Black Box area:                0.000000
-Net Interconnect area:         2615166.729950
+Net Interconnect area:         2565139.824036
 
-Total cell area:                340142.398254
-Total area:                    2955309.128204
-
-Information: This design contains black box (unknown) components. (RPT-8)
+Total cell area:                326239.198396
+Total area:                    2891379.022431
 1

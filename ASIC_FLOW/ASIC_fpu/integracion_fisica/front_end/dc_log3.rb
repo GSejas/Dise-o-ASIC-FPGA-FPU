@@ -10609,3 +10609,581 @@ Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved ref
 Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
 Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_KOA_2STAGE_syn.sdf'. (WT-3)
+Warning: Design contains black-box components.  These cells will have no timing information. (WT-7)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_Interface2_KOA_2STAGE_syn.sdf'. (WT-3)
+Warning: Design contains black-box components.  These cells will have no timing information. (WT-7)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W64 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'NaN_mod_64'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'./source/NaN_mod_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'demux_1x3'. (HDL-193)
+
+Statistics for case statements in always block at line 11 in file
+	'./source/demux_1x3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Error:  Module 'CORDIC_Arch3v1' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Error: Can't find inout port 'ch_2' on reference to 'Mux_3x1_b' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-1)
+Error: Unable to match ports of cell mux_ready_op ('Mux_3x1_b') to 'Mux_3x1_b_W1'. (LINK-25)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Uniquified 2 instances of design 'd_ff_en_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'demux_1x3'. (OPT-1056)
+Information: Uniquified 4 instances of design 'Mux_2x1_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_2x1_W64'. (OPT-1056)
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Error:  Module 'CORDIC_Arch3v1' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Error: Can't find inout port 'ch_2' on reference to 'Mux_3x1_b' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-1)
+Error: Unable to match ports of cell mux_ready_op ('Mux_3x1_b') to 'Mux_3x1_b_W1'. (LINK-25)
+
+  Linking design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (33 designs)              /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Error:  Module 'CORDIC_Arch3v1' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Error: Can't find inout port 'ch_2' on reference to 'Mux_3x1_b' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-1)
+Error: Unable to match ports of cell mux_ready_op ('Mux_3x1_b') to 'Mux_3x1_b_W1'. (LINK-25)
+Warning: Unable to resolve reference 'CORDIC_Arch3v1' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-5)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Writing ddc file './db/DOUBLE/FPU_Interface2_RKOA_2STAGE_syn_unmapped.ddc'.
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Using operating conditions 'tt_1p2v_25c' found in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'.
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+
+#   Propagate Constraints from cell mux_result_op/ (Mux_3x1_b_W64) #
+
+#   Propagate Constraints from cell underflow_flag_mux/ (Mux_2x1_W1_4) #
+
+#   Propagate Constraints from cell overflow_flag_mux/ (Mux_2x1_W1_5) #
+
+#   Propagate Constraints from cell FPADDSUB/                                  \
+(FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6) #
+
+#   Propagate Constraints from cell FPMULT/                                    \
+(FPU_Multiplication_Function_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell mux_data_in2/ (Mux_2x1_W64_0) #
+
+#   Propagate Constraints from cell mux_data_in1/ (Mux_2x1_W64_1) #
+
+#   Propagate Constraints from cell mux_operation_add_cordic/ (Mux_2x1_W1_6) #
+
+#   Propagate Constraints from cell mux_beg_addsubt/ (Mux_2x1_W1_7) #
+
+#   Propagate Constraints from cell deco_operation/ (deco_op) #
+
+#   Propagate Constraints from cell demux_ack_op/ (demux_1x3_2) #
+
+#   Propagate Constraints from cell demux_beg_op/ (demux_1x3_3) #
+
+#   Propagate Constraints from cell NaN_dff/ (d_ff_en_W1) #
+
+#   Propagate Constraints from cell BLKNaN2.NaN_flag_64/ (NaN_mod_64) #
+
+#   Propagate Constraints from cell reg_dataB/ (d_ff_en_W64_0) #
+
+#   Propagate Constraints from cell reg_dataA/ (d_ff_en_W64_1) #
+
+#   Propagate Constraints from cell operation_dff/ (d_ff_en_W2) #
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Tue Nov  1 20:58:56 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     75
+    Multiply driven inputs (LINT-6)                                70
+    Unconnected ports (LINT-28)                                     4
+    Feedthrough (LINT-29)                                           1
+
+Cells                                                               4
+    Connected to power or ground (LINT-32)                          4
+
+Nets                                                                2
+    Unloaded nets (LINT-2)                                          2
+
+Tristate                                                           69
+    A tristate bus has a non tri-state driver (LINT-34)            69
+--------------------------------------------------------------------------------
+
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'zero_flag' driven by pin 'FPADDSUB/zero_flag' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'ack_fsm_addsubt' driven by pin 'demux_ack_op/ch1' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'rst' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'operation[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'operation[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'region_flag[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'region_flag[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[63]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[62]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[61]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[60]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[59]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[58]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[57]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[56]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[55]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[54]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[53]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[52]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[51]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[50]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[49]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[48]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[47]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[46]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[45]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[44]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[43]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[42]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[41]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[40]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[39]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[38]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[37]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[36]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[35]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[34]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[33]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[32]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[31]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[30]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[29]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[28]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[27]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[26]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[25]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[24]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[23]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[22]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[21]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[20]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[19]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[18]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[17]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[16]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[15]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[14]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[13]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[12]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[11]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[10]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[9]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[8]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', input port 'Data_1[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'd_ff_en_W2', port 'enable' is not connected to any nets. (LINT-28)
+Warning: In design 'd_ff_en_W2', port 'OUT1' is not connected to any nets. (LINT-28)
+Warning: In design 'd_ff_en_W1', port 'enable' is not connected to any nets. (LINT-28)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', port 'zero_flag' is not connected to any nets. (LINT-28)
+Warning: In design 'd_ff_en_W2', input port 'D[0]' is connected directly to output port 'Q[0]'. (LINT-29)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', a pin on submodule 'operation_dff' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'enable' is connected to logic 1. 
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', a pin on submodule 'reg_dataA' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'enable' is connected to logic 1. 
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', a pin on submodule 'reg_dataB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'enable' is connected to logic 1. 
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', a pin on submodule 'NaN_dff' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'enable' is connected to logic 1. 
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'ready_mult' has non three-state driver 'FPMULT/U12607/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'ready_add_subt' has non three-state driver 'FPADDSUB/Ready_reg_Q_reg_0_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[0]' has non three-state driver 'FPADDSUB/U1323/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[1]' has non three-state driver 'FPADDSUB/U1321/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[2]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_2_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[3]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_3_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[4]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_4_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[5]' has non three-state driver 'FPADDSUB/U1316/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[6]' has non three-state driver 'FPADDSUB/U1315/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[7]' has non three-state driver 'FPADDSUB/U1325/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[8]' has non three-state driver 'FPADDSUB/U1324/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[9]' has non three-state driver 'FPADDSUB/U1317/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[10]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_10_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[11]' has non three-state driver 'FPADDSUB/U1366/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[12]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_12_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[13]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_13_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[14]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_14_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[15]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_15_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[16]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_16_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[17]' has non three-state driver 'FPADDSUB/U1319/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[18]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_18_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[19]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_19_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[20]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_20_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[21]' has non three-state driver 'FPADDSUB/U1334/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[22]' has non three-state driver 'FPADDSUB/U1320/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[23]' has non three-state driver 'FPADDSUB/U1322/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[24]' has non three-state driver 'FPADDSUB/U1318/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[25]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_25_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[26]' has non three-state driver 'FPADDSUB/U3294/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[27]' has non three-state driver 'FPADDSUB/U3295/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[28]' has non three-state driver 'FPADDSUB/U3296/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[29]' has non three-state driver 'FPADDSUB/R_2506/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[30]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_30_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[31]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_31_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[32]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_32_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[33]' has non three-state driver 'FPADDSUB/U3297/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[34]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_34_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[35]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_35_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[36]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_36_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[37]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_37_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[38]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_38_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[39]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_39_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[40]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_40_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[41]' has non three-state driver 'FPADDSUB/U3298/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[42]' has non three-state driver 'FPADDSUB/U3299/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[43]' has non three-state driver 'FPADDSUB/U3300/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[44]' has non three-state driver 'FPADDSUB/U3301/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[45]' has non three-state driver 'FPADDSUB/U3302/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[46]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_46_/QN'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[47]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_47_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[48]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_48_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[49]' has non three-state driver 'FPADDSUB/U3303/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[50]' has non three-state driver 'FPADDSUB/U3304/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[51]' has non three-state driver 'FPADDSUB/R_2572/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[52]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_52_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[53]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_53_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[54]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_54_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[55]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_55_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[56]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_56_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[57]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_57_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[58]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_58_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[59]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_59_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[60]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_60_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[61]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_61_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[62]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_62_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'result_add_subt[63]' has non three-state driver 'FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_63_/Q'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'op_mod_cordic' has non three-state driver 'deco_operation/U3/Y'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'ack_fsm_cordic' has non three-state driver 'demux_ack_op/C27/Z_0'. (LINT-34)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', three-state bus 'beg_fsm_cordic' has non three-state driver 'demux_beg_op/C27/Z_0'. (LINT-34)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 150 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Error:  Module 'CORDIC_Arch3v1' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Error: Can't find inout port 'ch_2' on reference to 'Mux_3x1_b' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-1)
+Error: Unable to match ports of cell mux_ready_op ('Mux_3x1_b') to 'Mux_3x1_b_W1'. (LINK-25)
+Warning: Unable to resolve reference 'CORDIC_Arch3v1' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-5)
+Loaded alib file '../alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+Information: Ungrouping hierarchy BLKNaN2.NaN_flag_64 before Pass 1 (OPT-776)
+Information: Ungrouping 1 of 18 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPU_Multiplication_Function_W64_EW11_SW52'
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_1787' is removed because it is merged to 'R_2798'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2668' is removed because it is merged to 'R_2665'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2666_IP' is removed because it is merged to 'R_2665'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2636' is removed because it is merged to 'R_2662'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2646' is removed because it is merged to 'R_2640'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2647' is removed because it is merged to 'R_2640'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2622' is removed because it is merged to 'R_2621'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2656' is removed because it is merged to 'R_2856'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2673' is removed because it is merged to 'R_2856'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2674' is removed because it is merged to 'R_2654'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2684' is removed because it is merged to 'R_2654'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2634' is removed because it is merged to 'R_2875'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2876' is removed because it is merged to 'R_2875'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2846' is removed because it is merged to 'R_2849'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2696' is removed because it is merged to 'R_2849'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2624' is removed because it is merged to 'R_2623'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2709' is removed because it is merged to 'R_2708'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2903' is removed because it is merged to 'R_2195'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_79' is removed because it is merged to 'R_78'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2688' is removed because it is merged to 'R_2689'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2717' is removed because it is merged to 'R_2713'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2706' is removed because it is merged to 'R_2850'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2535' is removed because it is merged to 'R_2836'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2651' is removed because it is merged to 'R_2679'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2645' is removed because it is merged to 'R_2407'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2844' is removed because it is merged to 'R_2843'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2715_IP' is removed because it is merged to 'R_2843'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2731' is removed because it is merged to 'R_2734'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2720' is removed because it is merged to 'R_235'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2648' is removed because it is merged to 'R_2642'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2410' is removed because it is merged to 'R_2649'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2867' is removed because it is merged to 'R_2866'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_412' is removed because it is merged to 'R_2866'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2833' is removed because it is merged to 'R_2870'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2871' is removed because it is merged to 'R_2851'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2855' is removed because it is merged to 'R_2862'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2857' is removed because it is merged to 'R_2862'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2631' is removed because it is merged to 'R_2630'. (OPT-1215)
+Information: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the register 'R_2842' is removed because it is merged to 'R_2840'. (OPT-1215)
+  Processing 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6'
+  Processing 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+  Processing 'd_ff_en_W64_0'
+  Processing 'Mux_3x1_b_W64'
+  Processing 'Mux_2x1_W64_0'
+  Processing 'demux_1x3_3'
+  Processing 'demux_1x3_2'
+  Processing 'Mux_2x1_W1_4'
+  Processing 'deco_op'
+  Processing 'd_ff_en_W2'
+  Processing 'd_ff_en_W1'
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  File /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/work/CORDIC_Arch3v1-verilog.pvl not found, or does not contain a usable description of CORDIC_Arch3v1. (ELAB-320)
+Error:  Module 'CORDIC_Arch3v1' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Error: Can't find inout port 'ch_2' on reference to 'Mux_3x1_b' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-1)
+Error: Unable to match ports of cell mux_ready_op ('Mux_3x1_b') to 'Mux_3x1_b_W1'. (LINK-25)
+Warning: Unable to resolve reference 'CORDIC_Arch3v1' in 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (LINK-5)
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:25  417060.0      0.59      25.5    1532.9                           585336.7500
+    0:02:25  417060.0      0.59      25.5    1532.9                           585336.7500
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:51  228113.3      2.56     305.0    1342.2                           284470.1562
+    0:03:07  241238.9      0.04       1.8    1522.3                           306574.9688
+    0:03:07  241238.9      0.04       1.8    1522.3                           306574.9688
+    0:03:16  241129.4      0.04       1.8    1521.9                           306438.8750
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:30  239048.6      0.05       1.9    1519.7                           303049.2812
+    0:03:33  238494.2      0.00       0.0    1519.1                           302314.7500
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:38  235343.5      0.00       0.0    1517.0                           296527.9375
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:03:45  237614.4      0.36       9.2     868.3 FPMULT/net2769292         299573.3750
+    0:03:47  239541.1      0.35       8.9     464.3 FPMULT/net2769122         302356.7812
+    0:03:49  240346.1      0.30       5.8     344.3 FPMULT/net2771849         303387.5938
+    0:03:52  241038.7      0.24       5.7     288.3 FPMULT/n46821             304210.3438

@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 08:06:45 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: add_subt_module_ASRegister_Q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: add_subt_module_Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  add_subt_module_ASRegister_Q_reg_0_/CK (DFFRX1TS)       0.00       1.00 r
+  add_subt_module_ASRegister_Q_reg_0_/Q (DFFRX1TS)        1.16       2.16 f
+  U2633/Y (XNOR2X2TS)                                     0.51       2.67 r
+  U2634/Y (XOR2X4TS)                                      0.39       3.06 f
+  U3156/Y (OR2X6TS)                                       0.35       3.41 f
+  U3163/Y (INVX4TS)                                       0.36       3.76 r
+  U3196/Y (XOR2X1TS)                                      0.69       4.46 r
+  U3197/Y (NOR2X2TS)                                      0.53       4.99 f
+  U1975/Y (NOR2X1TS)                                      0.61       5.59 r
+  U1649/Y (NAND2X1TS)                                     0.61       6.20 f
+  U3215/Y (NOR2X2TS)                                      0.39       6.60 r
+  U3229/Y (AOI21X4TS)                                     0.25       6.85 f
+  U3238/Y (OAI21X4TS)                                     0.26       7.11 r
+  U3242/Y (AOI21X4TS)                                     0.22       7.34 f
+  U3246/Y (OAI21X4TS)                                     0.27       7.60 r
+  U3250/Y (AOI21X4TS)                                     0.22       7.83 f
+  U3254/Y (OAI21X4TS)                                     0.27       8.10 r
+  U3258/Y (AOI21X4TS)                                     0.22       8.32 f
+  U3262/Y (OAI21X4TS)                                     0.27       8.59 r
+  U3267/Y (AOI21X4TS)                                     0.22       8.81 f
+  U1830/Y (OAI21X4TS)                                     0.24       9.05 r
+  U2147/Y (AOI21X1TS)                                     0.27       9.32 f
+  U3301/Y (XOR2X1TS)                                      0.36       9.68 r
+  U2146/Y (MX2X1TS)                                       0.48      10.16 r
+  add_subt_module_Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRX2TS)
+                                                          0.00      10.16 r
+  data arrival time                                                 10.16
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  add_subt_module_Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/CK (DFFRX2TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.33      10.17
+  data required time                                                10.17
+  --------------------------------------------------------------------------
+  data required time                                                10.17
+  data arrival time                                                -10.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

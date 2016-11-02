@@ -1,4 +1,3 @@
-Warning: Design 'FPU_Interface2_W32_EW8_SW23_SWR26_EWR5' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : timing
@@ -7,15 +6,17 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Tue Nov  1 20:36:45 2016
+Date   : Wed Nov  2 00:37:20 2016
 ****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FPADDSUB/SFT2FRMT_STAGE_VARS_Q_reg_8_
+  Startpoint: FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_7_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_0_
+  Endpoint: FPSENCOS_d_ff5_data_out_Q_reg_23_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -29,37 +30,37 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  FPADDSUB/SFT2FRMT_STAGE_VARS_Q_reg_8_/CK (DFFRXLTS)     0.00       1.00 r
-  FPADDSUB/SFT2FRMT_STAGE_VARS_Q_reg_8_/Q (DFFRXLTS)      1.35       2.35 r
-  FPADDSUB/U662/Y (OR2X2TS)                               0.53       2.88 r
-  FPADDSUB/U97/Y (XOR2X1TS)                               0.35       3.23 f
-  FPADDSUB/DP_OP_15J43_122_6956_U9/CO (CMPR32X2TS)        0.60       3.83 f
-  FPADDSUB/DP_OP_15J43_122_6956_U8/CO (CMPR32X2TS)        0.56       4.39 f
-  FPADDSUB/DP_OP_15J43_122_6956_U7/CO (CMPR32X2TS)        0.56       4.95 f
-  FPADDSUB/DP_OP_15J43_122_6956_U6/CO (CMPR32X2TS)        0.56       5.51 f
-  FPADDSUB/DP_OP_15J43_122_6956_U5/CO (ADDFHX2TS)         0.37       5.88 f
-  FPADDSUB/DP_OP_15J43_122_6956_U4/CO (CMPR32X2TS)        0.54       6.41 f
-  FPADDSUB/DP_OP_15J43_122_6956_U3/CO (CMPR32X2TS)        0.56       6.97 f
-  FPADDSUB/DP_OP_15J43_122_6956_U2/S (CMPR32X2TS)         0.67       7.64 f
-  FPADDSUB/U353/Y (INVX2TS)                               0.27       7.90 r
-  FPADDSUB/U1094/Y (NOR2X2TS)                             0.16       8.06 f
-  FPADDSUB/U1095/Y (OAI2BB1X4TS)                          0.28       8.34 f
-  FPADDSUB/U1353/Y (INVX2TS)                              0.27       8.61 r
-  FPADDSUB/U41/Y (NAND2X6TS)                              0.29       8.90 f
-  FPADDSUB/U607/Y (BUFX3TS)                               0.44       9.35 f
-  FPADDSUB/U1442/Y (OAI2BB2XLTS)                          0.66      10.01 r
-  FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_0_/D (DFFRX1TS)       0.00      10.01 r
-  data arrival time                                                 10.01
+  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_7_/CK (DFFRX2TS)
+                                                          0.00 #     1.00 r
+  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_7_/Q (DFFRX2TS)
+                                                          1.15       2.15 f
+  U3409/Y (NOR3X2TS)                                      0.64       2.80 r
+  U3533/Y (NOR3BX1TS)                                     0.69       3.49 r
+  U2657/Y (INVX2TS)                                       0.35       3.84 f
+  U3411/Y (NOR2X2TS)                                      0.37       4.21 r
+  U2288/Y (NAND2BX2TS)                                    0.55       4.75 f
+  U2784/Y (NOR2X2TS)                                      0.57       5.32 r
+  U3633/Y (NAND2X1TS)                                     0.65       5.97 f
+  U3348/Y (NOR2X2TS)                                      0.66       6.63 r
+  U5181/Y (NOR2X4TS)                                      0.43       7.06 f
+  U2502/Y (BUFX6TS)                                       0.38       7.44 f
+  U5186/Y (NOR2X4TS)                                      0.64       8.08 r
+  U3574/Y (CLKBUFX2TS)                                    0.66       8.74 r
+  U2805/Y (BUFX3TS)                                       0.71       9.45 r
+  U3381/Y (AOI222X1TS)                                    0.55      10.00 f
+  U5279/Y (INVX2TS)                                       0.22      10.21 r
+  FPSENCOS_d_ff5_data_out_Q_reg_23_/D (DFFRX1TS)          0.00      10.21 r
+  data arrival time                                                 10.21
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  FPADDSUB/FRMT_STAGE_DATAOUT_Q_reg_0_/CK (DFFRX1TS)      0.00      10.50 r
-  library setup time                                     -0.49      10.01
-  data required time                                                10.01
+  FPSENCOS_d_ff5_data_out_Q_reg_23_/CK (DFFRX1TS)         0.00      10.50 r
+  library setup time                                     -0.28      10.22
+  data required time                                                10.22
   --------------------------------------------------------------------------
-  data required time                                                10.01
-  data arrival time                                                -10.01
+  data required time                                                10.22
+  data arrival time                                                -10.21
   --------------------------------------------------------------------------
   slack (MET)                                                        0.00
 

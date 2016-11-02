@@ -1,0 +1,1508 @@
+####################################################################################################################################
+#Institución:                          Instituto Tecnológico de Costa Rica
+#Autor: Jorge Sequeira Rojas          jsequeira03@gmail.com
+#Herramienta:        Design Compiler
+#Fecha de creación:
+####################################################################################################################################
+set PRECISION(0) "SINGLE";
+SINGLE
+set PRECISION(1) "DOUBLE";
+DOUBLE
+set PREC_PARAM(0) "W=32,SW=23,EW=8";
+W=32,SW=23,EW=8
+set PREC_PARAM(1) "W=64,SW=52,EW=11";
+W=64,SW=52,EW=11
+# Eliminar diseños previos
+set DESIGN_NAME  "fpmult_arch3"
+fpmult_arch3
+set TOP_NAME     "FPU_Multiplication_Function"
+FPU_Multiplication_Function
+set CONTRAINTS_FILE_NAME "ASIC_fpu_syn_constraints.tcl"
+ASIC_fpu_syn_constraints.tcl
+set compile_fix_cell_degradation true
+true
+remove_design -designs
+Removing design 'FPU_Multiplication_Function_W32_EW8_SW23'
+Removing design 'RegisterAdd_W1_0'
+Removing design 'RegisterMult_W32_0'
+Removing design 'Comparator_Equal_S31_0'
+Removing design 'RegisterMult_W1_0'
+Removing design 'RegisterAdd_W1_1'
+Removing design 'RegisterAdd_W1_2'
+Removing design 'RegisterAdd_W1_3'
+Removing design 'RegisterMult_W32_1'
+Removing design 'Comparator_Equal_S31_1'
+Removing design 'RegisterMult_W1_1'
+Removing design 'FSM_Mult_Function'
+Removing design 'RegisterAdd_W2'
+Removing design 'First_Phase_M_W32'
+Removing design 'Zero_InfMult_Unit_W32'
+Removing design 'Multiplexer_AC_W9'
+Removing design 'Mux_3x1_W8'
+Removing design 'Exp_Operation_m_EW8'
+Removing design 'XOR_M'
+Removing design 'Multiplexer_AC_W24'
+Removing design 'Barrel_Shifter_M_SW24'
+Removing design 'Round_decoder_M_SW23'
+Removing design 'Adder_Round_SW24'
+Removing design 'Tenth_Phase_W32_EW8_SW23'
+Removing design 'add_sub_carry_out_W9'
+Removing design 'add_sub_carry_out_W9_DW01_add_0'
+Removing design 'add_sub_carry_out_W9_DW01_sub_0'
+Removing design 'RegisterMult_W9'
+Removing design 'Comparator_Less_W9'
+Removing design 'shift_mux_array_SWR24_LEVEL0'
+Removing design 'RegisterMult_W24'
+Removing design 'OR_Module_W23'
+Removing design 'Deco_Round_Mult'
+Removing design 'adder_W24'
+Removing design 'adder_W24_DW01_add_0'
+Removing design 'RegisterAdd_W24'
+Removing design 'Mux_3x1_W1'
+Removing design 'Multiplexer_AC_W8'
+Removing design 'Multiplexer_AC_W23'
+Removing design 'RegisterAdd_W32'
+1
+#WE PARSE THE FILE_LIST GENERATED OUTSIDE THIS SCRIPT LINK:http://wiki.tcl.tk/367
+set fp [open "scripts/file_list" r]
+file19
+set file_sources [read $fp]
+Adder_Round.v
+adder.v
+add_sub_carry_out.v
+Add_Subt.v
+Barrel_Shifter_M.v
+Barrel_shifter.v
+cmult.v
+Comparator_Equal.v
+Comparator_Less.v
+Comparators.v
+Comparator.v
+CORDIC_Arch2.v
+CORDIC_Arch2v1.v
+CORDIC_Arch3.v
+CORDIC_Arch3v1.v
+CORDIC_FSM_v2.v
+CORDIC_FSM_v3.v
+counter_d.v
+counter_up.v
+DECO_CORDIC_OP.v
+DECO_CORDIC_OP2.v
+deco_op.v
+Deco_Round_Mult.v
+demux_1x3.v
+d_ff_en.v
+DW_mult.v
+Exp_operation_m.v
+exp_operation.v
+First_Phase_M.v
+FORMATTER.v
+FPU_ADD_Substract_PIPELINED.v
+FPU_Add_Subtract_Function.v
+FPU_Interface_1v1.v
+FPU_Interface2v1.v
+FPU_Multiplication_Function.v
+FSM_Add_Subtract.v
+FSM_input_enable.v
+FSM_Mult_Function.v
+global.v
+Greater_Comparator.v
+KOA_1c.v
+KOA_2c.v
+lut_CASE_32.v
+lut_CASE_64.v
+LZD.v
+mult2.v
+Multiplexer_AC.v
+MultiplexTxT.v
+multiplier.v
+mult.v
+Mux_2x1.v
+Mux_3x1_b.v
+Mux_3x1_b_v2.v
+Mux_3x1.v
+Mux_Array.v
+NaN_mod_32.v
+NaN_mod_64.v
+Oper_Start_In.v
+Op_Select.v
+OR_Module.v
+Priority_Codec_32.v
+Priority_Codec_64.v
+PriorityEncoder_ExtCORDIC.v
+RecursiveKOA_1c.v
+RecursiveKOA.v
+RecursiveKOA_Weighted.v
+RegisterAdd.v
+RegisterMult.v
+Rotate_Mux_Array.v
+Round_decoder_M.v
+Round_Sgf_Dec.v
+Sgf_Multiplication.v
+sgn_result.v
+shift_mux.v
+shift_reg.v
+sign_inverter.v
+Simple_Subt.v
+submidRecursiveKOA2.v
+submidRecursiveKOA.v
+subRecursiveKOA_1c.v
+subRecursiveKOA.v
+substractor.v
+Tenth_Phase.v
+Tenth_Phase_v2.v
+Up_Counter.v
+XOR_M.v
+xor_tri.v
+Zero_InfMult_Unit.v
+
+close $fp
+set data [split $file_sources "\n"]
+Adder_Round.v adder.v add_sub_carry_out.v Add_Subt.v Barrel_Shifter_M.v Barrel_shifter.v cmult.v Comparator_Equal.v Comparator_Less.v Comparators.v Comparator.v CORDIC_Arch2.v CORDIC_Arch2v1.v CORDIC_Arch3.v CORDIC_Arch3v1.v CORDIC_FSM_v2.v CORDIC_FSM_v3.v counter_d.v counter_up.v DECO_CORDIC_OP.v DECO_CORDIC_OP2.v deco_op.v Deco_Round_Mult.v demux_1x3.v d_ff_en.v DW_mult.v Exp_operation_m.v exp_operation.v First_Phase_M.v FORMATTER.v FPU_ADD_Substract_PIPELINED.v FPU_Add_Subtract_Function.v FPU_Interface_1v1.v FPU_Interface2v1.v FPU_Multiplication_Function.v FSM_Add_Subtract.v FSM_input_enable.v FSM_Mult_Function.v global.v Greater_Comparator.v KOA_1c.v KOA_2c.v lut_CASE_32.v lut_CASE_64.v LZD.v mult2.v Multiplexer_AC.v MultiplexTxT.v multiplier.v mult.v Mux_2x1.v Mux_3x1_b.v Mux_3x1_b_v2.v Mux_3x1.v Mux_Array.v NaN_mod_32.v NaN_mod_64.v Oper_Start_In.v Op_Select.v OR_Module.v Priority_Codec_32.v Priority_Codec_64.v PriorityEncoder_ExtCORDIC.v RecursiveKOA_1c.v RecursiveKOA.v RecursiveKOA_Weighted.v RegisterAdd.v RegisterMult.v Rotate_Mux_Array.v Round_decoder_M.v Round_Sgf_Dec.v Sgf_Multiplication.v sgn_result.v shift_mux.v shift_reg.v sign_inverter.v Simple_Subt.v submidRecursiveKOA2.v submidRecursiveKOA.v subRecursiveKOA_1c.v subRecursiveKOA.v substractor.v Tenth_Phase.v Tenth_Phase_v2.v Up_Counter.v XOR_M.v xor_tri.v Zero_InfMult_Unit.v {}
+# Primero se analiza el módulo principal
+foreach line $data {
+  analyze -library WORK -format verilog "$line"
+}
+Running PRESTO HDLC
+Compiling source file ./source/Adder_Round.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/adder.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/add_sub_carry_out.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Add_Subt.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Barrel_Shifter_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Barrel_shifter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/cmult.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparator_Equal.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparator_Less.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparators.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Comparator.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch2v1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch3.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_Arch3v1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_FSM_v2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/CORDIC_FSM_v3.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/counter_d.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/counter_up.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/DECO_CORDIC_OP.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/DECO_CORDIC_OP2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/deco_op.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Deco_Round_Mult.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/demux_1x3.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/d_ff_en.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/DW_mult.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Exp_operation_m.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/exp_operation.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/First_Phase_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FORMATTER.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_ADD_Substract_PIPELINED.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Add_Subtract_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Interface_1v1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Interface2v1.v
+Warning:  ./source/FPU_Interface2v1.v:296: the undeclared symbol 'zero_flag' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FSM_Add_Subtract.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FSM_input_enable.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/FSM_Mult_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Greater_Comparator.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/KOA_1c.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/KOA_2c.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/lut_CASE_32.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/lut_CASE_64.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/LZD.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/mult2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Multiplexer_AC.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/MultiplexTxT.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/multiplier.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/mult.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_2x1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_3x1_b.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_3x1_b_v2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_3x1.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Mux_Array.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/NaN_mod_32.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/NaN_mod_64.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Oper_Start_In.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Op_Select.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/OR_Module.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Priority_Codec_32.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Priority_Codec_64.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/PriorityEncoder_ExtCORDIC.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RecursiveKOA_1c.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RecursiveKOA.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RecursiveKOA_Weighted.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RegisterAdd.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/RegisterMult.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Rotate_Mux_Array.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Round_decoder_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Round_Sgf_Dec.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Sgf_Multiplication.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/sgn_result.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/shift_mux.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/shift_reg.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/sign_inverter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Simple_Subt.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/submidRecursiveKOA2.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/submidRecursiveKOA.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/subRecursiveKOA_1c.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/subRecursiveKOA.v
+Opening include file ./source/global.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/substractor.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Tenth_Phase.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Tenth_Phase_v2.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Up_Counter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/XOR_M.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/xor_tri.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./source/Zero_InfMult_Unit.v
+Presto compilation completed successfully.
+Error: Value for list 'file_list' must have more than zero elements. (CMD-036)
+#source "ASIC_fpaddsub_arch2_syn_2.tcl"
+set x 0;
+0
+while {$x < 1} {
+
+#Elaboramos el módulo principal
+elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
+#elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
+
+
+#Enlazar los demás módulos al módulo principal
+link
+
+uniquify
+#Escribir el archivo *.ddc (base de datos sin sintetizar)
+write -hierarchy -format ddc -output ./db/$PRECISION($x)/$TOP_NAME\_syn_unmapped.ddc
+
+#Aplicar especificaciones de diseño (constraints)
+source $CONTRAINTS_FILE_NAME
+propagate_constraints
+
+#Revisar el diseño
+check_design -multiple_designs
+
+#set compile_top_all_paths true;
+
+#Compilar el diseño
+#compile_ultra -timing_high_effort_script -retime
+compile
+#Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
+#- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
+#- Como una de las entradas para el sintetizador físico (IC Compiler).
+set TOP_PARAM $current_design
+
+#LO SIGUIENTE SE VA A COMENTAR PARA NO GENERAR UNA VERSION APARTE DE LA SECCION OPER_IN_OP
+#source "ASIC_Oper_In_Op_syn.tcl"
+#write_sdc ./db/$PRECISION($x)/Oper_Start_in\_syn.sdc
+
+#current_design "$TOP_PARAM"
+
+set verilogout_no_tri true
+change_names -hierarchy -rules verilog
+write -hierarchy -format verilog -output ./db/$PRECISION($x)/$TOP_NAME\_syn.v
+
+#Generar los reportes
+
+report_power -analysis_effort high > reports/$PRECISION($x)/$TOP_NAME\_syn_power.txt
+report_area >   reports/$PRECISION($x)/$TOP_NAME\_syn_area.txt
+report_cell >   reports/$PRECISION($x)/$TOP_NAME\_syn_cell.txt
+report_qor >    reports/$PRECISION($x)/$TOP_NAME\_syn_qor.txt
+report_timing > reports/$PRECISION($x)/$TOP_NAME\_syn_timing.txt
+report_port >   reports/$PRECISION($x)/$TOP_NAME\_syn_port.txt
+
+#Escribir el archivo *.ddc (base de datos sintetizada)
+write -hierarchy -format ddc -output ./db/$PRECISION($x)/$TOP_NAME\_syn_mapped.ddc
+
+#Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
+#para el sintetizador físico (IC Compiler)
+write_sdc ./db/$PRECISION($x)/$TOP_NAME\_syn.sdc
+write_sdf ./db/$PRECISION($x)/$TOP_NAME\_syn.sdf
+write_sdf ../simulacion_logica_sintesis/$PRECISION($x)/$TOP_NAME\_syn.sdf
+
+##LE AGREGAMOS CON UN COMANDO DE BASH EL SDF CORRESPONDIENTE PARA LA SIMULACION
+set string_replace "sed -i \"s/endmodule/initial\ \\\$sdf\_annotate\(\\\"$TOP_NAME\_syn.sdf\\\"\)\\\\; \\n endmodule/g\" db/$PRECISION($x)/$TOP_NAME\_syn.v"
+#set string_replace "sed -i \"s/endmodule/ initial \t \$sdf_annotate\(\"$TOP_NAME\_syn.sdf\"\); \n endmodule/g\" db/$PRECISION(1)/$TOP_NAME\_syn.v"
+exec /bin/sh -c "$string_replace"
+#Revisar la configuración de temporizado
+check_timing
+
+#FINALIZAMOS EL LOOP
+set x [expr {$x + 1}]
+}
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FPU_Multiplication_Function_W32_EW8_SW23'.
+Information: Building the design 'FSM_Mult_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 128 in file
+	'./source/FSM_Mult_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Mult_Function line 121 in file
+		'./source/FSM_Mult_Function.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W1 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W2 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'First_Phase_M' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Zero_InfMult_Unit' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=9". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=8". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation_m' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "EW=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'XOR_M'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=24". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter_M' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_decoder_M' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder_Round' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "SW=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Tenth_Phase' instantiated from design 'FPU_Multiplication_Function_W32_EW8_SW23' with
+	the parameters "W=32,EW=8,SW=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'First_Phase_M_W32' with
+	the parameters "W=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W32 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Equal' instantiated from design 'Zero_InfMult_Unit_W32' with
+	the parameters "S=31". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=9". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W9 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W1 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Less' instantiated from design 'Exp_Operation_m_EW8' with
+	the parameters "W=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Barrel_Shifter_M_SW24' with
+	the parameters "SWR=24,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Barrel_Shifter_M_SW24' with
+	the parameters "W=24". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W24 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OR_Module' instantiated from design 'Round_decoder_M_SW23' with
+	the parameters "W=23". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Deco_Round_Mult'. (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'./source/Deco_Round_Mult.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Adder_Round_SW24' with
+	the parameters "W=24". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Adder_Round_SW24' with
+	the parameters "W=24". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W24 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'Tenth_Phase_W32_EW8_SW23' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W32_EW8_SW23' with
+	the parameters "W=8". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W32_EW8_SW23' with
+	the parameters "W=23". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Tenth_Phase_W32_EW8_SW23' with
+	the parameters "W=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W32 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+
+  Linking design 'FPU_Multiplication_Function_W32_EW8_SW23'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (31 designs)              /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Multiplication_Function_W32_EW8_SW23.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Information: Uniquified 4 instances of design 'RegisterAdd_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W32'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Equal_S31'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W1'. (OPT-1056)
+Writing ddc file './db/SINGLE/FPU_Multiplication_Function_syn_unmapped.ddc'.
+Using operating conditions 'tt_1p2v_25c' found in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'.
+
+#   Propagate Constraints from cell final_result_ieee_Module/                  \
+(Tenth_Phase_W32_EW8_SW23) #
+
+#   Propagate Constraints from cell                                            \
+final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W32) #
+
+#   Propagate Constraints from cell final_result_ieee_Module/Sgf_Mux/          \
+(Multiplexer_AC_W23) #
+
+#   Propagate Constraints from cell final_result_ieee_Module/Exp_Mux/          \
+(Multiplexer_AC_W8) #
+
+#   Propagate Constraints from cell final_result_ieee_Module/Sign_Mux/         \
+(Mux_3x1_W1) #
+
+#   Propagate Constraints from cell Adder_M/ (Adder_Round_SW24) #
+
+#   Propagate Constraints from cell Adder_M/Add_overflow_Result/               \
+(RegisterAdd_W1_0) #
+
+#   Propagate Constraints from cell Adder_M/Add_Subt_Result/ (RegisterAdd_W24) \
+#
+
+#   Propagate Constraints from cell Adder_M/A_operation/ (adder_W24) #
+
+#   Propagate Constraints from cell Round_Decoder/ (Round_decoder_M_SW23) #
+
+#   Propagate Constraints from cell Round_Decoder/Rounding_Deco/               \
+(Deco_Round_Mult) #
+
+#   Propagate Constraints from cell Round_Decoder/OR_info_reg/ (OR_Module_W23) \
+#
+
+#   Propagate Constraints from cell Barrel_Shifter_module/                     \
+(Barrel_Shifter_M_SW24) #
+
+#   Propagate Constraints from cell Barrel_Shifter_module/Output_Reg/          \
+(RegisterMult_W24) #
+
+#   Propagate Constraints from cell Barrel_Shifter_module/shift_mux_array/     \
+(shift_mux_array_SWR24_LEVEL0) #
+
+#   Propagate Constraints from cell Barrel_Shifter_D_I_mux/                    \
+(Multiplexer_AC_W24) #
+
+#   Propagate Constraints from cell Sign_operation/ (XOR_M) #
+
+#   Propagate Constraints from cell Exp_module/ (Exp_Operation_m_EW8) #
+
+#   Propagate Constraints from cell Exp_module/Underflow_m/                    \
+(RegisterMult_W1_0) #
+
+#   Propagate Constraints from cell Exp_module/Exp_unflow_Comparator_m/        \
+(Comparator_Less_W9) #
+
+#   Propagate Constraints from cell Exp_module/Oflow_A_m/ (RegisterMult_W1_1) #
+
+#   Propagate Constraints from cell Exp_module/exp_result_m/ (RegisterMult_W9) \
+#
+
+#   Propagate Constraints from cell Exp_module/exp_add_subt_m/                 \
+(add_sub_carry_out_W9) #
+
+#   Propagate Constraints from cell Exp_Oper_B_mux/ (Mux_3x1_W8) #
+
+#   Propagate Constraints from cell Exp_Oper_A_mux/ (Multiplexer_AC_W9) #
+
+#   Propagate Constraints from cell Zero_Result_Detect/                        \
+(Zero_InfMult_Unit_W32) #
+
+#   Propagate Constraints from cell Zero_Result_Detect/Zero_Info_Mult/         \
+(RegisterAdd_W1_1) #
+
+#   Propagate Constraints from cell Zero_Result_Detect/Data_B_Comp/            \
+(Comparator_Equal_S31_0) #
+
+#   Propagate Constraints from cell Zero_Result_Detect/Data_A_Comp/            \
+(Comparator_Equal_S31_1) #
+
+#   Propagate Constraints from cell Operands_load_reg/ (First_Phase_M_W32) #
+
+#   Propagate Constraints from cell Operands_load_reg/YMRegister/              \
+(RegisterMult_W32_0) #
+
+#   Propagate Constraints from cell Operands_load_reg/XMRegister/              \
+(RegisterMult_W32_1) #
+
+#   Propagate Constraints from cell Sel_B/ (RegisterAdd_W2) #
+
+#   Propagate Constraints from cell Sel_C/ (RegisterAdd_W1_2) #
+
+#   Propagate Constraints from cell Sel_A/ (RegisterAdd_W1_3) #
+
+#   Propagate Constraints from cell FS_Module/ (FSM_Mult_Function) #
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Wed Nov  2 11:04:46 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                             259
+    Cells do not drive (LINT-1)                                     2
+    Connected to power or ground (LINT-32)                        149
+    Nets connected to multiple pins on same cell (LINT-33)         10
+    Leaf pins connected to undriven nets (LINT-58)                 50
+    Cells have undriven hier pins (LINT-59)                        48
+
+Nets                                                               48
+    Undriven nets (LINT-3)                                         48
+--------------------------------------------------------------------------------
+
+Warning: In design 'add_sub_carry_out_W9', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W9', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[0]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[1]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[2]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[3]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[4]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[5]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[6]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[7]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[8]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[9]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[10]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[11]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[12]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[13]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[14]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[15]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[16]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[17]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[18]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[19]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[20]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[21]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'non_significand[22]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[0]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[1]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[2]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[3]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[4]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[5]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[6]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[7]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[8]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[9]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[10]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[11]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[12]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[13]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[14]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[15]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[16]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[17]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[18]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[19]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[20]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[21]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[22]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'significand[23]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', net 'P_Sgf[47]' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'FSM_Mult_Function', output port 'load_1_o' is connected directly to output port 'ctrl_select_a_o'. (LINT-31)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Sel_A' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D[0]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Sel_C' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D[0]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_A_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D0[8]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[7]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[6]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[5]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[4]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[3]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[2]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[1]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[0]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[7]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[6]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[5]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[4]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[3]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[2]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[1]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_Oper_B_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[0]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Exp_module' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[8]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[23]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[22]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[21]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[20]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[19]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[18]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[17]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[16]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[15]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[14]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[13]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[12]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[11]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[10]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[9]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[8]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[7]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[6]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[5]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[4]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[3]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[2]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[1]' is connected to logic 1. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', a pin on submodule 'Adder_M' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B_i[0]' is connected to logic 1. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[30]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[29]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[28]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[27]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[26]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[25]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[24]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[23]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[22]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[21]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[20]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[19]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[18]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[17]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[16]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[15]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[14]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[13]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[12]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[11]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[10]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[9]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[8]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[7]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[6]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[5]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[4]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[3]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[2]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[1]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_A_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[0]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[30]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[29]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[28]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[27]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[26]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[25]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[24]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[23]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[22]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[21]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[20]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[19]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[18]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[17]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[16]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[15]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[14]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[13]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[12]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[11]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[10]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[9]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[8]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[7]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[6]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[5]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[4]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[3]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[2]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[1]' is connected to logic 0. 
+Warning: In design 'Zero_InfMult_Unit_W32', a pin on submodule 'Data_B_Comp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_A[0]' is connected to logic 0. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[8]' is connected to logic 0. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[7]' is connected to logic 0. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[6]' is connected to logic 1. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[5]' is connected to logic 1. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[4]' is connected to logic 1. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[3]' is connected to logic 1. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[2]' is connected to logic 1. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[1]' is connected to logic 1. 
+Warning: In design 'Exp_Operation_m_EW8', a pin on submodule 'Exp_unflow_Comparator_m' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Data_B[0]' is connected to logic 1. 
+Warning: In design 'Barrel_Shifter_M_SW24', a pin on submodule 'shift_mux_array' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bit_shift_i' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sign_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[0]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sign_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D2[0]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[7]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[6]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[5]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[4]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[3]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[2]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[1]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Exp_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[0]' is connected to logic 1. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[22]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[21]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[20]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[19]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[18]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[17]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[16]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[15]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[14]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[13]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[12]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[11]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[10]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[9]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[8]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[7]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[6]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[5]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[4]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[3]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[2]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[1]' is connected to logic 0. 
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', a pin on submodule 'Sgf_Mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D1[0]' is connected to logic 0. 
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[7]', 'D2[7]'', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[6]', 'D1[5]'', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]', 'D2[0]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[23]', 'Data_B_i[22]'', 'Data_B_i[21]', 'Data_B_i[20]', 'Data_B_i[19]', 'Data_B_i[18]', 'Data_B_i[17]', 'Data_B_i[16]', 'Data_B_i[15]', 'Data_B_i[14]', 'Data_B_i[13]', 'Data_B_i[12]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[5]', 'Data_B_i[3]'.
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B_i[4]', 'Data_B_i[2]'', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'Zero_InfMult_Unit_W32', the same net is connected to more than one pin on submodule 'Data_A_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[30]', 'Data_B[29]'', 'Data_B[28]', 'Data_B[27]', 'Data_B[26]', 'Data_B[25]', 'Data_B[24]', 'Data_B[23]', 'Data_B[22]', 'Data_B[21]', 'Data_B[20]', 'Data_B[19]', 'Data_B[18]', 'Data_B[17]', 'Data_B[16]', 'Data_B[15]', 'Data_B[14]', 'Data_B[13]', 'Data_B[12]', 'Data_B[11]', 'Data_B[10]', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Zero_InfMult_Unit_W32', the same net is connected to more than one pin on submodule 'Data_B_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_A[30]', 'Data_A[29]'', 'Data_A[28]', 'Data_A[27]', 'Data_A[26]', 'Data_A[25]', 'Data_A[24]', 'Data_A[23]', 'Data_A[22]', 'Data_A[21]', 'Data_A[20]', 'Data_A[19]', 'Data_A[18]', 'Data_A[17]', 'Data_A[16]', 'Data_A[15]', 'Data_A[14]', 'Data_A[13]', 'Data_A[12]', 'Data_A[11]', 'Data_A[10]', 'Data_A[9]', 'Data_A[8]', 'Data_A[7]', 'Data_A[6]', 'Data_A[5]', 'Data_A[4]', 'Data_A[3]', 'Data_A[2]', 'Data_A[1]', 'Data_A[0]'.
+Warning: In design 'Exp_Operation_m_EW8', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[8]', 'Data_B[7]''.
+Warning: In design 'Exp_Operation_m_EW8', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[6]', 'Data_B[5]'', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[7]', 'D1[6]'', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W32_EW8_SW23', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[22]', 'D1[21]'', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FSM_Mult_Function', input pin 'DATA6_0' of leaf cell 'C219' is connected to undriven net 'Mult_shift_i'.  (LINT-58)
+Warning: In design 'FSM_Mult_Function', input pin 'DATA1_0' of leaf cell 'C221' is connected to undriven net 'Mult_shift_i'.  (LINT-58)
+Warning: In design 'FSM_Mult_Function', input pin 'A' of leaf cell 'I_18' is connected to undriven net 'Mult_shift_i'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_23' of leaf cell 'C34' is connected to undriven net 'D0[23]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_22' of leaf cell 'C34' is connected to undriven net 'D0[22]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_21' of leaf cell 'C34' is connected to undriven net 'D0[21]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_20' of leaf cell 'C34' is connected to undriven net 'D0[20]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_19' of leaf cell 'C34' is connected to undriven net 'D0[19]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_18' of leaf cell 'C34' is connected to undriven net 'D0[18]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_17' of leaf cell 'C34' is connected to undriven net 'D0[17]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_16' of leaf cell 'C34' is connected to undriven net 'D0[16]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_15' of leaf cell 'C34' is connected to undriven net 'D0[15]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_14' of leaf cell 'C34' is connected to undriven net 'D0[14]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_13' of leaf cell 'C34' is connected to undriven net 'D0[13]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_12' of leaf cell 'C34' is connected to undriven net 'D0[12]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_11' of leaf cell 'C34' is connected to undriven net 'D0[11]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_10' of leaf cell 'C34' is connected to undriven net 'D0[10]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_9' of leaf cell 'C34' is connected to undriven net 'D0[9]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_8' of leaf cell 'C34' is connected to undriven net 'D0[8]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_7' of leaf cell 'C34' is connected to undriven net 'D0[7]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_6' of leaf cell 'C34' is connected to undriven net 'D0[6]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_5' of leaf cell 'C34' is connected to undriven net 'D0[5]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_4' of leaf cell 'C34' is connected to undriven net 'D0[4]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_3' of leaf cell 'C34' is connected to undriven net 'D0[3]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_2' of leaf cell 'C34' is connected to undriven net 'D0[2]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_1' of leaf cell 'C34' is connected to undriven net 'D0[1]'.  (LINT-58)
+Warning: In design 'Multiplexer_AC_W24', input pin 'DATA1_0' of leaf cell 'C34' is connected to undriven net 'D0[0]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C12' is connected to undriven net 'Sgf_Round_Part[21]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'B' of leaf cell 'C12' is connected to undriven net 'Sgf_Round_Part[22]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C13' is connected to undriven net 'Sgf_Round_Part[20]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C14' is connected to undriven net 'Sgf_Round_Part[19]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C15' is connected to undriven net 'Sgf_Round_Part[18]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C16' is connected to undriven net 'Sgf_Round_Part[17]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C17' is connected to undriven net 'Sgf_Round_Part[16]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C18' is connected to undriven net 'Sgf_Round_Part[15]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C19' is connected to undriven net 'Sgf_Round_Part[14]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C20' is connected to undriven net 'Sgf_Round_Part[13]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C21' is connected to undriven net 'Sgf_Round_Part[12]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C22' is connected to undriven net 'Sgf_Round_Part[11]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C23' is connected to undriven net 'Sgf_Round_Part[10]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C24' is connected to undriven net 'Sgf_Round_Part[9]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C25' is connected to undriven net 'Sgf_Round_Part[8]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C26' is connected to undriven net 'Sgf_Round_Part[7]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C27' is connected to undriven net 'Sgf_Round_Part[6]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C28' is connected to undriven net 'Sgf_Round_Part[5]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C29' is connected to undriven net 'Sgf_Round_Part[4]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C30' is connected to undriven net 'Sgf_Round_Part[3]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C31' is connected to undriven net 'Sgf_Round_Part[2]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C32' is connected to undriven net 'Sgf_Round_Part[1]'.  (LINT-58)
+Warning: In design 'OR_Module_W23', input pin 'A' of leaf cell 'C33' is connected to undriven net 'Sgf_Round_Part[0]'.  (LINT-58)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Mult_shift_i' of hierarchical cell 'FS_Module' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[23]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[22]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[21]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[20]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[19]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[18]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[17]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[16]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[15]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[14]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[13]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[12]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[11]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[10]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[9]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[8]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[7]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[6]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[5]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[4]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[3]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[2]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[1]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'D0[0]' of hierarchical cell 'Barrel_Shifter_D_I_mux' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[22]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[21]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[20]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[19]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[18]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[17]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[16]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[15]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[14]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[13]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[12]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[11]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[10]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[9]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[8]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[7]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[6]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[5]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[4]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[3]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[2]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[1]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'FPU_Multiplication_Function_W32_EW8_SW23', input pin 'Round_Bits_i[0]' of hierarchical cell 'Round_Decoder' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+
+Information: There are 308 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'RegisterAdd_W32'
+  Processing 'Multiplexer_AC_W23'
+  Processing 'Multiplexer_AC_W8'
+  Processing 'Mux_3x1_W1'
+  Processing 'Tenth_Phase_W32_EW8_SW23'
+  Processing 'RegisterAdd_W1_0'
+  Processing 'RegisterAdd_W24'
+  Processing 'adder_W24'
+  Processing 'Adder_Round_SW24'
+  Processing 'Deco_Round_Mult'
+  Processing 'OR_Module_W23'
+  Processing 'Round_decoder_M_SW23'
+  Processing 'RegisterMult_W24'
+  Processing 'shift_mux_array_SWR24_LEVEL0'
+  Processing 'Barrel_Shifter_M_SW24'
+  Processing 'Multiplexer_AC_W24'
+  Processing 'XOR_M'
+  Processing 'RegisterMult_W1_0'
+  Processing 'Comparator_Less_W9'
+  Processing 'RegisterMult_W9'
+  Processing 'add_sub_carry_out_W9'
+  Processing 'Exp_Operation_m_EW8'
+  Processing 'Mux_3x1_W8'
+  Processing 'Multiplexer_AC_W9'
+  Processing 'Comparator_Equal_S31_0'
+Information: Added key list 'DesignWare' to design 'Comparator_Equal_S31_0'. (DDB-72)
+  Processing 'Zero_InfMult_Unit_W32'
+  Processing 'RegisterMult_W32_0'
+  Processing 'First_Phase_M_W32'
+  Processing 'RegisterAdd_W2'
+  Processing 'FSM_Mult_Function'
+  Processing 'FPU_Multiplication_Function_W32_EW8_SW23'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'adder_W24_DW01_add_0'
+  Mapping 'Comparator_Less_W9_DW_cmp_0'
+  Processing 'add_sub_carry_out_W9_DW01_add_0'
+  Processing 'add_sub_carry_out_W9_DW01_sub_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'Comparator_Less_W9'. (DDB-72)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03   22140.0      0.00       0.0      12.3                          
+    0:00:03   22140.0      0.00       0.0      12.3                          
+    0:00:03   22140.0      0.00       0.0      12.3                          
+    0:00:03   22140.0      0.00       0.0      12.3                          
+    0:00:03   22140.0      0.00       0.0      12.3                          
+    0:00:04   12078.7      5.79      39.8      12.0                          
+    0:00:04   12443.0      3.05      16.8      12.0                          
+    0:00:05   12309.1      3.27      14.1      12.0                          
+    0:00:05   12427.2      2.35      11.3      12.0                          
+    0:00:05   12548.2      2.01       9.2      12.0                          
+    0:00:05   12559.7      1.26       5.6      12.0                          
+    0:00:05   12831.8      1.02       4.1      12.0                          
+    0:00:05   12630.2      1.19       5.0      12.0                          
+    0:00:05   12538.1      1.86      10.0      12.0                          
+    0:00:06   12672.0      1.34       6.4      12.0                          
+    0:00:06   13000.3      0.31       1.0      12.0                          
+    0:00:06   13148.6      0.17       0.5      12.0                          
+    0:00:06   13230.7      0.00       0.0      12.0                          
+    0:00:06   13230.7      0.00       0.0      12.0                          
+    0:00:06   13230.7      0.00       0.0      12.0                          
+    0:00:06   13230.7      0.00       0.0      12.0                          
+    0:00:06   13237.9      0.02       0.0       0.0                          
+    0:00:06   13237.9      0.02       0.0       0.0                          
+    0:00:06   13237.9      0.02       0.0       0.0                          
+    0:00:06   13237.9      0.02       0.0       0.0                          
+    0:00:06   13245.1      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   13245.1      0.00       0.0       0.0                          
+    0:00:06   13245.1      0.00       0.0       0.0                          
+    0:00:06   13233.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   13233.6      0.00       0.0       0.0                          
+    0:00:06   13233.6      0.00       0.0       0.0                          
+    0:00:06   13170.2      0.00       0.0       0.0                          
+    0:00:06   13115.5      0.00       0.0       0.0                          
+    0:00:06   13068.0      0.00       0.0       0.0                          
+    0:00:06   13020.5      0.00       0.0       0.0                          
+    0:00:06   12994.6      0.00       0.0       0.0                          
+    0:00:06   12994.6      0.00       0.0       0.0                          
+    0:00:07   12994.6      0.00       0.0       0.0                          
+    0:00:07   11959.2      4.67      29.6       0.0                          
+    0:00:07   11956.3      4.67      29.5       0.0                          
+    0:00:07   11956.3      4.67      29.5       0.0                          
+    0:00:07   11956.3      4.67      29.5       0.0                          
+    0:00:07   11956.3      4.67      29.5       0.0                          
+    0:00:07   11956.3      4.67      29.5       0.0                          
+    0:00:07   11956.3      4.67      29.5       0.0                          
+    0:00:07   12893.8      0.00       0.0       0.0                          
+    0:00:07   11927.5      4.46      28.1       0.0                          
+    0:00:07   11927.5      4.46      28.1       0.0                          
+    0:00:07   11927.5      4.46      28.1       0.0                          
+    0:00:07   11927.5      4.46      28.1       0.0                          
+    0:00:07   11927.5      4.46      28.1       0.0                          
+    0:00:07   11927.5      4.46      28.1       0.0                          
+    0:00:07   12839.0      0.00       0.0       0.0                          
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: In the design FSM_Mult_Function, net 'load_1_o' is connecting multiple ports. (UCN-1)
+Writing verilog file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/SINGLE/FPU_Multiplication_Function_syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Writing ddc file './db/SINGLE/FPU_Multiplication_Function_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/SINGLE/FPU_Multiplication_Function_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_Multiplication_Function_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...

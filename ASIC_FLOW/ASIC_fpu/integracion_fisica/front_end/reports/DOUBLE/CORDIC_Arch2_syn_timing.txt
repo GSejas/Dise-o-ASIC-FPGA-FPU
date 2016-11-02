@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 08:07:56 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: add_subt_module_XRegister_Q_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: add_subt_module_Oper_Start_in_module_MRegister_Q_reg_36_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  add_subt_module_XRegister_Q_reg_3_/CK (DFFRX1TS)        0.00 #     1.00 r
+  add_subt_module_XRegister_Q_reg_3_/Q (DFFRX1TS)         1.22       2.22 r
+  U5486/Y (INVX2TS)                                       0.45       2.67 f
+  U4977/Y (OAI21XLTS)                                     0.68       3.34 r
+  U3881/Y (AOI2BB2X1TS)                                   0.68       4.02 r
+  U3458/Y (OAI2BB1X1TS)                                   0.34       4.35 f
+  U3576/Y (AND2X2TS)                                      0.33       4.68 f
+  U3888/Y (OAI32X1TS)                                     0.50       5.18 r
+  U3651/Y (NOR2X1TS)                                      0.36       5.54 f
+  U3204/Y (OAI21X1TS)                                     0.38       5.91 r
+  U5504/Y (AOI32X1TS)                                     0.45       6.37 f
+  U3351/Y (AOI211X2TS)                                    0.57       6.94 r
+  U3268/Y (NAND2BX1TS)                                    0.64       7.57 f
+  U4004/Y (INVX2TS)                                       0.49       8.06 r
+  U6257/Y (BUFX6TS)                                       0.44       8.50 r
+  U3186/Y (BUFX3TS)                                       0.69       9.19 r
+  U6261/Y (AOI22X1TS)                                     0.43       9.62 f
+  U3255/Y (OAI21XLTS)                                     0.39      10.01 r
+  add_subt_module_Oper_Start_in_module_MRegister_Q_reg_36_/D (DFFRXLTS)
+                                                          0.00      10.01 r
+  data arrival time                                                 10.01
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  add_subt_module_Oper_Start_in_module_MRegister_Q_reg_36_/CK (DFFRXLTS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.49      10.01
+  data required time                                                10.01
+  --------------------------------------------------------------------------
+  data required time                                                10.01
+  data arrival time                                                -10.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

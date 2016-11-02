@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : cell
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 11:05:47 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Adder_M                   Adder_Round_SW24                2888.639913
+                                                                    h, n, p
+Barrel_Shifter_D_I_mux    Multiplexer_AC_W24              273.599999
+                                                                    h, p
+Barrel_Shifter_module     Barrel_Shifter_M_SW24           1367.999969
+                                                                    h, n, p
+Exp_Oper_A_mux            Multiplexer_AC_W9               97.920000 h, p
+Exp_Oper_B_mux            Mux_3x1_W8                      200.160006
+                                                                    h, p
+Exp_module                Exp_Operation_m_EW8             1491.839994
+                                                                    h, n, p
+FS_Module                 FSM_Mult_Function               456.479999
+                                                                    h, n
+Operands_load_reg         First_Phase_M_W32               2931.839927
+                                                                    h, n, p
+Round_Decoder             Round_decoder_M_SW23            108.000001
+                                                                    h, p
+Sel_A                     RegisterAdd_W1_3                51.839999 h, n, p
+Sel_B                     RegisterAdd_W2                  99.359997 h, n, p
+Sel_C                     RegisterAdd_W1_2                47.519999 h, n, p
+Sign_operation            XOR_M                           11.520000 h
+U3                        BUFX3TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+Zero_Result_Detect        Zero_InfMult_Unit_W32           959.040029
+                                                                    h, n, p
+final_result_ieee_Module  Tenth_Phase_W32_EW8_SW23        1846.079963
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 16 cells                                            12839.039795
+1
