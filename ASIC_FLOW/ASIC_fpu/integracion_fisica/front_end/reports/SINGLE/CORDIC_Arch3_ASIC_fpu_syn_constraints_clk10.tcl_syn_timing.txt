@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 11:44:14 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: inst_CORDIC_FSM_v3_state_reg_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_val_muxZ_2stage_Q_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  inst_CORDIC_FSM_v3_state_reg_reg_4_/CK (DFFRX1TS)       0.00       1.00 r
+  inst_CORDIC_FSM_v3_state_reg_reg_4_/Q (DFFRX1TS)        1.27       2.27 f
+  U2835/Y (NOR4X2TS)                                      0.79       3.06 r
+  U2849/Y (NAND3X1TS)                                     0.71       3.77 f
+  U2850/Y (NOR3BX2TS)                                     0.80       4.56 r
+  U1701/Y (BUFX3TS)                                       0.86       5.42 r
+  U1684/Y (NAND2X2TS)                                     0.84       6.26 f
+  U1682/Y (BUFX3TS)                                       0.70       6.96 f
+  U1679/Y (INVX4TS)                                       0.49       7.45 r
+  U1675/Y (INVX2TS)                                       0.40       7.85 f
+  U1834/Y (INVX4TS)                                       0.32       8.16 r
+  U3179/Y (BUFX4TS)                                       0.51       8.67 r
+  U3185/Y (BUFX3TS)                                       0.74       9.41 r
+  U2500/Y (AOI222X4TS)                                    0.71      10.12 f
+  U3189/Y (INVX2TS)                                       0.11      10.23 r
+  reg_val_muxZ_2stage_Q_reg_5_/D (DFFRXLTS)               0.00      10.23 r
+  data arrival time                                                 10.23
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  reg_val_muxZ_2stage_Q_reg_5_/CK (DFFRXLTS)              0.00      10.50 r
+  library setup time                                     -0.27      10.23
+  data required time                                                10.23
+  --------------------------------------------------------------------------
+  data required time                                                10.23
+  data arrival time                                                -10.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

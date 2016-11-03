@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 11:47:18 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Leading_Zero_Detector_Module_Output_Reg_Q_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_24_/CK (DFFRX2TS)
+                                                          0.00       1.00 r
+  Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_24_/Q (DFFRX2TS)
+                                                          1.21       2.21 f
+  U1099/Y (NOR2X6TS)                                      0.29       2.50 r
+  U896/Y (NAND2X2TS)                                      0.24       2.74 f
+  U1240/Y (NOR2X1TS)                                      0.56       3.30 r
+  U1648/Y (AND2X4TS)                                      0.53       3.83 r
+  U1650/Y (NAND2X8TS)                                     0.16       4.00 f
+  U1397/Y (NOR3BX4TS)                                     0.32       4.32 r
+  U1451/Y (NOR2BX2TS)                                     0.71       5.03 r
+  U1108/Y (NAND2BX4TS)                                    0.37       5.40 f
+  U1456/Y (NOR3X2TS)                                      0.54       5.94 r
+  U1172/Y (NAND2X4TS)                                     0.37       6.32 f
+  U1651/Y (NOR3X2TS)                                      0.53       6.85 r
+  U1652/Y (NAND2X2TS)                                     0.36       7.21 f
+  U1452/Y (NOR2X1TS)                                      0.61       7.82 r
+  U954/Y (INVX3TS)                                        0.43       8.26 f
+  U1947/Y (OAI22X1TS)                                     0.64       8.90 r
+  U1109/Y (AOI211X4TS)                                    0.56       9.46 f
+  U1107/Y (OA21X4TS)                                      0.21       9.67 f
+  U907/Y (NAND2X1TS)                                      0.23       9.89 r
+  U946/Y (MX2X2TS)                                        0.32      10.22 r
+  Leading_Zero_Detector_Module_Output_Reg_Q_reg_1_/D (DFFRX1TS)
+                                                          0.00      10.22 r
+  data arrival time                                                 10.22
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Leading_Zero_Detector_Module_Output_Reg_Q_reg_1_/CK (DFFRX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.28      10.22
+  data required time                                                10.22
+  --------------------------------------------------------------------------
+  data required time                                                10.22
+  data arrival time                                                -10.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

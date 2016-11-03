@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 11:45:33 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: inst_FPU_PIPELINED_FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  inst_FPU_PIPELINED_FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_1_/CK (DFFRXLTS)
+                                                          0.00       3.00 r
+  inst_FPU_PIPELINED_FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_1_/Q (DFFRXLTS)
+                                                          1.70       4.70 r
+  U1970/Y (CLKINVX1TS)                                    0.87       5.57 f
+  U3216/Y (NAND2X1TS)                                     0.77       6.34 r
+  U2034/Y (AOI222X4TS)                                    0.72       7.06 f
+  U3218/Y (AOI22X1TS)                                     0.60       7.66 r
+  U3219/Y (OAI2BB2X1TS)                                   0.62       8.28 f
+  U3220/Y (AOI22X1TS)                                     0.74       9.02 r
+  U3221/Y (OAI2BB2X1TS)                                   0.62       9.64 f
+  U3222/Y (AOI22X1TS)                                     0.74      10.37 r
+  U3223/Y (OAI2BB2X1TS)                                   0.62      11.00 f
+  U3224/Y (AOI22X1TS)                                     0.74      11.73 r
+  U3225/Y (OAI2BB2X1TS)                                   0.62      12.35 f
+  U3226/Y (AOI22X1TS)                                     0.74      13.09 r
+  U3227/Y (OAI2BB2X1TS)                                   0.62      13.71 f
+  U3228/Y (AOI22X1TS)                                     0.74      14.45 r
+  U3229/Y (OAI2BB2X1TS)                                   0.62      15.07 f
+  U3230/Y (AOI22X1TS)                                     0.74      15.80 r
+  U3231/Y (OAI2BB2X1TS)                                   0.62      16.43 f
+  U3232/Y (AOI22X1TS)                                     0.74      17.16 r
+  U3233/Y (OAI2BB2X1TS)                                   0.62      17.78 f
+  U3234/Y (AOI22X1TS)                                     0.74      18.52 r
+  U3235/Y (OAI2BB2X1TS)                                   0.62      19.14 f
+  U3236/Y (AOI22X1TS)                                     0.74      19.88 r
+  U3237/Y (OAI2BB2X1TS)                                   0.62      20.50 f
+  U3238/Y (AOI22X1TS)                                     0.74      21.23 r
+  U3239/Y (AOI21X1TS)                                     0.42      21.65 f
+  U3252/Y (OAI32X1TS)                                     0.55      22.21 r
+  U3253/Y (XOR2X1TS)                                      0.50      22.71 f
+  U3254/Y (AOI22X1TS)                                     0.39      23.10 r
+  inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_/D (DFFRX1TS)
+                                                          0.00      23.10 r
+  data arrival time                                                 23.10
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_/CK (DFFRX1TS)
+                                                          0.00      31.50 r
+  library setup time                                     -0.08      31.42
+  data required time                                                31.42
+  --------------------------------------------------------------------------
+  data required time                                                31.42
+  data arrival time                                                -23.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.32
+
+
+1

@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 11:51:15 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: inst_ShiftRegister_Q_reg_4_
+              (rising edge-triggered flip-flop)
+  Endpoint: busy (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  inst_ShiftRegister_Q_reg_4_/CK (DFFRX2TS)               0.00       0.00 r
+  inst_ShiftRegister_Q_reg_4_/QN (DFFRX2TS)               1.54       1.54 r
+  U1111/Y (BUFX3TS)                                       0.76       2.31 r
+  U1498/Y (INVX2TS)                                       0.50       2.81 f
+  busy (out)                                              0.00       2.81 f
+  data arrival time                                                  2.81
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

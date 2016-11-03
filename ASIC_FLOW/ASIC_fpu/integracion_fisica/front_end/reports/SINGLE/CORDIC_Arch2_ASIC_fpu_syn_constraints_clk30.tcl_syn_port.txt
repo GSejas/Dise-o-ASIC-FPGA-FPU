@@ -1,0 +1,118 @@
+ 
+****************************************
+Report : port
+Design : CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 11:42:19 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+ack_cordic     in      0.0000   0.0000    1.02    1.71   --         
+beg_fsm_cordic in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+data_in[0]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[1]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[2]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[3]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[4]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[5]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[6]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[7]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[8]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[9]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[10]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[11]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[12]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[13]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[14]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[15]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[16]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[17]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[18]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[19]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[20]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[21]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[22]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[23]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[24]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[25]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[26]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[27]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[28]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[29]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[30]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[31]    in      0.0000   0.0000    1.02    1.71   --         
+operation      in      0.0000   0.0000    1.02    1.71   --         
+r_mode[0]      in      0.0000   0.0000    1.02    1.71   --         
+r_mode[1]      in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
+shift_region_flag[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+shift_region_flag[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+data_output[0] out     0.0000   0.0000   --      --      --         
+data_output[1] out     0.0000   0.0000   --      --      --         
+data_output[2] out     0.0000   0.0000   --      --      --         
+data_output[3] out     0.0000   0.0000   --      --      --         
+data_output[4] out     0.0000   0.0000   --      --      --         
+data_output[5] out     0.0000   0.0000   --      --      --         
+data_output[6] out     0.0000   0.0000   --      --      --         
+data_output[7] out     0.0000   0.0000   --      --      --         
+data_output[8] out     0.0000   0.0000   --      --      --         
+data_output[9] out     0.0000   0.0000   --      --      --         
+data_output[10]
+               out     0.0000   0.0000   --      --      --         
+data_output[11]
+               out     0.0000   0.0000   --      --      --         
+data_output[12]
+               out     0.0000   0.0000   --      --      --         
+data_output[13]
+               out     0.0000   0.0000   --      --      --         
+data_output[14]
+               out     0.0000   0.0000   --      --      --         
+data_output[15]
+               out     0.0000   0.0000   --      --      --         
+data_output[16]
+               out     0.0000   0.0000   --      --      --         
+data_output[17]
+               out     0.0000   0.0000   --      --      --         
+data_output[18]
+               out     0.0000   0.0000   --      --      --         
+data_output[19]
+               out     0.0000   0.0000   --      --      --         
+data_output[20]
+               out     0.0000   0.0000   --      --      --         
+data_output[21]
+               out     0.0000   0.0000   --      --      --         
+data_output[22]
+               out     0.0000   0.0000   --      --      --         
+data_output[23]
+               out     0.0000   0.0000   --      --      --         
+data_output[24]
+               out     0.0000   0.0000   --      --      --         
+data_output[25]
+               out     0.0000   0.0000   --      --      --         
+data_output[26]
+               out     0.0000   0.0000   --      --      --         
+data_output[27]
+               out     0.0000   0.0000   --      --      --         
+data_output[28]
+               out     0.0000   0.0000   --      --      --         
+data_output[29]
+               out     0.0000   0.0000   --      --      --         
+data_output[30]
+               out     0.0000   0.0000   --      --      --         
+data_output[31]
+               out     0.0000   0.0000   --      --      --         
+overflow_flag  out     0.0000   0.0000   --      --      --         
+ready_cordic   out     0.0000   0.0000   --      --      --         
+underflow_flag out     0.0000   0.0000   --      --      --         
+
+1

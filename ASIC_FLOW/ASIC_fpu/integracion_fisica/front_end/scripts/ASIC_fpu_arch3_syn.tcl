@@ -76,7 +76,7 @@ while {$x < 2} {
 		#Escribir la lista de nodos a nivel de compuertas (Gate Level Netlist) que se utiliza para:
 		#- Verificar el funcionamiento lógico del sistema digital después de la Síntesis RTL.
 		#- Como una de las entradas para el sintetizador físico (IC Compiler).
-		set TOP_PARAM $current_design
+		#set TOP_PARAM $current_design
 
 		#LO SIGUIENTE SE VA A COMENTAR PARA NO GENERAR UNA VERSION APARTE DE LA SECCION OPER_IN_OP
 
