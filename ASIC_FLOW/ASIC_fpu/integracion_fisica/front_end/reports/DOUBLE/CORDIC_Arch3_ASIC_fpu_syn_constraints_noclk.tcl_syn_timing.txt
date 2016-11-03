@@ -1,0 +1,41 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 12:03:08 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: inst_CORDIC_FSM_v3_state_reg_reg_6_
+              (rising edge-triggered flip-flop)
+  Endpoint: ready_cordic
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch3_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  inst_CORDIC_FSM_v3_state_reg_reg_6_/CK (DFFRX1TS)       0.00       0.00 r
+  inst_CORDIC_FSM_v3_state_reg_reg_6_/Q (DFFRX1TS)        1.25       1.25 f
+  U3259/Y (OR4X2TS)                                       0.71       1.96 f
+  U3315/Y (INVX2TS)                                       0.21       2.17 r
+  U4417/Y (NAND2X1TS)                                     0.41       2.58 f
+  U3691/Y (NOR3X2TS)                                      0.70       3.29 r
+  ready_cordic (out)                                      0.00       3.29 r
+  data arrival time                                                  3.29
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

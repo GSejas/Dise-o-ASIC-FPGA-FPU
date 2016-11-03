@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 11:59:27 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_52_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: inst_FPU_PIPELINED_FPADDSUB_SHT2_SHIFT_DATA_Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch3_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_52_/CK (DFFRX2TS)
+                                                          0.00 #     2.00 r
+  inst_FPU_PIPELINED_FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_52_/Q (DFFRX2TS)
+                                                          1.35       3.35 f
+  U3253/Y (NOR2X1TS)                                      0.62       3.96 r
+  U3470/Y (NAND2X1TS)                                     0.60       4.56 f
+  U4445/Y (INVX2TS)                                       0.28       4.85 r
+  U4446/Y (NAND2X2TS)                                     0.25       5.09 f
+  U3471/Y (NOR2X2TS)                                      0.47       5.56 r
+  U4447/Y (NOR3BX4TS)                                     0.54       6.10 r
+  U3391/Y (NAND2BX4TS)                                    0.27       6.37 f
+  U3485/Y (NOR2X2TS)                                      0.32       6.70 r
+  U3428/Y (NAND2X1TS)                                     0.50       7.19 f
+  U4448/Y (NOR2BX4TS)                                     0.52       7.72 r
+  U3390/Y (NAND4X2TS)                                     0.47       8.18 f
+  U3249/Y (NOR2X6TS)                                      0.35       8.54 r
+  U3248/Y (NAND2X6TS)                                     0.18       8.72 f
+  U3392/Y (NOR3X4TS)                                      0.31       9.03 r
+  U3251/Y (NAND2X1TS)                                     0.40       9.43 f
+  U3325/Y (NAND2BX2TS)                                    0.44       9.87 f
+  U3439/Y (NOR2X2TS)                                      0.45      10.32 r
+  U3324/Y (NOR3BX2TS)                                     0.66      10.97 r
+  U3322/Y (NAND2X4TS)                                     0.35      11.32 f
+  U4260/Y (NOR3X2TS)                                      0.55      11.87 r
+  U3320/Y (INVX4TS)                                       0.35      12.22 f
+  U3319/Y (NOR4X4TS)                                      0.51      12.73 r
+  U3318/Y (NAND2X6TS)                                     0.29      13.02 f
+  U3317/Y (NOR4X6TS)                                      0.41      13.43 r
+  U3316/Y (NAND2X4TS)                                     0.23      13.67 f
+  U4174/Y (NOR2X2TS)                                      0.47      14.14 r
+  U4163/Y (NAND2X2TS)                                     0.51      14.65 f
+  U4461/Y (INVX2TS)                                       0.27      14.92 r
+  U4463/Y (OAI211X1TS)                                    0.28      15.19 f
+  U3315/Y (OAI21X1TS)                                     0.32      15.51 r
+  U4464/Y (AOI31X1TS)                                     0.37      15.88 f
+  U4468/Y (NAND4X2TS)                                     0.43      16.31 r
+  U4470/Y (OAI32X1TS)                                     0.33      16.64 f
+  U4259/Y (OAI31X1TS)                                     0.45      17.09 r
+  U3513/Y (OAI31X1TS)                                     0.67      17.75 f
+  U4476/Y (OAI211X4TS)                                    0.73      18.48 r
+  U3304/Y (OR2X4TS)                                       0.74      19.22 r
+  U5547/Y (INVX4TS)                                       0.67      19.89 f
+  U5611/Y (AOI22X1TS)                                     0.54      20.42 r
+  U3259/Y (OAI211XLTS)                                    0.45      20.87 f
+  inst_FPU_PIPELINED_FPADDSUB_SHT2_SHIFT_DATA_Q_reg_47_/D (DFFRX2TS)
+                                                          0.00      20.87 f
+  data arrival time                                                 20.87
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  inst_FPU_PIPELINED_FPADDSUB_SHT2_SHIFT_DATA_Q_reg_47_/CK (DFFRX2TS)
+                                                          0.00      21.00 r
+  library setup time                                     -0.11      20.89
+  data required time                                                20.89
+  --------------------------------------------------------------------------
+  data required time                                                20.89
+  data arrival time                                                -20.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

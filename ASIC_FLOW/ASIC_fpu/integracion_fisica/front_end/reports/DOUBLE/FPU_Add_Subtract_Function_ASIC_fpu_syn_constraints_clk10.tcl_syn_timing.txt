@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 12:03:56 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: XRegister_Q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Oper_Start_in_module_mRegister_Q_reg_53_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  XRegister_Q_reg_1_/CK (DFFRX2TS)                        0.00       1.00 r
+  XRegister_Q_reg_1_/Q (DFFRX2TS)                         1.15       2.15 f
+  U2817/Y (OAI21XLTS)                                     0.67       2.82 r
+  U2845/Y (AOI2BB2X1TS)                                   0.69       3.51 r
+  U2846/Y (OAI211X1TS)                                    0.41       3.92 f
+  U1836/Y (AOI222X1TS)                                    0.65       4.56 r
+  U2849/Y (OAI32X1TS)                                     0.48       5.04 f
+  U2256/Y (NAND2BX2TS)                                    0.33       5.37 f
+  U2858/Y (OAI2BB1X4TS)                                   0.25       5.62 f
+  U1821/Y (NAND2X2TS)                                     0.14       5.76 r
+  U2674/Y (NAND2X1TS)                                     0.22       5.98 f
+  U2274/Y (NAND2X1TS)                                     0.28       6.26 r
+  U2272/Y (OAI2BB1X2TS)                                   0.33       6.59 r
+  U2207/Y (INVX2TS)                                       0.13       6.72 f
+  U1858/Y (NOR2BX2TS)                                     0.28       7.00 f
+  U2901/Y (INVX6TS)                                       0.19       7.19 r
+  U2625/Y (NAND2X4TS)                                     0.31       7.50 f
+  U1908/Y (INVX4TS)                                       0.45       7.95 r
+  U2631/Y (BUFX3TS)                                       0.75       8.69 r
+  U1876/Y (CLKINVX3TS)                                    0.85       9.54 f
+  U1898/Y (OAI21X1TS)                                     0.59      10.13 r
+  Oper_Start_in_module_mRegister_Q_reg_53_/D (DFFRXLTS)
+                                                          0.00      10.13 r
+  data arrival time                                                 10.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Oper_Start_in_module_mRegister_Q_reg_53_/CK (DFFRXLTS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.37      10.13
+  data required time                                                10.13
+  --------------------------------------------------------------------------
+  data required time                                                10.13
+  data arrival time                                                -10.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
