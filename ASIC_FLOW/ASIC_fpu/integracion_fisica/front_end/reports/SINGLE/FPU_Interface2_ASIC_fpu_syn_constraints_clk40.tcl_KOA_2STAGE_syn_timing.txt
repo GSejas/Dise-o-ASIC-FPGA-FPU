@@ -1,0 +1,117 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:38:11 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Sgf_operation_RECURSIVE_EVEN1_left_DatO_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_RECURSIVE_EVEN1_finalreg_Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  FPMULT_Sgf_operation_RECURSIVE_EVEN1_left_DatO_reg_1_/CK (DFFQX1TS)
+                                                          0.00 #     4.00 r
+  FPMULT_Sgf_operation_RECURSIVE_EVEN1_left_DatO_reg_1_/Q (DFFQX1TS)
+                                                          1.55       5.55 r
+  U2853/Y (INVX2TS)                                       0.36       5.91 f
+  U2854/Y (NOR2X1TS)                                      0.60       6.52 r
+  U5464/Y (AOI21X1TS)                                     0.43       6.95 f
+  U2263/S (CMPR32X2TS)                                    0.96       7.91 f
+  U3006/Y (OAI21X1TS)                                     0.43       8.34 r
+  U3007/Y (OAI21X1TS)                                     0.58       8.92 f
+  U3009/Y (NOR2X1TS)                                      0.63       9.55 r
+  U3010/Y (AOI21X1TS)                                     0.48      10.03 f
+  U3012/Y (NOR2X1TS)                                      0.63      10.65 r
+  U3013/Y (AOI21X1TS)                                     0.48      11.13 f
+  U3014/Y (NOR2X1TS)                                      0.62      11.75 r
+  U3016/Y (OAI21X1TS)                                     0.60      12.35 f
+  U2314/Y (NOR2X1TS)                                      0.63      12.98 r
+  U2310/Y (AOI21X1TS)                                     0.49      13.47 f
+  U2268/Y (AND2X2TS)                                      0.48      13.95 f
+  U2418/Y (NOR2X1TS)                                      0.54      14.49 r
+  U2388/Y (NOR2X1TS)                                      0.51      15.00 f
+  U3020/Y (NOR2X1TS)                                      0.58      15.58 r
+  U3021/Y (AOI21X1TS)                                     0.48      16.06 f
+  U3022/Y (NOR2X1TS)                                      0.62      16.67 r
+  U2306/Y (OAI21X1TS)                                     0.60      17.27 f
+  U3025/Y (NOR2X1TS)                                      0.63      17.90 r
+  U3026/Y (AOI21X1TS)                                     0.48      18.38 f
+  U2301/Y (NOR2X1TS)                                      0.62      19.00 r
+  U2300/Y (OAI21X1TS)                                     0.60      19.60 f
+  U2420/Y (NOR2X1TS)                                      0.64      20.24 r
+  U3029/Y (AOI21X1TS)                                     0.49      20.73 f
+  U2421/Y (NOR2X1TS)                                      0.63      21.36 r
+  U3031/Y (OAI21X1TS)                                     0.61      21.97 f
+  U2404/Y (NOR2X1TS)                                      0.64      22.61 r
+  U3033/Y (AOI21X1TS)                                     0.49      23.10 f
+  U2402/Y (NOR2X1TS)                                      0.63      23.73 r
+  U2379/Y (AOI21X1TS)                                     0.49      24.22 f
+  U2400/Y (NOR2X1TS)                                      0.63      24.85 r
+  U2378/Y (AOI21X1TS)                                     0.49      25.34 f
+  U2398/Y (NOR2X1TS)                                      0.63      25.97 r
+  U2377/Y (AOI21X1TS)                                     0.49      26.46 f
+  U2798/Y (NOR2X1TS)                                      0.63      27.09 r
+  U2376/Y (AOI21X1TS)                                     0.49      27.58 f
+  U2299/Y (NOR2X1TS)                                      0.63      28.21 r
+  U2266/Y (OAI21X1TS)                                     0.61      28.82 f
+  U2406/Y (NOR2X1TS)                                      0.64      29.47 r
+  U2390/Y (OAI21X1TS)                                     0.61      30.07 f
+  U2366/Y (NOR2X1TS)                                      0.64      30.72 r
+  U2375/Y (OAI21X1TS)                                     0.61      31.33 f
+  U2394/Y (NOR2X1TS)                                      0.69      32.01 r
+  U3034/Y (OAI21X2TS)                                     0.53      32.55 f
+  U3035/Y (AOI222X1TS)                                    0.67      33.21 r
+  U3036/Y (INVX2TS)                                       0.41      33.62 f
+  U3037/Y (AOI222X1TS)                                    0.67      34.29 r
+  U5575/CO (CMPR32X2TS)                                   0.67      34.97 r
+  U2256/CO (CMPR32X2TS)                                   0.86      35.83 r
+  U2368/Y (NAND3X1TS)                                     0.65      36.48 f
+  U3040/Y (NOR2X2TS)                                      0.66      37.14 r
+  U2287/Y (NAND2X2TS)                                     0.43      37.57 f
+  U3042/Y (NOR2X2TS)                                      0.47      38.04 r
+  U2365/Y (NAND2X1TS)                                     0.64      38.68 f
+  U3044/Y (NOR2X2TS)                                      0.61      39.29 r
+  U3045/Y (NAND2X1TS)                                     0.64      39.93 f
+  U3046/Y (NOR2X1TS)                                      0.72      40.65 r
+  U3047/Y (XOR2X1TS)                                      0.52      41.17 r
+  U3048/Y (OAI2BB2XLTS)                                   0.55      41.72 r
+  FPMULT_Sgf_operation_RECURSIVE_EVEN1_finalreg_Q_reg_47_/D (DFFRXLTS)
+                                                          0.00      41.72 r
+  data arrival time                                                 41.72
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  FPMULT_Sgf_operation_RECURSIVE_EVEN1_finalreg_Q_reg_47_/CK (DFFRXLTS)
+                                                          0.00      42.00 r
+  library setup time                                     -0.03      41.97
+  data required time                                                41.97
+  --------------------------------------------------------------------------
+  data required time                                                41.97
+  data arrival time                                                -41.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.25
+
+
+1

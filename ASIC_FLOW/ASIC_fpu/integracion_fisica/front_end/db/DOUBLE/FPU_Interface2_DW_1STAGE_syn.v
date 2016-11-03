@@ -23079,5 +23079,10 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   BUFX3TS U16629 ( .A(n16267), .Y(n16097) );
   INVX2TS U16630 ( .A(n16100), .Y(n16101) );
 initial $sdf_annotate("FPU_Interface2_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk20.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk30.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk40.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_noclk.tcl_DW_1STAGE_syn.sdf"); 
  endmodule
 

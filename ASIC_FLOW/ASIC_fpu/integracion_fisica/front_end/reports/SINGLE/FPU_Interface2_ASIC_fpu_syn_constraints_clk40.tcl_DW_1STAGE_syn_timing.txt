@@ -1,0 +1,108 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:32:55 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Operands_load_reg_XMRegister_Q_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_finalreg_Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_5_/CK (DFFRX2TS)
+                                                          0.00 #     4.00 r
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_5_/QN (DFFRX2TS)
+                                                          2.14       6.14 r
+  U2875/Y (BUFX6TS)                                       0.89       7.03 r
+  U2423/Y (NOR2X1TS)                                      0.42       7.45 f
+  U2252/Y (OR2X1TS)                                       0.78       8.23 f
+  U3249/Y (INVX2TS)                                       0.52       8.74 r
+  U3251/Y (NAND3X1TS)                                     0.72       9.46 f
+  U2381/Y (BUFX6TS)                                       0.69      10.15 f
+  U3607/Y (OAI22X1TS)                                     0.70      10.85 r
+  U3608/Y (OAI21XLTS)                                     0.56      11.41 f
+  U3609/Y (OAI31X1TS)                                     0.33      11.74 r
+  U3622/S (ADDHXLTS)                                      0.80      12.54 r
+  U3717/S (CMPR32X2TS)                                    1.01      13.55 f
+  U2355/CO (ADDFX1TS)                                     0.72      14.27 f
+  U5149/CO (CMPR32X2TS)                                   0.57      14.84 f
+  U2349/CO (ADDFX1TS)                                     0.56      15.40 f
+  U5146/CO (CMPR32X2TS)                                   0.57      15.98 f
+  U2244/CO (CMPR32X2TS)                                   0.56      16.53 f
+  U5143/CO (CMPR32X2TS)                                   0.56      17.09 f
+  U5141/CO (CMPR32X2TS)                                   0.56      17.65 f
+  U2240/CO (CMPR32X2TS)                                   0.56      18.21 f
+  U5138/CO (CMPR32X2TS)                                   0.56      18.76 f
+  U2235/CO (CMPR32X2TS)                                   0.56      19.32 f
+  U5135/CO (CMPR32X2TS)                                   0.56      19.88 f
+  U5133/CO (CMPR32X2TS)                                   0.56      20.44 f
+  U5131/CO (CMPR32X2TS)                                   0.56      20.99 f
+  U3814/CO (CMPR32X2TS)                                   0.56      21.55 f
+  U5129/CO (CMPR32X2TS)                                   0.56      22.11 f
+  U5127/CO (CMPR32X2TS)                                   0.56      22.67 f
+  U5125/CO (CMPR32X2TS)                                   0.56      23.22 f
+  U5124/CO (CMPR32X2TS)                                   0.56      23.78 f
+  U2311/CO (ADDFX1TS)                                     0.56      24.34 f
+  U5123/CO (CMPR32X2TS)                                   0.57      24.92 f
+  U5122/CO (CMPR32X2TS)                                   0.56      25.47 f
+  U2310/CO (ADDFX1TS)                                     0.56      26.04 f
+  U5121/CO (CMPR32X2TS)                                   0.57      26.61 f
+  U5120/CO (CMPR32X2TS)                                   0.56      27.17 f
+  U2309/CO (ADDFX1TS)                                     0.56      27.73 f
+  U5119/CO (CMPR32X2TS)                                   0.57      28.30 f
+  U5118/CO (CMPR32X2TS)                                   0.56      28.86 f
+  U2229/CO (CMPR32X2TS)                                   0.56      29.42 f
+  U5117/CO (CMPR32X2TS)                                   0.56      29.98 f
+  U5116/CO (CMPR32X2TS)                                   0.56      30.53 f
+  U2228/CO (CMPR32X2TS)                                   0.56      31.09 f
+  U5115/CO (CMPR32X2TS)                                   0.56      31.65 f
+  U5114/CO (CMPR32X2TS)                                   0.56      32.20 f
+  U2227/CO (CMPR32X2TS)                                   0.56      32.76 f
+  U5113/CO (CMPR32X2TS)                                   0.56      33.32 f
+  U5112/CO (CMPR32X2TS)                                   0.56      33.88 f
+  U2303/CO (ADDFX1TS)                                     0.56      34.44 f
+  U5111/CO (CMPR32X2TS)                                   0.57      35.01 f
+  U3751/CO (CMPR32X2TS)                                   0.55      35.56 f
+  U2622/Y (XOR2X1TS)                                      0.41      35.97 r
+  U2906/Y (XNOR2X1TS)                                     0.51      36.48 r
+  U2298/Y (AO22X1TS)                                      0.55      37.03 r
+  FPMULT_Sgf_operation_finalreg_Q_reg_47_/D (DFFRX1TS)
+                                                          0.00      37.03 r
+  data arrival time                                                 37.03
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  FPMULT_Sgf_operation_finalreg_Q_reg_47_/CK (DFFRX1TS)
+                                                          0.00      42.00 r
+  library setup time                                      0.14      42.14
+  data required time                                                42.14
+  --------------------------------------------------------------------------
+  data required time                                                42.14
+  data arrival time                                                -37.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.11
+
+
+1

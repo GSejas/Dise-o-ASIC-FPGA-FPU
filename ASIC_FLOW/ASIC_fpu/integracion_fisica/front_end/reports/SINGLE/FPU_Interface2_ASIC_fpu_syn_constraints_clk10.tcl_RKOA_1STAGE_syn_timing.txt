@@ -1,0 +1,79 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:24:21 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_496J6_122_3540_R_658
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DP_OP_499J6_125_1651_R_1376
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  DP_OP_496J6_122_3540_R_658/CK (DFFSX4TS)                0.00 #     1.00 r
+  DP_OP_496J6_122_3540_R_658/QN (DFFSX4TS)                1.09       2.09 r
+  U3903/Y (NAND2X4TS)                                     0.11       2.20 f
+  U5413/Y (XNOR2X4TS)                                     0.29       2.49 r
+  U2736/Y (INVX4TS)                                       0.22       2.71 f
+  U4994/Y (INVX16TS)                                      0.17       2.88 r
+  U4055/Y (XNOR2X4TS)                                     0.28       3.16 f
+  U6127/Y (NOR2BX1TS)                                     0.53       3.69 r
+  U4032/CO (ADDFHX4TS)                                    0.74       4.43 r
+  U5847/CO (ADDFHX4TS)                                    0.58       5.00 r
+  U3965/Y (CLKINVX6TS)                                    0.16       5.17 f
+  U4211/CO (ADDFHX2TS)                                    0.47       5.64 f
+  U6222/CO (ADDFHX2TS)                                    0.49       6.13 f
+  U6499/CO (ADDFHX4TS)                                    0.50       6.63 f
+  U4230/S (ADDFHX4TS)                                     0.40       7.03 r
+  U5788/S (ADDFHX4TS)                                     0.49       7.52 f
+  U4210/Y (NAND2X8TS)                                     0.17       7.69 r
+  U5445/Y (NAND2X6TS)                                     0.12       7.82 f
+  U5658/Y (NAND2X6TS)                                     0.11       7.92 r
+  U2435/Y (NAND2X6TS)                                     0.15       8.08 f
+  U2414/Y (NAND2X6TS)                                     0.15       8.23 r
+  U5501/Y (NAND3X8TS)                                     0.19       8.42 f
+  U5498/Y (AOI21X4TS)                                     0.24       8.65 r
+  U6651/Y (XNOR2X4TS)                                     0.21       8.87 r
+  U6722/S (ADDFHX4TS)                                     0.52       9.39 f
+  U5648/Y (NOR2X8TS)                                      0.22       9.60 r
+  U6654/Y (OAI21X4TS)                                     0.18       9.78 f
+  U6655/Y (AOI21X4TS)                                     0.22      10.00 r
+  U5361/Y (NAND2X8TS)                                     0.19      10.18 f
+  U5360/Y (AOI21X4TS)                                     0.18      10.36 r
+  DP_OP_499J6_125_1651_R_1376/D (DFFSX1TS)                0.00      10.36 r
+  data arrival time                                                 10.36
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  DP_OP_499J6_125_1651_R_1376/CK (DFFSX1TS)               0.00      10.50 r
+  library setup time                                     -0.14      10.36
+  data required time                                                10.36
+  --------------------------------------------------------------------------
+  data required time                                                10.36
+  data arrival time                                                -10.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

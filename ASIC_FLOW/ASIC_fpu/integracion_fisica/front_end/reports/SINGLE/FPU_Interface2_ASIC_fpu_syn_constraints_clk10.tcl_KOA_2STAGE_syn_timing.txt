@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:35:05 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Operands_load_reg_YMRegister_Q_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_RECURSIVE_EVEN1_right_DatO_reg_18_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_7_/CK (DFFRX2TS)
+                                                          0.00 #     1.00 r
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_7_/QN (DFFRX2TS)
+                                                          1.42       2.42 r
+  U3635/Y (INVX2TS)                                       0.44       2.86 f
+  U3620/Y (XNOR2X4TS)                                     0.61       3.47 r
+  U3832/Y (NAND2X6TS)                                     0.51       3.97 f
+  U3831/Y (CLKBUFX2TS)                                    0.67       4.64 f
+  U4617/Y (OAI22X1TS)                                     0.60       5.24 r
+  U4619/S (ADDHX1TS)                                      0.46       5.70 f
+  mult_x_254_U210/ICO (CMPR42X1TS)                        0.53       6.24 f
+  U3196/ICO (CMPR42X1TS)                                  0.47       6.71 f
+  U3195/S (CMPR42X1TS)                                    1.15       7.86 r
+  U4285/Y (NOR2X2TS)                                      0.34       8.21 f
+  U4286/Y (NOR2X2TS)                                      0.39       8.59 r
+  U2965/Y (NAND2X2TS)                                     0.29       8.89 f
+  U3619/Y (OAI21X4TS)                                     0.28       9.17 r
+  U2256/Y (INVX2TS)                                       0.31       9.47 f
+  U3003/Y (OAI21X1TS)                                     0.41       9.88 r
+  U4438/Y (XNOR2X1TS)                                     0.41      10.29 r
+  FPMULT_Sgf_operation_RECURSIVE_EVEN1_right_DatO_reg_18_/D (DFFQX1TS)
+                                                          0.00      10.29 r
+  data arrival time                                                 10.29
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FPMULT_Sgf_operation_RECURSIVE_EVEN1_right_DatO_reg_18_/CK (DFFQX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.21      10.29
+  data required time                                                10.29
+  --------------------------------------------------------------------------
+  data required time                                                10.29
+  data arrival time                                                -10.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

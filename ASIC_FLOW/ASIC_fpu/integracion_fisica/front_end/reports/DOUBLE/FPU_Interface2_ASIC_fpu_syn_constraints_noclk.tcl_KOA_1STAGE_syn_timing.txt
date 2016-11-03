@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:58:39 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: operation[1]
+              (input port)
+  Endpoint: op_result[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  operation[1] (in)                        0.05       0.05 r
+  U4725/Y (INVX2TS)                        0.28       0.34 f
+  U9278/Y (NAND2X1TS)                      0.50       0.84 r
+  U9279/Y (INVX2TS)                        0.49       1.33 f
+  U9280/Y (CLKBUFX2TS)                     0.78       2.11 f
+  U9281/Y (CLKBUFX2TS)                     0.99       3.10 f
+  U9282/Y (CLKBUFX2TS)                     1.05       4.15 f
+  U9283/Y (CLKBUFX2TS)                     0.98       5.13 f
+  U12258/Y (AOI22X1TS)                     0.64       5.77 r
+  U12259/Y (OAI21XLTS)                     0.37       6.14 f
+  op_result[3] (out)                       0.00       6.14 f
+  data arrival time                                   6.14
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

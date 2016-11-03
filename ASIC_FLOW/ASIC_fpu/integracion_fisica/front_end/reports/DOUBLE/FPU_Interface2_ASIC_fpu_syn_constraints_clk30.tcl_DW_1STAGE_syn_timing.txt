@@ -1,0 +1,106 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 00:39:35 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Barrel_Shifter_module_Output_Reg_Q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Adder_M_Add_overflow_Result_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  FPMULT_Barrel_Shifter_module_Output_Reg_Q_reg_2_/CK (DFFRX1TS)
+                                                          0.00 #     3.00 r
+  FPMULT_Barrel_Shifter_module_Output_Reg_Q_reg_2_/Q (DFFRX1TS)
+                                                          1.65       4.65 r
+  U6929/CO (ADDHXLTS)                                     0.87       5.52 r
+  U6887/Y (OR2X1TS)                                       0.64       6.16 r
+  U7095/Y (OR2X1TS)                                       0.44       6.61 r
+  U7116/CO (ADDHXLTS)                                     0.49       7.10 r
+  U6909/CO (ADDHXLTS)                                     0.54       7.64 r
+  U6908/CO (ADDHXLTS)                                     0.54       8.19 r
+  U6907/CO (ADDHXLTS)                                     0.54       8.73 r
+  U6906/CO (ADDHXLTS)                                     0.54       9.27 r
+  U4348/CO (ADDHXLTS)                                     0.54       9.82 r
+  U4344/CO (ADDHXLTS)                                     0.54      10.36 r
+  U4300/CO (ADDHXLTS)                                     0.60      10.97 r
+  U4497/CO (ADDHX2TS)                                     0.43      11.40 r
+  U4468/CO (ADDHX2TS)                                     0.27      11.67 r
+  U5636/CO (ADDHXLTS)                                     0.44      12.11 r
+  U6310/CO (ADDHXLTS)                                     0.54      12.65 r
+  U6311/CO (ADDHXLTS)                                     0.54      13.20 r
+  U7119/CO (ADDHXLTS)                                     0.54      13.74 r
+  U6312/CO (ADDHXLTS)                                     0.54      14.29 r
+  U6313/CO (ADDHXLTS)                                     0.57      14.86 r
+  U4298/CO (ADDHX1TS)                                     0.47      15.33 r
+  U4345/CO (ADDHXLTS)                                     0.49      15.82 r
+  U6314/CO (ADDHXLTS)                                     0.54      16.37 r
+  U6905/CO (ADDHXLTS)                                     0.54      16.91 r
+  U6904/CO (ADDHXLTS)                                     0.54      17.45 r
+  U6903/CO (ADDHXLTS)                                     0.54      18.00 r
+  U6902/CO (ADDHXLTS)                                     0.54      18.54 r
+  U6901/CO (ADDHXLTS)                                     0.54      19.09 r
+  U7115/CO (ADDHXLTS)                                     0.54      19.63 r
+  U6900/CO (ADDHXLTS)                                     0.60      20.24 r
+  U4414/CO (ADDHX2TS)                                     0.42      20.65 r
+  U4343/CO (ADDHXLTS)                                     0.44      21.09 r
+  U7118/CO (ADDHXLTS)                                     0.54      21.64 r
+  U6899/CO (ADDHXLTS)                                     0.54      22.18 r
+  U7114/CO (ADDHXLTS)                                     0.54      22.73 r
+  U6898/CO (ADDHXLTS)                                     0.54      23.27 r
+  U6897/CO (ADDHXLTS)                                     0.54      23.81 r
+  U6896/CO (ADDHXLTS)                                     0.54      24.36 r
+  U6895/CO (ADDHXLTS)                                     0.54      24.90 r
+  U6894/CO (ADDHXLTS)                                     0.54      25.45 r
+  U4347/CO (ADDHXLTS)                                     0.60      26.05 r
+  U4384/CO (ADDHX2TS)                                     0.42      26.47 r
+  U6893/CO (ADDHXLTS)                                     0.44      26.91 r
+  U6892/CO (ADDHXLTS)                                     0.54      27.45 r
+  U7117/CO (ADDHXLTS)                                     0.54      28.00 r
+  U6891/CO (ADDHXLTS)                                     0.54      28.54 r
+  U6890/CO (ADDHXLTS)                                     0.54      29.09 r
+  U6889/CO (ADDHXLTS)                                     0.54      29.63 r
+  U6888/CO (ADDHXLTS)                                     0.60      30.23 r
+  U4366/CO (ADDHX2TS)                                     0.42      30.66 r
+  U4365/CO (ADDHX1TS)                                     0.33      30.99 r
+  U5952/Y (AO22XLTS)                                      0.45      31.44 r
+  FPMULT_Adder_M_Add_overflow_Result_Q_reg_0_/D (DFFRXLTS)
+                                                          0.00      31.44 r
+  data arrival time                                                 31.44
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  FPMULT_Adder_M_Add_overflow_Result_Q_reg_0_/CK (DFFRXLTS)
+                                                          0.00      31.50 r
+  library setup time                                     -0.05      31.45
+  data required time                                                31.45
+  --------------------------------------------------------------------------
+  data required time                                                31.45
+  data arrival time                                                -31.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

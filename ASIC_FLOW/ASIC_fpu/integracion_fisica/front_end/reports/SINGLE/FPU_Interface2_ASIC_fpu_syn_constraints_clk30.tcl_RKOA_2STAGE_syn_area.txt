@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:42:49 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          112
+Number of nets:                          5861
+Number of cells:                         5098
+Number of combinational cells:           3977
+Number of sequential cells:              1121
+Number of macros/black boxes:               0
+Number of buf/inv:                        654
+Number of references:                     136
+
+Combinational area:              43937.280322
+Buf/Inv area:                     3598.560095
+Noncombinational area:           36302.398930
+Macro/Black Box area:                0.000000
+Net Interconnect area:          718950.346893
+
+Total cell area:                 80239.679252
+Total area:                     799190.026145
+1

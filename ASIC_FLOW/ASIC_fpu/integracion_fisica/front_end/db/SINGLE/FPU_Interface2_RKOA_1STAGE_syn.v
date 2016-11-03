@@ -11441,5 +11441,15 @@ module FPU_Interface2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, begin_operation,
   AO22XLTS U8594 ( .A0(n8838), .A1(FPADDSUB_DMP_SHT1_EWSW[22]), .B0(n7939), 
         .B1(FPADDSUB_DMP_SHT2_EWSW[22]), .Y(n1209) );
 initial $sdf_annotate("FPU_Interface2_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk10.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk20.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk30.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk40.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_noclk.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk10.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk20.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk30.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk40.tcl_RKOA_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_noclk.tcl_RKOA_1STAGE_syn.sdf"); 
  endmodule
 

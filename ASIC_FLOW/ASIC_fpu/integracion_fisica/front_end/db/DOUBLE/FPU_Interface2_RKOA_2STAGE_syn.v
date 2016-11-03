@@ -36161,5 +36161,10 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         DP_OP_1017J10_141_3852_n30), .ICO(DP_OP_1017J10_141_3852_n28), .CO(
         DP_OP_1017J10_141_3852_n29) );
 initial $sdf_annotate("FPU_Interface2_RKOA_2STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk10.tcl_RKOA_2STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk20.tcl_RKOA_2STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk30.tcl_RKOA_2STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk40.tcl_RKOA_2STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_noclk.tcl_RKOA_2STAGE_syn.sdf"); 
  endmodule
 

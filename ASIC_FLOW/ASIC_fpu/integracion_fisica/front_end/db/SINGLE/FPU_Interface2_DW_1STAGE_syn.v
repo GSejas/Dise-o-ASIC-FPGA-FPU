@@ -8975,5 +8975,15 @@ module FPU_Interface2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, begin_operation,
         n2407), .ICI(mult_x_69_n579), .S(mult_x_69_n577), .ICO(mult_x_69_n575), 
         .CO(mult_x_69_n576) );
 initial $sdf_annotate("FPU_Interface2_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk20.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk30.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk40.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_noclk.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk20.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk30.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_clk40.tcl_DW_1STAGE_syn.sdf"); 
+ initial $sdf_annotate("FPU_Interface2_ASIC_fpu_syn_constraints_noclk.tcl_DW_1STAGE_syn.sdf"); 
  endmodule
 

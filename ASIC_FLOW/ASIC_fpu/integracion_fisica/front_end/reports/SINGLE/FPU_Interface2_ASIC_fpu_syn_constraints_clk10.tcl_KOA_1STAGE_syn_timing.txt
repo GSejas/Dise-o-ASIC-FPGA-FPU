@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Wed Nov  2 23:17:29 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPSENCOS_d_ff5_data_out_Q_reg_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_7_/CK (DFFRX2TS)
+                                                          0.00 #     1.00 r
+  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_7_/Q (DFFRX2TS)
+                                                          1.15       2.15 f
+  U3409/Y (NOR3X2TS)                                      0.64       2.80 r
+  U3533/Y (NOR3BX1TS)                                     0.69       3.49 r
+  U2657/Y (INVX2TS)                                       0.35       3.84 f
+  U3411/Y (NOR2X2TS)                                      0.37       4.21 r
+  U2288/Y (NAND2BX2TS)                                    0.55       4.75 f
+  U2784/Y (NOR2X2TS)                                      0.57       5.32 r
+  U3633/Y (NAND2X1TS)                                     0.65       5.97 f
+  U3348/Y (NOR2X2TS)                                      0.66       6.63 r
+  U5181/Y (NOR2X4TS)                                      0.43       7.06 f
+  U2502/Y (BUFX6TS)                                       0.38       7.44 f
+  U5186/Y (NOR2X4TS)                                      0.64       8.08 r
+  U3574/Y (CLKBUFX2TS)                                    0.66       8.74 r
+  U2805/Y (BUFX3TS)                                       0.71       9.45 r
+  U3381/Y (AOI222X1TS)                                    0.55      10.00 f
+  U5279/Y (INVX2TS)                                       0.22      10.21 r
+  FPSENCOS_d_ff5_data_out_Q_reg_23_/D (DFFRX1TS)          0.00      10.21 r
+  data arrival time                                                 10.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FPSENCOS_d_ff5_data_out_Q_reg_23_/CK (DFFRX1TS)         0.00      10.50 r
+  library setup time                                     -0.28      10.22
+  data required time                                                10.22
+  --------------------------------------------------------------------------
+  data required time                                                10.22
+  data arrival time                                                -10.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
