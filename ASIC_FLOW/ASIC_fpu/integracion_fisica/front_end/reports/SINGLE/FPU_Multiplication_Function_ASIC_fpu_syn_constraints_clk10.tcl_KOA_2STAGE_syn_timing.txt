@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 16:43:58 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Operands_load_reg_YMRegister_Q_reg_16_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation_RECURSIVE_EVEN1_middle_DatO_reg_22_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  Operands_load_reg_YMRegister_Q_reg_16_/CK (DFFRX2TS)
+                                                          0.00       1.00 r
+  Operands_load_reg_YMRegister_Q_reg_16_/QN (DFFRX2TS)
+                                                          1.15       2.15 f
+  U1072/Y (INVX2TS)                                       0.37       2.52 r
+  U1299/Y (NOR2X2TS)                                      0.30       2.82 f
+  U1300/Y (NOR2X2TS)                                      0.47       3.28 r
+  U1301/Y (INVX2TS)                                       0.30       3.58 f
+  U1302/Y (NOR2X1TS)                                      0.36       3.95 r
+  U1308/Y (AOI21X2TS)                                     0.31       4.26 f
+  U1312/Y (CLKXOR2X4TS)                                   0.63       4.89 f
+  U1316/Y (XNOR2X1TS)                                     0.66       5.54 r
+  U808/Y (OAI22X1TS)                                      0.52       6.06 f
+  DP_OP_111J106_123_4462_U288/S (CMPR42X1TS)              1.21       7.28 f
+  DP_OP_111J106_123_4462_U287/S (CMPR42X2TS)              1.08       8.35 f
+  U424/Y (NAND2X2TS)                                      0.34       8.69 r
+  U772/Y (OAI21X4TS)                                      0.34       9.03 f
+  U796/Y (AOI21X2TS)                                      0.41       9.44 r
+  U412/Y (OAI21X1TS)                                      0.36       9.80 f
+  U1605/Y (AOI21X2TS)                                     0.32      10.12 r
+  U1607/Y (XOR2X4TS)                                      0.25      10.37 f
+  Sgf_operation_RECURSIVE_EVEN1_middle_DatO_reg_22_/D (DFFQX1TS)
+                                                          0.00      10.37 f
+  data arrival time                                                 10.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Sgf_operation_RECURSIVE_EVEN1_middle_DatO_reg_22_/CK (DFFQX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.13      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

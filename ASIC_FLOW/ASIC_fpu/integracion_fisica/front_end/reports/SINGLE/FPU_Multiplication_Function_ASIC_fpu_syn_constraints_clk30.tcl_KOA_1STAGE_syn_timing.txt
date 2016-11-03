@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 16:35:49 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Barrel_Shifter_module_Output_Reg_Q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Adder_M_Add_overflow_Result_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  Barrel_Shifter_module_Output_Reg_Q_reg_0_/CK (DFFRXLTS)
+                                                          0.00       3.00 r
+  Barrel_Shifter_module_Output_Reg_Q_reg_0_/QN (DFFRXLTS)
+                                                          1.40       4.40 f
+  U611/Y (INVX2TS)                                        0.54       4.94 r
+  U1911/Y (OR3X1TS)                                       0.78       5.72 r
+  U1915/Y (NAND2X1TS)                                     0.69       6.41 f
+  U1917/Y (NAND2X1TS)                                     0.71       7.12 r
+  U1920/Y (NAND2X1TS)                                     0.72       7.84 f
+  U534/Y (NOR2X2TS)                                       0.61       8.45 r
+  U1924/Y (NAND2X1TS)                                     0.66       9.11 f
+  U535/Y (NOR2X2TS)                                       0.61       9.72 r
+  U1929/Y (NAND2X1TS)                                     0.66      10.37 f
+  U536/Y (NOR2X2TS)                                       0.61      10.98 r
+  U1933/Y (NAND2X1TS)                                     0.66      11.64 f
+  U537/Y (NOR2X2TS)                                       0.61      12.25 r
+  U1937/Y (NAND2X1TS)                                     0.66      12.91 f
+  U538/Y (NOR2X2TS)                                       0.61      13.52 r
+  U1940/Y (NAND2X1TS)                                     0.66      14.17 f
+  U539/Y (NOR2X2TS)                                       0.61      14.78 r
+  U1943/Y (NAND2X1TS)                                     0.66      15.44 f
+  U540/Y (NOR2X2TS)                                       0.61      16.05 r
+  U1946/Y (NAND2X1TS)                                     0.66      16.71 f
+  U541/Y (NOR2X2TS)                                       0.62      17.32 r
+  U1949/Y (NAND2X1TS)                                     0.67      18.00 f
+  U642/Y (NOR2X2TS)                                       0.63      18.62 r
+  U1951/Y (AOI21X1TS)                                     0.50      19.13 f
+  U499/Y (AOI2BB1XLTS)                                    0.64      19.77 r
+  Adder_M_Add_overflow_Result_Q_reg_0_/D (DFFRXLTS)       0.00      19.77 r
+  data arrival time                                                 19.77
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  Adder_M_Add_overflow_Result_Q_reg_0_/CK (DFFRXLTS)      0.00      31.50 r
+  library setup time                                     -0.17      31.33
+  data required time                                                31.33
+  --------------------------------------------------------------------------
+  data required time                                                31.33
+  data arrival time                                                -19.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.56
+
+
+1

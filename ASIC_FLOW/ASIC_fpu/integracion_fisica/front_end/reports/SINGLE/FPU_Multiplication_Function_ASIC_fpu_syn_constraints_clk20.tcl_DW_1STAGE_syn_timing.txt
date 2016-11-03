@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 16:41:50 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Operands_load_reg_YMRegister_Q_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation_finalreg_Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  Operands_load_reg_YMRegister_Q_reg_6_/CK (DFFRXLTS)     0.00       2.00 r
+  Operands_load_reg_YMRegister_Q_reg_6_/QN (DFFRXLTS)     1.22       3.22 f
+  U991/Y (CLKBUFX2TS)                                     0.56       3.78 f
+  U655/Y (INVX4TS)                                        0.78       4.56 r
+  U729/Y (NOR2X1TS)                                       0.57       5.14 f
+  U637/Y (NOR2X1TS)                                       0.62       5.75 r
+  U629/Y (NAND2X1TS)                                      0.49       6.24 f
+  U623/Y (OAI21X2TS)                                      0.46       6.70 r
+  U421/Y (INVX2TS)                                        0.43       7.13 f
+  U680/Y (OAI21X1TS)                                      0.64       7.77 r
+  U1033/Y (XNOR2X1TS)                                     0.60       8.37 r
+  U602/Y (INVX3TS)                                        0.49       8.86 f
+  U685/Y (OA21XLTS)                                       0.67       9.53 f
+  U412/CO (CMPR32X2TS)                                    0.61      10.14 f
+  U1036/CO (CMPR32X2TS)                                   0.56      10.71 f
+  U2228/S (CMPR42X1TS)                                    1.21      11.92 f
+  U2227/S (CMPR42X1TS)                                    1.09      13.01 r
+  U436/Y (OR2X1TS)                                        0.70      13.71 r
+  U1851/Y (NAND2X1TS)                                     0.58      14.29 f
+  U699/Y (NOR2X1TS)                                       0.64      14.93 r
+  U976/Y (NAND2X1TS)                                      0.59      15.52 f
+  U513/Y (NOR2X1TS)                                       0.48      16.00 r
+  U507/Y (AOI21X2TS)                                      0.37      16.37 f
+  U506/Y (OAI21X2TS)                                      0.44      16.81 r
+  U666/Y (AOI21X4TS)                                      0.30      17.11 f
+  U502/Y (OAI21X2TS)                                      0.38      17.49 r
+  U668/Y (AOI21X2TS)                                      0.35      17.83 f
+  U494/Y (OAI21X2TS)                                      0.44      18.27 r
+  U662/Y (AOI21X4TS)                                      0.30      18.57 f
+  U665/Y (OAI21X2TS)                                      0.41      18.98 r
+  U667/Y (AOI21X4TS)                                      0.30      19.28 f
+  U442/Y (OAI21X2TS)                                      0.35      19.63 r
+  U1897/Y (AOI21X1TS)                                     0.34      19.97 f
+  U1901/Y (XOR2X1TS)                                      0.36      20.33 r
+  U484/Y (CLKMX2X2TS)                                     0.48      20.81 r
+  Sgf_operation_finalreg_Q_reg_47_/D (DFFRX1TS)           0.00      20.81 r
+  data arrival time                                                 20.81
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  Sgf_operation_finalreg_Q_reg_47_/CK (DFFRX1TS)          0.00      21.00 r
+  library setup time                                     -0.13      20.87
+  data required time                                                20.87
+  --------------------------------------------------------------------------
+  data required time                                                20.87
+  data arrival time                                                -20.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+1
