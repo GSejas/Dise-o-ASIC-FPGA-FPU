@@ -9,7 +9,7 @@ Report : power
         -analysis_effort high
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Wed Nov  2 23:17:28 2016
+Date   : Thu Nov  3 18:19:11 2016
 ****************************************
 
 
@@ -36,12 +36,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =   1.8228 mW   (82%)
-  Net Switching Power  = 398.4825 uW   (18%)
+  Cell Internal Power  =   1.8283 mW   (82%)
+  Net Switching Power  = 405.3955 uW   (18%)
                          ---------
-Total Dynamic Power    =   2.2212 mW  (100%)
+Total Dynamic Power    =   2.2337 mW  (100%)
 
-Cell Leakage Power     =  89.8280 nW
+Cell Leakage Power     =  89.6824 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -51,9 +51,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           1.7519        7.1605e-02        3.6731e+04            1.8235  (  82.09%)
-sequential     6.6973e-04            0.0000        2.5270e+03        6.7226e-04  (   0.03%)
-combinational  7.0202e-02            0.3269        5.0570e+04            0.3971  (  17.88%)
+register           1.7571        7.3540e-02        3.6766e+04            1.8307  (  81.95%)
+sequential     6.6132e-04            0.0000        2.5279e+03        6.6385e-04  (   0.03%)
+combinational  7.0529e-02            0.3319        5.0388e+04            0.4024  (  18.02%)
 --------------------------------------------------------------------------------------------------
-Total              1.8228 mW         0.3985 mW     8.9828e+04 pW         2.2213 mW
+Total              1.8283 mW         0.4054 mW     8.9682e+04 pW         2.2338 mW
 1

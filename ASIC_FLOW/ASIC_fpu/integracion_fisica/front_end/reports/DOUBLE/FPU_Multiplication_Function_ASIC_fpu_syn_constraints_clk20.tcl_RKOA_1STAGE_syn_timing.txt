@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 17:19:50 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_338J122_122_4684_R_973
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DP_OP_349J122_133_1342_R_1133
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W64_EW11_SW52
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  DP_OP_338J122_122_4684_R_973/CK (DFFSX2TS)              0.00       2.00 r
+  DP_OP_338J122_122_4684_R_973/Q (DFFSX2TS)               1.34       3.34 f
+  U3573/Y (NOR2X6TS)                                      0.26       3.60 r
+  U6153/Y (AOI21X1TS)                                     0.32       3.92 f
+  U5535/Y (OAI21X4TS)                                     0.28       4.20 r
+  U2885/Y (INVX6TS)                                       0.26       4.46 f
+  U2750/Y (OAI21X2TS)                                     0.30       4.76 r
+  U8509/Y (XNOR2X4TS)                                     0.46       5.22 r
+  U2629/Y (XNOR2X1TS)                                     0.75       5.98 r
+  U6067/Y (OAI22X2TS)                                     0.58       6.56 f
+  U9377/CO (CMPR32X2TS)                                   0.80       7.36 f
+  U9483/CO (CMPR32X2TS)                                   0.56       7.91 f
+  U9519/CO (CMPR32X2TS)                                   0.56       8.47 f
+  U9565/CO (CMPR32X2TS)                                   0.69       9.16 f
+  U6261/Y (CLKMX2X2TS)                                    0.48       9.64 f
+  U9745/CO (CMPR32X2TS)                                   0.56      10.20 f
+  U9821/CO (CMPR32X2TS)                                   0.56      10.76 f
+  U9872/CO (CMPR32X2TS)                                   0.56      11.32 f
+  U9902/CO (CMPR32X2TS)                                   0.56      11.88 f
+  U9944/S (CMPR32X2TS)                                    0.53      12.40 r
+  U1318/Y (INVX2TS)                                       0.20      12.60 f
+  U1298/Y (NOR2X1TS)                                      0.53      13.14 r
+  U1265/Y (NAND2X1TS)                                     0.57      13.71 f
+  U5679/Y (NOR2X1TS)                                      0.44      14.15 r
+  U6645/Y (AOI21X1TS)                                     0.38      14.53 f
+  U3427/Y (XOR2X4TS)                                      0.35      14.87 r
+  U3139/Y (INVX2TS)                                       0.26      15.13 f
+  U3635/S (CMPR22X2TS)                                    0.19      15.31 r
+  U1126/S (CMPR32X2TS)                                    0.76      16.07 r
+  U3208/Y (NAND2X2TS)                                     0.35      16.43 f
+  U3188/Y (OAI21X1TS)                                     0.53      16.96 r
+  U3406/Y (AOI21X4TS)                                     0.28      17.23 f
+  U5220/Y (OAI21X4TS)                                     0.14      17.37 r
+  U5513/Y (XNOR2X4TS)                                     0.26      17.64 f
+  U984/Y (NOR2X6TS)                                       0.32      17.95 r
+  U964/Y (NOR2X2TS)                                       0.26      18.22 f
+  U950/Y (AOI21X2TS)                                      0.40      18.62 r
+  U10473/Y (INVX2TS)                                      0.26      18.87 f
+  U10474/Y (AOI21X2TS)                                    0.24      19.11 r
+  U10475/Y (XOR2X2TS)                                     0.30      19.41 r
+  U3385/S (ADDFHX2TS)                                     0.63      20.04 r
+  U845/Y (NOR2X6TS)                                       0.22      20.27 f
+  U5398/Y (NOR2X8TS)                                      0.23      20.50 r
+  U806/Y (INVX2TS)                                        0.18      20.68 f
+  U3577/Y (NOR2X4TS)                                      0.20      20.88 r
+  U10491/Y (NAND2X2TS)                                    0.17      21.05 f
+  DP_OP_349J122_133_1342_R_1133/D (DFFSX1TS)              0.00      21.05 f
+  data arrival time                                                 21.05
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  DP_OP_349J122_133_1342_R_1133/CK (DFFSX1TS)             0.00      21.00 r
+  library setup time                                      0.06      21.06
+  data required time                                                21.06
+  --------------------------------------------------------------------------
+  data required time                                                21.06
+  data arrival time                                                -21.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

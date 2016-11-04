@@ -9,7 +9,7 @@ Report : power
         -analysis_effort high
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 00:25:12 2016
+Date   : Thu Nov  3 19:29:41 2016
 ****************************************
 
 

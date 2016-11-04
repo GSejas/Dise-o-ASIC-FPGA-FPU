@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 17:51:41 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Operands_load_reg_XMRegister_Q_reg_28_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation_ODD1_middle_RECURSIVE_EVEN1_left_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W64_EW11_SW52
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  Operands_load_reg_XMRegister_Q_reg_28_/CK (DFFRX4TS)
+                                                          0.00       2.00 r
+  Operands_load_reg_XMRegister_Q_reg_28_/Q (DFFRX4TS)     1.34       3.34 f
+  U4562/Y (NAND2X1TS)                                     0.54       3.88 r
+  U6040/Y (INVX2TS)                                       0.28       4.15 f
+  U1267/Y (AOI21X1TS)                                     0.55       4.71 r
+  U1240/Y (OAI21X1TS)                                     0.60       5.31 f
+  U3151/Y (AOI21X1TS)                                     0.72       6.03 r
+  U1213/Y (OAI21X1TS)                                     0.62       6.64 f
+  U1203/Y (AOI21X1TS)                                     0.77       7.41 r
+  U3225/Y (OAI21X2TS)                                     0.52       7.93 f
+  U3148/Y (AOI21X2TS)                                     0.49       8.42 r
+  U2462/Y (OAI21X4TS)                                     0.37       8.80 f
+  U5068/Y (AOI21X2TS)                                     0.43       9.23 r
+  U3146/Y (OAI21X1TS)                                     0.51       9.74 f
+  U1745/Y (AO21X2TS)                                      0.93      10.67 f
+  U3312/Y (NAND2X1TS)                                     0.64      11.30 r
+  U3219/Y (INVX2TS)                                       0.27      11.58 f
+  U4962/Y (AO21X1TS)                                      0.66      12.23 f
+  U2737/Y (AOI21X2TS)                                     0.48      12.72 r
+  U1008/Y (OAI21X1TS)                                     0.49      13.21 f
+  U3130/Y (AOI21X2TS)                                     0.64      13.85 r
+  U3661/Y (CLKXOR2X2TS)                                   0.88      14.73 f
+  U1896/Y (XNOR2X1TS)                                     0.73      15.46 r
+  U3081/Y (OAI22X1TS)                                     0.50      15.96 f
+  U841/S (ADDHXLTS)                                       0.77      16.73 r
+  U3943/S (CMPR42X1TS)                                    1.74      18.47 f
+  U4129/Y (NOR2X2TS)                                      0.50      18.97 r
+  U3940/Y (NOR2X1TS)                                      0.36      19.33 f
+  U3939/Y (AOI21X2TS)                                     0.42      19.75 r
+  U3345/Y (OAI21X2TS)                                     0.39      20.14 f
+  U5110/Y (AOI21X1TS)                                     0.43      20.57 r
+  U4294/Y (XOR2X1TS)                                      0.41      20.97 r
+  Sgf_operation_ODD1_middle_RECURSIVE_EVEN1_left_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_14_/D (DFFQX1TS)
+                                                          0.00      20.97 r
+  data arrival time                                                 20.97
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  Sgf_operation_ODD1_middle_RECURSIVE_EVEN1_left_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_14_/CK (DFFQX1TS)
+                                                          0.00      21.00 r
+  library setup time                                     -0.02      20.98
+  data required time                                                20.98
+  --------------------------------------------------------------------------
+  data required time                                                20.98
+  data arrival time                                                -20.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

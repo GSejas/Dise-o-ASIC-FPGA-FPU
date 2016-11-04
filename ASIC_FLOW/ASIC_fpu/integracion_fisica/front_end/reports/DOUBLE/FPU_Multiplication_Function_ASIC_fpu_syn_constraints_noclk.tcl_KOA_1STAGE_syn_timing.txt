@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 16:57:15 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FS_Module_state_reg_reg_1_
+              (rising edge-triggered flip-flop)
+  Endpoint: ready (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W64_EW11_SW52
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  FS_Module_state_reg_reg_1_/CK (DFFRX2TS)                0.00       0.00 r
+  FS_Module_state_reg_reg_1_/QN (DFFRX2TS)                1.44       1.44 r
+  U1608/Y (NAND2X1TS)                                     0.69       2.14 f
+  U1672/Y (NOR2X1TS)                                      0.67       2.81 r
+  ready (out)                                             0.00       2.81 r
+  data arrival time                                                  2.81
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

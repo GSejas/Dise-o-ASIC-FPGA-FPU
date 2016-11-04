@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Wed Nov  2 23:24:21 2016
+Date   : Thu Nov  3 18:26:17 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,9 +14,9 @@ Date   : Wed Nov  2 23:24:21 2016
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: DP_OP_496J6_122_3540_R_658
+  Startpoint: DP_OP_496J186_122_3540_R_658
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: DP_OP_499J6_125_1651_R_1376
+  Endpoint: DP_OP_499J186_125_1651_R_1376
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,8 +30,8 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  DP_OP_496J6_122_3540_R_658/CK (DFFSX4TS)                0.00 #     1.00 r
-  DP_OP_496J6_122_3540_R_658/QN (DFFSX4TS)                1.09       2.09 r
+  DP_OP_496J186_122_3540_R_658/CK (DFFSX4TS)              0.00 #     1.00 r
+  DP_OP_496J186_122_3540_R_658/QN (DFFSX4TS)              1.09       2.09 r
   U3903/Y (NAND2X4TS)                                     0.11       2.20 f
   U5413/Y (XNOR2X4TS)                                     0.29       2.49 r
   U2736/Y (INVX4TS)                                       0.22       2.71 f
@@ -60,13 +60,13 @@ Wire Load Model Mode: top
   U6655/Y (AOI21X4TS)                                     0.22      10.00 r
   U5361/Y (NAND2X8TS)                                     0.19      10.18 f
   U5360/Y (AOI21X4TS)                                     0.18      10.36 r
-  DP_OP_499J6_125_1651_R_1376/D (DFFSX1TS)                0.00      10.36 r
+  DP_OP_499J186_125_1651_R_1376/D (DFFSX1TS)              0.00      10.36 r
   data arrival time                                                 10.36
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  DP_OP_499J6_125_1651_R_1376/CK (DFFSX1TS)               0.00      10.50 r
+  DP_OP_499J186_125_1651_R_1376/CK (DFFSX1TS)             0.00      10.50 r
   library setup time                                     -0.14      10.36
   data required time                                                10.36
   --------------------------------------------------------------------------

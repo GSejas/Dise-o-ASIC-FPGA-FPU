@@ -1,0 +1,598 @@
+ 
+****************************************
+Report : port
+Design : CORDIC_Arch2v1_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 18:06:31 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+ack_cordic     in      0.0000   0.0000    1.02    1.71   --         
+beg_fsm_cordic in      0.0000   0.0000    1.02    1.71   --         
+clk            in      0.0000   0.0000   --      --      --         d
+data_in[0]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[1]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[2]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[3]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[4]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[5]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[6]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[7]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[8]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[9]     in      0.0000   0.0000    1.02    1.71   --         
+data_in[10]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[11]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[12]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[13]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[14]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[15]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[16]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[17]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[18]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[19]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[20]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[21]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[22]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[23]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[24]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[25]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[26]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[27]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[28]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[29]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[30]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[31]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[32]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[33]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[34]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[35]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[36]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[37]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[38]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[39]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[40]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[41]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[42]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[43]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[44]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[45]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[46]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[47]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[48]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[49]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[50]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[51]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[52]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[53]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[54]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[55]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[56]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[57]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[58]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[59]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[60]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[61]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[62]    in      0.0000   0.0000    1.02    1.71   --         
+data_in[63]    in      0.0000   0.0000    1.02    1.71   --         
+operation      in      0.0000   0.0000    1.02    1.71   --         
+ready_add_subt in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[2]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[3]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[4]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[5]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[6]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[7]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[8]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[9]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[10]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[11]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[12]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[13]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[14]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[15]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[16]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[17]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[18]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[19]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[20]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[21]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[22]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[23]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[24]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[25]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[26]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[27]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[28]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[29]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[30]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[31]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[32]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[33]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[34]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[35]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[36]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[37]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[38]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[39]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[40]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[41]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[42]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[43]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[44]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[45]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[46]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[47]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[48]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[49]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[50]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[51]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[52]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[53]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[54]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[55]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[56]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[57]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[58]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[59]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[60]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[61]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[62]
+               in      0.0000   0.0000    1.02    1.71   --         
+result_add_subt[63]
+               in      0.0000   0.0000    1.02    1.71   --         
+rst            in      0.0000   0.0000    1.02    1.71   --         
+shift_region_flag[0]
+               in      0.0000   0.0000    1.02    1.71   --         
+shift_region_flag[1]
+               in      0.0000   0.0000    1.02    1.71   --         
+ack_add_subt   out     0.0000   0.0000   --      --      --         
+add_subt_dataA[0]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[1]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[2]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[3]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[4]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[5]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[6]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[7]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[8]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[9]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[10]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[11]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[12]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[13]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[14]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[15]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[16]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[17]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[18]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[19]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[20]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[21]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[22]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[23]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[24]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[25]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[26]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[27]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[28]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[29]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[30]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[31]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[32]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[33]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[34]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[35]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[36]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[37]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[38]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[39]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[40]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[41]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[42]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[43]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[44]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[45]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[46]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[47]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[48]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[49]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[50]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[51]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[52]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[53]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[54]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[55]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[56]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[57]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[58]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[59]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[60]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[61]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[62]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataA[63]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[0]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[1]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[2]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[3]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[4]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[5]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[6]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[7]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[8]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[9]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[10]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[11]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[12]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[13]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[14]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[15]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[16]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[17]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[18]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[19]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[20]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[21]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[22]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[23]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[24]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[25]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[26]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[27]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[28]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[29]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[30]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[31]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[32]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[33]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[34]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[35]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[36]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[37]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[38]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[39]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[40]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[41]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[42]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[43]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[44]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[45]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[46]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[47]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[48]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[49]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[50]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[51]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[52]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[53]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[54]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[55]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[56]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[57]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[58]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[59]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[60]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[61]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[62]
+               out     0.0000   0.0000   --      --      --         
+add_subt_dataB[63]
+               out     0.0000   0.0000   --      --      --         
+beg_add_subt   out     0.0000   0.0000   --      --      --         
+data_output[0] out     0.0000   0.0000   --      --      --         
+data_output[1] out     0.0000   0.0000   --      --      --         
+data_output[2] out     0.0000   0.0000   --      --      --         
+data_output[3] out     0.0000   0.0000   --      --      --         
+data_output[4] out     0.0000   0.0000   --      --      --         
+data_output[5] out     0.0000   0.0000   --      --      --         
+data_output[6] out     0.0000   0.0000   --      --      --         
+data_output[7] out     0.0000   0.0000   --      --      --         
+data_output[8] out     0.0000   0.0000   --      --      --         
+data_output[9] out     0.0000   0.0000   --      --      --         
+data_output[10]
+               out     0.0000   0.0000   --      --      --         
+data_output[11]
+               out     0.0000   0.0000   --      --      --         
+data_output[12]
+               out     0.0000   0.0000   --      --      --         
+data_output[13]
+               out     0.0000   0.0000   --      --      --         
+data_output[14]
+               out     0.0000   0.0000   --      --      --         
+data_output[15]
+               out     0.0000   0.0000   --      --      --         
+data_output[16]
+               out     0.0000   0.0000   --      --      --         
+data_output[17]
+               out     0.0000   0.0000   --      --      --         
+data_output[18]
+               out     0.0000   0.0000   --      --      --         
+data_output[19]
+               out     0.0000   0.0000   --      --      --         
+data_output[20]
+               out     0.0000   0.0000   --      --      --         
+data_output[21]
+               out     0.0000   0.0000   --      --      --         
+data_output[22]
+               out     0.0000   0.0000   --      --      --         
+data_output[23]
+               out     0.0000   0.0000   --      --      --         
+data_output[24]
+               out     0.0000   0.0000   --      --      --         
+data_output[25]
+               out     0.0000   0.0000   --      --      --         
+data_output[26]
+               out     0.0000   0.0000   --      --      --         
+data_output[27]
+               out     0.0000   0.0000   --      --      --         
+data_output[28]
+               out     0.0000   0.0000   --      --      --         
+data_output[29]
+               out     0.0000   0.0000   --      --      --         
+data_output[30]
+               out     0.0000   0.0000   --      --      --         
+data_output[31]
+               out     0.0000   0.0000   --      --      --         
+data_output[32]
+               out     0.0000   0.0000   --      --      --         
+data_output[33]
+               out     0.0000   0.0000   --      --      --         
+data_output[34]
+               out     0.0000   0.0000   --      --      --         
+data_output[35]
+               out     0.0000   0.0000   --      --      --         
+data_output[36]
+               out     0.0000   0.0000   --      --      --         
+data_output[37]
+               out     0.0000   0.0000   --      --      --         
+data_output[38]
+               out     0.0000   0.0000   --      --      --         
+data_output[39]
+               out     0.0000   0.0000   --      --      --         
+data_output[40]
+               out     0.0000   0.0000   --      --      --         
+data_output[41]
+               out     0.0000   0.0000   --      --      --         
+data_output[42]
+               out     0.0000   0.0000   --      --      --         
+data_output[43]
+               out     0.0000   0.0000   --      --      --         
+data_output[44]
+               out     0.0000   0.0000   --      --      --         
+data_output[45]
+               out     0.0000   0.0000   --      --      --         
+data_output[46]
+               out     0.0000   0.0000   --      --      --         
+data_output[47]
+               out     0.0000   0.0000   --      --      --         
+data_output[48]
+               out     0.0000   0.0000   --      --      --         
+data_output[49]
+               out     0.0000   0.0000   --      --      --         
+data_output[50]
+               out     0.0000   0.0000   --      --      --         
+data_output[51]
+               out     0.0000   0.0000   --      --      --         
+data_output[52]
+               out     0.0000   0.0000   --      --      --         
+data_output[53]
+               out     0.0000   0.0000   --      --      --         
+data_output[54]
+               out     0.0000   0.0000   --      --      --         
+data_output[55]
+               out     0.0000   0.0000   --      --      --         
+data_output[56]
+               out     0.0000   0.0000   --      --      --         
+data_output[57]
+               out     0.0000   0.0000   --      --      --         
+data_output[58]
+               out     0.0000   0.0000   --      --      --         
+data_output[59]
+               out     0.0000   0.0000   --      --      --         
+data_output[60]
+               out     0.0000   0.0000   --      --      --         
+data_output[61]
+               out     0.0000   0.0000   --      --      --         
+data_output[62]
+               out     0.0000   0.0000   --      --      --         
+data_output[63]
+               out     0.0000   0.0000   --      --      --         
+op_add_subt    out     0.0000   0.0000   --      --      --         
+ready_cordic   out     0.0000   0.0000   --      --      --         
+
+1

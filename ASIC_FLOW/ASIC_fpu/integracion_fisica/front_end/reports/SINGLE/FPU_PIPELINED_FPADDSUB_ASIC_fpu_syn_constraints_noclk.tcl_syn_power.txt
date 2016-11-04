@@ -9,7 +9,7 @@ Report : power
         -analysis_effort high
 Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 11:51:15 2016
+Date   : Thu Nov  3 18:04:44 2016
 ****************************************
 
 

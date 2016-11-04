@@ -1,0 +1,79 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 16:47:35 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Operands_load_reg_YMRegister_Q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation_EVEN1_middle_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  Operands_load_reg_YMRegister_Q_reg_0_/CK (DFFRX1TS)     0.00       2.00 r
+  Operands_load_reg_YMRegister_Q_reg_0_/QN (DFFRX1TS)     1.61       3.61 r
+  U816/Y (INVX2TS)                                        0.68       4.29 f
+  U437/CO (CMPR22X2TS)                                    0.47       4.76 f
+  U1004/CO (CMPR32X2TS)                                   0.53       5.30 f
+  U1008/CO (CMPR32X2TS)                                   0.56       5.85 f
+  U1012/CO (CMPR32X2TS)                                   0.56       6.41 f
+  U1019/CO (CMPR32X2TS)                                   0.56       6.97 f
+  U1043/CO (CMPR32X2TS)                                   0.56       7.53 f
+  U1220/CO (CMPR32X2TS)                                   0.56       8.08 f
+  U1228/CO (CMPR32X2TS)                                   0.56       8.64 f
+  U1231/CO (CMPR32X2TS)                                   0.56       9.20 f
+  U1237/CO (CMPR32X2TS)                                   0.56       9.76 f
+  U1246/CO (CMPR32X2TS)                                   0.64      10.39 f
+  U1250/Y (CLKXOR2X2TS)                                   0.97      11.36 f
+  U1283/Y (INVX2TS)                                       0.42      11.79 r
+  U1285/S (CMPR32X2TS)                                    0.63      12.42 f
+  U936/Y (INVX2TS)                                        0.56      12.98 r
+  U1362/Y (NOR2X1TS)                                      0.42      13.40 f
+  U1364/S (ADDHXLTS)                                      0.74      14.14 r
+  U823/S (CMPR42X1TS)                                     1.63      15.77 f
+  U2164/S (CMPR42X1TS)                                    0.62      16.39 f
+  U1276/CO (CMPR32X2TS)                                   0.73      17.12 f
+  U1302/CO (CMPR32X2TS)                                   0.56      17.68 f
+  U1275/CO (CMPR32X2TS)                                   0.56      18.23 f
+  U1274/CO (CMPR32X2TS)                                   0.56      18.79 f
+  U1304/CO (CMPR32X2TS)                                   0.56      19.35 f
+  U1308/CO (CMPR32X2TS)                                   0.56      19.91 f
+  U1311/CO (CMPR32X2TS)                                   0.56      20.46 f
+  U1312/S (CMPR32X2TS)                                    0.59      21.05 f
+  Sgf_operation_EVEN1_middle_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_14_/D (DFFQX1TS)
+                                                          0.00      21.05 f
+  data arrival time                                                 21.05
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  Sgf_operation_EVEN1_middle_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_14_/CK (DFFQX1TS)
+                                                          0.00      21.00 r
+  library setup time                                      0.06      21.06
+  data required time                                                21.06
+  --------------------------------------------------------------------------
+  data required time                                                21.06
+  data arrival time                                                -21.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

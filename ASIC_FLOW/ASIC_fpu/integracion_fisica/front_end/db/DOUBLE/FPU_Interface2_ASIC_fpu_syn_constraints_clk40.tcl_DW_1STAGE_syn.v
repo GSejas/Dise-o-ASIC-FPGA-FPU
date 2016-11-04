@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Thu Nov  3 00:41:59 2016
+// Date      : Thu Nov  3 19:47:24 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -262,32 +262,32 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
          FPMULT_Sgf_operation_n9, FPMULT_Sgf_operation_n8,
          FPMULT_Sgf_operation_n7, FPMULT_Sgf_operation_n6,
          FPMULT_Sgf_operation_n5, FPMULT_Sgf_operation_n4,
-         DP_OP_26J39_122_3365_n22, DP_OP_26J39_122_3365_n21,
-         DP_OP_26J39_122_3365_n20, DP_OP_26J39_122_3365_n19,
-         DP_OP_26J39_122_3365_n18, DP_OP_26J39_122_3365_n17,
-         DP_OP_26J39_122_3365_n11, DP_OP_26J39_122_3365_n10,
-         DP_OP_26J39_122_3365_n9, DP_OP_26J39_122_3365_n8,
-         DP_OP_26J39_122_3365_n7, DP_OP_26J39_122_3365_n6,
-         DP_OP_26J39_122_3365_n5, DP_OP_26J39_122_3365_n4,
-         DP_OP_26J39_122_3365_n3, DP_OP_26J39_122_3365_n2,
-         DP_OP_26J39_122_3365_n1, DP_OP_431J39_125_9551_n28,
-         DP_OP_431J39_125_9551_n27, DP_OP_431J39_125_9551_n26,
-         DP_OP_431J39_125_9551_n25, DP_OP_431J39_125_9551_n24,
-         DP_OP_431J39_125_9551_n23, DP_OP_431J39_125_9551_n22,
-         DP_OP_431J39_125_9551_n21, DP_OP_431J39_125_9551_n20,
-         DP_OP_431J39_125_9551_n19, DP_OP_431J39_125_9551_n18,
-         DP_OP_431J39_125_9551_n12, DP_OP_431J39_125_9551_n11,
-         DP_OP_431J39_125_9551_n10, DP_OP_431J39_125_9551_n9,
-         DP_OP_431J39_125_9551_n8, DP_OP_431J39_125_9551_n7,
-         DP_OP_431J39_125_9551_n6, DP_OP_431J39_125_9551_n5,
-         DP_OP_431J39_125_9551_n4, DP_OP_431J39_125_9551_n3,
-         DP_OP_431J39_125_9551_n2, DP_OP_431J39_125_9551_n1, intadd_177_CI,
-         intadd_177_SUM_2_, intadd_177_SUM_1_, intadd_177_SUM_0_,
-         intadd_177_n3, intadd_177_n2, intadd_177_n1, intadd_178_B_0_,
-         intadd_178_CI, intadd_178_SUM_2_, intadd_178_SUM_1_,
-         intadd_178_SUM_0_, intadd_178_n3, intadd_178_n2, intadd_178_n1,
-         intadd_179_CI, intadd_179_SUM_2_, intadd_179_SUM_1_,
-         intadd_179_SUM_0_, intadd_179_n3, intadd_179_n2, intadd_179_n1,
+         DP_OP_26J219_122_3365_n22, DP_OP_26J219_122_3365_n21,
+         DP_OP_26J219_122_3365_n20, DP_OP_26J219_122_3365_n19,
+         DP_OP_26J219_122_3365_n18, DP_OP_26J219_122_3365_n17,
+         DP_OP_26J219_122_3365_n11, DP_OP_26J219_122_3365_n10,
+         DP_OP_26J219_122_3365_n9, DP_OP_26J219_122_3365_n8,
+         DP_OP_26J219_122_3365_n7, DP_OP_26J219_122_3365_n6,
+         DP_OP_26J219_122_3365_n5, DP_OP_26J219_122_3365_n4,
+         DP_OP_26J219_122_3365_n3, DP_OP_26J219_122_3365_n2,
+         DP_OP_26J219_122_3365_n1, DP_OP_431J219_125_9551_n28,
+         DP_OP_431J219_125_9551_n27, DP_OP_431J219_125_9551_n26,
+         DP_OP_431J219_125_9551_n25, DP_OP_431J219_125_9551_n24,
+         DP_OP_431J219_125_9551_n23, DP_OP_431J219_125_9551_n22,
+         DP_OP_431J219_125_9551_n21, DP_OP_431J219_125_9551_n20,
+         DP_OP_431J219_125_9551_n19, DP_OP_431J219_125_9551_n18,
+         DP_OP_431J219_125_9551_n12, DP_OP_431J219_125_9551_n11,
+         DP_OP_431J219_125_9551_n10, DP_OP_431J219_125_9551_n9,
+         DP_OP_431J219_125_9551_n8, DP_OP_431J219_125_9551_n7,
+         DP_OP_431J219_125_9551_n6, DP_OP_431J219_125_9551_n5,
+         DP_OP_431J219_125_9551_n4, DP_OP_431J219_125_9551_n3,
+         DP_OP_431J219_125_9551_n2, DP_OP_431J219_125_9551_n1, intadd_700_CI,
+         intadd_700_SUM_2_, intadd_700_SUM_1_, intadd_700_SUM_0_,
+         intadd_700_n3, intadd_700_n2, intadd_700_n1, intadd_701_B_0_,
+         intadd_701_CI, intadd_701_SUM_2_, intadd_701_SUM_1_,
+         intadd_701_SUM_0_, intadd_701_n3, intadd_701_n2, intadd_701_n1,
+         intadd_702_CI, intadd_702_SUM_2_, intadd_702_SUM_1_,
+         intadd_702_SUM_0_, intadd_702_n3, intadd_702_n2, intadd_702_n1,
          FPMULT_Sgf_operation_mult_x_1_n4243,
          FPMULT_Sgf_operation_mult_x_1_n4242,
          FPMULT_Sgf_operation_mult_x_1_n4241,
@@ -4855,46 +4855,45 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   DFFRXLTS FPMULT_Sgf_operation_finalreg_Q_reg_11_ ( .D(
         FPMULT_Sgf_operation_n98), .CK(clk), .RN(n4131), .Q(FPMULT_P_Sgf[11])
          );
-  CMPR32X2TS DP_OP_26J39_122_3365_U12 ( .A(FPADDSUB_DMP_exp_NRM2_EW[0]), .B(
-        n4118), .C(DP_OP_26J39_122_3365_n22), .CO(DP_OP_26J39_122_3365_n11), 
+  CMPR32X2TS DP_OP_26J219_122_3365_U12 ( .A(FPADDSUB_DMP_exp_NRM2_EW[0]), .B(
+        n4118), .C(DP_OP_26J219_122_3365_n22), .CO(DP_OP_26J219_122_3365_n11), 
         .S(FPADDSUB_exp_rslt_NRM2_EW1[0]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U12 ( .A(DP_OP_431J39_125_9551_n27), .B(
-        FPMULT_S_Oper_A_exp[1]), .C(DP_OP_431J39_125_9551_n12), .CO(
-        DP_OP_431J39_125_9551_n11), .S(FPMULT_Exp_module_Data_S[1]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U11 ( .A(DP_OP_431J39_125_9551_n26), .B(
-        FPMULT_S_Oper_A_exp[2]), .C(DP_OP_431J39_125_9551_n11), .CO(
-        DP_OP_431J39_125_9551_n10), .S(FPMULT_Exp_module_Data_S[2]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U10 ( .A(DP_OP_431J39_125_9551_n25), .B(
-        FPMULT_S_Oper_A_exp[3]), .C(DP_OP_431J39_125_9551_n10), .CO(
-        DP_OP_431J39_125_9551_n9), .S(FPMULT_Exp_module_Data_S[3]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U9 ( .A(DP_OP_431J39_125_9551_n24), .B(
-        FPMULT_S_Oper_A_exp[4]), .C(DP_OP_431J39_125_9551_n9), .CO(
-        DP_OP_431J39_125_9551_n8), .S(FPMULT_Exp_module_Data_S[4]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U8 ( .A(DP_OP_431J39_125_9551_n23), .B(
-        FPMULT_S_Oper_A_exp[5]), .C(DP_OP_431J39_125_9551_n8), .CO(
-        DP_OP_431J39_125_9551_n7), .S(FPMULT_Exp_module_Data_S[5]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U7 ( .A(DP_OP_431J39_125_9551_n22), .B(
-        FPMULT_S_Oper_A_exp[6]), .C(DP_OP_431J39_125_9551_n7), .CO(
-        DP_OP_431J39_125_9551_n6), .S(FPMULT_Exp_module_Data_S[6]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U6 ( .A(DP_OP_431J39_125_9551_n21), .B(
-        FPMULT_S_Oper_A_exp[7]), .C(DP_OP_431J39_125_9551_n6), .CO(
-        DP_OP_431J39_125_9551_n5), .S(FPMULT_Exp_module_Data_S[7]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U5 ( .A(DP_OP_431J39_125_9551_n20), .B(
-        FPMULT_S_Oper_A_exp[8]), .C(DP_OP_431J39_125_9551_n5), .CO(
-        DP_OP_431J39_125_9551_n4), .S(FPMULT_Exp_module_Data_S[8]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U4 ( .A(DP_OP_431J39_125_9551_n19), .B(
-        FPMULT_S_Oper_A_exp[9]), .C(DP_OP_431J39_125_9551_n4), .CO(
-        DP_OP_431J39_125_9551_n3), .S(FPMULT_Exp_module_Data_S[9]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U3 ( .A(DP_OP_431J39_125_9551_n18), .B(
-        FPMULT_S_Oper_A_exp[10]), .C(DP_OP_431J39_125_9551_n3), .CO(
-        DP_OP_431J39_125_9551_n2), .S(FPMULT_Exp_module_Data_S[10]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U2 ( .A(n4388), .B(FPMULT_S_Oper_A_exp[11]), 
-        .C(DP_OP_431J39_125_9551_n2), .CO(DP_OP_431J39_125_9551_n1), .S(
+  CMPR32X2TS DP_OP_431J219_125_9551_U12 ( .A(DP_OP_431J219_125_9551_n27), .B(
+        FPMULT_S_Oper_A_exp[1]), .C(DP_OP_431J219_125_9551_n12), .CO(
+        DP_OP_431J219_125_9551_n11), .S(FPMULT_Exp_module_Data_S[1]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U11 ( .A(DP_OP_431J219_125_9551_n26), .B(
+        FPMULT_S_Oper_A_exp[2]), .C(DP_OP_431J219_125_9551_n11), .CO(
+        DP_OP_431J219_125_9551_n10), .S(FPMULT_Exp_module_Data_S[2]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U10 ( .A(DP_OP_431J219_125_9551_n25), .B(
+        FPMULT_S_Oper_A_exp[3]), .C(DP_OP_431J219_125_9551_n10), .CO(
+        DP_OP_431J219_125_9551_n9), .S(FPMULT_Exp_module_Data_S[3]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U9 ( .A(DP_OP_431J219_125_9551_n24), .B(
+        FPMULT_S_Oper_A_exp[4]), .C(DP_OP_431J219_125_9551_n9), .CO(
+        DP_OP_431J219_125_9551_n8), .S(FPMULT_Exp_module_Data_S[4]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U8 ( .A(DP_OP_431J219_125_9551_n23), .B(
+        FPMULT_S_Oper_A_exp[5]), .C(DP_OP_431J219_125_9551_n8), .CO(
+        DP_OP_431J219_125_9551_n7), .S(FPMULT_Exp_module_Data_S[5]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U7 ( .A(DP_OP_431J219_125_9551_n22), .B(
+        FPMULT_S_Oper_A_exp[6]), .C(DP_OP_431J219_125_9551_n7), .CO(
+        DP_OP_431J219_125_9551_n6), .S(FPMULT_Exp_module_Data_S[6]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U6 ( .A(DP_OP_431J219_125_9551_n21), .B(
+        FPMULT_S_Oper_A_exp[7]), .C(DP_OP_431J219_125_9551_n6), .CO(
+        DP_OP_431J219_125_9551_n5), .S(FPMULT_Exp_module_Data_S[7]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U5 ( .A(DP_OP_431J219_125_9551_n20), .B(
+        FPMULT_S_Oper_A_exp[8]), .C(DP_OP_431J219_125_9551_n5), .CO(
+        DP_OP_431J219_125_9551_n4), .S(FPMULT_Exp_module_Data_S[8]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U4 ( .A(DP_OP_431J219_125_9551_n19), .B(
+        FPMULT_S_Oper_A_exp[9]), .C(DP_OP_431J219_125_9551_n4), .CO(
+        DP_OP_431J219_125_9551_n3), .S(FPMULT_Exp_module_Data_S[9]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U3 ( .A(DP_OP_431J219_125_9551_n18), .B(
+        FPMULT_S_Oper_A_exp[10]), .C(DP_OP_431J219_125_9551_n3), .CO(
+        DP_OP_431J219_125_9551_n2), .S(FPMULT_Exp_module_Data_S[10]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U2 ( .A(n4388), .B(FPMULT_S_Oper_A_exp[11]), .C(DP_OP_431J219_125_9551_n2), .CO(DP_OP_431J219_125_9551_n1), .S(
         FPMULT_Exp_module_Data_S[11]) );
-  CMPR32X2TS intadd_178_U4 ( .A(FPSENCOS_d_ff2_Y[53]), .B(intadd_178_B_0_), 
-        .C(intadd_178_CI), .CO(intadd_178_n3), .S(intadd_178_SUM_0_) );
-  CMPR32X2TS intadd_178_U3 ( .A(FPSENCOS_d_ff2_Y[54]), .B(n4171), .C(
-        intadd_178_n3), .CO(intadd_178_n2), .S(intadd_178_SUM_1_) );
+  CMPR32X2TS intadd_701_U4 ( .A(FPSENCOS_d_ff2_Y[53]), .B(intadd_701_B_0_), 
+        .C(intadd_701_CI), .CO(intadd_701_n3), .S(intadd_701_SUM_0_) );
+  CMPR32X2TS intadd_701_U3 ( .A(FPSENCOS_d_ff2_Y[54]), .B(n4171), .C(
+        intadd_701_n3), .CO(intadd_701_n2), .S(intadd_701_SUM_1_) );
   CMPR42X1TS FPMULT_Sgf_operation_mult_x_1_U1741 ( .A(
         FPMULT_Sgf_operation_mult_x_1_n2592), .B(
         FPMULT_Sgf_operation_mult_x_1_n4137), .C(
@@ -9476,55 +9475,54 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         n11248), .Q(FPADDSUB_ADD_OVRFLW_NRM2), .QN(n4118) );
   DFFRX4TS FPMULT_Sel_A_Q_reg_0_ ( .D(n3136), .CK(clk), .RN(n11296), .Q(
         FPMULT_FSM_selector_A), .QN(n11038) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U11 ( .A(DP_OP_26J39_122_3365_n21), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[1]), .C(DP_OP_26J39_122_3365_n11), .CO(
-        DP_OP_26J39_122_3365_n10), .S(FPADDSUB_exp_rslt_NRM2_EW1[1]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U10 ( .A(DP_OP_26J39_122_3365_n20), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[2]), .C(DP_OP_26J39_122_3365_n10), .CO(
-        DP_OP_26J39_122_3365_n9), .S(FPADDSUB_exp_rslt_NRM2_EW1[2]) );
-  CMPR32X2TS DP_OP_431J39_125_9551_U13 ( .A(FPMULT_S_Oper_A_exp[0]), .B(n4388), 
-        .C(DP_OP_431J39_125_9551_n28), .CO(DP_OP_431J39_125_9551_n12), .S(
+  CMPR32X2TS DP_OP_26J219_122_3365_U11 ( .A(DP_OP_26J219_122_3365_n21), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[1]), .C(DP_OP_26J219_122_3365_n11), .CO(
+        DP_OP_26J219_122_3365_n10), .S(FPADDSUB_exp_rslt_NRM2_EW1[1]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U10 ( .A(DP_OP_26J219_122_3365_n20), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[2]), .C(DP_OP_26J219_122_3365_n10), .CO(
+        DP_OP_26J219_122_3365_n9), .S(FPADDSUB_exp_rslt_NRM2_EW1[2]) );
+  CMPR32X2TS DP_OP_431J219_125_9551_U13 ( .A(FPMULT_S_Oper_A_exp[0]), .B(n4388), .C(DP_OP_431J219_125_9551_n28), .CO(DP_OP_431J219_125_9551_n12), .S(
         FPMULT_Exp_module_Data_S[0]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U9 ( .A(DP_OP_26J39_122_3365_n19), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[3]), .C(DP_OP_26J39_122_3365_n9), .CO(
-        DP_OP_26J39_122_3365_n8), .S(FPADDSUB_exp_rslt_NRM2_EW1[3]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U8 ( .A(DP_OP_26J39_122_3365_n18), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[4]), .C(DP_OP_26J39_122_3365_n8), .CO(
-        DP_OP_26J39_122_3365_n7), .S(FPADDSUB_exp_rslt_NRM2_EW1[4]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U9 ( .A(DP_OP_26J219_122_3365_n19), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[3]), .C(DP_OP_26J219_122_3365_n9), .CO(
+        DP_OP_26J219_122_3365_n8), .S(FPADDSUB_exp_rslt_NRM2_EW1[3]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U8 ( .A(DP_OP_26J219_122_3365_n18), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[4]), .C(DP_OP_26J219_122_3365_n8), .CO(
+        DP_OP_26J219_122_3365_n7), .S(FPADDSUB_exp_rslt_NRM2_EW1[4]) );
   DFFRX4TS FPSENCOS_ITER_CONT_temp_reg_1_ ( .D(n4028), .CK(clk), .RN(n4146), 
         .Q(FPSENCOS_cont_iter_out[1]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U7 ( .A(DP_OP_26J39_122_3365_n17), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[5]), .C(DP_OP_26J39_122_3365_n7), .CO(
-        DP_OP_26J39_122_3365_n6), .S(FPADDSUB_exp_rslt_NRM2_EW1[5]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U6 ( .A(n4118), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[6]), .C(DP_OP_26J39_122_3365_n6), .CO(
-        DP_OP_26J39_122_3365_n5), .S(FPADDSUB_exp_rslt_NRM2_EW1[6]) );
-  CMPR32X2TS intadd_177_U4 ( .A(n11001), .B(FPADDSUB_DMP_EXP_EWSW[53]), .C(
-        intadd_177_CI), .CO(intadd_177_n3), .S(intadd_177_SUM_0_) );
-  CMPR32X2TS intadd_179_U4 ( .A(FPSENCOS_d_ff2_X[53]), .B(intadd_178_B_0_), 
-        .C(intadd_179_CI), .CO(intadd_179_n3), .S(intadd_179_SUM_0_) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U5 ( .A(n4118), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[7]), .C(DP_OP_26J39_122_3365_n5), .CO(
-        DP_OP_26J39_122_3365_n4), .S(FPADDSUB_exp_rslt_NRM2_EW1[7]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U4 ( .A(n4118), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[8]), .C(DP_OP_26J39_122_3365_n4), .CO(
-        DP_OP_26J39_122_3365_n3), .S(FPADDSUB_exp_rslt_NRM2_EW1[8]) );
-  CMPR32X2TS intadd_177_U3 ( .A(n11000), .B(FPADDSUB_DMP_EXP_EWSW[54]), .C(
-        intadd_177_n3), .CO(intadd_177_n2), .S(intadd_177_SUM_1_) );
-  CMPR32X2TS intadd_179_U3 ( .A(FPSENCOS_d_ff2_X[54]), .B(n4171), .C(
-        intadd_179_n3), .CO(intadd_179_n2), .S(intadd_179_SUM_1_) );
-  CMPR32X2TS intadd_179_U2 ( .A(FPSENCOS_d_ff2_X[55]), .B(n10759), .C(
-        intadd_179_n2), .CO(intadd_179_n1), .S(intadd_179_SUM_2_) );
-  CMPR32X2TS intadd_178_U2 ( .A(FPSENCOS_d_ff2_Y[55]), .B(n10759), .C(
-        intadd_178_n2), .CO(intadd_178_n1), .S(intadd_178_SUM_2_) );
-  CMPR32X2TS intadd_177_U2 ( .A(n11025), .B(FPADDSUB_DMP_EXP_EWSW[55]), .C(
-        intadd_177_n2), .CO(intadd_177_n1), .S(intadd_177_SUM_2_) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U3 ( .A(n4118), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[9]), .C(DP_OP_26J39_122_3365_n3), .CO(
-        DP_OP_26J39_122_3365_n2), .S(FPADDSUB_exp_rslt_NRM2_EW1[9]) );
-  CMPR32X2TS DP_OP_26J39_122_3365_U2 ( .A(n4118), .B(
-        FPADDSUB_DMP_exp_NRM2_EW[10]), .C(DP_OP_26J39_122_3365_n2), .CO(
-        DP_OP_26J39_122_3365_n1), .S(FPADDSUB_exp_rslt_NRM2_EW1[10]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U7 ( .A(DP_OP_26J219_122_3365_n17), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[5]), .C(DP_OP_26J219_122_3365_n7), .CO(
+        DP_OP_26J219_122_3365_n6), .S(FPADDSUB_exp_rslt_NRM2_EW1[5]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U6 ( .A(n4118), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[6]), .C(DP_OP_26J219_122_3365_n6), .CO(
+        DP_OP_26J219_122_3365_n5), .S(FPADDSUB_exp_rslt_NRM2_EW1[6]) );
+  CMPR32X2TS intadd_700_U4 ( .A(n11001), .B(FPADDSUB_DMP_EXP_EWSW[53]), .C(
+        intadd_700_CI), .CO(intadd_700_n3), .S(intadd_700_SUM_0_) );
+  CMPR32X2TS intadd_702_U4 ( .A(FPSENCOS_d_ff2_X[53]), .B(intadd_701_B_0_), 
+        .C(intadd_702_CI), .CO(intadd_702_n3), .S(intadd_702_SUM_0_) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U5 ( .A(n4118), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[7]), .C(DP_OP_26J219_122_3365_n5), .CO(
+        DP_OP_26J219_122_3365_n4), .S(FPADDSUB_exp_rslt_NRM2_EW1[7]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U4 ( .A(n4118), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[8]), .C(DP_OP_26J219_122_3365_n4), .CO(
+        DP_OP_26J219_122_3365_n3), .S(FPADDSUB_exp_rslt_NRM2_EW1[8]) );
+  CMPR32X2TS intadd_700_U3 ( .A(n11000), .B(FPADDSUB_DMP_EXP_EWSW[54]), .C(
+        intadd_700_n3), .CO(intadd_700_n2), .S(intadd_700_SUM_1_) );
+  CMPR32X2TS intadd_702_U3 ( .A(FPSENCOS_d_ff2_X[54]), .B(n4171), .C(
+        intadd_702_n3), .CO(intadd_702_n2), .S(intadd_702_SUM_1_) );
+  CMPR32X2TS intadd_702_U2 ( .A(FPSENCOS_d_ff2_X[55]), .B(n10759), .C(
+        intadd_702_n2), .CO(intadd_702_n1), .S(intadd_702_SUM_2_) );
+  CMPR32X2TS intadd_701_U2 ( .A(FPSENCOS_d_ff2_Y[55]), .B(n10759), .C(
+        intadd_701_n2), .CO(intadd_701_n1), .S(intadd_701_SUM_2_) );
+  CMPR32X2TS intadd_700_U2 ( .A(n11025), .B(FPADDSUB_DMP_EXP_EWSW[55]), .C(
+        intadd_700_n2), .CO(intadd_700_n1), .S(intadd_700_SUM_2_) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U3 ( .A(n4118), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[9]), .C(DP_OP_26J219_122_3365_n3), .CO(
+        DP_OP_26J219_122_3365_n2), .S(FPADDSUB_exp_rslt_NRM2_EW1[9]) );
+  CMPR32X2TS DP_OP_26J219_122_3365_U2 ( .A(n4118), .B(
+        FPADDSUB_DMP_exp_NRM2_EW[10]), .C(DP_OP_26J219_122_3365_n2), .CO(
+        DP_OP_26J219_122_3365_n1), .S(FPADDSUB_exp_rslt_NRM2_EW1[10]) );
   DFFRX4TS FPADDSUB_inst_ShiftRegister_Q_reg_4_ ( .D(n4034), .CK(clk), .RN(
         n11251), .Q(busy), .QN(n11037) );
   DFFRX4TS FPADDSUB_inst_ShiftRegister_Q_reg_5_ ( .D(n4035), .CK(clk), .RN(
@@ -11620,7 +11618,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         FPMULT_Sgf_operation_mult_x_1_n2342), .Y(n9308) );
   NOR2X2TS U5835 ( .A(FPMULT_Sgf_operation_mult_x_1_n2292), .B(
         FPMULT_Sgf_operation_mult_x_1_n2308), .Y(n9279) );
-  NOR2X2TS U5836 ( .A(intadd_178_B_0_), .B(n9713), .Y(n9715) );
+  NOR2X2TS U5836 ( .A(intadd_701_B_0_), .B(n9713), .Y(n9715) );
   NOR2X2TS U5837 ( .A(n5148), .B(n11034), .Y(n10115) );
   AOI21X2TS U5838 ( .A0(n10256), .A1(n10998), .B0(n10213), .Y(n10182) );
   OAI32X1TS U5839 ( .A0(n4186), .A1(FPADDSUB_Raw_mant_NRM_SWR[52]), .A2(n6099), 
@@ -11785,7 +11783,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   BUFX4TS U5963 ( .A(n11240), .Y(n11234) );
   BUFX4TS U5964 ( .A(n11240), .Y(n11235) );
   BUFX4TS U5965 ( .A(n11240), .Y(n11236) );
-  NOR2X4TS U5966 ( .A(intadd_178_B_0_), .B(n4147), .Y(n9746) );
+  NOR2X4TS U5966 ( .A(intadd_701_B_0_), .B(n4147), .Y(n9746) );
   AOI21X1TS U5967 ( .A0(FPADDSUB_DMP_SFG[7]), .A1(FPADDSUB_DmP_mant_SFG_SWR[9]), .B0(n5129), .Y(n5195) );
   CLKINVX6TS U5968 ( .A(n5000), .Y(n5124) );
   BUFX4TS U5969 ( .A(n5666), .Y(n9879) );
@@ -11901,7 +11899,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         n4236), .Y(n4237) );
   INVX2TS U6067 ( .A(n10931), .Y(n4186) );
   NOR3X2TS U6068 ( .A(FPSENCOS_d_ff2_X[56]), .B(FPSENCOS_d_ff2_X[57]), .C(
-        intadd_179_n1), .Y(n9786) );
+        intadd_702_n1), .Y(n9786) );
   XNOR2X2TS U6069 ( .A(FPMULT_Op_MX[45]), .B(FPMULT_Op_MX[46]), .Y(n4500) );
   NOR4X1TS U6070 ( .A(FPMULT_Op_MX[49]), .B(FPMULT_Op_MX[48]), .C(
         FPMULT_Op_MX[46]), .D(FPMULT_Op_MX[51]), .Y(n9988) );
@@ -12188,7 +12186,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         FPADDSUB_DMP_SFG[11]), .B0(n10741), .B1(n10819), .Y(n5430) );
   AOI211X2TS U6261 ( .A0(n11198), .A1(n4171), .B0(n9731), .C0(n9770), .Y(n9739) );
   NOR3X2TS U6262 ( .A(FPSENCOS_d_ff2_Y[56]), .B(FPSENCOS_d_ff2_Y[57]), .C(
-        intadd_178_n1), .Y(n9813) );
+        intadd_701_n1), .Y(n9813) );
   AOI222X4TS U6263 ( .A0(n5427), .A1(cordic_result[47]), .B0(n5419), .B1(
         FPSENCOS_d_ff_Xn[47]), .C0(n5354), .C1(FPSENCOS_d_ff_Yn[47]), .Y(n5417) );
   AOI222X4TS U6264 ( .A0(n5414), .A1(cordic_result[38]), .B0(n5419), .B1(
@@ -12280,7 +12278,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   BUFX4TS U6315 ( .A(n9752), .Y(n9759) );
   CLKINVX6TS U6316 ( .A(n10594), .Y(n10593) );
   BUFX4TS U6317 ( .A(n11037), .Y(n10594) );
-  OAI21X2TS U6318 ( .A0(FPSENCOS_cont_iter_out[3]), .A1(intadd_178_B_0_), .B0(
+  OAI21X2TS U6318 ( .A0(FPSENCOS_cont_iter_out[3]), .A1(intadd_701_B_0_), .B0(
         n9744), .Y(n9738) );
   NOR2X4TS U6319 ( .A(n5183), .B(n4147), .Y(n9744) );
   BUFX6TS U6320 ( .A(n5790), .Y(n9014) );
@@ -12513,7 +12511,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OAI21XLTS U6486 ( .A0(n9312), .A1(n9308), .B0(n9309), .Y(n9272) );
   OAI21XLTS U6487 ( .A0(n9369), .A1(n9360), .B0(n9366), .Y(n9364) );
   OAI21XLTS U6488 ( .A0(n9349), .A1(n9348), .B0(n9347), .Y(n9354) );
-  OR2X1TS U6489 ( .A(FPSENCOS_d_ff2_X[52]), .B(n11311), .Y(intadd_179_CI) );
+  OR2X1TS U6489 ( .A(FPSENCOS_d_ff2_X[52]), .B(n11311), .Y(intadd_702_CI) );
   NOR2XLTS U6490 ( .A(n4153), .B(n10458), .Y(n10459) );
   OAI21XLTS U6491 ( .A0(n4153), .A1(n5917), .B0(n5916), .Y(n5918) );
   OAI21XLTS U6492 ( .A0(n9790), .A1(FPSENCOS_d_ff3_LUT_out[13]), .B0(n9732), 
@@ -12664,7 +12662,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   AOI22X1TS U6599 ( .A0(n6209), .A1(n8964), .B0(n6019), .B1(
         FPADDSUB_Shift_amount_SHT1_EWR[4]), .Y(n4240) );
   OAI21XLTS U6600 ( .A0(n4220), .A1(n10962), .B0(n4240), .Y(n3904) );
-  INVX2TS U6601 ( .A(FPSENCOS_cont_iter_out[1]), .Y(intadd_178_B_0_) );
+  INVX2TS U6601 ( .A(FPSENCOS_cont_iter_out[1]), .Y(intadd_701_B_0_) );
   NAND3BXLTS U6602 ( .AN(FPSENCOS_inst_CORDIC_FSM_v3_state_reg[2]), .B(n4241), 
         .C(FPSENCOS_inst_CORDIC_FSM_v3_state_reg[6]), .Y(n9691) );
   INVX2TS U6603 ( .A(n9691), .Y(n9712) );
@@ -12985,7 +12983,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NAND2X1TS U6799 ( .A(n4420), .B(n4419), .Y(n2589) );
   NOR2XLTS U6800 ( .A(n9697), .B(n9761), .Y(
         FPSENCOS_inst_CORDIC_FSM_v3_state_next[6]) );
-  NAND2X1TS U6801 ( .A(n11198), .B(n10790), .Y(intadd_178_CI) );
+  NAND2X1TS U6801 ( .A(n11198), .B(n10790), .Y(intadd_701_CI) );
   OR4X2TS U6802 ( .A(FPADDSUB_exp_rslt_NRM2_EW1[3]), .B(
         FPADDSUB_exp_rslt_NRM2_EW1[2]), .C(FPADDSUB_exp_rslt_NRM2_EW1[0]), .D(
         FPADDSUB_exp_rslt_NRM2_EW1[1]), .Y(n4421) );
@@ -12995,7 +12993,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NOR4X1TS U6804 ( .A(FPADDSUB_exp_rslt_NRM2_EW1[9]), .B(
         FPADDSUB_exp_rslt_NRM2_EW1[8]), .C(FPADDSUB_exp_rslt_NRM2_EW1[7]), .D(
         n4422), .Y(n4423) );
-  XNOR2X1TS U6805 ( .A(DP_OP_26J39_122_3365_n1), .B(FPADDSUB_ADD_OVRFLW_NRM2), 
+  XNOR2X1TS U6805 ( .A(DP_OP_26J219_122_3365_n1), .B(FPADDSUB_ADD_OVRFLW_NRM2), 
         .Y(n4428) );
   NOR3BX1TS U6806 ( .AN(n4423), .B(n4428), .C(FPADDSUB_exp_rslt_NRM2_EW1[10]), 
         .Y(n5148) );
@@ -13278,7 +13276,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   BUFX3TS U7050 ( .A(n4155), .Y(n11292) );
   BUFX3TS U7051 ( .A(n4547), .Y(n11291) );
   AO22XLTS U7052 ( .A0(n10566), .A1(FPADDSUB_Shift_amount_SHT1_EWR[1]), .B0(
-        n10619), .B1(intadd_177_SUM_0_), .Y(n2813) );
+        n10619), .B1(intadd_700_SUM_0_), .Y(n2813) );
   INVX4TS U7053 ( .A(n4129), .Y(n10627) );
   BUFX3TS U7054 ( .A(n4548), .Y(n10626) );
   AO22XLTS U7055 ( .A0(n10627), .A1(FPADDSUB_DMP_SHT2_EWSW[57]), .B0(n10626), 
@@ -13323,7 +13321,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OAI2BB2XLTS U7076 ( .B0(n9941), .B1(n10899), .A0N(n4551), .A1N(
         FPSENCOS_d_ff_Xn[49]), .Y(n3753) );
   AO22XLTS U7077 ( .A0(n9780), .A1(FPSENCOS_d_ff3_sh_x_out[53]), .B0(n9805), 
-        .B1(intadd_179_SUM_0_), .Y(n3630) );
+        .B1(intadd_702_SUM_0_), .Y(n3630) );
   NOR2X2TS U7078 ( .A(n11311), .B(n4147), .Y(n4993) );
   AO21XLTS U7079 ( .A0(FPSENCOS_d_ff3_LUT_out[52]), .A1(n9770), .B0(n4993), 
         .Y(n3978) );
@@ -13334,10 +13332,10 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   AO22XLTS U7083 ( .A0(n9827), .A1(FPSENCOS_d_ff2_Y[51]), .B0(n4147), .B1(
         FPSENCOS_d_ff3_sh_y_out[51]), .Y(n3449) );
   BUFX3TS U7084 ( .A(n9780), .Y(n9808) );
-  AO22XLTS U7085 ( .A0(n9932), .A1(intadd_178_SUM_0_), .B0(n9808), .B1(
+  AO22XLTS U7085 ( .A0(n9932), .A1(intadd_701_SUM_0_), .B0(n9808), .B1(
         FPSENCOS_d_ff3_sh_y_out[53]), .Y(n3436) );
   BUFX3TS U7086 ( .A(n9780), .Y(n9823) );
-  AO22XLTS U7087 ( .A0(n9827), .A1(intadd_178_SUM_2_), .B0(n9823), .B1(
+  AO22XLTS U7087 ( .A0(n9827), .A1(intadd_701_SUM_2_), .B0(n9823), .B1(
         FPSENCOS_d_ff3_sh_y_out[55]), .Y(n3434) );
   AO22XLTS U7088 ( .A0(n9804), .A1(FPSENCOS_d_ff2_Y[48]), .B0(n4147), .B1(
         FPSENCOS_d_ff3_sh_y_out[48]), .Y(n3455) );
@@ -13928,7 +13926,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NAND2X1TS U7542 ( .A(n9790), .B(n9718), .Y(n4931) );
   OAI211XLTS U7543 ( .A0(n9790), .A1(n11147), .B0(n4930), .C0(n4931), .Y(n4003) );
   OAI211XLTS U7544 ( .A0(n9790), .A1(n11151), .B0(n4992), .C0(n4931), .Y(n3987) );
-  NAND2X1TS U7545 ( .A(n4993), .B(intadd_178_B_0_), .Y(n4933) );
+  NAND2X1TS U7545 ( .A(n4993), .B(intadd_701_B_0_), .Y(n4933) );
   INVX2TS U7546 ( .A(n4932), .Y(n9747) );
   OAI211XLTS U7547 ( .A0(n9790), .A1(n11145), .B0(n4933), .C0(n9747), .Y(n4009) );
   NAND2X1TS U7548 ( .A(n9790), .B(n9690), .Y(n5182) );
@@ -14036,7 +14034,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         .B1(n5072), .Y(n4991) );
   OAI21XLTS U7629 ( .A0(n11197), .A1(n5182), .B0(n4991), .Y(n3976) );
   OA21XLTS U7630 ( .A0(n9731), .A1(n9726), .B0(n4992), .Y(n4994) );
-  NAND3XLTS U7631 ( .A(n4993), .B(intadd_178_B_0_), .C(n9725), .Y(n9720) );
+  NAND3XLTS U7631 ( .A(n4993), .B(intadd_701_B_0_), .C(n9725), .Y(n9720) );
   OAI211XLTS U7632 ( .A0(n9821), .A1(n11150), .B0(n4994), .C0(n9720), .Y(n3989) );
   INVX3TS U7633 ( .A(n9999), .Y(n9997) );
   BUFX3TS U7634 ( .A(n4995), .Y(n5069) );
@@ -19860,57 +19858,57 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         FPMULT_Sgf_operation_mult_x_1_n4239) );
   NOR3BX1TS U11296 ( .AN(FPMULT_Op_MY[62]), .B(FPMULT_FSM_selector_B[1]), .C(
         FPMULT_FSM_selector_B[0]), .Y(n8925) );
-  XOR2X1TS U11297 ( .A(n4388), .B(n8925), .Y(DP_OP_431J39_125_9551_n18) );
+  XOR2X1TS U11297 ( .A(n4388), .B(n8925), .Y(DP_OP_431J219_125_9551_n18) );
   OAI2BB1X1TS U11298 ( .A0N(FPMULT_Op_MY[61]), .A1N(n10933), .B0(n8935), .Y(
         n8926) );
-  XOR2X1TS U11299 ( .A(n4388), .B(n8926), .Y(DP_OP_431J39_125_9551_n19) );
+  XOR2X1TS U11299 ( .A(n4388), .B(n8926), .Y(DP_OP_431J219_125_9551_n19) );
   OAI2BB1X1TS U11300 ( .A0N(FPMULT_Op_MY[60]), .A1N(n10933), .B0(n8935), .Y(
         n8927) );
-  XOR2X1TS U11301 ( .A(n4388), .B(n8927), .Y(DP_OP_431J39_125_9551_n20) );
+  XOR2X1TS U11301 ( .A(n4388), .B(n8927), .Y(DP_OP_431J219_125_9551_n20) );
   OAI2BB1X1TS U11302 ( .A0N(FPMULT_Op_MY[59]), .A1N(n10933), .B0(n8935), .Y(
         n8928) );
-  XOR2X1TS U11303 ( .A(n4388), .B(n8928), .Y(DP_OP_431J39_125_9551_n21) );
+  XOR2X1TS U11303 ( .A(n4388), .B(n8928), .Y(DP_OP_431J219_125_9551_n21) );
   OAI2BB1X1TS U11304 ( .A0N(FPMULT_Op_MY[58]), .A1N(n10933), .B0(n8935), .Y(
         n8929) );
-  XOR2X1TS U11305 ( .A(n4388), .B(n8929), .Y(DP_OP_431J39_125_9551_n22) );
+  XOR2X1TS U11305 ( .A(n4388), .B(n8929), .Y(DP_OP_431J219_125_9551_n22) );
   OAI2BB1X1TS U11306 ( .A0N(FPMULT_Op_MY[57]), .A1N(n10933), .B0(n8935), .Y(
         n8930) );
-  XOR2X1TS U11307 ( .A(n4388), .B(n8930), .Y(DP_OP_431J39_125_9551_n23) );
+  XOR2X1TS U11307 ( .A(n4388), .B(n8930), .Y(DP_OP_431J219_125_9551_n23) );
   OAI2BB1X1TS U11308 ( .A0N(FPMULT_Op_MY[56]), .A1N(n10933), .B0(n8935), .Y(
         n8931) );
-  XOR2X1TS U11309 ( .A(n4388), .B(n8931), .Y(DP_OP_431J39_125_9551_n24) );
+  XOR2X1TS U11309 ( .A(n4388), .B(n8931), .Y(DP_OP_431J219_125_9551_n24) );
   OAI2BB1X1TS U11310 ( .A0N(FPMULT_Op_MY[55]), .A1N(n10933), .B0(n8935), .Y(
         n8932) );
-  XOR2X1TS U11311 ( .A(n4388), .B(n8932), .Y(DP_OP_431J39_125_9551_n25) );
+  XOR2X1TS U11311 ( .A(n4388), .B(n8932), .Y(DP_OP_431J219_125_9551_n25) );
   OAI2BB1X1TS U11312 ( .A0N(FPMULT_Op_MY[54]), .A1N(n10933), .B0(n8935), .Y(
         n8933) );
-  XOR2X1TS U11313 ( .A(n4388), .B(n8933), .Y(DP_OP_431J39_125_9551_n26) );
+  XOR2X1TS U11313 ( .A(n4388), .B(n8933), .Y(DP_OP_431J219_125_9551_n26) );
   OAI2BB1X1TS U11314 ( .A0N(FPMULT_Op_MY[53]), .A1N(n10933), .B0(n8935), .Y(
         n8934) );
-  XOR2X1TS U11315 ( .A(n4388), .B(n8934), .Y(DP_OP_431J39_125_9551_n27) );
+  XOR2X1TS U11315 ( .A(n4388), .B(n8934), .Y(DP_OP_431J219_125_9551_n27) );
   NOR2XLTS U11316 ( .A(FPMULT_FSM_selector_B[1]), .B(FPMULT_Op_MY[52]), .Y(
         n8936) );
   OAI21XLTS U11317 ( .A0(FPMULT_FSM_selector_B[0]), .A1(n8936), .B0(n8935), 
         .Y(n8937) );
-  XOR2X1TS U11318 ( .A(n4388), .B(n8937), .Y(DP_OP_431J39_125_9551_n28) );
+  XOR2X1TS U11318 ( .A(n4388), .B(n8937), .Y(DP_OP_431J219_125_9551_n28) );
   NOR2BX1TS U11319 ( .AN(FPADDSUB_LZD_output_NRM2_EW[5]), .B(
         FPADDSUB_ADD_OVRFLW_NRM2), .Y(n8938) );
-  XOR2X1TS U11320 ( .A(n4118), .B(n8938), .Y(DP_OP_26J39_122_3365_n17) );
+  XOR2X1TS U11320 ( .A(n4118), .B(n8938), .Y(DP_OP_26J219_122_3365_n17) );
   NOR2BX1TS U11321 ( .AN(FPADDSUB_LZD_output_NRM2_EW[4]), .B(
         FPADDSUB_ADD_OVRFLW_NRM2), .Y(n8939) );
-  XOR2X1TS U11322 ( .A(n4118), .B(n8939), .Y(DP_OP_26J39_122_3365_n18) );
+  XOR2X1TS U11322 ( .A(n4118), .B(n8939), .Y(DP_OP_26J219_122_3365_n18) );
   NOR2BX1TS U11323 ( .AN(FPADDSUB_LZD_output_NRM2_EW[3]), .B(
         FPADDSUB_ADD_OVRFLW_NRM2), .Y(n8940) );
-  XOR2X1TS U11324 ( .A(n4118), .B(n8940), .Y(DP_OP_26J39_122_3365_n19) );
+  XOR2X1TS U11324 ( .A(n4118), .B(n8940), .Y(DP_OP_26J219_122_3365_n19) );
   NOR2BX1TS U11325 ( .AN(FPADDSUB_LZD_output_NRM2_EW[2]), .B(
         FPADDSUB_ADD_OVRFLW_NRM2), .Y(n8941) );
-  XOR2X1TS U11326 ( .A(n4118), .B(n8941), .Y(DP_OP_26J39_122_3365_n20) );
+  XOR2X1TS U11326 ( .A(n4118), .B(n8941), .Y(DP_OP_26J219_122_3365_n20) );
   NOR2BX1TS U11327 ( .AN(FPADDSUB_LZD_output_NRM2_EW[1]), .B(
         FPADDSUB_ADD_OVRFLW_NRM2), .Y(n8942) );
-  XOR2X1TS U11328 ( .A(n4118), .B(n8942), .Y(DP_OP_26J39_122_3365_n21) );
+  XOR2X1TS U11328 ( .A(n4118), .B(n8942), .Y(DP_OP_26J219_122_3365_n21) );
   OR2X1TS U11329 ( .A(FPADDSUB_ADD_OVRFLW_NRM2), .B(
         FPADDSUB_LZD_output_NRM2_EW[0]), .Y(n8943) );
-  XOR2X1TS U11330 ( .A(n4118), .B(n8943), .Y(DP_OP_26J39_122_3365_n22) );
+  XOR2X1TS U11330 ( .A(n4118), .B(n8943), .Y(DP_OP_26J219_122_3365_n22) );
   INVX2TS U11331 ( .A(n4388), .Y(n8955) );
   OA22X1TS U11332 ( .A0(FPMULT_zero_flag), .A1(n8955), .B0(FPMULT_P_Sgf[105]), 
         .B1(n8944), .Y(n8948) );
@@ -20013,7 +20011,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
          );
   MX2X1TS U11385 ( .A(FPMULT_Exp_module_Data_S[11]), .B(
         FPMULT_exp_oper_result[11]), .S0(n8954), .Y(n2938) );
-  XNOR2X1TS U11386 ( .A(DP_OP_431J39_125_9551_n1), .B(n8955), .Y(n8957) );
+  XNOR2X1TS U11386 ( .A(DP_OP_431J219_125_9551_n1), .B(n8955), .Y(n8957) );
   NAND4XLTS U11387 ( .A(FPMULT_Exp_module_Data_S[3]), .B(
         FPMULT_Exp_module_Data_S[2]), .C(FPMULT_Exp_module_Data_S[0]), .D(
         FPMULT_Exp_module_Data_S[1]), .Y(n8958) );
@@ -21049,7 +21047,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         n4034) );
   AOI22X1TS U12077 ( .A0(n9711), .A1(n10526), .B0(n9710), .B1(n9709), .Y(n4031) );
   OA21XLTS U12078 ( .A0(n9712), .A1(n11198), .B0(n9713), .Y(n4029) );
-  AOI21X1TS U12079 ( .A0(intadd_178_B_0_), .A1(n9713), .B0(n9715), .Y(n4028)
+  AOI21X1TS U12079 ( .A0(intadd_701_B_0_), .A1(n9713), .B0(n9715), .Y(n4028)
          );
   AOI22X1TS U12080 ( .A0(n9715), .A1(n11197), .B0(n4171), .B1(n9714), .Y(n4027) );
   XNOR2X1TS U12081 ( .A(FPSENCOS_cont_var_out[0]), .B(n9716), .Y(n4025) );
@@ -21641,14 +21639,14 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OA22X1TS U12388 ( .A0(FPSENCOS_d_ff_Xn[61]), .A1(n9777), .B0(
         FPSENCOS_d_ff2_X[61]), .B1(n9776), .Y(n3633) );
   NAND2X1TS U12389 ( .A(FPSENCOS_d_ff2_X[52]), .B(n11311), .Y(n9779) );
-  AOI32X1TS U12390 ( .A0(intadd_179_CI), .A1(n9821), .A2(n9779), .B0(n11141), 
+  AOI32X1TS U12390 ( .A0(intadd_702_CI), .A1(n9821), .A2(n9779), .B0(n11141), 
         .B1(n9781), .Y(n3631) );
   AO22XLTS U12391 ( .A0(n9780), .A1(FPSENCOS_d_ff3_sh_x_out[54]), .B0(n9804), 
-        .B1(intadd_179_SUM_1_), .Y(n3629) );
+        .B1(intadd_702_SUM_1_), .Y(n3629) );
   AO22XLTS U12392 ( .A0(n9781), .A1(FPSENCOS_d_ff3_sh_x_out[55]), .B0(n9827), 
-        .B1(intadd_179_SUM_2_), .Y(n3628) );
-  NOR2X1TS U12393 ( .A(FPSENCOS_d_ff2_X[56]), .B(intadd_179_n1), .Y(n9783) );
-  AOI21X1TS U12394 ( .A0(intadd_179_n1), .A1(FPSENCOS_d_ff2_X[56]), .B0(n9783), 
+        .B1(intadd_702_SUM_2_), .Y(n3628) );
+  NOR2X1TS U12393 ( .A(FPSENCOS_d_ff2_X[56]), .B(intadd_702_n1), .Y(n9783) );
+  AOI21X1TS U12394 ( .A0(intadd_702_n1), .A1(FPSENCOS_d_ff2_X[56]), .B0(n9783), 
         .Y(n9782) );
   AOI22X1TS U12395 ( .A0(n9821), .A1(n9782), .B0(n11142), .B1(n4147), .Y(n3627) );
   INVX2TS U12396 ( .A(n9783), .Y(n9784) );
@@ -21828,14 +21826,14 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         FPSENCOS_d_ff_Yn[61]), .B1(n9806), .Y(n3439) );
   AO22XLTS U12487 ( .A0(FPSENCOS_d_ff2_Y[62]), .A1(n5161), .B0(
         FPSENCOS_d_ff_Yn[62]), .B1(n9806), .Y(n3438) );
-  OAI21XLTS U12488 ( .A0(n11198), .A1(n10790), .B0(intadd_178_CI), .Y(n9807)
+  OAI21XLTS U12488 ( .A0(n11198), .A1(n10790), .B0(intadd_701_CI), .Y(n9807)
          );
   AO22XLTS U12489 ( .A0(n9825), .A1(n9807), .B0(n4147), .B1(
         FPSENCOS_d_ff3_sh_y_out[52]), .Y(n3437) );
-  AO22XLTS U12490 ( .A0(n9825), .A1(intadd_178_SUM_1_), .B0(n9808), .B1(
+  AO22XLTS U12490 ( .A0(n9825), .A1(intadd_701_SUM_1_), .B0(n9808), .B1(
         FPSENCOS_d_ff3_sh_y_out[54]), .Y(n3435) );
-  NOR2X1TS U12491 ( .A(FPSENCOS_d_ff2_Y[56]), .B(intadd_178_n1), .Y(n9811) );
-  AOI21X1TS U12492 ( .A0(intadd_178_n1), .A1(FPSENCOS_d_ff2_Y[56]), .B0(n9811), 
+  NOR2X1TS U12491 ( .A(FPSENCOS_d_ff2_Y[56]), .B(intadd_701_n1), .Y(n9811) );
+  AOI21X1TS U12492 ( .A0(intadd_701_n1), .A1(FPSENCOS_d_ff2_Y[56]), .B0(n9811), 
         .Y(n9809) );
   AOI2BB2XLTS U12493 ( .B0(n9821), .B1(n9809), .A0N(
         FPSENCOS_d_ff3_sh_y_out[56]), .A1N(n9825), .Y(n3433) );
@@ -22358,11 +22356,11 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OAI2BB1X1TS U12792 ( .A0N(mult_result[63]), .A1N(n10105), .B0(n10104), .Y(
         n2819) );
   NAND2X1TS U12793 ( .A(FPADDSUB_DmP_EXP_EWSW[52]), .B(n10977), .Y(
-        intadd_177_CI) );
+        intadd_700_CI) );
   INVX4TS U12794 ( .A(n10566), .Y(n10613) );
-  NAND2X1TS U12795 ( .A(FPADDSUB_DMP_EXP_EWSW[56]), .B(intadd_177_n1), .Y(
+  NAND2X1TS U12795 ( .A(FPADDSUB_DMP_EXP_EWSW[56]), .B(intadd_700_n1), .Y(
         n10106) );
-  OAI21X1TS U12796 ( .A0(FPADDSUB_DMP_EXP_EWSW[56]), .A1(intadd_177_n1), .B0(
+  OAI21X1TS U12796 ( .A0(FPADDSUB_DMP_EXP_EWSW[56]), .A1(intadd_700_n1), .B0(
         n10106), .Y(n10107) );
   NOR2X1TS U12797 ( .A(FPADDSUB_DmP_EXP_EWSW[56]), .B(n10107), .Y(n10110) );
   AOI21X1TS U12798 ( .A0(FPADDSUB_DmP_EXP_EWSW[56]), .A1(n10107), .B0(n10110), 
@@ -22371,16 +22369,16 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   AO22XLTS U12800 ( .A0(n10623), .A1(n10108), .B0(n10618), .B1(
         FPADDSUB_Shift_amount_SHT1_EWR[4]), .Y(n2816) );
   BUFX3TS U12801 ( .A(n10566), .Y(n10114) );
-  AO22XLTS U12802 ( .A0(n10613), .A1(intadd_177_SUM_2_), .B0(n10114), .B1(
+  AO22XLTS U12802 ( .A0(n10613), .A1(intadd_700_SUM_2_), .B0(n10114), .B1(
         FPADDSUB_Shift_amount_SHT1_EWR[3]), .Y(n2815) );
-  AO22XLTS U12803 ( .A0(n10613), .A1(intadd_177_SUM_1_), .B0(n10299), .B1(
+  AO22XLTS U12803 ( .A0(n10613), .A1(intadd_700_SUM_1_), .B0(n10299), .B1(
         FPADDSUB_Shift_amount_SHT1_EWR[2]), .Y(n2814) );
   INVX4TS U12804 ( .A(n10566), .Y(n10612) );
   OA21XLTS U12805 ( .A0(FPADDSUB_DmP_EXP_EWSW[52]), .A1(n10977), .B0(
-        intadd_177_CI), .Y(n10109) );
+        intadd_700_CI), .Y(n10109) );
   AOI22X1TS U12806 ( .A0(n10619), .A1(n10109), .B0(n11023), .B1(n10614), .Y(
         n2812) );
-  AOI21X1TS U12807 ( .A0(FPADDSUB_DMP_EXP_EWSW[56]), .A1(intadd_177_n1), .B0(
+  AOI21X1TS U12807 ( .A0(FPADDSUB_DMP_EXP_EWSW[56]), .A1(intadd_700_n1), .B0(
         n10110), .Y(n10111) );
   XOR2XLTS U12808 ( .A(n10111), .B(FPADDSUB_DMP_EXP_EWSW[57]), .Y(n10112) );
   XOR2XLTS U12809 ( .A(FPADDSUB_DmP_EXP_EWSW[57]), .B(n10112), .Y(n10113) );

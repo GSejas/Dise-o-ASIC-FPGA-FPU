@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 17:49:21 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_339J136_123_5686_R_2737
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DP_OP_350J136_134_1342_R_2237
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W64_EW11_SW52
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  DP_OP_339J136_123_5686_R_2737/CK (DFFHQX4TS)            0.00 #     1.00 r
+  DP_OP_339J136_123_5686_R_2737/Q (DFFHQX4TS)             0.53       1.53 f
+  U7252/Y (NOR2X4TS)                                      0.25       1.78 r
+  U7307/Y (INVX2TS)                                       0.18       1.96 f
+  U2026/Y (NAND2X2TS)                                     0.16       2.12 r
+  U4256/Y (XOR2X4TS)                                      0.27       2.39 r
+  U3740/Y (NAND2X4TS)                                     0.23       2.62 f
+  U7486/Y (INVX2TS)                                       0.18       2.80 r
+  U3741/Y (NOR2X4TS)                                      0.12       2.92 f
+  U7487/Y (XNOR2X4TS)                                     0.29       3.21 r
+  U3832/Y (INVX2TS)                                       0.27       3.48 f
+  U4463/S (ADDFHX2TS)                                     0.46       3.94 f
+  U4497/Y (NOR2X2TS)                                      0.40       4.34 r
+  U7513/Y (OAI21X4TS)                                     0.32       4.66 f
+  U7514/Y (AOI21X4TS)                                     0.31       4.97 r
+  U7519/Y (OAI21X4TS)                                     0.24       5.21 f
+  U4145/Y (AOI21X4TS)                                     0.31       5.52 r
+  U3831/Y (INVX6TS)                                       0.19       5.72 f
+  U7670/Y (AOI21X4TS)                                     0.20       5.92 r
+  U7671/Y (XOR2X4TS)                                      0.24       6.16 f
+  U7674/Y (OR2X8TS)                                       0.28       6.44 f
+  U4595/Y (NAND2X2TS)                                     0.25       6.69 r
+  U7675/Y (NOR2X4TS)                                      0.18       6.87 f
+  U7682/Y (AOI21X4TS)                                     0.27       7.14 r
+  U7685/Y (OAI21X4TS)                                     0.25       7.40 f
+  U7693/Y (AOI21X4TS)                                     0.38       7.78 r
+  U3526/Y (INVX6TS)                                       0.22       8.00 f
+  U1110/Y (AOI21X2TS)                                     0.26       8.26 r
+  U1080/Y (CLKXOR2X2TS)                                   0.51       8.76 f
+  U8254/S (ADDFHX4TS)                                     0.65       9.41 r
+  U8242/Y (OR2X8TS)                                       0.23       9.64 r
+  U8255/Y (NAND2X4TS)                                     0.12       9.76 f
+  U8258/Y (OAI21X4TS)                                     0.27      10.03 r
+  U8259/Y (INVX8TS)                                       0.17      10.21 f
+  U10113/Y (OAI21X4TS)                                    0.16      10.36 r
+  DP_OP_350J136_134_1342_R_2237/D (DFFSX1TS)              0.00      10.36 r
+  data arrival time                                                 10.36
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  DP_OP_350J136_134_1342_R_2237/CK (DFFSX1TS)             0.00      10.50 r
+  library setup time                                     -0.13      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

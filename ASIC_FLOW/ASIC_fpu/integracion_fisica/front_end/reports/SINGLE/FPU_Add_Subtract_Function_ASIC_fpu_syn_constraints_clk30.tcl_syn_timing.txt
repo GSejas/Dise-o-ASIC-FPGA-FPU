@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 11:48:08 2016
+Date   : Thu Nov  3 18:01:36 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -35,32 +35,32 @@ Wire Load Model Mode: top
   U1096/Y (NOR2X1TS)                                      0.66       6.85 r
   U1097/Y (BUFX3TS)                                       0.91       7.76 r
   U1584/Y (XOR2X1TS)                                      0.62       8.38 f
-  DP_OP_45J63_125_5354_U27/CO (CMPR32X2TS)                0.63       9.01 f
-  DP_OP_45J63_125_5354_U26/CO (CMPR32X2TS)                0.56       9.57 f
-  DP_OP_45J63_125_5354_U25/CO (CMPR32X2TS)                0.56      10.12 f
-  DP_OP_45J63_125_5354_U24/CO (CMPR32X2TS)                0.56      10.68 f
-  DP_OP_45J63_125_5354_U23/CO (CMPR32X2TS)                0.56      11.24 f
-  DP_OP_45J63_125_5354_U22/CO (CMPR32X2TS)                0.56      11.80 f
-  DP_OP_45J63_125_5354_U21/CO (CMPR32X2TS)                0.56      12.35 f
-  DP_OP_45J63_125_5354_U20/CO (CMPR32X2TS)                0.56      12.91 f
-  DP_OP_45J63_125_5354_U19/CO (CMPR32X2TS)                0.56      13.47 f
-  DP_OP_45J63_125_5354_U18/CO (CMPR32X2TS)                0.56      14.03 f
-  DP_OP_45J63_125_5354_U17/CO (CMPR32X2TS)                0.56      14.58 f
-  DP_OP_45J63_125_5354_U16/CO (CMPR32X2TS)                0.56      15.14 f
-  DP_OP_45J63_125_5354_U15/CO (CMPR32X2TS)                0.56      15.70 f
-  DP_OP_45J63_125_5354_U14/CO (CMPR32X2TS)                0.56      16.26 f
-  DP_OP_45J63_125_5354_U13/CO (CMPR32X2TS)                0.56      16.81 f
-  DP_OP_45J63_125_5354_U12/CO (CMPR32X2TS)                0.56      17.37 f
-  DP_OP_45J63_125_5354_U11/CO (CMPR32X2TS)                0.56      17.93 f
-  DP_OP_45J63_125_5354_U10/CO (CMPR32X2TS)                0.56      18.48 f
-  DP_OP_45J63_125_5354_U9/CO (CMPR32X2TS)                 0.56      19.04 f
-  DP_OP_45J63_125_5354_U8/CO (CMPR32X2TS)                 0.56      19.60 f
-  DP_OP_45J63_125_5354_U7/CO (CMPR32X2TS)                 0.56      20.16 f
-  DP_OP_45J63_125_5354_U6/CO (CMPR32X2TS)                 0.56      20.71 f
-  DP_OP_45J63_125_5354_U5/CO (CMPR32X2TS)                 0.56      21.27 f
-  DP_OP_45J63_125_5354_U4/CO (CMPR32X2TS)                 0.56      21.83 f
-  DP_OP_45J63_125_5354_U3/CO (CMPR32X2TS)                 0.56      22.39 f
-  DP_OP_45J63_125_5354_U2/CO (CMPR32X2TS)                 0.55      22.93 f
+  DP_OP_45J153_125_5354_U27/CO (CMPR32X2TS)               0.63       9.01 f
+  DP_OP_45J153_125_5354_U26/CO (CMPR32X2TS)               0.56       9.57 f
+  DP_OP_45J153_125_5354_U25/CO (CMPR32X2TS)               0.56      10.12 f
+  DP_OP_45J153_125_5354_U24/CO (CMPR32X2TS)               0.56      10.68 f
+  DP_OP_45J153_125_5354_U23/CO (CMPR32X2TS)               0.56      11.24 f
+  DP_OP_45J153_125_5354_U22/CO (CMPR32X2TS)               0.56      11.80 f
+  DP_OP_45J153_125_5354_U21/CO (CMPR32X2TS)               0.56      12.35 f
+  DP_OP_45J153_125_5354_U20/CO (CMPR32X2TS)               0.56      12.91 f
+  DP_OP_45J153_125_5354_U19/CO (CMPR32X2TS)               0.56      13.47 f
+  DP_OP_45J153_125_5354_U18/CO (CMPR32X2TS)               0.56      14.03 f
+  DP_OP_45J153_125_5354_U17/CO (CMPR32X2TS)               0.56      14.58 f
+  DP_OP_45J153_125_5354_U16/CO (CMPR32X2TS)               0.56      15.14 f
+  DP_OP_45J153_125_5354_U15/CO (CMPR32X2TS)               0.56      15.70 f
+  DP_OP_45J153_125_5354_U14/CO (CMPR32X2TS)               0.56      16.26 f
+  DP_OP_45J153_125_5354_U13/CO (CMPR32X2TS)               0.56      16.81 f
+  DP_OP_45J153_125_5354_U12/CO (CMPR32X2TS)               0.56      17.37 f
+  DP_OP_45J153_125_5354_U11/CO (CMPR32X2TS)               0.56      17.93 f
+  DP_OP_45J153_125_5354_U10/CO (CMPR32X2TS)               0.56      18.48 f
+  DP_OP_45J153_125_5354_U9/CO (CMPR32X2TS)                0.56      19.04 f
+  DP_OP_45J153_125_5354_U8/CO (CMPR32X2TS)                0.56      19.60 f
+  DP_OP_45J153_125_5354_U7/CO (CMPR32X2TS)                0.56      20.16 f
+  DP_OP_45J153_125_5354_U6/CO (CMPR32X2TS)                0.56      20.71 f
+  DP_OP_45J153_125_5354_U5/CO (CMPR32X2TS)                0.56      21.27 f
+  DP_OP_45J153_125_5354_U4/CO (CMPR32X2TS)                0.56      21.83 f
+  DP_OP_45J153_125_5354_U3/CO (CMPR32X2TS)                0.56      22.39 f
+  DP_OP_45J153_125_5354_U2/CO (CMPR32X2TS)                0.55      22.93 f
   U873/Y (XOR2XLTS)                                       0.52      23.46 r
   U918/Y (AO22XLTS)                                       0.66      24.12 r
   Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRX2TS)

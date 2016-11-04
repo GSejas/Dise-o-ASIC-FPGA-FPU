@@ -1,0 +1,126 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 17:36:20 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Operands_load_reg_XMRegister_Q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation_finalreg_Q_reg_105_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W64_EW11_SW52
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  Operands_load_reg_XMRegister_Q_reg_2_/CK (DFFRX1TS)     0.00       4.00 r
+  Operands_load_reg_XMRegister_Q_reg_2_/QN (DFFRX1TS)     1.85       5.85 r
+  U2247/Y (CLKBUFX2TS)                                    0.59       6.44 r
+  U2248/Y (CLKINVX6TS)                                    0.69       7.13 f
+  U2658/Y (CLKXOR2X2TS)                                   0.83       7.96 f
+  U2660/Y (NOR2X2TS)                                      0.80       8.76 r
+  U2661/Y (BUFX6TS)                                       0.96       9.72 r
+  U5434/Y (AOI22X1TS)                                     0.49      10.20 f
+  U2226/Y (OAI21XLTS)                                     0.41      10.62 r
+  U871/Y (XOR2X1TS)                                       0.80      11.42 r
+  U5439/Y (NAND2X1TS)                                     0.62      12.04 f
+  U5440/Y (NOR2X1TS)                                      0.65      12.69 r
+  U5446/Y (AOI21X1TS)                                     0.57      13.26 f
+  U5448/Y (OAI21X1TS)                                     0.69      13.95 r
+  U5454/Y (AOI21X1TS)                                     0.59      14.54 f
+  U5460/Y (OAI21X1TS)                                     0.70      15.23 r
+  U5463/Y (AOI21X1TS)                                     0.63      15.86 f
+  U726/Y (OAI21X1TS)                                      0.70      16.55 r
+  U5469/Y (AOI21X1TS)                                     0.62      17.17 f
+  U5476/Y (OAI21X1TS)                                     0.71      17.88 r
+  U5483/Y (AOI21X1TS)                                     0.64      18.52 f
+  U5490/Y (OAI21X1TS)                                     0.71      19.23 r
+  U5500/Y (AOI21X1TS)                                     0.62      19.85 f
+  U5511/Y (OAI21X1TS)                                     0.71      20.55 r
+  U5526/Y (AOI21X1TS)                                     0.62      21.17 f
+  U5537/Y (OAI21X1TS)                                     0.71      21.88 r
+  U5554/Y (AOI21X1TS)                                     0.62      22.50 f
+  U5576/Y (OAI21X1TS)                                     0.71      23.20 r
+  U1657/Y (AOI21X1TS)                                     0.64      23.84 f
+  U5599/Y (OAI21X1TS)                                     0.56      24.40 r
+  U5916/CON (AFHCONX2TS)                                  0.35      24.75 f
+  U5914/CO (AFHCINX2TS)                                   0.39      25.14 r
+  U5912/CON (AFHCONX2TS)                                  0.30      25.44 f
+  U5910/CO (AFHCINX2TS)                                   0.39      25.83 r
+  U5908/CON (AFHCONX2TS)                                  0.30      26.13 f
+  U5906/CO (AFHCINX2TS)                                   0.39      26.52 r
+  U5904/CON (AFHCONX2TS)                                  0.30      26.82 f
+  U718/CO (AFHCINX2TS)                                    0.39      27.21 r
+  U5901/CON (AFHCONX2TS)                                  0.30      27.51 f
+  U5899/CO (AFHCINX2TS)                                   0.39      27.90 r
+  U5897/CON (AFHCONX2TS)                                  0.30      28.20 f
+  U5895/CO (AFHCINX2TS)                                   0.39      28.59 r
+  U5893/CON (AFHCONX2TS)                                  0.30      28.89 f
+  U5891/CO (AFHCINX2TS)                                   0.39      29.28 r
+  U5889/CON (AFHCONX2TS)                                  0.30      29.59 f
+  U5887/CO (AFHCINX2TS)                                   0.39      29.97 r
+  U5886/CON (AFHCONX2TS)                                  0.30      30.28 f
+  U715/CO (AFHCINX2TS)                                    0.39      30.66 r
+  U5885/CON (AFHCONX2TS)                                  0.30      30.97 f
+  U5884/CO (AFHCINX2TS)                                   0.39      31.36 r
+  U5883/CON (AFHCONX2TS)                                  0.30      31.66 f
+  U5882/CO (AFHCINX2TS)                                   0.39      32.05 r
+  U5881/CON (AFHCONX2TS)                                  0.30      32.35 f
+  U5880/CO (AFHCINX2TS)                                   0.39      32.74 r
+  U5879/CON (AFHCONX2TS)                                  0.30      33.04 f
+  U5878/CO (AFHCINX2TS)                                   0.39      33.43 r
+  U5877/CON (AFHCONX2TS)                                  0.30      33.73 f
+  U711/CO (AFHCINX2TS)                                    0.38      34.11 r
+  U5876/CON (AFHCONX2TS)                                  0.30      34.41 f
+  U5875/CO (AFHCINX2TS)                                   0.39      34.80 r
+  U5874/CON (AFHCONX2TS)                                  0.30      35.11 f
+  U5873/CO (AFHCINX2TS)                                   0.39      35.49 r
+  U5872/CON (AFHCONX2TS)                                  0.30      35.80 f
+  U695/CO (AFHCINX2TS)                                    0.39      36.18 r
+  U5871/CON (AFHCONX2TS)                                  0.30      36.49 f
+  U5870/CO (AFHCINX2TS)                                   0.39      36.88 r
+  U5869/CON (AFHCONX2TS)                                  0.30      37.18 f
+  U5868/CO (AFHCINX2TS)                                   0.39      37.57 r
+  U5867/CON (AFHCONX2TS)                                  0.30      37.87 f
+  U5866/CO (AFHCINX2TS)                                   0.38      38.25 r
+  U5865/CON (AFHCONX2TS)                                  0.30      38.55 f
+  U5864/CO (AFHCINX2TS)                                   0.36      38.92 r
+  U5863/CO (CMPR32X2TS)                                   0.57      39.48 r
+  U5862/CO (CMPR32X2TS)                                   0.50      39.98 r
+  U5861/CO (CMPR32X2TS)                                   0.50      40.47 r
+  U5860/CO (CMPR32X2TS)                                   0.50      40.97 r
+  U641/CO (CMPR32X2TS)                                    0.49      41.46 r
+  U694/Y (CLKXOR2X2TS)                                    0.37      41.83 r
+  U698/Y (CLKMX2X2TS)                                     0.33      42.17 r
+  Sgf_operation_finalreg_Q_reg_105_/D (DFFRX1TS)          0.00      42.17 r
+  data arrival time                                                 42.17
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  Sgf_operation_finalreg_Q_reg_105_/CK (DFFRX1TS)         0.00      42.00 r
+  library setup time                                      0.17      42.17
+  data required time                                                42.17
+  --------------------------------------------------------------------------
+  data required time                                                42.17
+  data arrival time                                                -42.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

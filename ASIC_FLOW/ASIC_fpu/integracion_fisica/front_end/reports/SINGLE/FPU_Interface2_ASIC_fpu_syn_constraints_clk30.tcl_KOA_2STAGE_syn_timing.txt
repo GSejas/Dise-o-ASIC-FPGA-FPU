@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Wed Nov  2 23:37:08 2016
+Date   : Thu Nov  3 18:39:41 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -37,7 +37,7 @@ Wire Load Model Mode: top
   U3684/Y (INVX2TS)                                       0.33       4.73 f
   U2431/Y (NOR2X1TS)                                      0.57       5.30 r
   U5421/Y (AOI21X1TS)                                     0.43       5.73 f
-  intadd_59_U25/S (CMPR32X2TS)                            0.90       6.63 f
+  intadd_582_U25/S (CMPR32X2TS)                           0.90       6.63 f
   U3856/Y (INVX2TS)                                       0.18       6.80 r
   U2368/CO (ADDFX1TS)                                     0.61       7.41 r
   U2405/Y (NAND2BX1TS)                                    0.56       7.97 r

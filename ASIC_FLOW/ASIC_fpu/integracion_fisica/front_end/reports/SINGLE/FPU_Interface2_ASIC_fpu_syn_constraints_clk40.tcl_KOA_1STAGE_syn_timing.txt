@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Wed Nov  2 23:20:30 2016
+Date   : Thu Nov  3 18:22:21 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov  3 16:55:41 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          201
+Number of nets:                          8082
+Number of cells:                         6549
+Number of combinational cells:           5833
+Number of sequential cells:               716
+Number of macros/black boxes:               0
+Number of buf/inv:                        627
+Number of references:                     104
+
+Combinational area:              78793.920530
+Buf/Inv area:                     4050.720128
+Noncombinational area:           19094.399485
+Macro/Black Box area:                0.000000
+Net Interconnect area:          914531.228180
+
+Total cell area:                 97888.320015
+Total area:                    1012419.548195
+1

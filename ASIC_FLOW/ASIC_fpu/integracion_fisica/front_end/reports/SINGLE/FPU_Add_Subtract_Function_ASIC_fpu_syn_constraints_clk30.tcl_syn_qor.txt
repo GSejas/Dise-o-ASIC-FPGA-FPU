@@ -3,7 +3,7 @@
 Report : qor
 Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 11:48:08 2016
+Date   : Thu Nov  3 18:01:36 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Nov  3 11:48:08 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.98
-  Logic Optimization:                  0.84
-  Mapping Optimization:                6.48
+  Resource Sharing:                    0.99
+  Logic Optimization:                  0.86
+  Mapping Optimization:                6.53
   -----------------------------------------
-  Overall Compile Time:               21.73
-  Overall Compile Wall Clock Time:    22.20
+  Overall Compile Time:               22.08
+  Overall Compile Wall Clock Time:    22.59
 
   --------------------------------------------------------------------
 

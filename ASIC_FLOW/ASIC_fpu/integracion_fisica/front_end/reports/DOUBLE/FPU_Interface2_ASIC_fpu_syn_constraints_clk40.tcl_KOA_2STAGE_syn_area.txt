@@ -3,7 +3,7 @@
 Report : area
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 00:56:05 2016
+Date   : Thu Nov  3 20:01:51 2016
 ****************************************
 
 Library(s) Used:
