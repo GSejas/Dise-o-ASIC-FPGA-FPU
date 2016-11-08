@@ -7,21 +7,14 @@
 #  cp $i -
 #done
 
-dir_list=(ASIC_cordic_Arch2 ASIC_cordic_Arch3 ASIC_fpaddsub_arch2 ASIC_fpaddsub_arch3 ASIC_fpmult_arch2 ASIC_fpmult_arch3 ASIC_KOA ASIC_RKOA)
-for i in "${dir_list[@]}"
+dir_list1=(DW_1STAGE RKOA_1STAGE RKOA_2STAGE KOA_1STAGE KOA_2STAGE)
+dir_list2=(ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl ASIC_fpu_syn_constraints_noclk.tcl)
+dir_list3=("Critical Path Length:" "Total\ \ \ " )
+for i in "${dir_list1[@]}"
 do
-  #rm -r $i/integracion_fisica/simulacion_logica_behavioral
-  #rm -r $i/integracion_fisica/simulacion_logica_sintesis
+     for i in "${dir_list2[@]}"
+    do
+      find . -name "FPU_Interface2_$dir_list2\_$dir_list1\_syn_qor.txt" -exec grep -i "Cell Area" {} \;
 
-  mkdir $i/integracion_fisica/simulacion_logica_sintesis
-  mkdir $i/integracion_fisica/simulacion_logica_behavioral
-
-  mkdir $i/integracion_fisica/simulacion_logica_sintesis/SINGLE
-  mkdir $i/integracion_fisica/simulacion_logica_sintesis/DOUBLE
-  mkdir $i/integracion_fisica/simulacion_logica_behavioral/SINGLE
-  mkdir $i/integracion_fisica/simulacion_logica_behavioral/DOUBLE
-  cp ibm13rflpvt.v $i/integracion_fisica/simulacion_logica_sintesis/SINGLE   
-  cp ibm13rflpvt.v $i/integracion_fisica/simulacion_logica_sintesis/DOUBLE 	
+    done
 done
-
-

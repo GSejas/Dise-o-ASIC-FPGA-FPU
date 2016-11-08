@@ -1,0 +1,6 @@
+This directory contains the SoftFloat based testbench for the HRFP_16
+adder and multiplier. The installsoftfloat makefile target downloads
+SoftFloat-2b and copies these files into the appropriate
+directory.
+
+FIXME: This could certainly be handled better, but it is good enough.

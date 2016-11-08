@@ -1,0 +1,123 @@
+HRFP_16 distribution version 1.0
+--------------------------------
+
+This directory contains the source code for the high radix floating
+point adder and multiplier presented in the FPT2014 paper:
+
+Andreas Ehliar, "Area efficient Floating-Point Adder and Multiplier
+with IEEE-754 Compatible Semantics", The 2014 International Conference
+on Field-Programmable Technology
+
+(If you want to cite HRFP_16, the publication above is the most
+suitable reference.)
+
+The source code is not quite identical to the version presented at the
+conference thoguh, as the readability of it has been improved by
+removing dead code and also the addition of some clarifying comments
+here and there in the source code. Even so, the source code is sadly
+underdocumented at the moment. However, if you are running into some
+issues with the source code, feel free to contact me at
+andreas.ehliar@liu.se and I will try to solve your problem.
+
+
+Overall architecture of the adder/multiplier
+--------------------------------------------
+
+The best documentation for the overall architecture is the paper
+itself. If you cannot download the final version from IEEE Xplore you
+can download the almost-final version of the paper from the HRFP_16
+webpage at http://users.isy.liu.se/da/ehliar/hrfp/ .
+
+
+Building the code
+-----------------
+
+There are some Makefile targets available in the Makefile (although
+you will probably need to change the path to the Xilinx tools though).
+The code has been compiled and tested using Linux, Modelsim, and
+Xilinx ISE. At some point the code could also be simulated using
+Icarus, although this has not been tested lately.
+
+To see the available targets, you can simply run make help
+
+Requirements for running the testbenches
+----------------------------------------
+
+If you want to run the testbenches you will either need to download
+the FPGen testsuite from IBM at the following URL:
+https://www.research.ibm.com/haifa/projects/verification/fpgen/ieeets.html
+and extract the *.fpgen files into the fpgen_testsuite directory or
+download the SoftFloat distribution (which can be done automatically
+by a Makefile rule.)
+
+
+
+Known bugs
+----------
+
+* The documentation could be improved
+* The maintainability of the source could be improved
+
+If you have found a bug or have a patch for the software/hardware in
+this distribution, please contact the author at andreas.ehliar@liu.se
+and I will try to include it in the next version of the release.
+
+
+TODO
+----
+
+* Altera/Lattice/etc version (FPGAs with 18x18 bit multipliers should
+  be very well suited for the HRFP_16 format.)
+* Double precision support
+* Half precision support
+* More rounding modes
+* Area/frequency improvements
+* More configurable architecture (e.g. number of pipeline steps)
+* More operators (MAC support would be very nice)
+* Move development to GitHub?
+* Get HRFP_16 operator support into commercial FPGA silicon :)
+* Enable parallelization of the exhaustive testbench as the run time
+  is extremely long.
+
+License
+-------
+
+This distribution is licensed under the X11 license which should make
+it suitable for use in both commercial and academic settings.
+
+Copyright (C) 2014 Andreas Ehliar
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of the author or
+Linkoping University shall not be used in advertising or otherwise to
+promote the sale, use or other dealings in this Software without prior
+written authorization from the author or Linkoping University.
+
+
+Acknowledgments
+---------------
+
+* The FPGen at IBM team for releasing the fpgen testsuite in the first
+  place (which has been a huge help in minimizing verification time)
+  and also by helpfully enlighten the author about exception handling
+  in IEEE-754.
+* Madeleine Englund for many interesting discussions regarding
+  high-radix floating point arithmetic in FPGAs

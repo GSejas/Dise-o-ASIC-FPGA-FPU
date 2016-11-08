@@ -1,0 +1,13 @@
+CORDIC_FSM_v2.v
+counter_d.v
+counter_up.v
+d_ff_en.v
+lut_CASE_32.v
+lut_CASE_64.v
+Mux_2x1.v
+Mux_3x1_b.v
+Op_Select.v
+sign_inverter.v
+Simple_Subt.v
+CORDIC_Arch2v1.v
+CORDIC_Arch2.v

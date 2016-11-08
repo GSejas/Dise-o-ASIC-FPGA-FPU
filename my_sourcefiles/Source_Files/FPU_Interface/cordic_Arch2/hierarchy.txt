@@ -1,0 +1,129 @@
+  CORDIC_Arch2
+  |--LUT_CASE_32bits
+  |--LUT_CASE_32bits
+  |--LUT_CASE_64bits
+  |--FPU_Add_Subtract_Function
+  |  |--RegisterAdd
+  |  |--Multiplexer_AC
+  |  |--Multiplexer_AC
+  |  |--Multiplexer_AC
+  |  |--Add_Subt
+  |  |  |--RegisterAdd
+  |  |  |--RegisterAdd
+  |  |  \--add_sub_carry_out
+  |  |--Multiplexer_AC
+  |  |--Mux_3x1
+  |  |--Barrel_Shifter
+  |  |  |--Mux_Array
+  |  |  |  |--RegisterAdd
+  |  |  |  |--Rotate_Mux_Array
+  |  |  |  |  \--Multiplexer_AC
+  |  |  |  |--Rotate_Mux_Array
+  |  |  |  |  \--Multiplexer_AC
+  |  |  |  |--shift_mux_array
+  |  |  |  \--shift_mux_array
+  |  |  \--RegisterAdd
+  |  |--Multiplexer_AC
+  |  |--Mux_3x1
+  |  |--Exp_Operation
+  |  |  |--RegisterAdd
+  |  |  |--RegisterAdd
+  |  |  |--Comparators
+  |  |  |  |--Greater_Comparator
+  |  |  |  \--Comparator_Less
+  |  |  |--add_sub_carry_out
+  |  |  \--RegisterAdd
+  |  |--FSM_Add_Subtract
+  |  |--LZD
+  |  |  |--Priority_Codec_32
+  |  |  |--Priority_Codec_64
+  |  |  \--RegisterAdd
+  |  |--Oper_Start_In_2
+  |  |  |--RegisterAdd
+  |  |  |--Comparator
+  |  |  |--MultiplexTxT
+  |  |  |--xor_tri
+  |  |  |--RegisterAdd
+  |  |  |--RegisterAdd
+  |  |  \--sgn_result
+  |  |--Round_Sgf_Dec
+  |  |--RegisterAdd
+  |  |--RegisterAdd
+  |  |--RegisterAdd
+  |  |--RegisterAdd
+  |  |--RegisterAdd
+  |  |--RegisterAdd
+  |  \--Tenth_Phase
+  |     |--Multiplexer_AC
+  |     |--RegisterAdd
+  |     |--Multiplexer_AC
+  |     \--Mux_3x1
+  |--counter_d
+  |--counter_up
+  |--CORDIC_FSM_v2
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--Mux_2x1
+  |--Mux_2x1
+  |--Mux_2x1
+  |--Mux_2x1
+  |--Mux_3x1_b
+  |--Mux_3x1_b
+  |--Mux_2x1
+  |--Op_Select
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--Simple_Subt
+  |--Simple_Subt
+  \--sign_inverter
+  CORDIC_Arch2v1
+  |--LUT_CASE_32bits
+  |--LUT_CASE_32bits
+  |--LUT_CASE_64bits
+  |--counter_d
+  |--counter_up
+  |--CORDIC_FSM_v2
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--Mux_2x1
+  |--Mux_2x1
+  |--Mux_2x1
+  |--Mux_2x1
+  |--Mux_3x1_b
+  |--Mux_3x1_b
+  |--Mux_2x1
+  |--Op_Select
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--d_ff_en
+  |--Simple_Subt
+  |--Simple_Subt
+  \--sign_inverter
+  FFD_NoCE

@@ -1,0 +1,6 @@
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 2.51 ns HIGH 50 %;
+#NET "op_a*" OFFSET = IN 2 NS VALID 4 NS before "clk" HIGH;
+#NET "op_a*" OFFSET = IN 2 NS VALID 4 NS before "clk" HIGH;
+#INST "op0_a*" IOB=FORCE;
+#INST "op0_b*" IOB=FORCE;
