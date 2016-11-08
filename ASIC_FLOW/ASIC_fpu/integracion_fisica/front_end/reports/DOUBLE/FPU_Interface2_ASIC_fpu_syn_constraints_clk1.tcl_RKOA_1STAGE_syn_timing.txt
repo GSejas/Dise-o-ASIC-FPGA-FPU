@@ -1,0 +1,86 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 03:09:40 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: R_7238 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: add_x_423_R_5975
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  R_7238/CK (DFFSX4TS)                     0.00 #     0.10 r
+  R_7238/QN (DFFSX4TS)                     0.82       0.92 f
+  U8494/Y (NOR2X8TS)                       0.20       1.12 r
+  U13197/Y (INVX16TS)                      0.15       1.27 f
+  U18083/Y (AOI21X4TS)                     0.19       1.47 r
+  U12949/Y (XOR2X4TS)                      0.31       1.78 r
+  U12948/Y (INVX12TS)                      0.24       2.02 f
+  U17623/Y (XOR2X4TS)                      0.19       2.21 r
+  U17134/Y (AND2X8TS)                      0.29       2.50 r
+  U17133/Y (INVX16TS)                      0.12       2.62 f
+  U17807/Y (OAI22X4TS)                     0.26       2.88 r
+  U16525/CO (ADDFHX4TS)                    0.51       3.39 r
+  U19544/CO (ADDFHX4TS)                    0.48       3.88 r
+  U6234/Y (INVX4TS)                        0.18       4.06 f
+  U19043/S (ADDFHX4TS)                     0.49       4.54 r
+  U16974/Y (XOR2X4TS)                      0.30       4.84 r
+  U16973/Y (XOR2X4TS)                      0.32       5.17 r
+  U19752/S (ADDFHX4TS)                     0.67       5.83 r
+  U15071/Y (NOR2X8TS)                      0.15       5.98 f
+  U17159/Y (NOR2X6TS)                      0.19       6.16 r
+  U17680/Y (NOR2X8TS)                      0.12       6.28 f
+  U14897/Y (INVX12TS)                      0.12       6.40 r
+  U12028/Y (NAND2X8TS)                     0.12       6.52 f
+  U11755/Y (NAND3X8TS)                     0.17       6.69 r
+  U7735/Y (NAND2X8TS)                      0.13       6.82 f
+  U12959/Y (NAND2X6TS)                     0.09       6.91 r
+  U12958/Y (XNOR2X4TS)                     0.23       7.14 r
+  U8418/Y (OR2X8TS)                        0.34       7.48 r
+  U14891/Y (INVX16TS)                      0.13       7.61 f
+  U18093/Y (NOR2X8TS)                      0.11       7.72 r
+  U14876/Y (NAND2X4TS)                     0.12       7.84 f
+  U17799/Y (NAND3X6TS)                     0.18       8.02 r
+  U18169/Y (XNOR2X4TS)                     0.24       8.26 f
+  U15054/Y (NAND2X8TS)                     0.21       8.47 r
+  U15053/Y (INVX8TS)                       0.11       8.58 f
+  U15052/Y (OAI21X4TS)                     0.24       8.82 r
+  U15051/Y (INVX6TS)                       0.17       8.99 f
+  U18223/Y (OAI21X4TS)                     0.16       9.15 r
+  add_x_423_R_5975/D (DFFSX2TS)            0.00       9.15 r
+  data arrival time                                   9.15
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.10       1.10
+  clock uncertainty                       -0.05       1.05
+  add_x_423_R_5975/CK (DFFSX2TS)           0.00       1.05 r
+  library setup time                      -0.32       0.73
+  data required time                                  0.73
+  -----------------------------------------------------------
+  data required time                                  0.73
+  data arrival time                                  -9.15
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -8.41
+
+
+1

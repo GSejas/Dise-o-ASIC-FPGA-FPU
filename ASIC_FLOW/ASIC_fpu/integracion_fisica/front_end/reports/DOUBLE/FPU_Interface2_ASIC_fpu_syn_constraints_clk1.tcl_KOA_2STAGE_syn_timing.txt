@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 03:22:30 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_829J17_123_728_R_4476
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_5176 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  DP_OP_829J17_123_728_R_4476/CK (DFFSX4TS)               0.00 #     0.10 r
+  DP_OP_829J17_123_728_R_4476/Q (DFFSX4TS)                0.74       0.84 f
+  U12171/Y (XNOR2X4TS)                                    0.30       1.14 r
+  U10596/Y (INVX12TS)                                     0.21       1.35 f
+  U9592/Y (XOR2X4TS)                                      0.22       1.57 f
+  U9591/Y (OAI22X4TS)                                     0.23       1.80 r
+  U12817/S (ADDFHX4TS)                                    0.60       2.40 r
+  U12927/S (ADDFHX4TS)                                    0.61       3.01 r
+  U6572/Y (XNOR2X4TS)                                     0.23       3.24 r
+  U6571/Y (XNOR2X4TS)                                     0.29       3.53 r
+  U11819/Y (OAI21X4TS)                                    0.21       3.74 f
+  U9590/Y (OAI2BB1X4TS)                                   0.13       3.88 r
+  U12867/S (ADDFHX4TS)                                    0.41       4.29 r
+  U13792/S (ADDFHX4TS)                                    0.49       4.78 r
+  U9901/Y (NOR2X8TS)                                      0.16       4.94 f
+  U9656/Y (NOR2X8TS)                                      0.14       5.08 r
+  U6608/Y (NAND2X4TS)                                     0.11       5.19 f
+  R_5176/D (DFFHQX4TS)                                    0.00       5.19 f
+  data arrival time                                                  5.19
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  R_5176/CK (DFFHQX4TS)                                   0.00       1.05 r
+  library setup time                                     -0.23       0.82
+  data required time                                                 0.82
+  --------------------------------------------------------------------------
+  data required time                                                 0.82
+  data arrival time                                                 -5.19
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -4.37
+
+
+1

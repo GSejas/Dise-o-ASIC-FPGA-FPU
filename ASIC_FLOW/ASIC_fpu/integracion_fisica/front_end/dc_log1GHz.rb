@@ -11548,3 +11548,9446 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
 
   Beginning Mapping Optimizations  (Ultra High effort)
   -------------------------------
+  Mapping Optimization (Phase 1)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:59  558547.2      4.90   11038.8     760.1                           827112.2500
+    0:01:59  558547.2      4.90   11038.8     760.1                           827112.2500
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DP_OP_26_130_5136_2'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:28  366801.1      9.12   15558.7    1422.2                           495334.2500
+    0:02:34  371672.6      5.47   13426.5     872.9                           504361.7500
+    0:02:34  371672.6      5.47   13426.5     872.9                           504361.7500
+    0:02:44  372291.8      5.47   13675.7     896.4                           505358.0625
+    0:02:47  372555.4      6.13   13707.4     909.3                           505779.2500
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:00  368920.8      6.13   13593.0     901.9                           500491.5312
+    0:03:04  371154.2      5.25   13391.5     864.6                           506829.3438
+    0:03:08  382716.0      5.02   13031.2     834.0                           529919.6250
+    0:03:11  386622.7      5.02   12517.1     807.2                           537821.6875
+    0:03:13  387743.0      5.01   12072.7     801.3                           539877.8750
+    0:03:15  386251.2      5.01   11870.0     800.0                           537912.6875
+    0:03:16  386251.2      5.01   11870.0     800.0                           537912.6875
+    0:03:25  391350.2      4.87   11872.5     813.4                           545054.4375
+    0:03:25  391350.2      4.87   11872.5     813.4                           545054.4375
+    0:03:25  391636.8      4.86   11870.8     813.6                           545634.0000
+    0:03:25  391636.8      4.86   11870.8     813.6                           545634.0000
+    0:03:29  393385.0      4.83   11867.8     815.3                           548010.5625
+    0:03:29  393385.0      4.83   11867.8     815.3                           548010.5625
+    0:03:45  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:45  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:46  397789.9      4.61   11701.5     757.4                           555339.8750
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:03:54  404694.7      4.68   11240.3     114.0 net618811                 568204.6250
+    0:03:56  405720.0      4.68   11228.9      42.0 net612521                 569843.1875
+    0:03:58  406952.6      4.58   11221.0      42.0 DP_OP_829J14_123_728/R_559/D 572674.9375
+    0:04:00  408202.6      4.57   11220.7       0.0 mult_x_422/R_2978/D       575078.0000
+    0:04:02  409190.4      4.55   11209.5       0.0 DP_OP_829J14_123_728/R_3098/D 577122.2500
+    0:04:03  409233.6      4.55   11208.4       0.0                           577201.6250
+    0:04:05  409831.2      4.55   11202.8       0.0                           578103.7500
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:05  409831.2      4.55   11202.8       0.0                           578103.7500
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+    0:04:34  384965.3      4.55    9903.8      24.2 mult_x_422/R_2978/D       544797.9375
+    0:04:34  385094.9      4.54    9903.1      24.2                           545072.1875
+    0:04:39  387113.8      4.52    9952.6      49.5                           547893.0625
+    0:04:39  387113.8      4.52    9952.6      49.5                           547893.0625
+    0:04:41  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:41  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:42  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:42  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:42  387730.1      4.50    9933.0      49.5                           548827.2500
+    0:04:42  387730.1      4.50    9933.0      49.5                           548827.2500
+    0:04:47  389095.2      4.48    9923.5      53.5                           550839.6250
+    0:04:47  389095.2      4.48    9923.5      53.5                           550839.6250
+    0:04:51  390592.8      4.43    9886.0      67.5                           553374.4375
+    0:04:51  390592.8      4.43    9886.0      67.5                           553374.4375
+    0:04:54  390919.7      4.42    9885.2      76.5                           553870.6250
+    0:04:54  390919.7      4.42    9885.2      76.5                           553870.6250
+    0:04:57  391193.3      4.42    9884.6      79.5                           554310.0000
+    0:04:57  391193.3      4.42    9884.6      79.5                           554310.0000
+    0:04:57  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:04:57  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:04:58  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:04:58  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:04:58  391184.6      4.42    9884.8      79.5                           554280.3125
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:59  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:05:05  377916.5      4.43    9747.4      75.6                           533088.0000
+    0:05:05  378122.4      4.41    9745.4      96.6                           533520.9375
+    0:05:05  378122.4      4.41    9745.4      96.6                           533520.9375
+    0:05:08  378260.6      4.41    9739.6      96.6                           533902.2500
+    0:05:13  377185.0      4.41    9716.8      96.6                           532396.7500
+    0:05:15  377513.3      4.41    9482.7      21.0 net618751                 533108.1875
+    0:05:17  378043.2      4.39    9484.0      20.0 R_5145/D                  534081.3125
+    0:05:19  378388.8      4.41    9483.9      20.0 R_5074/D                  534754.0625
+    0:05:21  378882.7      4.41    9485.5       0.0 mult_x_422/R_2978/D       535622.7500
+    0:05:22  379244.2      4.38    9481.2       0.0 add_x_69/R_4374_RW_0/D    536355.4375
+    0:05:23  379311.8      4.38    9480.8       0.0                           536490.1250
+    0:05:26  379813.0      4.37    9474.0       6.0                           537369.1875
+    0:05:29  381039.8      4.37    9445.1       6.0                           539887.0625
+    0:05:31  381733.9      4.37    9427.1       6.0                           541280.4375
+    0:05:33  382158.7      4.37    9420.1       6.0                           541969.4375
+    0:05:33  382158.7      4.37    9420.1       6.0                           541969.4375
+    0:05:44  370042.6      4.37    9420.1       6.0                           520224.9062
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 3518 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Writing verilog file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_1STAGE_syn.v'.
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_1STAGE_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_1STAGE_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_1STAGE_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W2 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W64 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'NaN_mod_64'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'./source/NaN_mod_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W1 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'demux_1x3'. (HDL-193)
+
+Statistics for case statements in always block at line 11 in file
+	'./source/demux_1x3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'deco_op'. (HDL-193)
+Warning:  ./source/deco_op.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 9 in file
+	'./source/deco_op.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  ./source/CORDIC_Arch3v1.v:163: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./source/CORDIC_Arch3v1.v:176: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_Multiplication_Function' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_PIPELINED_FPADDSUB' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55,EWR=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_FSM_v3'. (HDL-193)
+
+Statistics for case statements in always block at line 72 in file
+	'./source/CORDIC_FSM_v3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CORDIC_FSM_v3 line 62 in file
+		'./source/CORDIC_FSM_v3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    state_reg_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH4 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH2 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Simple_Subt' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=11,N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'LUT_CASE_64bits' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64,N=4". (HDL-193)
+Warning:  ./source/lut_CASE_64.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'./source/lut_CASE_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_bv2' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b_v2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'PriorityEncoder_CORDIC'. (HDL-193)
+Warning:  ./source/PriorityEncoder_ExtCORDIC.v:27: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 22 in file
+	'./source/PriorityEncoder_ExtCORDIC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            27            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Op_Select'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DECO_CORDIC_EXT2'. (HDL-193)
+
+Statistics for case statements in always block at line 27 in file
+	'./source/DECO_CORDIC_OP2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |    auto/auto     |
+|            50            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_Mult_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 128 in file
+	'./source/FSM_Mult_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Mult_Function line 121 in file
+		'./source/FSM_Mult_Function.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W1 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W2 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'First_Phase_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Zero_InfMult_Unit' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=12". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation_m' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "EW=11". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'XOR_M'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RecursiveKOA_STAGE_1' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=53". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_decoder_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder_Round' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Tenth_Phase' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_INPUT_ENABLE'. (HDL-193)
+
+Statistics for case statements in always block at line 76 in file
+	'./source/FSM_input_enable.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            84            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_INPUT_ENABLE line 69 in file
+		'./source/FSM_input_enable.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ShiftRegister' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=7". (HDL-193)
+
+Inferred memory devices in process
+	in routine ShiftRegister_W7 line 26 in file
+		'./source/shift_reg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W64 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MultiplexTxT' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'./source/MultiplexTxT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            34            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'xor_tri' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgn_result'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W63 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  63   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W3 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=52". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W52 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  52   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W6 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Rotate_Mux_Array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W55 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  55   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=17". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W17 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FORMATTER' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "EW=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=11". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W11 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Priority_Codec_64'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FRMT_STAGE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FFD_NoCE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine FFD_NoCE_W1 line 50 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'First_Phase_M_W64' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W64 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Equal' instantiated from design 'Zero_InfMult_Unit_W64' with
+	the parameters "S=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W12 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W1 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Less' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'RecursiveKOA_STAGE_1_SW53' with
+	the parameters "SW=26". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'RecursiveKOA_STAGE_1_SW53' with
+	the parameters "SW=27". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'RecursiveKOA_STAGE_1_SW53' with
+	the parameters "SW=28". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'RecursiveKOA_STAGE_1_SW53' with
+	the parameters "W=106". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W106 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  106  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "SWR=53,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W53 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OR_Module' instantiated from design 'Round_decoder_M_SW52' with
+	the parameters "W=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Deco_Round_Mult'. (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'./source/Deco_Round_Mult.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W53 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=52". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Rotate_Mux_Array_SWR55' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Greater_Comparator' instantiated from design 'FORMATTER_EW12' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW26' with
+	the parameters "SW=13". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW26' with
+	the parameters "SW=14". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW27' with
+	the parameters "SW=15". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW13' with
+	the parameters "SW=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW13' with
+	the parameters "SW=7". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW13' with
+	the parameters "SW=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csubRecursiveKOA' instantiated from design 'csubRecursiveKOA_SW15' with
+	the parameters "SW=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'cmult' instantiated from design 'csubRecursiveKOA_SW6' with
+	the parameters "SW=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'cmult' instantiated from design 'csubRecursiveKOA_SW7' with
+	the parameters "SW=7". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'cmult' instantiated from design 'csubRecursiveKOA_SW8' with
+	the parameters "SW=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'cmult' instantiated from design 'csubRecursiveKOA_SW9' with
+	the parameters "SW=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Uniquified 2 instances of design 'd_ff_en_W2'. (OPT-1056)
+Information: Uniquified 13 instances of design 'd_ff_en_W64'. (OPT-1056)
+Information: Uniquified 3 instances of design 'd_ff_en_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'demux_1x3'. (OPT-1056)
+Information: Uniquified 5 instances of design 'Mux_2x1_W1'. (OPT-1056)
+Information: Uniquified 6 instances of design 'Mux_2x1_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Simple_Subt_W11_N4'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_bv2_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W2'. (OPT-1056)
+Information: Uniquified 4 instances of design 'RegisterAdd_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W63'. (OPT-1056)
+Information: Uniquified 7 instances of design 'RegisterAdd_W3'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W6'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Rotate_Mux_Array_SWR55'. (OPT-1056)
+Information: Uniquified 3 instances of design 'RegisterAdd_W55'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Equal_S63'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Less_W12'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W11'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W52'. (OPT-1056)
+Information: Uniquified 108 instances of design 'Multiplexer_AC_W1'. (OPT-1056)
+Information: Uniquified 3 instances of design 'csubRecursiveKOA_SW13'. (OPT-1056)
+Information: Uniquified 4 instances of design 'csubRecursiveKOA_SW14'. (OPT-1056)
+Information: Uniquified 2 instances of design 'csubRecursiveKOA_SW15'. (OPT-1056)
+Information: Uniquified 3 instances of design 'csubRecursiveKOA_SW6'. (OPT-1056)
+Information: Uniquified 13 instances of design 'csubRecursiveKOA_SW7'. (OPT-1056)
+Information: Uniquified 9 instances of design 'csubRecursiveKOA_SW8'. (OPT-1056)
+Information: Uniquified 2 instances of design 'csubRecursiveKOA_SW9'. (OPT-1056)
+Information: Uniquified 3 instances of design 'cmult_SW6'. (OPT-1056)
+Information: Uniquified 13 instances of design 'cmult_SW7'. (OPT-1056)
+Information: Uniquified 9 instances of design 'cmult_SW8'. (OPT-1056)
+Information: Uniquified 2 instances of design 'cmult_SW9'. (OPT-1056)
+
+  Linking design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (312 designs)             /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_1STAGE_syn_unmapped.ddc'.
+Using operating conditions 'tt_1p2v_25c' found in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'.
+
+#   Propagate Constraints from cell mux_result_op/ (Mux_3x1_b_W64) #
+
+#   Propagate Constraints from cell mux_ready_op/ (Mux_3x1_b_W1) #
+
+#   Propagate Constraints from cell underflow_flag_mux/ (Mux_2x1_W1_1) #
+
+#   Propagate Constraints from cell overflow_flag_mux/ (Mux_2x1_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/                                  \
+(FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6) #
+
+#   Propagate Constraints from cell FPADDSUB/Ready_reg/ (FFD_NoCE_W1) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_FLAGS/                 \
+(RegisterAdd_W3_0) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_DATAOUT/               \
+(RegisterAdd_W64_1) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/                  \
+(FRMT_STAGE_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sgf_Mux/          \
+(Multiplexer_AC_W52_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Exp_Mux/          \
+(Multiplexer_AC_W11_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sign_Mux/         \
+(Mux_3x1_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/LZD_DOUBLE.Codec_64/              \
+(Priority_Codec_64) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_FLAGS/                  \
+(RegisterAdd_W3_1) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_DMP_exp/                \
+(RegisterAdd_W11) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_Raw_mant/               \
+(RegisterAdd_W55_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_FLAGS/                  \
+(RegisterAdd_W3_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DmP_mant/               \
+(RegisterAdd_W55_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DMP/                    \
+(RegisterAdd_W63_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/                \
+(FORMATTER_EW12) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/LTComparator/   \
+(Comparator_Less_W12_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/GTComparator/   \
+(Greater_Comparator_W12) #
+
+#   Propagate Constraints from cell FPADDSUB/last_rotate/                      \
+(Rotate_Mux_Array_SWR55_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_2) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_6) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_7) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_8) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_9) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_10) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_11) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_12) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_13) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_14) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_15) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_16) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_17) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_18) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_19) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_20) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_21) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_22) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_23) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_24) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_25) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_26) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_27) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_28) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_29) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_30) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_31) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_32) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_33) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_34) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_35) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_36) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_37) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_38) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_39) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_40) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_41) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_42) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_43) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_44) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_45) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_46) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_47) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_48) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_49) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_50) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_51) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_52) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_53) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[5].shift_mux_array/ (shift_mux_array_SWR55_LEVEL5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[4].shift_mux_array/ (shift_mux_array_SWR55_LEVEL4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[3].shift_mux_array/ (shift_mux_array_SWR55_LEVEL3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[2].shift_mux_array/ (shift_mux_array_SWR55_LEVEL2) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_FLAGS/             \
+(RegisterAdd_W3_3) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_VARS/              \
+(RegisterAdd_W17) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_FLAGS/                 \
+(RegisterAdd_W3_4) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS2/             \
+(RegisterAdd_W2_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS1/             \
+(RegisterAdd_W6_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_SHIFT_DATA/                  \
+(RegisterAdd_W55_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_DMP/                   \
+(RegisterAdd_W63_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[1].shift_mux_array/ (shift_mux_array_SWR55_LEVEL1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[0].shift_mux_array/ (shift_mux_array_SWR55_LEVEL0) #
+
+#   Propagate Constraints from cell FPADDSUB/first_rotate/                     \
+(Rotate_Mux_Array_SWR55_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_54) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_55) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_56) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_57) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_58) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_59) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_60) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_61) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_62) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_63) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_64) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_65) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_66) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_67) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_68) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_69) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_70) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_71) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_72) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_73) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_74) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_75) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_76) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_77) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_78) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_79) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_80) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_81) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_82) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_83) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_84) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_85) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_86) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_87) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_88) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_89) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_90) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_91) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_92) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_93) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_94) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_95) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_96) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_97) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_98) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_99) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_100) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_101) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_102) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_103) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_104) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_105) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_106) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_107) #
+
+#   Propagate Constraints from cell FPADDSUB/b_shftr_idat_mux_SHT1/            \
+(Multiplexer_AC_W55) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_FLAGS/                 \
+(RegisterAdd_W3_5) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_sft_amount/            \
+(RegisterAdd_W6_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DmP_mant/              \
+(RegisterAdd_W52) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DMP/                   \
+(RegisterAdd_W63_2) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_FLAGS/                  \
+(RegisterAdd_W3_6) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DmP/                    \
+(RegisterAdd_W63_3) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DMP/                    \
+(RegisterAdd_W63_4) #
+
+#   Propagate Constraints from cell FPADDSUB/result_sign_bit/ (sgn_result) #
+
+#   Propagate Constraints from cell FPADDSUB/Op_verification/ (xor_tri_W64) #
+
+#   Propagate Constraints from cell FPADDSUB/MuxXY/ (MultiplexTxT_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/Magnitude_Comparator/             \
+(Comparator_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_FLAGS/                \
+(RegisterAdd_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDY/             \
+(RegisterAdd_W64_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDX/             \
+(RegisterAdd_W64_3) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_ShiftRegister/               \
+(ShiftRegister_W7) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FSM_INPUT_ENABLE/            \
+(FSM_INPUT_ENABLE) #
+
+#   Propagate Constraints from cell FPMULT/                                    \
+(FPU_Multiplication_Function_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/           \
+(Tenth_Phase_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sgf_Mux/   \
+(Multiplexer_AC_W52_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Exp_Mux/   \
+(Multiplexer_AC_W11_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sign_Mux/  \
+(Mux_3x1_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/ (Adder_Round_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_overflow_Result/        \
+(RegisterAdd_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_Subt_Result/            \
+(RegisterAdd_W53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/A_operation/ (adder_W53) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/                      \
+(Round_decoder_M_SW52) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/Rounding_Deco/        \
+(Deco_Round_Mult) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/OR_info_reg/          \
+(OR_Module_W52) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/              \
+(Barrel_Shifter_M_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/Output_Reg/   \
+(RegisterMult_W53) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Barrel_Shifter_module/shift_mux_array/ (shift_mux_array_SWR53_LEVEL0) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_D_I_mux/             \
+(Multiplexer_AC_W53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/                      \
+(RecursiveKOA_STAGE_1_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.finalreg/        \
+(RegisterAdd_W106) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.middle/          \
+(csubRecursiveKOA_SW28) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/                       \
+(csubRecursiveKOA_SW15_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle/ \
+(csubRecursiveKOA_SW9_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW9_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right/  \
+(csubRecursiveKOA_SW8_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_cmult/ \
+(cmult_SW8_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left/   \
+(csubRecursiveKOA_SW7_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_cmult/ \
+(cmult_SW7_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/                        \
+(csubRecursiveKOA_SW14_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle/ \
+(csubRecursiveKOA_SW8_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right/  \
+(csubRecursiveKOA_SW7_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left/   \
+(csubRecursiveKOA_SW7_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult/ \
+(cmult_SW7_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/                         \
+(csubRecursiveKOA_SW14_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle/  \
+(csubRecursiveKOA_SW8_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right/   \
+(csubRecursiveKOA_SW7_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left/    \
+(csubRecursiveKOA_SW7_4) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult/ \
+(cmult_SW7_4) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.right/           \
+(csubRecursiveKOA_SW27) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/                         \
+(csubRecursiveKOA_SW15_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle/   \
+(csubRecursiveKOA_SW9_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW9_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right/    \
+(csubRecursiveKOA_SW8_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_cmult/ \
+(cmult_SW8_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left/     \
+(csubRecursiveKOA_SW7_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_cmult/ \
+(cmult_SW7_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/                          \
+(csubRecursiveKOA_SW14_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle/   \
+(csubRecursiveKOA_SW8_4) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_4) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right/    \
+(csubRecursiveKOA_SW7_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left/     \
+(csubRecursiveKOA_SW7_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult/ \
+(cmult_SW7_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/ (csubRecursiveKOA_SW13_0) \
+#
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle/     \
+(csubRecursiveKOA_SW8_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right/      \
+(csubRecursiveKOA_SW7_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left/       \
+(csubRecursiveKOA_SW6_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left/GENSTOP.inst_cmult/ \
+(cmult_SW6_0) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.left/            \
+(csubRecursiveKOA_SW26) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/                         \
+(csubRecursiveKOA_SW14_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle/  \
+(csubRecursiveKOA_SW8_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right/   \
+(csubRecursiveKOA_SW7_9) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_9) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left/    \
+(csubRecursiveKOA_SW7_10) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult/ \
+(cmult_SW7_10) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/                          \
+(csubRecursiveKOA_SW13_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle/    \
+(csubRecursiveKOA_SW8_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right/     \
+(csubRecursiveKOA_SW7_11) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_11) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left/      \
+(csubRecursiveKOA_SW6_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left/GENSTOP.inst_cmult/ \
+(cmult_SW6_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/ (csubRecursiveKOA_SW13_2) \
+#
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle/     \
+(csubRecursiveKOA_SW8_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult/ \
+(cmult_SW8_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right/      \
+(csubRecursiveKOA_SW7_12) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right/GENSTOP.inst_cmult/ \
+(cmult_SW7_12) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left/       \
+(csubRecursiveKOA_SW6_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left/GENSTOP.inst_cmult/ \
+(cmult_SW6_2) #
+
+#   Propagate Constraints from cell FPMULT/Sign_operation/ (XOR_M) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/ (Exp_Operation_m_EW11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Underflow_m/             \
+(RegisterMult_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Exp_unflow_Comparator_m/ \
+(Comparator_Less_W12_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Oflow_A_m/               \
+(RegisterMult_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_result_m/            \
+(RegisterMult_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_add_subt_m/          \
+(add_sub_carry_out_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_B_mux/ (Mux_3x1_W11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_A_mux/                     \
+(Multiplexer_AC_W12) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/                 \
+(Zero_InfMult_Unit_W64) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Zero_Info_Mult/  \
+(RegisterAdd_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_B_Comp/     \
+(Comparator_Equal_S63_0) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_A_Comp/     \
+(Comparator_Equal_S63_1) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/                  \
+(First_Phase_M_W64) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/YMRegister/       \
+(RegisterMult_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/XMRegister/       \
+(RegisterMult_W64_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_B/ (RegisterAdd_W2_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_C/ (RegisterAdd_W1_3) #
+
+#   Propagate Constraints from cell FPMULT/Sel_A/ (RegisterAdd_W1_4) #
+
+#   Propagate Constraints from cell FPMULT/FS_Module/ (FSM_Mult_Function) #
+
+#   Propagate Constraints from cell FPSENCOS/                                  \
+(CORDIC_Arch3v1_W64_EW11_SW52_SWR55) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff5_data_out/ (d_ff_en_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_DECO_CORDIC_EXT2/            \
+(DECO_CORDIC_EXT2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_2x1_sal/ (Mux_2x1_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Zn/ (d_ff_en_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Yn/ (d_ff_en_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Xn/ (d_ff_en_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/op_select_mod/ (Op_Select) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_PriorityEncoder_CORDIC/      \
+(PriorityEncoder_CORDIC) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var2/ (Mux_3x1_bv2_W64_0) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var1/ (Mux_3x1_bv2_W64_1) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/reg_sign/ (d_ff_en_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_LUT/ (d_ff_en_W64_4) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_y/ (d_ff_en_W64_5) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_x/ (d_ff_en_W64_6) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_sign/ (Mux_2x1_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/LUTBLK2.LUT64/                    \
+(LUT_CASE_64bits_W64_N4) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_y/ (Simple_Subt_W11_N4_0) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_x/ (Simple_Subt_W11_N4_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxZ_2stage/              \
+(d_ff_en_W64_7) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxY_2stage/              \
+(d_ff_en_W64_8) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxX_2stage/              \
+(d_ff_en_W64_9) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_z0/ (Mux_2x1_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_y0/ (Mux_2x1_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_x0/ (Mux_2x1_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_Z0/ (d_ff_en_W64_10) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_region_flag/ (d_ff_en_W2_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_operation/ (d_ff_en_W1_1) #
+
+#   Propagate Constraints from cell FPSENCOS/VAR_CONT/                         \
+(Up_counter_COUNTER_WIDTH2) #
+
+#   Propagate Constraints from cell FPSENCOS/ITER_CONT/                        \
+(Up_counter_COUNTER_WIDTH4) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_CORDIC_FSM_v3/               \
+(CORDIC_FSM_v3) #
+
+#   Propagate Constraints from cell mux_data_in2/ (Mux_2x1_W64_4) #
+
+#   Propagate Constraints from cell mux_data_in1/ (Mux_2x1_W64_5) #
+
+#   Propagate Constraints from cell mux_operation_add_cordic/ (Mux_2x1_W1_3) #
+
+#   Propagate Constraints from cell mux_beg_addsubt/ (Mux_2x1_W1_4) #
+
+#   Propagate Constraints from cell deco_operation/ (deco_op) #
+
+#   Propagate Constraints from cell demux_ack_op/ (demux_1x3_0) #
+
+#   Propagate Constraints from cell demux_beg_op/ (demux_1x3_1) #
+
+#   Propagate Constraints from cell NaN_dff/ (d_ff_en_W1_2) #
+
+#   Propagate Constraints from cell BLKNaN2.NaN_flag_64/ (NaN_mod_64) #
+
+#   Propagate Constraints from cell reg_dataB/ (d_ff_en_W64_11) #
+
+#   Propagate Constraints from cell reg_dataA/ (d_ff_en_W64_12) #
+
+#   Propagate Constraints from cell operation_dff/ (d_ff_en_W2_1) #
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Tue Nov  8 02:55:04 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     19
+    Feedthrough (LINT-29)                                           2
+    Shorted outputs (LINT-31)                                       8
+    Constant outputs (LINT-52)                                      9
+
+Cells                                                              27
+    Cells do not drive (LINT-1)                                     8
+    Nets connected to multiple pins on same cell (LINT-33)         19
+
+Nets                                                                9
+    Unloaded nets (LINT-2)                                          9
+--------------------------------------------------------------------------------
+
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH4', cell 'C37' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH2', cell 'C29' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'zero_flag' driven by pin 'FPADDSUB/zero_flag' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'ack_fsm_addsubt' driven by pin 'demux_ack_op/ch1' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[0]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[0]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[1]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[1]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[58]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[58]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[59]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[59]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[60]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[60]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[61]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[61]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[62]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[62]' has no loads. (LINT-2)
+Warning: In design 'Rotate_Mux_Array_SWR55_1', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'Rotate_Mux_Array_SWR55_0', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to output port 'data_out[62]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[48]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[51]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[57]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[58]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[59]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[60]'. (LINT-31)
+Warning: In design 'FSM_Mult_Function', output port 'load_1_o' is connected directly to output port 'ctrl_select_a_o'. (LINT-31)
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[47]', 'ch_0[44]', 'ch_0[40]', 'ch_0[38]', 'ch_0[37]', 'ch_0[33]', 'ch_0[30]', 'ch_0[27]', 'ch_0[25]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[12]', 'ch_0[10]', 'ch_0[5]', 'ch_0[4]', 'ch_0[2]', 'ch_0[1]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'ch_0[61]', 'ch_0[60]'', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[49]', 'ch_0[48]', 'ch_0[46]', 'ch_0[45]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[39]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[32]', 'ch_0[31]', 'ch_0[29]', 'ch_0[28]', 'ch_0[26]', 'ch_0[24]', 'ch_0[19]', 'ch_0[14]', 'ch_0[13]', 'ch_0[11]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[3]', 'ch_0[0]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_y0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[61]', 'ch_0[60]', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[49]', 'ch_0[48]', 'ch_0[47]', 'ch_0[46]', 'ch_0[45]', 'ch_0[44]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[40]', 'ch_0[39]', 'ch_0[38]', 'ch_0[37]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[33]', 'ch_0[32]', 'ch_0[31]', 'ch_0[30]', 'ch_0[29]', 'ch_0[28]', 'ch_0[27]', 'ch_0[26]', 'ch_0[25]', 'ch_0[24]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[19]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[14]', 'ch_0[13]', 'ch_0[12]', 'ch_0[11]', 'ch_0[10]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[5]', 'ch_0[4]', 'ch_0[3]', 'ch_0[2]', 'ch_0[1]', 'ch_0[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[10]', 'D2[10]'', 'D2[9]', 'D2[8]', 'D2[7]', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]', 'D2[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_operation'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_A_i[52]', 'Data_B_i[52]''.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[52]', 'Data_B_i[51]'', 'Data_B_i[50]', 'Data_B_i[49]', 'Data_B_i[48]', 'Data_B_i[47]', 'Data_B_i[46]', 'Data_B_i[45]', 'Data_B_i[44]', 'Data_B_i[43]', 'Data_B_i[42]', 'Data_B_i[41]', 'Data_B_i[40]', 'Data_B_i[39]', 'Data_B_i[38]', 'Data_B_i[37]', 'Data_B_i[36]', 'Data_B_i[35]', 'Data_B_i[34]', 'Data_B_i[33]', 'Data_B_i[32]', 'Data_B_i[31]', 'Data_B_i[30]', 'Data_B_i[29]', 'Data_B_i[28]', 'Data_B_i[27]', 'Data_B_i[26]', 'Data_B_i[25]', 'Data_B_i[24]', 'Data_B_i[23]', 'Data_B_i[22]', 'Data_B_i[21]', 'Data_B_i[20]', 'Data_B_i[19]', 'Data_B_i[18]', 'Data_B_i[17]', 'Data_B_i[16]', 'Data_B_i[15]', 'Data_B_i[14]', 'Data_B_i[13]', 'Data_B_i[12]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[3]', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B_i[5]', 'Data_B_i[4]'', 'Data_B_i[2]'.
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', the same net is connected to more than one pin on submodule 'b_shftr_idat_mux_SHT1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D0[1]', 'D0[0]''.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_A_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[62]', 'Data_B[61]'', 'Data_B[60]', 'Data_B[59]', 'Data_B[58]', 'Data_B[57]', 'Data_B[56]', 'Data_B[55]', 'Data_B[54]', 'Data_B[53]', 'Data_B[52]', 'Data_B[51]', 'Data_B[50]', 'Data_B[49]', 'Data_B[48]', 'Data_B[47]', 'Data_B[46]', 'Data_B[45]', 'Data_B[44]', 'Data_B[43]', 'Data_B[42]', 'Data_B[41]', 'Data_B[40]', 'Data_B[39]', 'Data_B[38]', 'Data_B[37]', 'Data_B[36]', 'Data_B[35]', 'Data_B[34]', 'Data_B[33]', 'Data_B[32]', 'Data_B[31]', 'Data_B[30]', 'Data_B[29]', 'Data_B[28]', 'Data_B[27]', 'Data_B[26]', 'Data_B[25]', 'Data_B[24]', 'Data_B[23]', 'Data_B[22]', 'Data_B[21]', 'Data_B[20]', 'Data_B[19]', 'Data_B[18]', 'Data_B[17]', 'Data_B[16]', 'Data_B[15]', 'Data_B[14]', 'Data_B[13]', 'Data_B[12]', 'Data_B[11]', 'Data_B[10]', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_B_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_A[62]', 'Data_A[61]'', 'Data_A[60]', 'Data_A[59]', 'Data_A[58]', 'Data_A[57]', 'Data_A[56]', 'Data_A[55]', 'Data_A[54]', 'Data_A[53]', 'Data_A[52]', 'Data_A[51]', 'Data_A[50]', 'Data_A[49]', 'Data_A[48]', 'Data_A[47]', 'Data_A[46]', 'Data_A[45]', 'Data_A[44]', 'Data_A[43]', 'Data_A[42]', 'Data_A[41]', 'Data_A[40]', 'Data_A[39]', 'Data_A[38]', 'Data_A[37]', 'Data_A[36]', 'Data_A[35]', 'Data_A[34]', 'Data_A[33]', 'Data_A[32]', 'Data_A[31]', 'Data_A[30]', 'Data_A[29]', 'Data_A[28]', 'Data_A[27]', 'Data_A[26]', 'Data_A[25]', 'Data_A[24]', 'Data_A[23]', 'Data_A[22]', 'Data_A[21]', 'Data_A[20]', 'Data_A[19]', 'Data_A[18]', 'Data_A[17]', 'Data_A[16]', 'Data_A[15]', 'Data_A[14]', 'Data_A[13]', 'Data_A[12]', 'Data_A[11]', 'Data_A[10]', 'Data_A[9]', 'Data_A[8]', 'Data_A[7]', 'Data_A[6]', 'Data_A[5]', 'Data_A[4]', 'Data_A[3]', 'Data_A[2]', 'Data_A[1]', 'Data_A[0]'.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]''.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[9]', 'Data_B[8]'', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[10]', 'D1[9]'', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'GTComparator'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'LTComparator'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[62]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[60]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[59]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[58]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[57]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[51]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 566 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+
+Loaded alib file '../alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+Information: Ungrouping hierarchy operation_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy BLKNaN2.NaN_flag_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy NaN_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_beg_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy deco_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_beg_addsubt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_ready_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_result_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_ack_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy underflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy overflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_operation_add_cordic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_CORDIC_FSM_v3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/ITER_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/VAR_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/LUTBLK2.LUT64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_PriorityEncoder_CORDIC before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/op_select_mod before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_DECO_CORDIC_EXT2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/FS_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_A before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_B before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sign_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_D_I_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FSM_INPUT_ENABLE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_ShiftRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDX before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Magnitude_Comparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/MuxXY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Op_verification before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/result_sign_bit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_sft_amount before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/b_shftr_idat_mux_SHT1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[0].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[1].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_SHIFT_DATA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_VARS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[2].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[3].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[4].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[5].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_DMP_exp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/LZD_DOUBLE.Codec_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Ready_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_region_flag before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff5_data_out before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Zn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Yn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Xn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_LUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxZ_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxY_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxX_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_Z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_2x1_sal before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_y0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_x0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_C before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_DATAOUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DmP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_Raw_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/XMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_A_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_add_subt_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_result_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Oflow_A_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Exp_unflow_Comparator_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.finalreg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/OR_info_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/Rounding_Deco before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/A_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_Subt_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/GTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_overflow_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Zero_Info_Mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Final_Result_IEEE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/YMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_B_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Underflow_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/LTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_cmult before Pass 1 (OPT-776)
+Information: Ungrouping 310 of 311 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+Information: Added key list 'DesignWare' to design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (DDB-72)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[30]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[4]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[36]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[40]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[38]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[32]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[43]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[34]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[47]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[42]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[46]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[49]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[51]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[57]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[58]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[59]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[60]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[61]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+ Implement Synthetic for 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:45  616839.8     10.82   13496.1    1121.9                           903831.2500
+    0:03:45  616839.8     10.82   13496.1    1121.9                           903831.2500
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DW01_add_42'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:04:20  296251.2     21.31   20556.1     853.7                           376191.8125
+    0:04:29  312701.8     14.06   18093.4     813.6                           403012.0000
+    0:04:29  312701.8     14.06   18093.4     813.6                           403012.0000
+    0:04:39  313220.2     14.06   19432.1     844.2                           403914.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:04:54  310765.0     14.24   19377.8     804.3                           400322.4375
+    0:04:58  308638.1     14.24   19117.0     768.1                           398073.4688
+    0:05:04  323517.6     12.72   18395.2     752.7                           425277.4375
+    0:05:10  339926.4     11.86   17902.6     744.5                           454976.2500
+    0:05:16  352323.4     11.32   17531.9     736.5                           476886.6875
+    0:05:20  357789.6     11.29   17319.3     735.7                           486692.5000
+    0:05:24  361206.7     11.28   17085.1     733.7                           492441.1250
+    0:05:27  360390.2     11.28   16910.6     731.1                           490595.0312
+    0:05:27  360390.2     11.28   16910.6     731.1                           490595.0312
+    0:05:47  378512.6     10.72   16793.8     732.6                           517742.2500
+    0:05:47  378512.6     10.72   16793.8     732.6                           517742.2500
+    0:05:52  388077.1     10.19   16598.2     731.5                           534597.0625
+    0:05:52  388077.1     10.19   16598.2     731.5                           534597.0625
+    0:06:38  407550.2      9.88   16498.5     723.8                           563443.5000
+    0:06:38  407550.2      9.88   16498.5     723.8                           563443.5000
+    0:07:56  429567.8      8.93   15648.5     659.0                           600305.0000
+    0:07:56  429567.8      8.93   15648.5     659.0                           600305.0000
+    0:08:44  439623.4      8.90   15625.4     642.8                           614996.4375
+    0:08:44  439623.4      8.90   15625.4     642.8                           614996.4375
+    0:09:13  445782.2      8.74   15470.5     643.5                           625877.9375
+    0:09:13  445782.2      8.74   15470.5     643.5                           625877.9375
+    0:09:51  450529.9      8.77   15472.1     634.1                           632385.3750
+    0:09:51  450529.9      8.77   15472.1     634.1                           632385.3750
+    0:10:15  453343.7      8.65   15390.1     629.1                           637544.7500
+    0:10:15  453343.7      8.65   15390.1     629.1                           637544.7500
+    0:10:47  456968.2      8.64   15388.7     627.0                           642427.6875
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:10:47  456968.2      8.64   15388.7     627.0                           642427.6875
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:10:53  468072.0      8.66   13251.6      39.0 net789516                 660239.4375
+    0:10:56  469398.2      8.61   13232.8       0.0 DP_OP_1000J15_124_8916/R_5869_RW_0/D 662718.6250
+    0:10:58  469589.8      8.60   13228.3       0.0 add_x_423/R_4611_RW_4/D   663169.3125
+    0:11:01  469831.7      8.59   13226.1       0.0 DP_OP_1000J15_124_8916/R_5869_RW_0/D 663781.9375
+    0:11:03  470214.7      8.58   13217.9       0.0 DP_OP_1004J15_128_3124/R_6888/D 664670.4375
+    0:11:03  470291.0      8.58   13218.2       0.0                           664829.0625
+    0:11:36  473934.2      8.59   13222.0       1.5                           669579.0625
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:11:36  473934.2      8.59   13222.0       1.5                           669579.0625
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+    0:12:11  443749.0      8.56   12202.4      13.0 DP_OP_1008J15_132_2558/R_5568_RW_3/D 624553.1875
+    0:12:12  443822.4      8.56   12201.6      13.0                           624696.5625
+    0:12:51  450135.4      8.54   12196.7      15.8                           633645.1250
+    0:12:51  450135.4      8.54   12196.7      15.8                           633645.1250
+    0:12:54  449985.6      8.54   12078.5      15.8                           633457.5625
+    0:12:54  449985.6      8.54   12078.5      15.8                           633457.5625
+    0:12:55  449985.6      8.54   12078.5      15.8                           633457.5625
+    0:12:55  449985.6      8.54   12078.5      15.8                           633457.5625
+    0:12:55  450201.6      8.53   12078.1      15.8                           633845.3125
+    0:12:55  450201.6      8.53   12078.1      15.8                           633845.3125
+    0:13:12  452350.1      8.53   12078.0      16.0                           637069.2500
+    0:13:12  452350.1      8.53   12078.0      16.0                           637069.2500
+    0:13:25  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:25  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:25  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:25  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:26  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:26  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:27  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:27  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:27  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:27  454383.4      8.45   12043.2      17.3                           640505.0625
+    0:13:28  454383.4      8.45   12043.2      17.3                           640505.0625
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:13:29  454351.7      8.45   12043.2      17.3                           640456.3125
+    0:13:37  437277.6      8.47   12044.8      17.1                           613072.8125
+    0:13:38  437218.6      8.43   12041.9      17.1                           613121.3750
+    0:13:38  437218.6      8.43   12041.9      17.1                           613121.3750
+    0:13:41  437552.6      8.43   11968.2      17.1                           613554.2500
+    0:13:46  436415.0      8.43   11969.3      17.0                           612040.5000
+    0:13:47  435493.4      8.43   11965.8      17.0                           610656.2500
+    0:13:49  435670.6      8.43   11957.9       0.0                           610937.3750
+    0:13:58  436603.7      8.42   11954.9       0.0                           612487.5000
+    0:14:00  436459.7      8.42   11948.1       0.0                           612306.0625
+    0:14:02  436770.7      8.42   11918.4       0.0                           612862.3750
+    0:14:04  437250.2      8.42   11868.4       0.0                           613746.0000
+    0:14:04  437434.6      8.42   11868.3       0.0                           614066.5000
+    0:14:21  422264.2      8.41   11868.3       0.0                           587821.0625
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 2842 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Writing verilog file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_1STAGE_syn.v'.
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_1STAGE_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_1STAGE_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_1STAGE_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W2 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W64 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'NaN_mod_64'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'./source/NaN_mod_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W1 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'demux_1x3'. (HDL-193)
+
+Statistics for case statements in always block at line 11 in file
+	'./source/demux_1x3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'deco_op'. (HDL-193)
+Warning:  ./source/deco_op.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 9 in file
+	'./source/deco_op.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  ./source/CORDIC_Arch3v1.v:163: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./source/CORDIC_Arch3v1.v:176: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_Multiplication_Function' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_PIPELINED_FPADDSUB' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55,EWR=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_FSM_v3'. (HDL-193)
+
+Statistics for case statements in always block at line 72 in file
+	'./source/CORDIC_FSM_v3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CORDIC_FSM_v3 line 62 in file
+		'./source/CORDIC_FSM_v3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    state_reg_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH4 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH2 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Simple_Subt' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=11,N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'LUT_CASE_64bits' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64,N=4". (HDL-193)
+Warning:  ./source/lut_CASE_64.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'./source/lut_CASE_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_bv2' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b_v2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'PriorityEncoder_CORDIC'. (HDL-193)
+Warning:  ./source/PriorityEncoder_ExtCORDIC.v:27: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 22 in file
+	'./source/PriorityEncoder_ExtCORDIC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            27            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Op_Select'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DECO_CORDIC_EXT2'. (HDL-193)
+
+Statistics for case statements in always block at line 27 in file
+	'./source/DECO_CORDIC_OP2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |    auto/auto     |
+|            50            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_Mult_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 128 in file
+	'./source/FSM_Mult_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Mult_Function line 121 in file
+		'./source/FSM_Mult_Function.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W1 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W2 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'First_Phase_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Zero_InfMult_Unit' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=12". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation_m' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "EW=11". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'XOR_M'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DW_mult' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=53". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_decoder_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder_Round' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Tenth_Phase' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_INPUT_ENABLE'. (HDL-193)
+
+Statistics for case statements in always block at line 76 in file
+	'./source/FSM_input_enable.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            84            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_INPUT_ENABLE line 69 in file
+		'./source/FSM_input_enable.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ShiftRegister' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=7". (HDL-193)
+
+Inferred memory devices in process
+	in routine ShiftRegister_W7 line 26 in file
+		'./source/shift_reg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W64 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MultiplexTxT' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'./source/MultiplexTxT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            34            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'xor_tri' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgn_result'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W63 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  63   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W3 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=52". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W52 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  52   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W6 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Rotate_Mux_Array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W55 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  55   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=17". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W17 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FORMATTER' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "EW=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=11". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W11 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Priority_Codec_64'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FRMT_STAGE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FFD_NoCE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine FFD_NoCE_W1 line 50 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'First_Phase_M_W64' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W64 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Equal' instantiated from design 'Zero_InfMult_Unit_W64' with
+	the parameters "S=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W12 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W1 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Less' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'DW_mult_SW53' with
+	the parameters "W=106". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W106 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  106  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "SWR=53,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W53 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OR_Module' instantiated from design 'Round_decoder_M_SW52' with
+	the parameters "W=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Deco_Round_Mult'. (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'./source/Deco_Round_Mult.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W53 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=52". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Rotate_Mux_Array_SWR55' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Greater_Comparator' instantiated from design 'FORMATTER_EW12' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Uniquified 2 instances of design 'd_ff_en_W2'. (OPT-1056)
+Information: Uniquified 13 instances of design 'd_ff_en_W64'. (OPT-1056)
+Information: Uniquified 3 instances of design 'd_ff_en_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'demux_1x3'. (OPT-1056)
+Information: Uniquified 5 instances of design 'Mux_2x1_W1'. (OPT-1056)
+Information: Uniquified 6 instances of design 'Mux_2x1_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Simple_Subt_W11_N4'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_bv2_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W2'. (OPT-1056)
+Information: Uniquified 4 instances of design 'RegisterAdd_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W63'. (OPT-1056)
+Information: Uniquified 7 instances of design 'RegisterAdd_W3'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W6'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Rotate_Mux_Array_SWR55'. (OPT-1056)
+Information: Uniquified 3 instances of design 'RegisterAdd_W55'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Equal_S63'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Less_W12'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W11'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W52'. (OPT-1056)
+Information: Uniquified 108 instances of design 'Multiplexer_AC_W1'. (OPT-1056)
+
+  Linking design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (246 designs)             /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_DW_1STAGE_syn_unmapped.ddc'.
+Using operating conditions 'tt_1p2v_25c' found in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'.
+
+#   Propagate Constraints from cell mux_result_op/ (Mux_3x1_b_W64) #
+
+#   Propagate Constraints from cell mux_ready_op/ (Mux_3x1_b_W1) #
+
+#   Propagate Constraints from cell underflow_flag_mux/ (Mux_2x1_W1_1) #
+
+#   Propagate Constraints from cell overflow_flag_mux/ (Mux_2x1_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/                                  \
+(FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6) #
+
+#   Propagate Constraints from cell FPADDSUB/Ready_reg/ (FFD_NoCE_W1) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_FLAGS/                 \
+(RegisterAdd_W3_0) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_DATAOUT/               \
+(RegisterAdd_W64_1) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/                  \
+(FRMT_STAGE_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sgf_Mux/          \
+(Multiplexer_AC_W52_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Exp_Mux/          \
+(Multiplexer_AC_W11_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sign_Mux/         \
+(Mux_3x1_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/LZD_DOUBLE.Codec_64/              \
+(Priority_Codec_64) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_FLAGS/                  \
+(RegisterAdd_W3_1) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_DMP_exp/                \
+(RegisterAdd_W11) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_Raw_mant/               \
+(RegisterAdd_W55_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_FLAGS/                  \
+(RegisterAdd_W3_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DmP_mant/               \
+(RegisterAdd_W55_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DMP/                    \
+(RegisterAdd_W63_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/                \
+(FORMATTER_EW12) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/LTComparator/   \
+(Comparator_Less_W12_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/GTComparator/   \
+(Greater_Comparator_W12) #
+
+#   Propagate Constraints from cell FPADDSUB/last_rotate/                      \
+(Rotate_Mux_Array_SWR55_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_2) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_6) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_7) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_8) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_9) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_10) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_11) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_12) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_13) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_14) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_15) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_16) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_17) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_18) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_19) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_20) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_21) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_22) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_23) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_24) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_25) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_26) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_27) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_28) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_29) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_30) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_31) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_32) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_33) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_34) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_35) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_36) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_37) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_38) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_39) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_40) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_41) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_42) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_43) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_44) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_45) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_46) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_47) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_48) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_49) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_50) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_51) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_52) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_53) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[5].shift_mux_array/ (shift_mux_array_SWR55_LEVEL5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[4].shift_mux_array/ (shift_mux_array_SWR55_LEVEL4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[3].shift_mux_array/ (shift_mux_array_SWR55_LEVEL3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[2].shift_mux_array/ (shift_mux_array_SWR55_LEVEL2) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_FLAGS/             \
+(RegisterAdd_W3_3) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_VARS/              \
+(RegisterAdd_W17) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_FLAGS/                 \
+(RegisterAdd_W3_4) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS2/             \
+(RegisterAdd_W2_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS1/             \
+(RegisterAdd_W6_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_SHIFT_DATA/                  \
+(RegisterAdd_W55_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_DMP/                   \
+(RegisterAdd_W63_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[1].shift_mux_array/ (shift_mux_array_SWR55_LEVEL1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[0].shift_mux_array/ (shift_mux_array_SWR55_LEVEL0) #
+
+#   Propagate Constraints from cell FPADDSUB/first_rotate/                     \
+(Rotate_Mux_Array_SWR55_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_54) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_55) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_56) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_57) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_58) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_59) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_60) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_61) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_62) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_63) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_64) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_65) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_66) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_67) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_68) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_69) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_70) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_71) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_72) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_73) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_74) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_75) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_76) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_77) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_78) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_79) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_80) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_81) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_82) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_83) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_84) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_85) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_86) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_87) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_88) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_89) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_90) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_91) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_92) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_93) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_94) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_95) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_96) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_97) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_98) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_99) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_100) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_101) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_102) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_103) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_104) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_105) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_106) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_107) #
+
+#   Propagate Constraints from cell FPADDSUB/b_shftr_idat_mux_SHT1/            \
+(Multiplexer_AC_W55) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_FLAGS/                 \
+(RegisterAdd_W3_5) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_sft_amount/            \
+(RegisterAdd_W6_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DmP_mant/              \
+(RegisterAdd_W52) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DMP/                   \
+(RegisterAdd_W63_2) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_FLAGS/                  \
+(RegisterAdd_W3_6) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DmP/                    \
+(RegisterAdd_W63_3) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DMP/                    \
+(RegisterAdd_W63_4) #
+
+#   Propagate Constraints from cell FPADDSUB/result_sign_bit/ (sgn_result) #
+
+#   Propagate Constraints from cell FPADDSUB/Op_verification/ (xor_tri_W64) #
+
+#   Propagate Constraints from cell FPADDSUB/MuxXY/ (MultiplexTxT_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/Magnitude_Comparator/             \
+(Comparator_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_FLAGS/                \
+(RegisterAdd_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDY/             \
+(RegisterAdd_W64_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDX/             \
+(RegisterAdd_W64_3) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_ShiftRegister/               \
+(ShiftRegister_W7) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FSM_INPUT_ENABLE/            \
+(FSM_INPUT_ENABLE) #
+
+#   Propagate Constraints from cell FPMULT/                                    \
+(FPU_Multiplication_Function_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/           \
+(Tenth_Phase_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sgf_Mux/   \
+(Multiplexer_AC_W52_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Exp_Mux/   \
+(Multiplexer_AC_W11_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sign_Mux/  \
+(Mux_3x1_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/ (Adder_Round_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_overflow_Result/        \
+(RegisterAdd_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_Subt_Result/            \
+(RegisterAdd_W53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/A_operation/ (adder_W53) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/                      \
+(Round_decoder_M_SW52) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/Rounding_Deco/        \
+(Deco_Round_Mult) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/OR_info_reg/          \
+(OR_Module_W52) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/              \
+(Barrel_Shifter_M_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/Output_Reg/   \
+(RegisterMult_W53) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Barrel_Shifter_module/shift_mux_array/ (shift_mux_array_SWR53_LEVEL0) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_D_I_mux/             \
+(Multiplexer_AC_W53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ (DW_mult_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/finalreg/             \
+(RegisterAdd_W106) #
+
+#   Propagate Constraints from cell FPMULT/Sign_operation/ (XOR_M) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/ (Exp_Operation_m_EW11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Underflow_m/             \
+(RegisterMult_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Exp_unflow_Comparator_m/ \
+(Comparator_Less_W12_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Oflow_A_m/               \
+(RegisterMult_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_result_m/            \
+(RegisterMult_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_add_subt_m/          \
+(add_sub_carry_out_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_B_mux/ (Mux_3x1_W11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_A_mux/                     \
+(Multiplexer_AC_W12) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/                 \
+(Zero_InfMult_Unit_W64) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Zero_Info_Mult/  \
+(RegisterAdd_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_B_Comp/     \
+(Comparator_Equal_S63_0) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_A_Comp/     \
+(Comparator_Equal_S63_1) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/                  \
+(First_Phase_M_W64) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/YMRegister/       \
+(RegisterMult_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/XMRegister/       \
+(RegisterMult_W64_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_B/ (RegisterAdd_W2_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_C/ (RegisterAdd_W1_3) #
+
+#   Propagate Constraints from cell FPMULT/Sel_A/ (RegisterAdd_W1_4) #
+
+#   Propagate Constraints from cell FPMULT/FS_Module/ (FSM_Mult_Function) #
+
+#   Propagate Constraints from cell FPSENCOS/                                  \
+(CORDIC_Arch3v1_W64_EW11_SW52_SWR55) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff5_data_out/ (d_ff_en_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_DECO_CORDIC_EXT2/            \
+(DECO_CORDIC_EXT2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_2x1_sal/ (Mux_2x1_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Zn/ (d_ff_en_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Yn/ (d_ff_en_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Xn/ (d_ff_en_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/op_select_mod/ (Op_Select) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_PriorityEncoder_CORDIC/      \
+(PriorityEncoder_CORDIC) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var2/ (Mux_3x1_bv2_W64_0) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var1/ (Mux_3x1_bv2_W64_1) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/reg_sign/ (d_ff_en_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_LUT/ (d_ff_en_W64_4) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_y/ (d_ff_en_W64_5) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_x/ (d_ff_en_W64_6) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_sign/ (Mux_2x1_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/LUTBLK2.LUT64/                    \
+(LUT_CASE_64bits_W64_N4) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_y/ (Simple_Subt_W11_N4_0) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_x/ (Simple_Subt_W11_N4_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxZ_2stage/              \
+(d_ff_en_W64_7) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxY_2stage/              \
+(d_ff_en_W64_8) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxX_2stage/              \
+(d_ff_en_W64_9) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_z0/ (Mux_2x1_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_y0/ (Mux_2x1_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_x0/ (Mux_2x1_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_Z0/ (d_ff_en_W64_10) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_region_flag/ (d_ff_en_W2_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_operation/ (d_ff_en_W1_1) #
+
+#   Propagate Constraints from cell FPSENCOS/VAR_CONT/                         \
+(Up_counter_COUNTER_WIDTH2) #
+
+#   Propagate Constraints from cell FPSENCOS/ITER_CONT/                        \
+(Up_counter_COUNTER_WIDTH4) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_CORDIC_FSM_v3/               \
+(CORDIC_FSM_v3) #
+
+#   Propagate Constraints from cell mux_data_in2/ (Mux_2x1_W64_4) #
+
+#   Propagate Constraints from cell mux_data_in1/ (Mux_2x1_W64_5) #
+
+#   Propagate Constraints from cell mux_operation_add_cordic/ (Mux_2x1_W1_3) #
+
+#   Propagate Constraints from cell mux_beg_addsubt/ (Mux_2x1_W1_4) #
+
+#   Propagate Constraints from cell deco_operation/ (deco_op) #
+
+#   Propagate Constraints from cell demux_ack_op/ (demux_1x3_0) #
+
+#   Propagate Constraints from cell demux_beg_op/ (demux_1x3_1) #
+
+#   Propagate Constraints from cell NaN_dff/ (d_ff_en_W1_2) #
+
+#   Propagate Constraints from cell BLKNaN2.NaN_flag_64/ (NaN_mod_64) #
+
+#   Propagate Constraints from cell reg_dataB/ (d_ff_en_W64_11) #
+
+#   Propagate Constraints from cell reg_dataA/ (d_ff_en_W64_12) #
+
+#   Propagate Constraints from cell operation_dff/ (d_ff_en_W2_1) #
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Tue Nov  8 03:09:48 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     19
+    Feedthrough (LINT-29)                                           2
+    Shorted outputs (LINT-31)                                       8
+    Constant outputs (LINT-52)                                      9
+
+Cells                                                              27
+    Cells do not drive (LINT-1)                                     8
+    Nets connected to multiple pins on same cell (LINT-33)         19
+
+Nets                                                                9
+    Unloaded nets (LINT-2)                                          9
+--------------------------------------------------------------------------------
+
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH4', cell 'C37' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH2', cell 'C29' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'zero_flag' driven by pin 'FPADDSUB/zero_flag' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'ack_fsm_addsubt' driven by pin 'demux_ack_op/ch1' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[0]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[0]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[1]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[1]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[58]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[58]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[59]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[59]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[60]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[60]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[61]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[61]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[62]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[62]' has no loads. (LINT-2)
+Warning: In design 'Rotate_Mux_Array_SWR55_1', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'Rotate_Mux_Array_SWR55_0', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to output port 'data_out[62]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[48]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[51]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[57]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[58]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[59]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[60]'. (LINT-31)
+Warning: In design 'FSM_Mult_Function', output port 'load_1_o' is connected directly to output port 'ctrl_select_a_o'. (LINT-31)
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[47]', 'ch_0[44]', 'ch_0[40]', 'ch_0[38]', 'ch_0[37]', 'ch_0[33]', 'ch_0[30]', 'ch_0[27]', 'ch_0[25]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[12]', 'ch_0[10]', 'ch_0[5]', 'ch_0[4]', 'ch_0[2]', 'ch_0[1]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'ch_0[61]', 'ch_0[60]'', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[49]', 'ch_0[48]', 'ch_0[46]', 'ch_0[45]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[39]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[32]', 'ch_0[31]', 'ch_0[29]', 'ch_0[28]', 'ch_0[26]', 'ch_0[24]', 'ch_0[19]', 'ch_0[14]', 'ch_0[13]', 'ch_0[11]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[3]', 'ch_0[0]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_y0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[61]', 'ch_0[60]', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[49]', 'ch_0[48]', 'ch_0[47]', 'ch_0[46]', 'ch_0[45]', 'ch_0[44]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[40]', 'ch_0[39]', 'ch_0[38]', 'ch_0[37]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[33]', 'ch_0[32]', 'ch_0[31]', 'ch_0[30]', 'ch_0[29]', 'ch_0[28]', 'ch_0[27]', 'ch_0[26]', 'ch_0[25]', 'ch_0[24]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[19]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[14]', 'ch_0[13]', 'ch_0[12]', 'ch_0[11]', 'ch_0[10]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[5]', 'ch_0[4]', 'ch_0[3]', 'ch_0[2]', 'ch_0[1]', 'ch_0[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[10]', 'D2[10]'', 'D2[9]', 'D2[8]', 'D2[7]', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]', 'D2[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_operation'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_A_i[52]', 'Data_B_i[52]''.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[52]', 'Data_B_i[51]'', 'Data_B_i[50]', 'Data_B_i[49]', 'Data_B_i[48]', 'Data_B_i[47]', 'Data_B_i[46]', 'Data_B_i[45]', 'Data_B_i[44]', 'Data_B_i[43]', 'Data_B_i[42]', 'Data_B_i[41]', 'Data_B_i[40]', 'Data_B_i[39]', 'Data_B_i[38]', 'Data_B_i[37]', 'Data_B_i[36]', 'Data_B_i[35]', 'Data_B_i[34]', 'Data_B_i[33]', 'Data_B_i[32]', 'Data_B_i[31]', 'Data_B_i[30]', 'Data_B_i[29]', 'Data_B_i[28]', 'Data_B_i[27]', 'Data_B_i[26]', 'Data_B_i[25]', 'Data_B_i[24]', 'Data_B_i[23]', 'Data_B_i[22]', 'Data_B_i[21]', 'Data_B_i[20]', 'Data_B_i[19]', 'Data_B_i[18]', 'Data_B_i[17]', 'Data_B_i[16]', 'Data_B_i[15]', 'Data_B_i[14]', 'Data_B_i[13]', 'Data_B_i[12]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[3]', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B_i[5]', 'Data_B_i[4]'', 'Data_B_i[2]'.
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', the same net is connected to more than one pin on submodule 'b_shftr_idat_mux_SHT1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D0[1]', 'D0[0]''.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_A_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[62]', 'Data_B[61]'', 'Data_B[60]', 'Data_B[59]', 'Data_B[58]', 'Data_B[57]', 'Data_B[56]', 'Data_B[55]', 'Data_B[54]', 'Data_B[53]', 'Data_B[52]', 'Data_B[51]', 'Data_B[50]', 'Data_B[49]', 'Data_B[48]', 'Data_B[47]', 'Data_B[46]', 'Data_B[45]', 'Data_B[44]', 'Data_B[43]', 'Data_B[42]', 'Data_B[41]', 'Data_B[40]', 'Data_B[39]', 'Data_B[38]', 'Data_B[37]', 'Data_B[36]', 'Data_B[35]', 'Data_B[34]', 'Data_B[33]', 'Data_B[32]', 'Data_B[31]', 'Data_B[30]', 'Data_B[29]', 'Data_B[28]', 'Data_B[27]', 'Data_B[26]', 'Data_B[25]', 'Data_B[24]', 'Data_B[23]', 'Data_B[22]', 'Data_B[21]', 'Data_B[20]', 'Data_B[19]', 'Data_B[18]', 'Data_B[17]', 'Data_B[16]', 'Data_B[15]', 'Data_B[14]', 'Data_B[13]', 'Data_B[12]', 'Data_B[11]', 'Data_B[10]', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_B_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_A[62]', 'Data_A[61]'', 'Data_A[60]', 'Data_A[59]', 'Data_A[58]', 'Data_A[57]', 'Data_A[56]', 'Data_A[55]', 'Data_A[54]', 'Data_A[53]', 'Data_A[52]', 'Data_A[51]', 'Data_A[50]', 'Data_A[49]', 'Data_A[48]', 'Data_A[47]', 'Data_A[46]', 'Data_A[45]', 'Data_A[44]', 'Data_A[43]', 'Data_A[42]', 'Data_A[41]', 'Data_A[40]', 'Data_A[39]', 'Data_A[38]', 'Data_A[37]', 'Data_A[36]', 'Data_A[35]', 'Data_A[34]', 'Data_A[33]', 'Data_A[32]', 'Data_A[31]', 'Data_A[30]', 'Data_A[29]', 'Data_A[28]', 'Data_A[27]', 'Data_A[26]', 'Data_A[25]', 'Data_A[24]', 'Data_A[23]', 'Data_A[22]', 'Data_A[21]', 'Data_A[20]', 'Data_A[19]', 'Data_A[18]', 'Data_A[17]', 'Data_A[16]', 'Data_A[15]', 'Data_A[14]', 'Data_A[13]', 'Data_A[12]', 'Data_A[11]', 'Data_A[10]', 'Data_A[9]', 'Data_A[8]', 'Data_A[7]', 'Data_A[6]', 'Data_A[5]', 'Data_A[4]', 'Data_A[3]', 'Data_A[2]', 'Data_A[1]', 'Data_A[0]'.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]''.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[9]', 'Data_B[8]'', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[10]', 'D1[9]'', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'GTComparator'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'LTComparator'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[62]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[60]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[59]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[58]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[57]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[51]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 566 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+
+Loaded alib file '../alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+Information: Ungrouping hierarchy operation_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy BLKNaN2.NaN_flag_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy NaN_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_beg_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy deco_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_beg_addsubt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_ready_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_result_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_ack_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy underflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy overflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_operation_add_cordic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_CORDIC_FSM_v3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/ITER_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/VAR_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/LUTBLK2.LUT64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_PriorityEncoder_CORDIC before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/op_select_mod before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_DECO_CORDIC_EXT2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/FS_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_A before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_B before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sign_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_D_I_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FSM_INPUT_ENABLE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_ShiftRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDX before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Magnitude_Comparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/MuxXY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Op_verification before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/result_sign_bit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_sft_amount before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/b_shftr_idat_mux_SHT1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[0].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[1].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_SHIFT_DATA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_VARS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[2].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[3].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[4].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[5].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_DMP_exp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/LZD_DOUBLE.Codec_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Ready_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_region_flag before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff5_data_out before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Zn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Yn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Xn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_LUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxZ_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxY_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxX_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_Z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_2x1_sal before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_y0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_x0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_C before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_DATAOUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DmP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_Raw_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/XMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_A_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_add_subt_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_result_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Oflow_A_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Exp_unflow_Comparator_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/finalreg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/OR_info_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/Rounding_Deco before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/A_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_Subt_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/GTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_overflow_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Zero_Info_Mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Final_Result_IEEE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/YMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_B_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Underflow_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/LTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping 243 of 245 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+Information: Added key list 'DesignWare' to design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (DDB-72)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[30]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[4]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[36]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[40]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[38]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[32]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[43]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[34]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[47]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[42]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[46]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[49]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[51]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[57]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[58]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[59]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[60]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[61]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+ Implement Synthetic for 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+  Processing 'DW_mult_SW53'
+ Implement Synthetic for 'DW_mult_SW53'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy FPMULT/Sgf_operation 'DW_mult_SW53' #insts = 214. (OPT-777)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:06  547701.1      4.56   10512.3    2102.7                           825384.3750
+    0:02:06  547701.1      4.56   10512.3    2102.7                           825384.3750
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:33  337357.4     10.34   15868.3    1176.1                           456309.5000
+    0:02:40  344665.4      5.76   13871.5     812.1                           469196.4375
+    0:02:40  344665.4      5.76   13871.5     812.1                           469196.4375
+    0:02:52  344832.5      5.76   14877.2     829.3                           469831.3125
+    0:02:53  344943.4      5.76   14897.2     834.1                           469988.7812
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:07  342577.4      5.76   14751.5     821.8                           466566.9688
+    0:03:12  346747.7      5.58   14633.1     795.6                           475843.0000
+    0:03:17  363901.0      5.31   13685.3     722.2                           509741.5938
+    0:03:22  374672.2      5.11   13124.9     681.5                           531064.3125
+    0:03:24  378236.2      5.11   13036.1     671.2                           538302.6250
+    0:03:26  376997.8      5.11   12855.1     668.3                           536715.0625
+    0:03:27  376997.8      5.11   12855.1     668.3                           536715.0625
+    0:03:31  381480.5      4.91   12878.1     685.2                           542603.1250
+    0:03:31  381480.5      4.91   12878.1     685.2                           542603.1250
+    0:03:31  382295.5      4.86   12869.0     684.8                           544232.1875
+    0:03:31  382295.5      4.86   12869.0     684.8                           544232.1875
+    0:03:33  383297.8      4.85   12869.9     684.8                           545637.9375
+    0:03:33  383297.8      4.85   12869.9     684.8                           545637.9375
+    0:04:14  397019.5      4.48   12733.2     899.9                           568664.8125
+    0:04:14  397019.5      4.48   12733.2     899.9                           568664.8125
+    0:04:14  397019.5      4.48   12733.2     899.9                           568664.8125
+    0:04:14  397019.5      4.48   12733.2     899.9                           568664.8125
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:15  397114.6      4.48   12732.6     899.9                           568865.2500
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+    0:04:23  404369.3      4.73   11632.7     143.0 net896385                 581529.5625
+    0:04:26  405977.8      4.64   11620.1      29.0 FPMULT/Sgf_operation/mult_x_1/R_3311/D 583824.6250
+    0:04:29  408502.1      4.46   11595.9       0.0 FPMULT/Sgf_operation/mult_x_1/R_2577_RW_1/D 589232.1875
+    0:04:31  409474.1      4.46   11593.3       0.0                           591324.8750
+    0:04:38  411009.1      4.49   11597.3       2.0                           593294.8125
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:38  411009.1      4.49   11597.3       2.0                           593294.8125
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+    0:05:11  378933.1      4.51    9115.9       2.3 FPMULT/Sgf_operation/mult_x_1/R_2577_RW_1/D 549919.5000
+    0:05:11  378902.9      4.51    9115.9       2.3                           549848.6875
+    0:05:13  379419.8      4.51    9116.4       3.3                           550480.7500
+    0:05:13  379419.8      4.51    9116.4       3.3                           550480.7500
+    0:05:15  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:16  379291.7      4.51    9089.0       3.3                           550159.2500
+    0:05:27  382815.4      4.39    9036.2      24.6                           556336.5625
+    0:05:27  382815.4      4.39    9036.2      24.6                           556336.5625
+    0:05:28  383454.7      4.44    9039.0      24.6                           557208.5000
+    0:05:28  383454.7      4.44    9039.0      24.6                           557208.5000
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:34  384769.4      4.36    9027.7      60.6                           559476.8750
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:05:35  384769.4      4.36    9027.7      60.6                           559476.8750
+    0:05:41  373989.6      4.36    8815.6      60.0                           542281.0625
+    0:05:42  374402.9      4.35    8815.0      65.0                           543126.0000
+    0:05:42  374402.9      4.35    8815.0      65.0                           543126.0000
+    0:05:44  374762.9      4.35    8791.2      65.0                           544021.9375
+    0:05:50  373965.1      4.35    8787.2      65.0                           542887.0625
+    0:05:52  374473.4      4.35    8775.6      10.0 FPMULT/Sgf_operation/mult_x_1/R_2844/D 543614.3125
+    0:05:56  375160.3      4.88    8834.9       6.0 net911142                 545054.4375
+    0:05:58  375806.9      4.53    8788.4       0.0 FPMULT/Sgf_operation/mult_x_1/R_2814_RW_5/D 546352.1250
+    0:05:58  375806.9      4.53    8788.4       0.0                           546352.1250
+    0:06:02  376764.5      4.35    8759.0      23.0                           548097.8125
+    0:06:05  378210.2      4.34    8745.5      23.0                           551254.7500
+    0:06:08  380701.4      4.34    8599.3      23.0                           556096.3750
+    0:06:08  380795.0      4.34    8599.0      23.0                           556279.1875
+    0:06:18  369599.0      4.34    8599.0      23.0                           534905.1250
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 3301 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Writing verilog file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_DW_1STAGE_syn.v'.
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_DW_1STAGE_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_DW_1STAGE_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_DW_1STAGE_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W2 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W64 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'NaN_mod_64'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'./source/NaN_mod_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W1 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'demux_1x3'. (HDL-193)
+
+Statistics for case statements in always block at line 11 in file
+	'./source/demux_1x3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'deco_op'. (HDL-193)
+Warning:  ./source/deco_op.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 9 in file
+	'./source/deco_op.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  ./source/CORDIC_Arch3v1.v:163: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./source/CORDIC_Arch3v1.v:176: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_Multiplication_Function' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_PIPELINED_FPADDSUB' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55,EWR=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_FSM_v3'. (HDL-193)
+
+Statistics for case statements in always block at line 72 in file
+	'./source/CORDIC_FSM_v3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CORDIC_FSM_v3 line 62 in file
+		'./source/CORDIC_FSM_v3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    state_reg_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH4 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH2 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Simple_Subt' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=11,N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'LUT_CASE_64bits' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64,N=4". (HDL-193)
+Warning:  ./source/lut_CASE_64.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'./source/lut_CASE_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_bv2' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b_v2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'PriorityEncoder_CORDIC'. (HDL-193)
+Warning:  ./source/PriorityEncoder_ExtCORDIC.v:27: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 22 in file
+	'./source/PriorityEncoder_ExtCORDIC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            27            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Op_Select'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DECO_CORDIC_EXT2'. (HDL-193)
+
+Statistics for case statements in always block at line 27 in file
+	'./source/DECO_CORDIC_OP2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |    auto/auto     |
+|            50            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_Mult_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 128 in file
+	'./source/FSM_Mult_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Mult_Function line 121 in file
+		'./source/FSM_Mult_Function.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W1 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W2 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'First_Phase_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Zero_InfMult_Unit' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=12". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation_m' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "EW=11". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'XOR_M'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Simple_KOA_STAGE_2' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=53". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_decoder_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder_Round' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Tenth_Phase' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_INPUT_ENABLE'. (HDL-193)
+
+Statistics for case statements in always block at line 76 in file
+	'./source/FSM_input_enable.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            84            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_INPUT_ENABLE line 69 in file
+		'./source/FSM_input_enable.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ShiftRegister' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=7". (HDL-193)
+
+Inferred memory devices in process
+	in routine ShiftRegister_W7 line 26 in file
+		'./source/shift_reg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W64 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MultiplexTxT' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'./source/MultiplexTxT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            34            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'xor_tri' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgn_result'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W63 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  63   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W3 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=52". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W52 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  52   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W6 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Rotate_Mux_Array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W55 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  55   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=17". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W17 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FORMATTER' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "EW=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=11". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W11 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Priority_Codec_64'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FRMT_STAGE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FFD_NoCE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine FFD_NoCE_W1 line 50 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'First_Phase_M_W64' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W64 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Equal' instantiated from design 'Zero_InfMult_Unit_W64' with
+	the parameters "S=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W12 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W1 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Less' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mult2' instantiated from design 'Simple_KOA_STAGE_2_SW53' with
+	the parameters "SW=26". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult2_SW26 line 27 in file
+		'./source/mult2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DatO_reg       | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mult2' instantiated from design 'Simple_KOA_STAGE_2_SW53' with
+	the parameters "SW=27". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult2_SW27 line 27 in file
+		'./source/mult2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DatO_reg       | Flip-flop |  54   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mult2' instantiated from design 'Simple_KOA_STAGE_2_SW53' with
+	the parameters "SW=28". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult2_SW28 line 27 in file
+		'./source/mult2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DatO_reg       | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Simple_KOA_STAGE_2_SW53' with
+	the parameters "W=106". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W106 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  106  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "SWR=53,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W53 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OR_Module' instantiated from design 'Round_decoder_M_SW52' with
+	the parameters "W=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Deco_Round_Mult'. (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'./source/Deco_Round_Mult.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W53 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=52". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Rotate_Mux_Array_SWR55' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Greater_Comparator' instantiated from design 'FORMATTER_EW12' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Uniquified 2 instances of design 'd_ff_en_W2'. (OPT-1056)
+Information: Uniquified 13 instances of design 'd_ff_en_W64'. (OPT-1056)
+Information: Uniquified 3 instances of design 'd_ff_en_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'demux_1x3'. (OPT-1056)
+Information: Uniquified 5 instances of design 'Mux_2x1_W1'. (OPT-1056)
+Information: Uniquified 6 instances of design 'Mux_2x1_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Simple_Subt_W11_N4'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_bv2_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W2'. (OPT-1056)
+Information: Uniquified 4 instances of design 'RegisterAdd_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W63'. (OPT-1056)
+Information: Uniquified 7 instances of design 'RegisterAdd_W3'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W6'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Rotate_Mux_Array_SWR55'. (OPT-1056)
+Information: Uniquified 3 instances of design 'RegisterAdd_W55'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Equal_S63'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Less_W12'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W11'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W52'. (OPT-1056)
+Information: Uniquified 108 instances of design 'Multiplexer_AC_W1'. (OPT-1056)
+
+  Linking design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (249 designs)             /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_2STAGE_syn_unmapped.ddc'.
+Using operating conditions 'tt_1p2v_25c' found in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'.
+
+#   Propagate Constraints from cell mux_result_op/ (Mux_3x1_b_W64) #
+
+#   Propagate Constraints from cell mux_ready_op/ (Mux_3x1_b_W1) #
+
+#   Propagate Constraints from cell underflow_flag_mux/ (Mux_2x1_W1_1) #
+
+#   Propagate Constraints from cell overflow_flag_mux/ (Mux_2x1_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/                                  \
+(FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6) #
+
+#   Propagate Constraints from cell FPADDSUB/Ready_reg/ (FFD_NoCE_W1) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_FLAGS/                 \
+(RegisterAdd_W3_0) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_DATAOUT/               \
+(RegisterAdd_W64_1) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/                  \
+(FRMT_STAGE_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sgf_Mux/          \
+(Multiplexer_AC_W52_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Exp_Mux/          \
+(Multiplexer_AC_W11_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sign_Mux/         \
+(Mux_3x1_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/LZD_DOUBLE.Codec_64/              \
+(Priority_Codec_64) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_FLAGS/                  \
+(RegisterAdd_W3_1) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_DMP_exp/                \
+(RegisterAdd_W11) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_Raw_mant/               \
+(RegisterAdd_W55_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_FLAGS/                  \
+(RegisterAdd_W3_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DmP_mant/               \
+(RegisterAdd_W55_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DMP/                    \
+(RegisterAdd_W63_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/                \
+(FORMATTER_EW12) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/LTComparator/   \
+(Comparator_Less_W12_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/GTComparator/   \
+(Greater_Comparator_W12) #
+
+#   Propagate Constraints from cell FPADDSUB/last_rotate/                      \
+(Rotate_Mux_Array_SWR55_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_2) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_6) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_7) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_8) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_9) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_10) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_11) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_12) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_13) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_14) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_15) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_16) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_17) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_18) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_19) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_20) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_21) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_22) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_23) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_24) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_25) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_26) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_27) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_28) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_29) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_30) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_31) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_32) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_33) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_34) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_35) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_36) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_37) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_38) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_39) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_40) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_41) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_42) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_43) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_44) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_45) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_46) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_47) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_48) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_49) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_50) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_51) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_52) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_53) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[5].shift_mux_array/ (shift_mux_array_SWR55_LEVEL5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[4].shift_mux_array/ (shift_mux_array_SWR55_LEVEL4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[3].shift_mux_array/ (shift_mux_array_SWR55_LEVEL3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[2].shift_mux_array/ (shift_mux_array_SWR55_LEVEL2) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_FLAGS/             \
+(RegisterAdd_W3_3) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_VARS/              \
+(RegisterAdd_W17) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_FLAGS/                 \
+(RegisterAdd_W3_4) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS2/             \
+(RegisterAdd_W2_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS1/             \
+(RegisterAdd_W6_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_SHIFT_DATA/                  \
+(RegisterAdd_W55_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_DMP/                   \
+(RegisterAdd_W63_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[1].shift_mux_array/ (shift_mux_array_SWR55_LEVEL1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[0].shift_mux_array/ (shift_mux_array_SWR55_LEVEL0) #
+
+#   Propagate Constraints from cell FPADDSUB/first_rotate/                     \
+(Rotate_Mux_Array_SWR55_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_54) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_55) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_56) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_57) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_58) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_59) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_60) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_61) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_62) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_63) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_64) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_65) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_66) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_67) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_68) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_69) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_70) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_71) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_72) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_73) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_74) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_75) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_76) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_77) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_78) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_79) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_80) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_81) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_82) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_83) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_84) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_85) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_86) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_87) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_88) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_89) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_90) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_91) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_92) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_93) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_94) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_95) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_96) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_97) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_98) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_99) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_100) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_101) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_102) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_103) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_104) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_105) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_106) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_107) #
+
+#   Propagate Constraints from cell FPADDSUB/b_shftr_idat_mux_SHT1/            \
+(Multiplexer_AC_W55) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_FLAGS/                 \
+(RegisterAdd_W3_5) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_sft_amount/            \
+(RegisterAdd_W6_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DmP_mant/              \
+(RegisterAdd_W52) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DMP/                   \
+(RegisterAdd_W63_2) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_FLAGS/                  \
+(RegisterAdd_W3_6) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DmP/                    \
+(RegisterAdd_W63_3) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DMP/                    \
+(RegisterAdd_W63_4) #
+
+#   Propagate Constraints from cell FPADDSUB/result_sign_bit/ (sgn_result) #
+
+#   Propagate Constraints from cell FPADDSUB/Op_verification/ (xor_tri_W64) #
+
+#   Propagate Constraints from cell FPADDSUB/MuxXY/ (MultiplexTxT_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/Magnitude_Comparator/             \
+(Comparator_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_FLAGS/                \
+(RegisterAdd_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDY/             \
+(RegisterAdd_W64_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDX/             \
+(RegisterAdd_W64_3) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_ShiftRegister/               \
+(ShiftRegister_W7) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FSM_INPUT_ENABLE/            \
+(FSM_INPUT_ENABLE) #
+
+#   Propagate Constraints from cell FPMULT/                                    \
+(FPU_Multiplication_Function_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/           \
+(Tenth_Phase_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sgf_Mux/   \
+(Multiplexer_AC_W52_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Exp_Mux/   \
+(Multiplexer_AC_W11_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sign_Mux/  \
+(Mux_3x1_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/ (Adder_Round_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_overflow_Result/        \
+(RegisterAdd_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_Subt_Result/            \
+(RegisterAdd_W53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/A_operation/ (adder_W53) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/                      \
+(Round_decoder_M_SW52) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/Rounding_Deco/        \
+(Deco_Round_Mult) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/OR_info_reg/          \
+(OR_Module_W52) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/              \
+(Barrel_Shifter_M_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/Output_Reg/   \
+(RegisterMult_W53) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Barrel_Shifter_module/shift_mux_array/ (shift_mux_array_SWR53_LEVEL0) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_D_I_mux/             \
+(Multiplexer_AC_W53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/                      \
+(Simple_KOA_STAGE_2_SW53) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/RECURSIVE.ODD1.finalreg/ (RegisterAdd_W106) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/RECURSIVE.ODD1.middle/ (mult2_SW28) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/RECURSIVE.ODD1.right/ \
+(mult2_SW27) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/RECURSIVE.ODD1.left/  \
+(mult2_SW26) #
+
+#   Propagate Constraints from cell FPMULT/Sign_operation/ (XOR_M) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/ (Exp_Operation_m_EW11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Underflow_m/             \
+(RegisterMult_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Exp_unflow_Comparator_m/ \
+(Comparator_Less_W12_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Oflow_A_m/               \
+(RegisterMult_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_result_m/            \
+(RegisterMult_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_add_subt_m/          \
+(add_sub_carry_out_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_B_mux/ (Mux_3x1_W11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_A_mux/                     \
+(Multiplexer_AC_W12) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/                 \
+(Zero_InfMult_Unit_W64) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Zero_Info_Mult/  \
+(RegisterAdd_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_B_Comp/     \
+(Comparator_Equal_S63_0) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_A_Comp/     \
+(Comparator_Equal_S63_1) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/                  \
+(First_Phase_M_W64) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/YMRegister/       \
+(RegisterMult_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/XMRegister/       \
+(RegisterMult_W64_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_B/ (RegisterAdd_W2_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_C/ (RegisterAdd_W1_3) #
+
+#   Propagate Constraints from cell FPMULT/Sel_A/ (RegisterAdd_W1_4) #
+
+#   Propagate Constraints from cell FPMULT/FS_Module/ (FSM_Mult_Function) #
+
+#   Propagate Constraints from cell FPSENCOS/                                  \
+(CORDIC_Arch3v1_W64_EW11_SW52_SWR55) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff5_data_out/ (d_ff_en_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_DECO_CORDIC_EXT2/            \
+(DECO_CORDIC_EXT2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_2x1_sal/ (Mux_2x1_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Zn/ (d_ff_en_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Yn/ (d_ff_en_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Xn/ (d_ff_en_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/op_select_mod/ (Op_Select) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_PriorityEncoder_CORDIC/      \
+(PriorityEncoder_CORDIC) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var2/ (Mux_3x1_bv2_W64_0) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var1/ (Mux_3x1_bv2_W64_1) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/reg_sign/ (d_ff_en_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_LUT/ (d_ff_en_W64_4) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_y/ (d_ff_en_W64_5) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_x/ (d_ff_en_W64_6) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_sign/ (Mux_2x1_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/LUTBLK2.LUT64/                    \
+(LUT_CASE_64bits_W64_N4) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_y/ (Simple_Subt_W11_N4_0) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_x/ (Simple_Subt_W11_N4_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxZ_2stage/              \
+(d_ff_en_W64_7) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxY_2stage/              \
+(d_ff_en_W64_8) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxX_2stage/              \
+(d_ff_en_W64_9) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_z0/ (Mux_2x1_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_y0/ (Mux_2x1_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_x0/ (Mux_2x1_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_Z0/ (d_ff_en_W64_10) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_region_flag/ (d_ff_en_W2_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_operation/ (d_ff_en_W1_1) #
+
+#   Propagate Constraints from cell FPSENCOS/VAR_CONT/                         \
+(Up_counter_COUNTER_WIDTH2) #
+
+#   Propagate Constraints from cell FPSENCOS/ITER_CONT/                        \
+(Up_counter_COUNTER_WIDTH4) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_CORDIC_FSM_v3/               \
+(CORDIC_FSM_v3) #
+
+#   Propagate Constraints from cell mux_data_in2/ (Mux_2x1_W64_4) #
+
+#   Propagate Constraints from cell mux_data_in1/ (Mux_2x1_W64_5) #
+
+#   Propagate Constraints from cell mux_operation_add_cordic/ (Mux_2x1_W1_3) #
+
+#   Propagate Constraints from cell mux_beg_addsubt/ (Mux_2x1_W1_4) #
+
+#   Propagate Constraints from cell deco_operation/ (deco_op) #
+
+#   Propagate Constraints from cell demux_ack_op/ (demux_1x3_0) #
+
+#   Propagate Constraints from cell demux_beg_op/ (demux_1x3_1) #
+
+#   Propagate Constraints from cell NaN_dff/ (d_ff_en_W1_2) #
+
+#   Propagate Constraints from cell BLKNaN2.NaN_flag_64/ (NaN_mod_64) #
+
+#   Propagate Constraints from cell reg_dataB/ (d_ff_en_W64_11) #
+
+#   Propagate Constraints from cell reg_dataA/ (d_ff_en_W64_12) #
+
+#   Propagate Constraints from cell operation_dff/ (d_ff_en_W2_1) #
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Tue Nov  8 03:16:26 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     19
+    Feedthrough (LINT-29)                                           2
+    Shorted outputs (LINT-31)                                       8
+    Constant outputs (LINT-52)                                      9
+
+Cells                                                              27
+    Cells do not drive (LINT-1)                                     8
+    Nets connected to multiple pins on same cell (LINT-33)         19
+
+Nets                                                                9
+    Unloaded nets (LINT-2)                                          9
+--------------------------------------------------------------------------------
+
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH4', cell 'C37' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH2', cell 'C29' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'zero_flag' driven by pin 'FPADDSUB/zero_flag' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'ack_fsm_addsubt' driven by pin 'demux_ack_op/ch1' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[0]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[0]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[1]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[1]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[58]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[58]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[59]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[59]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[60]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[60]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[61]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[61]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[62]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[62]' has no loads. (LINT-2)
+Warning: In design 'Rotate_Mux_Array_SWR55_1', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'Rotate_Mux_Array_SWR55_0', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to output port 'data_out[62]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[48]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[51]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[57]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[58]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[59]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[60]'. (LINT-31)
+Warning: In design 'FSM_Mult_Function', output port 'load_1_o' is connected directly to output port 'ctrl_select_a_o'. (LINT-31)
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[47]', 'ch_0[44]', 'ch_0[40]', 'ch_0[38]', 'ch_0[37]', 'ch_0[33]', 'ch_0[30]', 'ch_0[27]', 'ch_0[25]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[12]', 'ch_0[10]', 'ch_0[5]', 'ch_0[4]', 'ch_0[2]', 'ch_0[1]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'ch_0[61]', 'ch_0[60]'', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[49]', 'ch_0[48]', 'ch_0[46]', 'ch_0[45]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[39]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[32]', 'ch_0[31]', 'ch_0[29]', 'ch_0[28]', 'ch_0[26]', 'ch_0[24]', 'ch_0[19]', 'ch_0[14]', 'ch_0[13]', 'ch_0[11]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[3]', 'ch_0[0]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_y0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[61]', 'ch_0[60]', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[49]', 'ch_0[48]', 'ch_0[47]', 'ch_0[46]', 'ch_0[45]', 'ch_0[44]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[40]', 'ch_0[39]', 'ch_0[38]', 'ch_0[37]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[33]', 'ch_0[32]', 'ch_0[31]', 'ch_0[30]', 'ch_0[29]', 'ch_0[28]', 'ch_0[27]', 'ch_0[26]', 'ch_0[25]', 'ch_0[24]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[19]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[14]', 'ch_0[13]', 'ch_0[12]', 'ch_0[11]', 'ch_0[10]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[5]', 'ch_0[4]', 'ch_0[3]', 'ch_0[2]', 'ch_0[1]', 'ch_0[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[10]', 'D2[10]'', 'D2[9]', 'D2[8]', 'D2[7]', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]', 'D2[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_operation'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_A_i[52]', 'Data_B_i[52]''.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[52]', 'Data_B_i[51]'', 'Data_B_i[50]', 'Data_B_i[49]', 'Data_B_i[48]', 'Data_B_i[47]', 'Data_B_i[46]', 'Data_B_i[45]', 'Data_B_i[44]', 'Data_B_i[43]', 'Data_B_i[42]', 'Data_B_i[41]', 'Data_B_i[40]', 'Data_B_i[39]', 'Data_B_i[38]', 'Data_B_i[37]', 'Data_B_i[36]', 'Data_B_i[35]', 'Data_B_i[34]', 'Data_B_i[33]', 'Data_B_i[32]', 'Data_B_i[31]', 'Data_B_i[30]', 'Data_B_i[29]', 'Data_B_i[28]', 'Data_B_i[27]', 'Data_B_i[26]', 'Data_B_i[25]', 'Data_B_i[24]', 'Data_B_i[23]', 'Data_B_i[22]', 'Data_B_i[21]', 'Data_B_i[20]', 'Data_B_i[19]', 'Data_B_i[18]', 'Data_B_i[17]', 'Data_B_i[16]', 'Data_B_i[15]', 'Data_B_i[14]', 'Data_B_i[13]', 'Data_B_i[12]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[3]', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B_i[5]', 'Data_B_i[4]'', 'Data_B_i[2]'.
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', the same net is connected to more than one pin on submodule 'b_shftr_idat_mux_SHT1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D0[1]', 'D0[0]''.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_A_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[62]', 'Data_B[61]'', 'Data_B[60]', 'Data_B[59]', 'Data_B[58]', 'Data_B[57]', 'Data_B[56]', 'Data_B[55]', 'Data_B[54]', 'Data_B[53]', 'Data_B[52]', 'Data_B[51]', 'Data_B[50]', 'Data_B[49]', 'Data_B[48]', 'Data_B[47]', 'Data_B[46]', 'Data_B[45]', 'Data_B[44]', 'Data_B[43]', 'Data_B[42]', 'Data_B[41]', 'Data_B[40]', 'Data_B[39]', 'Data_B[38]', 'Data_B[37]', 'Data_B[36]', 'Data_B[35]', 'Data_B[34]', 'Data_B[33]', 'Data_B[32]', 'Data_B[31]', 'Data_B[30]', 'Data_B[29]', 'Data_B[28]', 'Data_B[27]', 'Data_B[26]', 'Data_B[25]', 'Data_B[24]', 'Data_B[23]', 'Data_B[22]', 'Data_B[21]', 'Data_B[20]', 'Data_B[19]', 'Data_B[18]', 'Data_B[17]', 'Data_B[16]', 'Data_B[15]', 'Data_B[14]', 'Data_B[13]', 'Data_B[12]', 'Data_B[11]', 'Data_B[10]', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_B_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_A[62]', 'Data_A[61]'', 'Data_A[60]', 'Data_A[59]', 'Data_A[58]', 'Data_A[57]', 'Data_A[56]', 'Data_A[55]', 'Data_A[54]', 'Data_A[53]', 'Data_A[52]', 'Data_A[51]', 'Data_A[50]', 'Data_A[49]', 'Data_A[48]', 'Data_A[47]', 'Data_A[46]', 'Data_A[45]', 'Data_A[44]', 'Data_A[43]', 'Data_A[42]', 'Data_A[41]', 'Data_A[40]', 'Data_A[39]', 'Data_A[38]', 'Data_A[37]', 'Data_A[36]', 'Data_A[35]', 'Data_A[34]', 'Data_A[33]', 'Data_A[32]', 'Data_A[31]', 'Data_A[30]', 'Data_A[29]', 'Data_A[28]', 'Data_A[27]', 'Data_A[26]', 'Data_A[25]', 'Data_A[24]', 'Data_A[23]', 'Data_A[22]', 'Data_A[21]', 'Data_A[20]', 'Data_A[19]', 'Data_A[18]', 'Data_A[17]', 'Data_A[16]', 'Data_A[15]', 'Data_A[14]', 'Data_A[13]', 'Data_A[12]', 'Data_A[11]', 'Data_A[10]', 'Data_A[9]', 'Data_A[8]', 'Data_A[7]', 'Data_A[6]', 'Data_A[5]', 'Data_A[4]', 'Data_A[3]', 'Data_A[2]', 'Data_A[1]', 'Data_A[0]'.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]''.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[9]', 'Data_B[8]'', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[10]', 'D1[9]'', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'GTComparator'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'LTComparator'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[62]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[60]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[59]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[58]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[57]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[51]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 566 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+
+Loaded alib file '../alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+Information: Ungrouping hierarchy operation_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy BLKNaN2.NaN_flag_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy NaN_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_beg_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy deco_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_beg_addsubt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_ready_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_result_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_ack_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy underflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy overflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_operation_add_cordic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_CORDIC_FSM_v3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/ITER_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/VAR_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/LUTBLK2.LUT64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_PriorityEncoder_CORDIC before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/op_select_mod before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_DECO_CORDIC_EXT2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/FS_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_A before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_B before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sign_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_D_I_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FSM_INPUT_ENABLE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_ShiftRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDX before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Magnitude_Comparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/MuxXY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Op_verification before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/result_sign_bit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_sft_amount before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/b_shftr_idat_mux_SHT1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[0].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[1].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_SHIFT_DATA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_VARS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[2].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[3].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[4].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[5].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_DMP_exp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/LZD_DOUBLE.Codec_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Ready_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_region_flag before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff5_data_out before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Zn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Yn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Xn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_LUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxZ_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxY_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxX_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_Z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_2x1_sal before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_y0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_x0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_C before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_DATAOUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DmP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_Raw_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/XMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_A_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_add_subt_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_result_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Oflow_A_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Exp_unflow_Comparator_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/RECURSIVE.ODD1.finalreg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/OR_info_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/Rounding_Deco before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/A_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_Subt_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/GTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_overflow_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Zero_Info_Mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Final_Result_IEEE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/YMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_B_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Underflow_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/LTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping 247 of 248 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+Information: Added key list 'DesignWare' to design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (DDB-72)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[30]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[4]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[36]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[40]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[38]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[32]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[43]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[34]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[47]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[42]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[46]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[49]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[51]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[57]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[58]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[59]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[60]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[61]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+ Implement Synthetic for 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:01  558547.2      4.90   11038.8     760.1                           827112.2500
+    0:02:01  558547.2      4.90   11038.8     760.1                           827112.2500
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DP_OP_26_130_5136_2'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:32  366801.1      9.12   15558.7    1422.2                           495334.2500
+    0:02:39  371672.6      5.47   13426.5     872.9                           504361.7500
+    0:02:39  371672.6      5.47   13426.5     872.9                           504361.7500
+    0:02:49  372291.8      5.47   13675.7     896.4                           505358.0625
+    0:02:52  372555.4      6.13   13707.4     909.3                           505779.2500
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:05  368920.8      6.13   13593.0     901.9                           500491.5312
+    0:03:09  371154.2      5.25   13391.5     864.6                           506829.3438
+    0:03:14  382716.0      5.02   13031.2     834.0                           529919.6250
+    0:03:17  386622.7      5.02   12517.1     807.2                           537821.6875
+    0:03:19  387743.0      5.01   12072.7     801.3                           539877.8750
+    0:03:21  386251.2      5.01   11870.0     800.0                           537912.6875
+    0:03:21  386251.2      5.01   11870.0     800.0                           537912.6875
+    0:03:31  391350.2      4.87   11872.5     813.4                           545054.4375
+    0:03:31  391350.2      4.87   11872.5     813.4                           545054.4375
+    0:03:31  391636.8      4.86   11870.8     813.6                           545634.0000
+    0:03:31  391636.8      4.86   11870.8     813.6                           545634.0000
+    0:03:36  393385.0      4.83   11867.8     815.3                           548010.5625
+    0:03:36  393385.0      4.83   11867.8     815.3                           548010.5625
+    0:03:52  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:52  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:52  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:52  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:53  397789.9      4.61   11701.5     757.4                           555339.8750
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:04:01  404694.7      4.68   11240.3     114.0 net1015444                568204.6250
+    0:04:03  405720.0      4.68   11228.9      42.0 net1009154                569843.1875
+    0:04:05  406952.6      4.58   11221.0      42.0 DP_OP_829J17_123_728/R_559/D 572674.9375
+    0:04:08  408202.6      4.57   11220.7       0.0 mult_x_422/R_2978/D       575078.0000
+    0:04:10  409190.4      4.55   11209.5       0.0 DP_OP_829J17_123_728/R_3098/D 577122.2500
+    0:04:10  409233.6      4.55   11208.4       0.0                           577201.6250
+    0:04:12  409831.2      4.55   11202.8       0.0                           578103.7500
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:12  409831.2      4.55   11202.8       0.0                           578103.7500
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+    0:04:42  384965.3      4.55    9903.8      24.2 mult_x_422/R_2978/D       544797.9375
+    0:04:42  385094.9      4.54    9903.1      24.2                           545072.1875
+    0:04:47  387113.8      4.52    9952.6      49.5                           547893.0625
+    0:04:47  387113.8      4.52    9952.6      49.5                           547893.0625
+    0:04:49  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:49  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:49  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:49  387051.8      4.52    9937.4      49.5                           547539.5625
+    0:04:50  387730.1      4.50    9933.0      49.5                           548827.2500
+    0:04:50  387730.1      4.50    9933.0      49.5                           548827.2500
+    0:04:55  389095.2      4.48    9923.5      53.5                           550839.6250
+    0:04:55  389095.2      4.48    9923.5      53.5                           550839.6250
+    0:04:59  390592.8      4.43    9886.0      67.5                           553374.4375
+    0:04:59  390592.8      4.43    9886.0      67.5                           553374.4375
+    0:05:02  390919.7      4.42    9885.2      76.5                           553870.6250
+    0:05:02  390919.7      4.42    9885.2      76.5                           553870.6250
+    0:05:05  391193.3      4.42    9884.6      79.5                           554310.0000
+    0:05:05  391193.3      4.42    9884.6      79.5                           554310.0000
+    0:05:05  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:05:05  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:05:06  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:05:06  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:05:06  391184.6      4.42    9884.8      79.5                           554280.3125
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:05:07  391184.6      4.42    9884.8      79.5                           554280.3125
+    0:05:13  377916.5      4.43    9747.4      75.6                           533088.0000
+    0:05:13  378122.4      4.41    9745.4      96.6                           533520.9375
+    0:05:13  378122.4      4.41    9745.4      96.6                           533520.9375
+    0:05:16  378260.6      4.41    9739.6      96.6                           533902.2500
+    0:05:21  377185.0      4.41    9716.8      96.6                           532396.7500
+    0:05:23  377513.3      4.41    9482.7      21.0 net1015384                533108.1875
+    0:05:25  378043.2      4.39    9484.0      20.0 R_5145/D                  534081.3125
+    0:05:27  378388.8      4.41    9483.9      20.0 R_5074/D                  534754.0625
+    0:05:29  378882.7      4.41    9485.5       0.0 mult_x_422/R_2978/D       535622.7500
+    0:05:30  379244.2      4.38    9481.2       0.0 add_x_69/R_4374_RW_0/D    536355.4375
+    0:05:31  379311.8      4.38    9480.8       0.0                           536490.1250
+    0:05:34  379813.0      4.37    9474.0       6.0                           537369.1875
+    0:05:36  381039.8      4.37    9445.1       6.0                           539887.0625
+    0:05:39  381733.9      4.37    9427.1       6.0                           541280.4375
+    0:05:40  382158.7      4.37    9420.1       6.0                           541969.4375
+    0:05:40  382158.7      4.37    9420.1       6.0                           541969.4375
+    0:05:51  370042.6      4.37    9420.1       6.0                           520224.9062
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 3518 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Writing verilog file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_2STAGE_syn.v'.
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_2STAGE_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_2STAGE_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_KOA_2STAGE_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Running PRESTO HDLC
+Compiling source file ./source/FPU_Multiplication_Function.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W2 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W64 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'NaN_mod_64'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'./source/NaN_mod_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'd_ff_en' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine d_ff_en_W1 line 11 in file
+		'./source/d_ff_en.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'demux_1x3'. (HDL-193)
+
+Statistics for case statements in always block at line 11 in file
+	'./source/demux_1x3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'deco_op'. (HDL-193)
+Warning:  ./source/deco_op.v:11: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 9 in file
+	'./source/deco_op.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_2x1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 12 in file
+	'./source/Mux_2x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_Arch3v1' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55". (HDL-193)
+Warning:  ./source/CORDIC_Arch3v1.v:163: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./source/CORDIC_Arch3v1.v:176: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_Multiplication_Function' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FPU_PIPELINED_FPADDSUB' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52,SWR=55,EWR=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_b' instantiated from design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CORDIC_FSM_v3'. (HDL-193)
+
+Statistics for case statements in always block at line 72 in file
+	'./source/CORDIC_FSM_v3.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CORDIC_FSM_v3 line 62 in file
+		'./source/CORDIC_FSM_v3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    state_reg_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH4 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Up_counter' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "COUNTER_WIDTH=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine Up_counter_COUNTER_WIDTH2 line 25 in file
+		'./source/Up_Counter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Simple_Subt' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=11,N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'LUT_CASE_64bits' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64,N=4". (HDL-193)
+Warning:  ./source/lut_CASE_64.v:20: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'./source/lut_CASE_64.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1_bv2' instantiated from design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55' with
+	the parameters "W=64". (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'./source/Mux_3x1_b_v2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'PriorityEncoder_CORDIC'. (HDL-193)
+Warning:  ./source/PriorityEncoder_ExtCORDIC.v:27: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 22 in file
+	'./source/PriorityEncoder_ExtCORDIC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            27            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Op_Select'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DECO_CORDIC_EXT2'. (HDL-193)
+
+Statistics for case statements in always block at line 27 in file
+	'./source/DECO_CORDIC_OP2.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            30            |    auto/auto     |
+|            50            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FSM_Mult_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 128 in file
+	'./source/FSM_Mult_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_Mult_Function line 121 in file
+		'./source/FSM_Mult_Function.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W1 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W2 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'First_Phase_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Zero_InfMult_Unit' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=12". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Exp_Operation_m' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "EW=11". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'XOR_M'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RecursiveKOA_STAGE_2' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=53". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Barrel_Shifter_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Round_decoder_M' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Adder_Round' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "SW=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Tenth_Phase' instantiated from design 'FPU_Multiplication_Function_W64_EW11_SW52' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FSM_INPUT_ENABLE'. (HDL-193)
+
+Statistics for case statements in always block at line 76 in file
+	'./source/FSM_input_enable.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            84            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_INPUT_ENABLE line 69 in file
+		'./source/FSM_input_enable.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ShiftRegister' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=7". (HDL-193)
+
+Inferred memory devices in process
+	in routine ShiftRegister_W7 line 26 in file
+		'./source/shift_reg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W64 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MultiplexTxT' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Statistics for case statements in always block at line 33 in file
+	'./source/MultiplexTxT.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            34            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'xor_tri' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sgn_result'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=63". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W63 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  63   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W3 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=52". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W52 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  52   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W6 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Rotate_Mux_Array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=1". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=55". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W55 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  55   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=17". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W17 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=2". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "SWR=55,LEVEL=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FORMATTER' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "EW=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=11". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W11 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Priority_Codec_64'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FRMT_STAGE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=64,EW=11,SW=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FFD_NoCE' instantiated from design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine FFD_NoCE_W1 line 50 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'First_Phase_M_W64' with
+	the parameters "W=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W64 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Equal' instantiated from design 'Zero_InfMult_Unit_W64' with
+	the parameters "S=63". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_carry_out' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W12 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W1 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Comparator_Less' instantiated from design 'Exp_Operation_m_EW11' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'RecursiveKOA_STAGE_2_SW53' with
+	the parameters "SW=26". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'RecursiveKOA_STAGE_2_SW53' with
+	the parameters "SW=27". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'RecursiveKOA_STAGE_2_SW53' with
+	the parameters "SW=28". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'RecursiveKOA_STAGE_2_SW53' with
+	the parameters "W=106". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W106 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  106  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shift_mux_array' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "SWR=53,LEVEL=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterMult' instantiated from design 'Barrel_Shifter_M_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterMult_W53 line 31 in file
+		'./source/RegisterMult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OR_Module' instantiated from design 'Round_decoder_M_SW52' with
+	the parameters "W=52". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Deco_Round_Mult'. (HDL-193)
+
+Statistics for case statements in always block at line 30 in file
+	'./source/Deco_Round_Mult.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            31            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterAdd' instantiated from design 'Adder_Round_SW53' with
+	the parameters "W=53". (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterAdd_W53 line 31 in file
+		'./source/RegisterAdd.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  53   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Mux_3x1' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'./source/Mux_3x1.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=11". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Tenth_Phase_W64_EW11_SW52' with
+	the parameters "W=52". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Multiplexer_AC' instantiated from design 'Rotate_Mux_Array_SWR55' with
+	the parameters "W=1". (HDL-193)
+
+Statistics for case statements in always block at line 32 in file
+	'./source/Multiplexer_AC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Greater_Comparator' instantiated from design 'FORMATTER_EW12' with
+	the parameters "W=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW26' with
+	the parameters "SW=13". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW26' with
+	the parameters "SW=14". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW27' with
+	the parameters "SW=15". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW13' with
+	the parameters "SW=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW13' with
+	the parameters "SW=7". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW13' with
+	the parameters "SW=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'subRecursiveKOA' instantiated from design 'subRecursiveKOA_SW15' with
+	the parameters "SW=9". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mult' instantiated from design 'subRecursiveKOA_SW6' with
+	the parameters "SW=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult_SW6 line 27 in file
+		'./source/mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Data_S_o_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mult' instantiated from design 'subRecursiveKOA_SW7' with
+	the parameters "SW=7". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult_SW7 line 27 in file
+		'./source/mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Data_S_o_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mult' instantiated from design 'subRecursiveKOA_SW8' with
+	the parameters "SW=8". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult_SW8 line 27 in file
+		'./source/mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Data_S_o_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mult' instantiated from design 'subRecursiveKOA_SW9' with
+	the parameters "SW=9". (HDL-193)
+
+Inferred memory devices in process
+	in routine mult_SW9 line 27 in file
+		'./source/mult.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Data_S_o_reg     | Flip-flop |  18   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Uniquified 2 instances of design 'd_ff_en_W2'. (OPT-1056)
+Information: Uniquified 13 instances of design 'd_ff_en_W64'. (OPT-1056)
+Information: Uniquified 3 instances of design 'd_ff_en_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'demux_1x3'. (OPT-1056)
+Information: Uniquified 5 instances of design 'Mux_2x1_W1'. (OPT-1056)
+Information: Uniquified 6 instances of design 'Mux_2x1_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Simple_Subt_W11_N4'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_bv2_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W2'. (OPT-1056)
+Information: Uniquified 4 instances of design 'RegisterAdd_W64'. (OPT-1056)
+Information: Uniquified 5 instances of design 'RegisterAdd_W63'. (OPT-1056)
+Information: Uniquified 7 instances of design 'RegisterAdd_W3'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterAdd_W6'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Rotate_Mux_Array_SWR55'. (OPT-1056)
+Information: Uniquified 3 instances of design 'RegisterAdd_W55'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W64'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Equal_S63'. (OPT-1056)
+Information: Uniquified 2 instances of design 'RegisterMult_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Comparator_Less_W12'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Mux_3x1_W1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W11'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Multiplexer_AC_W52'. (OPT-1056)
+Information: Uniquified 108 instances of design 'Multiplexer_AC_W1'. (OPT-1056)
+Information: Uniquified 3 instances of design 'subRecursiveKOA_SW13'. (OPT-1056)
+Information: Uniquified 4 instances of design 'subRecursiveKOA_SW14'. (OPT-1056)
+Information: Uniquified 2 instances of design 'subRecursiveKOA_SW15'. (OPT-1056)
+Information: Uniquified 3 instances of design 'subRecursiveKOA_SW6'. (OPT-1056)
+Information: Uniquified 13 instances of design 'subRecursiveKOA_SW7'. (OPT-1056)
+Information: Uniquified 9 instances of design 'subRecursiveKOA_SW8'. (OPT-1056)
+Information: Uniquified 2 instances of design 'subRecursiveKOA_SW9'. (OPT-1056)
+Information: Uniquified 3 instances of design 'mult_SW6'. (OPT-1056)
+Information: Uniquified 13 instances of design 'mult_SW7'. (OPT-1056)
+Information: Uniquified 9 instances of design 'mult_SW8'. (OPT-1056)
+Information: Uniquified 2 instances of design 'mult_SW9'. (OPT-1056)
+
+  Linking design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (312 designs)             /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/FPU_Interface2_W64_EW11_SW52_SWR55_EWR6.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/syn/L-2016.03-SP3/libraries/syn/dw_foundation.sldb
+
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_2STAGE_syn_unmapped.ddc'.
+Using operating conditions 'tt_1p2v_25c' found in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'.
+
+#   Propagate Constraints from cell mux_result_op/ (Mux_3x1_b_W64) #
+
+#   Propagate Constraints from cell mux_ready_op/ (Mux_3x1_b_W1) #
+
+#   Propagate Constraints from cell underflow_flag_mux/ (Mux_2x1_W1_1) #
+
+#   Propagate Constraints from cell overflow_flag_mux/ (Mux_2x1_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/                                  \
+(FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6) #
+
+#   Propagate Constraints from cell FPADDSUB/Ready_reg/ (FFD_NoCE_W1) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_FLAGS/                 \
+(RegisterAdd_W3_0) #
+
+#   Propagate Constraints from cell FPADDSUB/FRMT_STAGE_DATAOUT/               \
+(RegisterAdd_W64_1) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/                  \
+(FRMT_STAGE_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sgf_Mux/          \
+(Multiplexer_AC_W52_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Exp_Mux/          \
+(Multiplexer_AC_W11_0) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FRMT_STAGE/Sign_Mux/         \
+(Mux_3x1_W1_0) #
+
+#   Propagate Constraints from cell FPADDSUB/LZD_DOUBLE.Codec_64/              \
+(Priority_Codec_64) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_FLAGS/                  \
+(RegisterAdd_W3_1) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_DMP_exp/                \
+(RegisterAdd_W11) #
+
+#   Propagate Constraints from cell FPADDSUB/NRM_STAGE_Raw_mant/               \
+(RegisterAdd_W55_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_FLAGS/                  \
+(RegisterAdd_W3_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DmP_mant/               \
+(RegisterAdd_W55_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SGF_STAGE_DMP/                    \
+(RegisterAdd_W63_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/                \
+(FORMATTER_EW12) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/LTComparator/   \
+(Comparator_Less_W12_0) #
+
+#   Propagate Constraints from cell FPADDSUB/array_comparators/GTComparator/   \
+(Greater_Comparator_W12) #
+
+#   Propagate Constraints from cell FPADDSUB/last_rotate/                      \
+(Rotate_Mux_Array_SWR55_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_0) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_2) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_6) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_7) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_8) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_9) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_10) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_11) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_12) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_13) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_14) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_15) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_16) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_17) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_18) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_19) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_20) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_21) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_22) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_23) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_24) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_25) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_26) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_27) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_28) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_29) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_30) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_31) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_32) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_33) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_34) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_35) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_36) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_37) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_38) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_39) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_40) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_41) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_42) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_43) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_44) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_45) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_46) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_47) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_48) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_49) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_50) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_51) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_52) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                      \
+(Multiplexer_AC_W1_53) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[5].shift_mux_array/ (shift_mux_array_SWR55_LEVEL5) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[4].shift_mux_array/ (shift_mux_array_SWR55_LEVEL4) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[3].shift_mux_array/ (shift_mux_array_SWR55_LEVEL3) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array2[2].shift_mux_array/ (shift_mux_array_SWR55_LEVEL2) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_FLAGS/             \
+(RegisterAdd_W3_3) #
+
+#   Propagate Constraints from cell FPADDSUB/SFT2FRMT_STAGE_VARS/              \
+(RegisterAdd_W17) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_FLAGS/                 \
+(RegisterAdd_W3_4) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS2/             \
+(RegisterAdd_W2_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_SHFTVARS1/             \
+(RegisterAdd_W6_0) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_SHIFT_DATA/                  \
+(RegisterAdd_W55_2) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT2_STAGE_DMP/                   \
+(RegisterAdd_W63_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[1].shift_mux_array/ (shift_mux_array_SWR55_LEVEL1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/shift_mux_array1[0].shift_mux_array/ (shift_mux_array_SWR55_LEVEL0) #
+
+#   Propagate Constraints from cell FPADDSUB/first_rotate/                     \
+(Rotate_Mux_Array_SWR55_1) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_54) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_55) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_56) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_57) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_58) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_59) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_60) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_61) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_62) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_63) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_64) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_65) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_66) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_67) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_68) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_69) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_70) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_71) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_72) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_73) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_74) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_75) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_76) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_77) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_78) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_79) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_80) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_81) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_82) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_83) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_84) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_85) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_86) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_87) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_88) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_89) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_90) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_91) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_92) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_93) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_94) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_95) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_96) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux/                    \
+(Multiplexer_AC_W1_97) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_98) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_99) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_100) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_101) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_102) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_103) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_104) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_105) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_106) #
+
+#   Propagate Constraints from cell                                            \
+FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux/                     \
+(Multiplexer_AC_W1_107) #
+
+#   Propagate Constraints from cell FPADDSUB/b_shftr_idat_mux_SHT1/            \
+(Multiplexer_AC_W55) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_FLAGS/                 \
+(RegisterAdd_W3_5) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_sft_amount/            \
+(RegisterAdd_W6_1) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DmP_mant/              \
+(RegisterAdd_W52) #
+
+#   Propagate Constraints from cell FPADDSUB/SHT1_STAGE_DMP/                   \
+(RegisterAdd_W63_2) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_FLAGS/                  \
+(RegisterAdd_W3_6) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DmP/                    \
+(RegisterAdd_W63_3) #
+
+#   Propagate Constraints from cell FPADDSUB/EXP_STAGE_DMP/                    \
+(RegisterAdd_W63_4) #
+
+#   Propagate Constraints from cell FPADDSUB/result_sign_bit/ (sgn_result) #
+
+#   Propagate Constraints from cell FPADDSUB/Op_verification/ (xor_tri_W64) #
+
+#   Propagate Constraints from cell FPADDSUB/MuxXY/ (MultiplexTxT_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/Magnitude_Comparator/             \
+(Comparator_W63) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_FLAGS/                \
+(RegisterAdd_W1_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDY/             \
+(RegisterAdd_W64_2) #
+
+#   Propagate Constraints from cell FPADDSUB/INPUT_STAGE_OPERANDX/             \
+(RegisterAdd_W64_3) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_ShiftRegister/               \
+(ShiftRegister_W7) #
+
+#   Propagate Constraints from cell FPADDSUB/inst_FSM_INPUT_ENABLE/            \
+(FSM_INPUT_ENABLE) #
+
+#   Propagate Constraints from cell FPMULT/                                    \
+(FPU_Multiplication_Function_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/           \
+(Tenth_Phase_W64_EW11_SW52) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/final_result_ieee_Module/Final_Result_IEEE/ (RegisterAdd_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sgf_Mux/   \
+(Multiplexer_AC_W52_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Exp_Mux/   \
+(Multiplexer_AC_W11_1) #
+
+#   Propagate Constraints from cell FPMULT/final_result_ieee_Module/Sign_Mux/  \
+(Mux_3x1_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/ (Adder_Round_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_overflow_Result/        \
+(RegisterAdd_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/Add_Subt_Result/            \
+(RegisterAdd_W53) #
+
+#   Propagate Constraints from cell FPMULT/Adder_M/A_operation/ (adder_W53) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/                      \
+(Round_decoder_M_SW52) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/Rounding_Deco/        \
+(Deco_Round_Mult) #
+
+#   Propagate Constraints from cell FPMULT/Round_Decoder/OR_info_reg/          \
+(OR_Module_W52) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/              \
+(Barrel_Shifter_M_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_module/Output_Reg/   \
+(RegisterMult_W53) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Barrel_Shifter_module/shift_mux_array/ (shift_mux_array_SWR53_LEVEL0) #
+
+#   Propagate Constraints from cell FPMULT/Barrel_Shifter_D_I_mux/             \
+(Multiplexer_AC_W53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/                      \
+(RecursiveKOA_STAGE_2_SW53) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.finalreg/        \
+(RegisterAdd_W106) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.middle/          \
+(subRecursiveKOA_SW28) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/                       \
+(subRecursiveKOA_SW15_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle/ \
+(subRecursiveKOA_SW9_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_mult/ \
+(mult_SW9_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right/  \
+(subRecursiveKOA_SW8_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_mult/ \
+(mult_SW8_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left/   \
+(subRecursiveKOA_SW7_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_mult/ \
+(mult_SW7_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/                        \
+(subRecursiveKOA_SW14_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle/ \
+(subRecursiveKOA_SW8_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right/  \
+(subRecursiveKOA_SW7_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_mult/ \
+(mult_SW7_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left/   \
+(subRecursiveKOA_SW7_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_mult/ \
+(mult_SW7_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/                         \
+(subRecursiveKOA_SW14_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle/  \
+(subRecursiveKOA_SW8_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right/   \
+(subRecursiveKOA_SW7_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right/GENSTOP.inst_mult/ \
+(mult_SW7_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left/    \
+(subRecursiveKOA_SW7_4) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left/GENSTOP.inst_mult/ \
+(mult_SW7_4) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.right/           \
+(subRecursiveKOA_SW27) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/                         \
+(subRecursiveKOA_SW15_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle/   \
+(subRecursiveKOA_SW9_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_mult/ \
+(mult_SW9_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right/    \
+(subRecursiveKOA_SW8_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_mult/ \
+(mult_SW8_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left/     \
+(subRecursiveKOA_SW7_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_mult/ \
+(mult_SW7_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/ (subRecursiveKOA_SW14_2) \
+#
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle/   \
+(subRecursiveKOA_SW8_4) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_4) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right/    \
+(subRecursiveKOA_SW7_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_mult/ \
+(mult_SW7_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left/     \
+(subRecursiveKOA_SW7_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_mult/ \
+(mult_SW7_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/ (subRecursiveKOA_SW13_0)  \
+#
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle/     \
+(subRecursiveKOA_SW8_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_5) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right/      \
+(subRecursiveKOA_SW7_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right/GENSTOP.inst_mult/ \
+(mult_SW7_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left/       \
+(subRecursiveKOA_SW6_0) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left/GENSTOP.inst_mult/ \
+(mult_SW6_0) #
+
+#   Propagate Constraints from cell FPMULT/Sgf_operation/ODD1.left/            \
+(subRecursiveKOA_SW26) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/                         \
+(subRecursiveKOA_SW14_3) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle/  \
+(subRecursiveKOA_SW8_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_6) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right/   \
+(subRecursiveKOA_SW7_9) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right/GENSTOP.inst_mult/ \
+(mult_SW7_9) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left/    \
+(subRecursiveKOA_SW7_10) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left/GENSTOP.inst_mult/ \
+(mult_SW7_10) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/ (subRecursiveKOA_SW13_1) \
+#
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle/    \
+(subRecursiveKOA_SW8_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_7) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right/     \
+(subRecursiveKOA_SW7_11) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right/GENSTOP.inst_mult/ \
+(mult_SW7_11) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left/      \
+(subRecursiveKOA_SW6_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left/GENSTOP.inst_mult/ \
+(mult_SW6_1) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/ (subRecursiveKOA_SW13_2)  \
+#
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle/     \
+(subRecursiveKOA_SW8_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_mult/ \
+(mult_SW8_8) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right/      \
+(subRecursiveKOA_SW7_12) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right/GENSTOP.inst_mult/ \
+(mult_SW7_12) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left/       \
+(subRecursiveKOA_SW6_2) #
+
+#   Propagate Constraints from cell                                            \
+FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left/GENSTOP.inst_mult/ \
+(mult_SW6_2) #
+
+#   Propagate Constraints from cell FPMULT/Sign_operation/ (XOR_M) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/ (Exp_Operation_m_EW11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Underflow_m/             \
+(RegisterMult_W1_0) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Exp_unflow_Comparator_m/ \
+(Comparator_Less_W12_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/Oflow_A_m/               \
+(RegisterMult_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_result_m/            \
+(RegisterMult_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_module/exp_add_subt_m/          \
+(add_sub_carry_out_W12) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_B_mux/ (Mux_3x1_W11) #
+
+#   Propagate Constraints from cell FPMULT/Exp_Oper_A_mux/                     \
+(Multiplexer_AC_W12) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/                 \
+(Zero_InfMult_Unit_W64) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Zero_Info_Mult/  \
+(RegisterAdd_W1_1) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_B_Comp/     \
+(Comparator_Equal_S63_0) #
+
+#   Propagate Constraints from cell FPMULT/Zero_Result_Detect/Data_A_Comp/     \
+(Comparator_Equal_S63_1) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/                  \
+(First_Phase_M_W64) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/YMRegister/       \
+(RegisterMult_W64_0) #
+
+#   Propagate Constraints from cell FPMULT/Operands_load_reg/XMRegister/       \
+(RegisterMult_W64_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_B/ (RegisterAdd_W2_1) #
+
+#   Propagate Constraints from cell FPMULT/Sel_C/ (RegisterAdd_W1_3) #
+
+#   Propagate Constraints from cell FPMULT/Sel_A/ (RegisterAdd_W1_4) #
+
+#   Propagate Constraints from cell FPMULT/FS_Module/ (FSM_Mult_Function) #
+
+#   Propagate Constraints from cell FPSENCOS/                                  \
+(CORDIC_Arch3v1_W64_EW11_SW52_SWR55) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff5_data_out/ (d_ff_en_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_DECO_CORDIC_EXT2/            \
+(DECO_CORDIC_EXT2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_2x1_sal/ (Mux_2x1_W64_0) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Zn/ (d_ff_en_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Yn/ (d_ff_en_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/d_ff4_Xn/ (d_ff_en_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/op_select_mod/ (Op_Select) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_PriorityEncoder_CORDIC/      \
+(PriorityEncoder_CORDIC) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var2/ (Mux_3x1_bv2_W64_0) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/mux_3x1_var1/ (Mux_3x1_bv2_W64_1) \
+#
+
+#   Propagate Constraints from cell FPSENCOS/reg_sign/ (d_ff_en_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_LUT/ (d_ff_en_W64_4) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_y/ (d_ff_en_W64_5) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_shift_x/ (d_ff_en_W64_6) #
+
+#   Propagate Constraints from cell FPSENCOS/mux_sign/ (Mux_2x1_W1_0) #
+
+#   Propagate Constraints from cell FPSENCOS/LUTBLK2.LUT64/                    \
+(LUT_CASE_64bits_W64_N4) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_y/ (Simple_Subt_W11_N4_0) #
+
+#   Propagate Constraints from cell FPSENCOS/shift_x/ (Simple_Subt_W11_N4_1) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxZ_2stage/              \
+(d_ff_en_W64_7) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxY_2stage/              \
+(d_ff_en_W64_8) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_val_muxX_2stage/              \
+(d_ff_en_W64_9) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_z0/ (Mux_2x1_W64_1) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_y0/ (Mux_2x1_W64_2) #
+
+#   Propagate Constraints from cell FPSENCOS/mux1_x0/ (Mux_2x1_W64_3) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_Z0/ (d_ff_en_W64_10) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_region_flag/ (d_ff_en_W2_0) #
+
+#   Propagate Constraints from cell FPSENCOS/reg_operation/ (d_ff_en_W1_1) #
+
+#   Propagate Constraints from cell FPSENCOS/VAR_CONT/                         \
+(Up_counter_COUNTER_WIDTH2) #
+
+#   Propagate Constraints from cell FPSENCOS/ITER_CONT/                        \
+(Up_counter_COUNTER_WIDTH4) #
+
+#   Propagate Constraints from cell FPSENCOS/inst_CORDIC_FSM_v3/               \
+(CORDIC_FSM_v3) #
+
+#   Propagate Constraints from cell mux_data_in2/ (Mux_2x1_W64_4) #
+
+#   Propagate Constraints from cell mux_data_in1/ (Mux_2x1_W64_5) #
+
+#   Propagate Constraints from cell mux_operation_add_cordic/ (Mux_2x1_W1_3) #
+
+#   Propagate Constraints from cell mux_beg_addsubt/ (Mux_2x1_W1_4) #
+
+#   Propagate Constraints from cell deco_operation/ (deco_op) #
+
+#   Propagate Constraints from cell demux_ack_op/ (demux_1x3_0) #
+
+#   Propagate Constraints from cell demux_beg_op/ (demux_1x3_1) #
+
+#   Propagate Constraints from cell NaN_dff/ (d_ff_en_W1_2) #
+
+#   Propagate Constraints from cell BLKNaN2.NaN_flag_64/ (NaN_mod_64) #
+
+#   Propagate Constraints from cell reg_dataB/ (d_ff_en_W64_11) #
+
+#   Propagate Constraints from cell reg_dataA/ (d_ff_en_W64_12) #
+
+#   Propagate Constraints from cell operation_dff/ (d_ff_en_W2_1) #
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP3
+Date:        Tue Nov  8 03:22:38 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     19
+    Feedthrough (LINT-29)                                           2
+    Shorted outputs (LINT-31)                                       8
+    Constant outputs (LINT-52)                                      9
+
+Cells                                                              27
+    Cells do not drive (LINT-1)                                     8
+    Nets connected to multiple pins on same cell (LINT-33)         19
+
+Nets                                                                9
+    Unloaded nets (LINT-2)                                          9
+--------------------------------------------------------------------------------
+
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_10' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH4', cell 'C37' does not drive any nets. (LINT-1)
+Warning: In design 'Up_counter_COUNTER_WIDTH2', cell 'C29' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'add_sub_carry_out_W12', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'zero_flag' driven by pin 'FPADDSUB/zero_flag' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'ack_fsm_addsubt' driven by pin 'demux_ack_op/ch1' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[0]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[0]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/shift_value_SHT2_EWR[1]' driven by pin 'FPADDSUB/SHT2_STAGE_SHFTVARS1/Q[1]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[58]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[58]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[59]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[59]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[60]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[60]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[61]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[61]' has no loads. (LINT-2)
+Warning: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', net 'FPADDSUB/DmP_EXP_EWSW[62]' driven by pin 'FPADDSUB/EXP_STAGE_DmP/Q[62]' has no loads. (LINT-2)
+Warning: In design 'Rotate_Mux_Array_SWR55_1', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'Rotate_Mux_Array_SWR55_0', input port 'Data_i[27]' is connected directly to output port 'Data_o[27]'. (LINT-29)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to output port 'data_out[62]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[48]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[51]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[57]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[58]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[59]'. (LINT-31)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to output port 'data_out[60]'. (LINT-31)
+Warning: In design 'FSM_Mult_Function', output port 'load_1_o' is connected directly to output port 'ctrl_select_a_o'. (LINT-31)
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[47]', 'ch_0[44]', 'ch_0[40]', 'ch_0[38]', 'ch_0[37]', 'ch_0[33]', 'ch_0[30]', 'ch_0[27]', 'ch_0[25]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[12]', 'ch_0[10]', 'ch_0[5]', 'ch_0[4]', 'ch_0[2]', 'ch_0[1]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_x0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'ch_0[61]', 'ch_0[60]'', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[49]', 'ch_0[48]', 'ch_0[46]', 'ch_0[45]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[39]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[32]', 'ch_0[31]', 'ch_0[29]', 'ch_0[28]', 'ch_0[26]', 'ch_0[24]', 'ch_0[19]', 'ch_0[14]', 'ch_0[13]', 'ch_0[11]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[3]', 'ch_0[0]'.
+Warning: In design 'CORDIC_Arch3v1_W64_EW11_SW52_SWR55', the same net is connected to more than one pin on submodule 'mux1_y0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch_0[63]', 'ch_0[62]'', 'ch_0[61]', 'ch_0[60]', 'ch_0[59]', 'ch_0[58]', 'ch_0[57]', 'ch_0[56]', 'ch_0[55]', 'ch_0[54]', 'ch_0[53]', 'ch_0[52]', 'ch_0[51]', 'ch_0[50]', 'ch_0[49]', 'ch_0[48]', 'ch_0[47]', 'ch_0[46]', 'ch_0[45]', 'ch_0[44]', 'ch_0[43]', 'ch_0[42]', 'ch_0[41]', 'ch_0[40]', 'ch_0[39]', 'ch_0[38]', 'ch_0[37]', 'ch_0[36]', 'ch_0[35]', 'ch_0[34]', 'ch_0[33]', 'ch_0[32]', 'ch_0[31]', 'ch_0[30]', 'ch_0[29]', 'ch_0[28]', 'ch_0[27]', 'ch_0[26]', 'ch_0[25]', 'ch_0[24]', 'ch_0[23]', 'ch_0[22]', 'ch_0[21]', 'ch_0[20]', 'ch_0[19]', 'ch_0[18]', 'ch_0[17]', 'ch_0[16]', 'ch_0[15]', 'ch_0[14]', 'ch_0[13]', 'ch_0[12]', 'ch_0[11]', 'ch_0[10]', 'ch_0[9]', 'ch_0[8]', 'ch_0[7]', 'ch_0[6]', 'ch_0[5]', 'ch_0[4]', 'ch_0[3]', 'ch_0[2]', 'ch_0[1]', 'ch_0[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[10]', 'D2[10]'', 'D2[9]', 'D2[8]', 'D2[7]', 'D2[6]', 'D2[5]', 'D2[4]', 'D2[3]', 'D2[2]', 'D2[1]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Oper_B_mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]', 'D2[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_operation'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_A_i[52]', 'Data_B_i[52]''.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B_i[52]', 'Data_B_i[51]'', 'Data_B_i[50]', 'Data_B_i[49]', 'Data_B_i[48]', 'Data_B_i[47]', 'Data_B_i[46]', 'Data_B_i[45]', 'Data_B_i[44]', 'Data_B_i[43]', 'Data_B_i[42]', 'Data_B_i[41]', 'Data_B_i[40]', 'Data_B_i[39]', 'Data_B_i[38]', 'Data_B_i[37]', 'Data_B_i[36]', 'Data_B_i[35]', 'Data_B_i[34]', 'Data_B_i[33]', 'Data_B_i[32]', 'Data_B_i[31]', 'Data_B_i[30]', 'Data_B_i[29]', 'Data_B_i[28]', 'Data_B_i[27]', 'Data_B_i[26]', 'Data_B_i[25]', 'Data_B_i[24]', 'Data_B_i[23]', 'Data_B_i[22]', 'Data_B_i[21]', 'Data_B_i[20]', 'Data_B_i[19]', 'Data_B_i[18]', 'Data_B_i[17]', 'Data_B_i[16]', 'Data_B_i[15]', 'Data_B_i[14]', 'Data_B_i[13]', 'Data_B_i[12]', 'Data_B_i[11]', 'Data_B_i[10]', 'Data_B_i[9]', 'Data_B_i[8]', 'Data_B_i[7]', 'Data_B_i[6]', 'Data_B_i[3]', 'Data_B_i[1]', 'Data_B_i[0]'.
+Warning: In design 'FPU_Multiplication_Function_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Adder_M'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B_i[5]', 'Data_B_i[4]'', 'Data_B_i[2]'.
+Warning: In design 'FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6', the same net is connected to more than one pin on submodule 'b_shftr_idat_mux_SHT1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D0[1]', 'D0[0]''.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_A_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[62]', 'Data_B[61]'', 'Data_B[60]', 'Data_B[59]', 'Data_B[58]', 'Data_B[57]', 'Data_B[56]', 'Data_B[55]', 'Data_B[54]', 'Data_B[53]', 'Data_B[52]', 'Data_B[51]', 'Data_B[50]', 'Data_B[49]', 'Data_B[48]', 'Data_B[47]', 'Data_B[46]', 'Data_B[45]', 'Data_B[44]', 'Data_B[43]', 'Data_B[42]', 'Data_B[41]', 'Data_B[40]', 'Data_B[39]', 'Data_B[38]', 'Data_B[37]', 'Data_B[36]', 'Data_B[35]', 'Data_B[34]', 'Data_B[33]', 'Data_B[32]', 'Data_B[31]', 'Data_B[30]', 'Data_B[29]', 'Data_B[28]', 'Data_B[27]', 'Data_B[26]', 'Data_B[25]', 'Data_B[24]', 'Data_B[23]', 'Data_B[22]', 'Data_B[21]', 'Data_B[20]', 'Data_B[19]', 'Data_B[18]', 'Data_B[17]', 'Data_B[16]', 'Data_B[15]', 'Data_B[14]', 'Data_B[13]', 'Data_B[12]', 'Data_B[11]', 'Data_B[10]', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Zero_InfMult_Unit_W64', the same net is connected to more than one pin on submodule 'Data_B_Comp'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_A[62]', 'Data_A[61]'', 'Data_A[60]', 'Data_A[59]', 'Data_A[58]', 'Data_A[57]', 'Data_A[56]', 'Data_A[55]', 'Data_A[54]', 'Data_A[53]', 'Data_A[52]', 'Data_A[51]', 'Data_A[50]', 'Data_A[49]', 'Data_A[48]', 'Data_A[47]', 'Data_A[46]', 'Data_A[45]', 'Data_A[44]', 'Data_A[43]', 'Data_A[42]', 'Data_A[41]', 'Data_A[40]', 'Data_A[39]', 'Data_A[38]', 'Data_A[37]', 'Data_A[36]', 'Data_A[35]', 'Data_A[34]', 'Data_A[33]', 'Data_A[32]', 'Data_A[31]', 'Data_A[30]', 'Data_A[29]', 'Data_A[28]', 'Data_A[27]', 'Data_A[26]', 'Data_A[25]', 'Data_A[24]', 'Data_A[23]', 'Data_A[22]', 'Data_A[21]', 'Data_A[20]', 'Data_A[19]', 'Data_A[18]', 'Data_A[17]', 'Data_A[16]', 'Data_A[15]', 'Data_A[14]', 'Data_A[13]', 'Data_A[12]', 'Data_A[11]', 'Data_A[10]', 'Data_A[9]', 'Data_A[8]', 'Data_A[7]', 'Data_A[6]', 'Data_A[5]', 'Data_A[4]', 'Data_A[3]', 'Data_A[2]', 'Data_A[1]', 'Data_A[0]'.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]''.
+Warning: In design 'Exp_Operation_m_EW11', the same net is connected to more than one pin on submodule 'Exp_unflow_Comparator_m'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[9]', 'Data_B[8]'', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]', 'Data_B[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[10]', 'D1[9]'', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'Tenth_Phase_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'GTComparator'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FORMATTER_EW12', the same net is connected to more than one pin on submodule 'LTComparator'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Data_B[11]', 'Data_B[10]'', 'Data_B[9]', 'Data_B[8]', 'Data_B[7]', 'Data_B[6]', 'Data_B[5]', 'Data_B[4]', 'Data_B[3]', 'Data_B[2]', 'Data_B[1]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Exp_Mux'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'D1[9]', 'D1[8]'', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'FRMT_STAGE_W64_EW11_SW52', the same net is connected to more than one pin on submodule 'Sgf_Mux'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D1[51]', 'D1[50]'', 'D1[49]', 'D1[48]', 'D1[47]', 'D1[46]', 'D1[45]', 'D1[44]', 'D1[43]', 'D1[42]', 'D1[41]', 'D1[40]', 'D1[39]', 'D1[38]', 'D1[37]', 'D1[36]', 'D1[35]', 'D1[34]', 'D1[33]', 'D1[32]', 'D1[31]', 'D1[30]', 'D1[29]', 'D1[28]', 'D1[27]', 'D1[26]', 'D1[25]', 'D1[24]', 'D1[23]', 'D1[22]', 'D1[21]', 'D1[20]', 'D1[19]', 'D1[18]', 'D1[17]', 'D1[16]', 'D1[15]', 'D1[14]', 'D1[13]', 'D1[12]', 'D1[11]', 'D1[10]', 'D1[9]', 'D1[8]', 'D1[7]', 'D1[6]', 'D1[5]', 'D1[4]', 'D1[3]', 'D1[2]', 'D1[1]', 'D1[0]'.
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[63]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[62]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[61]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[60]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[59]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[58]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[57]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[51]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'LUT_CASE_64bits_W64_N4', output port 'data_out[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 566 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+
+Loaded alib file '../alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+Information: Ungrouping hierarchy operation_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy BLKNaN2.NaN_flag_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy NaN_dff before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_beg_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy deco_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_beg_addsubt before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_ready_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_result_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy reg_dataB before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy demux_ack_op before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy underflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy overflow_flag_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_operation_add_cordic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy mux_data_in2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_CORDIC_FSM_v3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/ITER_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/VAR_CONT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/LUTBLK2.LUT64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_PriorityEncoder_CORDIC before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/op_select_mod before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/inst_DECO_CORDIC_EXT2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/FS_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_A before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_B before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_A_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_Oper_B_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sign_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_D_I_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FSM_INPUT_ENABLE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_ShiftRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDX before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Magnitude_Comparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/MuxXY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Op_verification before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/result_sign_bit before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_sft_amount before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/b_shftr_idat_mux_SHT1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[0].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array1[1].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_SHIFT_DATA before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_VARS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[2].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[3].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[4].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/shift_mux_array2[5].shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_DMP_exp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/LZD_DOUBLE.Codec_64 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/Ready_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_region_flag before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff5_data_out before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Zn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Yn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/d_ff4_Xn before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_LUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_shift_x before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxZ_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxY_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_val_muxX_2stage before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_Z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/reg_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_sign before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_2x1_sal before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_z0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_y0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux1_x0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/shift_y before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPSENCOS/mux_3x1_var2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sel_C before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_DATAOUT before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/INPUT_STAGE_OPERANDY before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_DMP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/EXP_STAGE_DmP before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SFT2FRMT_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT1_STAGE_FLAGS before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SHT2_STAGE_SHFTVARS1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/NRM_STAGE_Raw_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/SGF_STAGE_DmP_mant before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/XMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_A_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_add_subt_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/exp_result_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Oflow_A_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Exp_unflow_Comparator_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.finalreg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/shift_mux_array before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Barrel_Shifter_module/Output_Reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/OR_info_reg before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Round_Decoder/Rounding_Deco before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/A_operation before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_Subt_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/GTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Adder_M/Add_overflow_Result before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Zero_Info_Mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/final_result_ieee_Module/Final_Result_IEEE before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Operands_load_reg/YMRegister before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Zero_Result_Detect/Data_B_Comp before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Exp_module/Underflow_m before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/array_comparators/LTComparator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sign_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Exp_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/inst_FRMT_STAGE/Sgf_Mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/last_rotate/MUX_ARRAY[0].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[54].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[53].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[52].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[51].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[50].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[49].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[48].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[47].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[46].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[45].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[44].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[43].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[42].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[41].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[40].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[39].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[38].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[37].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[36].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[35].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[34].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[33].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[32].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[31].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[30].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[29].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[28].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[26].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[25].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[24].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[23].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[22].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[21].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[20].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[19].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[18].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[17].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[16].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[15].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[14].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[13].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[12].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[11].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[10].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[9].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[8].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[7].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[6].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[5].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[4].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[3].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[2].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPADDSUB/first_rotate/MUX_ARRAY[1].MUX_ARRAY12.rotate_mux before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.left/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.left/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.middle/RECURSIVE.ODD1.right/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.right/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.right/RECURSIVE.ODD1.left/RECURSIVE.ODD1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.middle/RECURSIVE.EVEN1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.left/RECURSIVE.EVEN1.right/RECURSIVE.ODD1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FPMULT/Sgf_operation/ODD1.middle/RECURSIVE.EVEN1.middle/RECURSIVE.ODD1.middle/GENSTOP.inst_mult before Pass 1 (OPT-776)
+Information: Ungrouping 310 of 311 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'
+Information: Added key list 'DesignWare' to design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'. (DDB-72)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FPSENCOS/reg_LUT/Q_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[30]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[4]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[36]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[40]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[28]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[38]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[32]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[43]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[34]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[47]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[42]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[46]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[49]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[44]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[51]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[57]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[58]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[59]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[60]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+Information: In design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6', the register 'FPSENCOS/reg_LUT/Q_reg[61]' is removed because it is merged to 'FPSENCOS/reg_LUT/Q_reg[48]'. (OPT-1215)
+ Implement Synthetic for 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:16  563502.2      8.97   13085.1    1294.7                           798669.0625
+    0:02:16  563502.2      8.97   13085.1    1294.7                           798669.0625
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DP_OP_1009J18_133_2558_4'
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DW01_add_43'
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DP_OP_1001J18_125_8916_5'
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DP_OP_1005J18_129_3124_5'
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DW01_add_44'
+  Mapping 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_DW01_add_45'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:52  315540.0     16.16   21164.9    1069.8                           406342.7188
+    0:03:01  327356.6     10.93   19295.3    1002.4                           424580.0312
+    0:03:01  327356.6     10.93   19295.3    1002.4                           424580.0312
+    0:03:12  327998.9     10.93   19465.8    1079.5                           425696.5625
+    0:03:13  328117.0     10.93   19497.6    1081.5                           425879.6875
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:27  325653.1     10.93   19422.7    1055.4                           422236.2188
+    0:03:30  322742.9     10.93   19375.1    1021.9                           419163.4375
+    0:03:34  330965.3     10.24   18845.0     977.2                           433643.0625
+    0:03:38  335782.1     10.24   18393.4     952.5                           441963.3438
+    0:03:41  334386.7     10.24   18164.3     950.9                           438830.1875
+    0:03:41  334386.7     10.24   18164.3     950.9                           438830.1875
+    0:04:04  351312.5      9.28   18003.8     955.0                           463914.2812
+    0:04:04  351312.5      9.28   18003.8     955.0                           463914.2812
+    0:04:05  353269.4      9.12   17884.9     958.1                           467453.0625
+    0:04:05  353269.4      9.12   17884.9     958.1                           467453.0625
+    0:04:36  370935.4      8.74   17579.8     951.3                           493524.6875
+    0:04:36  370935.4      8.74   17579.8     951.3                           493524.6875
+    0:04:55  378221.8      8.16   17133.4     939.7                           506322.2500
+    0:04:55  378221.8      8.16   17133.4     939.7                           506322.2500
+    0:05:57  395968.3      7.91   17009.2     950.1                           531231.6250
+    0:05:57  395968.3      7.91   17009.2     950.1                           531231.6250
+    0:06:01  397101.6      7.82   16943.0     948.4                           533293.3125
+    0:06:01  397101.6      7.82   16943.0     948.4                           533293.3125
+    0:06:31  402688.8      7.75   16883.8     954.6                           541469.8750
+    0:06:31  402688.8      7.75   16883.8     954.6                           541469.8750
+    0:06:32  402868.8      7.74   16870.7     954.6                           541898.6875
+    0:06:32  402868.8      7.74   16870.7     954.6                           541898.6875
+    0:06:34  402864.5      7.74   16870.6     954.6                           541894.4375
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:34  402864.5      7.74   16870.6     954.6                           541894.4375
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+    0:06:41  413500.3      7.76   14155.7     356.0 net1032848                558859.5625
+    0:06:43  416970.7      7.76   14063.0      26.0 net1157905                564398.7500
+    0:06:45  417284.6      7.69   14035.4      14.0 add_x_69/R_3860_RW_3/D    564992.1250
+    0:06:47  417254.4      7.67   14028.0      14.0 DP_OP_1010J18_134_7510/R_4168_RW_2/D 565006.8125
+    0:06:48  417466.1      7.66   14023.3       0.0                           565383.0000
+    0:06:52  417705.1      7.66   14019.4       0.1                           565844.9375
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:52  417705.1      7.66   14019.4       0.1                           565844.9375
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+    0:07:18  384531.8      7.55   12821.0       0.9                           516430.2500
+    0:07:53  391583.5      7.55   12799.3       4.3                           526738.8125
+    0:07:53  391583.5      7.55   12799.3       4.3                           526738.8125
+    0:07:56  391412.2      7.55   12694.0       4.1                           526512.1875
+    0:07:56  391412.2      7.55   12694.0       4.1                           526512.1875
+    0:08:11  394038.7      7.49   12682.5       4.3                           530161.7500
+    0:08:11  394038.7      7.49   12682.5       4.3                           530161.7500
+    0:08:11  394107.8      7.49   12682.2       4.3                           530284.3125
+    0:08:11  394107.8      7.49   12682.2       4.3                           530284.3125
+    0:08:54  400181.8      7.48   12665.2       5.6                           539216.0000
+    0:08:54  400181.8      7.48   12665.2       5.6                           539216.0000
+    0:08:58  400484.2      7.42   12650.6       5.6                           539728.7500
+    0:08:58  400484.2      7.42   12650.6       5.6                           539728.7500
+    0:09:02  400893.1      7.41   12648.7       5.6                           540269.3750
+    0:09:02  400893.1      7.41   12648.7       5.6                           540269.3750
+    0:09:08  400911.8      7.40   12646.9       5.6                           540305.6875
+    0:09:08  400911.8      7.40   12646.9       5.6                           540305.6875
+    0:09:12  401077.4      7.40   12645.5       5.6                           540564.0000
+    0:09:12  401077.4      7.40   12645.5       5.6                           540564.0000
+    0:09:16  401077.4      7.40   12645.6       5.6                           540564.0000
+    0:09:16  401077.4      7.40   12645.6       5.6                           540564.0000
+    0:09:18  401077.4      7.40   12645.6       5.6                           540564.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:09:19  401065.9      7.40   12645.6       5.6                           540552.8125
+    0:09:28  376136.6      7.41   12551.0       5.4                           498719.3125
+    0:09:29  375827.0      7.40   12548.7       5.4                           498367.8750
+    0:09:29  375827.0      7.40   12548.7       5.4                           498367.8750
+    0:09:32  376285.0      7.40   12410.2       5.3                           499347.8438
+    0:09:36  374781.6      7.40   12374.7       4.3                           497362.4688
+    0:09:38  373747.7      7.40   12373.7       4.2                           495909.0000
+    0:09:39  373877.3      7.36   12370.5       0.4 R_4883/D                  496233.1250
+    0:09:41  373910.4      7.36   12369.3       0.4 DP_OP_1010J18_134_7510/R_4168_RW_2/D 496269.0938
+    0:09:42  374011.2      7.35   12362.1       0.0 add_x_422/R_4723/D        496499.3750
+    0:09:42  374142.2      7.34   12356.7       0.0                           496771.5625
+    0:09:45  374277.6      7.34   12356.6       0.0                           496966.6250
+    0:09:47  374870.9      7.34   12324.5       0.0                           498085.1250
+    0:09:51  380317.0      7.34   12152.1       0.0                           508305.1562
+    0:09:52  381456.0      7.34   12131.7       0.0                           510511.6875
+    0:09:52  381458.9      7.34   12131.8       0.0                           510518.4062
+    0:10:08  368000.6      7.34   12131.8       0.0                           487480.6562
+Loading db file '/media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'FPU_Interface2_W64_EW11_SW52_SWR55_EWR6' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 3166 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Writing verilog file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_2STAGE_syn.v'.
+Writing ddc file './db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_2STAGE_syn_mapped.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_2STAGE_syn.sdf'. (WT-3)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_Interface2_ASIC_fpu_syn_constraints_clk1.tcl_RKOA_2STAGE_syn.sdf'. (WT-3)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
