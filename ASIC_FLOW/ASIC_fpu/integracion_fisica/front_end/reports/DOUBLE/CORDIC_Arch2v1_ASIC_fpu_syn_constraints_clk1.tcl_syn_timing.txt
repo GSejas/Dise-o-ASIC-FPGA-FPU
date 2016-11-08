@@ -1,0 +1,55 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch2v1_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 02:18:18 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: R_144 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: d_ff5_Q_reg_41_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch2v1_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  R_144/CK (DFFSX2TS)                      0.00 #     0.10 r
+  R_144/Q (DFFSX2TS)                       0.91       1.01 f
+  U2895/Y (MXI2X4TS)                       0.25       1.25 f
+  U1764/Y (INVX4TS)                        0.21       1.47 r
+  U2488/Y (INVX6TS)                        0.13       1.60 f
+  U2086/Y (AOI22X4TS)                      0.23       1.83 r
+  U2695/Y (OAI21X4TS)                      0.15       1.98 f
+  d_ff5_Q_reg_41_/D (DFFRXLTS)             0.00       1.98 f
+  data arrival time                                   1.98
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.10       1.10
+  clock uncertainty                       -0.05       1.05
+  d_ff5_Q_reg_41_/CK (DFFRXLTS)            0.00       1.05 r
+  library setup time                      -0.37       0.68
+  data required time                                  0.68
+  -----------------------------------------------------------
+  data required time                                  0.68
+  data arrival time                                  -1.98
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.31
+
+
+1

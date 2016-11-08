@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 02:13:32 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          106
+Number of nets:                          2620
+Number of cells:                         2453
+Number of combinational cells:           2107
+Number of sequential cells:               346
+Number of macros/black boxes:               0
+Number of buf/inv:                        458
+Number of references:                     130
+
+Combinational area:              26981.280094
+Buf/Inv area:                     4501.440095
+Noncombinational area:           11862.719786
+Macro/Black Box area:                0.000000
+Net Interconnect area:          252981.291046
+
+Total cell area:                 38843.999879
+Total area:                     291825.290926
+1

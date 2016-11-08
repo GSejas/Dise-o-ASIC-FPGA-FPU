@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 02:42:38 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: mult_x_69_R_1444
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_69_R_981_RW_0
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  mult_x_69_R_1444/CK (DFFRX4TS)           0.00 #     0.10 r
+  mult_x_69_R_1444/Q (DFFRX4TS)            0.79       0.89 f
+  U3175/Y (CLKINVX12TS)                    0.13       1.02 r
+  U3174/Y (INVX16TS)                       0.08       1.10 f
+  U5225/Y (XNOR2X4TS)                      0.21       1.31 f
+  U4675/Y (OAI22X4TS)                      0.34       1.65 r
+  U4791/S (ADDFHX4TS)                      0.55       2.20 r
+  U5552/CO (ADDFHX4TS)                     0.40       2.60 r
+  U5136/S (ADDFHX4TS)                      0.46       3.05 r
+  U6093/S (ADDFHX4TS)                      0.48       3.53 r
+  U5553/S (ADDFHX4TS)                      0.44       3.97 r
+  mult_x_69_R_981_RW_0/D (DFFRXLTS)        0.00       3.97 r
+  data arrival time                                   3.97
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.10       1.10
+  clock uncertainty                       -0.05       1.05
+  mult_x_69_R_981_RW_0/CK (DFFRXLTS)       0.00       1.05 r
+  library setup time                      -0.44       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -3.97
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -3.36
+
+
+1

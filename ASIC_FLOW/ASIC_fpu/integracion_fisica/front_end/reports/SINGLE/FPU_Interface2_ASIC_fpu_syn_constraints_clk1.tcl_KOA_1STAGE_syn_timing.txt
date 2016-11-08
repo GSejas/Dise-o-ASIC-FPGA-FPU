@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 02:36:52 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPADDSUB_INPUT_STAGE_OPERANDY_Q_reg_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPADDSUB_EXP_STAGE_DMP_Q_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  FPADDSUB_INPUT_STAGE_OPERANDY_Q_reg_11_/CK (DFFRX4TS)
+                                                          0.00 #     0.10 r
+  FPADDSUB_INPUT_STAGE_OPERANDY_Q_reg_11_/Q (DFFRX4TS)
+                                                          0.82       0.92 f
+  U3514/Y (AND2X8TS)                                      0.28       1.20 f
+  U4673/Y (NOR2X8TS)                                      0.18       1.38 r
+  U5217/Y (AOI21X4TS)                                     0.18       1.56 f
+  U4850/Y (NOR2X6TS)                                      0.20       1.75 r
+  U4823/Y (NOR2X8TS)                                      0.11       1.87 f
+  U4623/Y (NAND2X8TS)                                     0.10       1.97 r
+  U4918/Y (NAND2X8TS)                                     0.09       2.06 f
+  U4922/Y (NAND2X8TS)                                     0.14       2.20 r
+  U4921/Y (NAND2X8TS)                                     0.15       2.35 f
+  U4348/Y (CLKINVX12TS)                                   0.11       2.46 r
+  U5539/Y (BUFX20TS)                                      0.15       2.61 r
+  U5668/Y (NAND2X1TS)                                     0.22       2.83 f
+  U5669/Y (NAND3X2TS)                                     0.21       3.03 r
+  FPADDSUB_EXP_STAGE_DMP_Q_reg_6_/D (DFFRX1TS)            0.00       3.03 r
+  data arrival time                                                  3.03
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  FPADDSUB_EXP_STAGE_DMP_Q_reg_6_/CK (DFFRX1TS)           0.00       1.05 r
+  library setup time                                     -0.45       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -3.03
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.43
+
+
+1

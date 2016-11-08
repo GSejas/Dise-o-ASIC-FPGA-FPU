@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Tue Nov  8 02:45:15 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: mult_x_219_R_1122
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mult_x_219_R_531
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  mult_x_219_R_1122/CK (DFFRX4TS)          0.00 #     0.10 r
+  mult_x_219_R_1122/Q (DFFRX4TS)           0.83       0.93 f
+  U4707/Y (XOR2X4TS)                       0.30       1.23 r
+  U4706/Y (AND2X8TS)                       0.26       1.49 r
+  U4705/Y (INVX16TS)                       0.12       1.61 f
+  U3243/Y (INVX16TS)                       0.09       1.71 r
+  U4695/Y (INVX16TS)                       0.07       1.78 f
+  U4696/Y (OAI22X4TS)                      0.16       1.94 r
+  U4589/S (ADDFHX4TS)                      0.51       2.45 r
+  U5820/S (ADDFHX4TS)                      0.47       2.92 f
+  U6006/CO (ADDFHX4TS)                     0.44       3.37 f
+  U5474/Y (NOR2X8TS)                       0.22       3.59 r
+  U4762/Y (INVX8TS)                        0.13       3.72 f
+  U5484/Y (NAND2X8TS)                      0.11       3.83 r
+  U5483/Y (NAND2X8TS)                      0.13       3.95 f
+  U5482/Y (NAND2X8TS)                      0.11       4.07 r
+  U5481/Y (NAND2X6TS)                      0.08       4.15 f
+  mult_x_219_R_531/D (DFFHQX4TS)           0.00       4.15 f
+  data arrival time                                   4.15
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.10       1.10
+  clock uncertainty                       -0.05       1.05
+  mult_x_219_R_531/CK (DFFHQX4TS)          0.00       1.05 r
+  library setup time                      -0.22       0.83
+  data required time                                  0.83
+  -----------------------------------------------------------
+  data required time                                  0.83
+  data arrival time                                  -4.15
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -3.32
+
+
+1
