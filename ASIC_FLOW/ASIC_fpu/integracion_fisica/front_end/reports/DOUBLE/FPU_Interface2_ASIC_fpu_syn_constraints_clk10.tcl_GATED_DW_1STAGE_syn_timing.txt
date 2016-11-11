@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:15:49 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Operands_load_reg_XMRegister_Q_reg_39_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_114 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_39_/CK (DFFRX4TS)
+                                                          0.00       1.00 r
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_39_/Q (DFFRX4TS)
+                                                          0.99       1.99 f
+  U6301/Y (INVX12TS)                                      0.23       2.22 r
+  U3013/Y (INVX8TS)                                       0.20       2.42 f
+  U2925/Y (XNOR2X1TS)                                     0.54       2.96 r
+  U8660/Y (OAI22X1TS)                                     0.64       3.61 f
+  FPMULT_Sgf_operation_mult_x_1_U2197/CO (CMPR42X2TS)     1.13       4.74 f
+  FPMULT_Sgf_operation_mult_x_1_U2181/CO (CMPR42X2TS)     1.12       5.86 f
+  FPMULT_Sgf_operation_mult_x_1_U2168/S (CMPR42X2TS)      1.12       6.98 f
+  FPMULT_Sgf_operation_mult_x_1_U2167/S (CMPR42X2TS)      1.04       8.02 f
+  U6568/Y (NOR2X8TS)                                      0.26       8.27 r
+  U3753/Y (NOR2X6TS)                                      0.15       8.42 f
+  U5740/Y (AO21X4TS)                                      0.32       8.74 f
+  U4364/Y (CLKINVX12TS)                                   0.11       8.85 r
+  U4372/Y (INVX6TS)                                       0.10       8.94 f
+  U6992/Y (NOR2X1TS)                                      0.30       9.25 r
+  U3489/Y (NAND2X1TS)                                     0.34       9.59 f
+  U3725/Y (XNOR2X2TS)                                     0.31       9.90 f
+  U6997/Y (NOR4X2TS)                                      0.39      10.29 r
+  R_114/D (DFFSX2TS)                                      0.00      10.29 r
+  data arrival time                                                 10.29
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  R_114/CK (DFFSX2TS)                                     0.00      10.50 r
+  library setup time                                     -0.21      10.29
+  data required time                                                10.29
+  --------------------------------------------------------------------------
+  data required time                                                10.29
+  data arrival time                                                -10.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

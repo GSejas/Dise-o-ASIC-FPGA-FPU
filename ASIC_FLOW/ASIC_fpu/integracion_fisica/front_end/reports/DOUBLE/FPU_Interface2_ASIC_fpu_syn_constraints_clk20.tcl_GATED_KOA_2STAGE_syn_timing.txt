@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:29:47 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Sgf_operation_ODD1_right_DatO_reg_10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_88_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  FPMULT_Sgf_operation_ODD1_right_DatO_reg_10_/CK (DFFQX1TS)
+                                                          0.00       2.00 r
+  FPMULT_Sgf_operation_ODD1_right_DatO_reg_10_/Q (DFFQX1TS)
+                                                          1.21       3.21 r
+  U5800/Y (INVX2TS)                                       0.28       3.49 f
+  U2782/S (CMPR32X2TS)                                    0.91       4.40 f
+  U2776/Y (NOR2X1TS)                                      0.61       5.00 r
+  U4093/Y (NOR2X1TS)                                      0.51       5.52 f
+  U4120/Y (AOI21X1TS)                                     0.65       6.17 r
+  U4243/Y (OAI21X1TS)                                     0.49       6.65 f
+  U4241/Y (AOI21X2TS)                                     0.39       7.05 r
+  U4408/Y (INVX2TS)                                       0.43       7.48 f
+  U5832/Y (AOI21X4TS)                                     0.35       7.83 r
+  U5833/Y (INVX3TS)                                       0.24       8.07 f
+  U3452/Y (AOI21X2TS)                                     0.38       8.45 r
+  U5608/Y (INVX2TS)                                       0.28       8.73 f
+  U3918/Y (AOI21X1TS)                                     0.59       9.32 r
+  U3365/Y (XOR2X1TS)                                      0.77      10.08 r
+  U3759/Y (NOR2X2TS)                                      0.52      10.61 f
+  U4562/Y (NOR2X1TS)                                      0.64      11.25 r
+  U5858/Y (NAND2X2TS)                                     0.49      11.73 f
+  U4564/Y (NOR2X1TS)                                      0.64      12.37 r
+  U5859/Y (NAND2X2TS)                                     0.49      12.86 f
+  U2688/Y (NOR2X1TS)                                      0.43      13.29 r
+  U3722/Y (AOI21X2TS)                                     0.39      13.68 f
+  U5953/Y (OAI21X4TS)                                     0.31      13.99 r
+  U5956/Y (AOI21X4TS)                                     0.24      14.23 f
+  U5959/Y (OAI21X4TS)                                     0.27      14.50 r
+  U5963/Y (AOI21X4TS)                                     0.22      14.72 f
+  U3711/Y (OAI21X4TS)                                     0.27      14.99 r
+  U5969/Y (AOI21X4TS)                                     0.22      15.21 f
+  U5971/Y (OAI21X4TS)                                     0.27      15.48 r
+  U5975/Y (AOI21X4TS)                                     0.22      15.70 f
+  U5976/Y (OAI21X4TS)                                     0.29      15.99 r
+  U5980/Y (AOI21X4TS)                                     0.21      16.20 f
+  U2873/Y (OAI21X2TS)                                     0.43      16.63 r
+  U5982/Y (AOI21X4TS)                                     0.31      16.93 f
+  U5983/Y (OAI21X4TS)                                     0.29      17.22 r
+  U5985/Y (AOI21X4TS)                                     0.22      17.44 f
+  U5986/Y (OAI21X4TS)                                     0.29      17.72 r
+  U5988/Y (AOI21X4TS)                                     0.22      17.95 f
+  U5989/Y (OAI21X4TS)                                     0.28      18.23 r
+  U5990/Y (AOI21X4TS)                                     0.23      18.46 f
+  U5991/Y (OAI21X4TS)                                     0.30      18.76 r
+  U5992/Y (AOI21X4TS)                                     0.44      19.20 f
+  U2905/Y (BUFX12TS)                                      0.40      19.60 f
+  U2874/Y (NOR2XLTS)                                      0.60      20.20 r
+  U4915/Y (XNOR2X1TS)                                     0.54      20.75 r
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_88_/D (DFFRX1TS)
+                                                          0.00      20.75 r
+  data arrival time                                                 20.75
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_88_/CK (DFFRX1TS)
+                                                          0.00      21.00 r
+  library setup time                                     -0.25      20.75
+  data required time                                                20.75
+  --------------------------------------------------------------------------
+  data required time                                                20.75
+  data arrival time                                                -20.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:17:52 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Operands_load_reg_YMRegister_Q_reg_45_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_finalreg_Q_reg_105_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_45_/CK (DFFRX2TS)
+                                                          0.00       2.00 r
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_45_/Q (DFFRX2TS)
+                                                          1.52       3.52 r
+  U2734/Y (BUFX4TS)                                       0.76       4.28 r
+  U5621/Y (BUFX4TS)                                       0.77       5.05 r
+  U2759/Y (OR2X1TS)                                       0.79       5.84 r
+  U4063/Y (NAND2X1TS)                                     0.60       6.44 f
+  U5624/Y (NOR2X2TS)                                      0.57       7.01 r
+  U5625/Y (NAND2X2TS)                                     0.40       7.41 f
+  U4306/Y (NOR2X1TS)                                      0.58       7.99 r
+  U4304/Y (NAND2X1TS)                                     0.47       8.46 f
+  U4495/Y (OAI21X2TS)                                     0.54       9.00 r
+  U4338/Y (BUFX3TS)                                       0.71       9.71 r
+  U3401/Y (OAI21X1TS)                                     0.43      10.14 f
+  U4078/Y (XOR2X1TS)                                      0.61      10.75 r
+  U2693/S (CMPR32X2TS)                                    1.13      11.88 f
+  FPMULT_Sgf_operation_mult_x_1_U1710/CO (CMPR42X1TS)     0.87      12.75 f
+  FPMULT_Sgf_operation_mult_x_1_U1705/S (CMPR42X1TS)      0.60      13.35 r
+  U11321/S (CMPR42X1TS)                                   1.25      14.60 f
+  U8022/Y (NAND2X1TS)                                     0.60      15.20 r
+  U8023/Y (INVX2TS)                                       0.35      15.55 f
+  U8026/Y (AOI21X1TS)                                     0.62      16.17 r
+  U8032/Y (OAI21X1TS)                                     0.62      16.80 f
+  U8063/Y (AOI21X1TS)                                     0.70      17.49 r
+  U8567/Y (OAI21X1TS)                                     0.46      17.96 f
+  U8568/Y (AOI21X1TS)                                     0.41      18.37 r
+  U8569/Y (OAI21X2TS)                                     0.35      18.71 f
+  U8572/Y (AOI21X2TS)                                     0.40      19.11 r
+  U8574/Y (OAI21X1TS)                                     0.35      19.47 f
+  U8575/Y (AOI21X2TS)                                     0.40      19.87 r
+  U8583/Y (OAI21X2TS)                                     0.34      20.21 f
+  U2647/Y (AOI21X2TS)                                     0.31      20.53 r
+  U3091/Y (XOR2X2TS)                                      0.28      20.81 r
+  FPMULT_Sgf_operation_finalreg_Q_reg_105_/D (DFFRXLTS)
+                                                          0.00      20.81 r
+  data arrival time                                                 20.81
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  FPMULT_Sgf_operation_finalreg_Q_reg_105_/CK (DFFRXLTS)
+                                                          0.00      21.00 r
+  library setup time                                     -0.19      20.81
+  data required time                                                20.81
+  --------------------------------------------------------------------------
+  data required time                                                20.81
+  data arrival time                                                -20.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

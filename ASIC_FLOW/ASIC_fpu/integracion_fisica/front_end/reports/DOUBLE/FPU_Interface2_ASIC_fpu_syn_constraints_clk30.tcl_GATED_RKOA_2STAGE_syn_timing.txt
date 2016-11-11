@@ -1,0 +1,105 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:47:53 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Sgf_operation_ODD1_right_RECURSIVE_ODD1_left_RECURSIVE_ODD1_right_GENSTOP_inst_mult_Data_S_o_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_86_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  FPMULT_Sgf_operation_ODD1_right_RECURSIVE_ODD1_left_RECURSIVE_ODD1_right_GENSTOP_inst_mult_Data_S_o_reg_0_/CK (DFFTRX1TS)
+                                                          0.00       3.00 r
+  FPMULT_Sgf_operation_ODD1_right_RECURSIVE_ODD1_left_RECURSIVE_ODD1_right_GENSTOP_inst_mult_Data_S_o_reg_0_/QN (DFFTRX1TS)
+                                                          1.40       4.40 f
+  U6014/CO (CMPR32X2TS)                                   0.78       5.17 f
+  U6021/CO (CMPR32X2TS)                                   0.72       5.89 f
+  U6024/CO (CMPR32X2TS)                                   0.56       6.45 f
+  U6029/CO (CMPR32X2TS)                                   0.56       7.01 f
+  U6033/CO (CMPR32X2TS)                                   0.56       7.56 f
+  U6038/CO (CMPR32X2TS)                                   0.56       8.12 f
+  U6045/CO (CMPR32X2TS)                                   0.56       8.68 f
+  U6056/CO (CMPR32X2TS)                                   0.56       9.24 f
+  U3047/CO (CMPR32X2TS)                                   0.56       9.79 f
+  U3031/CO (CMPR32X2TS)                                   0.56      10.35 f
+  U6085/CO (CMPR32X2TS)                                   0.56      10.91 f
+  U6093/CO (CMPR32X2TS)                                   0.56      11.47 f
+  U6104/CO (CMPR32X2TS)                                   0.56      12.02 f
+  U6114/CO (CMPR32X2TS)                                   0.56      12.58 f
+  U6128/CO (CMPR32X2TS)                                   0.56      13.14 f
+  U2993/CO (CMPR32X2TS)                                   0.56      13.70 f
+  U2985/S (CMPR32X2TS)                                    0.58      14.28 r
+  U3109/Y (OR2X1TS)                                       0.65      14.93 r
+  U2970/Y (NAND2X1TS)                                     0.62      15.55 f
+  U4079/Y (NOR2X2TS)                                      0.56      16.11 r
+  U3961/Y (NAND2X1TS)                                     0.53      16.65 f
+  U2928/Y (NOR2X1TS)                                      0.66      17.31 r
+  U4077/Y (NAND2X1TS)                                     0.45      17.76 f
+  U3576/Y (OAI21X1TS)                                     0.65      18.40 r
+  U4089/Y (AOI21X1TS)                                     0.64      19.04 f
+  U4173/Y (OAI21X2TS)                                     0.51      19.55 r
+  U4170/Y (AOI21X2TS)                                     0.37      19.92 f
+  U3540/Y (OAI21X2TS)                                     0.42      20.34 r
+  U4072/Y (AOI21X1TS)                                     0.48      20.81 f
+  U5344/Y (OA21X1TS)                                      0.76      21.57 f
+  U5386/Y (CLKXOR2X2TS)                                   0.72      22.29 f
+  U6370/Y (NAND2X1TS)                                     0.51      22.80 r
+  U6371/Y (INVX2TS)                                       0.28      23.07 f
+  U6372/Y (AOI21X1TS)                                     0.55      23.62 r
+  U6374/Y (OAI21X1TS)                                     0.62      24.24 f
+  U6377/Y (AOI21X1TS)                                     0.68      24.92 r
+  U3123/Y (OA21XLTS)                                      0.87      25.79 r
+  U6382/Y (OAI21X1TS)                                     0.67      26.46 f
+  U6386/Y (AOI21X2TS)                                     0.53      26.99 r
+  U3458/Y (OAI21X2TS)                                     0.37      27.36 f
+  U3426/Y (AOI21X2TS)                                     0.44      27.80 r
+  U3176/Y (OAI21X2TS)                                     0.38      28.18 f
+  U6416/Y (AOI21X4TS)                                     0.32      28.50 r
+  U6420/Y (OAI21X4TS)                                     0.23      28.73 f
+  U6427/Y (AOI21X4TS)                                     0.31      29.04 r
+  U3748/Y (OAI21X4TS)                                     0.24      29.28 f
+  U3883/Y (INVX4TS)                                       0.24      29.52 r
+  U3166/Y (OAI21X2TS)                                     0.29      29.81 f
+  U7170/Y (AOI21X4TS)                                     0.30      30.11 r
+  U3177/Y (INVX2TS)                                       0.49      30.61 f
+  U4424/Y (NAND2X1TS)                                     0.44      31.05 r
+  U3399/Y (XOR2X1TS)                                      0.36      31.41 r
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_86_/D (DFFRX1TS)
+                                                          0.00      31.41 r
+  data arrival time                                                 31.41
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_86_/CK (DFFRX1TS)
+                                                          0.00      31.50 r
+  library setup time                                     -0.09      31.41
+  data required time                                                31.41
+  --------------------------------------------------------------------------
+  data required time                                                31.41
+  data arrival time                                                -31.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

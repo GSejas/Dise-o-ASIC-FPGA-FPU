@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:41:49 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_1013J237_137_7834_R_2334
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_ODD1_middle_RECURSIVE_EVEN1_middle_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_15_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  DP_OP_1013J237_137_7834_R_2334/CK (DFFRXLTS)            0.00       1.00 r
+  DP_OP_1013J237_137_7834_R_2334/Q (DFFRXLTS)             1.21       2.21 r
+  U11769/S (ADDFHX2TS)                                    0.84       3.05 r
+  U11779/Y (NAND2X2TS)                                    0.27       3.32 f
+  U9141/Y (INVX4TS)                                       0.24       3.56 r
+  U11781/Y (AOI21X4TS)                                    0.17       3.73 f
+  U11782/Y (OAI21X4TS)                                    0.17       3.90 r
+  U5754/Y (INVX6TS)                                       0.17       4.07 f
+  U12030/Y (XOR2X4TS)                                     0.26       4.33 f
+  U7242/CO (ADDFHX2TS)                                    0.37       4.69 f
+  U8656/CO (ADDFHX2TS)                                    0.40       5.09 f
+  U9147/Y (NOR2X2TS)                                      0.48       5.58 r
+  U12056/Y (INVX2TS)                                      0.31       5.89 f
+  U12058/Y (NAND2X2TS)                                    0.19       6.08 r
+  U12059/Y (XOR2X4TS)                                     0.45       6.52 r
+  U14390/Y (XNOR2X2TS)                                    0.47       6.99 f
+  U14391/Y (OAI22X1TS)                                    0.50       7.49 r
+  DP_OP_1013J237_137_7834_U168/S (CMPR42X2TS)             1.43       8.92 f
+  U13229/Y (NOR2X4TS)                                     0.27       9.18 r
+  U2835/Y (NOR2X4TS)                                      0.19       9.37 f
+  U13231/Y (NAND2X2TS)                                    0.15       9.52 r
+  U8997/Y (NAND2BX4TS)                                    0.22       9.75 r
+  U4492/Y (NAND2X6TS)                                     0.18       9.93 f
+  U14815/Y (AOI21X4TS)                                    0.23      10.17 r
+  U14817/Y (XOR2X4TS)                                     0.20      10.37 f
+  FPMULT_Sgf_operation_ODD1_middle_RECURSIVE_EVEN1_middle_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_15_/D (DFFQX1TS)
+                                                          0.00      10.37 f
+  data arrival time                                                 10.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FPMULT_Sgf_operation_ODD1_middle_RECURSIVE_EVEN1_middle_RECURSIVE_ODD1_middle_GENSTOP_inst_mult_Data_S_o_reg_15_/CK (DFFQX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.13      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

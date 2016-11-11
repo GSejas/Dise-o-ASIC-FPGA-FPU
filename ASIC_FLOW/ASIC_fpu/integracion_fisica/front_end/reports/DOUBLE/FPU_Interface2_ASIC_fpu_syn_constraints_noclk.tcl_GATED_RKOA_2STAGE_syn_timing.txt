@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:52:28 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_0_
+              (rising edge-triggered flip-flop)
+  Endpoint: operation_ready
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_0_/CK (DFFSX1TS)
+                                                          0.00       0.00 r
+  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_0_/Q (DFFSX1TS)
+                                                          1.32       1.32 f
+  U3940/Y (NOR4X1TS)                                      0.89       2.22 r
+  U3941/Y (NAND2BXLTS)                                    0.59       2.81 f
+  U2797/Y (CLKBUFX2TS)                                    0.51       3.32 f
+  U5685/Y (NOR2X1TS)                                      0.63       3.95 r
+  U5695/Y (NAND3BX1TS)                                    0.77       4.72 f
+  U8094/Y (INVX2TS)                                       0.36       5.07 r
+  U8095/Y (AOI22X1TS)                                     0.28       5.36 f
+  U2842/Y (OAI31X1TS)                                     0.27       5.63 r
+  operation_ready (out)                                   0.00       5.63 r
+  data arrival time                                                  5.63
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

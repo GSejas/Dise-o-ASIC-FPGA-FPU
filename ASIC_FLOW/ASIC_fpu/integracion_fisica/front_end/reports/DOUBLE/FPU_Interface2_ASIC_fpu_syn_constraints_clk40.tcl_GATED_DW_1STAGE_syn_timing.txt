@@ -1,0 +1,107 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Fri Nov 11 00:21:53 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_2_/CK (DFFRXLTS)      0.00       4.00 r
+  FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_2_/QN (DFFRXLTS)      1.56       5.56 f
+  U3890/Y (INVX2TS)                                       0.33       5.89 r
+  U5805/Y (NOR2BX2TS)                                     0.58       6.47 r
+  U3113/Y (OAI31X2TS)                                     0.43       6.90 f
+  U4348/Y (AOI222X4TS)                                    0.87       7.77 r
+  U5907/Y (OAI2BB2X2TS)                                   0.29       8.06 f
+  U3066/Y (AOI222X4TS)                                    0.87       8.93 r
+  U5908/Y (OAI2BB2X2TS)                                   0.29       9.22 f
+  U2660/Y (AOI222X4TS)                                    0.89      10.11 r
+  U5909/Y (AOI222X1TS)                                    0.42      10.52 f
+  U5910/Y (OAI2BB2X2TS)                                   0.55      11.07 f
+  U2845/Y (OAI222X1TS)                                    0.68      11.75 r
+  U2991/Y (OAI22X1TS)                                     0.72      12.48 f
+  U3735/Y (INVX2TS)                                       0.34      12.82 r
+  U2952/Y (AOI222X4TS)                                    0.53      13.35 f
+  U3220/Y (AOI222X1TS)                                    0.81      14.16 r
+  U3734/Y (OAI22X1TS)                                     0.69      14.86 f
+  U4360/Y (AOI2BB2X2TS)                                   0.58      15.44 r
+  U2936/Y (AOI222X4TS)                                    0.66      16.09 f
+  U2935/Y (AOI222X1TS)                                    0.81      16.91 r
+  U3733/Y (OAI22X1TS)                                     0.69      17.60 f
+  U4361/Y (AOI2BB2X2TS)                                   0.58      18.18 r
+  U2932/Y (AOI222X4TS)                                    0.65      18.83 f
+  U2931/Y (AOI222X1TS)                                    0.81      19.64 r
+  U3726/Y (OAI22X1TS)                                     0.66      20.30 f
+  U3730/Y (OAI2BB2X1TS)                                   0.66      20.96 f
+  U3729/Y (AOI22X1TS)                                     0.73      21.69 r
+  U6323/Y (OAI22X2TS)                                     0.58      22.27 f
+  U6324/Y (OAI222X4TS)                                    0.79      23.06 r
+  U4371/Y (OAI22X2TS)                                     0.31      23.36 f
+  U2658/Y (OAI222X1TS)                                    0.68      24.05 r
+  U2728/Y (OAI22X1TS)                                     0.71      24.76 f
+  U3217/Y (AOI22X1TS)                                     0.69      25.45 r
+  U3727/Y (OAI22X1TS)                                     0.67      26.12 f
+  U4475/Y (INVX2TS)                                       0.34      26.46 r
+  U2657/Y (AOI222X4TS)                                    0.51      26.97 f
+  U3731/Y (AOI22X1TS)                                     0.65      27.62 r
+  U6325/Y (OAI2BB2X2TS)                                   0.57      28.19 f
+  U2722/Y (AOI222X4TS)                                    0.87      29.06 r
+  U6326/Y (OAI2BB2X2TS)                                   0.29      29.35 f
+  U2654/Y (AOI222X4TS)                                    0.89      30.24 r
+  U6369/Y (AOI222X4TS)                                    0.51      30.75 f
+  U2908/Y (AOI222X4TS)                                    0.82      31.56 r
+  U3802/Y (AOI222X4TS)                                    0.49      32.06 f
+  U3221/Y (AOI22X1TS)                                     0.65      32.70 r
+  U6370/Y (OAI2BB2X2TS)                                   0.57      33.27 f
+  U2653/Y (AOI222X4TS)                                    0.89      34.17 r
+  U6371/Y (AOI222X4TS)                                    0.51      34.68 f
+  U2903/Y (AOI222X4TS)                                    0.82      35.49 r
+  U2652/Y (AOI222X4TS)                                    0.49      35.99 f
+  U3219/Y (AOI22X1TS)                                     0.65      36.63 r
+  U6526/Y (OAI2BB2X2TS)                                   0.57      37.20 f
+  U2898/Y (AOI222X4TS)                                    0.87      38.08 r
+  U6527/Y (OAI2BB2X2TS)                                   0.30      38.37 f
+  U6528/Y (AOI222X1TS)                                    0.89      39.26 r
+  U6529/Y (OAI2BB2X1TS)                                   0.68      39.94 f
+  U6532/Y (AOI211X1TS)                                    0.84      40.78 r
+  U2715/Y (OAI21XLTS)                                     0.58      41.36 f
+  U6544/Y (OAI31X1TS)                                     0.30      41.67 r
+  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRX2TS)      0.00      41.67 r
+  data arrival time                                                 41.67
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRX2TS)     0.00      42.00 r
+  library setup time                                      0.06      42.06
+  data required time                                                42.06
+  --------------------------------------------------------------------------
+  data required time                                                42.06
+  data arrival time                                                -41.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.39
+
+
+1

@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 23:34:27 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: R_120 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_127 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              3.00       3.00
+  R_120/CK (DFFRX2TS)                      0.00       3.00 r
+  R_120/Q (DFFRX2TS)                       1.39       4.39 f
+  U2828/CO (CMPR32X2TS)                    0.76       5.15 f
+  U2826/CO (CMPR32X2TS)                    0.56       5.70 f
+  U2823/CO (CMPR32X2TS)                    0.56       6.26 f
+  U2821/CO (CMPR32X2TS)                    0.56       6.82 f
+  U2818/CO (CMPR32X2TS)                    0.56       7.38 f
+  U2813/CO (CMPR32X2TS)                    0.56       7.93 f
+  U2809/CO (CMPR32X2TS)                    0.56       8.49 f
+  U2805/CO (CMPR32X2TS)                    0.56       9.05 f
+  U2800/CO (CMPR32X2TS)                    0.56       9.61 f
+  U2797/CO (CMPR32X2TS)                    0.56      10.16 f
+  U2794/CO (CMPR32X2TS)                    0.56      10.72 f
+  U2787/CO (CMPR32X2TS)                    0.56      11.28 f
+  U2783/CO (CMPR32X2TS)                    0.56      11.83 f
+  U2779/CO (CMPR32X2TS)                    0.56      12.39 f
+  U2773/CO (CMPR32X2TS)                    0.56      12.95 f
+  U2767/CO (CMPR32X2TS)                    0.56      13.51 f
+  U2762/CO (CMPR32X2TS)                    0.56      14.06 f
+  U2757/CO (CMPR32X2TS)                    0.56      14.62 f
+  U2751/CO (CMPR32X2TS)                    0.56      15.18 f
+  U2744/CO (CMPR32X2TS)                    0.56      15.74 f
+  U2742/CO (CMPR32X2TS)                    0.56      16.29 f
+  U2740/CO (CMPR32X2TS)                    0.56      16.85 f
+  U2736/CO (CMPR32X2TS)                    0.56      17.41 f
+  U2731/CO (CMPR32X2TS)                    0.56      17.97 f
+  U2728/CO (CMPR32X2TS)                    0.56      18.52 f
+  U2725/CO (CMPR32X2TS)                    0.56      19.08 f
+  U2721/CO (CMPR32X2TS)                    0.56      19.64 f
+  U2719/CO (CMPR32X2TS)                    0.56      20.20 f
+  U2716/CO (CMPR32X2TS)                    0.56      20.75 f
+  U2713/CO (CMPR32X2TS)                    0.56      21.31 f
+  U2711/CO (CMPR32X2TS)                    0.56      21.87 f
+  U2709/CO (CMPR32X2TS)                    0.56      22.43 f
+  U2704/CO (CMPR32X2TS)                    0.56      22.98 f
+  U2702/CO (CMPR32X2TS)                    0.56      23.54 f
+  U2697/CO (CMPR32X2TS)                    0.56      24.10 f
+  U2695/CO (CMPR32X2TS)                    0.56      24.66 f
+  U2693/CO (CMPR32X2TS)                    0.56      25.21 f
+  U2689/CO (CMPR32X2TS)                    0.56      25.77 f
+  U2684/CO (CMPR32X2TS)                    0.56      26.33 f
+  U2682/CO (CMPR32X2TS)                    0.56      26.89 f
+  U2680/CO (CMPR32X2TS)                    0.56      27.44 f
+  U2679/CO (CMPR32X2TS)                    0.56      28.00 f
+  U2677/CO (CMPR32X2TS)                    0.56      28.56 f
+  U2675/CO (CMPR32X2TS)                    0.56      29.12 f
+  U2673/CO (CMPR32X2TS)                    0.56      29.67 f
+  U2671/CO (CMPR32X2TS)                    0.56      30.23 f
+  U2659/CO (CMPR32X2TS)                    0.56      30.79 f
+  U3916/CO (ADDFHX2TS)                     0.37      31.16 f
+  U3263/Y (XOR2X2TS)                       0.24      31.40 f
+  U2650/Y (NAND2X1TS)                      0.27      31.67 r
+  R_127/D (DFFSX2TS)                       0.00      31.67 r
+  data arrival time                                  31.67
+
+  clock clk (rise edge)                   30.00      30.00
+  clock network delay (ideal)              3.00      33.00
+  clock uncertainty                       -1.50      31.50
+  R_127/CK (DFFSX2TS)                      0.00      31.50 r
+  library setup time                       0.17      31.67
+  data required time                                 31.67
+  -----------------------------------------------------------
+  data required time                                 31.67
+  data arrival time                                 -31.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
