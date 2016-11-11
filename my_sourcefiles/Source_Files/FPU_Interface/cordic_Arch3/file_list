@@ -1,0 +1,8 @@
+CORDIC_Arch3v1.v
+CORDIC_FSM_v3.v
+DECO_CORDIC_OP.v
+Mux_3x1_b_v2.v
+PriorityEncoder_ExtCORDIC.v
+Up_Counter.v
+DECO_CORDIC_OP2.v
+CORDIC_Arch3.v
