@@ -1,0 +1,99 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 23:02:09 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Operands_load_reg_XMRegister_Q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_39_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_1_/CK (DFFRX4TS)
+                                                          0.00       3.00 r
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_1_/Q (DFFRX4TS)
+                                                          1.51       4.51 r
+  U1543/Y (INVX2TS)                                       0.68       5.19 f
+  U1927/Y (AOI22X1TS)                                     0.57       5.76 r
+  U1859/Y (BUFX4TS)                                       0.74       6.50 r
+  U1928/Y (OAI221X4TS)                                    1.03       7.52 f
+  U1940/Y (OAI22X1TS)                                     0.52       8.04 r
+  U1541/S (ADDHXLTS)                                      0.60       8.64 f
+  U2467/CO (CMPR32X2TS)                                   0.87       9.51 f
+  U2456/CO (CMPR32X2TS)                                   0.56      10.06 f
+  U1443/CO (CMPR32X2TS)                                   0.56      10.62 f
+  U2464/CO (CMPR32X2TS)                                   0.56      11.18 f
+  U2461/CO (CMPR32X2TS)                                   0.56      11.74 f
+  U1434/CO (CMPR32X2TS)                                   0.56      12.29 f
+  U2458/CO (CMPR32X2TS)                                   0.56      12.85 f
+  U1429/CO (CMPR32X2TS)                                   0.56      13.41 f
+  U2454/CO (CMPR32X2TS)                                   0.56      13.97 f
+  U1986/CO (CMPR32X2TS)                                   0.56      14.52 f
+  U1425/CO (CMPR32X2TS)                                   0.56      15.08 f
+  U1984/CO (CMPR32X2TS)                                   0.56      15.64 f
+  U1422/CO (CMPR32X2TS)                                   0.56      16.20 f
+  U1981/CO (CMPR32X2TS)                                   0.56      16.75 f
+  U1420/CO (CMPR32X2TS)                                   0.56      17.31 f
+  U1978/CO (CMPR32X2TS)                                   0.56      17.87 f
+  U1419/CO (CMPR32X2TS)                                   0.56      18.42 f
+  U1976/CO (CMPR32X2TS)                                   0.56      18.98 f
+  U1974/CO (CMPR32X2TS)                                   0.56      19.54 f
+  U1972/CO (CMPR32X2TS)                                   0.55      20.09 f
+  U1562/Y (XNOR2X1TS)                                     0.41      20.50 r
+  U1971/Y (CLKXOR2X2TS)                                   0.75      21.25 f
+  U1606/CO (AFHCINX2TS)                                   0.68      21.93 f
+  U1866/Y (AOI21X1TS)                                     0.59      22.52 r
+  U2052/CO (AFHCINX2TS)                                   0.39      22.91 f
+  U2051/CON (AFHCONX2TS)                                  0.35      23.25 r
+  U1633/CO (AFHCINX2TS)                                   0.33      23.58 f
+  U2050/CON (AFHCONX2TS)                                  0.35      23.93 r
+  U2049/CO (AFHCINX2TS)                                   0.31      24.24 f
+  U1409/CO (CMPR32X2TS)                                   0.59      24.83 f
+  U1406/CO (CMPR32X2TS)                                   0.56      25.39 f
+  U1404/CO (CMPR32X2TS)                                   0.56      25.95 f
+  U1403/CO (CMPR32X2TS)                                   0.56      26.51 f
+  U2048/CO (CMPR32X2TS)                                   0.56      27.06 f
+  U1401/CO (CMPR32X2TS)                                   0.62      27.68 f
+  U1860/Y (INVX2TS)                                       0.18      27.86 r
+  U1450/Y (OR2X1TS)                                       0.36      28.23 r
+  U1516/Y (NAND2X4TS)                                     0.45      28.68 f
+  U1574/Y (NAND2X1TS)                                     0.38      29.05 r
+  U1573/Y (XOR2X1TS)                                      0.35      29.40 r
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_39_/D (DFFRX1TS)
+                                                          0.00      29.40 r
+  data arrival time                                                 29.40
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_39_/CK (DFFRX1TS)
+                                                          0.00      31.50 r
+  library setup time                                     -0.08      31.42
+  data required time                                                31.42
+  --------------------------------------------------------------------------
+  data required time                                                31.42
+  data arrival time                                                -29.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.01
+
+
+1

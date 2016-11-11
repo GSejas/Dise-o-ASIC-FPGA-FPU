@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-10-31 16:28:45
+//  Last Modified : 2016-11-10 19:43:24
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -68,19 +68,6 @@ module Simple_KOA_STAGE_2
     localparam half = SW/2;
 
 generate
-
-    //assign i = Stop_I;
-    if (SW <= 7) begin : GENSTOP
-
-            mult2 #(.SW(SW)) 
-            inst_mult (
-                .DatA(Data_A_i), 
-                .DatB(Data_B_i),
-                .DatO(sgf_result_o)
-                 );
-
-    end else begin  : RECURSIVE
-
     case (SW%2)
         0:begin : EVEN1
 
@@ -189,10 +176,6 @@ generate
                 );
         end
     endcase
-
-end
-
-
 
 endgenerate
 

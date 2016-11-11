@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 16:54:20 2016
+Date   : Thu Nov 10 01:47:04 2016
 ****************************************
 
 
@@ -35,12 +35,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 459.7492 uW   (68%)
-  Net Switching Power  = 213.5152 uW   (32%)
+  Cell Internal Power  = 352.0812 uW   (62%)
+  Net Switching Power  = 217.7646 uW   (38%)
                          ---------
-Total Dynamic Power    = 673.2644 uW  (100%)
+Total Dynamic Power    = 569.8458 uW  (100%)
 
-Cell Leakage Power     = 136.5364 nW
+Cell Leakage Power     = 143.5304 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,9 +50,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.3628        3.4089e-02        2.2092e+04            0.3969  (  58.94%)
+register           0.2591        1.9045e-02        1.6012e+04            0.2782  (  48.81%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  9.6951e-02            0.1794        1.1444e+05            0.2765  (  41.06%)
+combinational  9.2932e-02            0.1987        1.2752e+05            0.2918  (  51.19%)
 --------------------------------------------------------------------------------------------------
-Total              0.4597 mW         0.2135 mW     1.3654e+05 pW         0.6734 mW
+Total              0.3521 mW         0.2178 mW     1.4353e+05 pW         0.5700 mW
 1

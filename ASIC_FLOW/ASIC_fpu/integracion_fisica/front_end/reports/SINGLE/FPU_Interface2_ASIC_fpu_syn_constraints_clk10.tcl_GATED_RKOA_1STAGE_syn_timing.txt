@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 23:05:56 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: R_1172 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DP_OP_499J187_125_1651_R_1142
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  R_1172/CK (DFFRX4TS)                                    0.00       1.00 r
+  R_1172/Q (DFFRX4TS)                                     0.94       1.94 f
+  U2128/Y (INVX8TS)                                       0.20       2.14 r
+  U4031/Y (NOR2X2TS)                                      0.15       2.29 f
+  U1833/S (ADDFX2TS)                                      0.82       3.11 f
+  U2657/CO (ADDFHX4TS)                                    0.43       3.54 f
+  U4045/Y (INVX4TS)                                       0.16       3.69 r
+  U4153/CO (ADDFHX4TS)                                    0.55       4.25 r
+  U4057/CO (ADDFHX4TS)                                    0.45       4.69 r
+  U2680/S (ADDFHX4TS)                                     0.47       5.17 r
+  U2679/CO (ADDFHX4TS)                                    0.41       5.58 r
+  U4163/S (ADDFHX4TS)                                     0.54       6.12 f
+  U4164/Y (NOR2X8TS)                                      0.21       6.33 r
+  U2755/Y (OAI21X4TS)                                     0.17       6.50 f
+  U4167/Y (AOI21X4TS)                                     0.27       6.76 r
+  U2164/Y (BUFX12TS)                                      0.27       7.04 r
+  U4227/Y (INVX2TS)                                       0.11       7.15 f
+  U4229/Y (OAI2BB1X4TS)                                   0.22       7.37 f
+  U4231/Y (XNOR2X4TS)                                     0.28       7.65 r
+  U2874/Y (NOR2X8TS)                                      0.26       7.90 f
+  U4621/Y (NOR2X4TS)                                      0.24       8.14 r
+  U1522/Y (NAND2X2TS)                                     0.25       8.39 f
+  U4624/Y (OAI21X4TS)                                     0.21       8.60 r
+  U4626/Y (XNOR2X4TS)                                     0.30       8.90 r
+  U1450/Y (INVX2TS)                                       0.33       9.23 f
+  U4854/S (ADDFHX4TS)                                     0.50       9.73 r
+  U4778/S (ADDFHX4TS)                                     0.47      10.20 f
+  U1401/Y (NOR2X4TS)                                      0.16      10.37 r
+  DP_OP_499J187_125_1651_R_1142/D (DFFSX2TS)              0.00      10.37 r
+  data arrival time                                                 10.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  DP_OP_499J187_125_1651_R_1142/CK (DFFSX2TS)             0.00      10.50 r
+  library setup time                                     -0.13      10.37
+  data required time                                                10.37
+  --------------------------------------------------------------------------
+  data required time                                                10.37
+  data arrival time                                                -10.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

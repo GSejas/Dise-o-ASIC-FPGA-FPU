@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 23:20:59 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  FPMULT_Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_0_/CK (DFFTRX1TS)
+                                                          0.00       2.00 r
+  FPMULT_Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_0_/QN (DFFTRX1TS)
+                                                          1.45       3.45 r
+  U1436/Y (OR2X1TS)                                       0.61       4.06 r
+  U1765/Y (NAND2X2TS)                                     0.29       4.35 f
+  U1986/Y (XNOR2X1TS)                                     0.35       4.70 f
+  U2286/CO (ADDHX1TS)                                     0.46       5.15 f
+  U2304/CO (CMPR32X2TS)                                   0.73       5.88 f
+  U1607/CO (ADDFHX1TS)                                    0.52       6.40 f
+  U2331/CO (CMPR32X2TS)                                   0.57       6.97 f
+  U1596/CO (ADDFX1TS)                                     0.56       7.53 f
+  U2330/CO (CMPR32X2TS)                                   0.57       8.10 f
+  U2321/CO (CMPR32X2TS)                                   0.56       8.66 f
+  U2320/CO (CMPR32X2TS)                                   0.56       9.22 f
+  U1425/CO (CMPR32X2TS)                                   0.56       9.77 f
+  U2317/CO (CMPR32X2TS)                                   0.56      10.33 f
+  U2315/CO (CMPR32X2TS)                                   0.56      10.89 f
+  U2138/CO (ADDFHX2TS)                                    0.37      11.26 f
+  U2311/CO (CMPR32X2TS)                                   0.53      11.80 f
+  U2140/S (ADDFHX2TS)                                     0.48      12.27 f
+  U3148/CON (AFHCONX2TS)                                  0.63      12.91 r
+  U3157/CO (AFHCINX2TS)                                   0.33      13.23 f
+  U3155/CON (AFHCONX2TS)                                  0.35      13.58 r
+  U1512/CO (AFHCINX2TS)                                   0.33      13.91 f
+  U1508/CON (AFHCONX2TS)                                  0.35      14.26 r
+  U1488/CO (AFHCINX2TS)                                   0.33      14.59 f
+  U2350/CON (AFHCONX2TS)                                  0.35      14.94 r
+  U2349/CO (AFHCINX2TS)                                   0.33      15.27 f
+  U2348/CON (AFHCONX2TS)                                  0.35      15.62 r
+  U2347/CO (AFHCINX2TS)                                   0.33      15.95 f
+  U2346/CON (AFHCONX2TS)                                  0.35      16.29 r
+  U2345/CO (AFHCINX2TS)                                   0.33      16.62 f
+  U2344/CON (AFHCONX2TS)                                  0.35      16.97 r
+  U2343/CO (AFHCINX2TS)                                   0.33      17.30 f
+  U2342/CON (AFHCONX2TS)                                  0.35      17.65 r
+  U2341/CO (AFHCINX2TS)                                   0.33      17.98 f
+  U2352/CON (AFHCONX2TS)                                  0.35      18.33 r
+  U1447/CO (AFHCINX2TS)                                   0.37      18.70 f
+  U1704/CON (AFHCONX4TS)                                  0.38      19.08 r
+  U1459/Y (INVX4TS)                                       0.39      19.47 f
+  U1458/Y (NAND2X2TS)                                     0.22      19.69 r
+  U2351/CO (AHHCINX2TS)                                   0.15      19.84 f
+  U1457/CO (ADDHX1TS)                                     0.39      20.23 f
+  U1478/CO (ADDHX2TS)                                     0.33      20.56 f
+  U1456/Y (XOR2X2TS)                                      0.22      20.79 r
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_/D (DFFRXLTS)
+                                                          0.00      20.79 r
+  data arrival time                                                 20.79
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_/CK (DFFRXLTS)
+                                                          0.00      21.00 r
+  library setup time                                     -0.21      20.79
+  data required time                                                20.79
+  --------------------------------------------------------------------------
+  data required time                                                20.79
+  data arrival time                                                -20.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

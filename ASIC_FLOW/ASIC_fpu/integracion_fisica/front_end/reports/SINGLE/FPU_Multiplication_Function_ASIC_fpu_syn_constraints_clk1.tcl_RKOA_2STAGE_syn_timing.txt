@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 01:26:51 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: R_1822 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  R_1822/CK (DFFRX4TS)                                    0.00       0.10 r
+  R_1822/Q (DFFRX4TS)                                     0.74       0.84 f
+  U2009/Y (NOR2X8TS)                                      0.15       0.99 r
+  U2160/Y (XOR2X4TS)                                      0.24       1.24 r
+  U1307/Y (NAND2BX4TS)                                    0.32       1.55 r
+  U1298/Y (NAND2X6TS)                                     0.12       1.67 f
+  U2515/CO (ADDHX4TS)                                     0.22       1.88 f
+  U2513/CO (ADDFHX4TS)                                    0.37       2.25 f
+  U2470/Y (OAI21X4TS)                                     0.20       2.46 r
+  U2469/Y (OAI2BB1X4TS)                                   0.15       2.60 f
+  U2467/S (ADDFHX4TS)                                     0.41       3.01 r
+  U2465/S (ADDFHX4TS)                                     0.47       3.48 f
+  U1925/Y (NOR2X8TS)                                      0.25       3.73 r
+  U1924/Y (NAND2X8TS)                                     0.16       3.89 f
+  U1926/Y (NAND2X8TS)                                     0.12       4.01 r
+  U1932/Y (NAND2X8TS)                                     0.12       4.13 f
+  U1930/Y (OAI2BB1X4TS)                                   0.23       4.36 f
+  U2460/Y (XOR2X4TS)                                      0.17       4.53 f
+  Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_11_/D (DFFHQX8TS)
+                                                          0.00       4.53 f
+  data arrival time                                                  4.53
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_middle_GENSTOP_inst_mult_Data_S_o_reg_11_/CK (DFFHQX8TS)
+                                                          0.00       1.05 r
+  library setup time                                     -0.24       0.81
+  data required time                                                 0.81
+  --------------------------------------------------------------------------
+  data required time                                                 0.81
+  data arrival time                                                 -4.53
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -3.72
+
+
+1

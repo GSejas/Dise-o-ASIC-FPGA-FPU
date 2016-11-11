@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 17:25:25 2016
+Date   : Thu Nov 10 02:34:20 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -66,7 +66,7 @@ Wire Load Model Mode: top
   U4490/CO (ADDFX2TS)                                     0.72      23.36 f
   U2691/S (ADDFHX2TS)                                     0.43      23.78 f
   U2068/CO (ADDFX2TS)                                     0.54      24.32 f
-  DP_OP_338J124_122_4684_U11/CO1 (AFCSHCINX2TS)           0.68      25.00 f
+  DP_OP_338J161_122_4684_U11/CO1 (AFCSHCINX2TS)           0.68      25.00 f
   U3669/Y (MX2X4TS)                                       0.48      25.49 f
   U945/S (AFCSIHCONX2TS)                                  0.65      26.14 f
   U2359/Y (NOR2X6TS)                                      0.31      26.44 r

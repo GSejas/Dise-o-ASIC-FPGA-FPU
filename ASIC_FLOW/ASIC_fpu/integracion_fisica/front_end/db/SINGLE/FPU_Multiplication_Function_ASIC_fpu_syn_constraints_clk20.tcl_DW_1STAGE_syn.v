@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Thu Nov  3 16:41:49 2016
+// Date      : Thu Nov 10 01:16:57 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -35,15 +35,15 @@ module FPU_Multiplication_Function_W32_EW8_SW23 ( clk, rst, beg_FSM, ack_FSM,
          n345, n346, n347, n348, n349, n350, n351, n352, n353, n354, n355,
          n356, n357, n358, n359, n360, n361, n362, n363, n364, n365, n366,
          n367, n368, n369, n370, n371, n372, n373, n374, n375, n376, n377,
-         n378, n379, n380, n381, DP_OP_32J102_122_6543_n22,
-         DP_OP_32J102_122_6543_n21, DP_OP_32J102_122_6543_n20,
-         DP_OP_32J102_122_6543_n19, DP_OP_32J102_122_6543_n18,
-         DP_OP_32J102_122_6543_n17, DP_OP_32J102_122_6543_n16,
-         DP_OP_32J102_122_6543_n15, DP_OP_32J102_122_6543_n9,
-         DP_OP_32J102_122_6543_n8, DP_OP_32J102_122_6543_n7,
-         DP_OP_32J102_122_6543_n6, DP_OP_32J102_122_6543_n5,
-         DP_OP_32J102_122_6543_n4, DP_OP_32J102_122_6543_n3,
-         DP_OP_32J102_122_6543_n2, DP_OP_32J102_122_6543_n1, mult_x_19_n1224,
+         n378, n379, n380, n381, DP_OP_32J135_122_6543_n22,
+         DP_OP_32J135_122_6543_n21, DP_OP_32J135_122_6543_n20,
+         DP_OP_32J135_122_6543_n19, DP_OP_32J135_122_6543_n18,
+         DP_OP_32J135_122_6543_n17, DP_OP_32J135_122_6543_n16,
+         DP_OP_32J135_122_6543_n15, DP_OP_32J135_122_6543_n9,
+         DP_OP_32J135_122_6543_n8, DP_OP_32J135_122_6543_n7,
+         DP_OP_32J135_122_6543_n6, DP_OP_32J135_122_6543_n5,
+         DP_OP_32J135_122_6543_n4, DP_OP_32J135_122_6543_n3,
+         DP_OP_32J135_122_6543_n2, DP_OP_32J135_122_6543_n1, mult_x_19_n1224,
          mult_x_19_n1223, mult_x_19_n1222, mult_x_19_n1221, mult_x_19_n1220,
          mult_x_19_n1219, mult_x_19_n1218, mult_x_19_n1217, mult_x_19_n1216,
          mult_x_19_n1215, mult_x_19_n1214, mult_x_19_n1213, mult_x_19_n1212,
@@ -327,33 +327,33 @@ module FPU_Multiplication_Function_W32_EW8_SW23 ( clk, rst, beg_FSM, ack_FSM,
         FSM_selector_B[0]), .QN(n1838) );
   DFFRXLTS Barrel_Shifter_module_Output_Reg_Q_reg_23_ ( .D(n310), .CK(clk), 
         .RN(n1880), .Q(Sgf_normalized_result[23]), .QN(n1849) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U10 ( .A(S_Oper_A_exp[0]), .B(
-        FSM_exp_operation_A_S), .C(DP_OP_32J102_122_6543_n22), .CO(
-        DP_OP_32J102_122_6543_n9), .S(Exp_module_Data_S[0]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U9 ( .A(DP_OP_32J102_122_6543_n21), .B(
-        S_Oper_A_exp[1]), .C(DP_OP_32J102_122_6543_n9), .CO(
-        DP_OP_32J102_122_6543_n8), .S(Exp_module_Data_S[1]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U8 ( .A(DP_OP_32J102_122_6543_n20), .B(
-        S_Oper_A_exp[2]), .C(DP_OP_32J102_122_6543_n8), .CO(
-        DP_OP_32J102_122_6543_n7), .S(Exp_module_Data_S[2]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U7 ( .A(DP_OP_32J102_122_6543_n19), .B(
-        S_Oper_A_exp[3]), .C(DP_OP_32J102_122_6543_n7), .CO(
-        DP_OP_32J102_122_6543_n6), .S(Exp_module_Data_S[3]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U6 ( .A(DP_OP_32J102_122_6543_n18), .B(
-        S_Oper_A_exp[4]), .C(DP_OP_32J102_122_6543_n6), .CO(
-        DP_OP_32J102_122_6543_n5), .S(Exp_module_Data_S[4]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U5 ( .A(DP_OP_32J102_122_6543_n17), .B(
-        S_Oper_A_exp[5]), .C(DP_OP_32J102_122_6543_n5), .CO(
-        DP_OP_32J102_122_6543_n4), .S(Exp_module_Data_S[5]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U4 ( .A(DP_OP_32J102_122_6543_n16), .B(
-        S_Oper_A_exp[6]), .C(DP_OP_32J102_122_6543_n4), .CO(
-        DP_OP_32J102_122_6543_n3), .S(Exp_module_Data_S[6]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U3 ( .A(DP_OP_32J102_122_6543_n15), .B(
-        S_Oper_A_exp[7]), .C(DP_OP_32J102_122_6543_n3), .CO(
-        DP_OP_32J102_122_6543_n2), .S(Exp_module_Data_S[7]) );
-  CMPR32X2TS DP_OP_32J102_122_6543_U2 ( .A(FSM_exp_operation_A_S), .B(
-        S_Oper_A_exp[8]), .C(DP_OP_32J102_122_6543_n2), .CO(
-        DP_OP_32J102_122_6543_n1), .S(Exp_module_Data_S[8]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U10 ( .A(S_Oper_A_exp[0]), .B(
+        FSM_exp_operation_A_S), .C(DP_OP_32J135_122_6543_n22), .CO(
+        DP_OP_32J135_122_6543_n9), .S(Exp_module_Data_S[0]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U9 ( .A(DP_OP_32J135_122_6543_n21), .B(
+        S_Oper_A_exp[1]), .C(DP_OP_32J135_122_6543_n9), .CO(
+        DP_OP_32J135_122_6543_n8), .S(Exp_module_Data_S[1]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U8 ( .A(DP_OP_32J135_122_6543_n20), .B(
+        S_Oper_A_exp[2]), .C(DP_OP_32J135_122_6543_n8), .CO(
+        DP_OP_32J135_122_6543_n7), .S(Exp_module_Data_S[2]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U7 ( .A(DP_OP_32J135_122_6543_n19), .B(
+        S_Oper_A_exp[3]), .C(DP_OP_32J135_122_6543_n7), .CO(
+        DP_OP_32J135_122_6543_n6), .S(Exp_module_Data_S[3]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U6 ( .A(DP_OP_32J135_122_6543_n18), .B(
+        S_Oper_A_exp[4]), .C(DP_OP_32J135_122_6543_n6), .CO(
+        DP_OP_32J135_122_6543_n5), .S(Exp_module_Data_S[4]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U5 ( .A(DP_OP_32J135_122_6543_n17), .B(
+        S_Oper_A_exp[5]), .C(DP_OP_32J135_122_6543_n5), .CO(
+        DP_OP_32J135_122_6543_n4), .S(Exp_module_Data_S[5]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U4 ( .A(DP_OP_32J135_122_6543_n16), .B(
+        S_Oper_A_exp[6]), .C(DP_OP_32J135_122_6543_n4), .CO(
+        DP_OP_32J135_122_6543_n3), .S(Exp_module_Data_S[6]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U3 ( .A(DP_OP_32J135_122_6543_n15), .B(
+        S_Oper_A_exp[7]), .C(DP_OP_32J135_122_6543_n3), .CO(
+        DP_OP_32J135_122_6543_n2), .S(Exp_module_Data_S[7]) );
+  CMPR32X2TS DP_OP_32J135_122_6543_U2 ( .A(FSM_exp_operation_A_S), .B(
+        S_Oper_A_exp[8]), .C(DP_OP_32J135_122_6543_n2), .CO(
+        DP_OP_32J135_122_6543_n1), .S(Exp_module_Data_S[8]) );
   CMPR42X1TS mult_x_19_U632 ( .A(mult_x_19_n764), .B(mult_x_19_n1176), .C(
         mult_x_19_n767), .D(mult_x_19_n1200), .ICI(mult_x_19_n1224), .S(
         mult_x_19_n762), .ICO(mult_x_19_n760), .CO(mult_x_19_n761) );
@@ -2418,28 +2418,28 @@ module FPU_Multiplication_Function_W32_EW8_SW23 ( clk, rst, beg_FSM, ack_FSM,
   NOR3BX1TS U1669 ( .AN(Op_MY[30]), .B(FSM_selector_B[0]), .C(
         FSM_selector_B[1]), .Y(n1172) );
   XOR2X1TS U1670 ( .A(FSM_exp_operation_A_S), .B(n1172), .Y(
-        DP_OP_32J102_122_6543_n15) );
+        DP_OP_32J135_122_6543_n15) );
   OR2X2TS U1671 ( .A(FSM_selector_B[1]), .B(n1838), .Y(n1179) );
   OAI2BB1X1TS U1672 ( .A0N(Op_MY[29]), .A1N(n1839), .B0(n1179), .Y(n1173) );
   XOR2X1TS U1673 ( .A(FSM_exp_operation_A_S), .B(n1173), .Y(
-        DP_OP_32J102_122_6543_n16) );
+        DP_OP_32J135_122_6543_n16) );
   OAI2BB1X1TS U1674 ( .A0N(Op_MY[28]), .A1N(n1839), .B0(n1179), .Y(n1174) );
   XOR2X1TS U1675 ( .A(FSM_exp_operation_A_S), .B(n1174), .Y(
-        DP_OP_32J102_122_6543_n17) );
+        DP_OP_32J135_122_6543_n17) );
   OAI2BB1X1TS U1676 ( .A0N(Op_MY[27]), .A1N(n1839), .B0(n1179), .Y(n1175) );
   XOR2X1TS U1677 ( .A(FSM_exp_operation_A_S), .B(n1175), .Y(
-        DP_OP_32J102_122_6543_n18) );
+        DP_OP_32J135_122_6543_n18) );
   OAI2BB1X1TS U1678 ( .A0N(Op_MY[26]), .A1N(n1839), .B0(n1179), .Y(n1176) );
   XOR2X1TS U1679 ( .A(FSM_exp_operation_A_S), .B(n1176), .Y(
-        DP_OP_32J102_122_6543_n19) );
+        DP_OP_32J135_122_6543_n19) );
   OAI2BB1X1TS U1680 ( .A0N(Op_MY[25]), .A1N(n1839), .B0(n1179), .Y(n1177) );
   XOR2X1TS U1681 ( .A(FSM_exp_operation_A_S), .B(n1177), .Y(
-        DP_OP_32J102_122_6543_n20) );
+        DP_OP_32J135_122_6543_n20) );
   OAI2BB1X1TS U1682 ( .A0N(Op_MY[24]), .A1N(n1839), .B0(n1179), .Y(n1178) );
   XOR2X1TS U1683 ( .A(FSM_exp_operation_A_S), .B(n1178), .Y(
-        DP_OP_32J102_122_6543_n21) );
+        DP_OP_32J135_122_6543_n21) );
   XOR2X1TS U1684 ( .A(FSM_exp_operation_A_S), .B(n1181), .Y(
-        DP_OP_32J102_122_6543_n22) );
+        DP_OP_32J135_122_6543_n22) );
   INVX4TS U1685 ( .A(n1184), .Y(n1185) );
   MX2X1TS U1686 ( .A(Data_MX[22]), .B(Op_MX[22]), .S0(n1185), .Y(n366) );
   MX2X1TS U1687 ( .A(Data_MX[21]), .B(Op_MX[21]), .S0(n1185), .Y(n365) );
@@ -2818,7 +2818,7 @@ module FPU_Multiplication_Function_W32_EW8_SW23 ( clk, rst, beg_FSM, ack_FSM,
         .Y(n234) );
   MX2X1TS U2048 ( .A(Op_MX[23]), .B(exp_oper_result[0]), .S0(FSM_selector_A), 
         .Y(S_Oper_A_exp[0]) );
-  XNOR2X1TS U2049 ( .A(DP_OP_32J102_122_6543_n1), .B(n1713), .Y(n1587) );
+  XNOR2X1TS U2049 ( .A(DP_OP_32J135_122_6543_n1), .B(n1713), .Y(n1587) );
   NAND4XLTS U2050 ( .A(Exp_module_Data_S[3]), .B(Exp_module_Data_S[2]), .C(
         Exp_module_Data_S[1]), .D(Exp_module_Data_S[0]), .Y(n1588) );
   OAI22X1TS U2051 ( .A0(Exp_module_Data_S[8]), .A1(n1590), .B0(n1737), .B1(

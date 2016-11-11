@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 16:36:21 2016
+Date   : Thu Nov 10 01:06:08 2016
 ****************************************
 
 
@@ -35,12 +35,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 104.2861 uW   (70%)
-  Net Switching Power  =  44.7308 uW   (30%)
+  Cell Internal Power  = 114.7268 uW   (68%)
+  Net Switching Power  =  54.2920 uW   (32%)
                          ---------
-Total Dynamic Power    = 149.0169 uW  (100%)
+Total Dynamic Power    = 169.0188 uW  (100%)
 
-Cell Leakage Power     =  40.2497 nW
+Cell Leakage Power     =  40.3987 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,9 +50,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register       8.9142e-02        7.0103e-03        7.9130e+03        9.6160e-02  (  64.51%)
-sequential     4.2188e-04            0.0000        2.5430e+03        4.2442e-04  (   0.28%)
-combinational  1.4723e-02        3.7720e-02        2.9794e+04        5.2473e-02  (  35.20%)
+register       9.6623e-02        7.7951e-03        8.0099e+03            0.1044  (  61.77%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.8104e-02        4.6497e-02        3.2389e+04        6.4633e-02  (  38.23%)
 --------------------------------------------------------------------------------------------------
-Total              0.1043 mW     4.4731e-02 mW     4.0250e+04 pW         0.1491 mW
+Total              0.1147 mW     5.4292e-02 mW     4.0399e+04 pW         0.1691 mW
 1

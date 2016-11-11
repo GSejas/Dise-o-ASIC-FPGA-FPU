@@ -1,0 +1,100 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 23:22:46 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPMULT_Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  FPMULT_Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_1_/CK (DFFXLTS)
+                                                          0.00       4.00 r
+  FPMULT_Sgf_operation_EVEN1_right_RECURSIVE_EVEN1_left_GENSTOP_inst_mult_Data_S_o_reg_1_/QN (DFFXLTS)
+                                                          1.80       5.80 r
+  U3041/Y (NOR2X1TS)                                      0.62       6.42 f
+  U3171/Y (AOI21X1TS)                                     0.45       6.87 r
+  intadd_623_U13/CO (ADDFX1TS)                            0.91       7.78 r
+  intadd_623_U12/S (CMPR32X2TS)                           0.57       8.36 r
+  U2982/Y (INVX2TS)                                       0.14       8.50 f
+  intadd_622_U13/CO (CMPR32X2TS)                          0.71       9.21 f
+  intadd_622_U12/CO (CMPR32X2TS)                          0.56       9.77 f
+  intadd_622_U11/CO (CMPR32X2TS)                          0.56      10.33 f
+  intadd_622_U10/CO (ADDFX1TS)                            0.56      10.89 f
+  intadd_622_U9/CO (ADDFX1TS)                             0.58      11.46 f
+  intadd_622_U8/CO (CMPR32X2TS)                           0.57      12.04 f
+  intadd_622_U7/CO (CMPR32X2TS)                           0.56      12.60 f
+  intadd_622_U6/CO (CMPR32X2TS)                           0.56      13.15 f
+  intadd_622_U5/CO (CMPR32X2TS)                           0.56      13.71 f
+  intadd_622_U4/CO (CMPR32X2TS)                           0.56      14.27 f
+  intadd_622_U3/CO (CMPR32X2TS)                           0.56      14.83 f
+  intadd_622_U2/CO (CMPR32X2TS)                           0.61      15.44 f
+  U2141/Y (NAND2X1TS)                                     0.59      16.02 r
+  U2975/Y (OAI21X1TS)                                     0.64      16.66 f
+  U2976/Y (INVX2TS)                                       0.30      16.96 r
+  intadd_619_U19/CO (CMPR32X2TS)                          0.69      17.65 r
+  intadd_619_U18/CO (CMPR32X2TS)                          0.50      18.14 r
+  intadd_619_U17/CO (CMPR32X2TS)                          0.50      18.64 r
+  intadd_619_U16/CO (CMPR32X2TS)                          0.50      19.13 r
+  intadd_619_U15/CO (ADDFX1TS)                            0.52      19.65 r
+  intadd_619_U14/CO (ADDFX1TS)                            0.57      20.22 r
+  intadd_619_U13/CO (ADDFX1TS)                            0.57      20.79 r
+  intadd_619_U12/CO (ADDFX1TS)                            0.57      21.35 r
+  intadd_619_U11/CO (CMPR32X2TS)                          0.54      21.89 r
+  intadd_619_U10/CO (ADDFX1TS)                            0.52      22.41 r
+  intadd_619_U9/CO (ADDFX1TS)                             0.57      22.98 r
+  intadd_619_U8/CO (ADDFX1TS)                             0.57      23.55 r
+  intadd_619_U7/CO (CMPR32X2TS)                           0.54      24.09 r
+  intadd_619_U6/CO (CMPR32X2TS)                           0.50      24.58 r
+  intadd_619_U5/CO (ADDFX1TS)                             0.52      25.10 r
+  intadd_619_U4/CO (ADDFX1TS)                             0.57      25.67 r
+  intadd_619_U3/CO (ADDFX1TS)                             0.57      26.24 r
+  intadd_619_U2/CO (ADDFX1TS)                             0.80      27.04 r
+  U1977/Y (NAND3X1TS)                                     0.79      27.83 f
+  U1978/Y (NOR2X2TS)                                      0.65      28.48 r
+  U1979/Y (NAND2X1TS)                                     0.65      29.14 f
+  U1980/Y (NOR2X2TS)                                      0.60      29.74 r
+  U1981/Y (NAND2X1TS)                                     0.65      30.39 f
+  U1669/Y (NOR2X2TS)                                      0.60      31.00 r
+  U3180/Y (NAND2X1TS)                                     0.63      31.63 f
+  U3181/Y (NOR2X1TS)                                      0.74      32.36 r
+  U3190/Y (MXI2X1TS)                                      0.57      32.94 r
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_/D (DFFRXLTS)
+                                                          0.00      32.94 r
+  data arrival time                                                 32.94
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_/CK (DFFRXLTS)
+                                                          0.00      42.00 r
+  library setup time                                      0.05      42.05
+  data required time                                                42.05
+  --------------------------------------------------------------------------
+  data required time                                                42.05
+  data arrival time                                                -32.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.12
+
+
+1

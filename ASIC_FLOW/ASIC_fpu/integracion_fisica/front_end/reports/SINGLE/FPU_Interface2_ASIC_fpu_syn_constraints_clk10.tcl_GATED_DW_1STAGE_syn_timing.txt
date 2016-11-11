@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 23:10:46 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: FPADDSUB_SFT2FRMT_STAGE_FLAGS_Q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FPADDSUB_FRMT_STAGE_DATAOUT_Q_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  FPADDSUB_SFT2FRMT_STAGE_FLAGS_Q_reg_2_/CK (DFFRX2TS)
+                                                          0.00       1.00 r
+  FPADDSUB_SFT2FRMT_STAGE_FLAGS_Q_reg_2_/Q (DFFRX2TS)     1.28       2.28 f
+  U1511/Y (INVX4TS)                                       0.59       2.86 r
+  U3703/Y (XOR2X1TS)                                      0.51       3.37 f
+  DP_OP_26J192_122_5882_U9/CO (CMPR32X2TS)                0.61       3.98 f
+  DP_OP_26J192_122_5882_U8/CO (CMPR32X2TS)                0.56       4.54 f
+  DP_OP_26J192_122_5882_U7/CO (CMPR32X2TS)                0.56       5.10 f
+  DP_OP_26J192_122_5882_U6/CO (CMPR32X2TS)                0.56       5.65 f
+  DP_OP_26J192_122_5882_U5/CO (CMPR32X2TS)                0.56       6.21 f
+  DP_OP_26J192_122_5882_U4/CO (CMPR32X2TS)                0.56       6.77 f
+  DP_OP_26J192_122_5882_U3/CO (CMPR32X2TS)                0.56       7.33 f
+  DP_OP_26J192_122_5882_U2/CO (CMPR32X2TS)                0.56       7.88 f
+  U1451/Y (XNOR2X2TS)                                     0.44       8.32 r
+  U1440/Y (AND3X2TS)                                      0.73       9.05 r
+  U1435/Y (NOR2X6TS)                                      0.33       9.38 f
+  U1733/Y (INVX4TS)                                       0.22       9.60 r
+  U1406/Y (CLKINVX6TS)                                    0.32       9.92 f
+  U1727/Y (AND2X2TS)                                      0.38      10.30 f
+  FPADDSUB_FRMT_STAGE_DATAOUT_Q_reg_2_/D (DFFRX1TS)       0.00      10.30 f
+  data arrival time                                                 10.30
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  FPADDSUB_FRMT_STAGE_DATAOUT_Q_reg_2_/CK (DFFRX1TS)      0.00      10.50 r
+  library setup time                                     -0.20      10.30
+  data required time                                                10.30
+  --------------------------------------------------------------------------
+  data required time                                                10.30
+  data arrival time                                                -10.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

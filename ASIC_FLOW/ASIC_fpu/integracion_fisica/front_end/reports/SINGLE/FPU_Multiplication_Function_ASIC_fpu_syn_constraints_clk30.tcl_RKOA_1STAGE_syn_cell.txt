@@ -3,7 +3,7 @@
 Report : cell
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 16:39:43 2016
+Date   : Thu Nov 10 01:12:55 2016
 ****************************************
 
 Attributes:
@@ -163,42 +163,46 @@ Barrel_Shifter_module_Output_Reg_Q_reg_22_
 Barrel_Shifter_module_Output_Reg_Q_reg_23_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_36J98_126_4699_U2   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U3   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U3  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U4   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U4  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U5   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U5  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U6   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U6  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U7   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U7  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U8   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U8  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U9   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U9  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_36J98_126_4699_U10  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_36J130_126_4699_U10 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_153J98_122_5442_U54 CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_153J130_122_5442_U54
+                          CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_153J98_122_5442_U55 CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_153J130_122_5442_U55
+                          CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_153J98_122_5442_U58 CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_153J130_122_5442_U58
+                          CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_153J98_122_5442_U59 CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_153J130_122_5442_U59
+                          CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_155J98_124_2038_U403
+DP_OP_155J130_124_2038_U403
                           AFCSHCINX2TS    scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           70.559998 r
-DP_OP_155J98_124_2038_U404
+DP_OP_155J130_124_2038_U404
                           AFCSIHCONX2TS   scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
-DP_OP_155J98_124_2038_U406
+DP_OP_155J130_124_2038_U406
                           AFCSHCINX2TS    scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           70.559998 r
-DP_OP_155J98_124_2038_U407
+DP_OP_155J130_124_2038_U407
                           AFCSIHCONX2TS   scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
 Exp_module_Oflow_A_m_Q_reg_0_

@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W64_EW11_SW52
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 03:10:58 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: R_5830 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: add_x_25_R_5331_RW_1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W64_EW11_SW52
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  R_5830/CK (DFFHQX8TS)                                   0.00 #     0.10 r
+  R_5830/Q (DFFHQX8TS)                                    0.38       0.48 f
+  U6762/Y (NAND2X8TS)                                     0.13       0.61 r
+  U3040/Y (NAND2X8TS)                                     0.10       0.71 f
+  U3039/Y (XOR2X4TS)                                      0.18       0.89 f
+  U5480/Y (AND2X8TS)                                      0.22       1.11 f
+  DP_OP_341J175_125_618_U225/ICO (CMPR42X2TS)             0.37       1.48 f
+  DP_OP_341J175_125_618_U224/ICO (CMPR42X2TS)             0.40       1.89 f
+  DP_OP_341J175_125_618_U223/ICO (CMPR42X2TS)             0.40       2.29 f
+  U5552/ICO (CMPR42X4TS)                                  0.39       2.68 f
+  DP_OP_341J175_125_618_U221/ICO (CMPR42X4TS)             0.36       3.04 f
+  DP_OP_341J175_125_618_U220/ICO (CMPR42X4TS)             0.32       3.36 f
+  DP_OP_341J175_125_618_U219/ICO (CMPR42X4TS)             0.32       3.68 f
+  DP_OP_341J175_125_618_U218/ICO (CMPR42X4TS)             0.32       4.01 f
+  DP_OP_341J175_125_618_U217/ICO (CMPR42X4TS)             0.32       4.33 f
+  DP_OP_341J175_125_618_U216/ICO (CMPR42X4TS)             0.32       4.65 f
+  DP_OP_341J175_125_618_U215/ICO (CMPR42X4TS)             0.32       4.98 f
+  DP_OP_341J175_125_618_U214/ICO (CMPR42X4TS)             0.32       5.29 f
+  DP_OP_341J175_125_618_U213/ICO (CMPR42X2TS)             0.40       5.70 f
+  DP_OP_341J175_125_618_U212/CO (CMPR42X2TS)              0.84       6.54 f
+  U6645/Y (NOR2X8TS)                                      0.27       6.80 r
+  U6642/Y (OAI21X4TS)                                     0.20       7.00 f
+  U6261/Y (INVX8TS)                                       0.14       7.14 r
+  U982/Y (OR2X2TS)                                        0.31       7.45 r
+  U2943/Y (NAND3X8TS)                                     0.18       7.63 f
+  U6112/Y (XOR2X4TS)                                      0.21       7.83 r
+  U5366/Y (NAND2X6TS)                                     0.20       8.03 f
+  U5363/Y (OAI21X4TS)                                     0.23       8.26 r
+  U6613/Y (AOI21X4TS)                                     0.12       8.38 f
+  add_x_25_R_5331_RW_1/D (DFFSX1TS)                       0.00       8.38 f
+  data arrival time                                                  8.38
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  add_x_25_R_5331_RW_1/CK (DFFSX1TS)                      0.00       1.05 r
+  library setup time                                     -0.33       0.72
+  data required time                                                 0.72
+  --------------------------------------------------------------------------
+  data required time                                                 0.72
+  data arrival time                                                 -8.38
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -7.66
+
+
+1

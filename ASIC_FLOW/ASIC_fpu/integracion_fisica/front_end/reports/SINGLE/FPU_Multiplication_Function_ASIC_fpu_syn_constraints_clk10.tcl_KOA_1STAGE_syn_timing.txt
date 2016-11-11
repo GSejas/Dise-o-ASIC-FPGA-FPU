@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 16:34:45 2016
+Date   : Thu Nov 10 01:04:26 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FS_Module_state_reg_reg_2_
+  Startpoint: Operands_load_reg_XMRegister_Q_reg_2_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Exp_module_Oflow_A_m_Q_reg_0_
+  Endpoint: add_x_19_R_56
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -28,37 +28,51 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  FS_Module_state_reg_reg_2_/CK (DFFRX4TS)                0.00       1.00 r
-  FS_Module_state_reg_reg_2_/QN (DFFRX4TS)                1.17       2.17 r
-  U1350/Y (NOR2X1TS)                                      0.23       2.41 f
-  U1351/Y (NAND2X2TS)                                     0.35       2.75 r
-  U427/Y (NOR2X4TS)                                       0.31       3.06 f
-  U522/Y (CLKBUFX2TS)                                     0.77       3.83 f
-  DP_OP_36J91_124_9196_U10/CO (CMPR32X2TS)                1.00       4.83 f
-  DP_OP_36J91_124_9196_U9/CO (CMPR32X2TS)                 0.56       5.39 f
-  DP_OP_36J91_124_9196_U8/CO (CMPR32X2TS)                 0.56       5.94 f
-  DP_OP_36J91_124_9196_U7/CO (CMPR32X2TS)                 0.56       6.50 f
-  DP_OP_36J91_124_9196_U6/CO (CMPR32X2TS)                 0.56       7.06 f
-  DP_OP_36J91_124_9196_U5/CO (CMPR32X2TS)                 0.56       7.62 f
-  DP_OP_36J91_124_9196_U4/CO (CMPR32X2TS)                 0.56       8.17 f
-  DP_OP_36J91_124_9196_U3/CO (CMPR32X2TS)                 0.56       8.73 f
-  DP_OP_36J91_124_9196_U2/CO (CMPR32X2TS)                 0.55       9.28 f
-  U405/Y (XNOR2X1TS)                                      0.34       9.62 r
-  U521/Y (CLKMX2X2TS)                                     0.49      10.11 r
-  Exp_module_Oflow_A_m_Q_reg_0_/D (DFFRXLTS)              0.00      10.11 r
-  data arrival time                                                 10.11
+  Operands_load_reg_XMRegister_Q_reg_2_/CK (DFFRX4TS)     0.00       1.00 r
+  Operands_load_reg_XMRegister_Q_reg_2_/Q (DFFRX4TS)      1.04       2.04 r
+  U2321/Y (NAND2X4TS)                                     0.34       2.38 f
+  U763/Y (INVX2TS)                                        0.23       2.61 r
+  U1851/Y (NAND2BX4TS)                                    0.25       2.86 r
+  U1850/Y (XNOR2X4TS)                                     0.48       3.34 r
+  U679/Y (NAND2X1TS)                                      0.50       3.84 f
+  U1745/Y (OAI21X1TS)                                     0.31       4.16 r
+  U2617/S (CMPR32X2TS)                                    0.91       5.06 f
+  U2121/CO (ADDFHX2TS)                                    0.64       5.70 f
+  U2084/CO (ADDFHX2TS)                                    0.54       6.24 f
+  U2083/CO (ADDFHX4TS)                                    0.47       6.71 f
+  U1955/Y (OAI21X4TS)                                     0.14       6.85 r
+  U1954/Y (OAI2BB1X4TS)                                   0.18       7.03 f
+  U1925/Y (XOR2X4TS)                                      0.20       7.23 r
+  U1886/Y (XOR2X4TS)                                      0.32       7.56 r
+  U1256/Y (NOR2X8TS)                                      0.23       7.79 f
+  U1827/Y (OAI21X4TS)                                     0.27       8.05 r
+  U956/Y (NAND2X4TS)                                      0.19       8.25 f
+  U1826/Y (NAND2X8TS)                                     0.14       8.39 r
+  U1310/Y (INVX8TS)                                       0.10       8.49 f
+  U499/Y (NOR2X6TS)                                       0.16       8.65 r
+  U948/Y (NOR2X6TS)                                       0.11       8.76 f
+  U485/Y (NAND2X6TS)                                      0.10       8.86 r
+  U1836/Y (XNOR2X4TS)                                     0.27       9.13 r
+  U1231/Y (NOR2X8TS)                                      0.25       9.38 f
+  U1821/Y (NOR2X8TS)                                      0.20       9.57 r
+  U444/Y (NAND2X6TS)                                      0.15       9.73 f
+  U2850/Y (BUFX20TS)                                      0.20       9.92 f
+  U2879/Y (NOR2X2TS)                                      0.21      10.13 r
+  U1234/Y (AOI21X2TS)                                     0.21      10.34 f
+  add_x_19_R_56/D (DFFSX1TS)                              0.00      10.34 f
+  data arrival time                                                 10.34
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  Exp_module_Oflow_A_m_Q_reg_0_/CK (DFFRXLTS)             0.00      10.50 r
-  library setup time                                     -0.28      10.22
-  data required time                                                10.22
+  add_x_19_R_56/CK (DFFSX1TS)                             0.00      10.50 r
+  library setup time                                     -0.15      10.35
+  data required time                                                10.35
   --------------------------------------------------------------------------
-  data required time                                                10.22
-  data arrival time                                                -10.11
+  data required time                                                10.35
+  data arrival time                                                -10.34
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.11
+  slack (MET)                                                        0.01
 
 
 1

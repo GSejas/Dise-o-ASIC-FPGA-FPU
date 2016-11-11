@@ -19,7 +19,7 @@ set compile_fix_cell_degradation true
 remove_design -designs
 
 
-set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl ASIC_fpu_syn_constraints_noclk.tcl"
+set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk1.tcl ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl ASIC_fpu_syn_constraints_noclk.tcl"
 set F_TIME_CONTRAINTS_ARRAY [split $FPU_CONSTRAINTS "\ "]
 
 # NOMBRE DEL MACRO DE LAS ARQUITECTURAS EN CUESTION

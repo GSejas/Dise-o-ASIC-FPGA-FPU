@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Multiplication_Function_W32_EW8_SW23
+Version: L-2016.03-SP3
+Date   : Thu Nov 10 01:03:16 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_110J121_122_4535_R_1617
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DP_OP_110J121_122_4535_R_1177
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Multiplication_Function_W32_EW8_SW23
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  DP_OP_110J121_122_4535_R_1617/CK (DFFRX4TS)             0.00       0.10 r
+  DP_OP_110J121_122_4535_R_1617/QN (DFFRX4TS)             0.94       1.04 r
+  U1623/Y (XOR2X4TS)                                      0.25       1.29 r
+  U763/Y (OR2X4TS)                                        0.32       1.61 r
+  U1655/Y (NAND2X8TS)                                     0.14       1.75 f
+  U1481/Y (INVX4TS)                                       0.11       1.85 r
+  U1652/Y (OAI2BB1X4TS)                                   0.25       2.10 r
+  U1249/Y (NAND2X4TS)                                     0.11       2.21 f
+  U3088/CO (ADDFHX4TS)                                    0.38       2.60 f
+  U1642/Y (OAI21X4TS)                                     0.25       2.84 r
+  U1640/Y (NAND2X8TS)                                     0.18       3.02 f
+  U1620/Y (INVX8TS)                                       0.10       3.12 r
+  U2528/S (ADDFHX4TS)                                     0.39       3.51 r
+  U2175/S (ADDFHX4TS)                                     0.40       3.91 f
+  U3269/CO (ADDFHX4TS)                                    0.31       4.22 f
+  U2852/S (ADDFHX4TS)                                     0.40       4.63 r
+  U2850/S (ADDFHX4TS)                                     0.42       5.05 r
+  DP_OP_110J121_122_4535_R_1177/D (DFFRX1TS)              0.00       5.05 r
+  data arrival time                                                  5.05
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  DP_OP_110J121_122_4535_R_1177/CK (DFFRX1TS)             0.00       1.05 r
+  library setup time                                     -0.44       0.61
+  data required time                                                 0.61
+  --------------------------------------------------------------------------
+  data required time                                                 0.61
+  data arrival time                                                 -5.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -4.44
+
+
+1

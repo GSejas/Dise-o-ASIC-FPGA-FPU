@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 16:51:22 2016
+Date   : Thu Nov 10 01:43:40 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Operands_load_reg_XMRegister_Q_reg_50_
+  Startpoint: DP_OP_168J152_122_4811_R_856
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sgf_operation_ODD1_left_Data_S_o_reg_37_
+  Endpoint: add_x_19_R_1486
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -28,46 +28,50 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  Operands_load_reg_XMRegister_Q_reg_50_/CK (DFFRX4TS)
-                                                          0.00       1.00 r
-  Operands_load_reg_XMRegister_Q_reg_50_/QN (DFFRX4TS)
-                                                          1.19       2.19 r
-  U2774/Y (INVX6TS)                                       0.23       2.42 f
-  U5733/Y (XOR2X4TS)                                      0.35       2.77 r
-  U3029/Y (NOR2X8TS)                                      0.33       3.10 f
-  U1465/Y (BUFX6TS)                                       0.26       3.36 f
-  U1744/Y (CLKINVX6TS)                                    0.12       3.48 r
-  U3968/Y (INVX4TS)                                       0.17       3.66 f
-  U6985/Y (AOI222X1TS)                                    0.44       4.10 r
-  U2783/Y (OA21X1TS)                                      0.56       4.66 r
-  U2782/Y (XOR2X4TS)                                      0.27       4.93 f
-  U7585/CO (CMPR22X2TS)                                   0.28       5.21 f
-  U2357/CO (ADDFHX2TS)                                    0.34       5.56 f
-  U7590/CO (ADDFHX1TS)                                    0.54       6.10 f
-  mult_x_23_U748/CO (CMPR42X2TS)                          1.08       7.18 f
-  U3381/S (CMPR42X2TS)                                    1.11       8.28 r
-  U3785/Y (NAND2X4TS)                                     0.25       8.54 f
-  U3379/Y (OAI21X4TS)                                     0.35       8.88 r
-  U5895/Y (AOI21X4TS)                                     0.28       9.16 f
-  U5897/Y (OA21X4TS)                                      0.36       9.52 f
-  U5898/Y (NAND2X8TS)                                     0.18       9.70 r
-  U4153/Y (INVX16TS)                                      0.14       9.84 f
-  U6803/Y (OAI21X2TS)                                     0.26      10.11 r
-  U3283/Y (XOR2X4TS)                                      0.25      10.36 f
-  Sgf_operation_ODD1_left_Data_S_o_reg_37_/D (DFFHQX1TS)
-                                                          0.00      10.36 f
-  data arrival time                                                 10.36
+  DP_OP_168J152_122_4811_R_856/CK (DFFRX4TS)              0.00       1.00 r
+  DP_OP_168J152_122_4811_R_856/Q (DFFRX4TS)               0.99       1.99 f
+  U5813/Y (XNOR2X4TS)                                     0.30       2.28 f
+  U5812/Y (NOR2X8TS)                                      0.21       2.50 r
+  U3041/Y (INVX12TS)                                      0.16       2.66 f
+  U1705/Y (BUFX8TS)                                       0.25       2.91 f
+  U5155/Y (OAI22X1TS)                                     0.39       3.31 r
+  U7287/CO (ADDHX1TS)                                     0.49       3.80 r
+  U6267/S (ADDFHX2TS)                                     0.52       4.32 r
+  U4569/CO (ADDFHX2TS)                                    0.51       4.83 r
+  U6449/CO (ADDFHX4TS)                                    0.60       5.43 r
+  U4570/Y (INVX4TS)                                       0.13       5.56 f
+  U5739/S (ADDFHX4TS)                                     0.44       6.00 r
+  U5994/Y (OAI21X4TS)                                     0.15       6.15 f
+  U5993/Y (OAI2BB1X4TS)                                   0.14       6.29 r
+  U6237/CO (ADDFHX4TS)                                    0.51       6.80 r
+  U3569/S (ADDFHX4TS)                                     0.40       7.20 r
+  U7458/S (ADDFHX4TS)                                     0.46       7.66 f
+  U5930/Y (NOR2X8TS)                                      0.23       7.89 r
+  U7456/Y (OAI21X4TS)                                     0.21       8.10 f
+  U7542/Y (AOI21X4TS)                                     0.23       8.33 r
+  U7543/Y (OAI21X4TS)                                     0.21       8.54 f
+  U3001/Y (NAND2X6TS)                                     0.16       8.70 r
+  U5506/Y (NAND2X8TS)                                     0.14       8.84 f
+  U5593/Y (NAND2X8TS)                                     0.12       8.95 r
+  U5534/Y (NAND2X8TS)                                     0.12       9.07 f
+  U7847/Y (AND2X8TS)                                      0.20       9.27 f
+  U7850/Y (NOR2X8TS)                                      0.17       9.44 r
+  U7851/Y (BUFX20TS)                                      0.22       9.66 r
+  U3733/Y (OAI21X4TS)                                     0.13       9.79 f
+  U3762/Y (XOR2X4TS)                                      0.19       9.98 f
+  U4503/Y (NAND2X2TS)                                     0.21      10.19 r
+  add_x_19_R_1486/D (DFFRXLTS)                            0.00      10.19 r
+  data arrival time                                                 10.19
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  Sgf_operation_ODD1_left_Data_S_o_reg_37_/CK (DFFHQX1TS)
-                                                          0.00      10.50 r
-  library setup time                                     -0.14      10.36
-  data required time                                                10.36
+  add_x_19_R_1486/CK (DFFRXLTS)                           0.00      10.50 r
+  library setup time                                     -0.31      10.19
+  data required time                                                10.19
   --------------------------------------------------------------------------
-  data required time                                                10.36
-  data arrival time                                                -10.36
+  data required time                                                10.19
+  data arrival time                                                -10.19
   --------------------------------------------------------------------------
   slack (MET)                                                        0.00
 

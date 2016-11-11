@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : RKOA_OPCHANGE.v
 //  Created On    : 2016-10-26 23:25:59
-//  Last Modified : 2016-11-01 16:15:50
+//  Last Modified : 2016-11-10 01:00:41
 //  Revision      : 
 //  Author        : Jorge Esteban Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -80,21 +80,21 @@ generate
             reg [2*(SW/2+2)-1:0] S_A;
             reg [SW+1:0] S_B; //SW+2
 
-          mult #(.SW(SW/2)) left(
+          cmult #(.SW(SW/2)) left(
          //       .clk(clk),
                 .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
                 .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
                 .Data_S_o(Q_left)
             );
             
-          mult #(.SW(SW/2)) right(
+          cmult #(.SW(SW/2)) right(
             //    .clk(clk),
                 .Data_A_i(Data_A_i[SW-SW/2-1:0]),
                 .Data_B_i(Data_B_i[SW-SW/2-1:0]),
                 .Data_S_o(Q_right)
             );
 		
-          mult #(.SW((SW/2)+1)) middle (
+          cmult #(.SW((SW/2)+1)) middle (
              //   .clk(clk),
                 .Data_A_i(result_A_adder),
                 .Data_B_i(result_B_adder),
@@ -132,22 +132,22 @@ generate
                 reg [2*(SW/2+2)-1:0] S_A;
                 reg [SW+4-1:0] S_B;
 
-          mult #(.SW(SW/2)) left(
-                .clk(clk),
+          cmult #(.SW(SW/2)) left(
+              //  .clk(clk),
                 .Data_A_i(Data_A_i[SW-1:SW-SW/2]),
                 .Data_B_i(Data_B_i[SW-1:SW-SW/2]),
                 .Data_S_o(Q_left)
             );
             
-          mult #(.SW(SW/2+1)) right(
-                .clk(clk),
+          cmult #(.SW(SW/2+1)) right(
+            //    .clk(clk),
                 .Data_A_i(Data_A_i[SW-SW/2-1:0]),
                 .Data_B_i(Data_B_i[SW-SW/2-1:0]),
                 .Data_S_o(Q_right)
             );
         
-          mult #(.SW(SW/2+2)) middle (
-                .clk(clk),
+          cmult #(.SW(SW/2+2)) middle (
+            //    .clk(clk),
                 .Data_A_i(result_A_adder),
                 .Data_B_i(result_B_adder),
                 .Data_S_o(Q_middle)

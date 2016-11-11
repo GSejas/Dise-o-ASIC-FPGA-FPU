@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 17:40:02 2016
+Date   : Thu Nov 10 03:00:29 2016
 ****************************************
 
 

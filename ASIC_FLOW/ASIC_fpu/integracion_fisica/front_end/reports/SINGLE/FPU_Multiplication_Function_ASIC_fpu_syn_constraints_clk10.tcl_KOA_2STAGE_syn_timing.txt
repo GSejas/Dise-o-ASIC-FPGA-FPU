@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 16:43:58 2016
+Date   : Thu Nov 10 01:21:30 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -41,8 +41,8 @@ Wire Load Model Mode: top
   U1312/Y (CLKXOR2X4TS)                                   0.63       4.89 f
   U1316/Y (XNOR2X1TS)                                     0.66       5.54 r
   U808/Y (OAI22X1TS)                                      0.52       6.06 f
-  DP_OP_111J106_123_4462_U288/S (CMPR42X1TS)              1.21       7.28 f
-  DP_OP_111J106_123_4462_U287/S (CMPR42X2TS)              1.08       8.35 f
+  DP_OP_111J140_123_4462_U288/S (CMPR42X1TS)              1.21       7.28 f
+  DP_OP_111J140_123_4462_U287/S (CMPR42X2TS)              1.08       8.35 f
   U424/Y (NAND2X2TS)                                      0.34       8.69 r
   U772/Y (OAI21X4TS)                                      0.34       9.03 f
   U796/Y (AOI21X2TS)                                      0.41       9.44 r
