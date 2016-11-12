@@ -20,7 +20,7 @@ set compile_fix_cell_degradation true
 set MULT_ARCHS "KOA_1STAGE RKOA_1STAGE DW_1STAGE KOA_2STAGE RKOA_2STAGE"
 set MARCH [split $MULT_ARCHS "\ "]
 
-set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl ASIC_fpu_syn_constraints_noclk.tcl"
+set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl"
 set F_TIME_CONTRAINTS_ARRAY [split $FPU_CONSTRAINTS "\ "]
 
 remove_design -designs

@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:19:11 2016
+Date   : Fri Nov 11 13:37:25 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,9 +14,9 @@ Date   : Thu Nov  3 18:19:11 2016
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_3_
+  Startpoint: FPMULT_Operands_load_reg_YMRegister_Q_reg_16_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: FPSENCOS_d_ff5_data_out_Q_reg_25_
+  Endpoint: add_x_69_R_79
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,35 +30,50 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_3_/CK (DFFRX1TS)
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_16_/CK (DFFRX4TS)
                                                           0.00 #     1.00 r
-  FPSENCOS_inst_CORDIC_FSM_v3_state_reg_reg_3_/Q (DFFRX1TS)
-                                                          1.32       2.32 f
-  U3446/Y (NOR3X2TS)                                      0.70       3.02 r
-  U3570/Y (NOR3BX1TS)                                     0.89       3.91 r
-  U3453/Y (NOR2BX1TS)                                     0.95       4.86 r
-  U3718/Y (NAND2BX4TS)                                    0.59       5.45 f
-  U2792/Y (NOR2X2TS)                                      0.65       6.10 r
-  U3721/Y (NAND2X4TS)                                     0.42       6.52 f
-  U3444/Y (NOR2X2TS)                                      0.51       7.03 r
-  U5205/Y (NOR2X4TS)                                      0.43       7.46 f
-  U2697/Y (BUFX3TS)                                       0.52       7.98 f
-  U3603/Y (NOR2X2TS)                                      0.64       8.62 r
-  U5209/Y (BUFX3TS)                                       0.81       9.43 r
-  U3486/Y (AOI222X4TS)                                    0.69      10.12 f
-  U5340/Y (INVX2TS)                                       0.11      10.22 r
-  FPSENCOS_d_ff5_data_out_Q_reg_25_/D (DFFRX1TS)          0.00      10.22 r
-  data arrival time                                                 10.22
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_16_/Q (DFFRX4TS)
+                                                          1.01       2.01 f
+  U4971/Y (XNOR2X4TS)                                     0.28       2.29 r
+  U2800/Y (BUFX12TS)                                      0.31       2.60 r
+  U3794/Y (NAND2X8TS)                                     0.15       2.74 f
+  U3924/Y (BUFX20TS)                                      0.20       2.94 f
+  U2542/Y (OAI22X1TS)                                     0.40       3.34 r
+  U3923/CO (ADDFHX2TS)                                    0.78       4.12 r
+  U5295/S (ADDFHX4TS)                                     0.61       4.74 r
+  U5296/CO (ADDFHX4TS)                                    0.46       5.20 r
+  U2491/Y (INVX3TS)                                       0.18       5.38 f
+  U3828/S (ADDFHX4TS)                                     0.43       5.80 f
+  U3949/CO (ADDFHX4TS)                                    0.31       6.12 f
+  U3901/S (ADDFHX4TS)                                     0.40       6.52 r
+  U3999/S (ADDFHX4TS)                                     0.42       6.94 r
+  U5323/S (ADDFHX4TS)                                     0.54       7.48 f
+  U5322/Y (NOR2X8TS)                                      0.23       7.71 r
+  U5576/Y (OAI21X4TS)                                     0.21       7.92 f
+  U3045/Y (NAND2X4TS)                                     0.16       8.08 r
+  U5579/Y (NAND2X8TS)                                     0.14       8.22 f
+  U4015/Y (INVX8TS)                                       0.12       8.34 r
+  U4014/Y (INVX8TS)                                       0.09       8.43 f
+  U3733/Y (AOI21X2TS)                                     0.24       8.66 r
+  U4032/Y (XOR2X4TS)                                      0.30       8.96 f
+  U4195/Y (NAND2X2TS)                                     0.28       9.24 r
+  U5830/Y (OAI21X4TS)                                     0.19       9.43 f
+  U5831/Y (AOI21X4TS)                                     0.19       9.63 r
+  U5832/Y (OAI21X4TS)                                     0.16       9.78 f
+  U4063/Y (BUFX12TS)                                      0.19       9.97 f
+  U4321/Y (AOI21X1TS)                                     0.32      10.28 r
+  add_x_69_R_79/D (DFFSX1TS)                              0.00      10.28 r
+  data arrival time                                                 10.28
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  FPSENCOS_d_ff5_data_out_Q_reg_25_/CK (DFFRX1TS)         0.00      10.50 r
-  library setup time                                     -0.28      10.22
-  data required time                                                10.22
+  add_x_69_R_79/CK (DFFSX1TS)                             0.00      10.50 r
+  library setup time                                     -0.22      10.28
+  data required time                                                10.28
   --------------------------------------------------------------------------
-  data required time                                                10.22
-  data arrival time                                                -10.22
+  data required time                                                10.28
+  data arrival time                                                -10.28
   --------------------------------------------------------------------------
   slack (MET)                                                        0.00
 
