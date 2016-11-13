@@ -61,7 +61,7 @@ parameter PERIOD = 10;
         wire zero_flag;
         wire NaN_flag;
         wire [W-1:0] op_result;
-
+        wire busy;
 // LOS CODIGOS PARA LAS OPERACIONES
        localparam [2:0]  FPADD = 3'b000,
                          FPSUB = 3'b001,
@@ -77,8 +77,6 @@ parameter PERIOD = 10;
        localparam [1:0]  ROUNDING_MODE_TRUNCT   = 2'b00,
                          ROUNDING_MODE_NEG_INF  = 2'b01,
                          ROUNDING_MODE_POS_INF  = 2'b10;
-
-
 
 `ifdef FPUv2_behav
     FPU_Interface2 #(
@@ -106,7 +104,7 @@ parameter PERIOD = 10;
         );
 `endif
 
- `ifdef KOA1_SINGLE
+ `ifdef DW1_SINGLE
 integer PIPE=0;
     FPU_Multiplication_Function_W32_EW8_SW23 uut       (
             .clk               (clk),
@@ -124,7 +122,7 @@ integer PIPE=0;
  `endif
 
 
- `ifdef KOA1_DOUBLE
+ `ifdef DW1_DOUBLE
 integer PIPE=0;
     FPU_Multiplication_Function_W64_EW11_SW52 uut        (
             .clk               (clk),
@@ -179,6 +177,41 @@ integer PIPE=0;
 
  `endif
 
+ `ifdef KOA2_SINGLE
+integer PIPE=0;
+    FPU_Multiplication_Function_W32_EW8_SW23 uut        (
+            .clk               (clk),
+            .rst               (rst),
+            .beg_FSM           (begin_operation),
+            .ack_FSM           (ack_operation),
+            .Data_MX           (Data_1),
+            .Data_MY           (Data_2),
+            .round_mode        (r_mode),
+            .overflow_flag     (overflow_flag),
+            .underflow_flag    (underflow_flag),
+            .ready             (operation_ready),
+            .final_result_ieee (op_result)
+        );
+ `endif
+
+
+ `ifdef KOA2_DOUBLE
+integer PIPE=0;
+    FPU_Multiplication_Function_W64_EW11_SW52 uut        (
+            .clk               (clk),
+            .rst               (rst),
+            .beg_FSM           (begin_operation),
+            .ack_FSM           (ack_operation),
+            .Data_MX           (Data_1),
+            .Data_MY           (Data_2),
+            .round_mode        (r_mode),
+            .overflow_flag     (overflow_flag),
+            .underflow_flag    (underflow_flag),
+            .ready             (operation_ready),
+            .final_result_ieee (op_result)
+        );
+
+ `endif
 
   `ifdef RKOA1_SINGLE
 integer PIPE=0;
@@ -412,8 +445,10 @@ integer PIPE=0;
 
                 initial begin
                     // Initialize Inputs
+                     $vcdpluson;
                     clk = 0;
                     rst = 1;
+                    r_mode=ROUNDING_MODE_TRUNCT;
                     begin_operation = 0;
                     ack_operation = 0;
                     Data_1 = 0;
@@ -423,7 +458,8 @@ integer PIPE=0;
                     $display("------------------------OP--------------------------");
                     $display("------------------------    --------------------------");
                     $display("------------------------OP--------------------------");
-
+		        #100;
+		        rst = 0;
                     $readmemh("Hexadecimal_A.txt", Array_IN_1);
                     $readmemh("Hexadecimal_B.txt", Array_IN_2);
 
@@ -440,6 +476,7 @@ integer PIPE=0;
 
                     #100 rst = 0;
                     $finish;
+                    $vcdplusclose;
                     //Add stimulus here
                 end
 
@@ -472,8 +509,14 @@ integer PIPE=0;
                                 #(PERIOD+2);
                                 ack_operation = 1;
                                 #4;
+                                $display("%h\n",op_result);
                                 $fwrite(FDataO,"%h\n",op_result);
-                                $fwrite(FData1,"%f\n",$bitstoreal(op_result));
+                                $display("%f\n",$bitstoshortreal(op_result));
+                                    `ifdef SINGLE
+                                    $fwrite(FData1,"%f\n",$bitstoshortreal(op_result));
+                                    `else
+                                    $fwrite(FData1,"%f\n",$bitstoreal(op_result));
+                                    `endif
                             end
                             @(negedge clk) begin
                                 ack_operation = 0;
@@ -517,7 +560,11 @@ integer PIPE=0;
                             end
                             if (operation_ready) begin
                                     $fwrite(FData1,"%h\n",op_result);
+                                    `ifdef SINGLE
+                                    $fwrite(FData2,"%f\n",$bitstoshortreal(op_result));
+                                    `else
                                     $fwrite(FData2,"%f\n",$bitstoreal(op_result));
+                                    `endif
                             end
                     end
                     begin_operation = 0;

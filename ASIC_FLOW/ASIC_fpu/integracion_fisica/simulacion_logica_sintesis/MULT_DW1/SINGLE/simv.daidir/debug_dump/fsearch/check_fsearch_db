@@ -1,0 +1,14 @@
+#!/bin/sh -h 
+dir_name=`dirname $0`
+if [ "${dir_name}" = "." ]; then
+    cd $dir_name
+    dir_name=`pwd`
+fi
+if [ -d $dir_name/../../../../../../../../../../../../../../.. ]; then
+    cd $dir_name/../../../../../../../../../../../../../../..
+fi
+if [ -f /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE/simv.daidir/debug_dump/fsearch/.create_fsearch_db ]; then
+    if [ ! -f /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE/simv.daidir/debug_dump/fsearch/fsearch.db ]; then
+        /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE/simv.daidir/debug_dump/fsearch/.create_fsearch_db
+    fi
+fi

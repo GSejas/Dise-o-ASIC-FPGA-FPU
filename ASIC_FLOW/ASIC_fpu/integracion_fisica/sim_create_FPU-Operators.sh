@@ -68,7 +68,7 @@ function file_list_SIM_FILE_synth {
   touch "$1/$2"
   chmod 777 "$1/$2"
   echo "#!/bin/bash"        > "$1/$2"
-  echo 'find "../../front_end/db/PRECISION_NAME/*.v" -name "*.v" >> file_list' >>"$1/$2"
+  echo 'find "../../../front_end/db/SINGLE/" -name "*.v" >> file_list' >>"$1/$2"
   echo 'find "." -name "*.v" >> file_list' >>"$1/$2"
   }
 
