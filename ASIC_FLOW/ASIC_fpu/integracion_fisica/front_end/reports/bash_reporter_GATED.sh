@@ -31,14 +31,14 @@ do
             #echo ${Txt_design_name[$z]} >> "${e}.txt"
              for i in "${max_clk_lst[@]}"
             do
-                      output_text=$(find $PREC -name "${MOD_FILENAME}_${i}_syn_qor.txt" -exec grep -i "$o" {} \;)
+                      output_text=$(find $PREC -name "${MOD_FILENAME}_${i}_GATED_syn_qor.txt" -exec grep -i "$o" {} \;)
                   #echo $output_text
                   number=$(echo $output_text  | grep -oP '[0-9]*\.?[0-9]*' | sed -e "s/^/${dir_list4[$x]}    /")
                   echo $number
                  # echo ${e}
                   #echo "${dir_list4[$z]} $number"
 
-                      echo "           $number" >> "FPU_Reports/${MOD_FILENAME}_${PREC}_${Txt_design_name[$z]}.csv"
+                      echo "           $number" >> "FPU_Reports/${MOD_FILENAME}_${PREC}_${Txt_design_name[$z]}_GATED.csv"
 
                   x=`expr $x + 1`
             done
@@ -56,13 +56,13 @@ do
             #echo "Power" >> "${e}.txt"
              for i in "${max_clk_lst[@]}"
             do
-                  output_text=$(find $PREC  -name "${MOD_FILENAME}_${i}_syn_power.txt" -exec grep -i "Total\ \ \ " {} \;)
+                  output_text=$(find $PREC  -name "${MOD_FILENAME}_${i}_GATED_syn_power.txt" -exec grep -i "Total\ \ \ " {} \;)
                   #echo $output_text
                   number=$(echo $output_text  | grep -oP '[0-9]*.(\d+)(?!.*\d)' | sed -e "s/^/${dir_list4[$x]}    /")
                   echo $number
                  # echo ${e}
                   #echo "${dir_list4[$z]} $number"
-                  echo "           $number" >> "FPU_Reports/${MOD_FILENAME}_${PREC}_Power.csv"
+                  echo "           $number" >> "FPU_Reports/${MOD_FILENAME}_${PREC}_Power_GATED.csv"
 
                   x=`expr $x + 1`
             done
