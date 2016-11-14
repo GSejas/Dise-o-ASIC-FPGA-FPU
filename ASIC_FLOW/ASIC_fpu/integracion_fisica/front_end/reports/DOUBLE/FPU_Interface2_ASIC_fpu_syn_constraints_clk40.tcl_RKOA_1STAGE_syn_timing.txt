@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 19:32:51 2016
+Date   : Sun Nov 13 10:42:59 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -69,14 +69,14 @@ Wire Load Model Mode: top
   U4507/CO (CMPR32X2TS)                                   0.75      23.52 f
   U4500/S (CMPR32X2TS)                                    0.60      24.13 f
   U6792/S (ADDFX2TS)                                      0.61      24.74 f
-  DP_OP_998J214_122_6707_U10/CO1 (AFCSHCINX2TS)           0.52      25.26 f
+  DP_OP_998J234_122_6707_U10/CO1 (AFCSHCINX2TS)           0.52      25.26 f
   U5503/Y (CLKMX2X4TS)                                    0.58      25.83 f
-  DP_OP_998J214_122_6707_U8/S (AFCSIHCONX2TS)             0.62      26.45 f
+  DP_OP_998J234_122_6707_U8/S (AFCSIHCONX2TS)             0.62      26.45 f
   U14840/CO (CMPR42X2TS)                                  0.91      27.36 f
   U14847/CO (CMPR42X1TS)                                  0.46      27.82 f
   U14846/CO (CMPR42X1TS)                                  0.49      28.32 f
   U8277/CO (CMPR42X1TS)                                   0.49      28.81 f
-  DP_OP_1000J214_124_8916_U39/CO (CMPR42X1TS)             0.49      29.31 f
+  DP_OP_1000J234_124_8916_U39/CO (CMPR42X1TS)             0.49      29.31 f
   U7224/S (CMPR42X1TS)                                    0.62      29.93 f
   U4413/CO (CMPR32X2TS)                                   0.73      30.66 f
   U5179/S (ADDFX2TS)                                      0.57      31.23 f

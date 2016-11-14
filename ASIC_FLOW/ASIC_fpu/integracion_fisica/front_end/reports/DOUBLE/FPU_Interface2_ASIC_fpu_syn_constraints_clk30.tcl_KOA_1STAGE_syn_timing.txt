@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:57:00 2016
+Date   : Sun Nov 13 10:08:01 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,9 +14,9 @@ Date   : Thu Nov  3 18:57:00 2016
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_1_
+  Startpoint: FPMULT_Operands_load_reg_YMRegister_Q_reg_11_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_
+  Endpoint: FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_102_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,76 +30,101 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             3.00       3.00
-  FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_1_/CK (DFFRX4TS)      0.00 #     3.00 r
-  FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_1_/QN (DFFRX4TS)      1.22       4.22 f
-  U4977/CO (ADDHX2TS)                                     0.28       4.50 f
-  U5307/CO (ADDFHX2TS)                                    0.35       4.85 f
-  U4622/CO (CMPR32X2TS)                                   0.54       5.39 f
-  U4619/CO (CMPR32X2TS)                                   0.56       5.94 f
-  U4613/CO (CMPR32X2TS)                                   0.56       6.50 f
-  U4603/CO (CMPR32X2TS)                                   0.56       7.06 f
-  U4592/CO (CMPR32X2TS)                                   0.56       7.62 f
-  U4584/CO (CMPR32X2TS)                                   0.56       8.17 f
-  U4575/CO (CMPR32X2TS)                                   0.56       8.73 f
-  U4569/CO (CMPR32X2TS)                                   0.56       9.29 f
-  U4557/CO (CMPR32X2TS)                                   0.56       9.85 f
-  U4547/CO (CMPR32X2TS)                                   0.56      10.40 f
-  U4539/CO (CMPR32X2TS)                                   0.56      10.96 f
-  U4535/CO (CMPR32X2TS)                                   0.56      11.52 f
-  U4522/CO (CMPR32X2TS)                                   0.56      12.08 f
-  U4521/CO (CMPR32X2TS)                                   0.56      12.63 f
-  U5416/CO (ADDFHX2TS)                                    0.37      13.01 f
-  U5417/CO (ADDFHX2TS)                                    0.35      13.36 f
-  U4489/CO (CMPR32X2TS)                                   0.54      13.89 f
-  U4480/CO (CMPR32X2TS)                                   0.56      14.45 f
-  U5371/CO (ADDFHX2TS)                                    0.37      14.82 f
-  U4465/CO (CMPR32X2TS)                                   0.54      15.36 f
-  U4462/CO (CMPR32X2TS)                                   0.56      15.91 f
-  U4455/CO (CMPR32X2TS)                                   0.56      16.47 f
-  U4447/CO (CMPR32X2TS)                                   0.56      17.03 f
-  U5415/CO (ADDFHX2TS)                                    0.37      17.40 f
-  U5414/CO (ADDFHX2TS)                                    0.35      17.75 f
-  U4434/CO (CMPR32X2TS)                                   0.54      18.29 f
-  U4430/CO (CMPR32X2TS)                                   0.56      18.84 f
-  U5370/CO (ADDFHX2TS)                                    0.37      19.21 f
-  U5369/CO (ADDFHX2TS)                                    0.35      19.56 f
-  U6070/CO (ADDFHX2TS)                                    0.35      19.91 f
-  U5419/CO (ADDFHX2TS)                                    0.35      20.26 f
-  U4414/CO (CMPR32X2TS)                                   0.54      20.80 f
-  U4411/CO (CMPR32X2TS)                                   0.56      21.36 f
-  U4409/CO (CMPR32X2TS)                                   0.56      21.91 f
-  U4406/CO (CMPR32X2TS)                                   0.56      22.47 f
-  U6072/CO (ADDFHX2TS)                                    0.37      22.84 f
-  U4398/CO (CMPR32X2TS)                                   0.54      23.38 f
-  U4394/CO (CMPR32X2TS)                                   0.56      23.94 f
-  U5368/CO (ADDFHX2TS)                                    0.37      24.31 f
-  U6071/CO (ADDFHX2TS)                                    0.35      24.66 f
-  U4387/CO (CMPR32X2TS)                                   0.53      25.19 f
-  U5418/CO (ADDFHX2TS)                                    0.37      25.57 f
-  U4379/CO (CMPR32X2TS)                                   0.54      26.10 f
-  U4376/CO (CMPR32X2TS)                                   0.56      26.66 f
-  U4374/CO (CMPR32X2TS)                                   0.56      27.22 f
-  U4367/CO (CMPR32X2TS)                                   0.56      27.77 f
-  U4362/CO (CMPR32X2TS)                                   0.56      28.33 f
-  U4358/CO (CMPR32X2TS)                                   0.56      28.89 f
-  U4353/CO (CMPR32X2TS)                                   0.56      29.45 f
-  U4348/CO (CMPR32X2TS)                                   0.55      30.00 f
-  U4346/CO (ADDFHX1TS)                                    0.52      30.52 f
-  U5420/Y (XOR2X2TS)                                      0.27      30.79 r
-  U6073/Y (AOI22X1TS)                                     0.35      31.14 f
-  U4779/Y (OAI21X1TS)                                     0.29      31.43 r
-  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRX2TS)      0.00      31.43 r
-  data arrival time                                                 31.43
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_11_/CK (DFFRX1TS)
+                                                          0.00 #     3.00 r
+  FPMULT_Operands_load_reg_YMRegister_Q_reg_11_/Q (DFFRX1TS)
+                                                          1.39       4.39 r
+  U5955/Y (INVX2TS)                                       0.43       4.82 f
+  U5006/Y (INVX8TS)                                       0.45       5.27 r
+  U5046/Y (XNOR2X2TS)                                     0.57       5.84 r
+  U4983/Y (BUFX8TS)                                       0.54       6.38 r
+  U4750/Y (NAND2X4TS)                                     0.29       6.68 f
+  U4748/Y (BUFX12TS)                                      0.32       6.99 f
+  U6186/Y (OAI22X1TS)                                     0.39       7.38 r
+  U4554/S (CMPR32X2TS)                                    0.99       8.37 f
+  U5235/S (ADDFX2TS)                                      0.85       9.22 f
+  U8460/S (CMPR32X2TS)                                    0.86      10.08 f
+  U8463/S (CMPR32X2TS)                                    0.94      11.03 f
+  U8465/Y (NOR2X2TS)                                      0.37      11.40 r
+  U8466/Y (INVX2TS)                                       0.28      11.68 f
+  U5045/Y (NAND2X2TS)                                     0.25      11.93 r
+  U8467/Y (NOR2X2TS)                                      0.20      12.13 f
+  U8475/Y (AOI21X4TS)                                     0.29      12.42 r
+  U8549/Y (OAI21X4TS)                                     0.22      12.64 f
+  U5423/Y (AOI21X1TS)                                     0.45      13.09 r
+  U5422/CO (AFHCINX2TS)                                   0.39      13.48 f
+  U5330/CON (AFHCONX2TS)                                  0.35      13.83 r
+  U5313/CO (AFHCINX2TS)                                   0.33      14.16 f
+  U8961/CON (AFHCONX2TS)                                  0.35      14.51 r
+  U8958/CO (AFHCINX2TS)                                   0.33      14.84 f
+  U5088/CON (AFHCONX2TS)                                  0.35      15.19 r
+  U5087/CO (AFHCINX2TS)                                   0.33      15.52 f
+  U8949/CON (AFHCONX2TS)                                  0.35      15.86 r
+  U8946/CO (AFHCINX2TS)                                   0.33      16.19 f
+  U8942/CON (AFHCONX2TS)                                  0.35      16.54 r
+  U8938/CO (AFHCINX2TS)                                   0.33      16.87 f
+  U5321/CON (AFHCONX2TS)                                  0.35      17.22 r
+  U5139/CO (AFHCINX2TS)                                   0.33      17.55 f
+  U5329/CON (AFHCONX2TS)                                  0.35      17.90 r
+  U8928/CO (AFHCINX2TS)                                   0.37      18.27 f
+  U5109/CON (AFHCONX4TS)                                  0.32      18.58 r
+  U5105/CO (AFHCINX4TS)                                   0.34      18.93 f
+  U5089/CON (AFHCONX4TS)                                  0.28      19.21 r
+  U8915/CO (AFHCINX2TS)                                   0.35      19.56 f
+  U8912/CON (AFHCONX2TS)                                  0.35      19.91 r
+  U8905/CO (AFHCINX2TS)                                   0.33      20.24 f
+  U8900/CON (AFHCONX2TS)                                  0.35      20.59 r
+  U8897/S (AFHCINX2TS)                                    0.60      21.19 r
+  U5073/CO (AFHCINX4TS)                                   0.54      21.73 r
+  U12442/CON (AFHCONX2TS)                                 0.30      22.03 f
+  U5076/CO (AFHCINX4TS)                                   0.30      22.33 r
+  U12511/CON (AFHCONX2TS)                                 0.30      22.64 f
+  U5059/CO (AFHCINX4TS)                                   0.32      22.96 r
+  U8971/Y (OAI2BB1X4TS)                                   0.41      23.36 r
+  U8975/Y (OAI22X4TS)                                     0.17      23.53 f
+  U12496/CO (AFHCINX4TS)                                  0.29      23.82 r
+  U8979/Y (OAI22X4TS)                                     0.31      24.14 f
+  U8984/Y (OAI22X4TS)                                     0.32      24.46 r
+  U8989/Y (OAI21X4TS)                                     0.24      24.70 f
+  U5609/Y (OAI2BB1X4TS)                                   0.19      24.89 r
+  U5608/CO (ACHCINX4TS)                                   0.20      25.10 f
+  U9002/CO (ACHCINX4TS)                                   0.33      25.43 r
+  U9009/CO (ACHCINX4TS)                                   0.37      25.80 f
+  U9014/Y (OAI22X4TS)                                     0.32      26.12 r
+  U5606/CO (ACHCINX4TS)                                   0.27      26.39 f
+  U9023/Y (OAI22X4TS)                                     0.33      26.72 r
+  U9026/Y (OAI22X4TS)                                     0.24      26.96 f
+  U9031/CO (ACHCINX4TS)                                   0.27      27.23 r
+  U9032/Y (OAI2BB1X4TS)                                   0.28      27.51 f
+  U4655/Y (NAND2X4TS)                                     0.16      27.67 r
+  U9039/Y (OAI22X4TS)                                     0.17      27.84 f
+  U5390/Y (OAI22X1TS)                                     0.59      28.43 r
+  U5086/Y (NAND2X2TS)                                     0.43      28.86 f
+  U5104/Y (NAND2X4TS)                                     0.20      29.07 r
+  U5403/Y (AOI21X2TS)                                     0.25      29.31 f
+  U5402/Y (OAI21X2TS)                                     0.44      29.75 r
+  U5108/Y (NAND2X4TS)                                     0.29      30.04 f
+  U5066/Y (NAND2X8TS)                                     0.14      30.18 r
+  U5063/Y (NAND2X8TS)                                     0.11      30.29 f
+  U9057/Y (NAND2X8TS)                                     0.17      30.46 r
+  U4653/Y (INVX12TS)                                      0.17      30.63 f
+  U5761/Y (NOR2X2TS)                                      0.21      30.84 r
+  U4325/Y (XOR2X1TS)                                      0.36      31.20 f
+  U4771/Y (OAI21X2TS)                                     0.29      31.49 r
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_102_/D (DFFRX1TS)
+                                                          0.00      31.49 r
+  data arrival time                                                 31.49
 
   clock clk (rise edge)                                  30.00      30.00
   clock network delay (ideal)                             3.00      33.00
   clock uncertainty                                      -1.50      31.50
-  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRX2TS)     0.00      31.50 r
-  library setup time                                     -0.07      31.43
-  data required time                                                31.43
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_102_/CK (DFFRX1TS)
+                                                          0.00      31.50 r
+  library setup time                                     -0.01      31.49
+  data required time                                                31.49
   --------------------------------------------------------------------------
-  data required time                                                31.43
-  data arrival time                                                -31.43
+  data required time                                                31.49
+  data arrival time                                                -31.49
   --------------------------------------------------------------------------
   slack (MET)                                                        0.00
 

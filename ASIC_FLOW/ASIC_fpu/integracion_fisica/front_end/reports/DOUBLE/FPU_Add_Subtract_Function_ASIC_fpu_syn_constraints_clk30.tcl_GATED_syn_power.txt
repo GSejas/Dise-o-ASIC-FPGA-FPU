@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:20:21 2016
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+                       ibm13_wl10        scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  90.4832 uW   (47%)
+  Net Switching Power  = 100.3917 uW   (53%)
+                         ---------
+Total Dynamic Power    = 190.8749 uW  (100%)
+
+Cell Leakage Power     =  40.2604 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  5.6596e-03        1.1685e-02          256.3072        1.7345e-02  (   9.09%)
+register       6.7584e-02        1.9053e-02        1.9728e+04        8.6657e-02  (  45.39%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.7240e-02        6.9654e-02        2.0276e+04        8.6914e-02  (  45.52%)
+--------------------------------------------------------------------------------------------------
+Total          9.0483e-02 mW         0.1004 mW     4.0260e+04 pW         0.1909 mW
+1

@@ -1,0 +1,5 @@
+udp_mux 3
+udp_mux2 0
+udp_mux4 1
+udp_outrf 4
+udp_bmx 2

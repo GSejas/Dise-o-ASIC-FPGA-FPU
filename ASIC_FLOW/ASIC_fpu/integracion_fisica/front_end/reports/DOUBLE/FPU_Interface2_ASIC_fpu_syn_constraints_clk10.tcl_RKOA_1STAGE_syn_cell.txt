@@ -3,7 +3,7 @@
 Report : cell
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 19:20:48 2016
+Date   : Sun Nov 13 10:30:35 2016
 ****************************************
 
 Attributes:
@@ -16,1813 +16,1813 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-DP_OP_998J211_122_6707_R_4938
+DP_OP_998J231_122_6707_R_4938
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5106
+DP_OP_998J231_122_6707_R_5106
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5293
+DP_OP_998J231_122_6707_R_5293
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5445
+DP_OP_998J231_122_6707_R_5445
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5446
+DP_OP_998J231_122_6707_R_5446
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5447
+DP_OP_998J231_122_6707_R_5447
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_998J211_122_6707_R_5725
+DP_OP_998J231_122_6707_R_5725
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5726
+DP_OP_998J231_122_6707_R_5726
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5727
+DP_OP_998J231_122_6707_R_5727
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_5894
+DP_OP_998J231_122_6707_R_5894
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_5895
+DP_OP_998J231_122_6707_R_5895
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_6392
+DP_OP_998J231_122_6707_R_6392
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_6393
+DP_OP_998J231_122_6707_R_6393
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_6610
+DP_OP_998J231_122_6707_R_6610
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_6611
+DP_OP_998J231_122_6707_R_6611
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7054
+DP_OP_998J231_122_6707_R_7054
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_7085
+DP_OP_998J231_122_6707_R_7085
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7086
+DP_OP_998J231_122_6707_R_7086
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7087
+DP_OP_998J231_122_6707_R_7087
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7158
+DP_OP_998J231_122_6707_R_7158
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7159
+DP_OP_998J231_122_6707_R_7159
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7174
+DP_OP_998J231_122_6707_R_7174
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_7177
+DP_OP_998J231_122_6707_R_7177
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_7182
+DP_OP_998J231_122_6707_R_7182
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7214
+DP_OP_998J231_122_6707_R_7214
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_998J211_122_6707_R_7216
+DP_OP_998J231_122_6707_R_7216
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7332
+DP_OP_998J231_122_6707_R_7332
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7423
+DP_OP_998J231_122_6707_R_7423
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7424
+DP_OP_998J231_122_6707_R_7424
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7437
+DP_OP_998J231_122_6707_R_7437
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7630
+DP_OP_998J231_122_6707_R_7630
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7631
+DP_OP_998J231_122_6707_R_7631
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_7632
+DP_OP_998J231_122_6707_R_7632
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7633
+DP_OP_998J231_122_6707_R_7633
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7922
+DP_OP_998J231_122_6707_R_7922
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_7984
+DP_OP_998J231_122_6707_R_7984
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_7990
+DP_OP_998J231_122_6707_R_7990
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8040
+DP_OP_998J231_122_6707_R_8040
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_998J211_122_6707_R_8067
+DP_OP_998J231_122_6707_R_8067
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_998J211_122_6707_R_8089
+DP_OP_998J231_122_6707_R_8089
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8090
+DP_OP_998J231_122_6707_R_8090
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8121
+DP_OP_998J231_122_6707_R_8121
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8122
+DP_OP_998J231_122_6707_R_8122
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8133
+DP_OP_998J231_122_6707_R_8133
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8134
+DP_OP_998J231_122_6707_R_8134
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8196
+DP_OP_998J231_122_6707_R_8196
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8292
+DP_OP_998J231_122_6707_R_8292
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_998J211_122_6707_R_8293
+DP_OP_998J231_122_6707_R_8293
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8299
+DP_OP_998J231_122_6707_R_8299
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8318
+DP_OP_998J231_122_6707_R_8318
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8319
+DP_OP_998J231_122_6707_R_8319
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8320
+DP_OP_998J231_122_6707_R_8320
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8331
+DP_OP_998J231_122_6707_R_8331
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_998J211_122_6707_R_8349
+DP_OP_998J231_122_6707_R_8349
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8368
+DP_OP_998J231_122_6707_R_8368
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8369
+DP_OP_998J231_122_6707_R_8369
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8370
+DP_OP_998J231_122_6707_R_8370
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8383
+DP_OP_998J231_122_6707_R_8383
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8384
+DP_OP_998J231_122_6707_R_8384
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8392
+DP_OP_998J231_122_6707_R_8392
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_998J211_122_6707_R_8465
+DP_OP_998J231_122_6707_R_8465
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_998J211_122_6707_R_8466
+DP_OP_998J231_122_6707_R_8466
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8495
+DP_OP_998J231_122_6707_R_8495
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8533
+DP_OP_998J231_122_6707_R_8533
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8534
+DP_OP_998J231_122_6707_R_8534
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8535
+DP_OP_998J231_122_6707_R_8535
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_998J211_122_6707_R_8536
+DP_OP_998J231_122_6707_R_8536
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8552
+DP_OP_998J231_122_6707_R_8552
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_998J211_122_6707_R_8553
+DP_OP_998J231_122_6707_R_8553
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8554
+DP_OP_998J231_122_6707_R_8554
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8555
+DP_OP_998J231_122_6707_R_8555
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_998J211_122_6707_R_8588
+DP_OP_998J231_122_6707_R_8588
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8589
+DP_OP_998J231_122_6707_R_8589
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8592
+DP_OP_998J231_122_6707_R_8592
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_998J211_122_6707_R_8593
+DP_OP_998J231_122_6707_R_8593
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8596
+DP_OP_998J231_122_6707_R_8596
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8597
+DP_OP_998J231_122_6707_R_8597
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8598
+DP_OP_998J231_122_6707_R_8598
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_998J211_122_6707_R_8600
+DP_OP_998J231_122_6707_R_8600
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8601
+DP_OP_998J231_122_6707_R_8601
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_998J211_122_6707_R_8602
+DP_OP_998J231_122_6707_R_8602
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8603
+DP_OP_998J231_122_6707_R_8603
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8604
+DP_OP_998J231_122_6707_R_8604
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8605
+DP_OP_998J231_122_6707_R_8605
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_998J211_122_6707_R_8620
+DP_OP_998J231_122_6707_R_8620
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_7372
+DP_OP_999J231_123_2308_R_7372
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_999J211_123_2308_R_7373
+DP_OP_999J231_123_2308_R_7373
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_7375
+DP_OP_999J231_123_2308_R_7375
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_7979
+DP_OP_999J231_123_2308_R_7979
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_999J211_123_2308_R_7980
+DP_OP_999J231_123_2308_R_7980
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_999J211_123_2308_R_7981
+DP_OP_999J231_123_2308_R_7981
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8075
+DP_OP_999J231_123_2308_R_8075
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_999J211_123_2308_R_8084
+DP_OP_999J231_123_2308_R_8084
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_999J211_123_2308_R_8085
+DP_OP_999J231_123_2308_R_8085
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8087
+DP_OP_999J231_123_2308_R_8087
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_999J211_123_2308_R_8092
+DP_OP_999J231_123_2308_R_8092
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_999J211_123_2308_R_8128
+DP_OP_999J231_123_2308_R_8128
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8131
+DP_OP_999J231_123_2308_R_8131
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8188
+DP_OP_999J231_123_2308_R_8188
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_999J211_123_2308_R_8189
+DP_OP_999J231_123_2308_R_8189
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_999J211_123_2308_R_8198
+DP_OP_999J231_123_2308_R_8198
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_999J211_123_2308_R_8199
+DP_OP_999J231_123_2308_R_8199
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8357
+DP_OP_999J231_123_2308_R_8357
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_999J211_123_2308_R_8358
+DP_OP_999J231_123_2308_R_8358
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8360
+DP_OP_999J231_123_2308_R_8360
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8373
+DP_OP_999J231_123_2308_R_8373
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_999J211_123_2308_R_8374
+DP_OP_999J231_123_2308_R_8374
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_999J211_123_2308_R_8375
+DP_OP_999J231_123_2308_R_8375
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_999J211_123_2308_R_8433
+DP_OP_999J231_123_2308_R_8433
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8444
+DP_OP_999J231_123_2308_R_8444
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_999J211_123_2308_R_8445
+DP_OP_999J231_123_2308_R_8445
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8450
+DP_OP_999J231_123_2308_R_8450
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8451
+DP_OP_999J231_123_2308_R_8451
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_999J211_123_2308_R_8452
+DP_OP_999J231_123_2308_R_8452
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_999J211_123_2308_R_8453
+DP_OP_999J231_123_2308_R_8453
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_999J211_123_2308_R_8455
+DP_OP_999J231_123_2308_R_8455
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8457
+DP_OP_999J231_123_2308_R_8457
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_999J211_123_2308_R_8477
+DP_OP_999J231_123_2308_R_8477
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8478
+DP_OP_999J231_123_2308_R_8478
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_999J211_123_2308_R_8479
+DP_OP_999J231_123_2308_R_8479
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_999J211_123_2308_R_8502
+DP_OP_999J231_123_2308_R_8502
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_999J211_123_2308_R_8503
+DP_OP_999J231_123_2308_R_8503
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_999J211_123_2308_R_8504
+DP_OP_999J231_123_2308_R_8504
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4378
+DP_OP_1000J231_124_8916_R_4378
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4379_RW_1
+DP_OP_1000J231_124_8916_R_4379_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4392_RW_1
+DP_OP_1000J231_124_8916_R_4392_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4393_RW_1
+DP_OP_1000J231_124_8916_R_4393_RW_1
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4591
+DP_OP_1000J231_124_8916_R_4591
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4592
+DP_OP_1000J231_124_8916_R_4592
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4624
+DP_OP_1000J231_124_8916_R_4624
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_4625
+DP_OP_1000J231_124_8916_R_4625
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_5244
+DP_OP_1000J231_124_8916_R_5244
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1000J211_124_8916_R_5245_RW_0
+DP_OP_1000J231_124_8916_R_5245_RW_0
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1001J211_125_7231_R_5201
+DP_OP_1001J231_125_7231_R_5201
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_5202
+DP_OP_1001J231_125_7231_R_5202
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_5203
+DP_OP_1001J231_125_7231_R_5203
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1001J211_125_7231_R_5205
+DP_OP_1001J231_125_7231_R_5205
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_5206
+DP_OP_1001J231_125_7231_R_5206
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_5207
+DP_OP_1001J231_125_7231_R_5207
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_5208
+DP_OP_1001J231_125_7231_R_5208
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_5261
+DP_OP_1001J231_125_7231_R_5261
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_6423_IP
+DP_OP_1001J231_125_7231_R_6423_IP
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1001J211_125_7231_R_6589
+DP_OP_1001J231_125_7231_R_6589
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_6844
+DP_OP_1001J231_125_7231_R_6844
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7041
+DP_OP_1001J231_125_7231_R_7041
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7146
+DP_OP_1001J231_125_7231_R_7146
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7147
+DP_OP_1001J231_125_7231_R_7147
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7149
+DP_OP_1001J231_125_7231_R_7149
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1001J211_125_7231_R_7151
+DP_OP_1001J231_125_7231_R_7151
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7152
+DP_OP_1001J231_125_7231_R_7152
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7454
+DP_OP_1001J231_125_7231_R_7454
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_7910
+DP_OP_1001J231_125_7231_R_7910
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_7911
+DP_OP_1001J231_125_7231_R_7911
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_8472
+DP_OP_1001J231_125_7231_R_8472
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_8474
+DP_OP_1001J231_125_7231_R_8474
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_8475
+DP_OP_1001J231_125_7231_R_8475
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_8570
+DP_OP_1001J231_125_7231_R_8570
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_8571
+DP_OP_1001J231_125_7231_R_8571
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1001J211_125_7231_R_8575
+DP_OP_1001J231_125_7231_R_8575
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_8576
+DP_OP_1001J231_125_7231_R_8576
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_8614
+DP_OP_1001J231_125_7231_R_8614
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_8615
+DP_OP_1001J231_125_7231_R_8615
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1001J211_125_7231_R_8616
+DP_OP_1001J231_125_7231_R_8616
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_8617
+DP_OP_1001J231_125_7231_R_8617
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1001J211_125_7231_R_8618
+DP_OP_1001J231_125_7231_R_8618
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_1688
+DP_OP_1002J231_126_3199_R_1688
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_4943
+DP_OP_1002J231_126_3199_R_4943
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_4993
+DP_OP_1002J231_126_3199_R_4993
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_5060
+DP_OP_1002J231_126_3199_R_5060
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_5061
+DP_OP_1002J231_126_3199_R_5061
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_1002J211_126_3199_R_5345
+DP_OP_1002J231_126_3199_R_5345
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_5458
+DP_OP_1002J231_126_3199_R_5458
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_5547
+DP_OP_1002J231_126_3199_R_5547
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_1002J211_126_3199_R_5785
+DP_OP_1002J231_126_3199_R_5785
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_5981
+DP_OP_1002J231_126_3199_R_5981
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_6386
+DP_OP_1002J231_126_3199_R_6386
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_6405
+DP_OP_1002J231_126_3199_R_6405
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_6618
+DP_OP_1002J231_126_3199_R_6618
                           DFFRHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1002J211_126_3199_R_6624
+DP_OP_1002J231_126_3199_R_6624
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_6802
+DP_OP_1002J231_126_3199_R_6802
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_6806
+DP_OP_1002J231_126_3199_R_6806
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_6807
+DP_OP_1002J231_126_3199_R_6807
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_6808
+DP_OP_1002J231_126_3199_R_6808
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_6828
+DP_OP_1002J231_126_3199_R_6828
                           DFFRHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1002J211_126_3199_R_7013
+DP_OP_1002J231_126_3199_R_7013
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_7026
+DP_OP_1002J231_126_3199_R_7026
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_7048
+DP_OP_1002J231_126_3199_R_7048
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_7204
+DP_OP_1002J231_126_3199_R_7204
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_7358
+DP_OP_1002J231_126_3199_R_7358
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_7377
+DP_OP_1002J231_126_3199_R_7377
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_1002J211_126_3199_R_7378
+DP_OP_1002J231_126_3199_R_7378
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_7396_IP
+DP_OP_1002J231_126_3199_R_7396_IP
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1002J211_126_3199_R_7409
+DP_OP_1002J231_126_3199_R_7409
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_1002J211_126_3199_R_7411
+DP_OP_1002J231_126_3199_R_7411
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_7623
+DP_OP_1002J231_126_3199_R_7623
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_7813
+DP_OP_1002J231_126_3199_R_7813
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_1002J211_126_3199_R_7814
+DP_OP_1002J231_126_3199_R_7814
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_1002J211_126_3199_R_7823
+DP_OP_1002J231_126_3199_R_7823
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_7824
+DP_OP_1002J231_126_3199_R_7824
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_7912
+DP_OP_1002J231_126_3199_R_7912
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_7913
+DP_OP_1002J231_126_3199_R_7913
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_7925
+DP_OP_1002J231_126_3199_R_7925
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8149
+DP_OP_1002J231_126_3199_R_8149
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8150
+DP_OP_1002J231_126_3199_R_8150
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_8231
+DP_OP_1002J231_126_3199_R_8231
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8232
+DP_OP_1002J231_126_3199_R_8232
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8233
+DP_OP_1002J231_126_3199_R_8233
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_8401
+DP_OP_1002J231_126_3199_R_8401
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8402
+DP_OP_1002J231_126_3199_R_8402
                           DFFSHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           40.320000 n
-DP_OP_1002J211_126_3199_R_8403
+DP_OP_1002J231_126_3199_R_8403
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_8418
+DP_OP_1002J231_126_3199_R_8418
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8419
+DP_OP_1002J231_126_3199_R_8419
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8420
+DP_OP_1002J231_126_3199_R_8420
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8423
+DP_OP_1002J231_126_3199_R_8423
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8424
+DP_OP_1002J231_126_3199_R_8424
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8425
+DP_OP_1002J231_126_3199_R_8425
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8427
+DP_OP_1002J231_126_3199_R_8427
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8428
+DP_OP_1002J231_126_3199_R_8428
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_8429
+DP_OP_1002J231_126_3199_R_8429
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_8430
+DP_OP_1002J231_126_3199_R_8430
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8432
+DP_OP_1002J231_126_3199_R_8432
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_8468
+DP_OP_1002J231_126_3199_R_8468
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8469
+DP_OP_1002J231_126_3199_R_8469
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8470
+DP_OP_1002J231_126_3199_R_8470
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1002J211_126_3199_R_8471
+DP_OP_1002J231_126_3199_R_8471
                           DFFSHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 n
-DP_OP_1002J211_126_3199_R_8480
+DP_OP_1002J231_126_3199_R_8480
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1002J211_126_3199_R_8481
+DP_OP_1002J231_126_3199_R_8481
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8482
+DP_OP_1002J231_126_3199_R_8482
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8484
+DP_OP_1002J231_126_3199_R_8484
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1002J211_126_3199_R_8485
+DP_OP_1002J231_126_3199_R_8485
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1002J211_126_3199_R_8610
+DP_OP_1002J231_126_3199_R_8610
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_1907
+DP_OP_1003J231_127_3199_R_1907
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_4876
+DP_OP_1003J231_127_3199_R_4876
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_4999_IP
+DP_OP_1003J231_127_3199_R_4999_IP
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_5497
+DP_OP_1003J231_127_3199_R_5497
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_5593
+DP_OP_1003J231_127_3199_R_5593
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_5834
+DP_OP_1003J231_127_3199_R_5834
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_5837
+DP_OP_1003J231_127_3199_R_5837
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_5838
+DP_OP_1003J231_127_3199_R_5838
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_5839
+DP_OP_1003J231_127_3199_R_5839
                           DFFSHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           40.320000 n
-DP_OP_1003J211_127_3199_R_5861
+DP_OP_1003J231_127_3199_R_5861
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_5869
+DP_OP_1003J231_127_3199_R_5869
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_5872
+DP_OP_1003J231_127_3199_R_5872
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_5873
+DP_OP_1003J231_127_3199_R_5873
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_5874
+DP_OP_1003J231_127_3199_R_5874
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_5875
+DP_OP_1003J231_127_3199_R_5875
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_5901
+DP_OP_1003J231_127_3199_R_5901
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_5937
+DP_OP_1003J231_127_3199_R_5937
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_6016
+DP_OP_1003J231_127_3199_R_6016
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_6017
+DP_OP_1003J231_127_3199_R_6017
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_6116
+DP_OP_1003J231_127_3199_R_6116
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_6194
+DP_OP_1003J231_127_3199_R_6194
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_6196
+DP_OP_1003J231_127_3199_R_6196
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_6226
+DP_OP_1003J231_127_3199_R_6226
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_6227
+DP_OP_1003J231_127_3199_R_6227
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_6234
+DP_OP_1003J231_127_3199_R_6234
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_6240
+DP_OP_1003J231_127_3199_R_6240
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_6357
+DP_OP_1003J231_127_3199_R_6357
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_6583
+DP_OP_1003J231_127_3199_R_6583
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_6656
+DP_OP_1003J231_127_3199_R_6656
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_6657
+DP_OP_1003J231_127_3199_R_6657
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_6775
+DP_OP_1003J231_127_3199_R_6775
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_6779
+DP_OP_1003J231_127_3199_R_6779
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_6780
+DP_OP_1003J231_127_3199_R_6780
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_6833
+DP_OP_1003J231_127_3199_R_6833
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_6835
+DP_OP_1003J231_127_3199_R_6835
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_6864
+DP_OP_1003J231_127_3199_R_6864
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_6880
+DP_OP_1003J231_127_3199_R_6880
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_6994_IP
+DP_OP_1003J231_127_3199_R_6994_IP
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_7005
+DP_OP_1003J231_127_3199_R_7005
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_7008
+DP_OP_1003J231_127_3199_R_7008
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_7073
+DP_OP_1003J231_127_3199_R_7073
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7075
+DP_OP_1003J231_127_3199_R_7075
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_7077
+DP_OP_1003J231_127_3199_R_7077
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7078
+DP_OP_1003J231_127_3199_R_7078
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7079
+DP_OP_1003J231_127_3199_R_7079
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_7080
+DP_OP_1003J231_127_3199_R_7080
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7081
+DP_OP_1003J231_127_3199_R_7081
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7203
+DP_OP_1003J231_127_3199_R_7203
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_7324
+DP_OP_1003J231_127_3199_R_7324
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_7339
+DP_OP_1003J231_127_3199_R_7339
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_7346
+DP_OP_1003J231_127_3199_R_7346
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7348
+DP_OP_1003J231_127_3199_R_7348
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_7401
+DP_OP_1003J231_127_3199_R_7401
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_7611
+DP_OP_1003J231_127_3199_R_7611
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7639
+DP_OP_1003J231_127_3199_R_7639
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_7640
+DP_OP_1003J231_127_3199_R_7640
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_8098
+DP_OP_1003J231_127_3199_R_8098
                           DFFSHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 n
-DP_OP_1003J211_127_3199_R_8099
+DP_OP_1003J231_127_3199_R_8099
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8107
+DP_OP_1003J231_127_3199_R_8107
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8109
+DP_OP_1003J231_127_3199_R_8109
                           DFFSHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           56.160000 n
-DP_OP_1003J211_127_3199_R_8111
+DP_OP_1003J231_127_3199_R_8111
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_8112
+DP_OP_1003J231_127_3199_R_8112
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8113
+DP_OP_1003J231_127_3199_R_8113
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8135
+DP_OP_1003J231_127_3199_R_8135
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8136
+DP_OP_1003J231_127_3199_R_8136
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_1003J211_127_3199_R_8137
+DP_OP_1003J231_127_3199_R_8137
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8138
+DP_OP_1003J231_127_3199_R_8138
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8139
+DP_OP_1003J231_127_3199_R_8139
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8140
+DP_OP_1003J231_127_3199_R_8140
                           DFFRHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_8152
+DP_OP_1003J231_127_3199_R_8152
                           DFFSHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 n
-DP_OP_1003J211_127_3199_R_8153
+DP_OP_1003J231_127_3199_R_8153
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8156
+DP_OP_1003J231_127_3199_R_8156
                           DFFSHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           56.160000 n
-DP_OP_1003J211_127_3199_R_8158
+DP_OP_1003J231_127_3199_R_8158
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_8194
+DP_OP_1003J231_127_3199_R_8194
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8195
+DP_OP_1003J231_127_3199_R_8195
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8202
+DP_OP_1003J231_127_3199_R_8202
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_8203
+DP_OP_1003J231_127_3199_R_8203
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_8205
+DP_OP_1003J231_127_3199_R_8205
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_8206
+DP_OP_1003J231_127_3199_R_8206
                           DFFSHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 n
-DP_OP_1003J211_127_3199_R_8207
+DP_OP_1003J231_127_3199_R_8207
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1003J211_127_3199_R_8208
+DP_OP_1003J231_127_3199_R_8208
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8209
+DP_OP_1003J231_127_3199_R_8209
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1003J211_127_3199_R_8210
+DP_OP_1003J231_127_3199_R_8210
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8211
+DP_OP_1003J231_127_3199_R_8211
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_8223
+DP_OP_1003J231_127_3199_R_8223
                           DFFSHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 n
-DP_OP_1003J211_127_3199_R_8224
+DP_OP_1003J231_127_3199_R_8224
                           DFFSHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           40.320000 n
-DP_OP_1003J211_127_3199_R_8225
+DP_OP_1003J231_127_3199_R_8225
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1003J211_127_3199_R_8226
+DP_OP_1003J231_127_3199_R_8226
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1003J211_127_3199_R_8227
+DP_OP_1003J231_127_3199_R_8227
                           DFFRHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1003J211_127_3199_R_8609
+DP_OP_1003J231_127_3199_R_8609
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_4820
+DP_OP_1005J231_129_8443_R_4820
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_4827
+DP_OP_1005J231_129_8443_R_4827
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_5180
+DP_OP_1005J231_129_8443_R_5180
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1005J211_129_8443_R_5181
+DP_OP_1005J231_129_8443_R_5181
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_5451
+DP_OP_1005J231_129_8443_R_5451
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_5452
+DP_OP_1005J231_129_8443_R_5452
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_5455
+DP_OP_1005J231_129_8443_R_5455
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1005J211_129_8443_R_5910
+DP_OP_1005J231_129_8443_R_5910
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_5911
+DP_OP_1005J231_129_8443_R_5911
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_5955
+DP_OP_1005J231_129_8443_R_5955
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_5956
+DP_OP_1005J231_129_8443_R_5956
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_1005J211_129_8443_R_6136
+DP_OP_1005J231_129_8443_R_6136
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_6149
+DP_OP_1005J231_129_8443_R_6149
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_6397
+DP_OP_1005J231_129_8443_R_6397
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_6398
+DP_OP_1005J231_129_8443_R_6398
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_6461
+DP_OP_1005J231_129_8443_R_6461
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_6469
+DP_OP_1005J231_129_8443_R_6469
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_6868
+DP_OP_1005J231_129_8443_R_6868
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7044
+DP_OP_1005J231_129_8443_R_7044
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_7211
+DP_OP_1005J231_129_8443_R_7211
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1005J211_129_8443_R_7212
+DP_OP_1005J231_129_8443_R_7212
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7297
+DP_OP_1005J231_129_8443_R_7297
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7340
+DP_OP_1005J231_129_8443_R_7340
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_7342
+DP_OP_1005J231_129_8443_R_7342
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7362
+DP_OP_1005J231_129_8443_R_7362
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_7428
+DP_OP_1005J231_129_8443_R_7428
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7433
+DP_OP_1005J231_129_8443_R_7433
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_7450
+DP_OP_1005J231_129_8443_R_7450
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7459
+DP_OP_1005J231_129_8443_R_7459
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7621
+DP_OP_1005J231_129_8443_R_7621
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_7642
+DP_OP_1005J231_129_8443_R_7642
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7803
+DP_OP_1005J231_129_8443_R_7803
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7804
+DP_OP_1005J231_129_8443_R_7804
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_7816
+DP_OP_1005J231_129_8443_R_7816
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_7819
+DP_OP_1005J231_129_8443_R_7819
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7820
+DP_OP_1005J231_129_8443_R_7820
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7821
+DP_OP_1005J231_129_8443_R_7821
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_7926
+DP_OP_1005J231_129_8443_R_7926
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8062
+DP_OP_1005J231_129_8443_R_8062
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8065
+DP_OP_1005J231_129_8443_R_8065
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8069
+DP_OP_1005J231_129_8443_R_8069
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8070
+DP_OP_1005J231_129_8443_R_8070
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1005J211_129_8443_R_8071
+DP_OP_1005J231_129_8443_R_8071
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1005J211_129_8443_R_8072
+DP_OP_1005J231_129_8443_R_8072
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8073
+DP_OP_1005J231_129_8443_R_8073
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8126
+DP_OP_1005J231_129_8443_R_8126
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1005J211_129_8443_R_8163
+DP_OP_1005J231_129_8443_R_8163
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8164
+DP_OP_1005J231_129_8443_R_8164
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8165
+DP_OP_1005J231_129_8443_R_8165
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8171
+DP_OP_1005J231_129_8443_R_8171
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8173
+DP_OP_1005J231_129_8443_R_8173
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8174
+DP_OP_1005J231_129_8443_R_8174
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8191
+DP_OP_1005J231_129_8443_R_8191
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8215
+DP_OP_1005J231_129_8443_R_8215
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8216
+DP_OP_1005J231_129_8443_R_8216
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_1005J211_129_8443_R_8217
+DP_OP_1005J231_129_8443_R_8217
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_8218
+DP_OP_1005J231_129_8443_R_8218
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8220_IP
+DP_OP_1005J231_129_8443_R_8220_IP
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1005J211_129_8443_R_8221
+DP_OP_1005J231_129_8443_R_8221
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8222
+DP_OP_1005J231_129_8443_R_8222
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8350
+DP_OP_1005J231_129_8443_R_8350
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8352
+DP_OP_1005J231_129_8443_R_8352
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_8354
+DP_OP_1005J231_129_8443_R_8354
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8387
+DP_OP_1005J231_129_8443_R_8387
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8404
+DP_OP_1005J231_129_8443_R_8404
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8431
+DP_OP_1005J231_129_8443_R_8431
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_1005J211_129_8443_R_8435
+DP_OP_1005J231_129_8443_R_8435
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8579
+DP_OP_1005J231_129_8443_R_8579
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1005J211_129_8443_R_8580
+DP_OP_1005J231_129_8443_R_8580
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8581
+DP_OP_1005J231_129_8443_R_8581
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8582
+DP_OP_1005J231_129_8443_R_8582
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_8583
+DP_OP_1005J231_129_8443_R_8583
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_8584
+DP_OP_1005J231_129_8443_R_8584
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1005J211_129_8443_R_8585
+DP_OP_1005J231_129_8443_R_8585
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1005J211_129_8443_R_8586
+DP_OP_1005J231_129_8443_R_8586
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1005J211_129_8443_R_8587
+DP_OP_1005J231_129_8443_R_8587
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_1520
+DP_OP_1006J231_130_3199_R_1520
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_2228
+DP_OP_1006J231_130_3199_R_2228
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_5176
+DP_OP_1006J231_130_3199_R_5176
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_5706
+DP_OP_1006J231_130_3199_R_5706
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_5748
+DP_OP_1006J231_130_3199_R_5748
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_5780
+DP_OP_1006J231_130_3199_R_5780
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_5804
+DP_OP_1006J231_130_3199_R_5804
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_5806
+DP_OP_1006J231_130_3199_R_5806
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_5808
+DP_OP_1006J231_130_3199_R_5808
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_5932
+DP_OP_1006J231_130_3199_R_5932
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_6009
+DP_OP_1006J231_130_3199_R_6009
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_6139
+DP_OP_1006J231_130_3199_R_6139
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_6142
+DP_OP_1006J231_130_3199_R_6142
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_6253
+DP_OP_1006J231_130_3199_R_6253
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_6692
+DP_OP_1006J231_130_3199_R_6692
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_6696
+DP_OP_1006J231_130_3199_R_6696
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_6728
+DP_OP_1006J231_130_3199_R_6728
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_6730
+DP_OP_1006J231_130_3199_R_6730
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_6731
+DP_OP_1006J231_130_3199_R_6731
                           DFFRHQX8TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           50.400002 n
-DP_OP_1006J211_130_3199_R_6741
+DP_OP_1006J231_130_3199_R_6741
                           DFFSHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 n
-DP_OP_1006J211_130_3199_R_6796
+DP_OP_1006J231_130_3199_R_6796
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_6814
+DP_OP_1006J231_130_3199_R_6814
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_6820
+DP_OP_1006J231_130_3199_R_6820
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7018
+DP_OP_1006J231_130_3199_R_7018
                           DFFRHQX4TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           47.520000 n
-DP_OP_1006J211_130_3199_R_7032
+DP_OP_1006J231_130_3199_R_7032
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7057
+DP_OP_1006J231_130_3199_R_7057
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7145
+DP_OP_1006J231_130_3199_R_7145
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7303
+DP_OP_1006J231_130_3199_R_7303
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7304
+DP_OP_1006J231_130_3199_R_7304
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7328
+DP_OP_1006J231_130_3199_R_7328
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7351
+DP_OP_1006J231_130_3199_R_7351
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_7352
+DP_OP_1006J231_130_3199_R_7352
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7364
+DP_OP_1006J231_130_3199_R_7364
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7365
+DP_OP_1006J231_130_3199_R_7365
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7366
+DP_OP_1006J231_130_3199_R_7366
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_7386
+DP_OP_1006J231_130_3199_R_7386
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_7387
+DP_OP_1006J231_130_3199_R_7387
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7388
+DP_OP_1006J231_130_3199_R_7388
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7404
+DP_OP_1006J231_130_3199_R_7404
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_7406
+DP_OP_1006J231_130_3199_R_7406
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_7441
+DP_OP_1006J231_130_3199_R_7441
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7617
+DP_OP_1006J231_130_3199_R_7617
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_7618
+DP_OP_1006J231_130_3199_R_7618
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8104
+DP_OP_1006J231_130_3199_R_8104
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8105
+DP_OP_1006J231_130_3199_R_8105
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8123
+DP_OP_1006J231_130_3199_R_8123
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8124
+DP_OP_1006J231_130_3199_R_8124
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_8160
+DP_OP_1006J231_130_3199_R_8160
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8161
+DP_OP_1006J231_130_3199_R_8161
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8162
+DP_OP_1006J231_130_3199_R_8162
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_8167
+DP_OP_1006J231_130_3199_R_8167
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8177
+DP_OP_1006J231_130_3199_R_8177
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8178
+DP_OP_1006J231_130_3199_R_8178
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8181
+DP_OP_1006J231_130_3199_R_8181
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8182
+DP_OP_1006J231_130_3199_R_8182
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8184
+DP_OP_1006J231_130_3199_R_8184
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8214
+DP_OP_1006J231_130_3199_R_8214
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8228
+DP_OP_1006J231_130_3199_R_8228
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8229
+DP_OP_1006J231_130_3199_R_8229
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8230
+DP_OP_1006J231_130_3199_R_8230
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_8253
+DP_OP_1006J231_130_3199_R_8253
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_8254
+DP_OP_1006J231_130_3199_R_8254
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8255
+DP_OP_1006J231_130_3199_R_8255
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8256
+DP_OP_1006J231_130_3199_R_8256
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8270
+DP_OP_1006J231_130_3199_R_8270
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8271
+DP_OP_1006J231_130_3199_R_8271
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_8405
+DP_OP_1006J231_130_3199_R_8405
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8406
+DP_OP_1006J231_130_3199_R_8406
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8407
+DP_OP_1006J231_130_3199_R_8407
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1006J211_130_3199_R_8408
+DP_OP_1006J231_130_3199_R_8408
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8409
+DP_OP_1006J231_130_3199_R_8409
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_8410
+DP_OP_1006J231_130_3199_R_8410
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_8411
+DP_OP_1006J231_130_3199_R_8411
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_8562
+DP_OP_1006J231_130_3199_R_8562
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_8563
+DP_OP_1006J231_130_3199_R_8563
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1006J211_130_3199_R_8564
+DP_OP_1006J231_130_3199_R_8564
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8565
+DP_OP_1006J231_130_3199_R_8565
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1006J211_130_3199_R_8566
+DP_OP_1006J231_130_3199_R_8566
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1006J211_130_3199_R_8567
+DP_OP_1006J231_130_3199_R_8567
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_4997
+DP_OP_1007J231_131_2308_R_4997
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_5769
+DP_OP_1007J231_131_2308_R_5769
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_5788
+DP_OP_1007J231_131_2308_R_5788
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_5843
+DP_OP_1007J231_131_2308_R_5843
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_5975
+DP_OP_1007J231_131_2308_R_5975
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_5987
+DP_OP_1007J231_131_2308_R_5987
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_5990
+DP_OP_1007J231_131_2308_R_5990
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_5991
+DP_OP_1007J231_131_2308_R_5991
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_5992
+DP_OP_1007J231_131_2308_R_5992
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6013
+DP_OP_1007J231_131_2308_R_6013
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_6155
+DP_OP_1007J231_131_2308_R_6155
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6176
+DP_OP_1007J231_131_2308_R_6176
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_6185
+DP_OP_1007J231_131_2308_R_6185
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_6237
+DP_OP_1007J231_131_2308_R_6237
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6368
+DP_OP_1007J231_131_2308_R_6368
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1007J211_131_2308_R_6427
+DP_OP_1007J231_131_2308_R_6427
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6485
+DP_OP_1007J231_131_2308_R_6485
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6486
+DP_OP_1007J231_131_2308_R_6486
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_6487
+DP_OP_1007J231_131_2308_R_6487
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6585
+DP_OP_1007J231_131_2308_R_6585
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6660
+DP_OP_1007J231_131_2308_R_6660
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6661
+DP_OP_1007J231_131_2308_R_6661
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6684
+DP_OP_1007J231_131_2308_R_6684
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_6686
+DP_OP_1007J231_131_2308_R_6686
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_6687
+DP_OP_1007J231_131_2308_R_6687
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6688
+DP_OP_1007J231_131_2308_R_6688
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6689
+DP_OP_1007J231_131_2308_R_6689
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6703
+DP_OP_1007J231_131_2308_R_6703
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6743
+DP_OP_1007J231_131_2308_R_6743
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_6811
+DP_OP_1007J231_131_2308_R_6811
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_6831
+DP_OP_1007J231_131_2308_R_6831
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_6832
+DP_OP_1007J231_131_2308_R_6832
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_6999
+DP_OP_1007J231_131_2308_R_6999
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_7009
+DP_OP_1007J231_131_2308_R_7009
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7010
+DP_OP_1007J231_131_2308_R_7010
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7019
+DP_OP_1007J231_131_2308_R_7019
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7037
+DP_OP_1007J231_131_2308_R_7037
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_7038
+DP_OP_1007J231_131_2308_R_7038
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7066
+DP_OP_1007J231_131_2308_R_7066
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7069
+DP_OP_1007J231_131_2308_R_7069
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_7070
+DP_OP_1007J231_131_2308_R_7070
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7092
+DP_OP_1007J231_131_2308_R_7092
                           DFFSHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           40.320000 n
-DP_OP_1007J211_131_2308_R_7093
+DP_OP_1007J231_131_2308_R_7093
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7094
+DP_OP_1007J231_131_2308_R_7094
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7139
+DP_OP_1007J231_131_2308_R_7139
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7140
+DP_OP_1007J231_131_2308_R_7140
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7142
+DP_OP_1007J231_131_2308_R_7142
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7143
+DP_OP_1007J231_131_2308_R_7143
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7314
+DP_OP_1007J231_131_2308_R_7314
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7315
+DP_OP_1007J231_131_2308_R_7315
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_7335
+DP_OP_1007J231_131_2308_R_7335
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7353
+DP_OP_1007J231_131_2308_R_7353
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_7354
+DP_OP_1007J231_131_2308_R_7354
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_7417
+DP_OP_1007J231_131_2308_R_7417
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_7446
+DP_OP_1007J231_131_2308_R_7446
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7447
+DP_OP_1007J231_131_2308_R_7447
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7448
+DP_OP_1007J231_131_2308_R_7448
                           DFFRHQX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1007J211_131_2308_R_7449
+DP_OP_1007J231_131_2308_R_7449
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_7455
+DP_OP_1007J231_131_2308_R_7455
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_7612
+DP_OP_1007J231_131_2308_R_7612
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7613
+DP_OP_1007J231_131_2308_R_7613
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_7651
+DP_OP_1007J231_131_2308_R_7651
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8081
+DP_OP_1007J231_131_2308_R_8081
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8082
+DP_OP_1007J231_131_2308_R_8082
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8267
+DP_OP_1007J231_131_2308_R_8267
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8268
+DP_OP_1007J231_131_2308_R_8268
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8273
+DP_OP_1007J231_131_2308_R_8273
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8274
+DP_OP_1007J231_131_2308_R_8274
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8283
+DP_OP_1007J231_131_2308_R_8283
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8284
+DP_OP_1007J231_131_2308_R_8284
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8285
+DP_OP_1007J231_131_2308_R_8285
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_8286
+DP_OP_1007J231_131_2308_R_8286
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8289
+DP_OP_1007J231_131_2308_R_8289
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8291
+DP_OP_1007J231_131_2308_R_8291
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8302
+DP_OP_1007J231_131_2308_R_8302
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8313
+DP_OP_1007J231_131_2308_R_8313
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8326
+DP_OP_1007J231_131_2308_R_8326
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8327
+DP_OP_1007J231_131_2308_R_8327
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8328
+DP_OP_1007J231_131_2308_R_8328
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8329
+DP_OP_1007J231_131_2308_R_8329
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8330
+DP_OP_1007J231_131_2308_R_8330
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8520
+DP_OP_1007J231_131_2308_R_8520
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8522
+DP_OP_1007J231_131_2308_R_8522
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8523
+DP_OP_1007J231_131_2308_R_8523
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8524
+DP_OP_1007J231_131_2308_R_8524
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8525
+DP_OP_1007J231_131_2308_R_8525
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8526
+DP_OP_1007J231_131_2308_R_8526
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8527
+DP_OP_1007J231_131_2308_R_8527
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8528
+DP_OP_1007J231_131_2308_R_8528
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1007J211_131_2308_R_8529
+DP_OP_1007J231_131_2308_R_8529
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8530
+DP_OP_1007J231_131_2308_R_8530
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8531
+DP_OP_1007J231_131_2308_R_8531
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8532
+DP_OP_1007J231_131_2308_R_8532
                           DFFSHQX1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           36.000000 n
-DP_OP_1007J211_131_2308_R_8559
+DP_OP_1007J231_131_2308_R_8559
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1007J211_131_2308_R_8560
+DP_OP_1007J231_131_2308_R_8560
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_8561
+DP_OP_1007J231_131_2308_R_8561
                           DFFSX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           34.560001 n
-DP_OP_1007J211_131_2308_R_8611
+DP_OP_1007J231_131_2308_R_8611
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_8612
+DP_OP_1007J231_131_2308_R_8612
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1007J211_131_2308_R_8613
+DP_OP_1007J231_131_2308_R_8613
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           37.439999 n
-DP_OP_1009J211_133_7510_R_3324_RW_3
+DP_OP_1009J231_133_7510_R_3324_RW_3
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_3587_RW_3
+DP_OP_1009J231_133_7510_R_3587_RW_3
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_3683_RW_6
+DP_OP_1009J231_133_7510_R_3683_RW_6
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_3856_RW_5
+DP_OP_1009J231_133_7510_R_3856_RW_5
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_3857_RW_6
+DP_OP_1009J231_133_7510_R_3857_RW_6
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_3935_RW_2
+DP_OP_1009J231_133_7510_R_3935_RW_2
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4094_RW_1
+DP_OP_1009J231_133_7510_R_4094_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4095_RW_1
+DP_OP_1009J231_133_7510_R_4095_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4282
+DP_OP_1009J231_133_7510_R_4282
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4284
+DP_OP_1009J231_133_7510_R_4284
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4285_RW_0
+DP_OP_1009J231_133_7510_R_4285_RW_0
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1009J211_133_7510_R_4332_RW_1
+DP_OP_1009J231_133_7510_R_4332_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4333_RW_2
+DP_OP_1009J231_133_7510_R_4333_RW_2
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4381_RW_1
+DP_OP_1009J231_133_7510_R_4381_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4383_RW_5
+DP_OP_1009J231_133_7510_R_4383_RW_5
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4426
+DP_OP_1009J231_133_7510_R_4426
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4427
+DP_OP_1009J231_133_7510_R_4427
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4952
+DP_OP_1009J231_133_7510_R_4952
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_4953_RW_0
+DP_OP_1009J231_133_7510_R_4953_RW_0
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1009J211_133_7510_R_4954_RW_0
+DP_OP_1009J231_133_7510_R_4954_RW_0
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1009J211_133_7510_R_5390_RW_1
+DP_OP_1009J231_133_7510_R_5390_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_5466_RW_1
+DP_OP_1009J231_133_7510_R_5466_RW_1
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_5467_RW_0
+DP_OP_1009J231_133_7510_R_5467_RW_0
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_5468_RW_0
+DP_OP_1009J231_133_7510_R_5468_RW_0
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_5476_RW_2
+DP_OP_1009J231_133_7510_R_5476_RW_2
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_1009J211_133_7510_R_8362
+DP_OP_1009J231_133_7510_R_8362
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_8363
+DP_OP_1009J231_133_7510_R_8363
                           DFFSX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-DP_OP_1009J211_133_7510_R_8364
+DP_OP_1009J231_133_7510_R_8364
                           DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
 FPADDSUB_EXP_STAGE_DMP_Q_reg_0_
@@ -53203,23 +53203,23 @@ add_x_423_R_7280          DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
 add_x_423_R_7281          DFFSX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           30.240000 n
-intadd_679_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_596_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_679_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_596_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_679_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_596_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_680_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_597_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_680_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_597_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_680_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_597_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_681_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_598_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_681_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_598_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_681_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_598_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 operation_dff_Q_reg_1_    DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n

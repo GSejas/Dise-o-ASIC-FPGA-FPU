@@ -3,7 +3,7 @@
 Report : cell
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:13:37 2016
+Date   : Sun Nov 13 14:35:31 2016
 ****************************************
 
 Attributes:
@@ -17,39 +17,39 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-DP_OP_26J195_122_5882_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U3  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U3  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U4  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U4  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U5  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U5  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U6  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U6  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U7  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U7  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U8  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U8  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J195_122_5882_U9  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J318_122_5882_U9  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U2 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U2 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U3 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U3 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U4 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U4 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U5 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U5 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U6 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U6 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U7 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U7 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U8 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U8 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U9 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_230J318_125_7006_U9 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_230J195_125_7006_U10
+DP_OP_230J318_125_7006_U10
                           CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 FPADDSUB_EXP_STAGE_DMP_Q_reg_0_
@@ -8257,23 +8257,23 @@ U4049                     AO21XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
 clk_gate_FPMULT_Exp_module_Underflow_m_Q_reg
                           SNPS_CLOCK_GATE_HIGH_FPU_Interface2_W32_EW8_SW23_SWR26_EWR5_1
                                                           23.040001 b, cg, h
-intadd_553_U2             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1073_U2            ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_553_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1073_U3            ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_553_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1073_U4            ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_554_U2             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1074_U2            ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_554_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1074_U3            ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_554_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1074_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_555_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1075_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_555_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1075_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_555_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1075_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 mult_x_69_U179            CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r

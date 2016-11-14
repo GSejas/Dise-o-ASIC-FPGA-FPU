@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Interface_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 14:23:38 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: DP_OP_497J306_122_900_R_2012
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_3711 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Interface_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  DP_OP_497J306_122_900_R_2012/CK (DFFRX4TS)              0.00 #     0.10 r
+  DP_OP_497J306_122_900_R_2012/QN (DFFRX4TS)              0.89       0.99 r
+  U4712/Y (XNOR2X4TS)                                     0.22       1.22 f
+  U4711/Y (OAI22X4TS)                                     0.24       1.46 r
+  U4985/CO (ADDFHX4TS)                                    0.58       2.03 r
+  U5001/CO (ADDFHX4TS)                                    0.55       2.58 r
+  U5012/S (ADDFHX4TS)                                     0.47       3.06 r
+  U3154/Y (INVX8TS)                                       0.10       3.15 f
+  U5013/S (ADDFHX4TS)                                     0.40       3.55 r
+  U5292/CO (ADDFHX4TS)                                    0.51       4.06 r
+  U5379/S (ADDFHX4TS)                                     0.40       4.46 r
+  U5799/S (ADDFHX4TS)                                     0.42       4.88 r
+  R_3711/D (DFFRXLTS)                                     0.00       4.88 r
+  data arrival time                                                  4.88
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  R_3711/CK (DFFRXLTS)                                    0.00       1.05 r
+  library setup time                                     -0.44       0.61
+  data required time                                                 0.61
+  --------------------------------------------------------------------------
+  data required time                                                 0.61
+  data arrival time                                                 -4.88
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -4.27
+
+
+1

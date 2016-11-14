@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : CORDIC_Arch2v1_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:01:07 2016
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CORDIC_Arch2v1_W32_EW8_SW23_SWR26_EWR5
+                       ibm13_wl10        scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  30.2779 uW   (48%)
+  Net Switching Power  =  33.4546 uW   (52%)
+                         ---------
+Total Dynamic Power    =  63.7325 uW  (100%)
+
+Cell Leakage Power     =  19.2213 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  6.6809e-03        7.9501e-03          319.9461        1.4631e-02  (  22.95%)
+register       2.0949e-02        6.0482e-03        1.5113e+04        2.7012e-02  (  42.37%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.6483e-03        1.9456e-02        3.7881e+03        2.2108e-02  (  34.68%)
+--------------------------------------------------------------------------------------------------
+Total          3.0278e-02 mW     3.3455e-02 mW     1.9221e+04 pW     6.3752e-02 mW
+1

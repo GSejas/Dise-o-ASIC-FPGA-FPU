@@ -6,14 +6,14 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:59:27 2016
+Date   : Sun Nov 13 15:13:02 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
   Startpoint: R_8206 (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: DP_OP_1009J212_133_7510_R_6459
+  Endpoint: DP_OP_1009J331_133_7510_R_6459
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -69,13 +69,13 @@ Wire Load Model Mode: top
   U6274/Y (NAND2X8TS)                                     0.12      10.31 r
   U5997/Y (NAND2X8TS)                                     0.11      10.42 f
   U5884/Y (INVX6TS)                                       0.08      10.50 r
-  DP_OP_1009J212_133_7510_R_6459/D (DFFSX1TS)             0.00      10.50 r
+  DP_OP_1009J331_133_7510_R_6459/D (DFFSX1TS)             0.00      10.50 r
   data arrival time                                                 10.50
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  DP_OP_1009J212_133_7510_R_6459/CK (DFFSX1TS)            0.00      10.50 r
+  DP_OP_1009J331_133_7510_R_6459/CK (DFFSX1TS)            0.00      10.50 r
   library setup time                                     -0.10      10.40
   data required time                                                10.40
   --------------------------------------------------------------------------

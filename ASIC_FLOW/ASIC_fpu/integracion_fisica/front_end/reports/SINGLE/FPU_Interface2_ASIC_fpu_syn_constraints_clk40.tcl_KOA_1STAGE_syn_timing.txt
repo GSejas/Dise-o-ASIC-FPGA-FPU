@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:22:21 2016
+Date   : Sun Nov 13 09:29:19 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,9 +14,9 @@ Date   : Thu Nov  3 18:22:21 2016
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_3_
+  Startpoint: FPMULT_Operands_load_reg_XMRegister_Q_reg_5_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_
+  Endpoint: FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,65 +30,77 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             4.00       4.00
-  FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_3_/CK (DFFRX1TS)      0.00 #     4.00 r
-  FPADDSUB_SGF_STAGE_DmP_mant_Q_reg_3_/QN (DFFRX1TS)      1.70       5.70 f
-  U2600/Y (AOI22X2TS)                                     0.71       6.41 r
-  U3580/Y (OR3X1TS)                                       0.66       7.07 r
-  U3781/Y (OAI21X1TS)                                     0.48       7.55 f
-  U3783/Y (AOI22X1TS)                                     0.74       8.28 r
-  U3784/Y (NOR2X1TS)                                      0.52       8.80 f
-  U3785/Y (AOI21X1TS)                                     0.62       9.43 r
-  U3786/Y (NOR2X1TS)                                      0.51       9.93 f
-  U3833/Y (AOI21X1TS)                                     0.62      10.56 r
-  U3835/Y (NOR2X1TS)                                      0.52      11.08 f
-  U3916/Y (AOI21X1TS)                                     0.62      11.69 r
-  U3918/Y (NOR2X1TS)                                      0.52      12.21 f
-  U4143/Y (AOI21X1TS)                                     0.64      12.85 r
-  U4144/Y (INVX2TS)                                       0.36      13.21 f
-  U4146/Y (AOI22X1TS)                                     0.64      13.85 r
-  U4147/Y (NOR2X1TS)                                      0.53      14.38 f
-  U4155/Y (AOI21X1TS)                                     0.62      15.00 r
-  U4156/Y (NOR2X1TS)                                      0.52      15.52 f
-  U4167/Y (AOI21X1TS)                                     0.62      16.15 r
-  U4168/Y (NOR2X1TS)                                      0.52      16.67 f
-  U4224/Y (AOI21X1TS)                                     0.62      17.29 r
-  U4225/Y (NOR2X1TS)                                      0.52      17.81 f
-  U4294/Y (AO21X1TS)                                      0.74      18.55 f
-  U2261/Y (AOI222X4TS)                                    0.91      19.46 r
-  U4295/Y (NOR2X1TS)                                      0.25      19.71 f
-  U4614/Y (AOI21X1TS)                                     0.62      20.33 r
-  U4615/Y (NOR2X1TS)                                      0.51      20.84 f
-  U4616/Y (AOI21X1TS)                                     0.65      21.49 r
-  U2698/Y (OAI2BB2X2TS)                                   0.55      22.03 f
-  U2332/Y (AOI222X4TS)                                    0.86      22.90 r
-  U4617/Y (NOR2X1TS)                                      0.25      23.15 f
-  U4693/Y (AOI21X1TS)                                     0.62      23.77 r
-  U4694/Y (NOR2X1TS)                                      0.52      24.28 f
-  U2331/Y (AO21XLTS)                                      0.77      25.06 f
-  U4703/Y (OAI22X1TS)                                     0.69      25.75 r
-  U4704/Y (NOR2X1TS)                                      0.54      26.29 f
-  U4705/Y (AOI21X1TS)                                     0.62      26.91 r
-  U4706/Y (NOR2X1TS)                                      0.52      27.44 f
-  U5662/Y (AOI21X1TS)                                     0.60      28.04 r
-  U5663/Y (NAND2X1TS)                                     0.57      28.61 f
-  U5664/Y (OAI21X1TS)                                     0.50      29.11 r
-  U5665/Y (AOI22X1TS)                                     0.49      29.61 f
-  U5666/Y (XNOR2X1TS)                                     0.41      30.01 f
-  U5667/Y (AOI22X1TS)                                     0.41      30.43 r
-  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_/D (DFFRX1TS)      0.00      30.43 r
-  data arrival time                                                 30.43
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_5_/CK (DFFRX2TS)
+                                                          0.00 #     4.00 r
+  FPMULT_Operands_load_reg_XMRegister_Q_reg_5_/Q (DFFRX2TS)
+                                                          1.65       5.65 r
+  U2622/Y (INVX3TS)                                       0.60       6.26 f
+  U2932/Y (NOR2XLTS)                                      0.73       6.98 r
+  U2930/S (ADDHXLTS)                                      0.88       7.86 r
+  U2537/CO (ADDFX1TS)                                     1.06       8.92 r
+  U2261/S (CMPR32X2TS)                                    0.90       9.82 f
+  U2488/S (ADDFX1TS)                                      0.83      10.66 r
+  U3921/Y (OR2X1TS)                                       0.70      11.36 r
+  U4146/Y (NAND2X1TS)                                     0.44      11.80 f
+  U4152/Y (OAI21X1TS)                                     0.66      12.45 r
+  U4157/Y (AOI21X1TS)                                     0.62      13.07 f
+  U4229/Y (INVX2TS)                                       0.40      13.47 r
+  U4230/Y (AOI21X1TS)                                     0.42      13.89 f
+  U2289/Y (OAI21XLTS)                                     0.76      14.64 r
+  U4233/Y (XNOR2X1TS)                                     0.70      15.34 f
+  U5683/CO (ADDHXLTS)                                     0.54      15.89 f
+  U5681/CO (CMPR32X2TS)                                   0.60      16.49 f
+  U5679/CO (CMPR32X2TS)                                   0.56      17.05 f
+  U5677/CO (CMPR32X2TS)                                   0.56      17.60 f
+  U5675/CO (CMPR32X2TS)                                   0.56      18.16 f
+  U2368/CO (ADDFX1TS)                                     0.56      18.72 f
+  U5672/CO (CMPR32X2TS)                                   0.57      19.30 f
+  U2364/CO (ADDFX1TS)                                     0.56      19.86 f
+  U5669/CO (CMPR32X2TS)                                   0.57      20.43 f
+  U2361/CO (ADDFX1TS)                                     0.56      21.00 f
+  U5666/CO (CMPR32X2TS)                                   0.57      21.57 f
+  U5665/CO (CMPR32X2TS)                                   0.56      22.13 f
+  U5664/CO (CMPR32X2TS)                                   0.56      22.69 f
+  U5663/CO (CMPR32X2TS)                                   0.56      23.24 f
+  U5662/CO (CMPR32X2TS)                                   0.56      23.80 f
+  U5661/CO (CMPR32X2TS)                                   0.56      24.36 f
+  U5660/CO (CMPR32X2TS)                                   0.56      24.91 f
+  U2353/CO (ADDFX1TS)                                     0.56      25.48 f
+  U5659/CO (CMPR32X2TS)                                   0.57      26.05 f
+  U2352/CO (ADDFX1TS)                                     0.56      26.61 f
+  U5658/CO (CMPR32X2TS)                                   0.57      27.19 f
+  U2254/CO (CMPR32X2TS)                                   0.56      27.74 f
+  U5657/CO (CMPR32X2TS)                                   0.56      28.30 f
+  U2253/CO (CMPR32X2TS)                                   0.56      28.86 f
+  U5656/CO (CMPR32X2TS)                                   0.56      29.42 f
+  U5655/CO (CMPR32X2TS)                                   0.55      29.97 f
+  U3333/CO (ADDHXLTS)                                     0.41      30.38 f
+  U5654/CO (ADDHXLTS)                                     0.45      30.83 f
+  U3332/CO (ADDHXLTS)                                     0.45      31.28 f
+  U5653/CO (ADDHXLTS)                                     0.45      31.74 f
+  U3391/CO (ADDHXLTS)                                     0.45      32.19 f
+  U5652/CO (ADDHXLTS)                                     0.45      32.64 f
+  U5651/CO (ADDHXLTS)                                     0.45      33.09 f
+  U3392/CO (ADDHXLTS)                                     0.45      33.54 f
+  U3393/CO (ADDHXLTS)                                     0.44      33.99 f
+  U3477/Y (XOR2X1TS)                                      0.35      34.34 r
+  U2341/Y (AO22X1TS)                                      0.53      34.87 r
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_/D (DFFRX1TS)
+                                                          0.00      34.87 r
+  data arrival time                                                 34.87
 
   clock clk (rise edge)                                  40.00      40.00
   clock network delay (ideal)                             4.00      44.00
   clock uncertainty                                      -2.00      42.00
-  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_25_/CK (DFFRX1TS)     0.00      42.00 r
-  library setup time                                      0.08      42.08
-  data required time                                                42.08
+  FPMULT_Sgf_operation_EVEN1_finalreg_Q_reg_47_/CK (DFFRX1TS)
+                                                          0.00      42.00 r
+  library setup time                                      0.14      42.14
+  data required time                                                42.14
   --------------------------------------------------------------------------
-  data required time                                                42.08
-  data arrival time                                                -30.43
+  data required time                                                42.14
+  data arrival time                                                -34.87
   --------------------------------------------------------------------------
-  slack (MET)                                                       11.66
+  slack (MET)                                                        7.27
 
 
 1

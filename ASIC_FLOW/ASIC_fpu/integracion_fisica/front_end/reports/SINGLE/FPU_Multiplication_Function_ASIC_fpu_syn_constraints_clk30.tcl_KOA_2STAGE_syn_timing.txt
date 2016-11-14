@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:22:34 2016
+Date   : Sun Nov 13 14:11:43 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Sgf_operation_RECURSIVE_EVEN1_left_DatO_reg_1_
+  Startpoint: Sgf_operation_EVEN1_left_DatO_reg_1_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sgf_operation_RECURSIVE_EVEN1_finalreg_Q_reg_47_
+  Endpoint: Sgf_operation_EVEN1_finalreg_Q_reg_47_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -28,39 +28,37 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             3.00       3.00
-  Sgf_operation_RECURSIVE_EVEN1_left_DatO_reg_1_/CK (DFFQX1TS)
-                                                          0.00       3.00 r
-  Sgf_operation_RECURSIVE_EVEN1_left_DatO_reg_1_/Q (DFFQX1TS)
-                                                          1.39       4.39 r
+  Sgf_operation_EVEN1_left_DatO_reg_1_/CK (DFFQX1TS)      0.00       3.00 r
+  Sgf_operation_EVEN1_left_DatO_reg_1_/Q (DFFQX1TS)       1.39       4.39 r
   U1549/Y (INVX2TS)                                       0.33       4.73 f
   U1550/Y (NOR2X1TS)                                      0.57       5.30 r
   U1641/Y (AOI21X1TS)                                     0.43       5.73 f
-  intadd_335_U25/CO (CMPR32X2TS)                          0.78       6.51 f
-  intadd_335_U24/CO (CMPR32X2TS)                          0.56       7.07 f
-  intadd_335_U23/CO (CMPR32X2TS)                          0.56       7.63 f
-  intadd_335_U22/CO (CMPR32X2TS)                          0.56       8.18 f
-  intadd_335_U21/CO (CMPR32X2TS)                          0.56       8.74 f
-  intadd_335_U20/CO (CMPR32X2TS)                          0.56       9.30 f
-  intadd_335_U19/CO (CMPR32X2TS)                          0.56       9.86 f
-  intadd_335_U18/CO (CMPR32X2TS)                          0.56      10.41 f
-  intadd_335_U17/CO (CMPR32X2TS)                          0.56      10.97 f
-  intadd_335_U16/CO (CMPR32X2TS)                          0.56      11.53 f
-  intadd_335_U15/CO (CMPR32X2TS)                          0.56      12.09 f
-  intadd_335_U14/CO (CMPR32X2TS)                          0.56      12.64 f
-  intadd_335_U13/CO (CMPR32X2TS)                          0.56      13.20 f
-  intadd_335_U12/CO (CMPR32X2TS)                          0.56      13.76 f
-  intadd_335_U11/CO (CMPR32X2TS)                          0.56      14.32 f
-  intadd_335_U10/CO (CMPR32X2TS)                          0.56      14.87 f
-  intadd_335_U9/CO (CMPR32X2TS)                           0.56      15.43 f
-  intadd_335_U8/CO (CMPR32X2TS)                           0.56      15.99 f
-  intadd_335_U7/CO (CMPR32X2TS)                           0.56      16.55 f
-  intadd_335_U6/CO (CMPR32X2TS)                           0.56      17.10 f
-  intadd_335_U5/CO (CMPR32X2TS)                           0.56      17.66 f
-  intadd_335_U4/CO (CMPR32X2TS)                           0.56      18.22 f
-  intadd_335_U3/CO (CMPR32X2TS)                           0.56      18.77 f
-  intadd_335_U2/S (CMPR32X2TS)                            0.60      19.38 f
+  intadd_1_U25/CO (CMPR32X2TS)                            0.78       6.51 f
+  intadd_1_U24/CO (CMPR32X2TS)                            0.56       7.07 f
+  intadd_1_U23/CO (CMPR32X2TS)                            0.56       7.63 f
+  intadd_1_U22/CO (CMPR32X2TS)                            0.56       8.18 f
+  intadd_1_U21/CO (CMPR32X2TS)                            0.56       8.74 f
+  intadd_1_U20/CO (CMPR32X2TS)                            0.56       9.30 f
+  intadd_1_U19/CO (CMPR32X2TS)                            0.56       9.86 f
+  intadd_1_U18/CO (CMPR32X2TS)                            0.56      10.41 f
+  intadd_1_U17/CO (CMPR32X2TS)                            0.56      10.97 f
+  intadd_1_U16/CO (CMPR32X2TS)                            0.56      11.53 f
+  intadd_1_U15/CO (CMPR32X2TS)                            0.56      12.09 f
+  intadd_1_U14/CO (CMPR32X2TS)                            0.56      12.64 f
+  intadd_1_U13/CO (CMPR32X2TS)                            0.56      13.20 f
+  intadd_1_U12/CO (CMPR32X2TS)                            0.56      13.76 f
+  intadd_1_U11/CO (CMPR32X2TS)                            0.56      14.32 f
+  intadd_1_U10/CO (CMPR32X2TS)                            0.56      14.87 f
+  intadd_1_U9/CO (CMPR32X2TS)                             0.56      15.43 f
+  intadd_1_U8/CO (CMPR32X2TS)                             0.56      15.99 f
+  intadd_1_U7/CO (CMPR32X2TS)                             0.56      16.55 f
+  intadd_1_U6/CO (CMPR32X2TS)                             0.56      17.10 f
+  intadd_1_U5/CO (CMPR32X2TS)                             0.56      17.66 f
+  intadd_1_U4/CO (CMPR32X2TS)                             0.56      18.22 f
+  intadd_1_U3/CO (CMPR32X2TS)                             0.56      18.77 f
+  intadd_1_U2/S (CMPR32X2TS)                              0.60      19.38 f
   U1548/Y (INVX2TS)                                       0.18      19.56 r
-  intadd_336_U2/CO (CMPR32X2TS)                           0.85      20.40 r
+  intadd_2_U2/CO (CMPR32X2TS)                             0.85      20.40 r
   U659/Y (AOI222X4TS)                                     0.57      20.97 f
   U1400/Y (NOR2BX2TS)                                     0.41      21.38 r
   U421/Y (AND2X2TS)                                       0.54      21.93 r
@@ -73,14 +71,13 @@ Wire Load Model Mode: top
   U1407/Y (NAND2X1TS)                                     0.51      26.10 f
   U1409/Y (XNOR2X1TS)                                     0.50      26.61 r
   U530/Y (AO22XLTS)                                       0.58      27.19 r
-  Sgf_operation_RECURSIVE_EVEN1_finalreg_Q_reg_47_/D (DFFRX1TS)
-                                                          0.00      27.19 r
+  Sgf_operation_EVEN1_finalreg_Q_reg_47_/D (DFFRX1TS)     0.00      27.19 r
   data arrival time                                                 27.19
 
   clock clk (rise edge)                                  30.00      30.00
   clock network delay (ideal)                             3.00      33.00
   clock uncertainty                                      -1.50      31.50
-  Sgf_operation_RECURSIVE_EVEN1_finalreg_Q_reg_47_/CK (DFFRX1TS)
+  Sgf_operation_EVEN1_finalreg_Q_reg_47_/CK (DFFRX1TS)
                                                           0.00      31.50 r
   library setup time                                     -0.05      31.45
   data required time                                                31.45

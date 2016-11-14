@@ -3,7 +3,7 @@
 Report : cell
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Fri Nov 11 00:27:20 2016
+Date   : Sun Nov 13 15:35:08 2016
 ****************************************
 
 Attributes:
@@ -2394,7 +2394,7 @@ FPADDSUB_inst_ShiftRegister_Q_reg_6_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
 FPADDSUB_inst_ShiftRegister_clk_gate_Q_reg
-                          SNPS_CLOCK_GATE_HIGH_ShiftRegister_W7_44
+                          SNPS_CLOCK_GATE_HIGH_ShiftRegister_W7_194
                                                           23.040001 b, cg, h
 FPMULT_Adder_M_Add_Subt_Result_Q_reg_0_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -2769,7 +2769,7 @@ FPMULT_Exp_module_exp_result_m_clk_gate_Q_reg
                           SNPS_CLOCK_GATE_HIGH_RegisterMult_W12
                                                           23.040001 b, cg, h
 FPMULT_FS_Module_clk_gate_state_reg_reg
-                          SNPS_CLOCK_GATE_HIGH_FSM_Mult_Function_46
+                          SNPS_CLOCK_GATE_HIGH_FSM_Mult_Function_195
                                                           23.040001 b, cg, h
 FPMULT_FS_Module_state_reg_reg_0_
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -3335,7 +3335,7 @@ FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_105_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
 FPMULT_Sgf_operation_ODD1_finalreg_clk_gate_Q_reg
-                          SNPS_CLOCK_GATE_HIGH_RegisterAdd_W106_45
+                          SNPS_CLOCK_GATE_HIGH_RegisterAdd_W106
                                                           23.040001 b, cg, h
 FPMULT_Sgf_operation_ODD1_left_DatO_reg_0_
                           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -4022,7 +4022,7 @@ FPMULT_final_result_ieee_Module_Final_Result_IEEE_clk_gate_Q_reg
                           SNPS_CLOCK_GATE_HIGH_RegisterAdd_W64_1_1
                                                           23.040001 b, cg, h
 FPSENCOS_ITER_CONT_clk_gate_temp_reg
-                          SNPS_CLOCK_GATE_HIGH_Up_counter_COUNTER_WIDTH4_47
+                          SNPS_CLOCK_GATE_HIGH_Up_counter_COUNTER_WIDTH4_196
                                                           23.040001 b, cg, h
 FPSENCOS_ITER_CONT_temp_reg_0_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -29448,25 +29448,25 @@ U14324                    CMPR42X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
 clk_gate_FPMULT_Exp_module_Underflow_m_Q_reg
                           SNPS_CLOCK_GATE_HIGH_FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_1
                                                           23.040001 b, cg, h
-intadd_683_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1203_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_683_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1203_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_683_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1203_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_683_U5             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1203_U5            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_684_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1204_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_684_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1204_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_684_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1204_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_685_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1205_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_685_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1205_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_685_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1205_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 mult_x_421_U683           CMPR42X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           61.919998 r

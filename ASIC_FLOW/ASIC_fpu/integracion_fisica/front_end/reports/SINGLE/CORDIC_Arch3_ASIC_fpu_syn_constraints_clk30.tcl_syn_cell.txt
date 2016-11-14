@@ -3,7 +3,7 @@
 Report : cell
 Design : CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 11:45:33 2016
+Date   : Sun Nov 13 08:25:20 2016
 ****************************************
 
 Attributes:
@@ -16,21 +16,21 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-DP_OP_33J58_122_2179_U2   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_33J58_122_2179_U3   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U3  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_33J58_122_2179_U4   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U4  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J58_122_2179_U5   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U5  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J58_122_2179_U6   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U6  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_33J58_122_2179_U7   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U7  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J58_122_2179_U8   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U8  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J58_122_2179_U9   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J117_122_2179_U9  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 ITER_CONT_temp_reg_0_     DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
@@ -5491,17 +5491,17 @@ inst_FPU_PIPELINED_FPADDSUB_inst_ShiftRegister_Q_reg_5_
 inst_FPU_PIPELINED_FPADDSUB_inst_ShiftRegister_Q_reg_6_
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-intadd_295_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_360_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_295_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_360_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_295_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_360_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_296_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_361_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_296_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_361_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_296_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_361_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 reg_LUT_Q_reg_0_          DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n

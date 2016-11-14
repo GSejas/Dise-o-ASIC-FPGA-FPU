@@ -3,7 +3,7 @@
 Report : cell
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:36:37 2016
+Date   : Sun Nov 13 14:55:10 2016
 ****************************************
 
 Attributes:
@@ -17,767 +17,767 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-DP_OP_26J210_123_5136_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U3  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U3  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U4  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U4  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U5  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U5  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U6  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U6  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U7  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U7  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U8  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U8  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U9  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U9  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U10 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U10 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U11 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U11 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_26J210_123_5136_U12 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_26J330_123_5136_U12 CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U2   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U2   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U3   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U3   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U4   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U4   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U5   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U5   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U6   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U6   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U7   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U7   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U8   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U8   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U9   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U9   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U10  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U10  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U11  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U11  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U12  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U12  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_436J210_126_24_U13  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_436J330_126_24_U13  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_828J210_122_8034_U218
+DP_OP_828J330_122_8034_U218
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U220
+DP_OP_828J330_122_8034_U220
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U222
+DP_OP_828J330_122_8034_U222
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U224
+DP_OP_828J330_122_8034_U224
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U227
+DP_OP_828J330_122_8034_U227
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U230
+DP_OP_828J330_122_8034_U230
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U233
+DP_OP_828J330_122_8034_U233
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U234
+DP_OP_828J330_122_8034_U234
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U236
+DP_OP_828J330_122_8034_U236
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U237
+DP_OP_828J330_122_8034_U237
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U239
+DP_OP_828J330_122_8034_U239
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U240
+DP_OP_828J330_122_8034_U240
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U242
+DP_OP_828J330_122_8034_U242
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U243
+DP_OP_828J330_122_8034_U243
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U246
+DP_OP_828J330_122_8034_U246
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U247
+DP_OP_828J330_122_8034_U247
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U250
+DP_OP_828J330_122_8034_U250
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U251
+DP_OP_828J330_122_8034_U251
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U254
+DP_OP_828J330_122_8034_U254
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U255
+DP_OP_828J330_122_8034_U255
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U256
+DP_OP_828J330_122_8034_U256
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U258
+DP_OP_828J330_122_8034_U258
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U259
+DP_OP_828J330_122_8034_U259
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U260
+DP_OP_828J330_122_8034_U260
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U261
+DP_OP_828J330_122_8034_U261
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U262
+DP_OP_828J330_122_8034_U262
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U263
+DP_OP_828J330_122_8034_U263
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U264
+DP_OP_828J330_122_8034_U264
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U266
+DP_OP_828J330_122_8034_U266
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U267
+DP_OP_828J330_122_8034_U267
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U268
+DP_OP_828J330_122_8034_U268
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U271
+DP_OP_828J330_122_8034_U271
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U272
+DP_OP_828J330_122_8034_U272
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U273
+DP_OP_828J330_122_8034_U273
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U276
+DP_OP_828J330_122_8034_U276
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U277
+DP_OP_828J330_122_8034_U277
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U278
+DP_OP_828J330_122_8034_U278
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U282
+DP_OP_828J330_122_8034_U282
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U283
+DP_OP_828J330_122_8034_U283
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U284
+DP_OP_828J330_122_8034_U284
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U288
+DP_OP_828J330_122_8034_U288
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U289
+DP_OP_828J330_122_8034_U289
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U292
+DP_OP_828J330_122_8034_U292
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U293
+DP_OP_828J330_122_8034_U293
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U294
+DP_OP_828J330_122_8034_U294
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U297
+DP_OP_828J330_122_8034_U297
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U298
+DP_OP_828J330_122_8034_U298
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U299
+DP_OP_828J330_122_8034_U299
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U300
+DP_OP_828J330_122_8034_U300
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U301
+DP_OP_828J330_122_8034_U301
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U302
+DP_OP_828J330_122_8034_U302
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U303
+DP_OP_828J330_122_8034_U303
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U304
+DP_OP_828J330_122_8034_U304
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U306
+DP_OP_828J330_122_8034_U306
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U307
+DP_OP_828J330_122_8034_U307
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U308
+DP_OP_828J330_122_8034_U308
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U309
+DP_OP_828J330_122_8034_U309
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U310
+DP_OP_828J330_122_8034_U310
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U311
+DP_OP_828J330_122_8034_U311
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U312
+DP_OP_828J330_122_8034_U312
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U313
+DP_OP_828J330_122_8034_U313
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U314
+DP_OP_828J330_122_8034_U314
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U317
+DP_OP_828J330_122_8034_U317
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U318
+DP_OP_828J330_122_8034_U318
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U323
+DP_OP_828J330_122_8034_U323
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U324
+DP_OP_828J330_122_8034_U324
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U329
+DP_OP_828J330_122_8034_U329
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U330
+DP_OP_828J330_122_8034_U330
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U333
+DP_OP_828J330_122_8034_U333
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U334
+DP_OP_828J330_122_8034_U334
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U335
+DP_OP_828J330_122_8034_U335
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U336
+DP_OP_828J330_122_8034_U336
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U338
+DP_OP_828J330_122_8034_U338
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U339
+DP_OP_828J330_122_8034_U339
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U340
+DP_OP_828J330_122_8034_U340
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U341
+DP_OP_828J330_122_8034_U341
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U343
+DP_OP_828J330_122_8034_U343
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U344
+DP_OP_828J330_122_8034_U344
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U345
+DP_OP_828J330_122_8034_U345
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U346
+DP_OP_828J330_122_8034_U346
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U348
+DP_OP_828J330_122_8034_U348
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U349
+DP_OP_828J330_122_8034_U349
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U350
+DP_OP_828J330_122_8034_U350
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U353
+DP_OP_828J330_122_8034_U353
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U354
+DP_OP_828J330_122_8034_U354
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U355
+DP_OP_828J330_122_8034_U355
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U358
+DP_OP_828J330_122_8034_U358
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U359
+DP_OP_828J330_122_8034_U359
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U360
+DP_OP_828J330_122_8034_U360
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U363
+DP_OP_828J330_122_8034_U363
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U364
+DP_OP_828J330_122_8034_U364
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U365
+DP_OP_828J330_122_8034_U365
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U367
+DP_OP_828J330_122_8034_U367
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U368
+DP_OP_828J330_122_8034_U368
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U369
+DP_OP_828J330_122_8034_U369
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U371
+DP_OP_828J330_122_8034_U371
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U372
+DP_OP_828J330_122_8034_U372
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U373
+DP_OP_828J330_122_8034_U373
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U375
+DP_OP_828J330_122_8034_U375
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U376
+DP_OP_828J330_122_8034_U376
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U379
+DP_OP_828J330_122_8034_U379
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U380
+DP_OP_828J330_122_8034_U380
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U383
+DP_OP_828J330_122_8034_U383
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U384
+DP_OP_828J330_122_8034_U384
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U387
+DP_OP_828J330_122_8034_U387
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U388
+DP_OP_828J330_122_8034_U388
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U390
+DP_OP_828J330_122_8034_U390
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U391
+DP_OP_828J330_122_8034_U391
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U393
+DP_OP_828J330_122_8034_U393
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U394
+DP_OP_828J330_122_8034_U394
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U396
+DP_OP_828J330_122_8034_U396
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U399
+DP_OP_828J330_122_8034_U399
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U402
+DP_OP_828J330_122_8034_U402
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U405
+DP_OP_828J330_122_8034_U405
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U407
+DP_OP_828J330_122_8034_U407
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1786
+DP_OP_828J330_122_8034_U1786
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1787
+DP_OP_828J330_122_8034_U1787
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1789
+DP_OP_828J330_122_8034_U1789
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1791
+DP_OP_828J330_122_8034_U1791
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1793
+DP_OP_828J330_122_8034_U1793
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1796
+DP_OP_828J330_122_8034_U1796
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1799
+DP_OP_828J330_122_8034_U1799
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1800
+DP_OP_828J330_122_8034_U1800
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1801
+DP_OP_828J330_122_8034_U1801
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1802
+DP_OP_828J330_122_8034_U1802
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1804
+DP_OP_828J330_122_8034_U1804
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1805
+DP_OP_828J330_122_8034_U1805
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1807
+DP_OP_828J330_122_8034_U1807
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1808
+DP_OP_828J330_122_8034_U1808
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1810
+DP_OP_828J330_122_8034_U1810
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1811
+DP_OP_828J330_122_8034_U1811
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1814
+DP_OP_828J330_122_8034_U1814
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1815
+DP_OP_828J330_122_8034_U1815
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1818
+DP_OP_828J330_122_8034_U1818
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1819
+DP_OP_828J330_122_8034_U1819
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1820
+DP_OP_828J330_122_8034_U1820
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1821
+DP_OP_828J330_122_8034_U1821
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1822
+DP_OP_828J330_122_8034_U1822
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1823
+DP_OP_828J330_122_8034_U1823
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1825
+DP_OP_828J330_122_8034_U1825
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1826
+DP_OP_828J330_122_8034_U1826
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1827
+DP_OP_828J330_122_8034_U1827
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1830
+DP_OP_828J330_122_8034_U1830
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1831
+DP_OP_828J330_122_8034_U1831
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1834
+DP_OP_828J330_122_8034_U1834
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1835
+DP_OP_828J330_122_8034_U1835
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1839
+DP_OP_828J330_122_8034_U1839
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1840
+DP_OP_828J330_122_8034_U1840
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1845
+DP_OP_828J330_122_8034_U1845
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1846
+DP_OP_828J330_122_8034_U1846
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1849
+DP_OP_828J330_122_8034_U1849
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1850
+DP_OP_828J330_122_8034_U1850
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1852
+DP_OP_828J330_122_8034_U1852
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1853
+DP_OP_828J330_122_8034_U1853
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1854
+DP_OP_828J330_122_8034_U1854
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1856
+DP_OP_828J330_122_8034_U1856
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1857
+DP_OP_828J330_122_8034_U1857
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1858
+DP_OP_828J330_122_8034_U1858
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1862
+DP_OP_828J330_122_8034_U1862
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1866
+DP_OP_828J330_122_8034_U1866
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1878
+DP_OP_828J330_122_8034_U1878
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1879
+DP_OP_828J330_122_8034_U1879
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1884
+DP_OP_828J330_122_8034_U1884
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1887
+DP_OP_828J330_122_8034_U1887
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1888
+DP_OP_828J330_122_8034_U1888
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U1892
+DP_OP_828J330_122_8034_U1892
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3193
+DP_OP_828J330_122_8034_U3193
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3194
+DP_OP_828J330_122_8034_U3194
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3196
+DP_OP_828J330_122_8034_U3196
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3198
+DP_OP_828J330_122_8034_U3198
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3200
+DP_OP_828J330_122_8034_U3200
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3203
+DP_OP_828J330_122_8034_U3203
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3206
+DP_OP_828J330_122_8034_U3206
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3207
+DP_OP_828J330_122_8034_U3207
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3208
+DP_OP_828J330_122_8034_U3208
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3209
+DP_OP_828J330_122_8034_U3209
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3211
+DP_OP_828J330_122_8034_U3211
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3212
+DP_OP_828J330_122_8034_U3212
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3214
+DP_OP_828J330_122_8034_U3214
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3215
+DP_OP_828J330_122_8034_U3215
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3217
+DP_OP_828J330_122_8034_U3217
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3218
+DP_OP_828J330_122_8034_U3218
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3221
+DP_OP_828J330_122_8034_U3221
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3222
+DP_OP_828J330_122_8034_U3222
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3225
+DP_OP_828J330_122_8034_U3225
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3226
+DP_OP_828J330_122_8034_U3226
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3227
+DP_OP_828J330_122_8034_U3227
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3228
+DP_OP_828J330_122_8034_U3228
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3229
+DP_OP_828J330_122_8034_U3229
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3230
+DP_OP_828J330_122_8034_U3230
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3232
+DP_OP_828J330_122_8034_U3232
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3233
+DP_OP_828J330_122_8034_U3233
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3234
+DP_OP_828J330_122_8034_U3234
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3236
+DP_OP_828J330_122_8034_U3236
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3237
+DP_OP_828J330_122_8034_U3237
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3238
+DP_OP_828J330_122_8034_U3238
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3240
+DP_OP_828J330_122_8034_U3240
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3241
+DP_OP_828J330_122_8034_U3241
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3242
+DP_OP_828J330_122_8034_U3242
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3244
+DP_OP_828J330_122_8034_U3244
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3245
+DP_OP_828J330_122_8034_U3245
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3246
+DP_OP_828J330_122_8034_U3246
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3248
+DP_OP_828J330_122_8034_U3248
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3249
+DP_OP_828J330_122_8034_U3249
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3250
+DP_OP_828J330_122_8034_U3250
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3253
+DP_OP_828J330_122_8034_U3253
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3254
+DP_OP_828J330_122_8034_U3254
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3256
+DP_OP_828J330_122_8034_U3256
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3257
+DP_OP_828J330_122_8034_U3257
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3258
+DP_OP_828J330_122_8034_U3258
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3260
+DP_OP_828J330_122_8034_U3260
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3261
+DP_OP_828J330_122_8034_U3261
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3262
+DP_OP_828J330_122_8034_U3262
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3264
+DP_OP_828J330_122_8034_U3264
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3265
+DP_OP_828J330_122_8034_U3265
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3266
+DP_OP_828J330_122_8034_U3266
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3268
+DP_OP_828J330_122_8034_U3268
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3269
+DP_OP_828J330_122_8034_U3269
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3270
+DP_OP_828J330_122_8034_U3270
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3272
+DP_OP_828J330_122_8034_U3272
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3273
+DP_OP_828J330_122_8034_U3273
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3274
+DP_OP_828J330_122_8034_U3274
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3276
+DP_OP_828J330_122_8034_U3276
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3277
+DP_OP_828J330_122_8034_U3277
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3278
+DP_OP_828J330_122_8034_U3278
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3280
+DP_OP_828J330_122_8034_U3280
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3281
+DP_OP_828J330_122_8034_U3281
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3284
+DP_OP_828J330_122_8034_U3284
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3285
+DP_OP_828J330_122_8034_U3285
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3288
+DP_OP_828J330_122_8034_U3288
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3289
+DP_OP_828J330_122_8034_U3289
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3293
+DP_OP_828J330_122_8034_U3293
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3296
+DP_OP_828J330_122_8034_U3296
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3299
+DP_OP_828J330_122_8034_U3299
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3304
+DP_OP_828J330_122_8034_U3304
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3307
+DP_OP_828J330_122_8034_U3307
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3310
+DP_OP_828J330_122_8034_U3310
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3312
+DP_OP_828J330_122_8034_U3312
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
-DP_OP_828J210_122_8034_U3314
+DP_OP_828J330_122_8034_U3314
                           CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           57.599998 r
 FPADDSUB_EXP_STAGE_DMP_Q_reg_0_
@@ -3157,7 +3157,7 @@ FPADDSUB_inst_ShiftRegister_Q_reg_6_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
 FPADDSUB_inst_ShiftRegister_clk_gate_Q_reg
-                          SNPS_CLOCK_GATE_HIGH_ShiftRegister_W7_8
+                          SNPS_CLOCK_GATE_HIGH_ShiftRegister_W7_167
                                                           23.040001 b, cg, h
 FPMULT_Adder_M_Add_Subt_Result_Q_reg_0_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -3532,7 +3532,7 @@ FPMULT_Exp_module_exp_result_m_clk_gate_Q_reg
                           SNPS_CLOCK_GATE_HIGH_RegisterMult_W12
                                                           23.040001 b, cg, h
 FPMULT_FS_Module_clk_gate_state_reg_reg
-                          SNPS_CLOCK_GATE_HIGH_FSM_Mult_Function_9
+                          SNPS_CLOCK_GATE_HIGH_FSM_Mult_Function_168
                                                           23.040001 b, cg, h
 FPMULT_FS_Module_state_reg_reg_0_
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -4299,7 +4299,7 @@ FPMULT_final_result_ieee_Module_Final_Result_IEEE_clk_gate_Q_reg
                           SNPS_CLOCK_GATE_HIGH_RegisterAdd_W64_1_1
                                                           23.040001 b, cg, h
 FPSENCOS_ITER_CONT_clk_gate_temp_reg
-                          SNPS_CLOCK_GATE_HIGH_Up_counter_COUNTER_WIDTH4_10
+                          SNPS_CLOCK_GATE_HIGH_Up_counter_COUNTER_WIDTH4_169
                                                           23.040001 b, cg, h
 FPSENCOS_ITER_CONT_temp_reg_0_
                           DFFRX4TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -21181,25 +21181,25 @@ U10047                    CMPR42X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
 clk_gate_FPMULT_Exp_module_Underflow_m_Q_reg
                           SNPS_CLOCK_GATE_HIGH_FPU_Interface2_W64_EW11_SW52_SWR55_EWR6_1
                                                           23.040001 b, cg, h
-intadd_656_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1176_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_656_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1176_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_656_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1176_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_656_U5             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1176_U5            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_657_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1177_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_657_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1177_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_657_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1177_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_658_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1178_U2            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_658_U3             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1178_U3            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_658_U4             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_1178_U4            CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 operation_dff_Q_reg_1_    DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n

@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 03:04:28 2016
+Date   : Sun Nov 13 15:35:13 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: Sgf_operation_RECURSIVE_ODD1_right_DatO_reg_2_
+  Startpoint: Sgf_operation_ODD1_right_DatO_reg_2_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sgf_operation_RECURSIVE_ODD1_finalreg_Q_reg_105_
+  Endpoint: Sgf_operation_ODD1_finalreg_Q_reg_105_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -28,10 +28,8 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             4.00       4.00
-  Sgf_operation_RECURSIVE_ODD1_right_DatO_reg_2_/CK (DFFTRX1TS)
-                                                          0.00       4.00 r
-  Sgf_operation_RECURSIVE_ODD1_right_DatO_reg_2_/QN (DFFTRX1TS)
-                                                          1.69       5.69 r
+  Sgf_operation_ODD1_right_DatO_reg_2_/CK (DFFTRX1TS)     0.00       4.00 r
+  Sgf_operation_ODD1_right_DatO_reg_2_/QN (DFFTRX1TS)     1.69       5.69 r
   U924/S (CMPR32X2TS)                                     0.97       6.66 f
   U921/Y (NAND2X1TS)                                      0.57       7.23 r
   U1835/Y (OAI21X1TS)                                     0.51       7.74 f
@@ -114,14 +112,13 @@ Wire Load Model Mode: top
   U995/CO (ADDHX1TS)                                      0.44      41.45 f
   U1320/Y (XOR2X4TS)                                      0.23      41.67 r
   U1080/Y (AO22X1TS)                                      0.46      42.13 r
-  Sgf_operation_RECURSIVE_ODD1_finalreg_Q_reg_105_/D (DFFRX1TS)
-                                                          0.00      42.13 r
+  Sgf_operation_ODD1_finalreg_Q_reg_105_/D (DFFRX1TS)     0.00      42.13 r
   data arrival time                                                 42.13
 
   clock clk (rise edge)                                  40.00      40.00
   clock network delay (ideal)                             4.00      44.00
   clock uncertainty                                      -2.00      42.00
-  Sgf_operation_RECURSIVE_ODD1_finalreg_Q_reg_105_/CK (DFFRX1TS)
+  Sgf_operation_ODD1_finalreg_Q_reg_105_/CK (DFFRX1TS)
                                                           0.00      42.00 r
   library setup time                                      0.14      42.14
   data required time                                                42.14

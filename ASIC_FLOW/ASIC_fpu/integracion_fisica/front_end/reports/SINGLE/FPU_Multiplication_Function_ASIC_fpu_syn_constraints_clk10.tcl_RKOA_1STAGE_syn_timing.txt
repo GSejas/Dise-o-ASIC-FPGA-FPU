@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:11:29 2016
+Date   : Sun Nov 13 14:03:08 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: DP_OP_154J128_123_2038_R_294
+  Startpoint: DP_OP_154J7_123_2038_R_294
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: DP_OP_156J128_125_3370_R_552_RW_1
+  Endpoint: DP_OP_156J7_125_3370_R_552_RW_1
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -28,8 +28,8 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  DP_OP_154J128_123_2038_R_294/CK (DFFSX4TS)              0.00       1.00 r
-  DP_OP_154J128_123_2038_R_294/Q (DFFSX4TS)               1.01       2.01 f
+  DP_OP_154J7_123_2038_R_294/CK (DFFSX4TS)                0.00       1.00 r
+  DP_OP_154J7_123_2038_R_294/Q (DFFSX4TS)                 1.01       2.01 f
   U2113/Y (OR2X8TS)                                       0.30       2.31 f
   U2114/Y (OAI21X4TS)                                     0.27       2.58 r
   U878/Y (INVX3TS)                                        0.22       2.80 f
@@ -58,13 +58,13 @@ Wire Load Model Mode: top
   U3561/CO (ADDHX4TS)                                     0.25       9.88 f
   U428/Y (OR2X4TS)                                        0.26      10.14 f
   U3556/Y (NAND2X4TS)                                     0.10      10.24 r
-  DP_OP_156J128_125_3370_R_552_RW_1/D (DFFRXLTS)          0.00      10.24 r
+  DP_OP_156J7_125_3370_R_552_RW_1/D (DFFRXLTS)            0.00      10.24 r
   data arrival time                                                 10.24
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  DP_OP_156J128_125_3370_R_552_RW_1/CK (DFFRXLTS)         0.00      10.50 r
+  DP_OP_156J7_125_3370_R_552_RW_1/CK (DFFRXLTS)           0.00      10.50 r
   library setup time                                     -0.26      10.24
   data required time                                                10.24
   --------------------------------------------------------------------------

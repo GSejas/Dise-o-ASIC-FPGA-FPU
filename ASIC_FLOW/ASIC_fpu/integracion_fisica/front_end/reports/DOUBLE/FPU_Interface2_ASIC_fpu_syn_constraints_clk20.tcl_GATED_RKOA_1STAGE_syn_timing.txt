@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Fri Nov 11 00:03:51 2016
+Date   : Sun Nov 13 15:17:12 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -14,7 +14,7 @@ Wire Load Model Mode: top
 
   Startpoint: FPMULT_Operands_load_reg_XMRegister_Q_reg_27_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: DP_OP_1009J213_133_7510_R_828_RW_1
+  Endpoint: DP_OP_1009J332_133_7510_R_828_RW_1
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -45,16 +45,16 @@ Wire Load Model Mode: top
   U3524/Y (INVX4TS)                                       0.48       7.58 f
   U3333/Y (NOR2XLTS)                                      0.76       8.33 r
   U13136/S (CMPR32X2TS)                                   1.03       9.37 f
-  DP_OP_1001J213_125_7231_U147/ICO (CMPR42X1TS)           0.47       9.83 f
+  DP_OP_1001J332_125_7231_U147/ICO (CMPR42X1TS)           0.47       9.83 f
   U8235/CO (CMPR42X1TS)                                   0.90      10.73 f
-  DP_OP_1001J213_125_7231_U139/S (CMPR42X1TS)             1.31      12.05 f
+  DP_OP_1001J332_125_7231_U139/S (CMPR42X1TS)             1.31      12.05 f
   U8352/Y (NOR2X2TS)                                      0.55      12.60 r
   U12065/Y (NOR2X2TS)                                     0.37      12.96 f
   U12068/Y (AOI21X1TS)                                    0.43      13.39 r
   U12069/Y (OAI21X2TS)                                    0.34      13.73 f
   U8477/Y (AOI21X1TS)                                     0.40      14.13 r
   U5349/Y (XOR2X1TS)                                      0.45      14.58 r
-  DP_OP_1004J213_128_3124_U234/S (CMPR42X2TS)             0.68      15.25 r
+  DP_OP_1004J332_128_3124_U234/S (CMPR42X2TS)             0.68      15.25 r
   U5308/Y (NOR2X6TS)                                      0.21      15.46 f
   U5047/Y (NOR2X6TS)                                      0.19      15.65 r
   U12232/Y (NAND2X2TS)                                    0.21      15.86 f
@@ -76,13 +76,13 @@ Wire Load Model Mode: top
   U12725/Y (OAI21X4TS)                                    0.21      20.62 r
   U5600/Y (INVX12TS)                                      0.24      20.86 f
   U12853/Y (OAI21X4TS)                                    0.18      21.03 r
-  DP_OP_1009J213_133_7510_R_828_RW_1/D (DFFSXLTS)         0.00      21.03 r
+  DP_OP_1009J332_133_7510_R_828_RW_1/D (DFFSXLTS)         0.00      21.03 r
   data arrival time                                                 21.03
 
   clock clk (rise edge)                                  20.00      20.00
   clock network delay (ideal)                             2.00      22.00
   clock uncertainty                                      -1.00      21.00
-  DP_OP_1009J213_133_7510_R_828_RW_1/CK (DFFSXLTS)        0.00      21.00 r
+  DP_OP_1009J332_133_7510_R_828_RW_1/CK (DFFSXLTS)        0.00      21.00 r
   library setup time                                      0.03      21.03
   data required time                                                21.03
   --------------------------------------------------------------------------

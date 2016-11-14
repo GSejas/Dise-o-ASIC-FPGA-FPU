@@ -8,7 +8,7 @@ Report : power
         -analysis_effort high
 Design : CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 17:59:31 2016
+Date   : Sun Nov 13 08:29:05 2016
 ****************************************
 
 

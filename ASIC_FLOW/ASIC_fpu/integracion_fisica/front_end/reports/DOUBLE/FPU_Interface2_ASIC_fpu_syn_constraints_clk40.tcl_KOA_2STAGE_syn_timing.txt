@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 20:01:52 2016
+Date   : Sun Nov 13 11:07:30 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,9 +14,9 @@ Date   : Thu Nov  3 20:01:52 2016
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FPMULT_Sgf_operation_RECURSIVE_ODD1_right_DatO_reg_2_
+  Startpoint: FPMULT_Sgf_operation_ODD1_right_DatO_reg_2_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: FPMULT_Sgf_operation_RECURSIVE_ODD1_finalreg_Q_reg_105_
+  Endpoint: FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_105_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,9 +30,9 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             4.00       4.00
-  FPMULT_Sgf_operation_RECURSIVE_ODD1_right_DatO_reg_2_/CK (DFFXLTS)
+  FPMULT_Sgf_operation_ODD1_right_DatO_reg_2_/CK (DFFXLTS)
                                                           0.00 #     4.00 r
-  FPMULT_Sgf_operation_RECURSIVE_ODD1_right_DatO_reg_2_/QN (DFFXLTS)
+  FPMULT_Sgf_operation_ODD1_right_DatO_reg_2_/QN (DFFXLTS)
                                                           1.56       5.56 r
   U4527/S (CMPR32X2TS)                                    1.08       6.64 f
   U5666/Y (NAND2X1TS)                                     0.57       7.21 r
@@ -106,14 +106,14 @@ Wire Load Model Mode: top
   U4756/CO (ADDHX2TS)                                     0.28      41.43 f
   U4752/Y (XOR2X2TS)                                      0.23      41.66 r
   U4751/Y (AO22X1TS)                                      0.48      42.14 r
-  FPMULT_Sgf_operation_RECURSIVE_ODD1_finalreg_Q_reg_105_/D (DFFRX1TS)
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_105_/D (DFFRX1TS)
                                                           0.00      42.14 r
   data arrival time                                                 42.14
 
   clock clk (rise edge)                                  40.00      40.00
   clock network delay (ideal)                             4.00      44.00
   clock uncertainty                                      -2.00      42.00
-  FPMULT_Sgf_operation_RECURSIVE_ODD1_finalreg_Q_reg_105_/CK (DFFRX1TS)
+  FPMULT_Sgf_operation_ODD1_finalreg_Q_reg_105_/CK (DFFRX1TS)
                                                           0.00      42.00 r
   library setup time                                      0.14      42.14
   data required time                                                42.14

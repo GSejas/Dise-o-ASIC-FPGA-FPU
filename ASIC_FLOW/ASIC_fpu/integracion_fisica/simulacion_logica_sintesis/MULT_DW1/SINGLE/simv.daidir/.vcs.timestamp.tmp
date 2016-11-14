@@ -1,14 +1,17 @@
 1        
 0 FPU_Multiplication_Function_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.sdf_c
 41
++cli+4
 +define+DW1_SINGLE
 +define+SINGLE
-+itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
++itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 +lint=all
 +memcbk
 +neg_tchk
++sdfverbose
 +v2k
 +vcsd
++vpi
 +vpi
 -Mamsrun=
 -Masflags=
@@ -27,22 +30,19 @@
 -Mupdate
 -Mvcsaceobjs=
 -Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/include
--Xpiyushb1=0x80
 -Xvcs_run_simv=1
--debug_access+all+dmptf+bc
--debug_access+class+driver+dmptf+bc
--debug_region=cell+lib
--debug_region=cell+lib
+-debug=3
 -f file_list
 -full64
 -gen_obj
+-gui
 -l
 -picarchive
--pp_used
 -timescale=1ns/1ps
+-ucli
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcs1
 log_name
-43
+45
 sysc_uni_pwd=/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE
 XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1478591974.124846-237619308
 VNCDESKTOP=zener:17 (jsequeira)
@@ -83,18 +83,20 @@ G_BROKEN_FILENAMES=1
 GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/jsequeira/.gtkrc-1.2-gnome2
 GNOME_KEYRING_SOCKET=/tmp/keyring-5z4Itm/socket
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIO_LAUNCHED_DESKTOP_FILE_PID=4031
+GIO_LAUNCHED_DESKTOP_FILE=/home/local/ESTUDIANTES/jsequeira/.local/share/applications/userapp-sublime_text-7SIEQY.desktop
 DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-pLCfBKjkts,guid=ee767b01ecb500d2ee9383cb00047b95
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
 0
 7
-1478759861 FPU_Multiplication_Function_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.sdf
+1479060817 FPU_Multiplication_Function_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.sdf
 1478998172 ibm13rflpvt.v
 1478998172 ibm13rflpvt.v
-1478998172 ./Testbench_all_operators.v
-1478759861 ../../../front_end/db/SINGLE/FPU_Multiplication_Function_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.v
-1478997062 file_list
-1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
+1479061127 ./Testbench_all_operators.v
+1479060818 FPU_Multiplication_Function_ASIC_fpu_syn_constraints_clk10.tcl_DW_1STAGE_syn.v
+1479059768 file_list
+1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsd.tab
 4
 0 
 1466053571 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so

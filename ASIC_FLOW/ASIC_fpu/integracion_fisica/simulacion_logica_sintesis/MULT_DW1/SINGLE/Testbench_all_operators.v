@@ -21,7 +21,7 @@
 
 module Testbench_FPU_Mark2();
 
-parameter PERIOD = 10;
+parameter PERIOD = 11;
 
 `ifdef SINGLE
     parameter W = 32;

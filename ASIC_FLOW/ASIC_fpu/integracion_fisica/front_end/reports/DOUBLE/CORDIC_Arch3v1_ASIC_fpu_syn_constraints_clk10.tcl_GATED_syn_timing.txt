@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:16:44 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: ITER_CONT_temp_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_shift_x_Q_reg_62_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  ITER_CONT_temp_reg_1_/CK (DFFRXLTS)      0.00       1.00 r
+  ITER_CONT_temp_reg_1_/Q (DFFRXLTS)       1.09       2.09 r
+  U960/Y (CLKBUFX2TS)                      0.66       2.75 r
+  U965/Y (INVX2TS)                         0.64       3.39 f
+  intadd_459_U4/CO (ADDFX1TS)              0.90       4.29 f
+  intadd_459_U3/CO (ADDFX1TS)              0.58       4.87 f
+  intadd_459_U2/CO (ADDFX1TS)              0.72       5.59 f
+  U1142/Y (OR3X1TS)                        0.91       6.50 f
+  U1176/Y (NOR2X2TS)                       0.53       7.03 r
+  U762/Y (NAND2X1TS)                       0.64       7.66 f
+  U1009/Y (NOR2X2TS)                       0.58       8.25 r
+  U1581/Y (NOR2BX1TS)                      0.54       8.79 r
+  U938/Y (XOR2XLTS)                        0.59       9.38 r
+  reg_shift_x_Q_reg_62_/D (DFFRXLTS)       0.00       9.38 r
+  data arrival time                                   9.38
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.50      10.50
+  reg_shift_x_Q_reg_62_/CK (DFFRXLTS)      0.00      10.50 r
+  library setup time                      -0.53       9.97
+  data required time                                  9.97
+  -----------------------------------------------------------
+  data required time                                  9.97
+  data arrival time                                  -9.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.59
+
+
+1

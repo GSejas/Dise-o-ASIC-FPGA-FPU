@@ -3,7 +3,7 @@
 Report : cell
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 02:44:44 2016
+Date   : Sun Nov 13 15:19:00 2016
 ****************************************
 
 Attributes:
@@ -337,29 +337,29 @@ Barrel_Shifter_module_Output_Reg_Q_reg_51_
 Barrel_Shifter_module_Output_Reg_Q_reg_52_
                           DFFRX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-DP_OP_31J164_122_605_U2   ADDFX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U2    ADDFX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_31J164_122_605_U3   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U3    CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_31J164_122_605_U4   ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U4    ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 mo, r
-DP_OP_31J164_122_605_U5   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U5    CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_31J164_122_605_U6   ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U6    ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 mo, r
-DP_OP_31J164_122_605_U7   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U7    CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_31J164_122_605_U8   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U8    CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_31J164_122_605_U9   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U9    CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_31J164_122_605_U10  ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U10   ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 mo, r
-DP_OP_31J164_122_605_U11  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U11   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_31J164_122_605_U12  ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U12   ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 mo, r
-DP_OP_31J164_122_605_U13  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_31J37_122_605_U13   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 Exp_module_Oflow_A_m_Q_reg_0_
                           DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c

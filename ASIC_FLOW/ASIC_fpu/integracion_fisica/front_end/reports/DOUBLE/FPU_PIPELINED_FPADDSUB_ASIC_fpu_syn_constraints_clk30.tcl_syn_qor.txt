@@ -3,7 +3,7 @@
 Report : qor
 Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:16:36 2016
+Date   : Sun Nov 13 08:54:28 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Nov  3 18:16:36 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    1.53
-  Logic Optimization:                  1.77
-  Mapping Optimization:               15.84
+  Resource Sharing:                    1.79
+  Logic Optimization:                  1.86
+  Mapping Optimization:               16.81
   -----------------------------------------
-  Overall Compile Time:               40.92
-  Overall Compile Wall Clock Time:    41.88
+  Overall Compile Time:               43.80
+  Overall Compile Wall Clock Time:    44.30
 
   --------------------------------------------------------------------
 

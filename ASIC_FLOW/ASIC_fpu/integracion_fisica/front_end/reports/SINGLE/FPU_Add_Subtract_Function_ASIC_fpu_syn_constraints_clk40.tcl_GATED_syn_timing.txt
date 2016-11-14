@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:04:40 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: XRegister_Q_reg_31_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Add_Subtract_Function_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  XRegister_Q_reg_31_/CK (DFFRXLTS)                       0.00       4.00 r
+  XRegister_Q_reg_31_/QN (DFFRXLTS)                       1.80       5.80 r
+  U724/Y (INVX2TS)                                        0.29       6.09 f
+  U794/Y (XOR2X1TS)                                       0.48       6.57 f
+  U796/Y (NOR2X2TS)                                       0.78       7.35 r
+  U773/Y (BUFX6TS)                                        0.91       8.25 r
+  U1231/Y (XOR2X1TS)                                      0.60       8.85 f
+  DP_OP_45J178_125_5354_U27/CO (ADDFX1TS)                 0.63       9.48 f
+  DP_OP_45J178_125_5354_U26/CO (ADDFX1TS)                 0.58      10.06 f
+  DP_OP_45J178_125_5354_U25/CO (CMPR32X2TS)               0.57      10.63 f
+  DP_OP_45J178_125_5354_U24/CO (ADDFX1TS)                 0.56      11.19 f
+  DP_OP_45J178_125_5354_U23/CO (ADDFX1TS)                 0.58      11.77 f
+  DP_OP_45J178_125_5354_U22/CO (CMPR32X2TS)               0.57      12.35 f
+  DP_OP_45J178_125_5354_U21/CO (CMPR32X2TS)               0.56      12.90 f
+  DP_OP_45J178_125_5354_U20/CO (CMPR32X2TS)               0.56      13.46 f
+  DP_OP_45J178_125_5354_U19/CO (CMPR32X2TS)               0.56      14.02 f
+  DP_OP_45J178_125_5354_U18/CO (CMPR32X2TS)               0.56      14.57 f
+  DP_OP_45J178_125_5354_U17/CO (CMPR32X2TS)               0.56      15.13 f
+  DP_OP_45J178_125_5354_U16/CO (CMPR32X2TS)               0.56      15.69 f
+  DP_OP_45J178_125_5354_U15/CO (CMPR32X2TS)               0.56      16.25 f
+  DP_OP_45J178_125_5354_U14/CO (CMPR32X2TS)               0.56      16.80 f
+  DP_OP_45J178_125_5354_U13/CO (CMPR32X2TS)               0.56      17.36 f
+  DP_OP_45J178_125_5354_U12/CO (CMPR32X2TS)               0.56      17.92 f
+  DP_OP_45J178_125_5354_U11/CO (CMPR32X2TS)               0.56      18.48 f
+  DP_OP_45J178_125_5354_U10/CO (CMPR32X2TS)               0.56      19.03 f
+  DP_OP_45J178_125_5354_U9/CO (CMPR32X2TS)                0.56      19.59 f
+  DP_OP_45J178_125_5354_U8/CO (CMPR32X2TS)                0.56      20.15 f
+  DP_OP_45J178_125_5354_U7/CO (CMPR32X2TS)                0.56      20.71 f
+  DP_OP_45J178_125_5354_U6/CO (CMPR32X2TS)                0.56      21.26 f
+  DP_OP_45J178_125_5354_U5/CO (CMPR32X2TS)                0.56      21.82 f
+  DP_OP_45J178_125_5354_U4/CO (CMPR32X2TS)                0.56      22.38 f
+  DP_OP_45J178_125_5354_U3/CO (CMPR32X2TS)                0.56      22.94 f
+  DP_OP_45J178_125_5354_U2/CO (CMPR32X2TS)                0.55      23.48 f
+  U652/Y (XOR2XLTS)                                       0.51      23.99 r
+  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRX2TS)
+                                                          0.00      23.99 r
+  data arrival time                                                 23.99
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/CK (DFFRX2TS)
+                                                          0.00      42.00 r
+  library setup time                                     -0.05      41.95
+  data required time                                                41.95
+  --------------------------------------------------------------------------
+  data required time                                                41.95
+  data arrival time                                                -23.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.96
+
+
+1

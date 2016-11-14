@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:29:14 2016
+Date   : Sun Nov 13 14:48:02 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: FPADDSUB_SGF_STAGE_DMP_Q_reg_31_
+  Startpoint: DP_OP_828J327_122_8034_R_506
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_
+  Endpoint: add_x_69_R_780
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -28,34 +28,45 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  FPADDSUB_SGF_STAGE_DMP_Q_reg_31_/CK (DFFRXLTS)          0.00       1.00 r
-  FPADDSUB_SGF_STAGE_DMP_Q_reg_31_/Q (DFFRXLTS)           1.38       2.38 r
-  U13774/Y (NAND2X1TS)                                    0.69       3.08 f
-  U13776/Y (OAI21X1TS)                                    0.71       3.79 r
-  U3080/Y (AOI21X1TS)                                     0.63       4.42 f
-  U6949/Y (OAI21X2TS)                                     0.48       4.90 r
-  U6327/Y (AOI21X1TS)                                     0.48       5.38 f
-  U13789/Y (OAI21X2TS)                                    0.41       5.79 r
-  U13790/Y (AOI21X4TS)                                    0.20       6.00 f
-  U6188/Y (OAI21X2TS)                                     0.41       6.40 r
-  U6185/Y (AOI21X4TS)                                     0.30       6.70 f
-  U6184/Y (OAI21X2TS)                                     0.41       7.11 r
-  U6187/Y (AOI21X4TS)                                     0.30       7.41 f
-  U6186/Y (OAI21X2TS)                                     0.41       7.81 r
-  U6112/Y (AOI21X4TS)                                     0.30       8.11 f
-  U6111/Y (OAI21X2TS)                                     0.41       8.52 r
-  U6114/Y (AOI21X4TS)                                     0.30       8.82 f
-  U6113/Y (OAI21X2TS)                                     0.38       9.19 r
-  U4415/Y (AOI21X2TS)                                     0.28       9.47 f
-  U13830/Y (XOR2X1TS)                                     0.34       9.81 r
-  U4398/Y (MX2X2TS)                                       0.41      10.22 r
-  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRX1TS)      0.00      10.22 r
+  DP_OP_828J327_122_8034_R_506/CK (DFFRX4TS)              0.00       1.00 r
+  DP_OP_828J327_122_8034_R_506/Q (DFFRX4TS)               0.88       1.88 r
+  U7797/Y (BUFX6TS)                                       0.43       2.31 r
+  U7928/Y (XNOR2X4TS)                                     0.46       2.78 r
+  U5184/Y (NAND2X4TS)                                     0.25       3.02 f
+  U10921/Y (XOR2X4TS)                                     0.41       3.43 r
+  U8951/Y (BUFX4TS)                                       0.66       4.09 r
+  U7809/Y (INVX2TS)                                       0.35       4.44 f
+  U3468/Y (NAND2BX1TS)                                    0.34       4.77 r
+  U4668/Y (NAND2X4TS)                                     0.30       5.07 f
+  U9419/Y (OAI21X4TS)                                     0.24       5.31 r
+  U9418/Y (OAI2BB1X4TS)                                   0.20       5.52 f
+  U6818/Y (INVX2TS)                                       0.16       5.68 r
+  U6144/Y (OAI2BB1X4TS)                                   0.26       5.94 r
+  U3223/Y (NAND2X4TS)                                     0.16       6.10 f
+  U9844/CO (ADDFHX4TS)                                    0.41       6.51 f
+  U6182/S (ADDFHX4TS)                                     0.40       6.91 r
+  U10164/S (ADDFHX4TS)                                    0.43       7.35 f
+  U7519/Y (INVX6TS)                                       0.12       7.47 r
+  U9414/Y (NAND2X8TS)                                     0.12       7.59 f
+  U3075/Y (NAND2X6TS)                                     0.12       7.71 r
+  U7808/Y (AND2X8TS)                                      0.19       7.89 r
+  U9664/Y (OAI21X4TS)                                     0.12       8.02 f
+  U9663/Y (AOI21X4TS)                                     0.28       8.30 r
+  U9413/Y (OAI21X4TS)                                     0.25       8.54 f
+  U9412/Y (AND2X8TS)                                      0.23       8.77 f
+  U7059/Y (NOR2X4TS)                                      0.22       8.99 r
+  U8020/Y (AOI2BB1X4TS)                                   0.40       9.39 r
+  U8027/Y (OAI21X4TS)                                     0.20       9.59 f
+  U8026/Y (XNOR2X4TS)                                     0.22       9.81 f
+  U5942/Y (OR2X8TS)                                       0.29      10.09 f
+  U7283/Y (NAND2X2TS)                                     0.13      10.22 r
+  add_x_69_R_780/D (DFFRXLTS)                             0.00      10.22 r
   data arrival time                                                 10.22
 
   clock clk (rise edge)                                  10.00      10.00
   clock network delay (ideal)                             1.00      11.00
   clock uncertainty                                      -0.50      10.50
-  FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRX1TS)     0.00      10.50 r
+  add_x_69_R_780/CK (DFFRXLTS)                            0.00      10.50 r
   library setup time                                     -0.28      10.22
   data required time                                                10.22
   --------------------------------------------------------------------------

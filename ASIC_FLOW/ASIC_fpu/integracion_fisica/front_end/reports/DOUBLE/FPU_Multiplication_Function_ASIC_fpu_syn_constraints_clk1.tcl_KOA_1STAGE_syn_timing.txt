@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:39:15 2016
+Date   : Sun Nov 13 14:25:14 2016
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,9 +14,9 @@ Date   : Thu Nov 10 01:39:15 2016
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: DP_OP_168J151_122_4811_R_852
+  Startpoint: DP_OP_168J26_122_4811_R_852
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: DP_OP_168J151_122_4811_R_2165
+  Endpoint: DP_OP_168J26_122_4811_R_2165
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -30,8 +30,8 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.10       0.10
-  DP_OP_168J151_122_4811_R_852/CK (DFFRX4TS)              0.00 #     0.10 r
-  DP_OP_168J151_122_4811_R_852/Q (DFFRX4TS)               0.76       0.86 f
+  DP_OP_168J26_122_4811_R_852/CK (DFFRX4TS)               0.00 #     0.10 r
+  DP_OP_168J26_122_4811_R_852/Q (DFFRX4TS)                0.76       0.86 f
   U3173/Y (XOR2X4TS)                                      0.22       1.07 f
   U4635/Y (NOR2X8TS)                                      0.19       1.26 r
   U5412/Y (INVX16TS)                                      0.13       1.39 f
@@ -50,13 +50,13 @@ Wire Load Model Mode: top
   U9544/S (ADDFHX4TS)                                     0.40       5.85 r
   U9543/S (ADDFHX4TS)                                     0.44       6.29 f
   U3314/Y (NAND2X8TS)                                     0.12       6.41 r
-  DP_OP_168J151_122_4811_R_2165/D (DFFRXLTS)              0.00       6.41 r
+  DP_OP_168J26_122_4811_R_2165/D (DFFRXLTS)               0.00       6.41 r
   data arrival time                                                  6.41
 
   clock clk (rise edge)                                   1.00       1.00
   clock network delay (ideal)                             0.10       1.10
   clock uncertainty                                      -0.05       1.05
-  DP_OP_168J151_122_4811_R_2165/CK (DFFRXLTS)             0.00       1.05 r
+  DP_OP_168J26_122_4811_R_2165/CK (DFFRXLTS)              0.00       1.05 r
   library setup time                                     -0.43       0.62
   data required time                                                 0.62
   --------------------------------------------------------------------------

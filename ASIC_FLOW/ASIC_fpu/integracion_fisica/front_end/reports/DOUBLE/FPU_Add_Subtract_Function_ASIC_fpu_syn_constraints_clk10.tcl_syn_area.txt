@@ -3,7 +3,7 @@
 Report : area
 Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:11:26 2016
+Date   : Sun Nov 13 08:49:37 2016
 ****************************************
 
 Library(s) Used:

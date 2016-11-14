@@ -3,7 +3,7 @@
 Report : cell
 Design : CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 17:59:31 2016
+Date   : Sun Nov 13 08:29:05 2016
 ****************************************
 
 Attributes:
@@ -1914,11 +1914,11 @@ inst_CORDIC_FSM_v3_state_reg_reg_6_
 inst_CORDIC_FSM_v3_state_reg_reg_7_
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-intadd_517_U2             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_366_U2             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_517_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_366_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_517_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_366_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
 reg_LUT_Q_reg_0_          DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n

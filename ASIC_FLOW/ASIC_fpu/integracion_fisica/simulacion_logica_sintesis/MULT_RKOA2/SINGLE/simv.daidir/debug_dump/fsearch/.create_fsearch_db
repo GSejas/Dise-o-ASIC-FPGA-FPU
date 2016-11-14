@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3//etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib:/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/bin/vcsfind_create_index.exe  -z  /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_RKOA2/SINGLE/simv.daidir/debug_dump/fsearch/idents_MS9leE.xml.gz  -o /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_RKOA2/SINGLE/simv.daidir/debug_dump/fsearch/fsearch.db_tmp
+\mv /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_RKOA2/SINGLE/simv.daidir/debug_dump/fsearch/fsearch.db_tmp /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_RKOA2/SINGLE/simv.daidir/debug_dump/fsearch/fsearch.db

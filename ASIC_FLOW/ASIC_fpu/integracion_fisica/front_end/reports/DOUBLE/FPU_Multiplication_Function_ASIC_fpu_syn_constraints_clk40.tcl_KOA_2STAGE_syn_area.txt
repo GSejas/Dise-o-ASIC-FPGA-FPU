@@ -3,7 +3,7 @@
 Report : area
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 03:04:28 2016
+Date   : Sun Nov 13 15:35:13 2016
 ****************************************
 
 Library(s) Used:

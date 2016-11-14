@@ -3,7 +3,7 @@
 Report : qor
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:02:09 2016
+Date   : Sun Nov 13 14:26:58 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Nov 10 23:02:09 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    3.62
-  Logic Optimization:                  2.25
-  Mapping Optimization:               17.09
+  Resource Sharing:                    3.27
+  Logic Optimization:                  1.93
+  Mapping Optimization:               14.62
   -----------------------------------------
-  Overall Compile Time:               48.20
-  Overall Compile Wall Clock Time:    48.67
+  Overall Compile Time:               41.58
+  Overall Compile Wall Clock Time:    42.11
 
   --------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "FPU_Multiplication_Function_W32_EW8_SW23")
-(DATE "Thu Nov 10 01:15:44 2016")
+(DATE "Sun Nov 13 14:06:20 2016")
 (VENDOR "scx3_cmos8rf_lpvt_tt_1p2v_25c")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "L-2016.03-SP3")

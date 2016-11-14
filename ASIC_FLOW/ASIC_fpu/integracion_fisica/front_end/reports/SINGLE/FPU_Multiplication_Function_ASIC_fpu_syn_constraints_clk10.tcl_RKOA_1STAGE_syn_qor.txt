@@ -3,7 +3,7 @@
 Report : qor
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:11:29 2016
+Date   : Sun Nov 13 14:03:08 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Nov 10 01:11:29 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                   18.20
-  Logic Optimization:                 19.16
-  Mapping Optimization:               26.96
+  Resource Sharing:                   15.80
+  Logic Optimization:                 16.34
+  Mapping Optimization:               23.17
   -----------------------------------------
-  Overall Compile Time:               84.46
-  Overall Compile Wall Clock Time:    85.14
+  Overall Compile Time:               72.43
+  Overall Compile Wall Clock Time:    72.91
 
   --------------------------------------------------------------------
 

@@ -1,0 +1,153 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:24:00 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: SGF_STAGE_DmP_mant_Q_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: NRM_STAGE_Raw_mant_Q_reg_54_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  SGF_STAGE_DmP_mant_Q_reg_2_/CK (DFFRX1TS)               0.00       4.00 r
+  SGF_STAGE_DmP_mant_Q_reg_2_/Q (DFFRX1TS)                1.66       5.66 r
+  U2332/Y (NAND2X1TS)                                     0.69       6.35 f
+  U2334/Y (AOI2BB2X1TS)                                   0.72       7.07 r
+  U1399/Y (OAI21X1TS)                                     0.48       7.55 f
+  U1476/Y (OAI21X1TS)                                     0.44       7.99 r
+  U1481/Y (AOI21X1TS)                                     0.42       8.41 f
+  U1392/Y (AOI2BB1X2TS)                                   0.40       8.81 r
+  U1296/Y (OAI21X1TS)                                     0.33       9.14 f
+  U1478/Y (OAI21X1TS)                                     0.42       9.56 r
+  U1712/Y (AOI21X1TS)                                     0.42       9.98 f
+  U1332/Y (AOI2BB1X2TS)                                   0.40      10.38 r
+  U1389/Y (OAI21X1TS)                                     0.33      10.71 f
+  U1388/Y (OAI21X1TS)                                     0.42      11.13 r
+  U1386/Y (AOI21X1TS)                                     0.42      11.56 f
+  U1385/Y (AOI2BB1X2TS)                                   0.40      11.95 r
+  U1329/Y (OAI21X1TS)                                     0.33      12.28 f
+  U1480/Y (OAI21X1TS)                                     0.42      12.71 r
+  U1714/Y (AOI21X1TS)                                     0.42      13.13 f
+  U1382/Y (AOI2BB1X2TS)                                   0.40      13.53 r
+  U1327/Y (OAI21X1TS)                                     0.33      13.86 f
+  U1475/Y (OAI21X1TS)                                     0.42      14.28 r
+  U1381/Y (AOI21X1TS)                                     0.43      14.71 f
+  U1325/Y (AOI2BB1X2TS)                                   0.40      15.11 r
+  U1379/Y (OAI21X1TS)                                     0.33      15.44 f
+  U1378/Y (OAI21X1TS)                                     0.42      15.87 r
+  U1377/Y (AOI21X1TS)                                     0.43      16.29 f
+  U1376/Y (AOI2BB1X2TS)                                   0.40      16.70 r
+  U1324/Y (OAI21X1TS)                                     0.33      17.03 f
+  U1323/Y (OAI21X1TS)                                     0.42      17.45 r
+  U1375/Y (AOI21X1TS)                                     0.43      17.88 f
+  U1321/Y (AOI2BB1X2TS)                                   0.40      18.28 r
+  U1373/Y (OAI21X1TS)                                     0.33      18.62 f
+  U1372/Y (OAI21X1TS)                                     0.42      19.04 r
+  U1715/Y (AOI21X1TS)                                     0.43      19.46 f
+  U1371/Y (AOI2BB1X2TS)                                   0.40      19.87 r
+  U1319/Y (OAI21X1TS)                                     0.33      20.20 f
+  U1477/Y (OAI21X1TS)                                     0.42      20.63 r
+  U2335/Y (AOI21X1TS)                                     0.43      21.05 f
+  U1370/Y (AOI2BB1X2TS)                                   0.40      21.46 r
+  U1318/Y (OAI21X1TS)                                     0.33      21.79 f
+  U1482/Y (OAI21X1TS)                                     0.42      22.21 r
+  U2336/Y (AOI21X1TS)                                     0.43      22.64 f
+  U1317/Y (AOI2BB1X2TS)                                   0.40      23.04 r
+  U1363/Y (OAI21X1TS)                                     0.33      23.38 f
+  U1361/Y (OAI21X1TS)                                     0.42      23.80 r
+  U2337/Y (AOI21X1TS)                                     0.43      24.22 f
+  U1358/Y (AOI2BB1X2TS)                                   0.40      24.63 r
+  U1316/Y (OAI21X1TS)                                     0.33      24.96 f
+  U1315/Y (OAI21X1TS)                                     0.42      25.39 r
+  U2338/Y (AOI21X1TS)                                     0.43      25.81 f
+  U1314/Y (AOI2BB1X2TS)                                   0.40      26.22 r
+  U1357/Y (OAI21X1TS)                                     0.33      26.55 f
+  U1355/Y (OAI21X1TS)                                     0.42      26.97 r
+  U2339/Y (AOI21X1TS)                                     0.43      27.40 f
+  U2340/Y (AOI2BB1X2TS)                                   0.40      27.80 r
+  U1354/Y (OAI21X1TS)                                     0.35      28.15 f
+  U1313/Y (OAI21X2TS)                                     0.29      28.44 r
+  U1312/Y (AOI21X1TS)                                     0.29      28.73 f
+  U2341/Y (AOI2BB1X2TS)                                   0.40      29.14 r
+  U1311/Y (OAI21X1TS)                                     0.35      29.49 f
+  U1310/Y (OAI21X2TS)                                     0.29      29.78 r
+  U1236/Y (AOI21X1TS)                                     0.29      30.07 f
+  U2342/Y (AOI2BB1X2TS)                                   0.40      30.47 r
+  U1235/Y (OAI21X1TS)                                     0.35      30.82 f
+  U1234/Y (OAI21X2TS)                                     0.29      31.11 r
+  U1233/Y (AOI21X1TS)                                     0.29      31.40 f
+  U2343/Y (AOI2BB1X2TS)                                   0.42      31.82 r
+  U2344/Y (OAI21X2TS)                                     0.27      32.09 f
+  U2345/Y (OAI21X2TS)                                     0.24      32.34 r
+  U2346/Y (AOI21X1TS)                                     0.29      32.63 f
+  U2347/Y (AOI2BB1X2TS)                                   0.42      33.05 r
+  U2348/Y (OAI21X2TS)                                     0.29      33.34 f
+  U1445/Y (OAI21X4TS)                                     0.18      33.52 r
+  U1232/Y (AOI21X1TS)                                     0.24      33.76 f
+  U1450/Y (AOI2BB1X4TS)                                   0.30      34.06 r
+  U1309/Y (OAI21X2TS)                                     0.21      34.27 f
+  U1444/Y (OAI21X4TS)                                     0.19      34.46 r
+  U1308/Y (AOI21X2TS)                                     0.17      34.63 f
+  U2349/Y (AOI2BB1X2TS)                                   0.39      35.02 r
+  U1353/Y (OAI21X2TS)                                     0.29      35.31 f
+  U1448/Y (OAI21X4TS)                                     0.19      35.50 r
+  U2350/Y (AOI21X2TS)                                     0.17      35.67 f
+  U2351/Y (AOI2BB1X2TS)                                   0.39      36.06 r
+  U2352/Y (OAI21X2TS)                                     0.29      36.35 f
+  U1452/Y (OAI21X4TS)                                     0.19      36.54 r
+  U1306/Y (AOI21X2TS)                                     0.18      36.72 f
+  U1443/Y (AOI2BB1X4TS)                                   0.26      36.98 r
+  U1213/Y (OAI21X2TS)                                     0.21      37.19 f
+  U1447/Y (OAI21X4TS)                                     0.19      37.38 r
+  U2353/Y (AOI21X2TS)                                     0.17      37.55 f
+  U2354/Y (AOI2BB1X2TS)                                   0.39      37.94 r
+  U2355/Y (OAI21X2TS)                                     0.29      38.23 f
+  U1451/Y (OAI21X4TS)                                     0.19      38.42 r
+  U2356/Y (AOI21X2TS)                                     0.18      38.60 f
+  U1449/Y (AOI2BB1X4TS)                                   0.26      38.86 r
+  U1210/Y (OAI21X2TS)                                     0.21      39.07 f
+  U1446/Y (OAI21X4TS)                                     0.18      39.26 r
+  U2357/Y (AOI21X1TS)                                     0.22      39.48 f
+  U1302/Y (AOI2BB1X2TS)                                   0.40      39.88 r
+  U2358/Y (OAI21X1TS)                                     0.33      40.21 f
+  U1720/Y (OAI2BB1X1TS)                                   0.44      40.64 r
+  U2359/Y (AOI21X1TS)                                     0.33      40.98 f
+  U1300/Y (AOI2BB1X2TS)                                   0.40      41.38 r
+  U2491/Y (AOI21X1TS)                                     0.33      41.71 f
+  U1453/Y (XOR2X1TS)                                      0.35      42.05 r
+  NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRXLTS)               0.00      42.05 r
+  data arrival time                                                 42.05
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRXLTS)              0.00      42.00 r
+  library setup time                                      0.06      42.06
+  data required time                                                42.06
+  --------------------------------------------------------------------------
+  data required time                                                42.06
+  data arrival time                                                -42.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

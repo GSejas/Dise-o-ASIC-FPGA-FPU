@@ -17,10 +17,10 @@ set compile_fix_cell_degradation true
 
 # NOMBRE DEL MACRO DE LAS ARQUITECTURAS EN CUESTION
 
-set OP_LIST "CORDIC_Arch2v1 CORDIC_Arch3v1 FPU_Add_Subtract_Function FPU_PIPELINED_FPADDSUB"
+set OP_LIST "CORDIC_Arch2 CORDIC_Arch3 CORDIC_Arch2v1 CORDIC_Arch3v1 FPU_Add_Subtract_Function FPU_PIPELINED_FPADDSUB"
 set OP_LIST_LINE [split $OP_LIST "\ "]
 
-set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl ASIC_fpu_syn_constraints_noclk.tcl"
+set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl"
 set F_TIME_CONTRAINTS_ARRAY [split $FPU_CONSTRAINTS "\ "]
 
 remove_design -designs

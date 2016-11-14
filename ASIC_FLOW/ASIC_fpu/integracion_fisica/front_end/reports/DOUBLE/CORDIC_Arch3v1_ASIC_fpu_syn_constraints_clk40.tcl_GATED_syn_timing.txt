@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:18:09 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: ready_add_subt
+              (input port clocked by clk)
+  Endpoint: VAR_CONT_temp_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              4.00       4.00
+  input external delay                    14.00      18.00 f
+  ready_add_subt (in)                      0.01      18.01 f
+  U1121/Y (INVX2TS)                        0.28      18.29 r
+  U746/Y (NAND3XLTS)                       0.71      19.00 f
+  U1167/Y (INVX2TS)                        0.53      19.54 r
+  U1168/Y (AOI21X1TS)                      0.31      19.84 f
+  U1169/Y (OAI21XLTS)                      0.36      20.20 r
+  VAR_CONT_temp_reg_1_/D (DFFRX2TS)        0.00      20.20 r
+  data arrival time                                  20.20
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              4.00      44.00
+  clock uncertainty                       -2.00      42.00
+  VAR_CONT_temp_reg_1_/CK (DFFRX2TS)       0.00      42.00 r
+  library setup time                      -0.02      41.98
+  data required time                                 41.98
+  -----------------------------------------------------------
+  data required time                                 41.98
+  data arrival time                                 -20.20
+  -----------------------------------------------------------
+  slack (MET)                                        21.78
+
+
+1

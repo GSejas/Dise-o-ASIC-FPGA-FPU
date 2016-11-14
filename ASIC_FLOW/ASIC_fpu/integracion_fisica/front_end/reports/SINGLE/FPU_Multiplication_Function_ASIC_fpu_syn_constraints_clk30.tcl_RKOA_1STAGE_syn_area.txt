@@ -3,7 +3,7 @@
 Report : area
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:12:54 2016
+Date   : Sun Nov 13 14:04:21 2016
 ****************************************
 
 Library(s) Used:

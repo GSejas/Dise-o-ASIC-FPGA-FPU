@@ -1,7 +1,7 @@
 #!/bin/bash
 vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate \
 +define+SINGLE \
-+define+MULT_KOA1_SINGLE \
++define+KOA1_SINGLE \
 -timescale=1ns/1ps   \
 +neg_tchk \
 +sdfverbose

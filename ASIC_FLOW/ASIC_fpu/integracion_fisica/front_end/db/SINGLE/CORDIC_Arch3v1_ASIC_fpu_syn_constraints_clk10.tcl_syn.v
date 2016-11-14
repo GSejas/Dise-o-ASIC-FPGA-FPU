@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Thu Nov  3 17:58:41 2016
+// Date      : Sun Nov 13 08:28:13 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -49,9 +49,9 @@ module CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
          n952, n953, n954, n955, n956, n957, n958, n959, n960, n961, n962,
          n963, n964, n965, n966, n967, n968, n969, n970, n971, n972, n973,
          n974, n975, n976, n977, n978, n979, n980, n981, n982, n983, n984,
-         n985, n986, n987, n988, n989, n990, intadd_515_CI, intadd_515_SUM_2_,
-         intadd_515_SUM_1_, intadd_515_SUM_0_, intadd_515_n3, intadd_515_n2,
-         intadd_515_n1, n1058, n1059, n1060, n1061, n1062, n1063, n1064, n1065,
+         n985, n986, n987, n988, n989, n990, intadd_364_CI, intadd_364_SUM_2_,
+         intadd_364_SUM_1_, intadd_364_SUM_0_, intadd_364_n3, intadd_364_n2,
+         intadd_364_n1, n1058, n1059, n1060, n1061, n1062, n1063, n1064, n1065,
          n1066, n1067, n1068, n1069, n1070, n1071, n1072, n1073, n1074, n1075,
          n1076, n1077, n1078, n1079, n1080, n1081, n1082, n1083, n1084, n1085,
          n1086, n1087, n1088, n1089, n1090, n1091, n1092, n1093, n1094, n1095,
@@ -748,12 +748,12 @@ module CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
          );
   DFFRX1TS d_ff4_Xn_Q_reg_0_ ( .D(n885), .CK(clk), .RN(n1449), .Q(d_ff_Xn[0])
          );
-  ADDFX1TS intadd_515_U4 ( .A(d_ff2_Y[24]), .B(n1414), .CI(intadd_515_CI), 
-        .CO(intadd_515_n3), .S(intadd_515_SUM_0_) );
-  ADDFX1TS intadd_515_U3 ( .A(d_ff2_Y[25]), .B(n1413), .CI(intadd_515_n3), 
-        .CO(intadd_515_n2), .S(intadd_515_SUM_1_) );
-  ADDFX1TS intadd_515_U2 ( .A(d_ff2_Y[26]), .B(n1408), .CI(intadd_515_n2), 
-        .CO(intadd_515_n1), .S(intadd_515_SUM_2_) );
+  ADDFX1TS intadd_364_U4 ( .A(d_ff2_Y[24]), .B(n1414), .CI(intadd_364_CI), 
+        .CO(intadd_364_n3), .S(intadd_364_SUM_0_) );
+  ADDFX1TS intadd_364_U3 ( .A(d_ff2_Y[25]), .B(n1413), .CI(intadd_364_n3), 
+        .CO(intadd_364_n2), .S(intadd_364_SUM_1_) );
+  ADDFX1TS intadd_364_U2 ( .A(d_ff2_Y[26]), .B(n1408), .CI(intadd_364_n2), 
+        .CO(intadd_364_n1), .S(intadd_364_SUM_2_) );
   DFFRXLTS reg_shift_x_Q_reg_6_ ( .D(n690), .CK(clk), .RN(n1429), .Q(
         d_ff3_sh_x_out[6]) );
   DFFRXLTS reg_Z0_Q_reg_27_ ( .D(n954), .CK(clk), .RN(n1456), .Q(d_ff1_Z[27])
@@ -1097,7 +1097,7 @@ module CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
         d_ff_Xn[8]), .Y(n877) );
   AO22XLTS U886 ( .A0(n1319), .A1(result_add_subt[9]), .B0(n1321), .B1(
         d_ff_Xn[9]), .Y(n876) );
-  OAI21XLTS U887 ( .A0(n1340), .A1(intadd_515_CI), .B0(n1107), .Y(n713) );
+  OAI21XLTS U887 ( .A0(n1340), .A1(intadd_364_CI), .B0(n1107), .Y(n713) );
   AO22XLTS U888 ( .A0(n1300), .A1(d_ff1_Z[26]), .B0(n1298), .B1(data_in[26]), 
         .Y(n955) );
   AO22XLTS U889 ( .A0(n1300), .A1(d_ff1_Z[27]), .B0(n1297), .B1(data_in[27]), 
@@ -1231,11 +1231,11 @@ module CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
         d_ff3_sh_x_out[18]), .Y(n666) );
   AO22XLTS U954 ( .A0(n1407), .A1(d_ff2_X[31]), .B0(n1406), .B1(
         d_ff3_sh_x_out[31]), .Y(n640) );
-  AO22XLTS U955 ( .A0(n1399), .A1(intadd_515_SUM_0_), .B0(n1360), .B1(
+  AO22XLTS U955 ( .A0(n1399), .A1(intadd_364_SUM_0_), .B0(n1360), .B1(
         d_ff3_sh_y_out[24]), .Y(n712) );
-  AO22XLTS U956 ( .A0(n1353), .A1(intadd_515_SUM_1_), .B0(n1360), .B1(
+  AO22XLTS U956 ( .A0(n1353), .A1(intadd_364_SUM_1_), .B0(n1360), .B1(
         d_ff3_sh_y_out[25]), .Y(n711) );
-  AO22XLTS U957 ( .A0(n1362), .A1(intadd_515_SUM_2_), .B0(n1360), .B1(
+  AO22XLTS U957 ( .A0(n1362), .A1(intadd_364_SUM_2_), .B0(n1360), .B1(
         d_ff3_sh_y_out[26]), .Y(n710) );
   AO22XLTS U958 ( .A0(n1362), .A1(d_ff2_Y[0]), .B0(n1382), .B1(
         d_ff3_sh_y_out[0]), .Y(n766) );
@@ -1642,7 +1642,7 @@ module CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
   INVX2TS U1222 ( .A(n1104), .Y(add_subt_dataB[24]) );
   INVX2TS U1223 ( .A(n1105), .Y(add_subt_dataB[4]) );
   INVX2TS U1224 ( .A(n1106), .Y(add_subt_dataB[2]) );
-  NAND2X1TS U1225 ( .A(n1064), .B(n1417), .Y(intadd_515_CI) );
+  NAND2X1TS U1225 ( .A(n1064), .B(n1417), .Y(intadd_364_CI) );
   INVX2TS U1226 ( .A(n1346), .Y(n1376) );
   AOI22X1TS U1227 ( .A0(d_ff2_Y[23]), .A1(n1376), .B0(d_ff3_sh_y_out[23]), 
         .B1(n1397), .Y(n1107) );
@@ -1952,9 +1952,9 @@ module CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
   INVX2TS U1468 ( .A(n1372), .Y(n1404) );
   BUFX3TS U1469 ( .A(n1368), .Y(n1363) );
   INVX2TS U1470 ( .A(n1372), .Y(n1365) );
-  NOR2X1TS U1471 ( .A(d_ff2_Y[27]), .B(intadd_515_n1), .Y(n1355) );
-  AOI21X1TS U1472 ( .A0(intadd_515_n1), .A1(d_ff2_Y[27]), .B0(n1355), .Y(n1354) );
-  OR3X1TS U1473 ( .A(d_ff2_Y[27]), .B(d_ff2_Y[28]), .C(intadd_515_n1), .Y(
+  NOR2X1TS U1471 ( .A(d_ff2_Y[27]), .B(intadd_364_n1), .Y(n1355) );
+  AOI21X1TS U1472 ( .A0(intadd_364_n1), .A1(d_ff2_Y[27]), .B0(n1355), .Y(n1354) );
+  OR3X1TS U1473 ( .A(d_ff2_Y[27]), .B(d_ff2_Y[28]), .C(intadd_364_n1), .Y(
         n1357) );
   NOR2X1TS U1474 ( .A(d_ff2_Y[29]), .B(n1357), .Y(n1359) );
   AOI21X1TS U1475 ( .A0(d_ff2_Y[29]), .A1(n1357), .B0(n1359), .Y(n1358) );

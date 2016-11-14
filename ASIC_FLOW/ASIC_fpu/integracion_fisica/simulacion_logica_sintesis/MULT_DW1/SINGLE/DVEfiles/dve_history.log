@@ -4,7 +4,6 @@ gui_set_pref_value -category {Driver} -key {driver_link_to_source} -value {false
 gui_set_pref_value -category {Driver} -key {show_intermediate_drivers} -value {true}
 gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
 gui_set_pref_value -category {List} -key {showgrid} -value {true}
-gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
 gui_set_pref_value -category {Wave} -key {bringToFront} -value {true}
 gui_set_pref_value -category {Wave} -key {isolationShading} -value {false}
 gui_set_pref_value -category {Wave} -key {renameOnClick} -value {true}
@@ -34,9 +33,9 @@ gui_set_state_value -category Layout -key child_console_pos_y -value {-15}
 gui_set_state_value -category Layout -key child_console_showstate -value maximized
 gui_set_state_value -category Layout -key child_console_size_x -value 1372
 gui_set_state_value -category Layout -key child_console_size_y -value 592
-gui_set_state_value -category Layout -key child_data_coltype -value 192
-gui_set_state_value -category Layout -key child_data_colvalue -value 818
-gui_set_state_value -category Layout -key child_data_colvariable -value 338
+gui_set_state_value -category Layout -key child_data_coltype -value 197
+gui_set_state_value -category Layout -key child_data_colvalue -value 823
+gui_set_state_value -category Layout -key child_data_colvariable -value 343
 gui_set_state_value -category Layout -key child_data_docknewline -value false
 gui_set_state_value -category Layout -key child_data_dockstate -value undocked
 gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
@@ -77,15 +76,15 @@ gui_set_state_value -category Layout -key child_source_size_x -value 1312
 gui_set_state_value -category Layout -key child_source_size_y -value 583
 gui_set_state_value -category Layout -key child_watch_size_x -value 904
 gui_set_state_value -category Layout -key child_watch_size_y -value 177
-gui_set_state_value -category Layout -key child_wave_colname -value 359
-gui_set_state_value -category Layout -key child_wave_colvalue -value 232
+gui_set_state_value -category Layout -key child_wave_colname -value 362
+gui_set_state_value -category Layout -key child_wave_colvalue -value 255
 gui_set_state_value -category Layout -key child_wave_docknewline -value false
-gui_set_state_value -category Layout -key child_wave_left -value 595
+gui_set_state_value -category Layout -key child_wave_left -value 622
 gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_wave_right -value 707
-gui_set_state_value -category Layout -key child_wave_size_x -value 1312
-gui_set_state_value -category Layout -key child_wave_size_y -value 583
+gui_set_state_value -category Layout -key child_wave_right -value 740
+gui_set_state_value -category Layout -key child_wave_size_x -value 1372
+gui_set_state_value -category Layout -key child_wave_size_y -value 592
 gui_set_state_value -category Layout -key main_pos_x -value 0
 gui_set_state_value -category Layout -key main_pos_y -value 46
 gui_set_state_value -category Layout -key main_size_x -value 1367
@@ -122,14 +121,20 @@ gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -va
 gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
 gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{+v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose} {+v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose} {-ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose} {-ucligui +v2k +lint=all -l log_name +define+SINGLE +define+FRANCIS_LZD=1} {+v2k +lint=all -a log_name +define+SYN_SINGLE}}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE_ALONE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui +v2k +lint=all -l log_name +define+SINGLE +define+DW1_SINGLE +neg_tchk +sdfverbose} {+v2k +lint=all -a log_name +define+DOUBLE +neg_tchk +sdfverbose} {+v2k +lint=all -a log_name +define+SINGLE +neg_tchk +sdfverbose} {-ucligui +v2k +lint=all -l log_name +define+SINGLE +neg_tchk +sdfverbose} {-ucligui +v2k +lint=all -l log_name +define+SINGLE +define+FRANCIS_LZD=1}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/DOUBLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE_ALONE}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE/simv simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv}
 gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+SINGLE +define+DW1_SINGLE +neg_tchk +sdfverbose} -dir .
-gui_load_session -default_file
-gui_set_pref_value -category {Source} -key {value_annotate} -value {false}
-gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
+gui_wv_zoom_timerange -id  Wave.1 0 238
+gui_wv_zoom_timerange -id  Wave.1 0 238
+gui_list_add -id Wave.1 -from Hier.1 { Testbench_FPU_Mark2 } -insertionbar
 gui_sim_continue  
+gui_sim_stop 
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { {Testbench_FPU_Mark2.Data_1[31:0]}   }
+gui_marker_move -id  Wave.1 C1 112750000
+gui_marker_move -id  Wave.1 C1 16012321333
+gui_marker_move -id  Wave.1 C1 57711074806

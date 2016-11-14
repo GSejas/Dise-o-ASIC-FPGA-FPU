@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Tue Nov  8 03:16:12 2016
+// Date      : Sun Nov 13 12:17:37 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -218,29 +218,30 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
          FPMULT_Sgf_operation_n50, FPMULT_Sgf_operation_n49,
          FPMULT_Sgf_operation_n48, FPMULT_Sgf_operation_n47,
          FPMULT_Sgf_operation_n46, FPMULT_Sgf_operation_n45,
-         FPMULT_Sgf_operation_n44, FPMULT_Sgf_operation_n43, intadd_23_B_0_,
-         intadd_23_CI, intadd_23_SUM_2_, intadd_23_SUM_1_, intadd_23_SUM_0_,
-         intadd_23_n3, intadd_23_n2, intadd_23_n1, intadd_24_CI,
-         intadd_24_SUM_2_, intadd_24_SUM_1_, intadd_24_SUM_0_, intadd_24_n3,
-         intadd_24_n2, intadd_24_n1, gt_x_73_A_62_, gt_x_73_A_61_,
-         gt_x_73_A_60_, gt_x_73_A_57_, gt_x_73_A_55_, gt_x_73_A_54_,
-         gt_x_73_A_53_, gt_x_73_A_47_, gt_x_73_A_46_, gt_x_73_A_45_,
-         gt_x_73_A_39_, gt_x_73_A_36_, gt_x_73_A_33_, gt_x_73_A_31_,
-         gt_x_73_A_30_, gt_x_73_A_23_, gt_x_73_A_15_, gt_x_73_A_14_,
-         gt_x_73_A_11_, gt_x_73_A_3_, gt_x_73_A_0_, gt_x_73_B_62_,
-         gt_x_73_B_61_, gt_x_73_B_60_, gt_x_73_B_59_, gt_x_73_B_51_,
-         gt_x_73_B_47_, gt_x_73_B_39_, gt_x_73_B_38_, gt_x_73_B_37_,
-         gt_x_73_B_31_, gt_x_73_B_30_, gt_x_73_B_15_, gt_x_73_B_14_,
-         gt_x_73_B_1_, gt_x_73_B_0_, sub_x_13_A_5_, sub_x_13_A_4_,
-         sub_x_13_A_3_, sub_x_13_A_2_, sub_x_13_A_1_, sub_x_13_A_0_,
-         sub_x_13_B_5_, sub_x_13_B_4_, sub_x_13_B_3_, sub_x_13_B_2_,
-         sub_x_13_B_1_, sub_x_13_B_0_, sub_x_13_n2, sub_x_17_n642,
-         sub_x_17_n637, sub_x_17_n636, sub_x_17_n635, sub_x_17_n633,
-         sub_x_17_n632, sub_x_17_n631, sub_x_17_n630, sub_x_17_n629,
-         sub_x_17_n627, sub_x_17_n626, sub_x_17_n625, sub_x_17_n624,
-         sub_x_17_n623, sub_x_17_n622, sub_x_17_n618, sub_x_17_n612,
-         sub_x_17_n610, sub_x_17_n608, sub_x_17_n604, sub_x_17_n603,
-         sub_x_17_n602, sub_x_17_n601, sub_x_17_n597, DP_OP_26_128_3365_n124,
+         FPMULT_Sgf_operation_n44, FPMULT_Sgf_operation_n43, intadd_745_B_0_,
+         intadd_745_CI, intadd_745_SUM_2_, intadd_745_SUM_1_,
+         intadd_745_SUM_0_, intadd_745_n3, intadd_745_n2, intadd_745_n1,
+         intadd_746_CI, intadd_746_SUM_2_, intadd_746_SUM_1_,
+         intadd_746_SUM_0_, intadd_746_n3, intadd_746_n2, intadd_746_n1,
+         gt_x_73_A_62_, gt_x_73_A_61_, gt_x_73_A_60_, gt_x_73_A_57_,
+         gt_x_73_A_55_, gt_x_73_A_54_, gt_x_73_A_53_, gt_x_73_A_47_,
+         gt_x_73_A_46_, gt_x_73_A_45_, gt_x_73_A_39_, gt_x_73_A_36_,
+         gt_x_73_A_33_, gt_x_73_A_31_, gt_x_73_A_30_, gt_x_73_A_23_,
+         gt_x_73_A_15_, gt_x_73_A_14_, gt_x_73_A_11_, gt_x_73_A_3_,
+         gt_x_73_A_0_, gt_x_73_B_62_, gt_x_73_B_61_, gt_x_73_B_60_,
+         gt_x_73_B_59_, gt_x_73_B_51_, gt_x_73_B_47_, gt_x_73_B_39_,
+         gt_x_73_B_38_, gt_x_73_B_37_, gt_x_73_B_31_, gt_x_73_B_30_,
+         gt_x_73_B_15_, gt_x_73_B_14_, gt_x_73_B_1_, gt_x_73_B_0_,
+         sub_x_13_A_5_, sub_x_13_A_4_, sub_x_13_A_3_, sub_x_13_A_2_,
+         sub_x_13_A_1_, sub_x_13_A_0_, sub_x_13_B_5_, sub_x_13_B_4_,
+         sub_x_13_B_3_, sub_x_13_B_2_, sub_x_13_B_1_, sub_x_13_B_0_,
+         sub_x_13_n2, sub_x_17_n642, sub_x_17_n637, sub_x_17_n636,
+         sub_x_17_n635, sub_x_17_n633, sub_x_17_n632, sub_x_17_n631,
+         sub_x_17_n630, sub_x_17_n629, sub_x_17_n627, sub_x_17_n626,
+         sub_x_17_n625, sub_x_17_n624, sub_x_17_n623, sub_x_17_n622,
+         sub_x_17_n618, sub_x_17_n612, sub_x_17_n610, sub_x_17_n608,
+         sub_x_17_n604, sub_x_17_n603, sub_x_17_n602, sub_x_17_n601,
+         sub_x_17_n597, DP_OP_26_128_3365_n124,
          FPMULT_Sgf_operation_mult_x_1_n7413,
          FPMULT_Sgf_operation_mult_x_1_n7408,
          FPMULT_Sgf_operation_mult_x_1_n7407,
@@ -7173,8 +7174,8 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         n20787), .Q(FPSENCOS_d_ff2_Y[52]), .QN(n19175) );
   DFFRX4TS FPADDSUB_INPUT_STAGE_OPERANDY_Q_reg_45_ ( .D(n3379), .CK(clk), .RN(
         n19912), .Q(FPADDSUB_intDY_EWSW[45]), .QN(n19833) );
-  ADDFHX2TS intadd_24_U4 ( .A(FPSENCOS_d_ff2_X[53]), .B(intadd_23_B_0_), .CI(
-        intadd_24_CI), .CO(intadd_24_n3), .S(intadd_24_SUM_0_) );
+  ADDFHX2TS intadd_746_U4 ( .A(FPSENCOS_d_ff2_X[53]), .B(intadd_745_B_0_), 
+        .CI(intadd_746_CI), .CO(intadd_746_n3), .S(intadd_746_SUM_0_) );
   DFFRX4TS FPADDSUB_INPUT_STAGE_OPERANDY_Q_reg_42_ ( .D(n3382), .CK(clk), .RN(
         n19930), .Q(FPADDSUB_intDY_EWSW[42]), .QN(n19851) );
   DFFRX4TS FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_33_ ( .D(n2589), .CK(clk), .RN(
@@ -7214,8 +7215,8 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         n19910), .Q(FPADDSUB_intDX_EWSW[2]), .QN(n19826) );
   DFFRX4TS FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_48_ ( .D(n2574), .CK(clk), .RN(
         n20743), .Q(FPADDSUB_Raw_mant_NRM_SWR[48]), .QN(n19000) );
-  ADDFHX2TS intadd_24_U2 ( .A(FPSENCOS_d_ff2_X[55]), .B(n19202), .CI(
-        intadd_24_n2), .CO(intadd_24_n1), .S(intadd_24_SUM_2_) );
+  ADDFHX2TS intadd_746_U2 ( .A(FPSENCOS_d_ff2_X[55]), .B(n19202), .CI(
+        intadd_746_n2), .CO(intadd_746_n1), .S(intadd_746_SUM_2_) );
   DFFRX4TS FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_32_ ( .D(n2590), .CK(clk), .RN(
         n5266), .Q(FPADDSUB_Raw_mant_NRM_SWR[32]), .QN(n18903) );
   DFFRX4TS FPMULT_Sgf_operation_mult_x_1_R_3064 ( .D(
@@ -7258,14 +7259,14 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         n5321), .Q(FPADDSUB_LZD_output_NRM2_EW[0]) );
   DFFRX4TS FPADDSUB_SFT2FRMT_STAGE_VARS_Q_reg_15_ ( .D(n2568), .CK(clk), .RN(
         n5321), .Q(FPADDSUB_LZD_output_NRM2_EW[4]), .QN(n19208) );
-  ADDFHX2TS intadd_23_U3 ( .A(FPSENCOS_d_ff2_Y[54]), .B(n18866), .CI(
-        intadd_23_n3), .CO(intadd_23_n2), .S(intadd_23_SUM_1_) );
-  ADDFHX2TS intadd_23_U2 ( .A(FPSENCOS_d_ff2_Y[55]), .B(n19202), .CI(
-        intadd_23_n2), .CO(intadd_23_n1), .S(intadd_23_SUM_2_) );
+  ADDFHX2TS intadd_745_U3 ( .A(FPSENCOS_d_ff2_Y[54]), .B(n18866), .CI(
+        intadd_745_n3), .CO(intadd_745_n2), .S(intadd_745_SUM_1_) );
+  ADDFHX2TS intadd_745_U2 ( .A(FPSENCOS_d_ff2_Y[55]), .B(n19202), .CI(
+        intadd_745_n2), .CO(intadd_745_n1), .S(intadd_745_SUM_2_) );
   DFFRX4TS FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_19_ ( .D(n2603), .CK(clk), .RN(
         n20742), .Q(FPADDSUB_Raw_mant_NRM_SWR[19]), .QN(n18884) );
-  ADDFHX2TS intadd_24_U3 ( .A(FPSENCOS_d_ff2_X[54]), .B(n18866), .CI(
-        intadd_24_n3), .CO(intadd_24_n2), .S(intadd_24_SUM_1_) );
+  ADDFHX2TS intadd_746_U3 ( .A(FPSENCOS_d_ff2_X[54]), .B(n18866), .CI(
+        intadd_746_n3), .CO(intadd_746_n2), .S(intadd_746_SUM_1_) );
   DFFRX4TS FPADDSUB_INPUT_STAGE_OPERANDX_Q_reg_8_ ( .D(n3610), .CK(clk), .RN(
         n19940), .Q(FPADDSUB_intDX_EWSW[8]), .QN(n19875) );
   DFFRX4TS FPMULT_Operands_load_reg_YMRegister_Q_reg_52_ ( .D(n3060), .CK(clk), 
@@ -8354,8 +8355,8 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   DFFSX4TS R_5716 ( .D(n21333), .CK(clk), .SN(n19933), .Q(n4946) );
   DFFSX4TS R_4945 ( .D(n20113), .CK(clk), .SN(n5322), .Q(
         DP_OP_26_128_3365_n124), .QN(n5948) );
-  ADDFHX2TS intadd_23_U4 ( .A(FPSENCOS_d_ff2_Y[53]), .B(intadd_23_B_0_), .CI(
-        intadd_23_CI), .CO(intadd_23_n3), .S(intadd_23_SUM_0_) );
+  ADDFHX2TS intadd_745_U4 ( .A(FPSENCOS_d_ff2_Y[53]), .B(intadd_745_B_0_), 
+        .CI(intadd_745_CI), .CO(intadd_745_n3), .S(intadd_745_SUM_0_) );
   DFFRX4TS FPADDSUB_SGF_STAGE_DMP_Q_reg_1_ ( .D(n2417), .CK(clk), .RN(n19945), 
         .Q(FPADDSUB_DMP_SFG[1]), .QN(n19744) );
   DFFRX2TS FPADDSUB_NRM_STAGE_Raw_mant_Q_reg_34_ ( .D(n2588), .CK(clk), .RN(
@@ -10378,8 +10379,10 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         .S(n16627) );
   INVX6TS U5774 ( .A(n14876), .Y(n14925) );
   NAND2X6TS U5775 ( .A(n16771), .B(FPSENCOS_cont_iter_out[0]), .Y(n16274) );
-  NAND2X4TS U5776 ( .A(n19176), .B(FPSENCOS_cont_iter_out[0]), .Y(intadd_24_CI) );
-  NAND2X4TS U5777 ( .A(n19175), .B(FPSENCOS_cont_iter_out[0]), .Y(intadd_23_CI) );
+  NAND2X4TS U5776 ( .A(n19176), .B(FPSENCOS_cont_iter_out[0]), .Y(
+        intadd_746_CI) );
+  NAND2X4TS U5777 ( .A(n19175), .B(FPSENCOS_cont_iter_out[0]), .Y(
+        intadd_745_CI) );
   NOR2X6TS U5778 ( .A(n14868), .B(FPADDSUB_DMP_exp_NRM2_EW[5]), .Y(n14884) );
   NAND2X6TS U5779 ( .A(n14868), .B(FPADDSUB_DMP_exp_NRM2_EW[5]), .Y(n14913) );
   ADDFHX4TS U5780 ( .A(n11156), .B(n11155), .CI(n11154), .CO(n11333), .S(
@@ -12148,7 +12151,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OAI21X2TS U7106 ( .A0(n15447), .A1(n10120), .B0(n10119), .Y(n10121) );
   INVX3TS U7107 ( .A(n7511), .Y(n5632) );
   BUFX12TS U7108 ( .A(n11324), .Y(n16622) );
-  AOI21X1TS U7109 ( .A0(intadd_23_n1), .A1(FPSENCOS_d_ff2_Y[56]), .B0(n16953), 
+  AOI21X1TS U7109 ( .A0(intadd_745_n1), .A1(FPSENCOS_d_ff2_Y[56]), .B0(n16953), 
         .Y(n16925) );
   NAND2X1TS U7110 ( .A(n14493), .B(FPADDSUB_DmP_mant_SFG_SWR[25]), .Y(n14479)
          );
@@ -12227,7 +12230,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NAND2XLTS U7173 ( .A(n16615), .B(FPSENCOS_cont_var_out[0]), .Y(n14971) );
   OAI21X1TS U7174 ( .A0(n14250), .A1(n14249), .B0(n14248), .Y(n14252) );
   NAND2X8TS U7175 ( .A(n16796), .B(n6190), .Y(n12844) );
-  NOR2X4TS U7176 ( .A(intadd_23_n1), .B(FPSENCOS_d_ff2_Y[56]), .Y(n16953) );
+  NOR2X4TS U7176 ( .A(intadd_745_n1), .B(FPSENCOS_d_ff2_Y[56]), .Y(n16953) );
   AOI21X2TS U7177 ( .A0(n14919), .A1(n14866), .B0(n14918), .Y(n14920) );
   INVX3TS U7178 ( .A(n8685), .Y(n8713) );
   MXI2X1TS U7179 ( .A(n18936), .B(n19272), .S0(n17790), .Y(n3206) );
@@ -12302,7 +12305,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NOR2X4TS U7228 ( .A(n13922), .B(n6159), .Y(n15312) );
   INVX8TS U7229 ( .A(n4322), .Y(n14345) );
   NOR2X4TS U7230 ( .A(n13871), .B(n6136), .Y(n15153) );
-  CLKMX2X2TS U7231 ( .A(FPSENCOS_d_ff3_sh_y_out[53]), .B(intadd_23_SUM_0_), 
+  CLKMX2X2TS U7231 ( .A(FPSENCOS_d_ff3_sh_y_out[53]), .B(intadd_745_SUM_0_), 
         .S0(n16690), .Y(n19716) );
   NAND2X2TS U7232 ( .A(n13399), .B(n14583), .Y(n13405) );
   INVX2TS U7233 ( .A(n15257), .Y(n13932) );
@@ -12441,7 +12444,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   BUFX4TS U7346 ( .A(n16074), .Y(n16228) );
   NOR2X4TS U7347 ( .A(FPADDSUB_DMP_SFG[21]), .B(FPADDSUB_DmP_mant_SFG_SWR[23]), 
         .Y(n13877) );
-  INVX8TS U7348 ( .A(FPSENCOS_cont_iter_out[1]), .Y(intadd_23_B_0_) );
+  INVX8TS U7348 ( .A(FPSENCOS_cont_iter_out[1]), .Y(intadd_745_B_0_) );
   INVX2TS U7349 ( .A(n18879), .Y(n5399) );
   NOR2X4TS U7350 ( .A(FPADDSUB_DMP_SFG[3]), .B(FPADDSUB_DmP_mant_SFG_SWR[5]), 
         .Y(n14243) );
@@ -19013,7 +19016,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OAI22X2TS U12224 ( .A0(n8390), .A1(n7043), .B0(n7042), .B1(n5242), .Y(n7937)
          );
   OAI22X2TS U12225 ( .A0(n5237), .A1(n7018), .B0(n7043), .B1(n10370), .Y(n7047) );
-  NOR2X4TS U12226 ( .A(intadd_24_n1), .B(FPSENCOS_d_ff2_X[56]), .Y(n16960) );
+  NOR2X4TS U12226 ( .A(intadd_746_n1), .B(FPSENCOS_d_ff2_X[56]), .Y(n16960) );
   ADDFHX2TS U12227 ( .A(n11131), .B(n11130), .CI(n11129), .CO(n11121), .S(
         n11907) );
   XNOR2X4TS U12228 ( .A(n5071), .B(n17868), .Y(n6929) );
@@ -20393,7 +20396,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NOR2X2TS U13122 ( .A(FPSENCOS_inst_CORDIC_FSM_v3_state_next[0]), .B(
         FPSENCOS_inst_CORDIC_FSM_v3_state_next[1]), .Y(n6209) );
   NAND2X2TS U13123 ( .A(n6209), .B(n20296), .Y(n20163) );
-  NOR2X2TS U13124 ( .A(intadd_23_B_0_), .B(n19206), .Y(n15523) );
+  NOR2X2TS U13124 ( .A(intadd_745_B_0_), .B(n19206), .Y(n15523) );
   INVX2TS U13125 ( .A(n15523), .Y(n16787) );
   NOR2X1TS U13126 ( .A(n16787), .B(n17824), .Y(n6211) );
   OAI21X2TS U13127 ( .A0(n16439), .A1(n6211), .B0(n6210), .Y(
@@ -23540,7 +23543,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NOR2X2TS U15514 ( .A(n16281), .B(n16765), .Y(n16770) );
   NOR2X2TS U15515 ( .A(n16274), .B(n16770), .Y(n15536) );
   NAND2X2TS U15516 ( .A(n17822), .B(n16770), .Y(n16783) );
-  NOR2X6TS U15517 ( .A(n16930), .B(intadd_23_B_0_), .Y(n16769) );
+  NOR2X6TS U15517 ( .A(n16930), .B(intadd_745_B_0_), .Y(n16769) );
   NOR2X1TS U15518 ( .A(n19206), .B(FPSENCOS_cont_iter_out[3]), .Y(n16276) );
   NAND2X1TS U15519 ( .A(n16769), .B(n16276), .Y(n16430) );
   AND2X2TS U15520 ( .A(n16783), .B(n16430), .Y(n13543) );
@@ -23949,7 +23952,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OR2X4TS U15877 ( .A(n17821), .B(n15523), .Y(n16746) );
   AO21X1TS U15878 ( .A0(FPSENCOS_d_ff3_LUT_out[54]), .A1(n17536), .B0(n16780), 
         .Y(n3976) );
-  NOR2X2TS U15879 ( .A(intadd_23_B_0_), .B(FPSENCOS_cont_iter_out[3]), .Y(
+  NOR2X2TS U15879 ( .A(intadd_745_B_0_), .B(FPSENCOS_cont_iter_out[3]), .Y(
         n16786) );
   INVX2TS U15880 ( .A(n16786), .Y(n14069) );
   NAND2X2TS U15881 ( .A(n16742), .B(n14069), .Y(n16766) );
@@ -24508,7 +24511,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NAND2X1TS U16313 ( .A(n4964), .B(n4822), .Y(n14967) );
   NAND3X2TS U16314 ( .A(n14968), .B(n14967), .C(n20352), .Y(n16116) );
   NAND2X1TS U16315 ( .A(n20715), .B(n16116), .Y(n21049) );
-  CLKMX2X2TS U16316 ( .A(FPSENCOS_d_ff3_sh_x_out[53]), .B(intadd_24_SUM_0_), 
+  CLKMX2X2TS U16316 ( .A(FPSENCOS_d_ff3_sh_x_out[53]), .B(intadd_746_SUM_0_), 
         .S0(n16690), .Y(n19718) );
   OR2X2TS U16317 ( .A(n14969), .B(ready_add_subt), .Y(n16615) );
   INVX2TS U16318 ( .A(n17825), .Y(n16749) );
@@ -25532,7 +25535,8 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
         .B1(n16073), .Y(n16229) );
   OAI21X1TS U17159 ( .A0(n16624), .A1(n14881), .B0(n17339), .Y(n2623) );
   INVX2TS U17160 ( .A(n2623), .Y(n20113) );
-  OAI22X1TS U17161 ( .A0(n16929), .A1(intadd_23_B_0_), .B0(n16231), .B1(n16230), .Y(n16233) );
+  OAI22X1TS U17161 ( .A0(n16929), .A1(intadd_745_B_0_), .B0(n16231), .B1(
+        n16230), .Y(n16233) );
   INVX2TS U17162 ( .A(n21272), .Y(n16234) );
   NOR2X1TS U17163 ( .A(n16234), .B(n21342), .Y(n21268) );
   NOR2X2TS U17164 ( .A(n16769), .B(n17825), .Y(n16238) );
@@ -25923,11 +25927,11 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   XNOR2X1TS U17410 ( .A(n16723), .B(FPSENCOS_cont_iter_out[2]), .Y(n4027) );
   NAND2X1TS U17411 ( .A(n5358), .B(n16423), .Y(n21124) );
   MXI2X1TS U17412 ( .A(n21271), .B(n19078), .S0(n16926), .Y(n3211) );
-  INVX2TS U17413 ( .A(intadd_24_CI), .Y(n16424) );
+  INVX2TS U17413 ( .A(intadd_746_CI), .Y(n16424) );
   AOI21X1TS U17414 ( .A0(FPSENCOS_d_ff2_X[52]), .A1(n19206), .B0(n16424), .Y(
         n16425) );
   MXI2X1TS U17415 ( .A(n16425), .B(n19352), .S0(n16926), .Y(n3631) );
-  INVX2TS U17416 ( .A(intadd_23_CI), .Y(n16426) );
+  INVX2TS U17416 ( .A(intadd_745_CI), .Y(n16426) );
   AOI21X1TS U17417 ( .A0(FPSENCOS_d_ff2_Y[52]), .A1(n19206), .B0(n16426), .Y(
         n16427) );
   MXI2X1TS U17418 ( .A(n16427), .B(n19361), .S0(n16926), .Y(n3437) );
@@ -26531,9 +26535,9 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   MXI2X1TS U17878 ( .A(n18931), .B(n17786), .S0(n16666), .Y(n3754) );
   MXI2X1TS U17879 ( .A(n18852), .B(n19082), .S0(n16926), .Y(n3643) );
   MXI2X1TS U17880 ( .A(n19012), .B(n19353), .S0(n16926), .Y(n3619) );
-  CLKMX2X2TS U17881 ( .A(intadd_23_SUM_1_), .B(FPSENCOS_d_ff3_sh_y_out[54]), 
+  CLKMX2X2TS U17881 ( .A(intadd_745_SUM_1_), .B(FPSENCOS_d_ff3_sh_y_out[54]), 
         .S0(n17747), .Y(n3435) );
-  CLKMX2X2TS U17882 ( .A(intadd_24_SUM_1_), .B(n5467), .S0(n17747), .Y(n3629)
+  CLKMX2X2TS U17882 ( .A(intadd_746_SUM_1_), .B(n5467), .S0(n17747), .Y(n3629)
          );
   INVX2TS U17883 ( .A(n16667), .Y(n16684) );
   AO22X1TS U17884 ( .A0(n16682), .A1(FPMULT_Sgf_normalized_result[1]), .B0(
@@ -26879,9 +26883,9 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   NAND2X1TS U18170 ( .A(n16757), .B(n16756), .Y(n4037) );
   NAND2X1TS U18171 ( .A(n16930), .B(FPSENCOS_d_ff3_LUT_out[20]), .Y(n16758) );
   NAND3X1TS U18172 ( .A(n16759), .B(n16929), .C(n16758), .Y(n4001) );
-  CLKMX2X2TS U18173 ( .A(intadd_23_SUM_2_), .B(FPSENCOS_d_ff3_sh_y_out[55]), 
+  CLKMX2X2TS U18173 ( .A(intadd_745_SUM_2_), .B(FPSENCOS_d_ff3_sh_y_out[55]), 
         .S0(n17747), .Y(n3434) );
-  CLKMX2X2TS U18174 ( .A(intadd_24_SUM_2_), .B(FPSENCOS_d_ff3_sh_x_out[55]), 
+  CLKMX2X2TS U18174 ( .A(intadd_746_SUM_2_), .B(FPSENCOS_d_ff3_sh_x_out[55]), 
         .S0(n17747), .Y(n3628) );
   NAND2X1TS U18175 ( .A(n16791), .B(FPSENCOS_d_ff3_LUT_out[18]), .Y(n16760) );
   NAND3X1TS U18176 ( .A(n16762), .B(n16761), .C(n16760), .Y(n4003) );
@@ -27235,7 +27239,7 @@ module FPU_Interface2_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, begin_operation,
   OAI2BB1X1TS U18403 ( .A0N(FPSENCOS_d_ff2_X[38]), .A1N(n16802), .B0(n16924), 
         .Y(n3670) );
   MXI2X1TS U18404 ( .A(n16925), .B(n19347), .S0(n16926), .Y(n3433) );
-  XOR2X1TS U18405 ( .A(intadd_24_n1), .B(FPSENCOS_d_ff2_X[56]), .Y(n16927) );
+  XOR2X1TS U18405 ( .A(intadd_746_n1), .B(FPSENCOS_d_ff2_X[56]), .Y(n16927) );
   MXI2X1TS U18406 ( .A(n16927), .B(n19004), .S0(n16926), .Y(n3627) );
   AO21X2TS U18407 ( .A0(n5392), .A1(n16929), .B0(n16928), .Y(n16933) );
   NAND2X1TS U18408 ( .A(n16930), .B(FPSENCOS_d_ff3_LUT_out[39]), .Y(n16931) );

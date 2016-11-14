@@ -1,0 +1,94 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:19:39 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: XRegister_Q_reg_63_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  XRegister_Q_reg_63_/CK (DFFRX1TS)                       0.00       2.00 r
+  XRegister_Q_reg_63_/Q (DFFRX1TS)                        1.33       3.33 r
+  U1342/Y (XOR2X1TS)                                      0.76       4.10 r
+  U1617/Y (INVX2TS)                                       0.48       4.57 f
+  U1377/Y (NOR2X4TS)                                      0.32       4.90 r
+  U1375/Y (BUFX8TS)                                       0.45       5.35 r
+  U1535/Y (XOR2X1TS)                                      0.64       5.99 r
+  U2677/Y (NOR2X2TS)                                      0.51       6.50 f
+  U1590/Y (NOR2X1TS)                                      0.59       7.09 r
+  U1337/Y (NAND2X1TS)                                     0.62       7.71 f
+  U1545/Y (NOR2X1TS)                                      0.66       8.37 r
+  U1554/Y (NAND2X1TS)                                     0.52       8.89 f
+  U2689/Y (OAI21X4TS)                                     0.29       9.19 r
+  U2810/CON (AFHCONX2TS)                                  0.22       9.40 f
+  U2809/CO (AFHCINX2TS)                                   0.43       9.83 r
+  U2808/CON (AFHCONX2TS)                                  0.30      10.13 f
+  U2807/CO (AFHCINX2TS)                                   0.43      10.56 r
+  U2806/CON (AFHCONX2TS)                                  0.30      10.86 f
+  U2805/CO (AFHCINX2TS)                                   0.43      11.28 r
+  U2804/CON (AFHCONX2TS)                                  0.30      11.59 f
+  U2803/CO (AFHCINX2TS)                                   0.43      12.01 r
+  U2802/CON (AFHCONX2TS)                                  0.33      12.34 f
+  U1493/CO (AFHCINX4TS)                                   0.35      12.69 r
+  U2801/CON (AFHCONX2TS)                                  0.27      12.96 f
+  U2800/CO (AFHCINX2TS)                                   0.43      13.39 r
+  U2799/CON (AFHCONX2TS)                                  0.30      13.69 f
+  U2798/CO (AFHCINX2TS)                                   0.43      14.12 r
+  U2797/CON (AFHCONX2TS)                                  0.30      14.42 f
+  U2796/CO (AFHCINX2TS)                                   0.43      14.84 r
+  U2795/CON (AFHCONX2TS)                                  0.30      15.15 f
+  U2794/CO (AFHCINX2TS)                                   0.43      15.57 r
+  U2793/CON (AFHCONX2TS)                                  0.30      15.87 f
+  U2792/CO (AFHCINX2TS)                                   0.43      16.30 r
+  U2791/CON (AFHCONX2TS)                                  0.33      16.63 f
+  U1492/CO (AFHCINX4TS)                                   0.35      16.98 r
+  U2790/CON (AFHCONX2TS)                                  0.27      17.25 f
+  U2789/CO (AFHCINX2TS)                                   0.43      17.68 r
+  U2788/CON (AFHCONX2TS)                                  0.30      17.98 f
+  U2787/CO (AFHCINX2TS)                                   0.43      18.40 r
+  U2786/CON (AFHCONX2TS)                                  0.30      18.71 f
+  U2785/CO (AFHCINX2TS)                                   0.43      19.13 r
+  U2784/CON (AFHCONX2TS)                                  0.30      19.43 f
+  U1353/CO (AFHCINX2TS)                                   0.40      19.83 r
+  U2783/CO (CMPR32X2TS)                                   0.56      20.39 r
+  U2690/Y (XOR2X1TS)                                      0.31      20.70 r
+  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRX2TS)
+                                                          0.00      20.70 r
+  data arrival time                                                 20.70
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/CK (DFFRX2TS)
+                                                          0.00      21.00 r
+  library setup time                                     -0.25      20.75
+  data required time                                                20.75
+  --------------------------------------------------------------------------
+  data required time                                                20.75
+  data arrival time                                                -20.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+1

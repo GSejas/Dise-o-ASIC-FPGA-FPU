@@ -21,7 +21,7 @@
 
 module Testbench_FPU_Mark2();
 
-parameter PERIOD = 10;
+parameter PERIOD = 11;
 
 `ifdef SINGLE
     parameter W = 32;
@@ -445,6 +445,7 @@ integer PIPE=0;
 
                 initial begin
                     // Initialize Inputs
+                     $vcdpluson;
                     clk = 0;
                     rst = 1;
                     r_mode=ROUNDING_MODE_TRUNCT;
@@ -475,13 +476,14 @@ integer PIPE=0;
 
                     #100 rst = 0;
                     $finish;
+                    $vcdplusclose;
                     //Add stimulus here
                 end
 
 
              //******************************* Se ejecuta el CLK ************************
 
-                initial forever #5 clk = ~clk;
+                initial forever 5 clk = ~clk;
 
                 task run_Arch2;
                     input integer FDataO;
@@ -507,8 +509,14 @@ integer PIPE=0;
                                 #(PERIOD+2);
                                 ack_operation = 1;
                                 #4;
+                                $display("%h\n",op_result);
                                 $fwrite(FDataO,"%h\n",op_result);
-                                $fwrite(FData1,"%f\n",$bitstoreal(op_result));
+                                $display("%f\n",$bitstoshortreal(op_result));
+                                    `ifdef SINGLE
+                                    $fwrite(FData1,"%f\n",$bitstoshortreal(op_result));
+                                    `else
+                                    $fwrite(FData1,"%f\n",$bitstoreal(op_result));
+                                    `endif
                             end
                             @(negedge clk) begin
                                 ack_operation = 0;
@@ -552,7 +560,11 @@ integer PIPE=0;
                             end
                             if (operation_ready) begin
                                     $fwrite(FData1,"%h\n",op_result);
+                                    `ifdef SINGLE
+                                    $fwrite(FData2,"%f\n",$bitstoshortreal(op_result));
+                                    `else
                                     $fwrite(FData2,"%f\n",$bitstoreal(op_result));
+                                    `endif
                             end
                     end
                     begin_operation = 0;

@@ -6,13 +6,13 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W64_EW11_SW52
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:43:40 2016
+Date   : Sun Nov 13 14:29:01 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: DP_OP_168J152_122_4811_R_856
+  Startpoint: DP_OP_168J27_122_4811_R_856
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: add_x_19_R_1486
             (rising edge-triggered flip-flop clocked by clk)
@@ -28,8 +28,8 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             1.00       1.00
-  DP_OP_168J152_122_4811_R_856/CK (DFFRX4TS)              0.00       1.00 r
-  DP_OP_168J152_122_4811_R_856/Q (DFFRX4TS)               0.99       1.99 f
+  DP_OP_168J27_122_4811_R_856/CK (DFFRX4TS)               0.00       1.00 r
+  DP_OP_168J27_122_4811_R_856/Q (DFFRX4TS)                0.99       1.99 f
   U5813/Y (XNOR2X4TS)                                     0.30       2.28 f
   U5812/Y (NOR2X8TS)                                      0.21       2.50 r
   U3041/Y (INVX12TS)                                      0.16       2.66 f

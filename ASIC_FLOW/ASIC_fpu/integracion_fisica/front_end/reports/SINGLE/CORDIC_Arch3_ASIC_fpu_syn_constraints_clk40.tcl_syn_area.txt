@@ -3,7 +3,7 @@
 Report : area
 Design : CORDIC_Arch3_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 11:46:12 2016
+Date   : Sun Nov 13 08:26:03 2016
 ****************************************
 
 Library(s) Used:

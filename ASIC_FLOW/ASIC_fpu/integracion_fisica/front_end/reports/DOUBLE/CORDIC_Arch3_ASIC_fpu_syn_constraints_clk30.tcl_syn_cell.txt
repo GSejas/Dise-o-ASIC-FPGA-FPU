@@ -3,7 +3,7 @@
 Report : cell
 Design : CORDIC_Arch3_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 12:00:39 2016
+Date   : Sun Nov 13 08:42:18 2016
 ****************************************
 
 Attributes:
@@ -16,27 +16,27 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-DP_OP_33J78_122_5452_U2   CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U2  CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-DP_OP_33J78_122_5452_U3   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U3  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U4   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U4  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U5   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U5  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U6   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U6  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U7   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U7  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U8   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U8  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U9   ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U9  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U10  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U10 ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U11  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U11 ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-DP_OP_33J78_122_5452_U12  ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+DP_OP_33J141_122_5452_U12 ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
 ITER_CONT_temp_reg_0_     DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
@@ -10302,23 +10302,23 @@ inst_FPU_PIPELINED_FPADDSUB_inst_ShiftRegister_Q_reg_5_
 inst_FPU_PIPELINED_FPADDSUB_inst_ShiftRegister_Q_reg_6_
                           DFFRX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n
-intadd_313_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_382_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_313_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_382_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_313_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_382_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_314_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_383_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_314_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_383_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_314_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_383_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_315_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_384_U2             CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_315_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_384_U3             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_315_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_384_U4             ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
 reg_LUT_Q_reg_0_          DFFRXLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 n

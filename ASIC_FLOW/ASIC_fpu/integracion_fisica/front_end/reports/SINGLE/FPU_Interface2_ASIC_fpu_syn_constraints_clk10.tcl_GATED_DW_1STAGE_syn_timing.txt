@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:10:46 2016
+Date   : Sun Nov 13 14:33:03 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -33,14 +33,14 @@ Wire Load Model Mode: top
   FPADDSUB_SFT2FRMT_STAGE_FLAGS_Q_reg_2_/Q (DFFRX2TS)     1.28       2.28 f
   U1511/Y (INVX4TS)                                       0.59       2.86 r
   U3703/Y (XOR2X1TS)                                      0.51       3.37 f
-  DP_OP_26J192_122_5882_U9/CO (CMPR32X2TS)                0.61       3.98 f
-  DP_OP_26J192_122_5882_U8/CO (CMPR32X2TS)                0.56       4.54 f
-  DP_OP_26J192_122_5882_U7/CO (CMPR32X2TS)                0.56       5.10 f
-  DP_OP_26J192_122_5882_U6/CO (CMPR32X2TS)                0.56       5.65 f
-  DP_OP_26J192_122_5882_U5/CO (CMPR32X2TS)                0.56       6.21 f
-  DP_OP_26J192_122_5882_U4/CO (CMPR32X2TS)                0.56       6.77 f
-  DP_OP_26J192_122_5882_U3/CO (CMPR32X2TS)                0.56       7.33 f
-  DP_OP_26J192_122_5882_U2/CO (CMPR32X2TS)                0.56       7.88 f
+  DP_OP_26J315_122_5882_U9/CO (CMPR32X2TS)                0.61       3.98 f
+  DP_OP_26J315_122_5882_U8/CO (CMPR32X2TS)                0.56       4.54 f
+  DP_OP_26J315_122_5882_U7/CO (CMPR32X2TS)                0.56       5.10 f
+  DP_OP_26J315_122_5882_U6/CO (CMPR32X2TS)                0.56       5.65 f
+  DP_OP_26J315_122_5882_U5/CO (CMPR32X2TS)                0.56       6.21 f
+  DP_OP_26J315_122_5882_U4/CO (CMPR32X2TS)                0.56       6.77 f
+  DP_OP_26J315_122_5882_U3/CO (CMPR32X2TS)                0.56       7.33 f
+  DP_OP_26J315_122_5882_U2/CO (CMPR32X2TS)                0.56       7.88 f
   U1451/Y (XNOR2X2TS)                                     0.44       8.32 r
   U1440/Y (AND3X2TS)                                      0.73       9.05 r
   U1435/Y (NOR2X6TS)                                      0.33       9.38 f

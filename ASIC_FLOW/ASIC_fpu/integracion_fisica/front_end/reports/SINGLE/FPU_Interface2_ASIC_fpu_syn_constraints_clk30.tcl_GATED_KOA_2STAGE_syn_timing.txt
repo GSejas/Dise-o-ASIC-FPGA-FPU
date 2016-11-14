@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:17:25 2016
+Date   : Sun Nov 13 14:38:03 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -35,33 +35,33 @@ Wire Load Model Mode: top
   U3176/Y (INVX2TS)                                       0.33       4.73 f
   U3177/Y (NOR2X1TS)                                      0.57       5.30 r
   U3178/Y (AOI21X1TS)                                     0.43       5.73 f
-  intadd_563_U25/CO (CMPR32X2TS)                          0.78       6.51 f
-  intadd_563_U24/CO (CMPR32X2TS)                          0.56       7.07 f
-  intadd_563_U23/CO (CMPR32X2TS)                          0.56       7.63 f
-  intadd_563_U22/CO (CMPR32X2TS)                          0.56       8.18 f
-  intadd_563_U21/CO (CMPR32X2TS)                          0.56       8.74 f
-  intadd_563_U20/CO (CMPR32X2TS)                          0.56       9.30 f
-  intadd_563_U19/CO (CMPR32X2TS)                          0.56       9.86 f
-  intadd_563_U18/CO (CMPR32X2TS)                          0.56      10.41 f
-  intadd_563_U17/CO (CMPR32X2TS)                          0.56      10.97 f
-  intadd_563_U16/CO (CMPR32X2TS)                          0.56      11.53 f
-  intadd_563_U15/CO (CMPR32X2TS)                          0.56      12.09 f
-  intadd_563_U14/CO (CMPR32X2TS)                          0.56      12.64 f
-  intadd_563_U13/CO (CMPR32X2TS)                          0.56      13.20 f
-  intadd_563_U12/CO (CMPR32X2TS)                          0.56      13.76 f
-  intadd_563_U11/CO (CMPR32X2TS)                          0.56      14.32 f
-  intadd_563_U10/CO (CMPR32X2TS)                          0.56      14.87 f
-  intadd_563_U9/CO (CMPR32X2TS)                           0.56      15.43 f
-  intadd_563_U8/CO (CMPR32X2TS)                           0.56      15.99 f
-  intadd_563_U7/CO (CMPR32X2TS)                           0.56      16.55 f
-  intadd_563_U6/CO (CMPR32X2TS)                           0.56      17.10 f
-  intadd_563_U5/CO (CMPR32X2TS)                           0.56      17.66 f
-  intadd_563_U4/CO (CMPR32X2TS)                           0.56      18.22 f
-  intadd_563_U3/CO (CMPR32X2TS)                           0.56      18.77 f
-  intadd_563_U2/S (CMPR32X2TS)                            0.60      19.38 f
+  intadd_1083_U25/CO (CMPR32X2TS)                         0.78       6.51 f
+  intadd_1083_U24/CO (CMPR32X2TS)                         0.56       7.07 f
+  intadd_1083_U23/CO (CMPR32X2TS)                         0.56       7.63 f
+  intadd_1083_U22/CO (CMPR32X2TS)                         0.56       8.18 f
+  intadd_1083_U21/CO (CMPR32X2TS)                         0.56       8.74 f
+  intadd_1083_U20/CO (CMPR32X2TS)                         0.56       9.30 f
+  intadd_1083_U19/CO (CMPR32X2TS)                         0.56       9.86 f
+  intadd_1083_U18/CO (CMPR32X2TS)                         0.56      10.41 f
+  intadd_1083_U17/CO (CMPR32X2TS)                         0.56      10.97 f
+  intadd_1083_U16/CO (CMPR32X2TS)                         0.56      11.53 f
+  intadd_1083_U15/CO (CMPR32X2TS)                         0.56      12.09 f
+  intadd_1083_U14/CO (CMPR32X2TS)                         0.56      12.64 f
+  intadd_1083_U13/CO (CMPR32X2TS)                         0.56      13.20 f
+  intadd_1083_U12/CO (CMPR32X2TS)                         0.56      13.76 f
+  intadd_1083_U11/CO (CMPR32X2TS)                         0.56      14.32 f
+  intadd_1083_U10/CO (CMPR32X2TS)                         0.56      14.87 f
+  intadd_1083_U9/CO (CMPR32X2TS)                          0.56      15.43 f
+  intadd_1083_U8/CO (CMPR32X2TS)                          0.56      15.99 f
+  intadd_1083_U7/CO (CMPR32X2TS)                          0.56      16.55 f
+  intadd_1083_U6/CO (CMPR32X2TS)                          0.56      17.10 f
+  intadd_1083_U5/CO (CMPR32X2TS)                          0.56      17.66 f
+  intadd_1083_U4/CO (CMPR32X2TS)                          0.56      18.22 f
+  intadd_1083_U3/CO (CMPR32X2TS)                          0.56      18.77 f
+  intadd_1083_U2/S (CMPR32X2TS)                           0.60      19.38 f
   U3124/Y (INVX2TS)                                       0.18      19.56 r
-  intadd_562_U3/CO (CMPR32X2TS)                           0.74      20.29 r
-  intadd_562_U2/CO (CMPR32X2TS)                           0.61      20.90 r
+  intadd_1082_U3/CO (CMPR32X2TS)                          0.74      20.29 r
+  intadd_1082_U2/CO (CMPR32X2TS)                          0.61      20.90 r
   U3224/Y (NAND3X1TS)                                     0.64      21.54 f
   U3225/Y (NOR2X2TS)                                      0.65      22.18 r
   U3226/Y (NAND2X1TS)                                     0.64      22.82 f

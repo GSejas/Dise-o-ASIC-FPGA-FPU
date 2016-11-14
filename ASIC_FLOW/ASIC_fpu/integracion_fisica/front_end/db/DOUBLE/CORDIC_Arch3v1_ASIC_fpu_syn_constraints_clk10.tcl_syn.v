@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Thu Nov  3 18:08:16 2016
+// Date      : Sun Nov 13 08:46:49 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -87,9 +87,9 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
          n1845, n1846, n1847, n1848, n1849, n1850, n1851, n1852, n1853, n1854,
          n1855, n1856, n1857, n1858, n1859, n1860, n1861, n1862, n1863, n1864,
          n1865, n1866, n1867, n1868, n1869, n1870, n1871, n1872, n1873, n1874,
-         n1875, n1876, n1877, n1878, intadd_519_CI, intadd_519_SUM_2_,
-         intadd_519_SUM_1_, intadd_519_SUM_0_, intadd_519_n3, intadd_519_n2,
-         intadd_519_n1, n2008, n2009, n2010, n2011, n2012, n2013, n2014, n2015,
+         n1875, n1876, n1877, n1878, intadd_387_CI, intadd_387_SUM_2_,
+         intadd_387_SUM_1_, intadd_387_SUM_0_, intadd_387_n3, intadd_387_n2,
+         intadd_387_n1, n2008, n2009, n2010, n2011, n2012, n2013, n2014, n2015,
          n2016, n2017, n2018, n2019, n2020, n2021, n2022, n2023, n2024, n2025,
          n2026, n2027, n2028, n2029, n2030, n2031, n2032, n2033, n2034, n2035,
          n2036, n2037, n2038, n2039, n2040, n2041, n2042, n2043, n2044, n2045,
@@ -926,8 +926,8 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
         .Q(d_ff2_X[60]) );
   DFFRXLTS reg_shift_x_Q_reg_63_ ( .D(n1181), .CK(clk), .RN(n2703), .Q(
         d_ff3_sh_x_out[63]) );
-  CMPR32X2TS intadd_519_U3 ( .A(d_ff2_X[54]), .B(n2022), .C(intadd_519_n3), 
-        .CO(intadd_519_n2), .S(intadd_519_SUM_1_) );
+  CMPR32X2TS intadd_387_U3 ( .A(d_ff2_X[54]), .B(n2022), .C(intadd_387_n3), 
+        .CO(intadd_387_n2), .S(intadd_387_SUM_1_) );
   DFFRX1TS reg_val_muxX_2stage_Q_reg_57_ ( .D(n1199), .CK(clk), .RN(n2703), 
         .Q(d_ff2_X[57]), .QN(n2700) );
   DFFRX1TS reg_LUT_Q_reg_28_ ( .D(n1521), .CK(clk), .RN(n2734), .QN(n2699) );
@@ -1077,8 +1077,8 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
   DFFRX1TS inst_CORDIC_FSM_v3_state_reg_reg_1_ ( .D(
         inst_CORDIC_FSM_v3_state_next[1]), .CK(clk), .RN(n2764), .Q(
         inst_CORDIC_FSM_v3_state_reg[1]) );
-  CMPR32X2TS intadd_519_U2 ( .A(d_ff2_X[55]), .B(n2695), .C(intadd_519_n2), 
-        .CO(intadd_519_n1), .S(intadd_519_SUM_2_) );
+  CMPR32X2TS intadd_387_U2 ( .A(d_ff2_X[55]), .B(n2695), .C(intadd_387_n2), 
+        .CO(intadd_387_n1), .S(intadd_387_SUM_2_) );
   DFFRX4TS ITER_CONT_temp_reg_0_ ( .D(n1877), .CK(clk), .RN(n2772), .Q(
         cont_iter_out[0]), .QN(n2692) );
   DFFRX1TS inst_CORDIC_FSM_v3_state_reg_reg_6_ ( .D(
@@ -1592,8 +1592,8 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
   DFFRX2TS inst_CORDIC_FSM_v3_state_reg_reg_5_ ( .D(
         inst_CORDIC_FSM_v3_state_next[5]), .CK(clk), .RN(n2764), .Q(
         inst_CORDIC_FSM_v3_state_reg[5]) );
-  ADDFX1TS intadd_519_U4 ( .A(d_ff2_X[53]), .B(n2009), .CI(intadd_519_CI), 
-        .CO(intadd_519_n3), .S(intadd_519_SUM_0_) );
+  ADDFX1TS intadd_387_U4 ( .A(d_ff2_X[53]), .B(n2009), .CI(intadd_387_CI), 
+        .CO(intadd_387_n3), .S(intadd_387_SUM_0_) );
   AOI221X1TS U1310 ( .A0(n2280), .A1(n2668), .B0(d_ff3_LUT_out[7]), .B1(n2663), 
         .C0(n2281), .Y(n2258) );
   AOI222X1TS U1311 ( .A0(n2332), .A1(d_ff2_Z[52]), .B0(n2359), .B1(d_ff1_Z[52]), .C0(d_ff_Zn[52]), .C1(n2358), .Y(n2352) );
@@ -2410,11 +2410,11 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
   AOI2BB2XLTS U1758 ( .B0(n2687), .B1(n2671), .A0N(d_ff3_sh_x_out[57]), .A1N(
         n2670), .Y(n1188) );
   AOI2BB1XLTS U1759 ( .A0N(n2700), .A1N(n2669), .B0(n2673), .Y(n2671) );
-  AO22XLTS U1760 ( .A0(n2675), .A1(intadd_519_SUM_2_), .B0(n2680), .B1(
+  AO22XLTS U1760 ( .A0(n2675), .A1(intadd_387_SUM_2_), .B0(n2680), .B1(
         d_ff3_sh_x_out[55]), .Y(n1190) );
-  AO22XLTS U1761 ( .A0(n2675), .A1(intadd_519_SUM_1_), .B0(n2680), .B1(
+  AO22XLTS U1761 ( .A0(n2675), .A1(intadd_387_SUM_1_), .B0(n2680), .B1(
         d_ff3_sh_x_out[54]), .Y(n1191) );
-  AO22XLTS U1762 ( .A0(n2675), .A1(intadd_519_SUM_0_), .B0(n2680), .B1(
+  AO22XLTS U1762 ( .A0(n2675), .A1(intadd_387_SUM_0_), .B0(n2680), .B1(
         d_ff3_sh_x_out[53]), .Y(n1192) );
   AO21XLTS U1763 ( .A0(d_ff3_sh_x_out[52]), .A1(n2073), .B0(n2664), .Y(n1193)
          );
@@ -3120,7 +3120,7 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
   NAND2X1TS U2190 ( .A(n2452), .B(n2453), .Y(beg_add_subt) );
   INVX2TS U2191 ( .A(rst), .Y(n2078) );
   INVX2TS U2192 ( .A(n2063), .Y(n2675) );
-  NOR3X2TS U2193 ( .A(d_ff2_X[57]), .B(d_ff2_X[56]), .C(intadd_519_n1), .Y(
+  NOR3X2TS U2193 ( .A(d_ff2_X[57]), .B(d_ff2_X[56]), .C(intadd_387_n1), .Y(
         n2673) );
   NOR2X2TS U2194 ( .A(d_ff2_X[59]), .B(n2676), .Y(n2679) );
   NOR2X1TS U2195 ( .A(d_ff2_X[61]), .B(n2684), .Y(n2683) );
@@ -3959,11 +3959,11 @@ module CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6 ( clk, rst, beg_fsm_cordic,
         .Y(n1196) );
   OA22X1TS U2871 ( .A0(n2659), .A1(d_ff2_X[61]), .B0(d_ff_Xn[61]), .B1(n2658), 
         .Y(n1195) );
-  NAND2X1TS U2872 ( .A(cont_iter_out[0]), .B(n2693), .Y(intadd_519_CI) );
-  OAI22X1TS U2873 ( .A0(n2663), .A1(intadd_519_CI), .B0(n2693), .B1(n2662), 
+  NAND2X1TS U2872 ( .A(cont_iter_out[0]), .B(n2693), .Y(intadd_387_CI) );
+  OAI22X1TS U2873 ( .A0(n2663), .A1(intadd_387_CI), .B0(n2693), .B1(n2662), 
         .Y(n2664) );
-  NOR2X1TS U2874 ( .A(d_ff2_X[56]), .B(intadd_519_n1), .Y(n2669) );
-  AOI21X1TS U2875 ( .A0(intadd_519_n1), .A1(d_ff2_X[56]), .B0(n2669), .Y(n2667) );
+  NOR2X1TS U2874 ( .A(d_ff2_X[56]), .B(intadd_387_n1), .Y(n2669) );
+  AOI21X1TS U2875 ( .A0(intadd_387_n1), .A1(d_ff2_X[56]), .B0(n2669), .Y(n2667) );
   AOI22X1TS U2876 ( .A0(n2668), .A1(n2667), .B0(n2666), .B1(n2665), .Y(n1189)
          );
   AOI21X1TS U2877 ( .A0(d_ff2_X[59]), .A1(n2676), .B0(n2679), .Y(n2677) );

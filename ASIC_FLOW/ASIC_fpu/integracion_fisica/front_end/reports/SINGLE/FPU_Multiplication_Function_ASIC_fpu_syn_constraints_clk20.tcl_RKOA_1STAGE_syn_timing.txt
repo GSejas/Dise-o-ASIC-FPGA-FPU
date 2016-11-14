@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Multiplication_Function_W32_EW8_SW23
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 01:12:16 2016
+Date   : Sun Nov 13 14:03:48 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -45,17 +45,17 @@ Wire Load Model Mode: top
   U552/CO (CMPR32X2TS)                                    0.83       9.15 f
   U911/Y (INVX2TS)                                        0.24       9.39 r
   U909/CO (ADDFHX1TS)                                     0.64      10.04 r
-  DP_OP_153J129_122_5442_U159/S (CMPR42X2TS)              1.26      11.30 f
+  DP_OP_153J8_122_5442_U159/S (CMPR42X2TS)                1.26      11.30 f
   U1483/S (CMPR42X2TS)                                    0.98      12.28 f
   U796/Y (NAND2X1TS)                                      0.56      12.84 r
   U1792/Y (NAND2X1TS)                                     0.48      13.32 f
   U1003/Y (XOR2X1TS)                                      0.55      13.87 r
-  DP_OP_156J129_125_3370_U139/CO (CMPR42X2TS)             1.22      15.09 f
+  DP_OP_156J8_125_3370_U139/CO (CMPR42X2TS)               1.22      15.09 f
   U1481/CO (CMPR42X2TS)                                   0.37      15.46 f
-  DP_OP_156J129_125_3370_U137/CO (CMPR42X2TS)             0.37      15.83 f
+  DP_OP_156J8_125_3370_U137/CO (CMPR42X2TS)               0.37      15.83 f
   U1467/CO (CMPR42X2TS)                                   0.37      16.20 f
   U1479/CO (CMPR42X2TS)                                   0.37      16.57 f
-  DP_OP_156J129_125_3370_U134/CO (CMPR42X2TS)             0.35      16.92 f
+  DP_OP_156J8_125_3370_U134/CO (CMPR42X2TS)               0.35      16.92 f
   U1486/CO (CMPR42X2TS)                                   0.35      17.28 f
   U1187/S (CMPR42X2TS)                                    0.54      17.81 f
   U988/Y (NOR2X4TS)                                       0.26      18.07 r

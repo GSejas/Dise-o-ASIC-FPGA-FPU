@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:18:55 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: Sel_B_Q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Exp_Operation_Module_Underflow_Q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  Sel_B_Q_reg_0_/CK (DFFRX2TS)                            0.00       1.00 r
+  Sel_B_Q_reg_0_/QN (DFFRX2TS)                            1.23       2.23 f
+  U2011/Y (NOR2X4TS)                                      0.71       2.94 r
+  U2189/Y (AOI2BB2X1TS)                                   0.63       3.58 f
+  U2190/Y (OAI2BB1X1TS)                                   0.37       3.95 r
+  U2053/Y (XOR2X1TS)                                      0.41       4.36 f
+  U1346/CO (CMPR32X2TS)                                   0.60       4.96 f
+  U1344/CO (CMPR32X2TS)                                   0.56       5.52 f
+  U1341/CO (CMPR32X2TS)                                   0.56       6.08 f
+  U1987/CO (ADDFHX2TS)                                    0.37       6.45 f
+  U1340/CO (CMPR32X2TS)                                   0.53       6.98 f
+  U1512/CO (ADDFHX2TS)                                    0.37       7.36 f
+  U1503/CO (ADDFHX2TS)                                    0.35       7.71 f
+  U1336/CO (CMPR32X2TS)                                   0.53       8.24 f
+  U1335/CO (ADDFHX2TS)                                    0.37       8.61 f
+  U1334/S (ADDFHX2TS)                                     0.48       9.09 f
+  U2201/Y (OR4X2TS)                                       0.50       9.58 f
+  U1327/Y (OR3X4TS)                                       0.42      10.00 f
+  U2205/Y (MXI2X4TS)                                      0.18      10.18 r
+  Exp_Operation_Module_Underflow_Q_reg_0_/D (DFFRX1TS)
+                                                          0.00      10.18 r
+  data arrival time                                                 10.18
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  Exp_Operation_Module_Underflow_Q_reg_0_/CK (DFFRX1TS)
+                                                          0.00      10.50 r
+  library setup time                                     -0.31      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

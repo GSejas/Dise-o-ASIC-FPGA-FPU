@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov 10 23:07:49 2016
+Date   : Sun Nov 13 14:31:17 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -40,7 +40,7 @@ Wire Load Model Mode: top
   U1919/Y (XNOR2X1TS)                                     0.41       6.97 r
   U1529/Y (INVX4TS)                                       0.55       7.52 f
   U2549/Y (OAI22X1TS)                                     0.48       8.00 r
-  DP_OP_498J189_124_1725_U148/S (CMPR42X1TS)              1.32       9.33 f
+  DP_OP_498J313_124_1725_U148/S (CMPR42X1TS)              1.32       9.33 f
   U2268/Y (OR2X1TS)                                       0.62       9.95 f
   U2502/Y (NAND2X1TS)                                     0.33      10.28 r
   U1673/Y (XNOR2X1TS)                                     0.38      10.66 f

@@ -1,16 +1,6 @@
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 12 19:20 2016
-Doing SDF annotation ...... Done
-VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-The file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE/inter.vpd' was opened successfully.
-           V C S   S i m u l a t i o n   R e p o r t 
-Time: 0 ps
-CPU Time:      0.130 seconds;       Data structure size:   1.3Mb
-Sat Nov 12 19:20:52 2016
-Chronologic VCS simulator copyright 1991-2015
-Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 12 19:20 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 13 12:57 2016
 Doing SDF annotation ...... Done
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
 The file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE/inter.vpd' was opened successfully.
@@ -4113,10 +4103,12 @@ c835966f
 
 40183.265625
 
-$finish called from file "./Testbench_all_operators.v", line 477.
-$finish at simulation time            112840000
-Simulation complete, time is 112840000 ps.
+00000000
+
+0.000000
+
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 112840000 ps
-CPU Time:      2.880 seconds;       Data structure size:   1.3Mb
-Sat Nov 12 19:23:10 2016
+Time: 240184820000 ps
+CPU Time:     40.140 seconds;       Data structure size:   1.4Mb
+Sun Nov 13 13:03:23 2016
+.tcl

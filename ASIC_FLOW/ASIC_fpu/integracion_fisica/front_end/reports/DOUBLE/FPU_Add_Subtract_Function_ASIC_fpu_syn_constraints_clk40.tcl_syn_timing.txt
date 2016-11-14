@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Add_Subtract_Function_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:13:32 2016
+Date   : Sun Nov 13 08:51:53 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -35,61 +35,61 @@ Wire Load Model Mode: top
   U3109/Y (AND2X4TS)                                      0.99       8.47 r
   U3110/Y (BUFX4TS)                                       1.00       9.47 r
   U3253/Y (XOR2X1TS)                                      0.64      10.11 f
-  DP_OP_45J174_125_8406_U56/CO (CMPR32X2TS)               0.63      10.74 f
-  DP_OP_45J174_125_8406_U55/CO (CMPR32X2TS)               0.56      11.29 f
-  DP_OP_45J174_125_8406_U54/CO (CMPR32X2TS)               0.56      11.85 f
-  DP_OP_45J174_125_8406_U53/CO (CMPR32X2TS)               0.56      12.41 f
-  DP_OP_45J174_125_8406_U52/CO (CMPR32X2TS)               0.56      12.97 f
-  DP_OP_45J174_125_8406_U51/CO (CMPR32X2TS)               0.56      13.52 f
-  DP_OP_45J174_125_8406_U50/CO (CMPR32X2TS)               0.56      14.08 f
-  DP_OP_45J174_125_8406_U49/CO (CMPR32X2TS)               0.56      14.64 f
-  DP_OP_45J174_125_8406_U48/CO (CMPR32X2TS)               0.56      15.20 f
-  DP_OP_45J174_125_8406_U47/CO (CMPR32X2TS)               0.56      15.75 f
-  DP_OP_45J174_125_8406_U46/CO (CMPR32X2TS)               0.56      16.31 f
-  DP_OP_45J174_125_8406_U45/CO (CMPR32X2TS)               0.56      16.87 f
-  DP_OP_45J174_125_8406_U44/CO (CMPR32X2TS)               0.56      17.43 f
-  DP_OP_45J174_125_8406_U43/CO (CMPR32X2TS)               0.56      17.98 f
-  DP_OP_45J174_125_8406_U42/CO (CMPR32X2TS)               0.56      18.54 f
-  DP_OP_45J174_125_8406_U41/CO (CMPR32X2TS)               0.56      19.10 f
-  DP_OP_45J174_125_8406_U40/CO (CMPR32X2TS)               0.56      19.66 f
-  DP_OP_45J174_125_8406_U39/CO (CMPR32X2TS)               0.56      20.21 f
-  DP_OP_45J174_125_8406_U38/CO (CMPR32X2TS)               0.56      20.77 f
-  DP_OP_45J174_125_8406_U37/CO (CMPR32X2TS)               0.56      21.33 f
-  DP_OP_45J174_125_8406_U36/CO (CMPR32X2TS)               0.56      21.89 f
-  DP_OP_45J174_125_8406_U35/CO (CMPR32X2TS)               0.56      22.44 f
-  DP_OP_45J174_125_8406_U34/CO (CMPR32X2TS)               0.56      23.00 f
-  DP_OP_45J174_125_8406_U33/CO (CMPR32X2TS)               0.56      23.56 f
-  DP_OP_45J174_125_8406_U32/CO (CMPR32X2TS)               0.56      24.11 f
-  DP_OP_45J174_125_8406_U31/CO (CMPR32X2TS)               0.56      24.67 f
-  DP_OP_45J174_125_8406_U30/CO (CMPR32X2TS)               0.56      25.23 f
-  DP_OP_45J174_125_8406_U29/CO (CMPR32X2TS)               0.56      25.79 f
-  DP_OP_45J174_125_8406_U28/CO (CMPR32X2TS)               0.56      26.34 f
-  DP_OP_45J174_125_8406_U27/CO (CMPR32X2TS)               0.56      26.90 f
-  DP_OP_45J174_125_8406_U26/CO (CMPR32X2TS)               0.56      27.46 f
-  DP_OP_45J174_125_8406_U25/CO (CMPR32X2TS)               0.56      28.02 f
-  DP_OP_45J174_125_8406_U24/CO (CMPR32X2TS)               0.56      28.57 f
-  DP_OP_45J174_125_8406_U23/CO (CMPR32X2TS)               0.56      29.13 f
-  DP_OP_45J174_125_8406_U22/CO (CMPR32X2TS)               0.56      29.69 f
-  DP_OP_45J174_125_8406_U21/CO (CMPR32X2TS)               0.56      30.25 f
-  DP_OP_45J174_125_8406_U20/CO (CMPR32X2TS)               0.56      30.80 f
-  DP_OP_45J174_125_8406_U19/CO (CMPR32X2TS)               0.56      31.36 f
-  DP_OP_45J174_125_8406_U18/CO (CMPR32X2TS)               0.56      31.92 f
-  DP_OP_45J174_125_8406_U17/CO (CMPR32X2TS)               0.56      32.48 f
-  DP_OP_45J174_125_8406_U16/CO (CMPR32X2TS)               0.56      33.03 f
-  DP_OP_45J174_125_8406_U15/CO (CMPR32X2TS)               0.56      33.59 f
-  DP_OP_45J174_125_8406_U14/CO (CMPR32X2TS)               0.56      34.15 f
-  DP_OP_45J174_125_8406_U13/CO (CMPR32X2TS)               0.56      34.71 f
-  DP_OP_45J174_125_8406_U12/CO (CMPR32X2TS)               0.56      35.26 f
-  DP_OP_45J174_125_8406_U11/CO (CMPR32X2TS)               0.56      35.82 f
-  DP_OP_45J174_125_8406_U10/CO (CMPR32X2TS)               0.56      36.38 f
-  DP_OP_45J174_125_8406_U9/CO (CMPR32X2TS)                0.56      36.93 f
-  DP_OP_45J174_125_8406_U8/CO (CMPR32X2TS)                0.56      37.49 f
-  DP_OP_45J174_125_8406_U7/CO (CMPR32X2TS)                0.56      38.05 f
-  DP_OP_45J174_125_8406_U6/CO (CMPR32X2TS)                0.56      38.61 f
-  DP_OP_45J174_125_8406_U5/CO (CMPR32X2TS)                0.56      39.16 f
-  DP_OP_45J174_125_8406_U4/CO (CMPR32X2TS)                0.56      39.72 f
-  DP_OP_45J174_125_8406_U3/CO (CMPR32X2TS)                0.56      40.28 f
-  DP_OP_45J174_125_8406_U2/CO (CMPR32X2TS)                0.55      40.83 f
+  DP_OP_45J154_125_8406_U56/CO (CMPR32X2TS)               0.63      10.74 f
+  DP_OP_45J154_125_8406_U55/CO (CMPR32X2TS)               0.56      11.29 f
+  DP_OP_45J154_125_8406_U54/CO (CMPR32X2TS)               0.56      11.85 f
+  DP_OP_45J154_125_8406_U53/CO (CMPR32X2TS)               0.56      12.41 f
+  DP_OP_45J154_125_8406_U52/CO (CMPR32X2TS)               0.56      12.97 f
+  DP_OP_45J154_125_8406_U51/CO (CMPR32X2TS)               0.56      13.52 f
+  DP_OP_45J154_125_8406_U50/CO (CMPR32X2TS)               0.56      14.08 f
+  DP_OP_45J154_125_8406_U49/CO (CMPR32X2TS)               0.56      14.64 f
+  DP_OP_45J154_125_8406_U48/CO (CMPR32X2TS)               0.56      15.20 f
+  DP_OP_45J154_125_8406_U47/CO (CMPR32X2TS)               0.56      15.75 f
+  DP_OP_45J154_125_8406_U46/CO (CMPR32X2TS)               0.56      16.31 f
+  DP_OP_45J154_125_8406_U45/CO (CMPR32X2TS)               0.56      16.87 f
+  DP_OP_45J154_125_8406_U44/CO (CMPR32X2TS)               0.56      17.43 f
+  DP_OP_45J154_125_8406_U43/CO (CMPR32X2TS)               0.56      17.98 f
+  DP_OP_45J154_125_8406_U42/CO (CMPR32X2TS)               0.56      18.54 f
+  DP_OP_45J154_125_8406_U41/CO (CMPR32X2TS)               0.56      19.10 f
+  DP_OP_45J154_125_8406_U40/CO (CMPR32X2TS)               0.56      19.66 f
+  DP_OP_45J154_125_8406_U39/CO (CMPR32X2TS)               0.56      20.21 f
+  DP_OP_45J154_125_8406_U38/CO (CMPR32X2TS)               0.56      20.77 f
+  DP_OP_45J154_125_8406_U37/CO (CMPR32X2TS)               0.56      21.33 f
+  DP_OP_45J154_125_8406_U36/CO (CMPR32X2TS)               0.56      21.89 f
+  DP_OP_45J154_125_8406_U35/CO (CMPR32X2TS)               0.56      22.44 f
+  DP_OP_45J154_125_8406_U34/CO (CMPR32X2TS)               0.56      23.00 f
+  DP_OP_45J154_125_8406_U33/CO (CMPR32X2TS)               0.56      23.56 f
+  DP_OP_45J154_125_8406_U32/CO (CMPR32X2TS)               0.56      24.11 f
+  DP_OP_45J154_125_8406_U31/CO (CMPR32X2TS)               0.56      24.67 f
+  DP_OP_45J154_125_8406_U30/CO (CMPR32X2TS)               0.56      25.23 f
+  DP_OP_45J154_125_8406_U29/CO (CMPR32X2TS)               0.56      25.79 f
+  DP_OP_45J154_125_8406_U28/CO (CMPR32X2TS)               0.56      26.34 f
+  DP_OP_45J154_125_8406_U27/CO (CMPR32X2TS)               0.56      26.90 f
+  DP_OP_45J154_125_8406_U26/CO (CMPR32X2TS)               0.56      27.46 f
+  DP_OP_45J154_125_8406_U25/CO (CMPR32X2TS)               0.56      28.02 f
+  DP_OP_45J154_125_8406_U24/CO (CMPR32X2TS)               0.56      28.57 f
+  DP_OP_45J154_125_8406_U23/CO (CMPR32X2TS)               0.56      29.13 f
+  DP_OP_45J154_125_8406_U22/CO (CMPR32X2TS)               0.56      29.69 f
+  DP_OP_45J154_125_8406_U21/CO (CMPR32X2TS)               0.56      30.25 f
+  DP_OP_45J154_125_8406_U20/CO (CMPR32X2TS)               0.56      30.80 f
+  DP_OP_45J154_125_8406_U19/CO (CMPR32X2TS)               0.56      31.36 f
+  DP_OP_45J154_125_8406_U18/CO (CMPR32X2TS)               0.56      31.92 f
+  DP_OP_45J154_125_8406_U17/CO (CMPR32X2TS)               0.56      32.48 f
+  DP_OP_45J154_125_8406_U16/CO (CMPR32X2TS)               0.56      33.03 f
+  DP_OP_45J154_125_8406_U15/CO (CMPR32X2TS)               0.56      33.59 f
+  DP_OP_45J154_125_8406_U14/CO (CMPR32X2TS)               0.56      34.15 f
+  DP_OP_45J154_125_8406_U13/CO (CMPR32X2TS)               0.56      34.71 f
+  DP_OP_45J154_125_8406_U12/CO (CMPR32X2TS)               0.56      35.26 f
+  DP_OP_45J154_125_8406_U11/CO (CMPR32X2TS)               0.56      35.82 f
+  DP_OP_45J154_125_8406_U10/CO (CMPR32X2TS)               0.56      36.38 f
+  DP_OP_45J154_125_8406_U9/CO (CMPR32X2TS)                0.56      36.93 f
+  DP_OP_45J154_125_8406_U8/CO (CMPR32X2TS)                0.56      37.49 f
+  DP_OP_45J154_125_8406_U7/CO (CMPR32X2TS)                0.56      38.05 f
+  DP_OP_45J154_125_8406_U6/CO (CMPR32X2TS)                0.56      38.61 f
+  DP_OP_45J154_125_8406_U5/CO (CMPR32X2TS)                0.56      39.16 f
+  DP_OP_45J154_125_8406_U4/CO (CMPR32X2TS)                0.56      39.72 f
+  DP_OP_45J154_125_8406_U3/CO (CMPR32X2TS)                0.56      40.28 f
+  DP_OP_45J154_125_8406_U2/CO (CMPR32X2TS)                0.55      40.83 f
   U3280/Y (XOR2X1TS)                                      0.32      41.15 r
   U1936/Y (AO22XLTS)                                      0.53      41.68 r
   Add_Subt_Sgf_module_Add_overflow_Result_Q_reg_0_/D (DFFRX2TS)

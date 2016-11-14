@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : FPU_Interface2_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Fri Nov 11 00:07:25 2016
+Date   : Sun Nov 13 15:20:24 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -65,9 +65,9 @@ Wire Load Model Mode: top
   U9073/CO (ADDFHX4TS)                                    0.56      17.27 r
   U4153/S (ADDFHX2TS)                                     0.44      17.71 r
   U4524/S (ADDFHX2TS)                                     0.43      18.14 f
-  DP_OP_998J214_122_6707_U13/CO1 (AFCSHCINX2TS)           0.49      18.64 f
+  DP_OP_998J333_122_6707_U13/CO1 (AFCSHCINX2TS)           0.49      18.64 f
   U4035/Y (MX2X4TS)                                       0.48      19.12 f
-  DP_OP_998J214_122_6707_U11/S (AFCSIHCONX2TS)            0.55      19.67 f
+  DP_OP_998J333_122_6707_U11/S (AFCSIHCONX2TS)            0.55      19.67 f
   U12336/S (CMPR42X2TS)                                   1.02      20.69 f
   U7905/CO (CMPR32X2TS)                                   0.72      21.41 f
   U4450/CO (ADDFHX2TS)                                    0.42      21.83 f

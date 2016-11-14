@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : CORDIC_Arch2v1_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:05:56 2016
+Date   : Sun Nov 13 08:44:56 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c

@@ -3,7 +3,7 @@
 Report : qor
 Design : CORDIC_Arch3v1_W64_EW11_SW52_SWR55_EWR6
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 18:08:56 2016
+Date   : Sun Nov 13 08:47:31 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Thu Nov  3 18:08:56 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.88
-  Logic Optimization:                  1.06
-  Mapping Optimization:               12.59
+  Resource Sharing:                    0.98
+  Logic Optimization:                  1.10
+  Mapping Optimization:               13.68
   -----------------------------------------
-  Overall Compile Time:               34.69
-  Overall Compile Wall Clock Time:    35.10
+  Overall Compile Time:               37.58
+  Overall Compile Wall Clock Time:    38.05
 
   --------------------------------------------------------------------
 

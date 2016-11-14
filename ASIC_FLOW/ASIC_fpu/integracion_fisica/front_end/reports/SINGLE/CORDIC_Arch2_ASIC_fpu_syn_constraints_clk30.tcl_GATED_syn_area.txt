@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 08:57:07 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          148
+Number of nets:                          2247
+Number of cells:                         1986
+Number of combinational cells:           1296
+Number of sequential cells:               672
+Number of macros/black boxes:               0
+Number of buf/inv:                        190
+Number of references:                     124
+
+Combinational area:              12101.760113
+Buf/Inv area:                     1092.960027
+Noncombinational area:           21857.759373
+Macro/Black Box area:                0.000000
+Net Interconnect area:          275008.038635
+
+Total cell area:                 33959.519485
+Total area:                     308967.558121
+1

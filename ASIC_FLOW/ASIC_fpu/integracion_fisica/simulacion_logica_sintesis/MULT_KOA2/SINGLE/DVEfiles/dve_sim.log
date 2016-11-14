@@ -1,0 +1,50 @@
+14:11:19    105 --> ...                      [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv +v2k +lint=all -a log_name +define+SINGLE +define+KOA2_SINGLE +neg_tchk +sdfverbose -pid 2918 -toolin /tmp/vcs_20161113201116_2917_jsequeira..stdin -toolout /tmp/vcs_20161113201116_2917_jsequeira..stdout  
+14:11:19    106 --> ...                          [tcl] set ucliGUI::state
+14:11:19    107 --> ...                              [tcl] set dveMisc::dve_log_file 1
+14:11:19    108 --> ...                                  [tcl] gui_update_simulator_buttons
+14:11:20    109 --> ...                                      [tcl] set ucliGUI::state
+14:11:20    110 --> ...                                          [tcl] ucliCore::getToolPID
+14:11:20    111 --> ...                                              [tcl] synopsys::env hasTB
+14:11:20    112 --> ...                                                  [tcl] trigger_hier_stack_context_switch 0
+14:11:20    113 --> ...                                                      [tcl] synUtils::setDVEInitPhase 1
+14:11:20    114 --> ...                                                          [tcl] gui_get_env SIMSETUP::SIMVPD
+14:11:20    115 --> ...                                                              [tcl] synopsys::dump -type VPD -file /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_KOA2/SINGLE/inter.vpd -locking
+14:11:20    116 --> ...                                                                  [tcl] synopsys::dump -autoflush on -fid VPD0
+14:11:20    117 --> ...                                                                      [tcl] set ::dve_fid VPD0
+14:11:20    118 --> ...                                                                          [tcl] synUtils::setDVEInitPhase 0
+14:11:20    119 --> ...                                                                              [tcl] ucliCore::getToolPID
+14:11:20    120 --> ...                                                                                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp7MgNSL
+14:11:20    121 --> ...                                                                                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.2918}
+14:11:20    122 --> ...                                                                                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.2918}
+14:11:20    123 --> ...                                                                                              [tcl] dveMisc::vbusExpand Testbench_FPU_Mark2
+14:11:20    124 --> ...                                                                                                  [tcl] config endofsim noexit
+14:11:20    125 --> ...  [tcl] config onfail enable all
+14:11:20    126 --> ...      [tcl] config syscaddplainmembers
+14:11:20    127 --> ...          [tcl] config syscaddsourcenames
+14:11:20    128 --> ...              [tcl] config syscaddstructtypes
+14:11:20    129 --> ...                  [tcl] synopsys::listing -disable
+14:11:20    130 --> ...                      [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[31:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[31:0]} {Data_2[31:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW }
+14:11:25    131 --> ...                          [tcl] synopsys::dump -add {Testbench_FPU_Mark2} -scope "." -depth 1 -fid VPD0
+14:11:25    132 --> ...                              [tcl] synopsys::dump -add {Testbench_FPU_Mark2.Array_IN_1 Testbench_FPU_Mark2.Array_IN_2 } -aggregates  -fid VPD0
+14:11:30    133 --> ...                                  [tcl] synopsys::run
+14:11:30    134 --> ...                                      [tcl] set ucliGUI::state
+14:11:30    135 --> ...                                          [tcl] set ucliGUI::state
+14:11:30    136 --> ...                                              [tcl] gui_update_simulator_buttons
+14:11:33    137 --> ...                                                  [tcl] set synopsys::env(time) 57409879
+14:11:36    138 --> ...                                                      [tcl] set synopsys::env(time) 112097850
+14:11:36    139 --> ...                                                          [tcl] set ucliGUI::state
+14:11:36    140 --> ...                                                              [tcl] set ucliGUI::state
+14:11:36    141 --> ...                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+14:11:36    142 --> ...                                                                      [tcl] set dveMisc::result
+14:11:36    143 --> ...                                                                          [tcl] gui_update_simulator_buttons
+14:11:36    144 --> ...                                                                              [tcl] ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[31:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[31:0]} {Data_2[31:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW SWR }
+14:12:00    145 --> ...                                                                                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+14:12:00    146 --> ...                                                                                      [tcl] synopsys::finish
+14:12:00    147 --> ...                                                                                          [tcl] set ucliGUI::state
+14:12:00    148 --> ...                                                                                              [tcl] set ucliGUI::state
+14:12:00    149 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+14:12:00    150 --> ...  [tcl] set dveMisc::result
+14:12:00    151 --> ...      [tcl] gui_update_simulator_buttons
+14:12:00    152 --> ...          [tcl] catch {senv activeDomain} dveMisc::result 
+14:12:00    153 --> ...              [tcl] set dveMisc::result
+14:12:00    154 --> ...                  [tcl] ucli_exit

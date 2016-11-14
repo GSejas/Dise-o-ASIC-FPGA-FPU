@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : CORDIC_Arch3v1_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sun Nov 13 09:01:49 2016
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          5.49
+  Critical Path Slack:           2.01
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          8
+  Hierarchical Port Count:         32
+  Leaf Cell Count:                823
+  Buf/Inv Cell Count:             142
+  Buf Cell Count:                  54
+  Inv Cell Count:                  88
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       456
+  Sequential Cell Count:          367
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     3820.319991
+  Noncombinational Area: 12071.519625
+  Buf/Inv Area:            771.840007
+  Total Buffer Area:           383.04
+  Total Inverter Area:         388.80
+  Macro/Black Box Area:      0.000000
+  Net Area:             112280.566498
+  -----------------------------------
+  Cell Area:             15891.839616
+  Design Area:          128172.406114
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           914
+  Nets With Violations:             3
+  Max Trans Violations:             3
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: zener
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.57
+  Logic Optimization:                  0.41
+  Mapping Optimization:                4.45
+  -----------------------------------------
+  Overall Compile Time:               18.31
+  Overall Compile Wall Clock Time:    18.78
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

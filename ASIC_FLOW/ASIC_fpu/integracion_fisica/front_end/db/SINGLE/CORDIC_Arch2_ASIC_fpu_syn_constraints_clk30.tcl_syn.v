@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Thu Nov  3 11:42:18 2016
+// Date      : Sun Nov 13 08:22:31 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -79,41 +79,41 @@ module CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
          n1488, n1489, n1490, n1491, n1492, n1493, n1494, n1495, n1496, n1497,
          n1498, n1499, n1500, n1501, n1502, n1503, n1504, n1505, n1506, n1507,
          n1508, n1509, n1510, n1511, n1512, n1513, n1514, n1515, n1516, n1517,
-         n1518, n1519, n1520, n1521, DP_OP_92J53_122_1254_n20,
-         DP_OP_92J53_122_1254_n19, DP_OP_92J53_122_1254_n18,
-         DP_OP_92J53_122_1254_n17, DP_OP_92J53_122_1254_n16,
-         DP_OP_92J53_122_1254_n15, DP_OP_92J53_122_1254_n14,
-         DP_OP_92J53_122_1254_n13, DP_OP_92J53_122_1254_n8,
-         DP_OP_92J53_122_1254_n7, DP_OP_92J53_122_1254_n6,
-         DP_OP_92J53_122_1254_n5, DP_OP_92J53_122_1254_n4,
-         DP_OP_92J53_122_1254_n3, DP_OP_92J53_122_1254_n2,
-         DP_OP_92J53_122_1254_n1, DP_OP_95J53_125_203_n56,
-         DP_OP_95J53_125_203_n55, DP_OP_95J53_125_203_n54,
-         DP_OP_95J53_125_203_n53, DP_OP_95J53_125_203_n52,
-         DP_OP_95J53_125_203_n51, DP_OP_95J53_125_203_n50,
-         DP_OP_95J53_125_203_n49, DP_OP_95J53_125_203_n48,
-         DP_OP_95J53_125_203_n47, DP_OP_95J53_125_203_n46,
-         DP_OP_95J53_125_203_n45, DP_OP_95J53_125_203_n44,
-         DP_OP_95J53_125_203_n43, DP_OP_95J53_125_203_n42,
-         DP_OP_95J53_125_203_n41, DP_OP_95J53_125_203_n40,
-         DP_OP_95J53_125_203_n39, DP_OP_95J53_125_203_n38,
-         DP_OP_95J53_125_203_n37, DP_OP_95J53_125_203_n36,
-         DP_OP_95J53_125_203_n35, DP_OP_95J53_125_203_n34,
-         DP_OP_95J53_125_203_n33, DP_OP_95J53_125_203_n32,
-         DP_OP_95J53_125_203_n31, DP_OP_95J53_125_203_n26,
-         DP_OP_95J53_125_203_n25, DP_OP_95J53_125_203_n24,
-         DP_OP_95J53_125_203_n23, DP_OP_95J53_125_203_n22,
-         DP_OP_95J53_125_203_n21, DP_OP_95J53_125_203_n20,
-         DP_OP_95J53_125_203_n19, DP_OP_95J53_125_203_n18,
-         DP_OP_95J53_125_203_n17, DP_OP_95J53_125_203_n16,
-         DP_OP_95J53_125_203_n15, DP_OP_95J53_125_203_n14,
-         DP_OP_95J53_125_203_n13, DP_OP_95J53_125_203_n12,
-         DP_OP_95J53_125_203_n11, DP_OP_95J53_125_203_n10,
-         DP_OP_95J53_125_203_n9, DP_OP_95J53_125_203_n8,
-         DP_OP_95J53_125_203_n7, DP_OP_95J53_125_203_n6,
-         DP_OP_95J53_125_203_n5, DP_OP_95J53_125_203_n4,
-         DP_OP_95J53_125_203_n3, DP_OP_95J53_125_203_n2,
-         DP_OP_95J53_125_203_n1, n1532, n1533, n1534, n1535, n1536, n1537,
+         n1518, n1519, n1520, n1521, DP_OP_92J113_122_1254_n20,
+         DP_OP_92J113_122_1254_n19, DP_OP_92J113_122_1254_n18,
+         DP_OP_92J113_122_1254_n17, DP_OP_92J113_122_1254_n16,
+         DP_OP_92J113_122_1254_n15, DP_OP_92J113_122_1254_n14,
+         DP_OP_92J113_122_1254_n13, DP_OP_92J113_122_1254_n8,
+         DP_OP_92J113_122_1254_n7, DP_OP_92J113_122_1254_n6,
+         DP_OP_92J113_122_1254_n5, DP_OP_92J113_122_1254_n4,
+         DP_OP_92J113_122_1254_n3, DP_OP_92J113_122_1254_n2,
+         DP_OP_92J113_122_1254_n1, DP_OP_95J113_125_203_n56,
+         DP_OP_95J113_125_203_n55, DP_OP_95J113_125_203_n54,
+         DP_OP_95J113_125_203_n53, DP_OP_95J113_125_203_n52,
+         DP_OP_95J113_125_203_n51, DP_OP_95J113_125_203_n50,
+         DP_OP_95J113_125_203_n49, DP_OP_95J113_125_203_n48,
+         DP_OP_95J113_125_203_n47, DP_OP_95J113_125_203_n46,
+         DP_OP_95J113_125_203_n45, DP_OP_95J113_125_203_n44,
+         DP_OP_95J113_125_203_n43, DP_OP_95J113_125_203_n42,
+         DP_OP_95J113_125_203_n41, DP_OP_95J113_125_203_n40,
+         DP_OP_95J113_125_203_n39, DP_OP_95J113_125_203_n38,
+         DP_OP_95J113_125_203_n37, DP_OP_95J113_125_203_n36,
+         DP_OP_95J113_125_203_n35, DP_OP_95J113_125_203_n34,
+         DP_OP_95J113_125_203_n33, DP_OP_95J113_125_203_n32,
+         DP_OP_95J113_125_203_n31, DP_OP_95J113_125_203_n26,
+         DP_OP_95J113_125_203_n25, DP_OP_95J113_125_203_n24,
+         DP_OP_95J113_125_203_n23, DP_OP_95J113_125_203_n22,
+         DP_OP_95J113_125_203_n21, DP_OP_95J113_125_203_n20,
+         DP_OP_95J113_125_203_n19, DP_OP_95J113_125_203_n18,
+         DP_OP_95J113_125_203_n17, DP_OP_95J113_125_203_n16,
+         DP_OP_95J113_125_203_n15, DP_OP_95J113_125_203_n14,
+         DP_OP_95J113_125_203_n13, DP_OP_95J113_125_203_n12,
+         DP_OP_95J113_125_203_n11, DP_OP_95J113_125_203_n10,
+         DP_OP_95J113_125_203_n9, DP_OP_95J113_125_203_n8,
+         DP_OP_95J113_125_203_n7, DP_OP_95J113_125_203_n6,
+         DP_OP_95J113_125_203_n5, DP_OP_95J113_125_203_n4,
+         DP_OP_95J113_125_203_n3, DP_OP_95J113_125_203_n2,
+         DP_OP_95J113_125_203_n1, n1532, n1533, n1534, n1535, n1536, n1537,
          n1538, n1539, n1540, n1541, n1542, n1543, n1544, n1545, n1546, n1547,
          n1548, n1549, n1550, n1551, n1552, n1553, n1554, n1555, n1556, n1557,
          n1558, n1559, n1560, n1561, n1562, n1563, n1564, n1565, n1566, n1567,
@@ -976,136 +976,135 @@ module CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
         .CK(clk), .RN(n2815), .Q(add_subt_module_DMP[21]) );
   DFFRXLTS add_subt_module_Oper_Start_in_module_MRegister_Q_reg_22_ ( .D(n887), 
         .CK(clk), .RN(n2812), .Q(add_subt_module_DMP[22]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U9 ( .A(add_subt_module_S_Oper_A_exp[0]), 
-        .B(n1700), .C(DP_OP_92J53_122_1254_n20), .CO(DP_OP_92J53_122_1254_n8), 
-        .S(add_subt_module_Exp_Operation_Module_Data_S[0]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U8 ( .A(DP_OP_92J53_122_1254_n19), .B(
-        add_subt_module_S_Oper_A_exp[1]), .C(DP_OP_92J53_122_1254_n8), .CO(
-        DP_OP_92J53_122_1254_n7), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U9 ( .A(add_subt_module_S_Oper_A_exp[0]), 
+        .B(n1700), .C(DP_OP_92J113_122_1254_n20), .CO(DP_OP_92J113_122_1254_n8), .S(add_subt_module_Exp_Operation_Module_Data_S[0]) );
+  CMPR32X2TS DP_OP_92J113_122_1254_U8 ( .A(DP_OP_92J113_122_1254_n19), .B(
+        add_subt_module_S_Oper_A_exp[1]), .C(DP_OP_92J113_122_1254_n8), .CO(
+        DP_OP_92J113_122_1254_n7), .S(
         add_subt_module_Exp_Operation_Module_Data_S[1]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U7 ( .A(DP_OP_92J53_122_1254_n18), .B(
-        add_subt_module_S_Oper_A_exp[2]), .C(DP_OP_92J53_122_1254_n7), .CO(
-        DP_OP_92J53_122_1254_n6), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U7 ( .A(DP_OP_92J113_122_1254_n18), .B(
+        add_subt_module_S_Oper_A_exp[2]), .C(DP_OP_92J113_122_1254_n7), .CO(
+        DP_OP_92J113_122_1254_n6), .S(
         add_subt_module_Exp_Operation_Module_Data_S[2]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U6 ( .A(DP_OP_92J53_122_1254_n17), .B(
-        add_subt_module_S_Oper_A_exp[3]), .C(DP_OP_92J53_122_1254_n6), .CO(
-        DP_OP_92J53_122_1254_n5), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U6 ( .A(DP_OP_92J113_122_1254_n17), .B(
+        add_subt_module_S_Oper_A_exp[3]), .C(DP_OP_92J113_122_1254_n6), .CO(
+        DP_OP_92J113_122_1254_n5), .S(
         add_subt_module_Exp_Operation_Module_Data_S[3]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U5 ( .A(DP_OP_92J53_122_1254_n16), .B(
-        add_subt_module_S_Oper_A_exp[4]), .C(DP_OP_92J53_122_1254_n5), .CO(
-        DP_OP_92J53_122_1254_n4), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U5 ( .A(DP_OP_92J113_122_1254_n16), .B(
+        add_subt_module_S_Oper_A_exp[4]), .C(DP_OP_92J113_122_1254_n5), .CO(
+        DP_OP_92J113_122_1254_n4), .S(
         add_subt_module_Exp_Operation_Module_Data_S[4]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U4 ( .A(DP_OP_92J53_122_1254_n15), .B(
-        add_subt_module_S_Oper_A_exp[5]), .C(DP_OP_92J53_122_1254_n4), .CO(
-        DP_OP_92J53_122_1254_n3), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U4 ( .A(DP_OP_92J113_122_1254_n15), .B(
+        add_subt_module_S_Oper_A_exp[5]), .C(DP_OP_92J113_122_1254_n4), .CO(
+        DP_OP_92J113_122_1254_n3), .S(
         add_subt_module_Exp_Operation_Module_Data_S[5]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U3 ( .A(DP_OP_92J53_122_1254_n14), .B(
-        add_subt_module_S_Oper_A_exp[6]), .C(DP_OP_92J53_122_1254_n3), .CO(
-        DP_OP_92J53_122_1254_n2), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U3 ( .A(DP_OP_92J113_122_1254_n14), .B(
+        add_subt_module_S_Oper_A_exp[6]), .C(DP_OP_92J113_122_1254_n3), .CO(
+        DP_OP_92J113_122_1254_n2), .S(
         add_subt_module_Exp_Operation_Module_Data_S[6]) );
-  CMPR32X2TS DP_OP_92J53_122_1254_U2 ( .A(DP_OP_92J53_122_1254_n13), .B(
-        add_subt_module_S_Oper_A_exp[7]), .C(DP_OP_92J53_122_1254_n2), .CO(
-        DP_OP_92J53_122_1254_n1), .S(
+  CMPR32X2TS DP_OP_92J113_122_1254_U2 ( .A(DP_OP_92J113_122_1254_n13), .B(
+        add_subt_module_S_Oper_A_exp[7]), .C(DP_OP_92J113_122_1254_n2), .CO(
+        DP_OP_92J113_122_1254_n1), .S(
         add_subt_module_Exp_Operation_Module_Data_S[7]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U26 ( .A(DP_OP_95J53_125_203_n55), .B(
-        add_subt_module_S_A_S_Oper_A[1]), .C(DP_OP_95J53_125_203_n26), .CO(
-        DP_OP_95J53_125_203_n25), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U26 ( .A(DP_OP_95J113_125_203_n55), .B(
+        add_subt_module_S_A_S_Oper_A[1]), .C(DP_OP_95J113_125_203_n26), .CO(
+        DP_OP_95J113_125_203_n25), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[1]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U25 ( .A(DP_OP_95J53_125_203_n54), .B(
-        add_subt_module_S_A_S_Oper_A[2]), .C(DP_OP_95J53_125_203_n25), .CO(
-        DP_OP_95J53_125_203_n24), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U25 ( .A(DP_OP_95J113_125_203_n54), .B(
+        add_subt_module_S_A_S_Oper_A[2]), .C(DP_OP_95J113_125_203_n25), .CO(
+        DP_OP_95J113_125_203_n24), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[2]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U24 ( .A(DP_OP_95J53_125_203_n53), .B(
-        add_subt_module_S_A_S_Oper_A[3]), .C(DP_OP_95J53_125_203_n24), .CO(
-        DP_OP_95J53_125_203_n23), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U24 ( .A(DP_OP_95J113_125_203_n53), .B(
+        add_subt_module_S_A_S_Oper_A[3]), .C(DP_OP_95J113_125_203_n24), .CO(
+        DP_OP_95J113_125_203_n23), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[3]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U23 ( .A(DP_OP_95J53_125_203_n52), .B(
-        add_subt_module_S_A_S_Oper_A[4]), .C(DP_OP_95J53_125_203_n23), .CO(
-        DP_OP_95J53_125_203_n22), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U23 ( .A(DP_OP_95J113_125_203_n52), .B(
+        add_subt_module_S_A_S_Oper_A[4]), .C(DP_OP_95J113_125_203_n23), .CO(
+        DP_OP_95J113_125_203_n22), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[4]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U22 ( .A(DP_OP_95J53_125_203_n51), .B(
-        add_subt_module_S_A_S_Oper_A[5]), .C(DP_OP_95J53_125_203_n22), .CO(
-        DP_OP_95J53_125_203_n21), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U22 ( .A(DP_OP_95J113_125_203_n51), .B(
+        add_subt_module_S_A_S_Oper_A[5]), .C(DP_OP_95J113_125_203_n22), .CO(
+        DP_OP_95J113_125_203_n21), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[5]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U21 ( .A(DP_OP_95J53_125_203_n50), .B(
-        add_subt_module_S_A_S_Oper_A[6]), .C(DP_OP_95J53_125_203_n21), .CO(
-        DP_OP_95J53_125_203_n20), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U21 ( .A(DP_OP_95J113_125_203_n50), .B(
+        add_subt_module_S_A_S_Oper_A[6]), .C(DP_OP_95J113_125_203_n21), .CO(
+        DP_OP_95J113_125_203_n20), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[6]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U20 ( .A(DP_OP_95J53_125_203_n49), .B(
-        add_subt_module_S_A_S_Oper_A[7]), .C(DP_OP_95J53_125_203_n20), .CO(
-        DP_OP_95J53_125_203_n19), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U20 ( .A(DP_OP_95J113_125_203_n49), .B(
+        add_subt_module_S_A_S_Oper_A[7]), .C(DP_OP_95J113_125_203_n20), .CO(
+        DP_OP_95J113_125_203_n19), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[7]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U19 ( .A(DP_OP_95J53_125_203_n48), .B(
-        add_subt_module_S_A_S_Oper_A[8]), .C(DP_OP_95J53_125_203_n19), .CO(
-        DP_OP_95J53_125_203_n18), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U19 ( .A(DP_OP_95J113_125_203_n48), .B(
+        add_subt_module_S_A_S_Oper_A[8]), .C(DP_OP_95J113_125_203_n19), .CO(
+        DP_OP_95J113_125_203_n18), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[8]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U18 ( .A(DP_OP_95J53_125_203_n47), .B(
-        add_subt_module_S_A_S_Oper_A[9]), .C(DP_OP_95J53_125_203_n18), .CO(
-        DP_OP_95J53_125_203_n17), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U18 ( .A(DP_OP_95J113_125_203_n47), .B(
+        add_subt_module_S_A_S_Oper_A[9]), .C(DP_OP_95J113_125_203_n18), .CO(
+        DP_OP_95J113_125_203_n17), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[9]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U17 ( .A(DP_OP_95J53_125_203_n46), .B(
-        add_subt_module_S_A_S_Oper_A[10]), .C(DP_OP_95J53_125_203_n17), .CO(
-        DP_OP_95J53_125_203_n16), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U17 ( .A(DP_OP_95J113_125_203_n46), .B(
+        add_subt_module_S_A_S_Oper_A[10]), .C(DP_OP_95J113_125_203_n17), .CO(
+        DP_OP_95J113_125_203_n16), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[10]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U16 ( .A(DP_OP_95J53_125_203_n45), .B(
-        add_subt_module_S_A_S_Oper_A[11]), .C(DP_OP_95J53_125_203_n16), .CO(
-        DP_OP_95J53_125_203_n15), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U16 ( .A(DP_OP_95J113_125_203_n45), .B(
+        add_subt_module_S_A_S_Oper_A[11]), .C(DP_OP_95J113_125_203_n16), .CO(
+        DP_OP_95J113_125_203_n15), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[11]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U15 ( .A(DP_OP_95J53_125_203_n44), .B(
-        add_subt_module_S_A_S_Oper_A[12]), .C(DP_OP_95J53_125_203_n15), .CO(
-        DP_OP_95J53_125_203_n14), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U15 ( .A(DP_OP_95J113_125_203_n44), .B(
+        add_subt_module_S_A_S_Oper_A[12]), .C(DP_OP_95J113_125_203_n15), .CO(
+        DP_OP_95J113_125_203_n14), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[12]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U14 ( .A(DP_OP_95J53_125_203_n43), .B(
-        add_subt_module_S_A_S_Oper_A[13]), .C(DP_OP_95J53_125_203_n14), .CO(
-        DP_OP_95J53_125_203_n13), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U14 ( .A(DP_OP_95J113_125_203_n43), .B(
+        add_subt_module_S_A_S_Oper_A[13]), .C(DP_OP_95J113_125_203_n14), .CO(
+        DP_OP_95J113_125_203_n13), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[13]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U13 ( .A(DP_OP_95J53_125_203_n42), .B(
-        add_subt_module_S_A_S_Oper_A[14]), .C(DP_OP_95J53_125_203_n13), .CO(
-        DP_OP_95J53_125_203_n12), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U13 ( .A(DP_OP_95J113_125_203_n42), .B(
+        add_subt_module_S_A_S_Oper_A[14]), .C(DP_OP_95J113_125_203_n13), .CO(
+        DP_OP_95J113_125_203_n12), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[14]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U12 ( .A(DP_OP_95J53_125_203_n41), .B(
-        add_subt_module_S_A_S_Oper_A[15]), .C(DP_OP_95J53_125_203_n12), .CO(
-        DP_OP_95J53_125_203_n11), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U12 ( .A(DP_OP_95J113_125_203_n41), .B(
+        add_subt_module_S_A_S_Oper_A[15]), .C(DP_OP_95J113_125_203_n12), .CO(
+        DP_OP_95J113_125_203_n11), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[15]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U11 ( .A(DP_OP_95J53_125_203_n40), .B(
-        add_subt_module_S_A_S_Oper_A[16]), .C(DP_OP_95J53_125_203_n11), .CO(
-        DP_OP_95J53_125_203_n10), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U11 ( .A(DP_OP_95J113_125_203_n40), .B(
+        add_subt_module_S_A_S_Oper_A[16]), .C(DP_OP_95J113_125_203_n11), .CO(
+        DP_OP_95J113_125_203_n10), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[16]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U10 ( .A(DP_OP_95J53_125_203_n39), .B(
-        add_subt_module_S_A_S_Oper_A[17]), .C(DP_OP_95J53_125_203_n10), .CO(
-        DP_OP_95J53_125_203_n9), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U10 ( .A(DP_OP_95J113_125_203_n39), .B(
+        add_subt_module_S_A_S_Oper_A[17]), .C(DP_OP_95J113_125_203_n10), .CO(
+        DP_OP_95J113_125_203_n9), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[17]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U9 ( .A(DP_OP_95J53_125_203_n38), .B(
-        add_subt_module_S_A_S_Oper_A[18]), .C(DP_OP_95J53_125_203_n9), .CO(
-        DP_OP_95J53_125_203_n8), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U9 ( .A(DP_OP_95J113_125_203_n38), .B(
+        add_subt_module_S_A_S_Oper_A[18]), .C(DP_OP_95J113_125_203_n9), .CO(
+        DP_OP_95J113_125_203_n8), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[18]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U8 ( .A(DP_OP_95J53_125_203_n37), .B(
-        add_subt_module_S_A_S_Oper_A[19]), .C(DP_OP_95J53_125_203_n8), .CO(
-        DP_OP_95J53_125_203_n7), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U8 ( .A(DP_OP_95J113_125_203_n37), .B(
+        add_subt_module_S_A_S_Oper_A[19]), .C(DP_OP_95J113_125_203_n8), .CO(
+        DP_OP_95J113_125_203_n7), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[19]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U7 ( .A(DP_OP_95J53_125_203_n36), .B(
-        add_subt_module_S_A_S_Oper_A[20]), .C(DP_OP_95J53_125_203_n7), .CO(
-        DP_OP_95J53_125_203_n6), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U7 ( .A(DP_OP_95J113_125_203_n36), .B(
+        add_subt_module_S_A_S_Oper_A[20]), .C(DP_OP_95J113_125_203_n7), .CO(
+        DP_OP_95J113_125_203_n6), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[20]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U6 ( .A(DP_OP_95J53_125_203_n35), .B(
-        add_subt_module_S_A_S_Oper_A[21]), .C(DP_OP_95J53_125_203_n6), .CO(
-        DP_OP_95J53_125_203_n5), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U6 ( .A(DP_OP_95J113_125_203_n35), .B(
+        add_subt_module_S_A_S_Oper_A[21]), .C(DP_OP_95J113_125_203_n6), .CO(
+        DP_OP_95J113_125_203_n5), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[21]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U5 ( .A(DP_OP_95J53_125_203_n34), .B(
-        add_subt_module_S_A_S_Oper_A[22]), .C(DP_OP_95J53_125_203_n5), .CO(
-        DP_OP_95J53_125_203_n4), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U5 ( .A(DP_OP_95J113_125_203_n34), .B(
+        add_subt_module_S_A_S_Oper_A[22]), .C(DP_OP_95J113_125_203_n5), .CO(
+        DP_OP_95J113_125_203_n4), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[22]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U4 ( .A(DP_OP_95J53_125_203_n33), .B(
-        add_subt_module_S_A_S_Oper_A[23]), .C(DP_OP_95J53_125_203_n4), .CO(
-        DP_OP_95J53_125_203_n3), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U4 ( .A(DP_OP_95J113_125_203_n33), .B(
+        add_subt_module_S_A_S_Oper_A[23]), .C(DP_OP_95J113_125_203_n4), .CO(
+        DP_OP_95J113_125_203_n3), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[23]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U3 ( .A(DP_OP_95J53_125_203_n32), .B(
-        add_subt_module_S_A_S_Oper_A[24]), .C(DP_OP_95J53_125_203_n3), .CO(
-        DP_OP_95J53_125_203_n2), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U3 ( .A(DP_OP_95J113_125_203_n32), .B(
+        add_subt_module_S_A_S_Oper_A[24]), .C(DP_OP_95J113_125_203_n3), .CO(
+        DP_OP_95J113_125_203_n2), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[24]) );
-  CMPR32X2TS DP_OP_95J53_125_203_U2 ( .A(DP_OP_95J53_125_203_n31), .B(
-        add_subt_module_S_A_S_Oper_A[25]), .C(DP_OP_95J53_125_203_n2), .CO(
-        DP_OP_95J53_125_203_n1), .S(
+  CMPR32X2TS DP_OP_95J113_125_203_U2 ( .A(DP_OP_95J113_125_203_n31), .B(
+        add_subt_module_S_A_S_Oper_A[25]), .C(DP_OP_95J113_125_203_n2), .CO(
+        DP_OP_95J113_125_203_n1), .S(
         add_subt_module_Add_Subt_Sgf_module_S_to_D[25]) );
   DFFRX1TS add_subt_module_Add_Subt_Sgf_module_Add_Subt_Result_Q_reg_21_ ( .D(
         n1354), .CK(clk), .RN(n2807), .Q(add_subt_module_Add_Subt_result[21]), 
@@ -1761,8 +1760,8 @@ module CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
   DFFRXLTS add_subt_module_Barrel_Shifter_module_Output_Reg_Q_reg_5_ ( .D(
         n1307), .CK(clk), .RN(n2808), .Q(
         add_subt_module_Sgf_normalized_result[5]), .QN(n2691) );
-  CMPR32X2TS DP_OP_95J53_125_203_U27 ( .A(add_subt_module_S_A_S_Oper_A[0]), 
-        .B(n2267), .C(DP_OP_95J53_125_203_n56), .CO(DP_OP_95J53_125_203_n26), 
+  CMPR32X2TS DP_OP_95J113_125_203_U27 ( .A(add_subt_module_S_A_S_Oper_A[0]), 
+        .B(n2267), .C(DP_OP_95J113_125_203_n56), .CO(DP_OP_95J113_125_203_n26), 
         .S(add_subt_module_Add_Subt_Sgf_module_S_to_D[0]) );
   DFFRX4TS add_subt_module_Sel_C_Q_reg_0_ ( .D(n1358), .CK(clk), .RN(n1014), 
         .Q(add_subt_module_FSM_selector_C), .QN(n2723) );
@@ -1817,7 +1816,7 @@ module CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
   NOR2X6TS U1654 ( .A(n1618), .B(n1753), .Y(n1718) );
   BUFX4TS U1655 ( .A(n1931), .Y(n2109) );
   INVX4TS U1656 ( .A(n2372), .Y(n1939) );
-  XOR2XLTS U1657 ( .A(DP_OP_95J53_125_203_n1), .B(n2796), .Y(n2294) );
+  XOR2XLTS U1657 ( .A(DP_OP_95J113_125_203_n1), .B(n2796), .Y(n2294) );
   INVX4TS U1658 ( .A(n2253), .Y(n2099) );
   CLKINVX6TS U1659 ( .A(n1934), .Y(n1962) );
   NOR2X1TS U1660 ( .A(n1668), .B(n1796), .Y(n1766) );
@@ -3471,7 +3470,7 @@ module CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
         n2233), .B0(n2206), .Y(n2207) );
   OAI211XLTS U2709 ( .A0(n2231), .A1(n2096), .B0(n2208), .C0(n2207), .Y(n1320)
          );
-  XOR2X1TS U2710 ( .A(DP_OP_92J53_122_1254_n1), .B(n1700), .Y(n2336) );
+  XOR2X1TS U2710 ( .A(DP_OP_92J113_122_1254_n1), .B(n1700), .Y(n2336) );
   INVX2TS U2711 ( .A(n2214), .Y(n2210) );
   OR4X2TS U2712 ( .A(add_subt_module_Exp_Operation_Module_Data_S[2]), .B(
         add_subt_module_Exp_Operation_Module_Data_S[0]), .C(
@@ -3572,61 +3571,61 @@ module CORDIC_Arch2_W32_EW8_SW23_SWR26_EWR5 ( clk, rst, beg_fsm_cordic,
   OAI222X1TS U2755 ( .A0(n2686), .A1(n2254), .B0(n2253), .B1(n2783), .C0(n2252), .C1(n2162), .Y(n1303) );
   NOR2BX1TS U2756 ( .AN(add_subt_module_Sgf_normalized_result[25]), .B(n1690), 
         .Y(n2255) );
-  XOR2X1TS U2757 ( .A(n2796), .B(n2255), .Y(DP_OP_95J53_125_203_n31) );
+  XOR2X1TS U2757 ( .A(n2796), .B(n2255), .Y(DP_OP_95J113_125_203_n31) );
   NOR2XLTS U2758 ( .A(n2781), .B(n1690), .Y(n2256) );
-  XOR2X1TS U2759 ( .A(n2796), .B(n2256), .Y(DP_OP_95J53_125_203_n32) );
+  XOR2X1TS U2759 ( .A(n2796), .B(n2256), .Y(DP_OP_95J113_125_203_n32) );
   NOR2XLTS U2760 ( .A(n2782), .B(n1691), .Y(n2257) );
-  XOR2X1TS U2761 ( .A(n2796), .B(n2257), .Y(DP_OP_95J53_125_203_n33) );
+  XOR2X1TS U2761 ( .A(n2796), .B(n2257), .Y(DP_OP_95J113_125_203_n33) );
   NOR2XLTS U2762 ( .A(n2774), .B(n1690), .Y(n2258) );
-  XOR2X1TS U2763 ( .A(n2796), .B(n2258), .Y(DP_OP_95J53_125_203_n34) );
+  XOR2X1TS U2763 ( .A(n2796), .B(n2258), .Y(DP_OP_95J113_125_203_n34) );
   NOR2XLTS U2764 ( .A(n2775), .B(n1691), .Y(n2259) );
-  XOR2X1TS U2765 ( .A(n2796), .B(n2259), .Y(DP_OP_95J53_125_203_n35) );
+  XOR2X1TS U2765 ( .A(n2796), .B(n2259), .Y(DP_OP_95J113_125_203_n35) );
   NOR2XLTS U2766 ( .A(n2769), .B(n1690), .Y(n2260) );
-  XOR2X1TS U2767 ( .A(n2796), .B(n2260), .Y(DP_OP_95J53_125_203_n36) );
-  XOR2X1TS U2768 ( .A(n2796), .B(n2261), .Y(DP_OP_95J53_125_203_n37) );
+  XOR2X1TS U2767 ( .A(n2796), .B(n2260), .Y(DP_OP_95J113_125_203_n36) );
+  XOR2X1TS U2768 ( .A(n2796), .B(n2261), .Y(DP_OP_95J113_125_203_n37) );
   NOR2XLTS U2769 ( .A(n2761), .B(n1690), .Y(n2262) );
-  XOR2X1TS U2770 ( .A(n2796), .B(n2262), .Y(DP_OP_95J53_125_203_n38) );
+  XOR2X1TS U2770 ( .A(n2796), .B(n2262), .Y(DP_OP_95J113_125_203_n38) );
   NOR2XLTS U2771 ( .A(n2749), .B(n1691), .Y(n2263) );
-  XOR2X1TS U2772 ( .A(n2796), .B(n2263), .Y(DP_OP_95J53_125_203_n39) );
-  XOR2X1TS U2773 ( .A(n2796), .B(n2264), .Y(DP_OP_95J53_125_203_n40) );
-  XOR2X1TS U2774 ( .A(n2796), .B(n2265), .Y(DP_OP_95J53_125_203_n41) );
-  XOR2X1TS U2775 ( .A(n2796), .B(n2266), .Y(DP_OP_95J53_125_203_n42) );
-  XOR2X1TS U2776 ( .A(n2796), .B(n2268), .Y(DP_OP_95J53_125_203_n43) );
-  XOR2X1TS U2777 ( .A(n2796), .B(n2269), .Y(DP_OP_95J53_125_203_n44) );
-  XOR2X1TS U2778 ( .A(n2796), .B(n2270), .Y(DP_OP_95J53_125_203_n45) );
-  XOR2X1TS U2779 ( .A(n2796), .B(n2271), .Y(DP_OP_95J53_125_203_n46) );
-  XOR2X1TS U2780 ( .A(n2796), .B(n2272), .Y(DP_OP_95J53_125_203_n47) );
-  XOR2X1TS U2781 ( .A(n2267), .B(n2273), .Y(DP_OP_95J53_125_203_n48) );
-  XOR2X1TS U2782 ( .A(n2267), .B(n2274), .Y(DP_OP_95J53_125_203_n49) );
-  XOR2X1TS U2783 ( .A(n2267), .B(n2275), .Y(DP_OP_95J53_125_203_n50) );
-  XOR2X1TS U2784 ( .A(n2267), .B(n2276), .Y(DP_OP_95J53_125_203_n51) );
-  XOR2X1TS U2785 ( .A(n2267), .B(n2277), .Y(DP_OP_95J53_125_203_n52) );
-  XOR2X1TS U2786 ( .A(n2267), .B(n2278), .Y(DP_OP_95J53_125_203_n53) );
+  XOR2X1TS U2772 ( .A(n2796), .B(n2263), .Y(DP_OP_95J113_125_203_n39) );
+  XOR2X1TS U2773 ( .A(n2796), .B(n2264), .Y(DP_OP_95J113_125_203_n40) );
+  XOR2X1TS U2774 ( .A(n2796), .B(n2265), .Y(DP_OP_95J113_125_203_n41) );
+  XOR2X1TS U2775 ( .A(n2796), .B(n2266), .Y(DP_OP_95J113_125_203_n42) );
+  XOR2X1TS U2776 ( .A(n2796), .B(n2268), .Y(DP_OP_95J113_125_203_n43) );
+  XOR2X1TS U2777 ( .A(n2796), .B(n2269), .Y(DP_OP_95J113_125_203_n44) );
+  XOR2X1TS U2778 ( .A(n2796), .B(n2270), .Y(DP_OP_95J113_125_203_n45) );
+  XOR2X1TS U2779 ( .A(n2796), .B(n2271), .Y(DP_OP_95J113_125_203_n46) );
+  XOR2X1TS U2780 ( .A(n2796), .B(n2272), .Y(DP_OP_95J113_125_203_n47) );
+  XOR2X1TS U2781 ( .A(n2267), .B(n2273), .Y(DP_OP_95J113_125_203_n48) );
+  XOR2X1TS U2782 ( .A(n2267), .B(n2274), .Y(DP_OP_95J113_125_203_n49) );
+  XOR2X1TS U2783 ( .A(n2267), .B(n2275), .Y(DP_OP_95J113_125_203_n50) );
+  XOR2X1TS U2784 ( .A(n2267), .B(n2276), .Y(DP_OP_95J113_125_203_n51) );
+  XOR2X1TS U2785 ( .A(n2267), .B(n2277), .Y(DP_OP_95J113_125_203_n52) );
+  XOR2X1TS U2786 ( .A(n2267), .B(n2278), .Y(DP_OP_95J113_125_203_n53) );
   NAND2X1TS U2787 ( .A(n2717), .B(n2685), .Y(n2279) );
-  XOR2X1TS U2788 ( .A(n2267), .B(n2279), .Y(DP_OP_95J53_125_203_n54) );
-  XOR2X1TS U2789 ( .A(n2267), .B(n2280), .Y(DP_OP_95J53_125_203_n55) );
-  XOR2X1TS U2790 ( .A(n2267), .B(n2281), .Y(DP_OP_95J53_125_203_n56) );
+  XOR2X1TS U2788 ( .A(n2267), .B(n2279), .Y(DP_OP_95J113_125_203_n54) );
+  XOR2X1TS U2789 ( .A(n2267), .B(n2280), .Y(DP_OP_95J113_125_203_n55) );
+  XOR2X1TS U2790 ( .A(n2267), .B(n2281), .Y(DP_OP_95J113_125_203_n56) );
   CLKAND2X2TS U2791 ( .A(n2288), .B(add_subt_module_DmP[30]), .Y(n2282) );
-  XOR2X1TS U2792 ( .A(n1700), .B(n2282), .Y(DP_OP_92J53_122_1254_n13) );
+  XOR2X1TS U2792 ( .A(n1700), .B(n2282), .Y(DP_OP_92J113_122_1254_n13) );
   CLKAND2X2TS U2793 ( .A(n2288), .B(add_subt_module_DmP[29]), .Y(n2283) );
-  XOR2X1TS U2794 ( .A(n1700), .B(n2283), .Y(DP_OP_92J53_122_1254_n14) );
+  XOR2X1TS U2794 ( .A(n1700), .B(n2283), .Y(DP_OP_92J113_122_1254_n14) );
   CLKAND2X2TS U2795 ( .A(n2288), .B(add_subt_module_DmP[28]), .Y(n2284) );
-  XOR2X1TS U2796 ( .A(n1700), .B(n2284), .Y(DP_OP_92J53_122_1254_n15) );
+  XOR2X1TS U2796 ( .A(n1700), .B(n2284), .Y(DP_OP_92J113_122_1254_n15) );
   AO22XLTS U2797 ( .A0(n1674), .A1(n2289), .B0(n2288), .B1(
         add_subt_module_DmP[27]), .Y(n2285) );
-  XOR2X1TS U2798 ( .A(n1700), .B(n2285), .Y(DP_OP_92J53_122_1254_n16) );
+  XOR2X1TS U2798 ( .A(n1700), .B(n2285), .Y(DP_OP_92J113_122_1254_n16) );
   AO22XLTS U2799 ( .A0(add_subt_module_LZA_output[3]), .A1(n2289), .B0(n2288), 
         .B1(add_subt_module_DmP[26]), .Y(n2286) );
-  XOR2X1TS U2800 ( .A(n1700), .B(n2286), .Y(DP_OP_92J53_122_1254_n17) );
+  XOR2X1TS U2800 ( .A(n1700), .B(n2286), .Y(DP_OP_92J113_122_1254_n17) );
   AO22XLTS U2801 ( .A0(n1640), .A1(n2289), .B0(n2288), .B1(
         add_subt_module_DmP[25]), .Y(n2287) );
-  XOR2X1TS U2802 ( .A(n1700), .B(n2287), .Y(DP_OP_92J53_122_1254_n18) );
+  XOR2X1TS U2802 ( .A(n1700), .B(n2287), .Y(DP_OP_92J113_122_1254_n18) );
   AO22XLTS U2803 ( .A0(add_subt_module_LZA_output[1]), .A1(n2289), .B0(n2288), 
         .B1(add_subt_module_DmP[24]), .Y(n2290) );
-  XOR2X1TS U2804 ( .A(n1700), .B(n2290), .Y(DP_OP_92J53_122_1254_n19) );
+  XOR2X1TS U2804 ( .A(n1700), .B(n2290), .Y(DP_OP_92J113_122_1254_n19) );
   AO21XLTS U2805 ( .A0(add_subt_module_DmP[23]), .A1(n2733), .B0(n2291), .Y(
         n2292) );
-  XOR2X1TS U2806 ( .A(n1700), .B(n2292), .Y(DP_OP_92J53_122_1254_n20) );
+  XOR2X1TS U2806 ( .A(n1700), .B(n2292), .Y(DP_OP_92J113_122_1254_n20) );
   NAND2BXLTS U2807 ( .AN(add_subt_module_Sgf_normalized_result[25]), .B(n1691), 
         .Y(add_subt_module_S_A_S_Oper_A[25]) );
   CLKINVX6TS U2808 ( .A(n2685), .Y(n2314) );

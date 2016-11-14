@@ -3,7 +3,7 @@
 Report : cell
 Design : CORDIC_Arch2v1_W32_EW8_SW23_SWR26_EWR5
 Version: L-2016.03-SP3
-Date   : Thu Nov  3 17:57:29 2016
+Date   : Sun Nov 13 08:27:21 2016
 ****************************************
 
 Attributes:
