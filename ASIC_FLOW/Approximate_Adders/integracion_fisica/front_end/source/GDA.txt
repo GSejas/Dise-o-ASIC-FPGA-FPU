@@ -1,0 +1,31 @@
+/////////////////////////////Gracefully Degrading Adder///////////////////////////////////
+There are ten Gracefully Degrading Adder (Static Approximate Adders) Verilog HDL Modules in this directory 
+	1. GDA_St_N8_M4_P2.v 
+	--->	8-bit Adder with 4 Partitions and 2-Bit Prediction	
+	2. GDA_St_N8_M4_P4.v
+	--->	8-bit Adder with 4 Partitions and 4-Bit Prediction			                   
+	3. GDA_St_N8_M8_P1.v
+	--->	8-bit Adder with 8 Partitions and 1-Bit Prediction	
+	4. GDA_St_N8_M8_P2.v
+	--->	8-bit Adder with 8 Partitions and 2-Bit Prediction	
+	5. GDA_St_N8_M8_P3.v 
+	--->	8-bit Adder with 8 Partitions and 3-Bit Prediction		
+	6. GDA_St_N8_M8_P4.v
+	--->	8-bit Adder with 8 Partitions and 4-Bit Prediction                   
+	7. GDA_St_N8_M8_P5.v
+	--->	8-bit Adder with 8 Partitions and 5-Bit Prediction
+	8. GDA_St_N8_M8_P6.v
+	--->	8-bit Adder with 8 Partitions and 6-Bit Prediction	
+	9. GDA_St_N16_M4_P4.v 
+	--->	16-bit Adder with 4 Partitions and 4-Bit Prediction		
+	10. GDA_St_N16_M4_P8.v
+	--->	16-bit Adder with 4 Partitions and 8-Bit Prediction                    
+
+	
+Each Module has 2 inputs	
+	1. in1      = Input 1                       
+	2. in2      = Input 2 
+And one output
+	1. res    	= in1 + in2
+	
+//////////////////////////////////////////////////////////////////////////////////////////

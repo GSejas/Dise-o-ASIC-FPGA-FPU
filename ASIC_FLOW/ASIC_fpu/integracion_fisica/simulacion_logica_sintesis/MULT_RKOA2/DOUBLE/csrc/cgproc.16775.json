@@ -1,0 +1,91 @@
+{
+    "Modules": {
+        "AOI2BB1X4TS": {},
+        "...MASTER...": {},
+        "FPU_Multiplication_Function_W64_EW11_SW52": {},
+        "Testbench_FPU_Mark2": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "XNOR2X4TS": {},
+        "AND3X1TS": {},
+        "CMPR32X4TS": {},
+        "MXI2X2TS": {},
+        "OR2X8TS": {},
+        "OAI21XLTS": {},
+        "OAI22X4TS": {},
+        "OAI2BB1X4TS": {},
+        "AOI22X4TS": {},
+        "NAND3X8TS": {},
+        "AOI32X1TS": {},
+        "AO21XLTS": {},
+        "INVX8TS": {},
+        "DFFRXLTS": {},
+        "AND4X1TS": {},
+        "AOI21X4TS": {},
+        "AOI2BB2X4TS": {},
+        "XOR3X2TS": {},
+        "AO22X1TS": {},
+        "NOR2BX2TS": {},
+        "NAND2XLTS": {},
+        "DFFX2TS": {},
+        "NAND4XLTS": {},
+        "NAND2BXLTS": {},
+        "DFFSRX1TS": {},
+        "CMPR22X2TS": {},
+        "NAND3BXLTS": {},
+        "NOR2XLTS": {},
+        "OAI211XLTS": {},
+        "NOR3XLTS": {},
+        "NOR4X1TS": {},
+        "AHHCINX2TS": {},
+        "OAI221XLTS": {},
+        "DFFSX4TS": {},
+        "OAI31X1TS": {},
+        "OAI32X1TS": {},
+        "OAI2BB2XLTS": {},
+        "OA21XLTS": {},
+        "OA22X1TS": {},
+        "XOR2XLTS": {},
+        "CLKBUFX3TS": {},
+        "CLKAND2X2TS": {},
+        "DFFSHQX1TS": {},
+        "ADDFX2TS": {},
+        "AFHCONX2TS": {},
+        "AHHCONX2TS": {},
+        "CMPR42X2TS": {},
+        "DFFQX4TS": {},
+        "DFFRHQX2TS": {},
+        "DFFSRHQX4TS": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7109,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "W96Hc_d": {
+            "archive": "archive.3/_16775_archive_1.a",
+            "mod": "Testbench_FPU_Mark2",
+            "out": "W96Hc_d.o",
+            "bytes": 32637,
+            "mode": 4,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_16775_archive_1.a",
+            "objects": [
+                [
+                    "W96Hc_d.o",
+                    32637
+                ]
+            ],
+            "size": 32637
+        }
+    ]
+}

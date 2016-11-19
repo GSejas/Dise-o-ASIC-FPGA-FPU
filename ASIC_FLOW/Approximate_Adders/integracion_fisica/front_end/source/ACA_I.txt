@@ -1,0 +1,16 @@
+/////////////////////////////Almost Correct Adder/////////////////////////////////////////
+There are three Almost Correct Adder Verilog HDL Modules in this directory 
+	1. ACA_I_N8_Q5.v 
+	--->	8-bit Adder with 5-Bit Partition Size	
+	2. ACA_I_N16_Q4.v
+	--->	16-bit Adder with 4-Bit Partition Size                    
+	3. ACA_I_N32_Q8.v
+	--->	32-bit Adder with 8-Bit Partition Size
+	
+Each Module has 2 inputs	
+	1. in1      = Input 1                       
+	2. in2      = Input 2 
+And one output
+	1. res    	= in1 + in2
+	
+//////////////////////////////////////////////////////////////////////////////////////////

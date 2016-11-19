@@ -1,0 +1,68 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_RKOA1/DOUBLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpo4obXi
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.21790}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.21790}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[63:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW }
+synopsys::dump -add {Testbench_FPU_Mark2} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {Testbench_FPU_Mark2.Array_IN_1 Testbench_FPU_Mark2.Array_IN_2 } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 3847142
+set synopsys::env(time) 7917886
+set synopsys::env(time) 12112092
+set synopsys::env(time) 16163479
+set synopsys::env(time) 20233793
+set synopsys::env(time) 24428216
+ucliCore::getToolPID
+ucliCore::stopTool -no_signal
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[63:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR }
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 31581389
+set synopsys::env(time) 35646685
+set synopsys::env(time) 39708305
+set synopsys::env(time) 43883966
+set synopsys::env(time) 47844588
+set synopsys::env(time) 52123859
+set synopsys::env(time) 56310740
+set synopsys::env(time) 60383372
+set synopsys::env(time) 64377273
+set synopsys::env(time) 68526605
+set synopsys::env(time) 72606719
+set synopsys::env(time) 76568556
+set synopsys::env(time) 80736656
+set synopsys::env(time) 84805804
+set synopsys::env(time) 88936446
+set synopsys::env(time) 93061160
+set synopsys::env(time) 97346910
+set synopsys::env(time) 101430662
+set synopsys::env(time) 105606447
+set synopsys::env(time) 109553080
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[63:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW SWR EWR }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

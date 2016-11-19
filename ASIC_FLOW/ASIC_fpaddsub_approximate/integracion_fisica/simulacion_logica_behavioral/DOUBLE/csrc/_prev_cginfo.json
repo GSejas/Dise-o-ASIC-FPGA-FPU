@@ -1,0 +1,219 @@
+{
+    "MlibObjs": {},
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "CurCompileModules": [
+        "...MASTER...",
+        "shift_mux_array_0003",
+        "shift_mux_array_0004",
+        "shift_mux_array_0005",
+        "Multiplexer_AC_0000",
+        "add_sub_carry_out",
+        "Rotate_Mux_Array_0000",
+        "Comparators",
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing"
+    ],
+    "PrevCompiledModules": {
+        "shift_mux_array_0003": {
+            "w253U_d": {
+                "mod": "shift_mux_array_0003",
+                "bytes": 64144,
+                "mode": 4,
+                "out": "w253U_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "Rotate_Mux_Array_0000": {
+            "GBFFm_d": {
+                "mod": "Rotate_Mux_Array_0000",
+                "bytes": 24099,
+                "mode": 4,
+                "out": "GBFFm_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "shift_mux_array_0004": {
+            "G4Syt_d": {
+                "mod": "shift_mux_array_0004",
+                "bytes": 64016,
+                "mode": 4,
+                "out": "G4Syt_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "Comparators": {
+            "iGyxR_d": {
+                "mod": "Comparators",
+                "bytes": 9458,
+                "mode": 4,
+                "out": "iGyxR_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "Multiplexer_AC_0000": {
+            "UPR0r_d": {
+                "mod": "Multiplexer_AC_0000",
+                "bytes": 7984,
+                "mode": 4,
+                "out": "UPR0r_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "shift_mux_array_0005": {
+            "hxDwR_d": {
+                "mod": "shift_mux_array_0005",
+                "bytes": 63760,
+                "mode": 4,
+                "out": "hxDwR_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": {
+            "vberv_d": {
+                "mod": "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+                "bytes": 312337,
+                "mode": 4,
+                "out": "vberv_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "add_sub_carry_out": {
+            "vTLY2_d": {
+                "mod": "add_sub_carry_out",
+                "bytes": 8729,
+                "mode": 4,
+                "out": "vTLY2_d.o",
+                "checksum": 4294967295,
+                "archive": "archive.1/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mod": "...MASTER...",
+                "bytes": 8130,
+                "mode": 4,
+                "out": "objs/amcQw_d.o",
+                "checksum": 4294967295
+            }
+        }
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 92730
+    },
+    "NameTable": {
+        "shift_mux_array_0003": [
+            "shift_mux_array_0003",
+            "w253U",
+            "module"
+        ],
+        "Rotate_Mux_Array_0000": [
+            "Rotate_Mux_Array_0000",
+            "GBFFm",
+            "module"
+        ],
+        "shift_mux_array_0004": [
+            "shift_mux_array_0004",
+            "G4Syt",
+            "module"
+        ],
+        "shift_mux_array_0005": [
+            "shift_mux_array_0005",
+            "hxDwR",
+            "module"
+        ],
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
+            "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+            "vberv",
+            "module"
+        ],
+        "Multiplexer_AC_0000": [
+            "Multiplexer_AC_0000",
+            "UPR0r",
+            "module"
+        ],
+        "Comparators": [
+            "Comparators",
+            "iGyxR",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "add_sub_carry_out": [
+            "add_sub_carry_out",
+            "vTLY2",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "daidir": "simv.daidir",
+        "cwd": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/csrc",
+        "archive_dir": "archive.1",
+        "daidir_abs": "/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/simv.daidir"
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.35394599999999998,
+            "ru_nvcsw": 51,
+            "ru_stime_sec": 0.034993999999999997,
+            "ru_maxrss_kb": 59692,
+            "ru_nivcsw": 42,
+            "ru_majflt": 0,
+            "ru_minflt": 15572
+        },
+        "CodeGen(%)": 1.9390765906163079,
+        "nMops": 5,
+        "ru_self_end": {
+            "ru_utime_sec": 0.36094500000000002,
+            "ru_nvcsw": 51,
+            "ru_stime_sec": 0.039993000000000001,
+            "ru_maxrss_kb": 64420,
+            "ru_nivcsw": 51,
+            "ru_majflt": 0,
+            "ru_minflt": 17091
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_minflt": 0
+        },
+        "nQuads": 9,
+        "outputSizePerQuad": 11206.0,
+        "totalObjSize": 100860,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_minflt": 0
+        },
+        "Frontend(%)": 98.06092340938369
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.9469.json"
+    ],
+    "CompileStatus": "Successful"
+}

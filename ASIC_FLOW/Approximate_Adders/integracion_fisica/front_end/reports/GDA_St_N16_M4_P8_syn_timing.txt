@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GDA_St_N16_M4_P8
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:22:51 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in1[4] (input port clocked by clk)
+  Endpoint: res[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GDA_St_N16_M4_P8   ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 f
+  in1[4] (in)                              0.00       3.50 f
+  U60/Y (NAND2X2TS)                        0.25       3.75 r
+  U57/Y (AOI211X2TS)                       0.29       4.03 f
+  U58/Y (OAI22X1TS)                        0.43       4.47 r
+  U61/Y (OAI2BB1X2TS)                      0.36       4.83 f
+  U51/Y (OAI21X2TS)                        0.21       5.04 r
+  U72/Y (AOI211X1TS)                       0.31       5.35 f
+  U63/Y (OAI2BB2X1TS)                      0.40       5.75 r
+  U75/Y (OAI2BB1X1TS)                      0.34       6.09 f
+  U62/CO (ADDFHX2TS)                       0.41       6.50 f
+  intadd_4_U4/CO (CMPR32X2TS)              0.53       7.04 f
+  intadd_4_U3/CO (ADDFHX2TS)               0.37       7.41 f
+  intadd_4_U2/S (CMPR32X2TS)               0.56       7.96 f
+  res[15] (out)                            0.00       7.96 f
+  data arrival time                                   7.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -7.96
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1

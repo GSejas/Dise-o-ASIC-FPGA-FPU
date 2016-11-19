@@ -1,0 +1,21 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 22 days, on: 10-nov-2016.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 20 20:29 2016
+VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE/inter.vpd' was opened successfully.
+Warning: [DVTC015] 
+Signal 'tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_SINGLE.Codec_32.Data_Dec_i[25:0]' cannot be found.
+Error: [DVAP037] 
+Errors while sourcing the file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/FPU_ADD_PIPE_BEHAV_SINGLE_v5.tcl':
+
+ Line 550: [DVSG007] 
+Signal ' "tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_SINGLE.Codec_32.Data_Dec_i"' cannot be found.
+ Line 666: gui_list_set_insertion_bar: Cannot set the insertion bar, "tb_FPU_PIPELINED_FPADDSUB2_vector_testing.inst_uut.LZD_raw_out_EWR[4:0]" was not found..
+0
+$finish called from file "./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v", line 251.
+$finish at simulation time             20695000
+Simulation complete, time is 20695000 ps.

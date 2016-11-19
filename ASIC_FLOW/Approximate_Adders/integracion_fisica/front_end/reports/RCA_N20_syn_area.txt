@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : RCA_N20
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:27:56 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                           61
+Number of nets:                           188
+Number of cells:                          148
+Number of combinational cells:            148
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         30
+Number of references:                      18
+
+Combinational area:               1029.600021
+Buf/Inv area:                      129.600005
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           14746.740601
+
+Total cell area:                  1029.600021
+Total area:                      15776.340622
+1

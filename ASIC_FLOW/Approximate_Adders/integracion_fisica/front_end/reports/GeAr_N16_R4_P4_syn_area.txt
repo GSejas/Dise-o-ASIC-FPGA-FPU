@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : GeAr_N16_R4_P4
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:24:52 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          104
+Number of nets:                           116
+Number of cells:                           31
+Number of combinational cells:             28
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       5
+
+Combinational area:                601.920008
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            4853.357666
+
+Total cell area:                   601.920008
+Total area:                       5455.277674
+1

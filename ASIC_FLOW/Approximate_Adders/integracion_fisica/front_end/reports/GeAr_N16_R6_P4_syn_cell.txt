@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : cell
+Design : GeAr_N16_R6_P4
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:25:17 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U2                        XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U3                        XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U4                        NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U5                        OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U6                        AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U7                        AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U8                        AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U9                        AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U10                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U11                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U12                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U13                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U14                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U15                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U16                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U17                       CLKAND2X2TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U18                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U19                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U20                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U21                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U22                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U23                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U24                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U25                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+--------------------------------------------------------------------------------
+Total 24 cells                                            803.520003
+1

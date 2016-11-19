@@ -483,7 +483,7 @@ integer PIPE=0;
 
              //******************************* Se ejecuta el CLK ************************
 
-                initial forever #5 clk = ~clk;
+                initial forever #10 clk = ~clk;
 
                 task run_Arch2;
                     input integer FDataO;

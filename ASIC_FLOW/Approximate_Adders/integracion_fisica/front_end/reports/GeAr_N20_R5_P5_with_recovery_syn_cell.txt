@@ -1,0 +1,134 @@
+ 
+****************************************
+Report : cell
+Design : GeAr_N20_R5_P5_with_recovery
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:25:30 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U17                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U18                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U19                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U20                       OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U21                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U22                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U23                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U24                       OAI21XLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U25                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U26                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U27                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U28                       OAI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U29                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U30                       NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U31                       NOR4BX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U32                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U33                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U34                       NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U35                       NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U36                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U37                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U38                       AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U39                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U40                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U41                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U42                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U43                       NOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U44                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U45                       NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U46                       AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U47                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U48                       INVX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U49                       OAI22X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          8.640000  
+U50                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U51                       NOR4BX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          10.080000 
+U52                       CLKAND2X2TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U53                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U54                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U55                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U56                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U57                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U58                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U59                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U60                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U61                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U62                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U63                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U64                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U65                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U66                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U67                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U68                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U69                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+U70                       AFHCINX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          47.520000 r
+U71                       AFHCONX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          40.320000 r
+if_error_delayed_1_reg    DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+if_error_delayed_2_reg    DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          24.480000 n
+--------------------------------------------------------------------------------
+Total 57 cells                                            1281.600004
+1

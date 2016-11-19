@@ -141,7 +141,7 @@ integer PIPE=0;
  `endif
 
 
- `ifdef KOA2_SINGLE
+ `ifdef KOA1_SINGLE
 integer PIPE=0;
     FPU_Multiplication_Function_W32_EW8_SW23 uut        (
             .clk               (clk),
@@ -159,7 +159,7 @@ integer PIPE=0;
  `endif
 
 
- `ifdef KOA2_DOUBLE
+ `ifdef KOA1_DOUBLE
 integer PIPE=0;
     FPU_Multiplication_Function_W64_EW11_SW52 uut        (
             .clk               (clk),

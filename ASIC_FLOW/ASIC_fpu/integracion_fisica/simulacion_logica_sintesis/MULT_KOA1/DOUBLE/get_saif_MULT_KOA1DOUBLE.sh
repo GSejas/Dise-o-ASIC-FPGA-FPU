@@ -1,6 +1,6 @@
 vcs -debug_all -full64 -R -PP -f file_list +v2k +lint=all -l log_name -Mupdate \
 +define+DOUBLE \
-+define+MULT_KOA1_DOUBLE \
++define+KOA1_DOUBLE \
  -timescale=1ns/1ps   \
  +neg_tchk
  ./simv

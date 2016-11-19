@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GeAr_N8_R1_P1
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:25:42 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in1[5] (input port clocked by clk)
+  Endpoint: res[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GeAr_N8_R1_P1      ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 r
+  in1[5] (in)                              0.00       3.50 r
+  U30/Y (NAND2X1TS)                        0.29       3.79 f
+  U26/Y (OAI21XLTS)                        0.44       4.23 r
+  U33/Y (XOR2XLTS)                         0.83       5.06 r
+  res[5] (out)                             0.00       5.06 r
+  data arrival time                                   5.06
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -5.06
+  -----------------------------------------------------------
+  slack (MET)                                         2.94
+
+
+1

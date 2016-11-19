@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Mon Oct 10 15:12:23 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: SGF_STAGE_DMP_Q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: NRM_STAGE_FLAGS_Q_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  SGF_STAGE_DMP_Q_reg_1_/CK (DFFRXLTS)                    0.00       1.00 r
+  SGF_STAGE_DMP_Q_reg_1_/Q (DFFRXLTS)                     1.04       2.04 f
+  U2318/Y (NOR2XLTS)                                      0.37       2.41 r
+  U2268/Y (OAI21XLTS)                                     0.31       2.72 f
+  U2740/Y (AOI21X1TS)                                     0.29       3.02 r
+  U2747/Y (OAI21X1TS)                                     0.24       3.26 f
+  U2081/Y (AOI21X2TS)                                     0.22       3.48 r
+  U1927/Y (OAI21XLTS)                                     0.22       3.69 f
+  U2062/Y (OAI22X2TS)                                     0.22       3.91 r
+  U4068/CO (AFHCINX2TS)                                   0.21       4.11 f
+  U4063/CON (AFHCONX2TS)                                  0.23       4.35 r
+  U2549/CO (AFHCINX2TS)                                   0.19       4.54 f
+  U2052/Y (OAI22X1TS)                                     0.28       4.82 r
+  U2551/CO (AFHCINX2TS)                                   0.25       5.07 f
+  U2550/Y (OAI22X2TS)                                     0.21       5.27 r
+  U2165/CO (AFHCINX2TS)                                   0.21       5.48 f
+  U1983/Y (OAI2BB2X2TS)                                   0.23       5.71 r
+  U2040/CO (AFHCINX2TS)                                   0.18       5.89 f
+  U1926/Y (OAI2BB2X1TS)                                   0.28       6.17 r
+  U2164/CO (AFHCINX2TS)                                   0.22       6.39 f
+  U2365/Y (OAI22X1TS)                                     0.28       6.66 r
+  U2364/CO (AFHCINX2TS)                                   0.25       6.91 f
+  U2228/CON (AFHCONX2TS)                                  0.23       7.15 r
+  U2024/CO (AFHCINX2TS)                                   0.21       7.36 f
+  U2023/Y (OAI22X2TS)                                     0.21       7.57 r
+  U2020/CO (AFHCINX2TS)                                   0.21       7.78 f
+  U2016/Y (OAI2BB2X2TS)                                   0.23       8.01 r
+  U2013/CO (AFHCINX2TS)                                   0.20       8.20 f
+  U1969/Y (OAI2BB2X2TS)                                   0.23       8.44 r
+  U2007/CO (AFHCINX2TS)                                   0.19       8.63 f
+  U2145/Y (OAI22X2TS)                                     0.21       8.84 r
+  U4297/CO (AFHCINX2TS)                                   0.19       9.02 f
+  U4278/CO (ADDFHX2TS)                                    0.32       9.35 f
+  U2144/CO (ADDFHX2TS)                                    0.29       9.64 f
+  U1967/Y (OR2X2TS)                                       0.27       9.91 f
+  U2505/Y (AO22XLTS)                                      0.39      10.30 f
+  NRM_STAGE_FLAGS_Q_reg_2_/D (DFFRXLTS)                   0.00      10.30 f
+  data arrival time                                                 10.30
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  NRM_STAGE_FLAGS_Q_reg_2_/CK (DFFRXLTS)                  0.00      10.50 r
+  library setup time                                     -0.20      10.30
+  data required time                                                10.30
+  --------------------------------------------------------------------------
+  data required time                                                10.30
+  data arrival time                                                -10.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

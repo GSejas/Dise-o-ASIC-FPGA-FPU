@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LOA
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:27:31 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in1[9] (input port clocked by clk)
+  Endpoint: res[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LOA                ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 f
+  in1[9] (in)                              0.00       3.50 f
+  U12/Y (CLKAND2X2TS)                      0.25       3.75 f
+  intadd_13_U7/CO (CMPR32X2TS)             0.56       4.31 f
+  intadd_13_U6/CO (CMPR32X2TS)             0.56       4.87 f
+  intadd_13_U5/CO (CMPR32X2TS)             0.56       5.43 f
+  intadd_13_U4/CO (CMPR32X2TS)             0.56       5.98 f
+  intadd_13_U3/CO (CMPR32X2TS)             0.56       6.54 f
+  intadd_13_U2/S (CMPR32X2TS)              0.58       7.12 f
+  res[15] (out)                            0.00       7.12 f
+  data arrival time                                   7.12
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -7.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.88
+
+
+1

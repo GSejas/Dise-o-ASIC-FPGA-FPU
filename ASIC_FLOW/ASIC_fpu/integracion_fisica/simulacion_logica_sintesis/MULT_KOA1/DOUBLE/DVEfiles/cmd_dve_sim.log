@@ -1,0 +1,48 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_KOA1/DOUBLE/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpC2tZqJ
+synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP2-3_Full64" -sync_file /tmp/vcs_dve_rpc.jsequeira.27436}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jsequeira.27436}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[63:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW }
+synopsys::dump -add {Testbench_FPU_Mark2} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {Testbench_FPU_Mark2.Array_IN_1 Testbench_FPU_Mark2.Array_IN_2 } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 7218457
+set synopsys::env(time) 15521254
+set synopsys::env(time) 23989406
+set synopsys::env(time) 32223994
+set synopsys::env(time) 40377608
+set synopsys::env(time) 48833718
+set synopsys::env(time) 56661314
+set synopsys::env(time) 64894621
+set synopsys::env(time) 73145600
+set synopsys::env(time) 80746017
+set synopsys::env(time) 88871837
+set synopsys::env(time) 96579494
+set synopsys::env(time) 104286092
+set synopsys::env(time) 112318117
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope Testbench_FPU_Mark2 -radix {symbolic symbolic symbolic symbolic binary binary binary binary binary hexadecimal binary binary binary binary binary hexadecimal hexadecimal hexadecimal hexadecimal hexadecimal binary hexadecimal hexadecimal decimal decimal decimal decimal decimal } -list {{PIPE[31:0]} {contador[31:0]} {FileSaveData[31:0]} {FileSaveData_FLOAT[31:0]} overflow_flag underflow_flag operation_ready zero_flag NaN_flag {op_result[63:0]} busy clk rst begin_operation ack_operation {operation[2:0]} {Data_1[63:0]} {Data_2[63:0]} {region_flag[1:0]} {r_mode[1:0]} add_subt Array_IN_1 Array_IN_2 PERIOD W EW SW SWR }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

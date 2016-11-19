@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ETAII_N16_Q8
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:22:13 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          130
+Number of nets:                           141
+Number of cells:                           39
+Number of combinational cells:             35
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       8
+
+Combinational area:                649.440005
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            5926.696381
+
+Total cell area:                   649.440005
+Total area:                       6576.136386
+1

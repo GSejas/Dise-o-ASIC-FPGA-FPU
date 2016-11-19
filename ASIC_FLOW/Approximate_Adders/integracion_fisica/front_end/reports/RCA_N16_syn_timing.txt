@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RCA_N16
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:27:43 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in2[1] (input port clocked by clk)
+  Endpoint: res[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RCA_N16            ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 f
+  in2[1] (in)                              0.00       3.50 f
+  U44/Y (NOR2X1TS)                         0.51       4.01 r
+  U47/Y (OAI21X1TS)                        0.61       4.62 f
+  U52/Y (AOI21X1TS)                        0.72       5.34 r
+  U64/Y (OAI21X1TS)                        0.64       5.98 f
+  U37/Y (AOI21X2TS)                        0.55       6.52 r
+  U74/Y (OAI21X4TS)                        0.31       6.83 f
+  U76/Y (AOI21X4TS)                        0.30       7.13 r
+  U79/Y (OAI21X4TS)                        0.23       7.36 f
+  U81/Y (AOI21X4TS)                        0.27       7.63 r
+  U105/Y (XOR2X1TS)                        0.33       7.96 f
+  res[15] (out)                            0.00       7.96 f
+  data arrival time                                   7.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -7.96
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1

@@ -1,0 +1,219 @@
+# Preference setting overrides
+gui_set_pref_value -category {Data} -key {showValueAnnotation} -value {true}
+gui_set_pref_value -category {Driver} -key {driver_link_to_source} -value {false}
+gui_set_pref_value -category {Driver} -key {show_intermediate_drivers} -value {true}
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_set_pref_value -category {List} -key {showgrid} -value {true}
+gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
+gui_set_pref_value -category {Wave} -key {bringToFront} -value {true}
+gui_set_pref_value -category {Wave} -key {isolationShading} -value {false}
+gui_set_pref_value -category {Wave} -key {renameOnClick} -value {true}
+gui_set_pref_value -category {Wave} -key {showgrid} -value {true}
+gui_set_pref_value -category {Wave} -key {toggleShading} -value {true}
+gui_set_pref_value -category {Wave} -key {valueFontOption} -value {fixedfont}
+gui_set_pref_value -category {Wave} -key {waveRowHeight} -value {15}
+gui_set_pref_value -category {Wave} -key {zoomGestureMid} -value {true}
+gui_create_pref_category -category {dlg_settings}
+gui_create_pref_key -category {dlg_settings} -key {tableWithImmediatePopup} -value_type {bool} -value {true}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key BackTrace_toolbar -value true
+gui_set_state_value -category Globals -key open_list_inside -value true
+gui_set_state_value -category Globals -key open_wave_inside -value true
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/inter.vpd -design V1}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_ADD_PIPE_SYN_DOUBLE_v1.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_ADD_PIPE_SYN_SINGLE_v1.tcl -ignore_errors} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE/FPU_ADD_PIPE_SYN_SINGLE_v1.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl -ignore_errors}}
+gui_set_state_value -category Globals -key recent_tcl_scripts -value {{gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE/session.inter.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter2.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter3.vpd.tcl} {gui_dve_source -global /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE/session.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_console_docknewline -value false
+gui_set_state_value -category Layout -key child_console_dockstate -value undocked
+gui_set_state_value -category Layout -key child_console_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_console_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_console_showstate -value maximized
+gui_set_state_value -category Layout -key child_console_size_x -value 1364
+gui_set_state_value -category Layout -key child_console_size_y -value 443
+gui_set_state_value -category Layout -key child_data_coltype -value 420
+gui_set_state_value -category Layout -key child_data_colvalue -value 353
+gui_set_state_value -category Layout -key child_data_colvariable -value 566
+gui_set_state_value -category Layout -key child_data_docknewline -value false
+gui_set_state_value -category Layout -key child_data_dockstate -value undocked
+gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_data_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_data_showstate -value maximized
+gui_set_state_value -category Layout -key child_data_size_x -value 1364
+gui_set_state_value -category Layout -key child_data_size_y -value 443
+gui_set_state_value -category Layout -key child_driver_size_x -value 1363
+gui_set_state_value -category Layout -key child_driver_size_y -value 213
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 956
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 400
+gui_set_state_value -category Layout -key child_hier_docknewline -value false
+gui_set_state_value -category Layout -key child_hier_dockstate -value undocked
+gui_set_state_value -category Layout -key child_hier_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_hier_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_hier_showstate -value maximized
+gui_set_state_value -category Layout -key child_hier_size_x -value 1364
+gui_set_state_value -category Layout -key child_hier_size_y -value 443
+gui_set_state_value -category Layout -key child_list_docknewline -value false
+gui_set_state_value -category Layout -key child_list_down -value 295
+gui_set_state_value -category Layout -key child_list_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_list_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_list_right -value 1204
+gui_set_state_value -category Layout -key child_list_size_x -value 1364
+gui_set_state_value -category Layout -key child_list_size_y -value 443
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-20}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1368
+gui_set_state_value -category Layout -key child_schematic_size_y -value 408
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_source_size_x -value 1364
+gui_set_state_value -category Layout -key child_source_size_y -value 443
+gui_set_state_value -category Layout -key child_watch_size_x -value 904
+gui_set_state_value -category Layout -key child_watch_size_y -value 178
+gui_set_state_value -category Layout -key child_wave_colname -value 218
+gui_set_state_value -category Layout -key child_wave_colvalue -value 164
+gui_set_state_value -category Layout -key child_wave_docknewline -value false
+gui_set_state_value -category Layout -key child_wave_left -value 386
+gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_wave_pos_y -value {-18}
+gui_set_state_value -category Layout -key child_wave_right -value 968
+gui_set_state_value -category Layout -key child_wave_size_x -value 1364
+gui_set_state_value -category Layout -key child_wave_size_y -value 443
+gui_set_state_value -category Layout -key main_pos_x -value 0
+gui_set_state_value -category Layout -key main_pos_y -value 24
+gui_set_state_value -category Layout -key main_size_x -value 1359
+gui_set_state_value -category Layout -key main_size_y -value 767
+gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_list_child_pos_y -value {-20}
+gui_set_state_value -category Layout -key stand_list_child_size_x -value 604
+gui_set_state_value -category Layout -key stand_list_child_size_y -value 284
+gui_set_state_value -category Layout -key stand_list_top_pos_y -value 52
+gui_set_state_value -category Layout -key stand_list_top_size_x -value 1099
+gui_set_state_value -category Layout -key stand_list_top_size_y -value 551
+gui_set_state_value -category Layout -key stand_schematic_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_schematic_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_schematic_child_pos_y -value {-20}
+gui_set_state_value -category Layout -key stand_schematic_child_size_x -value 1364
+gui_set_state_value -category Layout -key stand_schematic_child_size_y -value 381
+gui_set_state_value -category Layout -key stand_schematic_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_schematic_top_pos_y -value 52
+gui_set_state_value -category Layout -key stand_schematic_top_size_x -value 1359
+gui_set_state_value -category Layout -key stand_schematic_top_size_y -value 563
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1028
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 563
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 4
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 52
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1027
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 743
+gui_set_state_value -category Driver -key driver_add_to_wave -value true
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui +v2k +lint=all -l log_name +define+SINGLE +define+FRANCIS_LZD=1} {+v2k +lint=all -a log_name +define+SYN_SINGLE} {+v2k +lint=all -a log_name +define+SINGLE=1 +define+FRANCIS_LZD=1} {+v2k +lint=all -a log_name +define+SINGLE} {-ucligui +v2k +lint=all -l log_name +define+SINGLE}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/INIT_STAGE_ALONE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE/LZD/simv /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral/BARREL_SHIFTER/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe simv -args {-ucligui  +v2k +lint=all -a log_name +define+DOUBLE +define+FRANCIS_LZD=1 +neg_tchk +sdfverbose} -dir .
+gui_load_session -ignore_errors -file /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/DOUBLE/FPU_ADD_PIPE_SYN_DOUBLE_v1.tcl 
+gui_set_pref_value -category {Globals} -key {app_default_font} -value {Helvetica [Cronyx],9,-1,5,50,0,0,0,0,0}
+gui_set_pref_value -category {Source} -key {value_annotate} -value {false}
+gui_set_pref_value -category {Source} -key {value_annotate} -value {true}
+gui_sim_continue  
+gui_view_port_history -window Wave.1 -previous
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 167
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_zoom_timerange -id  Wave.1 125.269 205.994
+gui_wv_zoom_timerange -id  Wave.1 125.269 206.08
+gui_wv_zoom_timerange -id  Wave.1 125.269 206.165
+gui_wv_zoom_timerange -id  Wave.1 125.269 205.994
+gui_wv_zoom_timerange -id  Wave.1 125.269 207.018
+gui_wv_zoom_timerange -id  Wave.1 125.269 219.989
+gui_wv_zoom_timerange -id  Wave.1 125.269 228.693
+gui_wv_zoom_timerange -id  Wave.1 125.269 235.093
+gui_wv_zoom_timerange -id  Wave.1 125.269 240.725
+gui_wv_zoom_timerange -id  Wave.1 125.269 250.282
+gui_wv_zoom_timerange -id  Wave.1 125.269 264.704
+gui_wv_zoom_timerange -id  Wave.1 125.269 269.738
+gui_wv_zoom_timerange -id  Wave.1 125.269 277.162
+gui_wv_zoom_timerange -id  Wave.1 125.269 289.28
+gui_wv_zoom_timerange -id  Wave.1 125.269 288.341
+gui_wv_zoom_timerange -id  Wave.1 125.269 287.573
+gui_wv_zoom_timerange -id  Wave.1 125.269 286.805
+gui_wv_zoom_timerange -id  Wave.1 125.269 286.89
+gui_wv_zoom_timerange -id  Wave.1 125.269 287.146
+gui_wv_zoom_timerange -id  Wave.1 125.269 287.232
+gui_wv_zoom_timerange -id  Wave.1 125.269 287.317
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag {{tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready}} 
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_FPU_PIPELINED_FPADDSUB2_vector_testing.underflow_flag {{tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy}} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_FPU_PIPELINED_FPADDSUB2_vector_testing.zero_flag {{tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy}} 
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.rst   }
+gui_wv_zoom_timerange -id  Wave.1 125.269 306.602
+gui_wv_zoom_timerange -id  Wave.1 125.269 310.698
+gui_marker_move -id  Wave.1 C1 173.056
+gui_marker_move -id  Wave.1 C1 178
+gui_marker_move -id  Wave.1 C1 152.405
+gui_marker_move -id  Wave.1 C1 232.96
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 220.501
+gui_wv_zoom_timerange -id  Wave.1 132.778 318.378
+gui_wv_zoom_timerange -id  Wave.1 132.778 225.45
+gui_wv_scrollright -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 251.05
+gui_zoom -window Wave.1 -factor 2
+gui_wv_zoom_timerange -id  Wave.1 238.251 280.576
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready   }
+gui_list_select -id Wave.1 -selected  { {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy   }
+gui_list_select -id Wave.1 -selected  { {Drivers: Sim:tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[31:0]@3593}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_FPU_PIPELINED_FPADDSUB2_vector_testing.busy  tb_FPU_PIPELINED_FPADDSUB2_vector_testing.ready  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_X[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Data_Y[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.Theoretical_result[63:0]}  {tb_FPU_PIPELINED_FPADDSUB2_vector_testing.final_result_ieee[63:0]}   }
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 233.043

@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ACA_I_N16_Q4
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:21:18 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in2[5] (input port clocked by clk)
+  Endpoint: res[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ACA_I_N16_Q4       ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 f
+  in2[5] (in)                              0.00       3.50 f
+  U115/Y (NOR2X1TS)                        0.52       4.02 r
+  U116/Y (INVX2TS)                         0.42       4.44 f
+  U117/Y (AOI22X1TS)                       0.65       5.09 r
+  U131/Y (OAI31X1TS)                       0.61       5.70 f
+  U88/Y (OAI21XLTS)                        0.47       6.17 r
+  U132/Y (OAI31X1TS)                       0.50       6.67 f
+  res[6] (out)                             0.00       6.67 f
+  data arrival time                                   6.67
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -6.67
+  -----------------------------------------------------------
+  slack (MET)                                         1.33
+
+
+1

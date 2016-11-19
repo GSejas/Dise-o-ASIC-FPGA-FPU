@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GDA_St_N8_M8_P4
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:24:03 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in2[4] (input port clocked by clk)
+  Endpoint: res[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GDA_St_N8_M8_P4    ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 f
+  in2[4] (in)                              0.00       3.50 f
+  U49/Y (NAND2X1TS)                        0.35       3.85 r
+  U47/Y (OAI21X2TS)                        0.52       4.37 f
+  U50/Y (OAI21X1TS)                        0.70       5.08 r
+  U43/Y (AOI22X1TS)                        0.63       5.70 f
+  U40/Y (OAI2BB2XLTS)                      0.79       6.50 r
+  U32/S (ADDFX1TS)                         0.82       7.32 f
+  res[7] (out)                             0.00       7.32 f
+  data arrival time                                   7.32
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -7.32
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+1

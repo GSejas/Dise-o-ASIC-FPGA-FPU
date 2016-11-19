@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GeAr_N8_R1_P5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:26:31 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: in1[2] (input port clocked by clk)
+  Endpoint: res[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GeAr_N8_R1_P5      ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.50       3.50 f
+  in1[2] (in)                              0.00       3.50 f
+  U3/Y (AO22XLTS)                          0.61       4.11 f
+  U16/Y (OAI21X1TS)                        0.43       4.55 r
+  U6/Y (AOI222X4TS)                        0.66       5.20 f
+  U19/Y (AOI222X1TS)                       0.81       6.01 r
+  U22/Y (AOI222X4TS)                       0.72       6.73 f
+  U23/S (CMPR32X2TS)                       0.53       7.26 f
+  res[7] (out)                             0.00       7.26 f
+  data arrival time                                   7.26
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -2.00       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -7.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.74
+
+
+1

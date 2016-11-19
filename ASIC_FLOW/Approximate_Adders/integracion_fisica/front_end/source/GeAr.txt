@@ -1,0 +1,36 @@
+/////////////////////////////Generic Accuracy Configurable Adder///////////////////////////
+There are thirteen Generic Accuracy Configurable Adder Verilog HDL Modules in this directory 
+	1. GeAr_N8_R1_P1.v 
+	--->	8-bit Adder with 1-Bit Resultant and 1-Bit Prediction	
+	2. GeAr_N8_R1_P2.v
+	--->	8-bit Adder with 1-Bit Resultant and 2-Bit Prediction	                   
+	3. GeAr_N8_R1_P3.v
+	--->	8-bit Adder with 1-Bit Resultant and 3-Bit Prediction	
+	4. GeAr_N8_R1_P4.v
+	--->	8-bit Adder with 1-Bit Resultant and 4-Bit Prediction	
+	5. GeAr_N8_R1_P5.v 
+	--->	8-bit Adder with 1-Bit Resultant and 5-Bit Prediction		
+	6. GeAr_N8_R1_P6.v
+	--->	8-bit Adder with 1-Bit Resultant and 6-Bit Prediction	                   
+	7. GeAr_N8_R2_P2.v
+	--->	8-bit Adder with 2-Bit Resultant and 2-Bit Prediction	
+	8. GeAr_N8_R2_P4.v
+	--->	8-bit Adder with 2-Bit Resultant and 4-Bit Prediction		
+	9. GeAr_N9_R4_P1.v 
+	--->	9-bit Adder with 4-Bit Resultant and 1-Bit Prediction		
+	10. GeAr_N16_R2_P4.v
+	--->	16-bit Adder with 2-Bit Resultant and 4-Bit Prediction	                    
+	11. GeAr_N16_R4_P4.v
+	--->	16-bit Adder with 4-Bit Resultant and 4-Bit Prediction	
+	12. GeAr_N16_R4_P8.v
+	--->	16-bit Adder with 4-Bit Resultant and 8-Bit Prediction	
+	13. GeAr_N16_R6_P4.v
+	--->	16-bit Adder with 6-Bit Resultant and 4-Bit Prediction			
+	
+Each Module has 2 inputs	
+	1. in1      = Input 1                       
+	2. in2      = Input 2 
+And one output
+	1. res    	= in1 + in2
+	
+//////////////////////////////////////////////////////////////////////////////////////////

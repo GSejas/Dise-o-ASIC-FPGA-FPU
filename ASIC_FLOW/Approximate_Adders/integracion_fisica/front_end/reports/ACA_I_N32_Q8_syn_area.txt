@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ACA_I_N32_Q8
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:21:36 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          204
+Number of nets:                           433
+Number of cells:                          296
+Number of combinational cells:            291
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                         37
+Number of references:                      27
+
+Combinational area:               4897.440055
+Buf/Inv area:                      211.680007
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40740.204254
+
+Total cell area:                  4897.440055
+Total area:                      45637.644310
+1

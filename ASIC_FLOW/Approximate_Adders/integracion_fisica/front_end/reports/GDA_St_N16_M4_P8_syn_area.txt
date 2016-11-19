@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : GDA_St_N16_M4_P8
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 00:22:51 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                           49
+Number of nets:                            90
+Number of cells:                           49
+Number of combinational cells:             49
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          6
+Number of references:                      25
+
+Combinational area:                728.640006
+Buf/Inv area:                       25.920001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6766.700592
+
+Total cell area:                   728.640006
+Total area:                       7495.340598
+1

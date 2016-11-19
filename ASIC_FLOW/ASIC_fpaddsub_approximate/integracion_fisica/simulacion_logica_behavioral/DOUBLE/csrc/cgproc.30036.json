@@ -1,0 +1,46 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "shift_mux_array_0003": {},
+        "add_sub_carry_out": {},
+        "shift_mux_array_0004": {},
+        "shift_mux_array_0005": {},
+        "Multiplexer_AC_0000": {},
+        "Rotate_Mux_Array_0000": {},
+        "Comparators": {},
+        "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 8130,
+            "mode": 4,
+            "checksum": 4294967295
+        },
+        "vberv_d": {
+            "mod": "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
+            "archive": "archive.2/_30036_archive_1.a",
+            "out": "vberv_d.o",
+            "bytes": 311563,
+            "mode": 4,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_30036_archive_1.a",
+            "objects": [
+                [
+                    "vberv_d.o",
+                    311563
+                ]
+            ],
+            "size": 311563
+        }
+    ]
+}
