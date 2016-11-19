@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bas",
+				"bash_reporter"
+			],
+			[
 				"dir",
 				"dir_list3"
 			],
@@ -288,27 +292,53 @@
 	"buffers":
 	[
 		{
-			"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/run_sim_operator_creator.sh",
+			"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/deleteme.sh",
 			"settings":
 			{
-				"buffer_size": 113,
+				"buffer_size": 181,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/Testbench_all_operators.v",
+			"contents": "t           10,        0.3859\n           20,        0.1910\n           30,        0.1267\n           40,        9.4525e-02\n",
+			"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/FPU_Reports/CORDIC_Arch3v1_SINGLE_Power_GATED.csv",
+			"file_size": 120,
+			"file_write_time": 131238183969925725,
 			"settings":
 			{
-				"buffer_size": 17276,
-				"encoding": "UTF-8",
+				"buffer_size": 121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/SINGLE/CORDIC_Arch2_ASIC_fpu_syn_constraints_clk40.tcl_GATED_syn_power.txt",
+			"settings":
+			{
+				"buffer_size": 2499,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Bash Build System/Bash.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/Bash Build System/Bash.sublime-build",
+					""
+				],
+				[
+					"Packages/HDLProject/HDLProject.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Bash Build System/Bash.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
@@ -373,28 +403,39 @@
 	"expanded_folders":
 	[
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_cordic_Arch3/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_cordic_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_behavioral",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch2/integracion_fisica/simulacion_logica_sintesis/SINGLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/DOUBLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_sintesis/SINGLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica/front_end/db",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch2/integracion_fisica/front_end/db/SINGLE",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/db/DOUBLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Design-Compiler-Project-Starter"
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/SINGLE"
 	],
 	"file_history":
 	[
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/bash_reporter_GATED.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/bash_reporter_Gated.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/bash_reporter_ADDCORDIC.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_AreaCelda.csv",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/bash_reporter.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/DC_Report_Creator.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/SINGLE/CORDIC_Arch2v1_ASIC_fpu_syn_constraints_clk10.tcl_GATED_syn_timing.txt",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/SINGLE/CORDIC_Arch2v1_ASIC_fpu_syn_constraints_clk20.tcl_GATED_syn_power.txt",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/LatexCode.txt",
+		"/home/jorge/Downloads/crebs-0.9.8.5/INSTALL",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/FPU_Reports/CORDIC_Arch2_DOUBLE_AreaCelda_GATED.csv",
+		"/home/jorge/Downloads/ApproxAdderLib/MATLAB R2013a/Error_Probability_Internal.m",
+		"/home/jorge/Downloads/ApproxAdderLib/MATLAB R2013a/ETAII.m",
+		"/home/jorge/.cache/.fr-GZWdQl/MATLAB R2013a/GeAr.txt",
+		"/home/jorge/.cache/.fr-9zTYJ4/MATLAB R2013a/ETAII.txt",
+		"/home/jorge/Downloads/ApproxAdderLib/MATLAB R2013a/Error_Probability.txt",
+		"/home/jorge/.cache/.fr-lnjKGf/MATLAB R2013a/GDA.txt",
+		"/home/jorge/.cache/.fr-nzdJIu/Readme.txt",
+		"/home/jorge/Downloads/es_es.oxt_FILES/README.txt",
+		"/home/jorge/Downloads/es_es/README.txt",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/FPU_Reports/CORDIC_Arch2v1_DOUBLE_Delay_GATED.csv",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/FPU_Reports/CORDIC_Arch2v1_SINGLE_Delay.csv",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/run_sim_operator_creator.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/Testbench_all_operators.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/DOUBLE_Celdas\\_KOA_1STAGE_GATED.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/sim_create_FPU-Operators.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/CORDIC1/DOUBLE/get_saif_CORDIC1DOUBLE.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Scriptssaf/sim_create_FPU-Operators.sh",
@@ -407,7 +448,6 @@
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/cordic_Arch2/file_list",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/cordic_Arch2/vhier.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Scripts/Project_creator.sh",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/bash_reporter_ADDCORDIC.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/scripts/ASIC_fpu_operators_syn.tcl",
 		"/home/jorge/TCL Workspace/arguments.tcl",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/my_sourcefiles/Source_Files/FPU_Interface/fpmult_arch2/file_list",
@@ -430,7 +470,6 @@
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Power_DW_1STAGE.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Power_KOA_1STAGE.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Delay.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/bash_reporter.sh",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Delay\\_RKOA_2STAGE.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Delay\\_RKOA_1STAGE.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Delay\\_KOA_2STAGE.txt",
@@ -499,30 +538,7 @@
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/SUB/SINGLE/Hexadecimal_R.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/SUB/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/ADD/SINGLE/Hexadecimal_R.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/ADD/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/tb_FPU1_SINGLE/imports/Testbench/Testbench_FPU_mult.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/ADD/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/glbl.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/make_struct.sh",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/Documento sin título",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/TXTVerification_v3/FLMvsTeorico.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/TXTVerification_v3/Decimal_FLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/FPADD_vector_test_SINGLE/behav/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/FPADD_vector_test_SINGLE/behav/Hexadecimal_R.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/ResultadoXilinxFLM_MULT.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/tb_FPU1_SINGLE/imports/FPADD3_vector_single_source/Hexadecimal_R.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/tb_FPU1_SINGLE/imports/FPADD3_vector_single_source/Hexadecimal_A.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/sources_1/imports/fpmult_arch2/Round_decoder_M.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/sources_1/imports/fpmult_arch2/Deco_Round_Mult.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/sources_1/imports/fpmult_arch2/FPU_Multiplication_Function.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/sources_1/imports/Floating-Point-Unit-master/FPU_Add_subt_Mult/project_1/project_1.srcs/sources_1/imports/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Round_Sgf_Dec.v",
-		"/home/jorge/Downloads/Floating-Point-Unit-master/FPU_Add_subt_Mult/sim_1/new/Testbench_uart.v",
-		"/home/jorge/Downloads/Floating-Point-Unit-master/FPU_Add_subt_Mult/RTL/fpuuart/Uart.v",
-		"/home/jorge/Downloads/Floating-Point-Unit-master/FPU_Add_subt_Mult/RTL/fpuuart/FPU_UART.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/addsub/FSM_input_enable.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/addsub/FPU_ADD_Substract_PIPELINED.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/Resultados/CORDIC/CORDIC_Arch3_Vivado/CORDIC_Arch3_Vivado.srcs/sources_1/imports/new/CORDIC_Arch3.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/Add_Sub/FPADDFPSUB_Pipelined_sims/FPADDFPSUB_Pipelined.srcs/bloody_simruns/imports/Pipeline_FPADD_sourcefiles/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v"
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/ADD/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt"
 	],
 	"find":
 	{
@@ -540,6 +556,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"PIPE",
+			"Gat",
+			"FPU",
+			"Power",
+			"\\{\\",
+			"1",
+			"3",
 			"operation",
 			"(shift_region_flag)",
 			"(data_output)",
@@ -660,21 +683,16 @@
 			"overflow_flag",
 			"busy",
 			"cont_var",
-			"sel_mux_2",
-			"first_mux_X",
-			"d_ff2_X",
-			"reg_val",
-			"reg_val_mux",
-			"ready_CORDIC",
-			"ready_cordic",
-			"enab_d_ff4_Zn"
+			"sel_mux_2"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"ONE",
+			"THREE",
 			"(region_flag)",
 			"(op_result)",
 			"(operation_ready)",
@@ -800,45 +818,70 @@
 			"Raw_mant_NRM",
 			"wire [SWR-1:0] Raw_mant_NRM;\n",
 			"Add_Subt_LZD_SWR",
-			"Add_Subt_LZD",
-			"DMP_exp_NRM_EW",
-			"DMP_exp_NRM"
+			"Add_Subt_LZD"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/run_sim_operator_creator.sh",
+					"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/deleteme.sh",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 113,
+						"buffer_size": 181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								181,
+								181
 							]
 						],
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/FPU_Reports/CORDIC_Arch3v1_SINGLE_Power_GATED.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -848,31 +891,31 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/Testbench_all_operators.v",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/SINGLE/CORDIC_Arch2_ASIC_fpu_syn_constraints_clk40.tcl_GATED_syn_power.txt",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 17276,
+						"buffer_size": 2499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12767,
-								12767
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Verilog/Verilog.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7369.0,
+						"translation.y": 152.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -883,7 +926,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -914,7 +957,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 86.0
+		"height": 215.0
 	},
 	"output.find_results":
 	{
@@ -928,7 +971,7 @@
 	"project": "ASICFLOW.sublime-project",
 	"replace":
 	{
-		"height": 95.0
+		"height": 89.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -995,7 +1038,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 406.0,
+	"side_bar_width": 442.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

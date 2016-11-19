@@ -1,0 +1,14 @@
+/////////////////////////////Error Tolerant Adder Type II//////////////////////////////////
+There are two Error Tolerant Adder Type II Verilog HDL Modules in this directory 
+	1. ETAII_N16_Q4.v 
+	--->	16-bit Adder with 4-Bit Partition Size	
+	2. ETAII_N16_Q8.v
+	--->	16-bit Adder with 8-Bit Partition Size                    
+	
+Each Module has 2 inputs	
+	1. in1      = Input 1                       
+	2. in2      = Input 2 
+And one output
+	1. res    	= in1 + in2
+	
+//////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,18 @@
+/////////////////////////////Accuracy Configurable Adder///////////////////////////////////
+There are four Accuracy Configurable Adder Verilog HDL Modules in this directory 
+	1. ACA_II_N8_Q4.v 
+	--->	8-bit Adder with 4-Bit Partition Size	
+	2. ACA_II_N16_Q4.v
+	--->	16-bit Adder with 4-Bit Partition Size                    
+	3. ACA_II_N16_Q8.v
+	--->	16-bit Adder with 8-Bit Partition Size
+	4. ACA_II_N32_Q16.v
+	--->	32-bit Adder with 16-Bit Partition Size	
+	
+Each Module has 2 inputs	
+	1. in1      = Input 1                       
+	2. in2      = Input 2 
+And one output
+	1. res    	= in1 + in2
+	
+//////////////////////////////////////////////////////////////////////////////////////////

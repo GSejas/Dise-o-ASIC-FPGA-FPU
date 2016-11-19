@@ -1,0 +1,640 @@
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_Delay.csv}{\FPU_Add_Subtract_FunctionSINGLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_Celdas.csv}{\FPU_Add_Subtract_FunctionSINGLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_AreaCelda.csv}{\FPU_Add_Subtract_FunctionSINGLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_AreaDiseño.csv}{\FPU_Add_Subtract_FunctionSINGLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_Power.csv}{\FPU_Add_Subtract_FunctionSINGLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_Delay.csv}{\FPU_Add_Subtract_FunctionDOUBLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_Celdas.csv}{\FPU_Add_Subtract_FunctionDOUBLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_AreaCelda.csv}{\FPU_Add_Subtract_FunctionDOUBLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_AreaDiseño.csv}{\FPU_Add_Subtract_FunctionDOUBLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_Power.csv}{\FPU_Add_Subtract_FunctionDOUBLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_Delay.csv}{\FPU_PIPELINED_FPADDSUBSINGLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_Celdas.csv}{\FPU_PIPELINED_FPADDSUBSINGLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_AreaCelda.csv}{\FPU_PIPELINED_FPADDSUBSINGLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_AreaDiseño.csv}{\FPU_PIPELINED_FPADDSUBSINGLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_Power.csv}{\FPU_PIPELINED_FPADDSUBSINGLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_Delay.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_Celdas.csv}{\FPU_PIPELINED_FPADDSUBDOUBLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_AreaCelda.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_AreaDiseño.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_Power.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_Delay.csv}{\CORDIC_Arch2v1SINGLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_Celdas.csv}{\CORDIC_Arch2v1SINGLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_AreaCelda.csv}{\CORDIC_Arch2v1SINGLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_AreaDiseño.csv}{\CORDIC_Arch2v1SINGLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_Power.csv}{\CORDIC_Arch2v1SINGLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_Delay.csv}{\CORDIC_Arch2v1DOUBLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_Celdas.csv}{\CORDIC_Arch2v1DOUBLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_AreaCelda.csv}{\CORDIC_Arch2v1DOUBLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_AreaDiseño.csv}{\CORDIC_Arch2v1DOUBLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_Power.csv}{\CORDIC_Arch2v1DOUBLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_Delay.csv}{\CORDIC_Arch3v1SINGLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_Celdas.csv}{\CORDIC_Arch3v1SINGLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_AreaCelda.csv}{\CORDIC_Arch3v1SINGLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_AreaDiseño.csv}{\CORDIC_Arch3v1SINGLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_Power.csv}{\CORDIC_Arch3v1SINGLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_Delay.csv}{\CORDIC_Arch3v1DOUBLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_Celdas.csv}{\CORDIC_Arch3v1DOUBLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_AreaCelda.csv}{\CORDIC_Arch3v1DOUBLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_AreaDiseño.csv}{\CORDIC_Arch3v1DOUBLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_Power.csv}{\CORDIC_Arch3v1DOUBLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_Delay.csv}{\CORDIC_Arch2SINGLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_Celdas.csv}{\CORDIC_Arch2SINGLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_AreaCelda.csv}{\CORDIC_Arch2SINGLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_AreaDiseño.csv}{\CORDIC_Arch2SINGLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_Power.csv}{\CORDIC_Arch2SINGLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_Delay.csv}{\CORDIC_Arch2DOUBLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_Celdas.csv}{\CORDIC_Arch2DOUBLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_AreaCelda.csv}{\CORDIC_Arch2DOUBLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_AreaDiseño.csv}{\CORDIC_Arch2DOUBLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_Power.csv}{\CORDIC_Arch2DOUBLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_Delay.csv}{\CORDIC_Arch3SINGLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_Celdas.csv}{\CORDIC_Arch3SINGLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_AreaCelda.csv}{\CORDIC_Arch3SINGLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_AreaDiseño.csv}{\CORDIC_Arch3SINGLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_Power.csv}{\CORDIC_Arch3SINGLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_Delay.csv}{\CORDIC_Arch3DOUBLEDelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_Celdas.csv}{\CORDIC_Arch3DOUBLECeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_AreaCelda.csv}{\CORDIC_Arch3DOUBLEAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_AreaDiseño.csv}{\CORDIC_Arch3DOUBLEAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_Power.csv}{\CORDIC_Arch3DOUBLEPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_DW_1STAGE.csv}{\FPU_Interface2SINGLEDelayDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_DW_1STAGE.csv}{\FPU_Interface2SINGLECeldasDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_DW_1STAGE.csv}{\FPU_Interface2SINGLEAreaCeldaDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_DW_1STAGE.csv}{\FPU_Interface2SINGLEAreaDiseñoDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_RKOA_1STAGE.csv}{\FPU_Interface2SINGLEDelayRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_RKOA_1STAGE.csv}{\FPU_Interface2SINGLECeldasRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_RKOA_1STAGE.csv}{\FPU_Interface2SINGLEAreaCeldaRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_RKOA_1STAGE.csv}{\FPU_Interface2SINGLEAreaDiseñoRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_RKOA_2STAGE.csv}{\FPU_Interface2SINGLEDelayRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_RKOA_2STAGE.csv}{\FPU_Interface2SINGLECeldasRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_RKOA_2STAGE.csv}{\FPU_Interface2SINGLEAreaCeldaRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_RKOA_2STAGE.csv}{\FPU_Interface2SINGLEAreaDiseñoRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_KOA_1STAGE.csv}{\FPU_Interface2SINGLEDelayKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_KOA_1STAGE.csv}{\FPU_Interface2SINGLECeldasKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_KOA_1STAGE.csv}{\FPU_Interface2SINGLEAreaCeldaKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_KOA_1STAGE.csv}{\FPU_Interface2SINGLEAreaDiseñoKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_KOA_2STAGE.csv}{\FPU_Interface2SINGLEDelayKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_KOA_2STAGE.csv}{\FPU_Interface2SINGLECeldasKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_KOA_2STAGE.csv}{\FPU_Interface2SINGLEAreaCeldaKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_KOA_2STAGE.csv}{\FPU_Interface2SINGLEAreaDiseñoKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_DW_1STAGE.csv}{\FPU_Interface2SINGLEPowerDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_RKOA_1STAGE.csv}{\FPU_Interface2SINGLEPowerRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_RKOA_2STAGE.csv}{\FPU_Interface2SINGLEPowerRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_KOA_1STAGE.csv}{\FPU_Interface2SINGLEPowerKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_KOA_2STAGE.csv}{\FPU_Interface2SINGLEPowerKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_DW_1STAGE.csv}{\FPU_Interface2DOUBLEDelayDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_DW_1STAGE.csv}{\FPU_Interface2DOUBLECeldasDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_DW_1STAGE.csv}{\FPU_Interface2DOUBLEAreaCeldaDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_DW_1STAGE.csv}{\FPU_Interface2DOUBLEAreaDiseñoDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_RKOA_1STAGE.csv}{\FPU_Interface2DOUBLEDelayRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_RKOA_1STAGE.csv}{\FPU_Interface2DOUBLECeldasRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_RKOA_1STAGE.csv}{\FPU_Interface2DOUBLEAreaCeldaRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_RKOA_1STAGE.csv}{\FPU_Interface2DOUBLEAreaDiseñoRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_RKOA_2STAGE.csv}{\FPU_Interface2DOUBLEDelayRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_RKOA_2STAGE.csv}{\FPU_Interface2DOUBLECeldasRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_RKOA_2STAGE.csv}{\FPU_Interface2DOUBLEAreaCeldaRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_RKOA_2STAGE.csv}{\FPU_Interface2DOUBLEAreaDiseñoRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_KOA_1STAGE.csv}{\FPU_Interface2DOUBLEDelayKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_KOA_1STAGE.csv}{\FPU_Interface2DOUBLECeldasKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_KOA_1STAGE.csv}{\FPU_Interface2DOUBLEAreaCeldaKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_KOA_1STAGE.csv}{\FPU_Interface2DOUBLEAreaDiseñoKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_KOA_2STAGE.csv}{\FPU_Interface2DOUBLEDelayKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_KOA_2STAGE.csv}{\FPU_Interface2DOUBLECeldasKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_KOA_2STAGE.csv}{\FPU_Interface2DOUBLEAreaCeldaKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_KOA_2STAGE.csv}{\FPU_Interface2DOUBLEAreaDiseñoKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_DW_1STAGE.csv}{\FPU_Interface2DOUBLEPowerDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_RKOA_1STAGE.csv}{\FPU_Interface2DOUBLEPowerRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_RKOA_2STAGE.csv}{\FPU_Interface2DOUBLEPowerRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_KOA_1STAGE.csv}{\FPU_Interface2DOUBLEPowerKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_KOA_2STAGE.csv}{\FPU_Interface2DOUBLEPowerKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_DW_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEDelayDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_DW_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLECeldasDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_DW_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_DW_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEDelayRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLECeldasRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEDelayRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLECeldasRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEDelayKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLECeldasKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEDelayKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLECeldasKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_DW_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEPowerDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEPowerRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEPowerRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionSINGLEPowerKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionSINGLEPowerKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_DW_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEDelayDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_DW_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLECeldasDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_DW_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_DW_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEDelayRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLECeldasRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEDelayRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLECeldasRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEDelayKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLECeldasKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEDelayKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLECeldasKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_DW_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEPowerDW_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_RKOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEPowerRKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_RKOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEPowerRKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_KOA_1STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEPowerKOA_1STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_KOA_2STAGE.csv}{\FPU_Multiplication_FunctionDOUBLEPowerKOA_2STAGE}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_Delay_GATED.csv}{\FPU_Add_Subtract_FunctionSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_Celdas_GATED.csv}{\FPU_Add_Subtract_FunctionSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_AreaCelda_GATED.csv}{\FPU_Add_Subtract_FunctionSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_AreaDiseño_GATED.csv}{\FPU_Add_Subtract_FunctionSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_SINGLE_Power_GATED.csv}{\FPU_Add_Subtract_FunctionSINGLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_Delay_GATED.csv}{\FPU_Add_Subtract_FunctionDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_Celdas_GATED.csv}{\FPU_Add_Subtract_FunctionDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_AreaCelda_GATED.csv}{\FPU_Add_Subtract_FunctionDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_AreaDiseño_GATED.csv}{\FPU_Add_Subtract_FunctionDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Add_Subtract_Function_DOUBLE_Power_GATED.csv}{\FPU_Add_Subtract_FunctionDOUBLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_Delay_GATED.csv}{\FPU_PIPELINED_FPADDSUBSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_Celdas_GATED.csv}{\FPU_PIPELINED_FPADDSUBSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_AreaCelda_GATED.csv}{\FPU_PIPELINED_FPADDSUBSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_AreaDiseño_GATED.csv}{\FPU_PIPELINED_FPADDSUBSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_SINGLE_Power_GATED.csv}{\FPU_PIPELINED_FPADDSUBSINGLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_Delay_GATED.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_Celdas_GATED.csv}{\FPU_PIPELINED_FPADDSUBDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_AreaCelda_GATED.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_AreaDiseño_GATED.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_PIPELINED_FPADDSUB_DOUBLE_Power_GATED.csv}{\FPU_PIPELINED_FPADDSUBDOUBLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_Delay_GATED.csv}{\CORDIC_Arch2v1SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_Celdas_GATED.csv}{\CORDIC_Arch2v1SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_AreaCelda_GATED.csv}{\CORDIC_Arch2v1SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_AreaDiseño_GATED.csv}{\CORDIC_Arch2v1SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_SINGLE_Power_GATED.csv}{\CORDIC_Arch2v1SINGLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_Delay_GATED.csv}{\CORDIC_Arch2v1DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_Celdas_GATED.csv}{\CORDIC_Arch2v1DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_AreaCelda_GATED.csv}{\CORDIC_Arch2v1DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_AreaDiseño_GATED.csv}{\CORDIC_Arch2v1DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2v1_DOUBLE_Power_GATED.csv}{\CORDIC_Arch2v1DOUBLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_Delay_GATED.csv}{\CORDIC_Arch3v1SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_Celdas_GATED.csv}{\CORDIC_Arch3v1SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_AreaCelda_GATED.csv}{\CORDIC_Arch3v1SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_AreaDiseño_GATED.csv}{\CORDIC_Arch3v1SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_SINGLE_Power_GATED.csv}{\CORDIC_Arch3v1SINGLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_Delay_GATED.csv}{\CORDIC_Arch3v1DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_Celdas_GATED.csv}{\CORDIC_Arch3v1DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_AreaCelda_GATED.csv}{\CORDIC_Arch3v1DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_AreaDiseño_GATED.csv}{\CORDIC_Arch3v1DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3v1_DOUBLE_Power_GATED.csv}{\CORDIC_Arch3v1DOUBLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_Delay_GATED.csv}{\CORDIC_Arch2SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_Celdas_GATED.csv}{\CORDIC_Arch2SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_AreaCelda_GATED.csv}{\CORDIC_Arch2SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_AreaDiseño_GATED.csv}{\CORDIC_Arch2SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_SINGLE_Power_GATED.csv}{\CORDIC_Arch2SINGLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_Delay_GATED.csv}{\CORDIC_Arch2DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_Celdas_GATED.csv}{\CORDIC_Arch2DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_AreaCelda_GATED.csv}{\CORDIC_Arch2DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_AreaDiseño_GATED.csv}{\CORDIC_Arch2DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch2_DOUBLE_Power_GATED.csv}{\CORDIC_Arch2DOUBLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_Delay_GATED.csv}{\CORDIC_Arch3SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_Celdas_GATED.csv}{\CORDIC_Arch3SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_AreaCelda_GATED.csv}{\CORDIC_Arch3SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_AreaDiseño_GATED.csv}{\CORDIC_Arch3SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_SINGLE_Power_GATED.csv}{\CORDIC_Arch3SINGLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_Delay_GATED.csv}{\CORDIC_Arch3DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_Celdas_GATED.csv}{\CORDIC_Arch3DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_AreaCelda_GATED.csv}{\CORDIC_Arch3DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_AreaDiseño_GATED.csv}{\CORDIC_Arch3DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/CORDIC_Arch3_DOUBLE_Power_GATED.csv}{\CORDIC_Arch3DOUBLEPowerGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_DW_1STAGE_GATED.csv}{\FPU_Interface2SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_DW_1STAGE_GATED.csv}{\FPU_Interface2SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_DW_1STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_DW_1STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_RKOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_RKOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_RKOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_RKOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_RKOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_RKOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_RKOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_RKOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_KOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_KOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_KOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_KOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Delay_KOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Celdas_KOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaCelda_KOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_AreaDiseño_KOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_DW_1STAGE_GATED.csv}{\FPU_Interface2SINGLEPowerDW_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_RKOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEPowerRKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_RKOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEPowerRKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_KOA_1STAGE_GATED.csv}{\FPU_Interface2SINGLEPowerKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_SINGLE_Power_KOA_2STAGE_GATED.csv}{\FPU_Interface2SINGLEPowerKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_DW_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_DW_1STAGE_GATED.csv}{\FPU_Interface2DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_DW_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_DW_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_RKOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_RKOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_RKOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_RKOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_RKOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_RKOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_RKOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_RKOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_KOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_KOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_KOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_KOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Delay_KOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Celdas_KOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaCelda_KOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_AreaDiseño_KOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_DW_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEPowerDW_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_RKOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEPowerRKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_RKOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEPowerRKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_KOA_1STAGE_GATED.csv}{\FPU_Interface2DOUBLEPowerKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Interface2_DOUBLE_Power_KOA_2STAGE_GATED.csv}{\FPU_Interface2DOUBLEPowerKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Delay_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Celdas_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaCelda_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_AreaDiseño_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEPowerDW_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEPowerRKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEPowerRKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEPowerKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_SINGLE_Power_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionSINGLEPowerKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Delay_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEDelayGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Celdas_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLECeldasGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaCelda_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaCeldaGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_AreaDiseño_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEAreaDiseñoGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_DW_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEPowerDW_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_RKOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEPowerRKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_RKOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEPowerRKOA_2STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_KOA_1STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEPowerKOA_1STAGEGATED}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/FPU_Multiplication_Function_DOUBLE_Power_KOA_2STAGE_GATED.csv}{\FPU_Multiplication_FunctionDOUBLEPowerKOA_2STAGEGATED}
+

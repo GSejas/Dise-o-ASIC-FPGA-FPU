@@ -77,7 +77,7 @@ function file_list_SIM_FILE_synth {
 #############################################
 #This dir_list holds a list of the files to be created
 dir_list=($1)
-precision_list=("SINGLE DOUBLE")
+precision_list=("ACAI" "ACAII" "ETAI" "GDA" "RCA" "LOA" "GeAr")
 sim_syn_dir="simulacion_logica_sintesis"
 sim_beh_dir="simulacion_logica_behavioral"
 for i in "${dir_list[@]}"

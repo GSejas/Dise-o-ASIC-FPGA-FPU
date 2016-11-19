@@ -59,62 +59,55 @@ function file_list_SIM_FILE {
 #############################################
 
 dir_list=($1)
+pres_list=($2)
 for i in "${dir_list[@]}"
 do
-#CREATE DC STRUCTURE
-  sim_syn_dir="$i/integracion_fisica/simulacion_logica_sintesis"
-  sim_beh_dir="$i/integracion_fisica/simulacion_logica_behavioral"
-  mkdir $i
-  mkdir $i/integracion_fisica
-  mkdir $i/integracion_fisica/front_end
-  mkdir $i/integracion_fisica/front_end/libs
-  mkdir $i/integracion_fisica/front_end/source
-  mkdir $i/integracion_fisica/front_end/db
-  mkdir $i/integracion_fisica/front_end/db/SINGLE
-  mkdir $i/integracion_fisica/front_end/db/DOUBLE
-  mkdir $i/integracion_fisica/front_end/reports
-  mkdir $i/integracion_fisica/front_end/reports/SINGLE
-  mkdir $i/integracion_fisica/front_end/reports/DOUBLE
-  mkdir $i/integracion_fisica/front_end/scripts
- mkdir $i/integracion_fisica/front_end/work
-##CREATE SIM FILES
-  mkdir $sim_syn_dir
- mkdir $sim_syn_dir/SINGLE
- mkdir $sim_syn_dir/DOUBLE
+for PRES in "${pres_list[@]}"
+    do
+    #CREATE DC STRUCTURE
+      sim_syn_dir="$i/integracion_fisica/simulacion_logica_sintesis"
+      sim_beh_dir="$i/integracion_fisica/simulacion_logica_behavioral"
+      mkdir $i
+      mkdir $i/integracion_fisica
+      mkdir $i/integracion_fisica/front_end
+      mkdir $i/integracion_fisica/front_end/libs
+      mkdir $i/integracion_fisica/front_end/source
+      mkdir $i/integracion_fisica/front_end/db
+      mkdir $i/integracion_fisica/front_end/db/$PRES
+      mkdir $i/integracion_fisica/front_end/reports
+      mkdir $i/integracion_fisica/front_end/reports/$PRES
+      mkdir $i/integracion_fisica/front_end/scripts
+     mkdir $i/integracion_fisica/front_end/work
+    ##CREATE SIM FILES
+      mkdir $sim_syn_dir
+     mkdir $sim_syn_dir/$PRES
 
-  mkdir $sim_beh_dir
-  mkdir $sim_beh_dir/SINGLE
- mkdir $sim_beh_dir/DOUBLE
+      mkdir $sim_beh_dir
+      mkdir $sim_beh_dir/$PRES
 
-#WE COPY THE CELL LIBRARY FROM THIS ROOT
-  cp ibm13rflpvt.v $sim_syn_dir/SINGLE
-  cp ibm13rflpvt.v $sim_syn_dir/DOUBLE
+    #WE COPY THE CELL LIBRARY FROM THIS ROOT
+      cp ibm13rflpvt.v $sim_syn_dir/$PRES
 
-#SAIF SCRIPT FILES ARE CREATED
-  SAIF_FILE "$sim_beh_dir/SINGLE" "SINGLE" "get_saif.sh"
-  SAIF_FILE "$sim_beh_dir/DOUBLE" "DOUBLE" "get_saif.sh"
-  SAIF_FILE "$sim_syn_dir/SINGLE" "SINGLE" "get_saif.sh"
-  SAIF_FILE "$sim_syn_dir/DOUBLE" "DOUBLE" "get_saif.sh"
+    #SAIF SCRIPT FILES ARE CREATED
+      SAIF_FILE "$sim_beh_dir/$PRES" "$PRES" "get_saif.sh"
+      SAIF_FILE "$sim_syn_dir/$PRES" "$PRES" "get_saif.sh"
 
-#RUN SCRIPT FILES ARE CREATED FOR EACH PRECISION
-  RUN_SIM_FILE "$sim_beh_dir/SINGLE" "SINGLE" "run_sim.sh"
-  RUN_SIM_FILE "$sim_beh_dir/DOUBLE" "DOUBLE" "run_sim.sh"
-  RUN_SIM_FILE "$sim_syn_dir/SINGLE" "SINGLE" "run_sim.sh"
-  RUN_SIM_FILE "$sim_syn_dir/DOUBLE" "DOUBLE" "run_sim.sh"
+    #RUN SCRIPT FILES ARE CREATED FOR EACH PRECISION
+      RUN_SIM_FILE "$sim_beh_dir/$PRES" "$PRES" "run_sim.sh"
+      RUN_SIM_FILE "$sim_syn_dir/$PRES" "$PRES" "run_sim.sh"
 
-  #CREATE SCRIPT THAT SEARCHES FOR VERILOG FILES IN SOURCE
-  file_list_SIM_FILE "$sim_beh_dir/SINGLE" "filelist4sim.sh"
-  file_list_SIM_FILE "$sim_beh_dir/DOUBLE" "filelist4sim.sh"
+      #CREATE SCRIPT THAT SEARCHES FOR VERILOG FILES IN SOURCE
+      file_list_SIM_FILE "$sim_beh_dir/$PRES" "filelist4sim.sh"
 
-  file_list_FILE "$i/integracion_fisica/front_end/scripts" "file_list.sh"
+      file_list_FILE "$i/integracion_fisica/front_end/scripts" "file_list.sh"
 
-#WE COPY SOME TEMPLATE SCRIPTS
-  cp ASIC_DesignTemplate_syn.tcl $i/integracion_fisica/front_end/scripts
-  mv "$i/integracion_fisica/front_end/scripts/ASIC_DesignTemplate_syn.tcl" "${i}/integracion_fisica/front_end/scripts/${i}_syn.tcl"
-  cp ASIC_DesignTemplate_syn_constraints.tcl $i/integracion_fisica/front_end/scripts
-  mv "$i/integracion_fisica/front_end/scripts/ASIC_DesignTemplate_syn_constraints.tcl" "${i}/integracion_fisica/front_end/scripts/${i}_syn_constraints.tcl"
-  cp .synopsys_dc.setup $i/integracion_fisica/front_end
-
+    #WE COPY SOME TEMPLATE SCRIPTS
+      cp ASIC_DesignTemplate_syn.tcl $i/integracion_fisica/front_end/scripts
+      mv "$i/integracion_fisica/front_end/scripts/ASIC_DesignTemplate_syn.tcl" "${i}/integracion_fisica/front_end/scripts/${i}_syn.tcl"
+      cp ASIC_DesignTemplate_syn_constraints.tcl $i/integracion_fisica/front_end/scripts
+      mv "$i/integracion_fisica/front_end/scripts/ASIC_DesignTemplate_syn_constraints.tcl" "${i}/integracion_fisica/front_end/scripts/${i}_syn_constraints.tcl"
+      cp .synopsys_dc.setup $i/integracion_fisica/front_end
+    done
 done
 
 find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \;

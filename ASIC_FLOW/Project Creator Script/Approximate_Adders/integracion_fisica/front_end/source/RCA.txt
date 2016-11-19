@@ -1,0 +1,14 @@
+/////////////////////////////Ripple Carry Adder////////////////////////////////////////////
+There are two Ripple Carry Adder Verilog HDL Modules in this directory 
+	1. RCA_N16.v 
+	--->	16-bit Adder	
+	2. RCA_N20.v
+	--->	20-bit Adder
+	
+Each Module has 2 inputs	
+	1. in1      = Input 1                       
+	2. in2      = Input 2 
+And one output
+	1. res    	= in1 + in2
+	
+//////////////////////////////////////////////////////////////////////////////////////////
