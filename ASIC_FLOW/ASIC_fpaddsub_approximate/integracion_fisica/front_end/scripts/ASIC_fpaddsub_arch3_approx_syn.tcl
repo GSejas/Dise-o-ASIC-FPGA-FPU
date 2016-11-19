@@ -12,16 +12,16 @@ set PRECISION(1) "DOUBLE";
 set PREC_PARAM(0) "W=32,SW=23,EW=8,SWR=26,EWR=5";
 set PREC_PARAM(1) "W=64,SW=52,EW=11,SWR=55,EWR=6";
 # Eliminar diseños previos
-set DESIGN_NAME  "FPU_Interface2"
-set TOP_NAME     "FPU_Interface2"
+set DESIGN_NAME  "fpaddsub_arch3_approx"
+set TOP_NAME     "FPU_PIPELINED_FPADDSUB"
 set compile_fix_cell_degradation true
 
 # NOMBRE DEL MACRO DE LAS ARQUITECTURAS EN CUESTION
-set MULT_ARCHS "KOA_1STAGE RKOA_1STAGE DW_1STAGE KOA_2STAGE RKOA_2STAGE"
-set MARCH [split $MULT_ARCHS "\ "]
+set ADD_ARCHS "ACAIN16Q4 ETAIIN16Q4 ETAIIN16Q8 ACAIIN16Q4 ACAIIN16Q8 GDAN16M4P4 GDAN16M4P8 GeArN16R2P4 GeArN16R4P4 GeArN16R4P8 GeArN16R6P4"
+set ADDARCH [split $ADD_ARCHS "\ "]
 
-set FPU_CONSTRAINTS "ASIC_fpu_syn_constraints_clk10.tcl ASIC_fpu_syn_constraints_clk20.tcl ASIC_fpu_syn_constraints_clk30.tcl ASIC_fpu_syn_constraints_clk40.tcl"
-set F_TIME_CONTRAINTS_ARRAY [split $FPU_CONSTRAINTS "\ "]
+set FPU_CONSTRAINTS "ASIC_fpadd_approx_syn_constraints_clk1.tcl ASIC_fpadd_approx_syn_constraints_clk10.tcl ASIC_fpadd_approx_syn_constraints_clk20.tcl ASIC_fpadd_approx_syn_constraints_clk30.tcl ASIC_fpadd_approx_syn_constraints_clk40.tcl"
+set F_TIME_CONTRAINTS_ARRAY [split $FPADD_CONSTRAINTS "\ "]
 
 remove_design -designs
 suppress_message LINT-321
@@ -42,12 +42,12 @@ foreach line $data {
 
 set x 0;
 while {$x < 2} {
-    foreach mult_arch $MARCH {
+    foreach add_arch $ADDARCH {
     	foreach CONTRAINTS_FILE_NAME $F_TIME_CONTRAINTS_ARRAY {
-	    # Re analizamos el diseno FPU_MULT, ya que se debe de tomar en consideracion 
+	    # Re analizamos el diseno FPU_MULT, ya que se debe de tomar en consideracion
 	    # cada modulo bajo prueba. Esto se puede expandir para diferentes arquitecturas futuras
-	    analyze -library WORK -define "$mult_arch" -format verilog "FPU_Multiplication_Function.v" 
-	   
+	       analyze -library WORK -define "$add_arch" -format verilog "FPU_ADD_Substract_PIPELINED.v"
+
 		#Elaboramos el módulo principal
 		elaborate $TOP_NAME -parameters "$PREC_PARAM($x)" -architecture verilog -library WORK
 
@@ -59,7 +59,7 @@ while {$x < 2} {
 
 		 #Escribir el archivo *.ddc (base de datos sin sintetizar)
 		 write -hierarchy -format ddc -output \
-		 ./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_$mult_arch\_syn_unmapped.ddc
+		 ./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_$add_arch\_syn_unmapped.ddc
 
 		# #Aplicar especificaciones de diseño (constraints)
 		 source $CONTRAINTS_FILE_NAME
@@ -85,34 +85,34 @@ while {$x < 2} {
 		set verilogout_no_tri true
 		change_names -hierarchy -rules verilog
 		write -hierarchy -format verilog -output \
-		./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn.v
+		./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn.v
 
 		#Generar los reportes
 
-		report_power -analysis_effort high > reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_power.txt
-		report_area >   reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_area.txt
-		report_cell >   reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_cell.txt
-		report_qor >    reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_qor.txt
-		report_timing > reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_timing.txt
-		report_port >   reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_port.txt
+		report_power -analysis_effort high > reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_power.txt
+		report_area >   reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_area.txt
+		report_cell >   reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_cell.txt
+		report_qor >    reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_qor.txt
+		report_timing > reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_timing.txt
+		report_port >   reports/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_port.txt
 
 		#Escribir el archivo *.ddc (base de datos sintetizada)
 		write -hierarchy -format ddc -output \
-		./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn_mapped.ddc
+		./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn_mapped.ddc
 
 		#Escribir el archivo *.sdc (Synopsys Design Constraints), utilizado como una de las entradas
 		#para el sintetizador físico (IC Compiler)
-		write_sdc ./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn.sdc
-		write_sdf ./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn.sdf
-		write_sdf ../simulacion_logica_sintesis/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn.sdf
+		write_sdc ./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn.sdc
+		write_sdf ./db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn.sdf
+		write_sdf ../simulacion_logica_sintesis/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn.sdf
 
 		##LE AGREGAMOS CON UN COMANDO DE BASH EL SDF CORRESPONDIENTE PARA LA SIMULACION
-		set string_replace "sed -i \"s/endmodule/initial\ \\\$sdf\_annotate\(\\\"$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn.sdf\\\"\)\\\\; \\n endmodule/g\" db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$mult_arch\_syn.v"
-		#set string_replace "sed -i \"s/endmodule/ initial \t \$sdf_annotate\(\"$TOP_NAME\_$mult_arch\_syn.sdf\"\); \n endmodule/g\" db/$PRECISION(1)/$TOP_NAME\_$mult_arch\_syn.v"
+		set string_replace "sed -i \"s/endmodule/initial\ \\\$sdf\_annotate\(\\\"$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn.sdf\\\"\)\\\\; \\n endmodule/g\" db/$PRECISION($x)/$TOP_NAME\_$CONTRAINTS_FILE_NAME\_GATED\_$add_arch\_syn.v"
+		#set string_replace "sed -i \"s/endmodule/ initial \t \$sdf_annotate\(\"$TOP_NAME\_$add_arch\_syn.sdf\"\); \n endmodule/g\" db/$PRECISION(1)/$TOP_NAME\_$add_arch\_syn.v"
 		exec /bin/sh -c "$string_replace"
 		#Revisar la configuración de temporizado
 		check_timing
-		}		
+		}
 	}
 
 # #FINALIZAMOS EL LOOP
