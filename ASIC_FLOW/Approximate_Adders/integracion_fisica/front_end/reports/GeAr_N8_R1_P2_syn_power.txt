@@ -7,7 +7,7 @@ Report : power
         -analysis_effort high
 Design : GeAr_N8_R1_P2
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:22:28 2016
+Date   : Sun Nov 20 02:54:16 2016
 ****************************************
 
 

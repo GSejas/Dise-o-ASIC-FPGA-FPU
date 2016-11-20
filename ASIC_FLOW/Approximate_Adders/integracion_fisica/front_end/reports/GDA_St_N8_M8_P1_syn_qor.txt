@@ -3,7 +3,7 @@
 Report : qor
 Design : GDA_St_N8_M8_P1
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:20:03 2016
+Date   : Sun Nov 20 02:51:51 2016
 ****************************************
 
 
@@ -65,10 +65,10 @@ Date   : Sun Nov 20 02:20:03 2016
   -----------------------------------------
   Resource Sharing:                    0.01
   Logic Optimization:                  0.15
-  Mapping Optimization:                2.03
+  Mapping Optimization:                2.06
   -----------------------------------------
-  Overall Compile Time:               10.84
-  Overall Compile Wall Clock Time:    11.35
+  Overall Compile Time:               10.86
+  Overall Compile Wall Clock Time:    11.46
 
   --------------------------------------------------------------------
 

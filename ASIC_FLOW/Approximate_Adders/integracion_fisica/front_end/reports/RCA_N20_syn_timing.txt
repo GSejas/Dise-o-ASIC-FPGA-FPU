@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : RCA_N20
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:24:28 2016
+Date   : Sun Nov 20 02:56:17 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c

@@ -1,11 +1,11 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sun Nov 20 02:21:26 2016
+// Date      : Sun Nov 20 02:53:15 2016
 /////////////////////////////////////////////////////////////
 
 
-module GeAr_N16_R4_P4_DW01_add_J24_0 ( A, B, CI, SUM, CO );
+module GeAr_N16_R4_P4_DW01_add_J63_0 ( A, B, CI, SUM, CO );
   input [8:0] A;
   input [8:0] B;
   output [8:0] SUM;
@@ -27,7 +27,7 @@ initial $sdf_annotate("GeAr_N16_R4_P4_syn.sdf");
  endmodule
 
 
-module GeAr_N16_R4_P4_DW01_add_J24_1 ( A, B, CI, SUM, CO );
+module GeAr_N16_R4_P4_DW01_add_J63_1 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -60,10 +60,10 @@ module GeAr_N16_R4_P4 ( in1, in2, res );
          SYNOPSYS_UNCONNECTED_6, SYNOPSYS_UNCONNECTED_7,
          SYNOPSYS_UNCONNECTED_8;
 
-  GeAr_N16_R4_P4_DW01_add_J24_0 add_x_3 ( .A({1'b0, in1[15:8]}), .B({1'b0, 
+  GeAr_N16_R4_P4_DW01_add_J63_0 add_x_3 ( .A({1'b0, in1[15:8]}), .B({1'b0, 
         in2[15:8]}), .CI(1'b0), .SUM({res[16:12], SYNOPSYS_UNCONNECTED_1, 
         SYNOPSYS_UNCONNECTED_2, SYNOPSYS_UNCONNECTED_3, SYNOPSYS_UNCONNECTED_4}) );
-  GeAr_N16_R4_P4_DW01_add_J24_1 add_x_2 ( .A(in1[11:4]), .B(in2[11:4]), .CI(
+  GeAr_N16_R4_P4_DW01_add_J63_1 add_x_2 ( .A(in1[11:4]), .B(in2[11:4]), .CI(
         1'b0), .SUM({res[11:8], SYNOPSYS_UNCONNECTED_5, SYNOPSYS_UNCONNECTED_6, 
         SYNOPSYS_UNCONNECTED_7, SYNOPSYS_UNCONNECTED_8}) );
   XOR2XLTS U2 ( .A(n3), .B(n2), .Y(res[7]) );

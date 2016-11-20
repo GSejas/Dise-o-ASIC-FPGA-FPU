@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : LOAGDA_St_N16_M4_P4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:19:15 2016
+Date   : Sun Nov 20 02:51:15 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -33,9 +33,9 @@ Wire Load Model Mode: top
   U54/Y (AOI21X1TS)                        0.34       4.85 r
   U45/Y (OAI2BB2XLTS)                      0.41       5.26 f
   U39/Y (AO22X1TS)                         0.70       5.97 f
-  intadd_7_U4/CO (ADDFX1TS)                0.58       6.55 f
-  intadd_7_U3/CO (CMPR32X2TS)              0.57       7.12 f
-  intadd_7_U2/CO (ADDFX1TS)                0.55       7.67 f
+  intadd_25_U4/CO (ADDFX1TS)               0.58       6.55 f
+  intadd_25_U3/CO (CMPR32X2TS)             0.57       7.12 f
+  intadd_25_U2/CO (ADDFX1TS)               0.55       7.67 f
   U40/Y (XOR2X1TS)                         0.32       8.00 f
   res[11] (out)                            0.00       8.00 f
   data arrival time                                   8.00

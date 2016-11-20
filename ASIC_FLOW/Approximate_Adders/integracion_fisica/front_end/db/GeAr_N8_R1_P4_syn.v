@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sun Nov 20 02:22:52 2016
+// Date      : Sun Nov 20 02:54:40 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -9,17 +9,17 @@ module GeAr_N8_R1_P4 ( in1, in2, res );
   input [7:0] in1;
   input [7:0] in2;
   output [8:0] res;
-  wire   intadd_10_CI, intadd_10_n3, intadd_10_n2, intadd_10_n1, n2, n3, n4,
+  wire   intadd_27_CI, intadd_27_n3, intadd_27_n2, intadd_27_n1, n2, n3, n4,
          n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16, n17, n18;
 
-  CMPR32X2TS intadd_10_U4 ( .A(in2[1]), .B(in1[1]), .C(intadd_10_CI), .CO(
-        intadd_10_n3), .S(res[1]) );
-  CMPR32X2TS intadd_10_U3 ( .A(in2[2]), .B(in1[2]), .C(intadd_10_n3), .CO(
-        intadd_10_n2), .S(res[2]) );
-  CMPR32X2TS intadd_10_U2 ( .A(in2[3]), .B(in1[3]), .C(intadd_10_n2), .CO(
-        intadd_10_n1), .S(res[3]) );
+  CMPR32X2TS intadd_27_U4 ( .A(in2[1]), .B(in1[1]), .C(intadd_27_CI), .CO(
+        intadd_27_n3), .S(res[1]) );
+  CMPR32X2TS intadd_27_U3 ( .A(in2[2]), .B(in1[2]), .C(intadd_27_n3), .CO(
+        intadd_27_n2), .S(res[2]) );
+  CMPR32X2TS intadd_27_U2 ( .A(in2[3]), .B(in1[3]), .C(intadd_27_n2), .CO(
+        intadd_27_n1), .S(res[3]) );
   AO21XLTS U2 ( .A0(n8), .A1(n3), .B0(n9), .Y(n4) );
-  CLKAND2X2TS U3 ( .A(in2[0]), .B(in1[0]), .Y(intadd_10_CI) );
+  CLKAND2X2TS U3 ( .A(in2[0]), .B(in1[0]), .Y(intadd_27_CI) );
   AOI2BB2XLTS U4 ( .B0(in2[5]), .B1(n5), .A0N(n5), .A1N(in2[5]), .Y(n6) );
   OAI2BB2XLTS U5 ( .B0(n17), .B1(n16), .A0N(in1[6]), .A1N(in2[6]), .Y(n18) );
   OAI32X2TS U6 ( .A0(n14), .A1(n9), .A2(n8), .B0(n13), .B1(n14), .Y(n10) );
@@ -27,11 +27,11 @@ module GeAr_N8_R1_P4 ( in1, in2, res );
          );
   OAI211XLTS U8 ( .A0(in1[2]), .A1(in2[2]), .B0(in2[1]), .C0(in1[1]), .Y(n3)
          );
-  AOI2BB1XLTS U9 ( .A0N(in2[0]), .A1N(in1[0]), .B0(intadd_10_CI), .Y(res[0])
+  AOI2BB1XLTS U9 ( .A0N(in2[0]), .A1N(in1[0]), .B0(intadd_27_CI), .Y(res[0])
          );
   NOR2X2TS U10 ( .A(in2[4]), .B(in1[4]), .Y(n14) );
   AOI21X1TS U11 ( .A0(in1[4]), .A1(in2[4]), .B0(n14), .Y(n2) );
-  XOR2XLTS U12 ( .A(n2), .B(intadd_10_n1), .Y(res[4]) );
+  XOR2XLTS U12 ( .A(n2), .B(intadd_27_n1), .Y(res[4]) );
   NAND2X1TS U13 ( .A(in1[2]), .B(in2[2]), .Y(n8) );
   NOR2X1TS U14 ( .A(in2[3]), .B(in1[3]), .Y(n9) );
   AOI21X1TS U15 ( .A0(n4), .A1(n13), .B0(n14), .Y(n7) );

@@ -3,7 +3,7 @@
 Report : cell
 Design : LOA
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:24:03 2016
+Date   : Sun Nov 20 02:55:52 2016
 ****************************************
 
 Attributes:
@@ -38,17 +38,17 @@ U21                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           7.200000  
 U22                       OR2X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           7.200000  
-intadd_16_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_33_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_16_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_33_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_16_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_33_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_16_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_33_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_16_U6              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_33_U6              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_16_U7              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_33_U7              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 --------------------------------------------------------------------------------
 Total 17 cells                                            269.280000

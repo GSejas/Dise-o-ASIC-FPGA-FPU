@@ -3,7 +3,7 @@
 Report : cell
 Design : GeAr_N16_R2_P4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:21:15 2016
+Date   : Sun Nov 20 02:53:03 2016
 ****************************************
 
 Attributes:
@@ -114,13 +114,13 @@ U49                       AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           7.200000  
 U50                       CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
-intadd_9_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_26_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_9_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_26_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_9_U4               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_26_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_9_U5               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_26_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 --------------------------------------------------------------------------------
 Total 53 cells                                            652.320003

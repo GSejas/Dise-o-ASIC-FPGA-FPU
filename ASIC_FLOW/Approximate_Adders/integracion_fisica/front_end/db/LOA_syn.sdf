@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "LOA")
-(DATE "Sun Nov 20 02:24:03 2016")
+(DATE "Sun Nov 20 02:55:52 2016")
 (VENDOR "scx3_cmos8rf_lpvt_tt_1p2v_25c")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "L-2016.03-SP3")
@@ -37,24 +37,24 @@
     (INTERCONNECT in1[9] U13/B (0.000:0.000:0.000))
     (INTERCONNECT in2[9] U12/A (0.000:0.000:0.000))
     (INTERCONNECT in1[9] U12/B (0.000:0.000:0.000))
-    (INTERCONNECT in1[15] intadd_16_U2/A (0.000:0.000:0.000))
-    (INTERCONNECT in2[15] intadd_16_U2/B (0.000:0.000:0.000))
-    (INTERCONNECT intadd_16_U3/CO intadd_16_U2/C (0.000:0.000:0.000))
-    (INTERCONNECT in1[14] intadd_16_U3/A (0.000:0.000:0.000))
-    (INTERCONNECT in2[14] intadd_16_U3/B (0.000:0.000:0.000))
-    (INTERCONNECT intadd_16_U4/CO intadd_16_U3/C (0.000:0.000:0.000))
-    (INTERCONNECT in1[13] intadd_16_U4/A (0.000:0.000:0.000))
-    (INTERCONNECT in2[13] intadd_16_U4/B (0.000:0.000:0.000))
-    (INTERCONNECT intadd_16_U5/CO intadd_16_U4/C (0.000:0.000:0.000))
-    (INTERCONNECT in1[12] intadd_16_U5/A (0.000:0.000:0.000))
-    (INTERCONNECT in2[12] intadd_16_U5/B (0.000:0.000:0.000))
-    (INTERCONNECT intadd_16_U6/CO intadd_16_U5/C (0.000:0.000:0.000))
-    (INTERCONNECT in1[11] intadd_16_U6/A (0.000:0.000:0.000))
-    (INTERCONNECT in2[11] intadd_16_U6/B (0.000:0.000:0.000))
-    (INTERCONNECT intadd_16_U7/CO intadd_16_U6/C (0.000:0.000:0.000))
-    (INTERCONNECT in1[10] intadd_16_U7/A (0.000:0.000:0.000))
-    (INTERCONNECT in2[10] intadd_16_U7/B (0.000:0.000:0.000))
-    (INTERCONNECT U12/Y intadd_16_U7/C (0.000:0.000:0.000))
+    (INTERCONNECT in1[15] intadd_33_U2/A (0.000:0.000:0.000))
+    (INTERCONNECT in2[15] intadd_33_U2/B (0.000:0.000:0.000))
+    (INTERCONNECT intadd_33_U3/CO intadd_33_U2/C (0.000:0.000:0.000))
+    (INTERCONNECT in1[14] intadd_33_U3/A (0.000:0.000:0.000))
+    (INTERCONNECT in2[14] intadd_33_U3/B (0.000:0.000:0.000))
+    (INTERCONNECT intadd_33_U4/CO intadd_33_U3/C (0.000:0.000:0.000))
+    (INTERCONNECT in1[13] intadd_33_U4/A (0.000:0.000:0.000))
+    (INTERCONNECT in2[13] intadd_33_U4/B (0.000:0.000:0.000))
+    (INTERCONNECT intadd_33_U5/CO intadd_33_U4/C (0.000:0.000:0.000))
+    (INTERCONNECT in1[12] intadd_33_U5/A (0.000:0.000:0.000))
+    (INTERCONNECT in2[12] intadd_33_U5/B (0.000:0.000:0.000))
+    (INTERCONNECT intadd_33_U6/CO intadd_33_U5/C (0.000:0.000:0.000))
+    (INTERCONNECT in1[11] intadd_33_U6/A (0.000:0.000:0.000))
+    (INTERCONNECT in2[11] intadd_33_U6/B (0.000:0.000:0.000))
+    (INTERCONNECT intadd_33_U7/CO intadd_33_U6/C (0.000:0.000:0.000))
+    (INTERCONNECT in1[10] intadd_33_U7/A (0.000:0.000:0.000))
+    (INTERCONNECT in2[10] intadd_33_U7/B (0.000:0.000:0.000))
+    (INTERCONNECT U12/Y intadd_33_U7/C (0.000:0.000:0.000))
     )
   )
 )
@@ -170,7 +170,7 @@
 )
 (CELL
   (CELLTYPE "CMPR32X2TS")
-  (INSTANCE intadd_16_U2)
+  (INSTANCE intadd_33_U2)
   (DELAY
     (ABSOLUTE
     (COND B == 1'b1 && C == 1'b0 (IOPATH A CO (0.593:0.593:0.593) (0.626:0.626:0.626)))
@@ -203,7 +203,7 @@
 )
 (CELL
   (CELLTYPE "CMPR32X2TS")
-  (INSTANCE intadd_16_U3)
+  (INSTANCE intadd_33_U3)
   (DELAY
     (ABSOLUTE
     (COND B == 1'b1 && C == 1'b0 (IOPATH A CO (0.613:0.613:0.613) (0.646:0.646:0.646)))
@@ -236,7 +236,7 @@
 )
 (CELL
   (CELLTYPE "CMPR32X2TS")
-  (INSTANCE intadd_16_U4)
+  (INSTANCE intadd_33_U4)
   (DELAY
     (ABSOLUTE
     (COND B == 1'b1 && C == 1'b0 (IOPATH A CO (0.613:0.613:0.613) (0.646:0.646:0.646)))
@@ -269,7 +269,7 @@
 )
 (CELL
   (CELLTYPE "CMPR32X2TS")
-  (INSTANCE intadd_16_U5)
+  (INSTANCE intadd_33_U5)
   (DELAY
     (ABSOLUTE
     (COND B == 1'b1 && C == 1'b0 (IOPATH A CO (0.613:0.613:0.613) (0.646:0.646:0.646)))
@@ -302,7 +302,7 @@
 )
 (CELL
   (CELLTYPE "CMPR32X2TS")
-  (INSTANCE intadd_16_U6)
+  (INSTANCE intadd_33_U6)
   (DELAY
     (ABSOLUTE
     (COND B == 1'b1 && C == 1'b0 (IOPATH A CO (0.613:0.613:0.613) (0.646:0.646:0.646)))
@@ -335,7 +335,7 @@
 )
 (CELL
   (CELLTYPE "CMPR32X2TS")
-  (INSTANCE intadd_16_U7)
+  (INSTANCE intadd_33_U7)
   (DELAY
     (ABSOLUTE
     (COND B == 1'b1 && C == 1'b0 (IOPATH A CO (0.613:0.613:0.613) (0.646:0.646:0.646)))

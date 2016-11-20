@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : GeAr_N16_R4_P4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:21:27 2016
+Date   : Sun Nov 20 02:53:15 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -27,7 +27,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   input external delay                                    3.50       3.50 f
   in2[5] (in)                                             0.00       3.50 f
-  add_x_2/B[1] (GeAr_N16_R4_P4_DW01_add_J24_1)            0.00       3.50 f
+  add_x_2/B[1] (GeAr_N16_R4_P4_DW01_add_J63_1)            0.00       3.50 f
   add_x_2/U20/Y (OAI211X1TS)                              0.35       3.85 r
   add_x_2/U18/Y (OAI2BB1X1TS)                             0.52       4.38 f
   add_x_2/U16/Y (AOI222X2TS)                              0.60       4.98 r
@@ -37,7 +37,7 @@ Wire Load Model Mode: top
   add_x_2/U22/CO (CMPR32X2TS)                             0.53       6.82 f
   add_x_2/U19/Y (XOR2X1TS)                                0.40       7.21 r
   add_x_2/U14/Y (XOR2XLTS)                                0.70       7.91 r
-  add_x_2/SUM[7] (GeAr_N16_R4_P4_DW01_add_J24_1)          0.00       7.91 r
+  add_x_2/SUM[7] (GeAr_N16_R4_P4_DW01_add_J63_1)          0.00       7.91 r
   res[11] (out)                                           0.00       7.91 r
   data arrival time                                                  7.91
 

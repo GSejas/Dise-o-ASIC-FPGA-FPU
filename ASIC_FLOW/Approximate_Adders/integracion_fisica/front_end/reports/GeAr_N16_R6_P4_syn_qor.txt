@@ -3,7 +3,7 @@
 Report : qor
 Design : GeAr_N16_R6_P4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:21:51 2016
+Date   : Sun Nov 20 02:53:40 2016
 ****************************************
 
 
@@ -64,11 +64,11 @@ Date   : Sun Nov 20 02:21:51 2016
   Compile CPU Statistics
   -----------------------------------------
   Resource Sharing:                    0.08
-  Logic Optimization:                  0.30
-  Mapping Optimization:                2.12
+  Logic Optimization:                  0.29
+  Mapping Optimization:                2.11
   -----------------------------------------
-  Overall Compile Time:               11.14
-  Overall Compile Wall Clock Time:    11.51
+  Overall Compile Time:               11.09
+  Overall Compile Wall Clock Time:    11.62
 
   --------------------------------------------------------------------
 

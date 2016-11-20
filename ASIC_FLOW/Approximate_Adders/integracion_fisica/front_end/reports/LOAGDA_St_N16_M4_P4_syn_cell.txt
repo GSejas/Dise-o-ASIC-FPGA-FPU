@@ -3,7 +3,7 @@
 Report : cell
 Design : LOAGDA_St_N16_M4_P4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:19:15 2016
+Date   : Sun Nov 20 02:51:15 2016
 ****************************************
 
 Attributes:
@@ -76,19 +76,19 @@ U67                       AOI21X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           7.200000  
 U68                       OA21XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           8.640000  
-intadd_6_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_24_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_6_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_24_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_6_U4               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_24_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_6_U5               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_24_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_7_U2               ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_25_U2              ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
-intadd_7_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_25_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_7_U4               ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_25_U4              ADDFX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           33.119999 mo, r
 --------------------------------------------------------------------------------
 Total 37 cells                                            485.280002

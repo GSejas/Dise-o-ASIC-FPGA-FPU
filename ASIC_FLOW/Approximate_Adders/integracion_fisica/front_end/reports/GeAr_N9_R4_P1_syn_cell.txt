@@ -3,7 +3,7 @@
 Report : cell
 Design : GeAr_N9_R4_P1
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:23:51 2016
+Date   : Sun Nov 20 02:55:40 2016
 ****************************************
 
 Attributes:
@@ -26,19 +26,19 @@ U5                        AOI2BB1XLTS     scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           8.640000  
 U6                        XOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           11.520000 
-intadd_14_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_31_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_14_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_31_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_14_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_31_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_14_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_31_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_15_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_32_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_15_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_32_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_15_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_32_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 --------------------------------------------------------------------------------
 Total 12 cells                                            264.960003

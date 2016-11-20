@@ -3,7 +3,7 @@
 Report : qor
 Design : RCA_N16
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:24:15 2016
+Date   : Sun Nov 20 02:56:04 2016
 ****************************************
 
 
@@ -64,11 +64,11 @@ Date   : Sun Nov 20 02:24:15 2016
   Compile CPU Statistics
   -----------------------------------------
   Resource Sharing:                    0.05
-  Logic Optimization:                  0.27
-  Mapping Optimization:                2.25
+  Logic Optimization:                  0.25
+  Mapping Optimization:                2.23
   -----------------------------------------
-  Overall Compile Time:               11.22
-  Overall Compile Wall Clock Time:    11.64
+  Overall Compile Time:               11.18
+  Overall Compile Wall Clock Time:    11.57
 
   --------------------------------------------------------------------
 

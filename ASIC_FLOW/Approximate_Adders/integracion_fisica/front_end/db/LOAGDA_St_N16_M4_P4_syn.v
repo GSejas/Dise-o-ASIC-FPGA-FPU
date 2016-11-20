@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sun Nov 20 02:19:15 2016
+// Date      : Sun Nov 20 02:51:15 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -9,27 +9,26 @@ module LOAGDA_St_N16_M4_P4 ( in1, in2, res );
   input [15:0] in1;
   input [15:0] in2;
   output [16:0] res;
-  wire   intadd_6_CI, intadd_6_n4, intadd_6_n3, intadd_6_n2, intadd_7_CI,
-         intadd_7_n3, intadd_7_n2, intadd_7_n1, n29, n30, n31, n32, n33, n34,
-         n35, n36, n37, n38, n39, n40, n41, n42, n43, n44, n45, n46, n47;
+  wire   intadd_24_CI, intadd_24_n4, intadd_24_n3, intadd_24_n2, intadd_25_CI,
+         intadd_25_n3, intadd_25_n2, intadd_25_n1, n29, n30, n31, n32, n33,
+         n34, n35, n36, n37, n38, n39, n40, n41, n42, n43, n44, n45, n46, n47;
 
-  CMPR32X2TS intadd_6_U5 ( .A(in1[12]), .B(in2[12]), .C(intadd_6_CI), .CO(
-        intadd_6_n4), .S(res[12]) );
-  CMPR32X2TS intadd_6_U4 ( .A(in1[13]), .B(in2[13]), .C(intadd_6_n4), .CO(
-        intadd_6_n3), .S(res[13]) );
-  CMPR32X2TS intadd_6_U3 ( .A(in1[14]), .B(in2[14]), .C(intadd_6_n3), .CO(
-        intadd_6_n2), .S(res[14]) );
-  CMPR32X2TS intadd_6_U2 ( .A(in1[15]), .B(in2[15]), .C(intadd_6_n2), .CO(
+  CMPR32X2TS intadd_24_U5 ( .A(in1[12]), .B(in2[12]), .C(intadd_24_CI), .CO(
+        intadd_24_n4), .S(res[12]) );
+  CMPR32X2TS intadd_24_U4 ( .A(in1[13]), .B(in2[13]), .C(intadd_24_n4), .CO(
+        intadd_24_n3), .S(res[13]) );
+  CMPR32X2TS intadd_24_U3 ( .A(in1[14]), .B(in2[14]), .C(intadd_24_n3), .CO(
+        intadd_24_n2), .S(res[14]) );
+  CMPR32X2TS intadd_24_U2 ( .A(in1[15]), .B(in2[15]), .C(intadd_24_n2), .CO(
         res[16]), .S(res[15]) );
-  CMPR32X2TS intadd_7_U3 ( .A(in2[9]), .B(in1[9]), .C(intadd_7_n3), .CO(
-        intadd_7_n2), .S(res[9]) );
-  ADDFX1TS intadd_7_U4 ( .A(in1[8]), .B(in2[8]), .CI(intadd_7_CI), .CO(
-        intadd_7_n3), .S(res[8]) );
-  ADDFX1TS intadd_7_U2 ( .A(in2[10]), .B(in1[10]), .CI(intadd_7_n2), .CO(
-        intadd_7_n1), .S(res[10]) );
-  AO22X1TS U39 ( .A0(in1[7]), .A1(in2[7]), .B0(n37), .B1(n32), .Y(intadd_7_CI)
-         );
-  XOR2X1TS U40 ( .A(intadd_7_n1), .B(n29), .Y(res[11]) );
+  CMPR32X2TS intadd_25_U3 ( .A(in2[9]), .B(in1[9]), .C(intadd_25_n3), .CO(
+        intadd_25_n2), .S(res[9]) );
+  ADDFX1TS intadd_25_U4 ( .A(in1[8]), .B(in2[8]), .CI(intadd_25_CI), .CO(
+        intadd_25_n3), .S(res[8]) );
+  ADDFX1TS intadd_25_U2 ( .A(in2[10]), .B(in1[10]), .CI(intadd_25_n2), .CO(
+        intadd_25_n1), .S(res[10]) );
+  AO22X1TS U39 ( .A0(in1[7]), .A1(in2[7]), .B0(n37), .B1(n32), .Y(intadd_25_CI) );
+  XOR2X1TS U40 ( .A(intadd_25_n1), .B(n29), .Y(res[11]) );
   NOR2X2TS U41 ( .A(in2[6]), .B(in1[6]), .Y(n47) );
   NAND3XLTS U42 ( .A(res[1]), .B(res[2]), .C(n33), .Y(n34) );
   AO22XLTS U43 ( .A0(in1[1]), .A1(in2[1]), .B0(in1[0]), .B1(in2[0]), .Y(n33)
@@ -58,7 +57,7 @@ module LOAGDA_St_N16_M4_P4 ( in1, in2, res );
          );
   OAI22X1TS U63 ( .A0(in2[10]), .A1(in1[10]), .B0(in2[9]), .B1(in1[9]), .Y(n38) );
   OAI21XLTS U64 ( .A0(n41), .A1(in1[11]), .B0(in2[11]), .Y(n40) );
-  OAI2BB1X1TS U65 ( .A0N(in1[11]), .A1N(n41), .B0(n40), .Y(intadd_6_CI) );
+  OAI2BB1X1TS U65 ( .A0N(in1[11]), .A1N(n41), .B0(n40), .Y(intadd_24_CI) );
   NOR2XLTS U66 ( .A(in1[4]), .B(in2[4]), .Y(n43) );
   AOI21X1TS U67 ( .A0(n43), .A1(n42), .B0(n45), .Y(res[4]) );
   OA21XLTS U68 ( .A0(n45), .A1(n44), .B0(n46), .Y(res[5]) );

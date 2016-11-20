@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sun Nov 20 02:21:14 2016
+// Date      : Sun Nov 20 02:53:03 2016
 /////////////////////////////////////////////////////////////
 
 
@@ -9,20 +9,20 @@ module GeAr_N16_R2_P4 ( in1, in2, res );
   input [15:0] in1;
   input [15:0] in2;
   output [16:0] res;
-  wire   intadd_9_CI, intadd_9_n4, intadd_9_n3, intadd_9_n2, intadd_9_n1, n2,
-         n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16, n17,
-         n18, n19, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n30, n31,
-         n32, n33, n34, n35, n36, n37, n38, n39, n40, n41, n42;
+  wire   intadd_26_CI, intadd_26_n4, intadd_26_n3, intadd_26_n2, intadd_26_n1,
+         n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16,
+         n17, n18, n19, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n30,
+         n31, n32, n33, n34, n35, n36, n37, n38, n39, n40, n41, n42;
 
-  CMPR32X2TS intadd_9_U5 ( .A(in2[1]), .B(in1[1]), .C(intadd_9_CI), .CO(
-        intadd_9_n4), .S(res[1]) );
-  CMPR32X2TS intadd_9_U4 ( .A(in2[2]), .B(in1[2]), .C(intadd_9_n4), .CO(
-        intadd_9_n3), .S(res[2]) );
-  CMPR32X2TS intadd_9_U3 ( .A(in2[3]), .B(in1[3]), .C(intadd_9_n3), .CO(
-        intadd_9_n2), .S(res[3]) );
-  CMPR32X2TS intadd_9_U2 ( .A(in2[4]), .B(in1[4]), .C(intadd_9_n2), .CO(
-        intadd_9_n1), .S(res[4]) );
-  OAI21XLTS U2 ( .A0(n8), .A1(n7), .B0(intadd_9_n1), .Y(n5) );
+  CMPR32X2TS intadd_26_U5 ( .A(in2[1]), .B(in1[1]), .C(intadd_26_CI), .CO(
+        intadd_26_n4), .S(res[1]) );
+  CMPR32X2TS intadd_26_U4 ( .A(in2[2]), .B(in1[2]), .C(intadd_26_n4), .CO(
+        intadd_26_n3), .S(res[2]) );
+  CMPR32X2TS intadd_26_U3 ( .A(in2[3]), .B(in1[3]), .C(intadd_26_n3), .CO(
+        intadd_26_n2), .S(res[3]) );
+  CMPR32X2TS intadd_26_U2 ( .A(in2[4]), .B(in1[4]), .C(intadd_26_n2), .CO(
+        intadd_26_n1), .S(res[4]) );
+  OAI21XLTS U2 ( .A0(n8), .A1(n7), .B0(intadd_26_n1), .Y(n5) );
   OAI21XLTS U3 ( .A0(n26), .A1(n25), .B0(n34), .Y(n32) );
   ADDFX1TS U4 ( .A(in2[15]), .B(in1[15]), .CI(n3), .CO(res[16]), .S(res[15])
          );
@@ -42,12 +42,12 @@ module GeAr_N16_R2_P4 ( in1, in2, res );
   INVX2TS U18 ( .A(in1[10]), .Y(n35) );
   INVX2TS U19 ( .A(in2[10]), .Y(n36) );
   NOR2X2TS U20 ( .A(in2[11]), .B(in1[11]), .Y(n33) );
-  CLKAND2X2TS U21 ( .A(in2[0]), .B(in1[0]), .Y(intadd_9_CI) );
+  CLKAND2X2TS U21 ( .A(in2[0]), .B(in1[0]), .Y(intadd_26_CI) );
   AO22XLTS U22 ( .A0(in2[3]), .A1(in1[3]), .B0(in1[2]), .B1(in2[2]), .Y(n6) );
   INVX2TS U23 ( .A(n7), .Y(n9) );
   INVX2TS U24 ( .A(n14), .Y(n16) );
   INVX2TS U25 ( .A(n22), .Y(n24) );
-  OAI31X1TS U26 ( .A0(n8), .A1(intadd_9_n1), .A2(n7), .B0(n5), .Y(res[5]) );
+  OAI31X1TS U26 ( .A0(n8), .A1(intadd_26_n1), .A2(n7), .B0(n5), .Y(res[5]) );
   OAI31X1TS U27 ( .A0(n15), .A1(n13), .A2(n14), .B0(n12), .Y(res[7]) );
   OAI31X1TS U28 ( .A0(n23), .A1(n20), .A2(n22), .B0(n19), .Y(res[9]) );
   OAI31X1TS U29 ( .A0(n29), .A1(n28), .A2(n33), .B0(n27), .Y(res[11]) );
@@ -69,7 +69,7 @@ module GeAr_N16_R2_P4 ( in1, in2, res );
   OAI22X1TS U42 ( .A0(in2[9]), .A1(in1[9]), .B0(in2[8]), .B1(in1[8]), .Y(n25)
          );
   AOI31X1TS U43 ( .A0(in2[8]), .A1(in1[8]), .A2(n24), .B0(n23), .Y(n34) );
-  AOI2BB1XLTS U44 ( .A0N(in2[0]), .A1N(in1[0]), .B0(intadd_9_CI), .Y(res[0])
+  AOI2BB1XLTS U44 ( .A0N(in2[0]), .A1N(in1[0]), .B0(intadd_26_CI), .Y(res[0])
          );
   CMPR32X2TS U45 ( .A(in2[6]), .B(in1[6]), .C(n30), .CO(n13), .S(res[6]) );
   CMPR32X2TS U46 ( .A(in2[8]), .B(in1[8]), .C(n31), .CO(n20), .S(res[8]) );
