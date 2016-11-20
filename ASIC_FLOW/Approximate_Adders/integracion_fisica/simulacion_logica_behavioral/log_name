@@ -1,0 +1,590 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS release 6.8 (Final)' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -PP -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
++define+LOALPL14 -timescale=1ns/1ps +neg_tchk
+                         Chronologic VCS (TM)
+      Version K-2015.09-SP2-3_Full64 -- Sat Nov 19 22:03:27 2016
+               Copyright (c) 1991-2015 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../front_end/source/ACA_II_N16_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_II_N16_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ACA_II_N16_Q8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_II_N16_Q8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ACA_II_N32_Q16.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_II_N32_Q16.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ACA_II_N8_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_II_N8_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ACA_I_N16_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_I_N16_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ACA_I_N32_Q8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_I_N32_Q8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ACA_I_N8_Q5.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ACA_I_N8_Q5.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ETAII_N16_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ETAII_N16_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/ETAII_N16_Q8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/ETAII_N16_Q8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N16_M4_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N16_M4_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../front_end/source/GDA_St_N16_M4_P4.v, 101
+  No type is specified for wire 'p11p10p9g8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../front_end/source/GDA_St_N16_M4_P8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N16_M4_P8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../front_end/source/GDA_St_N16_M4_P8.v, 111
+  No type is specified for wire 'p11p10p9p8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../front_end/source/GDA_St_N8_M4_P2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M4_P2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M4_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M4_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M8_P1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M8_P1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M8_P2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M8_P2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M8_P3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M8_P3.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M8_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M8_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M8_P5.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M8_P5.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_St_N8_M8_P6.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_St_N8_M8_P6.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GDA_dyn_N16_M4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GDA_dyn_N16_M4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../front_end/source/GDA_dyn_N16_M4.v, 117
+  No type is specified for wire 'p11p10p9p8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../front_end/source/GeAr_N16_R2_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N16_R2_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N16_R4_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N16_R4_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N16_R4_P8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N16_R4_P8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N16_R6_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N16_R6_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N20_R5_P5_with_recovery.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N20_R5_P5_with_recovery.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R1_P1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R1_P1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R1_P2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R1_P2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R1_P3.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R1_P3.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R1_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R1_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R1_P5.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R1_P5.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R1_P6.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R1_P6.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R2_P2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R2_P2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N8_R2_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N8_R2_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/GeAr_N9_R4_P1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/GeAr_N9_R4_P1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/LOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/LOA.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/RCA_N16.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/RCA_N16.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../front_end/source/RCA_N20.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/RCA_N20.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file 'Testbench_simpleAdders.v'
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 25
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 29
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 30
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 34
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 35
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 39
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 40
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 44
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 45
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 49
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 50
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 54
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 55
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 59
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 60
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 64
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 65
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 69
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 70
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 74
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 75
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 79
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 80
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 84
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 85
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 89
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 90
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 95
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 96
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 100
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 101
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 105
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 106
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 110
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 111
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 115
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 116
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 120
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 121
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 125
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 126
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 130
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 131
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 135
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 136
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 140
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 141
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 145
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[NS] Null statement
+Testbench_simpleAdders.v, 162
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[NS] Null statement
+Testbench_simpleAdders.v, 189
+  Null statement is used in following verilog source.
+  
+
+Top Level Modules:
+       ACA_II_N16_Q4
+       ACA_II_N16_Q8
+       ACA_II_N32_Q16
+       ACA_II_N8_Q4
+       ACA_I_N16_Q4
+       ACA_I_N32_Q8
+       ACA_I_N8_Q5
+       ETAII_N16_Q4
+       ETAII_N16_Q8
+       GDA_St_N16_M4_P4
+       GDA_St_N16_M4_P8
+       GDA_St_N8_M4_P2
+       GDA_St_N8_M4_P4
+       GDA_St_N8_M8_P1
+       GDA_St_N8_M8_P2
+       GDA_St_N8_M8_P3
+       GDA_St_N8_M8_P4
+       GDA_St_N8_M8_P5
+       GDA_St_N8_M8_P6
+       GDA_dyn_N16_M4
+       GeAr_N16_R2_P4
+       GeAr_N16_R4_P4
+       GeAr_N16_R4_P8
+       GeAr_N16_R6_P4
+       GeAr_N20_R5_P5_with_recovery
+       GeAr_N8_R1_P1
+       GeAr_N8_R1_P2
+       GeAr_N8_R1_P3
+       GeAr_N8_R1_P4
+       GeAr_N8_R1_P5
+       GeAr_N8_R1_P6
+       GeAr_N8_R2_P2
+       GeAr_N8_R2_P4
+       GeAr_N9_R4_P1
+       RCA_N16
+       RCA_N20
+       Testbench_Adder
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+37 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module Testbench_Adder because:
+	Module parameters have been changed via defparam.
+rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
+_4347_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
+rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsnew.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsimprofile.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libuclinative.so \
+-Wl,-whole-archive /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvcsucli.so \
+-Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+Command: ./simv +v2k +lint=all -a log_name +define+SINGLE +define+LOALPL14 +neg_tchk
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 19 22:03 2016
+$finish called from file "Testbench_simpleAdders.v", line 169.
+$finish at simulation time           2000100000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2000100000 ps
+CPU Time:      1.350 seconds;       Data structure size:   0.0Mb
+Sat Nov 19 22:03:30 2016
+CPU time: .292 seconds to compile + .017 seconds to elab + .182 seconds to link + 1.499 seconds in simulation

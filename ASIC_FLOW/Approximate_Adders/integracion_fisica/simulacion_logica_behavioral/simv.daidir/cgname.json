@@ -1,0 +1,192 @@
+{
+    "ACA_II_N16_Q4": [
+        "ACA_II_N16_Q4",
+        "pC1T8",
+        "module"
+    ],
+    "ACA_I_N32_Q8": [
+        "ACA_I_N32_Q8",
+        "aCstj",
+        "module"
+    ],
+    "GeAr_N8_R1_P2": [
+        "GeAr_N8_R1_P2",
+        "acSd2",
+        "module"
+    ],
+    "GDA_St_N8_M8_P5": [
+        "GDA_St_N8_M8_P5",
+        "Eet3h",
+        "module"
+    ],
+    "ETAII_N16_Q4": [
+        "ETAII_N16_Q4",
+        "WQeck",
+        "module"
+    ],
+    "ACA_I_N8_Q5": [
+        "ACA_I_N8_Q5",
+        "ejbcN",
+        "module"
+    ],
+    "ACA_II_N16_Q8": [
+        "ACA_II_N16_Q8",
+        "aHm9C",
+        "module"
+    ],
+    "ACA_II_N32_Q16": [
+        "ACA_II_N32_Q16",
+        "RUrYK",
+        "module"
+    ],
+    "GDA_St_N8_M8_P2": [
+        "GDA_St_N8_M8_P2",
+        "KLgCF",
+        "module"
+    ],
+    "ACA_II_N8_Q4": [
+        "ACA_II_N8_Q4",
+        "VwjPb",
+        "module"
+    ],
+    "ACA_I_N16_Q4": [
+        "ACA_I_N16_Q4",
+        "zs2gM",
+        "module"
+    ],
+    "GeAr_N16_R4_P8": [
+        "GeAr_N16_R4_P8",
+        "YD5JR",
+        "module"
+    ],
+    "GDA_St_N8_M8_P3": [
+        "GDA_St_N8_M8_P3",
+        "wYhiU",
+        "module"
+    ],
+    "GeAr_N8_R1_P5": [
+        "GeAr_N8_R1_P5",
+        "qI9sN",
+        "module"
+    ],
+    "GeAr_N8_R2_P2": [
+        "GeAr_N8_R2_P2",
+        "igk1c",
+        "module"
+    ],
+    "ETAII_N16_Q8": [
+        "ETAII_N16_Q8",
+        "xEcig",
+        "module"
+    ],
+    "GeAr_N8_R1_P1": [
+        "GeAr_N8_R1_P1",
+        "QKezJ",
+        "module"
+    ],
+    "GeAr_N16_R2_P4": [
+        "GeAr_N16_R2_P4",
+        "R96IZ",
+        "module"
+    ],
+    "GDA_St_N16_M4_P8": [
+        "GDA_St_N16_M4_P8",
+        "W581m",
+        "module"
+    ],
+    "GDA_St_N16_M4_P4": [
+        "GDA_St_N16_M4_P4",
+        "Akt2a",
+        "module"
+    ],
+    "GDA_St_N8_M8_P1": [
+        "GDA_St_N8_M8_P1",
+        "JQUqR",
+        "module"
+    ],
+    "GeAr_N9_R4_P1": [
+        "GeAr_N9_R4_P1",
+        "jYbU0",
+        "module"
+    ],
+    "GDA_St_N8_M4_P2": [
+        "GDA_St_N8_M4_P2",
+        "ramQ0",
+        "module"
+    ],
+    "GDA_St_N8_M4_P4": [
+        "GDA_St_N8_M4_P4",
+        "QKATJ",
+        "module"
+    ],
+    "RCA_N20": [
+        "RCA_N20",
+        "c02ER",
+        "module"
+    ],
+    "GDA_St_N8_M8_P4": [
+        "GDA_St_N8_M8_P4",
+        "JVW5g",
+        "module"
+    ],
+    "GDA_St_N8_M8_P6": [
+        "GDA_St_N8_M8_P6",
+        "eMsnZ",
+        "module"
+    ],
+    "GDA_dyn_N16_M4": [
+        "GDA_dyn_N16_M4",
+        "tjZPa",
+        "module"
+    ],
+    "GeAr_N8_R1_P6": [
+        "GeAr_N8_R1_P6",
+        "q7vAP",
+        "module"
+    ],
+    "GeAr_N20_R5_P5_with_recovery": [
+        "GeAr_N20_R5_P5_with_recovery",
+        "sxyFb",
+        "module"
+    ],
+    "GeAr_N16_R4_P4": [
+        "GeAr_N16_R4_P4",
+        "L7YZK",
+        "module"
+    ],
+    "GeAr_N16_R6_P4": [
+        "GeAr_N16_R6_P4",
+        "PQb9U",
+        "module"
+    ],
+    "GeAr_N8_R1_P3": [
+        "GeAr_N8_R1_P3",
+        "BWpZh",
+        "module"
+    ],
+    "GeAr_N8_R1_P4": [
+        "GeAr_N8_R1_P4",
+        "xeVET",
+        "module"
+    ],
+    "GeAr_N8_R2_P4": [
+        "GeAr_N8_R2_P4",
+        "sA3Tm",
+        "module"
+    ],
+    "RCA_N16": [
+        "RCA_N16",
+        "ckHDI",
+        "module"
+    ],
+    "Testbench_Adder": [
+        "Testbench_Adder",
+        "pygHW",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}
