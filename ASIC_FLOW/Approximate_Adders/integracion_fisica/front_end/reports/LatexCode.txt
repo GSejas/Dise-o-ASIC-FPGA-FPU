@@ -1,0 +1,220 @@
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__Delay.csv}{\ACA_I_N16_Q4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__Celdas.csv}{\ACA_I_N16_Q4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__AreaCelda.csv}{\ACA_I_N16_Q4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__AreaDiseño.csv}{\ACA_I_N16_Q4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__Power.csv}{\ACA_I_N16_Q4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__Delay.csv}{\ACA_II_N16_Q8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__Celdas.csv}{\ACA_II_N16_Q8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__AreaCelda.csv}{\ACA_II_N16_Q8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__AreaDiseño.csv}{\ACA_II_N16_Q8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__Power.csv}{\ACA_II_N16_Q8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__Delay.csv}{\ETAII_N16_Q8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__Celdas.csv}{\ETAII_N16_Q8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__AreaCelda.csv}{\ETAII_N16_Q8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__AreaDiseño.csv}{\ETAII_N16_Q8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__Power.csv}{\ETAII_N16_Q8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__Delay.csv}{\GeAr_N16_R2_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__Celdas.csv}{\GeAr_N16_R2_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__AreaCelda.csv}{\GeAr_N16_R2_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__AreaDiseño.csv}{\GeAr_N16_R2_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__Power.csv}{\GeAr_N16_R2_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__Delay.csv}{\GeAr_N16_R4_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__Celdas.csv}{\GeAr_N16_R4_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__AreaCelda.csv}{\GeAr_N16_R4_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__AreaDiseño.csv}{\GeAr_N16_R4_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__Power.csv}{\GeAr_N16_R4_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__Delay.csv}{\GeAr_N16_R4_P8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__Celdas.csv}{\GeAr_N16_R4_P8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__AreaCelda.csv}{\GeAr_N16_R4_P8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__AreaDiseño.csv}{\GeAr_N16_R4_P8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__Power.csv}{\GeAr_N16_R4_P8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__Delay.csv}{\GeAr_N16_R6_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__Celdas.csv}{\GeAr_N16_R6_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__AreaCelda.csv}{\GeAr_N16_R6_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__AreaDiseño.csv}{\GeAr_N16_R6_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__Power.csv}{\GeAr_N16_R6_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__Delay.csv}{\GDA_St_N16_M4_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__Celdas.csv}{\GDA_St_N16_M4_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__AreaCelda.csv}{\GDA_St_N16_M4_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__AreaDiseño.csv}{\GDA_St_N16_M4_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__Power.csv}{\GDA_St_N16_M4_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__Delay.csv}{\GDA_St_N16_M4_P8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__Celdas.csv}{\GDA_St_N16_M4_P8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__AreaCelda.csv}{\GDA_St_N16_M4_P8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__AreaDiseño.csv}{\GDA_St_N16_M4_P8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__Power.csv}{\GDA_St_N16_M4_P8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__Delay.csv}{\RCA_N16Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__Celdas.csv}{\RCA_N16Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__AreaCelda.csv}{\RCA_N16AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__AreaDiseño.csv}{\RCA_N16AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__Power.csv}{\RCA_N16Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__Delay.csv}{\LOADelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__Celdas.csv}{\LOACeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__AreaCelda.csv}{\LOAAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__AreaDiseño.csv}{\LOAAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__Power.csv}{\LOAPower}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__Delay.csv}{\ACA_I_N16_Q4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__Celdas.csv}{\ACA_I_N16_Q4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__AreaCelda.csv}{\ACA_I_N16_Q4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__AreaDiseño.csv}{\ACA_I_N16_Q4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_I_N16_Q4__Power.csv}{\ACA_I_N16_Q4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__Delay.csv}{\ACA_II_N16_Q8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__Celdas.csv}{\ACA_II_N16_Q8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__AreaCelda.csv}{\ACA_II_N16_Q8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__AreaDiseño.csv}{\ACA_II_N16_Q8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ACA_II_N16_Q8__Power.csv}{\ACA_II_N16_Q8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__Delay.csv}{\ETAII_N16_Q8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__Celdas.csv}{\ETAII_N16_Q8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__AreaCelda.csv}{\ETAII_N16_Q8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__AreaDiseño.csv}{\ETAII_N16_Q8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/ETAII_N16_Q8__Power.csv}{\ETAII_N16_Q8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__Delay.csv}{\GeAr_N16_R2_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__Celdas.csv}{\GeAr_N16_R2_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__AreaCelda.csv}{\GeAr_N16_R2_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__AreaDiseño.csv}{\GeAr_N16_R2_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R2_P4__Power.csv}{\GeAr_N16_R2_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__Delay.csv}{\GeAr_N16_R4_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__Celdas.csv}{\GeAr_N16_R4_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__AreaCelda.csv}{\GeAr_N16_R4_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__AreaDiseño.csv}{\GeAr_N16_R4_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P4__Power.csv}{\GeAr_N16_R4_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__Delay.csv}{\GeAr_N16_R4_P8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__Celdas.csv}{\GeAr_N16_R4_P8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__AreaCelda.csv}{\GeAr_N16_R4_P8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__AreaDiseño.csv}{\GeAr_N16_R4_P8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R4_P8__Power.csv}{\GeAr_N16_R4_P8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__Delay.csv}{\GeAr_N16_R6_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__Celdas.csv}{\GeAr_N16_R6_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__AreaCelda.csv}{\GeAr_N16_R6_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__AreaDiseño.csv}{\GeAr_N16_R6_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GeAr_N16_R6_P4__Power.csv}{\GeAr_N16_R6_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__Delay.csv}{\GDA_St_N16_M4_P4Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__Celdas.csv}{\GDA_St_N16_M4_P4Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__AreaCelda.csv}{\GDA_St_N16_M4_P4AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__AreaDiseño.csv}{\GDA_St_N16_M4_P4AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P4__Power.csv}{\GDA_St_N16_M4_P4Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__Delay.csv}{\GDA_St_N16_M4_P8Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__Celdas.csv}{\GDA_St_N16_M4_P8Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__AreaCelda.csv}{\GDA_St_N16_M4_P8AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__AreaDiseño.csv}{\GDA_St_N16_M4_P8AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/GDA_St_N16_M4_P8__Power.csv}{\GDA_St_N16_M4_P8Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__Delay.csv}{\RCA_N16Delay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__Celdas.csv}{\RCA_N16Celdas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__AreaCelda.csv}{\RCA_N16AreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__AreaDiseño.csv}{\RCA_N16AreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/RCA_N16__Power.csv}{\RCA_N16Power}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__Delay.csv}{\LOADelay}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__Celdas.csv}{\LOACeldas}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__AreaCelda.csv}{\LOAAreaCelda}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__AreaDiseño.csv}{\LOAAreaDiseño}
+
+\pgfplotstableread[col sep = comma]{FPU_Reports/LOA__Power.csv}{\LOAPower}
+
