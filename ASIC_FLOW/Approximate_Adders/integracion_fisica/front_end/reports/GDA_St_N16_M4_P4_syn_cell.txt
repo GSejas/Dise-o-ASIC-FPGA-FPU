@@ -3,7 +3,7 @@
 Report : cell
 Design : GDA_St_N16_M4_P4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:18:50 2016
+Date   : Sun Nov 20 02:50:49 2016
 ****************************************
 
 Attributes:
@@ -48,31 +48,31 @@ U54                       OAI2BB2X1TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           11.520000 
 U55                       OAI2BB1X1TS     scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           8.640000  
-intadd_1_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_19_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_1_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_19_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_1_U4               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_19_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_1_U5               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_19_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_1_U6               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_19_U6              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_1_U7               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_19_U7              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_2_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_20_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_2_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_20_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_2_U4               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_20_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_2_U5               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_20_U5              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_3_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_21_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_3_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_21_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_3_U4               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_21_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 --------------------------------------------------------------------------------
 Total 29 cells                                            563.040009

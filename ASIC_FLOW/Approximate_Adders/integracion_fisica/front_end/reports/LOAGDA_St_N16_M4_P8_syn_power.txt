@@ -7,7 +7,7 @@ Report : power
         -analysis_effort high
 Design : LOAGDA_St_N16_M4_P8
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:19:27 2016
+Date   : Sun Nov 20 02:48:27 2016
 ****************************************
 
 
@@ -33,12 +33,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =   7.9131 uW   (40%)
-  Net Switching Power  =  11.9438 uW   (60%)
+  Cell Internal Power  =   9.7542 uW   (48%)
+  Net Switching Power  =  10.7701 uW   (52%)
                          ---------
-Total Dynamic Power    =  19.8569 uW  (100%)
+Total Dynamic Power    =  20.5243 uW  (100%)
 
-Cell Leakage Power     = 688.5226 pW
+Cell Leakage Power     = 807.4142 pW
 
 Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
@@ -51,7 +51,7 @@ black_box          0.0000            0.0000            0.0000            0.0000 
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
 register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  7.9131e-03        1.1944e-02          688.5226        1.9858e-02  ( 100.00%)
+combinational  9.7542e-03        1.0770e-02          807.4142        2.0525e-02  ( 100.00%)
 --------------------------------------------------------------------------------------------------
-Total          7.9131e-03 mW     1.1944e-02 mW       688.5226 pW     1.9858e-02 mW
+Total          9.7542e-03 mW     1.0770e-02 mW       807.4142 pW     2.0525e-02 mW
 1

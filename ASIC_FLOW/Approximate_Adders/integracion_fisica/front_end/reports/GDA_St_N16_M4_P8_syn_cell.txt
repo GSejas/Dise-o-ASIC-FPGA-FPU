@@ -3,7 +3,7 @@
 Report : cell
 Design : GDA_St_N16_M4_P8
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:19:02 2016
+Date   : Sun Nov 20 02:51:02 2016
 ****************************************
 
 Attributes:
@@ -104,15 +104,15 @@ U93                       XNOR2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           11.520000 
 U94                       CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_4_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_22_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_4_U3               ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_22_U3              ADDFHX2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           53.279999 mo, r
-intadd_4_U4               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_22_U4              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_5_U2               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_23_U2              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
-intadd_5_U3               CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+intadd_23_U3              CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 mo, r
 --------------------------------------------------------------------------------
 Total 49 cells                                            728.640006

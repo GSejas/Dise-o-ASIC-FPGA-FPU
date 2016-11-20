@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : ACA_II_N8_Q4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:17:19 2016
+Date   : Sun Nov 20 02:49:16 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c

@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : GDA_St_N16_M4_P8
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:19:02 2016
+Date   : Sun Nov 20 02:51:02 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -36,9 +36,9 @@ Wire Load Model Mode: top
   U63/Y (OAI2BB2X1TS)                      0.40       5.75 r
   U75/Y (OAI2BB1X1TS)                      0.34       6.09 f
   U62/CO (ADDFHX2TS)                       0.41       6.50 f
-  intadd_4_U4/CO (CMPR32X2TS)              0.53       7.04 f
-  intadd_4_U3/CO (ADDFHX2TS)               0.37       7.41 f
-  intadd_4_U2/S (CMPR32X2TS)               0.56       7.96 f
+  intadd_22_U4/CO (CMPR32X2TS)             0.53       7.04 f
+  intadd_22_U3/CO (ADDFHX2TS)              0.37       7.41 f
+  intadd_22_U2/S (CMPR32X2TS)              0.56       7.96 f
   res[15] (out)                            0.00       7.96 f
   data arrival time                                   7.96
 

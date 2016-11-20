@@ -118,7 +118,7 @@ or or_11(carry_pred_2,c12,p11p10p9p8c8);
 
 assign temp1[4:0] = (in1[ 3: 0] | in2[ 3: 0]);
 assign temp2[4:0] = (in1[ 7: 4] | in2[ 7: 4]) + c4;
-assign temp3[4:0] = (in1[11: 8] | in2[11: 8]) + carry_pred_1;
+assign temp3[4:0] = (in1[11: 8] + in2[11: 8]) + carry_pred_1;
 assign temp4[4:0] = in1[15:12] + in2[15:12] + carry_pred_2;
 assign res[16:0] = {temp4[4:0],temp3[3:0],temp2[3:0],temp1[3:0]};
 

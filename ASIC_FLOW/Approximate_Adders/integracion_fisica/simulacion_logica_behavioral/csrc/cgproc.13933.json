@@ -1,0 +1,77 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "GeAr_N16_R4_P8": {},
+        "ACA_II_N16_Q4": {},
+        "ACA_II_N16_Q8": {},
+        "GDA_dyn_N16_M4": {},
+        "ACA_II_N32_Q16": {},
+        "GeAr_N16_R6_P4": {},
+        "GeAr_N16_R4_P4": {},
+        "ACA_I_N32_Q8": {},
+        "ACA_II_N8_Q4": {},
+        "ACA_I_N8_Q5": {},
+        "GeAr_N8_R1_P2": {},
+        "ETAII_N16_Q8": {},
+        "ACA_I_N16_Q4": {},
+        "ETAII_N16_Q4": {},
+        "GDA_St_N8_M4_P2": {},
+        "GDA_St_N16_M4_P4": {},
+        "GDA_St_N16_M4_P8": {},
+        "LOAGDA_St_N16_M4_P4": {},
+        "LOAGDA_St_N16_M4_P8": {},
+        "GDA_St_N8_M4_P4": {},
+        "GeAr_N16_R2_P4": {},
+        "GDA_St_N8_M8_P1": {},
+        "GeAr_N8_R1_P6": {},
+        "GDA_St_N8_M8_P2": {},
+        "GDA_St_N8_M8_P3": {},
+        "GDA_St_N8_M8_P4": {},
+        "GDA_St_N8_M8_P5": {},
+        "GDA_St_N8_M8_P6": {},
+        "GeAr_N20_R5_P5_with_recovery": {},
+        "GeAr_N8_R1_P1": {},
+        "GeAr_N8_R1_P3": {},
+        "GeAr_N8_R1_P4": {},
+        "GeAr_N8_R2_P4": {},
+        "GeAr_N8_R1_P5": {},
+        "GeAr_N8_R2_P2": {},
+        "GeAr_N9_R4_P1": {},
+        "RCA_N16": {},
+        "RCA_N20": {},
+        "Testbench_Adder": {
+            "Compiled": "Yes",
+            "Compiled Times": 174
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 13393,
+            "mod": "...MASTER...",
+            "checksum": 4294967295,
+            "out": "objs/amcQw_d.o",
+            "mode": 4
+        },
+        "pygHW_d": {
+            "bytes": 26431,
+            "mod": "Testbench_Adder",
+            "archive": "archive.173/_13933_archive_1.a",
+            "checksum": 4294967295,
+            "out": "pygHW_d.o",
+            "mode": 4
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.173/_13933_archive_1.a",
+            "objects": [
+                [
+                    "pygHW_d.o",
+                    26431
+                ]
+            ],
+            "size": 26431
+        }
+    ]
+}

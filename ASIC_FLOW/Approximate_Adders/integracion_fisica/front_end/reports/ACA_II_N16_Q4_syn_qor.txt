@@ -3,7 +3,7 @@
 Report : qor
 Design : ACA_II_N16_Q4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:16:42 2016
+Date   : Sun Nov 20 02:48:39 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Sun Nov 20 02:16:42 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.03
-  Logic Optimization:                  0.19
-  Mapping Optimization:                2.09
+  Resource Sharing:                    0.04
+  Logic Optimization:                  0.16
+  Mapping Optimization:                2.07
   -----------------------------------------
-  Overall Compile Time:               11.56
-  Overall Compile Wall Clock Time:    13.63
+  Overall Compile Time:               11.02
+  Overall Compile Wall Clock Time:    11.49
 
   --------------------------------------------------------------------
 

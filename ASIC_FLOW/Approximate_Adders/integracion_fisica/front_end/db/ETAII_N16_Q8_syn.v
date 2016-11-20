@@ -1,11 +1,11 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sun Nov 20 02:18:26 2016
+// Date      : Sun Nov 20 02:50:24 2016
 /////////////////////////////////////////////////////////////
 
 
-module ETAII_N16_Q8_DW01_add_J9_0 ( A, B, CI, SUM, CO );
+module ETAII_N16_Q8_DW01_add_J49_0 ( A, B, CI, SUM, CO );
   input [8:0] A;
   input [8:0] B;
   output [8:0] SUM;
@@ -27,7 +27,7 @@ initial $sdf_annotate("ETAII_N16_Q8_syn.sdf");
  endmodule
 
 
-module ETAII_N16_Q8_DW01_add_J9_1 ( A, B, CI, SUM, CO );
+module ETAII_N16_Q8_DW01_add_J49_1 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -50,7 +50,7 @@ initial $sdf_annotate("ETAII_N16_Q8_syn.sdf");
  endmodule
 
 
-module ETAII_N16_Q8_DW01_add_J9_2 ( A, B, CI, SUM, CO );
+module ETAII_N16_Q8_DW01_add_J49_2 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -84,13 +84,12 @@ module ETAII_N16_Q8 ( in1, in2, res );
          SYNOPSYS_UNCONNECTED_9, SYNOPSYS_UNCONNECTED_10,
          SYNOPSYS_UNCONNECTED_11, SYNOPSYS_UNCONNECTED_12;
 
-  ETAII_N16_Q8_DW01_add_J9_0 add_x_4 ( .A({1'b0, in1[15:8]}), .B({1'b0, 
+  ETAII_N16_Q8_DW01_add_J49_0 add_x_4 ( .A({1'b0, in1[15:8]}), .B({1'b0, 
         in2[15:8]}), .CI(1'b0), .SUM({res[16:12], SYNOPSYS_UNCONNECTED_1, 
         SYNOPSYS_UNCONNECTED_2, SYNOPSYS_UNCONNECTED_3, SYNOPSYS_UNCONNECTED_4}) );
-  ETAII_N16_Q8_DW01_add_J9_1 add_x_3 ( .A(in1[11:4]), .B(in2[11:4]), .CI(1'b0), 
-        .SUM({res[11:8], SYNOPSYS_UNCONNECTED_5, SYNOPSYS_UNCONNECTED_6, 
+  ETAII_N16_Q8_DW01_add_J49_1 add_x_3 ( .A(in1[11:4]), .B(in2[11:4]), .CI(1'b0), .SUM({res[11:8], SYNOPSYS_UNCONNECTED_5, SYNOPSYS_UNCONNECTED_6, 
         SYNOPSYS_UNCONNECTED_7, SYNOPSYS_UNCONNECTED_8}) );
-  ETAII_N16_Q8_DW01_add_J9_2 add_x_2 ( .A(in1[7:0]), .B(in2[7:0]), .CI(1'b0), 
+  ETAII_N16_Q8_DW01_add_J49_2 add_x_2 ( .A(in1[7:0]), .B(in2[7:0]), .CI(1'b0), 
         .SUM({res[7:4], SYNOPSYS_UNCONNECTED_9, SYNOPSYS_UNCONNECTED_10, 
         SYNOPSYS_UNCONNECTED_11, SYNOPSYS_UNCONNECTED_12}) );
   XOR2XLTS U8 ( .A(in1[3]), .B(n9), .Y(res[3]) );

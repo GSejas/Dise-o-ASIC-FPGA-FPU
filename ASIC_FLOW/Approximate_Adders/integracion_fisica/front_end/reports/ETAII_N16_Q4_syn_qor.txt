@@ -3,7 +3,7 @@
 Report : qor
 Design : ETAII_N16_Q4
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:18:14 2016
+Date   : Sun Nov 20 02:50:12 2016
 ****************************************
 
 
@@ -64,11 +64,11 @@ Date   : Sun Nov 20 02:18:14 2016
   Compile CPU Statistics
   -----------------------------------------
   Resource Sharing:                    0.03
-  Logic Optimization:                  0.16
-  Mapping Optimization:                2.09
+  Logic Optimization:                  0.17
+  Mapping Optimization:                2.11
   -----------------------------------------
-  Overall Compile Time:               10.98
-  Overall Compile Wall Clock Time:    11.35
+  Overall Compile Time:               11.19
+  Overall Compile Wall Clock Time:    11.60
 
   --------------------------------------------------------------------
 

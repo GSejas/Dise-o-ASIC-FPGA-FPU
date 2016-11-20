@@ -3,15 +3,15 @@
 Report : qor
 Design : LOAGDA_St_N16_M4_P8
 Version: L-2016.03-SP3
-Date   : Sun Nov 20 02:19:27 2016
+Date   : Sun Nov 20 02:48:27 2016
 ****************************************
 
 
   Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:              13.00
-  Critical Path Length:          4.49
-  Critical Path Slack:           0.01
+  Levels of Logic:              12.00
+  Critical Path Length:          4.50
+  Critical Path Slack:           0.00
   Critical Path Clk Period:     10.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -25,12 +25,12 @@ Date   : Sun Nov 20 02:19:27 2016
   -----------------------------------
   Hierarchical Cell Count:          0
   Hierarchical Port Count:          0
-  Leaf Cell Count:                 54
-  Buf/Inv Cell Count:               9
+  Leaf Cell Count:                 44
+  Buf/Inv Cell Count:               1
   Buf Cell Count:                   0
-  Inv Cell Count:                   9
+  Inv Cell Count:                   1
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:        54
+  Combinational Cell Count:        44
   Sequential Cell Count:            0
   Macro Count:                      0
   -----------------------------------
@@ -38,21 +38,21 @@ Date   : Sun Nov 20 02:19:27 2016
 
   Area
   -----------------------------------
-  Combinational Area:      594.720001
+  Combinational Area:      597.600007
   Noncombinational Area:     0.000000
-  Buf/Inv Area:             38.880002
+  Buf/Inv Area:              4.320000
   Total Buffer Area:             0.00
-  Total Inverter Area:          38.88
+  Total Inverter Area:           4.32
   Macro/Black Box Area:      0.000000
-  Net Area:               7093.368896
+  Net Area:               6486.699188
   -----------------------------------
-  Cell Area:               594.720001
-  Design Area:            7688.088897
+  Cell Area:               597.600007
+  Design Area:            7084.299195
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:            90
+  Total Number of Nets:            82
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -63,12 +63,12 @@ Date   : Sun Nov 20 02:19:27 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.03
-  Logic Optimization:                  0.26
-  Mapping Optimization:                2.27
+  Resource Sharing:                    0.05
+  Logic Optimization:                  0.23
+  Mapping Optimization:                2.19
   -----------------------------------------
-  Overall Compile Time:               11.41
-  Overall Compile Wall Clock Time:    11.87
+  Overall Compile Time:               11.39
+  Overall Compile Wall Clock Time:    12.46
 
   --------------------------------------------------------------------
 

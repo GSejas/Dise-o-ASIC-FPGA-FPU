@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -PP -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
 +define+LOALPL14 -timescale=1ns/1ps +neg_tchk
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Sun Nov 20 02:14:08 2016
+      Version K-2015.09-SP2-3_Full64 -- Sun Nov 20 02:50:11 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -613,7 +613,7 @@ rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
-_13579_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
+_13933_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
 rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
@@ -628,11 +628,11 @@ rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/
 Command: ./simv +v2k +lint=all -a log_name +define+SINGLE +define+LOALPL14 +neg_tchk
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 20 02:14 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 20 02:50 2016
 $finish called from file "Testbench_simpleAdders.v", line 179.
 $finish at simulation time           2000100000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 2000100000 ps
-CPU Time:      1.310 seconds;       Data structure size:   0.0Mb
-Sun Nov 20 02:14:11 2016
-CPU time: .304 seconds to compile + .016 seconds to elab + .175 seconds to link + 1.462 seconds in simulation
+CPU Time:      1.330 seconds;       Data structure size:   0.0Mb
+Sun Nov 20 02:50:13 2016
+CPU time: .309 seconds to compile + .012 seconds to elab + .172 seconds to link + 1.472 seconds in simulation
