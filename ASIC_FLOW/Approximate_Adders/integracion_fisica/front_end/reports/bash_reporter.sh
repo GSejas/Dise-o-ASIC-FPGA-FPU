@@ -2,6 +2,7 @@
 #dir_list1=(FPU_Multiplication_Function CORDIC_Arch2v1 CORDIC_Arch3v1 FPU_Add_Subtr FPU_PIPELINED_FPADDSUB)
 
 MOD_FILENAME_list=($1)
+Accuracy_MOD_FILENAME_list=($2)
 #precision_list=("SINGLE" "DOUBLE")
 
 #multiplicador_lst=("DW_1STAGE" "RKOA_1STAGE" "RKOA_2STAGE" "KOA_1STAGE" "KOA_2STAGE")
@@ -65,3 +66,11 @@ done
      #z=0
 #done
 #z=0
+for Accuracy_MOD_FILENAME in "${Accuracy_MOD_FILENAME_list[@]}"
+do
+ output_text=$(find $PWD  -name "Resultados${Accuracy_MOD_FILENAME}DEC.txt" -exec grep -i "La media del error es>" {} \;)
+                  #echo $output_text
+                  number=$(echo $output_text  | grep -oP '[0-9]*\.(\d+)([eE][-+]?[0-9]+)?(?!.*\d)+' | sed -e "s/^/${Accuracy_MOD_FILENAME},    /")
+                  echo $number
+                  echo "           $number" >> "./AvgError.csv"
+done

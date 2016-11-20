@@ -8,5 +8,7 @@
            GeAr_N16_R6_P4,    24
            GDA_St_N16_M4_P4,    29
            GDA_St_N16_M4_P8,    49
+           LOAGDA_St_N16_M4_P4,    37
+           LOAGDA_St_N16_M4_P8,    44
            RCA_N16,    110
            LOA,    17
