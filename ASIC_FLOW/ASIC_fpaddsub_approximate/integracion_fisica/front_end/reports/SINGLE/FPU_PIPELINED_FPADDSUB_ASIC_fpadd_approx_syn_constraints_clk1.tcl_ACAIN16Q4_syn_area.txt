@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:06:25 2016
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /media/datos/IBM/TECH/ibm130_lp/digital/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                          105
+Number of nets:                          2791
+Number of cells:                         2554
+Number of combinational cells:           1987
+Number of sequential cells:               567
+Number of macros/black boxes:               0
+Number of buf/inv:                        437
+Number of references:                     125
+
+Combinational area:              25492.320178
+Buf/Inv area:                     4144.320074
+Noncombinational area:           19421.279676
+Macro/Black Box area:                0.000000
+Net Interconnect area:          284014.802856
+
+Total cell area:                 44913.599854
+Total area:                     328928.402711
+1

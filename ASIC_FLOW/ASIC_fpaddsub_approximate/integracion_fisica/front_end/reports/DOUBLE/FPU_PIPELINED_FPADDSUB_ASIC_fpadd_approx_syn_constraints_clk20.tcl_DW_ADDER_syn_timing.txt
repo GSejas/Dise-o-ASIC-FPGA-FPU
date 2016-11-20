@@ -1,0 +1,91 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 20:36:50 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: SGF_STAGE_DmP_mant_Q_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: NRM_STAGE_Raw_mant_Q_reg_54_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  SGF_STAGE_DmP_mant_Q_reg_4_/CK (DFFRX1TS)               0.00       2.00 r
+  SGF_STAGE_DmP_mant_Q_reg_4_/Q (DFFRX1TS)                1.37       3.37 r
+  U2827/Y (NAND2X1TS)                                     0.70       4.07 f
+  U2105/Y (OAI21XLTS)                                     0.84       4.91 r
+  U2829/Y (AOI21X1TS)                                     0.56       5.46 f
+  U1909/Y (OAI21X1TS)                                     0.71       6.17 r
+  U2061/Y (AOI21X1TS)                                     0.62       6.79 f
+  U2145/Y (OAI21X1TS)                                     0.56       7.35 r
+  U4133/CON (AFHCONX2TS)                                  0.35       7.70 f
+  U2684/CO (AFHCINX2TS)                                   0.44       8.14 r
+  U2920/CON (AFHCONX2TS)                                  0.30       8.44 f
+  U2685/CO (AFHCINX2TS)                                   0.44       8.88 r
+  U4123/CON (AFHCONX2TS)                                  0.30       9.18 f
+  U2686/CO (AFHCINX2TS)                                   0.44       9.62 r
+  U4116/CON (AFHCONX2TS)                                  0.30       9.92 f
+  U2687/CO (AFHCINX2TS)                                   0.44      10.36 r
+  U4112/CON (AFHCONX2TS)                                  0.30      10.66 f
+  U2688/CO (AFHCINX2TS)                                   0.44      11.09 r
+  U4105/CON (AFHCONX2TS)                                  0.30      11.40 f
+  U2689/CO (AFHCINX2TS)                                   0.44      11.83 r
+  U4098/CON (AFHCONX2TS)                                  0.30      12.14 f
+  U2690/CO (AFHCINX2TS)                                   0.44      12.57 r
+  U4091/CON (AFHCONX2TS)                                  0.30      12.88 f
+  U2691/CO (AFHCINX2TS)                                   0.44      13.31 r
+  U2893/CON (AFHCONX2TS)                                  0.30      13.61 f
+  U2692/CO (AFHCINX2TS)                                   0.44      14.05 r
+  U4080/CON (AFHCONX2TS)                                  0.30      14.35 f
+  U2693/CO (AFHCINX2TS)                                   0.44      14.79 r
+  U4084/CON (AFHCONX2TS)                                  0.30      15.09 f
+  U2694/CO (AFHCINX2TS)                                   0.44      15.53 r
+  U4070/CON (AFHCONX2TS)                                  0.30      15.83 f
+  U2695/CO (AFHCINX2TS)                                   0.44      16.27 r
+  U2872/CON (AFHCONX2TS)                                  0.30      16.57 f
+  U2696/CO (AFHCINX2TS)                                   0.44      17.01 r
+  U4066/CON (AFHCONX2TS)                                  0.30      17.31 f
+  U2697/CO (AFHCINX2TS)                                   0.44      17.75 r
+  U4056/CON (AFHCONX2TS)                                  0.30      18.05 f
+  U2698/CO (AFHCINX2TS)                                   0.44      18.49 r
+  U4050/CON (AFHCONX2TS)                                  0.30      18.79 f
+  U4046/CO (AFHCINX2TS)                                   0.41      19.20 r
+  U2080/CO (ADDFX2TS)                                     0.60      19.80 r
+  U2865/Y (XNOR2X1TS)                                     0.36      20.17 r
+  U2216/Y (AOI22X1TS)                                     0.36      20.53 f
+  U2215/Y (OAI2BB1X1TS)                                   0.30      20.82 r
+  NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRX1TS)               0.00      20.82 r
+  data arrival time                                                 20.82
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             2.00      22.00
+  clock uncertainty                                      -1.00      21.00
+  NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRX1TS)              0.00      21.00 r
+  library setup time                                     -0.17      20.83
+  data required time                                                20.83
+  --------------------------------------------------------------------------
+  data required time                                                20.83
+  data arrival time                                                -20.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

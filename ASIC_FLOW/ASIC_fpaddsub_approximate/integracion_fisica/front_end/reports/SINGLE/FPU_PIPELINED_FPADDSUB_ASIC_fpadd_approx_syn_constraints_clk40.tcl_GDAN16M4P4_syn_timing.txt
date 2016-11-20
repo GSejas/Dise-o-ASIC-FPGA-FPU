@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:28:51 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  NRM_STAGE_Raw_mant_Q_reg_23_/CK (DFFRX1TS)              0.00       4.00 r
+  NRM_STAGE_Raw_mant_Q_reg_23_/QN (DFFRX1TS)              2.06       6.06 r
+  U1005/Y (NAND4XLTS)                                     0.93       6.98 f
+  U1004/Y (NOR2BX2TS)                                     0.67       7.65 r
+  U1202/Y (NOR2BX1TS)                                     0.73       8.39 r
+  U1204/Y (CLKAND2X2TS)                                   0.65       9.03 r
+  U1206/Y (NAND2X1TS)                                     0.32       9.35 f
+  U1111/Y (NOR2X2TS)                                      0.48       9.83 r
+  U1207/Y (NAND2X1TS)                                     0.50      10.33 f
+  U1212/Y (NOR2X1TS)                                      0.64      10.97 r
+  U1213/Y (NAND2X1TS)                                     0.56      11.53 f
+  U1214/Y (NOR3X1TS)                                      0.77      12.31 r
+  U1215/Y (NAND2X1TS)                                     0.78      13.09 f
+  U1110/Y (NOR3X2TS)                                      0.76      13.85 r
+  U1216/Y (NAND2X1TS)                                     0.72      14.56 f
+  U1425/Y (NOR3X1TS)                                      0.85      15.41 r
+  U1426/Y (NAND2X1TS)                                     0.65      16.06 f
+  U1438/Y (OAI211X1TS)                                    0.73      16.79 r
+  U934/Y (AOI31XLTS)                                      0.46      17.25 f
+  U1439/Y (OAI211X1TS)                                    0.54      17.79 r
+  U1445/Y (NAND2X2TS)                                     0.74      18.53 f
+  U1446/Y (INVX2TS)                                       0.78      19.30 r
+  U1475/Y (NAND2X1TS)                                     0.78      20.09 f
+  U1041/Y (INVX3TS)                                       0.81      20.89 r
+  U1511/Y (AOI2BB2XLTS)                                   0.54      21.44 f
+  U1512/Y (OAI211XLTS)                                    0.42      21.85 r
+  SHT2_SHIFT_DATA_Q_reg_9_/D (DFFRX1TS)                   0.00      21.85 r
+  data arrival time                                                 21.85
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  SHT2_SHIFT_DATA_Q_reg_9_/CK (DFFRX1TS)                  0.00      42.00 r
+  library setup time                                     -0.06      41.94
+  data required time                                                41.94
+  --------------------------------------------------------------------------
+  data required time                                                41.94
+  data arrival time                                                -21.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                       20.09
+
+
+1

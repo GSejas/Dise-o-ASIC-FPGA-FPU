@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:27:22 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_20_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  NRM_STAGE_Raw_mant_Q_reg_20_/CK (DFFRX2TS)              0.00       1.00 r
+  NRM_STAGE_Raw_mant_Q_reg_20_/Q (DFFRX2TS)               1.27       2.27 f
+  U1093/Y (NOR3X2TS)                                      0.63       2.90 r
+  U1574/Y (NAND2X4TS)                                     0.34       3.24 f
+  U1575/Y (NOR2X6TS)                                      0.23       3.47 r
+  U1577/Y (AND2X8TS)                                      0.25       3.72 r
+  U942/Y (NAND2X4TS)                                      0.13       3.85 f
+  U1578/Y (NOR2X8TS)                                      0.20       4.05 r
+  U945/Y (NAND2X4TS)                                      0.19       4.24 f
+  U1579/Y (NOR2X6TS)                                      0.23       4.47 r
+  U1580/Y (NAND2X6TS)                                     0.17       4.63 f
+  U1581/Y (NOR3X6TS)                                      0.29       4.92 r
+  U1582/Y (NAND2X6TS)                                     0.20       5.13 f
+  U1513/Y (NOR3X6TS)                                      0.33       5.46 r
+  U1583/Y (NAND2X4TS)                                     0.26       5.72 f
+  U1589/Y (NOR3X4TS)                                      0.37       6.08 r
+  U1590/Y (NAND2X4TS)                                     0.22       6.30 f
+  U978/Y (OAI211X2TS)                                     0.41       6.71 r
+  U1636/Y (AOI31X1TS)                                     0.29       7.00 f
+  U1637/Y (OAI211X4TS)                                    0.56       7.56 r
+  U962/Y (OR2X4TS)                                        0.36       7.92 r
+  U1090/Y (INVX4TS)                                       0.38       8.30 f
+  U1472/Y (AOI222X1TS)                                    0.76       9.06 r
+  U1851/Y (AOI2BB2X1TS)                                   0.67       9.73 r
+  U955/Y (OAI211XLTS)                                     0.45      10.18 f
+  SHT2_SHIFT_DATA_Q_reg_11_/D (DFFRX2TS)                  0.00      10.18 f
+  data arrival time                                                 10.18
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  SHT2_SHIFT_DATA_Q_reg_11_/CK (DFFRX2TS)                 0.00      10.50 r
+  library setup time                                     -0.32      10.18
+  data required time                                                10.18
+  --------------------------------------------------------------------------
+  data required time                                                10.18
+  data arrival time                                                -10.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

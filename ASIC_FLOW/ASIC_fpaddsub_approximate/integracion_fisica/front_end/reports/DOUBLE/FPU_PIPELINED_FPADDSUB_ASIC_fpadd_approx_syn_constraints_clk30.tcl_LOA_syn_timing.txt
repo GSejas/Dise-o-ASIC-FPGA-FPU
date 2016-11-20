@@ -1,0 +1,98 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:58:17 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_53_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  NRM_STAGE_Raw_mant_Q_reg_53_/CK (DFFRXLTS)              0.00       3.00 r
+  NRM_STAGE_Raw_mant_Q_reg_53_/Q (DFFRXLTS)               1.39       4.39 f
+  U1869/Y (CLKBUFX2TS)                                    0.72       5.11 f
+  U2471/Y (NOR4X2TS)                                      0.69       5.80 r
+  U2611/Y (NAND2X1TS)                                     0.43       6.24 f
+  U2540/Y (NOR2X2TS)                                      0.49       6.73 r
+  U2556/Y (NAND2BX1TS)                                    0.54       7.27 f
+  U2417/Y (NOR4X2TS)                                      0.65       7.92 r
+  U2522/Y (NOR2BX2TS)                                     0.65       8.57 r
+  U2555/Y (NOR2BX2TS)                                     0.64       9.21 r
+  U2513/Y (NOR2BX1TS)                                     0.77       9.98 r
+  U2535/Y (NAND3BX1TS)                                    0.64      10.62 f
+  U1868/Y (NOR2BX1TS)                                     0.67      11.29 r
+  U1870/Y (NAND2BX1TS)                                    0.69      11.98 f
+  U1987/Y (OR2X2TS)                                       0.57      12.55 f
+  U1865/Y (NOR2X1TS)                                      0.60      13.15 r
+  U1984/Y (NAND2BX2TS)                                    0.53      13.68 f
+  U1891/Y (NOR3X2TS)                                      0.53      14.21 r
+  U2509/Y (NAND2BX2TS)                                    0.54      14.75 f
+  U2521/Y (NOR4X2TS)                                      0.64      15.39 r
+  U1863/Y (NAND2X1TS)                                     0.52      15.91 f
+  U2514/Y (NOR2X2TS)                                      0.56      16.47 r
+  U1890/Y (NOR2BX4TS)                                     0.49      16.96 r
+  U2007/Y (NOR3BX2TS)                                     0.53      17.49 r
+  U2511/Y (NAND2BX2TS)                                    0.48      17.97 f
+  U1972/Y (NOR3X2TS)                                      0.70      18.67 r
+  U1971/Y (NAND2X2TS)                                     0.48      19.15 f
+  U1969/Y (NOR2X2TS)                                      0.40      19.55 r
+  U1889/Y (NAND2BX2TS)                                    0.33      19.88 f
+  U1968/Y (NOR2X2TS)                                      0.38      20.26 r
+  U1967/Y (NAND2BX2TS)                                    0.38      20.65 f
+  U1965/Y (NOR2X2TS)                                      0.50      21.14 r
+  U2533/Y (NAND2BX1TS)                                    0.52      21.67 f
+  U1963/Y (NOR2X2TS)                                      0.67      22.34 r
+  U2006/Y (NAND2X2TS)                                     0.47      22.81 f
+  U2614/Y (NOR3X4TS)                                      0.57      23.38 r
+  U2615/Y (NAND2X2TS)                                     0.44      23.82 f
+  U1874/Y (NOR3X1TS)                                      0.78      24.61 r
+  U2616/Y (INVX2TS)                                       0.51      25.11 f
+  U2617/Y (NOR4X2TS)                                      0.57      25.68 r
+  U2537/Y (OAI31X1TS)                                     0.43      26.11 f
+  U2619/Y (NAND4X1TS)                                     0.50      26.62 r
+  U2631/Y (AOI211X2TS)                                    0.38      27.00 f
+  U1875/Y (NOR2X1TS)                                      0.59      27.59 r
+  U2472/Y (AOI21X1TS)                                     0.51      28.10 f
+  U2632/Y (NOR2X4TS)                                      0.58      28.68 r
+  U1888/Y (INVX6TS)                                       0.47      29.16 f
+  U1887/Y (BUFX6TS)                                       0.50      29.65 f
+  U3434/Y (BUFX4TS)                                       0.56      30.22 f
+  U1931/Y (AOI2BB2XLTS)                                   0.65      30.86 f
+  U2501/Y (OAI211XLTS)                                    0.42      31.28 r
+  SHT2_SHIFT_DATA_Q_reg_11_/D (DFFRX1TS)                  0.00      31.28 r
+  data arrival time                                                 31.28
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  SHT2_SHIFT_DATA_Q_reg_11_/CK (DFFRX1TS)                 0.00      31.50 r
+  library setup time                                     -0.21      31.29
+  data required time                                                31.29
+  --------------------------------------------------------------------------
+  data required time                                                31.29
+  data arrival time                                                -31.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

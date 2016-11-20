@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v
 //  Created On    : 2016-09-27 18:38:13
-//  Last Modified : 2016-10-10 15:30:54
+//  Last Modified : 2016-11-19 17:55:11
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -133,6 +133,7 @@ module tb_FPU_PIPELINED_FPADDSUB2_vector_testing (); /* this is automatically ge
   reg [W-1:0] Array_IN_3 [0:((2**PERIOD)-1)];
   integer contador;
   integer FileSaveData;
+  integer FileSaveDataDEC;
   integer logVectorReference;
   integer Cont_CLK;
 //  integer Recept;
@@ -200,7 +201,46 @@ end
 
 
    initial begin
+
+`ifdef ACAIN16Q4
+    FileSaveData = $fopen("ResultadoXilinxACAIN16Q4FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxACAIN16Q4FLMDEC.txt","w");
+`elsif ETAIIN16Q4
+    FileSaveData = $fopen("ResultadoXilinxETAIIN16Q4FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxETAIIN16Q4FLMDEC.txt","w");
+`elsif ETAIIN16Q8
+    FileSaveData = $fopen("ResultadoXilinxETAIIN16Q8FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxETAIIN16Q8FLMDEC.txt","w");
+`elsif ACAIIN16Q4
+    FileSaveData = $fopen("ResultadoXilinxACAIIN16Q4FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxACAIIN16Q4FLMDEC.txt","w");
+`elsif ACAIIN16Q8
+    FileSaveData = $fopen("ResultadoXilinxACAIIN16Q8FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxACAIIN16Q8FLMDEC.txt","w");
+`elsif GDAN16M4P4
+    FileSaveData = $fopen("ResultadoXilinxGDAN16M4P4FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxGDAN16M4P4FLMDEC.txt","w");
+`elsif GDAN16M4P8
+    FileSaveData = $fopen("ResultadoXilinxGDAN16M4P8FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxGDAN16M4P8FLMDEC.txt","w");
+`elsif GeArN16R2P4
+    FileSaveData = $fopen("ResultadoXilinxGeArN16R2P4FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxGeArN16R2P4FLMDEC.txt","w");
+`elsif GeArN16R4P4
+    FileSaveData = $fopen("ResultadoXilinxGeArN16R4P4FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxGeArN16R4P4FLMDEC.txt","w");
+`elsif GeArN16R4P8
+    FileSaveData = $fopen("ResultadoXilinxGeArN16R4P8FLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxGeArN16R4P8FLMDEC.txt","w");
+`elsif LOA
+    FileSaveData = $fopen("ResultadoXilinxLOAFLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxLOAFLMDEC.txt","w");
+`else
     FileSaveData = $fopen("ResultadoXilinxFLM.txt","w");
+    FileSaveDataDEC = $fopen("ResultadoXilinxFLMDEC.txt","w");
+`endif
+
+
     logVectorReference = $fopen("output_log.txt","w");
 
     rst = 1;
@@ -248,11 +288,18 @@ end
   always @(posedge clk) begin
       if (contador == (2**PERIOD+6)) begin
           $fclose(FileSaveData);
+          $fclose(FileSaveDataDEC);
           $fclose(logVectorReference);
           $finish;
           $vcdplusclose;
       end else if(ready) begin
         $fwrite(FileSaveData,"%h\n",final_result_ieee);
+`ifdef SINGLE
+        $fwrite(FileSaveDataDEC,"%f\n",$bitstoshortreal(final_result_ieee));
+`endif
+`ifdef DOUBLE
+        $fwrite(FileSaveDataDEC,"%f\n",$bitstoreal(final_result_ieee));
+`endif
       end
 
   end

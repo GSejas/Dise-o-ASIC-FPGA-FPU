@@ -1,17 +1,7 @@
 {
-    "Rotate_Mux_Array_0000": [
-        "Rotate_Mux_Array_0000",
-        "GBFFm",
-        "module"
-    ],
-    "Multiplexer_AC_0000": [
-        "Multiplexer_AC_0000",
-        "UPR0r",
-        "module"
-    ],
-    "add_sub_carry_out": [
-        "add_sub_carry_out",
-        "vTLY2",
+    "RegisterAdd_0003": [
+        "RegisterAdd_0003",
+        "F2Cgt",
         "module"
     ],
     "Comparators": [
@@ -19,14 +9,149 @@
         "iGyxR",
         "module"
     ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
+    "LZD": [
+        "LZD",
+        "qFJDL",
+        "module"
+    ],
+    "shift_mux_array_0003": [
+        "shift_mux_array_0003",
+        "w253U",
+        "module"
+    ],
+    "RegisterAdd_0004": [
+        "RegisterAdd_0004",
+        "jzEQc",
+        "module"
+    ],
+    "Priority_Codec_32": [
+        "Priority_Codec_32",
+        "Y4GEV",
+        "module"
+    ],
+    "shift_mux_array_0002": [
+        "shift_mux_array_0002",
+        "WjFVn",
+        "module"
+    ],
+    "Rotate_Mux_Array_0000": [
+        "Rotate_Mux_Array_0000",
+        "GBFFm",
+        "module"
+    ],
+    "ACA_II_N16_Q4": [
+        "ACA_II_N16_Q4",
+        "pC1T8",
+        "module"
+    ],
+    "GDA_St_N16_M4_P8": [
+        "GDA_St_N16_M4_P8",
+        "W581m",
+        "module"
+    ],
+    "shift_mux_array_0001": [
+        "shift_mux_array_0001",
+        "Dnpmq",
+        "module"
+    ],
+    "shift_mux_array_0000": [
+        "shift_mux_array_0000",
+        "qaeRY",
+        "module"
+    ],
+    "Multiplexer_AC": [
+        "Multiplexer_AC",
+        "DDzib",
+        "module"
+    ],
+    "LOA": [
+        "LOA",
+        "hKyIu",
+        "module"
+    ],
+    "Round_Sgf_Dec": [
+        "Round_Sgf_Dec",
+        "irDw0",
+        "module"
+    ],
+    "shift_mux_array_0004": [
+        "shift_mux_array_0004",
+        "G4Syt",
+        "module"
+    ],
+    "add_sub_carry_out": [
+        "add_sub_carry_out",
+        "vTLY2",
+        "module"
+    ],
+    "Mux_Array": [
+        "Mux_Array",
+        "LrxWn",
         "module"
     ],
     "tb_FPU_PIPELINED_FPADDSUB2_vector_testing": [
         "tb_FPU_PIPELINED_FPADDSUB2_vector_testing",
         "vberv",
+        "module"
+    ],
+    "ACA_II_N16_Q8": [
+        "ACA_II_N16_Q8",
+        "aHm9C",
+        "module"
+    ],
+    "ACA_I_N16_Q4": [
+        "ACA_I_N16_Q4",
+        "zs2gM",
+        "module"
+    ],
+    "GeAr_N16_R2_P4": [
+        "GeAr_N16_R2_P4",
+        "R96IZ",
+        "module"
+    ],
+    "ETAII_N16_Q4": [
+        "ETAII_N16_Q4",
+        "WQeck",
+        "module"
+    ],
+    "GeAr_N20_R5_P5_with_recovery": [
+        "GeAr_N20_R5_P5_with_recovery",
+        "sxyFb",
+        "module"
+    ],
+    "ETAII_N16_Q8": [
+        "ETAII_N16_Q8",
+        "xEcig",
+        "module"
+    ],
+    "GDA_dyn_N16_M4": [
+        "GDA_dyn_N16_M4",
+        "tjZPa",
+        "module"
+    ],
+    "GDA_St_N16_M4_P4": [
+        "GDA_St_N16_M4_P4",
+        "Akt2a",
+        "module"
+    ],
+    "RCA_N16": [
+        "RCA_N16",
+        "ckHDI",
+        "module"
+    ],
+    "GeAr_N16_R4_P4": [
+        "GeAr_N16_R4_P4",
+        "L7YZK",
+        "module"
+    ],
+    "GeAr_N16_R4_P8": [
+        "GeAr_N16_R4_P8",
+        "YD5JR",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
         "module"
     ]
 }

@@ -1,11 +1,11 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Fri Oct 21 17:17:52 2016
+# Saved on Sat Nov 19 18:49:50 2016
 # Designs open: 1
-#   Sim: /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
+#   Sim: /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
-#   Source.1: add_sub_carry_out
+#   Source.1: Round_Sgf_Dec
 #   Wave.1: 0 signals
 #   Group count = 0
 # End_DVE_Session_Save_Info
@@ -14,7 +14,7 @@
 # DVE build date: Jun 15 2016 22:18:13
 
 
-#<Session mode="Full" path="/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/DVEfiles/session.tcl" type="Debug">
+#<Session mode="Full" path="/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/DVEfiles/session.tcl" type="Debug">
 
 gui_set_loading_session_type Post
 gui_continuetime_set
@@ -66,7 +66,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{0 24} {1359 767}}
+gui_show_window -window ${TopLevel.1} -show_state maximized -rect {{1 46} {1368 742}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -129,7 +129,7 @@ if {[gui_get_shared_view -id ${HSPane.1} -type Hier] == {}} {
 }
 
 gui_show_window -window ${HSPane.1} -show_state maximized
-gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 956} {child_hier_coltype 400} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_hier_colhier 942} {child_hier_coltype 422} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 [gui_create_window -type {DLPane}  -parent ${TopLevel.1}]
 if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
         set Data.1 [gui_share_window -id ${DLPane.1} -type Data]
@@ -138,10 +138,10 @@ if {[gui_get_shared_view -id ${DLPane.1} -type Data] == {}} {
 }
 
 gui_show_window -window ${DLPane.1} -show_state maximized
-gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 571} {child_data_colvalue 358} {child_data_coltype 425} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_data_colvariable 574} {child_data_colvalue 361} {child_data_coltype 428} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Wave.1 [gui_create_window -type {Wave}  -parent ${TopLevel.1}]
 gui_show_window -window ${Wave.1} -show_state maximized
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 618} {child_wave_right 736} {child_wave_colname 377} {child_wave_colvalue 237} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 622} {child_wave_right 740} {child_wave_colname 379} {child_wave_colvalue 239} {child_wave_col1 0} {child_wave_col2 1}}
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
 gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
@@ -164,11 +164,11 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 # DVE Open design session: 
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
-gui_set_env SIMSETUP::SIMARGS {{+v2k +lint=all -a log_name +define+SINGLE +define+FRANCIS_LZD=1 +neg_tchk}}
+gui_set_env SIMSETUP::SIMARGS {{+v2k +lint=all -a log_name +define+SINGLE +define+ACAIN16Q4 +neg_tchk}}
 gui_set_env SIMSETUP::SIMEXE {simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
-if { ![gui_is_db_opened -db {/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv}] } {
-gui_sim_run Ucli -exe simv -args { +v2k +lint=all -a log_name +define+SINGLE +define+FRANCIS_LZD=1 +neg_tchk -ucligui} -dir /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE -nosource
+if { ![gui_is_db_opened -db {/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv}] } {
+gui_sim_run Ucli -exe simv -args { +v2k +lint=all -a log_name +define+SINGLE +define+ACAIN16Q4 +neg_tchk -ucligui} -dir /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE -nosource
 }
 }
 if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
@@ -200,7 +200,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 20695000
+gui_set_time -C1_only 0
 
 
 
@@ -225,14 +225,14 @@ gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtP
 gui_list_set_filter -id ${Hier.1} -text {*}
 gui_hier_list_init -id ${Hier.1}
 gui_change_design -id ${Hier.1} -design Sim
-catch {gui_list_select -id ${Hier.1} {add_sub_carry_out}}
+catch {gui_list_select -id ${Hier.1} {Round_Sgf_Dec}}
 gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {add_sub_carry_out}
+gui_list_show_data -id ${Data.1} {Round_Sgf_Dec}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
 gui_view_scroll -id ${Hier.1} -vertical -set 0
@@ -243,11 +243,11 @@ gui_wv_sync -id ${Wave.1} -switch false
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 gui_set_pref_value -category Wave -key exclusiveSG -value {false}
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-gui_list_set_height -id Wave -height 25
+gui_list_set_height -id Wave -height 17
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
 gui_marker_set_ref -id ${Wave.1}  C1
-gui_wv_zoom_timerange -id ${Wave.1} 20694882 20695119
+gui_wv_zoom_timerange -id ${Wave.1} 0 238
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -263,17 +263,15 @@ if { $groupExD } {
 }
 gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Wave.1} -text {*}
-gui_marker_move -id ${Wave.1} {C1} 20695000
+gui_marker_move -id ${Wave.1} {C1} 0
 gui_view_scroll -id ${Wave.1} -vertical -set 0
 gui_show_grid -id ${Wave.1} -enable false
 
 # Source 'Source.1'
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active add_sub_carry_out /home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/add_sub_carry_out.v
-gui_src_value_annotate -id ${Source.1} -switch true
-gui_set_env TOGGLE::VALUEANNOTATE 1
-gui_view_scroll -id ${Source.1} -vertical -set 196
+gui_open_source -id ${Source.1}  -replace -active Round_Sgf_Dec /mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../front_end/source/Round_Sgf_Dec.v
+gui_view_scroll -id ${Source.1} -vertical -set 330
 gui_src_set_reusable -id ${Source.1}
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane

@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:04:26 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  NRM_STAGE_Raw_mant_Q_reg_23_/CK (DFFRX1TS)              0.00       4.00 r
+  NRM_STAGE_Raw_mant_Q_reg_23_/Q (DFFRX1TS)               1.71       5.71 f
+  U1276/Y (INVX2TS)                                       0.50       6.21 r
+  U1277/Y (NAND4XLTS)                                     0.78       6.99 f
+  U1278/Y (NOR2BX1TS)                                     0.81       7.81 r
+  U1279/Y (INVX2TS)                                       0.42       8.23 f
+  U1280/Y (NOR2X1TS)                                      0.56       8.79 r
+  U1282/Y (NAND2X1TS)                                     0.57       9.36 f
+  U1283/Y (NOR2X1TS)                                      0.65      10.01 r
+  U1284/Y (NAND2X1TS)                                     0.72      10.74 f
+  U1285/Y (NOR2X1TS)                                      0.71      11.44 r
+  U1286/Y (CLKAND2X2TS)                                   0.58      12.02 r
+  U1291/Y (NAND2X1TS)                                     0.38      12.40 f
+  U1292/Y (NOR3X1TS)                                      0.77      13.17 r
+  U1293/Y (NAND2BX1TS)                                    0.78      13.95 f
+  U1118/Y (NOR3X2TS)                                      0.76      14.71 r
+  U1294/Y (NAND2X1TS)                                     0.71      15.42 f
+  U1295/Y (NOR3X1TS)                                      0.85      16.27 r
+  U1302/Y (NAND2X1TS)                                     0.65      16.92 f
+  U1306/Y (OAI211X1TS)                                    0.73      17.65 r
+  U914/Y (AOI31XLTS)                                      0.46      18.11 f
+  U1513/Y (OAI211X1TS)                                    0.54      18.65 r
+  U1514/Y (NAND2X2TS)                                     0.77      19.42 f
+  U1515/Y (INVX2TS)                                       0.80      20.22 r
+  U1093/Y (NAND2X1TS)                                     0.86      21.07 f
+  U1562/Y (INVX2TS)                                       0.91      21.98 r
+  U1587/Y (AOI22X1TS)                                     0.57      22.56 f
+  U1589/Y (OAI211XLTS)                                    0.39      22.95 r
+  SHT2_SHIFT_DATA_Q_reg_11_/D (DFFRXLTS)                  0.00      22.95 r
+  data arrival time                                                 22.95
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  SHT2_SHIFT_DATA_Q_reg_11_/CK (DFFRXLTS)                 0.00      42.00 r
+  library setup time                                     -0.05      41.95
+  data required time                                                41.95
+  --------------------------------------------------------------------------
+  data required time                                                41.95
+  data arrival time                                                -22.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                       19.00
+
+
+1

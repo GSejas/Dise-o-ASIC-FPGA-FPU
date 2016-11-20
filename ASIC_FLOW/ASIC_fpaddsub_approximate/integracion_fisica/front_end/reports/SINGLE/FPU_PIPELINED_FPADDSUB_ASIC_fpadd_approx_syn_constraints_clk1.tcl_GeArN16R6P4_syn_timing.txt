@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:48:38 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: INPUT_STAGE_OPERANDX_Q_reg_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: EXP_STAGE_DMP_Q_reg_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  INPUT_STAGE_OPERANDX_Q_reg_15_/CK (DFFRX4TS)            0.00       0.10 r
+  INPUT_STAGE_OPERANDX_Q_reg_15_/QN (DFFRX4TS)            0.89       0.99 r
+  U2338/Y (AND2X8TS)                                      0.22       1.21 r
+  U1193/Y (BUFX4TS)                                       0.19       1.40 r
+  U1839/Y (INVX6TS)                                       0.08       1.48 f
+  U1534/Y (NAND2X4TS)                                     0.09       1.57 r
+  U2005/Y (AND3X8TS)                                      0.26       1.83 r
+  U2444/Y (NAND2X8TS)                                     0.12       1.96 f
+  U2443/Y (NAND3X8TS)                                     0.16       2.12 r
+  U2529/Y (NAND2X8TS)                                     0.14       2.26 f
+  U2255/Y (INVX16TS)                                      0.14       2.40 r
+  U1742/Y (INVX16TS)                                      0.10       2.50 f
+  U2717/Y (NAND2X2TS)                                     0.15       2.66 r
+  U1947/Y (NAND3X4TS)                                     0.15       2.80 f
+  EXP_STAGE_DMP_Q_reg_23_/D (DFFRX4TS)                    0.00       2.80 f
+  data arrival time                                                  2.80
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.10       1.10
+  clock uncertainty                                      -0.05       1.05
+  EXP_STAGE_DMP_Q_reg_23_/CK (DFFRX4TS)                   0.00       1.05 r
+  library setup time                                     -0.48       0.57
+  data required time                                                 0.57
+  --------------------------------------------------------------------------
+  data required time                                                 0.57
+  data arrival time                                                 -2.80
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.23
+
+
+1

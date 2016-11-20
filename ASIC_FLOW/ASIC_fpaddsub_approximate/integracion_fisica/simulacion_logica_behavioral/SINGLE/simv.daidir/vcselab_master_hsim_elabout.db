@@ -1,5 +1,5 @@
 hsDirType                          	1
-fHsimDesignHasDebugNodes           	29
+fHsimDesignHasDebugNodes           	13
 fNSParam                           	1024
 fLargeSizeSdfTest                  	0
 fHsimDelayGateMbme                 	0
@@ -291,7 +291,7 @@ fHsimMdbNewDebugOptExitOnError     	1
 fHsimNewDebugOptMemDiag            	0
 hsGlobalVerboseLevel               	0
 fHsimMdbVectorConstProp            	1
-fHsimEnableSeqUdpWrite             	1
+fHsimEnableSeqUdpWrite             	0
 fEnableNewFinalStrHash             	0
 fEnableNewAssert                   	1
 fRunDbgDmma                        	0
@@ -366,7 +366,7 @@ fHsimVpdOptSelGate                 	1
 fHsimVpdOptSkipFuncPorts           	0
 fHsimVpdOptAlways                  	1
 fHsimVpdOptMdbCell                 	0
-fHsimVpdOptPartialMdb              	1
+fHsimVpdOptPartialMdb              	0
 fHsimVpdHilRtl                     	0
 fHsimNoSched0InCell                	1
 fHsimPartialMdb                    	0

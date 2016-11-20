@@ -1,10 +1,10 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE
+COMPILE_PATH=/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE
 SystemC=FALSE
 UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=add_sub_carry_out Comparators tb_FPU_PIPELINED_FPADDSUB2_vector_testing 
+TOP=Round_Sgf_Dec add_sub_carry_out Comparators LZD Mux_Array ACA_II_N16_Q4 ACA_II_N16_Q8 ETAII_N16_Q4 ETAII_N16_Q8 GDA_dyn_N16_M4 GDA_St_N16_M4_P4 GDA_St_N16_M4_P8 GeAr_N16_R2_P4 GeAr_N16_R4_P4 GeAr_N16_R4_P8 GeAr_N16_R6_P4 GeAr_N20_R5_P5_with_recovery LOA RCA_N16 tb_FPU_PIPELINED_FPADDSUB2_vector_testing 

@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:15:40 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  NRM_STAGE_Raw_mant_Q_reg_23_/CK (DFFRX1TS)              0.00       3.00 r
+  NRM_STAGE_Raw_mant_Q_reg_23_/QN (DFFRX1TS)              1.90       4.90 r
+  U927/Y (NAND4XLTS)                                      0.96       5.86 f
+  U1022/Y (NOR2BX2TS)                                     0.68       6.54 r
+  U1383/Y (NOR2BX1TS)                                     0.75       7.29 r
+  U1384/Y (NAND2X1TS)                                     0.59       7.88 f
+  U922/Y (OR2X2TS)                                        0.51       8.39 f
+  U1038/Y (NOR2X2TS)                                      0.47       8.85 r
+  U1386/Y (NAND2X1TS)                                     0.51       9.37 f
+  U1387/Y (NOR2X1TS)                                      0.63      10.00 r
+  U1388/Y (NAND2X1TS)                                     0.57      10.57 f
+  U1390/Y (NOR3X1TS)                                      0.79      11.36 r
+  U1391/Y (NAND2X1TS)                                     0.80      12.16 f
+  U1019/Y (NOR2X2TS)                                      0.63      12.79 r
+  U1394/Y (NAND2X1TS)                                     0.64      13.44 f
+  U1395/Y (OAI21X1TS)                                     0.82      14.26 r
+  U1017/Y (NOR4X2TS)                                      0.48      14.74 f
+  U1016/Y (NOR2X2TS)                                      0.45      15.19 r
+  U1417/Y (AOI21X1TS)                                     0.46      15.65 f
+  U1422/Y (NOR2X2TS)                                      0.84      16.49 r
+  U912/Y (CLKINVX6TS)                                     0.92      17.41 f
+  U1474/Y (OA22X1TS)                                      0.94      18.36 f
+  U1070/Y (OAI211XLTS)                                    0.39      18.75 r
+  SHT2_SHIFT_DATA_Q_reg_11_/D (DFFRX2TS)                  0.00      18.75 r
+  data arrival time                                                 18.75
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             3.00      33.00
+  clock uncertainty                                      -1.50      31.50
+  SHT2_SHIFT_DATA_Q_reg_11_/CK (DFFRX2TS)                 0.00      31.50 r
+  library setup time                                     -0.20      31.30
+  data required time                                                31.30
+  --------------------------------------------------------------------------
+  data required time                                                31.30
+  data arrival time                                                -18.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.56
+
+
+1

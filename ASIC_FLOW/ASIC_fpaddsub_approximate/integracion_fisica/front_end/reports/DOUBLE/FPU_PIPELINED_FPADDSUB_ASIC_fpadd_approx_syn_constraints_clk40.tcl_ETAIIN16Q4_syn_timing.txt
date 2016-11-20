@@ -1,0 +1,101 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 20:14:29 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_50_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  NRM_STAGE_Raw_mant_Q_reg_50_/CK (DFFRX1TS)              0.00       4.00 r
+  NRM_STAGE_Raw_mant_Q_reg_50_/QN (DFFRX1TS)              1.92       5.92 r
+  U2710/Y (NAND2X1TS)                                     0.68       6.60 f
+  U1893/Y (NAND2BX1TS)                                    0.62       7.22 f
+  U2711/Y (NOR2X2TS)                                      0.58       7.80 r
+  U1938/Y (NAND2X1TS)                                     0.45       8.25 f
+  U2380/Y (NOR2X1TS)                                      0.60       8.85 r
+  U1939/Y (NAND2X1TS)                                     0.59       9.44 f
+  U2712/Y (NOR2X2TS)                                      0.56      10.00 r
+  U1947/Y (NAND2X1TS)                                     0.63      10.63 f
+  U2379/Y (NOR3X1TS)                                      0.58      11.22 r
+  U1945/Y (CLKAND2X2TS)                                   0.51      11.72 r
+  U1948/Y (NAND2X1TS)                                     0.40      12.13 f
+  U2713/Y (INVX2TS)                                       0.33      12.46 r
+  U1942/Y (NAND2X1TS)                                     0.38      12.84 f
+  U1941/Y (NOR2X1TS)                                      0.65      13.50 r
+  U1887/Y (NAND2X1TS)                                     0.83      14.32 f
+  U2397/Y (NOR3X1TS)                                      0.88      15.20 r
+  U1946/Y (NAND2X1TS)                                     0.74      15.94 f
+  U2714/Y (NOR3X1TS)                                      0.85      16.79 r
+  U1943/Y (NAND2X1TS)                                     0.65      17.44 f
+  U1940/Y (NOR2X1TS)                                      0.64      18.09 r
+  U1944/Y (NAND2X1TS)                                     0.71      18.80 f
+  U2715/Y (NOR2X2TS)                                      0.61      19.41 r
+  U1906/Y (NOR3BX1TS)                                     0.88      20.29 r
+  U2716/Y (NAND2X2TS)                                     0.64      20.93 f
+  U2717/Y (NOR3X2TS)                                      0.68      21.61 r
+  U2393/Y (NOR2BX1TS)                                     0.80      22.41 r
+  U2364/Y (NOR2BX1TS)                                     0.81      23.22 r
+  U2398/Y (NAND2X1TS)                                     0.58      23.80 f
+  U1951/Y (NOR2X1TS)                                      0.65      24.45 r
+  U1954/Y (NAND2X1TS)                                     0.71      25.17 f
+  U2718/Y (NOR2X2TS)                                      0.62      25.78 r
+  U2391/Y (NAND2X1TS)                                     0.53      26.31 f
+  U2719/Y (NOR2X2TS)                                      0.66      26.97 r
+  U1949/Y (NAND2X1TS)                                     0.77      27.74 f
+  U2720/Y (NOR3X4TS)                                      0.68      28.42 r
+  U1950/Y (NAND2X1TS)                                     0.65      29.07 f
+  U3110/Y (NOR3X1TS)                                      0.88      29.95 r
+  U3125/Y (INVX2TS)                                       0.51      30.46 f
+  U3126/Y (NOR4X2TS)                                      0.57      31.03 r
+  U3127/Y (OAI31X1TS)                                     0.43      31.46 f
+  U3129/Y (NAND4X1TS)                                     0.48      31.94 r
+  U3133/Y (AOI211X1TS)                                    0.34      32.27 f
+  U3134/Y (OAI211X4TS)                                    0.59      32.86 r
+  U2346/Y (NAND2X1TS)                                     0.38      33.24 f
+  U3135/Y (OAI2BB1X1TS)                                   0.60      33.84 r
+  U3136/Y (NOR2BX4TS)                                     0.69      34.53 r
+  U3146/Y (INVX2TS)                                       0.63      35.15 f
+  U3147/Y (BUFX6TS)                                       0.63      35.78 f
+  U1897/Y (NOR2X1TS)                                      0.45      36.24 r
+  U3187/Y (BUFX4TS)                                       0.80      37.04 r
+  U2068/Y (AOI2BB2XLTS)                                   0.55      37.59 f
+  U2337/Y (OAI211XLTS)                                    0.43      38.02 r
+  SHT2_SHIFT_DATA_Q_reg_10_/D (DFFRX1TS)                  0.00      38.02 r
+  data arrival time                                                 38.02
+
+  clock clk (rise edge)                                  40.00      40.00
+  clock network delay (ideal)                             4.00      44.00
+  clock uncertainty                                      -2.00      42.00
+  SHT2_SHIFT_DATA_Q_reg_10_/CK (DFFRX1TS)                 0.00      42.00 r
+  library setup time                                     -0.06      41.94
+  data required time                                                41.94
+  --------------------------------------------------------------------------
+  data required time                                                41.94
+  data arrival time                                                -38.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.92
+
+
+1

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 20:04:42 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: SGF_STAGE_FLAGS_Q_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: NRM_STAGE_Raw_mant_Q_reg_54_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W64_EW11_SW52_SWR55_EWR6
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  SGF_STAGE_FLAGS_Q_reg_1_/CK (DFFRX2TS)                  0.00       1.00 r
+  SGF_STAGE_FLAGS_Q_reg_1_/Q (DFFRX2TS)                   1.05       2.05 r
+  U2452/Y (BUFX3TS)                                       0.71       2.76 r
+  U4347/Y (XOR2X1TS)                                      0.64       3.41 f
+  U3304/Y (NAND2X1TS)                                     0.66       4.07 r
+  U4375/Y (OAI21X1TS)                                     0.62       4.69 f
+  U1926/Y (AOI21X1TS)                                     0.75       5.44 r
+  U2450/Y (OAI21X2TS)                                     0.50       5.95 f
+  U2701/Y (AOI21X2TS)                                     0.42       6.36 r
+  U2307/Y (OAI21X1TS)                                     0.36       6.73 f
+  U3175/Y (AOI21X2TS)                                     0.44       7.17 r
+  U4519/Y (OAI21X4TS)                                     0.31       7.48 f
+  U2398/Y (AOI21X4TS)                                     0.30       7.78 r
+  U2403/Y (OAI21X4TS)                                     0.23       8.01 f
+  U4529/Y (AOI21X4TS)                                     0.30       8.31 r
+  U4533/Y (OAI21X4TS)                                     0.23       8.54 f
+  U4537/Y (AOI21X4TS)                                     0.30       8.84 r
+  U4541/Y (OAI21X4TS)                                     0.22       9.06 f
+  U2397/Y (AOI21X2TS)                                     0.28       9.33 r
+  U2174/Y (XOR2X1TS)                                      0.35       9.68 r
+  U3005/Y (MX2X1TS)                                       0.48      10.16 r
+  NRM_STAGE_Raw_mant_Q_reg_54_/D (DFFRX2TS)               0.00      10.16 r
+  data arrival time                                                 10.16
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  NRM_STAGE_Raw_mant_Q_reg_54_/CK (DFFRX2TS)              0.00      10.50 r
+  library setup time                                     -0.33      10.17
+  data required time                                                10.17
+  --------------------------------------------------------------------------
+  data required time                                                10.17
+  data arrival time                                                -10.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

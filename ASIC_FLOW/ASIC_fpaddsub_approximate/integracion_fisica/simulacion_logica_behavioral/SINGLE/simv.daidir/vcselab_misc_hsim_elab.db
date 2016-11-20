@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	log_name
-pDaiDir                            	/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir
+pDaiDir                            	/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 hsMainFileCount                    	0
@@ -616,7 +616,7 @@ fHsimMdbNewDebugOptExitOnError     	1
 fHsimNewDebugOptMemDiag            	0
 hsGlobalVerboseLevel               	0
 fHsimMdbVectorConstProp            	1
-fHsimEnableSeqUdpWrite             	1
+fHsimEnableSeqUdpWrite             	0
 fEnableNewFinalStrHash             	0
 fEnableNewAssert                   	1
 fRunDbgDmma                        	0
@@ -728,7 +728,7 @@ fHsimMxConnFrc                     	0
 fHsimNewForceCbkVec                	0
 fHsimNewForceCbkVecDiag            	0
 fHsimMdbReplaceVpdHighConn         	1
-fHsimVpdHighConnReplaced           	0
+fHsimVpdHighConnReplaced           	1
 fHsimVpdOptSVTypes                 	1
 fHsimDlyInitFrc                    	0
 fHsimCompactVpdFn                  	1

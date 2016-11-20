@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+Version: L-2016.03-SP3
+Date   : Sat Nov 19 19:22:54 2016
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: NRM_STAGE_Raw_mant_Q_reg_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SHT2_SHIFT_DATA_Q_reg_8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPU_PIPELINED_FPADDSUB_W32_EW8_SW23_SWR26_EWR5
+                     ibm13_wl10            scx3_cmos8rf_lpvt_tt_1p2v_25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  NRM_STAGE_Raw_mant_Q_reg_23_/CK (DFFRX2TS)              0.00       1.00 r
+  NRM_STAGE_Raw_mant_Q_reg_23_/Q (DFFRX2TS)               1.19       2.19 f
+  U1538/Y (NOR2X2TS)                                      0.42       2.61 r
+  U1539/Y (INVX2TS)                                       0.26       2.87 f
+  U1095/Y (NOR2X4TS)                                      0.22       3.09 r
+  U1541/Y (NAND2X2TS)                                     0.26       3.34 f
+  U1542/Y (NOR2X2TS)                                      0.39       3.73 r
+  U1543/Y (NAND2X2TS)                                     0.32       4.06 f
+  U1544/Y (OR2X4TS)                                       0.35       4.40 f
+  U1038/Y (NOR2X6TS)                                      0.23       4.64 r
+  U1545/Y (NAND2X2TS)                                     0.29       4.93 f
+  U1030/Y (NOR2X6TS)                                      0.30       5.23 r
+  U967/Y (NAND2X4TS)                                      0.21       5.44 f
+  U1004/Y (NOR2X6TS)                                      0.20       5.64 r
+  U1546/Y (NAND2X4TS)                                     0.21       5.85 f
+  U1554/Y (NOR2X6TS)                                      0.27       6.12 r
+  U1555/Y (OAI211X1TS)                                    0.38       6.50 f
+  U1556/Y (NAND2BX4TS)                                    0.29       6.79 r
+  U1557/Y (NOR2BX4TS)                                     0.16       6.95 f
+  U1085/Y (NOR2X8TS)                                      0.21       7.16 r
+  U1107/Y (NAND2X2TS)                                     0.59       7.75 f
+  U1106/Y (INVX2TS)                                       0.75       8.50 r
+  U899/Y (OAI2BB2XLTS)                                    0.65       9.15 r
+  U1575/Y (AOI21X1TS)                                     0.43       9.59 f
+  U947/Y (OAI21XLTS)                                      0.37       9.96 r
+  SHT2_SHIFT_DATA_Q_reg_8_/D (DFFRX2TS)                   0.00       9.96 r
+  data arrival time                                                  9.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.50      10.50
+  SHT2_SHIFT_DATA_Q_reg_8_/CK (DFFRX2TS)                  0.00      10.50 r
+  library setup time                                     -0.51       9.99
+  data required time                                                 9.99
+  --------------------------------------------------------------------------
+  data required time                                                 9.99
+  data arrival time                                                 -9.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

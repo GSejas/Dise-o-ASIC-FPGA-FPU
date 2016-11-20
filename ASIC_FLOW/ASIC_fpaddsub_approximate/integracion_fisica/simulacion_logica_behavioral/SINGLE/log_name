@@ -5,10 +5,10 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
   to linux or suse32 to override.
   Please refer to release notes for information on supported platforms.
 
-Command: vcs -full64 -gui -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
-+define+FRANCIS_LZD=1 -timescale=1ns/1ps +neg_tchk
+Command: vcs -full64 -PP -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
++define+GeArN16R6P4 -timescale=1ns/1ps +neg_tchk
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Fri Oct 21 16:39:56 2016
+      Version K-2015.09-SP2-3_Full64 -- Sat Nov 19 21:01:00 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -16,16 +16,52 @@ This program is proprietary and confidential information of Synopsys Inc.
 and may be used and disclosed only as authorized in a license agreement
 controlling such use and disclosure.
 
-Parsing design file '../../front_end/source/shift_reg.v'
+Parsing design file '../../front_end/source/Priority_Codec_64.v'
 
 Lint-[VCDE] Compiler directive encountered
-../../front_end/source/shift_reg.v, 14
+../../front_end/source/Priority_Codec_64.v, 1
   Verilog compiler directive encountered "`timescale".
 
-Parsing design file '../../front_end/source/FSM_input_enable.v'
+Parsing design file '../../front_end/source/RegisterAdd.v'
 
 Lint-[VCDE] Compiler directive encountered
-../../front_end/source/FSM_input_enable.v, 28
+../../front_end/source/RegisterAdd.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Rotate_Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Rotate_Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Round_Sgf_Dec.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Round_Sgf_Dec.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/sgn_result.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/sgn_result.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_mux.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_mux.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/xor_tri.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/xor_tri.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Priority_Codec_32.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Priority_Codec_32.v, 14
   Verilog compiler directive encountered "`timescale".
 
 Parsing design file '../../front_end/source/FORMATTER.v'
@@ -44,209 +80,478 @@ Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/FORMATTER.v, 86
   Verilog compiler directive encountered "`endif".
 
-Parsing design file '../../front_end/source/Tenth_Phase_v2.v'
-
-Lint-[VCDE] Compiler directive encountered
-../../front_end/source/Tenth_Phase_v2.v, 1
-  Verilog compiler directive encountered "`timescale".
-
 Parsing design file '../../front_end/source/FPU_ADD_Substract_PIPELINED.v'
 
 Lint-[VCDE] Compiler directive encountered
 ../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 14
   Verilog compiler directive encountered "`timescale".
 
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/MultiplexTxT.v'
 
 Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/MultiplexTxT.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/shift_mux.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/shift_mux.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/RegisterAdd.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/RegisterAdd.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Multiplexer_AC.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Multiplexer_AC.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Greater_Comparator.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Greater_Comparator.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/xor_tri.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/xor_tri.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/add_sub_carry_out.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/add_sub_carry_out.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Mux_3x1.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Mux_3x1.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/sgn_result.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/sgn_result.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_64.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_64.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator_Less.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator_Less.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Rotate_Mux_Array.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Rotate_Mux_Array.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Priority_Codec_32.v, 14
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparator.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file '/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparators.v'
-
-Lint-[VCDE] Compiler directive encountered
-/home/local/ESTUDIANTES/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica/simulacion_logica_behavioral/SINGLE/../../../../sources/Source_Files/FPU_Interface/fpaddsub_arch2/Comparators.v, 1
-  Verilog compiler directive encountered "`timescale".
-
-Parsing design file './tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v'
-
-Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 54
-  Verilog compiler directive encountered "`timescale".
-
-
-Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 61
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 665
   Verilog compiler directive encountered "`ifdef".
 
 
 Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 67
-  Verilog compiler directive encountered "`endif".
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 676
+  Verilog compiler directive encountered "`elsif".
 
 
 Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 69
-  Verilog compiler directive encountered "`ifdef".
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 688
+  Verilog compiler directive encountered "`elsif".
 
 
 Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 75
-  Verilog compiler directive encountered "`endif".
-
-
-Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 169
-  Null statement is used in following verilog source.
-  
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 699
+  Verilog compiler directive encountered "`elsif".
 
 
 Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 208
-  Verilog compiler directive encountered "`ifdef".
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 710
+  Verilog compiler directive encountered "`elsif".
 
 
 Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 210
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 721
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 732
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 743
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 754
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 765
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 776
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 787
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 798
   Verilog compiler directive encountered "`else".
 
 
 Lint-[VCDE] Compiler directive encountered
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 212
+../../front_end/source/FPU_ADD_Substract_PIPELINED.v, 806
+  Verilog compiler directive encountered "`endif".
+
+Parsing design file '../../front_end/source/FSM_input_enable.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/FSM_input_enable.v, 28
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/shift_reg.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/shift_reg.v, 14
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Tenth_Phase_v2.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Tenth_Phase_v2.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/add_sub_carry_out.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/add_sub_carry_out.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparator_Less.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparator_Less.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Comparators.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Comparators.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Greater_Comparator.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Greater_Comparator.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/LZD.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/LZD.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Multiplexer_AC.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Multiplexer_AC.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/MultiplexTxT.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/MultiplexTxT.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_3x1.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_3x1.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/Mux_Array.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/Mux_Array.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/ACA_II_N16_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/ACA_II_N16_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/ACA_II_N16_Q8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/ACA_II_N16_Q8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/ACA_I_N16_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/ACA_I_N16_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/ETAII_N16_Q4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/ETAII_N16_Q4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/ETAII_N16_Q8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/ETAII_N16_Q8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/GDA_dyn_N16_M4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GDA_dyn_N16_M4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/GDA_dyn_N16_M4.v, 117
+  No type is specified for wire 'p11p10p9p8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/GDA_St_N16_M4_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GDA_St_N16_M4_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/GDA_St_N16_M4_P4.v, 101
+  No type is specified for wire 'p11p10p9g8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/GDA_St_N16_M4_P8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GDA_St_N16_M4_P8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../../front_end/source/GDA_St_N16_M4_P8.v, 111
+  No type is specified for wire 'p11p10p9p8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../../front_end/source/GeAr_N16_R2_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GeAr_N16_R2_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/GeAr_N16_R4_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GeAr_N16_R4_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/GeAr_N16_R4_P8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GeAr_N16_R4_P8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/GeAr_N16_R6_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GeAr_N16_R6_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/GeAr_N20_R5_P5_with_recovery.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/GeAr_N20_R5_P5_with_recovery.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/LOA.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/LOA.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '../../front_end/source/RCA_N16.v'
+
+Lint-[VCDE] Compiler directive encountered
+../../front_end/source/RCA_N16.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+Parsing design file '/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v'
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 54
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 61
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 67
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 69
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 75
   Verilog compiler directive encountered "`endif".
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 261
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 170
+  Null statement is used in following verilog source.
+  
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 205
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 208
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 211
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 214
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 217
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 220
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 223
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 226
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 229
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 232
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 235
+  Verilog compiler directive encountered "`elsif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 238
+  Verilog compiler directive encountered "`else".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 241
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 248
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 250
+  Verilog compiler directive encountered "`else".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 252
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 297
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 299
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 300
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 302
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[NS] Null statement
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 308
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 268
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 315
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 278
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 325
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 284
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 331
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 289
+/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v, 336
   Null statement is used in following verilog source.
   
 
 Top Level Modules:
+       Round_Sgf_Dec
        add_sub_carry_out
        Comparators
+       LZD
+       Mux_Array
+       ACA_II_N16_Q4
+       ACA_II_N16_Q8
+       ACA_I_N16_Q4
+       ETAII_N16_Q4
+       ETAII_N16_Q8
+       GDA_dyn_N16_M4
+       GDA_St_N16_M4_P4
+       GDA_St_N16_M4_P8
+       GeAr_N16_R2_P4
+       GeAr_N16_R4_P4
+       GeAr_N16_R4_P8
+       GeAr_N20_R5_P5_with_recovery
+       LOA
+       RCA_N16
        tb_FPU_PIPELINED_FPADDSUB2_vector_testing
 TimeScale is 1 ns / 1 ps
+
+Lint-[UI] Unused input
+../../front_end/source/Mux_Array.v, 30
+  Following is an unused input.
+  Source info: load_i
+
 Starting vcs inline pass...
-5 modules and 0 UDP read.
-recompiling module Multiplexer_AC because:
-	Some compilation options have been changed.
-recompiling module add_sub_carry_out because:
-	Some compilation options have been changed.
-recompiling module Rotate_Mux_Array because:
-	Some compilation options have been changed.
-recompiling module Comparators because:
-	Some compilation options have been changed.
+25 modules and 0 UDP read.
+	However, due to incremental compilation, only 3 modules need to be compiled.
+recompiling module GeAr_N20_R5_P5_with_recovery because:
+	Signal dependencies have changed
+recompiling module LOA because:
+	Signal dependencies have changed
 recompiling module tb_FPU_PIPELINED_FPADDSUB2_vector_testing because:
-	Some compilation options have been changed.
-All of 5 modules done
+	Signal dependencies have changed
+	Module parameters have been changed via defparam.
+All of 3 modules done
 rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
-_2816_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
-rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
+_13040_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
+rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so \
@@ -257,20 +562,15 @@ rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09
 -Wl,-no-whole-archive          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o \
 -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
-Command: ./simv -gui +v2k +lint=all -a log_name +define+SINGLE +define+FRANCIS_LZD=1 +neg_tchk -ucli
-Warning : License for product VCSRuntime_Net(725) will expire within 21 days, on: 10-nov-2016.
-If you would like to temporarily disable this message, set 
- the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
-before expiration that you want this message to start (the minimum is 0).
+Command: ./simv +v2k +lint=all -a log_name +define+SINGLE +define+GeArN16R6P4 +neg_tchk
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Oct 21 16:39 2016
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 19 21:01 2016
 VCD+ Writer K-2015.09-SP2-3_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
-$finish called from file "./tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v", line 252.
+$finish called from file "/mnt/vol_NFS_Zener/WD_ESPEC/jsequeira/Documents/Dise-o-ASIC-FPGA-FPU/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/simulacion_logica_behavioral/SINGLE/tb_FPU_PIPELINED_FPADDSUB2_vector_testing.v", line 293.
 $finish at simulation time             20695000
-Simulation complete, time is 20695000 ps.
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 20695000 ps
-CPU Time:      0.240 seconds;       Data structure size:   0.1Mb
-Fri Oct 21 17:17:52 2016
-CPU time: .453 seconds to compile + .325 seconds to elab + .124 seconds to link + 27.294 seconds in simulation
+CPU Time:      0.530 seconds;       Data structure size:   0.1Mb
+Sat Nov 19 21:01:03 2016
+CPU time: .556 seconds to compile + .466 seconds to elab + .173 seconds to link + .670 seconds in simulation
