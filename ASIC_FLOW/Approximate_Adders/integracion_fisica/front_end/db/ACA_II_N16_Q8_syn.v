@@ -1,11 +1,11 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sat Nov 19 00:20:40 2016
+// Date      : Sun Nov 20 02:16:54 2016
 /////////////////////////////////////////////////////////////
 
 
-module ACA_II_N16_Q8_DW01_add_J76_0 ( A, B, CI, SUM, CO );
+module ACA_II_N16_Q8_DW01_add_J2_0 ( A, B, CI, SUM, CO );
   input [8:0] A;
   input [8:0] B;
   output [8:0] SUM;
@@ -27,7 +27,7 @@ initial $sdf_annotate("ACA_II_N16_Q8_syn.sdf");
  endmodule
 
 
-module ACA_II_N16_Q8_DW01_add_J76_1 ( A, B, CI, SUM, CO );
+module ACA_II_N16_Q8_DW01_add_J2_1 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -60,11 +60,10 @@ module ACA_II_N16_Q8 ( in1, in2, res );
          SYNOPSYS_UNCONNECTED_6, SYNOPSYS_UNCONNECTED_7,
          SYNOPSYS_UNCONNECTED_8;
 
-  ACA_II_N16_Q8_DW01_add_J76_0 add_x_3 ( .A({1'b0, in1[15:8]}), .B({1'b0, 
+  ACA_II_N16_Q8_DW01_add_J2_0 add_x_3 ( .A({1'b0, in1[15:8]}), .B({1'b0, 
         in2[15:8]}), .CI(1'b0), .SUM({res[16:12], SYNOPSYS_UNCONNECTED_1, 
         SYNOPSYS_UNCONNECTED_2, SYNOPSYS_UNCONNECTED_3, SYNOPSYS_UNCONNECTED_4}) );
-  ACA_II_N16_Q8_DW01_add_J76_1 add_x_2 ( .A(in1[11:4]), .B(in2[11:4]), .CI(
-        1'b0), .SUM({res[11:8], SYNOPSYS_UNCONNECTED_5, SYNOPSYS_UNCONNECTED_6, 
+  ACA_II_N16_Q8_DW01_add_J2_1 add_x_2 ( .A(in1[11:4]), .B(in2[11:4]), .CI(1'b0), .SUM({res[11:8], SYNOPSYS_UNCONNECTED_5, SYNOPSYS_UNCONNECTED_6, 
         SYNOPSYS_UNCONNECTED_7, SYNOPSYS_UNCONNECTED_8}) );
   XOR2XLTS U2 ( .A(n3), .B(n2), .Y(res[7]) );
   XOR2XLTS U3 ( .A(in1[7]), .B(in2[7]), .Y(n2) );

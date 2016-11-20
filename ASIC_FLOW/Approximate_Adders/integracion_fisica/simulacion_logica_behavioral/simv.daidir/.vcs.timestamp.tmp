@@ -79,8 +79,8 @@ DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-pLCfBKjkts,guid=ee767b01ecb500d
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
 0
-40
-1479612156 Testbench_simpleAdders.v
+42
+1479626658 Testbench_simpleAdders.v
 1479531582 ../front_end/source/RCA_N20.v
 1479531582 ../front_end/source/RCA_N16.v
 1479531582 ../front_end/source/LOA.v
@@ -107,6 +107,8 @@ COLORTERM=gnome-terminal
 1479531582 ../front_end/source/GDA_St_N8_M8_P1.v
 1479531582 ../front_end/source/GDA_St_N8_M4_P4.v
 1479531582 ../front_end/source/GDA_St_N8_M4_P2.v
+1479626741 ../front_end/source/LOAGDA_St_N16_M4_P8.v
+1479627237 ../front_end/source/LOAGDA_St_N16_M4_P4.v
 1479531582 ../front_end/source/GDA_St_N16_M4_P8.v
 1479531582 ../front_end/source/GDA_St_N16_M4_P4.v
 1479531582 ../front_end/source/ETAII_N16_Q8.v
@@ -118,7 +120,7 @@ COLORTERM=gnome-terminal
 1479531582 ../front_end/source/ACA_II_N32_Q16.v
 1479531582 ../front_end/source/ACA_II_N16_Q8.v
 1479531582 ../front_end/source/ACA_II_N16_Q4.v
-1479611824 file_list
+1479626429 file_list
 1466052982 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
 4
 0 

@@ -3,7 +3,7 @@
 Report : cell
 Design : GeAr_N16_R4_P4
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:24:52 2016
+Date   : Sun Nov 20 02:21:26 2016
 ****************************************
 
 Attributes:
@@ -34,9 +34,9 @@ U9                        CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
 U10                       CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
-add_x_2                   GeAr_N16_R4_P4_DW01_add_J96_1   197.280003
+add_x_2                   GeAr_N16_R4_P4_DW01_add_J24_1   197.280003
                                                                     BO, h
-add_x_3                   GeAr_N16_R4_P4_DW01_add_J96_0   174.240002
+add_x_3                   GeAr_N16_R4_P4_DW01_add_J24_0   174.240002
                                                                     BO, h
 --------------------------------------------------------------------------------
 Total 11 cells                                            601.920008

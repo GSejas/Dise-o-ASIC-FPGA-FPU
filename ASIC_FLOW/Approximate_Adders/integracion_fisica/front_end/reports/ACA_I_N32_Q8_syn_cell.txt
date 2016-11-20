@@ -3,7 +3,7 @@
 Report : cell
 Design : ACA_I_N32_Q8
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:21:36 2016
+Date   : Sun Nov 20 02:17:50 2016
 ****************************************
 
 Attributes:
@@ -492,13 +492,13 @@ U238                      AOI222X1TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           14.400000 
 U239                      XNOR2X2TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           18.719999 
-add_x_22                  ACA_I_N32_Q8_DW01_add_J80_3     169.920002
+add_x_22                  ACA_I_N32_Q8_DW01_add_J6_3      169.920002
                                                                     BO, h
-add_x_23                  ACA_I_N32_Q8_DW01_add_J80_2     169.920002
+add_x_23                  ACA_I_N32_Q8_DW01_add_J6_2      169.920002
                                                                     BO, h
-add_x_24                  ACA_I_N32_Q8_DW01_add_J80_1     172.800001
+add_x_24                  ACA_I_N32_Q8_DW01_add_J6_1      172.800001
                                                                     BO, h
-add_x_25                  ACA_I_N32_Q8_DW01_add_J80_0     138.240001
+add_x_25                  ACA_I_N32_Q8_DW01_add_J6_0      138.240001
                                                                     BO, h
 --------------------------------------------------------------------------------
 Total 242 cells                                           4897.440055

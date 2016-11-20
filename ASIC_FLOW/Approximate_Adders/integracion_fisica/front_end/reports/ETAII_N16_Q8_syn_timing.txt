@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : ETAII_N16_Q8
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:22:13 2016
+Date   : Sun Nov 20 02:18:26 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -27,7 +27,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   input external delay                                    3.50       3.50 f
   in2[5] (in)                                             0.00       3.50 f
-  add_x_3/B[1] (ETAII_N16_Q8_DW01_add_J83_1)              0.00       3.50 f
+  add_x_3/B[1] (ETAII_N16_Q8_DW01_add_J9_1)               0.00       3.50 f
   add_x_3/U18/Y (OAI211X1TS)                              0.38       3.88 r
   add_x_3/U19/Y (OAI2BB1X2TS)                             0.35       4.24 f
   add_x_3/U20/Y (AOI222X1TS)                              0.61       4.85 r
@@ -37,7 +37,7 @@ Wire Load Model Mode: top
   add_x_3/U22/CO (CMPR32X2TS)                             0.53       6.89 f
   add_x_3/U17/Y (XOR2X1TS)                                0.40       7.29 r
   add_x_3/U13/Y (XOR2XLTS)                                0.70       7.98 r
-  add_x_3/SUM[7] (ETAII_N16_Q8_DW01_add_J83_1)            0.00       7.98 r
+  add_x_3/SUM[7] (ETAII_N16_Q8_DW01_add_J9_1)             0.00       7.98 r
   res[11] (out)                                           0.00       7.98 r
   data arrival time                                                  7.98
 

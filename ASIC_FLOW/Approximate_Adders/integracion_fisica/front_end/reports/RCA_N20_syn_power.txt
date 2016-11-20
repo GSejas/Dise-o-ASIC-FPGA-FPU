@@ -7,7 +7,7 @@ Report : power
         -analysis_effort high
 Design : RCA_N20
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:27:56 2016
+Date   : Sun Nov 20 02:24:28 2016
 ****************************************
 
 

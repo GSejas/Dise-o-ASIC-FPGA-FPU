@@ -3,7 +3,7 @@
 Report : qor
 Design : GDA_dyn_N16_M4
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:22:26 2016
+Date   : Sun Nov 20 02:18:38 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Sat Nov 19 00:22:26 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.10
-  Logic Optimization:                  0.41
-  Mapping Optimization:                2.64
+  Resource Sharing:                    0.08
+  Logic Optimization:                  0.34
+  Mapping Optimization:                2.20
   -----------------------------------------
-  Overall Compile Time:               12.15
-  Overall Compile Wall Clock Time:    12.57
+  Overall Compile Time:               10.66
+  Overall Compile Wall Clock Time:    11.20
 
   --------------------------------------------------------------------
 

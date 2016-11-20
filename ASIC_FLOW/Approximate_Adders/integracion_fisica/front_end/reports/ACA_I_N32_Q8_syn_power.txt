@@ -7,7 +7,7 @@ Report : power
         -analysis_effort high
 Design : ACA_I_N32_Q8
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:21:36 2016
+Date   : Sun Nov 20 02:17:50 2016
 ****************************************
 
 

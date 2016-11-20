@@ -1,11 +1,11 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Ultra(TM) in wire load mode
 // Version   : L-2016.03-SP3
-// Date      : Sat Nov 19 00:21:36 2016
+// Date      : Sun Nov 20 02:17:49 2016
 /////////////////////////////////////////////////////////////
 
 
-module ACA_I_N32_Q8_DW01_add_J80_0 ( A, B, CI, SUM, CO );
+module ACA_I_N32_Q8_DW01_add_J6_0 ( A, B, CI, SUM, CO );
   input [8:0] A;
   input [8:0] B;
   output [8:0] SUM;
@@ -31,7 +31,7 @@ initial $sdf_annotate("ACA_I_N32_Q8_syn.sdf");
  endmodule
 
 
-module ACA_I_N32_Q8_DW01_add_J80_1 ( A, B, CI, SUM, CO );
+module ACA_I_N32_Q8_DW01_add_J6_1 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -60,7 +60,7 @@ initial $sdf_annotate("ACA_I_N32_Q8_syn.sdf");
  endmodule
 
 
-module ACA_I_N32_Q8_DW01_add_J80_2 ( A, B, CI, SUM, CO );
+module ACA_I_N32_Q8_DW01_add_J6_2 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -89,7 +89,7 @@ initial $sdf_annotate("ACA_I_N32_Q8_syn.sdf");
  endmodule
 
 
-module ACA_I_N32_Q8_DW01_add_J80_3 ( A, B, CI, SUM, CO );
+module ACA_I_N32_Q8_DW01_add_J6_3 ( A, B, CI, SUM, CO );
   input [7:0] A;
   input [7:0] B;
   output [7:0] SUM;
@@ -155,24 +155,24 @@ module ACA_I_N32_Q8 ( in1, in2, res );
          SYNOPSYS_UNCONNECTED_25, SYNOPSYS_UNCONNECTED_26,
          SYNOPSYS_UNCONNECTED_27, SYNOPSYS_UNCONNECTED_28;
 
-  ACA_I_N32_Q8_DW01_add_J80_0 add_x_25 ( .A({1'b0, in1[31:27], n20, n26, 
+  ACA_I_N32_Q8_DW01_add_J6_0 add_x_25 ( .A({1'b0, in1[31:27], n20, n26, 
         in1[24]}), .B({1'b0, in2[31:27], n18, n24, in2[24]}), .CI(1'b0), .SUM(
         {res[32:31], SYNOPSYS_UNCONNECTED_1, SYNOPSYS_UNCONNECTED_2, 
         SYNOPSYS_UNCONNECTED_3, SYNOPSYS_UNCONNECTED_4, SYNOPSYS_UNCONNECTED_5, 
         SYNOPSYS_UNCONNECTED_6, SYNOPSYS_UNCONNECTED_7}) );
-  ACA_I_N32_Q8_DW01_add_J80_1 add_x_24 ( .A({in1[30:26], n26, in1[24:23]}), 
-        .B({in2[30:26], n24, in2[24:23]}), .CI(1'b0), .SUM({res[30], 
+  ACA_I_N32_Q8_DW01_add_J6_1 add_x_24 ( .A({in1[30:26], n26, in1[24:23]}), .B(
+        {in2[30:26], n24, in2[24:23]}), .CI(1'b0), .SUM({res[30], 
         SYNOPSYS_UNCONNECTED_8, SYNOPSYS_UNCONNECTED_9, 
         SYNOPSYS_UNCONNECTED_10, SYNOPSYS_UNCONNECTED_11, 
         SYNOPSYS_UNCONNECTED_12, SYNOPSYS_UNCONNECTED_13, 
         SYNOPSYS_UNCONNECTED_14}) );
-  ACA_I_N32_Q8_DW01_add_J80_2 add_x_23 ( .A({in1[29:27], n20, in1[25:22]}), 
-        .B({in2[29:27], n18, in2[25:22]}), .CI(1'b0), .SUM({res[29], 
+  ACA_I_N32_Q8_DW01_add_J6_2 add_x_23 ( .A({in1[29:27], n20, in1[25:22]}), .B(
+        {in2[29:27], n18, in2[25:22]}), .CI(1'b0), .SUM({res[29], 
         SYNOPSYS_UNCONNECTED_15, SYNOPSYS_UNCONNECTED_16, 
         SYNOPSYS_UNCONNECTED_17, SYNOPSYS_UNCONNECTED_18, 
         SYNOPSYS_UNCONNECTED_19, SYNOPSYS_UNCONNECTED_20, 
         SYNOPSYS_UNCONNECTED_21}) );
-  ACA_I_N32_Q8_DW01_add_J80_3 add_x_22 ( .A(in1[28:21]), .B(in2[28:21]), .CI(
+  ACA_I_N32_Q8_DW01_add_J6_3 add_x_22 ( .A(in1[28:21]), .B(in2[28:21]), .CI(
         1'b0), .SUM({res[28], SYNOPSYS_UNCONNECTED_22, SYNOPSYS_UNCONNECTED_23, 
         SYNOPSYS_UNCONNECTED_24, SYNOPSYS_UNCONNECTED_25, 
         SYNOPSYS_UNCONNECTED_26, SYNOPSYS_UNCONNECTED_27, 

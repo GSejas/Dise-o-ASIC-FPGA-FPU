@@ -3,7 +3,7 @@
 Report : cell
 Design : ETAII_N16_Q8
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:22:13 2016
+Date   : Sun Nov 20 02:18:26 2016
 ****************************************
 
 Attributes:
@@ -28,11 +28,11 @@ U13                       CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
 U14                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           11.520000 
-add_x_2                   ETAII_N16_Q8_DW01_add_J83_2     182.880001
+add_x_2                   ETAII_N16_Q8_DW01_add_J9_2      182.880001
                                                                     BO, h
-add_x_3                   ETAII_N16_Q8_DW01_add_J83_1     190.080001
+add_x_3                   ETAII_N16_Q8_DW01_add_J9_1      190.080001
                                                                     BO, h
-add_x_4                   ETAII_N16_Q8_DW01_add_J83_0     174.240002
+add_x_4                   ETAII_N16_Q8_DW01_add_J9_0      174.240002
                                                                     BO, h
 --------------------------------------------------------------------------------
 Total 9 cells                                             649.440005

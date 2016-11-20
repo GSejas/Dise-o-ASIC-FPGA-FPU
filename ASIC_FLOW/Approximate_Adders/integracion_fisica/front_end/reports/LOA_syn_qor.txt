@@ -3,7 +3,7 @@
 Report : qor
 Design : LOA
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:27:31 2016
+Date   : Sun Nov 20 02:24:03 2016
 ****************************************
 
 
@@ -65,10 +65,10 @@ Date   : Sat Nov 19 00:27:31 2016
   -----------------------------------------
   Resource Sharing:                    0.04
   Logic Optimization:                  0.16
-  Mapping Optimization:                2.09
+  Mapping Optimization:                2.04
   -----------------------------------------
-  Overall Compile Time:               11.06
-  Overall Compile Wall Clock Time:    11.63
+  Overall Compile Time:               10.95
+  Overall Compile Wall Clock Time:    11.30
 
   --------------------------------------------------------------------
 

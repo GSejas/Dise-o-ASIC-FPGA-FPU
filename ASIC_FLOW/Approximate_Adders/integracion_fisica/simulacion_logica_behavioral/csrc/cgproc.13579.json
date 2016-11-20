@@ -1,0 +1,77 @@
+{
+    "Modules": {
+        "LOAGDA_St_N16_M4_P4": {},
+        "GDA_St_N8_M8_P3": {},
+        "GeAr_N8_R1_P2": {},
+        "...MASTER...": {},
+        "ACA_II_N16_Q8": {},
+        "GeAr_N16_R4_P4": {},
+        "ACA_II_N16_Q4": {},
+        "GDA_St_N8_M4_P4": {},
+        "ACA_II_N32_Q16": {},
+        "ACA_I_N8_Q5": {},
+        "ACA_II_N8_Q4": {},
+        "GeAr_N16_R2_P4": {},
+        "GDA_St_N8_M8_P4": {},
+        "ACA_I_N16_Q4": {},
+        "ETAII_N16_Q8": {},
+        "ETAII_N16_Q4": {},
+        "GDA_St_N8_M8_P5": {},
+        "ACA_I_N32_Q8": {},
+        "LOAGDA_St_N16_M4_P8": {},
+        "GDA_St_N16_M4_P4": {},
+        "GeAr_N8_R2_P4": {},
+        "GDA_St_N16_M4_P8": {},
+        "GDA_St_N8_M8_P1": {},
+        "GDA_St_N8_M4_P2": {},
+        "GDA_St_N8_M8_P6": {},
+        "GDA_St_N8_M8_P2": {},
+        "GDA_dyn_N16_M4": {},
+        "GeAr_N16_R4_P8": {},
+        "GeAr_N16_R6_P4": {},
+        "RCA_N16": {},
+        "GeAr_N20_R5_P5_with_recovery": {},
+        "GeAr_N8_R1_P1": {},
+        "GeAr_N8_R1_P3": {},
+        "GeAr_N8_R1_P5": {},
+        "GeAr_N8_R1_P4": {},
+        "GeAr_N8_R1_P6": {},
+        "GeAr_N8_R2_P2": {},
+        "GeAr_N9_R4_P1": {},
+        "RCA_N20": {},
+        "Testbench_Adder": {
+            "Compiled": "Yes",
+            "Compiled Times": 149
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.148/_13579_archive_1.a",
+            "objects": [
+                [
+                    "pygHW_d.o",
+                    26431
+                ]
+            ],
+            "size": 26431
+        }
+    ],
+    "CompUnits": {
+        "amcQw_d": {
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "mode": 4,
+            "bytes": 13393,
+            "checksum": 4294967295
+        },
+        "pygHW_d": {
+            "out": "pygHW_d.o",
+            "mod": "Testbench_Adder",
+            "mode": 4,
+            "bytes": 26431,
+            "archive": "archive.148/_13579_archive_1.a",
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {}
+}

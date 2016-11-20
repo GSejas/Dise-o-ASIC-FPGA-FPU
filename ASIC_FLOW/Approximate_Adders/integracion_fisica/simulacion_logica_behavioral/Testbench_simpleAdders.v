@@ -1,7 +1,7 @@
 //==================================================================================================
 //  Filename      : Testbench_simpleAdders.v
 //  Created On    : 2016-11-18 02:54:20
-//  Last Modified : 2016-11-19 22:18:44
+//  Last Modified : 2016-11-20 02:02:54
 //  Revision      :
 //  Author        : Jorge Sequeira Rojas
 //  Company       : Instituto Tecnologico de Costa Rica
@@ -81,6 +81,16 @@ module Testbench_Adder();
         localparam STRINGHEX = "ResultadosGDAN16M4P8HEX.txt";
         localparam STRINGDEC = "ResultadosGDAN16M4P8DEC.txt";
     GDA_St_N16_M4_P8 GDA (.in1(in1), .in2(in2), .res(res));
+`endif
+`ifdef LOAGDAN16M4P4
+        localparam STRINGHEX = "ResultadosLOAGDAN16M4P4HEX.txt";
+        localparam STRINGDEC = "ResultadosLOAGDAN16M4P4DEC.txt";
+    LOAGDA_St_N16_M4_P4 LOAGDA (.in1(in1), .in2(in2), .res(res));
+`endif
+`ifdef LOAGDAN16M4P8
+        localparam STRINGHEX = "ResultadosLOAGDAN16M4P8HEX.txt";
+        localparam STRINGDEC = "ResultadosLOAGDAN16M4P8DEC.txt";
+    LOAGDA_St_N16_M4_P8 LOAGDA (.in1(in1), .in2(in2), .res(res));
 `endif
 `ifdef GDAN16M4
         localparam STRINGHEX = "ResultadosGDAN16M4HEX.txt";

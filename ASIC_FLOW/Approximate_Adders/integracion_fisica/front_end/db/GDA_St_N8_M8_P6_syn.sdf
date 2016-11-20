@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "GDA_St_N8_M8_P6")
-(DATE "Sat Nov 19 00:24:27 2016")
+(DATE "Sun Nov 20 02:21:02 2016")
 (VENDOR "scx3_cmos8rf_lpvt_tt_1p2v_25c")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "L-2016.03-SP3")

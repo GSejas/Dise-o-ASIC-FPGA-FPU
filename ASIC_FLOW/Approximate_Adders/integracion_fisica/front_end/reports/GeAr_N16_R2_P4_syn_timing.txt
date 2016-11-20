@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : GeAr_N16_R2_P4
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:24:40 2016
+Date   : Sun Nov 20 02:21:15 2016
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -28,10 +28,10 @@ Wire Load Model Mode: top
   input external delay                     3.50       3.50 f
   in1[0] (in)                              0.00       3.50 f
   U21/Y (CLKAND2X2TS)                      0.32       3.82 f
-  intadd_6_U5/CO (CMPR32X2TS)              0.61       4.43 f
-  intadd_6_U4/CO (CMPR32X2TS)              0.56       4.98 f
-  intadd_6_U3/CO (CMPR32X2TS)              0.56       5.54 f
-  intadd_6_U2/CO (CMPR32X2TS)              0.61       6.15 f
+  intadd_9_U5/CO (CMPR32X2TS)              0.61       4.43 f
+  intadd_9_U4/CO (CMPR32X2TS)              0.56       4.98 f
+  intadd_9_U3/CO (CMPR32X2TS)              0.56       5.54 f
+  intadd_9_U2/CO (CMPR32X2TS)              0.61       6.15 f
   U2/Y (OAI21XLTS)                         0.38       6.53 r
   U26/Y (OAI31X1TS)                        0.50       7.02 f
   res[5] (out)                             0.00       7.02 f

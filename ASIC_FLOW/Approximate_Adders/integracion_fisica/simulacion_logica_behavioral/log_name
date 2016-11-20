@@ -8,7 +8,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
 Command: vcs -full64 -PP -R -f file_list +v2k +lint=all -l log_name -Mupdate +define+SINGLE \
 +define+LOALPL14 -timescale=1ns/1ps +neg_tchk
                          Chronologic VCS (TM)
-      Version K-2015.09-SP2-3_Full64 -- Sat Nov 19 22:03:27 2016
+      Version K-2015.09-SP2-3_Full64 -- Sun Nov 20 02:14:08 2016
                Copyright (c) 1991-2015 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -92,6 +92,32 @@ Lint-[VCDE] Compiler directive encountered
 
 Lint-[IWU] Implicit wire is used
 ../front_end/source/GDA_St_N16_M4_P8.v, 111
+  No type is specified for wire 'p11p10p9p8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../front_end/source/LOAGDA_St_N16_M4_P4.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/LOAGDA_St_N16_M4_P4.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../front_end/source/LOAGDA_St_N16_M4_P4.v, 101
+  No type is specified for wire 'p11p10p9g8'. Default wire type is being 
+  applied according to the IEEE spec.
+  See the Verilog LRM(1364-2005), section 4.5.
+
+Parsing design file '../front_end/source/LOAGDA_St_N16_M4_P8.v'
+
+Lint-[VCDE] Compiler directive encountered
+../front_end/source/LOAGDA_St_N16_M4_P8.v, 1
+  Verilog compiler directive encountered "`timescale".
+
+
+Lint-[IWU] Implicit wire is used
+../front_end/source/LOAGDA_St_N16_M4_P8.v, 111
   No type is specified for wire 'p11p10p9p8'. Default wire type is being 
   applied according to the IEEE spec.
   See the Verilog LRM(1364-2005), section 4.5.
@@ -402,22 +428,22 @@ Testbench_simpleAdders.v, 90
 
 
 Lint-[VCDE] Compiler directive encountered
-Testbench_simpleAdders.v, 95
+Testbench_simpleAdders.v, 94
   Verilog compiler directive encountered "`endif".
 
 
 Lint-[VCDE] Compiler directive encountered
-Testbench_simpleAdders.v, 96
+Testbench_simpleAdders.v, 95
   Verilog compiler directive encountered "`ifdef".
 
 
 Lint-[VCDE] Compiler directive encountered
-Testbench_simpleAdders.v, 100
+Testbench_simpleAdders.v, 99
   Verilog compiler directive encountered "`endif".
 
 
 Lint-[VCDE] Compiler directive encountered
-Testbench_simpleAdders.v, 101
+Testbench_simpleAdders.v, 100
   Verilog compiler directive encountered "`ifdef".
 
 
@@ -506,14 +532,34 @@ Testbench_simpleAdders.v, 145
   Verilog compiler directive encountered "`endif".
 
 
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 146
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 150
+  Verilog compiler directive encountered "`endif".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 151
+  Verilog compiler directive encountered "`ifdef".
+
+
+Lint-[VCDE] Compiler directive encountered
+Testbench_simpleAdders.v, 155
+  Verilog compiler directive encountered "`endif".
+
+
 Lint-[NS] Null statement
-Testbench_simpleAdders.v, 162
+Testbench_simpleAdders.v, 172
   Null statement is used in following verilog source.
   
 
 
 Lint-[NS] Null statement
-Testbench_simpleAdders.v, 189
+Testbench_simpleAdders.v, 199
   Null statement is used in following verilog source.
   
 
@@ -529,6 +575,8 @@ Top Level Modules:
        ETAII_N16_Q8
        GDA_St_N16_M4_P4
        GDA_St_N16_M4_P8
+       LOAGDA_St_N16_M4_P4
+       LOAGDA_St_N16_M4_P8
        GDA_St_N8_M4_P2
        GDA_St_N8_M4_P4
        GDA_St_N8_M8_P1
@@ -557,7 +605,7 @@ Top Level Modules:
        Testbench_Adder
 TimeScale is 1 ns / 1 ps
 Starting vcs inline pass...
-37 modules and 0 UDP read.
+39 modules and 0 UDP read.
 	However, due to incremental compilation, only 1 module needs to be compiled.
 recompiling module Testbench_Adder because:
 	Module parameters have been changed via defparam.
@@ -565,7 +613,7 @@ rm -f _csrc*.so linux64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o \
-_4347_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
+_13579_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o \
 rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libzerosoft_rt_stubs.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/libvirsim.so \
 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx/K-2015.09-SP2-3/linux64/lib/liberrorinf.so \
@@ -580,11 +628,11 @@ rmar_llvm_0_1.o rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/
 Command: ./simv +v2k +lint=all -a log_name +define+SINGLE +define+LOALPL14 +neg_tchk
 Chronologic VCS simulator copyright 1991-2015
 Contains Synopsys proprietary information.
-Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 19 22:03 2016
-$finish called from file "Testbench_simpleAdders.v", line 169.
+Compiler version K-2015.09-SP2-3_Full64; Runtime version K-2015.09-SP2-3_Full64;  Nov 20 02:14 2016
+$finish called from file "Testbench_simpleAdders.v", line 179.
 $finish at simulation time           2000100000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 2000100000 ps
-CPU Time:      1.350 seconds;       Data structure size:   0.0Mb
-Sat Nov 19 22:03:30 2016
-CPU time: .292 seconds to compile + .017 seconds to elab + .182 seconds to link + 1.499 seconds in simulation
+CPU Time:      1.310 seconds;       Data structure size:   0.0Mb
+Sun Nov 20 02:14:11 2016
+CPU time: .304 seconds to compile + .016 seconds to elab + .175 seconds to link + 1.462 seconds in simulation

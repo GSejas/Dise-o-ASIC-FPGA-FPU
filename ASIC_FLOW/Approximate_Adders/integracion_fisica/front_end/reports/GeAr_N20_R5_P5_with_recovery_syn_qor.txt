@@ -3,7 +3,7 @@
 Report : qor
 Design : GeAr_N20_R5_P5_with_recovery
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:25:30 2016
+Date   : Sun Nov 20 02:22:04 2016
 ****************************************
 
 
@@ -63,12 +63,12 @@ Date   : Sat Nov 19 00:25:30 2016
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.13
-  Logic Optimization:                  0.36
-  Mapping Optimization:                2.17
+  Resource Sharing:                    0.12
+  Logic Optimization:                  0.34
+  Mapping Optimization:                2.12
   -----------------------------------------
-  Overall Compile Time:               12.04
-  Overall Compile Wall Clock Time:    12.57
+  Overall Compile Time:               11.85
+  Overall Compile Wall Clock Time:    12.22
 
   --------------------------------------------------------------------
 

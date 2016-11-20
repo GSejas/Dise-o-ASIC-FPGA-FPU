@@ -3,7 +3,7 @@
 Report : cell
 Design : ACA_II_N16_Q8
 Version: L-2016.03-SP3
-Date   : Sat Nov 19 00:20:40 2016
+Date   : Sun Nov 20 02:16:54 2016
 ****************************************
 
 Attributes:
@@ -34,9 +34,9 @@ U9                        CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
 U10                       CMPR32X2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           31.680000 r
-add_x_2                   ACA_II_N16_Q8_DW01_add_J76_1    197.280003
+add_x_2                   ACA_II_N16_Q8_DW01_add_J2_1     197.280003
                                                                     BO, h
-add_x_3                   ACA_II_N16_Q8_DW01_add_J76_0    174.240002
+add_x_3                   ACA_II_N16_Q8_DW01_add_J2_0     174.240002
                                                                     BO, h
 --------------------------------------------------------------------------------
 Total 11 cells                                            601.920008
