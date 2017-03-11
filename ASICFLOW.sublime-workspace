@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"Res",
+				"ResultsFileD"
+			],
+			[
+				"Resul",
+				"ResultsFileH"
+			],
+			[
+				"ap",
+				"accurate_LowerPart"
+			],
+			[
+				"cas",
+				"case\t: 3bit case "
+			],
+			[
 				"bas",
 				"bash_reporter"
 			],
@@ -98,10 +114,6 @@
 			[
 				"ready_",
 				"ready_add_subt"
-			],
-			[
-				"cas",
-				"case\t: 2bit case "
 			],
 			[
 				"max",
@@ -335,14 +347,6 @@
 			}
 		},
 		{
-			"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/source/GeAr_N16_R4_P4.v",
-			"settings":
-			{
-				"buffer_size": 785,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaCelda.csv",
 			"settings":
 			{
@@ -351,53 +355,37 @@
 			}
 		},
 		{
-			"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/Delay.csv",
+			"file": "/home/jorge/ApproxAdderLib/NewFilesVerilog/UDMnxn.v",
 			"settings":
 			{
-				"buffer_size": 481,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaDiseño.csv",
-			"settings":
-			{
-				"buffer_size": 583,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ASIC_FLOW/Project Creator Script/usage_exaple.sh",
-			"settings":
-			{
-				"buffer_size": 82,
+				"buffer_size": 1284,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/Project Creator Script/sim_create_FPU-Operators.sh",
+			"file": "/home/jorge/ApproxMult/ApproxMult.srcs/sources_1/imports/NewFilesVerilog/UDMnxnv2.v",
 			"settings":
 			{
-				"buffer_size": 3408,
+				"buffer_size": 1265,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/Project Creator Script/Project_creator.sh",
+			"file": "/home/jorge/ApproxAdderLib/NewFilesVerilog/ETM_Multi.v",
 			"settings":
 			{
-				"buffer_size": 3999,
+				"buffer_size": 2494,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ASIC_FLOW/Project Creator Script/Approximate_Adders/integracion_fisica/front_end/scripts/Approximate_Adders_syn.tcl",
+			"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/simulacion_logica_behavioral/Testbench_simpleAdders.v",
 			"settings":
 			{
-				"buffer_size": 3429,
+				"buffer_size": 3518,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -412,36 +400,38 @@
 			}
 		},
 		{
-			"file": "/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA_2c.v",
+			"file": "my_sourcefiles/KOA_2c_approx.v",
 			"settings":
 			{
-				"buffer_size": 5490,
+				"buffer_size": 6334,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA.v",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/reports/DC_Report_Creator.sh",
 			"settings":
 			{
-				"buffer_size": 5757,
+				"buffer_size": 117,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA_1c.v",
+			"file": "ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/reports/bash_reporter_ADDCORDIC.sh",
 			"settings":
 			{
-				"buffer_size": 5700,
+				"buffer_size": 3225,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "`timescale 1ns / 1ps\n//////////////////////////////////////////////////////////////////////////////////\n// Company: \n// Engineer: \n// \n// Create Date: 03/15/2016 01:13:48 PM\n// Design Name: \n// Module Name: Add_Subt\n// Project Name: \n// Target Devices: \n// Tool Versions: \n// Description: \n// \n// Dependencies: \n// \n// Revision:\n// Revision 0.01 - File Created\n// Additional Comments:\n// \n//////////////////////////////////////////////////////////////////////////////////\n\n\nmodule Add_Subt\n    #(parameter SWR=26) (\n    input wire clk,\n    input wire rst,\n    input wire load_i,//Reg load input\n    input wire Add_Sub_op_i,\n    input wire [SWR-1:0] Data_A_i,\n    input wire [SWR-1:0] PreData_B_i,  \n    output wire [SWR-1:0] Data_Result_o,\n    output wire FSM_C_o\n    );\n\n \nendmodule\n\n\n",
+			"file": "ASIC_FLOW/sources/KOA_1c_approx.v",
 			"settings":
 			{
-				"buffer_size": 786,
+				"buffer_size": 6511,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -529,36 +519,31 @@
 	"expanded_folders":
 	[
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/scripts",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpaddsub_arch3/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch3/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch3/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch3/integracion_fisica/front_end/source",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpmult_arch3/integracion_fisica/front_end/work",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_behavioral/SINGLE",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/simulacion_logica_sintesis/MULT_DW1/SINGLE",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/source",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/simulacion_logica_behavioral",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/simulacion_logica_behavioral/RCA",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/Approximate_Adders",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/Approximate_Adders/integracion_fisica",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/Approximate_Adders/integracion_fisica/front_end",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/FPU_Interface/fpaddsub_arch3"
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Multipliers",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Multipliers/26bit",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Multipliers/26bit/FrancisKOA"
 	],
 	"file_history":
 	[
+		"/home/jorge/ApproxMult/ApproxMult.sim/sim_1/behav/ResultsFileDec.txt",
+		"/home/jorge/ApproxAdderLib/NewFilesVerilog/UDMnxnv2.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/Delay.csv",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/usage_exaple.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/Approximate_Adders/integracion_fisica/front_end/scripts/Approximate_Adders_syn.tcl",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/sim_create_FPU-Operators.sh",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Project Creator Script/Project_creator.sh",
+		"/home/jorge/ApproxMult/ApproxMult.srcs/sources_1/imports/NewFilesVerilog/UDM.v",
+		"/home/jorge/ApproxAdderLib/NewFilesVerilog/UDM.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaCelda.csv",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaDiseño.csv",
+		"/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA.v",
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Approx_adder.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/source/GDA_St_N16_M4_P4.v",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/simulacion_logica_behavioral/ResultadosACAIIN16Q8DEC.txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/Approximate_Adders/integracion_fisica/simulacion_logica_behavioral/ResultadosGDAN16M4P4DEC.txt",
@@ -673,24 +658,11 @@
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Critical Path Length:",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/reports/Cell Area: .txt",
 		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/sources_1/imports/Floating-Point-Unit-master/Coprocesador_CORDIC_RTL/sine_cosine_CORDIC/Mux_2x1.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/tb_FPU1_SINGLE/imports/Testbench/Testbench_FPUv1_Interface.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/synth/func/ADD/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/synth/func/ADD/SINGLE/Hexadecimal_R.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/synth/func/Testbench_FPU_Mark1_func_synth.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/synth/func/ADD/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/synth/func/ADD/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Testbench/Testbench_FPU_Add_Subt.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/SIN/SINGLE/RMODE_NEGINF/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/SIN/SINGLE/RMODE_POSINF/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/SIN/SINGLE/Hexadecimal_R.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.sim/tb_FPU1_SINGLE/behav/SIN/SINGLE/RMODE_TRUNCATE/ResultadoXilinxFLM.txt",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/Literature FPUs/NTNU FPU/low-cost-fpu-src/testbenches/fpu_top_tb.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Testbench/Testbench_FPU_v1.v",
-		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/sources/Source_Files/Testbench/Testbench_FPU_mult.v"
+		"/home/jorge/Documents/1Proyectos_TesisdeGraduacion/FPGA_FLOW/FPU_SiRPA_V1_V2/FPU_SiRPA_V1_V2.srcs/tb_FPU1_SINGLE/imports/Testbench/Testbench_FPUv1_Interface.v"
 	],
 	"find":
 	{
-		"height": 58.0
+		"height": 79.0
 	},
 	"find_in_files":
 	{
@@ -704,6 +676,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" wire  [W-1:0] LowL;\n  wire  [LowL-1:0] lower_res;",
+			"{cout, res}",
+			"cout",
+			"GeAr_N16_R6_P4",
+			" LowL[W-1:LowL] + appr",
+			"(in2[W-1:LowL",
+			"sign LowL = (add_",
+			"n2(LowL[Low",
+			"(.in1(in2[",
+			"Lowl[LowL-1:0])",
+			"LowL[LowL-1:0])",
+			"OP_FLAG_SFG",
+			"Lower_Raw_mant_SGF",
+			"Approx_carrout",
+			"Carry_out_SGF",
+			"DmP_mant_SFG_SWR",
+			"Raw_mant_SGF",
+			"DmP_mant_SFG_SWR_signed",
+			"in2_signed",
+			"LowerL",
+			"SWR",
+			"\n  wire  [SWR-1:0] DmP_mant_SFG_SWR_signed;\n  wire  [LowerL-1:0] Lower_Raw_mant_SGF;",
+			"16]",
+			"16",
+			"15",
 			"${PREC}",
 			"result_A_adder",
 			"mult_arch",
@@ -806,32 +803,7 @@
 			"formatted_string",
 			"analyze",
 			"fpaddsub_arch2",
-			"error",
-			"warning",
-			"genera",
-			"fpaddsub_arch2_",
-			"counter",
-			"b00000001",
-			"enab_d_ff_RB1",
-			"data_in",
-			"reset_reg_cordic",
-			"reg_region_flag",
-			"reset_reg_cordic",
-			"enable_Pipeline_input",
-			"FSM_enable_input_internal",
-			"enable_shift_reg",
-			"enable_Pipeline_input",
-			"d_ff1_operation_out",
-			"sel_mux_3",
-			"sel_mux",
-			"sel_mux3",
-			"enab_d_ff5_data_out",
-			"beg_add_subt",
-			"beg_add_sub",
-			"real_input_enable",
-			"result_add_subt",
-			"busy",
-			"zero_flag"
+			"error"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -839,6 +811,25 @@
 		"regex": false,
 		"replace_history":
 		[
+			" ",
+			"res",
+			" in2_signed[W-1:LowL] + appr",
+			"(in1[W-1:LowL",
+			"sign in2_signed = (add_",
+			"n2(in2_signed[Low",
+			"(.in1(in1[",
+			"in2_signed[LowL-1:0])",
+			"add_sub",
+			"lower_res",
+			"approx_cout",
+			"cout",
+			"in2",
+			"res",
+			"LowL",
+			"W",
+			"",
+			"LowerL]",
+			"LowerL-1",
 			"",
 			"add_arch",
 			"$line2",
@@ -947,26 +938,7 @@
 			"ADD_OVRFLW_FRMT",
 			"enable_input_internal",
 			"//ack_FSM",
-			"beg_OP",
-			"DMP_INIT_EWSW",
-			"intDY_EWSW",
-			"intDY_W1",
-			"intDX_EWSW",
-			"intDX_W1",
-			"intDY_W1",
-			"intDY_W",
-			"intDX_W1",
-			"intDX_W",
-			"formatted_number_W",
-			"formatted_number",
-			"LZD_raw_out_EWR",
-			"LZD_raw_output",
-			"LZD_raw_out_NRM2_EWR",
-			"LZD_raw_output_NRM2",
-			"LZD_output_NRM2_EW",
-			"LZD_output_NRM2",
-			"Raw_mant_NRM_SWR",
-			"Raw_mant_NRM"
+			"beg_OP"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -977,7 +949,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -1006,7 +978,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1035,7 +1007,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1063,10 +1035,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 969.0,
+						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1082,39 +1054,8 @@
 						"selection":
 						[
 							[
-								192,
-								192
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AvgError.csv",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 752,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								548,
-								554
+								489,
+								493
 							]
 						],
 						"settings":
@@ -1132,49 +1073,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/source/GeAr_N16_R4_P4.v",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 785,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Verilog/Verilog.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaCelda.csv",
+					"buffer": 4,
+					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AvgError.csv",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 566,
+						"buffer_size": 752,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								38
+								586,
+								586
 							]
 						],
 						"settings":
@@ -1192,20 +1104,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/Delay.csv",
-					"semi_transient": false,
+					"buffer": 5,
+					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaCelda.csv",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 481,
+						"buffer_size": 566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								481,
-								481
+								440,
+								440
 							]
 						],
 						"settings":
@@ -1219,169 +1131,78 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/jorge/ApproxAdderLib/NewFilesVerilog/UDMnxn.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/jorge/ApproxMult/ApproxMult.srcs/sources_1/imports/NewFilesVerilog/UDMnxnv2.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/front_end/reports/AreaDiseño.csv",
+					"file": "/home/jorge/ApproxAdderLib/NewFilesVerilog/ETM_Multi.v",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 583,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								241,
-								241
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "ASIC_FLOW/Project Creator Script/usage_exaple.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 82,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								81,
-								81
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "ASIC_FLOW/Project Creator Script/sim_create_FPU-Operators.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3408,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2592,
-								2592
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1368.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "ASIC_FLOW/Project Creator Script/Project_creator.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3999,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1900,
-								1900
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1091.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "ASIC_FLOW/Project Creator Script/Approximate_Adders/integracion_fisica/front_end/scripts/Approximate_Adders_syn.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3429,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1502,
-								1502
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/TCL/Tcl.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_approx_syn.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5433,
+						"buffer_size": 2494,
 						"regions":
 						{
 						},
@@ -1395,137 +1216,198 @@
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "ASIC_FLOW/Approximate_Adders/integracion_fisica/simulacion_logica_behavioral/Testbench_simpleAdders.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1231,
+								1231
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 371.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/scripts/ASIC_fpaddsub_arch3_approx_syn.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								991,
+								991
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
 							"syntax": "Packages/TCL/Tcl.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA_2c.v",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1132,
-								1132
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Verilog/Verilog.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA.v",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5757,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1132,
-								1132
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Verilog/Verilog.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/home/jorge/Approximate_adders/Approximate_adders.srcs/sources_1/imports/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW/ASIC_fpu/integracion_fisica/front_end/source/KOA_1c.v",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5700,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3279,
-								3279
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Verilog/Verilog.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 885.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 11,
+					"file": "my_sourcefiles/KOA_2c_approx.v",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 786,
+						"buffer_size": 6334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								773,
-								773
+								2291,
+								2291
 							]
 						],
 						"settings":
 						{
-							"default_dir": "/home/jorge/Documents/1Proyectos_TesisdeGraduacion_ASIC/ASIC_FLOW",
+							"side_bar_folders_auto_load_folder": 1,
 							"syntax": "Packages/Verilog/Verilog.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 563.0,
+						"translation.y": 1053.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/reports/DC_Report_Creator.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "ASIC_FLOW/ASIC_fpaddsub_approximate/integracion_fisica/front_end/reports/bash_reporter_ADDCORDIC.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2374,
+								2374
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 749.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "ASIC_FLOW/sources/KOA_1c_approx.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3262,
+								3262
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Verilog/Verilog.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1965.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1533,7 +1415,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -1578,7 +1460,7 @@
 	"project": "ASICFLOW.sublime-project",
 	"replace":
 	{
-		"height": 95.0
+		"height": 137.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -1645,7 +1527,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 319.0,
+	"side_bar_width": 258.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
